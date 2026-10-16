@@ -1,0 +1,1102 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2345 
+PERANCANGAN SISTEM INFORMASI MANAJEMEN BIMBINGAN 
+BELAJAR BERBASIS WEB UNTUK EFISIENSI ADMINISTRASI DAN 
+KOMUNIKASI DENGAN FITUR NOTIFIKASI OTOMATIS 
+(STUDI KASUS : BIMBEL ILMAN NAFI’) 
+ 
+Eka Cinta Ayu Safitri, Tri Listyorini, Endang Supriyati 
+Teknik Informatika, Universitas Muria Kudus 
+Jl. Lkr. Utara, Kayuapu Kulon, Gondangmanis, Kec. Bae, Kabupaten Kudus, Jawa Tengah  
+safitrie315@gmail.com 
+ 
+ABSTRAK 
+ 
+Kemajuan teknologi informasi memberikan peluang besar dalam meningkatkan efektivitas administrasi 
+lembaga pendidikan nonformal, khususnya bimbingan belajar yang memerlukan pengelolaan data terintegrasi. 
+Proses administrasi manual pada lembaga bimbingan belajar menimbulkan kendala seperti kesalahan pencatatan, 
+keterlambatan distribusi informasi, dan lemahnya koordinasi antara pengelola, tutor, dan peserta didik. Penelitian 
+ini bertujuan merancang sistem informasi manajemen bimbingan belajar berbasis web dengan fitur notifikasi 
+otomatis untuk meningkatkan efisiensi administrasi dan memperkuat komunikasi antar pengguna di Bimbel 
+Ilman Nafi. Pengembangan menggunakan metode Waterfall yang mencakup analisis kebutuhan, perancangan, 
+implementasi, pengujian, dan pemeliharaan dengan framework Bootstrap untuk antarmuka responsif, bahasa 
+pemrograman PHP, dan basis data MySQL. Hasil penelitian menunjukkan sistem berhasil mengintegrasikan 
+pengelolaan data siswa, tutor, jadwal, absensi, dan pembayaran dalam satu platform web, dimana fitur notifikasi 
+otomatis memungkinkan penyampaian informasi real-time melalui dashboard, email, dan WhatsApp sehingga 
+meningkatkan efisiensi administrasi dan kualitas komunikasi lembaga bimbingan belajar. 
+ 
+Kata kunci :  Sistem Informasi, Bimbingan Belajar, Notifikasi Otomatis, Web, PHP, MySQL. 
+ 
+1. 
+PENDAHULUAN 
+Era digitalisasi telah mengubah paradigma 
+pengelolaan institusi pendidikan, termasuk lembaga 
+bimbingan 
+belajar 
+yang 
+kini 
+dituntut 
+untuk 
+mengadopsi 
+teknologi 
+informasi 
+dalam 
+operasionalnya[1]. Transformasi digital dalam sektor 
+pendidikan nonformal menjadi kebutuhan mendesak 
+untuk meningkatkan daya saing dan kualitas layanan. 
+Lembaga bimbingan belajar sebagai pendamping 
+akademis siswa memiliki peran strategis dalam 
+ekosistem pendidikan, sehingga memerlukan sistem 
+manajemen yang efektif untuk mengelola berbagai 
+aspek administratif mulai dari registrasi peserta, 
+penjadwalan, 
+monitoring 
+kehadiran, 
+hingga 
+pengelolaan keuangan[2]. 
+Realitas di lapangan menunjukkan bahwa 
+mayoritas 
+lembaga 
+bimbingan 
+belajar 
+masih 
+mengandalkan sistem manual dalam operasional 
+hariannya, 
+yang 
+mengakibatkan 
+berbagai 
+permasalahan kompleks. Pencatatan data siswa, tutor, 
+dan jadwal pembelajaran yang dilakukan secara 
+konvensional 
+sering 
+menimbulkan 
+inkonsistensi 
+informasi, duplikasi data, dan kesulitan dalam 
+melakukan pemutakhiran informasi secara real-time. 
+Koordinasi antara manajemen, tenaga pengajar, dan 
+peserta didik menjadi terhambat karena keterbatasan 
+saluran 
+komunikasi 
+yang 
+terintegrasi. 
+Proses 
+monitoring kehadiran siswa dan evaluasi kinerja tutor 
+membutuhkan waktu yang tidak efisien, sementara 
+pengelolaan administrasi keuangan rentan terhadap 
+kesalahan human error yang dapat berdampak pada 
+kerugian finansial lembaga[4]. 
+Penelitian ini bertujuan untuk mengembangkan 
+solusi teknologi berupa sistem informasi manajemen 
+bimbingan belajar berbasis web yang dilengkapi 
+dengan fitur notifikasi otomatis guna mengoptimalkan 
+proses administrasi dan komunikasi di Bimbel Ilman 
+Nafi[5]. Sistem yang dikembangkan diharapkan 
+mampu mengintegrasikan seluruh aspek operasional 
+lembaga dalam satu platform digital yang user-
+friendly, sehingga dapat meningkatkan efisiensi kerja, 
+akurasi data, dan kualitas layanan kepada peserta 
+didik[6]. 
+Strategi penyelesaian masalah dilakukan melalui 
+pendekatan 
+pengembangan 
+perangkat 
+lunak 
+menggunakan metodologi Waterfall yang sistematis, 
+dimulai dari tahap analisis kebutuhan sistem, 
+perancangan 
+arsitektur 
+aplikasi, 
+implementasi 
+menggunakan 
+teknologi 
+web 
+modern 
+seperti 
+framework Bootstrap, bahasa pemrograman PHP, dan 
+database MySQL, kemudian dilanjutkan dengan 
+pengujian komprehensif dan deployment sistem. 
+Implementasi fitur notifikasi otomatis melalui multiple 
+channel seperti dashboard web, email, dan integrasi 
+WhatsApp 
+akan 
+menjadi 
+nilai 
+tambah 
+yang 
+membedakan sistem ini dengan solusi konvensional, 
+sehingga dapat mewujudkan komunikasi yang efektif 
+dan responsif dalam ekosistem bimbingan belajar[7]. 
+ 
+2. 
+TINJAUAN PUSTAKA 
+2.1.  Penelitian Terkait 
+Penelitian yang dilakukan oleh [8] yang berjudul 
+“Rancang Bangun Web Pengaduan Pelanggan dengan 
+Push Notification di PT Bolmut Multimedia”
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2346 
+menunjukkan bahwa penerapan aplikasi berbasis web 
+dengan 
+integrasi 
+push 
+notification 
+mampu 
+meningkatkan efisiensi dan kecepatan penanganan 
+pengaduan pelanggan. Metode pengembangan yang 
+digunakan adalah Waterfall, dengan tahapan analisis 
+kebutuhan, desain sistem, implementasi, verifikasi, 
+dan pemeliharaan. Hasil penelitian menunjukkan 
+bahwa sistem yang dibangun dapat memberikan 
+notifikasi secara real-time kepada pelanggan maupun 
+petugas, sehingga mempercepat proses penanganan 
+dan meningkatkan kepuasan pelanggan terhadap 
+layanan perusahaan. 
+Penelitian yang dilakukan oleh [9] yang berjudul 
+“Penerapan Push Notification pada Sistem Monitoring 
+Belajar Berbasis Web Menggunakan Firebase Cloud 
+Messaging” menjelaskan bahwa monitoring belajar 
+yang dilakukan menggunakan buku catatan siswa 
+sering mengalami kendala seperti buku yang hilang, 
+tidak dibawa, atau tidak diperlihatkan kepada orang 
+tua. 
+Untuk 
+mengatasi 
+permasalahan 
+tersebut, 
+penelitian ini mengembangkan sistem monitoring 
+berbasis web yang dilengkapi fitur push notification 
+menggunakan Firebase Cloud Messaging (FCM) 
+sebagai media penyampaian informasi secara real-
+time kepada orang tua dan tutor. Model pengembangan 
+sistem yang digunakan adalah prototyping, dengan 
+tahapan perancangan awal, evaluasi pengguna, hingga 
+pengembangan 
+sistem 
+final. 
+Hasil 
+penelitian 
+menunjukkan bahwa sistem yang dibangun mampu 
+menggantikan fungsi buku monitoring secara efektif, 
+memberikan notifikasi secara tepat waktu kepada 
+orang tua setelah tutor menginput laporan belajar 
+harian siswa, serta memberitahu tutor ketika laporan 
+telah dibaca oleh orang tua. Temuan ini membuktikan 
+bahwa integrasi notifikasi otomatis berbasis FCM 
+dapat meningkatkan efektivitas komunikasi dan 
+monitoring pembelajaran pada lembaga bimbingan 
+belajar. 
+Penelitian yang dilakukan oleh [3] berjudul 
+“Sistem Informasi Monitoring Pembelajaran dengan 
+Fitur 
+Notifikasi 
+Email 
+Berbasis 
+Web” 
+mengembangkan sistem informasi berbasis web untuk 
+memantau 
+proses 
+pembelajaran 
+siswa 
+dengan 
+tambahan fitur notifikasi otomatis ketika nilai siswa 
+berada di bawah Kriteria Ketuntasan Minimal (KKM). 
+Penelitian ini menggunakan metode Research and 
+Development (R&D) dengan pendekatan model 
+Waterfall, yang mencakup tahap analisis kebutuhan, 
+perancangan, implementasi, pengujian, dan evaluasi. 
+Berdasarkan hasil pengujian blackbox, seluruh fitur 
+sistem berjalan dengan baik, sementara hasil User 
+Acceptance Testing (UAT) memperoleh tingkat 
+kepuasan sebesar 92,65%, yang menunjukkan sistem 
+layak digunakan. Hasil penelitian membuktikan 
+bahwa integrasi notifikasi otomatis dalam sistem 
+informasi dapat meningkatkan efektivitas komunikasi 
+akademik 
+antara 
+guru 
+dan 
+orang 
+tua 
+serta 
+mempercepat tindak lanjut terhadap hasil belajar siswa 
+secara real-time. Temuan ini menjadi referensi penting 
+dalam pengembangan sistem informasi manajemen 
+bimbingan belajar yang akan dirancang dalam 
+penelitian ini, khususnya pada aspek komunikasi dan 
+efektivitas administrasi melalui fitur notifikasi 
+otomatis. 
+Penelitian yang dilakukan oleh [10] yang 
+berjudul “Sistem Informasi Lembaga Bimbingan 
+Belajar Fawwaaz Kiddy Club Berbasis Web” 
+bertujuan 
+untuk 
+merancang 
+sistem 
+informasi 
+pendaftaran dan pembayaran secara online guna 
+mempercepat proses administrasi lembaga bimbingan 
+belajar. 
+Pengembangan 
+sistem 
+dilakukan 
+menggunakan metodologi Rational Unified Process 
+(RUP) yang terdiri dari tahapan inception, elaboration, 
+construction, dan transition. Sistem dirancang dengan 
+pemodelan menggunakan Unified Modeling Language 
+(UML) dan diimplementasikan menggunakan bahasa 
+pemrograman PHP serta database MySQL. Hasil 
+penelitian menunjukkan bahwa sistem yang dibangun 
+mampu mempermudah lembaga bimbingan belajar 
+dalam mengelola data murid, proses pendaftaran, serta 
+verifikasi 
+pembayaran, 
+sehingga 
+meminimalkan 
+kesalahan pencatatan dan meningkatkan efisiensi 
+administrasi. 
+Penelitian yang dilakukan oleh [11] yang 
+berjudul “Perancangan Sistem Informasi Manajemen 
+Berbasis Web pada Bimbingan Belajar Creative 
+Solution” menjelaskan bahwa pengembangan sistem 
+informasi 
+manajemen 
+berbasis 
+web 
+mampu 
+meningkatkan 
+efisiensi 
+penyampaian 
+informasi 
+akademik dan promosi lembaga bimbingan belajar. 
+Sistem ini dikembangkan menggunakan bahasa 
+pemrograman PHP, database MySQL, serta model 
+pengembangan perangkat lunak Waterfall. Hasil 
+penelitian menunjukkan bahwa sistem yang dibangun 
+dapat membantu pengelolaan data siswa, tutor, jadwal, 
+serta kegiatan pembelajaran, sekaligus memperluas 
+jangkauan promosi lembaga melalui media web yang 
+responsif dan mudah diakses oleh pengguna. 
+ 
+2.2. Sistem Informasi 
+Sistem 
+informasi 
+merupakan 
+kumpulan 
+komponen yang saling terintegrasi untuk mengelola 
+data menjadi informasi yang mendukung pengambilan 
+keputusan dan kegiatan operasional organisasi. Dalam 
+lingkungan bimbingan belajar, sistem informasi 
+berperan dalam pengelolaan data siswa, tutor, jadwal, 
+kehadiran, dan pembayaran secara terpadu. Penerapan 
+sistem 
+informasi 
+berbasis 
+web 
+membantu 
+meningkatkan 
+efisiensi 
+administrasi 
+serta 
+memperlancar komunikasi secara digital. [12]. 
+ 
+2.3. Bimbingan Belajar 
+Bimbingan 
+belajar 
+merupakan 
+lembaga 
+pendidikan 
+nonformal 
+yang 
+menyediakan 
+pembelajaran tambahan di luar pendidikan formal 
+untuk membantu siswa memahami materi dan 
+meningkatkan prestasi akademik. Sistem informasi 
+bimbingan belajar dikembangkan untuk mendukung 
+pengelolaan administrasi, proses pembelajaran, serta 
+komunikasi dalam lembaga tersebut..[13]
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2347 
+2.4. Web 
+Aplikasi berbasis web merupakan aplikasi yang 
+diakses melalui peramban tanpa memerlukan instalasi 
+tambahan pada perangkat pengguna. Keunggulan 
+utama aplikasi web meliputi kemudahan akses, 
+pembaruan data secara real-time, serta fleksibilitas 
+penggunaan. Oleh karena itu, platform web dipilih 
+dalam pengembangan sistem informasi manajemen 
+bimbingan belajar agar siswa, tutor, dan admin dapat 
+berinteraksi melalui satu sistem yang terintegrasi 
+kapan saja dan di mana saja [14]. 
+ 
+2.5. Notifikasi Otomatis 
+Notifikasi 
+otomatis 
+adalah 
+fitur 
+yang 
+mengirimkan pesan atau pemberitahuan secara real-
+time kepada pengguna terkait aktivitas tertentu, seperti 
+jadwal atau informasi penting lainnya. Pada sistem ini, 
+fitur notifikasi digunakan untuk menyampaikan 
+informasi secara cepat kepada siswa, tutor, dan 
+pengelola [15]. 
+ 
+2.6. PHP 
+PHP 
+(Hypertext 
+Preprocessor) merupakan 
+bahasa pemrograman sisi server yang digunakan untuk 
+mengembangkan aplikasi web yang bersifat dinamis 
+dan interaktif. PHP mampu berintegrasi dengan basis 
+data 
+seperti 
+MySQL 
+sehingga 
+memungkinkan 
+pengolahan dan penyajian data secara real-time. 
+Dengan sintaks yang sederhana, fleksibel, serta 
+bersifat open source, PHP banyak digunakan dalam 
+pengembangan sistem informasi berbasis web. Pada 
+penelitian ini, PHP dimanfaatkan sebagai bahasa 
+utama karena kemampuannya dalam mengelola data 
+secara efisien, aman, dan mudah diintegrasikan dengan 
+framework seperti CodeIgniter [16]. 
+ 
+2.7. MySQL 
+MySQL merupakan sistem manajemen basis data 
+relasional (Relational Database Management System / 
+RDBMS) yang bersifat open source dan banyak 
+digunakan pada aplikasi berbasis web. MySQL 
+memanfaatkan bahasa SQL untuk mengelola data, 
+seperti menambah, mengubah, menghapus, dan 
+menampilkan informasi. Sistem ini dikenal memiliki 
+kinerja yang stabil, cepat, serta mudah diintegrasikan 
+dengan berbagai bahasa pemrograman, termasuk PHP 
+dan Python, sehingga mendukung pengelolaan data 
+yang efisien dan konsisten [17]. 
+ 
+3. 
+METODE PENELITIAN 
+Metodologi penelitian merupakan serangkaian 
+prosedur 
+sistematis 
+yang 
+diterapkan 
+untuk 
+memperoleh, mengolah, serta menafsirkan data guna 
+mencapai tujuan penelitian secara tepat dan dapat 
+dipertanggungjawabkan. Penelitian ini menerapkan 
+pendekatan deskriptif kualitatif yang dipadukan 
+dengan 
+rekayasa 
+perangkat 
+lunak, 
+karena 
+menitikberatkan pada analisis kebutuhan pengguna 
+serta proses pengembangan sistem informasi berbasis 
+web [18]. 
+3.1. Metode Pengembangan Sistem 
+Metode pengembangan sistem yang diterapkan 
+dalam penelitian ini adalah model Waterfall, yaitu 
+metode 
+pengembangan 
+perangkat 
+lunak 
+yang 
+dilaksanakan secara sistematis dan berurutan mulai 
+dari tahap analisis, perancangan, implementasi, 
+pengujian, hingga pemeliharaan dengan pendekatan 
+linear. [19] 
+ 
+ 
+Gambar 1. Metode Waterfall 
+ 
+3.2. Analisa Kebutuhan 
+Tahapan ini dimulai dengan analisis kebutuhan 
+Sistem Informasi di Bimbel Ilman Nafi’ yang 
+mencakup pengelolaan data siswa dan tutor, 
+penjadwalan pembelajaran, pencatatan kehadiran, 
+pengelolaan 
+pembayaran, 
+serta 
+kebutuhan 
+penyampaian informasi melalui notifikasi otomatis. 
+Pengumpulan data dilakukan melalui observasi 
+langsung, wawancara dengan pihak pengelola, dan 
+studi literatur yang relevan. Hasil dari tahapan ini 
+berupa 
+dokumen 
+kebutuhan 
+sistem 
+(User 
+Requirements Document) yang memuat spesifikasi 
+fitur dan fungsi yang harus disediakan dalam sistem 
+informasi yang akan dikembangkan [20]. 
+ 
+3.3. Desain Sistem 
+Pada tahap ini dilakukan perancangan sistem 
+berdasarkan hasil analisis kebutuhan yang telah 
+ditentukan. Proses perancangan meliputi pemodelan 
+sistem menggunakan UML, yaitu Use Case Diagram 
+untuk menggambarkan interaksi pengguna, Class 
+Diagram untuk merepresentasikan struktur basis data, 
+serta Sequence Diagram untuk menjelaskan alur 
+proses sistem. Selain itu, perancangan antarmuka 
+pengguna 
+dilakukan 
+dengan 
+memperhatikan 
+kemudahan penggunaan dan responsivitas agar sistem 
+dapat diakses secara optimal melalui web [21]. 
+ 
+3.4. Penulisan Kode Program 
+Tahap ini merupakan tahap implementasi, yaitu 
+proses menerapkan rancangan sistem ke dalam bentuk 
+aplikasi. 
+Pengembangan 
+backend 
+dilakukan 
+menggunakan framework Laravel berbasis PHP, 
+sedangkan pengembangan frontend memanfaatkan 
+HTML, CSS, JavaScript, serta framework Tailwind 
+CSS. Sistem menggunakan MySQL sebagai basis data 
+untuk menyimpan data administrasi dan informasi 
+notifikasi. Proses pengembangan dilakukan secara
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2348 
+bertahap, dimulai dari pembuatan fitur autentikasi 
+hingga integrasi notifikasi otomatis melalui WhatsApp 
+[22]. 
+ 
+3.5. Pengujian Program 
+Setelah tahap implementasi selesai, dilakukan 
+pengujian sistem untuk memastikan seluruh fitur 
+berjalan sesuai dengan kebutuhan yang telah 
+ditetapkan. Pengujian dilakukan menggunakan metode 
+Black Box Testing untuk memeriksa fungsi antarmuka 
+dan fitur sistem, serta Alpha Testing dengan 
+melibatkan admin atau tutor sebagai pengguna awal 
+guna mengevaluasi fungsionalitas, tampilan, dan 
+kinerja sistem secara menyeluruh [23]. 
+ 
+3.6. Pemeliharaan 
+Setelah sistem dinyatakan layak digunakan, 
+dilakukan 
+tahap 
+pemeliharaan 
+untuk 
+menjaga 
+kestabilan dan kinerja sistem. Kegiatan pada tahap ini 
+meliputi perbaikan kesalahan teknis, peningkatan 
+performa, serta penyesuaian dan pengembangan fitur 
+tambahan sesuai kebutuhan pengguna, sehingga 
+sistem dapat terus mendukung proses administrasi 
+bimbingan belajar secara berkelanjutan.  
+ 
+4. 
+HASIL DAN PEMBAHASAN 
+4.1. Perancangan Sistem  
+ 
+ 
+Gambar 2. Use Case Diagram 
+ 
+Use 
+Case 
+Diagram 
+digunakan 
+untuk 
+menjelaskan hubungan interaksi antara pengguna dan 
+Sistem Informasi Manajemen Bimbingan Belajar 
+Ilman Nafi’, sekaligus menggambarkan ruang lingkup 
+serta fungsi utama yang dapat diakses oleh aktor 
+Admin, Tutor, dan Siswa/Wali sesuai dengan 
+perannya. [24]. 
+Admin berperan sebagai pengelola sistem dengan 
+hak akses penuh, mencakup pengelolaan data siswa 
+dan tutor, pengaturan jadwal, pengelolaan absensi, 
+verifikasi pembayaran, serta pengiriman notifikasi. 
+Tutor menjalankan fungsi pembelajaran dengan 
+mengakses jadwal mengajar, mencatat kehadiran 
+siswa, dan menerima informasi dari sistem. Sementara 
+itu, siswa atau wali siswa dapat melihat informasi 
+pembelajaran, mengunggah bukti pembayaran, serta 
+menerima notifikasi terkait jadwal dan administrasi. 
+ 
+ 
+Gambar 3. Activity Diagram 
+ 
+Activity Diagram Sistem Informasi Manajemen 
+Bimbel Ilman Nafi’ menunjukkan rangkaian aktivitas 
+pengguna dalam sistem yang diawali dengan proses 
+masuk (login) menggunakan username dan password. 
+Data login tersebut akan diverifikasi oleh sistem, di 
+mana pengguna yang tidak valid akan menerima pesan 
+kesalahan, 
+sedangkan 
+pengguna 
+yang 
+berhasil 
+diverifikasi akan diarahkan ke halaman dashboard. 
+Pada halaman ini, sistem menampilkan fitur yang 
+berbeda sesuai dengan peran pengguna, yaitu Admin, 
+Tutor, dan Siswa/Wali. Tutor memiliki akses untuk 
+melihat jadwal mengajar, mengisi absensi, serta 
+mencatat jurnal pembelajaran, sementara Siswa/Wali 
+dapat mengakses informasi jadwal dan kehadiran, 
+mengunggah bukti pembayaran, serta menerima 
+notifikasi dari sistem. Di sisi lain, Admin berperan 
+dalam mengelola jadwal, absensi, proses pembayaran, 
+pengiriman notifikasi, serta pengelolaan data siswa 
+dan tutor. Seluruh aktivitas yang dilakukan oleh 
+masing-masing pengguna diakhiri dengan proses 
+logout yang menandai berakhirnya sesi penggunaan 
+sistem. 
+ 
+4.2. Hasil Implementasi Sistem 
+Sistem Informasi Manajemen Bimbingan Belajar 
+berbasis web berhasil dikembangkan menggunakan 
+PHP, Bootstrap, dan MySQL untuk mendukung 
+administrasi dan komunikasi di Bimbel Ilman Nafi’.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2349 
+Sistem menyediakan dashboard berbasis peran bagi 
+admin, tutor, dan siswa, serta dilengkapi fitur 
+notifikasi otomatis real-time untuk penyampaian 
+informasi akademik dan administrasi. Struktur basis 
+data dirancang sesuai ERD dengan relasi foreign key 
+guna menjaga konsistensi dan kinerja sistem. 
+ 
+ 
+Gambar 4. Halaman Utama Website 
+ 
+ 
+Gambar 5. Halaman Login 
+ 
+Sistem diawali dengan tampilan landing page 
+yang berfungsi sebagai media informasi mengenai 
+Bimbel Ilman Nafi’, meliputi profil lembaga, program 
+pembelajaran, serta informasi pendaftaran siswa. 
+Halaman ini dirancang untuk memudahkan pengguna 
+dalam memperoleh informasi dan mengakses layanan 
+yang tersedia. 
+Pengguna terdaftar dapat melanjutkan ke 
+halaman login dengan memasukkan username dan 
+password sebagai proses autentikasi. Setelah berhasil 
+masuk, pengguna akan diarahkan ke dashboard sesuai 
+dengan hak akses masing-masing, sehingga sistem 
+dapat digunakan secara aman dan terstruktur dalam 
+mendukung aktivitas pembelajaran. 
+ 
+ 
+Gambar 6. Halaman Dashboard 
+ 
+Menu dashboard merupakan halaman utama 
+yang ditampilkan setelah pengguna berhasil login ke 
+dalam sistem. Dashboard menyajikan ringkasan 
+informasi utama dalam bentuk kartu statistik, seperti 
+jumlah siswa, guru aktif, pemasukan, dan tagihan 
+pending, serta menampilkan waktu dan tanggal secara 
+real-time. Tampilan dashboard bersifat dinamis dan 
+disesuaikan dengan hak akses pengguna untuk 
+mendukung proses monitoring dan pengambilan 
+keputusan. 
+ 
+ 
+ 
+ 
+Gambar 7. Form Pendaftaran 
+ 
+ 
+Gambar 8. Jadwal Otomatis 
+ 
+ 
+Gambar 9. Pembayaran 
+ 
+Sistem Informasi Manajemen Bimbingan Belajar 
+Ilman Nafi’ menyediakan fitur pendaftaran siswa baru 
+berbasis web yang memungkinkan wali murid mengisi 
+biodata siswa, memilih program belajar, serta 
+melengkapi data sekolah dan orang tua secara mandiri. 
+Sistem juga dilengkapi dengan fitur broadcast jadwal 
+otomatis 
+yang 
+mengirimkan 
+informasi 
+jadwal 
+pembelajaran harian kepada wali murid melalui 
+WhatsApp, baik secara otomatis maupun manual. 
+Selain itu, tersedia modul verifikasi pembayaran SPP 
+yang memudahkan admin dalam memantau status 
+tagihan, 
+mengelola 
+bukti 
+pembayaran, 
+serta 
+memastikan proses keuangan berjalan secara tertib dan 
+transparan.
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2350 
+4.3. Hasil Pengujian Sistem 
+Pengujian 
+sistem 
+dilakukan 
+menggunakan 
+metode Black Box Testing yang berfokus pada 
+pengujian fungsionalitas sistem tanpa memperhatikan 
+struktur kode internal. Pengujian mencakup seluruh 
+fitur utama pada setiap peran pengguna, yaitu admin, 
+tutor, dan siswa, dengan berbagai skenario untuk 
+memastikan keluaran sistem sesuai dengan spesifikasi 
+kebutuhan yang telah ditetapkan. 
+Hasil pengujian menunjukkan bahwa seluruh 
+fungsi pada sisi admin, termasuk pengelolaan data, 
+penjadwalan, absensi, pembayaran, dan notifikasi 
+otomatis, berjalan dengan baik. Pada sisi tutor dan 
+siswa, fitur akses jadwal, absensi, status pembayaran, 
+serta penerimaan notifikasi juga berfungsi sesuai 
+harapan. Berdasarkan hasil tersebut, sistem dinyatakan 
+telah memenuhi kebutuhan fungsional dan layak 
+digunakan untuk meningkatkan efisiensi administrasi 
+serta efektivitas komunikasi di Bimbel Ilman Nafi’. 
+ 
+Tabel 1. Hasil Pengujian Black Box Testing 
+No 
+Fitur yang 
+diuji 
+Skenario Pengujian 
+Hasil yang diharapkan 
+Hasil Aktual 
+Status 
+1 
+Login Admin 
+Admin memasukkan email 
+dan password yang valid 
+Sistem berhasil 
+memverifikasi akun dan 
+menampilkan halaman 
+dashboard admin 
+Sistem menampilkan 
+dashboard admin sesuai 
+hak akses 
+✓ 
+2 
+Login Admin 
+Admin memasukkan 
+password yang tidak valid 
+Sistem menolak akses dan 
+menampilkan pesan 
+kesalahan 
+Sistem menolak akses 
+dan menampilkan pesan 
+kesalahan 
+✓ 
+3 
+Pendaftaran 
+Siswa Online 
+Wali murid mengisi dan 
+mengirimkan form 
+pendaftaran melalui 
+website 
+Data pendaftaran tersimpan 
+dan status siswa menjadi 
+“Baru” 
+Data siswa tersimpan di 
+basis data dengan status 
+“Baru” 
+✓ 
+4 
+Validasi Usia 
+Pracalistung 
+Admin menginput data 
+siswa dengan usia di luar 
+batas ketentuan 
+Sistem menolak 
+penyimpanan data dan 
+menampilkan peringatan 
+Sistem menolak 
+penyimpanan dan 
+menampilkan alert 
+validasi usia 
+✓ 
+5 
+Observasi 
+Siswa 
+Admin mengisi dan 
+menyimpan form observasi 
+awal siswa 
+Data observasi tersimpan di 
+sistem 
+Data observasi berhasil 
+disimpan dan 
+ditampilkan 
+✓ 
+6 
+Penjadwalan 
+Belajar 
+Admin menginput jadwal 
+di luar jam operasional 
+program 
+Sistem menolak 
+penyimpanan jadwal 
+ 
+Sistem menolak jadwal 
+yang tidak sesuai aturan 
+✓ 
+7 
+Kuota Kelas 
+Admin menambahkan 
+siswa melebihi kapasitas 
+kelas 
+Sistem menolak penambahan 
+siswa 
+Sistem menampilkan 
+notifikasi batas kuota 
+kelas 
+✓ 
+8 
+Jurnal 
+Mengajar Guru 
+Guru mengisi jurnal 
+mengajar dan absensi siswa 
+Data jurnal dan absensi 
+tersimpan 
+Data jurnal dan absensi 
+tersimpan dengan benar 
+✓ 
+9 
+Absensi 
+Program Skill 
+Guru mengisi absensi 
+dengan status izin/sakit 
+Kuota pertemuan siswa tidak 
+berkurang 
+Kuota pertemuan tetap 
+sesuai ketentuan 
+✓ 
+10 
+Absensi 
+Program Mapel 
+Guru mengisi absensi 
+dengan status alpha 
+Kuota pertemuan siswa 
+berkurang 
+Sistem mengurangi kuota 
+pertemuan 
+✓ 
+11 
+Tagihan 
+Otomatis 
+Sistem menjalankan proses 
+generate tagihan 
+Tagihan dibuat otomatis 
+sesuai siklus 
+Tagihan muncul sesuai 
+jadwal 
+✓ 
+12 
+Upload Bukti 
+Pembayaran 
+Siswa mengunggah bukti 
+pembayaran 
+Status pembayaran berubah 
+menjadi “Pending” 
+Status pembayaran 
+berhasil berubah menjadi 
+“Pending” 
+✓ 
+13 
+Verifikasi 
+Pembayaran 
+Admin melakukan 
+verifikasi pembayaran 
+Status pembayaran berubah 
+menjadi “Lunas” 
+Status pembayaran 
+berhasil diperbarui 
+menjadi “Lunas” 
+✓ 
+14 
+Notifikasi 
+WhatsApp 
+Sistem mengirim notifikasi 
+pembayaran 
+Sistem menghapus sesi dan 
+mengarahkan ke halaman 
+login 
+Berhasil logout dan 
+kembali ke halaman 
+login 
+✓ 
+15 
+CMS Website 
+Admin mengubah konten 
+beranda website 
+Perubahan konten 
+ditampilkan di website 
+Konten website berhasil 
+diperbarui 
+✓ 
+ 
+Berdasarkan hasil pengujian menggunakan 
+metode Black Box Testing, seluruh fungsi utama pada 
+Sistem Informasi Manajemen Bimbingan Belajar 
+Ilman Nafi’ terbukti berjalan sesuai dengan spesifikasi 
+dan kebutuhan pengguna. Pengujian pada modul 
+autentikasi, pengelolaan data akademik, penjadwalan, 
+jurnal mengajar, keuangan, serta notifikasi otomatis 
+menunjukkan hasil yang sesuai dengan keluaran yang 
+diharapkan. 
+Selain itu, sistem mampu melakukan validasi 
+input dengan baik, menjaga konsistensi data, serta 
+menerapkan hak akses pengguna sesuai peran masing-
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2351 
+masing. Oleh karena itu, sistem dinyatakan telah 
+memenuhi aspek fungsional dan siap digunakan untuk 
+mendukung peningkatan efektivitas pengelolaan 
+administrasi, akademik, dan keuangan di Bimbel 
+Ilman Nafi’. 
+ 
+5. 
+KESIMPULAN DAN SARAN 
+Penelitian 
+ini 
+berhasil 
+merancang 
+dan 
+mengimplementasikan Sistem Informasi Manajemen 
+Bimbingan Belajar berbasis web dengan fitur 
+notifikasi 
+otomatis 
+di 
+Bimbel 
+Ilman 
+Nafi’ 
+menggunakan PHP, Tailwind CSS, dan MySQL. 
+Sistem mampu mengintegrasikan pengelolaan data 
+siswa, tutor, jadwal, absensi, dan pembayaran secara 
+terpusat serta menyampaikan informasi secara real-
+time. Hasil pengujian Black Box Testing menunjukkan 
+bahwa seluruh fungsi sistem berjalan sesuai kebutuhan 
+dan mampu meningkatkan efisiensi administrasi serta 
+kualitas komunikasi. Pengembangan selanjutnya 
+disarankan mencakup integrasi notifikasi instan, 
+pengembangan aplikasi mobile, penambahan fitur 
+pelaporan dan analisis data, serta evaluasi kuantitatif 
+terhadap 
+kepuasan 
+pengguna 
+dan 
+efektivitas 
+administrasi. 
+ 
+DAFTAR PUSTAKA  
+[1] B. Web and A. Taruna, “PERANCANGAN 
+APLIKASI TRACER STUDY ( SIRESTU ),” 
+vol. 03, no. 02, 2025. 
+[2] V. N. April, R. Putri, and M. Nababan, “Adaptive 
+Web-Based Information System for MBKM 
+Program Using Scrum,” vol. 8, no. 1, pp. 91–100, 
+2025. 
+[3] M. A. Syahputra and R. A. Putri, “Sistem 
+Informasi Monitoring Pembelajaran dengan Fitur 
+Notifikasi Email Berbasis Web,” Decod. J. 
+Pendidik. Teknol. Inf., vol. 5, no. 2, pp. 505–515, 
+2025. 
+[4] I. B. Alif, E. Supriyati, and T. Listyorini, “Sistem 
+Informasi Penjualan Olahan Kedelai Kabupaten 
+Kudus Berbasis Website,” 2023. 
+[5] T. Misriati and M. H. M, “Sistem Informasi 
+Pembelajaran Online Pada Bimbingan Belajar 
+Cyber Solution,” vol. 2, no. 1, pp. 1–5, 2021. 
+[6] J. Islamic and E. Manajemen, “p-ISSN: 2541-
+383X e-ISSN: 2541-7088,” vol. 9, no. 1, pp. 13–
+24, 2024. 
+[7] M. Dany, N. Hisyam, T. Listyorini, and E. 
+Supriyati, “Purwarupa Sistem Pemesanan Menu 
+Makanan Dan Minuman Menggunakan Qr-Code 
+Berbasis Web,” vol. 1, no. 1, pp. 47–59, 2022, 
+doi: 10.55123/jumintal.v1i1.321. 
+[8] Mokodompis, 
+Ade, 
+Yusupa, 
+Steven 
+R, 
+Sentinuwo, and Salsadhilla, “Rancang Bangun 
+Web 
+Pengaduan 
+Pelanggan 
+dengan 
+Push 
+Notification di PT Bolmut Multimedia,” J. Tek. 
+Inform., vol. 20, no. 1, pp. 1–10, 2025. 
+[9] H. L. Purwanto, “Penerapan Push Notification 
+Pada Sistem Monitoring Belajar Berbasis Web 
+Menggunakan Firebase Cloud Messaging,” JSR  
+Jar. Sist. Inf. Robot., vol. 7, no. 1, pp. 13–20, 
+2023, doi: 10.58486/jsr.v7i1.203. 
+[10] A. Mulyani and S. Sulastri, “Sistem Informasi 
+Lembaga Bimbingan Belajar Fawwaaz Kiddy 
+Club Berbasis Web,” J. Algoritm., vol. 18, no. 2, 
+pp. 
+515–522, 
+2022, 
+doi: 
+10.33364/algoritma/v.18-2.830. 
+[11] D. Purwanto, “Perancangan Sistem Informasi 
+Manajemen Berbasis Klinik,” Peranc. Sist. Inf. 
+Manaj. Berbas. Web Pada Bimbing. Belajar 
+Creat. Solut., vol. 2, no. 2, pp. 180–187, 2021. 
+[12] B. V. Oktavia, W. Hayuhardhika, N. Putra, and 
+D. Pramono, “Perancangan Sistem Informasi 
+Manajemen 
+Bimbingan 
+Belajar 
+dengan 
+menggunakan Google Calendar API Studi 
+Kasus : Lembaga Bimbingan Belajar Omega,” 
+vol. 5, no. 2, pp. 582–588, 2021. 
+[13] A. H. Nurhayat, T. Listyorini, and E. Supriyati, 
+“Digitalisasi Penjualan Cacing Tanah Puri 
+Kabupaten Pati Berbasis Web,” vol. 1, no. 2, pp. 
+100–109, 2022. 
+[14] M. F. Amirudin, T. Listyorini, and E. Supriyati, 
+“Penerapan E-Commerce Pada Penjualan Gula 
+Tumbu Berbasis Web,” vol. 1, no. 2, pp. 76–85, 
+2022. 
+[15] K. Umam et al., “Rancang Bangun Sistem 
+Informasi Komunitas Motor Rx King di Kudus 
+Berbasis Web,” vol. 2, no. 2, pp. 142–153, 2023, 
+doi: 10.55123/jumintal.v2i2.1687. 
+[16] A. Rahayu, P. Sokibi, and M. U. Fakhrudin, 
+“TAHUNAN BERBASIS WEB DENGAN 
+LEAN DESIGN THINKING ( STUDI KASUS : 
+UNIVERSITAS CATUR INSAN CENDEKIA 
+),” vol. 9, no. 6, pp. 9796–9803, 2025. 
+[17] C. Tonyjanto et al., “UNTUK KOLABORASI 
+KERJA 
+CONTENT 
+CREATOR 
+MENGGUNAKAN METODE WATERFALL 
+BERBASIS WEB,” vol. 9, no. 6, pp. 9723–9730, 
+2025. 
+[18] H. Aryasuta et al., “PENJADWALAN TES 
+TOEFL BERBASIS WEBSITE DI,” vol. 9, no. 
+6, pp. 9854–9861, 2025. 
+[19] R. 
+Syaputra 
+and 
+S. 
+Susanti, 
+“SISTEM 
+INFORMASI 
+MANAJEMEN 
+ASET 
+BERBASIS WEB UNTUK OPTIMALISASI 
+PENCATATAN ASET SMK NEGERI 8 
+BANDUNG,” vol. 9, no. 6, pp. 9254–9261, 2025. 
+[20] M. Fahreza, A. Umarella, W. Naisyarah, and R. 
+A. 
+Zainur, 
+“PERANCANGAN 
+SISTEM 
+INFORMASI 
+BUKU 
+TAMU 
+DIGITAL 
+BERBASIS WEBSITE ( STUDI KASUS : 
+SEKRETARIAT 
+DAERAH 
+BAGIAN 
+ORGANISASI DAN TATA KELOLA KOTA 
+KENDARI ),” vol. 9, no. 6, pp. 9247–9253, 
+2025. 
+[21] S. Informasi, P. Siswa, D. Man, K. Berbasis, and 
+W. Dengan, “Jurnal Computer Science and 
+Information Technology ( CoSciTech ) Website 
+Based Student Violation Information System in 
+Man 
+Karangasem 
+with 
+WhatsApp
+
+==================================================
+[HALAMAN 8]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2352 
+Notifications,” vol. 5, no. 2, pp. 260–271, 2024. 
+[22] I. P. Sidik and R. Setiawan, “Sistem Informasi 
+Monitoring Belajar dari Rumah pada Sekolah 
+Menengah Berbasis Web dengan Metodologi 
+Waterfall,” pp. 603–613, 2021. 
+[23] Z. S. Yahya, N. Susanti, and P. Setiaji, “Sistem 
+Informasi Manajemen Pendaftaran Dan Penilaian 
+Siswa SDIT Umar Bin Khathab Kudus Berbasis 
+Web Responsive Dengan Notifikasi Whatsapp,” 
+vol. 4, no. 1, pp. 1–11, 2023. 
+[24] C. Satifa, E. Purwanto, and H. Permatasari, 
+“SISTEM 
+INFORMASI 
+MONITORING 
+PEMBELAJARAN BERBASIS WEB PADA 
+RUMAH 
+BELAJAR 
+AL 
+MAARIF 
+SUKOHARJO 
+WEB-BASED 
+LEARNING 
+MONITORING INFORMATION,” vol. 18, no. 
+1, pp. 13–19, 2025.

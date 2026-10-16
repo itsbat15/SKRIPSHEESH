@@ -1,0 +1,722 @@
+[
+  {
+    "id": 42,
+    "count": 39,
+    "description": "",
+    "link": "https://bimbelartha.id/aktual/",
+    "name": "AKTUAL",
+    "slug": "aktual",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/42",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=42"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "count": 46,
+    "description": "",
+    "link": "https://bimbelartha.id/artikel/",
+    "name": "Artikel",
+    "slug": "artikel",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/7",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=7"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "count": 24,
+    "description": "",
+    "link": "https://bimbelartha.id/balikpapan/",
+    "name": "balikpapan",
+    "slug": "balikpapan",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/75",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=75"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "count": 39,
+    "description": "",
+    "link": "https://bimbelartha.id/bermanfaat/",
+    "name": "BERMANFAAT",
+    "slug": "bermanfaat",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/43",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=43"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "count": 24,
+    "description": "",
+    "link": "https://bimbelartha.id/bimbingan-belajar/",
+    "name": "bimbingan belajar",
+    "slug": "bimbingan-belajar",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/76",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=76"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "count": 28,
+    "description": "",
+    "link": "https://bimbelartha.id/gaji-guru/",
+    "name": "gaji guru",
+    "slug": "gaji-guru",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/73",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=73"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "count": 23,
+    "description": "",
+    "link": "https://bimbelartha.id/indonesia/",
+    "name": "indonesia",
+    "slug": "indonesia",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/74",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=74"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "count": 34,
+    "description": "",
+    "link": "https://bimbelartha.id/inspiratif/",
+    "name": "INSPIRATIF",
+    "slug": "inspiratif",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/44",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=44"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "count": 21,
+    "description": "",
+    "link": "https://bimbelartha.id/jokowi/",
+    "name": "jokowi",
+    "slug": "jokowi",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/77",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=77"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "count": 25,
+    "description": "",
+    "link": "https://bimbelartha.id/kurikulum/",
+    "name": "kurikulum",
+    "slug": "kurikulum",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/71",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=71"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "count": 25,
+    "description": "",
+    "link": "https://bimbelartha.id/matematika/",
+    "name": "matematika",
+    "slug": "matematika",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/72",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=72"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "count": 35,
+    "description": "",
+    "link": "https://bimbelartha.id/menarik/",
+    "name": "MENARIK",
+    "slug": "menarik",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/45",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=45"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "count": 31,
+    "description": "",
+    "link": "https://bimbelartha.id/menghibur/",
+    "name": "MENGHIBUR",
+    "slug": "menghibur",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/46",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=46"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "count": 25,
+    "description": "",
+    "link": "https://bimbelartha.id/pendidikan/",
+    "name": "pendidikan",
+    "slug": "pendidikan",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/70",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=70"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 33,
+    "description": "",
+    "link": "https://bimbelartha.id/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "count": 30,
+    "description": "",
+    "link": "https://bimbelartha.id/wikipedia/",
+    "name": "Wikipedia",
+    "slug": "wikipedia",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories/53",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/posts?categories=53"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

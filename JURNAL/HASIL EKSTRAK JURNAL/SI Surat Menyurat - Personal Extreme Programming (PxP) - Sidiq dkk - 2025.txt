@@ -1,0 +1,2063 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+Jurnal Jaring SainTek  
+Vol.7, No.1, April 2025, pp. 35 - 46 
+e-ISSN : 2656-9485 
+ 
+ 
+ 
+Available Online at : http://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek  
+35 
+ 
+Implementasi Metode Personal Extreme Programming Pada Pengembangan 
+Sistem Informasi Surat Menyurat 
+(Studi Kasus: Dinas Pendidikan Pemuda Dan Olahraga Kabupaten Tambrauw) 
+ 
+Alfin Lutfi Sidiq1*, Gita Indah Marthasari2, Aminudin3 
+1,2,3Teknik Informatika, Fakultas Teknik, Universitas Muhammadiyah Malang, Malang, Indonesia 
+e-mail: *1alfinlutfizaza@gmail.com, 2gita@umm.ac.id, 3aminudin2008@umm.ac.id 
+ 
+ 
+Abstract 
+The Department of Education, Youth and 
+Sports of Tambrauw Regency has the task of 
+assisting 
+the 
+Regent 
+in 
+carrying 
+out 
+government affairs which are the authority of 
+the region and assistance tasks in the field of 
+education as well as other duties given by the 
+Regent. Some of the problems that occur in the 
+implementation of business processes in 
+making letters because it is still done manually 
+so that the current letter management still has 
+many 
+obstacles. 
+Therefore, 
+information 
+technology support is needed that can manage 
+correspondence information systems that can 
+be built precisely and quickly. The software 
+development method used is Personal Extreme 
+Programming (PXP), which is a method with a 
+single developer. The Personal Extreme 
+Programming (PXP) method has stages of 
+requirement 
+gathering, 
+planning, 
+design, 
+implementation, 
+system 
+testing, 
+and 
+retrospective. The results of this study were 13 
+user stories, then there were additional user 
+stories in the middle of system development so 
+that there were 15 user stories. Testing in this 
+study uses unit testing at the implementation 
+stage, and Black Box Testing, which will be 
+carried out by running the unit or module and 
+observing the results in accordance with the 
+desired function at each iteration. The results 
+of the iterations that have been done have 
+satisfactory results with an average faster than 
+the estimated time. The estimated system 
+development time is 40 days. However, in 
+practice, the overall system development time 
+increased by 10 days to 50 days due to the 
+addition of new user stories and new 
+iterations. However, the implementation time 
+of 37 days was 13 days faster than the 
+predetermined estimation time 
+Keywords : Information System, Personal 
+Extreme Programming, Black Box Testing, 
+Correspondence. 
+Abstrak 
+Dinas Pendidikan Pemuda Dan Olahraga 
+Kabupaten 
+Tambrauw 
+mempunyai 
+tugas 
+membantu 
+Bupati 
+melaksanakan 
+urusan 
+pemerintahan 
+yang 
+menjadi 
+kewenangan 
+daerah dan tugas pembantuan di bidang 
+pendidikan serta tugas lain yang diberikan 
+Bupati. Beberapa masalah yang terjadi dalam 
+pelaksanaan proses bisnis pada pembuatan 
+surat karena masih dilakukan secara manual 
+sehingga pengelolaan surat yang berjalan saat 
+ini masih banyak mengalami kendala. Maka 
+dari itu, dibutuhkan dukungan teknologi 
+informasi 
+yang 
+dapat 
+mengelola 
+sistem 
+informasi surat menyurat yang dapat dibagun 
+secara tepat dan cepat. Metode pengembangan 
+perangkat lunak yang digunakan adalah 
+Personal Extreme Programming (PXP), yang 
+merupakan 
+metode 
+dengan 
+pengembang 
+tunggal. 
+Metode 
+Personal 
+Extreme 
+Programming 
+(PXP) 
+memiliki 
+tahapan 
+penggalian kebutuhan, perencanaan, desain, 
+implementasi, 
+system 
+testing, 
+dan 
+retrospective. Hasil dari penelitian ini adalah 
+terdapat 13 user story, kemudian terjadi 
+penambahan 
+user 
+story 
+di 
+tengah 
+pengembangan sistem sehingga menjadi 15 
+user story. Pengujian dalam penelitian ini 
+menggunakan 
+unit 
+testing 
+pada 
+tahap 
+implementasi, dan Black Box Testing, dimana 
+akan dilakukan dengan menjalankan unit atau 
+modul dan diamati hasil nya telah sesuai 
+dengan fungsi yang diinginkan pada tiap 
+iterasi. Hasil iterasi yang sudah dikerjakan 
+memiliki hasil yang cukup memuaskan dengan 
+rata – rata lebih cepat dari waktu estimasi. 
+Estimasi waktu pengembangan sistem selama
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+36  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+40 hari. Akan tetapi dalam praktiknya, 
+keseluruhan waktu pengembangan sistem 
+bertambah 10 hari menjadi 50 hari dikarenakan 
+penambahan user stories baru dan iterasi baru. 
+Namun waktu implementasi yang dilakukan 
+selama 37 hari lebih cepat 13 hari dari waktu 
+estimasi yang telah ditentukan. 
+Kata Kunci: Sistem Informasi, Personal 
+Extreme Programming, Black Box Testing, 
+Surat Menyurat 
+PENDAHULUAN 
+Surat menyurat merupakan kegiatan 
+yang selalu ada di semua perusahaan maupun 
+organisasi. Surat menyurat ini terbagi berbagai 
+macam bentuk. Ada  surat masuk,  surat 
+masuk, Surat Keputusan, Surat Tugas dan lain 
+sebagainya. Semakin besar sebuah organisasi 
+maupun perusahaan, maka semakin panjang 
+pula proses alur persetujuan dan pengiriman 
+Surat menyurat tersebut (Yanti et al., 2022). 
+Suatu sistem dapat dipahami sebagai suatu 
+susunan kegiatan yang teratur yang bergantung 
+pada prosedur-prosedur yang saling terkait 
+untuk 
+melaksanakan 
+dan 
+memfasilitasi 
+kegiatan utama suatu organisasi atau bisnis 
+(Sastra et al., 2019). Sistem informasi adalah 
+seperangkat subsistem yang terintegrasi dan 
+bekerja 
+sama 
+yang 
+dirancang 
+untuk 
+menggunakan 
+komputer 
+pemrosesan 
+data 
+untuk memecahkan masalah tertentu dan 
+memberikan nilai  dan manfaat bagi pengguna.  
+Dinas Pendidikan Pemuda Dan Olahraga 
+Kabupaten 
+Tambrauw 
+mempunyai 
+tugas 
+membantu 
+Bupati 
+melaksanakan 
+urusan 
+pemerintahan 
+yang 
+menjadi 
+kewenangan 
+daerah dan tugas pembantuan di bidang 
+pendidikan serta tugas lain yang diberikan 
+Bupati sesuai dengan perundang-undangan 
+yang berlaku. Penerapan sistem informasi di 
+Dinas Pendidikan Pemuda Dan Olahraga 
+Kabupaten Tambrauw sendiri belum cukup 
+untuk mendukung proses kerja yang efektif 
+dan efisien karena teknologi komputer tidak 
+digunakan secara optimal untuk mendukung 
+proses kerja. Administrasi pada pembuatan 
+surat masih dilakukan secara manual sehingga 
+pengelolaan surat yang berjalan saat ini masih 
+banyak mengalami kendala. Dalam pembuatan 
+surat ini banyak menyangkut tentang data surat 
+yang harus dicatat atau diolah secara teratur 
+sehingga segala sesuatu yang menyangkut 
+tentang data surat tidak mudah ditemukan. 
+Kendala lain adalah dokumentasi dari surat 
+tersebut dalam bentuk file Microsoft Word ada 
+kemungkinan bertumpuk dengan file surat 
+milik orang lain apabila kurang teliti saat 
+merename nama file template. Selain itu 
+seringkali mengalami kesulitan dalam mencari 
+berkas data karena mencari data satu persatu 
+sehingga memerlukan waktu yang cukup lama 
+untuk menemukan surat tersebut, bahkan 
+sering kali surat tersebut tidak ditemukan 
+karena banyaknya surat yang ada bertahun-
+tahun lamanya. 
+Untuk 
+mengembangkan 
+sistem 
+informasi surat menyurat ada beberapa metode 
+pengembangan perangkat lunak yang bisa 
+digunakan salah satunya adalah metode 
+Waterfall. 
+Waterfall 
+merupakan 
+metode 
+pengembangan 
+perangkat 
+lunak 
+yang 
+menggunakan 
+pendekatan 
+sekuensial 
+dan 
+terurut mulai dari analisis, desain, pengkodean, 
+pengujian 
+hingga 
+tahapan 
+pendukung 
+(Nugroho, 2019). Metode Waterfall cocok 
+digunakan pada proyek dengan klien yang 
+memang sudah professional sehingga mampu 
+mendefinisikan kebutuhan sistemnya dengan 
+jelas dan tidak berubah ubah. Seperti pada 
+penelitian yang dilakukan Agus tentang 
+Rancang Bangun Sistem Informasi Manajemen 
+Surat Tugas Berbasis Web Menggunakan 
+Waterfall Model (Nugroho, 2019). Metode 
+pengembangan 
+kedua 
+adalah 
+metode 
+Prototyping. 
+Prototyping 
+adalah 
+metode 
+pengembangan 
+perangkat 
+lunak 
+yang 
+didasarkan pada prototype sistem yang sesuai 
+dengan kebutuhan klien yang dihasilkan dari 
+proses iteratif (Wicaksono et al., 2021). Untuk 
+itu pada prototyping peran klien sangat aktif 
+pada proses pengembangan. Merujuk pada 
+penelitian Wicaksono (Wicaksono et al., 
+2021), Metode pengembangan lainya adalah 
+metode extreme. Extreme Programming (XP) 
+adalah salah satu metodologi pengembangan 
+perangkat lunak yang sangat kolaboratif dan 
+adaptif. Tujuannya adalah untuk meningkatkan 
+kualitas perangkat lunak sambil menjaga 
+fleksibilitas 
+dan 
+responsivitas 
+terhadap 
+perubahan kebutuhan pelanggan. Merujuk 
+pada penelitian Lili Rusdiana yaitu Extreme 
+Programming untuk rancang bangun aplikasi 
+pengelolaan surat keterangan kependudukan 
+(Rusdiana, 2018).  
+Metode Personal Extreme Programming 
+digunakan pada studi kasus ini karena dapat 
+diterapkan sebagai solusi penengah sebagai 
+pengembangan 
+sistem 
+informasi 
+dengan
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+Implementasi Metode Personal Extreme Programming… 
+Copyright © 2025 Jurnal Jaring SainTek April 2025  
+37 
+ 
+pengembang tunggal dan tingkat kebutuhan 
+instansi terhadap sistem tersebut yang tinggi, 
+serta staf dari instansi tersebut yang masih 
+belum memiliki gambaran tentang sistem yang 
+ingin di bangun. Selain proses pengembangan 
+sistem yang tergolong cepat, karena sebelum 
+diimplementasikan setiap kebutuhan klien 
+dilakukan estimasi waktu dan prioritasnya 
+terlebih dahulu berdasarkan aspek risk dan 
+business value, sehingga akan mengoptimalkan 
+proses pengembangan agar bisa selesai tepat 
+waktu. metode Personal Extreme Programming 
+juga 
+mengedepankan 
+komunikasi 
+antara 
+pengembang dan klien sehingga fleksibel 
+terhadap perubahan kebutuhan dari sistem 
+tersebut (Marthasari et al., 2018). 
+Berdasarkan 
+masalah 
+tersebut, 
+dibutuhkan 
+sebuah 
+sistem 
+yang 
+dapat 
+mengelola sistem informasi surat menyurat 
+yang 
+ada 
+di 
+instansi 
+tersebut 
+dengan 
+menggunakan 
+metode 
+Personal 
+Extreme 
+Programming (PXP). Dipilih sebagai dasar 
+pengembangan 
+sistem, 
+Harapannya dapat 
+mengatasi masalah dalam pengelolaan dan 
+pembuatan surat di Dinas Pendidikan Pemuda 
+Dan Olahraga Kabupaten Tambrauw. 
+METODE PENELITIAN 
+Dalam metode pengembangan yang 
+digunakan 
+pada 
+penelitian 
+ini 
+adalah 
+PXP(Personal 
+Extreme 
+Programming). 
+Alasan penggunaan PXP sebagai metode 
+pengembangan 
+sistem 
+informasi 
+surat 
+menyurat karena lebih fleksibel dalam 
+perubahan, yang disebabkan stakeholder dan 
+penulis selaku pengembang tidak selalu 
+bertemu 
+dan 
+membicarakan 
+tentang 
+kebutuhan sistem yang diinginkan, selain itu 
+kebutuhan sistem informasi surat menyurat 
+yang ingin dibangun masih belum jelas. 
+Tahapan 
+penelitian 
+dapat-dilihat 
+pada 
+gambar 1. 
+ 
+Gambar 1 Skema Tahapan Penelitian 
+Studi literatur 
+Studi literatur merupakan tahap pertama 
+melakukan penelitian. Studi literatur dilakukan 
+untuk mendapatkan gambaran umum maupun 
+khusus 
+mengenai 
+objek 
+maupun 
+teori 
+pendukung dalam penelitian ini. Studi literatur 
+yang digunakan yakni buku pedoman, buku 
+online, jurnal online, dan skripsi terkait dengan 
+penelitian yang dibutuhkan. Tujuan dari 
+literatur adalah untuk memperkuat landasan 
+teori. Literatur yang pertama dicari oleh 
+peneliti adalah literatur metode pengembangan 
+Personal Extreme Programming (PXP) sebagai 
+acuan untuk membangun sistem informasi 
+surat (Ulfi et al., 2020). 
+Requirements  
+Dalam 
+tahapan 
+ini 
+dilakukan 
+pengumpulan 
+kebutuhan-kebutuhan 
+yang 
+diperlukan akan sistem yang dibangun di 
+Dinas Pendidikan Pemuda Dan Olahraga 
+Kabupaten 
+Tambrauw. 
+Pengumpulan 
+kebutuhan dilakukan dengan cara wawancara 
+bersama staf Dinas Pendidikan Pemuda Dan 
+Olahraga. Selama wawancara, klien diminta 
+untuk 
+menjelaskan 
+proses 
+bisnis 
+serta 
+permasalahan yang ada pada pemrosesan 
+administrasi 
+surat 
+menyurat 
+di 
+Dinas 
+Pendidikan Pemuda Dan Olahraga. klien 
+diarahkan untuk mendeskripsikan seluruh 
+kebutuhan-kebutuhan yang nantinya akan 
+diimplementasikan dan menjadi fitur-fitur pada 
+sistem 
+informasi 
+surat 
+menyurat 
+guna 
+membantu menyelesaikan permasalahan yang 
+ada pada Dinas Pendidikan Pemuda dan 
+Olahraga Kabupaten Tambrauw. Kebutuhan-
+kebutuhan tersebut ditulis dalam bentuk user 
+story (Eriana & Zein, 2021).
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+38  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+Planning  
+Pada 
+tahap 
+ini 
+pengembang 
+akan 
+melakukan serangkaian modul yang akan 
+dikerjakan per iterasi yang ada berdasarkan 
+user stories yang telah didapatkan pada tahap 
+sebelumnya (Kirsan et al., 2022). Setelah user 
+story didapatkan, Langkah selanjutnya adalah 
+menentukan perkiraan waktu yang akan 
+dilakukan untuk melakukan task. Perkiraan 
+waktu ini disebut dengan story point. Langkah 
+selanjutnya adalah memberikan prioritas pada 
+setiap user story yang akan dilakukan. 
+Penentuan prioritas ini menerapkan metode 
+prioritas ranking. Prioritas ranking dilakukan 
+dengan cara memberikan kebebasan kepada 
+klien untuk menentukan user story mana yang 
+memiliki tingkat kepentingan yang paling 
+tinggi. Hasil dari metode ini akan mengurutkan 
+user story dari yang tertinggi sampai dengan 
+yang terendah. User story yang memiliki nilai 
+tinggi akan diimplementasikan terlebih dahulu. 
+Iteration Initialization  
+Pada 
+tahap 
+iteration 
+initialization 
+merupakan awal pengerjaan pengembang dari 
+setiap 
+iterasi. 
+User 
+story 
+yang 
+akan 
+diimplementasikan selama iterasi berdasarkan 
+hasil planning sebelumnya. 
+Design  
+Tahap Design dilakukan dengan cara 
+membuat sebuah model mengenai sistem yang 
+akan dikembangkan selama iterasi. Desain 
+sistem 
+berdasarkan 
+hasil 
+dari 
+proses 
+requirements tanpa adanya desain tambahan 
+ketika adanya perubahan yang terjadi selama 
+pengembangan. Desain yang digunakan dalam 
+penelitian ini adalah Activity Diagram (Azdy 
+& Rini, 2018). 
+Implementation  
+Implementasi sistem informasi surat 
+menyurat ini dilakukan menggunakan bahasa 
+pemrograman PHP dengan framework laravel 
+dan database MySQL. Saat melakukan proses 
+implementasi ini pengembang juga melakukan 
+pengujian kecil yang bisa disebut unit testing,  
+code generation dan juga refactoring untuk 
+memperbaiki kode yang berantakan. Unit 
+testing yang dilakukan menggunakan library 
+bawaan laravel. Testing ini akan menentukan 
+apakah fungsi dari tes akan sesuai dengan yang 
+diharapkan atau tidak. Hasil dari pengujian ini 
+failed atau passed. Setelah testing digunakan 
+maka pembangunan sistem akan dilanjutkan 
+pada tahap penulisan keseluruhan code yang 
+bertujuan sebagai pembuatan fitur yang ada 
+pada tiap user story. Pada tahap ini akan 
+memperlihatkan hasil keseluruhan Code yang 
+telah dibuat serta fungsi-fungsi dan method 
+apa yang digunakan untuk membuat sistem 
+tersebut 
+berjalan 
+dengan 
+baik. 
+Setelah 
+menyelesaikan implementasi kode selesai, 
+maka akan dikerjakan pengoptimalan kode 
+apabila dibutuhkan. Pada tahap refactor akan 
+dilakukan 
+pengoptimalan 
+code 
+guna 
+mempersingkat code agar lebih mudah dibaca, 
+proses 
+optimasi 
+dilakukan 
+dengan 
+cara 
+membandingkan code sebelumnya dengan 
+code yang telah di refactor. Refaktorisasi kode 
+ini 
+juga 
+nantinya 
+akan 
+meminimalisir 
+kompleksitas program serta memudahkan 
+dalam hal pembacaan dan pemeliharaan code 
+kedepannya. 
+System Testing  
+Pada tahapan ini, dilakukan pengujian 
+fungsionalitas sistem dengan metode Black 
+Box Testing, dimana akan dilakukan dengan 
+menjalankan unit atau modul dan diamati hasil 
+dari unit. Black box testing merupakan salah 
+satu metode dalam menguji perangkat lunak, 
+dimana pengembang web bersama klien akan 
+menguji dari segi spesifikasi fungsionalnya 
+saja (tanpa melihat desain dan kode program) 
+(Mahendra & Yanto, 2018). Pada tahap testing 
+pengembang dan klien melakukan verifikasi 
+terhadap semua fitur yang telah dibangun. 
+Pengujian 
+yang 
+dilakukan 
+oleh 
+user. 
+Menggunakan User Acceptance Test ini 
+bertujuan agar menentukan apakah sistem yang 
+telah dibuat telah sesuai atau tidak dengan 
+permintaan client. User Acceptance tests 
+merupakan skenario yang digunakan untuk 
+pengetesan terhadap user story sehingga dapat 
+diketahui fungsionalitas sistem dapat bekerja 
+atau tidak.  
+Retrospective  
+Dalam 
+tahapan 
+ini, 
+Pengembang 
+melakukan evaluasi terhadap jalannya setiap 
+fase 
+iterasi. 
+Pengembang 
+memverifikasi 
+apakah 
+waktu 
+yang 
+dibutuhkan 
+untuk 
+menyelesaikan pengerjaan sama atau tidak 
+dengan 
+waktu 
+yang 
+telah 
+diestimasikan 
+kemudian penyebab terjadinya keterlambatan 
+ketika proses pengembangan dan mencegah 
+hal tersebut terulang Kembali di iterasi 
+selanjutnya.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+Implementasi Metode Personal Extreme Programming… 
+Copyright © 2025 Jurnal Jaring SainTek April 2025  
+39 
+ 
+Penyusunan Laporan  
+Tahap 
+ini merupakan 
+tahap 
+akhir 
+penelitian. Seluruh hasil yang didapatkan 
+selama, proses pengembangan sistem, analisis, 
+pengujian serta kesimpulan penelitian ditulis 
+dalam laporan. 
+HASIL DAN PEMBAHASAN 
+Requirements 
+Kebutuhan-kebutuhan 
+sistem 
+yang 
+didapatkan dari klien tersebut ditulis dalam 
+bentuk user story dengan format “Sebagai 
+<jenis pengguna>, saya ingin <melakukan 
+tindakan tertentu> sehingga <mendapatkan 
+manfaat dari tindakan tersebut>” (Fikri & 
+Artawan, 2020) Setelah dilakukan proses 
+requirements, pengembang mendapatkan 13 
+user stories. User stories yang telah didapatkan 
+dapat dilihat pada Tabel 1 
+Tabel 1 Daftar User Story 
+Kode User 
+Stories 
+User Stories 
+Story -01 
+Sebagai admin, saya ingin login 
+sistem hanya jika saya memiliki 
+akses terhadap aplikasi sehingga saya 
+dapat menggunakan aplikasi sesuai 
+dengan hak akses saya. 
+Story -02 
+Sebagai admin, saya ingin dapat 
+mengelola pegawai sehingga dapat 
+menambahkan, 
+mengedit, 
+dan 
+menghapus pegawai. 
+Story -03 
+Sebagai admin, saya ingin dapat 
+mengelola 
+user 
+Sehingga 
+dapat 
+menambahkan, 
+mengedit, 
+dan 
+menghapus user. 
+Story -04 
+Sebagai admin, saya ingin mengelola 
+SPPD 
+ 
+ 
+sehingga 
+dapat 
+menambahkan, 
+mengedit, 
+menghapus, dan mengunduh SPPD. 
+Story -05 
+Sebagai admin, saya ingin mengelola 
+SPT  sehingga dapat menambahkan, 
+mengedit, 
+menghapus, 
+dan 
+mengunduh SPT. 
+Story -06 
+Sebagai admin, saya ingin dapat 
+mengelola surat cuti sehingga dapat 
+menambahkan, 
+mengedit, 
+menghapus, dan mengunduh surat 
+cuti. 
+Story -07 
+Sebagai admin, saya ingin dapat 
+melihat nomor surat yang terakhir 
+kali dibuat sehingga mempermudah 
+dalam pembuatan nomor surat baru 
+Story -08 
+Sebagai pegawai, saya ingin login 
+sistem hanya jika saya memiliki 
+akses terhadap aplikasi sehingga saya 
+dapat menggunakan aplikasi sesuai 
+dengan hak akses saya. 
+Story -09 
+Sebagai pegawai, saya ingin merubah 
+kata 
+sandi 
+akun. 
+Sehingga, 
+kerahasiaan akun dapat terjaga. 
+Story -10 
+Sebagai 
+pegawai, 
+saya 
+ingin 
+menambahkan data pembuatan SPPD  
+sehingga dapat melihat info daftar 
+SPPD dan mengunduh SPPD. 
+Story -11 
+Sebagai 
+pegawai, 
+saya 
+ingin 
+menambahkan data pembuatan SPT  
+sehingga dapat melihat info daftar 
+SPT dan mengunduh SPT. 
+Story -12 
+Sebagai pegawai, saya ingin dapat 
+menambahkan data pembuatan surat 
+cuti sehingga dapat melihat info 
+daftar surat cuti dan mengunduh surat 
+cuti. 
+Story -13 
+Sebagai pegawai, saya ingin dapat 
+melihat nomor surat yang terakhir 
+kali dibuat sehingga mempermudah 
+dalam pembuatan nomor surat baru 
+Planning 
+Proses 
+perencanaan 
+ini 
+terdiri 
+dari 
+pengestimasian user stories, penentuan prioritas 
+user stories, dan perencanaan iterasi. Dari tahap ini, 
+akan 
+didapatkan 
+prioritas, 
+estimasi 
+waktu 
+pengerjaan, serta urutan pengerjaan dari masing-
+masing user stories dan jumlah iterasi yang 
+dibutuhkan selama pengembangan sistem. 
+Estimasi waktu pengerjaan berupa story 
+point. Besarnya story point berbanding lurus 
+dengan lamanya waktu pengerjaan. Estimasi waktu 
+pengerjaan untuk 1 story point adalah 2 hari (Ulfi et 
+al., 2020). Penentuan prioritas tersebut dilakukan 
+dengan cara menyortir user stories tersebut 
+berdasarkan value dan risk. Value dari sebuah user 
+stories ditentukan berdasarkan nilai bisnis dari user 
+stories tersebut. Nilai value tersebut terbagi menjadi 
+3, yaitu critical, significant business value, dan nice 
+to have. Sedangkan penentuan risk dari sebuah user 
+stories ditentukan berdasarkan risk index yang 
+berdasarkan faktor completeness, volatility, dan 
+complexity. Total indeks tersebut menentukan 
+tingkatan dari risk masing-masing user stories yang 
+terdiri dari low dengan total 0 sampai 1, medium 
+dengan total 2 sampai 4, dan high dengan total 5 
+sampai 6. 
+Tahap 
+planning 
+dilanjutkan 
+dengan 
+perencanaan iterasi. Dalam iterasi tersebut, terdapat 
+user stories yang akan dikerjakan selama proses 
+tersebut berlangsung. Penentuan user stories yang 
+dikerjakan 
+dalam 
+iterasi 
+ditentukan 
+dengan 
+berdiskusi dengan client dan berdasarkan prioritas 
+dari user stories tersebut hingga nilai velocity 
+terpenuhi. Pengembang menentukan nilai velocity 
+tiap iterasi. Pengembang menentukan nilai 5 untuk 
+velocity tiap iterasi, yang artinya tiap iterasi akan 
+dikerjakan selama 10 hari. Keseluruhan user stories 
+berjumlah 13, yang rencananya akan dikerjakan
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+40  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+selama 40 hari. Hasil perencanaan iterasi dapat 
+dilihat pada Tabel 2.  
+Tabel 2 . Hasil Perencanaan Iterasi 
+Iterasi 
+Kode User 
+Stories 
+Stories 
+Point 
+Risk 
+Value 
+Iterasi 
+1 
+Story -01 
+1 
+(5) 
+High 
+Critical 
+Story -08 
+1 
+(5) 
+High 
+Critical 
+Story -02 
+2 
+(5) 
+High 
+Critical 
+Story -03 
+1 
+(5) 
+High 
+Critical 
+Iterasi 
+2 
+Story -04 
+3 
+(5) 
+High 
+Critical 
+Story -05 
+1 
+(5) 
+High 
+Critical 
+Story -06 
+1 
+(5) 
+High 
+Critical 
+Iterasi 
+3 
+Story -10 
+3 
+(5) 
+High 
+Critical 
+Story -11 
+1 
+(5) 
+High 
+Critical 
+Story -12 
+1 
+(5) 
+High 
+Critical 
+Iterasi 
+4 
+Story -09 
+3 
+(5) 
+High 
+Significant 
+business 
+value 
+Story -07 
+1 
+(4) 
+Medium 
+Significant 
+business 
+value 
+Story -13 
+1 
+(4) 
+Medium 
+Significant 
+business 
+value 
+Selama proses iterasi ke-3, terdapat 
+permintaan penambahan user stories dari user. 
+Pengembang 
+bersama 
+klien 
+kembali 
+melakukan perencanaan ulang pada user 
+stories baru tersebut dan user stories yang 
+tersisa. Penambahan user stories menyebabkan 
+penyesuaian rencana pengerjaan iterasi 4 dan 
+penambahan iterasi baru iterasi 5. Penambahan 
+user stories baru dan hasil perencanaan iterasi 
+dapat dilihat pada Tabel 3 dan Tabel 4.  
+Tabel 3 Penambahan User Story Baru 
+Kode 
+User 
+Stories 
+User Stories 
+Story -
+14 
+Sebagai admin, saya menginginkan sistem ini 
+dapat mengelola data  surat masuk sehingga 
+dapat mempermudah dalam pengarsipan surat 
+masuk. 
+Story -
+15 
+Sebagai pegawai, saya menginginkan sistem ini 
+dapat mengelola data  surat masuk sehingga 
+dapat mempermudah dalam pengarsipan surat 
+masuk. 
+ 
+ 
+Tabel 4 Hasil Perancangan Ulang Iterasi 
+Iterasi 
+Kode 
+User 
+Stories 
+Stories 
+Point 
+Risk 
+Value 
+Iterasi 
+4 
+Story -
+14 
+3 
+(5) 
+High 
+Critical 
+Story -
+15 
+2 
+(5) 
+High 
+Critical 
+Iterasi 
+5 
+Story -
+09 
+3 
+(5) 
+High 
+Significant 
+business 
+value 
+Story -
+07 
+1 
+(4) 
+Medium 
+Significant 
+business 
+value 
+Story -
+13 
+1 
+(4) 
+Medium 
+Significant 
+business 
+value 
+Iteration Initialization 
+Berdasarkan tahapan planning, inisialisasi iterasi 
+dimulai dari iterasi pertama hingga iterasi kelima 
+dengan memfokuskan masing-masing user stories 
+yang telah ditetapkan sebelumnya. Setiap iterasi 
+dikerjakan secara berurutan dan tidak boleh 
+melompat ke iterasi lain jika belum selesai. Hal ini 
+bertujuan 
+agar 
+pengembangan 
+sistem 
+dapat 
+dilaksanakan secara teratur.  
+Design 
+Pada iterasi pertama ini dibuatkan desain 
+dari sistem sesuai dengan user story. Design yang 
+digunakan 
+dalam 
+iterasi 
+ini 
+adalah 
+dengan 
+menggunakan activity diagram. Activity Diagram 
+adalah diagram flowchart yang diperluas yang 
+menunjukkan aliran kendali satu aktivitas ke 
+aktivitas lain. Activity Diagram berfungsi untuk 
+memodelkan aspek dinamis sistem. Desain yang 
+dibuat dapat dilihat pada gambar di bawah ini. 
+a. 
+Activity Diagram Login Story-01 dan Story-
+08 
+ 
+Gambar 1. Activity Diagram Login 
+Gambar 1 merupakan aktifitas login yang 
+akan dilakukan oleh aktor yang berperan, pertama 
+aktor akan membuka website, pada tampilan 
+pertama akan disuguhkan dengan tampilan form 
+login, kemudian masukkan NIP dan Password yang 
+sudah didaftarkan oleh admin jika nip dan password
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+Implementasi Metode Personal Extreme Programming… 
+Copyright © 2025 Jurnal Jaring SainTek April 2025  
+41 
+ 
+tidak terdaftar dalam database, maka akan kembali 
+pada halaman yang sama dan jika login berhasil 
+maka akan masuk ke halaman dashboard untuk 
+aktor admin dan ke halaman dashboard user untuk 
+aktor pegawai. 
+b. Activity diagram pegawai Story-02 
+ 
+Gambar 2. Activity diagram pegawai 
+Gambar 2 merupakan aktivitas untuk 
+mengelola data pada menu pegawai, kategori dan 
+informasi, terdapat 3 tombol pada halaman ini yaitu 
+tambah, ubah dan hapus, setiap tombol memiliki 
+fungsinya masing-masing dan sesuai dengan 
+identitas dari nama yang dibawa setiap tombol. 
+c. 
+Activity diagram user Story-03 
+ 
+Gambar 3. Activity diagram User 
+Gambar 3 merupakan aktivitas untuk 
+mengelola data pada menu user, kategori dan 
+informasi, terdapat 3 tombol pada halaman ini yaitu 
+tambah, ubah dan hapus, setiap tombol memiliki 
+fungsinya masing-masing dan sesuai dengan 
+identitas dari nama yang dibawa setiap tombol. 
+Implementation  
+Setelah desain telah dibuat, maka tahap 
+selanjutnya penulisan code program. Pada tahap 
+tersebut akan dibangun menggunakan arsitektur 
+Model View Controller (MVC). Arsitektur tersebut 
+akan dibangun menggunakan framework Laravel 
+dimana pada arsitektur ini akan ada pada setiap 
+modul yang telah dibuat pada tahap implementasi. 
+Adapun tahap implementasi terdapat tiga fase yakni 
+unit testing, code dan refactor. Berikut adalah 
+tampilan aplikasi. 
+ 
+Gambar 4. Halaman Login 
+Gambar 4 merupakan tampilan halaman 
+login. Halaman ini merupakan halaman awal SISM 
+pertama kali dibuka. Proses login ini harus 
+dilakukan 
+admin 
+dan 
+pegawai 
+untuk 
+bisa 
+mengakses fitur – fitur pada SISM . 
+ 
+Gambar 5. Halaman Daftar Pegawai 
+Gambar 5 merupakan tampilan halaman 
+daftar seluruh data pegawai. Halaman ini terdiri 
+dari tabel pegawai, tombol untuk menuju halaman 
+tambah pegawai, tombol perbarui data pegawai dan 
+hapus yang akan menampilkan masing – masing 
+modul jika diklik. 
+ 
+Gambar 6. Halaman Tambah data Pegawai 
+Gambar 6 merupakan tampilan halaman 
+tambah data pegawai. Admin perlu mengisi 
+informasi seperti nama, NIP, pangkat, pendidikan, 
+dan jabatan sebelum menambahkan data pegawai. 
+ 
+ 
+Gambar 7. Halaman Daftar Akun 
+Gambar 7 merupakan tampilan halaman 
+daftar data user. Halaman ini terdiri dari tabel user, 
+tombol untuk menuju halaman tambah user, tombol 
+update password user dan hapus yang akan 
+menampilkan masing – masing modul jika diklik.
+
+==================================================
+[HALAMAN 8]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+42  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+ 
+Gambar 8. Halaman Tambah User 
+Gambar 8 merupakan tampilan halaman 
+tambah User. Admin perlu mengisi informasi 
+seperti nama, NIP, Password, dan memilih hak 
+akses user sebelum menambahkan akun. 
+Unit Testing  
+Unit 
+testing 
+merupakan 
+tahapan 
+selanjutnya untuk melakukan pengujian apakah 
+suatu 
+method 
+berfungsi 
+sebagai 
+mestinya. 
+Pengujian ini dilakukan pada framework Laravel 
+untuk menentukan apakah hasil dari pengujian ini 
+berhasil (passed) atau gagal (failed). Jika gagal 
+maka pengujian ini akan muncul tulisan failed 
+berwarna merah sedangkan ketika berhasil akan 
+muncul tulisan passed maka akan berwarna hijau. 
+Adapun hasil pengujian sistem yang dilakukan pada 
+setiap modul dapat dilihat pada gambar dibawah 
+ini. 
+ 
+Gambar 9. Hasil Unit Testing Multi Login 
+Gambar 9 merupakan hasil unit testing 
+Multi Login berupa implementasi dari user story-01 
+yaitu login sistem menggunakan NIP dan password 
+yang telah terdaftar dalam sistem sesuai dengan hak 
+akses yang dimiliki. Pada Unit testing ini terdapat 4 
+pengujian yaitu login sebagai admin, login sebagai 
+user, 
+apabila 
+gagal 
+melakukan 
+login, 
+dan 
+melakukan logout. Dapat dilihat hasil unit testing 
+yang dilakukan menunjukkan 4 test berhasil dan 
+tidak ditemukan error. 
+ 
+ 
+Gambar 10. Hasil Unit Testing Pegawai 
+Gambar 10 merupakan hasil unit testing 
+Pegawai berupa implementasi dari user story-02 
+yaitu pengolahan data pegawai. Pada Unit testing 
+ini terdapat 3 pengujian yaitu tambah data pegawai, 
+update data pegawai, dan menghapus data pegawai. 
+Dapat dilihat hasil unit testing yang dilakukan 
+menunjukkan 3 test berhasil dan tidak ditemukan 
+error. 
+ 
+ 
+Gambar 11. Hasil Unit Testing User 
+Gambar 11 merupakan hasil unit testing 
+User berupa implementasi dari user story-03 yaitu 
+pengolahan data User. Pada Unit testing ini terdapat 
+3 pengujian yaitu tambah data user, update data 
+user, dan menghapus data user. Dapat dilihat hasil 
+unit testing yang dilakukan menunjukkan 3 test 
+berhasil dan tidak ditemukan error. 
+Code Generator  
+Setelah dilakukan proses unit testing, 
+tahap selanjutnya dilakukan pengkodean sistem. 
+pengembang 
+mulai 
+melengkapi 
+kode 
+pada 
+controller dan model serta mulai membuat view 
+sesuai dengan user story pada iterasi 1. Pada iterasi 
+1 ini terdapat 2 controller yakni LoginController 
+untuk menangani proses login dan pengolahan data 
+user. 
+Kemudian 
+Pegawai 
+Controller 
+untuk 
+mengelola data pegawai.  
+Code Refactor  
+Setelah dilakukan proses implementasi 
+pengkodean program, tahap selanjutnya adalah 
+code refactor. Tujuan dilakukanya refactor untuk 
+mengoptimalkan 
+code 
+apabila 
+dibutuhkan. 
+Berdasarkan hasil implementasi yang dilakukan 
+oleh pengembang, jika dilihat dari user story tidak 
+ditemukan code program yang harus dioptimasi 
+lagi. Sehingga tidak perlu dilakukan pengoptimalan 
+atau refactor pada kode program untuk iterasi 
+pertama ini. Selanjutnya akan dilakukan pengujian 
+pada tahap system testing. 
+System Testing  
+Tahap selanjutnya adalah adalah tahap 
+system testing atau pengujian terhadap keseluruhan 
+hasil implementasi dari keseluruhan user stories. 
+Pada tahap ini akan dilakukan pengujian black box. 
+Tujuan dari pengujian ini yaitu untuk dilakukan 
+pengecekkan fungsionalitas dari sistem yang telah 
+dibuat. Test black box hanya mengevaluasi dari 
+tampilan luarnya saja (interface), dalam artian 
+hanya fungsionalitasnya saja tanpa perlu tahu 
+proses detailnya. Pengujian tersebut dilakukan oleh 
+pengembang agar untuk memastikan kualitas sistem 
+yang telah dibuat berjalan sebagaimana mestinya. 
+Adapun pengembang melakukan pengujian black 
+box pada semua user story dapat dilihat pada tabel 
+5.
+
+==================================================
+[HALAMAN 9]
+==================================================
+
+Implementasi Metode Personal Extreme Programming… 
+Copyright © 2025 Jurnal Jaring SainTek April 2025  
+43 
+ 
+ 
+Tabel 5. Hasil Pengujian Sistem 
+Kode 
+Storie
+s 
+Deskrips
+i 
+Kasus uji 
+Hasil yang 
+diharapkan 
+Hasil 
+Story
+-01 
+Login 
+Admin 
+Pengujian 
+login admin 
+pada sistem 
+dengan 
+memasukka
+n NIP dan 
+password 
+yang sudah 
+terdaftar 
+Sistem akan 
+masuk 
+kedalam 
+menu 
+admin 
+Sesu
+ai 
+Story
+-08 
+Login 
+Pegawai 
+Pengujian 
+login 
+pegawai 
+pada sistem 
+dengan 
+memasukka
+n NIP dan 
+password 
+yang sudah 
+terdaftar 
+Sistem akan 
+masuk 
+kedalam 
+menu 
+admin 
+Sesu
+ai 
+Story
+-02 
+Mengelo
+la data 
+Pegawai 
+Pengujian 
+admin 
+menambahk
+an data 
+pegawai ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“simpan” 
+Sistem akan 
+menampilk
+an daftar 
+pegawai 
+dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai 
+Story
+-03 
+ 
+Pengujian 
+admin 
+menambahk
+an data user 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Tambah 
+Akun” 
+Sistem akan 
+menampilk
+an daftar 
+user dan 
+memberika
+n notifikasi 
+“berhasil 
+ditambahka
+n” 
+Sesu
+ai 
+Mengelo
+la data 
+User 
+Story
+-04 
+ 
+Pengujian 
+admin 
+menambahk
+an data 
+SPPD ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+Sistem akan 
+menampilk
+an daftar 
+SPPD dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai 
+Mengelo
+la data 
+SPPD 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat 
+SPPD” 
+Story
+-05 
+Mengelo
+la data 
+SPT 
+Pengujian 
+admin 
+menambahk
+an data SPT 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat SPT” 
+Sistem akan 
+menampilk
+an daftar 
+SPT dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai 
+Story
+-06 
+Mengelo
+la data 
+Cuti 
+Pengujian 
+admin 
+menambahk
+an data 
+Surat Cuti 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat Cuti” 
+Sistem akan 
+menampilk
+an daftar 
+Surat Cuti 
+dan 
+memberika
+n notifikasi 
+“berhasil 
+ditambahka
+n” 
+Sesu
+ai 
+Story
+-10 
+ 
+Pengujian 
+pegawai 
+menambahk
+an data 
+SPPD ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat 
+SPPD” 
+Sistem akan 
+menampilk
+an daftar 
+SPPD dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai 
+Mengelo
+la data 
+SPPD 
+Story
+-11 
+Mengelo
+la data 
+SPT 
+Pengujian 
+pegawai 
+menambahk
+an data SPT 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+Sistem akan 
+menampilk
+an daftar 
+SPT dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai
+
+==================================================
+[HALAMAN 10]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+44  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+lalu 
+menekan 
+tombol 
+“Buat SPT” 
+Story
+-12 
+Mengelo
+la data 
+Cuti 
+Pengujian 
+pegawai 
+menambahk
+an data 
+Surat Cuti 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat Cuti” 
+Sistem akan 
+menampilk
+an daftar 
+Surat Cuti 
+dan 
+memberika
+n notifikasi 
+“berhasil 
+ditambahka
+n” 
+Sesu
+ai 
+Story
+-14 
+Mengelo
+la data  
+surat 
+masuk di 
+halaman 
+admin 
+Pengujian 
+admin 
+menambahk
+an data 
+Surat 
+Masuk ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat Surat 
+Masuk” 
+Sistem akan 
+menampilk
+an daftar 
+Surat 
+Masuk dan 
+memberika
+n notifikasi 
+data 
+berhasil 
+ditambah 
+Sesu
+ai 
+Story
+-15 
+Mengelo
+la data  
+surat 
+masuk di 
+halaman 
+pegawai 
+Pengujian 
+pegawai 
+menambahk
+an data 
+Surat 
+Masuk ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+lalu 
+menekan 
+tombol 
+“Buat Surat 
+Masuk” 
+Sistem akan 
+menampilk
+an daftar 
+Surat 
+Masuk dan 
+memberika
+n notifikasi 
+“berhasil 
+ditambahka
+n” 
+Sesu
+ai 
+Story
+-09 
+Ubah 
+kata 
+sandi 
+akun 
+pegawai 
+Pengujian 
+pegawai 
+mengubah 
+kata sandi 
+ke sistem 
+kemudian 
+mengisi 
+data pada 
+Sistem akan 
+menampilk
+an daftar 
+SPT dan 
+memberika
+n notifikasi 
+Password 
+changed 
+Sesu
+ai 
+form yang 
+sesuai lalu 
+menekan 
+tombol 
+“submit” 
+successfull
+y! 
+Story
+-07 
+Dashboa
+rd 
+Admin 
+Pengujian 
+admin 
+menambahk
+an data dari 
+setiap 
+modul ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+sesuai 
+dengan 
+masing-
+masing 
+modul  
+Sistem akan 
+menampilk
+an jumlah 
+data dan 
+nomor surat 
+sebelumnya 
+Sesu
+ai 
+Story
+-13 
+Dashboa
+rd 
+pegawai 
+Pengujian 
+pegawai 
+menambahk
+an data dari 
+setiap 
+modul ke 
+sistem 
+kemudian 
+mengisi 
+data pada 
+form yang 
+sudah 
+disediakan 
+sesuai 
+dengan 
+masing-
+masing 
+modul  
+Sistem akan 
+menampilk
+an jumlah 
+data dan 
+nomor surat 
+sebelumnya 
+Sesu
+ai 
+Retrospective  
+Setelah 
+tahap 
+pengujian 
+selesai, 
+selanjutnya masuk pada tahap Retrospective. 
+Pada tahap ini pengembang menganalisis 
+jalanya setiap fase pengembangan modul dan 
+kesesuaian estimasi waktu pengerjaan pada 
+iterasi pertama. Hasil verifikasi waktu pada 
+iterasi pertama dapat dilihat pada tabel berikut 
+ini. 
+Tabel 6. Perbandingan Waktu Estimasi 
+dan Realisasi Iterasi 
+Kode  
+Deskripsi 
+Stories 
+Point  
+Waktu 
+Estimasi  
+Waktu 
+Realisasi  
+Stories  
+Story-
+01 
+Login Admin 
+1 
+2 
+2 
+Story-
+02 
+Mengelola 
+data Pegawai 
+2 
+4 
+3 
+Story-
+03 
+Mengelola 
+data User 
+1 
+2 
+2 
+Story-
+SPPD 
+3 
+6 
+6
+
+==================================================
+[HALAMAN 11]
+==================================================
+
+Implementasi Metode Personal Extreme Programming… 
+Copyright © 2025 Jurnal Jaring SainTek April 2025  
+45 
+ 
+04 
+Story-
+05 
+SPT 
+1 
+2 
+2 
+Story-
+06 
+Surat Cuti 
+1 
+2 
+2 
+Story-
+07 
+Dashboard 
+Admin 
+1 
+2 
+1 
+Story-
+08 
+Login 
+Pegawai 
+1 
+2 
+2 
+Story-
+09 
+Ubah 
+kata 
+sandi 
+akun 
+pegawai 
+3 
+6 
+4 
+Story-
+10 
+SPPD 
+3 
+6 
+3 
+Story-
+11 
+SPT 
+1 
+2 
+2 
+Story-
+12 
+Surat Cuti 
+1 
+2 
+2 
+Story-
+13 
+Dashboard 
+pegawai 
+1 
+2 
+1 
+Story-
+14 
+Surat Keluar 
+admin 
+3 
+6 
+3 
+Story-
+15 
+Surat Keluar 
+pegawai 
+2 
+2 
+2 
+Total 
+20 
+40 
+37 
+KESIMPULAN DAN SARAN 
+Berdasarkan hasil penelitian selama 
+membangun Sistem Informasi Surat Menyurat 
+di Dinas Pendidikan Pemuda Dan Olahraga 
+Kabupaten Tambrauw didapatkan kesimpulan 
+sebagai berikut Metode Personal Extreme 
+Programming dapat diimplementasikan dalam 
+studi kasus ini. Proses pengembangan dimulai 
+dengan 
+pengumpulan 
+kebutuhan 
+melalui 
+diskusi bersama client. Kebutuhan klien yang 
+didapatkan 
+kemudian 
+direpresentasikan 
+menjadi 
+user 
+stories 
+yang 
+akan 
+merepresentasikan fitur yang akan dibangun. 
+User stories yang didapatkan berjumlah 13 
+user story, kemudian terjadi penambahan user 
+story di tengah pengembangan sistem sehingga 
+menjadi 15 user story. Setelah kebutuhan 
+sistem 
+didapatkan, 
+tahap 
+pengembangan 
+dilanjutkan dengan perencanaan yang terdiri 
+dari estimasi waktu pengerjaan dari user 
+stories, penentuan prioritas, dan penentuan 
+user stories apa saja yang akan dikerjakan di 
+iterasi. Interaksi dengan client merupakan 
+peran penting dalam proses pengembangan 
+sistem agar proses pengembangan sistem tetap 
+terarah sesuai dengan kebutuhan client. Hal ini 
+ditunjukkan 
+dengan 
+diterimanya 
+hasil 
+implementasi user stories pada iterasi. Dalam 
+implementasinya, 
+pengembang 
+telah 
+menyelesaikan dari tahap awal sampai akhir 
+sistem dapat dijalankan, Estimasi waktu 
+pengembangan sistem selama 40 hari. Akan 
+tetapi dalam praktiknya, keseluruhan waktu 
+pengembangan sistem bertambah 10 hari 
+menjadi 50 hari dikarenakan penambahan user 
+stories baru dan iterasi baru. Namun waktu 
+implementasi yang dilakukan selama 37 hari 
+lebih cepat 13 hari dari waktu estimasi yang 
+telah ditentukan, Pengujian sistem dilakukan 
+terhadap fungsionalitas sistem dengan metode 
+Black Box Testing, dimana akan dilakukan 
+dengan menjalankan unit atau modul dan 
+diamati hasil nya telah sesuai dengan fungsi 
+yang diinginkan. Kemudian menggunakan 
+daftar Acceptance Test Criteria untuk menguji 
+interaksi antara user dengan sistem sesuai 
+spesifikasi yang telah ditetapkan. Proses 
+pengujian menunjukkan bahwa sistem telah 
+sesuai dengan requirements klien. 
+DAFTAR PUSTAKA 
+Yanti, Hariyanto, E., & Hardinata, R. S. 
+(2022). 
+Rancang 
+bangun 
+sistem 
+informasi surat tugas online dengan 
+metode prototype di PT PLN (Persero) 
+Sumatera Utara. Bulletin of Information 
+Technology (BIT), 3(4), 400–406. 
+Sastra, R., Musyaffa, N., & Supriyadi, B. 
+(2019). Perancangan sistem informasi 
+penggajian 
+menggunakan 
+model 
+Waterfall pada PT. Medina. Jurnal 
+Teknologi 
+Informasi 
+Universitas 
+Lancang Kuning (JTIULM), 4(2), 71–
+78. 
+Nugroho, A. C. (2019). Rancang bangun 
+sistem informasi manajemen surat tugas 
+berbasis web menggunakan Waterfall 
+model. 
+Jurnal 
+Informatika: 
+Jurnal 
+Pengembangan IT (JPIT), 4(2), 146–
+151. 
+Wicaksono, M. A., Rudianto, C., & Tanaem, 
+P. F. (2021). Rancang bangun sistem 
+informasi arsip surat menggunakan 
+metode 
+prototype. 
+Jurnal 
+Teknik 
+Informatika dan Sistem Informasi, 7(2), 
+390–403. 
+Rusdiana, L. (2018). Extreme Programming 
+untuk 
+rancang 
+bangun 
+aplikasi 
+pengelolaan 
+surat 
+keterangan 
+kependudukan. Register: Jurnal Ilmiah 
+Teknologi Sistem Informasi, 4(1), 49–
+55. 
+Marthasari, G. I., Suahrso, W., & Ardiansyah, 
+F. 
+(2018). 
+Personal 
+Extreme 
+Programming 
+with 
+MoSCoW 
+prioritization for developing library
+
+==================================================
+[HALAMAN 12]
+==================================================
+
+Alfin Lutfi Sidiq, Gita Indah Marthasari, Aminudin 
+Submitted: 21/02/2025; Revised: 10/03/2025; Accepted: 15/04/2025; Published: 30/04/2025       
+46  
+ 
+Jurnal Jaring Saintek 7 (1): April 2025 
+information system. In Proceeding of 
+EECSI 2018 (pp. 537–540). 
+Ulfi, M., Marthasari, G. I., & Nuryasin, I. 
+(2020). Implementasi metode Personal 
+Extreme 
+Programming 
+dalam 
+pengembangan 
+sistem 
+manajemen 
+transaksi perusahaan (Studi Kasus: CV. 
+Todjoe Sinar Group). Repositor: Jurnal 
+Ilmiah Teknik Elektro Komputer dan 
+Informatika, 
+2(3), 
+261–268. 
+https://doi.org/10.22219/repositor.v2i3.6
+19 
+Eriana, E. S., & Zein, A. (2021). Penerapan 
+metode Personal Extreme Programming 
+dalam perancangan aplikasi pemilihan 
+ketua HMSI dengan Weighted Product. 
+Jurnal Ilmu Komputer (JIK), 4(2), 26–
+32. 
+Kirsan, A. S., Arisa, N. N., & Insanittaqwa, V. 
+F. (2022). Development of SIAKAD 
+applications in Balikpapan schools using 
+APXP: Advanced Personal Extreme 
+Programming. Jurnal Inovtek Polbeng - 
+Seri Informatika, 7(1), 97–109. 
+Azdy, R. A., & Rini, A. (2018). Penerapan 
+Extreme 
+Programming 
+dalam 
+membangun aplikasi pengaduan layanan 
+pelanggan (PaLaPa) pada perguruan 
+tinggi. Jurnal Teknologi Informasi dan 
+Ilmu Komputer (JTIIK), 5(2), 197–206. 
+https://doi.org/10.25126/jtiik.201852658 
+Mahendra, I., & Yanto, D. T. E. (2018). Agile 
+development 
+methods 
+dalam 
+pengembangan 
+sistem 
+informasi 
+pengajuan kredit berbasis web (Studi 
+Kasus: 
+Bank 
+BRI 
+Unit 
+Kolonel 
+Sugiono). Jurnal Teknologi dan Open 
+Source, 1(2), 13–24. 
+Fikri, A. M., & Artawan, I. P. D. (2020). 
+Rancang bangun sistem informasi buku 
+tamu pada Dinas Pemuda, Olahraga, dan 
+Pariwisata Kota Balikpapan dengan 
+metode Personal Extreme Programming. 
+Multitek 
+Indonesia: 
+Jurnal 
+Ilmiah, 
+14(2), 101–110.

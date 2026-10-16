@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build Outputs (Next.js, etc.)
+.next/
+*/.next/
+out/
+*/out/
+build/
+*/build/
+dist/
+*/dist/
+.turbo/
+*/.turbo/
+
+# Audio and Video Files (Local only, transcripts preserved in .txt/.md)
+*.m4a
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.avi
+WAWANCARA/REKAMAN AUDIO (M4A)/
+BIMBINGAN/ekstrak mp3/
+
+# Environment files
+.env
+.env*.local
+.env.production
+.env.development
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

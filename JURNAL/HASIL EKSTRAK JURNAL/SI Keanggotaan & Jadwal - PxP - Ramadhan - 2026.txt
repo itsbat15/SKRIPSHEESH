@@ -1,0 +1,972 @@
+ 
+ 
+PT Jurnal Cendekia Indonesia 
+Journal of Information Systems and Business Technology 
+Homepage: https://journal.jci.co.id/jisbt 
+Vol. 02 No. 04 (2026) Page: 1180-1187 
+E-ISSN: 3109-8886 
+ 
+Diterima Redaksi: 22-08-2026 | Selesai Revisi: 30-08-2026 | Diterbitkan Online: 31-08-2026 
+1180 
+Implementasi Personal Extreme Programming Dalam Perancangan Sistem 
+Informasi Manajemen Keanggotaan Dan Pengaturan Jadwal Untuk 
+Meningkatkan Efisiensi Operasional (Studi Kasus : Sanggar Senam Kurnia) 
+ 
+Fazry Ramadhan1* 
+ 
+1Program Studi Sistem Informasi, Fakultas Ilmu Komputer, Universitas Pamulang, Kota Tangerang Selatan, Banten, 
+Indonesia. 
+ 
+*Corresponding Author Email: fazry212ramadhan@gmail.com  
+ 
+Abstract 
+The management of membership data and class schedules at Sanggar Senam Kurnia, which relies on physical media and 
+WhatsApp messaging, leads to operational inefficiencies, human recording errors, and limited information transparency. 
+This study aims to design and develop a web-based management information system to centralize member administration 
+and class scheduling. The Personal Extreme Programming (PXP) methodology was selected to accommodate a single-
+developer workflow without sacrificing adaptability to changing system requirements. Built using the Laravel framework 
+and MySQL database, the application underwent functional verification using the Black Box Testing method. The results 
+demonstrate that the system effectively automates member registration, subscription tracking, and administrator 
+attendance logging, while providing a real-time schedule dashboard for instructors. Additionally, executing incremental 
+releases and continuous feedback loops enhanced system accuracy and successfully satisfied the operational 
+requirements of the fitness studio. 
+ 
+Keywords: Information Systems, Personal Extreme Programming, Operational Efficiency, Membership Management, 
+Class Scheduling. 
+Abstrak 
+Pengelolaan data keanggotaan dan jadwal latihan di Sanggar Senam Kurnia yang masih bergantung pada media fisik dan 
+aplikasi WhatsApp menimbulkan inefisiensi operasional, risiko kelalaian pencatatan, serta keterbatasan transparansi 
+informasi. Penelitian ini bertujuan merancang dan membangun sistem informasi manajemen berbasis web guna 
+mengintegrasikan tata kelola anggota dan jadwal kelas secara terpusat. Metode pengembangan sistem yang digunakan 
+adalah Personal Extreme Programming untuk memfasilitasi peran pengembang tunggal tanpa mengorbankan keluwesan 
+terhadap perubahan kebutuhan. Aplikasi ini dibangun memanfaatkan framework Laravel dengan sistem manajemen basis 
+data MySQL, serta diuji menggunakan metode Black Box Testing untuk menjamin kelayakan fungsi. Hasil penelitian 
+menunjukkan bahwa sistem terbukti mampu mengotomatiskan pendataan anggota, pelacakan masa aktif langganan, dan 
+pencatatan presensi oleh pengelola, sekaligus menyajikan dasbor jadwal secara real-time bagi instruktur. Penerapan 
+strategi peluncuran bertahap dan pengumpulan umpan balik pengguna secara konsisten terbukti meningkatkan akurasi 
+serta kesesuaian perangkat lunak terhadap kebutuhan nyata sanggar. 
+ 
+Kata Kunci: Sistem Informasi Manajemen, Personal Extreme Programming, Efisiensi Operasional, Manajemen 
+Keanggotaan, Penjadwalan Kelas. 
+ 
+A. PENDAHULUAN 
+ 
+Akselerasi kemajuan teknologi informasi membawa 
+transformasi fundamental pada tata kelola data bisnis di 
+berbagai sektor wirausaha, termasuk industri jasa 
+kebugaran. Sanggar Senam Kurnia merupakan salah satu 
+mitra usaha jasa yang bertumpu pada pelayanan kesehatan 
+dan kebugaran masyarakat secara berkelanjutan. Potensi 
+pengembangan usaha sanggar ini sangat bergantung pada 
+stabilitas manajemen harian serta kualitas layanan kepada 
+pelanggan. 
+Namun, 
+analisis 
+situasi 
+di 
+lapangan 
+menunjukkan bahwa Sanggar Senam Kurnia masih 
+menghadapi 
+kendala 
+operasional 
+yang 
+signifikan. 
+Pengelolaan data keanggotaan (membership) masih 
+bertumpu pada pencatatan buku fisik konvensional, 
+sedangkan pembagian dan konfirmasi jadwal kelas 
+dilakukan secara manual melalui aplikasi pesan WhatsApp. 
+ 
+Pola 
+manajerial 
+konvensional 
+tersebut 
+menjadi 
+permasalahan utama mitra karena menimbulkan inefisiensi 
+dan risiko kelalaian manusia (human error) dalam 
+pencatatan kuota paket, kerentanan arsip fisik terhadap 
+kerusakan atau kehilangan, serta kerap terjadi tumpang 
+tindih (overlap) jadwal antara instruktur dan kelas latihan. 
+Kondisi ini secara langsung mereduksi efisiensi kerja 
+pengelola, 
+membatasi 
+transparansi 
+informasi, 
+dan 
+menurunkan kualitas layanan bagi anggota sanggar. 
+ 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1181 
+Sebagai langkah penanganan terhadap kendala utama yang 
+dihadapi, solusi yang diajukan berwujud rekayasa 
+perangkat lunak berupa sistem informasi manajemen 
+keanggotaan serta penjadwalan berbasis web. Aplikasi ini 
+dibangun dengan memanfaatkan framework Laravel dan 
+sistem manajemen basis data MySQL. Alur kerja 
+pengembangan sistem menerapkan metodologi Personal 
+Extreme Programming (PXP) melalui lima tahapan 
+terstruktur, meliputi planning, design, coding, testing, dan 
+release. Pemilihan metodologi ini didasarkan pada 
+kemampuan memberikan keluwesan serta daya adaptasi 
+yang tinggi bagi pengembang tunggal (solo developer) 
+dalam menanggapi pergeseran kebutuhan mitra secara 
+cepat dan terarah. 
+ 
+Partisipasi aktif dari pihak mitra diintegrasikan secara 
+berkesinambungan di seluruh tahapan pengembangan 
+melalui pendekatan peluncuran bertahap (short releases) 
+dan siklus masukan balik (feedback loop). Strategi ini 
+bertujuan untuk mengevaluasi dan memastikan bahwa 
+setiap fungsi perangkat lunak berjalan selaras dengan 
+kondisi riil operasional. Rangkaian aktivitas yang 
+dijalankan mencakup identifikasi kebutuhan, perancangan 
+antarmuka pengguna (user interface), penulisan kode 
+program, serta pengujian kelayakan fungsional dengan 
+metode Black Box Testing. 
+ 
+Hasil akhir dari pelaksanaan kegiatan ini terbagi menjadi 
+dua kategori utama, yakni luaran berupa produk dan luaran 
+pengelolaan. Luaran produk berwujud aplikasi web 
+interaktif yang menyediakan beragam fitur utama, seperti 
+pendaftaran mandiri (self-service), pemantauan sisa kuota 
+sesi latihan (remaining sessions), verifikasi transaksi 
+pembayaran, hingga dasbor jadwal secara real-time. 
+Sementara itu, luaran manajemen diwujudkan melalui 
+transformasi tata kelola operasional sanggar menuju sistem 
+digital yang lebih transparan, akurat, dan efisien. 
+ 
+B. TINJAUAN PUSTAKA 
+ 
+Penelitian mengenai sistem informasi keanggotaan dan 
+penjadwalan berbasis web pada Alto Myshouse pernah 
+dikembangkan oleh Fransiskus Handika Putra, Addin 
+Aditya, dan Setiabudi Sakaria, yang memfokuskan kajian 
+pada pengolahan data membership guna menyederhanakan 
+administrasi operasional [18]. Kajian mengenai efisiensi 
+pencatatan keanggotaan organisasi juga dilakukan oleh 
+Varra Meylanie Dewi, Agus Sulistyanto, dan Anton 
+Zulkarnain Sianipar melalui perancangan sistem informasi 
+berbasis web pada perguruan silat [7]. Sementara itu, 
+penelitian oleh Satrio Sarwo Utomo, Ellya Nurfarida, dan 
+Kunti Eliyen pada GI-BEI Polinema turut membuktikan 
+bahwa implementasi sistem keanggotaan berbasis web 
+mampu meningkatkan keteraturan tata kelola data anggota 
+secara signifikan [24]. 
+Dalam ranah metodologi pengembangan perangkat lunak, 
+Muhammad Sulthoni Akbar, Ilyas Nuryasin, dan Didih 
+Rizki 
+Chandranegara 
+mengimplementasikan 
+metode 
+Personal Extreme Programming (PXP) untuk merancang 
+aplikasi pemesanan ruang rapat, dengan hasil yang 
+menunjukkan efektivitas PXP bagi pengembang tunggal 
+dalam beradaptasi terhadap perubahan kebutuhan sistem 
+secara fleksibel [2]. Penggunaan PXP juga diterapkan oleh 
+Risah Subariah pada aplikasi project report guna 
+mempercepat iterasi pengembangan serta tahapan evaluasi 
+sistem [22]. Di samping itu, Fery Darmawan, M. Ihsan 
+Alfani Putera, dan Sri Rahayu Natasia turut mengadopsi 
+PXP dalam pembangunan sistem informasi pengarsipan 
+surat untuk menyederhanakan alur rekayasa sistem 
+berskala kecil [6]. 
+Meskipun berada pada ranah topik yang serupa mengenai 
+sistem informasi manajemen keanggotaan dan penjadwalan 
+berbasis web, penelitian ini memiliki perbedaan mendasar 
+dibanding 
+studi-studi 
+terdahulu. 
+Penelitian 
+ini 
+mengintegrasikan 
+tata 
+kelola 
+anggota 
+sekaligus 
+penjadwalan kelas senam secara terpadu melalui skema 
+Personal Extreme Programming (PXP) yang disesuaikan 
+untuk pengembang mandiri. Selain itu, keunikan penelitian 
+ini terletak pada fokus objek kajian, yaitu Sanggar Senam 
+Kurnia, dengan tujuan mentransformasi operasional harian 
+yang sebelumnya konvensional menjadi terdigitalisasi 
+secara efisien. 
+ 
+C. METODE 
+1. Metode Pengumpulan Data 
+Tahapan 
+krusial 
+dalam 
+merancang 
+maupun 
+menyempurnakan suatu infrastruktur digital adalah analisis 
+sistem. Guna memperoleh gambaran komprehensif 
+mengenai permasalahan operasional yang dihadapi, 
+peneliti melakukan sesi wawancara mendalam bersama 
+pihak manajemen Sanggar Senam Kurnia.  
+2. Metode Pengembangan Sistem 
+Personal Extreme Programming (PXP) merupakan metode 
+rekayasa 
+perangkat 
+lunak 
+yang 
+mengedepankan 
+fleksibilitas terhadap dinamika perubahan serta orientasi 
+pada mutu produk secara berkelanjutan. Kerangka kerja 
+PXP 
+didasari 
+oleh 
+pemahaman 
+bahwa 
+tahapan 
+pembangunan sistem informasi senantiasa berpotensi 
+mengalami 
+penyesuaian 
+kebutuhan 
+[22]. 
+Melalui 
+kombinasi antara keterbukaan terhadap modifikasi dan 
+eksekusi pengujian bertahap, PXP mampu menekan 
+potensi kesalahan teknis, memberikan transparansi 
+perkembangan sistem kepada pengguna, serta memastikan 
+aplikasi yang dihasilkan tetap relevan dengan kebutuhan 
+operasional. 
+Tahapan rekayasa sistem memanfaatkan metodologi 
+Personal Extreme Programming (PXP) dilaksanakan 
+melalui alur kerja terstruktur sebagai berikut: 
+a. Planning (Perencanaan) Pada tahap awal ini, 
+pengembang memfokuskan kegiatan pada penentuan skala 
+prioritas, perumusan spesifikasi fitur, serta pemetaan 
+ 
+Gambar 1. Alur Personal Extrime Programming 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1182 
+kebutuhan fungsional sesuai alur proses bisnis yang 
+berjalan. Penelusuran terhadap pemahaman karakteristik 
+dan operasional perangkat lunak disusun ke dalam bentuk 
+user stories sebagai landasan pengembangan sistem. 
+ 
+b. Design (Perancangan) Fase perancangan dilakukan 
+dengan merepresentasikan arsitektur sistem yang hendak 
+dibangun sepanjang siklus iterasi. Dokumentasi model 
+sistem 
+diwujudkan 
+melalui 
+penyusunan 
+Entity-
+Relationship Diagram (ERD) untuk penataan basis data, 
+disertai perancangan antarmuka pengguna (user interface). 
+ 
+c. Coding (Pengodean) Tahap ini merupakan proses 
+penerjemahan hasil perancangan dan logika bisnis ke dalam 
+baris instruksi bahasa pemrograman. Tahapan diawali 
+dengan konfigurasi lingkungan kerja, dilanjutkan penulisan 
+kode sumber untuk bagian antarmuka (frontend) dan logika 
+peladen (backend), serta tindakan debugging guna 
+menanggulangi kendala teknis. Bahasa pemrograman yang 
+diterapkan adalah PHP dengan MySQL sebagai sistem 
+basis datanya. Selain itu, unit testing dan code review turut 
+dijalankan secara berkala untuk menjamin kestabilan serta 
+keamanan aplikasi sebelum memasuki tahap rilis. 
+ 
+d. Testing (Pengujian) Usai proses pengodean selesai, 
+sistem menjalani serangkaian pengujian operasional guna 
+mendeteksi potensi disfungsi dan memastikan kesesuaian 
+terhadap ekspektasi pengguna. Evaluasi fungsionalitas ini 
+dieksekusi melalui metode Black Box Testing, yaitu 
+pengujian yang berorientasi pada masukan dan keluaran 
+sistem tanpa mengevaluasi struktur internal kode program. 
+ 
+e. Release (Peluncuran) Fase release atau penyerahan 
+software increment menjadi tahapan penutup yang 
+menandai bahwa modul perangkat lunak telah lulus uji dan 
+siap diserahterimakan kepada pengguna. Tahap ini 
+menunjukkan pemenuhan satu siklus iterasi yang berhasil 
+memadukan perencanaan, perancangan, dan pengodean ke 
+dalam satu kesatuan sistem terintegrasi yang siap 
+dioperasikan. 
+ 
+3. Analisi Kebutuhan Sistem 
+Fase ini merupakan bagian dari tahap penentuan kebutuhan 
+(requirements) dalam metodologi Personal Extreme 
+Programming (PXP). Rincian kebutuhan fungsional dan 
+non-fungsional pada sistem yang dibangun diuraikan 
+sebagai berikut: 
+a. Analisa Kebutuhan Fungsional Sistem 
+Berdasarkan kajian operasional, fungsionalitas utama yang 
+wajib diakomodasi oleh perangkat lunak mencakup: 
+1) Perangkat 
+lunak 
+sanggup 
+memproses 
+dan 
+mengamankan rekaman data keanggotaan. 
+2) Aplikasi mampu memproyeksikan detail informasi 
+terkait ragam kelas yang tersedia. 
+3) Sistem memiliki fitur khusus untuk mengatur alokasi 
+jadwal latihan sanggar. 
+4) Perangkat lunak memfasilitasi pendataan partisipan 
+yang mendaftar pada sesi tertentu. 
+ 
+b. Analisa Kebutuhan non-Fungsional Sistem  
+Sementara untuk parameter kualitas spesifikasi teknis (non-
+fungsional), perangkat lunak dituntut untuk memenuhi 
+standar berikut: 
+1) Kompatibilitas tinggi untuk dioperasikan pada 
+berbagai varian software web browser. 
+2) Fleksibilitas akses yang mendukung penggunaan 
+melalui PC desktop maupun perangkat smartphone. 
+3) Stabilitas performa yang reliabel saat dihadapkan pada 
+lonjakan rasio pemakaian (skalabilitas). 
+4) Visualisasi antarmuka pengguna yang dirancang 
+secara ergonomis, estetis, dan intuitif. 
+ 
+4. Unified Modeling Language (UML) 
+Proses Iteration Initialization pada pendekatan PXP 
+mengonversi hasil perencanaan awal menjadi pemodelan 
+Unified Modeling Language (UML), sehingga seluruh 
+kebutuhan fungsional perangkat lunak dapat dijelaskan 
+secara utuh dan terstruktur. 
+a. Use Case Diagram 
+Use case diagram merupakan bentuk abstraksi yang 
+menggambarkan hubungan interaktif antara sistem dan 
+aktor [26]. Pemodelan visual ini memetakan alur 
+komunikasi antara pengguna (actor) dengan beragam 
+kapabilitas fungsional yang disediakan oleh perangkat 
+lunak. Pada aplikasi Sanggar Kurnia, arsitektur interaksi 
+dirancang melibatkan tiga aktor utama, yakni User, Pelatih, 
+serta Admin. 
+ 
+Gambar 2. Usecase Diagram 
+ 
+Aktor User berinteraksi melalui modul keanggotaan yang 
+mencakup 
+pendaftaran 
+akun, 
+pemantauan 
+status 
+membership, pemesanan kelas, hingga verifikasi riwayat 
+transaksi pembayaran. Sementara itu, aktor Pelatih 
+mengelola fungsi instruksional yang meliputi pemantauan 
+jadwal mengajar dan pemeriksaan daftar peserta pada kelas 
+terkait. Aktor Admin memegang otoritas manajerial 
+puncak untuk mengelola keseluruhan entitas data di dalam 
+sistem. 
+Seluruh 
+aktor 
+tersebut 
+dihubungkan 
+oleh 
+mekanisme autentikasi login dan logout sebagai prosedur 
+keamanan untuk memvalidasi hak akses sebelum 
+mengoperasikan fitur fungsional yang tersedia. 
+ 
+b. Activity Diagram 
+Activity diagram merupakan bentuk pemodelan grafis yang 
+memetakan tahapan tindakan, tugas, maupun aktivitas 
+pengguna saat menjalankan suatu proses di dalam aplikasi. 
+Penerapan diagram ini bertujuan untuk menggambarkan 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1183 
+alur kerja (workflow) sistem secara berurutan dan 
+terstruktur. Pemodelan prosedural ini merangkai alur 
+eksekusi mulai dari titik inisiasi (start state), melewati 
+percabangan evaluasi logika (decision point), hingga 
+bermuara pada kondisi akhir (end state), guna memperjelas 
+alih kendali data di dalam ruang lingkup sistem. Rangkaian 
+proses operasional yang dipetakan melalui activity diagram 
+pada perangkat lunak ini meliputi fungsi Register, Login, 
+Logout, Membership, Daftar Kelas, Kelas Saya, Riwayat 
+Pembayaran, Jadwal Mengajar, serta modul pengelolaan 
+data yang mencakup Manajemen Kelas, Manajemen 
+Jadwal, dan Manajemen User. 
+ 
+c. 
+Sequence Diagram 
+Sequence diagram merupakan bentuk representasi grafis 
+yang memetakan dinamika interaksi serta alur komunikasi 
+antarkomponen objek di dalam suatu sistem [22]. 
+Pemodelan ini berfokus pada pencatatan kronologi 
+pertukaran pesan (message) antarobjek berdasarkan 
+dimensi waktu. Secara teknis, diagram ini menggambarkan 
+lintasan transmisi informasi yang menghubungkan lapisan 
+antarmuka pengguna, komponen pengendali (controller), 
+hingga basis data (database), guna menguraikan alur 
+eksekusi logika pada setiap fungsi aplikasi. Pada penelitian 
+ini, sequence diagram dimanfaatkan untuk memetakan alur 
+interaksi pada modul Register, Login, Logout, Membership, 
+Daftar Kelas, Kelas Saya, Riwayat Pembayaran, Jadwal 
+Mengajar, serta fitur pengelolaan data yang meliputi 
+Manajemen Kelas, Manajemen Jadwal, dan Manajemen 
+User. 
+ 
+d. Class Diagram 
+Class diagram menggambarkan keterhubungan antarkelas 
+serta rincian tiap entitas di dalam rancangan sistem, 
+sekaligus memperlihatkan batasan dan tanggung jawab 
+yang mendasari perilaku perangkat lunak [26]. Dalam 
+penelitian ini, class diagram difungsikan sebagai cetak biru 
+yang memetakan fondasi struktur statis dari aplikasi. Tata 
+letak kelas beserta seluruh atribut pendukungnya dirancang 
+secara presisi mengikuti spesifikasi kebutuhan rekayasa 
+guna mendukung alur pengelolaan keanggotaan dan 
+penjadwalan. 
+ 
+Gambar 3. Class Diagram 
+ 
+e. 
+Entity Relationship Diagram (ERD) 
+Entity Relationship Diagram (ERD) difungsikan sebagai 
+representasi grafis yang menggambarkan struktur data 
+dalam sebuah database dan mendefinisikan struktur logis 
+dari data [25]. Skema ERD ini memaparkan desain 
+menyeluruh dari repositori data dengan menyoroti tautan 
+interaktif antar tabel pembentuk ekosistem perangkat lunak 
+administrasi sanggar. Melalui pemetaan logika relasional 
+ini, seluruh lalu lintas data dapat diprediksi dengan 
+terstruktur untuk memastikan absennya redundansi. 
+ 
+Gambar 4. Entity Relationship Diagram (ERD) 
+ 
+C. HASIL DAN PEMBAHASAN 
+ 
+1. Impementasi 
+Tahap implementasi merupakan proses perwujudan 
+rancangan sistem menjadi produk perangkat lunak yang 
+siap beroperasi secara fungsional [1]. Pada fase ini, 
+beragam 
+pemodelan 
+konseptual 
+seperti 
+rancangan 
+antarmuka pengguna, Entity-Relationship Diagram (ERD), 
+dan diagram UML ditransformasikan ke dalam baris kode 
+program memanfaatkan framework Laravel serta basis data 
+MySQL. Langkah ini bertujuan untuk merealisasikan 
+modul keanggotaan, penjadwalan kelas yang terpadu, 
+hingga sistem dokumentasi presensi secara terdigitalisasi. 
+ 
+a. Implementasi Antar Muka 
+Implementasi antarmuka pengguna (user interface) 
+merupakan fase penerjemahan tata letak visual aplikasi ke 
+dalam wujud halaman web fungsional yang interaktif serta 
+siap dioperasikan oleh pengguna. Hasil realisasi dari 
+perancangan 
+antarmuka 
+yang 
+telah 
+dikembangkan 
+diuraikan sebagai berikut: 
+ 
+1) Tampilan Halaman Utama 
+Tampilan ini merupakan halaman awal (landing page) yang 
+disajikan saat aplikasi web pertama kali diakses, sebelum 
+pengguna melakukan pendaftaran akun maupun autentikasi 
+masuk (login). Selain sebagai antarmuka pembuka, 
+halaman ini difungsikan sebagai media penyampaian 
+informasi serta sarana promosi operasional sanggar. 
+ 
+Gambar 5. Tampilan Halaman Utama 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1184 
+ 
+2) Tampilan Halaman Login 
+Halaman ini menyajikan antarmuka autentikasi bagi 
+pengguna yang telah memiliki akun terdaftar. Pada 
+tampilan ini, terdapat formulir pengisian username dan 
+password yang digunakan untuk memverifikasi hak akses 
+pengguna agar dapat masuk ke dalam dashboard pengguna. 
+ 
+Gambar 6. Tampilan Halaman Login 
+ 
+3) Tampilan Halaman Register 
+Halaman ini menyajikan antarmuka pendaftaran bagi calon 
+pengguna yang ingin membuat akun baru. Pada tampilan 
+ini, terdapat beberapa kolom formulir yang wajib 
+dilengkapi oleh pengguna guna menyelesaikan proses 
+registrasi. 
+ 
+Gambar 7. Tampilan Halaman Register 
+ 
+4) Tampilan Halaman Dasboard Admin 
+Halaman ini menyajikan dashboard utama yang muncul 
+setelah administrator berhasil melakukan proses autentikasi 
+login. Berperan sebagai pusat kendali operasional, 
+antarmuka ini menampilkan ringkasan statistik krusial, 
+seperti total kelas, agenda harian, jumlah pengguna, status 
+keanggotaan (membership), hingga kuantitas pelatih. 
+Selain itu, panel navigasi di sisi kiri halaman disediakan 
+untuk memfasilitasi administrator dalam mengelola 
+keseluruhan modul data pada sistem. 
+ 
+Gambar 8. Tampilan Halaman Dasboard Admin 
+ 
+5) Tampilan Halaman Dasboard Pelatih 
+Halaman ini menyajikan dashboard utama bagi pelatih 
+setelah 
+berhasil 
+melalui 
+proses 
+autentikasi 
+login. 
+Antarmuka ini berfungsi menampilkan rangkuman data 
+terkait kegiatan instruksional, yang mencakup akumulasi 
+jadwal mengajar, kuantitas kelas yang diampu, serta 
+rekapitulasi total anggota. 
+ 
+Gambar 9. Tampilan Halaman Dasboard Admin 
+ 
+ 
+6) Tampilan Halaman Dasboard User 
+Halaman utama bagi pengguna setelah login ini berfungsi 
+untuk menampilkan ringkasan aktivitas secara cepat, yang 
+meliputi status membership, jumlah kelas terdaftar, jadwal 
+kelas mendatang, dan grafik progress bulanan. 
+ 
+ 
+Gambar 10. Tampilan Halaman Dashboard User 
+ 
+2. Pengujian Sistem 
+Pengujian sistem (system testing) merupakan tahap 
+evaluasi menyeluruh terhadap perangkat lunak yang telah 
+terintegrasi secara utuh (end-to-end) guna memastikan 
+seluruh 
+fungsionalitas 
+berjalan 
+sesuai 
+spesifikasi 
+kebutuhan yang ditetapkan sebelum diserahkan kepada 
+pengguna. Penelitian ini mengadopsi metode Black Box 
+Testing dalam mengeksekusi pengujian sistem. Pendekatan 
+Black Box Testing berfokus pada analisis spesifikasi fungsi 
+aplikasi tanpa melibatkan pemeriksaan terhadap struktur 
+atau logika kode internal [26]. Pelaksanaan evaluasi ini 
+dikelompokkan ke dalam sepuluh bagian skenario 
+pengujian, yang mencakup alur interaksi mulai dari proses 
+autentikasi login hingga logout oleh pengguna. 
+ 
+D. PENUTUP 
+Kesimpulan 
+Mengacu pada serangkaian tahapan riset, analisis, serta 
+implementasi rekayasa perangkat lunak terkait Sistem 
+Informasi Manajemen Keanggotaan dan Pengaturan 
+Jadwal di Sanggar Senam Kurnia, dapat ditarik beberapa 
+konklusi utama sebagai berikut: 
+1. Perancangan dan pembangunan sistem informasi yang 
+adaptif 
+pada 
+Sanggar 
+Senam 
+Kurnia 
+berhasil 
+direalisasikan 
+dengan 
+menerapkan 
+metodologi 
+Personal Extreme Programming (PXP). Melalui lima 
+tahapan iteratif yang disesuaikan untuk pengembang 
+tunggal (solo developer)—yakni planning, design, 
+coding, testing, dan short releases—sistem memiliki 
+fleksibilitas 
+tinggi 
+dalam 
+merespons 
+dinamika 
+perubahan 
+kebutuhan 
+operasional. 
+Kemampuan 
+adaptasi ini dicapai melalui siklus umpan balik 
+(feedback loop) yang intensif pada setiap rilis bertahap, 
+sehingga penyempurnaan fitur seperti registrasi 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1185 
+mandiri, pemantauan sisa kuota sesi, serta pembaruan 
+jadwal 
+dapat 
+dieksekusi 
+secara 
+presisi 
+tanpa 
+mengganggu stabilitas arsitektur perangkat lunak. 
+2. Dengan mendigitalisasi operasional melalui otomatisasi 
+membership, kalkulasi masa aktif, presensi digital, serta 
+dasbor jadwal real-time berhasil meningkatkan efisiensi 
+operasional di Sanggar Senam Kurnia. Sistem ini 
+efektif mengeliminasi risiko human error dan 
+kehilangan data pada pembukuan kertas, sekaligus 
+memangkas koordinasi manual via WhatsApp bagi 
+pengelola, instruktur, dan anggota. 
+3. Proses perancangan aplikasi mengeksekusi tahapan 
+metodologi Personal Extreme Programming (PXP) 
+dengan memanfaatkan framework Laravel serta sistem 
+manajemen basis data relasional MySQL. Arsitektur 
+data mengintegrasikan entitas users, memberships, 
+classes, dan schedules melalui penggunaan tabel 
+perantara class_user. Alur kerja logika sistem berfokus 
+pada otomatisasi pendaftaran mandiri (self-service), 
+verifikasi pembayaran, serta pemotongan kuota sesi 
+latihan dan masa aktif keanggotaan. Selain itu, sistem 
+menyinkronkan pembaruan data secara real-time ke 
+dalam tampilan kalender interaktif guna mencegah 
+terjadinya tumpang-tindih jadwal bagi administrator, 
+instruktur, maupun anggota. 
+ 
+Saran 
+Merujuk pada hasil evaluasi akhir dan wujud implementasi 
+sistem, terdapat serangkaian rekomendasi strategis guna 
+menunjang penyempurnaan perangkat lunak pada masa 
+mendatang: 
+1. Menimbang bahwa sentralisasi rancang bangun saat ini 
+masih mengerucut pada penguatan fungsionalitas basis 
+data 
+internal, 
+peneliti 
+amat 
+merekomendasikan 
+pelebaran sayap pengembangan menuju visualisasi 
+etalase publik. Konstruksi halaman beranda (landing 
+page) atau profil digital (company profile) dinilai urgen 
+untuk direalisasikan guna mendongkrak visibilitas 
+sekaligus menopang kampanye pemasaran sanggar di 
+ranah maya. 
+2. Injeksi 
+modul 
+peringatan 
+terotomatisasi 
+(auto-
+notification), baik yang terintegrasi dengan gerbang 
+aplikasi WhatsApp maupun surel (e-mail), patut 
+dipertimbangkan sebagai fokus rekayasa selanjutnya. 
+Fitur peringatan dini ini akan sangat bermanfaat untuk 
+melontarkan teguran masa tenggang langganan kepada 
+para anggota, serta mendistribusikan instruksi darurat 
+tatkala terjadi pergeseran jadwal kelas. 
+3. Sebagai langkah pamungkas, pihak manajerial Sanggar 
+Senam Kurnia diimbau untuk memprakarsai manuver 
+transisi total dari ekosistem manual menuju operasional 
+berbasis web. Proses adaptasi ini idealnya dibarengi 
+dengan penyelenggaraan orientasi atau lokakarya 
+(training) khusus bagi jajaran administrator dan 
+instruktur, guna memastikan seluruh fungsionalitas 
+sistem dapat dieksploitasi secara maksimal demi 
+kemajuan sanggar. 
+ 
+E. DAFTAR PUSTAKA 
+Anwar, C., & Hartono, R. (2026). Implementation of 
+information system and software quality testing in 
+company 
+operational 
+applications 
+based 
+on 
+ISO/IEC 25010 (Case study: PT Snapdev Digital 
+Indonesia). Jurnal Teknologi Informatika dan 
+Komputer, 12(1), 307-325. 
+Anwar, C., Farizy, S., & Wijayanto, S. (2026). 
+Implementasi ISO/IEC 25010 dalam evaluasi 
+kualitas fungsional dan usability sistem informasi 
+keuangan studi kasus PT Teknologi Informatika 
+Solusindo. 
+JATI 
+(Jurnal 
+Mahasiswa 
+Teknik 
+Informatika), 10(2), 3034-3042. 
+Anwar, C. (2026). Inovasi teknologi sistem informasi untuk 
+kepentingan operasional perusahaan dalam human 
+resource development dan general affair dengan 
+menggunakan metode agile berbasis website (Studi 
+kasus: PT Teknologi Informatika Solusindo). 
+RIGGS: Journal of Artificial Intelligence and 
+Digital Business, 5(1), 2902-2912. 
+Anwar, C., & Kom, S. (2025). Teori dan konsep 
+managemen perubahan teknologi informasi. 
+Anwar, C., & Riyanto, J. (2019). Perancangan sistem 
+informasi human resources development pada PT. 
+Semacom Integrated. International Journal of 
+Education, Science, Technology, and Engineering 
+(IJESTE), 2(1), 19-38. 
+Anwar, C., Hady, S., Rahayu, N., & Kraugusteeliana, K. 
+(2023). The application of Mobile Security 
+Framework (MOBSF) and Mobile Application 
+Security Testing Guide to ensure the security in 
+mobile commerce applications. Jurnal Sistim 
+Informasi dan Teknologi, 97-102. 
+Hartono, R., & Anwar, C. (2026). Design and construction 
+of an IPL payment monitoring information system 
+using a website-based agile method (Case study: 
+Situ Indah Kedaung Sawangan). Jurnal Teknologi 
+Informatika dan Komputer, 12(1), 507-525. 
+Amirulloh, Imam, Pertiwi, Melisa Winda, & Wibisono, 
+Taufik (2024). Rancang Bangun Chatbot Whatsapp 
+Menggunakan Node Js Dan Model Natural 
+Languange Processing Untuk Layanan Ppdb Smk 
+Ypc Tasikmalaya. Jurnal Informatika dan Teknik 
+Elektro Terapan, 12(1), ISSN 2830-7062, Lembaga 
+Penelitian dan Pengabdian kepada Masyarakat 
+Universitas Lampung. 
+Akbar, 
+Muhammad 
+Sulthoni, 
+Nuryasin, 
+Ilyas, 
+& 
+Chandranegara, Didih Rizki (2024). Implementasi 
+Metode Personal Extreme Programming Dalam 
+Peracangan Aplikasi Pemesanan Ruang Rapat 
+Berbasis Android Diskominfo Jawa Timur. Jurnal 
+Teknologi Informasi, Komputer, dan Aplikasinya 
+(JTIKA ), 6(1), 308-315, ISSN 2657-0327, 
+Universitas Mataram. 
+Andini, Y., Hardinata, J. T., & Purba, Y. P. (2022). 
+Penerapan Data Mining pada Tata Letak Buku Di 
+Perpustakaan Sintong Bingei Pematangsiantar 
+dengan Metode Apriori. Jurasik (Jurnal Riset Sistem 
+Informasi Dan Teknik Informatika), 7(1), 13–18. 
+Buana, I Komang Setia, Syahputra, Nofrisal Dwi, 
+Qomariasih, Nurul, & Hadiprakoso, Raden Budiarto 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1186 
+(2023). 
+Penerapan 
+Gamifikasi 
+dan 
+Personal 
+Extreme Programming pada Aplikasi Ensiklopedia 
+terkait Secure Coding Berbasis Android. Jurnal 
+Sistem dan Informatika (JSI), 17(1), 19-29, ISSN 
+2460-3732, STIKOM Bali. 
+Budikusuma, I., & Susanto, E. S. (2022). Pengembangan 
+Aplikasi Toefl Practice Exam Berbasis Website 
+Pada Universitas Teknologi Sumbawa. JATI (Jurnal 
+Mahasiswa Teknik Informatika), 6(1), 75–78. 
+Darmawan, Fery, Putera, M. Ihsan Alfani, & Natasia, Sri 
+Rahayu (2022). Rancang Bangun Sistem Informasi 
+Pengelolaan Surat Menggunakan Metode Personal 
+Extreme Programming (Studi Kasus: Kelurahan 
+Sepinggan). SPECTA Journal of Technology, 6(1), 
+87-99, 
+ISSN 
+2622-9099, 
+Institut 
+Teknologi 
+Kalimantan. 
+Dewi, Varra Meylanie, Sulistyanto, Agus, & Sianipar, 
+Anton Zulkarnain (2021). Perancangan sistem 
+informasi manajemen keanggotaan perguruan silat 
+berbasis web (studi kasus keluarga Pencak Silat 
+Nusantara Ranting GOR Rawamangun). Jurnal 
+Manajamen Informatika Jayakarta, 1(4), 258, ISSN 
+2797-0930, Sekolah Tinggi Manajemen Informatika 
+dan Komputer Jayakarta. 
+Eriana, E. S. (2020). Pengujian Sistem Informasi Aplikasi 
+Perpustakaan Berbasis Web Dengan White Box 
+Testing. Jurnal Teknologi Informasi ESIT, 28, 28–
+33. 
+Fahrezi, A., Salam, F. N., Ibrahim, G. M., Syaiful, R. R., & 
+Saifudin, A. (2022). Pengujian Black Box Testing 
+pada Aplikasi Inventori Barang Berbasis Web di PT. 
+AINO Indonesia. 
+Firmansyah, Nuryasin, Ilyas, & Wahyuni, Evi Dwi (2024). 
+Rancang Bangun Sistem Informasi Geografis 
+Pemetaan 
+Penduduk 
+menggunakan 
+Metode 
+Personal Extreme Programing (Studi Kasus: Desa 
+Oro-oro Ombo). Jurnal Repositor, 5(4), ISSN 2716-
+1382, Universitas Muhammadiyah Malang. 
+Fiqar, Tegar Palyus, Azhar, Nur Fajri, & Azzahra, Fathima 
+(2022). Implementasi Metode Personal Extreme 
+Programming 
+dalam 
+Pengembangan 
+Sistem 
+Informasi Manajemen Hak Paten pada Sentra HKI 
+ITK. SPECTA Journal of Technology, 6(3), 329-
+341, 
+ISSN 
+2622-9099, 
+Institut 
+Teknologi 
+Kalimantan. 
+Hartanto, Budi, Fawa’ati, Teuku Muhammad, & P, Doni 
+Eko Hendro (2023). Analisa Kinerja Database Dan 
+Implementasi Cache Redis Pada Web Service 
+Lumen. Jurnal Alih Teknologi Komputer (ALTEK), 
+4(2), ISSN 2745-8814, Universitas Mitra Indonesia,  
+Hasan, Harizal Iqmal, Marthasari, Gita Indah, & Nuryasin, 
+Ilyas (2024). Implementasi Metode Personal 
+Extreme Programming Dalam Pengembangan 
+Sistem Administrasi Pelayanan Desa (Studi Kasus: 
+Desa Bulangan Barat Kec. Pegantenan Kab. 
+Pamekasan). Jurnal Repositor, 3(1), ISSN 2716-
+1382, Universitas Muhammadiyah Malang. 
+Kharisma, Muhammad, Fathurrohim, Muhammad, & 
+Apriadi, Bima Catur (2022). Pembangunan Sistem 
+Informasi Manajemen Surat Menyurat Dengan 
+Metode Personal Extreme Programming (Pxp) Di 
+Lingkungan 
+Institut 
+Teknologi 
+Kalimantan. 
+SPECTA Journal of Technology, 6(3), 377-389, 
+ISSN 2622-9099, Institut Teknologi Kalimantan. 
+M, Saripuddin, Kamal, Kamal, Malajong, Lary Septisari, & 
+Mahmud, Hasrah (2022). Aplikasi Absensi Siswa 
+Menggunakan Qr-Code Berbasis Web Pada Smk 
+Yapmi Makassar. ILTEK : Jurnal Teknologi, 17(1), 
+25-31, 
+ISSN 
+2721-3447, 
+Universitas 
+Islam 
+Makassar. 
+Melati, Firda Ayu, Pradana, Ridho Wibi, & Arisa, Nursanti 
+Novi (2024). Pengembangan Buku Tamu Digital 
+Pada PT XYZ Menggunakan Metode Personal 
+Extreme Programming. Jurnal Sistim Informasi dan 
+Teknologi, 73-81, ISSN 2686-3154, PT. Seulanga 
+System Publisher. 
+Nugroho, Ardianto, Prihandani, Kamal, & Mayasari, Rini 
+(2024). Rancang Bangun Sistem Pembelian E-
+Ticket Berbasis Website Dengan Konsep Server-
+Side Rendering Menggunakan Framework Next Js 
+Pada Wisata Telaga Kusuma Jumantono. JATI 
+(Jurnal Mahasiswa Teknik Informatika), 8(4), 5771-
+5777, ISSN 2598-828X, LPPM ITN Malang. 
+Putra, Fransiskus Handika, Aditya, Addin, & Sakaria, 
+Setiabudi (2022). Sistem Informasi Membership 
+Dan Pengaturan Jadwal Untuk Mempermudah 
+Administrasi Pada Alto Myshouse Berbasis Web. J 
+INTECH, 10(1), 55-63, ISSN 2580-720X, Sekolah 
+Tinggi Informatika dan Komputer Indonesia. 
+Sugiato, A., Syahidin, Y., & ... (2021). Perancangan Sistem 
+Informasi Indeks Penyakit Pasien Rawat Jalan 
+Dengan Metode V-Model. Jurnal Sistem Informasi 
+Dan Sains Teknologi, 3(2), 1–14. 
+Saputra, Wisnu, & Prihandani, Kamal (2024). Rancang 
+Bangun 
+Portal 
+Magang 
+Berbasis 
+Website 
+Menggunanakn Node Js. JATI (Jurnal Mahasiswa 
+Teknik Informatika), 8(4), 5683-5690, ISSN 2598-
+828X, LPPM ITN Malang. 
+Septiyanto, Abdullah Faqih, Suharso, Wildan, & Nuryasin, 
+Ilyas (2024). Sistem Informasi Program Keluarga 
+Harapan (PKH) Menggunakan Metode Personal 
+Extreme Programming dengan Metode Prioritas 
+Ranking. Jurnal Repositor, 2(12), ISSN 2716-1382, 
+Universitas Muhammadiyah Malang. 
+Subariah, Risah (2024). Implementasi Model Personal 
+Extreme Programming Pada Perancangan Aplikasi 
+Project Report. Progresif: Jurnal Ilmiah Komputer, 
+20(1), 429, ISSN 2685-0877, STMIK Banjarbaru. 
+Ulfi, Muhammad, Marthasari, Gita Indah, & Nuryasin, 
+Ilyas (2024). Implementasi Metode Personal 
+Extreme 
+Programming 
+dalam 
+Pengembangan 
+Sistem Manajemen Transaksi Perusahaan (Studi 
+Kasus : CV. Todjoe Sinar Group). Jurnal Repositor, 
+
+Fazry Ramadhan 
+Journal of Information Systems and Business Technology (JISBT) Vol. 02 No. 04 (2026) 1180-1187 
+ 
+Lisensi: Creative Commons Attribution 4.0 International (CC BY 4.0) 
+1187 
+2(3), ISSN 2716-1382, Universitas Muhammadiyah 
+Malang. 
+Utomo, Satrio Sarwo, Nurfarida, Ellya, & Eliyen, Kunti 
+(2022). Sistem Informasi Keanggotaan Aslab Studi 
+Kasus GI-BEI Polinema PSDKU Di Kota Kediri 
+Berbasis Web. Jurnal Informatika dan Multimedia, 
+14(1), 24-33, ISSN 2548-4710, Politeknik Negeri 
+Malang. 
+Šuman, Sabrina, Čandrlić, Sanja, & Jakupović, Alen 
+(2022). A Corpus-Based Sentence Classifier for 
+Entity–Relationship Modelling. Electronics, 11(6), 
+889, ISSN 2079-9292, MDPI AG. 
+Ramdany, Sandy (2024). Penerapan UML Class Diagram 
+dalam Perancangan Sistem Informasi Perpustakaan 
+Berbasis Web. Journal of Industrial and Engineering 
+System, 
+5(1), 
+ISSN 
+2722-7979, 
+Universitas 
+Bhayangkara Jakarta Raya. 
+Rahmadan, M., & Gunawan, C. E. (2024). Perancangan 
+Data Flow Diagram Aplikasi Tabungan Sampah Pt 
+Pusri Palembang. Prosiding Seminar Nasional Mini 
+Riset Mahasiswa, 3(1), 1–9. 
+Wahyudi, J, Asbari, M, Sasono, I, Pramono, T. (2022). 
+Database management in MySQL. Edumaspul-J, 
+academia.edu. 
+Wijayanto, 
+S. 
+(2023). 
+Penetapan 
+lokasi 
+promosi 
+penerimaan siswa baru SMK Bina Informatika 
+menggunakan 
+metode 
+Analytical 
+Hierarchy 
+Process. 
+IDEALIS, 
+6(2), 
+156–164. 
+https://doi.org/10.36080/idealis.v6i2.3009 
+Wijayanto, S. (2026). Sistem pendukung keputusan 
+evaluasi 
+kinerja 
+guru 
+menggunakan 
+metode 
+Analytical Hierarchy Process. IDEALIS: Indonesia 
+Journal Information System, 9(1), 144–153. 
+https://doi.org/10.36080/idealis.v9i1.3712 
+Kurniawansyah, K, Marthiawati, N. (2025). Pelatihan 
+Pengelolaan Database Menggunakan XAMPP 
+Untuk Meningkatkan Keterampilan Mahasiswa di 
+Universitas Muhammadiyah Jambi. pkm.lpkd.or.id. 
+Abdillah, MT, Kurniastuti, I, Susanto, FA. (2023). 
+Implementasi black box testing dan usability testing 
+pada 
+website 
+sekolah 
+MI 
+Miftahul 
+Ulum 
+Warugunung Surabaya. Journal of Computer, 
+journal.unusida.ac.id. 
+ 
+

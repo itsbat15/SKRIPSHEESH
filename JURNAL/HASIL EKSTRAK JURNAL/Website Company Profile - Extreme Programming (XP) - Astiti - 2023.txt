@@ -1,0 +1,552 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 114 
+Penerapan Metode Extreme Programming Pada Rancang Bangun Website 
+Company Profile 
+Sarah Astiti 
+Fakultas Informatika, Sistem Informasi, Institut Teknologi Telkom Purwokerto, Purwokerto, Indonesia 
+Email: sarah@ittelkom-pwt.ac.id 
+Email Penulis Korespondensi: sarah@ittelkom-pwt.ac.id 
+Abstrak–Website hari ini adalah suatu hal yang tidak terlepas dari perkembangan dunia Teknologi dan internet. Website sudah 
+digunakan hampir semua kalangan dan hampir semua instansi yang ada saat ini. Salah satu manfaat dari website adalah untuk media 
+penyampaian Informasi yang berbasis Teknologi, baik itu dalam penerapannya dibidang pemerintahaan, Pendidikan, Kesehatan atapun 
+dalam bidang bisnis. Ahass nusantara jaya adalah bengkel resmi mitra honda yang berada Jl. Jenderal Gatot Subroto, Kebondalem, 
+Purwokerto Lor, Kec. Purwokerto Tim, Kabupaten Banyumas. Saat ini ahass nusantara jaya dalam proses pelaksanaan bisnisnya baik 
+itu dalam mengelola data service ataupun  mengelola data sparepart masih menggunakan catatan buku besar, hal ini kerap terjadi 
+kesalahan dalam pencatatan data service maupun data sparepart. Kemudian ketika pelanggan ingin membeli suatu jenis sparepart maka 
+petugas atau admin bengkel tersebut membutuhkan waktu lama dalam mencari kesediaan barang tersebut. Berdasarkan masalah 
+tersebut dilakukanlah pembuatan suatu website yang bisa membantu menyelesaikan masalah yang telah dijelaskan diatas dengan 
+menggunakan metode Extreme Progremming (XP), kemudian menggunakan Unified Modeling Language (UML) dalam pemodelan 
+perangkat lunak. Metode XP di gunakan dalam penelitian ini, karena metode tersebut sering digunakan dalam perancangan sistem yang 
+sifatnya tidak terlalu besar, selain itu metode XP juga dinilai sebagai metode yang cepat dan efesien. Dari hasil penelitian yang telah 
+dilakukan dengan merapkan pengujian sistem menggunakan metode fungsional blackbox didapatkan hasil bahwa website company 
+profile ahass nusantara jaya berjalan sesuai rancangan yang sudah dibuat dan bisa digunakan oleh admin dalam mengelola data service 
+dan sparepart motor. Selain itu website company profile ahass nusantara jaya juga bisa di akses oleh pelanggan untuk mencari Informasi 
+terkait Janis-jenis sparepart yang disediakan, dan juga bisa mencari Informasi proses service motor yang sedang dikerjakan oleh 
+mekanik ahass nusantara jaya. 
+Kata Kunci: Website; Perancangan; UML; Extreme Progremming; Blackbox 
+Abstract-Today's website is something that cannot be separated from the development of the world of technology and the internet. 
+The website has been used by almost all groups and almost all agencies that exist today. One of the benefits of the website is as a 
+medium for delivering technology-based information, both in its application in the fields of government, education, health or in the 
+business sector. Ahass Nusantara jaya is an official Honda partner repair shop located on Jl. General Gatot Subroto, Kebondalem, 
+Purwokerto Lor, Kec. Purwokerto Team, Banyumas Regency. Currently, ahass archipelago jaya, in the process of implementing its 
+business, whether in managing data services or managing spare parts data, still uses ledger records, this often results in errors in 
+recording service data and spare parts data. Then when the customer wants to buy a type of spare part, the workshop admin or officer 
+takes a long time to find the availability of the item. Based on these problems, a website is created that can help solve the problems 
+described above by using the Extreme Programming (XP) method, then using the Unified Modeling Language (UML) in software 
+modeling. . The XP method is used in this study, because this method is often used in designing systems that are not too large in nature, 
+besides that the XP method is also considered a fast and efficient method. From the results of the research that has been carried out by 
+implementing system testing using the blackbox functional method, the result is that the website company profile ahass archipelago 
+jaya runs according to the design that has been made and can be used by the admin in managing service data and motorbike spare parts. 
+In addition, customers can also access the company profile website for ahass nusantara jaya to find information related to Janis, the 
+types of spare parts provided, and can also find information on the process of servicing motors that are being carried out by ahass 
+nusantara jaya mechanics. 
+Keywords: Website; Design; UML; Extreme Programming; Blackbox 
+1. PENDAHULUAN 
+Hari ini website menjadi hal yang tidak terbantahkan dalam penggunaannya sebagai media penyampaian Informasi [1]. 
+Website sudah digunakan dalam berbagai sector, baik itu Pendidikan, pemerintahaan, Kesehatan ataupun dalam bidang 
+bisnis [2]. Website berkembang tidak terlepas dari perkembangan Teknologi internet yang memungkinkan semua orang 
+bisa mengakses halaman tersebut [3] [4]. Website merupakan kumpulan dari halaman-halaman web yang terdiri dari 
+gambar, text, suara, animasi dan video yang memungkinkan penggunnya bisa mendapatkan Informasi dari apa yang di 
+tampilkan pada halaman tersebut [5] . Dewasa ini jumlah website mencapai 1,9 miliar website di dunia yang terbagi dari 
+berbagai jenis dan fungsi dari website itu sendiri [6]. Website bisa dijadikan sebagai media promosi yang sangat popular 
+terutama dalam bidang bisnis [7]. Melihat hal tersebut ahass nusantara jaya ingin memanfaatkan website sebagai media 
+promosi bengkel. Ahass nusantara jaya merupakan suatu bentuk bisnis yang bergerak di bidang jasa service dan penjualan 
+alat-alat motor. Ahass nusantara jaya adalah bengkel resmi mitra honda yang berada Jl. Jenderal Gatot Subroto, 
+Kebondalem, Purwokerto Lor, Kec. Purwokerto Tim, Kabupaten Banyumas. Saat ini ahass nusantara jaya dalam proses 
+pelaksanaan bisnisnya baik itu dalam mengelola data service ataupun  mengelola data sparepart masih menggunakan 
+catatan buku besar, hal ini kerap terjadi kesalahan dalam pencatatan data service maupun data sparepart. Kemudian ketika 
+pelanggan ingin membeli suatu jenis sparepart maka petugas atau admin bengkel tersebut membutuhkan waktu lama 
+dalam mencari kesediaan barang tersebut. Dalam promosi penjualan barang ahass nusantara jaya masih menggunakan
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 115 
+brosur yang diberikan kepada pelanggan yang datang, hal ini dinilai kurang efektif mengingat ahass nusantara jaya 
+mengeluarkan anggaran dan desain brosur setiap kali ada produk atau promosi alat-alat motor.  
+Berdasarkan masalah tersebut dilakukanlah pembuatan suatu website company profile yang bisa membantu 
+menyelesaikan masalah yang telah dijelaskan diatas dengan menggunakan metode Extreme Progremming (XP). Metode 
+XP merupakan suatu metodologi dari pendekatan egile yang berfokus kepada kebutuhan user [8]. Metode ini mempunyai 
+4 tahapan dalam proses pengembangan perangkat lunak yang terdiri dari planning, design, koding  dan test [9]. Metode 
+XP sering digunakan dalam perancangan sistem yang sifatnya tidak terlalu besar, selain itu metode XP juga dinilai sebagai 
+metode yang cepat dan efesien [10]. Dalam pemodelan pengembangan perangkat lunak, metode XP menggunakan 
+pendekatan objek oriented yang nantinya akan menghasilkan sistem yang responsive [11]. Metode XP sering digunakan 
+oleh para peneliti dalam pengembangan sistem yang sifatnya kecil dan membutuhkan waktu yang cepat dalam 
+penyelesainnya [12] [13]. Metode ini juga dinilai mampu menekan resiko dan biaya dalam proses pengembangan 
+perangkat lunak [14]. Selain peneliti menggunakan metode XP dalam metode pengembangan perangkat lunak, peneliti 
+juga menggunakan Unified Modeling Language (UML) dalam pemodelan perangkat lunak. UML merupakan suatu 
+standar yang sering digunakan oleh para peneliti dalam mendesain atau menggambar bentuk dari perangkat lunak yang 
+akan dibuat [15]. Dari beberapa penelitian UML terdiri dari beberapa diagram mulai dari use case, aktifity, sequence dan 
+class diagram [16] [17]. Kemudian untuk memastikan sistem yang dirancang berjalan sesuai yang diharapkan, peneliti 
+menggunakan mengujian sistem fungsional blakbox [18]. Pengujian fungsional blackbox merupkan pengujian yang 
+berfokus kepada kebutuhan fungsional dari sistem yang dibangun [19]. Sistem pengujian seperti ini hanya berfokus 
+kepada fitur-fitur yang dirancang, apakah sudah berjalan dan bisa digunakan sesuai desain yang telah dibuat. 
+2. METODOLOGI PENELITIAN 
+Pada penelitian ini, peneliti menggunakan metode penelitian yang bersifat analisis kualitatif dengan menggunakan metode 
+Exreme Programming guna untuk menyelesaikan website company profile pada ahass nusantara jaya. Adapun tahapan 
+dari metode penelitian ini adalah planning, design, conding dan test. Berikut ini adalah bentuk gambaran dari tahapan 
+metode Exreme Programming yang bisa dilihat pada gambar 1 dibawah ini:   
+ 
+Gambar 1. Exreme Programming [15] 
+2.1 Planning 
+Tahapan planning atau tahapan perencanaan merupakan tahapan paling awal dari penelitian ini. Pada tahapan perencaan 
+ini membahas semua hal-hal yang bersangkutan dengan rancang bangun website company profile ahass nusantara jaya. 
+Pada tahapan ini juga semua kebutuhan sistem baik dari segi pemakai maupun dari fungsi sistem itu sendiri dibahas pada 
+tahapan planning atau tahapan perencaan ini.  
+2.2 Design 
+Tahapan design atau tahapan pembuatan struktur perangkat lunak dari website company profile merupakan tahapan kedua 
+pada penelitian ini menggunakan metode Exreme Programming. Tahapan desain ini merupakan pembuatan gambaran 
+sistem yang akan dibangun berdasarkan kebutuhan-kebutuhan sistem yang sudah di defenisikan pada tahapan planning 
+atau tahapan perencaan. Pada tahapan desain ini peneliti membuat gambaran sistem menggunakan pemolden ber orientasi 
+objek dengan menggunakan Unified Modeling Language (UML).  
+2.3 Koding 
+Tahapan ini merupakan tahapan ketiga yang peneliti lakukan saat menggunakan metode Exreme Programming. Tahapan 
+ini melanjutkan proses dari dua tahapan sebelumnya yaitu perencaan dan desain. Pada tahapan ini, peneliti menterjemahan
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 116 
+dari proses desain yang sudah di buat sebelumnya kedalam kodingan. Jadi tahapan ini merupakan tahapan pengkodingan 
+untuk pembuatan website company profile ahass nusantara jaya.  
+2.4 Test 
+Tahapan test atau tahapan pengujian adalah tahapan terakhir yang digunakan dalam penelitian ini. Pada tahapan pengujian 
+ini adalah menguji sistem atau website yang sudah selesai dibuat pada tahapan koding sebelumnya. Pengujian ini 
+memastikan semua bagian yang sudah dibuat berdasarkan desain sudah berjalan sesuai yang diharapkan. Tahapan 
+pengujian ini, peneliti menggunakan pengujian blackbox. Metode blackbox yang dipakai adalah pendekatan fungsional. 
+Jadi pada bagian ini peneliti berfokus kepada fungsional website yang sudah dibuat pada tahapan koding.  
+3. HASIL DAN PEMBAHASAN 
+3.1 Planning  
+Pada perencaan ini peneliti melihat pada dua sisi yang akan digunakan dalam website company profile yaitu dari sisi 
+pengguna dan dari sisi kebutuhan sistem atau website itu sendiri. Pada sisi pengguna, website ini akan digunakan oleh 
+admin dan pelanggan bengkel ahass nusantara jaya. Pada bagian admin, bisa lakukan pengelolaan data service dan 
+pengelolaan data penjualan sparepart motor. Sedangkan dari sisi pelanggan bengkel, bisa melihat apa saja layanan service 
+yang tersedia dan juga bisa melihat prosesa service yang sedang berlangsung. Selain itu pada sisi pelanggan ini, juga bisa 
+melakukan pemesanan sparepart motor. Kemudian pada sisi kebutuhan sistem, sistem yang dibangun harus bisa 
+melakukan semua kebutuhan admin dan pelanggan yang sudah dijelaskan diatas. 
+3.2  Desain 
+Tahapan desain seperti yang sudah di jelaskan pada metodologi penelitian diatas, bahwa tahapan ini adalah tahapan 
+pembuatan struktur perangkat lunak yang akan dibuat berdasrkan tahapan planning yang sudah dilakukan. Berikut ini 
+adalah desain sistem yang gunakan dalam penelitian ini dengan menggunakan pemodelan UML. Diantaranya memiliki 4 
+desain yang terdiri dari use case, aktifity, sequence dan class diagram. 
+a. Use case diagram  
+Use case diagram adalah tahapan awal dari desain sistem yang dibuat. Use case diagram merupakan gambar umum 
+sistem yang akan dibuat. Pada tahapan ini mengambarkan apa saja actor atau pengguna yang terlibat dalam sebuah 
+sistem dan juga menggambarkan apa saja yang bisa dilakukan oleh pengguna pada sistem yang akan dibuat. Berikut 
+ini adalah gambaran dari Use case diagram website company profile ahass nusantara jaya berdasarkan kebutuhan 
+sistem yang sudah di jelaskan pada tahapan planning diatas: 
+ 
+Gambar 2. Use case diagram 
+b. Activity diagram 
+Activity diagram merupakan tahapan desain kedua yang dipakai dalam penelitian ini. Activity diagram merupakan 
+diagram yang menggambarkan proses atau aktifitas yang dilakukan oleh sistem atau website ketika menjalankan 
+sebuah proses atau perintah. Activity diagram bisa dikatan adalah sebuah gambaran yang memperlihatkan sebuah alur 
+kerja sebuah sistem berdasarkan instruksi yang sedang dilakukan. Berikut ini adalah beberapa Activity diagram yang 
+dirancangan dalam pembuatan website company profile ahass nusantara jaya. Diantaranya adalah Activity diagram 
+ketika login, kelola data service dan data sparepart:
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 117 
+ 
+Gambar 2. Activity diagram login 
+ 
+Gambar 3. Activity diagram kelola data service 
+ 
+Gambar 4. Activity diagram kelola data sparepart 
+c. Sequence diagram 
+Sequence diagram merupakan desain diagram ke tiga yang dilakukan pada penelitian ini. Sequence diagram 
+merupakan diagram yang menggambarkan aktifitas yang dilakukan sistem berdasarkan waktu kejadian sebuah
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 118 
+instruksi yang sedang dijalakan. Berikut ini adalah desain dari Sequence diagram website company profile ahass 
+nusantara jaya. Diantaranya adalah Sequence diagram ketika login, kelola data service dan data sparepart: 
+ 
+Gambar 5. Sequence diagram login 
+ 
+Gambar 6. Sequence diagram Kelola data service 
+ 
+Gambar 7. Sequence diagram Kelola data sparepart
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 119 
+d. Class diagram 
+Class diagram adalah tahapan desain ke empat atau desain terakhir yang digunakan dalam penelitian ini. Class diagram 
+merupakan gambaran yang akan digunakan dalam pembuatan tabel atau basis data dari sistem yang akan dibuat. Class 
+diagram bisa dikatakan juga adalah gambaran relasi tabel yang akan dibuat pada rancangan database sistem yang akan 
+dirancang. Berikut ini adalah gambar Class diagram website company profile ahass nusantara jaya: 
+ 
+Gambar 8. Class diagram website company profile ahass nusantara jaya 
+3.3 Koding 
+Tahapan koding sebagaimana yang sudah dijelaskan pada tahapan koding di metodologi penelitian diatas yaitu tahapan 
+ini merupakan proses membuat website menggunakan bahasa pemrograman tertuntu berdasarkan desain yang sudah 
+dibuat pada tahapan desain. Tahapan koding ini menghasilkan beberapa tampilan halaman website yang sudah selesai 
+dibuat berdasarkan desain yang sudah dilakukan sebelumnya. Berikut ini adalah beberapa hasil dari tahapan koding pada 
+pembuatan website company profile ahass nusantara jaya: 
+a. Halaman Utama  
+Berikut ini adalah bentuk tampilan dari halaman utama website company profile ahass nusantara jaya. Pada halaman 
+ini terlihat beberapa menu yang bisa di akses oleh admin atau pelanggan bengkel. Berikut adalah tampilan halaman 
+menu utama: 
+ 
+Gambar 9. Halaman utama website company profile ahass nusantara jaya 
+b. Halaman Service 
+Halaman service ini bisa digunakan oleh admin dan pelanggan bengkel. Pada halaman ini admin maupun pelanggan 
+bisa melihat apa saja layanan service yang tersedia pada bengkel ahass nusantara jaya. Selain itu pada halaman ini 
+juga bisa melihat status service yang sedang berlangsung. Terdapat 3 kategori service yaitu sedang beralangsung, 
+belum selesai dan sudah selesai di service. Berikut ini adalah tampilan halaman service pada website company profile 
+ahass nusantara jaya: 
+ 
+Gambar 10. Halaman service
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 120 
+ 
+Untuk mengetahui status service pelanggan maupun admin bisa klik dibagian chek status service. Berikut ini 
+adalah tampilan dari status service: 
+ 
+Gambar 11. Halaman cek status service 
+c. Halaman Sparepart 
+Halaman ini bisa digunakan oleh admin dan pelanggan bengkel. Pada halaman ini admin maupun pelanggan bisa 
+melihat apa saja sparepart yang tersedia pada bengkel ahass nusantara jaya. Selain itu pada halaman ini pelanggan 
+juga bisa melihat detail sparepart  yang tersedia. Berikut ini adalah tampilan halaman sparepart pada website company 
+profile ahass nusantara jaya: 
+ 
+Gambar 12. Halaman sparepart 
+Untuk melihat detail dari sparepart pelanggan bisa mengklik menu chek detail pada masing masing jenis sparepart 
+yang tersedia pada bengkel tersebut. Berikut ini adalah tampilan halaman detail sparepart yang terdapat pada website 
+company profile ahass nusantara jaya: 
+ 
+Gambar 13. Halaman detail sparepart
+
+==================================================
+[HALAMAN 8]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 121 
+d. Halaman Login Admin 
+Berikut ini adalah bentuk tampilan dari halaman login admin pada website company profile ahass nusantara jaya. Pada 
+halaman ini admin bisa melakukan login kedalam website untuk mengelola data service dan sparepart motor. Berikut 
+adalah tampilan dari halaman login admin: 
+ 
+Gambar 14. Halaman login admin 
+Setelah admin berhasil masuk kedalam website, admin bisa mengelola data service dan sparepart motor. Berikut 
+ini adalah tampilan ketika admin berhasil masuk kedalam website ahass nusantara jaya: 
+ 
+Gambar 15. Halaman Utama admin 
+e. Halaman Kelola Data Service 
+Halaman service ini bisa digunakan oleh admin dan pelanggan bengkel. Pada halaman ini admin maupun pelanggan 
+bisa melihat apa saja layanan service yang tersedia pada bengkel ahass nusantara jaya. Selain itu pada halaman ini 
+juga bisa melihat status service yang sedang berlangsung. Terdapat 3 kategori service yaitu sedang beralangsung, 
+belum selesai dan sudah selesai di service. Berikut ini adalah tampilan halaman service pada website company profile 
+ahass nusantara jaya: 
+ 
+Gambar 16. Halaman Kelola data service 
+Untuk melakukan penambahan data service admin bisa klik menu tambah data pada halaman kelola data service. 
+Berikut ini adalah tampilan dari halaman tambah data service:
+
+==================================================
+[HALAMAN 9]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 122 
+ 
+Gambar 17. Halaman tambah service 
+f. Halaman Kelola Data Sparepart 
+Halaman ini bisa digunakan oleh admin untuk mengelola data sparepart. Pada halaman ini admin bisa melakukan 
+pengelolaan data sparepart seperti menambah, edit dan hapus data sparepart . Berikut ini adalah tampilan halaman 
+sparepart pada website company profile ahass nusantara jaya: 
+ 
+Gambar 18. Halaman kelola data sparepart 
+Untuk melakukan penambahan data sparepart admin bisa klik menu tambah data pada halaman kelola data 
+sparepart. Berikut ini adalah tampilan dari halaman tambah data sparepart: 
+ 
+Gambar 19. Halaman tambah sparepart
+
+==================================================
+[HALAMAN 10]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 123 
+3.4 Test 
+Seperti yang sudah dijelaskan pada tahapan metodologi penelitian, bahwa proses terakhir yang dilakukan pada penelitian 
+ini adalah tahapan pengujian. Pengujian ini memastikan semua bagian yang sudah dibuat berdasarkan desain sudah 
+berjalan sesuai yang diharapkan. Tahapan pengujian ini, peneliti menggunakan pengujian blackbox. Metode blackbox 
+yang dipakai adalah pendekatan fungsional.  Berikut ini adalah hasil pengujian menggunakan blackbox dengan 
+pendekatan fungsional: 
+Tabel 1. Tabel Pengujian Blackbox 
+No 
+Jenis Uji 
+Data Uji 
+Hasil yang Diharapkan 
+Output 
+Hasil 
+Uji 
+1 
+Menu Login 
+Input data 
+Username = “admin” 
+Password = “admin” 
+Tampilan Halaman 
+Dashboard 
+Tampilan halaman login 
+berhasil 
+Valid 
+2 
+Menu Login 
+Input data 
+Username = “admin” 
+Password = “” 
+Tampilan Pesan 
+Kesalahan 
+Tampilan halaman login 
+gagal 
+Valid 
+3 
+Tombol Login 
+Input data 
+Username = “” 
+Password = “admin” 
+Tampilan Pesan 
+Kesalahan 
+Tampilan halaman login 
+gagal 
+Valid 
+4 
+Tombol Login 
+Input data 
+Username = “” 
+Password = “” 
+Tampilan Pesan 
+Kesalahan 
+Tampilan halaman login 
+gagal 
+Valid 
+5 
+Tombol Tambah 
+Data Service 
+Input data 
+Nama Pemilik= “Mida” 
+Plat Nomor = ”G 1869” 
+Status = ”Belum 
+Selesai” 
+ 
+Tampilan Halaman 
+Tambah Data Service 
+Tampilan Data Berhasil 
+Di Tambahkan 
+Valid 
+6 
+Tombol Tambah 
+Sparepart 
+Input data 
+Nama Barang= “Shock 
+Motor” 
+Harga=”750.000.,” 
+Tipe = ”Tabung” 
+Status =”Tersedia” 
+Gambar =”JPEG” 
+ 
+Tampilan Halaman 
+Tambah Data Sparepart 
+Tampilan Data Berhasil 
+Di Tambahkan 
+Valid 
+7 
+Menu Home 
+Klik Menu Home. 
+Tampilan Halaman Menu 
+Home 
+Tampilan Halaman 
+Menu Home Berhasil 
+Valid 
+8 
+Menu About 
+Klik Menu About. 
+Tampilan Halaman Menu 
+About 
+Tampilan Halaman 
+Menu About Berhasil 
+Valid 
+9 
+Menu Sevice 
+Klik menu service 
+Tampilan Halaman 
+service 
+Tampilan Halaman 
+Service Berhasil 
+Valid 
+10 
+Menu Chek Status 
+Service 
+Klik Chek Status 
+Service 
+Tampilan Halaman 
+Status Service 
+Tampilan Halaman 
+Status Service Berhasil 
+Valid 
+11 
+Menu Sparepart 
+Klik Menu Sparepart 
+Tampilan Halaman Menu 
+Sparepart 
+Tampilan Halaman 
+Menu Sparepart 
+Berhasil 
+Valid 
+12 
+Menu Sparepartt 
+Detail 
+Klik Chek Detail 
+Tampilan Halaman 
+Detail Sparepart 
+Tampilan Halaman 
+Detail Sparepart 
+Berhasil 
+Valid 
+4. KESIMPULAN 
+Berdasarkan penelitian yang sudah dilakukan disimpulkan perancangan website company profile ahass nusantara jaya 
+dibangun berdasrkan metode pengembangan sistem extreme programming yang mempunyai empat tahapan dalam proses 
+pengembangannya, mulai dari planning, design, koding dan test. Website company profile ahass nusantara jaya di uji 
+menggunakan metode pengujian fungsional blackbox yang berfukus pada  fungsional dari fitur fitur yang disajikan dalam 
+website tersebut, hasil dari pengujiannya terdapat semua fitur sudah berjalan dengan baik sesuai yang diharapkan. Website 
+company profile ahass nusantara jaya bisa mempermudah admin bengkel dalam mengelola data service dan data sparepart 
+motor. Pelanggan ahass nusantara motor saat ini bisa melihat proses service yang sedang berlangsung dan bisa mengetahui 
+daftar antrian service, selain itu pelanggan juga bisa melihat lihat sparepart motor yang dijual oleh ahass nusantara jaya.
+
+==================================================
+[HALAMAN 11]
+==================================================
+
+RESOLUSI : Rekayasa Teknik Informatika dan Informasi 
+ISSN 2745-7966 (Media Online) 
+Vol 3, No 3, Januari 2023 
+Hal 114-124 
+https://djournals.com/resolusi 
+Sarah Astiti, RESOLUSI, Page 124 
+REFERENCES 
+[1] 
+T. N. Darmansah, Putra, I. Chairuddin, S. Informasi, S. Tinggi, T. Pekanbaru, and S. Informasi, “Design Of The Sirp To Record 
+Community Travels During The Pandemi Period ( Case Study : Kecamatan IV Koto Aur Malintang),” vol. 8, no. 2, 2021. 
+[2] 
+Y. W. Gunawan, “Pengembangan Sistem Informasi Nosa Bike Berbasis Website Menggunakan Metode Rapid Application 
+Development,” vol. 4, no. 1, pp. 321–327, 2022, doi: 10.47065/bits.v4i1.1740. 
+[3] 
+N. W. Darmansah, Wardani, M. Y. Fathoni, and F. Recognition, “Perancangan Absensi Berbasis Face Recognition Pada Desa 
+Sokaraja Lor Menggunakan Platform Android 1,3,” vol. 8, no. 1, 2021. 
+[4] 
+ darmansah darmansah, S. R. W. S. R. Widiasari, R. Raswini, and M. A. B. M. A. Bacsafra, “Perancangan Sistem Informasi 
+Inventaris Berbasis Website Menggunakan Metode Waterfall,” Klik - Kumpul. J. Ilmu Komput., vol. 9, no. 1, pp. 71–84, 2022, 
+doi: 10.30865/json.v3i4.4165. 
+[5] 
+W. Novrian, Y. G. Nengsih, and Darmansah, “Pengembangan Aplikasi Inventaris Berbasis Website Menggunakan Metode Rapid 
+Application Development,” vol. 3, no. 4, p. 425−430, 2022, doi: 10.47065/josh.v3i4.1819. 
+[6] 
+K. M. Rida and G. F. Fitriana, “PERANCANGAN PROTOTYPE APLIKASI TIKET WISATA DI KOTA PENDAHULUAN 
+Teknologi yang berkembang pada bidang bisnis mengalami kemajuan yang signifikan . Salah satu bidang bisnis yang mengalami 
+percepatan dalam bidang teknologi informasi pada sektor pariwisata . ,” vol. 7, no. 1, pp. 90–100, 2022. 
+[7] 
+M. A. Bastari, D. Darmansah, and D. P. Rakhmadani, “Sistem Informasi Jasa Cuci Interior Rumah dan Mobil Menggunakan 
+Metode User Acceptance Test,” JURIKOM (Jurnal Ris. Komputer), vol. 9, no. 2, p. 305, 2022, doi: 10.30865/jurikom.v9i2.3926. 
+[8] 
+N. A. Septiani and F. Y. Habibie, “Penggunaan Metode Extreme Programming Pada Perancangan Sistem Informasi Pelayanan 
+Publik,” J. Sist. Komput. dan Inform., vol. 3, no. 3, p. 341, 2022, doi: 10.30865/json.v3i3.3931. 
+[9] 
+A. Anharudin, S. Siswanto, and R. M. Syakira, “Rancang Bangun Data Storage System berbasis Web Dengan Metode Extreme 
+Programming,” J. Tekno Kompak, vol. 16, no. 1, p. 123, 2022, doi: 10.33365/jtk.v16i1.1454. 
+[10] M. Ridwan Nawawi, S. Lestanti, and D. Fanny, “Rancang Bangun Sistem Informasi Inventaris Fasilitas Pondok Pesantren Nurul 
+Ulum Dengan Mengunakan Metode XP (Extreme Programming),” J. Mhs. Tek. Inform., vol. 6, no. 2, pp. 835–841, 2022, 
+[Online]. Available: https://ejournal.itn.ac.id/index.php/jati/article/view/5746. 
+[11] N. P. Purwanti, S. Andryana, and A. Gunaryati, “SIKARTUN: Sistem Informasi Karang Taruna Berbasis Web Menggunakan 
+Metode FDD dan XP,” Techno.Com, vol. 21, no. 1, pp. 115–126, 2022, doi: 10.33633/tc.v21i1.5638. 
+[12] Asriyanik, “Implementasi extreme programming pada website skripsi program studi teknik informatika,” JASISFO (Jurnal Sist. 
+Informasi), vol. 3, no. 1, pp. 239–247, 2022. 
+[13] M. F. Asri, A. Farid, W. A. Amirul, and A. Cirua, “Pengembangan Sistem Manajemen Distribusi Logistik Pascabencana 
+menggunakan Metode Extreme Programming,” pp. 259–263, 2022. 
+[14] J. Sistim, I. Lestari, K. R. Ld, and M. I. A. Putera, “Rancang Bangun Research Profile Company Pada Universitas XYZ 
+Menggunakan Metode Personal Extreme Programming,” vol. 5, no. 1, pp. 50–56, 2023, doi: 10.37034/jsisfotek.v4i2.182. 
+[15] A. 
+Info, 
+“PENERAPAN 
+EXTREME 
+PROGRAMMING 
+DALAM 
+PENGEMBANGAN 
+SISTEM 
+INFORMASI 
+PENJADWALAN,” vol. 14, no. 1, pp. 1–7, 2023. 
+[16] A. Voutama, “Sistem Antrian Cucian Mobil Berbasis Website Menggunakan Konsep CRM dan Penerapan UML,” Komputika  
+J. Sist. Komput., vol. 11, no. 1, pp. 102–111, 2022, doi: 10.34010/komputika.v11i1.4677. 
+[17] I. Management and F. O. R. Educators, “Penerapan . Unified Modeling Language .( UML ) Dalam Membangun Sistem 
+Pengenalan UMKM ( Studi Kasus Rafa Laundry ),” vol. 7, no. 1, pp. 21–30, 2022. 
+[18] I. Wayan, W. Permadi, and T. A. Setiawan Prasida, “Penerapan Teknologi Ajax pada Desain Website Pariwisata Kota Salatiga 
+menggunakan UML dan UCD,” J. Bina Komput., vol. 4, no. 1, pp. 39–50, 2022. 
+[19] A. Voutama and E. Novalia, “Perancangan Sistem Informasi Plakat Wisuda Berbasis Web Menggunakan UML dan Model 
+Waterfall,” vol. 11, no. 01, pp. 36–49, 2022.

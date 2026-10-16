@@ -1,0 +1,252 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+332 
+ 
+ PERANCANGAN APLIKASI SISTEM ADMINISTRASI SEKOLAH 
+MUSIK PADA SEKOLAH MUSIK ABC BERBASIS JAVA 
+ 
+Ahmad Barizi1, Nico Bustanul Anshary2, Ria Asep Sumarni3 
+Program Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer 
+Universitas Indraprasta PGRI 
+Jalan Raya Tengah No 80, Kelurahan Gedong, Pasar Rebo, Jakarta Timur 
+barizir@gmail.com1,nico.anshary@gmail.com 2,riaasepsumarni@gmail.com3 
+ 
+Abstrak 
+Tujuan dari penelitian ini adalah menghasilkan Perancangan Aplikasi Sistem Administrasi Sekolah Musik untuk 
+mempermudah Staff Administrasi pada Sekolah Musik ABC dalam mengelola data siswa, guru, kursus, 
+penjadwalan kursus, dan pembayaran kursus sehingga dapat dikerjakan lebih cepat dan efektif. Metode penelitian 
+yang digunakan untuk perancangan sistem administrasi sekolah musik ini adalah metode deskriptif dengan 
+pendekatan kualitatif, dan metode pengumpulan data dengan cara pengenalan langsung (observasi) dan 
+wawancara. Peneliti juga menggunakan metode kepustakaan berdasarkan referensi dari berbagai media yang 
+memuat informasi yang dibutuhkan, menganalisa kebutuhan, perancangan, pengujian, dan implementasi. Sistem 
+Administrasi Sekolah Musik ini tercipta dengan dukungan Bahasa pemrograman Java dengan bantuan database 
+MySQL. 
+ 
+Kata Kunci: Perancangan, Aplikasi, Administrasi, Kursus, Java. 
+ 
+Abstract 
+The purpose of this research is to produce a Music School Administration System Application Design to facilitate 
+Administrative Staff at ABC Music School in managing data on students, teachers, courses, course scheduling, 
+and course payments so that it can be done more quickly and effectively. The research method used to design this 
+music school administration system is a descriptive method with a qualitative approach, and the data collection 
+method is by direct introduction (observation) and interviews. Researchers also use the literature method based 
+on references from various media that contain the information needed, analyzing needs, design, testing, and 
+implementation. This Music School Administration System was created with the support of the Java programming 
+language with the help of the MySQL database. 
+Keywords: Design, Application, Administration, Course, Java. 
+ 
+PENDAHULUAN 
+Perkembangan teknologi sekarang ini semakin pesat dan menjadi sarana yang sangat dibutuhkan oleh 
+perusahaan ataupun instansi untuk mendapatkan informasi yang lebih cepat. Suatu informasi 
+diharapkan dapat membantu, mempermudah, dan mempercepat suatu pekerjaan dalam pengerjaannya. 
+Berkembanganya sistem informasi dari waktu ke waktu, kebutuhan akan teknologi informasi di era 
+sekarang ini sudah merupakan hal umum, banyak sekali instansi dalam berbagai bidang yang 
+memanfaatkan peran sistem informasi untuk mempermudah pekerjaan mereka.  
+Sekolah Musik ABC adalah salah satu sekolah musik yang berada di Jakarta, didirikan pada tahun 2012. 
+Owner Sekolah Musik ABC melihat perkembangan bisnis musik yang cukup baik dan minat 
+masyarakat yang terus berkembang dalam mempelajari musik, maka owner Sekolah Musik ABC 
+berniat untuk membuka sekolah musik. Sistem administrasi dilakukan masih secara manual, sehingga 
+tidak memudahkan staff admin dalam mengelola data, terutama pada pengolahan data siswa, data guru, 
+data kelas, penjadwalan, dan pembayaran spp kursus siswa.  
+Pada saat ini komputer memegang peranan penting untuk menghasilkan informasi yang lebih tepat, 
+cepat, akurat dan teliti. Dengan komputer pula kita dapat mengetahui perkembangan dunia saat ini, 
+dalam perusahaan baik pemerintahan maupun swasta, komputer sangat membantu dalam 
+menyelesaikan suatu pekerjaan, dimana komputer digunakan sebagai media penyimpanan data dan 
+media informasi karena dapat memberikan informasi yang akurat dan relevan bagi perusahaan. Oleh
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+333 
+ 
+sebab itu penulis memilih judul perancangan aplikasi sistem administrasi sekolah musik pada Sekolah 
+Musik ABC berbasis java.  
+PENELITIAN RELEVAN 
+Noviyanti (2013) telah melakukan penelitian dengan judul Perancangan Sistem Informasi Administrasi 
+Kursus Pada Sekolah Musik Purwa Caraka. Suatu program aplikasi pendaftaran dan administrasi kursus 
+akan sangat membantu kita dan bagi semua pihak untuk di masa yang akan datang. Penulis merancang 
+program pendaftaran dan administrasi kursus ini menggunakan suatu program berbasis web dengan 
+menggunakan metode waterfall dan UML. Keuntungan dari program ini antara lain mudah untuk 
+dipahami, serta memiliki sarana akses data yang lebih cepat. 
+Hertina (2018) telah melakukan penelitian dengan judul Sistem Informasi Administrasi Pada Sekolah 
+Dasar Negeri 160 Palembang Berbasis Web. Metode pengembangan yang digunakan yaitu Prototype, 
+alat bantu analisis dan perancangan yang digunakan yaitu DFD (Data Flow Diagram). Bahasa 
+pemrograman PHP serta database menggunakan MySQL. Diharapkan sistem ini dapat membantu 
+kegiatan laporan administrasi pada sekolah dasar negeri 160 palembang. 
+Rahayu (2011) telah melakukan penelitian dengan judul Pengembangan Sistem Informasi Administrasi 
+Sekolah (Studi Kasus: SMP Yasporbi I Pancoran). Metode pengembangan sistem yang penulis gunakan 
+dalam membuat sistem informasi administrasi sekolah ini adalah dengan menggunakan siklus hidup 
+pengembangan sistem atau System Development Life Cycle model iterasi (berulang) dengan pendekatan 
+terstruktur, berbasiskan pada proses. 
+METODE PENELITIAN 
+Dalam melakukan penelitian untuk mendapatkan data dan informasi maka metode yang digunakan 
+penulis dalam proses pengumpulan data yaitu sebagai berikut: 
+1. Metode Observasi 
+Observasi (observation) adalah melakukan pengamatan secara langsung ke obyek penelitian untuk 
+melihat dari dekat kegiatan yang dilakukan. Observasi merupakan teknik pengumpulan data dengan 
+mengadakan pengamatan terhadap kegiatan yang sedang berlangsung (Guritno dan Rahardja, 
+2011). 
+2. Metode Wawancara 
+Wawancara adalah suatu cara pengumpulan data yang digunakan untuk memperoleh informasi 
+langsung dari sumbernya. Wawancara dilakukan jika ingin mengetahui hal-hal responden secara 
+lebih mendalam serta jumlah respondennya sedikit. Wawancara ditujukan untuk memperoleh data 
+dari individu dilaksanakan secara individu (Guritno dan Rahardja, 2011). 
+3. Metode Studi Pustaka 
+Metode yang dilakukan dengan cara mencari bahan yang mendukung dalam pendefinisian masalah 
+yang berkaitan dengan penelitian yang dilakukan melalui buku-buku, internet, jurnal serta yang 
+berkaitan dengan objek permasalahan penelitian yang dilakukan. 
+Penelitian kepustakaan yaitu berdasarkan masalah penelitian kemudian dilakukan penelitian 
+terhadap kepustakaan untuk mencari teori-teori yang relevan dengan masalah penelitian (Guritno 
+dan Rahardja, 2011). 
+Metode SDLC Waterfall merupakan salah satu metode yang mempunyai ciri khas bahwa pengerjaan 
+setiap fase harus dikerjakan terlebih dahulu sebelum melanjutkan ke fase berikutnya. Dengan demikian 
+hasilnya akan fokus terhadap masing-masing fase sehingga pengerjaan dilakukan secara maksimal 
+karena tidak adanya pengerjaan secara parallel (Nugraha et al., 2018). Langkah awal yang dilakukan 
+dalam pengembangan sistem yaitu dengan menentukan model sistem yang akan digunakan diantaranya: 
+analisis, studi kepustakaan, perancangan sistem, implementasi, dan deployment. 
+HASIL DAN PEMBAHASAN 
+Diagram Alir Data (DAD)
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+334 
+ 
+DAD merupakan alat peracangan sistem yang telah berorientasi terhadap beberapa alur data dengan 
+memiliki beberapa konsep yang dekomposisi yang bisa digunakan dalam menggambarkan atau 
+menganalisa perancangan sistem untuk dapat dikomunikasikan oleh profesional sistem kepada yang 
+memakai maupun yang membuat program (Dhika, Isnain, 2019). 
+ 
+Gambar 1. Diagram Konteks 
+Entity Relationship Diagram (ERD) 
+Model ERD yang berisi komponen-komponen entitas dan relasi yang masing-masing dilengkapi dengan 
+atribut-atribut yang mempresentasikan seluruh fakta yang ditinjau dan dikembangkan berdasarkan teori 
+himpunan dalam bidang matematika. ERD digunakan untuk pemodelan basis data relasional 
+(Ramadhan, 2020).
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+335 
+ 
+Gambar 2. Entity Relationship Diagram 
+Tampilan Layar 
+ 
+Gambar 3. Login 
+Tampilan awal program pengguna harus memasukkan username dan password agar dapat masuk ke 
+menu utama dan menjalankan aplikasi tersebut. 
+ 
+Gambar 4. Menu Utama 
+Setelah login berhasil, pengguna akan memasuki menu utama dan dapat menjalankan aplikasi. Menu 
+utama memiliki beberapa menu pilihan yang dapat dipilih seperti: data master, transaksi, laporan, dan 
+logout dari aplikasi.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+336 
+ 
+Gambar 5. Form Master Siswa 
+Pada form ini pengguna atau admin dapat mengisi data siswa yang telah melakukan pendaftaran dan 
+menyimpan data tersebut ke database. Terdapat 4 pilihan pada menu ini yaitu: simpan, ubah, segarkan, 
+dan cari data. 
+ 
+Gambar 6. Form Master Guru 
+Pada form ini pengguna atau admin dapat mengisi data guru yang terdaftar di sekolah musik dan 
+menyimpan data tersebut ke database. Terdapat 4 pilihan pada menu ini yaitu: simpan, ubah, segarkan, 
+dan cari data. 
+ 
+Gambar 7. Form Master Kursus 
+Pada form ini pengguna atau admin dapat mengisi data kursus yang tersedia yang nantinya akan dipilih 
+oleh siswa dan menyimpan data tersebut ke database. Terdapat 4 pilihan pada menu ini yaitu: simpan, 
+ubah, segarkan, dan cari data.
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+337 
+ 
+ 
+Gambar 8. Transaksi Penjadwalan Kursus 
+Tampilan layar ini adalah proses transaksi penjadwalan kursus yang berfungsi untuk menginput data 
+jadwal kursus yang telah dipilih oleh siswa dan akan disimpan ke dalam database. Pada form ini 
+terdapat 4 pilihan aksi yaitu: simpan, ubah, segarkan, dan cari data. 
+ 
+Gambar 9. Transaksi Pembayaran SPP Kursus 
+Tampilan layar ini adalah proses transaksi pembayaran SPP Kursus yang berfungsi untuk menginput 
+data pembayaran SPP Kursus yang akan mencetak nota pembayaran dan data yang diinput akan 
+disimpan ke dalam database. Pada form ini terdapat 5 pilihan aksi yaitu: simpan, ubah, segarkan, cetak 
+nota, dan cari data. 
+ 
+Gambar 10. Laporan Data Siswa
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) 
+Vol 04 No 02 Tahun 2023 
+ 
+e-ISSN : 2715-8756 
+338 
+ 
+Pada tampilan laporan data siswa akan menampilkan data siswa yang terdaftar pada sekolah musik. 
+ 
+Gambar 11. Laporan Pembayaran SPP Kursus 
+Pada tampilan laporan pembayaran kursus ini admin dapat mencetak dengan memilih menu data 
+laporan lalu memilih laporan pembayaran spp kursus dan mencetak data laporan pembayaran spp kursus 
+tersebut. Selain laporan pembayaran SPP kursus juga terdapat laporan laporan data guru, laporan data 
+kursus dan laporan data penjadwalan kursus. 
+SIMPULAN 
+Dari penelitian ini telah dibuat Rancangan Aplikasi Sistem Administrasi Sekolah Musik yang 
+telah diuji coba. Aplikasi ini merupakan salah satu solusi yang dapat diterapkan oleh Sekolah Musik. 
+Sehingga dapat disimpulkan bahwa telah dibuat rancangan sistem administrasi sekolah musik 
+terkomputerisasi yang dapat mempermudah pihak admin dalam melakukan pendaftaran siswa, 
+melakukan pembayaran kursus, dan sistem yang dapat mempermudah admin dalam melakukan 
+penjadwalan kursus siswa. 
+ 
+DAFTAR PUSTAKA 
+Dhika, Isnain, T. (2019). Manajemen Villa Menggunakan Java Netbeans Dan Mysql. Ikra-Ith, 3(58), 104–110. 
+https://journals.upi-yai.ac.id/index.php/ikraith-informatika/article/download/324/215/ 
+Guritno, S., & Rahardja, U. (2011). Theory And Application Of IT Research. Yogyakarta: Andi. 
+Hertina, Orin. (2018). Sistem Informasi Administrasi Pada Sekolah Dasar Negeri 160 Palembang Berbasis Web. Skripsi. 
+Palembang :UIN Raden Fatahilah. 
+Noviyanti, Meilia. (2013). Perancangan Sistem I.nformasi Administrasi  Pada sekolah Musik Purwacaraka. Skirpsi.Jakarta: 
+Universitas Mercu Buana 
+Nugraha, W., Syarif, M., & Dharmawan, W. S. (2018). Penerapan Metode Sdlc Waterfall Dalam Sistem Informasi. Nugraha, 
+Wahyu Syarif, Muhamad Weiskhy Steven Dharmawan, 03(01), 23–29. 
+Rahayu, Danti Maya. (2011). Pengembangan Sistem Informasi Administrasi Sekolah. Skripsi.Jakarta:UIN Syarif 
+Hidayatullah.  
+Ramadhan, D. (2020). Perancangan Sistem Aplikasi Pembayaran pada SMPI Al-Hasyimiyah Berbasis Java Netbeans. Jurnal 
+Riset Dan Aplikasi Mahasiswa Informatika (JRAMI), 1(03), 341–346. https://doi.org/10.30998/jrami.v1i03.350

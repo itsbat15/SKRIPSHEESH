@@ -1,0 +1,1072 @@
+ 
+Multitek Indonesia: Jurnal Ilmiah 
+Volume: 14 No. 2, Desember 2020, Hal.  101 - 100 
+ISSN: 1907-6223 (print) 
+ISSN: 2579-3497 (Online)  
+http://journal.umpo.ac.id/index.php/multitek  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+101
+RANCANG BANGUN SISTEM INFORMASI BUKU TAMU PADA DINAS 
+PEMUDA, OLAHRAGA DAN PARIWISATA KOTA BALIKPAPAN 
+DENGAN METODE PERSONAL EXTREME PROGRAMMING 
+ 
+Ahmad Maulana Fikri1), I Putu Deny Arthawan S. P.2)  
+ 
+1), 2)  Sistem Informasi Institut Teknologi Kalimantan  
+Jl. Soekarno Hatta KM. 15, Karang Joang, Balikpapan, Kalimantan Timur 
+E-mail : 10171001@student.itk.ac.id 1) , putudeny.asp@lecturer.itk.ac.id 2) 
+ 
+Received: April 40, 2020.    Accepted: Desember 31, 2020 
+ 
+ABSTRAK 
+ 
+Pada Dinas Pemuda, Olahraga dan Pariwisata (DPOP) Kota Balikpapan, teknologi informasi kerap 
+digunakan pada kegiatan operasional pegawai. Namun, tidak semua kegiatan operasional pegawai telah 
+diakomodasi oleh teknologi informasi. Salah satunya yaitu proses administrasi tamu yang datang ke DPOP 
+Balikpapan yang masih menggunakan buku tamu. Waktu yang cukup lama dapat terjadi dalam proses 
+perekapan tiap bulannya dari pihak DPOP Balikpapan. Selain itu, human error juga kemungkinan besar akan 
+terjadi jika proses administrasi tamu masih berbasis kertas karena proses perekapan data secara manual. Oleh 
+karena itu, dilakukan penelitian di DPOP Balikpapan dengan merancang dan membangun Sistem Informasi 
+Buku Tamu (SI-KUTA) berbasis website khusus untuk DPOP Balikpapan dengan metode Personal Extreme 
+Programming (PXP). Metode  PXP memungkinkan terjadinya komunikasi yang baik antara pengembang 
+laman web dengan klien. Implementasi metode PXP sangat cocok digunakan pada penelitian ini dikarenakan 
+kebutuhan klien yang dapat berubah sewaktu-waktu seiring dengan jalannya proses pengembangan sistem. 
+Hasil dari penelitian ini berupa implementasi dari aplikasi SI-KUTA yang dapat digunakan oleh pegawai 
+DPOP Balikpapan. Dengan dibuatnya aplikasi SI-KUTA, pegawai DPOP Balikpapan khususnya Subbagian 
+Umum dapat dengan mudah merekap, menghitung dan menyimpan data-data pengunjung DPOP Balikpapan. 
+ 
+Kata kunci: DPOP Balikpapan, Personal Extreme Programming, SI-KUTA  
+ 
+ 
+ABSTRACT 
+ 
+At the Balikpapan City Youth, Sports and Tourism Office (DPOP), information technology is often used in 
+employee operational activities. However, not all employee operational activities have been accommodated 
+by information technology. One of them is the administration process of guests coming to DPOP Balikpapan 
+who are still using guest books. This certainly requires quite a long time in the recording process each 
+month from the DPOP Balikpapan. In addition, human error is also likely to occur if the guest 
+administration process is still paper-based due to the manual data recording process. Therefore, research 
+was conducted at DPOP Balikpapan by designing and building a Website-based Guest Book Information 
+System (SI-KUTA) specifically for DPOP Balikpapan using the Personal Extreme Programming (PXP) 
+method. The PXP method allows for good communication between the website developer and the client. The 
+implementation of the PXP method is very suitable to be used in this study because the client's needs can 
+change at any time along with the course of the system development process. The results of this research are 
+the implementation of the SI-KUTA application that can be used by Balikpapan DPOP employees. With the 
+application of SI-KUTA, DPOP Balikpapan employees, especially the General Subdivision, can easily recap, 
+calculate, and store DPOP Balikpapan visitor data. 
+
+ 
+Multitek Indonesia: Jurnal Ilmiah 
+Volume: 14 No. 2, Desember 2020, Hal.  101 - 100 
+ISSN: 1907-6223 (print) 
+ISSN: 2579-3497 (Online)  
+http://journal.umpo.ac.id/index.php/multitek  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+102
+  
+Keyword: DPOP Balikpapan, Personal Extreme Programming, SI-KUTA 
+ 
+ 
+PENDAHULUAN 
+Dewasa 
+ini, 
+pemrosesan 
+informasi 
+berbasis 
+teknologi informasi mulai dikenal masyarakat luas. 
+Dalam 
+menghasilkan 
+informasi, 
+digunakan 
+berbagai jenis perangkat meliputi perangkat lunak 
+(software) dan perangkat keras (hardware) sebagai 
+alat pengolah data [1]. Penerapan teknologi 
+informasi umum dijumpai pada suatu perusahaan 
+atau 
+organisasi 
+pemerintahan 
+berskala 
+kecil 
+maupun besar. Pengaruh teknologi informasi 
+terhadap kinerja organisasi dinilai sangat besar. 
+Saat ini, sistem manajemen pada setiap perusahaan 
+atau organisasi telah berubah dari tradisional ke 
+kontemporer[2]. Sebagai contoh penerapan aplikasi 
+surat 
+menyurat 
+dan 
+administrasi 
+keuangan. 
+Perkembangan infrastruktur TI merupakan salah 
+satu 
+bentuk 
+dalam 
+perkembangan 
+teknologi 
+informasi yang meliputi perangkat keras, teknologi 
+penyimpanan 
+data, 
+bahkan 
+juga 
+teknologi 
+komunikasi[3]. 
+Lingkungan 
+sebuah 
+teknologi 
+memungkinkan suatu organisasi untuk memajukan 
+kinerja 
+pegawai 
+karena 
+memiliki 
+hubungan 
+simbiosis antara teknologi informasi dan kinerja[4]. 
+Pada Dinas Pemuda, Olahraga dan Pariwisata 
+(DPOP) Kota Balikpapan, teknologi informasi 
+kerap 
+digunakan 
+pada 
+kegiatan 
+operasional 
+pegawai. Namun, tidak semua kegiatan operasional 
+pegawai 
+telah 
+diakomodasi 
+oleh 
+teknologi 
+informasi. Salah satunya yaitu proses administrasi 
+tamu yang datang ke DPOP Balikpapan. Sebelum 
+tamu dilayani, tamu diharuskan untuk menuliskan 
+data diri beserta keperluan di sebuah buku yang ada 
+pada 
+meja 
+resepsionis. 
+Hal 
+ini 
+tentunya 
+membutuhkan waktu yang cukup lama dalam 
+proses perekapan tiap bulannya dari pihak DPOP 
+Balikpapan. 
+Selain 
+itu, 
+human 
+error 
+juga 
+kemungkinan besar akan terjadi jika proses 
+administrasi tamu masih berbasis kertas karena 
+proses perhitungan data secara manual. Biaya yang 
+dikeluarkan pun juga akan lebih banyak karena 
+perlunya pengadaan buku tiap bulannya. 
+Pada 
+penelitian 
+terdahulu, 
+telah 
+dilakukan 
+pembuatan front-end sistem informasi buku tamu 
+berbasis Android pada Badan Pusat Statistik Rokan 
+Hulu[5]. Pengelolaan data buku tamu yang 
+dilakukan oleh BPS Rokan Hulu masih secara 
+manual. Banyaknya tamu dari instansi lain yang 
+berkunjung dengan maksud pengambilan data di 
+BPS menjadi permasalahant tersendiri bagi BPS 
+dalam melakukan perekaman data pengunjung. 
+Terlebih lagi, proses perekaman dilakukan secara 
+manual. Oleh karena itu, dirancang front-end sistem 
+informasi buku tamu berbasis Android di BPS 
+Rokan Hulu. Dalam penelitian kali ini, diberikan 
+waktu 
+yang 
+cukup 
+singkat 
+dalam 
+proses 
+pengembangan sistem. Berdasarkan penelitian 
+terdahulu, 
+dijumpai 
+beberapa 
+metode 
+dalam 
+melakukan pengembangan sistem. Namun, perlu 
+dilakukan penyesuaian kondisi yang tepat antara 
+metode yang digunakan dengan keadaan peneliti 
+saat ini, dimana pengembangan sistem akan 
+dilakukan pemrograman tunggal dan waktu yang 
+singkat. Salah satu metode yang tepat dalam 
+pengembangan sistem yaitu Personal  Extreme 
+Programming (PXP). Beberapa penelitian yang 
+dilakukan dengan metode ini yaitu pengembangan 
+sistem informasi geografis pemetaan flora dan 
+fauna di Taman Nasional Meru Betiri, sistem point 
+of sale di Kedai Ratu dan aplikasi ISC (Informatics 
+Student 
+Center) 
+berbasis 
+Android[6-8]. 
+Berdasarkan penelitian terkait, dapat disimpulkan 
+bahwa 
+metode 
+PXP 
+sangat 
+cocok 
+dalam 
+pengembangan sistem yang dilakukan dengan 
+pemrograman tunggal dan waktu yang singkat. 
+Selain itu, metode PXP juga mendukung adanya 
+perubahan sewaktu-waktu terhadap sistem yang 
+dikembangkan. 
+Oleh karena itu, dilakukan penelitian di DPOP 
+Balikpapan dengan merancang dan membangun 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+103
+Sistem Informasi Buku Tamu (SI-KUTA) berbasis 
+website khusus untuk DPOP Balikpapan dengan 
+metode Personal Extreme Programming. Dalam 
+implementasi 
+SI-KUTA, 
+dipilih 
+implementasi 
+aplikasi berbasis web. Hal ini dikarenakan sebuah 
+laman web tidak memerlukan instalasi di setiap 
+komputer karena aplikasi SI-KUTA akan berada di 
+suatu 
+server[9]. Sistem informasi ini akan 
+memudahkan pihak DPOP Balikpapan dalam 
+merekap dan menghitung data-data tamu tiap 
+harinya. Selain itu, tamu juga akan terbantu dengan 
+sistem ini dari segi waktu. Dengan diadakannya 
+penelitian ini, diharapkan sistem informasi yang 
+akan dibangun dapat berdampak positif untuk 
+Dinas Pemuda, Olahraga dan Pariwisata Kota 
+Balikpapan.  
+ 
+METODE PENELITIAN 
+Dalam pembangunan perangkat lunak, digunakan 
+kerangka kerja Personal Extreme Programming 
+(XP) untuk membangun aplikasi Sistem Informasi 
+Buku Tamu berbasis website pada Dinas Pemuda, 
+Olahraga dan Pariwisata Balikpapan. Personal 
+Extreme 
+Programming 
+(PXP) 
+adalah 
+proses 
+pengembangan perangkat lunak yang dirancang 
+untuk diterapkan oleh para insinyur perangkat 
+lunak individual[10]. PXP menjaga prinsip-prinsip 
+dasar tetapi mengurangi jumlah upaya dokumentasi 
+dan pemeliharaan. Proses pembangunan PXP 
+adalah berulang dengan menerapkan praktik, 
+dimana memungkinkan pengembang untuk lebih 
+fleksibel 
+dan 
+responsif 
+terhadap 
+perubahan. 
+Berdasarkan penelitian terkait, metode PXP dirasa 
+cocok 
+untuk 
+pengembangan 
+sistem 
+yang 
+membutuhkan 
+waktu 
+yang 
+singkat 
+dalam 
+melakukan pengembangan sistem. Pada penelitian 
+ini, diberikan waktu 6 minggu dalam melakukan 
+pengembangan sistem. Adapun metodologi yang 
+digunakan 
+pada 
+pengerjaan 
+tugas 
+khusus 
+dimodelkan pada gambar 1. 
+ 
+ 
+Gambar 1. Metode Personal Extreme Programming 
+ 
+1. Requirements 
+Dalam tahapan ini, dilakukan identifikasi pengguna 
+sistem, lalu dilanjutkan dengan pembuatan user 
+story mengenai kebutuhan pengguna akan sistem 
+yang dibangun. User story merupakan salah satu 
+cara untuk mendokumentasikan kebutuhan sistem 
+dalam metodologi agile development. User story 
+merupakan deskripsi mengenai kebutuhan sistem 
+dalam bentuk bahasa alami yang dapat dengan 
+mudah dipahami oleh end user tanpa background 
+TI. Kriteria persetujuan dibuat agar dapat mengukur 
+penyelesaian setiap user story.[11]. 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+104
+2. Planning 
+Planning atau perencanaan merupakan tahapan 
+untuk menentukan fungsionalitas keseluruhan yang 
+akan dikembangkan dalam sistem dan merancang 
+jadwal 
+pembangunan 
+sistem. 
+Metode 
+PXP 
+mendukung adanya hubungan timbal balik antara 
+pengembang laman web dengan klien. Oleh karena 
+itu, jadwal pembangunan sistem yang berkelanjutan 
+sangat 
+dibutuhkan 
+untuk 
+mendukung 
+pengimplementasian metode PXP. 
+3. Iteration Initialization 
+Pada tahapan ini, fungsionalitas yang sudah 
+dibentuk akan dijabarkan dengan terperinci dalam 
+bentuk Unified Modeling Language (UML). UML 
+(Unified Modelling Language) merupakan salah 
+satu alat bantu yang umum digunakan dalam dunia 
+pengembangan 
+sistem 
+berorientasi 
+obyek[12]. 
+UML menyediakan bahasa pemodelan visual yang 
+memungkinkan bagi pengembang sistem dalam 
+pembuatan blueprint terkait visi mereka dalam 
+bentuk yang baku[12]. Kelebihan dari UML yaitu 
+mudah 
+dimengerti 
+serta 
+dilengkapi 
+dengan 
+mekanisme yang efektif dalam pengkomunikasian 
+rancangan sistem antar pengembang laman web. 
+Dalam penelitian ini, akan dirancang dua jenis 
+UML, yaitu use case diagram.  
+4. Design 
+Tahapan sistem mulai didesain, mulai dari desain 
+basis data dan desain tampilan pengguna. Desain 
+tampilan akan didesain seminimal mungkin dengan 
+kualitas Low Fidelity Prototype. Setelah itu, juga 
+akan didesain basis data menggunakan Entity 
+Relationship Diagram yang akan sangat berguna 
+untuk memanajemen basis data dari aplikasi SI-
+KUTA. 
+5. Implementation 
+Tahapan dilakukannya pengkodean sistem dengan 
+kolaborasi 
+bahasa 
+markup 
+HTML, 
+bahasa 
+pemrograman PHP dan framework Bootstrap. 
+Bootstrap merupakan framework front-end yang 
+powerful 
+dan 
+intuitif, 
+dimana 
+menggunakan 
+HTML, CSS, dan Javascript dalam pengembangan 
+aplikasi berbasis web yang lebih cepat dan 
+mudah[13]. Adapun beberapa paket yang terdapat 
+pada framework bootstrap meliputi Scaffolding, 
+CSS (Cascading Style Sheets), Components, 
+Javascript plugins dan Customize[14]. Setelah itu, 
+basis data akan menggunakan MySQL. Apabila 
+kode selesai kemudian kode tersebut diuji dalam 
+unit testing, apabila ada kesalahan maka dilakukan 
+koreksi ulang atau refactor pada tahap dimana 
+kesalahan 
+tersebut bermula. Jika 
+tidak ada 
+kesalahan, maka dilanjutkan ke unit selanutnya. 
+6. System Testing 
+Pada 
+tahapan 
+ini, 
+dilakukan 
+pengujian 
+fungsionalitas sistem dengan metode Black Box 
+Testing, 
+dimana 
+akan 
+dilakukan 
+dengan 
+menjalankan unit atau modul dan diamati hasil dari 
+unit. Blackbox testing merupakan salah satu metode 
+dalam 
+menguji 
+perangkat 
+lunak, 
+dimana 
+pengembang web bersama klien akan menguji dari 
+segi spesifikasi fungsionalnya saja (tanpa melihat 
+desain dan kode program)[15]. Pengujian ini 
+dilakukan mulai dari membuat semua kasus uji 
+untuk percobaan fungsi sistem yang diharuskan 
+sesuai dengan spesifikasi yang dibutuhkan. Kasus 
+uji akan dilihat, apakah benar atau salah dengan 
+keluaran yang diinginkan[16].  
+7. Retrospective 
+Dalam tahapan ini, akan dilakukan pengambilan 
+kesimpulan terhadap sistem, apabila masih ada 
+kesalahan maka akan dilakukan perbaikan mulai 
+dari tahap iteration initialization. Tahapan ini 
+merupakan 
+kesimpulan 
+dari 
+metode 
+yang 
+digunakan apakah dapat membantu dalam proses 
+pembuatan aplikasi dengan baik atau tidak. 
+ 
+HASIL DAN PEMBAHASAN 
+1. Requirements 
+Pada tahapan ini, dimulai dengan menganalisa 
+prosedur dan sistem yang sedang berjalan saat ini. 
+Setelah itu, dilakukan wawancara dengan pengguna 
+terkait kebutuhan sistem yang akan dibangun dalam 
+bentuk user story. Kebutuhan sistem terhadap 
+pengguna yang akan dibangun dapat dideskripsikan 
+dalam tabel 1. 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+105
+Tabel 1. Rangkuman User Story 
+ID 
+Judul 
+Deskripsi 
+Acceptance Criteria 
+US-1 
+Validasi 
+Sebagai admin, saya ingin menggunakan aplikasi 
+hanya jika saya memiliki akses terhadap aplikasi. 
+Sehingga saya dapat menggunakan aplikasi sesuai 
+dengan hak akses saya. 
+Pengguna 
+dapat 
+menggunakan 
+fitur 
+aplikasi 
+jika 
+pengguna memiliki akses terhadap aplikasi, yaitu 
+memiliki nama pengguna dan kata sandi yang telah 
+terdaftar pada sistem. 
+US-2 
+Input 
+Data 
+Pengunjung 
+di 
+Sistem 
+Sebagai admin, saya ingin pengunjung mengisi data 
+diri di sistem informasi yang terintegrasi dengan 
+database di server. Sehingga pengunjung tidak perlu 
+mengisi data diri di buku tamu. 
+Pengunjung dapat mengisi data diri berupa nama, instansi, 
+nomor identitas diri, nomor telepon dan keperluan di 
+sistem informasi saat pengunjung datang ke DPOP.  
+US-3 
+Jam dan Tanggal 
+Otomatis 
+Sebagai admin, saya ingin sistem informasi yang 
+dibuat memiliki jam dan tanggal otomatis sesuai 
+waktu saat ini tanpa perlu diinputkan lagi oleh 
+pengunjung. Sehingga, waktu pengisian dapat lebih 
+akurat. 
+Terdapat tampilan jam dan tanggal otomatis pada 
+halaman input data pengunjung secara realtime. Jam dan 
+tanggal akan sesuai dengan waktu saat pengunjung 
+memilih tombol submit. 
+US-4 
+Daftar 
+Data 
+Pengunjung 
+Sebagai admin, saya ingin melihat daftar data 
+pengunjung yang selalu diperbarui kapanpun. 
+Sehingga, saya dapat melihat data pengunjung tiap 
+harinya. 
+Terdapat data pengunjung terbaru yang terintegrasi 
+dengan database di server dalam bentuk tabel. Data yang 
+ditampilkan yaitu hari, tanggal, waktu, nama pengunjung, 
+instansi, 
+nomor 
+hp/telepon, 
+nomor 
+identitas 
+dan 
+keperluan.  
+US-5 
+Export Excel 
+Sebagai admin, saya ingin merekap data pengunjung 
+dalam format excel. Sehingga, saya dapat merekap 
+data dengan mudah dan efisien. 
+Terdapat pilihan untuk memindahkan data yang ada pada 
+database ke format excel. Pilihan tersebut berupa tombol 
+pada halaman daftar pengunjung. 
+US-6 
+Hapus 
+Data 
+Pengunjung 
+Sebagai admin, saya ingin menghapus data yang 
+tidak diperlukan kapanpun. Sehingga, saya lebih 
+mudah untuk mengontrol data-data pengunjung. 
+Terdapat pilihan untuk menghapus data individu maupun 
+semua data yang ada pada database. Pilihan tersebut 
+berupa tombol pada halaman daftar pengunjung. 
+US-7 
+Manajemen akun 
+Sebagai admin, saya ingin merubah kata sandi akun 
+kapanpun. Sehingga, kerahasiaan akun dapat 
+terjaga. 
+Terdapat tampilan untuk merubah kata sandi akun pada 
+halaman profil pengguna. 
+ 
+2. Planning 
+Pada tahapan ini, akan ditentukan fungsionalitas 
+keseluruhan yang akan dikembangkan dalam 
+Sistem Informasi Buku Tamu (SI-KUTA). Setelah 
+itu, akan dirancang jadwal pembangunan sistem 
+yang dapat dijadikan batasan waktu dalam setiap 
+tahapan 
+proses 
+pembangunannya. 
+Berikut 
+merupakan rencana rilis aplikasi SI-KUTA yang 
+dapat digunakan untuk mengestimasikan durasi 
+pembangunan sistem. Setiap akhir dari iterasi, akan 
+dilakukan proses timbal balik antara pengembang 
+web dengan klien. Hal ini sesuai dengan kerangka 
+kerja dari metode PXP, dimana setiap perubahan 
+dari klien selalu diterima dan didiskusikan bersama. 
+Pada tabel 2, merupakan rencana rilis aplikasi dari 
+SI-KUTA. 
+Tabel 2. Rencana Rilis Aplikasi 
+No. 
+User Story ID 
+Judul 
+Estimasi 
+ITERASI-1 
+1 
+US-2 
+Input Data Pengunjung di Sistem 
+3 
+2 
+US-3 
+Jam dan Tanggal Otomatis 
+1 
+Velocity 
+4 
+ITERASI-2 
+3 
+US-1 
+Validasi 
+2 
+4 
+US-7 
+Manajemen akun 
+1 
+Velocity 
+3 
+ITERASI-3 
+5 
+US-4 
+Daftar Data Pengunjung 
+2 
+6 
+US-6 
+Hapus Data Pengunjung 
+2 
+Velocity 
+4 
+ITERASI-4 
+7 
+US-5 
+Export Excel 
+3 
+Velocity 
+3 
+ 
+3. Iteration Initialization 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+106
+Use case diagram dibuat untuk menggambarkan 
+fungsionalitas sistem yang akan dibuat yaitu SI-
+KUTA DPOP Balikpapan. Gambar 2 merupakan 
+use case diagram dan scenario use case dari tiap-
+tiap fitur SI-KUTA yang diharapkan. 
+ 
+Gambar 2. Use Case Diagram SI-KUTA 
+4. Design 
+Tahapan sistem mulai didesain, mulai dari desain 
+basis data dan desain tampilan pengguna. Gambar 3 
+merupakan desain tampilan dari aplikasi SI-KUTA 
+DPOP yang akan dijadikan acuan dalam membuat 
+aplikasi SI-KUTA DPOP. 
+ 
+ 
+ 
+Gambar 3. Desain Tampilan Aplikasi SI-KUTA 
+ 
+Gambar 4 merupakan Entity Relationship Diagram 
+dari Aplikasi SI-KUTA. 
+ 
+Gambar 4. Entity Relationship Diagram Aplikasi SI-KUTA 
+ 
+5. Implementation 
+Pada tahapan ini, akan dilakukan pengkodean 
+sistem dengan kolaborasi bahasa markup HTML, 
+bahasa 
+pemrograman 
+PHP 
+dan 
+framework 
+Bootstrap. Basis data akan menggunakan MySQL. 
+Adapun tampilan dari website SI-KUTA dapat 
+dilihat pada gambar 5. 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+107
+ 
+ 
+ 
+ 
+(a) 
+ 
+ 
+ 
+ 
+ 
+ 
+(b) 
+ 
+ 
+ 
+ 
+(c) 
+ 
+ 
+ 
+ 
+ 
+ 
+(d) 
+Gambar 5. (a) Halaman Pengunjung SI-KUTA, (b) Halaman Login Admin SI-KUTA, (c) Halaman Daftar 
+Pengunjung SI-KUTA, (d) Halaman Profil Admin SI-KUTA 
+ 
+Pada gambar 5 (a), terdapat tampilan untuk 
+halaman pengunjung pada SI-KUTA. Pengunjung 
+dapat mengisi data diri yang diperlukan yaitu nama 
+pengunjung, instansi, nomor HP/telepon, nomor 
+identitas diri dan keperluan pada formulir online 
+yang disediakan. Pengunjung tidak perlu mengisi 
+hari, tanggal dan waktu datang karena telah 
+otomatis sesuai dengan waktu saat ini. Setelah itu, 
+jika pegawai DPOP Balikpapan ingin masuk 
+sebagai admin, maka dapat memilih tombol Login 
+pada pojok kanan atas. Pada gambar 5 (b), terdapat 
+tampilan untuk halaman login admin SI-KUTA. 
+Pegawai DPOP yang ingin menggunakan aplikasi 
+SI-KUTA dengan hak akses admin perlu untuk 
+mengisi data nama pengguna dan kata sandi. Jika 
+nama pengguna dan kata sandi telah terdaftar pada 
+sistem, maka sistem akan mengarahkan ke halaman 
+admin.Pada gambar 5 (c), terdapat halaman untuk 
+menampilkan daftar pengunjung terbaru yang 
+terintegrasi dengan database pada server. Admin 
+dapat melakukan penghapusan data pengunjung 
+secara individu maupun semua data pengunjung. 
+Selain 
+itu, 
+admin 
+juga 
+dapat 
+melakukan 
+pemindahan data dari database ke dalam format 
+excel. Adapun hasil dari pemindahan data ke dalam 
+format excel pada gambar 16 dan 17. Pada gambar 
+5 (d), terdapat tampilan profil pengguna yang 
+memuat nama pengguna dan kata sandi akun. 
+Admin dapat mengganti kata sandi dengan 
+menginput kata sandi lama dan kata sandi baru 
+pada form yang disediakan.  
+6. System Testing 
+Pada 
+tahapan 
+ini, 
+dilakukan 
+pengujian 
+fungsionalitas sistem dengan metode Black Box 
+Testing, 
+dimana 
+akan 
+dilakukan 
+dengan 
+menjalankan unit atau modul dan diamati hasil dari 
+unit. Hasil dari unit akan dilihat apakah sesuai atau 
+tidak sesuai dengan proses bisnis yang diinginkan. 
+Adapun hasil pengujian dapat dilihat pada tabel 4. 
+Tabel 4. Hasil Pengujian Aplikasi SI-KUTA 
+No 
+Halaman yang Diuji 
+Rancangan Proses 
+Hasil yang Diharapkan 
+Hasil Tes 
+1 
+Halaman Pengunjung 
+Pengunjung melakukan pengisian data diri 
+pada form yang disediakan di SI-KUTA. 
+Setelah itu, memilih tombol “submit”. 
+Data yang telah diisi akan tersimpan pada 
+database dan ditampilkan pada halaman 
+admin. 
+Berhasil 
+Pengunjung melakukan pengisian data diri 
+pada form yang disediakan di SI-KUTA. 
+Data yang telah diisi pada form akan 
+terhapus. 
+Berhasil 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+108
+Setelah itu, memilih tombol “reset”. 
+2 
+Halaman Login 
+Admin 
+Admin melakukan pengisian data nama 
+pengguna dan kata sandi dengan benar. 
+SI-KUTA akan berhasil menampilkan 
+halaman admin. 
+Berhasil 
+Admin melakukan pengisian data nama 
+pengguna dan kata sandi dengan salah.  
+SI-KUTA akan kembali menampilkan 
+halaman login dan memunculkan pesan 
+alert yang berisikan “username atau 
+password salah”. 
+Berhasil 
+3 
+Halaman Daftar 
+Pengunjung 
+Admin membuka halaman daftar pengunjung 
+dan mengamati pada tabel pengunjung. 
+SI-KUTA akan menampilkan data-data 
+pengunjung yang telah disimpan pada 
+database. 
+Berhasil 
+Admin membuka halaman daftar pengunjung 
+dan memilih tombol “Export Excel”. 
+Browser akan mengunduh file excel yang 
+berisikan data-data pengunjung, dimana 
+data-data tersebut merupakan data-data 
+yang telah tersimpan pada database.  
+Berhasil 
+Admin membuka halaman daftar pengunjung 
+dan memilih tombol “Hapus” pada satu data 
+pengunjung. 
+SI-KUTA akan menghapus data yang 
+dipilih admin. Data yang dipilih tidak akan 
+muncul pada tabel daftar pengunjung. 
+Berhasil 
+Admin membuka halaman daftar pengunjung 
+dan memilih tombol “Hapus Semua” 
+Data-data 
+pengunjung 
+akan 
+terhapus 
+semua, baik pada database maupun SI-
+KUTA. 
+Berhasil 
+4 
+Halaman Profil 
+Pengguna 
+Admin 
+mengganti 
+kata 
+sandi 
+dengan 
+menginputkan kata sandi lama dan dua kali 
+menginputkan kata sandi yang sesuai. Setelah 
+itu, memilih tombol “Simpan”. 
+Akan muncul notifikasi bahwa password 
+berhasil 
+diubah 
+di 
+setelah 
+tombol 
+“Simpan”. 
+Berhasil 
+Admin 
+mengganti 
+kata 
+sandi 
+dengan 
+menginputkan kata sandi lama dan dua kali 
+menginputkan kata sandi yang tidak sesuai. 
+Setelah itu, memilih tombol “Simpan”. 
+Akan muncul notifikasi bahwa kata sandi 
+tidak berhasil diubah di setelah tombol 
+“Simpan”. 
+Berhasil 
+ 
+KESIMPULAN 
+Berdasarkan pada pengerjaan tugas khusus yang 
+telah dilakukan, maka dapat disimpulkan sebagai 
+berikut: 
+ Perancangan 
+dan 
+pembangunan 
+Sistem 
+Informasi Buku Tamu (SI-KUTA) pada Dinas 
+Pemuda, 
+Olahraga 
+dan 
+Pariwisata 
+Kota 
+Balikpapan menggunakan metode Personal 
+Extreme 
+Programming 
+(PXP) 
+yang 
+tepat 
+digunakan untuk pemrograman tunggal. 
+ Dalam melakukan pembuatan sistem, dilakukan 
+langkah-langkah sesuai dengan kerangka kerja 
+metode PXP antara lain requirements, planning, 
+iteration initialization, design, implementation, 
+system testing dan retrospective. 
+ Proses dalam pembuatan aplikasi SI-KUTA 
+berjalan dengan baik yang dibuktikan dengan 
+hasil pengujian yang cukup memuaskan. 
+ Proses timbal balik antara pengembang dengan 
+klien sesuai metode PXP berjalan lancar dan 
+berdampak pada kualitas dari aplikasi SI-
+KUTA, dimana aplikasi telah sesuai dengan 
+semua acceptance criteria setiap user story yang 
+dirancang. 
+ Dengan dibuatnya aplikasi SI-KUTA, pegawai 
+DPOP Balikpapan khususnya Subbagian Umum 
+dapat dengan mudah merekap, menghitung dan 
+menyimpan 
+data-data 
+pengunjung 
+DPOP 
+Balikpapan. Selain itu, pemindahan sistem 
+layanan dari buku tamu menjadi suatu aplikasi 
+juga diharapkan dapat menjadi upaya dalam 
+mengurangi penggunaan kertas atau paperless. 
+Dalam pembuatan aplikasi SI-KUTA, penulis sadar 
+bahwa aplikasi masih jauh dari kesempurnaan. Oleh 
+karena itu, penulis memberikan saran sebagai 
+berikut: 
+ Desain 
+sistem 
+yang 
+telah 
+dibuat 
+dapat 
+dikembangkan lagi menjadi lebih baik dan 
+menarik. 
+ Penambahan fitur berupa data pegawai per 
+harinya maupun bulannya yang menerapkan 
+ilmu statistik dan disajikan dengan menarik 
+seperti bentuk diagram pie dan sebagainya. 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+109
+ Tampilan website yang telah dikembangkan 
+dapat dievaluasi dengan 10 heuristic evaluation, 
+sehingga tampilan website dapat lebih menarik. 
+ 
+ 
+DAFTAR RUJUKAN 
+[1] 
+S. 
+Maharsi, 
+"Pengaruh 
+Perkembangan 
+Teknologi 
+Informasi 
+Terhadap 
+Bidang 
+Akuntansi Manajemen," Jurnal Akuntansi 
+dan keuangan, vol. 2, no. 2, pp. 127-137, 
+2000. 
+[2] 
+A. 
+Nasir 
+and 
+R. 
+Oktari, 
+"Pengaruh 
+Pemanfaatan 
+Teknologi 
+Informasi 
+dan 
+Pengendalian 
+Intern 
+Terhadap 
+Kinerja 
+Instansi Pemerintah," Jurnal Ekonomi, vol. 
+19, no. 2, 2011. 
+[3] 
+K. C. Laudon and J. P. Laudon, Management 
+Information System. New Jersey: Prentice-
+Hall, Inc., 2004. 
+[4] 
+N. Noviari, "Pengaruh Kemajuan Teknologi 
+Informasi 
+Terhadap 
+Perkembangan 
+Akuntansi," Jurnal Ilmiah Akuntansi dan 
+Bisnis, 2007. 
+[5] 
+B. Yanto and A. S. Putra, "Sistem Informasi 
+Buku Tamu Front End Berbasis Android 
+Pada Badan Pusat Statistik Rokan Hulu," 
+Riau Journal of Computer Science, vol. 4, 
+no. 1, pp. 119-128, 2017. 
+[6] 
+R. 
+Pamungkas, 
+"Implementasi 
+Model 
+Personal 
+Extreme 
+Programming 
+(PXP) 
+Dalam Pengembangan Sistem Informasi 
+Geografis Pemetaan Flora dan Fauna di 
+Taman Nasional Meru Betiri," Universitas 
+Jember, Jember2018. 
+[7] 
+A. Suharto and L. Winarti, "Rancang Bangun 
+Sistem Point of Sale Dengan Metode 
+Personal Extreme Programming," Jurnal 
+Teknologi Informasi ESIT, vol. 15, no. 1, pp. 
+30-35, 2020. 
+[8] 
+R. Anjuliani, L. W. Astuti, and Hartini, 
+"Aplikasi ISC (Informatics Student Center) 
+Menggunakan Metode Personal Extreme 
+Programming Berbasis Android," Jurnal 
+Informatika Global, vol. 6, no. 1, pp. 20-25, 
+2015. 
+[9] 
+A. Solichin, Pemrograman Web dengan PHP 
+dan MySQL. Jakarta: Budi Luhur, 2016. 
+[10] Y. Dzhurov, I. Krasteva, and S. Ilieva, 
+"Personal Extreme Programming – An Agile 
+Process 
+for 
+Autonomous 
+Developers," 
+Faculty of Mathematics and Informatics, 
+Sofia University, pp. 252-259, 2009. 
+[11] R. A. Azdy and A. Rini, "Penerapan Extreme 
+Programming dalam Membangun Aplikasi 
+Pengaduan Layanan Pelanggan (PaLaPa) 
+pada Perguruan Tinggi," Jurnal Teknologi 
+Informasi dan Ilmu Komputer, vol. 5, no. 2, 
+pp. 197-206, 2018. 
+[12] Fatmawati, "Perancangan Sistem Informasi 
+Pemesanan Katering Berbasis Web Pada 
+Rumah Makan Tosuka Tangerang," Jurnal 
+Teknik Komputer Aamik BSI, vol. II, no. 2, 
+pp. 33-41, 2016. 
+[13] J. Enterprise, Pemrograman Bootstrap untuk  
+Pemula. 
+Jakarta: 
+PT 
+Elex 
+Media 
+Komputindo, 2016. 
+[14] A. Zakir, "Rancang Bangun Responsive Web 
+Layout Dengan Menggunakan Bootstrap 
+Framework," Jurnal Nasional Informatika 
+dan Teknologi Jaringan, 2016. 
+[15] S. Nurajizah, "Implementasi Multimedia 
+Development Life Cycle Pada Aplikasi 
+Pengenalan 
+Lagu 
+Anak-Anak 
+Berbasis 
+Multimedia," Jurnal PROSISKO, vol. 3, no. 
+2, pp. 14-19, 2016. 
+[16] Y. A. Pratama and E. Junianto, "Sistem 
+Pakar Diagnosa Penyakit Ginjal dan Saluran 
+Kemih 
+dengan 
+Metode 
+Breadth 
+First 
+Search," Jurnal Informatika, vol. II, no. 1, 
+pp. 212-221, 2015. 
+ 
+ 
+
+Multitek Indonesia, Jurnal Ilmiah Vol. 14, No. 2, Desember  2020 
+ 
+ISSN: 1907-6223 (Print) 
+  ISSN: 2579-3497 (Online)  
+ 
+Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan 
+Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming 
+ 
+110
+ 
+ 
+

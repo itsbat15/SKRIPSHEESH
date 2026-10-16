@@ -1,0 +1,1509 @@
+[
+  {
+    "id": 318,
+    "date": "2022-09-01T08:29:35",
+    "date_gmt": "2022-09-01T08:29:35",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=318"
+    },
+    "modified": "2022-09-01T08:29:35",
+    "modified_gmt": "2022-09-01T08:29:35",
+    "slug": "menulis",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/menulis/",
+    "title": {
+      "rendered": "Menulis"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-318",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/318",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=318"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/318/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 319,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/318/revisions/319"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=318"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 316,
+    "date": "2022-09-01T08:29:22",
+    "date_gmt": "2022-09-01T08:29:22",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=316"
+    },
+    "modified": "2022-09-01T08:29:22",
+    "modified_gmt": "2022-09-01T08:29:22",
+    "slug": "berhitung",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/berhitung/",
+    "title": {
+      "rendered": "Berhitung"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-316",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/316",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=316"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/316/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 317,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/316/revisions/317"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=316"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 314,
+    "date": "2022-09-01T08:29:08",
+    "date_gmt": "2022-09-01T08:29:08",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=314"
+    },
+    "modified": "2022-09-01T08:29:08",
+    "modified_gmt": "2022-09-01T08:29:08",
+    "slug": "membaca",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/membaca/",
+    "title": {
+      "rendered": "Membaca"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-314",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/314",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=314"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/314/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 315,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/314/revisions/315"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=314"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 307,
+    "date": "2022-09-01T08:27:27",
+    "date_gmt": "2022-09-01T08:27:27",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=307"
+    },
+    "modified": "2022-09-05T01:20:18",
+    "modified_gmt": "2022-09-05T01:20:18",
+    "slug": "bahasa-inggris",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/bahasa-inggris/",
+    "title": {
+      "rendered": "Bahasa Inggris"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tGaleri Bahasa Inggris\n\t</h2>\n\t<p>Kegiatan belajar mengajar mata pelajaran Bahasa Inggris</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/banner-right-program.webp\" alt=\"banner-right-program\" itemprop=\"image\" height=\"368\" width=\"757\" title=\"banner-right-program\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tBahasa\n\t\tInggris\n\t\t\t\t</h3>\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Galeri Bahasa Inggris Kegiatan belajar mengajar mata pelajaran Bahasa Inggris Bahasa Inggris</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-307",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/307",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=307"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 3,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/307/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 393,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/307/revisions/393"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=307"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 305,
+    "date": "2022-09-01T08:26:57",
+    "date_gmt": "2022-09-01T08:26:57",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=305"
+    },
+    "modified": "2025-03-10T07:21:40",
+    "modified_gmt": "2025-03-10T00:21:40",
+    "slug": "sma",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/sma/",
+    "title": {
+      "rendered": "SMA"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tGaleri SMA\n\t</h2>\n\t<p>Kegiatan belajar mengjar tingkat Sekolah Menengah Atas</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/banner-right-program.webp\" alt=\"banner-right-program\" itemprop=\"image\" height=\"368\" width=\"757\" title=\"banner-right-program\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tFisika\n\t\t\t\t</h3>\t\n<h3>\n\t\tKimia\n\t\t\t\t</h3>\t\n<h3>\n\t\tMatematika\n\t\t\t\t</h3>\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Galeri SMA Kegiatan belajar mengjar tingkat Sekolah Menengah Atas Fisika Kimia Matematika</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-305",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/305",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=305"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/305/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1289,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/305/revisions/1289"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=305"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 303,
+    "date": "2022-09-01T08:26:42",
+    "date_gmt": "2022-09-01T08:26:42",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=303"
+    },
+    "modified": "2023-11-14T08:23:45",
+    "modified_gmt": "2023-11-14T01:23:45",
+    "slug": "smp",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/smp/",
+    "title": {
+      "rendered": "SMP"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tSMP\n\t</h2>\n\t<p>Proses kegiatan belajar mengajar siswa SMP</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/banner-right-program.webp\" alt=\"banner-right-program\" itemprop=\"image\" height=\"368\" width=\"757\" title=\"banner-right-program\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tSMP\n\t\t\t\t</h3>\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>SMP Proses kegiatan belajar mengajar siswa SMP SMP</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-303",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/303",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=303"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 7,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/303/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1015,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/303/revisions/1015"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=303"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 301,
+    "date": "2022-09-01T08:26:26",
+    "date_gmt": "2022-09-01T08:26:26",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=301"
+    },
+    "modified": "2023-11-14T08:17:45",
+    "modified_gmt": "2023-11-14T01:17:45",
+    "slug": "sd",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/sd/",
+    "title": {
+      "rendered": "SD"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tGaleri SD\n\t</h2>\n\t<p>Kegiatan belajar mengjar di tingkat Sekolah Dasar</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/banner-right-program.webp\" alt=\"banner-right-program\" itemprop=\"image\" height=\"368\" width=\"757\" title=\"banner-right-program\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tSemua Mapel\n\t\t\t\t</h3>\t\n<h3>\n\t\tMatematika\n\t\t\t\t</h3>\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Galeri SD Kegiatan belajar mengjar di tingkat Sekolah Dasar Semua Mapel Matematika</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-301",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/301",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=301"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/301/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1010,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/301/revisions/1010"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=301"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 299,
+    "date": "2022-09-01T08:26:10",
+    "date_gmt": "2022-09-01T08:26:10",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=299"
+    },
+    "modified": "2023-11-14T08:14:32",
+    "modified_gmt": "2023-11-14T01:14:32",
+    "slug": "tk",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/tk/",
+    "title": {
+      "rendered": "TK"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tGaleri TK\n\t</h2>\n\t<p>Kegiatan belajar mengajar di jenjang taman kanak-kanak</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/c0040056-1bf6-4a02-a4c2-c4529a1384ae.webp\" alt=\"c0040056-1bf6-4a02-a4c2-c4529a1384ae\" itemprop=\"image\" height=\"570\" width=\"440\" title=\"c0040056-1bf6-4a02-a4c2-c4529a1384ae\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tKegiatan\n\t\tMembaca\n\t\t\t\t</h3>\t\n<h3>\n\t\tKegiatan\n\t\tBerhitung\n\t\t\t\t</h3>\t\n<h3>\n\t\tKegiatan\n\t\tMenulis\n\t\t\t\t</h3>\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Galeri TK Kegiatan belajar mengajar di jenjang taman kanak-kanak Kegiatan Membaca Kegiatan Berhitung Kegiatan Menulis</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-299",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/299",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=299"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/299/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1009,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/299/revisions/1009"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=299"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 181,
+    "date": "2022-08-28T06:10:53",
+    "date_gmt": "2022-08-28T06:10:53",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=181"
+    },
+    "modified": "2024-08-22T07:35:20",
+    "modified_gmt": "2024-08-22T00:35:20",
+    "slug": "layanan",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/layanan/",
+    "title": {
+      "rendered": "Layanan"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tLayanan\n\t</h2>\n\t<p>Berikut adalah daftar 10 layanan terbaik yang bisa ditawarkan oleh bimbingan belajar ARTHA</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/banner-right-program.webp\" alt=\"banner-right-program\" itemprop=\"image\" height=\"368\" width=\"757\" title=\"banner-right-program\" onerror=\"this.style.display='none'\"  />\n\t<ul>\n<li>\n<h3>1. <strong>Kurikulum yang Disesuaikan</strong></h3>\n<ul>\n<li>Menawarkan program belajar yang disesuaikan dengan kebutuhan siswa, baik yang ingin memperdalam pelajaran sekolah, persiapan ujian, maupun program akselerasi.</li>\n</ul>\n<h3>2. <strong>Pengajar Berkualitas dan Berpengalaman</strong></h3>\n<ul>\n<li>Memiliki tim pengajar yang berkompeten, berpengalaman, dan memiliki metode pengajaran yang menarik serta efektif.</li>\n</ul>\n<h3>3. <strong>Metode Pembelajaran Inovatif</strong></h3>\n<ul>\n<li>Menggunakan metode pembelajaran yang interaktif dan inovatif, seperti pembelajaran berbasis proyek, gamifikasi, atau penggunaan teknologi VR/AR.</li>\n</ul>\n<h3>4. <strong>Kelas Online dan Offline</strong></h3>\n<ul>\n<li>Menyediakan pilihan kelas online dan offline yang fleksibel, sehingga siswa dapat belajar di mana saja dan kapan saja sesuai dengan jadwal mereka.</li>\n</ul>\n<h3>5. <strong>Materi Pembelajaran Lengkap dan Terstruktur</strong></h3>\n<ul>\n<li>Menyediakan materi pembelajaran yang lengkap, up-to-date, dan terstruktur, termasuk soal latihan, video pembelajaran, dan modul yang mudah diakses.</li>\n</ul>\n<h3>6. <strong>Ujian dan Penilaian Berkala</strong></h3>\n<ul>\n<li>Melaksanakan ujian dan penilaian berkala untuk mengukur perkembangan siswa dan memberikan laporan kemajuan yang detail kepada orang tua.</li>\n</ul>\n<h3>7. <strong>Pendekatan Personal</strong></h3>\n<ul>\n<li>Menyediakan layanan bimbingan secara personal atau mentoring one-on-one untuk membantu siswa yang membutuhkan perhatian lebih.</li>\n</ul>\n<h3>8. <strong>Dukungan Psikologis dan Motivasi</strong></h3>\n<ul>\n<li>Menyediakan layanan konseling atau dukungan psikologis untuk siswa yang menghadapi kesulitan belajar, serta memberikan motivasi untuk mencapai target.</li>\n</ul>\n<h3>9. <strong>Layanan Bimbingan Karir</strong></h3>\n<ul>\n<li>Menyediakan bimbingan karir bagi siswa yang sedang mempersiapkan diri masuk ke perguruan tinggi atau dunia kerja, termasuk bimbingan pemilihan jurusan dan universitas.</li>\n</ul>\n<h3>10. <strong>Harga Kompetitif dan Paket Fleksibel</strong></h3>\n<ul>\n<li>Menawarkan harga yang kompetitif dengan berbagai pilihan paket yang fleksibel, seperti paket bulanan, paket intensif ujian, atau paket kelas khusus.</li>\n</ul>\n</li>\n</ul>\n<p>&nbsp;</p>\n\n<ul>\n<li>Membantu PR &amp; Ulangan</li>\n<li> Persiapan Mid &amp; Semester</li>\n<li> Persiapan Ujian Kenaikan dan Kelulusan</li>\n<li> Memberikan Les Tambahan Secara Gratis</li>\n<li> Satu Kelas 10 Anak</li>\n</ul>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Layanan Berikut adalah daftar 10 layanan terbaik yang bisa ditawarkan oleh bimbingan belajar ARTHA 1. Kurikulum yang Disesuaikan Menawarkan program belajar yang disesuaikan dengan kebutuhan siswa, baik yang ingin memperdalam pelajaran sekolah, persiapan ujian, maupun program akselerasi. 2. Pengajar Berkualitas dan Berpengalaman Memiliki tim pengajar yang berkompeten, berpengalaman, dan memiliki metode pengajaran yang menarik serta [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-181",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/181",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=181"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 7,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/181/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1202,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/181/revisions/1202"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=181"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 152,
+    "date": "2022-08-26T07:25:41",
+    "date_gmt": "2022-08-26T07:25:41",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=152"
+    },
+    "modified": "2025-03-10T07:09:42",
+    "modified_gmt": "2025-03-10T00:09:42",
+    "slug": "pendaftaran",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/pendaftaran/",
+    "title": {
+      "rendered": "Pendaftaran"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tCara Mendaftar\n\t</h2>\n\t<p>Berikut adalah langkah-langkah untuk mendaftar di Bimbel Artha.</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/contact.png\" alt=\"contact\" itemprop=\"image\" height=\"500\" width=\"1366\" title=\"contact\" onerror=\"this.style.display='none'\"  />\n\t<ol>\n<li>Hubungi admin dengan cara telefon/wa masing masing artha yang dekat alamatnya dengan rumah pendaftar</li>\n<li>Jam kerja admin mulai pukul 14.00 sampai 20.30 hari kerja</li>\n<li>Mapel yang di fokuskan ;</li>\n</ol>\n<ul>\n<li>\n<ul>\n<li>TK &gt; Membaca, Menulis, dan Berhitung</li>\n<li>SD &gt; semua mapel kecuali agama dan bahasa inggris</li>\n<li>SMP &gt; Matematika dan Ipa</li>\n<li>SMA &gt; Matematika, Fisika, &amp; Kimia</li>\n</ul>\n</li>\n</ul>\n<h3>\n\t\tKontak Cabang\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/11/logo11_11_91030.png\" alt=\"logo11_11_91030\" itemprop=\"image\" height=\"600\" width=\"600\" title=\"logo11_11_91030\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 1\n\t</h2>\n\t<strong>Balikpapan Baru, J-2 No. 7</strong>\n\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 1%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085102233666</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Novia-artha-2.png\" alt=\"Novia-artha-2\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Novia-artha-2\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 2\n\t</h2>\n\t<strong>Balikpapan Baru, San Fransisco Blok FB. 17</strong>\n\t<a href=\"https://wa.me/6285100038090?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 2%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085100038090</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Sulis-artha-3.png\" alt=\"Sulis-artha-3\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Sulis-artha-3\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 3\n\t</h2>\n\t<strong>Balikpapan Baru, Vancouver HS-21</strong>\n\t<a href=\"https://wa.me/6285245064893?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 3%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085245064893</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2023/01/1674518641935.png\" alt=\"1674518641935\" itemprop=\"image\" height=\"1280\" width=\"1280\" title=\"1674518641935\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 4\n\t</h2>\n\t<strong>Balikpapan Baru, Ruko Mall AA5. 21</strong>\n\t<a href=\"https://wa.me/6285245064893?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 4%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085245064893</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/11/logo11_11_9625.png\" alt=\"logo11_11_9625\" itemprop=\"image\" height=\"600\" width=\"600\" title=\"logo11_11_9625\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 5\n\t</h2>\n\t<strong>Balikpapan Baru, Ruko Mall AB4. 21</strong>\n\t<a href=\"https://wa.me/6285103035999?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 5%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085103035999</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/08/removal.ai_f5e73e68-20e1-4d8b-97cb-45ff100b77e7-1000219336.png\" alt=\"[removal.ai]_f5e73e68-20e1-4d8b-97cb-45ff100b77e7-1000219336\" itemprop=\"image\" height=\"600\" width=\"600\" title=\"[removal.ai]_f5e73e68-20e1-4d8b-97cb-45ff100b77e7-1000219336\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 6\n\t</h2>\n\t<strong>Stal Kuda Jl. Jend. Sudirman No. 19</strong>\n\t<a href=\"https://wa.me/6285105019333?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 5%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085105019333</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Devi-Artha-7.png\" alt=\"Devi-Artha-7\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Devi-Artha-7\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 7\n\t</h2>\n\t<strong>Borneo Paradiso, A1 No. 1 </strong>\n\t<a href=\"https://wa.me/6285105079222?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 7%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085105079222</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/08/logo8_22_1032-1.png\" alt=\"logo8_22_1032 (1)\" itemprop=\"image\" height=\"2000\" width=\"2000\" title=\"logo8_22_1032 (1)\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 8\n\t</h2>\n\t<strong>Balikpapan Regency, blok Celebration-1 No. 1</strong>\n\t<a href=\"https://wa.me/6281253305557?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 081253305557</strong></a>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Cara Mendaftar Berikut adalah langkah-langkah untuk mendaftar di Bimbel Artha. Hubungi admin dengan cara telefon/wa masing masing artha yang dekat alamatnya dengan rumah pendaftar Jam kerja admin mulai pukul 14.00 sampai 20.30 hari kerja Mapel yang di fokuskan ; TK &gt; Membaca, Menulis, dan Berhitung SD &gt; semua mapel kecuali agama dan bahasa inggris SMP [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-152",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/152",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=152"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 19,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/152/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1288,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/152/revisions/1288"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=152"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "date": "2022-08-25T04:17:48",
+    "date_gmt": "2022-08-25T04:17:48",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=121"
+    },
+    "modified": "2026-08-10T08:18:38",
+    "modified_gmt": "2026-08-10T01:18:38",
+    "slug": "team-pengajar",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/team-pengajar/",
+    "title": {
+      "rendered": "Team Pengajar"
+    },
+    "content": {
+      "rendered": "\n<h2>\n\t\tTeam Pengajar ARTHA Tahun Ajaran 2025/2026\n\t</h2>\n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 1\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/12/IMG-20241223-WA0038-scaled.jpg\" alt=\"IMG-20241223-WA0038\" title=\"IMG-20241223-WA0038\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 1\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Imam-Kepala-Artha-1-circle.png\" alt=\"Imam-Kepala-Artha-1\" title=\"Imam-Kepala-Artha-1\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Imam Ma&#8217;ruf</h3>Ketua Artha 1\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Ari-circle.png\" alt=\"Ari\" title=\"Ari\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Ari Sulistyo</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/logo7_21_165027-1-circle.png\" alt=\"logo7_21_165027\" title=\"logo7_21_165027\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Bu Ndari </h3>Pengajar SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/BU_DANIK-circle.png\" alt=\"BU_DANIK\" title=\"BU_DANIK\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Danik</h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1674694445180-circle.png\" alt=\"1674694445180\" title=\"1674694445180\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Delia</h3>Pengajar TK dan SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Najmi-SMA-artha-1-circle.png\" alt=\"Najmi-SMA-artha-1\" title=\"Najmi-SMA-artha-1\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Najmi</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/logo8_4_82434-circle.png\" alt=\"logo8_4_82434\" title=\"logo8_4_82434\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Aida </h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1699283611284-circle.jpg\" alt=\"1699283611284\" title=\"1699283611284\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Bu Evi</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\tPengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 2\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2023/11/1699279218273.jpg\" alt=\"\" title=\"\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 2\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Novia-artha-2-circle.png\" alt=\"Novia-artha-2\" title=\"Novia-artha-2\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Novia Spd</h3>Ketua Artha 2\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Slamet-TK-SD-Artha-2-circle.png\" alt=\"Slamet-TK-SD-Artha-2\" title=\"Slamet-TK-SD-Artha-2\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Slamet Subandi</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1664152378664-circle.png\" alt=\"1664152378664\" title=\"1664152378664\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Kezia Priskila</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Gemini_Generated_Image_qq2ag4qq2ag4qq2a-1-circle.png\" alt=\"Gemini_Generated_Image_qq2ag4qq2ag4qq2a\" title=\"Gemini_Generated_Image_qq2ag4qq2ag4qq2a\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Dhea</h3>\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Novia-artha-2-circle.png\" alt=\"Novia-artha-2\" title=\"Novia-artha-2\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Novia</h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t\tBIMBEL ARTHA 3\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Faisal-circle.png\" alt=\"Faisal\" title=\"Faisal\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Faisal</h3>Kordinator Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Siti-Sma-artha-1-circle.png\" alt=\"Siti-Sma-artha-1\" title=\"Siti-Sma-artha-1\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Siti</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Yaumil-SMA-artha-5-circle.png\" alt=\"\" title=\"\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Yaumil</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 4\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2023/10/IMG-20230926-WA0056.jpg\" alt=\"PENGAJAR ARTHA 4\" title=\"PENGAJAR ARTHA 4\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 4\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Alam-circle.png\" alt=\"Alam\" title=\"Alam\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Nur Alamsyah</h3>Ketua Artha 4\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Dawam-circle.png\" alt=\"Dawam\" title=\"Dawam\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Diawam Wulanriadi</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Riski-circle.png\" alt=\"Riski\" title=\"Riski\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Risky W</h3>Pengajar SD &#038; SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Mikha-circle.png\" alt=\"Mikha\" title=\"Mikha\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Mikha</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/IMG-20231031-WA0019-PhotoRoom-circle.jpg\" alt=\"IMG-20231031-WA0019-PhotoRoom\" title=\"IMG-20231031-WA0019-PhotoRoom\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Miftahul Huda</h3>Pengajar SD &#038; SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Fatimah-TK-SD-Artha-6-circle.png\" alt=\"Fatimah-TK-SD-Artha-6\" title=\"Fatimah-TK-SD-Artha-6\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Fatimah </h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1674518641935-circle.png\" alt=\"1674518641935\" title=\"1674518641935\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Febrianti</h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t<h3>Asisten</h3>Pengajar SD / SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 5\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/12/IMG-20241223-WA0043-scaled.jpg\" alt=\"IMG-20241223-WA0043\" title=\"IMG-20241223-WA0043\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 5\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Toni-SMP-artha-5-circle.png\" alt=\"Toni-SMP-artha-5\" title=\"Toni-SMP-artha-5\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Ari Tonang</h3>Ketua Artha 5\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Antok-SD-SMP-Artha-5-circle.png\" alt=\"Antok-SD-SMP-Artha-5\" title=\"Antok-SD-SMP-Artha-5\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Susianto</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Eko-SD-SMP-artha-5-circle.png\" alt=\"Eko-SD-SMP-artha-5\" title=\"Eko-SD-SMP-artha-5\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Eko Riadi</h3>Pengajar SD &#038; SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Heru-SD-Aartha-5-circle.png\" alt=\"Heru-SD-Aartha-5\" title=\"Heru-SD-Aartha-5\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Heru Sabtika</h3>Pengajar SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Hida-Artha-5-circle.png\" alt=\"Hida-Artha-5\" title=\"Hida-Artha-5\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Hida</h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Gemini_Generated_Image_a8hrlha8hrlha8hr-1-circle.png\" alt=\"Gemini_Generated_Image_a8hrlha8hrlha8hr\" title=\"Gemini_Generated_Image_a8hrlha8hrlha8hr\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Ratna </h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/logo11_11_9625-circle.png\" alt=\"logo11_11_9625\" title=\"logo11_11_9625\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Agian </h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 6\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/12/IMG-20241223-WA0019.jpg\" alt=\"Team Pengajar ARTHA 6\" title=\"IMG-20241223-WA0019\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 6\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Bagi-Kepala-artha-6-circle.png\" alt=\"Bagi-Kepala-artha-6\" title=\"Bagi-Kepala-artha-6\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Subagiyo</h3>Ketua Artha 6\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/PhotoRoom-20220914_085854-circle.png\" alt=\"PhotoRoom-20220914_085854\" title=\"PhotoRoom-20220914_085854\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Syahri</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Tak-berjudul30_20220914084700-circle.png\" alt=\"Tak berjudul30_20220914084700\" title=\"Tak berjudul30_20220914084700\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Samsul Hidayat</h3>Pengajar SD &#038; SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1699276453977-circle.jpg\" alt=\"1699276453977\" title=\"1699276453977\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Dinda</h3>Pengajar Bahasa Inggris\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/removal.ai_f5e73e68-20e1-4d8b-97cb-45ff100b77e7-1000219336-circle.png\" alt=\"\" title=\"\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Anisa</h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Gemini_Generated_Image_9jaewy9jaewy9jae-circle.png\" alt=\"Gemini_Generated_Image_9jaewy9jaewy9jae\" title=\"Gemini_Generated_Image_9jaewy9jaewy9jae\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Danang </h3>Pengajar SD/SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Najmi-SMA-artha-1-circle.png\" alt=\"Najmi-SMA-artha-1\" title=\"Najmi-SMA-artha-1\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Bu Najmi </h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1699283611284-circle.jpg\" alt=\"1699283611284\" title=\"1699283611284\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Bu Eva </h3>Pengajar SMA\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 7\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2025/01/IMG20241223144952.jpg\" alt=\"\" title=\"\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 7\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Budi-Kepala-Artha-7-circle.png\" alt=\"Budi-Kepala-Artha-7\" title=\"Budi-Kepala-Artha-7\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Sokip Budianto</h3>Ketua Artha 7\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Tak-berjudul30_20220913184839-circle.png\" alt=\"Tak berjudul30_20220913184839\" title=\"Tak berjudul30_20220913184839\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Ahmad Nurudin</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Anang-circle.png\" alt=\"Anang\" title=\"Anang\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Anang Widodo</h3>Pengajar SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Tak-berjudul30_20220913191827-circle.png\" alt=\"Tak berjudul30_20220913191827\" title=\"Tak berjudul30_20220913191827\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Erwan Adirianto</h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1699276453982-circle.jpg\" alt=\"1699276453982\" title=\"1699276453982\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Qiftia</h3>Pengajar Bahasa Inggris\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1674696039204-circle.png\" alt=\"1674696039204\" title=\"1674696039204\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Wildan Spd</h3>Pengajar SD / SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1699283137844-circle.jpg\" alt=\"1699283137844\" title=\"1699283137844\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Nanda</h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Devi-Artha-7-circle.png\" alt=\"Devi-Artha-7\" title=\"Devi-Artha-7\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Devi. Spd </h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\tPengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n<h2>\n\t</h2>\n<h2>\n\t\tBIMBEL ARTHA 8\n\t</h2>\n<h2>\n\t</h2>\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/12/Screenshot_20241223-180738_Gallery.jpg\" alt=\"Screenshot_20241223-180738_Gallery\" title=\"Screenshot_20241223-180738_Gallery\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Guru Pengajar</h3>Bimbel Artha 8\n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/1663029447529-circle.png\" alt=\"1663029447529\" title=\"1663029447529\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Zaenal Abidin</h3>Ketua Artha 8\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Bobby-SD-SMP-Artha-8-circle.png\" alt=\"Bobby-SD-SMP-Artha-8\" title=\"Bobby-SD-SMP-Artha-8\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Bobby Setiawan</h3>Wakil Ketua\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t<h3>Syaina </h3>Admin\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/Zulfa-inggris-artha-8-circle.png\" alt=\"Zulfa-inggris-artha-8\" title=\"Zulfa-inggris-artha-8\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Zulfa</h3>Pengajar Bahasa Inggris\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/TIKA-TK-SD-artha-8-circle.png\" alt=\"TIKA-TK-SD-artha-8\" title=\"TIKA-TK-SD-artha-8\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Tika</h3>Pengajar TK &#038; SD\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\t\t\t\t<img decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/bb-plugin/cache/TANTOWI-SD-Artha-1-circle.png\" alt=\"TANTOWI-SD-Artha-1\" title=\"TANTOWI-SD-Artha-1\" itemprop=\"image\"/>\n\t\t\t\t \n\t\t<h3>Tantowi </h3>Pengajar SD/SMP\n\t\t\t\t<a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a><a href=\"\" target=\"_self\">\t\t\t\t\n\t\t</a>\t\t\t\t \n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Team Pengajar ARTHA Tahun Ajaran 2025/2026 BIMBEL ARTHA 1 Guru Pengajar Bimbel Artha 1 Imam Ma&#8217;ruf Ketua Artha 1 Ari Sulistyo Wakil Ketua Bu Ndari Pengajar SMP Danik Pengajar TK &#038; SD Delia Pengajar TK dan SD Najmi Pengajar SMA Aida Admin Bu Evi Pengajar SMA Pengajar SMA BIMBEL ARTHA 2 Guru Pengajar Bimbel Artha [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-121",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/121",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=121"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 59,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/121/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1422,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/121/revisions/1422"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=121"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "date": "2022-08-24T02:01:56",
+    "date_gmt": "2022-08-24T02:01:56",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=24"
+    },
+    "modified": "2022-09-03T02:03:00",
+    "modified_gmt": "2022-09-03T02:03:00",
+    "slug": "kontak-kami",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/kontak-kami/",
+    "title": {
+      "rendered": "Kontak Kami"
+    },
+    "content": {
+      "rendered": "\n<h1>\n\t\tKontak Kami\n\t</h1>\n<h3>\n\t\tAlamat\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n<h3>\n\t\tLink\n\t\tSosial Media\n\t\t\t\t</h3>\t\n<h3>\n\t\tInfo\n\t\tPendaftaran\n\t\t\t\t</h3>\t\n\t<iframe src=\"https://www.google.com/maps/embed/v1/place?q=bimbel+artha&#038;key=AIzaSyD09zQ9PNDNNy9TadMuzRV_UsPUoWKntt8\" aria-hidden=\"true\"></iframe>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Kontak Kami Alamat Bimbel Artha Link Sosial Media Info Pendaftaran</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-24",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/24",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=24"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/24/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 369,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/24/revisions/369"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=24"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "date": "2022-08-24T02:01:43",
+    "date_gmt": "2022-08-24T02:01:43",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=22"
+    },
+    "modified": "2025-02-19T14:19:59",
+    "modified_gmt": "2025-02-19T07:19:59",
+    "slug": "galeri",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/galeri/",
+    "title": {
+      "rendered": "Galeri"
+    },
+    "content": {
+      "rendered": "\n\n\t<h3>\n\t\t\t\tGALERI FOTO\n\t\t\t</h3>\n<h3>\n\t\tBimbel Artha\n\t\t1\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t2\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t3\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t4\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t5\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t6\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t7\n\t\t\t\t</h3>\t\n<h3>\n\t\tBimbel Artha\n\t\t8\n\t\t\t\t</h3>\t\n<h2>\n\t\tGaleri Video\n\t</h2>\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=L60xEdH23Kg\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/L60xEdH23Kg?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=PwgG8-9Hj6M\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/PwgG8-9Hj6M?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=8hAuQNPp0x0\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/8hAuQNPp0x0?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=LmANfXKQXyw\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/LmANfXKQXyw?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=-s2LIZXUi0E\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/-s2LIZXUi0E?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=PTwX1D5oaVw\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/PTwX1D5oaVw?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>GALERI FOTO Bimbel Artha 1 Bimbel Artha 2 Bimbel Artha 3 Bimbel Artha 4 Bimbel Artha 5 Bimbel Artha 6 Bimbel Artha 7 Bimbel Artha 8 Galeri Video First Video First Video First Video First Video First Video First Video</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-22",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/22",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=22"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 22,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/22/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1211,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/22/revisions/1211"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=22"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "date": "2022-08-24T02:01:26",
+    "date_gmt": "2022-08-24T02:01:26",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=20"
+    },
+    "modified": "2024-08-22T08:22:49",
+    "modified_gmt": "2024-08-22T01:22:49",
+    "slug": "tentang-kami",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/tentang-kami/",
+    "title": {
+      "rendered": "Tentang Kami"
+    },
+    "content": {
+      "rendered": "\n\n\t<h3>\n\t\t\t\tTENTANG KAMI\n\t\t\t</h3>\n\t\t\t\n<h2>\n\t\tVisi\n\t</h2>\n\t<ol>\n<li>Memberikan arah dalam mewujudkan visi sekolah sesuai dengan tujuan pendidikan nasional.</li>\n<li>Merupakan tujuan yang akan dicapai dalam kurun waktu tertentu</li>\n<li>Menjadi dasar program pokok sekolah/madrasah</li>\n<li>Menekankan pada kualitas layanan peserta didik dan mutu lulusan yang diharapkan oleh sekolah/madrasah</li>\n<li>Memuat pernyataan umum dan khusus yang berkaitan dengan program sekolah</li>\n<li>Memberikan keluwesan dan ruang gerak pengembangan kegiatan satuan-satuan unit sekolah yang terlibat</li>\n<li>Dirumuskan berdasarkan masukan dari segenap pihak yang berkepentingan termasuk komite sekolah dan diputuskan oleh rapat dewan pendidik yang dipimpin oleh kepala sekolah</li>\n<li>Disosialisasikan kepada warga sekolah dan segenap pihak yang berkepentingan</li>\n<li>Ditinjau dan dirumuskan kembali secara berkala sesuai dengan perkembangan dan tantangan di masyarakat.</li>\n<li>Menjadikan lembaga pendidikan yang dibutuhkan masyarakat dan memberikan pelayanan program bimbingan belajar yang bermutu untuk meningkatkan prestasi akademik siswa siswi di sekolah</li>\n</ol>\n<h2>\n\t\tMisi\n\t</h2>\n\t<ol>\n<li>Memberikan layanan pendidikan dengan memperhatikan potensi siswa</li>\n<li>Membangun profesionalisme baik dari segi management , program belajar maupun infrastruktur yang berkualitas</li>\n<li>Menjadikan sahabat bagi siswanya untuk meraih prestasi</li>\n<li>Menjadi mitra dalam membantu kebutuhan pendidikan kota Balikpapan</li>\n<li>Membantu siswa-siswi mengembangkan kualitas diri untuk meraih cita-cita</li>\n<li>Sebagai tempat bagi karyawan untuk mewujudkan kesejahteraan bersama-sama.</li>\n</ol>\n<h2>\n\t\tSejarah Bimbel Artha\n\t</h2>\n\t<div id=\"twp-129\" class=\"style-another\">\r\n            <div id=\"twp-telement-0\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>1997</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 1</h3>                <div class=\"description\">Bimbingan Belajar Artha 1 yang beralamat Jalan Asoka Utara Blok J2 No 07 Balikpapan Kalimantan Timur berdiri sejak 10 Oktober 1997 dengan team pengajar pada awalnya 4 orang Om Tok, Om Salman, Om Alam, dan Om Bagi.</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-1\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2005</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 2</h3>                <div class=\"description\">Selama kurang lebih 8 tahun kami terus berbenah dengan sistem yang telah kami terapkan demi tetap eksis dan terus bisa membentuk dan merubah siswa-siswi menjadi pelajar yang cerdas, dan berkompeten maka kami membuka cabang Bimbel Artha 2 di komplek Perumahan Sanfransisco FB 17 Balikpapan Baru pada tahun 2006.\r\n</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-2\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2008</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 3 - 6</h3>                <div class=\"description\">Tahun 2009 kami mulai melakukan ekspansi Bimbingan Belajar dikarenakan peminat di wilayah Balikpapan cukup banyak dan kami memutuskan untuk membuka Bimbel Artha yang ke 3, 4, 5, dan 6 selama 4 tahun berturut-turut.</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-3\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2009-2012</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 7</h3>                <div class=\"description\">Setelah mempunyai ke 6 cabang Bimbel Artha, kami fokus untuk pengembangan layanan yang menjadi pokok permasalahan orang-orang dibidang akademik, kami tetap memberikan problem solving ke teman-teman baik tingkat TK hingga SMA.\r\nBimbel Artha 7 ini kami dirikan di perumahan Borneo Paradiso Blok A1 No 1 di daerah Batakan.\r\n</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-4\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2015-Sekarang</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 8</h3>                <div class=\"description\">Kami membuka cabang Bimbel Artha yang ke 8 di Kompleks Perumahan Regency pada tanggal 2 Mei 2016. Selama pandemi kami menjadi tentor yang berusaha keras untuk mendidik siswa siswi yang bahkan mulai tidak memahami isi materi yang ada di Modul dikarenakan PANDEMI Covid 19 yang menyebabkan siswa tidak bisa belajar melalui tatap muka. Bimbel Artha akan selalu bersama Anda yang mau berkembang dan mengalami kesulitan dalam pengerjaan tugas-tugas yang diajarkan di Sekolah.</div>            </div>\r\n        </div>\r\n    </div>\r\n\r\n<style>\r\n    #twp-129.style-another:before{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another:after{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another .timeline-year:after{\r\n        border-color:#4e6aff;\r\n        border-left-color: transparent;\r\n    }#twp-129.style-another .timeline-content{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another .title, #twp-129.style-another .description {\r\n        color:#4e6aff;\r\n    }#twp-129.style-another .timeline-content:after, #twp-129.style-another .timeline-icon, #twp-129.style-another .timeline-year {\r\n        background-color:#4e6aff;\r\n    }#twp-129.style-another .title {\r\n        color:#000000;\r\n    }#twp-129.style-another .timeline-icon {\r\n        color:#ffa100;\r\n    }#twp-129.style-another .timeline-year{\r\n        color:#ffa100;\r\n    }#twp-129.style-another .timeline-year{\r\n        font-size:10px;\r\n    }#twp-129.style-another .description {\r\n        color:#333333;\r\n    }</style>\r\n\r\n\r\n\n\t<p>Kamu ingin belajar dimana saja dan kapan saja? Atau lebih suka interaksi langsung dengan pengajar secara tatap muka? Tenang, di <strong>Bimbel Artha</strong> semua kebutuhanmu bisa terpenuhi karena kami menggabungkan konsep antara pembelajaran online dengan pembelajaran tatap muka.</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/10/Tak-berjudul29_20221006073718.png\" alt=\"Tak berjudul29_20221006073718\" itemprop=\"image\" height=\"369\" width=\"584\" title=\"Tak berjudul29_20221006073718\" onerror=\"this.style.display='none'\"  />\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>TENTANG KAMI Visi Memberikan arah dalam mewujudkan visi sekolah sesuai dengan tujuan pendidikan nasional. Merupakan tujuan yang akan dicapai dalam kurun waktu tertentu Menjadi dasar program pokok sekolah/madrasah Menekankan pada kualitas layanan peserta didik dan mutu lulusan yang diharapkan oleh sekolah/madrasah Memuat pernyataan umum dan khusus yang berkaitan dengan program sekolah Memberikan keluwesan dan ruang [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-20",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/20",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=20"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 19,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/20/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1213,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/20/revisions/1213"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=20"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "date": "2022-08-24T01:53:06",
+    "date_gmt": "2022-08-24T01:53:06",
+    "guid": {
+      "rendered": "https://bimbelartha.id/?page_id=16"
+    },
+    "modified": "2026-08-03T08:12:28",
+    "modified_gmt": "2026-08-03T01:12:28",
+    "slug": "beranda",
+    "status": "publish",
+    "type": "page",
+    "link": "https://bimbelartha.id/",
+    "title": {
+      "rendered": "Beranda"
+    },
+    "content": {
+      "rendered": "\n\n\t<h1>&#8221;Raih Prestasi Gemilang Bersama Bimbingan Belajar Yang Terpercaya&#8221;</h1>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2023/11/IMG_20230115_231357.jpg\" alt=\"IMG_20230115_231357\" itemprop=\"image\" height=\"1840\" width=\"2230\" title=\"IMG_20230115_231357\" onerror=\"this.style.display='none'\"  />\n\t<p>&#8221;Bergabunglah Bersama Ribuan Siswa yang Telah Sukses Bersama Kami&#8221;</p>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/11/BIMBEL-ARTHA-GROUP_20241105_085933_0000.png\" alt=\"BIMBEL ARTHA GROUP_20241105_085933_0000\" itemprop=\"image\" height=\"1600\" width=\"2000\" title=\"BIMBEL ARTHA GROUP_20241105_085933_0000\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tTentang\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t<strong>Bimbingan Belajar Artha</strong> adalah bimbingan belajar yang  berdiri sejak 10 Oktober 1997 di Balikpapan Kalimantan Timur. Bimbel Artha merupakan  usaha jasa pendidikan dengan pengajar yang ulet dan telaten dalam membantu murid belajar. Program belajar di Bimbel Artha mencakup Pendidikan prasekolah, SD, SMP, SMA, dan Bahasa Inggris. Bimbel Artha membantu siswa/siswi dalam menghadapi  ujian, baik ulangan harian, PTS, PAS maupun Ujian Sekolah serta Ujian masuk Perguruan Tinggi.\n\t\t\t<a href=\"https://bimbelartha.id/tentang-kami/\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tSelengkapnya&#8230;\n\t\t</a>\n<h3>\n\t\tSejarah\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t<div id=\"twp-129\" class=\"style-another\">\r\n            <div id=\"twp-telement-0\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>1997</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 1</h3>                <div class=\"description\">Bimbingan Belajar Artha 1 yang beralamat Jalan Asoka Utara Blok J2 No 07 Balikpapan Kalimantan Timur berdiri sejak 10 Oktober 1997 dengan team pengajar pada awalnya 4 orang Om Tok, Om Salman, Om Alam, dan Om Bagi.</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-1\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2005</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 2</h3>                <div class=\"description\">Selama kurang lebih 8 tahun kami terus berbenah dengan sistem yang telah kami terapkan demi tetap eksis dan terus bisa membentuk dan merubah siswa-siswi menjadi pelajar yang cerdas, dan berkompeten maka kami membuka cabang Bimbel Artha 2 di komplek Perumahan Sanfransisco FB 17 Balikpapan Baru pada tahun 2006.\r\n</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-2\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2008</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 3 - 6</h3>                <div class=\"description\">Tahun 2009 kami mulai melakukan ekspansi Bimbingan Belajar dikarenakan peminat di wilayah Balikpapan cukup banyak dan kami memutuskan untuk membuka Bimbel Artha yang ke 3, 4, 5, dan 6 selama 4 tahun berturut-turut.</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-3\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2009-2012</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 7</h3>                <div class=\"description\">Setelah mempunyai ke 6 cabang Bimbel Artha, kami fokus untuk pengembangan layanan yang menjadi pokok permasalahan orang-orang dibidang akademik, kami tetap memberikan problem solving ke teman-teman baik tingkat TK hingga SMA.\r\nBimbel Artha 7 ini kami dirikan di perumahan Borneo Paradiso Blok A1 No 1 di daerah Batakan.\r\n</div>            </div>\r\n        </div>\r\n            <div id=\"twp-telement-4\" class=\"timeline\">\r\n            <div class=\"timeline-content\">\r\n\r\n                <div class=\"timeline-year\">\r\n                    <span>2015-Sekarang</span>                </div>\r\n                \r\n                <div class=\"timeline-icon\">\r\n                                            <i class=\"fas fa-building\"></i>\r\n                                    </div>\r\n\r\n                <h3 class=\"title\">Artha 8</h3>                <div class=\"description\">Kami membuka cabang Bimbel Artha yang ke 8 di Kompleks Perumahan Regency pada tanggal 2 Mei 2016. Selama pandemi kami menjadi tentor yang berusaha keras untuk mendidik siswa siswi yang bahkan mulai tidak memahami isi materi yang ada di Modul dikarenakan PANDEMI Covid 19 yang menyebabkan siswa tidak bisa belajar melalui tatap muka. Bimbel Artha akan selalu bersama Anda yang mau berkembang dan mengalami kesulitan dalam pengerjaan tugas-tugas yang diajarkan di Sekolah.</div>            </div>\r\n        </div>\r\n    </div>\r\n\r\n<style>\r\n    #twp-129.style-another:before{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another:after{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another .timeline-year:after{\r\n        border-color:#4e6aff;\r\n        border-left-color: transparent;\r\n    }#twp-129.style-another .timeline-content{\r\n        border-color:#4e6aff;\r\n    }#twp-129.style-another .title, #twp-129.style-another .description {\r\n        color:#4e6aff;\r\n    }#twp-129.style-another .timeline-content:after, #twp-129.style-another .timeline-icon, #twp-129.style-another .timeline-year {\r\n        background-color:#4e6aff;\r\n    }#twp-129.style-another .title {\r\n        color:#000000;\r\n    }#twp-129.style-another .timeline-icon {\r\n        color:#ffa100;\r\n    }#twp-129.style-another .timeline-year{\r\n        color:#ffa100;\r\n    }#twp-129.style-another .timeline-year{\r\n        font-size:10px;\r\n    }#twp-129.style-another .description {\r\n        color:#333333;\r\n    }</style>\r\n\r\n\r\n\n<h3>\n\t\tKenapa Harus\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t<lottie-player src=\"https://assets6.lottiefiles.com/packages/lf20_ytn4jhdg.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h3>\n\t\tLayanan\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/blackboard.png\" alt=\"blackboard\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"blackboard\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tCalistung\n\t</h2>\nMengenalkan ke Anak untuk membaca, menulis dan berhitung\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/graduation.png\" alt=\"graduation\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"graduation\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSD\n\t</h2>\n\tMengajarkan Matematika, Materi Kurikulum K-13, dan Kurikulum Merdeka\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/world.png\" alt=\"world\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"world\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSMP\n\t</h2>\nMengajarkan Matematika, IPA, dan Bahasa Inggris\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/learn.png\" alt=\"learn\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"learn\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSMA\n\t</h2>\nMengajarkan Matematika, Fisika, &amp; Kimia\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/ENGLISH-LEARN.png\" alt=\"ENGLISH LEARN\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"ENGLISH LEARN\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tBahasa Inggris\n\t</h2>\n\tMengajarkan dari dasar hingga mahir berbahasa Inggris\n<h3>\n\t\tPendaftaran\n\t\tMurid Baru\n\t\t\t\t</h3>\t\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/blackboard.png\" alt=\"blackboard\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"blackboard\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tCalistung\n\t</h2>\nUntuk pendaftaran siswa, bisa dengan menghubungi team Bimbel Artha dengan klik tombol di bawah\n\t\t\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tDaftar\n\t\t</a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/graduation.png\" alt=\"graduation\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"graduation\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSD\n\t</h2>\nUntuk pendaftaran siswa, bisa dengan menghubungi team Bimbel Artha dengan klik tombol di bawah\n\t\t\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tDaftar\n\t\t</a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/world.png\" alt=\"world\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"world\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSMP\n\t</h2>\nUntuk pendaftaran siswa, bisa dengan menghubungi team Bimbel Artha dengan klik tombol di bawah\n\t\t\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tDaftar\n\t\t</a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/graduation.png\" alt=\"graduation\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"graduation\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tSMA\n\t</h2>\nUntuk pendaftaran siswa, bisa dengan menghubungi team Bimbel Artha dengan klik tombol di bawah\n\t\t\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tDaftar\n\t\t</a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/ENGLISH-LEARN.png\" alt=\"ENGLISH LEARN\" itemprop=\"image\" height=\"256\" width=\"256\" title=\"ENGLISH LEARN\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tBahasa Inggris\n\t</h2>\nUntuk pendaftaran siswa, bisa dengan menghubungi team Bimbel Artha dengan klik tombol di bawah\n\t\t\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"  role=\"button\">\n\t\t\t\t\t\t\t\t\t\t\tDaftar\n\t\t</a>\n<h3>\n\t\tMata\n\t\tPelajaran\n\t\t\t\t</h3>\t\n\t\t<nav>\n\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li data-index=\"0\">\n\t\t\t\t\t<h4>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\">TK</a>\n\t\t\t\t\t</h4>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li data-index=\"1\">\n\t\t\t\t\t<h4>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\">SD</a>\n\t\t\t\t\t</h4>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li data-index=\"2\">\n\t\t\t\t\t<h4>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\">SMP</a>\n\t\t\t\t\t</h4>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li data-index=\"3\">\n\t\t\t\t\t<h4>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\">SMA</a>\n\t\t\t\t\t</h4>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li data-index=\"4\">\n\t\t\t\t\t<h4>\n\t\t\t\t\t\t<a href=\"javascript:void(0);\">Bahasa Inggris</a>\n\t\t\t\t\t</h4>\n\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t</nav>\n\t\t\t\t\t<p>Belajar memperkenalkan huruf, Menulis dengan rapi, Berhitung dan Membaca sampai lancar.</p>\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t<p>Sudah terbukti Bimbel Artha memiliki pengajar yang berkompeten dan berpengalaman di mata pelajaran terutama <strong>Fisika, Kimia,</strong> <strong>Matematika, dan Bahasa Inggris</strong>. </p>\n\t\t\t\t\t<p>Belajar Bahasa Inggris level Dasar hingga mahir.</p>\n\t\t\t\t\t<!-- /content -->\n\t<!-- /tabs -->\n<h3>\n\t\tJadwal Pelaksanaan\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t<lottie-player src=\"https://assets1.lottiefiles.com/private_files/lf30_1xg5wkc5.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tPagi\n\t</h2>\n\t<strong>Hari : S-R-J / S-K-S</strong>\n<strong>Sesi 1 : 07.30 &#8211; 09.00 WITA</strong>\n<strong>Sesi 2 : 09.00 &#8211; 10.30 WITA</strong>\n\t<strong>IDR 240.000 / Bulan</strong>\n\t<lottie-player src=\"https://assets2.lottiefiles.com/packages/lf20_kljxfos1.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tSiang\n\t</h2>\n\t<strong>Pukul 14.00 &#8211; 15.30 WITA</strong>\n<strong>IDR 260.000 / Bulan</strong>\n\t<lottie-player src=\"https://assets2.lottiefiles.com/packages/lf20_1aum6y2u.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tSore\n\t</h2>\n\t<strong>Pukul 15.30 &#8211; 17.00 WITA</strong>\n<strong>SD    : IDR 310.000 / Bulan</strong>\n<strong>SMP : IDR 330.000 / Bulan</strong>\n\t<lottie-player src=\"https://assets2.lottiefiles.com/packages/lf20_1aum6y2u.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tSore\n\t</h2>\n\t<strong>Pukul 17.00 &#8211; 18.30 WITA</strong>\n<strong>SD     :   IDR 330.000 / Bulan</strong>\n<strong>SMP  :   IDR 350.000 / Bulan</strong>\n\t<lottie-player src=\"https://assets10.lottiefiles.com/temp/lf20_y6mY2A.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tMalam\n\t</h2>\n\t<strong>Pukul 19.00 &#8211; 20.30 WITA</strong>\n<strong>SD     :   IDR 330.000 / Bulan</strong>\n<strong>SMP  :   IDR 350.000 / Bulan</strong>\n\t<lottie-player src=\"https://assets1.lottiefiles.com/packages/lf20_mcgv3at1.json\"  background=\"transparent\"  speed=\"1\"   loop  autoplay></lottie-player>\n<h2>\n\t\tLes Tambahan\n\t</h2>\n\t<strong>Minggu Pukul 15.30 &#8211; 17.00</strong>\n\t<strong>Free</strong>\n<h3>\n\t\tGaleri\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=L60xEdH23Kg\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/L60xEdH23Kg?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=PwgG8-9Hj6M\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/PwgG8-9Hj6M?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=8hAuQNPp0x0\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/8hAuQNPp0x0?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=LmANfXKQXyw\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/LmANfXKQXyw?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=-s2LIZXUi0E\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/-s2LIZXUi0E?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t\t<a href=\"https://www.youtube.com/watch?v=PTwX1D5oaVw\" data-fancybox=\"uabb-video-gallery\" data-url=\"https://www.youtube.com/embed/PTwX1D5oaVw?autoplay=1&#038;version=3&#038;enablejsapi=1\"class=\"uabb-video-gallery-fancybox uabb-vg__play_full \">\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t<h4>First Video</h4>\n\t\t\t\t\t</a>\t\t\t\t\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/08/bimbelarthalogo-1.png\" alt=\"bimbelarthalogo (1)\" itemprop=\"image\" height=\"276\" width=\"903\" title=\"bimbelarthalogo (1)\" onerror=\"this.style.display='none'\"  />\n<h3>\n\t\tKontak Cabang\n\t\tBimbel Artha\n\t\t\t\t</h3>\t\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/11/logo11_11_91030-300x300.png\" alt=\"logo11_11_91030\" itemprop=\"image\" height=\"300\" width=\"300\" title=\"logo11_11_91030\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 1\n\t</h2>\n\t<strong>Balikpapan Baru, J-2 No. 7</strong>\n\t<a href=\"https://wa.me/6285102233666?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 1%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085102233666</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Novia-artha-2.png\" alt=\"Novia-artha-2\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Novia-artha-2\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 2\n\t</h2>\n\t<strong>Balikpapan Baru, San Fransisco Blok FB. 17</strong>\n\t<a href=\"https://wa.me/6285100038090?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 2%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085100038090</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Sulis-artha-3.png\" alt=\"Sulis-artha-3\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Sulis-artha-3\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 3\n\t</h2>\n\t<strong>Balikpapan Baru, Vancouver HS-21</strong>\n\t<a href=\"https://wa.me/6285245064893?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 3%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085245064893</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2023/01/1674518641935.png\" alt=\"1674518641935\" itemprop=\"image\" height=\"1280\" width=\"1280\" title=\"1674518641935\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 4\n\t</h2>\n\t<strong>Balikpapan Baru, Ruko Mall AA5. 21</strong>\n\t<a href=\"https://wa.me/6285245064893?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 4%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085245064893</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2024/11/logo11_11_9625.png\" alt=\"logo11_11_9625\" itemprop=\"image\" height=\"600\" width=\"600\" title=\"logo11_11_9625\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 5\n\t</h2>\n\t<strong>Balikpapan Baru, Ruko Mall AB4. 21</strong>\n\t<a href=\"https://wa.me/6285103035999?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 5%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085103035999</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2026/08/logo8_3_9645.png\" alt=\"logo8_3_9645\" itemprop=\"image\" height=\"600\" width=\"600\" title=\"logo8_3_9645\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 6\n\t</h2>\n\t<strong>jln MT haryono , Ruko haryono place no 22</strong>\n\t<a href=\"https://wa.me/6285105019333?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 5%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085105019333</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/Devi-Artha-7.png\" alt=\"Devi-Artha-7\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"Devi-Artha-7\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 7\n\t</h2>\n\t<strong>Borneo Paradiso, A1 No. 1 </strong>\n\t<a href=\"https://wa.me/6285105079222?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha 7%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 085105079222</strong></a>\n\t\t\t\t<img loading=\"lazy\" decoding=\"async\" src=\"https://bimbelartha.id/wp-content/uploads/2022/09/TANTOWI-SD-Artha-1.png\" alt=\"TANTOWI-SD-Artha-1\" itemprop=\"image\" height=\"400\" width=\"400\" title=\"TANTOWI-SD-Artha-1\" onerror=\"this.style.display='none'\"  />\n<h2>\n\t\tArtha 8\n\t</h2>\n\t<strong>Balikpapan Regency, blok Celebration-1 No. 1</strong>\n\t<a href=\"https://wa.me/6281253305557?text=Hallo%20kak%2C%20saya%20mau%20tanya%20tentang%20detail%20pendaftaran%20di%20Bimbel%20Artha%201.%20Terimakasih%20%F0%9F%99%82\" target=\"_blank\" rel=\"noopener\"><strong>Tlp. 081253305557</strong></a>\n<h2>\n\t\tPaling sering ditanyakan\n\t</h2>\n\t\t\t\t\t\t\t\t\t\t<h4 tabindex=\"0\">Apa yang dimaksud dengan bimbel?</h4>\n\t\t\t\t\t<p>Bimbel atau singkatan dari bimbingan belajar adalah kegiatan dalam pembelajaran yang bersifat tambahan dengan tujuan menambah intensitas belajar. Dengan kamu mengikuti bimbel, diharapkan bisa meningkatkan pemahaman serta prestasi belajar.</p>\n<p>Seiring perkembangan zaman, kini mulai bermunculan bimbel online yang menawarkan layanan aplikasi belajar online yang hadir di Indonesia. Dengan adanya beragam penyedia layanan aplikasi belajar online tersebut, diharapkan bisa memudahkan para siswa dalam mencapai tujuan belajar.</p>\n\t\t\t\t\t\t\t\t\t\t<h4 tabindex=\"0\">Kenapa anak harus mengikuti bimbel?</h4>\n\t\t\t\t\t<p>Dengan ikut bimbel, <b>siswa akan tambah wawasan</b>. Seperti metode atau cara menyelesaikan soal yang berbeda dengan yang diberikan guru di sekolah. Belajar siswa jadi lebih variatif. Mengasah keaktifan siswa juga.</p>\n\t\t\t\t\t\t\t\t\t\t<h4 tabindex=\"0\">Kapan kita bisa memulai untuk mengenalkan Calistung ke Anak?</h4>\n\t\t\t\t\t<p>Usia ideal anak belajar calistung adalah ketika menginjak sekolah dasar, yaitu saat berusia <strong>5</strong><b> tahun</b>. Umumnya ia siap belajar calistung di umur tersebut. Meski demikian, ada pula anak-anak yang memiliki perkembangan lebih cepat dari usianya.</p>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>&#8221;Raih Prestasi Gemilang Bersama Bimbingan Belajar Yang Terpercaya&#8221; &#8221;Bergabunglah Bersama Ribuan Siswa yang Telah Sukses Bersama Kami&#8221; Tentang Bimbel Artha Bimbingan Belajar Artha adalah bimbingan belajar yang  berdiri sejak 10 Oktober 1997 di Balikpapan Kalimantan Timur. Bimbel Artha merupakan  usaha jasa pendidikan dengan pengajar yang ulet dan telaten dalam membantu murid belajar. Program belajar di [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 18,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "page-templates/empty.php",
+    "meta": {
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-16",
+      "page",
+      "type-page",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/16",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/comments?post=16"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 62,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/16/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1411,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/pages/16/revisions/1411"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media/18"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://bimbelartha.id/wp-json/wp/v2/media?parent=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,61 @@
+==================================================
+[HALAMAN 1 - METADATA ARTIKEL]
+==================================================
+
+Judul      : Pemanfaatan Metodologi PXP dan Pengujian User Acceptance Testing (UAT)
+             dalam Pengembangan Website E-Kavling
+Penulis    : Narti Apriyanti; Seftin Fitri Ana Wati; Abdul Rezha Efrat Najaf
+Institusi  : (tidak tercantum secara eksplisit pada metadata yang diakses)
+Jurnal     : JATI (Jurnal Mahasiswa Teknik Informatika)
+Volume     : 8
+Nomor      : 3
+Halaman    : 3678-3686
+Tahun      : 2024
+DOI        : 10.36040/jati.v8i3.9766
+URL        : https://ejournal.itn.ac.id/index.php/jati/article/view/9766
+ISSN       : 2598-828X
+
+==================================================
+[ABSTRAK]
+==================================================
+
+Penelitian ini membahas pemanfaatan metodologi Personal Extreme Programming (PXP)
+dalam pengembangan website E-Kavling, disertai pengujian User Acceptance Testing (UAT).
+PXP dipilih karena cocok untuk pengembang tunggal dengan siklus iterasi pendek dan
+fleksibilitas tinggi dalam merespons perubahan kebutuhan. Pengujian UAT dilakukan
+bersama pengguna akhir untuk memvalidasi kesesuaian sistem dengan kebutuhan fungsional
+yang telah disepakati.
+
+==================================================
+[POIN-POIN UTAMA YANG RELEVAN UNTUK TA]
+==================================================
+
+1. PXP mengedepankan prinsip kesederhanaan (simplicity) dan desain yang berkembang
+   secara evolusioner (evolutionary design) tanpa mengorbankan kualitas sistem
+   secara keseluruhan.
+
+2. PXP mengurangi dokumentasi yang berlebihan namun tetap menjaga standar kualitas
+   pengembangan perangkat lunak.
+
+3. Metodologi PXP memungkinkan pengembang tunggal menyelesaikan sistem secara
+   efisien dengan umpan balik langsung dari pengguna di setiap akhir iterasi.
+
+4. Pengujian UAT dilakukan untuk memastikan sistem yang dibangun sesuai dengan
+   harapan dan kebutuhan pengguna nyata.
+
+==================================================
+[KUTIPAN YANG DIPAKAI DALAM TA - BAB 1]
+==================================================
+
+Digunakan pada paragraf metodologi PxP di Latar Belakang:
+"PxP juga mengedepankan prinsip kesederhanaan dan desain yang berkembang seiring
+iterasi, tanpa mengorbankan kualitas sistem secara keseluruhan (Apriyanti dkk., 2024)."
+
+==================================================
+[FORMAT SITASI - APA AUTHOR-YEAR (ITK 2026)]
+==================================================
+
+Apriyanti, N., Fitri Ana Wati, S., & Efrat Najaf, A. R. (2024). Pemanfaatan
+Metodologi PXP dan Pengujian User Acceptance Testing (UAT) dalam Pengembangan
+Website E-Kavling. JATI (Jurnal Mahasiswa Teknik Informatika), 8(3), 3678-3686.
+https://doi.org/10.36040/jati.v8i3.9766

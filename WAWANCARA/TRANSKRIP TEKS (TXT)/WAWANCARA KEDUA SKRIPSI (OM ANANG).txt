@@ -1,0 +1,1292 @@
+Diperbarui di Anu.
+Nah itu kira-kira kalau misalnya minta sumber codenya bisa?
+Sumber code?
+Kode programming, program codingnya gitu.
+Aduh sumber code ya?
+Biar kita bisa Anulah nambahi apaan-apaan
+Jadi kayak ngubahnya langsung disitu gak buat baru lagi gitu
+Ada sih di Anun
+Kita kan kemarin bikinnya lewat developer itu, Dominensia.
+Nah, Dominansia itu dia nyuruh orang. Orangnya tuh mungkin temen yang ontelkan.
+Ada juga kontaknya namanya Mas Jabah Hidayat dari Jogja.
+Sama aja dibuatin ganteng-ganteng.
+Kalau untuk memperpanjang domain, itu sudah diserahkan ke kita.
+Oke, berarti mandiri?
+Mandiri sudah. Kita sudah enggak ke sana
+Cuma kalau kita ada apa-apa
+misalnya ada maintenance, ada error
+itu dari pihak domain Indonesia
+bisa memperbaiki
+Kemarin kan pernah error apa gitu kan
+ditambah memorinya kurang gede atau kurang apa
+Saya kan, ada eror mas ini
+enggak bisa dibuka
+Domain Indonesia
+sama mereka sudah langsung diperbaikin
+Tapi kalau untuk
+nanya-nanya dimana itu? di Domain Indonesia apa di mas yang buat developernya itu, Mas Hidayat
+berarti kalau yang saya tangkap awalnya dari Arta minta bantuan ke Domain
+Indonesia, setahu saya Domain indonesia hanya perusahaannya dia jasa untuk membuat domain
+terus mungkin dari mereka karena cuma menjual jasa domen minta
+bantuan ke masjid itu untuk developer membuat tampilannya tapi kemarin setelah
+the maintenance dari pihak Arta minta bantua domensia untuk baik-baiknya langsung sama
+Mas aja sudah anda Oh berarti kalau misalkan dari yang terakhir karena the maintenance seharusnya
+lumensia karena sudah ngebaikin berarti dari mereka seharusnya ada-ada Nah cuman ini di
+kalau untuk yang sebenarnya saya sudah ngebuat mas ke visual gitu untuk menunya apa hasil
+pembaruan ya Ini oh oke kenapa baru lokal belum dihosting belum dihabis ke public itu
+Nah, sebenarnya kalo dari sini opsinya dua sebenernya. Mau memang dari ngebuat baru atau dari source code yang lama
+gunain terus kita update lagi agar dari..
+Oh gitu. Sebenernya kalo ada baru, perlu dibuat baru itu kita gak usah terpanjang kesannya gitu gimana?
+Mati tadi kan?
+Websitenya masih ada jadi pokoknya salah
+Iya, kalau mau di-backdown biar gak muncul ketika di Google.
+Jadi kalo orang Google muncul yang baru aja?
+Cuman mungkin karena baru jadi nanti akan ada SEO kan gitu.
+SEO itu kayak semakin banyak kamu klik dia bakal langsung
+Kalo kita cari di Google langsung paling atas gitu ya mas.
+Jadi nanti akan ada adaptasi buat orang bisa nge-search website-nya Arta Baik Papen tuh paling atas lagi gitu ketika di search paling ates.
+Kalau kaya gitu, jangan hapus dulu berarti tanggal baru?
+Iya bener, selesai dulu.
+Tapi nama domain nya nanti sama apa enggak ya kalau misalnya buat baru?
+Nah kalau misalkan itu untuk ID nya tetap sama cuman mungkin dibelakang ini
+nah cuman saya belum ngulik juga kalau misalkan ini ketika sudah di takedown apakah bisa diambil atau enggak
+namanya ya
+soalnya nanti
+ini kan mau memperpanjang
+tanggal 23 Agustus
+ini invoice nya belum muncul
+jadi memang kan
+belum di perpanjang
+seandainya mau di takendown
+itu kan gak perlu mempermanjang lagi gitu loh
+dimatikan
+udah habis
+Kalau tidak kita bayar, itu berarti nanti nggak bisa dibuka kan website kita
+Iya kayak gini nggak bisa diakses
+Berarti mungkin invoice-nya sudah muncul
+Seharusnya kalau misalkan domain itu biasanya ngambilnya setahun atau per buli?
+Pertahun sekitar 800
+Sebenarnya kalau kan pakai Wordpress gitu, kayaknya nggak sampai 800 sih itu mungkin ada perselannya ke admin-admin yang kita ngecek di Wordpress itu perpanjang itu sebenernya enggak sampe segitu.
+Soalnya dari Wordpress sendiri seperti tadi juga tahu teknologi yang lama soalnya mas.
+Udah lama banget udah bisa dibilang ketinggalan zaman lah makanya disini...
+ini Hanoi aja solusinya baru aja tapi yang nanti harus kita isip foto-foto yang sesuai
+hanyut mulai sama itu bisa disamain Bisa straight kemarin tuh saya karena enggak ada
+suratnya cuman ngambil data aja sih masih ambil datanya itu dari lagian Oh ya oh sudah diambil
+ya soal bagus udah nah seandainya sana tekton kesudahan tinggal nanti mau kita perbaiki aja
+orang-orang yang sudah riset ini desain nanti kita lalu kita edit juga disini kemarin untuk
+menu-menunya juga sesuaikan sama yang di website Oh ya oh Kemarin saya ngambilin data yang dari
+website yang lama terus dari menurut masuk menunya baru saya buat ulang gitu jadi untuk
+informasinya seharusnya sudah sama-sama
+ini untuk pembaruan
+maps
+gambaran yang terbaru
+landing page nya
+dan ini sudah memakai
+bukan wordpress yang system lama
+tapi yang termaru
+ini pakai bahasa larafel
+nah itu
+saya tidak paham
+sebenarnya
+bukan lulusan, cuma SMA aja
+cuman dikasih tau
+mas caranya ganti foto
+itu gini sama Mas Hidayat yang Jogja-Solo
+tadi kalau mau mengotak ada apa
+saya nggak ngerti, kadang lah ada error saya tanya Mas Fadid
+gimana masih aman? oh ya sudah biarin aja
+tapi kalau sudah nggak bisa dibuka saya baru direct ke
+berarti kalau kemarin itu yang website
+lama ada dashboard gitu kayak adminnya
+terus untuk update nya
+di atas biasanya ada komputer kan mas
+website itu untuk ganti-ganti apa foto cuma bisa mengerti foto kayak minyak tuh admin
+dapat-dapat email itu enggak ada oke nah ini untuk dari website cuman katanya Radit yang di
+bagian atas ini jadinya judul kan karena gini kan berjalan gini kalau misalkan mungkin bisa
+nanti pak
+kalo aku gak ngerti
+mulut aja
+mulutnya bagus aja oke
+kontak deret
+style nya
+bikin dua aja
+milih opsi
+berarti aku coba dipake
+yang simple gitu maksudmu
+ngapi lah kayak modern aja
+oke, oke
+nanti coba aku biar bisa dicoba sama
+om Anang juga sama
+sama bapak-bapam biarku
+deploy ke mana?
+versel
+yang cuman front end nya doang
+depannya doang bisa keliatan
+di hovernya boleh ya
+boleh ya main hover
+ini lagi nih
+agak lebih modern gitu
+kayak jadul, kayak website toko-tokoan
+terkadang kan orang banyak nanya
+kenapa sih kita itu cuma dibalik open
+tapi website yang ID seluruh global
+padahal ini sebenarnya kita itu membangun branding
+perusahaan Arta itu kalau ada
+website.id kan kelihatan keren gitu
+gak hanya blogspot.com
+kalo mau menjelaskan ke orang
+Bagaimana aja, tapi kok sampe websitenya global?
+Mungkin jawabannya gitu
+Biar kita itu
+Brandingnya kan ada
+Keren kalo ada id nya
+Id atau .com dong
+Ini id
+Sebenernya .com juga lebih ini sih
+Karena untuk
+Kan ada website yang satu
+Itu sebenarnya bisa ngehosting sama
+Kalo domain tuh seharusnya lebih murah daripada hosting
+Yang mahal tuh di hostingnya
+Dan kemarin itu Recreft karena belinya per tahun sekitar sekian, bisa menampung 100 website.
+Jadi rencanaku pakai hostinger.
+Karena sudah terpaket jadi bisa.
+Pakai punya Recref?
+Iya.
+Jadi gabung ke Recref saja untuk hostingannya.
+100 website?
+100 website, jadi kita bisa.
+Kita bisa buat 100 website bayarnya cuma sekali?
+Bayar sekali sejuta per tahun.
+tapi 100 website gitu, kalau misalkan ada orang yang bisa memanfaatkan jadi kan menjadi ladang bisnis juga kan
+oh iya jangan-jangan
+itu yang kemarin
+ya kemaren
+iya makanya jagi jajanan sekarang ngejual itu
+karena ada 100 website, sekarang baru 5
+kalo dikasih iklan bisa deh
+iklan
+oh jangan lah
+iklannya malah numpuk-numpuk
+nanti namanya google adsense kan
+nah itu mungkin bisa dibuast juga tuh
+Nanti iklannya nggak tau mungkin dikarenakan buku kah ya, karena lu bisa-bisa aja masuk situ
+Itu kalau diklik orang
+Kemarin kan aku iseng-iseng toh bikin artikel kan yang di website lama
+Kan ini jamannya TKA kan
+Jamanya mau TKA itu loh
+Saya iseng iseng lah buat soal prediksi bahasa Indonesia TKA
+Biasanya yang lihat apa artikel itu mah 100 200
+55 ribu mas
+Di artikel website Arta itu?
+Iya, iya
+55 ribus saja tonton orang
+itu di boost?
+enggak, cuma artikel ngetik
+biasa saya ngambil soal dari google kan
+asal-asal di coklat gtb
+judulnya tak buat menarik
+kisih-kisih soal TKA
+tahun 2000 yang akan mendatang
+meledak
+itu berarti orang harus akses websitenya
+kita sampai tembus webartikel
+Itu yang viralnya itu
+Satu itu
+Sisanya cuma yang lihat 100-200
+Terus bawahnya lagi ada sampai 5000
+Nah, itu bisa jadi
+Itu berarti kalau yang saya tahu
+Artikelnya dikasih
+Yang penting dikasihi
+Untuk mengisi artikel
+Iya benar
+Tujuan website kita
+Itu kan satu untuk dilihat orang
+Kalau mau diliat orang
+Berarti kita harus tau apa yang
+Ditampilkan, apa yang menarik
+Sambil nanti kita promosi
+Artikel
+Karena kalau cuma
+Kita isi foto-foto kegiatan
+Kayaknya tidak ada yang buka
+Kecuali
+Kalau kita tulisi
+10 cara mengajar yang baik
+Artikel
+Mungkin orang akan masuk lewat artikelnya
+Setelah masuk artikel kan
+Otomatis membuka website
+Karena website masuk di artikel
+Sebelum ke dashboard front desk atau si adminnya itu untuk landing page nya sendiri berarti yang sangat dibutuhkan artikel
+Artikel tuh bisa ngeliat gitu sama berarti nanti di bawah nya gak ada
+Nah ini juga bisa ngerti untuk ngisi artikelnya itu
+karena orang-orang nanti masuk ke website melihat promosi kita itu lewat artikel gitu apa sih ini
+siapa sih yang buat artikelnya cek gerek bimbel atau cek belum ya kalau cuma foto Cuma promosikan
+kayaknya enggak ada yang nonton bukan-bukan ada ya Ada sih cuma kan ndak sedikit gitu tapi kalau
+sudah artikel itu berarti kan kayak konten benar-benar ada konten yang bermanfaat lah dari
+Artikel itu
+Itu aja sih
+Kalau penambahan
+Nah berarti kalau misalkan nanti ini
+Saya mau dapetin data terbarunya
+Misalnya apa ya?
+Data kayak pengajarnya gini
+Data gimana, foto-foto kak
+Kan tanpa anggit
+Iya sudah gak ada
+apapun apapuni bisa dibuka masa tidak bisa dibukanya anunya website-nya masuk lalu aku
+pakai kombo di atas sih Bisa admin jawabin admin-admin nya mungkin bisa admin ini nah
+nama pengguna email
+sebentar
+saya kasih kata ya
+emailnya ini
+bantuanbimberarta.com
+fakturnya ini
+bimber
+eh salah
+bimbel.com
+di sini
+nama username bimber yang buat orang sana aku sih cuma nurut anu aja cuma
+ganti foto aja sama nambahin artikel kalau geser-geser Anus ndak bisa
+Kalau maja bingung gak bisa?
+Gak bisa
+Bimber
+B-nya ini
+Eh kecil ya
+Oh bimber
+Bimbers
+Harta
+B- nya besar
+1
+MB 3
+Habar
+BIM
+Kok BIM lagi
+BIM
+ya udah gini aja aku bisa operasi sistemnya di sini mau cek artikel yang banyak itu
+bisa-bisa lihat artikel yang meletak lima ribu Rp55.000 ini bukan ada di sini pos-pos
+juga ketik post semua pos terus belum ono pemberitahunya gimana ya cari-cari yang banyak
+penuh sekolah-sekolah Oh iya itu tuh yang aneh itu dari yang kecil yang besar yang
+sebalik-balik
+nah, itu ilmu ketiga
+itu sudah
+wah banyak ya
+iya banyak
+untuk artikel gitu ya
+itu
+cuma itu
+itu artikelnya saya ngambil dari
+sumber-sumber lain
+kalau soal-soalnya
+itu saya ambil di cat cbt
+cuma iseng-iseng
+biar-biar ditonton orang banyak kayak apa ya isinya coba meledak
+tapi untuk kayak soal orang bisa mengakses soal ini berarti lewat menu artikel itu
+Bukan kayak menu khusus untuk soal apa gitu?
+Enggak, bukan. Cuma artikel lah
+Submen-submen lo gitu
+Cuman bisa aku ngisi itu
+Tampilannya... eh tadi kembali ke depan ya
+Tampilan ini bisa dilihat
+Ya kaya gini loh
+Tampirannya cuma kaya gitu aja
+Nah ini galeri foto
+Ini sebenernya kan enggak rapi
+Coba kita buka aja fotonya
+Sembarang TK atau SD
+Ini kan masih ala kadarnya
+Agarnya ya emang enggak kecimpung-perkomendasi gitu, cuma asal menjagain lho saya itu cuman menjaga
+Sama yang terpenting kan kalo misalkan orang-orang mau nyari Bimbel Arta udah paling atas nih dia
+Iya betul sudah, Bimble Arta itu sudah diatas
+Tuh, tuh dia sudah paling ates
+Nah mungkin kalau nanti yang website baru biar ditambah atas itu memang harus sering diakses
+harus sering diakses itu maksudnya di?
+jadi semakin orang banyak ngeklik
+link yang sudah nanti dibuat
+domain yang sudah digunakan, itu biar
+diatas lagi
+jadi memang ada program itu
+biar
+paling atas harus di klik berkali-kali gitu
+maksud nya dalam artian satu orang mungkin
+dalam sehari 3 kali
+akses website nya
+nah itu kan masih bisa kita buka kan
+Tapi kalau luar muka nggak bisa ya?
+Mungkin ada masalah.
+Oke, berarti bisa lihat di sini aja nih.
+Tuh, silahkan apa di copy kah,
+diambil atau pindahin semua sebelum itu
+dia out kok.
+Berarti yang terpenting selain artikel apa?
+Aku sih cuma ngisi itu sih. Paling
+nanti foto-foto baru kalau misalkan ada tambahan kontak kadang
+contohnya coba buka website harta yang lama yang belum bisa ya
+kalau ini bisa
+admin tadi bisa dibuka
+dashboard
+beranda
+ngomong-ngomong
+kontak kami itu
+Oke, saya harusnya bisa akses kalau dari admin seharusnya ya?
+Admin bisa. Dari admin selalu bisa buka
+Ini Mas Sakti PM tanggal 23 pokoknya
+Dulu pernah sih lupa
+Lupa memperpanjang sampai September
+Namanya kita kan dia juga
+Maksudnya bukan manteng komputer terus yang kita ngajar
+Websitenya main gak bisa
+Nah ini kan bisa daftar ya Om, tapi selama ini ada yang pernah daftarkan dari website gak?
+Nah yaitu seandainya daftaran website itu kan kalau kebanyakan orang lihat WA mas
+Jadi mereka kalau website mungkin liat WA, barulah ada top alamatnya kan
+itu kalau website itu ya mungkin tidak begitu anu ya karena terdapat global benar-benar jadi terus
+orang juga mau nanya lebih lanjutkan secara offline gitu lewat ke to be awet chatting itu
+mungkin cepat tapi seandainya dikasih formulir pendaftaran dimasukkan itu Ya boleh-boleh aja
+ditambah formulir pendaftaran itu ya bisa
+cuma, kok seandainya mereka ngisi formulir pendaptaran
+toh yang di admin misalnya dia mau daftar di ARTA 1
+misal ya
+terus tanya saya sudah daftari di website?
+karena saya tidak mengerti juga
+tulis lagi
+biasanya kalau daftarnya sebenernya lebih praktik
+pakai UAC
+atau mungkin kalau dikasih info pendaptara
+silakan hubungi
+ya sudah begitu aja kalau dimasukkan ini nama sekolah itu mungkin yang bisa ngelihat
+yang kita yang ngerti-ngerti website yang nggak ngertinya tetap oke sedikit butuh ini
+ya kasih tau sedikit gitu om ya nah ngomongin pendaftaran ya tadi kan ada admin juga tuh
+terus kemarin saya juga tanya Radit kalau misalkan kenapa saya ini pengen bawa ke skripsi
+karena yang saya tahu kemarin selesai dulu juga pernah lewat buku-buku pertama kali daftar
+Dicat dari ya lewat buku lewat kertas itu saya tanya lagi sama Radit sampai sekarang
+Ternyata masih seperti itu makanya saya tertarik agar bisa ngebantu juga kemarin
+gitu lewat dari digitalisasi yaitu membuat wajah gini Oh ini tampilan untuk dari yang
+bayangkan untuk front desk
+dari mbak atau om
+yang di depan meja gitu
+nah cuman untuk data-datanya
+ini sebenarnya yang saya perlukan
+untuk kayak nanti
+dari mba-mba ini untuk inputnya
+dari daftar baru
+dari siswa yang baru ini apa aja
+untuk sementara itu sih
+untuk kayak data-data
+apa segala macem
+kalau kok data
+siswa itu kita masih
+manual mas, ada sih buku besar
+yang diperlukan datanya kalau pendaftaran itu biasanya nama-nama sekolah sama nomor
+telepon butuh aja sih selamat jadwal jam bayarnya apa jadwanya apa itu aja
+Biasanya yang ditulis di formulir kecil itu
+Oke, berarti dari data yang tadi disebutkan
+Ada di buku besar
+Di buku tulis
+Itu buku besarnya
+Yang lo mau data
+Covernya batik gitu
+Iya yang pokoknya RD
+Cuma ada disitu
+Cuman kalo admin sama mbak yang didepan
+Suruh ngakses
+Kalo suruh masukin kayak gini
+Kayaknya SDM kita belum
+Tinggal masukin aja
+Butuh laptop semua berarti
+Tapi ya
+Tab
+bisa aja
+kalau mau
+bisa aja
+karena pengennya juga
+memang lebih enak gitu
+jadi dari sana masukin data
+nah dari sini pusatnya
+bisa ngelola juga datanya
+nanti dari data itu
+bisa dipetakan
+dari SMP mana yang
+lihat gitu, dari mana SMP yang paling banyak
+kelas berapa
+ini kayak admin gak usah ada
+iya
+jadi bisa tahu nih biar lihat marketnya Radit Arta ini lebih banyak dari SMP mana
+ya betul, pengelola data
+iya daftarnya dari mana
+terus mungkin
+bulan apa aja yang ada grafiknya
+segala macam
+total pendaftar baru
+itu membantu banget
+sekarang kan
+data itu penting
+memutuskan sesuatu
+mengambil keputusan
+kalau berdasarkan data lebih akurat
+daripada kita pakai
+data itu secara objektif
+Kira-kira itu lebih.
+Ini kamu ID nya based on apa?
+Nama kan?
+Kalau kelanjutannya gimana tadi?
+IDnya tadi gimana dapet?
+Domain
+Nah itu saya juga
+Coba kita
+Domain Indonesia ada di atas
+Emailnya, atau emailnya kasih aja
+Masukkan kesini sekalian
+Biar nanti bisa chatting sama orang domain Indonesia
+Boleh sih
+kontaknya itu ga boleh?
+kontak
+domenensia ya
+emailnya, biasanya kan direct-nya email
+nanti invoice nya masuk email
+aku email
+ini hp ku
+semua media sosial
+Arta udah ada disini
+tim social media marketing
+Tiktok ada disini
+Facebook
+Instagram
+Nanti bisa dimasukkan
+Cari-cari dulu
+Ini instagram sudah masuk
+Kalau misalkan ada yang mau akses instagram
+Instagram, facebook
+Yang belum ada artanya itu twitter
+Soalnya seorang kuat
+Apalagi
+43
+ketiga itu yang terbaru tiktok ke emailnya bantuan bimbel atau apa tadi email tadi masukkan
+aja email ini bantuin belakang password-nya sama kayak kayak ini tapi bimber website pasuknya Apa
+kontak ini ajo kontaknya dari domenensa wkwk biasanya kalau biasanya kan invoice nya muncul
+Oh email ya
+Email nanti mungkin dikasih
+Ya langsung masuk ke website-nya sana
+Baru otomatis sama
+Website sana itu dikasah kode apa
+Masuk ke email, gmail
+Akhirnya aku bisa
+Masuk
+Harus ada email
+Tapi untuk kode-kode
+Ada kode sesuatu
+Agar orang itu percaya bahwa
+Yang chatting saya itu memang
+Yang punya website ini
+dia punya keamanan itu
+jadi bukan
+orang luar bisa
+dikira sabotase website
+dikonfirmasi oleh email
+yang berhubungan
+dengan website itu
+tapi sebelum itu
+ini berarti
+pilihan nya gini
+website yang lama
+mau di update
+ke yang baru
+Tapi kemungkinan besar itu nggak bisa karena awalnya kan pakai Wordpress only
+Yang dimana teknologinya udah ketinggalan gitu kan
+Nah untuk yang sekarang tuh
+Yang standarnya digunain sama perusahaan ataupun sekelas UMKM tuh
+Bukan Wordpress lagi gitu
+Itu pake frameworknya atau rangka kerjanya
+PHP Laravel untuk kayak logikanya terus kalau misalkan orang melihat di depannya ini atau
+front-endnya ini itu dia pakai bahasa next.js Jadi kalau misalnya simple nya itu WordPress
+tuh kayak Canva kita bisa tambahin udah ada templatenya gitu kalau sedangkan yang standar
+yang biasanya di sekarang udah banyak orang pakai itu memang sudah ada templatenya tapi kita harus implementasi sendiri biar kita bisa nyesuaiin juga
+Itu juga bisa bersangkut sama keamanan dari websitenya gitu
+Karena contohnya aja, saya kan udah dapat datanya nih om
+Yang dari hasil website yang saya buat ini
+Itu kan ngambil kebanyakan dari website yang lama
+Nah seharusnya itu gak bisa om
+Gak bisa di ambil secara mudah
+Secepat itu
+Tapi karena masih menggunakan wordpress
+Yang notabene teknologi yang
+Lama
+Jadi keamanan juga masih
+Dalam tanda kutip kurang
+Orang lain bisa ambil datanya gitu
+Makanya saya bisa implementasi langsung
+Ke website yang saya buat
+aku sih maknus sama anet aja
+asalnya aku tuh gak bisa
+bagusnya gimana
+kalau memang lebih
+berarti gak usah diperpanjang
+nanti atau
+karena tanggal 23 ini memperpanjang sekitar
+800 ribu
+untuk satu tahun ke depan
+untuk website yang lama
+800 ribuh
+untuk panjang satu tahun
+Baru atau masih tidak apa-apa tahun ini pakai itu
+Lama tapi sambil ini dianuh
+Iya itu bisa sih
+Sambil ini sewa sampai sempurna
+Ini kan kita tidak buru-buru
+Tidak buru besok karena ada perang
+Kita santai
+Berarti diperpanjang
+Sementara
+Sambal ini diperbaiki
+Mungkin pertengahan ajaran
+Ini Juli ya
+Juli mungkin awal Januari
+Launching baru ini
+Sudah disuruh nutup
+kan butuh waktu ya, nanti kita bisa ngambilin data-datanya sana juga
+butuh waktunya gitu
+karena website berpanjang tanggal 23
+nanti invoice nya ada
+karena bayarnya pake virtual account
+itu 30 menit segera di transfer kayak gini
+Terus berarti tadi saya tangkap
+Dari pendaftaran itu ada jadwal
+Nah sambil menyempurnakan
+Jadwal sama
+Jadual aja om ya
+Pendaptaran
+Oh nama
+Nama
+Nomor telepon mereka
+pendaftar wali-wali bisa muridnya bisa oke alamat bisa kita kan bisa petakan
+alamat sama sekolah SMP mana SD Mana kelas mungkin pas jadi satu sama sekola
+Oke. Kelas juga bagus sih sendiri kan, biar tahu lah ini kelas, sekolah, alamat
+Kalau jam sih nggak perlu sih jamnya Senin, Rabu, Jumat, Selasa, Kamis, Sabtu
+Cuma ada sih di pendamping aja conteng aja
+Oke berarti jadwal eh jam sama hari itu maksudnya gitu ya?
+Iya jam sama harinya
+Sampai sekarang masih apa?
+Kalau untuk pengelola masih ada sih
+Oke, Senin, Senin
+Senin, rabu, jumat
+Rabu ,jumat
+Selasa ,kamis, sabtu
+Jam nya untuk jam nya dari
+Dari jam ada yang setengah empat, ada yang jam lima, ada jam malam.
+Oke.
+Kalau Sabtu malem kan enggak tetap?
+Enggak ada.
+Jadi kalau yang Selasa Kamis...
+Yang Selasa Kameh Sabtu tapi dialekan jam 2.
+Jadi Selasa kamis siang jam 7 itu dialekkan jam 2?
+Siang malem itu jam 2, kalau dulu kan minggu malem.
+Itu kalau itu kan internal aja pengaturannya, nanti dikasih tau.
+Sama kalo yang malemnya selasa kamis, sabtunya itu gak malem tuh. Tapi jam 2 siang
+Tanda kutip anaknya harus bisa
+Kalo gak bisa mungkin dialihkan ya
+Nyebar hari Jumat lah ada yang hari lain
+Gak gitu opsionalnya
+Berarti kita selasa Kamis Sabtu
+Untuk dari Senin sampe Sabtu
+Itu jam nya
+Sama kok mulainya
+Sama
+mulainya kita jam 2
+itu sesi 1
+dari jam 2
+sampai setengah 4
+habis itu
+setengahan 4 sampai jam 5
+setengahn 4 sampai jaman 5
+jam 5 sampai
+setengahl 7
+mulai jam 8
+baru jam 7 mulai sampai setengan 9
+setengahi 9
+oke
+nah itu mungkin bisa
+ditambahin jadi karena diharapkan tuh dari yang pengajar juga Om itu juga bisa ngeliat nih kalau
+bisa mengakses kayak gini juga dari HP juga gitu loh Jadi bisa tahu jadwalnya ini ada hari
+ini walaupun sebenarnya udah diluar kepala gitu ya untuk reminder juga sebenernya bagus
+Mungkin dari plottingan kelasnya, dari siswa-siswanya
+Terus ada penambahan siswa atau segala macam
+Jadi sebenarnya bukan untuk menggantikan
+Tapi lebih tools untuk membantu
+Aku kalau misalkan boleh nggak kayak
+Wawancara from business
+Mbak atau om yang biasa admin
+Bisa aja
+Karena admin banyak anggun
+karena kalau tidak ada pendaftaran, dia tidak akan mengapa-ngapain juga
+oh nggak ngajar juga toh?
+enggak admin itu cuma ya datang kalau ada yang daftar melayani
+kalau enggak ya sudah
+kadang kita suruh isinya cuma isi-isi promosi ini di apa gitu
+baru dia kerja
+kalau engga ya siapa
+kan kayak ngajarkan guru-gurunya didalam
+adminnya cuma paling akhir bulan yang gak nulis
+Admin tuh banyak anunya nyantainya. Bisa setengah lima pas nggak ada tamu biasanya
+Tamunya kan awal-awal masuk, jam-jam masuk. Pas jam belajar itu nggak ada kan tamu
+Nggak ada orang yang ngajar
+Mungkin dari informnya ada yang mau tambahin kaya dari websitenya ini sekiranya bisa
+mau ditambahin dari landing page
+artikel
+ini kalau artikel belum ada
+tampilan depan
+gambar
+ini kan masih di laptop saya
+nanti kalau misalkan
+bisa ditampilkan
+di akses sama yang lain
+saya kabarin jadi kalau misalkan komen apa yang kurang nih itu oh iya ini mau ditambahin
+mungkin kurang bagian ide kita klik daftar sekarang itu masuknya kemana tadi ya belum
+siom ini belum-belum ini jadi cuman tampilan depannya aja jadi belum saya lanjutkan untuk
+sampai kedalam fungsi pendaftarannya terus tadi kan tambahan rabbit coba buatkan dua
+tampilannya lebih simpel daripada ini gitu dan saya coba Buat 2 tampilan lagi satu
+berarti bener om? dari TK, SD, SMP, SMA bahasa inggris
+tapi kalo pengen tau dalam-dalamnya yang lama bisa lewat admin tadi lho
+oh kalau misalkan pengen tahu catat perlu belajar gimana?
+kan lewat Admin
+tapi nanti kita perpanjang juga keaman aja sih
+kita perpanjang nanti
+sampai 1 tahun ke depan
+tanggal 23
+berarti mungkin invoice nya sudah
+invoice nya udah
+dimber
+pasutnya
+dimber
+wih
+ini salah
+sebentar
+masih
+B besar
+Satu
+D
+3 L
+R T H
+B satu
+B satu
+Astagfirullah
+Ini buat kode
+Gak amanan
+P 1 M
+P 3 L
+Nah
+Bisa kan Anu dilihat dari sini Anunya?
+Oh ini ada pemberitahuan nih Om
+Nah aku gak ngerti lu, makanya aku gak mengerti
+Coba cerai
+Situs Anda menggunakan versi PHP Lampau
+Yang sistem keamanannya tidak diperbarui
+Sebenarnya perubahan versinya
+Kalau seandainya disuruh perbarui
+Aku juga gak bisa juga
+Untungnya website yang lama ini ga sampe pendaftaran terus kita harus bayar
+Maksudnya gimana?
+Jadi kalo yang sekarang tuh website kebanyakan
+Apalagi kalau misalnya kita mau beli barang di website kayak Shopee deh
+Itu kan dia mendem duit yang kita beli ke toko itu ke shopee dulu kan
+Nah itu kan walau shopea kan aman kan
+nah kalau misalkan pake yang lama ini
+terus
+kalau di website yang lama
+sampai ada pembelian kayak di Shopee
+itu bisa
+uangnya bisa
+ada orang yang ambil dulu
+karena sistem keamanannya
+betul, paham aku
+kalau Shopeenya kan digelola orang
+kalau kita seandainya
+ada uang di dalam website kita ini
+ada transaksi
+itu bisa dibobol orang
+Karena sistem keamannya masih itu, jadul.
+Yaudah nyoba. Malah mau nyoba ngambil orang aja.
+Tuh baru aku nggak ngerti.
+Asalkan website bisa dibuka, masih aman sih.
+Itu cerita dari waktu wawancara sama adminnya untuk lebih tahu.
+kan yang mungkin lebih paham cara mengendalai orang yang membuat wawancara dari admin gitu
+kalau misalnya sama dengan wawacara admin kira-kira apa ya sama butuh informasi
+itu nanti di sana apa aja mungkin dari daftar itu siapa buku besar tadi
+yang pertama percobaan ya deket-deket sini aja dulu harta 5
+di harta 5 lho
+di hrta 5 atau 4?
+oh yang anak-anak bisa ngobrol
+aku ini anak diajak ngobol
+aku sih gak tau, kenal juga
+si akun daerahnya
+kan kita aku gak pernah tau juga
+aku 7
+di hrt 5 siapa?
+om tony
+saya mah gak tau
+di ht 5
+Ya aku mbah-mbahnya Arta V dulu. Dari Arta v itu baru setelah pandemi itu saya pindah kata tujuh
+Karena kekurangan dulu, guru SMP kan kurang. Saya kesana
+Disini di SMA, kelas saya
+Di Arta 5 kan ada SMA kan?
+Kekasanya disi SMA
+Terakhir SMA gitu
+Dulu siapa om ya yang...
+Kamu di harta berapa dulu ya?
+Harta lima
+Empat-empat
+Bukan yang empat bakso
+Yang bunderan kan
+Ya, harta limam
+Ada bunderang, ada lima
+Siapa yang ngajar dulu
+Yang agak tua
+Pak D
+Mau bagi
+Korak ciri-cirinya
+Tua
+Pak D
+R7 berarti dimana Om?
+Burno Paradiso
+Sama rencana nih kan
+Ada 8 cabang
+Aku juga belum tau
+Manajemen untuk
+Untuk ngumpulin
+Jadi satu itu
+Biar dari Om Tok tahu
+Siapa?
+Yang
+yang integrasikan datanya
+maksudnya yang nyatuin datanya
+O, M, O
+Om J itu
+ngitung data
+misalnya dia tau data-data
+ini muridnya ini yang mulai kenaikan
+sebesar gini
+Om J yang tau
+tapi masih dalam bentuk
+kertas
+di komputer tapi masih
+dalam bentok ketikan
+misalnya
+itu kan kalau misalkan Oh berarti skemanya yang saya takut dari artinya punya masing-masing
+itu bukan admin
+laporannya jumlah murid
+jumlah omje di atas
+nah, itu nanti
+dikumpulkan secara langsung
+per 6 bulan gak?
+per setahun gak? atau per bulan?
+setiap bulan
+ya laporan biasanya
+jumlah muret yang keluar
+berarti update
+bisa dibilang update
+tapi bentuknya masih baru
+kalau misalkan ada
+Dari admin ini, misalkan ada yang mendaftar, sudah langsung otomatis dari sistem informasi bisa tahu.
+Jadi tidak perlu untuk pribadi lagi.
+Jadi bisa bilang itu datanya bisa kelihatannya.
+Datang muridnya.
+Oh itu tadi saya kan Om Jaya yang kerja.
+Biasanya kesini kok kalau jam-jam lalu.
+kerja biasanya disini
+selasa Rabu Khamis jam 8
+jam 9 itu ada disitu
+tapi kalau dulu sempet
+kalau yang saya tau kan
+kayak
+GO terus Ruangguru
+segala macem, dia ada video pembelajaran
+video pembealjaran
+dari siswa-siswanya
+ini gak
+tambahan untuk
+materi baru
+di dalam website lihat
+Tapi nanti dia akses orang nggak ya?
+Yang udah les bisa melihat tadi
+Oh, itu daftar dulu
+Terus sudah terverifikasi
+Udah les di ARTA baru bisa mengakses
+Itu untuk videonya sendiri pernah dibuat gitu
+Belum pernah
+Kalau bikin video kayak gitu ngomong di depan kamera
+Kayaknya pasti belum
+Itu kan mirip
+Seperti bikin konten
+Menjelaskan sesuatu
+Sebenarnya bisa aja
+Bisa aja
+Kalau yang saya
+Coba
+Bagus juga
+Kayak sakit
+Siswanya gitu
+Iya
+Sama kalau dari
+Modul belajar
+Yang sendiri
+itu ngikutin dan update tiap tahunnya berarti? Iya, setiap tahun ngikutin sekolah, pengabalan-pengabalan.
+Dan kalau di website kan yang saya lihat memang belum ada soalnya gitu ya kecuali dari artikel lagi
+Oh iya cuma artikel
+Kalau misalkan ditambahan khusus fitur baru untuk nyoba
+tapi mungkin itu bisa dianuduh tapi susah ya kayak soal itu tapi
+jawab-jawab aplikasinya gitu bisa mencet
+karena saya juga mikir itu kalau misalkan cuma pendaftaran makanya Karena kalau soal website
+itu gimana caranya kita itu bikin di dalam itu kan yang menarik orang gitu apa ya menaruh
+Mungkin bisa latihan-latihan sekolah, bisa artikel gimana menjadi guru yang baik atau murid gimana biar gemar belajar.
+Nah nanti sambil orang melihat pencarian itu kan masuk di website nya juga dengan sendirinya.
+Jadi kalau misalkan ada nih kayak soal TKA gitu
+Tapi kalau misalkan yang gak list dari ART ini cuma bisa jawab satu sampai lima
+Kalau mau dapetin soal lagi, invest dulu, daftar dulu, bayar dulu
+Karena bayar dahulu di artikel lain itu aku liat
+Kita kadang kalo nyari soal kan sebelum ada caci gitu kan
+Masuk di website orang itu
+Ya cuma tiga list soalnya
+Sebelumnya download tapi bayar juga lah
+atau iklan
+itu trik-trik
+untuk biar
+ada uangnya
+nanti ada kantongnya
+bisa aja nanti ke depan
+jadi gak cuma
+dari daftaran pendataan
+tapi memang
+fungsinya artat, tujuannya artat juga
+biar ngasih soal juga
+berapa skornya
+segala macam
+sekarang musuh kita
+itu ada semua orang itu bukan melihat Google lagi melihat website atau melihat mereka
+ngaruh banget itu sudah kita mau cari bahkan seorang desainer grafis apa dia pakai bantuan
+ya itu untuk menyelesaikan permasalahan sama juga kemarin dari rade juga ceritain kalau misalkan
+misalkannya ada yang belum bayar nih dari siswanya atau walinya itu dari admin yang
+manual di chat sendiri jadi rencananya itu yang saya buat nanti Misalkan disini ini kan
+yang belum bayar, jatuh tempo
+bisa dilihat
+nanti kalau pun tetap dari whatsapp
+atau mau bikin
+jadi tinggal klik aja
+otomatis nanti WA nya sudah
+bisa langsung terkirim
+berarti memudahkan kerja admin
+Kalau misalnya lagi nggak ada pendaftaran, bisa lihat-lihat yang dilihatin yang minta jatuh tempoh siapa.
+Tapi bener-bener memang sistem sekarang modern
+Admin itu kan akan hilang
+Mengurangi SDM
+Ini Om Anang ke depan aja
+Om Anak lagi ngajar
+Yang liat CCTV
+Di depan sendiri bisa
+Bisa jadi yang ngajarin nanti
+Jadi optimus
+Robot sekarang 300 juta kan ada
+Apa itu robot yang baru
+Yang kayak manusia
+Sudah dikasih AI
+Sekarang kan masih
+apa ya
+AI, terus AGI
+sama senantra
+yang terakhirnya super
+super human
+oh iya itu
+bahkan om untuk dari
+websitenya sendiri itu
+orang yang awam pun
+sebenarnya bisa
+jadi kita cuma nulis
+program di Cajibit
+ini saya
+terbantu karena AI
+makanya itu sebenarnya
+gak ngeliminasi kerja
+cuma dia tuh membantu
+bagi mereka yang mau mempelajarinya
+tapi kalau dia gak mau
+mempelajainya betul akan ter
+eliminasi
+kita harus ikutin teknologi nanti nggak bisa ngikut gitu saya kira admin tuh juga sekalian
+aja ternyata admin-admin sendirian dia khusus keuangan kalau enggak menerima kamu
+nggak ada orang bayar ya enggak ngapa-ngapain ya cuma duduk di depan aja oke nanti tadi berarti
+admin juga udah megang keuangan gitu ya karena di dashboard ini juga ada kasir gitu sampai bisa
+melihat terus bisa nambahin misalkan per hari ini nambahnya berapa total terbayarnya berapa
+tertunggaknya berapa Terus ada berapa siswa yang belum bayar statusnya gimana sudah bayar
+gimana caranya itu promosi konsisten
+itu aja sih kalau aku nilai-nilainya kadang-kadangan kita promosi Anu seminggu
+semingga sekali dua kali setelah sebelah data yang promosi atau ngisi-ngisi media
+sosial misi anunya itu aja segala disini juga loyang untuk masing-masing karena
+sendiri menjalankan ya kadang-kadang enggak ini promosi dimaksud berarti media sosial di
+anu bikin-bikin poster kayak gitu aja sih yang belum konsisten lah itu dari
+Om Anang aja yang akut?
+Iya, akuakut juga kan
+ya kalau admin lain kadang kan dia
+di status WA
+Oke
+Yang desain juga om Anang berarti?
+Ya bantuannya Aisudah
+Oh iya bener juga
+JGPT juga bisa ngeluarin gambar soalnya
+Berapa tahun berarti om Aneng?
+Aku setelah lulus SMA
+Lulus Sma itu berapa
+Sekarang 35 tahun. Dari 2010 sampai sekarang 16 tahun, sudah tidak mengenal dunia jalan-jalan lagi.
+Saya ingat dulu itu COC, CR.
+Oh iya, ya itu.
+Tinggal di mana?
+Di Kilompet.
+Kuliahnya ITK juga sama.
+Sama kayak Radit, sistem informasi?
+Ada gak kakak kelas namanya Fahrizal Hilmi.
+Gak kenal ya?
+Hilmi, Fahrizal itu murid-muridku semua.
+Ya informatika kayaknya.
+Anu temennya Kak Najib.
+PF22
+Hilmi sama Rad, Fahrizal dari kelas 4 SD sama aku
+Terus saya yang ngajar kelas 5 sama aku
+Saya yang ngejar kelas 6 sama aku
+Jadi kelas empat sampai kelas sembilan aku yang mengajar
+Hilmi dan Fahrizal
+Dari kelas sempat sampai kuliah
+Iya ini jadi angkatan dua-dua dari kelas 4 SD di Arta.
+Nah itu memang saya kagum dengan sejarahnya Arta itu
+dari lama sampai sekarang masih bertahan,
+tetap konsisten untuk menggayai siswa-siswa baru gitu kan.
+Karena yang saya tahu sendiri
+Arta tuh untuk promosi secara media sosial
+kita ini kalau di dunia maya di dunianya digital kita kalah sama Geo
+sama ruang burung sama bermagam itu kalau kita kalau di Dunia Ruang
+Digital Iya bener-bener cuma ruangan antar mulut aja karena memang enggak
+ada yang punya ahli di bidangnya lah atau apa, di adunya kita memang kurang
+sebatas bisa aja
+tapi kalah kalau sama saingan tampilan kah
+kalo diadu ya kalah kita promosinya
+misalnya ada pendaftaran baru
+kita buka IG-nya G.O. lah
+misalkan kita head to head nya sama G.o.
+kalah anunya
+kita kalah websitenya
+cerd bukan aja kalah
+tapi dari segi murid kita menang
+bener-bener saya nartamau untuk mengangkat menjadi skripsi ya karena dari awalnya promosi sudah
+jadi sangat kuat dari mulut ke mulut cuman sayang banget nih dari sisi dari digitalnya ada yang
+Twitter gitu makanya saya pengen nyoba gitu diangkat deskripsi ini kan om itu uang IG nya
+ini apa nih wg-nya macam-macam kok jadi Jadi gini ceritanya dulu jadi dulu Facebooknya Arta
+itu setelah bikin jatuh masing-masing dengan password masing Hai akhirnya akan kadeng HP
+Ganti admin, hilang lagi. Password lupa? Buat lagi
+Jadi kalau bikin art itu banyak disitu
+Akhirnya saya putuskan
+Sekarang kamu minta password-nya semua
+Media sosial Arta Facebook
+Terus sama
+Almarhum lah
+Kamu catet
+Email sama password
+Sudah jadi email, password media sosial arta facebook
+Itu sudah ada di kantong
+Jadi seandainya ada yang rusak atau ganti dia bisa masuk
+Dulu belum. Jadi rusak, ganti hape? Ganti.
+Banyak. Ketik aja sampe ketik bimbel Arta kok banyak di Facebook, banyak juga di IG.
+Nah itu kejadiannya. Seharusnya sih sebenernya kalau mau ketik-ketik ya ada satu.
+Terus conteng biru kan gitu harusnya, bukan banyak gitu kan.
+lalu instagram
+kayaknya ketika ada bimbel harta
+muncul berapa
+sekarang sudah agak rapi sih
+ada satu, ada dua
+masih terbilang banyak nih
+banyak tapi sudah
+pusat itu sudah
+sudah rapi
+artanya jadi
+per cabang
+harusnya itu ada satu akun indu
+nah itu pun postingan pertama
+tanggal berapa
+24 terakhir
+itu berarti atas satu macet
+cuma lain-lain
+arta lain
+arta gitu aja sudah banyak
+kalau akun resmiku ini
+aku pegang yang ini
+oh iya ini keren nih
+udah ada
+nah
+aku masih
+itu pun ya belum tak isi
+oh gini bentukannya
+artu tujuh
+artu tujuh
+yang terbaru Biasanya mengisi real bukan
+masih lama-lama 24 lama
+yang mana ya Eh bukan itu coba-coba bimber harta dibilangin buahnya sampai bingung pokoknya orang
+yang akun resminya itu yang mana yang terjunio itu-itu atau tuh sama lucu yang follow ratus
+ini udah pakai ini ini baru nih Iya itu yang baru Oh iya itu
+Ini yang baru, ini aku.
+Aku burunya kan?
+Iya ya, aku yang ngisi itu.
+Beda.
+Oh iya beda.
+Ini udah pake AI nih om.
+Tapi bener sih harus kayaknya
+untuk media promosi konten tuh
+satu IG, satu Facebook
+tapi harus punya kita tuh punya satu untuk pusat mungkin yang conteng biru lah bener-bener ibaratnya
+kalau ada lowongan kerja langsung tidak mungkin di seri masing-masing atau akun-akun utama itu
+belum kita maksimalkan media sosial, bahkan rencana ini kalau misalkan karena ini skopnya
+skripsi kan karena organisasi juga besar jadi penggunanya itu bisa lebih dari tiga
+terutama dari adik, panggung utama segala macem
+terus yang kedua dari adminnya
+admin yang buat perbastarannya
+sama ada manager cabang atau ketua cabang
+itu namanya?
+Ketua masing-masing ARTA
+iya kita ada om ya
+yang tua
+itu jadi udah tiga nih kan admin sama ketua cabangnya itu terus juga bahkan sampai ke
+pengajar atau yang ngajarin sama dari siswanya gitu Jadi mereka juga tetap punya akun sendiri
+karena udah di daftarin jadi login sama yang sudah didaftarin sama admin Oh bisa-bisa masalah
+nah jadi mereka ngelatih soalnya disitu
+bisa aja itu, bagus itu
+nanti tinggal ayo anak-anak
+ini akun websitenya
+kamu login selangkan pakai
+ini login, ini passwordnya
+betul, jadi langsung bang soalnya
+ada disitu
+cuman kan ya namanya juga
+anak sekarang
+tinggal dibuka
+atau sebenarnya dibuka aja om
+tapi di copy paste ke CGPT
+sedangkan kalau yang saya tahu kan
+dipapan tulis gitu om
+jadi bisa mengatakan pengalaman
+kebiasaan pengalama misalnya
+dibilang sekarang itu
+jamannya era singularity
+kita gak tau membedakannya yang ngerjain manusia apa robot ya
+betul
+yang kerjaan manusia atau robot
+karena kalo cuma tiga pengguna aja untuk scope security
+sebenernya masih kurang
+jadi rencana itu ada lima
+maksudnya pengguna admin website nya gitu jadi nanti tetap halaman utama yang bakal dilihat dari lima penggula ini
+akan tetep sama yang tadi di awal ataupun nanti kedepannya gimana
+cuman nanti misalkan fitur disini dibagian yang paling atas nih saya klik nih
+ini mungkin cuman bisa dapat diakses tampilan yang kayak gini dari pihak kredit memang masalah pokoknya
+Apalagi untuk dari masalah uang kan
+Jadi kemungkinan besar
+Nanti dari admin aja
+Mas ada uang bisa masuk ke
+Oh enggak ini cuma pencatatan
+Pencatatan
+Maksudnya data rahasia lah
+Jangan sampai orang bisa membuka
+Jadi memang ada
+Data rahasia yang
+Tahu dari internal
+Kalau misalkan
+Dari
+Siswanya
+Cuma soal latihan
+soal-soal aja atau segala macem yang bisa membantu pembelajaran itu, jadi ini gak ditampilin ke siswanya
+oh bisa ya mas?
+iya bisa, jadi tetap satu link tapi karena username dan passwordnya beda-beda tampilannya pun juga nanti akan beda
+disesuaikan sama role masing-masing, gunainya masing masing siapa yang menggunakannya
+Itu sih yang rencana yang saya buat
+Cuman kan paling deket nih kan
+Saya seminar proposal
+Jadi latar belakangnya dikuatin dulu
+Segala macemnya
+Kalau Radit kan dia kemarin udah turun seminarnya
+Sudah?
+Radit sudah seminar proposal 241-23
+Bahannya
+Kan seminar apa?
+Sekripsi
+Seminar skrip
+Bahas tentang apa kan sama ini kan
+Jadi itu tentang arta
+Ini jadi bahasanya
+Kalau di Prodi itu, kalau di jurusan kami itu rancang bangun. Jadi rancangan dari perencanaan latar belakangnya kenapa harus dibuatkan hasilnya kaya gini
+Bahasanya yang ribet aku juga
+Kamu ga mageng kan?
+Tidak
+Makan mageng berdua ini
+di telepon
+apa ya, IT
+ngurusin apanya
+gak ribet kah?
+iya sangat ribet
+awalnya saya tuh
+nyoba
+bisa orang kerja gitu
+tak semudah itu
+duduk terus
+Padahal di depan melihat jam 8 atau jam 12 itu di depannya laptop
+Padahalnya orang melihat Pak Hena betul ya, kerjanya di depani komputer
+Nggak usah panas-panaran, padahal pukul capek gitu
+Padahali dingin tuh asyik
+Kedinginan malah
+Padahalia cuma ngotak-ngatik aja
+Iya, ngotakan komputer
+Wah tapi kok agak puyang juga lihat laptop terus
+Terus semuanya pada diam
+sekarang kan korporat kan?
+enggak di anu toh
+maksudnya dibimbing aja baru
+tolong dibimbeng di arah
+seminggu, dua minggu awal itu
+wah sisanya udah
+bukan dilepas sih kayak
+sudah belajar sendiri gitu
+itu ngitung apa sih
+contoh sederhana
+misalnya ada seribu orang membayar
+dengan data segini-segini
+kamu perlu nambahkan
+kan telkom sekarang
+itu kerjanya Telkomsel
+Kerjaan yang telkomsel itu orang-orang bayar tagian-tagian gitu, misalnya kuota segala macam.
+Kalau Telkom itu khusus sekarang perusahaan aja, kayak perusahan yang beli produk Telkom B2B bisnis-bisnis
+jadi kayak perusan swasta WMKM gitu-gitu, jadi gak ada orang biasa
+Orang biasa ini ya?
+Kita gak ngitung itu
+Ngitung yang perusahanya gede-gede
+Kayak, ya beli apa. Terus berhasilnya berapa bulan, berapa habisnya ini-ini.
+Sekarang kan udah terpisah.
+Terkadang aku juga bingung orang di depan komputer itu yang ngerjain apa.
+Maksudnya opo, karena kalau orang opo kalo orang bangunan tau lah itu nyambul.
+Iya bener-bener.
+orang-orang ngajar di perjalanan jadi ruangan yang dikomputer kalau cuma hitung tambah-tambahan
+bukannya juga tamat selesai tapi sekarang itu trennya anak gencet atau yang muda-mudanya kayak
+kita ini mereka lebih suka untuk bahasanya bahasa kerennya pengangguran sekarang tuh
+freelancer berarti mengerjakan bekerja tapi tidak terikat dengan pekerjaan itu
+kebaikan yang saya lihat tuh bahkan saya rasain sendiri kemarin apalagi magang dari jam 8 sampai
+5 kayaknya freelancernya enak maksudnya bisa di cafe bisa dirumah bisa ngerjain sesuatu dimana
+aja itu jadi nggak terbatas di tempat-tempat gitu kan itu harapannya
+Ada yang lebih enak lagi
+Tidur dibayar, investor
+Enak lagi
+Punyawan 10 miliar
+Tanam di BRI
+Devidens 10% per tahun
+Oh berarti investor
+Belajar
+Untuk ke situ kayaknya
+Perlu banyak
+hidur-hiduran sekarang ini anak muda pengen cari yang gampang
+karena sudah meninggalkan kerjaan-kerjaan yang sudah menguras fisik
+perasaan tenaga itu ditinggalkan, mereka cari yang gampang-gampang aja lho
+yang penting nggak terjerumus hal yang jelek
+judi online nya jelek gitu
+nggak ada yang kaya dari judi onlinenya
+ada bandarnya
+goblok aja itu orangnya
+kalau ngomongin kayak gitu jodoh bandar
+kamu ngomgin judul kemarin tukang parkir dimana?
+sasarannya kan orang-orang yang baru mengerti teknologi
+terus pengen cepat
+menang deposit
+kokan kilonam
+oh, kilonak
+Jackie Jayden mau bayar parkir
+ngeliat tukang parkir
+apa?
+ya Allah
+bukan salahnya
+pendidikannya
+ketawa tuh
+ketawa
+sambil jalan ketawa
+Aduh dibodokin lagi, kasian. Jadi malah kasihan jadi.
+Iya memang benar pertama 10 ribu, 15 ribu mau 50 tapi ketakutan terusan.
+Itu marketingnya itu.
+Itu aja sih Om nanti kalau misalkan ini.
+Nanti saya coba ambil datanya dari sini buat tampilan di website yang baru.
+Berarti nanti ini diperpanjang saja ya?
+takutnya malah nanti mati
+bisa diakses dimana gitu kan orang-orang
+nanya
+sampai itu jadi yang bagus
+sempurna baru
+tapi kalau buka dua itu gak bisa ya
+1.id, 1.com
+bisa sih, kalau kayak gitu bisa
+tapi sana nanti dimatikan
+oh bingung ya
+kalau orang-orang yang akses
+jadi asumsi orang kan
+bisa scam ini
+berarti harus habis dimatikkan dulu
+Iya, tapi nanti itu gampangnya nanti di akhir-akhir yang tunggu bener-bener
+Kalau ID sama dotcom apa bedanya?
+Bayarnya dari segi anda tau lah
+Itu dari segih harganya om
+Kalau com lebih mahal
+Com itu lebih mahl
+Dotcom lebih mahel
+Kemarin tuh punya saya
+Normalnya itu lima ratusan
+Itu cuma dotcomnya om
+Dotcomnya toh
+Dotcom nya toh
+Kalau yang
+ID
+ID
+300
+200
+300, 200 bahkan untuk
+Sebenernya terbagi dua om
+ada domain sama hosting
+domennya sih gimana ya?
+Domain itu yang .com sama yang id
+ngehosting itu artinya dari
+kode yang sudah kita buat di masing-masing laptop
+itu kan kalo misalkan kita
+kode di laptop, yang bisa akses kita tol
+bagaimana cara nih orang lain bisa aksi
+pakai hosting Oh jadi bisa diakses sama publik nah hal itu sebenarnya disitu posting itu di
+hostingnya itu kalau yang artai yang ini memperpanjang sekitar 800 berarti kira-kira
+apa itu berarti pakai ID WordPress itu id-nya bahkan kayak cuman 5000 rupiah sudah dapat
+Domain Indonesia itu yang ini kan?
+Iya, domain Indonesia itu loh
+Kok ditipu-tipu saya nggak ngerti juga
+Iya, saya dari itu
+Itu yang nyarikan orang Jogja
+Mas Hidayat
+Ini ID Rp 50.000
+Aslinya segini
+Tapi kenapa saya bayar 800
+Berarti merawat, maintenance itu dari sana?
+Maintenance itu dari sananya, jadi bisa dibilang
+Kita itu mempekerjakan orang sana untuk menjaga kalau ada masalah
+Betul
+Jadi kita tinggal terima beresnya
+Ada Google Drive yang nyalah untuk menyimpan apa segala macem
+Nah itu bisa di bilang cloud nya storage nya
+Oh iya betul ya
+Kita langganannya sama mereka
+Pantesan
+Nanti Mas kalo ada gendela apa-apa silahkan lapor ke kami
+Iya betul
+Jadi dari mereka yang maintenance
+itu cocok untuk yang bikin toko-toko yang UMKM kecil-kecil
+yang gak ngerti editing
+yang gak mengerti program
+tapi kalau yang ngertiprogram bisa kita ambil
+bayar cuma segitu
+ya itu dari saya bilang sejuta setahun
+100 website
+kita juga bisa kita ecer jangan-jangan kita masuk aku mau tadi maksudnya sana ya
+perbaiki ada masalah
+tapi ndak papa wong kita juga sama enak begitu paham
+Terima kasih banyak ya Om
+Iya iya

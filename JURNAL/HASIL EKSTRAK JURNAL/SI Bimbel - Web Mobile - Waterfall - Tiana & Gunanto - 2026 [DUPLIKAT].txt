@@ -1,0 +1,455 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1631  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+Perancangan dan Implementasi Sistem Informasi Bimbingan Belajar 
+Berbasis Web Mobile Menggunakan Metode Waterfall 
+ 
+Irma Tiana1*, Sigit Gunanto2 
+ 
+1,2 Fakultas Teknik dan Ilmu Komputer, Sistem dan Teknologi Informasi, Universitas Muhammadiyah Kotabumi, 
+Lampung, Indonesia 
+ 
+Email: 1irmat.2059201044@umko.ac.id, 2sigit.gunanto@umko.ac.id 
+(* Email Corresponding Author: irmat.2059201044@umko.ac.id  
+Received: 5 November 2025 | Revision: 9 November 2025 | Accepted: 9 November 2025 
+ 
+Abstrak  
+Penelitian ini memiliki fokus utama pada pengembangan sebuah sistem informasi web-mobile yang dirancang khusus untuk Lembaga 
+Bimbingan Belajar Texas Kotabumi di Kabupaten Lampung Utara. Perancangan sistem ini didedikasikan untuk menyederhanakan dan 
+mengotomatisasi serangkaian prosedur administratif yang saat ini masih dilaksanakan secara konvensional, meliputi registrasi, 
+pengaturan jadwal, dan pencatatan kehadiran, yang kerap kali rentan terhadap inkonsistensi data serta kurangnya efisiensi. Populasi 
+investigasi ini melibatkan seluruh spektrum operasional administrasi dan interaksi antara pihak staf administrasi, para pengajar, dan 
+siswa di Texas Kotabumi. Pengambilan sampel data dilaksanakan menggunakan teknik purposive sampling, di mana informasi 
+dikumpulkan melalui observasi langsung terhadap alur kerja administratif yang berlaku, wawancara komprehensif dengan pihak-pihak 
+terkait (manajer, staf administrasi, pengajar, dan siswa) untuk mengidentifikasi kebutuhan spesifik dan tantangan yang dihadapi, serta 
+melalui telaah literatur yang relevan dengan sistem informasi, proses bimbingan belajar, dan pengembangan web-mobile. Metodologi 
+penelitian ini menggunakan pendekatan kualitatif deskriptif, dengan model pengembangan sistem yang diaplikasikan adalah Waterfall. 
+Proses pengembangan mencakup empat tahapan esensial: analisis persyaratan, desain arsitektur sistem, implementasi kode, dan 
+pengujian menyeluruh. Hasil signifikan dari penelitian ini adalah suksesnya penciptaan sistem informasi web-mobile yang interaktif, 
+yang efektif dalam mengotomatisasi dan mengintegrasikan seluruh proses administrasi bimbingan belajar. Sebagai analisis akhir 
+penelitian ini menegaskan bahwa sistem yang telah dikembangkan secara fungsional mampu meningkatkan efisiensi operasional, 
+akurasi data, dan standar kualitas layanan di Texas Kotabumi, yang dapat berkontribusi pada pengelolaan lembaga bimbingan belajar 
+yang lebih modern dan adaptif. 
+Kata Kunci: Sistem Informasi, Bimbingan Belajar, Website, Waterfall. 
+ 
+Abstract 
+This study was conducted with the primary objective of creating a web-based information system platform oriented towards promotion 
+and enhancing service quality. This initiative was designed to address the limitations of manual promotional methods and inefficiencies 
+in data management at Family Gym Kotabumi, a fitness center in the North Lampung region. The research population encompasses 
+the entire dynamics of promotion, service activities, and data management workflows at Family Gym Kotabumi. Data sampling was 
+performed using a purposive sampling technique, involving in-depth observation of promotional mechanisms and comprehensive 
+interviews with staff and management to identify workflow and required system specifications. The sample materials analyzed included 
+promotional records, feedback from potential customers, and relevant operational documents. The methodological approach of this 
+study is quantitative, with data collection mechanisms involving observation, direct interviews, and literature reviews. Furthermore, 
+the software development method applied is Waterfall, which includes critical phases such as requirements identification, system 
+architecture design, code implementation, and thorough testing. This information system was realized using the PHP programming 
+language and utilizing a MySQL database. A key finding from this investigation is the successful development of an information system 
+application that substantially accelerates data processing and report generation, while also expanding the capabilities of promotional 
+reach and service quality. This research confirms the effectiveness of the developed system in improving operational efficiency and 
+strengthening the promotional capabilities of Family Gym Kotabumi, thereby expected to attract a broader customer base and support 
+more precise and responsive management. 
+Keywords: Information Systems, Tutoring, Website, Waterfall. 
+1. PENDAHULUAN 
+Perkembangan pesat teknologi informasi dan komunikasi telah memberikan dampak transformatif di berbagai 
+sektor, termasuk bidang pendidikan [1]. Sebagai alternatif pendidikan non-formal, lembaga Bimbingan Belajar (Bimbel) 
+semakin populer di Indonesia [2], berfungsi membantu siswa mendalami materi pelajaran dan menemukan cara belajar 
+yang efektif, mengatasi kesulitan, serta mengatur waktu secara mandiri [3][4]. Dalam konteks ini, Sistem Informasi, yang 
+didefinisikan sebagai kombinasi terstruktur antara metode kerja, informasi, sumber daya manusia, dan teknologi informasi 
+yang saling berinteraksi untuk mendukung operasional [5], menjadi krusial. Selain itu, Website, sebagai kumpulan 
+halaman yang menampilkan informasi digital seperti teks, gambar, dan multimedia yang dapat diakses melalui internet 
+[6], memegang peran sentral dalam diseminasi informasi. 
+Texas Kotabumi, sebuah lembaga bimbingan belajar yang vital dalam meningkatkan pemahaman akademis siswa, 
+saat ini menghadapi masalah serius terkait sistem administrasi yang masih bersifat manual. Proses-proses seperti 
+pendaftaran siswa, penjadwalan kelas, pencatatan absensi, hingga pengelolaan pembayaran masih dilakukan secara
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1632  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+konvensional. Kondisi ini mengakibatkan inefisiensi waktu yang signifikan, meningkatkan kerentanan terhadap kesalahan 
+input data, dan menimbulkan kesulitan dalam pemantauan informasi secara real-time. Akibatnya, pengelola dan staf 
+administrasi menghabiskan waktu berlebihan untuk mengurus data, yang seharusnya dapat dialokasikan untuk 
+meningkatkan kualitas pembelajaran. 
+Selain itu, metode manual ini juga berdampak negatif pada kualitas pelayanan kepada siswa dan orang tua. Orang 
+tua kesulitan memperoleh informasi terbaru mengenai jadwal dan seringkali harus datang langsung atau menghubungi 
+pihak administrasi untuk mendapatkan detail. Keterbatasan akses ini menghambat komunikasi yang efektif dan 
+mengurangi transparansi. Gap operasional ini diperparah oleh volume data yang terus meningkat seiring bertambahnya 
+jumlah siswa. 
+Melihat urgensi tersebut, diperlukan sebuah solusi modern yang dapat mengotomatisasi dan menyederhanakan 
+proses administrasi. Tujuan penelitian ini adalah mengembangkan sistem informasi bimbingan belajar berbasis web-
+mobile sebagai langkah strategis untuk mengatasi masalah-masalah tersebut. Grand Theory yang mendasari penelitian ini 
+adalah Teori Sistem Informasi Manajemen, yang menekankan bagaimana teknologi dapat digunakan untuk meningkatkan 
+efisiensi dan efektivitas operasional. Sistem ini berhasil menyediakan platform yang terintegrasi, memudahkan akses 
+informasi bagi semua pihak, serta meningkatkan efisiensi operasional secara keseluruhan. Dengan adanya sistem ini, 
+Texas Kotabumi dapat fokus pada misi utamanya, yaitu memberikan bimbingan belajar yang berkualitas tinggi dan 
+menciptakan pengalaman belajar yang lebih baik bagi seluruh siswanya, sekaligus menawarkan orisinalitas dalam 
+penerapan solusi digital yang terintegrasi di konteks lembaga bimbingan belajar lokal. 
+ 
+2. METODOLOGI PENELITIAN 
+ 
+Gambar 1. Kerangka pikir 
+Kerangka pikir penelitian ini memvisualisasikan alur metodologi yang terstruktur dan sistematis, dimulai dari perumusan 
+masalah hingga implementasi solusi. Proses diawali dengan Identifikasi Permasalahan dan Perumusan Masalah, yang 
+merupakan fase krusial untuk mendefinisikan ruang lingkup dan tujuan penelitian. Tahap ini kemudian didukung oleh 
+Pengumpulan Data komprehensif melalui tiga pendekatan utama: Observasi langsung untuk memahami konteks 
+lapangan, Wawancara mendalam untuk menggali kebutuhan user dan stakeholder, serta Studi Literatur untuk landasan
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1633  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+teoritis dan referensi implementasi. Inti dari pengembangan sistem ini mengadopsi Metode Waterfall, yang dieksekusi 
+melalui serangkaian fase berurutan: Analisis kebutuhan fungsional dan non-fungsional, Desain arsitektur sistem dan 
+antarmuka, Pengkodean (coding) sebagai implementasi teknis, dan Pengujian (testing) untuk validasi fungsionalitas dan 
+kinerja. Secara keseluruhan, kerangka ini merefleksikan pendekatan sistematis dalam Perancangan dan Implementasi 
+Sistem Informasi Bimbingan Belajar Berbasis Web Mobile, yang diharapkan dapat memberikan solusi efektif terhadap 
+permasalahan yang telah diidentifikasi. 
+2.1 Pengumpulan data 
+a. 
+Observasi 
+Observasi merupakan kegiatan mengamati fenomena-fenomena yang akan diteliti sebagai bagian dari metode 
+penelitian[7]. Observasi dilakukan di Texas Kotabumi Lampung Utara untuk memahami secara langsung proses 
+administrasi yang berjalan saat ini. Dari pengamatan, terlihat bahwa seluruh kegiatan, mulai dari pendaftaran, pencatatan 
+jadwal, hingga absensi siswa, masih dilakukan secara manual menggunakan buku catatan dan spreadsheet. 
+ 
+b. Wawancara 
+Wawancara yang dilakukan bersifat semi-terstruktur. Hal ini memungkinkan para informan untuk berbicara secara bebas 
+dan mendalam tentang pengalaman dan pandangan mereka. Meskipun demikian, wawancara ini tetap memiliki panduan 
+topik agar diskusi tidak menyimpang dari fokus penelitian[8]. wawancara dengan pengelola, staf administrasi, pengajar, 
+dan beberapa siswa. Wawancara ini bertujuan untuk menggali lebih dalam masalah yang dihadapi dan harapan mereka 
+terhadap sistem baru. Pihak pengelola mengungkapkan bahwa mereka membutuhkan sistem yang dapat menyajikan data 
+siswa secara terpusat dan real-time untuk pengambilan keputusan. 
+ 
+c. 
+Studi kepustakaan 
+Studi pustaka adalah cara mengumpulkan data dengan meninjau berbagai sumber tulisan untuk mendapatkan informasi 
+yang relevan dengan suatu topik[9]. 
+2.2 Pengembangan perangkat lunak 
+Metode waterfall adalah pendekatan pengembangan sistem informasi yang termasuk dalam SDLC. Pendekatan ini 
+mewajibkan setiap tahapan pekerjaan dilakukan secara berurutan dan berjenjang, di mana satu tahap harus selesai 
+sepenuhnya sebelum memulai tahap berikutnya[10]. 
+ 
+ 
+Gambar 2. metode waterfall 
+ 
+Diagram alir metode Waterfall menjadi dasar bagi penjelasan rinci dari setiap tahap pengembangan yang akan dipaparkan:  
+a. 
+Tahap Analisis Sistem merupakan pondasi awal di mana tim pengembang mengidentifikasi dan mendefinisikan 
+secara rinci kebutuhan fungsional dan non-fungsional dari sistem informasi bimbingan belajar Texas Kotabumi 
+Lampung Utara. Dalam tahap ini, dilakukan pengumpulan data melalui wawancara dan observasi untuk memahami 
+proses bisnis yang ada, seperti pendaftaran siswa, pengelolaan kelas dan level, pencatatan pembayaran, hingga 
+pelaporan nilai. Hasil dari tahapan ini adalah dokumen spesifikasi kebutuhan yang jelas, menentukan apa saja yang 
+harus dilakukan oleh sistem, misalnya modul dashboard administrator, antarmuka pendaftaran, dan modul riwayat 
+pembayaran, sebelum melangkah ke tahap perancangan.  
+b. Setelah kebutuhan sistem teridentifikasi, tahap Desain Sistem berfokus pada perancangan arsitektur logis dan fisik 
+sistem. Aktivitas di tahap ini meliputi perancangan basis data untuk menyimpan data siswa, kelas, level, dan 
+transaksi pembayaran; perancangan antarmuka pengguna (user interface/UI) dan pengalaman pengguna (user 
+experience/UX) yang mobile-friendly (seperti tampilan dashboard dan daftar kelas); serta penentuan arsitektur 
+sistem berbasis web mobile yang akan digunakan. 
+c. 
+Tahap Pengkodean Program (Coding) adalah implementasi dari desain yang telah dibuat, di mana spesifikasi desain 
+diubah menjadi kode program yang fungsional. Pada konteks sistem informasi bimbingan belajar berbasis web 
+mobile ini, pengkodean melibatkan pembangunan front-end (menggunakan teknologi web yang responsif agar dapat 
+diakses melalui mobile dan desktop) dan back-end (menggunakan bahasa pemrograman dan framework tertentu) 
+untuk mengelola logika bisnis dan interaksi dengan basis data. Seluruh modul yang telah dirancang, seperti modul
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1634  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+Kelola Data Siswa dan Riwayat Pembayaran, diimplementasikan secara bertahap dan diintegrasikan satu sama lain 
+untuk membentuk sistem yang utuh.  
+d. Tahap Pengujian Program bertujuan untuk memverifikasi dan memvalidasi bahwa sistem yang telah dikodekan 
+berfungsi sesuai dengan kebutuhan yang telah ditetapkan pada tahap analisis dan desain. Pengujian dilakukan 
+menggunakan pengujian black-box (menguji fungsionalitas seperti login, tambah kelas, dan cek pembayaran. Pada 
+tahap ini, dipastikan bahwa semua fitur berjalan normal, tidak ada bug, dan sistem bekerja dengan stabil. 
+3. HASIL DAN PEMBAHASAN 
+3.1 Rancangan UML 
+ 
+3.1.1 
+Use case 
+Use case menjelaskan interaksi antara kasus penggunaan dan aktor. Aktor bisa jadi orang atau sistem lain yang 
+berinteraksi dengan sistem yang sedang dikembangkan[11]. 
+ 
+Gambar 3. Use case diagram 
+ 
+Diagram use case diatas merupakan sebuah platform informasi akademik yang dirancang untuk memfasilitasi tiga 
+peran utama: Admin, Guru, dan Siswa. Setiap aktor memiliki serangkaian fungsionalitas khusus yang dapat diakses 
+setelah berhasil Login. Admin berperan sebagai pengelola utama dengan tugas-tugas manajerial seperti mengelola data 
+siswa, guru, kelas, dan pembayaran. Guru memiliki tanggung jawab untuk mengelola aspek pembelajaran, termasuk 
+mengunggah materi, mencatat kehadiran, dan memasukkan nilai siswa. Sementara itu, Siswa berfungsi sebagai pengguna 
+akhir yang dapat melihat berbagai informasi penting seperti jadwal, materi, laporan nilai, dan status pembayaran mereka. 
+Secara keseluruhan, sistem ini memisahkan tugas dan hak akses dengan jelas untuk memastikan operasional sekolah 
+berjalan lebih efisien. 
+ 
+3.1.2 
+Activity diagram 
+ 
+Diagram activity menyajikan representasi grafis dari aliran kerja perangkat lunak, memerinci bagaimana setiap 
+aktivitas dimulai, kondisi keputusan yang dapat terjadi, serta bagaimana aktivitas-aktivitas tersebut berakhir[12]. 
+ 
+ 
+Gambar 4. Activity lihat jadwal
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1635  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+ 
+Diagram activity diatas menjelaskan alur kerja bagi Siswa untuk melihat jadwal bimbingan belajar (bimbel). Proses 
+dimulai dengan login Siswa, yang datanya akan divalidasi oleh sistem dengan mengambil informasi akun dari database. 
+Jika validasi berhasil, sistem akan menampilkan dashboard. Dari dashboard, Siswa dapat memilih menu "jadwal", yang 
+akan memicu sistem untuk mengambil dan menampilkan data jadwal dari database. Setelah data jadwal ditampilkan, 
+Siswa dapat menampilkan jadwal bimbel tersebut, yang menandai berakhirnya proses. 
+ 
+3.1.3 
+Sequence diagram 
+ 
+Diagram sequence digunakan untuk mendokumentasikan setiap objek dan bagaimana pesan-pesan dikirimkan 
+serta diterima di antara objek-objek tersebut[13]. 
+ 
+ 
+Gambar 5. Sequence lihat kehadiran 
+ 
+Sequence diatas menjelaskan alur proses Siswa saat melihat data kehadiran bimbingan belajar. Proses ini dimulai ketika 
+Siswa memasukkan username dan password untuk login, yang kemudian divalidasi oleh Sistem dengan mengambil data 
+akun dari Database. Jika validasi berhasil, Sistem akan menampilkan dashboard. Dari dashboard, Siswa dapat memilih 
+menu "kehadiran", yang akan memicu Sistem untuk mengambil dan menampilkan data kehadiran dari Database. Setelah 
+data kehadiran diterima, Sistem akan menampilkannya kepada Siswa, yang menandai berakhirnya proses. 
+ 
+3.1.4 
+Database 
+ 
+Database adalah langkah sistematis untuk menetapkan bagaimana data akan distrukturkan dan diorganisasi 
+agar dapat disimpan secara efektif dalam sebuah sistem informasi[14]. 
+ 
+Gambar 6. Database  
+ 
+Database ini menunjukkan beberapa tabel yang saling berhubungan, seperti texas_member untuk data pengguna, 
+texas_admin untuk administrator, texas_kelas yang mendefinisikan kursus dengan level yang terhubung ke tabel 
+texas_level, 
+texas_peserta_kelas 
+untuk 
+mencatat 
+partisipasi 
+anggota 
+dalam 
+kelas 
+dan 
+nilainya, 
+serta 
+texas_peserta_payment untuk transaksi pembayaran. Selain itu, terdapat tabel texas_blog untuk konten artikel dan 
+texas_profil_toko yang mengindikasikan adanya informasi. 
+ 
+3.2 Implementasi 
+a. 
+Halaman daftar siswa
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1636  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+ 
+Gambar 7. Halaman daftar siswa 
+Halaman ini menampilkan total 17 kategori akun dan menyajikan rincian setiap anggota dalam format tabel yang 
+terstruktur. Informasi penting yang dicatat meliputi Username, Nama lengkap, alamat Email terdaftar, dan Status akun. 
+b. Halaman daftar kelas 
+ 
+Gambar 8. Halaman daftar kelas 
+Halaman ini secara fungsional menampilkan daftar komprehensif dari seluruh kelas yang aktif 17 total, disajikan dalam 
+format tabel terstruktur, mencakup atribut penting meliputi Nama Kelas, Nama Periode , Jadwal Materi, Tahun, Level 
+yang terkait, dan jumlah Peserta yang terdaftar. 
+c. 
+Halaman riwayat pembayaran 
+ 
+Gambar 9. Halaman riwayat pembayaran 
+Halaman ini berfungsi untuk mendokumentasikan setiap transaksi yang dilakukan oleh siswa. Halaman ini menyajikan 
+Daftar Pembayaran dalam format tabel, mencatat detail kritis seperti Tanggal Pembayaran, Nama Peserta, Nama Kelas, 
+Jumlah Pembayaran, dan Keterangan pembayaran. 
+d. Halaman daftar kursus
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1637  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+ 
+Gambar 10. Halaman daftar kursus 
+Halaman ini menyajikan data kelas yang diikuti oleh siswa dengan fokus pada status dan kemajuan belajar. Bagian 
+penilaian menampilkan tujuh komponen nilai Bahasa Inggris yang terperinci. 
+3.3 Pengujian  
+Pengujian black-box merupakan metode evaluasi perangkat lunak yang berfokus sepenuhnya pada fungsi eksternal dan 
+output sistem tanpa memerlukan pengetahuan tentang kode sumber atau desain arsitektur internal[15]. 
+Tabel 1. Blackbox testing 
+Proses 
+Hasil yang diharapkan 
+Hasil 
+pengujian 
+Login 
+Mengarahkan ke dashboard 
+ 
+Sesuai 
+Kelola data siswa 
+Menampilkan 
+form 
+untuk 
+tambah, edit, dan hapus data 
+siswa. 
+ 
+Sesuai 
+Kelola level 
+Menampilkan daftar level dan 
+form untuk tambah, edit, dan 
+hapus level kursus. 
+ 
+Sesuai 
+Peserta kurus 
+Menampilkan data peserta kursus 
+berdasarkan kelas/level. 
+ 
+Sesuai 
+Kelola kelas 
+Menampilkan daftar kelas dan 
+form untuk tambah, edit, serta 
+hapus data kelas. 
+sesuai 
+Riwayat 
+pembayaran 
+Menampilkan 
+daftar 
+riwayat 
+transaksi pembayaran dan fitur 
+export laporan. 
+Sesuai 
+4. KESIMPULAN 
+Sistem Informasi Bimbingan Belajar Berbasis Web Mobile pada Texas Kotabumi Lampung Utara telah berhasil 
+diimplementasikan, berfungsi sebagai solusi manajemen terpadu yang efektif. Sistem ini terbukti mampu 
+mengintegrasikan berbagai fungsi esensial: mulai dari administratif, yang mencakup manajemen data kelas, level, dan
+
+==================================================
+[HALAMAN 8]
+==================================================
+
+p-ISSN: 2962-3022 | e-ISSN: 2963-7104 
+Volume 4 No 3 Februari 2026 
+Hal: 1631-1638 
+http://ejurnal.lkpkaryaprima.id/index.php/juktisi 
+DOI: https://doi.org/10.62712/juktisi.v4i3.675 
+ 
+Copyright © 2026 Author(s), Page 1638  
+This Journal is licensed under a Creative Commons Attribution 4.0 International License. 
+akun pengguna; fungsi operasional, seperti pencatatan riwayat pembayaran; hingga fungsi akademik, yaitu pemantauan 
+nilai peserta didik. Integrasi ini disatukan dalam satu platform terpusat, yang secara signifikan meningkatkan efisiensi 
+proses bisnis dan transparansi informasi bagi administrator maupun peserta kursus, sejalan dengan tuntutan SIBIMBEL 
+modern. Penelitian ini menegaskan bahwa pengembangan sistem informasi web mobile tersebut telah berhasil memenuhi 
+tujuan untuk mengotomatisasi dan mengintegrasikan aspek-aspek krusial dalam operasional bimbingan belajar. Sebagai 
+saran pengembangan lebih lanjut, direkomendasikan untuk mengintegrasikan modul Learning Management System 
+(LMS). Implementasi LMS akan memungkinkan peserta didik mengakses materi pembelajaran dan mengikuti tes secara 
+daring (online), sehingga memperkaya pengalaman belajar. Selain itu, notifikasi real-time juga disarankan untuk 
+diimplementasikan guna meningkatkan interaksi dan keterlibatan pengguna dengan sistem, memastikan komunikasi yang 
+lebih responsif dan efektif. 
+ 
+REFERENCES 
+[1] 
+Y. I. Irawan dan S. Inayah, “" Artificial Intelligence ( AI ) Perguruan tinggi : Tantangan menghadapi Sustainable Development Goals dan 
+Disrupsi Global ” Perancangan Sistem Informasi Bimbingan Belajar ‘ Muzan i Learning center ’ Berbasis Progressive Web App ( PWA ),” 
+Semin. Nas. SILAMPARILIST, vol. 2015, 2025. 
+[2] 
+F. S. Lubis dkk., “Pendampingan Peningkatan Efisiensi Sistem Operasional Bimbingan Belajar Bless melalui Analisis Proses Bisnis,” vol. 2, 
+no. 3, hal. 260–265, 2025. 
+[3] 
+K. A. Armanto dan Fathurrahmad, “Sistem Informasi Akademik Berbasis Android Pada Bimbingan Belajar (BIMBEL) Praja Edukasi Banda 
+Aceh,” J. Ilmu Komput. dan Teknol. Inf., vol. 1, no. 2, hal. 13–23, 2024, doi: 10.35870/jikti.v1i2.1066. 
+[4] 
+I. Maliki, K. Jaya,  gita cahyani Lestari, D. Irawan, dan A. Vwasid, “Perancangan Sistem Informasi Berbasis Web Pada Bimbingan Belajar 
+(Bimbel) ‘BNF,’” J. Inform. dan Komputasi, vol. 4, no. 1, hal. 104–108, 2024. 
+[5] 
+M. Alda dan A. Rifdah, “Perancangan Sistem Informasi Bimbingan Konseling Mahasiswa Institut Kesehatan Helvetia Berbasis Web,” J. Ilm. 
+Sains dan Teknol., vol. 8, no. 2, hal. 274–288, 2024, doi: 10.47080/saintek.v8i2.3145. 
+[6] 
+ alex holyfiel Manullang, M. Aritonang, dan M. Purba, “Sistem Informasi Bimbingan Belajar Number One Medan Berbasis Web,” TAMIKA 
+J. Tugas Akhir Manaj. Inform. Komputerisasi Akunt., vol. 1, no. 1, hal. 44–49, 2021, [Daring]. Tersedia pada: 
+https://ejurnal.methodist.ac.id/index.php/tamika/article/view/403 
+[7] 
+A. N. Hidayat, N. Nurhayati, dan S. M. Mansuryah, “Pelaksanaan Bimbingan Belajar Dalam Meningkatkan Keterampilan Belajar Peserta 
+Didik Kelas 1 Sd Negeri Mekarsari Kabupaten Cianjur,” J. Tahsinia, vol. 6, no. 4, hal. 509–519, 2025. 
+[8] 
+N. Safiurrokhmah, S. S. Sulaiman, N. Ulya, dan M. Mahbubi, “MEMBINGKAI PENDIDIKAN ISLAM DI SEKOLAH: KAJIAN LENGKAP 
+KURIKULUM PAI TINGKAT SMP/MTS,” J. Islam. Stud. Res., vol. 86, no. 12, hal. 31, 2025. 
+[9] 
+Ade Rahayu, “Metode Penelitian dan Pengembangan (R&D) : Pengertian, Jenis dan Tahapan,” DIAJAR J. Pendidik. dan Pembelajaran, vol. 
+4, no. 3, hal. 459–470, 2025, doi: 10.54259/diajar.v4i3.5092. 
+[10] 
+Subianto, “Sistem Informasi Jasa Berbasis Web Menggunakan Metode Waterfall Studi Kasus Pada Nirmala Tailor,” INFOKOM (Informatika 
+& Komputer), vol. 9, no. 2, hal. 67–82, 2024. 
+[11] 
+R. Yunitarini, “Sistem Informasi e-Office Pada Lembaga Bimbingan Belajar,” J. Ilm. Edutic  Pendidik. dan Inform., vol. 9, no. 2, hal. 118–
+126, 2023, doi: 10.21107/edutic.v9i2.19292. 
+[12] 
+S. Poety, G. K. Pati, dan L. L. Momo, “Aplikasi Bimbingan Belajar Siswa Sekolah Menengah Pertama Negeri 1 Tana Righu dengan Metode 
+Object-Oriented Technology pembelajaran dan pencapaian yang diperoleh siswa selama masa pendidikan di tingkat ini . pengembangan 
+aplikasi bimbingan belajar dengan struktur yang jelas dan terorganisir , dimana,” no. September, 2025. 
+[13] 
+W. Rijanto, A. Fatih, dan Musbihin, “Rancang Bangun Aplikasi Kepuasan Siswa Terhadap Pengajar Menggunakan Metode Servqual.”  
+[14] 
+M. Fadli dkk., “Analisis Perancangan Aplikasi Pembelajaran Sederhana Mengenal Bendera Negara Berbasis UML,” vol. 1, no. 5, hal. 11–18, 
+2025. 
+[15] 
+A. P. Yunanda, E. E. Putri, dan S. A. Marta, “Rancang Bangun Aplikasi Bimbingan Konseling Online di SMAN 1 Danau Kembar Design,” 
+vol. 4, no. 2, hal. 205–218, 2025.

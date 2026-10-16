@@ -1,0 +1,945 @@
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+49 
+Penerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi 
+Inventaris Aset Desa Rempoah 
+ 
+ 
+Eva Argarini Pratama1 *, Sinta Krisgianti2, Hanny Mitya Paramita3  
+1,2,3Program Studi Sistem Informasi, Universitas Bina Sarana Informatika  
+*eva.eap@bsi.ac.id 
+ 
+ 
+Abstrak  
+Aset desa dikelola didasarkan akan kepentingan umum, kenyamanan, kepastian hukum, keterbukaan, ekonomis, 
+efektifitas, akuntabilitas, dan keamanan nilai. Proses pengelolaan inventaris aset desa terkadang masih 
+menggunakan tahapan proses  yang justru menimbulkan dampak buruk seperti pencatatan dan update data aset 
+desa yang begitu banyak dan selalu up to date dengan cepatnya, serta perlunya keterbukaan informasi terkait aset 
+desa tersebut, maka perlu dikembangkan suatu sistem informasi yang dapat dimanfaatkan dan membantu dalam 
+proses pengelolaan tersebut. Sistem informasi yang akan dikembangkan menggunakan metode Rapid Aplication 
+Development (RAD) diharapkan bisa menjadi alternatif pemecahan masalah pengelolaan inventaris aset desa. 
+Pada sistem informasi ini terdapat dua pengguna utama yaitu perangkat desa dan kepala desa. Perangkat desa 
+sekaligus sebagai administrator dapat mengelola hal-hal terkait aset desa dan kepala desa mendapat kemudahan 
+dalam menerima output dari sistem inventaris aset desa untuk pengambilan kebijakan manajemen kedepannya. 
+  
+Kata kunci :  aset, desa, inventaris, RAD, sistem, informasi  
+ 
+Abstract  
+Village assets are managed based on public interest, convenience, legal certainty, transparency, economy, 
+effectiveness, accountability, and value security. The process of managing village asset inventory sometimes still 
+uses process stages that actually have negative impacts such as recording and updating village asset data which 
+is so large and always up to date quickly, as well as the need for information disclosure related to these village 
+assets, it is necessary to develop an information system that can utilized and assist in the management process. 
+The information system that will be developed using the Rapid Application Development (RAD) method is expected 
+to be an alternative solution to village asset inventory management problems. In this information system there are 
+two main users, namely village officials and village heads. Village officials as well as administrators can manage 
+matters related to village assets and village heads have the convenience of receiving output from the village asset 
+inventory system for future management policy making 
+ 
+Keywords :  assets, village, inventory, RAD, system, information 
+ 
+ 
+ 
+1. Pendahuluan 
+Aset desa dikelola berdasarkan asas kepentingan 
+umum, 
+kenyamanan, 
+kepastian 
+hukum, 
+keterbukaan, ekonomis, efektifitas, akuntabilitas, 
+dan keamanan nilai. Pengelolaan kekayaan Desa 
+dilakukan 
+untuk 
+meningkatkan 
+tingkat 
+kesejahteraan dan taraf hidup masyarakat Desa 
+serta meningkatkan pendapatan asli Desa (UU 
+Desa nomor 6 tahun 2014 pasal 77). 
+Proses pengelolaan inventaris aset Desa 
+terkadang masih menggunakan tahapan proses  
+yang justru menimbulkan dampak buruk. Kegiatan 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+50 
+tersebut berupa pendataan serta pelaporan yang 
+masih menggunakan sistem konvensional. Jika 
+data yang terdapat dalam sebuah instansi atau 
+lembaga tersebut semakin banyak tentunya akan 
+menimbulkan masalah baru yang lebih kompleks. 
+Sedangkan kemajuan teknologi saat ini semakin 
+pesat sehingga instansi, lembaga, atau organisasi 
+diharapkan  untuk mengembangkan diri dari 
+penggunaan metode konvensional menuju era 
+digital.  
+Oleh karena itu perlu dipertimbangkan kembali 
+perihal pembuatan sistem informasi inventarisasi 
+aset di era teknologi sekarang ini. Permasalahan 
+yang biasa dihadapi oleh instansi dalam hal 
+pengelolaan inventaris adalah terkait dengan 
+masih sulitnya instansi, lembaga atau organisasi 
+tersebut dalam mengetahui keberadaan data 
+tersebut, jumlah yang masih tersedia, kondisi aset 
+ataupun berpindahnya aset dari satu tempat ke 
+tempat lainnya[1].  Sistem manual yang masih 
+digunakan pada Kantor Desa Rempoah ini masih 
+menggunakan 
+Microsoft 
+Office 
+yaitu 
+menggunakan Microsoft Excel. Penggunaan 
+Microsoft 
+Office 
+excel 
+dalam 
+mencatat 
+pengeluaran dan pemasukan barang dapat 
+dikategorikan sebagai proses yang masih manual 
+karena aplikasi belum menyediakan atau tidak 
+terkoneksi dengan sistem database yang 
+terpusat, sehingga dapat terjadi ketidaksesuaian 
+antara informasi yang didapat serta kehilangan 
+data yang disebabkan oleh kesalahan manusia 
+[2]. Pada proses persediaan dan pencatatan input 
+output data masih dilakukan secara manual pada 
+buku atau Microsoft Excel sehingga sulit untuk 
+mendapatkan informasi secara cepat [3]. 
+Teknologi Sistem Informasi (TSI) masih mencatat 
+pengajuan, pengadaan dan status pemasangan 
+aset infrastruktur maupun software secara manual 
+dengan 
+menggunakan 
+aplikasi 
+tersebut, 
+sedangkan pihak user maupun TSI yang 
+menggunakan dan mengajukan tidak dapat 
+memantau penerapan dan penggunaan aset 
+infrastruktur maupun software yang sedang 
+diajukan [4]. 
+Tujuan dari pengembangan ini adalah untuk 
+menghasilkan 
+sebuah 
+sistem 
+informasi 
+pengelolaan inventaris aset yang mempunyai fitur 
+untuk pencatatan aset dan pelaporan aset serta 
+menguji penggunaannya. Untuk itu dengan 
+proses pengolahan data inventaris tentunya harus 
+dibantu dengan sebuah sistem yang mampu 
+mengelolanya dengan lebih cepat dan efisien 
+serta menghemat biaya. Entry data dilakukan 
+bukan sebagai salah proses yang terpisah namun 
+menjadi satu kesatuan dengan proses/ transaksi 
+dan output berupa laporan serta pengelolaannya. 
+Berdasarkan permasalahan tersebut dibuatkan 
+suatu 
+sistem 
+informasi 
+yang 
+dalam 
+implementasinya bisa membantu proses input, 
+pengelolaan dan pelaporan data inventaris aset 
+desa 
+yang 
+terstruktur. 
+Sehingga 
+dapat  
+mempermudah akses staff desa dan Kepala Desa 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+51 
+dalam pendataan dan pengelolaan inventaris aset 
+desa serta pembuataan laporan dengan waktu 
+yang lebih cepat mencangkup wilayah desa yang 
+cukup luas 
+ 
+2. Tinjauan Pustaka 
+2.1. Penelitian Terkait 
+Pembahasan terkait penelitian sebagai referensi 
+dalam pengembangan sistem inventaris ini,  
+sebagai berikut 
+- 
+Penelitian yang sudah dilakukan oleh Nurul 
+Huda dan Rahayu Amalia dalam judul 
+Implentasi 
+Sistem 
+Informasi 
+Inventaris 
+Barang pada PT PLN (Persero) Palembang 
+dimana pada penelitian ini membahas 
+mengenai bagaimana membuat suatu sistem 
+informasi inventaris barang untuk permasing-
+masing bagian atau divisi yang mana pada PT 
+PLN (Persero) Palembang ini memiliki 15 
+divisi dan masing-masing divisi memiliki 
+barang 
+inventaris 
+sendiri. 
+Metode 
+pengembangan sistem yang digunakan 
+adalah metode waterfall dengan 5 tahapan 
+yaitu 
+analisis, 
+desain, 
+pengkodean, 
+pengujian, dan pemeliharaan (maintenance) 
+[5]. 
+- 
+Penelitian yang lain adalah yang dilakukan 
+oleh Desi Mersiana dan Nuraini Purwandari 
+dengan judul Aplikasi Sistem Inventory 
+Berbasis Web Pada PT. Kreasinar Inticipta 
+Nuansa yang dalam penelitian dibahas hal 
+terkait pembuatan aplikasi sistem inventory 
+pada PT Kresinar Inticipta Nuansa yang 
+bergerak di bidang perdagangan bisnis dan 
+kontraktor 
+lampu 
+Perancangan 
+sistem 
+inventory ini menggunakan metode Website 
+Development Life Cycle (WDLC) dan Unified 
+Modelling Language (UML) sebagai alat 
+pemodelannya. Berdasarkan hasil pengujian 
+dan evaluasi dari penelitian, aplikasi ini 
+sangat membantu proses pengolahan data - 
+data pada gudang PT. Kreasinar Inticipta 
+Nuansa [6]. 
+- 
+Penelitian selanjutnya adalah dilakukan oleh 
+Dewi Yanti dengan judul Perancangan 
+Aplikasi Inventaris Menggunakan Java dan 
+MySQL Server 5 Pada DISDIKPORA 
+Sanggau 
+ini 
+membahas 
+mengenai 
+bagaimana membuat aplikasi inventaris pada 
+DISDIKPORA Sanggau dengan fitur input 
+barang 
+(pengadaan), 
+pengalokasian/ 
+perpindahan barang dan adanya laporan 
+inventaris. 
+Perancangan 
+aplikasi 
+ini 
+dikembangkan dengan bahasa pemrograman 
+Java. Database yang digunakan adalah 
+MySQL Server 5 dimana dalam perancangan 
+output interfacenya dapat menggunakan 
+iReport-nb-0.9.1 [7]. 
+2.2. Landasan Teori 
+1. Sistem 
+Sistem adalah elemen yang saling berinteraksi 
+dan berkumpul menjadi satu kesatuan yang 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+52 
+terintegrasi untuk melaksanakan satu tujuan yang 
+sama. [8]. 
+2. Sistem Informasi 
+Sistem Informasi dapat didefiniskan dengan 
+komponen-komponen yang terintegrasi dimana 
+proses pengumpulan  (atau mendapatkan), 
+memproses, menyimpan, dan mendistribusikan 
+informasi 
+untuk 
+mendukung 
+pengambilan 
+keputusan dan pengawasan di dalam sebuah 
+organisasi [9]. 
+Arti lain dari sistem informasi yaitu sistem yang 
+scara umum mengintegrasikan transakasi harian, 
+operasi lain yang mendukung, dan data yang 
+bersifat managerial pada suatu organisasi dan 
+merupakan kegiatan strategi dalam menyediakan 
+output yang dibutuhkan baik pihak internal atau 
+eksternal organisasi [10]  
+3. Inventaris 
+Inventaris barang adalah kegiatan pencatatan 
+data barang dengan pengelolaan persediaan 
+segala sesuatu yang memiliki nilai finansial, 
+berlaku untuk perorangan, perusahaan dan 
+pemerintahan [11]. Aset merupakan sesuatu yang 
+bernilai ekonomis memiliki siklus umur pemakaian 
+yang panjang dan dari pemakaian atau 
+pemanfaatnya akan didapatkan hasil sesuai 
+dengan kebutuhan, Adapu contoh dari aset 
+tersebut adalah tanah, bangunan/ gedung, jalan, 
+mesin dan lain-lain. Kebutuhan sarana dan 
+prasarana yang di butuhkan dalam kegiatan 
+pekerjaan 
+tidak 
+menutup 
+kemungkinan 
+perusahan melakukan kegiatan inventaris aset 
+dalam kurun waktu paling sedikit 1 tahun sekali 
+[12]. 
+4. Aset Desa 
+Banyak pengertian terkait aset desa, selain 
+pengertian aset desa menurut Peraturan Menteri 
+Dalam Negeri Republik Indonesia Nomor 1 Tahun 
+2016 Bab I Pasal 1 Point 5, terdapat pengertian 
+terkait aset desa yang lain yaitu property atau 
+barang milik desa yang berasal dari asli kekayaan 
+alam yang dimiliki oleh desa, atau yang 
+pengadaannya berdasarkan pembelian atau 
+hibah baik dari anggaran pemerintah atau swasta 
+lainnya [13]. 
+Pada 
+pengelolaan 
+aset 
+desa 
+dilakukan 
+berdasarkan asas fungsional, kepastian hukum, 
+transparansi 
+dan 
+keterbukaan, 
+efisiensi, 
+kepastian dan akuntabilitas. Pengaturan atas 
+pengelolaan aset desa dilakukan sesuai dengan 
+jenis asetnya. Sesuai dengan aturan yang berlaku 
+seperti ketika aset tersebut berupa bangunan 
+maka harus ada sertifikat status kepemilikannya, 
+dan untuk aset berupa tanah dapat dibuktikan 
+dengan sertifikat kepemilikan atas nama desa 
+[14]. 
+5. Framework CodeIgniter 
+Framework CodeIgniter adalah sebuah kerangka 
+kerja yang memiliki sekumpulan prosedur/ fungsi 
+serta class yang siap digunakan untuk proses 
+kerja pembuatan website dinamis sehingga dapat 
+mempermudah dan mempercepat kinerja dari 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+53 
+programmer 
+[15]. 
+Dengan 
+menggunakan 
+framework 
+ini 
+pengembang 
+tidak 
+perlu 
+membangun website dari awal karena sudah 
+tersedia fasilitas-fasilitas yang dapat digunakan 
+2.3. Tahapan Penelitian 
+Penelitian 
+dilakukan 
+dengan 
+menerapkan 
+beberapa tahapan seperti hal nya yang dilakukan 
+oleh penelitian lainnya, pada penelitian ini diawali 
+dengan inisiasi dan pengumpulan data sesuai 
+dengan hasil inisiasi yang sudah dilakukan 
+sebelumnya, 
+hasilnya 
+permasalahan 
+dan 
+gambaran 
+penyelesaian 
+didapatkan 
+yang 
+selanjutnya tahap perencanaan penyelesaian 
+masalah 
+dengan 
+menganalisa, 
+tahapan 
+pelaksanaan 
+mulai 
+dilaksanakan 
+dengan 
+perancangan, pembuatan dan pengujian aplikasi, 
+tahap akhir adalah apa yang menjadi kegiatan 
+penelitian didokumentasikan. 
+ 
+Gambar 1. Kerangka Kerja Penelitian 
+3. Metode Penelitian 
+3.1. Metode Pengumpulan Data 
+Metode pengumpulan data yang dapat dilakukan 
+dalam pengembangan sistem informasi inventaris 
+aset desa ini adalah: 
+1. 
+Observasi 
+Metode ini dilakukan dengan menempatkan 
+peneliti sebagai pengamat pada objek yang 
+diteliti. Hal ini dilakukan saat penelitian dilakukan 
+dengan melihat bagaimana proses inventarisasi 
+ast desa yang begitu banyak dan harus tersusun 
+secara rapi serta mudah untuk ditelusuri jika akan 
+diguankan datanya. 
+2. Studi Literatur 
+Metode ini merupakan serangkaian aktivitas yang 
+didalamnya terdapat pengumpulan data ataupun 
+refensi, pencatatan dokumen dan pengolahan 
+bahan pustaka/ referensi penelitian yang sudah 
+dikumpulkan[16]. Pengumpulan data dengan  
+studi literatur ini, memberikan peluang dan 
+kemampuan bagi peneliti untuk menentukan data 
+dan referensi yang akan dan dapat digunakan 
+pada pengembangan perangkat lunak ini. 
+3.2. Metode Pengembangan Perangkat Lunak 
+Rapid Application Development (RAD) dipilih 
+sebagai metode pengembangan aplikasi atau 
+sistem yang digunakan, sebagaimana menurut  
+Aswati dalam [17] Rapid Application Development 
+merupakan salah satu metode yang dilakukan 
+secara sekuensial liner dengan memperhatikan 
+waktu sehingga  pelaksanaan pengembangan 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+54 
+sistem dapat lebih singkat. Metode Rapid 
+Application 
+Development 
+(RAD) 
+dapat 
+digambarkan sebagai berikut: 
+. 
+Gambar 2: RAD Model Kendal 
+Terdapat empat tahapan yang terangkum dalam 
+3 ruang siklus pengembangan sistem/ perangkat 
+lunak pada metode  Rapid  Application 
+Development (RAD) [18] yaitu : 
+a) Perencanaan  Syarat-syarat 
+Tahapan ini dilakukan sebagai tahapan awal 
+inisiasi yang dilanjutkan dengan tahap analisis 
+sehingga dapat terlihat apa yang menjadi 
+kebutuhan, baik kebutuhan akan fitur, menu dan 
+data yang sudah terkumpul dan dibutuhan pada 
+tahap perancangan sistem.  
+b) Workshop Desain RAD 
+Tahapan ini menjadi jembatan antara kegiatan 
+analisis dan koding (pemrograman) sehingga 
+akan nampak gambaran secara langsung desain 
+aplikasi yang akan digunakan oleh pengguna, 
+atau dengan kata lain tahapan ini merupakan 
+tahapan perancangan dari tahapan perencanaan 
+yang sebelumnya sudah dilakukan sebagai 
+workshop.  
+Di sini analis dan programmer mendapat 
+kesempatan untuk menunjukkan gambaran 
+desain aplikasi yang akan digunakan kepada 
+pengguna, disertai dengan testing pada aplikasi 
+yang dikembangkan. 
+- 
+Tahap  Analisis Modelling 
+Analisis modelling dilakukan dengan aktivitas 
+menganalisi prosedur sistem berjalan, dimana 
+prosedur-prosedur yang ada apakah ada 
+kekurangan atau membutuhkan pengembangan 
+selanjutnya berdasarkan data dan dokumen yang 
+sudah didapatkan, sehingga gambaran dari 
+sistem yang akan dikembangkan sudah terlihat. 
+- 
+Tahap Desain Modeling 
+Bertujuan untuk membuat rancangan proses 
+bisnis dari hasil analisis sebelumnya. Dalam 
+tahap analisa dan desain akan terjadi perulangan 
+sampai dengan  dihasilkan suatu rancangan baik 
+rancangan antar muka, rancangan data base, dan 
+sistem berjalan dari yang sudah di analisis 
+modelling pada tahap sebelumnya.  
+c) Tahap Implementasi/ Konstruksi 
+Bertujuan 
+untuk 
+memberitahukan 
+platform, 
+perangkat keras dan perangkat lunak yang akan 
+dipakai dalam membuat program aplikasi, 
+kemudian melakukan uji kinerja prototype apakah 
+telah sesuai dengan analisa dan perancangan 
+yang dibuat dalam tahap sebelumnya. Hasil akhir 
+dari tahap implementasi ini yaitu platform, 
+perangkat keras dan perangkat lunak yang 
+dipakai pada sistem  dengan adanya batasan 
+penerapan dan rencana pengujian. 
+ 
+ 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+55 
+4. Hasil dan Pembahasan 
+4.1. Perencanaan  Syarat-syarat 
+Perencanaan syarat-syarat seringkali disebut 
+juga dengan project initiation. Project initiation ini 
+berkaitan erat dengan kerangka kerja penelitian 
+yang sudah ditentukan sebelumnya. Terlihat 
+ketika bagaimana peneliti mengetahui peristiwa 
+dari suatu objek atau fenomena yang terjadi 
+dalam hal ini hal-hal yang terkait dengan 
+permasalahan 
+atau 
+kebutuhan 
+dalam 
+pengelolaan aset desa dan memberikan langkah 
+dari  ditemukannya suatu permsalahan hingga 
+muncul beberapa ide dalam penyelesaian 
+masalah tersebut.  Kegiatan lain yang ada dalam 
+tahap 
+communication 
+adalah 
+kegiatan 
+pengumpulan kebutuhan atau requirements 
+gathering, apa yang menjadi kebutuhan dalam 
+pembuatan aplikasi yang terkumpul mulai untuk 
+dieksekusi dari membuat rencana awal aplikasi 
+yang berupa definisi kebutuhan data dan 
+informasi  awal dari menu-menu atau fitur-fitur 
+yang akan tersedia pada aplikasi, menentukan 
+ruang 
+lingkup 
+dari 
+aplikasi 
+yang 
+akan 
+dikembangkan, dan menu-menu yang mampu 
+diimplementasikan pada aplikasi. Setelah pada 
+pada tahap ini dilalui, selanjutnya akan masuk 
+pada tahap planning. 
+ 
+4.2. Workshop Desain RAD 
+1. 
+Analisis Modeling - Inisiasi dan metode 
+pengumpulan data yang sudah dilakukan, 
+memberikan 
+inputan 
+dalam 
+penentuan 
+permasalahan pada proses bisnis sistem yang 
+sebelumnya dan kebutuhan sistem yang akan 
+dikembangkan selanjutnya, atau dapat diartikan 
+tahap ini merupakan tahap analisis. Tujuan dari 
+kegiatan 
+ini 
+adalah 
+untuk 
+menemukan 
+permasalahan terkait dengan rancangan sistem 
+yang akan digunakan dan apakah dapat 
+mendukung kebutuhan proyek itu sendiri itu 
+sendiri 
+yang 
+melibatkan 
+desain 
+proses, 
+pengkodean ataupun pemeliharaan yan nantinya 
+akan digunakan untuk pembuatan fitur pada 
+website. Dibawah ini merupakan kebutuhan 
+website :  
+a Hak akses  
+Tahapan hak akses yang digunakan oleh user, 
+dibawah ini penjelasan hak akses admin dan 
+pegawai (perangkat desa):  
+- 
+Admin : Melakukan Hak Akses Pegawai tanpa 
+ada kecualinya dan melakukan input data 
+seperti membuat user dan mengelola data 
+aset..  
+- 
+Pegawai (Perangkat Desa) 
+- 
+Hanya bisa melihat seluruh jenis laporan yang 
+tersedia. 
+Didalam sistem informasi inventaris aset desa 
+terdapat enam jenis aset desa yaitu Aset Tanah, 
+Kendaraan, Bangunan, Jalan Irigasi, Peralatan 
+dan Mesin,dan Jaringan yang terakhir berupa 
+Aset Tetap lainya. 
+ 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+56 
+b. Pengelolaan Data  
+Kebutuhan data yang nantinya ada pada 
+database dan akan diproses dalam aplikasi  ini, 
+adalah:  
+- 
+Data user 
+- 
+Data aset  
+- 
+Data laporan 
+Berdasarkan tahapan yang sudah dilakukan 
+sebelumnya yaitu analisis modeling maka 
+selanjutnya adalah membuat  desain modeling 
+dengan merancang halaman, menu dan fitur pada 
+aplikasi yang akan dibuat. Desain  awal yang 
+baiknya mulai dibuat adalah untuk menu atau fitur 
+halaman umum bagi user dan  admin sebagai 
+pengelola website baik input data aset desa, 
+melihat detail data aset desa, mengolah data 
+asset desa, data jenis aset desa, laporan, dan 
+lain-lain. 
+2. Desain Modeling 
+Pada tahap desain modeling akan dilakukan 
+penerjemahan dari hasil analisis sebelumnya 
+selanjutnya output dari  tahapan ini akan dipakai, 
+diolah dan dikembangkan lagi pada tahap 
+selanjutnya.   
+Beberapa diagram digunakan dalam tahapan 
+perancangan yang menggunakan tools yang 
+sering disebut UML (Unified Modeling Language), 
+beberapa diagram tersebut diantaranya: 
+a Use Case Diagram  
+Rancangan prosedur/ proses sistem berjalan 
+sangat 
+diperlukan 
+salah 
+satunya 
+dengan 
+membuat usecase diagram dan usecase 
+specificationnya karena dengan adanya usecase 
+ini akan terlihat dengan jelas actor yang akan 
+terlibat dengan sistem dan bagaimana respon 
+sistem terhapat actor.  
+ 
+Gambar 3. Use Case Diagram 
+Pada proses pencatatan/ input inventaris aset 
+desa, Sekretaris Desa berperan untuk melakukan 
+pencatatan/ iinput inventaris aset desa yang 
+berada pada lingkungan Desa Rempoah. Tabel 1. 
+memberikan penjelasan terkait detail atau 
+deakripsi dari salah satu usecase pada usecase 
+diagram yaitu  mengelola data aset desa dan jenis 
+aset desa pada sistem informasi aset inventaris 
+desa rempoah. 
+Tabel 1. Use Case Specification Mengelola Data 
+Aset Desa dan Jenis Aset Desa 
+Use Case 
+Name 
+Mengelola Data Aset Desa dan Jenis 
+Aset Desa 
+Requirements 
+Pengelolaan Website 
+Goal 
+Semua Kegiatan Berjalan lancar dan 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+57 
+dapat cetak laporan 
+Pre-
+Conditions 
+Admin Mengelola data pada seluruh 
+sistem 
+Post-
+Conditions 
+Pegawai dapat melihat dan mencetak 
+data 
+Failed end 
+Conditions 
+Gagal Login 
+Actor 
+Admin dan Pegawai 
+Main 
+flow/Basic 
+Path 
+1. Admin memasukkan username 
+dan password sebagai syarat login 
+2. Admin melakukan Pengelolaan 
+data pada seluruh sistem yaitu 
+data admin, kategori, asal, type, 
+aset desa, data jenis aset desa, 
+mengatur judul, data perusahaan, 
+logo perusahaan dan mencetak 
+hasil laporan 
+3. Pegawai melakukan pengecekan 
+data dengan cara melihat, mencari 
+dan mencetak data aset desa 
+ 
+b Activity Diagram 
+Perancanagan sistem lainnya yang terkait dengan 
+jalannya proses bisnis dapat menggunakan 
+activity diagram sebagai gambarannya. Hal ini 
+dapat gambarkan salah satunya sebagai berikut: 
+ 
+Gambar 4. Activity Diagram Mengelola Aset 
+c 
+Class Diagram 
+ 
+Gambar 5. Class Diagram 
+4.3. Implementasi/ Konstruksi 
+Tahap akhir pada pengembangan ini adalah 
+implementasi/ konstruksi dari hasil tahapan 
+sebelumnya yaitu desain modelling. Beberapa 
+contoh hasil implementasi/ konstruksi dari 
+tampilan yang dikembangkan adalah: 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+58 
+ 
+Gambar 6. Form Tambah Data Aset 
+Logika jalannya program: 
+1. 
+Saat form dijalankan, kode aset, kode 
+barang, NUP aset, tahun perolehan,   asal, 
+nilai perolehan, keterangan, kondisi dan foto 
+aset akan muncul otomatis 
+2. 
+Untuk kode aset dan NUP aset dibuat 
+otomatis 
+3. 
+Dalam memilih jenis aset dan kondisi, kita 
+dapat memilih sesuai aset yang akan 
+ditambahkan 
+4. 
+Input data aset yang akan ditambahkan, 
+tambahkan foto aset agar gambar terlihat 
+rapi maka gunakan ukuran 370 x 270 px 
+Tombol simpan untuk melakukan penyimpanan 
+data aset yang telah diinput dan masuk ke data 
+aset utama. 
+ 
+ 
+Gambar 7. Tampilan Menu Laporan dan Cetak 
+Laporan 
+ 
+5. Kesimpulan 
+Kesimpulan 
+pada 
+pengembangan 
+Sistem 
+Informasi Inventaris Aset Desa Rempoah 
+berbasis web ini adalah sebagai berikut: 
+1.  Dengan adanya Sistem Informasi Aset 
+Inventaris Desa Rempoah ini mempermudah 
+pemerintah desa dalam hal mengelolah aset 
+desa yang mulanya menggunakan sistem 
+konvensional dicatat menggunakan Microsoft 
+Office yaitu menggunakan Microsoft Excel, 
+sekarang sudah terintegrasi dengan baik. 
+2. Menggunakan database sebagai tempat 
+penyimpanan data membuat pekerjaan menjadi 
+efektif dan efisien untuk pemerintah desa dapat 
+lebih mudah mengelola laporan tahunan. 
+ 
+6. Daftar Pustaka 
+[1] H. Supriyono, A. M. Noviandri, and Y. E. 
+Purnomo, “Penerapan Sistem Informasi 
+Berbasis Komputer Untuk Pengelolaan Aset 
+Bagi SMP Muhammadiyah 1 Kartasura,” 6th 
+
+Infotek : Jurnal Informatika dan Teknologi 
+Vol. 6 No. 1, Januari 2023 
+Hal. 49-59 
+ 
+ 
+e-ISSN 2614-8773 
+DOI : 10.29408/jit.v6i1.7313 
+Link : https://dx.doi.org/10.29408/jit.v6i1.7313 
+ 
+Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 
+59 
+Univ. Res. Colloq. 2017, pp. 59–70, 2017. 
+[2] E. Mufida, E. Rahmawati, and H. Hertiana, 
+“Rancang 
+Bangun 
+Sistem 
+Informasi 
+Inventorypada Salonkecantikan,” J. Mantik 
+Penusa, vol. 3, no. 3, pp. 99–102, 2019. 
+[3] G. M. Azza and A. Dores, “Sistem Informasi 
+Manajemen 
+Marketing 
+Tools 
+Serta 
+Penerapan 
+Metode 
+Ahp 
+(Analytical 
+Hierarchy Process) Pada Proses Uji Kualitas 
+Barang (Studi Kasus : PT Edi Indonesia),” J. 
+Cendikia, vol. XVI, pp. 107–114, 2018. 
+[4] N. MADE AYU RENA LARASATI A, 
+“Rancang Bangun Aplikasi Manajemen Aset 
+Infrastruktur 
+Dan 
+Lisensi 
+Software 
+Menggunakan Framework Laravel (Studi 
+Kasus : Perusahaan Daerah Air Minum 
+Surya Sembada Kota Surabaya),” J. Manaj. 
+Inform., vol. 8, no. 2, pp. 68–74, 2018. 
+[5] N. Huda and R. Amalia, “Implementasi 
+Sistem Informasi Inventaris Barang pada 
+PT.PLN (Persero) Palembang,” J. Sisfokom 
+(Sistem Inf. dan Komputer), vol. 9, no. 1, pp. 
+13–19, 
+2020, 
+doi: 
+10.32736/sisfokom.v9i1.674. 
+[6] D. Mersiana and N. Purwandari, “Aplikasi 
+Sistem Inventory Berbasis Web Pada PT. 
+Kreasinar Inticipta Nuansa,” Kalbiscientia J. 
+Sains dan Teknol., vol. 4, no. 2, pp. 106–117, 
+2017. 
+[7] D. Yanti, “Perancangan Aplikasi Inventaris 
+Menggunakan Java dan MySQL Server 5 
+Pada DISDIKPORA Sanggau,” Cybernetics, 
+vol. 3, no. 02, p. 49, 2020, doi: 
+10.29406/cbn.v3i02.2159. 
+[8] E. A. Pratama, C. M. Hellyana, and Sutrisno, 
+Analisa dan Perancangan Sistem Informasi. 
+Yogjakarta: Deepublish, 2020. 
+[9] [9] M. 
+Hasanudin, 
+“RANCANG 
+DAN 
+BANGUN SISTEM INFORMASI INVENTORI 
+BARANG BERBASIS WEB (STUDI KASUS 
+PT. NUSANTARA SEJAHTERA RAYA),” J. 
+IKRA-ITH Inform., vol. 2, no. 3, pp. 24–37, 
+2018, doi: 10.29207/resti.v4i4.2218. 
+[10] Jamaludin, B. D. D. Arianti, B. A. Novianti, 
+and M. Asrobi, “Desain Sistem Informasi Tri 
+Dharma 
+Perguruan 
+Tinggi 
+Universitas 
+Hamzanwadi,” Infotek J. Inform. dan Teknol., 
+vol. 5, no. 2, pp. 392–401, 2022. 
+[11] M. F. Adiwisastra, “Aplikasi Pengelolaan 
+Inventaris Barang Berbasis Web Pada 
+Pondok Pesantren Darul Muta ’ allimin Kota 
+Tasikmalaya,” Infotek J. Inform. dan Teknol., 
+vol. 5, no. 2, pp. 230–239, 2022. 
+[12] M. Usnaini, V. Yasin, and A. Z. Sianipar, 
+“Perancangan sistem informasi inventarisasi 
+aset berbasis web menggunakan metode 
+waterfall,” J. Manajamen Inform. Jayakarta, 
+vol. 
+1, no. 
+1, 
+p. 36, 
+2021, 
+doi: 
+10.52362/jmijayakarta.v1i1.415. 
+[13] E. Nurdinawati, Buku Pintar Pengelolaan 
+Aset Desa. Temanggung: Desa Pustaka 
+Indonesia, 2019. 
+[14] Firmansyah, “Pengelolaan Aset Desa di 
+Kabupaten Tangerang,” J. Ilm. Akunt. 
+Kesatuan, vol. 6, no. 1, pp. 001–008, 2018, 
+doi: 10.37641/jiakes.v6i1.58. 
+[15] Alexandromeo, 
+“Apa 
+itu 
+CodeIgniter? 
+Pengertian, Cara Kerja, Kelebihan, dan 
+Fiturnya,” 
+https://makinrajin.com/, 
+2021. 
+https://makinrajin.com/blog/codeigniter-
+adalah/ (accessed Nov. 01, 2022). 
+[16] Panduan Penyusunan Studi Literatur,” 
+Lemb. Penelit. dan Pengabdi. Masy. Politek. 
+Kesehat. Majapahit, Mojokerto, pp. 1–9, 
+2015. 
+[17] I. Aini, N., Wicaksono, S. A., & Arwani, 
+“Pembangunan 
+Sistem 
+Informasi 
+Perpustakaan Berbasis Web menggunakan 
+Metode Rapid Application Development 
+(RAD)(Studi pada: SMK Negeri 11 Malang),” 
+J. Pengemb. Teknol. Inf. dan Ilmu Komput., 
+vol. 3, no. 9, pp. 8647–8655, 2019. 
+[18] J. R. Sagala, “Model Rapid Application 
+Development (Rad)Dalam Pengembangan 
+Sistem 
+Informasi 
+Penjadwalanbelajar 
+Mengajar,” J. Mantik Penusa, vol. 2, no. 1, 
+pp. 87–90, 2018.
+ 
+

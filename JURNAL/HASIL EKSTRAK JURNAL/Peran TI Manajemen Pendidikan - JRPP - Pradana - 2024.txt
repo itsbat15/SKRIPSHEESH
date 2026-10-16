@@ -1,0 +1,62 @@
+==================================================
+[HALAMAN 1 - METADATA ARTIKEL]
+==================================================
+
+Judul      : PERAN TEKNOLOGI INFORMASI DALAM MENINGKATKAN EFEKTIVITAS MANAJEMEN PENDIDIKAN DI SEKOLAH
+Penulis    : Muhammad Rafieq Adi Pradana
+Institusi  : Universitas Sang Bumi Ruwa Jurai
+Jurnal     : Jurnal Review Pendidikan dan Pengajaran (JRPP)
+Volume     : 7
+Nomor      : 3
+Halaman    : 6855-6860
+Tahun      : 2024
+DOI        : 10.31004/jrpp.v7i3.29286
+URL        : https://journal.universitaspahlawan.ac.id/index.php/jrpp/article/view/29286
+ISSN       : 2655-710X (Online) / 2655-6022 (Print)
+
+==================================================
+[ABSTRAK]
+==================================================
+
+Perkembangan teknologi informasi telah memberikan dampak yang signifikan dalam dunia
+pendidikan, termasuk dalam manajemen pendidikan di sekolah. Penelitian ini bertujuan untuk
+mengkaji peran teknologi informasi dalam meningkatkan efektivitas manajemen pendidikan di
+sekolah. Metode studi literatur digunakan untuk mengumpulkan, menganalisis, dan mensintesis
+literatur yang relevan tentang topik ini. Hasil penelitian menunjukkan bahwa teknologi informasi
+memainkan peran kunci dalam memfasilitasi administrasi sekolah yang efisien, meningkatkan
+aksesibilitas pembelajaran, dan memfasilitasi komunikasi yang efektif antara stakeholder
+pendidikan. Namun, tantangan seperti keterbatasan infrastruktur dan kurangnya keterampilan
+teknologi perlu diatasi untuk mengoptimalkan potensi teknologi informasi dalam konteks ini.
+Kesimpulannya, integrasi teknologi informasi dalam manajemen pendidikan dapat membawa
+manfaat yang signifikan, asalkan diimbangi dengan pendekatan yang holistik dan terintegrasi.
+
+==================================================
+[POIN-POIN UTAMA YANG RELEVAN UNTUK TA]
+==================================================
+
+1. Pemanfaatan sistem informasi berbasis teknologi pada institusi pendidikan mendukung
+   otomatisasi tugas-tugas administratif rutin, pengelolaan data yang lebih efisien,
+   dan pemantauan kinerja kelembagaan secara akurat.
+
+2. Adopsi sistem informasi terkomputerisasi, seperti manajemen data peserta didik,
+   jadwal bimbingan/pembelajaran, dan tata kelola keuangan, mampu memangkas waktu
+   dan tenaga kerja yang sebelumnya terkuras akibat pencatatan manual.
+
+3. Sistem informasi memperkuat komunikasi dan pertukaran informasi secara cepat antara
+   pengelola, staf pengajar, peserta didik, dan wali murid (stakeholder pendidikan).
+
+4. Integrasi teknologi informasi ke dalam manajemen operasional pendidikan mendorong
+   terwujudnya transparansi data serta efisiensi manajemen secara menyeluruh.
+
+==================================================
+[KUTIPAN YANG DIPAKAI DALAM TA - BAB 1]
+==================================================
+
+Digunakan pada paragraf kedua Latar Belakang (definisi dan fungsi sistem informasi dalam manajemen pendidikan):
+"Untuk mewujudkan tata kelola operasional yang tertata tersebut, pemanfaatan sistem informasi memegang peranan yang mendasar. Sistem informasi merupakan seperangkat prosedur yang dirancang untuk mengumpulkan, mengolah, menyimpan, dan mendistribusikan informasi kepada pihak-pihak yang membutuhkan (Pradana, 2024)."
+
+==================================================
+[FORMAT SITASI - APA AUTHOR-YEAR (ITK 2026)]
+==================================================
+
+Pradana, M. R. A. (2024). Peran Teknologi Informasi dalam Meningkatkan Efektivitas Manajemen Pendidikan di Sekolah. Jurnal Review Pendidikan dan Pengajaran, 7(3), 6855-6860. https://doi.org/10.31004/jrpp.v7i3.29286

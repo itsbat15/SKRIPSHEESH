@@ -1,0 +1,1035 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2138 
+RANCANG BANGUN SISTEM INFORMASI SISWA  
+MENGGUNAKAN METODE EXTREME PROGRAMMING  
+(STUDI KASUS SMP NEGERI 4 TEGALLALANG) 
+ 
+Ngakan Putu Herry Suputra, I Nyoman Yudi Anggara Wijaya, Anak Agung Gede Adi Mega Putra 
+Teknik Informatikan Universitas Primakara 
+Jl. Tukad Badung No.135 Denpasar Selatan Bali 
+ngakanherry2504@gmail.com 
+ 
+ABSTRAK 
+ 
+Perkembangan teknologi informasi mendorong institusi pendidikan untuk beralih dari sistem manual ke 
+sistem digital guna meningkatkan efisiensi pengelolaan data. Di SMP Negeri 4 Tegallalang, pengelolaan data 
+siswa, guru, dan kelas masih dilakukan secara manual menggunakan dokumen dan lembar kerja sederhana. 
+Kondisi tersebut menimbulkan permasalahan berupa risiko kesalahan pencatatan, keterlambatan pengolahan data, 
+serta kurangnya integrasi informasi akademik. Penelitian ini bertujuan untuk merancang dan membangun Sistem 
+Informasi Siswa berbasis website yang terintegrasi dan mudah digunakan. Metode yang digunakan adalah 
+Extreme Programming (XP) dengan pendekatan iteratif yang meliputi perencanaan, perancangan, pengkodean, 
+dan pengujian menggunakan Blackbox Testing, serta implementasi framework Laravel. Hasil penelitian 
+menunjukkan bahwa sistem yang dikembangkan mampu mengelola data siswa, guru, kelas, mata pelajaran, 
+jadwal, dan prestasi siswa secara terpusat dengan tampilan dashboard interaktif. Seluruh fungsi sistem berjalan 
+sesuai kebutuhan pengguna dan mampu meningkatkan efisiensi serta akurasi pengelolaan administrasi akademik 
+di SMP Negeri 4 Tegallalang.  
+ 
+Kata kunci : Sistem Informasi Siswa, Website, Extreme Programming, Laravel, SMP Negeri 4 Tegallalang 
+ 
+1. 
+PENDAHULUAN 
+Perkembangan teknologi informasi yang sangat 
+pesat 
+telah 
+mendorong 
+sekolah-sekolah 
+untuk 
+mengadopsi sistem berbasis digital, baik untuk 
+manajemen data siswa maupun kegiatan operasional 
+sehari-hari. Di SMP Negeri 4 Tegallalang, pengelolaan 
+data siswa yang mencakup informasi akademik, data 
+pribadi, dan catatan kehadiran masih dilakukan secara 
+manual. Hal ini tidak hanya menghambat efisiensi 
+kerja tetapi juga meningkatkan risiko terjadinya 
+kesalahan dalam pencatatan dan pengarsipan data. 
+Sistem 
+pengelolaan 
+manual 
+sering 
+kali 
+menyebabkan 
+keterlambatan 
+dalam 
+proses 
+pemrosesan data, serta kendala dalam penyimpanan 
+dan pencarian data. Masalah ini mempengaruhi kinerja 
+sekolah, khususnya dalam memberikan layanan yang 
+cepat dan akurat kepada siswa, guru, dan orang tua. 
+Oleh karena itu, diperlukan sebuah sistem informasi 
+yang mampu mengelola data siswa secara terstruktur, 
+mudah 
+diakses, 
+dan 
+aman, 
+serta 
+dapat 
+diimplementasikan secara efektif dengan pendekatan 
+yang fleksibel dan responsif terhadap kebutuhan. 
+Dalam proses mengembangkan sebuah perangkat 
+lunak terdapat berbagai metode yang diterapkan, 
+penelitian 
+ini 
+menggunakan 
+metode 
+Extreme 
+Programming (XP) agar menciptakan perangkat lunak 
+untuk sistem informasi siswa. XP menekankan 
+kolaborasi 
+antara 
+pengembang 
+dan 
+pengguna, 
+memungkinkan 
+iterasi 
+cepat, 
+dan 
+pengujian 
+berkelanjutan 
+untuk 
+memastikan 
+kualitas 
+dan 
+fungsionalitas sistem sesuai dengan kebutuhan 
+sekolah. 
+Dengan menggunakan metode XP, diharapkan 
+sistem informasi siswa ini dapat dikembangkan 
+dengan cepat, efektif, dan sesuai dengan kebutuhan 
+aktual di lapangan. XP melibatkan praktik-praktik 
+seperti pengujian secara menerus [1]. Studi kasus di 
+SMP Negeri 4 Tegallalang ini bertujuan menghasilkan 
+sebuah sistem agar dapat membantu sekolah untuk 
+pengelolaan 
+data 
+siswa 
+secara 
+lebih 
+efisien, 
+meminimalkan kesalahan, dan meningkatkan kualitas 
+layanan kepada seluruh pihak terkait. 
+Berdasarakan permasalah di atas, maka solusi 
+yang ditawarkan penulis adalah membuat sistem 
+informasi akademik berbasis website yang berjudul 
+“Rancang 
+Bangun 
+Sistem 
+Informasi 
+Siswa 
+Menggunakan Metode Extreme Programing (Studi 
+Kasus SMP Negeri 4 Tegallalang)”. 
+Berdasarkan kondisi tersebut, pengelolaan data 
+akademik di SMP Negeri 4 Tegallalang masih 
+menghadapi berbagai kendala, terutama terkait 
+efisiensi, akurasi, dan integrasi data. Proses pencatatan 
+manual menyebabkan data siswa, nilai, absensi, serta 
+kegiatan ekstrakurikuler sulit dikelola secara optimal 
+dan berpotensi menimbulkan kesalahan pencatatan 
+serta keterlambatan penyajian informasi. Selain itu, 
+keterbatasan sistem yang ada menyulitkan pihak 
+sekolah dalam melakukan pencarian data, pembuatan 
+laporan, dan pengambilan keputusan secara cepat dan 
+tepat. 
+Permasalahan utama yang dihadapi adalah 
+bagaimana merancang dan membangun sistem 
+informasi siswa berbasis website yang mampu 
+mengelola data akademik secara terintegrasi, mudah 
+diakses, dan sesuai dengan kebutuhan pengguna di 
+SMP Negeri 4 Tegallalang. Oleh karena itu, 
+diperlukan suatu solusi berbasis teknologi informasi 
+yang dapat menggantikan sistem manual dan
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2139 
+mendukung proses administrasi sekolah secara lebih 
+efektif. 
+Penelitian ini bertujuan untuk merancang dan 
+mengembangkan sistem informasi siswa berbasis 
+website di SMP Negeri 4 Tegallalang menggunakan 
+metode Extreme Programming (XP). Tujuan utama 
+penelitian ini adalah menganalisis kebutuhan sistem 
+serta mengimplementasikan fitur pengelolaan data 
+siswa yang meliputi data pribadi, nilai, absensi, dan 
+kegiatan ekstrakurikuler agar dapat dikelola secara 
+terpusat dan sistematis. 
+Rencana 
+penyelesaian 
+masalah 
+dilakukan 
+melalui pengembangan sistem menggunakan metode 
+Extreme Programming yang bersifat iteratif dan 
+adaptif. Tahapan pengembangan meliputi perencanaan 
+kebutuhan sistem, perancangan model menggunakan 
+UML dan ERD, implementasi sistem berbasis website 
+dengan framework Laravel, serta pengujian sistem 
+menggunakan metode Blackbox Testing. Dengan 
+pendekatan ini, diharapkan sistem yang dikembangkan 
+mampu menjawab permasalahan yang ada dan 
+meningkatkan kualitas pengelolaan data akademik di 
+SMP Negeri 4 Tegallalang. 
+ 
+2. 
+TINJAUAN PUSTAKA 
+2.1. Landasan Teori tentang Permasalahan 
+SMP Negeri 4 Tegallalang merupakan sekolah 
+menengah pertama yang berdiri sejak tahun 2010 dan 
+berlokasi di Kecamatan Tegallalang, Kabupaten 
+Gianyar, Bali. Meskipun telah didukung fasilitas 
+pembelajaran yang memadai seperti ruang kelas, 
+komputer, dan akses internet, sekolah ini masih 
+menghadapi 
+kendala 
+dalam 
+pengelolaan 
+data 
+akademik. Proses pengelolaan data siswa, guru, kelas, 
+mata pelajaran, jadwal, prestasi, dan administrasi 
+masih dilakukan secara manual, sementara website 
+yang tersedia hanya berfungsi sebagai media 
+informasi. Kondisi tersebut menyebabkan pengolahan 
+data menjadi kurang efisien dan terintegrasi. Oleh 
+karena itu, diperlukan pengembangan sistem informasi 
+akademik berbasis website untuk meningkatkan 
+efisiensi, kecepatan akses data, serta integrasi antar 
+modul akademik. 
+ 
+2.2. System Development Life Cycle (SDLC) 
+System Development Life Cycle (SDLC) 
+merupakan 
+kerangka 
+kerja 
+formal 
+dalam 
+pengembangan sistem informasi yang telah digunakan 
+sejak tahun 1960-an. SDLC 
+bertujuan untuk 
+menghasilkan sistem yang terstruktur, efektif, dan 
+sesuai dengan kebutuhan pengguna. Tahapan utama 
+SDLC 
+meliputi 
+inisiasi, 
+perencanaan, 
+analisis 
+kebutuhan, 
+desain, 
+pengembangan, 
+pengujian, 
+implementasi, dan pemeliharaan. Setiap tahapan saling 
+berkaitan dan berperan penting dalam memastikan 
+sistem yang dikembangkan dapat berfungsi secara 
+optimal dan berkelanjutan. 
+ 
+2.3. Unified Modeling Language (UML) 
+Unified Modeling Language (UML) merupakan 
+alat bantu visual yang digunakan untuk memodelkan 
+sistem perangkat lunak secara terstruktur. UML 
+membantu 
+pengembang 
+dalam 
+memahami, 
+merancang, dan mendokumentasikan sistem. Diagram 
+UML yang umum digunakan antara lain Use Case 
+Diagram, Class Diagram, dan Activity Diagram. 
+ 
+2.4. Entity Relationship Diagram (ERD) 
+Entity Relationship Diagram (ERD) adalah 
+diagram yang digunakan untuk memodelkan struktur 
+basis data dengan menggambarkan entitas, atribut, 
+serta hubungan antar entitas. ERD berperan penting 
+dalam perancangan database agar sesuai dengan 
+kebutuhan sistem dan pengguna. 
+ 
+2.5. Agile Development 
+Agile Development merupakan metodologi 
+pengembangan perangkat lunak yang menekankan 
+fleksibilitas dan kemampuan beradaptasi terhadap 
+perubahan kebutuhan [2]. Pengembangan dilakukan 
+secara iteratif dalam siklus singkat, sehingga 
+memungkinkan evaluasi dan perbaikan berkelanjutan 
+berdasarkan umpan balik pengguna. 
+ 
+2.6. Extreme Programming (XP) 
+Extreme Programming (XP) adalah salah satu 
+metode dalam Agile Development yang berfokus pada 
+peningkatan 
+kualitas 
+perangkat 
+lunak 
+serta 
+responsivitas terhadap perubahan kebutuhan pengguna 
+[3]. XP menekankan kolaborasi tim, desain sederhana, 
+pengujian berkelanjutan, dan rilis perangkat lunak 
+secara berkala. 
+Tahapan dalam XP meliputi perencanaan melalui 
+user stories, perancangan sederhana, pengkodean 
+dengan praktik seperti pair programming dan 
+continuous integration, serta pengujian menggunakan 
+blackbox testing [4], [5] Metode XP dipilih dalam 
+penelitian 
+ini 
+karena 
+dinilai 
+sesuai 
+untuk 
+pengembangan sistem informasi akademik berbasis 
+website yang adaptif dan berorientasi pada kebutuhan 
+pengguna di SMP Negeri 4 Tegallalang. 
+ 
+Table 1. State Of The Art 
+No 
+Judul 
+Nama & 
+Tahun 
+Hasil 
+Relevansi 
+1 
+Rancang Bangun Sistem 
+Informasi Akademik 
+Menggunakan Metode 
+Waterfall pada SMA Kosgoro 
+Tangerang 
+[6] 
+Menghasilkan sistem informasi 
+akademik berbasis web untuk 
+pengelolaan data siswa, guru, 
+nilai, dan laporan secara terpusat. 
+Membuktikan sistem 
+berbasis web mampu 
+meningkatkan efisiensi dan 
+akurasi pengelolaan data 
+akademik.
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2140 
+No 
+Judul 
+Nama & 
+Tahun 
+Hasil 
+Relevansi 
+2 
+Rancang Bangun Sistem 
+Informasi Siswa Berbasis Web 
+di Sekolah Minggu Buddha 
+Vihara Dharmaloka Pekanbaru 
+[7] 
+Mengembangkan sistem web 
+untuk mengelola data siswa, guru, 
+nilai, dan laporan yang 
+sebelumnya dilakukan secara 
+manual. 
+Menunjukkan efektivitas 
+sistem web dalam 
+menggantikan pencatatan 
+manual yang tidak efisien. 
+3 
+Rancang Bangun Sistem 
+Informasi Akademik Berbasis 
+Website SDN Cipadu 2 
+Menggunakan Metode Extreme 
+Programming 
+[8] 
+Mengembangkan sistem informasi 
+menggunakan metode Extreme 
+Programming (XP) dengan 
+pendekatan iteratif berbasis 
+kebutuhan pengguna. 
+Menjadi acuan penerapan 
+metode XP dalam 
+pengembangan sistem 
+informasi berbasis web. 
+4 
+Penerapan Extreme 
+Programming dalam Sistem 
+Informasi Akademik SDN 
+Kuala Teladas 
+[9] 
+Menghasilkan sistem akademik 
+berbasis web untuk pengelolaan 
+nilai dan laporan sekolah. 
+Relevan karena sama-sama 
+menggunakan metode XP 
+untuk meningkatkan 
+fleksibilitas sistem. 
+5 
+Rancang Bangun Sistem 
+Informasi Akademik SMK 
+Negeri 1 Loea 
+[10] 
+Mengembangkan sistem akademik 
+berbasis web untuk meningkatkan 
+efisiensi pengolahan data nilai 
+siswa. 
+Mendukung penggunaan XP 
+dalam sistem akademik 
+untuk pengelolaan data yang 
+lebih efektif. 
+6 
+Implementasi Extreme 
+Programming dalam 
+Pengembangan Aplikasi Mobile 
+Pengenalan Organisasi 
+[11] 
+Menerapkan metode XP dalam 
+pengembangan aplikasi mobile 
+yang fleksibel dan adaptif. 
+Menjadi referensi penerapan 
+XP dalam pengembangan 
+sistem berbasis kebutuhan 
+pengguna. 
+ 
+Berdasarkan hasil kajian terhadap beberapa 
+penelitian terdahulu, dapat disimpulkan bahwa 
+pengembangan sistem informasi akademik berbasis 
+web telah banyak dilakukan sebagai solusi atas 
+permasalahan pengelolaan data akademik yang masih 
+bersifat manual. Penelitian oleh Saputri menunjukkan 
+bahwa penerapan sistem informasi akademik berbasis 
+web mampu meningkatkan efisiensi dan akurasi 
+pengelolaan data siswa, guru, dan nilai pada tingkat 
+sekolah menengah. Selanjutnya, Andrianto dan 
+Wijoyo membuktikan bahwa sistem informasi siswa 
+berbasis web efektif dalam menggantikan pencatatan 
+manual berbasis spreadsheet yang rawan kesalahan 
+dan memerlukan waktu pengolahan yang lama. 
+Penelitian lain yang menggunakan metode Extreme 
+Programming (XP), seperti yang dilakukan oleh 
+Sembel dan Ikasari, Ardiansah, serta Syahib, 
+menunjukkan 
+bahwa 
+metode 
+XP 
+mampu 
+menghasilkan sistem yang fleksibel, adaptif, dan 
+sesuai 
+dengan 
+kebutuhan 
+pengguna 
+melalui 
+pengembangan iteratif dan kolaboratif. Selain itu, 
+Rahman menegaskan bahwa penerapan XP dalam 
+pengembangan aplikasi memungkinkan penyesuaian 
+cepat terhadap perubahan kebutuhan pengguna. 
+Berdasarkan penelitian-penelitian tersebut, dapat 
+disimpulkan bahwa metode Extreme Programming 
+relevan 
+dan 
+efektif 
+untuk 
+diterapkan 
+dalam 
+pengembangan sistem informasi siswa berbasis 
+website di SMP Negeri 4 Tegallalang guna 
+meningkatkan efisiensi, integrasi data, dan kualitas 
+layanan akademik. 
+ 
+3. 
+METODE PENELITIAN 
+Penelitian 
+ini 
+menggunakan 
+pendekatan 
+kualitatif yang bertujuan untuk memahami secara 
+mendalam permasalahan pengelolaan data akademik 
+di SMP Negeri 4 Tegallalang serta kebutuhan 
+pengguna terhadap sistem yang akan dikembangkan. 
+Pendekatan kualitatif dipilih karena memungkinkan 
+peneliti memperoleh gambaran nyata mengenai proses 
+administrasi akademik yang berjalan, kendala yang 
+dihadapi, serta harapan pengguna terhadap sistem 
+informasi siswa berbasis website. Data dikumpulkan 
+melalui observasi langsung dan wawancara dengan 
+pihak sekolah, khususnya staf kesiswaan dan staf 
+akademik, sehingga kebutuhan sistem dapat dianalisis 
+secara komprehensif. 
+Metode pengembangan perangkat lunak yang 
+digunakan dalam penelitian ini adalah Extreme 
+Programming (XP), yang merupakan bagian dari Agile 
+Development. Metode XP dipilih karena menekankan 
+fleksibilitas, komunikasi intensif antara pengembang 
+dan pengguna, serta pengembangan sistem secara 
+bertahap melalui iterasi singkat. Dalam penerapannya, 
+XP memungkinkan penyesuaian sistem terhadap 
+perubahan kebutuhan pengguna yang sering terjadi di 
+lingkungan sekolah, sehingga sistem yang dihasilkan 
+lebih sesuai dengan kondisi lapangan. 
+Tahapan pengembangan sistem dengan metode 
+Extreme 
+Programming 
+dimulai 
+dari 
+tahap 
+perencanaan, di mana kebutuhan sistem dikumpulkan 
+dalam bentuk user story berdasarkan hasil wawancara 
+dan observasi. Tahap ini bertujuan untuk menentukan 
+fitur-fitur utama yang harus tersedia dalam sistem 
+informasi siswa. Selanjutnya, tahap perancangan 
+dilakukan dengan pendekatan desain sederhana 
+menggunakan UML dan ERD untuk menggambarkan 
+alur sistem serta hubungan antar data. Tahap 
+pengkodean dilakukan dengan mengimplementasikan 
+rancangan ke dalam kode program berbasis website 
+menggunakan bahasa pemrograman PHP dengan 
+framework Laravel serta database MySQL. Pada tahap 
+pengujian, 
+sistem 
+diuji 
+menggunakan 
+metode 
+Blackbox Testing untuk memastikan seluruh fungsi
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2141 
+berjalan sesuai dengan kebutuhan pengguna. Proses ini 
+dilakukan secara berulang pada setiap iterasi hingga 
+sistem dinyatakan layak digunakan. 
+ 
+ 
+Gambar 1. Alur Metode Extreme Programming  
+Sumber : [13] 
+ 
+Alur penelitian diawali dengan identifikasi 
+masalah melalui wawancara dan pengamatan terhadap 
+proses administrasi akademik yang masih dilakukan 
+secara manual. Tahap ini diikuti dengan studi literatur 
+untuk memperkuat landasan teori dan metode yang 
+digunakan dalam penelitian. Selanjutnya dilakukan 
+perancangan, implementasi, dan pengujian sistem 
+hingga diperoleh sistem informasi siswa yang mampu 
+membantu staf akademik dalam mengelola data secara 
+digital serta memudahkan siswa dalam mengakses 
+informasi akademik. Tahap akhir penelitian adalah 
+penarikan kesimpulan untuk menilai kesesuaian sistem 
+dengan kebutuhan pengguna dan sebagai dasar 
+pengembangan lanjutan di masa mendatang [12]. 
+ 
+4. 
+HASIL DAN PEMBAHASAN 
+4.1. Perencanaan dan Analisis Kebutuhan 
+Tahap 
+perencanaan 
+dilakukan 
+untuk 
+mengidentifikasi kebutuhan sistem informasi siswa di 
+SMP Negeri 4 Tegallalang. Pengumpulan data 
+dilakukan melalui wawancara dengan pihak sekolah 
+dan observasi proses administrasi akademik yang 
+masih bersifat manual. Hasil analisis menunjukkan 
+perlunya sistem berbasis web yang mampu mengelola 
+data siswa, guru, kelas, jadwal, dan prestasi secara 
+terintegrasi, real-time, serta mudah diakses oleh 
+admin, guru, dan siswa. 
+Kebutuhan sistem meliputi kebutuhan fungsional 
+seperti autentikasi pengguna, pengelolaan data 
+akademik, pencarian dan pelaporan data, serta 
+kebutuhan 
+nonfungsional 
+berupa 
+keamanan, 
+responsivitas tampilan, dan kompatibilitas lintas 
+perangkat. 
+ 
+Tabel 2. Ringkasan Kebutuhan Fungsional Sistem 
+No 
+Kebutuhan 
+Fungsional 
+Kebutuhan Non-
+Fungsional 
+1 
+Autentikasi pengguna 
+(login dan logout) 
+Akses melalui komputer, 
+laptop, dan smartphone 
+2 
+Pengelolaan data 
+siswa, guru, dan kelas 
+(CRUD) 
+Antarmuka responsif 
+sesuai ukuran layar 
+3 
+Penginputan nilai 
+siswa oleh guru 
+Dapat diakses melalui 
+web browser 
+4 
+Pencatatan absensi 
+siswa harian 
+Keamanan data dengan 
+autentikasi dan enkripsi 
+password 
+5 
+Dashboard jumlah 
+siswa, guru, dan kelas 
+Mendukung backup 
+database 
+6 
+Filter dan pencarian 
+data siswa 
+Framework Laravel 
+dengan arsitektur MVC 
+7 
+Laporan siswa, nilai, 
+dan absensi (PDF) 
+Mudah dikembangkan 
+dan dipelihara 
+ 
+Tabel ini merangkum fungsi utama sistem seperti 
+autentikasi pengguna, pengelolaan data siswa dan 
+guru, pencatatan prestasi, serta pembuatan laporan 
+akademik. 
+ 
+4.2. Perancangan Sistem 
+Perancangan sistem dilakukan menggunakan 
+Unified Modeling Language (UML) dan Entity 
+Relationship 
+Diagram 
+(ERD) 
+sebagai 
+dasar 
+pengembangan sistem. UML digunakan untuk 
+memodelkan 
+proses 
+dan 
+interaksi 
+pengguna, 
+sedangkan ERD digunakan untuk merancang struktur 
+basis data agar konsisten dengan kebutuhan sistem. 
+ 
+ 
+Gambar 2. Use Case Diagram Sistem Informasi 
+Siswa 
+ 
+Gambar ini menggambarkan interaksi antara 
+aktor Admin, Guru, dan Siswa dengan fungsi utama 
+sistem sesuai hak akses masing-masing.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2142 
+ 
+Gambar 3. Entity Relationship Diagram (ERD) 
+ERD menunjukkan hubungan antar entitas utama 
+seperti siswa, guru, kelas, mata pelajaran, jadwal, dan 
+prestasi sebagai dasar perancangan database. 
+Tabel 3. Struktur Tabel Utama Sistem 
+No 
+Nama Tabel 
+Field Utama 
+Keterangan 
+1 
+users 
+id_user, username, password, role 
+Menyimpan data akun pengguna (admin dan guru) 
+2 
+siswa 
+id_siswa, nisn, nama_siswa, kelas_id, 
+tahun_ajaran 
+Menyimpan data identitas siswa 
+3 
+guru 
+id_guru, nama_guru, nip, mata_pelajaran 
+Menyimpan data guru pengajar 
+4 
+kelas 
+id_kelas, nama_kelas, wali_kelas 
+Menyimpan data kelas siswa 
+5 
+mata_pelajaran 
+id_mapel, nama_mapel, guru_id 
+Menyimpan data mata pelajaran 
+6 
+nilai 
+id_nilai, siswa_id, mapel_id, nilai 
+Menyimpan data nilai siswa 
+7 
+absensi 
+id_absensi, siswa_id, tanggal, keterangan 
+Menyimpan data kehadiran siswa 
+8 
+prestasi 
+id_prestasi, siswa_id, jenis_prestasi, 
+keterangan 
+Menyimpan data prestasi siswa 
+ 
+Tabel ini menampilkan ringkasan struktur tabel 
+penting seperti tabel users, siswa, guru, kelas, dan 
+prestasi yang digunakan dalam sistem. 
+ 
+4.3. Implementasi Sistem 
+ 
+Gambar 4. Tampilan Dashboard Sistem 
+ 
+ 
+Tahap 
+implementasi 
+dilakukan 
+menggunakan 
+framework Laravel dengan database MySQL. Sistem 
+dikembangkan berdasarkan rancangan yang telah 
+dibuat, mencakup fitur utama seperti login pengguna, 
+dashboard informasi, pengelolaan data akademik, serta 
+pencatatan 
+prestasi 
+siswa. 
+Antarmuka 
+sistem 
+dirancang responsif menggunakan Tailwind CSS agar 
+dapat diakses melalui berbagai perangkat. 
+Dashboard menampilkan ringkasan jumlah 
+siswa, guru, kelas, serta visualisasi prestasi siswa 
+untuk memudahkan pemantauan data akademik. 
+ 
+4.4. Pengujian Sistem 
+Pengujian dilakukan menggunakan metode 
+Blackbox Testing untuk memastikan setiap fitur 
+berjalan 
+sesuai 
+dengan 
+kebutuhan 
+pengguna. 
+Pengujian dilakukan dari sisi admin, guru, dan siswa 
+dengan fokus pada kesesuaian input dan output sistem. 
+ 
+Tabel 4. Hasil Blackbox Testing Sistem 
+No 
+Aktor 
+Skenario Pengujian 
+Ekspektasi Sistem 
+Hasil 
+1 
+Admin 
+Login (valid & tidak valid) 
+Sistem memverifikasi akun dan mengarahkan ke 
+dashboard 
+Valid 
+2 
+Admin 
+Pengelolaan data akademik (siswa, guru, 
+kelas, mapel, jadwal, prestasi) 
+Data dapat ditambah, diubah, dan dihapus 
+dengan benar 
+Valid 
+3 
+Admin 
+Konfigurasi sistem & logout 
+Perubahan tersimpan dan sesi berakhir 
+Valid 
+4 
+Guru 
+Login & akses data 
+Guru hanya dapat melihat data sesuai hak akses 
+Valid
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2143 
+No 
+Aktor 
+Skenario Pengujian 
+Ekspektasi Sistem 
+Hasil 
+5 
+Guru 
+Akses terbatas (edit data siswa) 
+Sistem menolak akses tidak berwenang 
+Valid 
+6 
+Guru 
+Logout 
+Sistem mengakhiri sesi login 
+Valid 
+7 
+Siswa 
+Login & melihat jadwal/prestasi 
+Data ditampilkan sesuai akun siswa 
+Valid 
+8 
+Siswa 
+Akses halaman admin 
+Sistem menolak akses 
+Valid 
+9 
+Siswa 
+Logout 
+Sistem mengakhiri sesi login 
+Valid 
+ 
+Tabel ini menunjukkan bahwa seluruh skenario 
+pengujian utama, seperti login, pengelolaan data, dan 
+akses berdasarkan peran pengguna, berjalan dengan 
+hasil valid. 
+Hasil pengujian menunjukkan bahwa sistem 
+mampu menjalankan seluruh fungsi utama tanpa 
+kesalahan, serta membatasi akses pengguna sesuai 
+dengan hak masing-masing. 
+ 
+4.5. Evaluasi Iteratif Pengembangan 
+Pengembangan sistem dilakukan secara iteratif 
+menggunakan metode Extreme Programming (XP). 
+Pada iterasi pertama ditambahkan visualisasi 
+prestasi 
+siswa 
+pada 
+dashboard, 
+iterasi 
+kedua 
+menambahkan fitur pencarian dan filter data siswa, 
+dan iterasi ketiga menambahkan manajemen akun 
+admin serta penyempurnaan navigasi sidebar. 
+ 
+Gambar 5. Tampilan Dashboard Setelah Iterasi 
+Pengembangan 
+ 
+Gambar ini menunjukkan peningkatan tampilan 
+dashboard dengan grafik prestasi dan informasi 
+prestasi terbaru yang mendukung pemantauan data 
+secara visual. 
+ 
+Tabel 5. Ringkasan Pengembangan Iterasi Sistem 
+Iterasi 
+Fokus Pengembangan 
+Fitur yang Dikembangkan 
+Hasil Pengujian 
+Iterasi 
+1 
+Visualisasi data prestasi 
+Grafik prestasi enam bulan terakhir dan daftar 
+prestasi terbaru pada dashboard 
+Fitur menampilkan data akurat, 
+real-time, dan responsif 
+Iterasi 
+2 
+Efisiensi pencarian data 
+siswa 
+Pencarian dinamis dan filter data siswa 
+berdasarkan nama, kelas, dan angkatan 
+Pencarian dan filter berjalan sesuai 
+input tanpa reload halaman 
+Iterasi 
+3 
+Manajemen pengguna 
+dan navigasi 
+Manajemen akun admin (tambah, ubah, 
+hapus) dan penyempurnaan sidebar navigasi 
+Seluruh fungsi admin dan navigasi 
+berjalan tanpa error 
+ 
+Tabel ini merangkum peningkatan fitur pada 
+setiap iterasi pengembangan berdasarkan umpan balik 
+pengguna. 
+ 
+4.6. Pembahasan 
+Berdasarkan hasil implementasi dan pengujian, 
+sistem informasi siswa yang dikembangkan mampu 
+meningkatkan efisiensi pengelolaan data akademik di 
+SMP Negeri 4 Tegallalang. Penerapan metode 
+Extreme 
+Programming 
+terbukti 
+efektif 
+dalam 
+menyesuaikan sistem dengan kebutuhan pengguna 
+melalui 
+pengembangan 
+bertahap. 
+Sistem 
+ini 
+mendukung pengelolaan data yang terpusat, mudah 
+diakses, serta responsif terhadap perubahan kebutuhan 
+sekolah. 
+ 
+5. 
+KESIMPULAN DAN SARAN 
+Berdasarkan hasil pembahasan dan pengujian, 
+sistem informasi siswa berbasis web berhasil 
+dikembangkan menggunakan framework Laravel 
+dengan metode Extreme Programming (XP) melalui 
+tiga tahap iterasi yang melibatkan umpan balik 
+pengguna secara berkelanjutan. Penerapan XP terbukti 
+efektif melalui perencanaan adaptif, desain sederhana, 
+pengujian berulang, dan integrasi berkelanjutan, 
+sehingga sistem mampu memenuhi kebutuhan 
+pengguna serta menyediakan fitur utama seperti 
+pengelolaan data siswa, guru, kelas, mata pelajaran, 
+jadwal, prestasi, dan konfigurasi sistem. Sistem ini 
+meningkatkan efisiensi dan keteraturan pengelolaan 
+data akademik di SMP Negeri 4 Tegallalang, dan 
+masih berpotensi dikembangkan lebih lanjut dengan 
+penambahan fitur akademik yang lebih komprehensif 
+serta implementasi yang lebih luas di berbagai sekolah 
+sesuai kebutuhan masing-masing. 
+ 
+DAFTAR PUSTAKA  
+[1] K. Triatama, A. S. Puspaningrum, S. Sintaro, and 
+M. I. Takaendengan, “Rancang Bangun Sistem 
+Informasi Nilai Akhir Siswa Berbasis Web 
+Menggunakan Extreme Programming,” Jurnal 
+Informatika dan Rekayasa Perangkat Lunak, vol. 
+4, 
+no. 
+2, 
+pp. 
+135–140, 
+2023, 
+doi: 
+10.33365/jatika.v4i2.2581. 
+[2] D. R. Kaparang, R. Ilyas, and S. Pratasik, 
+“Perancangan 
+Sistem 
+Informasi 
+Akademik 
+Berbasis Web pada SMK,” Edutik : Jurnal 
+Pendidikan 
+Teknologi 
+Informasi 
+dan 
+Komunikasi, vol. 2, no. 5, pp. 696–703, 2022, 
+doi: 10.53682/edutik.v2i5.5923. 
+[3] T. Ardiansah, Y. Rahmanto, and Z. Amir, 
+“Penerapan 
+Extreme 
+Programming 
+Dalam 
+Sistem 
+Informasi 
+Akademik 
+SDN 
+Kuala 
+Teladas,” Journal of Information Technology,
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 2, April 2026 
+ 
+2144 
+Software Engineering and Computer Science 
+(ITSECS), vol. 1, no. 2, pp. 44–51, 2023. 
+[4] F. Ramadhan and Y. Cahyono, “Rancang Bangun 
+Sistem 
+Informasi 
+Akademik 
+Pada 
+SMK 
+Informatika Ciputat Menggunakan Metode 
+Extreme Programming,” OKTAL: Jurnal Ilmu 
+Komputer dan Sains, vol. 2, no. 07, pp. 1890–
+1898, 2023. 
+[5] B. R. Nafi, B. Rahayudi, and D. Pramono, 
+“Perancangan dan Pembuatan Sistem Informasi 
+Untuk Manajemen Reservasi Game Corner 
+Fakultas Ilmu Komputer Universitas Brawijaya 
+Berbasis 
+Website,” 
+Jurnal 
+Pengembangan 
+Teknologi Informasi dan Ilmu Komputer, vol. 1, 
+no. 1, pp. 2548–964, 2020. 
+[6] L. D. Saputri, “Rancang Bangun Sistem 
+Informasi Akademik Menggunakan Metode 
+Waterfall pada SMA Kosgoro Tangerang,” no. 1, 
+pp. 64–70, 2019. 
+[7] S. Andrianto and H. Wijoyo, “Rancang Bangun 
+Sistem Informasi Siswa Berbasis Web di Sekolah 
+Minggu 
+Buddha 
+Vihara 
+Dharmaloka 
+Pekanbaru,” 
+TIN : 
+Terapan 
+Informatika 
+Nusantara, vol. 1, no. 2, pp. 83–90, 2020. 
+[8] G. G. Sembel and I. H. Ikasari, “RANCANG 
+BANGUN SISTEM INFORMASI AKADEMIK 
+BERBASIS WEBSITE SDN CIPADU 
+2 
+MENGGUNAKAN 
+METODE 
+EXTREME 
+PROGRAMMING,” vol. 3, no. 7, pp. 1660–
+1666, 2024. 
+[9] T. Ardiansah, Y. Rahmanto, and Z. Amir, 
+“Penerapan 
+Extreme 
+Programming 
+Dalam 
+Sistem 
+Informasi 
+Akademik 
+SDN 
+Kuala 
+Teladas,” Journal of Information Technology, 
+Software Engineering and Computer Science 
+(ITSECS), vol. 1, no. 2, pp. 44–51, 2023. 
+[10] M. Irwan Syahib, “Rancang Bangun Sistem 
+Informasi 
+Akademik 
+Sekolah 
+Menengah 
+Kejuruan 
+Negeri 
+1 
+Loea,” 
+Jurnal 
+Ilmu 
+Manajemen Sosial Humaniora (JIMSH), vol. 5, 
+no. 
+1, 
+pp. 
+79–90, 
+2023, 
+doi: 
+10.51454/jimsh.v5i1.1036. 
+[11] M. F. F. Rahman, K. Darussalam, R. C. Saphira, 
+and F. Purwani, “19699-Article Text-56991-1-
+10-20240424,” Just IT : Jurnal Sistem Informasi, 
+Teknologi Informasi dan Komputer, vol. 14, no. 
+2, pp. 128–132, 2024. 
+[12] R. I. Borman, A. T. Priandika, and A. R. Edison, 
+“Implementasi Metode Pengembangan Sistem 
+Extreme Programming (XP) pada Aplikasi 
+Investasi Peternakan,” Jurnal Sistem dan 
+Teknologi Informasi (Justin), vol. 8, no. 3, p. 272, 
+2020, doi: 10.26418/justin.v8i3.40273. 
+[13] I. Y. Lim et al., “Sistem Informasi Feeder Data 
+Kependudukan berbasis Mobile,” Edumatic: 
+Jurnal Pendidikan Informatika, vol. 7, no. 1, pp. 
+30–38, 
+2023, 
+doi: 
+10.29408/edumatic.v7i1.12306.

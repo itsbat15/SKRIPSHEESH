@@ -1,0 +1,1675 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+72 
+ 
+ 
+PERANCANGAN SISTEM INFORMASI BERBASIS WEB 
+PADA BIMBINGAN BELAJAR (BIMBEL) “BNF” 
+ 
+Imam Maliki1, Karel Jaya2 , Gita Cahyani Lestari3, Debi Irawan4, Asep Wasid5 
+1,2,3 Sistem Informasi, Universitas Indonesia Membangun 
+4,5 Sistem Komputer, Universitas Indonesia Membangun  
+E-mail: imam.maliki@inaba.ac.id1, karelw68@gmail.com2 
+ 
+Abstrak—Dalam era digital yang semakin maju, kebutuhan akan sistem informasi yang 
+efisien dan efektif menjadi sangat penting, terutama dalam bidang pendidikan. Bimbingan 
+belajar merupakan salah satu sektor yang dapat memanfaatkan teknologi informasi untuk 
+meningkatkan kualitas layanan dan efektivitas pembelajaran. Penelitian ini bertujuan untuk 
+merancang sebuah sistem informasi berbasis web yang dapat mengakomodasi kebutuhan 
+operasional bimbingan belajar, mulai dari pendaftaran siswa, pengelolaan jadwal 
+pembelajaran, monitoring perkembangan belajar hingga pengelolaan pembayaran siswa. 
+Metodologi yang digunakan dalam penelitian ini mencakup perumusan masalah, 
+perancangan 
+sistem, 
+dan implementasi. 
+Analisis 
+kebutuhan 
+dilakukan dengan 
+mengumpulkan data melalui wawancara dan survei kepada pengguna potensial, termasuk 
+siswa, pengajar, dan manajemen bimbingan belajar. Hasil analisis ini kemudian digunakan 
+untuk merancang sistem informasi yang mencakup berbagai modul fungsional seperti 
+manajemen pendaftaran, pengelolaan jadwal, sistem absensi, evaluasi belajar siswa dan 
+pengelolaan pembayaran siswa. Sistem informasi yang dirancang berbasis web ini 
+diharapkan dapat memberikan kemudahan akses bagi semua pengguna yaitu siswa, guru 
+pengajar dan owner, yang memungkinkan dapat terintegersi dengan data yang terpusat, serta 
+meningkatkan efisiensi operasional bimbingan belajar. Implementasi sistem dilakukan 
+dengan menggunakan teknologi web modern yang memastikan keamanan, kehandalan, dan 
+skalabilitas. Hasil penelitian menunjukkan bahwa sistem informasi berbasis web ini dapat 
+meningkatkan efisiensi manajemen bimbingan belajar, mempermudah akses informasi bagi 
+siswa dan pengajar, serta mendukung proses pembelajaran yang lebih terstruktur dan 
+terpantau. Dengan demikian, perancangan sistem informasi ini diharapkan dapat menjadi 
+solusi yang efektif untuk mengatasi berbagai tantangan dalam pengelolaan bimbingan 
+belajar. 
+ 
+Kata kunci: Sistem Infomasi, Bimbingan Belajar, Pengolahan Pembayaran. 
+ 
+I. PENDAHULUAN 
+Bimbingan belajar BNF adalah salah satu 
+lembaga 
+yang 
+bergerak 
+di 
+dunia 
+pendidikan. 
+Bimbingan 
+belajar 
+BNF 
+merupakan lembaga bimbingan belajar 
+yang ada di DKI Jakarta khususnya daerah 
+Jakarta Barat, Menceng yang masuk ke 
+dalam kategori bentuk pendidikan non 
+formal. Bimbingan belajar BNF berdiri 
+sejak 
+tahun 
+2009. 
+Saat 
+ini 
+BimbinganBelajar BNF sudah memiliki 
+murid mencapai 125 siswa. 
+Meskipun tergolong bimbingan belajar 
+yang sudah lama berdiri, namun banyak 
+pengelolaan pada bimbingan belajar ini 
+yang masih dilakukan secara manual. Oleh 
+karena itu, diperlukan sebuah perancangan 
+sistem informasi berbasis web untuk 
+mengatasi 
+permasalahan 
+ini 
+dan 
+mendukung proses pembelajaran yang lebih 
+optimal.
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+73 
+ 
+ 
+Berikut ini adalah latar belakang yang saya 
+dapatkan dari hasil observasi: 
+ 
+1. Pendaftaran Siswa Baru 
+Proses pendaftaran siswa baru di Bimbel 
+BNF masih dilakukan secara manual 
+dengan menggunakan kertas. Proses ini 
+memerlukan waktu yang cukup lama dan 
+rawan terhadap kesalahan pencatatan serta 
+kehilangan data. Penggunaan metode ini 
+jelas tidak efisien dan membutuhkan 
+modernisasi melalui sistem digital yang 
+terintegrasi. 
+ 
+2. Pembayaran Manual 
+Sistem pembayaran di Bimbel BNF saat ini 
+masih manual, baik melalui pembayaran 
+tunai maupun transfer bank. Pendataan 
+pembayaran juga dilakukan secara manual 
+dengan menggunakan selembar kertas yang 
+kemudian 
+dilaporkan 
+kepada 
+pemilik 
+(owner). 
+Pendekatan ini tidak hanya 
+memakan 
+waktu, 
+tetapi 
+juga 
+rawan 
+kesalahan dan sulit untuk diikuti atau 
+diaudit secara akurat. 
+ 
+3. Ketiadaan Sistem E-Learning Bimbel 
+BNF belum memiliki sistem e- learning, 
+yang 
+membuat 
+pembelajaran 
+sangat 
+bergantung pada kehadiran fisik di lokasi. 
+Hal ini menjadi kendala besar ketika 
+siswa tidak bisa hadir karena alasan 
+mendesak, sakit, atau keperluan lain. 
+Tanpa e-learning, siswa yang absen akan 
+kesulitan mengejar ketertinggalan materi. 
+ 
+4. Efektivitas 
+Pembelajaran 
+yang 
+Rendah 
+Pembelajaran di Bimbel BNF saat ini 
+dianggap kurang efektif. Diperlukan sistem 
+yang dapat meningkatkan hasil belajar, 
+memberikan struktur yang lebih baik, 
+mengarahkan pembelajaran sesuai. 
+dengan kebutuhan dan minat siswa, serta 
+memastikan 
+keterlibatan 
+aktif 
+mereka 
+dalam proses belajar mengajar. 
+ 
+5. Kurangnya 
+Materi 
+Pembelajaran 
+dan Fitur Interaktif 
+Saat ini, Bimbel BNF belum menyediakan 
+materi pembelajaran yang berkualitas, 
+video pembelajaran, atau fitur interaktif 
+lainnya. 
+Pembelajaran 
+yang 
+masih 
+mengandalkan kehadiran fisik di tempat 
+bimbel menyulitkan siswa yang tidak dapat 
+hadir, karena mereka tidak memiliki akses 
+ke materi atau video pembelajaran yang 
+tersedia secara online. 
+ 
+Penelitian ini bertujuan untuk merancang 
+sebuah sistem informasi berbasis web yang 
+mampu mengatasi berbagai permasalahan 
+yang dihadapi oleh Bimbel BNF. Sistem ini 
+akan mencakup modul- modul fungsional 
+seperti 
+manajemen 
+pendaftaran, 
+pengelolaan 
+jadwal 
+pembelajaran, 
+monitoring 
+perkembangan 
+belajar, 
+pengelolaan pembayaran siswa, serta sistem 
+e-learning yang menyediakan akses ke 
+materi dan video pembelajaran berkualitas. 
+Dengan adanya sistem ini, diharapkan 
+Bimbel BNF dapat meningkatkan efisiensi 
+operasional, mempermudah akses informasi 
+bagi siswa dan pengajar, serta mendukung 
+proses pembelajaran yang lebih terstruktur 
+dan terpantau. 
+ 
+II. TINJAUAN LITERATUR 
+ 
+Pada penelitian ini dilakukan tinjauan 
+penelitian sebelumnya yang didapat dari 
+jurnal sistem informasi yang berkaitan 
+dengan penelitian. Terdapat 3 jurnal yang 
+digunakan, diantaranya:  
+1. Jurnal Sistem Informasi Bimbingan 
+Belajar pada BIMBEL Les Yuk 
+Berbasis Web Menggunakan Model 
+Waterfall 
+ 
+Bimbingan belajar adalah orientasi untuk 
+menemukan 
+cara 
+belajar 
+yang 
+tepat,
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+74 
+ 
+ 
+mengatasi kesulitan belajar dan mengatur 
+waktu belajar. Bimbel adalah layanan yang 
+memungkinkan 
+siswa 
+untuk 
+mengembangkan 
+sikap 
+dan 
+kebiasaan 
+belajar yang baik, bahan pelajaran yang 
+sesuai dengan kecepatan dan kesulitan 
+belajar, aspek tujuan yang berbeda dan 
+kegiatan belajar lainnya, sejalan dengan 
+perkembangan ilmu pengetahuan, teknologi 
+dan 
+seni 
+serta 
+kebutuhan 
+untuk 
+keterampilan 
+yang 
+berguna 
+dalam 
+kehidupan dan pengembangan pribadi 
+(Susanto 2018:12). 
+ 
+Bimbingan belajar adalah suatu proses 
+pendampingan individu untuk mengatasi 
+kesulitan belajarnya agar setelah melalui 
+proses perubahan belajar dapat mencapai 
+hasil 
+belajar 
+yang 
+optimal. 
+(Sukardi 
+2013:10) 
+ 
+Hasil penelitian ini menunjukan bahwa 
+pengunaan Sistem Informasi bimbingan 
+belajar berbasis web telah mengakomodasi 
+admin dalam mengelola data administrasi 
+menjadi lebih efektif, serta guru dan siswa 
+dalam menerima informasi baik pendaftran 
+dan keakademikan lebih mudah diakses 
+dengan internet. 
+ 
+2. Jurnal 
+Rancang 
+Bangun 
+Sistem 
+Informasi 
+Media 
+Pembelajaran 
+Berbasis 
+Website 
+(Studi 
+Kasus: 
+Bimbingan Belajar De Potlood) 
+ 
+Pengajaran 
+De 
+Potlood 
+masih 
+menggunakan kertas sebagai alat ujian,  
+yang kemudian dinilai oleh guru secara 
+manual dan diberikan kembali kepada 
+siswa. proses saat ini, ada kendala guru 
+tidak 
+dapat 
+mengetahui 
+jika 
+siswa 
+mengunduh materi dan video umum, dan 
+guru harus meringkas hasil ujian siswa 
+secara manual. Berdasarkan hal tersebut 
+maka dilakukan pengembangan aplikasi 
+yaitu perancangan dan pengembangan 
+sistem informasi media pembelajaran De 
+Potlood Tutoring berbasis web. Aplikasi ini 
+bertujuan 
+untuk 
+memberikan 
+kegiatan 
+pembelajaran yang lebih efektif kepada 
+guru dan siswa, sehingga guru dapat 
+mengunduh bahan pelajaran dan video 
+dengan lebih mudah. 
+ 
+3. Jurnal Perancangan Sistem Informasi 
+Akademik Bimbel Sinar Ilmu. 
+ 
+Bimbel Sinar Ilmu harus merancang sistem 
+yang 
+memudahkan 
+pekerjaan, 
+mengumpulkan 
+informasi 
+untuk 
+tutor 
+akademik dan membuat laporan. File atau 
+data yang diproses harus disimpan di hard 
+drive atau perangkat penyimpanan lain 
+dalam format digital dan dicadangkan jika 
+perlu. Jika terjadi kesalahan atau hal yang 
+tidak diinginkan, Bimbel Sinar Ilmu masih 
+memiliki file atau data cadangan. Informasi 
+merupakan hasil pengolahan data yang 
+membawa arti dan manfaat. 
+ 
+III. Teknik Pengumpulan Data 
+Sistem dapat abstrak atau fisis. Sistem yang 
+abstrak adalah susunan yang teratur dari 
+gagasan-gagasan atau konsepsi- konsepsi 
+saling bergantung. Misalnya, sistem teologi 
+adalah 
+susunan 
+yang 
+teratur 
+dari 
+gagasangagasan tentang Tuhan, manusia 
+dan sebagainya. Sistem yang bersifat fisis 
+adalah serangkaian unsur yang bekerja 
+sama untuk mencapai suatu tujuan (Kustina 
+et al., 2022) 
+Penelitian 
+ini 
+mengambil 
+data 
+dari 
+Bimbingan belajar BNF yang ada di kisaran 
+Jakarta. Data yang di teliti meliputi 
+bagaimana cara melakukan pendaftaran 
+siswa baru, absensi siswa, cara memberikan 
+materi pengajaran kepada siswa, bagaimana 
+cara guru mengelola dan mengajarkan 
+materi pengajra kepada siswa dan bagaiama 
+cara mengelola pembayaran yang diterima
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+75 
+ 
+ 
+dari siswa. Teknik pengumpulan data yang 
+dilakukan dalam penelitian ini adalah 
+dengan: 
+ 
+A. Observasi 
+Observasi adalah dasar ilmu pengetahuan, 
+karena para ilmuan bekerja berdasarkan 
+data, yaitu fakta mengenai dunia kenyataan 
+yang dihasilkan melalui kegiatan observasi 
+(Abubakar, 2021) . 
+Observasi 
+dikategorikan 
+ke 
+dalam 
+(Abubakar, 2021) : 
+1. Observasi partisipasi, yaitu observasi 
+yang dilakukan oleh peneliti apabila ia 
+sendiri terlibat secara langsung dalam 
+kegiatan subjek yang di observasi. 
+2. Observasi non partisipasi ialah apabila 
+peneliti melakukan observasi, tetapi ia 
+sendiri tidak melibatkan diri dalam 
+aktivitas yang dilakukan oleh subjek 
+penelitian. 
+3. Observasi sistematis ialah apabila 
+server telah menyiapkan kerangka atau 
+daftar tentang hal-hal yang akan 
+diobservasi (chek list). 
+4. Observasi eksperimen ialah observasi 
+yang dilakukan terhadap keadaan yang 
+telah disiapkan terlebih dahulu untuk 
+mengetahui 
+keadaan 
+yang 
+diujicobakan. 
+Metode observasi yang digunakan dalam 
+penelitian ini adalah observasi partisipasi, 
+dilakukan dengan cara mengamati proses 
+yang telah berjalan di bimbingan belajar 
+BNF. 
+ 
+B. Wawancara 
+Wawancara merupakan pertemuan dua 
+orang untuk bertukar informasi dan ide 
+melalui tanya jawab, sehingga dapat 
+dikonstruksikan makna dalam suatu topik 
+tertentu (Hikmawati, 2020). 
+Macam-macam wawancara 
+1. Wawancara Terstruktur 
+Peneliti atau pengumpul data telah 
+mengetahui dengan pasti tentang 
+informasi apa yang akan diperoleh 
+2. Wawancara 
+Semiterstruktur 
+Menemukan permasalahan secara 
+lebih terbuka, 
+di 
+mana 
+pihak 
+yang di ajak wawancara diminta 
+pendapat dan ide- idenya 
+3. Wawancara 
+Tak 
+Berstruktur 
+Wawancara yang bebas dimana 
+peneliti 
+tidak 
+menggunakan 
+pedoman wawancara yang telah 
+tersusun 
+secara 
+sistematis 
+dan 
+lengkap 
+untuk 
+pengumpulan 
+datanya. Metode wawancara pada 
+penelitian 
+ini 
+dilakukan 
+secara 
+langsung kepada pemilik, karyawan, 
+guru dan siswa bimbingan belajar 
+BNF 
+menggunakan 
+metode
+ 
+semiterstruktur untuk 
+mendapatkan detail gambaran proses 
+bisnis yang telah berjalan pada 
+tiap-tiap bagian selama ini. 
+ 
+C. Dokumentasi 
+Teknik 
+dokumentasi 
+adalah 
+cara 
+mengumpulkan data melalui penelaahan 
+sumber tertulis seperti buku, laporan, 
+notulen 
+rapat, 
+catatan 
+harian 
+dan 
+sebagainya 
+yang 
+memuat 
+data 
+atau 
+informasi 
+yang 
+diperlukan 
+peneliti 
+(Abubakar, 2021). 
+ 
+Dokumentasi   merupakan   catatan 
+peristiwa yang sudah berlalu. Dokumentasi 
+bisa berupa tulisan, gambar atau karya-
+karya 
+monumental 
+dari 
+seseorang 
+(Hikmawati, 2020). 
+Pengumpulan 
+data 
+melalui 
+metode 
+dokumentasi dengan cara mengumpulkan 
+dokumentasi perusahaan berupa SOP, alur 
+kerja, alur transaksi. 
+Data yang berhasil dikumpulkan kemudian 
+diolah kembali menjadi alur proses bisnis 
+dalam 
+pembuatan 
+sistem 
+informasi 
+bimbingan belajar berbasis WEB.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+76 
+ 
+ 
+SDLC atau Software Development Life 
+Cycle merupakan proses pengembangan 
+atau mengubah suatu system perangkat 
+lunak dengan menggunakan atau mengubah 
+suatu system perangkat lunak dengan 
+menggunakan 
+model-model 
+dan 
+metodologi yang digunakan orang untuk 
+mengembangkan system perangkat lunak 
+(Hasanah & Untari, 2020). 
+ 
+Proses 
+pengembangan 
+sistem 
+menggunakan metode waterfall. Model air 
+terjun (Waterfall Model) adalah pendekatan 
+klasik dalam pengembangan perangkat 
+lunak 
+yang 
+menggambarkan 
+metode 
+pengembangan 
+linier 
+dan 
+berurutan  
+(Hasanah  &  Untari,  2020). 
+ 
+Melalui pendekatan alur yang berurut mulai 
+dari 
+requirement 
+analysis, 
+design, 
+development, 
+testing, 
+maintenance 
+sebagaimana tergambar pada gambar 1 
+berikut ini. 
+ 
+IV. HASIL DAN PEMBAHASAN 
+A. Analisis Sistem Yang Sedang 
+Berjalan 
+Sistem adalah kumpulan dari unsur-unsur 
+atau 
+elemen-elemen 
+yang 
+saling 
+berhubungan dan mempengaruhi satu sama 
+lain dalam melakukan kegiatan bersama 
+untuk mencapai tujuan tertentu (Azis, 
+2022). 
+ 
+Gambar 1 Waterfall Model 
+Dalam penelitian ini, analisis sistem yang 
+berjalan dipetakan menggunakan diagram 
+aktivitas. 
+Diagram 
+aktivitas 
+ini 
+menggambarkan proses bisnis dan urutan 
+aktivitas dalam suatu proses. Tujuannya 
+adalah untuk memberikan gambaran yang 
+jelas tentang proses bisnis dan urutan 
+aktivitas sehingga lebih mudah dipahami 
+(Azis, 2022). 
+ 
+Pada bagian analisis sistem yang berjalan, 
+dapat dibuat model bisnis untuk bimbingan 
+belajar BNF yang bisa dilakukan analisi 
+lebih lanjut. Semua aktifitas kegiatan di 
+bimbingan belajar BNF masih diakukan 
+secara manual, dimana sistem ini memiliki 
+banyak kelemahan diantaranya berpeluang 
+terjadinya 
+kesalahan 
+pencatatan 
+atau 
+kelupaan pencatatan. 
+ 
+Gambar 2 menjelaskan tentang alur bisnis 
+yang sudah berjalan untuk pendaftaran dan 
+pembayaran Spp. Siswa yang mendaftar 
+datang 
+ke 
+tempat 
+bimbingan belajar 
+kemudian bertemu dengan Admin untuk 
+mengisi form registrasi dan pembayaran 
+secara manual. 
+ 
+Setelah proses pendaftaran dan pembayaran 
+spp selesai maka selanjutnya admin akan 
+menyatakan bahwa siswa tersebut sudah 
+terdaftar pada bimbel BNF dan sudah bisa 
+masuk les sesuai dengan jadwal jam masuk 
+kelas tersebut. 
+ 
+B. Perancangan Sistem 
+Perancangan sistem berisi tentang diagram 
+konteks sistem informasi kedepan, use case 
+diagram, class diagram, struktur menu dan 
+tampilan yang akan dibuat dari sistem 
+informasi berbasis Web pada Bimbel BNF.
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+77 
+ 
+ 
+ 
+Gambar 2 Flowmap Pendaftaran 
+ 
+a. Diagram konteks Sistem Informasi 
+ 
+Gambar 3 menjelaskan diagram konteks 
+sistem informasi yang akan di buat. Aktor 
+pada sistem informasi terdiri dari 4 aktor 
+yaitu : Siswa, Owner, Admin dan Guru. 
+Data Flow Diagram (DFD) atau dalam 
+bahasa Indonesia menjadi Diagram Alir 
+Data adalah representasi grafik yang 
+menggambarkan 
+aliran 
+informasi 
+dan 
+transformasi informasi yang diaplikasikan 
+sebagai data yang mengalir dari input dan 
+output (Hasanah & Untari, 2020). 
+Melalui diagram konteks ini juga bisa 
+diketahui aliran data dan informasi apa 
+yang bisa di akses oleh masing- masing 
+aktor. 
+ 
+ 
+Gambar 3 Diagram Konteks Sistem Informasi 
+Akademik berbasis WEB Bimbel BNF 
+b.  Use Case Diagram 
+ 
+Use case diagram adalah teknik 
+untuk merekam persyaratan fungsional 
+sebuah 
+system, 
+menggambarkan 
+fungsionalitas yang diharapkan dari sebuah 
+sistem. Use case diagram menekankan 
+kepada “apa” yang diperbuat oleh sistem, 
+dan bukan “bagaimana” (Hasanah & 
+Untari, 2020)
+
+==================================================
+[HALAMAN 7]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+78 
+ 
+ 
+Data Absensi 
+ 
+Gambar 4 Use Case Diagram Sistem Informasi 
+Akademik berbasis WEB Bimbel BNF 
+ 
+Gambar 4 menjelaskan tentang Use Case 
+Diagram 
+Sistem 
+Informasi 
+Akademik 
+berbasis WEB Bimbel BNF. Melalui 
+gambar use case diagram bisa diketahui 
+aksi apa yang bisa dilakukan oleh tiap aktor 
+terhadap sisteminformasi akademik pada 
+Web Bimbel BNF. 
+Use case diagram akan sangat membantu 
+kita 
+dalam 
+menyusun 
+kebutuhan- 
+kebutuhan (requirement analisis) sebuah 
+sistem. Use case diagram akan di gunakan 
+untuk 
+mengkomunikasikan 
+rancangan 
+sistem dengan klien, dan merancang test 
+case untuk semua feature yang ada pada 
+sistem (Hasanah & Untari, 2020). 
+ 
+c. Struktur Menu Sistem Informasi 
+ 
+Struktur menu sebagaimana tergambar pada 
+gambar 5 menjelaskan alur struktur yang 
+bisa diakses oleh aktor sesuai dengan 
+otorisasi masing-masing. 
+ 
+Gambar 5 Alur Struktur Menu 
+ 
+Tergambar 
+setiap 
+aktor 
+yang 
+akan 
+mengakses sistem informasi akademik 
+diwajibkan untuk login. Kondisi login ini 
+dapat menyaring aktor yang resmi terdaftar 
+atau belum terdaftar. 
+ 
+d. Hasil Design User Interface 
+ 
+Hasil design user interface merupakan 
+tampilan yang akan ditemui oleh setiap 
+aktor. Gambar 6 menjelaskan 
+tentang 
+tampilan halaman login yang akan ditemui 
+oleh semua aktor, karena tiap aktor wajib 
+untuk melakukan login. Pada halaman 
+login, aktor wajib mengisi alamat email 
+ang terdaftar dan password untk dilakukan 
+autentikasi apakah user terdaftar pada 
+sistem atau tidak. Jika user sudah terdaftar 
+makan akan diberikan ijin utk masuk ke 
+dalam sistem. Apabila aktor lupa alamat 
+Data Absensi 
+Pembayaran spp 
+Data SPP 
+Registrasi 
+E-Learning 
+Data User 
+ 
+Tugas 
+Data Siswa 
+Materi 
+Data Kelas 
+SPP 
+ 
+Data Keuangan 
+ 
+Data Guru 
+Bimbel BNF 
+Data Siswa 
+Data Jadwal 
+Siswa 
+Guru 
+Owner 
+Admin 
+Login 
+Tugas Kelas 
+Materi Kelas 
+Nilai 
+Jadwal Ajar 
+Absen Siswa 
+Jadwal
+
+==================================================
+[HALAMAN 8]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+79 
+ 
+ 
+email dan password yang telah di daftarkan 
+maka aktor bisa melakukan reset password. 
+Reset password akan memandu aktor untuk 
+melakukan pergantian password secara 
+mandiri dan secure. 
+Lain halnya apabila aktor belum melakukan 
+registrasi maka bisa memilih menu “create 
+an 
+account” 
+yang 
+berfungsi 
+untuk 
+mendaftarkan diri kedalam sistem melalui 
+alamat email aktor tersebut 
+ 
+ 
+Gambar 6 Halaman Login 
+ 
+Tampilan 
+halaman 
+ubah 
+password 
+sebagaimana tergambar pada gambar 7. 
+ 
+Gambar 7 Halaman Ubah Password 
+ 
+Apabila aktor sudah melakukan ubah 
+password dan berhasil login maka akan 
+muncul 
+tampilan 
+layar 
+beranda 
+se- 
+bagaimana tergambar pada gambar 8.  
+Pada tampilan layar beranda terlihat 
+beberapa menu tergantung actor yang login 
+seperti guru, siswa, Owner, Admin. 
+ 
+ 
+Gambar 8 Tampilan Dashboard 
+ 
+Gambar 9 Halaman Kelas 
+ 
+Halaman data kelas menampilkan seluruh 
+data kelas yang tersedia pada bimbel 
+sehingga memudahkan untuk pengelolaan 
+data kelas sebagaimana tergambar pada 
+gambar 9. 
+ 
+Gambar 10 Halaman Data Siswa 
+ 
+Gambar 10. Tampilan Halaman Data 
+Siswa. Halaman ini akan menampilkan 
+seluruh data siswa yang terdaftar pada 
+bimbel yang dikelompokkan tiap kelas. 
+Untuk melihat data detil siswa tiap kelas 
+bisa dengan cara mengklik tombol view.
+
+==================================================
+[HALAMAN 9]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+80 
+ 
+ 
+ 
+Gambar 11 halaman absesnsi siswa 
+ 
+Halaman ini akan menampilkan data 
+seluruh siswa yang sudah tedaftar oleh 
+admin. Kehadiran siswa yang rajin atau 
+yang sering tidak ikut bimbinan dapat 
+dilhat dari data ini. 
+ 
+Gambar 12 halaman data guru 
+ 
+Halaman ini enampilkan data seluruh guru 
+sesuai kelasnya. 
+ 
+ 
+Gambar 13 halaman SPP siswa 
+ 
+Halaman ini menampilkan data tagihan SPP 
+seluruh siswa yang sudah dikelompokkan 
+sesuai 
+bulannnya. 
+Pada data ini uga 
+diberikan status tagiham mana yang sudah 
+terbayar dan mana yang belum terbayar 
+sehingga 
+memudahkan 
+admin 
+untuk 
+mengelola tagian SPP siswa. 
+ 
+Gambar 14 laporan pembayaran SPP 
+ 
+Pada halaman ini ditampilkan data rekapan 
+penerimaan pembayaran SPP siswa secara 
+detail. Ada informasi nama siswa, kelas, 
+periode 
+bulan, 
+tanggal 
+dan 
+nominal 
+pembayaran yang diterima. 
+ 
+Gambar 15 Data Group Materi per Kkelas 
+ 
+Halaman ini akan menampilkan seluruh 
+materi pembelajaran yang telah diupload 
+oleh guru ke dalam sistem program. Materi 
+yang tampil pada halaman ini sudah 
+dikelompokkan per masing-masing kelas, 
+sehingga untuk melihat data detil materi 
+tiap kelas cukup dengan mengklik tombol 
+view yang berwarna biru. 
+ 
+Gambar 16 Data Materi per Kelas 
+ 
+Halaman 
+ini 
+adalah 
+halaman 
+yang 
+menampilkan 
+data 
+video 
+materi 
+pembelajaran untuk siswa. User dengan 
+level admin dan guru bisa mengakses
+
+==================================================
+[HALAMAN 10]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+81 
+ 
+ 
+menambah, mengedit dan menghapus data 
+ini. Sedangkan user dengan level siswa 
+hanya bisa melihat dan memutar video 
+tersebut. 
+Pada 
+halaman 
+ini 
+akan 
+menampilkan 
+detil 
+data 
+materi 
+pembelajaran tiap kelas dan tiap judul. 
+Video materi pembelajaran ini secara real 
+disimpan pada youtube, sedangan pada 
+program ini cukup disimpan linknya ke 
+dalam database sehingga program menjadi 
+lebih ringan. 
+ 
+ 
+Gambar 17 Data Test Siswa 
+ 
+Tampilan halaman data tes siswa pilihan 
+ganda 
+ 
+ 
+Gambar 18 Data Test Siswa Pilihan Ganda 
+ 
+Gambar 19 Data Test Siswa Essai 
+ 
+ 
+Pada 
+halaman 
+ini 
+adalah 
+halaman 
+pengelolaan data tes untuk siswa. User 
+dengan 
+level 
+admin 
+dan 
+guru 
+bisa 
+mengakses 
+menambah, 
+mengedit 
+dan 
+menghapus data tes. Sedangkan user 
+dengan level siswa hanya bisa melihat dan 
+mengerjakan tes tersebut. Halaman ini akan 
+menampilkan data materi tes tiap kelas dan 
+tiap judul. Siswa bisa mengklik dan 
+mengerjakan tes sesuai dengan kelasnya 
+masing-masing. 
+ 
+V. HASIL PENGUJIAN 
+ 
+Hasil 
+pengujian 
+pada 
+penelitian 
+ini 
+menggunakan metode black box testing. 
+Black box testing yaitu menguji perangkat 
+lunak dari segi spesifikasi fungsional tanpa 
+menguji 
+desain 
+dan 
+kode 
+program 
+(Indriyani et al., 2019). 
+ 
+Pengujian ini berfokus pada kebutuhan 
+fungsional  pada  software  berdasarkan 
+spesifikasi 
+requirement 
+yang 
+sudah 
+dirancang pada tahap awal pembuatan 
+sistem informasi. 
+Rencana 
+skenario 
+pengujian 
+sistem 
+informasi sebagaimana terlampir pada tabel 
+1 berikut ini: 
+ 
+Tabel 1 Skenario Pengujian 
+Kelas Uji 
+Butir Uji 
+Jenis 
+Pengujian 
+Halaman 
+Utama 
+Read 
+Black Box 
+Login 
+Verifikasi Akun 
+Black Box 
+Register 
+VerifikasiDaftar 
+Akun 
+Black Box 
+Lupa 
+Password 
+Verifikasi Email 
+Black Box 
+Lupa 
+Password 
+VerifikasiReset 
+Password 
+Black Box 
+Ubah 
+Password 
+Update 
+Black Box 
+Edit Profil 
+Update 
+Black Box 
+Detail 
+Profil 
+Read 
+Black Box
+
+==================================================
+[HALAMAN 11]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+82 
+ 
+ 
+Detail Guru 
+Insert 
+Black Box 
+Detail Siswa 
+Read 
+Black Box 
+Data 
+Absensi 
+Delete 
+Black Box 
+Data Kelas 
+Insert 
+Black Box 
+Pembayara 
+n SPP 
+Read 
+Black Box 
+E-Learning 
+E-Learning 
+Black Box 
+ 
+Pada tabel 2 berikut ini dilakukan pengujian 
+dengan cara login ke dalam sistem dengan 
+2 kondisi yaitu: mengisi data login dan 
+tidak mengisi data login. 
+ 
+Tabel 2 Hasil Pengujian Halaman Utama dan Login 
+ 
+Skenario 
+Langkah Uji 
+Hasil yang 
+diharapka n 
+Respon 
+Sistem 
+Status 
+Masuk 
+Halaman 
+Utama 
+mengguna
+kan 
+internet 
+Membuka 
+Aplikasi 
+Halaman 
+utama 
+Halaman 
+utama 
+Diterima 
+Menekan 
+tombol 
+login 
+dengan 
+data 
+lengkap 
+terisi 
+▪ Membuka 
+Aplikasi 
+▪ Menuju 
+kehalaman 
+login 
+▪ Mengisi data 
+login 
+Menekan 
+tombol login 
+Masuk ke 
+halaman 
+utama 
+sebagai 
+aktor 
+Masuk ke 
+halaman 
+utama 
+sebagai 
+aktor 
+Diterima 
+Menekan 
+tombol 
+login 
+dengan 
+data tidak 
+teris 
+▪ Membuka 
+aplikasi 
+▪ Menuju ke 
+halamn  
+login 
+▪ Tidak 
+Mengisi 
+data login 
+▪ Menekan 
+tombol login 
+▪ Mengisi data 
+register 
+▪ Menekan 
+tombol 
+register 
+Pesan 
+notifikasi 
+gagal login 
+Pesan 
+notifikasig
+agal login 
+Diterima 
+ 
+Tabel 3 merupakan pengujian register 
+dengan data yang terisi secara lengkap dan 
+tidak lengkap berikut dengan respon yang 
+dihasilkan oleh sistem. 
+ 
+ 
+ 
+ 
+Tabel 3 Hasil Pengujian Register 
+Skenario 
+Langkah Uji 
+Hasil yang 
+diharapkan 
+Respon 
+Sistem 
+Status 
+Meneka 
+ntombol 
+Register 
+dengan 
+data 
+lengkap 
+terisi 
+Membuka 
+aplikasi 
+Menuju ke 
+halaman register 
+ 
+Mengisi data 
+register 
+Menekan tombol 
+register 
+Pesan 
+notifikasi 
+Berhasil Daftar 
+akun 
+Pesan 
+notifikasi 
+Berhasil 
+Daftar 
+akun 
+Diteri 
+ma 
+Menekan 
+tombol 
+register 
+dengan 
+data tidak 
+lengkap 
+terisi 
+▪ Membuka 
+aplikasi 
+▪ Menuju 
+ke 
+halaman 
+register 
+Pesan 
+notifikasi gagal 
+register 
+Pesan 
+notifikasi 
+gagal 
+register 
+Diteri 
+ma 
+ 
+Tabel 4 dilakukan pengujian lupa password 
+dengan memasukkan password dan email 
+yang 
+ 
+Tabel 4 Hasil Pengujian Password 
+Skenario 
+Langkah Uji 
+Hasil yang 
+diharapkan 
+Respon 
+Sistem 
+Status 
+Menekan 
+tombol 
+Lupa 
+Passwor 
+d dengan 
+email 
+yang 
+benar 
+▪ Membuka 
+aplikasi 
+▪ Menuju ke 
+halaman 
+login 
+▪ Menekan 
+tombol lupa 
+passw ord 
+▪ Mengisi 
+data email 
+▪ Menekan 
+tombol 
+kirim reset 
+password 
+Pesan 
+notifikasi 
+berhasil reset 
+password yang 
+masuk ke 
+dalam email 
+Pesan 
+notifikasi 
+berhasil 
+reset 
+password 
+yang 
+masuk ke 
+dalam 
+email 
+Diteri 
+ma 
+Meneka n 
+tombol 
+lupa 
+passwor d 
+dengan 
+email 
+yang 
+salah 
+▪ Membuka 
+aplikasi 
+Menujuke 
+halaman 
+▪ Menek an 
+tombol lupa 
+password 
+▪ Mengisi data 
+email 
+▪ Menek an 
+tombol 
+kirim reset 
+password 
+Pesan 
+notifikasi 
+email tidak 
+terdaftar 
+Pesan 
+notifikasi 
+email 
+tidak 
+terdaftar 
+Diteri 
+ma
+
+==================================================
+[HALAMAN 12]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+Prodi Sistem Informasi, Universitas Inaba, Jakarta
+83 
+ 
+ 
+Pada 
+tabel 
+5 
+dilakukan 
+pengujuan 
+perubahan password dengan 2 kondisi data 
+terisi dengan lengkap dan data tidak terisi 
+dengan lengkap. 
+ 
+Tabel 5 Hasil Pengujian Ubah Password 
+Skenario 
+Langkah Uji 
+Hasil 
+yang 
+diharapk
+a 
+n 
+Respon 
+Sistem 
+Status 
+Menekan 
+tombol 
+Ubah 
+Passwor 
+d dengan 
+data terisi 
+lengkap 
+▪ Masuk ke 
+dalam 
+halaman 
+ubah 
+password 
+dihala 
+man 
+utama 
+▪ Mengisi 
+ubah 
+password 
+lengkap 
+▪ Menekan 
+tombol 
+ubah 
+passwo 
+rd 
+Pesan 
+notifikasi 
+berhasil 
+reset 
+password 
+yang 
+masuk 
+ke dalam 
+email 
+Pesan 
+notifikasi 
+berhasil 
+reset 
+password 
+yang 
+masuk ke 
+dalam 
+email 
+Diteri 
+ma 
+Menekan 
+tombol 
+Ubah 
+Password 
+dengan 
+data terisi 
+tidak 
+lengkap 
+▪ Masuk ke 
+dalam 
+halaman 
+ubah 
+password 
+dihala 
+man 
+utama 
+▪ Mengisi 
+ubah 
+password 
+tidak 
+lengkap 
+▪ Menekan 
+tombol 
+ubah 
+password 
+Pesan 
+notifikasi 
+email 
+tidak 
+terdaftar 
+Pesan 
+notifikasi 
+email tidak 
+terdaftar 
+Diteri 
+ma 
+Tabel 
+6 
+dilakukan 
+pengujian 
+untuk 
+merubah profil pengguna dan di dapatkan 
+hasilnya sebagaimana berikut: 
+ 
+Tabel 6 Hasil Pengujian Edit Profil 
+Skenario 
+Langkah 
+Uji 
+Hasil yang 
+diharapka 
+n 
+Respon 
+Sistem 
+Status 
+Meneka n 
+tombol 
+Edit 
+Profil 
+dengan 
+data terisi 
+lengkap 
+▪ Masuk 
+ke 
+dalam 
+halam 
+an edit 
+profil 
+dihala 
+man 
+utama 
+▪ Mengi 
+si edit 
+profil 
+▪ Menek 
+an 
+tombol 
+edit 
+profil 
+Pesan 
+notifikasi 
+berhasil 
+edit profil 
+Pesan 
+notifik asi 
+berhasil 
+editprofil 
+Diteri 
+ma 
+ 
+Tabel 7 merupakan hasil dari pengujian 
+proses melihat materi video pembelajaran, 
+maka di dapatkan sebagaimana berikut : 
+ 
+Tabel 7 Hasil Pengujian Melihat Materi Video 
+Pembelajaran 
+Skenario 
+Langkah 
+Uji 
+Hasil yang 
+diharapka 
+n 
+Respon 
+Sistem 
+Status 
+Meneka n 
+tombol e- 
+Learning 
+▪ Menek 
+an 
+tombol 
+detail 
+sesui 
+dengan 
+kelas 
+yang 
+mau 
+diihat 
+materi 
+nya 
+Menampil 
+kan materi 
+yan jika 
+diklik akan 
+memutar 
+video 
+youtube 
+Menampi 
+lkan 
+materi 
+yan jika 
+diklik 
+akan 
+memutar 
+video 
+youtube 
+Diteri 
+ma 
+ 
+ 
+VI. KESIMPULAN 
+Dengan adanya Sistem Informasi Bimbinan 
+Belajar 
+BNF 
+berbasis 
+web 
+maka 
+pegelolaan  bimbingan belajar menjadi 
+lebih baik, mudah dan efisien. Siswa yang 
+ada kendala jadwal belajar secara offline 
+bisa mengambil bimbingan secara online 
+yang lebih fexibel untuk waktunya, bisa 
+diakses dimana saja dan kapan saja selama 
+ada koneksi internet. Guru juga bisa
+
+==================================================
+[HALAMAN 13]
+==================================================
+
+Jurnal Informatika & Komputasi 
+Vol. 18 - Nomor 2 - Oktober 2024 
+ISSN: 1412-0232 
+Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid 
+Prodi Sistem Informasi, Universitas Inaba, Jakarta 
+84 
+ 
+ 
+mengelola materi dengan lebih baik dan 
+semua materi tersimpan di dalam database 
+yang lebih rapih dan paperless. 
+ 
+VII. 
+DAFTAR PUSTAKA 
+Abubakar, 
+R. 
+(2021). 
+Pengantar 
+Metodologi Penelitian (Cetakan Pertama). 
+SUKA-Press UINSunan Kalijaga. 
+Asosiasi 
+Industri 
+Sepeda 
+Motor 
+Indonesia. (2022). Statistic Distribution 
+Motorcycle.Aisi.or.Id. 
+https://www.aisi.or.id/statistic/ 
+Audrilia, M., & Budiman, A. (2020). 
+Perancangan Sistem Informasi Manajemen 
+Bengkel Berbasis Web (Studi Kasus: 
+Bengkel Anugrah). Jurnal Madani: Ilmu 
+Pengetahuan, Teknologi, Dan Humaniora, 
+3(1),1–12. 
+https://doi.org/10.33753/madani.v3i1.78 
+Azis, N. (2022). Analisis Perancangan 
+Sistem Informasi (N. S. Wahyuni, Ed.; 
+Cetakan Pertama). PT. Widina Bhakti 
+Persada. 
+Badan 
+Pusat  
+Statistik. 
+(2018). 
+Perkembangan 
+Jumlah 
+Kendaraan 
+Bermotor Menurut Jenis (Unit), 2015. 
+Bps.Go.Id. 
+https://www.bps.go.id/indicator/17/57/3/per
+kembangan-jumlah-kendaraan- bermotor-
+menurut- jenis.html 
+Hasanah, F. N., & Untari, R. S. (2020). 
+Rekayasa 
+Perangkat 
+Lunak 
+(M. 
+Suryawinata, 
+Ed.; 
+Cetakan 
+Pertama). 
+UMSIDA Press. 
+ Hikmawati, F. (2020). Metodologi 
+Penelitian (Cetakan Ke-4). Rajawali Pers. 
+Indriyani, F., Yunita, Muthia, D. A., 
+Surniandari, A., & Sriyadi. (2019). 
+Analisa Perancangan Sistem Informasi 
+(Cetakan Pertama). Graha Ilmu. 
+Kementrian 
+Perindustrian. 
+(2021, 
+November 9). Menperin: RI Siap Jadi 
+Basis Produksi dan Hub Ekspor Sepeda 
+Motor 
+Vespa.  
+Kemenperin.Go.Id. 
+https://kemenperin.go.id/artikel/22917/M 
+enperin:-RI-Siap-Jadi-Basis-Produksi- dan-
+Hub-Ekspor- Sepeda-Motor-Vespa 
+Kustina, K. T., Nurhayati, Pratiwi, E., 
+Hertati, L., Qodari, A., Nurhayati, A., Jaya, 
+A., Saefullah, A., Marthalia, D., & Munim, 
+A. 
+(2022). 
+SISTEM 
+INFORMASI 
+MANAJEMEN. 
+https://www.researchgate.net/publication/ 
+36495 4469 
+Migunani. (2022). Rekayasa Perangkat 
+Lunak (M. C. Wibowo, Ed.; Pertama). 
+YPAT 
+& 
+Universitas 
+STEKOM

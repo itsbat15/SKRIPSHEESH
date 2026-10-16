@@ -1,0 +1,665 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1424 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+SISTEM INFORMASI BIMBINGAN BELAJAR INDO PRESTASI 
+DAN ENGLISH FOR COMMUNICATION  
+ 
+Muhammad Ramadhan1, Nur Alam Arifin, M. Kom2 
+ 
+1,2Universitas Indraprasta PGRI 
+Jalan Raya Tengah No 80, Kelurahan Gedong, Pasar Rebo, Jakarta Timur 
+ 1murama1997@gmail.com, 2alamarifin@gmail.com 
+ 
+ABSTRAK 
+Bimbingan belajar Indo Prestasi dan English For Communication merupakan instansi pendidikan dalam 
+pelajaran umum maupun bahasa inggris. Sistem informasi bimbingan belajar Indo Prestasi dan English For 
+Communication masih menggunakan sistem manual, sehingga penulis menilai masih kurang efektif sistem 
+yang ada sekarang, diantaranya terlalu banyak proses menulis pada pendataan, penyimpanan data pada 
+bimbingan belajar Indo Prestasi dan English For Communication masih menggunakan sistem pembukuan, 
+pencarian data akan memakan waktu lama karena harus mencari kertas satu per satu pada sebuah buku 
+laporan, dan pembuatan laporan masih memerlukan banyak penulisan sehingga besar kemungkinan adanya 
+kesalahan perhitungan dan pendataan dalam pembuatan laporan. Tujuan dari penelitian ini adalah membuat 
+sistem informasi yang lebih efektif dan efisien dari sistem yang sudah digunakan pada bimbingan belajar 
+Indo Prestasi dan English For Communication, membuat penyimpanan data transaksi yang lebih aman dan 
+mudah dibanding menggunakan kertas, membuat proses pencarian data lebih cepat, dan membuat laporan 
+dengan lebih efektif dibanding menggunakan sistem pembukuan. Metode yang digunakan pada penelitian ini 
+adalah metode grounded research dengan pengembangan sistem menggunakan metode waterfall. Hasil dari 
+penelitian ini adalah aplikasi sistem informasi berbasis Netbeans dan menggunakan database MySQL 
+ 
+Kata Kunci: Indo Prestasi dan English For Communication, Informasi, Sistem Informasi, Netbeans, MySQL 
+ 
+ABSTRACT 
+Indo Prestasi tutoring and English For Communication are educational institutions in general and English 
+lessons. The Indo Prestasi tutoring information system and English For Communication still use a manual 
+system, so the authors consider the current system ineffective, including too many writing processes for data 
+collection, data storage on Indo Prestasi tutoring and English For Communication still using a bookkeeping 
+system, searching for data will take a long time because you have to look for papers one by one in a report 
+book, and making reports still requires a lot of writing so it is likely that there are errors in calculations and 
+data collection in making reports. The purpose of this research is to make an information system that is more 
+effective and efficient than the systems that have been used in Indo Prestasi tutoring and English For 
+Communication, to make transaction data storage safer and easier than using paper, make the data search 
+process faster, and make reports more effectively than using a bookkeeping system. The method used in this 
+research is grounded research method with system development using the waterfall method. The result of this 
+research is an information system application based on Netbeans and using MySQL database 
+ 
+Keywords: Indo Prestasi and English For Communication, Information, Administration, Netbeans, MySQL 
+ 
+ 
+PENDAHULUAN 
+Bimbingan belajar Indo Prestasi dan Englis For 
+Communication adalah sebuah instansi yang 
+bergerak pada bidang pendidikan, dalam 
+instansi tersebut masih menggunakan media 
+kertas dalam transaksi maka sering terjadi 
+kesalahan perhitungan dan sulit untuk mencari 
+data. Kegunaan sistem informasi itu sendiri 
+berguna untuk mengumpulkan, mengolah dan 
+menyediakan data dalam bentuk database agar 
+mempermudah dalam membuat sebuah laporan. 
+Oleh karenanya sangat diperlukan sistem 
+informasi berbasis komputer bagi Bimbingan 
+belajar 
+Indo 
+Prestasi 
+dan 
+English 
+For 
+Communication agar dapat memanajemen  data 
+dengan baik. 
+ 
+Berdasarkan dtitemukannya masalah tersebut, 
+penulis 
+menawarkan 
+sebuah 
+solusi 
+bagi 
+Bimbingan belajar Indo Prestasi dan Englis For 
+Communication 
+agar 
+mempunyai 
+sistem 
+informasi yang lebih baik. Solusi yang penulis 
+tawarkan adalah “Sistem informasi Bimbingan 
+belajar 
+Indo 
+Prestasi 
+dan 
+English 
+For
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1425 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+Communication“. Penggunaan komputer akan 
+meningkatkan kinerja dari para karyawan yang 
+ada pada Bimbingan belajar Indo Prestasi dan 
+Englis For Communication, sehingga sistem 
+informasi pun akan lebih berguna. 
+ 
+Pengertian sistem informasi adalah sistem 
+penyedia informasi dengan cara sedemikian 
+rupa sehingga bermanfaat bagi penerima 
+(Nurlela, 2013). detailnya, sistem informasi 
+adalah entitas yang terdiri dari software, 
+brainware dan hardaware yang bekerjasama 
+menyediakan data yang diolah sehingga 
+berguna dan bermanfaat untuk penerima data 
+(Herliana & Rasyid, 2016).  
+ 
+Perancangan adalah sebagai proses aplikasi 
+berbagai prinsip dan teknik bagi tujuan 
+pendefinisian tersebut, suatu sistem atau proses 
+dalam 
+detail 
+yang 
+memadai 
+untuk 
+memungkinkan realisasi fisiknya (Siregar & 
+Melani, 2019).  
+ 
+Java Netbeans adalah sebuah IDE (integrated 
+development environment) open source yang 
+sering kali diasosiasikan dengan Java. Akan 
+tetapi bila diperhatikan IDE yang satu ini tidak 
+hanya dapat digunakan sabagai IDE untuk 
+membuat proyek-proyek Java saja, melainkan 
+juga proyek seperti web service. 
+ 
+XAMPP adalah web server yang dapat 
+dipasang pada sistem operasi. Dalam paketnya 
+sudah terkandung PHP, MySql, Apache, dan 
+pustaka bantu lainnya. XAMPP juga berguna 
+untuk sistem operasi windows, linux, Macos 
+maupun 
+solaris 
+sehinggamudah 
+dalam 
+membuat web server multiplatform (Dwi 
+Priyanti, 2013). XAMPP bersifat open source 
+yang mampu menampung memori berkapasitas 
+besar, MySQL menjadi database paling sering 
+digunakan para programmer web. MySQL dapat 
+digunakan didua operating system yang sangat 
+populer saat ini, yaitu Linux dan Windows. 
+MySQL yang merupakan GPL.  
+Dari  kondisi yang ada, rumusan masalah 
+adalah sebagai berikut: Media sarana dan 
+prasarana yang kurang memadai. Sistem 
+transaksi dan pendataan yang masih manual, 
+sehingga admin masih mencatat didalam buku 
+untuk pendataan. Masih terjadi kesalahan 
+dalam menghitung pendapatan tiap bulannya. 
+Belum adanya sistem informasi yang otomatis. 
+ 
+Berdasarkan  latar  belakang,  maka tujuan dari 
+penelitian tersebut adalah sebagai berikut:  
+Membuat aplikasi berbasis java netbeans untuk 
+bimbingan belajar Indo Prestasi dan (EFC) 
+English For Communication. Database yang 
+digunakan 
+adalah 
+MySQL 
+dan 
+bahasa 
+pemrograman java dengan aplikasi netbeans.  
+Aplikasi dibuat hanya untuk mengolah data 
+pada saat input data siswa, pembayaran spp 
+maupun pendaftaran, dan membuat laporan.  
+ 
+Manfaat 
+yang 
+di 
+dapatkan 
+adalah 
+mempermudah 
+instansi 
+dalam 
+melakukan 
+transaksi dengan perhitungan yang akurat. 
+Membantu 
+dan 
+meningkatkan 
+kinerja. 
+Mengurangi penggunaan media buku untuk 
+pembayaran dan pembuatan laporan 
+ 
+METODE PENELITIAN 
+Penelitian ini dilakukan di Bimbingan belajar 
+Indo Prestasi dan English For Communication yang 
+beralamat di Perumahan griya kenari mas Blok 
+C2/24 Jl. Narogong, Kecamatan Cileungsi, 
+Kota Bogor, Jawa Barat. 
+ 
+Desain 
+penelitian 
+menggunakan 
+metode 
+grounded research yaitu metode penelitian 
+menggunakan analisis dan berdasarkan fakta, 
+dengan 
+tujuan 
+menentukan 
+konsep,  
+membuktikan teori, mengembangkan teori 
+mengadakan  
+pengamatan, 
+analisis 
+dan 
+pengumpulan data pada waktu bersamaan. 
+Dalam penelitian ini data merupakan sumber 
+teori atau teori berdasarkan data. 
+ 
+Desain yang digunakan dalam grounded 
+research adalah studi perbandingan untuk 
+menentukan seberapa jauh suatu masalah 
+berlaku di umum. Penelitian bertujuan untuk 
+menetukan 
+konsep, 
+maksudnya 
+membandingkan kasus tersebut dengan kasus 
+yang serupa. 
+Model pengembangan bersifat linear dari awal 
+pengembangan 
+sistem 
+yaitu 
+pemeliharaan 
+sistem itu sendiri. Jika tahap sebelumnya belun 
+selesai tidak akan lanjut ke tahap selanjutnya 
+Tahap-tahap pengembangan model waterfall 
+adalah sebagai berikut:
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1426 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+ 
+Gambar 1 Metode Waterfall 
+ 
+Ada beberapa metode pengumpulan data yang 
+digunakan dalam penelitian, yaitu : 
+1. Studi kepustakaan 
+Pengumpulan data dan informasi dari 
+kutipan-kutipan 
+buku-buku, 
+peraturan 
+perundang-undangan, serta hasil laporan 
+dan bahan lainnya yang berkaitan dengan 
+penelitian ini. Dari bahan-bahan tersebut 
+diambil teori-teori yang dapat dijadikan 
+landasan untuk menganalisa masalah yang 
+diketemukan dalam penelitian. Dalam 
+penelitian ini studi kepustakaan juga 
+dilakukan untuk membantu menemukan 
+teori 
+dan 
+materi 
+tambahan 
+yang 
+dibutuhkan, 
+beberapa 
+buku 
+yang 
+berhubungan 
+dengan 
+permasalahan 
+digunakan sebagai referensi. 
+2. Studi lapangan 
+a. Wawancara 
+merupakan 
+pembuktian 
+terhadap  
+sebuah keterangan atau informasi yang 
+didapat 
+sebelumnya. 
+Wawancara 
+adalah proses mendapatkan keterangan 
+untuk sebuah penelitian dengan cara 
+bertatap 
+muka 
+dan 
+menanyakan 
+pertanyaan antara pewawancara dengan 
+narasumber 
+dengan 
+mengikuti 
+interview guide (panduan wawancara) 
+(Sarwo, 2016). Berdasarkan definisi 
+wawancara mendalam tersebut, maka 
+penulis dapat meyimpulkan bahwa 
+wawancara mendalam adalah suatu 
+cara 
+mengumpulkan 
+data 
+atau 
+informasi untuk sebuah penelitian, 
+yang 
+dimana 
+cara 
+untuk 
+mengumpulkan data atau informasi 
+tersebut dilakukan dengan cara bertatap 
+muka 
+langsung 
+dengan 
+informan 
+sehingga data yang didapatkan lebih 
+lengkap dan akurat karena langsung 
+didapat dari narasumbernya. 
+b. Observasi 
+Observasi 
+merupakan 
+proses 
+pengamatan dan pencatatan perilaku 
+secara 
+sistematis 
+untuk 
+tujuan 
+pembuatan instruksi, manajemen, dan 
+layanan bagi anak lainnya (Novianti, 
+2012). Teknik pengumpulan data 
+dengan 
+diberikan 
+beberapa 
+dokumen 
+mengenai 
+sistem 
+informasi oleh staff admin Bimbel 
+dan Kursus Indo Prestasi & EFC 
+(English For Communication). 
+c. Waktu 
+Studi lapangan ini dilaksanakan mulai 
+bulan maret 2020 hingga bulan juni 
+2020. 
+ 
+HASIL DAN PEMBAHASAN 
+Berdasarkan 
+latar 
+belakang 
+yang 
+telah 
+diuraikan, masalah yang dapat diidentifikasikan 
+pada proses sistem informasi bimbingan belajar 
+Indo 
+Prestasi 
+& 
+(EFC) 
+English 
+For 
+Communication antara lain: 
+1. Bagaimana membuat aplikasi berbasis java 
+netbeans 
+yang 
+bisa 
+diterapkan 
+pada 
+bimbingan belajar Indo Prestasi dan (EFC) 
+English For Communication dan bisa 
+digunakan dengan lebih baik daripada 
+sistem yang sedang berjalan sekarang. 
+2. Membantu 
+mengefektifkan 
+dan 
+mengefisienkan 
+waktu 
+dalam 
+proses 
+pembuatan laporan. 
+ 
+Penulis menggambarkan sistem yang diusulkan 
+dalam bentuk DFD (Data Flow Diagram). 
+Diagram Aliran Data atau Data Flow Diagram 
+(DFD) adalah alat yang menggambarkan aliran 
+data melalui sistem dan kerja atau pengolahan 
+yang dilakukan oleh sistem tersebut.  Berikut 
+adalah gambaran sistem yang diusulkan oleh 
+penulis untuk Indo Prestasi dan English For 
+Communication: 
+ 
+ 
+Gambar 2 Diagram Konteks 
+ 
+ERD (Entity Relationship Diagram) adalah 
+teknik pendekatan yang menggambarkan atau
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1427 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+menyatakan hubungan antar model. Hubungan 
+utama dari ERD adalah menunjukan hubungan 
+(Relationship), dan objek data (Entity) yang 
+ada pada Entity berikutnya (Fridayanthie & 
+Mahdiati, 2016). 
+ 
+Gambar 3 ERD (Entity Relationship Diagram) 
+ 
+Tampilan Login 
+ 
+Gambar 4 Tampilan Layar Login 
+ 
+Admin Input username dan password sesuai 
+dengan database agar dapat mengakses sistem, 
+lalu setelah klik sign insetelah itu akan muncul 
+tampilan menu utama, jika belum mempunyai 
+akun masuk ke dalam form registrasi dengan 
+klik Registrasi agar dapat melakukan login. 
+ 
+Tampilan Menu 
+ 
+Gambar 5 Tampilan Layar Menu 
+Pada tampilan menu, admin sudah dapat 
+mengakses sistem sesuai dengan kebutuhan. 
+Misalnya 
+meng-input 
+data 
+siswa, 
+data 
+administrasi, 
+data 
+transaksi 
+serta 
+dapat 
+menentukan biaya tergantung tingkatan kelas  
+dan menyimpannya ke dalam database. 
+ 
+Tampilan Data Siswa 
+ 
+Gambar 6 Tampilan Form Input Data Siswa 
+ 
+Pada form input data siswa, admin dapat 
+menyimpan, merubah, menghapus, mencari dan 
+mencetak data siswa lalu menyimpannya ke 
+dalam database.dari form ini dapat langsung 
+melakukan transaksi administrasi.  
+ 
+Tampilan Administrasi 
+ 
+Gambar 7 Tampilan Form Input Administrasi 
+ 
+Pada 
+form 
+administrasi, 
+admin 
+dapat 
+menambah, 
+menghapus, 
+menghitung 
+total 
+pembayaran 
+lalu 
+setelah 
+transaksi 
+dapat 
+disimpan ke dalam database.dari form ini dapat 
+langsung melakukan melihat data administrasi.
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1428 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+Tampilan Pembayaran SPP 
+ 
+Gambar 8 Tampilan Form Pembayaran SPP 
+ 
+Pada pembayaran spp, admin dapat menambah, 
+menghapus, menghitung total pembayaran lalu 
+setelah transaksi dapat disimpan ke dalam 
+database.dari form ini dapat langsung dicetak 
+dan melihat data pembayaran spp.  
+ 
+Tampilan Setting 
+ 
+Gambar 9 Tampilan Setting 
+ 
+Pada tampilan setting data program admin 
+dapat melihat, merubah dan menambah biaya 
+SPP dari masing-masing tingkatan kelas, data 
+dapat dicetak jika pada saat data dibutuhkan 
+dapat langsung dismpan ke dalam database.  
+ 
+Tampilan Data Siswa 
+ 
+Gambar 10 Tampilan Data Siswa 
+Tampilan Struk Administrasi 
+ 
+Gambar 11 Tampilan Struk Administrasi 
+ 
+Tampilan Struk Pembayaran SPP 
+ 
+Gambar 12 Tampilan Struk Pembayaran SPP 
+ 
+Tampilan Kartu Siswa 
+ 
+Gambar 13 Tampilan Kartu Siswa 
+ 
+SIMPULAN DAN SARAN 
+Berdasarkan hasil pengembangan sistem yang 
+telah dibuat, prnulis membuat suatu kesimpulan 
+dan beberapa saran yang berhubungan dengan 
+bahasan pada bab sebelumnya. Simpulan yang 
+dapat diambil adalah sebagai berikut: Sistem 
+informasi bimbingan belajar INDO PRESTASI 
+dan 
+(EFC) 
+English 
+For 
+Communication 
+berbasis java netbeans dibuatkan sebuah 
+software aplikasi yang  mampu menunjang
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021 
+Jakarta, 14 Januari 2021 
+ 
+P-ISSN:2527-5321 
+E-ISSN:2527-5941 
+ 
+1429 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication 
+ 
+segala pelaporan pengelolaan data agar menjadi 
+lebih cepat, akurat dan mudah diakses juga 
+efektif dan efisien. Diterapkannya Sistem 
+informasi bimbingan belajar INDO PRESTASI 
+dan 
+(EFC) 
+English 
+For 
+Communication 
+merupakan salah satu langkah maju dalam 
+penerapan teknologi informasi. 
+ 
+Sejalan dengan sistem infomasi usulan yang 
+penulis buat maka, penulis memberikan saran 
+kepada bimbingan belajar INDO PRESTASI 
+dan (EFC) English For Communication dalam 
+rangka pengembangan sistem aplikasi yang 
+baru, 
+diantaranya: 
+Dengan 
+sistem 
+yang 
+diterapkan pada bimbingan belajar INDO 
+PRESTASI 
+dan 
+(EFC) 
+English 
+For 
+Communication diharapkan bagi para Pengurus 
+ataupun petugas agar terus meningkatkan 
+kinerja. Dengan adanya sistem ini dapat 
+mewujudkan transparansi dan akuntabilitas 
+pengelolaan data pada bimbingan belajar INDO 
+PRESTASI 
+dan 
+(EFC) 
+English 
+For 
+Communication. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DAFTAR PUSTAKA 
+ Dwi Priyanti, S. I. (2013). Sistem Informasi Data 
+Penduduk Pada Desa Bogoharjo Kecamatan 
+Ngadirojo 
+Kabupaten 
+Pacitan. 
+IJNS 
+- 
+Indonesian Journal on Networking and 
+Security. 
+https://doi.org/10.1123/IJNS.V2I4.181 
+Herliana, A., & Rasyid, P. M. (2016). Sistem 
+Informasi 
+Monitoring 
+Pengembangan 
+Software Pada Tahap. Jurnal Informatika. 
+Novianti, R. (2012). Teknik Observasi bagi 
+pendidikan anak usia dini. Educhild. 
+Nurlela, F. (2013). Aplikasi SMS Gateway Sebagai 
+Sarana Penunjang Informasi Perpustakaan 
+Pada Sekolah Menegah Pertama Negeri 1 
+Arjosari. Indonesian Journal on Networking 
+and Security. 
+ Sarwo, E. F. R. (2016). Teori Wawancara 
+Psikodignostik. In PT Leutika Nouvalitera. 
+Siregar, H. F., & Melani, M. (2019). Perancangan 
+Aplikasi Komik Hadist Berbasis Multimedia. 
+Jurnal 
+Teknologi 
+Informasi. 
+https://doi.org/10.36294/jurti.v2i2.425

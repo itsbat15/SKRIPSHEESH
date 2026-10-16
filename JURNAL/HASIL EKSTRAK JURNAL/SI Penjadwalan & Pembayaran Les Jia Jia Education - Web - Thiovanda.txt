@@ -1,0 +1,564 @@
+==================================================
+[HALAMAN 1]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+1 
+ 
+PERANCANGAN SISTEM INFORMASI PENCATATAN 
+PENJADWALAN DAN PEMBAYARAN LES BERBASIS WEB 
+Veren Thiovanda 1)  
+ 
+1)  Sistem Informasi Universitas Tarumanagara 
+Jl.Letjen S.Parman No. 1, Jakarta, 11440, Indonesia 
+email : veren.825220067@stu.untar.ac.id  
+ 
+ 
+ 
+ABSTRAK 
+Penelitian 
+ini 
+bertujuan 
+untuk 
+merancang 
+dan 
+mengembangkan aplikasi berbasis web yang digunakan 
+untuk mengelola penjadwalan dan pembayaran les di Jia 
+Jia Education, sebuah lembaga pendidikan nonformal 
+yang menawarkan kursus bahasa Mandarin dan 
+pelatihan musik. Proses administrasi yang masih 
+dilakukan 
+secara 
+manual 
+sering 
+menimbulkan 
+permasalahan, seperti benturan jadwal, keterlambatan 
+pengelolaan data, dan kesulitan dalam pemantauan 
+transaksi. Aplikasi ini dikembangkan guna meningkatkan 
+efisiensi, 
+ketepatan, 
+serta 
+transparansi 
+dalam 
+pengelolaan administrasi. Metode pengembangan yang 
+digunakan adalah Waterfall, yang mencakup tahap 
+analisis 
+kebutuhan, 
+perancangan, 
+implementasi, 
+pengujian, 
+dan 
+pemeliharaan. 
+Sistem 
+dibangun 
+menggunakan bahasa pemograman PHP, basis data 
+MySQL, dan framework Bootsrap untuk menghasilkan 
+antarmuka yang responsif dan mudah dioperasikan. Hasil 
+penelitian menunjukkan bahwa aplikasi ini mampu 
+mengotomatisasi 
+pengaturan 
+jadwal, 
+pencatatan 
+kehadiran, serta penagihan dan pelacakan pembayaran 
+secara terintegrasi. Dengan adanya sistem ini, proses 
+operasional di Jia Jia Education menjadi lebih efisien, 
+akurat dan mendukung peningkatan kualitas layanan 
+bagi guru, siswa dan orang tua. 
+ 
+Key words 
+Pencatatan Penjadwalan, Pembayaran, Waterfall, Website 
+1. Pendahuluan 
+Perancangan sistem informasi berbasis web dirancang 
+untuk membantu pengguna dalam mengakses serta 
+mengelola data dengan cara yang lebih mudah dan efisien 
+[1]. Situs web sendiri merupakan kumpulan halaman yang 
+berisi informasi dan bisa diakses siapa saja melalui 
+internet [2]. Di era digital saat ini, hampir semua aktivitas 
+manusia tidak lepas dari teknologi [3]. Kemajuan 
+teknologi yang berkembang cepat, terutama di bidang 
+digital, telah membawa pengaruh besar terhadap berbagai 
+aspek kehidupan [4]. Teknologi kini berperan penting 
+dalam mempermudah aktivitas manusia, termasuk dalam 
+dunia pendidikan [5]. Dengan kemajuan tersebut, 
+kebutuhan akan sistem pendataan yang modern dan 
+efisien menjadi semakin penting [6]. Pendataan yang 
+dimaksud mencakup informasi siswa, guru, jadwal kelas, 
+absensi, serta transaksi pembayaran yang berkaitan 
+dengan kegiatan pembelajaran. Penerapan teknologi 
+digital 
+memungkinkan 
+proses 
+pembelajaran 
+serta 
+pengelolaan lembaga pendidikan berlangsung lebih 
+teratur dan efektif. Melalui sistem berbasis web, kegiatan 
+seperti 
+penjadwalan 
+kelas, 
+pencatatan 
+kehadiran, 
+pengelolaan data siswa dan pengajar, hingga proses 
+pembayaran dapat dilakukan dengan lebih cepat, akurat, 
+dan saling terhubung. 
+Jia Jia Education berdiri pada Juni 2012 di Apartemen 
+Royal Mediterania Garden, Podomoro City. Nama Jia Jia, 
+yang berarti Excellence, mencerminkan visi untuk 
+menjadi 
+lembaga 
+pendidikan 
+yang 
+menekankan 
+keunggulan dan semangat kekeluargaan dengan nilai “To 
+teach with passion and love as one family”. Awalnya 
+hanya menawarkan kursus Bahasa Mandarin dan Piano, 
+kini Jia Jia Education telah berkembang dengan berbagai 
+program seperti Bahasa Inggris, Biola, Gitar, Vokal dan 
+Taekwondo. Promosi dilakukan melalui media sosial 
+untuk menyampaikan informasi kegiatan, jadwal dan 
+prestasi siswa. 
+Namun, proses administrasi di Jia Jia Education masih 
+dilakukan secara manual, sehingga sering terjadi 
+kesalahan input, keterlambatan informasi pembayaran, 
+dan kesulitan memantau data. Hal ini membuat kinerja 
+kurang efisien dan pelayanan jadi terhambat. Untuk itu, 
+dikembangkan 
+sistem 
+berbasis 
+web 
+yang 
+dapat 
+mempermudah proses penjadwalan dan pembayaran agar 
+lebih teratur dan terintegrasi [7]. Penelitian ini berfokus 
+pada perancangan aplikasi pencatatan jadwal dan 
+pembayaran les di Jia Jia Education. 
+Penilitian ini bertujuan untuk merancang aplikasi 
+manajemen penjadwalan dan pembayaran les berbasis 
+web pada Jia Jia Education. Sistem ini diharapkan dapat 
+membantu dalam pengelolaan data siswa dan guru, 
+penjadwalan kelas, serta proses pembayaran secara lebih 
+efisien. Selain itu, aplikasi ini juga bertujuan untuk 
+meningkatkan akurasi pencatatan data, mempercepat 
+pemantauan administrasi, dan menyediakan penyimpanan 
+informasi yang aman dan mudah diakses. 
+Metode penelitian yang digunakan adalah Software 
+Development Life Cycle (SDLC) model Waterfall, yaitu
+
+==================================================
+[HALAMAN 2]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+ 
+ 
+2 
+ 
+suatu proses yang dalam sebuah perkembangan-nya 
+mengembangkan perangkat lunak sekuensial yang 
+dimana kemajuan dalam sebuah pengembangannya 
+dianggap seperti air yang mengalir atau air terjun yang 
+terdiri dari tahapan analisis, perancangan, implementasi, 
+dan pengujian [8]. Dengan metode ini, penelitian 
+diharapkan menghasilkan rancangan aplikasi berbasis 
+web yang efisien dan terintegrasi untuk meningkatkan 
+profesionalitas operasional di Jia Jia Education. 
+2. Metodologi 
+Metode yang digunakan dalam perancangan sistem 
+aplikasi manajemen penjadwalan dan pembayaran les ini 
+adalah Software Development Life Cycle (SDLC) model 
+Waterfall. Model ini dipilih karena memiliki alur 
+pengembangan yang sistematis dan terstruktur, dimana 
+setiap tahap dilakukan scara berurutan sesuai urutan 
+proses pengembangan perangkat lunak. 
+Pada   Gambar 1 menunjukkan siklus dari model 
+Waterfall. Tahap pertama adalah requirement, yaitu 
+proses pengumpulan kebutuhan sistem yang dilakukan 
+melalui wawancara dengan pihak Jia Jia Education untuk 
+memahami permasalahan yang ada serta menentukan 
+kebutuhan fungsional dan non-fungsional aplikasi. Tahap 
+kedua adalah design, yang berfokus pada perancangan 
+struktur 
+sistem 
+menggunakan 
+Unified 
+Modeling 
+Language (UML) serta pembuatan rancangan antarmuka 
+agar aplikasi mudah digunakan dan memiliki tampilan 
+yang menarik.  
+Tahap selanjutnya adalah implementation, yaitu 
+proses pengembangan sistem berdasarkan desain yang 
+telah dibuat sebelumnya dengan menggunakan bahasa 
+pemrograman PHP, framework Bootstrap, dan basis data 
+MySQL. Setelah sistem selesai dikembangkan, dilakukan 
+tahap verification, yang bertujuan untuk memastikan 
+bahwa seluruh fungsi dalam aplikasi telah berjalan sesuai 
+dengan kebutuhan yang telah ditetapkan melalui proses 
+pengujian. 
+Tahap terakhir adalah maintenance, yaitu tahap 
+pemeliharaan sistem yang mencakup perbaikan apabila 
+ditemukan 
+kesalahan 
+serta 
+pembaruan 
+untuk 
+meningkatkan kinerja dan menyesuaikan sistem dengan 
+kebutuhan pengguna di masa mendatang. Melalui 
+penerapan model Waterfall ini, proses pengembangan 
+aplikasi dapat berjalan secara terarah, terukur, dan 
+menghasilkan sistem yang stabil serta sesuai dengan 
+kebutuhan pengguna. 
+ 
+ 
+Gambar 1. Siklus Waterfall [9] 
+3. Hasil dan Pembahasan 
+3.1 Perancangan Sistem 
+ 
+ 
+Gambar 2. Usecase Diagram Aplikasi Penjadwalan dan Pembayaran 
+Les 
+Unified Modeling Language (UML) merupakan 
+metode 
+pemodelan 
+yang 
+digunakan 
+untuk 
+menggambarkan dan mendokumentasikan hasil analisis 
+serta rancangan sistem secara visual [10]. UML 
+membantu pengembang memahami alur, struktur, dan 
+interaksi dalam sistem melalui berbagai diagram yang 
+digunakan 
+mulai 
+dari 
+tahap 
+analisis 
+hingga 
+pengembangan perangkat lunak, seperti usecase diagram, 
+activity diagram, sequence diagram, dan class diagram 
+[11]. 
+Gambar 2 menunjukkan usecase diagram pada 
+aplikasi penjadwalan dan pembayaran les. Diagram ini 
+digunakan untuk mengidentifikasi fungsi-fungsi utama 
+dalam sistem serta aktor yang memiliki hak akses 
+terhadapnya. 
+Usecase 
+diagram 
+juga 
+membantu 
+menggambarkan kebutuhan sistem dari sudut pandang 
+pengguna dan menjadi dasar perancangan hingga tahap 
+pengujian. Aplikasi ini melibatkan tiga aktor utama, yaitu 
+head admin, admin, dan orang tua. Head admin memiliki 
+akses penuh terhadap seluruh data dan cabang, admin 
+memiliki hak akses terbatas dalam pengelolaan data 
+tertentu, sedangkan orang tua hanya dapat mengunggah 
+bukti pembayaran. 
+Selain UML, perancangan sistem juga melibatkan 
+desain basis data menggunakan Entity Relationship 
+Diagram (ERD). ERD berfungsi untuk memodelkan 
+struktur serta hubungan antar entitas dalam sistem, 
+sehingga memudahkan analisis data tanpa bergantung 
+pada proses yang berjalan. Gambar 3 menampilkan 
+rancangan 
+ERD 
+dari 
+aplikasi 
+penjadwalan 
+dan pembayaran les.
+
+==================================================
+[HALAMAN 3]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+ 
+ 
+ 
+ 
+Gambar 3. ERD Aplikasi Penjadwalan dan Pembayaran Les 
+3.2 Perancangan Antarmuka 
+ 
+ 
+Gambar 4. Tampilan Login 
+Pada tahap perancangan antarmuka, dibuat wireframe 
+aplikasi penjadwalan dan pembayaran les menggunakan 
+Figma. Wireframe digunakan untuk menggambarkan 
+susunan elemen utama pada setiap halaman atau layar, 
+seperti navigasi, konten, gambar, media, elemen formulir, 
+serta 
+tombol 
+interaksi. Tujuan 
+utamanya adalah 
+menampilkan tata letak dan alur navigasi secara 
+sederhana agar struktur antarmuka mudah dipahami 
+sebelum masuk ke tahap desain visual yang lebih detail 
+[12]. 
+Gambar 4 menampilkan tampilan halaman login pada 
+aplikasi. Seluruh pengguna diwajibkan untuk login 
+terlebih 
+dahulu 
+sebelum 
+dapat 
+mengakses 
+fitur 
+penjadwalan dan pembayaran les. Bagi pengguna yang 
+belum memiliki akun, proses pembuatan akun dilakukan 
+oleh head admin melalui fitur user management yang 
+memungkinkan pengelolaan data pengguna, seperti 
+penambahan, pembaruan, dan penghapusan akun, 
+sebagaimana ditunjukkan pada Gambar 5. 
+ 
+ 
+Gambar 5. Halaman User Management 
+Setelah pengguna memiliki akun, mereka dapat 
+mengakses halaman utama aplikasi penjadwalan dan 
+pembayaran les seperti ditunjukkan pada Gambar 6. 
+Halaman ini berfungsi sebagai tampilan utama bagi head 
+admin dan admin untuk memantau daftar siswa yang 
+belum melakukan pembayaran. 
+ 
+ 
+Gambar 6. Halaman Utama 
+Gambar 7 menampilkan halaman role  management 
+yang digunakan oleh head admin untuk menambah, 
+menghapus, dan mengedit data peran pengguna. 
+Selanjutnya, Gambar 8 menunjukkan halaman paket 
+kelas yang berfungsi untuk mengatur data paket kelas 
+dengan fitur penambahan, pengeditan, dan penghapusan. 
+ 
+ 
+Gambar 7. Halaman Role Management
+
+==================================================
+[HALAMAN 4]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+ 
+ 
+4 
+ 
+ 
+Gambar 8. Halaman Paket Kelas 
+Gambar 9 menampilkan halaman cabang yang 
+digunakan head admin untuk mengelola data cabang 
+tempat les, termasuk menambah, mengedit, dan 
+menghapus 
+data 
+cabang. 
+Dan, 
+Gambar 
+10 
+memperlihatkan halaman kelola slot jadwal yang dapat 
+diakses oleh head admin dan admin untuk menambah, 
+menghapus, 
+serta 
+memperbarui 
+slot 
+jadwal 
+les yang tersedia. 
+ 
+ 
+Gambar 9. Halaman Cabang Management 
+ 
+Gambar 10. Halaman Kelola Slot Jadwal 
+Terdapat juga halaman siswa yang memungkinkan 
+head 
+admin 
+untuk 
+menambah, 
+mengedit, 
+dan 
+memperbarui data siswa di seluruh cabang yang dapat 
+dilihat pada Gambar 11. Sementara itu, admin hanya 
+dapat mengelola data siswa pada cabang yang menjadi 
+tanggung jawabnya. Terdapat juga halaman guru yang 
+memungkinkan head admin untuk menambah, mengedit, 
+dan menghapus data guru dimana dapat dilihat pada 
+Gambar 12. 
+ 
+ 
+Gambar 11. Halaman Siswa 
+ 
+Gambar 12. Halaman Guru 
+Pada Gambar 13 ditampilkan halaman penjadwalan 
+yang berfungsi menampilkan jadwal kegiatan les setiap 
+siswa. Melalui halaman ini, pengguna dapat melihat 
+informasi jadwal secara lengkap, termasuk hari, waktu, 
+serta paket kelas yang diambil oleh siswa. Selain itu, 
+halaman ini juga menampilkan nama guru yang mengajar 
+pada setiap jadwal, sehingga memudahkan dalam 
+pemantauan kegiatan belajar mengajar. Fitur ini 
+membantu admin maupun head admin dalam mengatur 
+dan memastikan tidak terjadi bentrok jadwal antara siswa 
+dan guru, serta mendukung pengelolaan operasional yang 
+lebih terstruktur. 
+  
+ 
+Gambar 13. Halaman Penjadwalan
+
+==================================================
+[HALAMAN 5]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+ 
+ 
+ 
+Gambar 14. Halaman Absensi 
+Pada Gambar 14 ditampilkan halaman absensi yang 
+digunakan oleh head admin maupun admin untuk 
+mencatat kehadiran siswa. Melalui halaman ini, admin 
+dapat menandai status kehadiran setiap siswa, seperti 
+hadir atau tidak hadir, sesuai dengan jadwal les yang telah 
+ditentukan. Fitur ini memudahkan proses pencatatan 
+kehadiran agar lebih praktis dan membantu memastikan 
+kegiatan belajar berjalan sesuai jadwal. 
+Terakhir, pada Gambar 15 ditampilkan halaman 
+verifikasi pembayaran yang digunakan oleh head admin 
+untuk memeriksa dan memvalidasi pembayaran yang 
+telah dilakukan oleh orang tua siswa. Melalui halaman ini, 
+head admin dapat melihat detail setiap transaksi, seperti 
+tanggal pembayaran, nominal yang dibayarkan, serta 
+bukti pembayaran yang diunggah oleh orang tua. Setelah 
+proses verifikasi selesai dan pembayaran dinyatakan 
+valid, status transaksi akan diperbarui secara otomatis 
+dalam sistem. Fitur ini memudahkan head admin dalam 
+memastikan keakuratan data pembayaran sekaligus 
+membantu menjaga transparansi dan efisiensi dalam 
+pengelolaan proses pembayaran. 
+ 
+ 
+Gambar 15. Halaman Verifikasi Pembayaran 
+4. Kesimpulan 
+Berdasarkan hasil perancangan, dapat disimpulkan 
+bahwa aplikasi manajemen penjadwalan dan pembayaran 
+les ini telah membantu mempermudah proses administrasi 
+di Jia Jia Education. Sistem yang dikembangkan mampu 
+mengelola data siswa, guru, jadwal, absensi, dan 
+pembayaran secara terintegrasi. Selain itu, aplikasi ini 
+juga meningkatkan efisiensi kerja admin dan head admin 
+dalam memantau kegiatan operasional, mengurangi 
+kesalahan 
+pencatatan, 
+serta 
+mempercepat 
+proses 
+pengolahan data. Dengan tampilan antarmuka yang 
+sederhana dan mudah dipahami, sistem ini memberikan 
+pengalaman pengguna yang lebih praktis dan mendukung 
+kelancaran proses belajar mengajar. 
+ 
+ 
+REFERENSI 
+[1] 
+Lina, 
+B. 
+Mulyawan, 
+and 
+D. 
+Ajienegoro, 
+“PENGEMBANGAN 
+APLIKASI 
+WEB-
+COMMERCE PT . WGS SEBAGAI MEDIA 
+PROMOSI,” vol. 4, no. 2, pp. 326–333, 2021. 
+[2] 
+Wasino, D. E. Herwindiati, and H. Maupa, “The Effects 
+of Tourism Web Development on Prospective 
+Travelers by Considering Persuasive and Liking 
+Principles,” vol. 6, no. 4, pp. 574–584, 2022. 
+[3] 
+Wasino, D. E. Herwindiati, and I. R. Setyawan, 
+“JOURNAL OF SOUTHWEST JIAOTONG D 
+ESIGNING T OURISM M ARKETING T OOLS 
+WITH G EOTARGETING OF,” 2024. 
+[4] 
+K. Khamdun, E. R. Nainggolan, and J. L. Putra, 
+“Perancangan Sistem Informasi Manajemen Pelatihan 
+Kursus Berbasis Web Pada CV Nixtrain Infotama,” J. 
+Ilm. Inform., vol. 10, no. 01, pp. 1–7, 2022. 
+[5] 
+R. Yani, Mansur, and Kasmawi, “Sistem Informasi 
+Penjadwalan Les Privat Menggunakan Framework 
+Codeigniter,” Inf. Syst. Educ. Prof., vol. 5, no. 01, pp. 
+11–20, 2020. 
+[6] 
+Giselle Naomi Sutanto, Wasino, and Novario Jaya 
+Perdana, “Aplikasi Pendataan Kursus Berbasis Web 
+Pada B-Cil Course,” J. Ilmu Komput. dan Sist. Inf., vol. 
+13, no. 1, 2025, doi: 10.24912/jiksi.v13i1.32882. 
+[7] 
+A. R. Alkautsar, E. Dewayani, and W. Wasino, 
+“Pembuatan Program Pemesanan Dan Penjadwalan 
+Penggunaan Lapangan Futsal Berbasis Website,” J. 
+Ilmu Komput. dan Sist. Inf., vol. 9, no. 2, p. 32, 2021, 
+doi: 10.24912/jiksi.v9i2.13103. 
+[8] 
+I. Kusyadi, A. S. Putra, M. D. Oktafani, M. R. A. 
+Ardani, and M. Syaugi, “Penerapan Metode Waterfall 
+dalam Perencanaan Sistem Informasi Penjualan Buku 
+berbasis Aplikasi Website (Studi Kasus: Penjual Buku 
+Toko 21 Jombang),” J. Teknol. Sist. Inf. dan Apl., vol. 
+5, 
+no. 
+4, 
+pp. 
+268–277, 
+2022, 
+doi: 
+10.32493/jtsi.v5i4.21378. 
+[9] 
+A. Puguh, “Metode Waterfall: Pengertian, Tahapan, 
+Gambar dan Contohnya,” Rumah Web. Accessed: Aug. 
+27, 
+2024. 
+[Online]. 
+Available: 
+https://blog.rumahweb.com/metode-waterfall-adalah/ 
+[10] 
+Ronal, Yunita, and Yuliana, “Desain Unified Modeling 
+Language (UML) Dalam Perancangan Aplikasi 
+Hauling Trip Di Industri Tambang Batubara,” J. Tek. 
+Inform. dan Sist. Informas, vol. 9, no. 4, pp. 3038–
+3050, 
+2022, 
+[Online]. 
+Available: 
+http://jurnal.mdp.ac.id 
+[11] 
+I. D. Perwitasari, J. Hendrawan, F. Y. Panggabean, and 
+M. Raihansyah, “Model UML Aplikasi Augmented 
+Reality Pengenalan Desa Pertumbukan,” J. Minfo 
+Polgan, vol. 13, no. 2, pp. 1887–1896, 2024, doi: 
+10.33395/jmp.v13i2.14301. 
+[12] 
+R. Rusito, Sumaryanto, Suprapti, and J. D. Susatyono, 
+“‘BUKU 
+AJAR 
+USER 
+EXPERIENCE 
+(UX) 
+DESIGN,’ 
+in 
+Metodologi 
+Konteks, 
+Penelitian 
+Pengguna, Prinsip-Prinsip Design Sampai Dengan
+
+==================================================
+[HALAMAN 6]
+==================================================
+
+Jurnal Ilmu Komputer dan Sistem Informasi 
+ 
+ 
+6 
+ 
+Prototipe,” in “BUKU AJAR USER EXPERIENCE 
+(UX) DESIGN,” in Metodologi Konteks, Penelitian 
+Pengguna, Prinsip-Prinsip Design Sampai Dengan 
+Prototipe, Purbalingga: EUREKA MEDIA AKSARA, 
+2024, p. 134. 
+ 
+ 
+Veren Thiovanda, saat ini sebagai mahasiswa Program Studi 
+Sistem Informasi Universitas Tarumanagara angkatan 2022.

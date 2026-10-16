@@ -1,0 +1,289 @@
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 431 
+Penerapan Metode Prototyping Dalam Rancangan Sistem Informasi 
+Absensi Berbasis Website  
+Fitra Kasma Putra 
+Fakultas Ekonomi Dan Bisnis Islam, Manajemen Informatika, UIN Mahmud Yunus Batusangkar, Tanah Datar 
+Jl. Jenderal Sudirman No.137, Limo Kaum, Kec. Lima Kaum, Kabupaten Tanah Datar, Sumatera Barat, Indonesia 
+Email: fitra.kp@iainbatusangkar.ac.id,  
+Email Penulis Korespondensi: fitra.kp@iainbatusangkar.ac.id  
+Submitted: 99/99/999; Accepted: 99/99/999; Published: 99/99/999 
+Abstrak−Absensi pegawai yang diterapkan di Kantor Dinas Sosial Padang Pariaman menggunakan sistem fingerprint, namun 
+semenjak bulan April 2020 akibat adanya virus COVID19 fingerprint tidak boleh digunakan lagi, hal ini untuk mengurangi 
+penyebaran virus COVID19. Saat ini absensi yang diterapkan berupa google form sehingga menjadikan pendataan dan 
+perhitungan jam hadir, jam keluar, hingga keterangan tidak masuk berdampak pada waktu yang relatif lama dalam proses 
+rekapitulasi absensi dari pegawai, kesalahan dalam pencatatan data, serta menyulitkan Kepala Bagian Tata Usaha dalam proses 
+pengelolaan data absensi. Berdasarkan masalah tersebut penulis merancang sebuah sistem informasi berbasis website 
+menggunakan metode prototyping dengan menggunakan pemodelan Unified Modeling Language (UML). Sistem informasi 
+yang dibuat ini dapat memberikan kemudahan pada bagian tata usaha dalam merekap data absensi pegawai. Kemudian setelah 
+dilakukan pengujian sistem dengan metode blackbox didapat bahwa semua fitur fitur yang ada dapat berfungsi sesuai yang di 
+harapkan. 
+Kata Kunci: Sistem Informasi; Prototyping; UML; Absensi; Blackbox 
+Abstract−Employee attendance at the Padang Pariaman Social Service Office uses a fingerprint system, but since April 2020 
+due to the COVID19 virus, fingerprints cannot be used anymore, this is to reduce the spread of the COVID19 virus. Currently 
+the attendance is implemented in the form of a google form so that it makes data collection and calculation of attendance hours, 
+hours out, until the information does not come in has an impact on the relatively long time in the process of recapitulating 
+attendance from employees, errors in recording data, and making it difficult for the Head of the Administration in the 
+management process. attendance data. Based on these problems the authors designed a website-based information system using 
+the prototyping method using Unified Modeling Language (UML) modeling. The information system created can provide 
+convenience for the administrative section in recapitulating employee attendance data. Then after testing the system using the 
+blackbox method, it was found that all existing features could function as expected. 
+Keywords: Information Systems; Prototyping; UML; Attendance; Blackbox 
+1. PENDAHULUAN 
+Teknologi menjadi salah satu kebutuhan diberbagai bidang kehidupan saat ini [1],[2]. Teknologi sudah digunakan 
+diberbagai bidang, baik itu Pendidikan, perekonomian dan pemerintahaan [3],[4].  Salah satu contoh penerapan 
+teknologi dalam bidang pemerintahan adalah dengan membuat sistem informasi absensi[5]. Absensi merupakan 
+pendataan kehadiran karyawan yang sangat diperlukan oleh setiap organisasi atau perkantoran[6]. Tujuan 
+pendataan absensi karyawan organisasi bisa melakukan banyak hal dengan data tersebut salah satunya sebagai 
+ajuan dalam pemberian gaji disuatu organisasi [6]. 
+Pada penelitian ini penulis mengambil objek penelitian di Kantor Dinas Sosial Padang Pariaman. Setelah 
+melakukan penelitian dengan cara observasi dan wawancara maka penulis menemukan beberapa masalah yang terjadi, seperti 
+presensi yang pada awalnya dilakukan dengan menggunakan fingerprint tidak lagi digunakan karena untuk memutus 
+penyebaran virus covid 19. Absensi di lakukan dengan membagikan link google form yang mana ini menyebabkan beberapa 
+kendala seperti sulitnya merekap laporan absensi karyawan, kemudian mengitung jumlah jam hadir karyawan tersebut. 
+Berdasarkan masalah tersebut maka penulis membuat suatu rancangan sistem informasi absensi berbasis website dengan 
+menerapakan metode prototyping dan menggunakan pemodelan Unified Modeling Language (UML) dalam merancang 
+arsitektur perangkat lunak. 
+Metode prototyping sering digunakan dalam melakukan perancangan sistem informasi. Beberapa penelitian 
+diantaranya yaitu merapakan metode prototyping dalam merancang sistem elearning dan keuangan. Dalam metode prototyping 
+dinilai mampu menyelesaikan masalah yang komplit dengan melibatkan user dalam perancangannya [7], [8]. Kemudian UML 
+(Unified Modeling Language) merupakan sebuah pemodelan yang bisa digunakan dalam pemodelan arsitektur sebuah sistem 
+informasi [9],  [11]. Pemodelan dengan UML menggunakan beberapa diagram yaitu usecase, aktifity, sequence dan class 
+diagram [12],[13]. Selain itu UML juga memiliki keunggulan yakni memudahkan sistem anaisis dalam melakukan rancangan 
+arsitektur perangkat lunak [13],[14], [15]. Kemudian dalam Pengujian sistem yang telah selesai akan dilakukan pengujian 
+dengan menggunakan metode blackbox. Metode blackbok ini digunakan dalam menguji fungsionalitas sistem yang dibuat[16], 
+Metode Blacbox dinilai mempunyai kelebihan yaitu metode ini dapat melibatkan user dalam pengujiannya[17], [18]. Tujuan 
+dari peneitian ini adalah membuat sebuah rancangan sistem informasi berbasis website yang dapat memberikan kemudahan 
+pada dinas terkait dalam pengelolaan data presensi pegawai dengan menerapkan metode prototyping. 
+ 
+ 
+
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 432 
+2. METODOLOGI PENELITIAN 
+Pada metodologi penelitian ini penulis melakukan beberapa tahapan sehingga penelitian ini dapat terselesaikan 
+dengan baik dan bisa menjawab permasalahaan yang ada pada objek penelitian. Berikut ini adalah gambar 1 
+tentang metodologi penelitian yang dilakukan:  
+ 
+Gambar 1. Metodologi Penelitian 
+a. Pengumpulan Data 
+Pada tahaoan pengumpulan data ini, Penulis melakukan beberapa Teknik yaitu observasi dan wawancara 
+kepada objek penelitian yaitu dinas social padang pariaman. Pada tahapan ini penulis mengumpulan semua 
+informasi atau data data yang akan menunjang penelitian ini.  
+b. Identifikasi Masalah 
+Pada tahapan ini setelah penulis melakukan pengumpulan data seperti yang sudah dijelaskan pada tahapan 
+pengumpulan data tadi, maka selanjutnya melakukan edentifikasi masalah dari data yang sudah dimiliki 
+seblumnya. Dari identifikasi masalah tersebut penulis menemukan beberapa kendala dalam proses absensi yang 
+terjadi selama covid 19 dimana absensi tidak dilakukan dengan menggunakan fingerprint, tetapi menggunakan 
+google form sehingga dinilai kurang efektif dalam melakukan presensi. 
+c. Studi Literatur 
+Setelah melakukan pengumpulan data kemudian diketahui apa saja masalah yang akan diselesaikan dengan 
+cara menidentifikasi masalahnya, maka Langkah selanjutnya penulis mempelajari teori teori yang dapat 
+mendukung penelitian ini. Adapun sumber sumber teori yang penulis pelajari dalam penelitian ini bersumber 
+dari penelitian terdahulu yang diperoleh dari artikel artikel dan buku buku pendukung.  
+d. Metode Prototyping  
+Pada penelitian ini penulis menggunakan metode prototyping dalam mengembangkan perangkat lunak[19]. 
+Metode prototyping merupakan sebuah metode pengembangan sistem yang dimulai dari pengumpulan data, 
+desain sistem dan pengujian[20]. Berikut ini adalah tahapan dari metode prototyping seperti yang terlihat pada 
+gambar 3 dibawah ini:  
+ 
+Gambar 3. Tahapan metode Prototyping[20] 
+e. Pengujian 
+Setalah desain sistem dibuat menggunakan metode prototyping maka Langkah selanjutnya yang penulis 
+lakukan pada penelitian ini yaitu menguji fungsionalitas sistem menggunakan metode blackbox[10]. Metode 
+ini berguna untuk menguji semua fitur fitur yang ada disistem apakah sudah berjalan sesuai yang diharapkan 
+[21]. 
+3. HASIL DAN PEMBAHASAN 
+3.1 Pemodelan Sistem 
+Pada penelitian ini penulis menggunakan pemodelan Berorientasi Objek dengan pendekatan UML. Adapun 
+diagram yang di muat meliputi Use case diagram, aktifity digaram, sequence diagram dan class diagram.  
+
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 433 
+3.1.1 Use case diagram 
+Sistem informasi absensi pegawai yang akan dirancang terdapat 2 pengguna, yaitu admin dan karyawan. Hak akses 
+yang dapat dilakukan oleh masing-masing pengguna digambarkan pada Gambar 4 berikut ini.  
+ 
+Gambar 4. Use case diagram 
+3.1.2 Aktifity diagram 
+Aktifity diagram merupakan sebuah diagram yang mengambarkan aktifitas yang sedang dilakukan oleh user dalam 
+sebuah sistem informasi[22]. Berikut ini adalah contoh Aktifity diagram dalam penelitian ini dapat dilihat pada 
+gambar 5 dibawah ini:  
+ 
+ 
+Gambar 5. Aktifity diagram 
+3.1.3 Sequence diagram 
+Sequence diagram merupakan sebuah diagram yang bisa menggambarkan proses yang dilakukan user dalam 
+sistem informasi berdasarkan urutan waktu dari tahapan dari proses tersebut[23]. Berikut ini adalah contoh dari 
+Sequence diagram dalam penelitian ini dapat dilihat pada gambar 6 dibawah ini: 
+ 
+Gambar 6. Sequence diagram 
+
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 434 
+3.1.4 Class diagram 
+Diagram ini berfungsi untuk menggambarkan hubungan yang terjadi antara atribut dalam sebuah sistem yang 
+nantinya bisa dibuatkan dalam suatu database sistem informasi[9]. Berikut ini adalah bentuk dari class diagram 
+yang terlihat pada gambar 7 dibawah ini: 
+ 
+Gambar 7. Class diagram 
+3.2 Desain Sistem 
+Berikut ini adalah tampilan halaman login dari sistem informasi absensi seperti yang terlihat pada gambar 8 
+dibawah ini: 
+ 
+Gambar 8. Halaman Login 
+Tampilan halaman menu absensi pada sistem ini terdiri dari data karyawan Berikut ini adalah tampilan 
+halaman absensi karyawan yang terlihat pada gambar 9: 
+ 
+Gambar 9. Halaman Absensi 
+Berikut ini adalah tampilan dari halaman dasbord admin. Halaman ini menampilkan semua data karyawan yang 
+berbentuk tabel dan terdiri dari nomor, foto, nama karyawan, dan kontak. Setiap data karyawan yang muncul di 
+tabel dapat dilakukan aksi berupa edit dan hapus. Tampilan halaman admin dapat dilihat pada gambar 10 dibawah 
+ini: 
+ 
+Gambar 10. Halaman Admin 
+Tampilan halaman edit karyawan dari sesi admin ini berfungsi untuk mengubah data profil atau akun 
+karyawan, yang terdiri dari NIK, nama, nomor hp, email, divisi, username dan password. Berikut tampilan edit 
+data karyawan dari sisi admin seperti yang terlihat pada gambar 11 dibawah ini: 
+
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 435 
+ 
+Gambar 11. Halaman Admin Edit Karyawan 
+Halaman ini digunakan oleh admin jika ingin menghapus data karyawan yang sudah masuk ke dalam 
+sistem. Berikut ini adalah tampilan halaman hapus data karyawan dari sisi admin seperti yang terlihat pada gambar 
+12 dibawah ini:  
+ 
+Gambar 12. Halaman Hapus Data Karyawan 
+3.3 Pengujian Sistem 
+Berikut ini adalah hasil dari pengujian terhadap sistem yang sudah dirancang. Adapun hasil pengujian sistem 
+dengan menggunakan blackbox dapat dilihat pada tabel 1 dibawah ini: 
+Tabel 1. Hasil Pengujian Sistem 
+Aksi User 
+Reaksi Sistem 
+Keterangan 
+Masukan username dan password 
+Menampilkan Halaman dasboard 
+Valid 
+Klik menu karyawan 
+Menampilkan data karyawan 
+Valid 
+Klik tombol edit  
+Menampilkan halaman edit karyawan 
+Valid 
+Klik tombol hapus 
+Menampilkan halaman hapus karyawan 
+Valid 
+Klik tombol absensi 
+Menampilkan halaman absensi karyawan 
+Valid 
+4. KESIMPULAN 
+Berdasarkan perancangan sistem informasi absensi di Kantor Dinas Sosial Padang Pariaman, diharapkan sistem 
+informasi absensi berbasis website ini mampu menjawab masalah saat ini yang terjadi sehingga pengelolaan data 
+absensi bisa lebih tertata rapi. Pada sistem ini admin bisa melakukan pengelolaan data absensi karyawan seperti 
+mengelola laporan absensi, tambah data, hapus data dan edit data karyawan. Kemudian setalah sistem informasi 
+ini di uji fungsionalitasnya maka didapatkan hasil bahwa semua fitur yang dibuat sudah berjalan sesuai yang 
+diharapkan. Hasil dari peneitian ini adalah membuat sebuah rancangan sistem informasi berbasis website yang 
+dapat memberikan kemudahan pada dinas terkait dalam pengelolaan data presensi pegawai dengan menerapkan 
+metode prototyping. 
+REFERENCES   
+[1] 
+ darmansah darmansah, S. R. W. S. R. Widiasari, R. Raswini, and M. A. B. M. A. Bacsafra, “Perancangan Sistem 
+Informasi Inventaris Berbasis Website Menggunakan Metode Waterfall,” Klik - Kumpul. J. Ilmu Komput., vol. 9, no. 1, 
+pp. 71–84, 2022, doi: 10.30865/json.v3i4.4165. 
+[2] 
+D. D. Darmansah, I. Chairuddin, and T. N. Putra, “Perancangan Sistem Pakar Tipe Kepribadian Menggunakan Metode 
+Forward Chaining Berbasis Web,” JATISI (Jurnal Tek. Inform. dan Sist. Informasi), vol. 8, no. 3, pp. 1200–1213, 2021, 
+doi: 10.35957/jatisi.v8i3.1033. 
+[3] 
+M. A. Bacsafra and D. M. Kusumawardani, “Pengembangan Sistem Informasi Badan Pusat Statistik Kabupaten 
+Kuningan Berbasis Android Dengan Metode Prototype,” vol. 6, pp. 379–390, 2022. 
+[4] 
+T. N. Darmansah, Putra, I. Chairuddin, S. Informasi, S. Tinggi, T. Pekanbaru, and S. Informasi, “Design Of The Sirp To 
+Record Community Travels During The Pandemi Period ( Case Study : Kecamatan IV Koto Aur Malintang),” vol. 8, no. 
+2, 2021. 
+[5] 
+N. W. Darmansah, Wardani, M. Y. Fathoni, and F. Recognition, “Perancangan Absensi Berbasis Face Recognition Pada 
+Desa Sokaraja Lor Menggunakan Platform Android 1,3,” vol. 8, no. 1, 2021. 
+
+Journal of Information System Research (JOSH)  
+Volume 3, No. 4, Juli 2022, pp 431−436 
+ISSN 2686-228X (media online) 
+https://ejurnal.seminar-id.com/index.php/josh/ 
+DOI 10.47065/josh.v3i4.1835 
+Fitra Kasma Putra | Jurnal JOSH | Page 436 
+[6] 
+I. D. Audriyani, E. Juhriah, and M. Maimunah, “Perancangan Sistem Informasi Pendataan Absensi Karyawan PT 
+Energizer Indonesia,” J. Ris. dan Apl. Mhs. Inform., vol. 2, no. 02, pp. 372–379, 2021, doi: 10.30998/jrami.v2i02.1447. 
+[7] 
+Frederica Rosabel Ramli, Fikri Hakim, and Ria Anggelina Hutabarat, “Perancangan Web Design Aplikasi E-Learning 
+dengan Metode Prototype pada Tingkat SMA,” Maj. Ilm. UPI YPTK, vol. 28, pp. 13–18, 2021, doi: 
+10.35134/jmi.v28i1.62. 
+[8] 
+A. Meyliana, “Perancangan Sistem Pengelolaan Keuangan Siswa Dengan Metode Prototype,” Paradig. - J. Komput. dan 
+Inform., 
+vol. 
+23, 
+no. 
+1, 
+pp. 
+110–118, 
+2021, 
+[Online]. 
+Available: 
+http://ejournal.bsi.ac.id/ejurnal/index.php/paradigma/issue/archive/. 
+[9] 
+M. Nugraha and M. Rosmeida, “Perancangan Sistem Informasi Beban Kerja Dosen Berbasis Web dengan UML,” J. 
+Algoritm., vol. 18, no. 1, pp. 141–150, 2021, doi: 10.33364/algoritma/v.18-1.866. 
+[10] S. Kasus et al., “BERBASIS WEBSITE MENGGUNAKAN METODE,” vol. 09, no. 1, pp. 71–84, 2022. 
+[11] A. Voutama and E. Novalia, “Perancangan Sistem Informasi Plakat Wisuda Berbasis Web Menggunakan UML dan 
+Model Waterfall,” vol. 11, no. 01, pp. 36–49, 2022. 
+[12] I. Wahyudi, S. Bahri, and P. Handayani, “Aplikasi Pembelajaran Pengenalan Budaya Indonesia,” vol. V, no. 1, pp. 135–
+138, 2019, doi: 10.31294/jtk.v4i2. 
+[13] A. Voutama, “Sistem Antrian Cucian Mobil Berbasis Website Menggunakan Konsep CRM dan Penerapan UML,” 
+Komputika  J. Sist. Komput., vol. 11, no. 1, pp. 102–111, 2022, doi: 10.34010/komputika.v11i1.4677. 
+[14] R. Abdillah, “Pemodelan Uml Untuk Sistem Informasi Persewaan Alat Pesta,” J. Fasilkom, vol. 11, no. 2, pp. 79–86, 
+2021, doi: 10.37859/jf.v11i2.2673. 
+[15] C. Imam, P. Apriyanti, and  dan Sepia Putri Kristiani, “Pemodelan UML dan Perancangan Sistem Informasi Praktek 
+Kerja Lapangan Pada Sekolah Menengah Kejuruan,” Conf. Ser. J., vol. 01, no. 01, pp. 1–6, 2021. 
+[16] S. R. Yulistina, T. Nurmala, R. M. A. T. Supriawan, S. H. I. Juni, and A. Saifudin, “Pengujian Blackbox Menggunakan 
+Teknik Equivalence Partitions pada Aplikasi Petgram Mobile,” J. Inform. Univ. Pamulang, vol. 5, no. 2, p. 129, 2020, 
+[Online]. Available: https://ejurnal.teknokrat.ac.id/index.php/ictee/article/view/1012. 
+[17] Y. D. Wijaya and M. W. Astuti, “Pengujian Blackbox Sistem Informasi Penilaian Kinerja Karyawan Pt Inka (Persero) 
+Berbasis Equivalence Partitions,” J. Digit. Teknol. Inf., vol. 4, no. 1, p. 22, 2021, doi: 10.32502/digital.v4i1.3163. 
+[18] I. A. Shaleh, J. P. Yogi, P. Pirdaus, R. Syawal, and A. Saifudin, “Pengujian Black Box pada Sistem Informasi Penjualan 
+Buku Berbasis Web dengan Teknik Equivalent Partitions,” J. Teknol. Sist. Inf. dan Apl., vol. 4, no. 1, p. 38, 2021, doi: 
+10.32493/jtsi.v4i1.8960. 
+[19] J. S. Komputer and S. S. Informasi, “Perancangan Sistem Informasi Pengelolaan Data Pedagang Menggunakan Metode 
+Prototype pada Pasar Wage,” vol. 6, pp. 340–350, 2022. 
+[20] M. A. Wicaksono, C. Rudianto, and P. F. Tanaem, “Rancang Bangun Sistem Informasi Arsip Surat Menggunakan Metode 
+Prototype,” J. Tek. Inform. dan Sist. Inf., vol. 7, no. 2, pp. 390–403, 2021, doi: 10.28932/jutisi.v7i2.3664. 
+[21] A. B. Praja and S. Wijayanto, “Sistem Informasi Pencatatan Surat Masuk dan Surat Keluar Berbasis Website 
+Menggunakan Metode Waterfall,” vol. 3, 2022, doi: 10.30865/json.v3i3.3914. 
+[22] D. D. Darmansah, “Perancangan Sistem Informasi Pengolahan Jadwal Mata Pelajaran Siswa Secara Online Di Smpn 31 
+Padang Berbasis Web,” JATISI (Jurnal Tek. Inform. dan Sist. Informasi), vol. 7, no. 3, pp. 451–465, 2020, doi: 
+10.35957/jatisi.v7i3.490. 
+[23] A. Fu’adi and A. Prianggono, “Analisa dan Perancangan Sistem Informasi Akademik Akademi Komunitas Negeri 
+Pacitan Menggunakan Diagram UML dan EER,” J. Ilm. Teknol. Inf. Asia, vol. 16, no. 1, pp. 45–54, 2022. 
+ 
+

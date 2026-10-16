@@ -1,0 +1,886 @@
+==================================================
+[HALAMAN 1 / 27]
+==================================================
+
+Halaman Sampul  
+[Disesuaikan dengan fakultas] 
+ 
+
+
+==================================================
+[HALAMAN 2 / 27]
+==================================================
+
+PERNYATAAN ORISINALITAS TUGAS AKHIR (14 pt, bold) 
+ 
+Dengan ini saya menyatakan bahwa isi sebagian maupun keseluruhan Tugas 
+Akhir saya dengan judul [Judul Tugas Akhir dengan format Bold] adalah 
+benar-benar hasil karya intelektual mandiri, diselesaikan tanpa menggunakan 
+bahan-bahan yang tidak diizinkan dan bukan merupakan karya pihak lain yang 
+saya akui sebagai karya sendiri. Semua referensi yang dikutip maupun dirujuk 
+telah ditulis secara lengkap pada daftar pustaka. Apabila ternyata pernyataan ini 
+tidak benar, saya bersedia menerima sanksi sesuai peraturan yang berlaku. (12 pt, 
+1,5 spasi). 
+ 
+Balikpapan, [tanggal] [bulan] [tahun] 
+ 
+[tanda tangan] 
+ 
+ 
+[Nama mahasiswa]  
+NIM. [NIM] 
+ 
+ 
+2 
+
+
+==================================================
+[HALAMAN 3 / 27]
+==================================================
+
+PERNYATAAN PERSETUJUAN PUBLIKASI TUGAS AKHIR 
+UNTUK KEPENTINGAN AKADEMIS (14 pt, bold) 
+ 
+Sebagai sivitas akademik Institut Teknologi Kalimantan, saya yang bertanda 
+tangan di bawah ini : 
+Nama​ ​
+​
+: [Nama Mahasiswa] 
+NIM​
+​
+​
+: [NIM] 
+Program Studi​​
+: [Nama Program Studi] 
+Jurusan​
+​
+: [Nama Jurusan] 
+Fakultas​
+​
+: [Nama Fakultas] 
+demi pengembangan ilmu pengetahuan, menyetujui untuk memberikan kepada 
+Institut Teknologi Kalimantan Hak Bebas Royalti Non-eksklusif (Non-exclusive 
+Royalty Free Right) atas karya ilmiah saya yang berjudul: (12 pt, 1,5 spasi). 
+……………………………………………………………………………………… 
+……............[Judul Tugas Akhir (10-15 kata) dengan format Bold] 
+…………… 
+……………………………………………………………………………………… 
+beserta perangkat yang ada (jika diperlukan). Dengan Hak Bebas Royalti 
+Non-eksklusi 
+ini, 
+Instutut 
+Teknologi 
+Kalimantan 
+berhak 
+menyimpan, 
+mengalihmediakan, mengelola dalam bentuk pangkalan data (database), merawat, 
+dan memublikasikan tugas akhir saya selama tetap mencantumkan nama saya 
+sebagai penulis/pencipta dan sebagai pemilik Hak Cipta. 
+Demikian pernyataan ini saya buat dengan sebenarnya. (12 pt, 1,5 spasi). 
+Balikpapan, [tanggal] [bulan] [tahun]  
+ 
+[tanda tangan] 
+[Nama mahasiswa]  
+NIM. [NIM] 
+ 
+3 
+
+
+==================================================
+[HALAMAN 4 / 27]
+==================================================
+
+​
+ 
+LEMBAR PERSETUJUAN (14 pt, bold) 
+ 
+Proposal Tugas Akhir dengan judul : 
+ 
+“[JUDULTUGAS AKHIR DENGAN HURUF KAPITAL DALAM BAHASA 
+INDONESIA]” (14 pt, bold) 
+ 
+Yang disusun oleh : 
+[tanda tangan] 
+ 
+[Nama Mahasiswa] 
+NIM. [NIM] 
+ 
+Telah diperiksa dan disetujui oleh dosen pembimbing: 
+ 
+Dosen Pembimbing Utama​
+Dosen Pembimbing Pendamping 
+ 
+[tanda tangan]​
+[tanda tangan] 
+ 
+[Nama Pembimbing Utama]​
+[Nama Pembimbing Pendamping] 
+NIP.​
+NIP. 
+ 
+ 
+4 
+
+
+==================================================
+[HALAMAN 5 / 27]
+==================================================
+
+LEMBAR PERSETUJUAN (14 pt, bold) 
+[SETELAH REVISI PROPOSAL TA] 
+ 
+Proposal Tugas Akhir dengan judul : 
+ 
+“[JUDULTUGAS AKHIR DENGAN HURUF KAPITAL DALAM BAHASA 
+INDONESIA]” (14 pt, bold) 
+ 
+Yang disusun oleh : 
+ 
+[tanda tangan] 
+ 
+ 
+[Nama Mahasiswa] 
+NIM. [NIM] 
+ 
+Telah diperiksa dan disetujui oleh tim penguji: 
+Pembimbing Utama 
+ 
+[tanda tangan] 
+ 
+[Nama Pembimbing Utama] 
+NIP. 
+Pembimbing Pendamping 
+ 
+[tanda tangan] 
+ 
+[Nama Pembimbing Pendamping] 
+NIP. 
+Penguji I 
+ 
+[tanda tangan] 
+ 
+[Nama Penguji I] 
+NIP. 
+Penguji II 
+ 
+[tanda tangan] 
+ 
+[Nama Penguji II] 
+NIP. 
+ 
+5 
+
+
+==================================================
+[HALAMAN 6 / 27]
+==================================================
+
+LEMBAR PENGESAHAN (14 pt, bold) 
+ 
+TUGAS AKHIR 
+Disusun untuk memenuhi syarat memperoleh gelar  
+Sarjana Komputer (S.Kom.) 
+pada 
+Program Studi S-1 [Nama Prodi] Jurusan [Nama Jurusan] 
+Fakultas [Nama Fakultas] 
+Institut Teknologi Kalimantan 
+Judul Tugas Akhir : 
+  
+[JUDULTUGAS AKHIR DENGAN HURUF KAPITAL DALAM BAHASA 
+INDONESIA] (14 pt, bold) 
+Oleh : 
+[Nama mahasiswa] NIM. [NIM] 
+ 
+Disetujui oleh Tim Penguji Tugas Akhir : 
+ 
+BALIKPAPAN 
+[BULAN], [TAHUN] 
+[disesuaikan dengan 
+periode Sidang TA]
+ 
+6 
+1. [Nama Dosen Pembimbing Utama] 
+Pembimbing I 
+…………
+2. [Nama Dosen Pembimbing Pendamping] 
+Pembimbing II 
+…………
+3. [Nama Dosen Penguji] 
+Penguji I 
+…………
+4. [Nama Dosen Penguji] 
+Penguji II 
+…………
+
+
+==================================================
+[HALAMAN 7 / 27]
+==================================================
+
+KATA PENGANTAR (14 pt, bold) 
+ 
+(Berisi ucapan syukur kepada Tuhan Yang Maha Esa, disusul penyebutan judul 
+tugas akhir dan tujuan penulisan sebagai syarat kelulusan. Selanjutnya, 
+disampaikan ucapan terima kasih kepada dosen pembimbing serta pihak-pihak 
+yang telah membantu, seperti dosen lain, keluarga, dan teman. Paragraf ditutup 
+dengan harapan agar karya ini bermanfaat, kesadaran atas kekurangan, dan 
+permohonan saran yang membangun. Gunakan bahasa baku dan akhiri dengan 
+penulisan tempat, tanggal, serta nama penulis di bagian bawah) (12 pt, 1,5 spasi). 
+ 
+7 
+
+
+==================================================
+[HALAMAN 8 / 27]
+==================================================
+
+[JUDUL TUGAS AKHIR DENGAN HURUF KAPITAL DALAM 
+BAHASA INDONESIA] (14 pt, bold) 
+ 
+Nama Mahasiswa​
+: [Nama mahasiswa] 
+NIM​
+: [NIM] 
+Dosen Pembimbing Utama​
+: [Nama Dosen Pembimbing Utama]  
+Dosen Pembimbing Pendamping​
+: [Nama Dosen Pembimbing Pendamping] 
+ 
+ABSTRAK (14 pt, bold) 
+ 
+Abstrak merupakan ikhtisar suatu tugas akhir yang memuat permasalahan 
+dan/atau obyek yang dirancang, tujuan, potensi dampak fungsional/komersial, 
+konsep desain, metode implimentasi pada proposal tugas akhir. Pada laporan tugas 
+akhir, selain yang ada di proposal ditambah dengan pengujian dan evaluasi, serta 
+kesimpulan. Abstrak dibuat untuk memudahkan pembaca mengerti secara cepat 
+isi tugas akhir serta memutuskan apakah perlu membaca lebih lanjut atau tidak. 
+Jumlah minimum kata pada abstrak adalah 200 - 350 kata. Penulisan abstrak 
+hanya pada satu paragraf, diketik dengan tipe font Times New Roman 12 poin 
+dengan spasi tunggal (line spacing = single). Setiap penggunaan bahasa asing 
+harus diformat italic. Format penulisan harus mengacu pada format ini.  
+ 
+Kata kunci: kata kunci 1, kata kunci 2, kata kunci 3, kata kunci 4 dan kata kunci 
+5 [kata kunci maksimal 5, satu kata kunci boleh terdiri dari lebih dari satu kata] 
+(12 pt) 
+ 
+ 
+8 
+
+
+==================================================
+[HALAMAN 9 / 27]
+==================================================
+
+[FINAL PROJECT TITLE IN CAPITAL LETTERS IN ENGLISH] 
+(14 pt, bold) 
+ 
+By​
+: [Student name] 
+Student Identity Number​
+: [NIM] 
+Supervisor​
+: [Supervisor Name]  
+Co- Supervisor​
+: [Co- Supervisor Name] 
+ 
+ABSTRACT (14 pt, bold) 
+ 
+Abstract is a summary of a final assignment that contains the problems 
+and/or objects designed, objectives, potential functional/commercial impacts, 
+design concepts, implementation methods in the final assignment proposal. In the 
+final assignment report, in addition to those in the proposal, testing and 
+evaluation, as well as conclusions are added. The abstract is made to make it 
+easier for readers to quickly understand the contents of the final assignment and 
+decide whether or not to read further. The minimum number of words in the 
+abstract is 200 - 350 words. The abstract is written in only one paragraph, typed 
+in Times New Roman 12-point font with single spacing (line spacing = single). 
+Any use of foreign languages ​must be formatted in italics. The writing format must 
+refer to this format.  
+ 
+Keywords: keyword 1, keyword 2, keyword 3, keyword 4 dan keyword 5 
+[maximum 5 keywords, one keyword can consist of more than one word] (12 pt) 
+ 
+ 
+ 
+9 
+
+
+==================================================
+[HALAMAN 10 / 27]
+==================================================
+
+DAFTAR ISI (14 pt, bold) 
+ 
+ 
+Halaman Sampul​
+i 
+PERNYATAAN ORISINALITAS TUGAS AKHIR (14 pt, bold)​
+ii 
+PERNYATAAN PERSETUJUAN PUBLIKASI TUGAS AKHIR UNTUK 
+KEPENTINGAN AKADEMIS (14 pt, bold)​
+iii 
+LEMBAR PERSETUJUAN (14 pt, bold)​
+iv 
+LEMBAR PERSETUJUAN (14 pt, bold)​
+v 
+[SETELAH REVISI PROPOSAL TA]​
+v 
+LEMBAR PENGESAHAN (14 pt, bold)​
+vi 
+KATA PENGANTAR (14 pt, bold)​
+vii 
+ABSTRAK (14 pt, bold)​
+viii 
+ABSTRACT (14 pt, bold)​
+ix 
+DAFTAR ISI (14 pt, bold)​
+x 
+DAFTAR GAMBAR (14 pt, bold)​
+xii 
+DAFTAR TABEL (14 pt, bold)​
+xiii 
+DAFTAR NOTASI (14 pt, bold)​
+xiv 
+BAB 1​
+1 
+PENDAHULUAN (14 pt, bold)​
+1 
+1.1.​
+Latar Belakang (12 pt, 1.5 spasi, bold)​
+1 
+1.2.​
+Rumusan Masalah (12 pt, 1.5 spasi, bold)​
+1 
+1.3.​
+Tujuan (12 pt, 1.5 spasi, bold)​
+1 
+1.4.​
+Batasan Proyek (12 pt, 1.5 spasi, bold)​
+2 
+1.5.​
+Relevansi dengan Industri atau Akademik (12 pt, 1.5 spasi, bold)​
+2 
+1.6.​
+Kerangka Penelitian (12 pt, 1.5 spasi, bold)​
+2 
+1.7.​
+Mitra (12 pt, 1.5 spasi, bold)​
+2 
+BAB 2​
+4 
+METODOLOGI (14 pt, bold)​
+4 
+2. 1.​
+Domain Penelitian (12 pt, 1.5 spasi, bold)​
+4 
+2. 2.​
+Penelitian Terdahulu (12 pt, 1.5 spasi, bold)​
+4 
+10 
+
+
+==================================================
+[HALAMAN 11 / 27]
+==================================================
+
+2. 3.​
+Teknologi (12 pt, 1.5 spasi, bold)​
+5 
+2. 4.​
+Metode (12 pt, 1.5 spasi, bold)​
+5 
+2. 5.​
+Standar Mitra (optional) (12 pt, 1.5 spasi, bold)​
+5 
+BAB 3​
+6 
+RANCANGAN PROYEK (14 pt, bold)​
+6 
+3. 1​
+Garis Besar Proyek (12 pt, 1.5 spasi, bold)​
+6 
+3. 2​
+Diagram Alir atau Flowchart (12 pt, 1.5 spasi, bold)​
+6 
+3. 3​
+Prosedur (12 pt, 1.5 spasi, bold)​
+6 
+3. 4​
+Konseptual Proyek​
+7 
+3. 5​
+Sumber Daya (12 pt, 1.5 spasi, bold)​
+7 
+3. 6​
+Rencana Jadwal (12 pt, 1.5 spasi, bold)​
+8 
+BAB 4​
+9 
+HASIL PROYEK (14 pt, bold)​
+9 
+4. 1​
+Tahapan 1 (12 pt, 1.5 spasi, bold)​
+9 
+4. 2​
+Tahapan 2 (12 pt, 1.5 spasi, bold)​
+9 
+4. 3​
+Tahapan 3, dst. (12 pt, 1.5 spasi, bold)​
+9 
+BAB 5​
+10 
+PENUTUP (14 pt, bold)​
+10 
+5. 1​
+Kesimpulan (12 pt, 1.5 spasi, bold)​
+10 
+5. 2​
+Rekomendasi (12 pt, 1.5 spasi, bold)​
+10 
+DAFTAR PUSTAKA (14 pt, bold)​
+11 
+LAMPIRAN (14 pt, bold)​
+12 
+ 
+ 
+ 
+ 
+11 
+
+
+==================================================
+[HALAMAN 12 / 27]
+==================================================
+
+DAFTAR GAMBAR (14 pt, bold) 
+ 
+Gambar 4. 1. Hubungan antara supersaturasi dengan laju nukleasi, 
+pertumbuhan kristal dan ukuran kristal ​
+9 
+ 
+ 
+ 
+ 
+12 
+
+
+==================================================
+[HALAMAN 13 / 27]
+==================================================
+
+DAFTAR TABEL (14 pt, bold) 
+ 
+Tabel 2. 1. Penelitian Terdahulu​
+4 
+ 
+ 
+13 
+
+
+==================================================
+[HALAMAN 14 / 27]
+==================================================
+
+DAFTAR NOTASI (14 pt, bold) 
+ 
+ 
+ 
+14 
+
+
+==================================================
+[HALAMAN 15 / 27]
+==================================================
+
+BAB 1  
+PENDAHULUAN (14 pt, bold) 
+ 
+Pada pengantar bab ini merupakan deskripsi singkat dari isi bab 1 
+Pendahuluan. Isi bab 1 Pendahuluan meliputi : latar belakang, rumusan masalah, 
+tujuan, batasan proyek, relevansi dengan industri atau akademik serta kerangka 
+penelitian. Jika ada mitra, sertakan perannya. Penjelasannya singkat, lengkap dan 
+dapat dimengerti oleh pembaca. (12 pt, 1.5 spasi) 
+1.1.​
+Latar Belakang (12 pt, 1.5 spasi, bold) 
+Latar belakang tugas akhir berbentuk proyek dimulai dengan pengenalan 
+masalah atau isu yang menjadi dasar dilakukannya proyek. Penulis harus 
+menjelaskan secara umum apa yang mendorong dilakukannya proyek ini, baik 
+dari segi kebutuhan, permasalahan yang ada, ataupun studi kasus. Penulis juga 
+perlu menghubungkan proyek ini dengan penelitian atau teori-teori yang relevan 
+untuk menunjukkan dasar ilmiah atau metodologi yang digunakan. Terakhir, latar 
+belakang proyek harus mencakup penjelasan tentang pentingnya proyek tersebut, 
+serta dampak yang diharapkan, baik bagi pengembangan ilmu pengetahuan, 
+masyarakat, atau sektor terkait. (12 pt, 1.5 spasi) 
+1.2.​
+Rumusan Masalah (12 pt, 1.5 spasi, bold) 
+Penulis 
+perlu 
+mengidentifikasi 
+permasalahan yang menjadi dasar 
+dilakukannya proyek, baik itu masalah praktis yang dihadapi oleh industri, 
+masyarakat, atau bidang tertentu. Masalah yang dirumuskan harus spesifik, jelas, 
+dan relevan dengan topik yang diangkat. (12 pt, 1.5 spasi) 
+1.3.​
+Tujuan (12 pt, 1.5 spasi, bold) 
+Tujuan pada tugas akhir berbentuk proyek harus disusun dengan jelas dan 
+terukur, mencakup apa yang ingin dicapai melalui proyek tersebut. Tujuan yang 
+dituliskan harus spesifik, relevan dengan rumusan masalah, dan dapat diukur 
+keberhasilannya, misalnya dengan indikator atau metrik tertentu, seperti 
+peningkatan efisiensi atau kepuasan pengguna. Pastikan bahwa tujuan tersebut 
+berhubungan langsung dengan objek proyek yang dirancang dan menjadi solusi 
+1 
+
+
+==================================================
+[HALAMAN 16 / 27]
+==================================================
+
+terhadap permasalahan yang diidentifikasi sebelumnya. Gunakan bahasa yang 
+jelas, sederhana, dan terfokus pada pencapaian yang dapat dievaluasi. (12 pt, 1.5 
+spasi) 
+1.4.​
+Batasan Proyek (12 pt, 1.5 spasi, bold) 
+Batasan proyek tugas akhir harus dijelaskan untuk menetapkan ruang 
+lingkup yang jelas dan terfokus pada aspek-aspek tertentu dari proyek. Penulis 
+perlu merumuskan dengan tegas hal-hal yang menjadi fokus utama dalam proyek, 
+seperti teknologi, metodologi, atau objek yang dikembangkan, serta hal-hal yang 
+tidak termasuk dalam proyek tersebut. Batasan ini penting untuk menjaga agar 
+proyek tidak meluas ke area yang tidak relevan, sekaligus memastikan pencapaian 
+tujuan yang lebih terarah dan efektif. (12 pt, 1.5 spasi) 
+1.5.​
+Relevansi dengan Industri atau Akademik (12 pt, 1.5 spasi, bold) 
+Penulis perlu mengidentifikasi relevansi proyek tersebut terhadap bidang 
+studi atau industri yang terkait, serta menguraikan manfaat yang diharapkan dari 
+pelaksanaan proyek. Relevansi proyek dapat menunjukkan kontribusi nyata dari 
+proyek terhadap perkembangan bidang tertentu. Penulis harus mengaitkan proyek 
+dengan kebutuhan atau tantangan yang dihadapi oleh industri atau dunia 
+akademik, serta bagaimana solusi yang diusulkan dapat memberikan dampak 
+positif. Menjelaskan relevansi ini membantu mempertegas nilai proyek dalam 
+konteks yang lebih luas. (12 pt, 1.5 spasi) 
+1.6.​
+Kerangka Penelitian (12 pt, 1.5 spasi, bold) 
+Penulis perlu merinci tahapan-tahapan utama yang akan dilakukan, seperti 
+analisis masalah, desain atau pengembangan objek, metode yang digunakan, serta 
+teknik pengumpulan dan analisis data. Kerangka ini juga mencakup penjelasan 
+mengenai pendekatan yang diambil, baik kualitatif, kuantitatif, atau gabungan 
+keduanya, serta bagaimana setiap tahap berkontribusi untuk mencapai tujuan 
+proyek. Dengan menyusun kerangka penelitian yang terstruktur, penulis dapat 
+menunjukkan bagaimana proyek akan dilaksanakan secara sistematis dan terarah. 
+(12 pt, 1.5 spasi) 
+1.7.​
+Mitra (12 pt, 1.5 spasi, bold) 
+2 
+
+
+==================================================
+[HALAMAN 17 / 27]
+==================================================
+
+Mitra proyek tugas akhir dapat ditambahkan jika proyek melibatkan kerja 
+sama dengan pihak eksternal, seperti perusahaan, instansi, industri dan lainnya. 
+Penulis dapat menjelaskan mitra yang terlibat, baik itu sebagai pemberi data, 
+sumber daya, atau sebagai pihak yang berkolaborasi dalam pengembangan 
+proyek. Penulisan ini mencakup nama mitra, peran mereka dalam proyek, dan 
+kontribusi yang diberikan selama pelaksanaan proyek. Meskipun tidak wajib, 
+mencantumkan mitra dapat memberikan gambaran lebih lengkap tentang konteks 
+dan aplikasi proyek dalam dunia nyata. (12 pt, 1.5 spasi) 
+ 
+ 
+3 
+
+
+==================================================
+[HALAMAN 18 / 27]
+==================================================
+
+BAB 2 
+METODOLOGI (14 pt, bold) 
+ 
+Pada bab ini memaparkan dan membandingkan beberapa penelitian, 
+teknologi, dan/atau metode yang mendukung untuk penyelesaian proyek. Jika ada 
+mitra, sertakan standar yang digunakan. Penjelasannya harus singkat, lengkap dan 
+dapat dimengerti oleh pembaca. (12 pt, 1.5 spasi) 
+2. 1.​ Domain Penelitian (12 pt, 1.5 spasi, bold) 
+Penulis menguraikan domain atau bidang permasalahan yang menjadi fokus 
+pengembangan proyek. Uraian mencakup gambaran umum domain, karakteristik, 
+proses bisnis atau alur kerja yang relevan, serta permasalahan yang 
+melatarbelakangi kebutuhan pengembangan solusi. Penjelasan juga perlu 
+menunjukkan keterkaitan antara domain penelitian dengan tujuan pengembangan 
+proyek sehingga dapat memberikan konteks yang jelas terhadap implementasi 
+teknologi atau metode yang digunakan. Apabila terdapat data, regulasi, standar, 
+diagram, atau ilustrasi yang mendukung pemahaman domain penelitian, maka 
+seluruh tabel dan/atau gambar harus disebut atau diacu (mention) dalam paragraf. 
+(12 pt, 1.5 spasi) 
+2. 2.​ Penelitian Terdahulu (12 pt, 1.5 spasi, bold) 
+Penulis perlu melakukan analisis perbandingan antara beberapa hasil 
+implementasi penelitian terdahulu dari teknologi yang digunakan dan fitur atau 
+metode utama. Setiap tabel dan/atau gambar harus disebut atau diacu (mention) 
+dalam paragraf. Contoh tabel dapat dilihat pada Tabel 2. 1. (12 pt, 1.5 spasi) 
+Tabel 2. 1. Penelitian Terdahulu 
+No. 
+Nama dan Tahun 
+Publikasi*) 
+Hasil 
+1 
+Santiago dkk, 
+2023 
+Teknologi: Sensor low-cost, AI (DNN, LSTM), 
+IoT 
+ 
+4 
+
+
+==================================================
+[HALAMAN 19 / 27]
+==================================================
+
+No. 
+Nama dan Tahun 
+Publikasi*) 
+Hasil 
+Fitur/Metode Utama: Prediksi kualitas udara 
+24 jam ke depan dengan jaringan saraf dalam 
+dan sistem pemantauan real-time 
+ 
+2 
+Eladio dkk, 2024 
+Teknologi: 
+SDS011, 
+mikrokontroler, 
+IoT 
+platform 
+ 
+Fitur/Metode Utama: Pemantauan PM10 dan 
+PM2.5 di kota Chitré, dengan dashboard 
+real-time 
+ 
+2. 3.​ Teknologi (12 pt, 1.5 spasi, bold) 
+Penulis harus menjelaskan teknologi atau alat yang digunakan dalam 
+pengembangan proyek, seperti perangkat lunak, perangkat keras, atau sistem 
+tertentu. Penjelasan ini juga mencakup alasan pemilihan metode atau teknologi 
+tersebut. (12 pt, 1.5 spasi) 
+2. 4.​ Metode (12 pt, 1.5 spasi, bold) 
+Penulis menguraikan metode penelitian yang digunakan untuk mendukung 
+pengembangan proyek. Penjelasan mencakup konsep dasar metode, tahapan 
+pelaksanaan, serta penerapannya dalam proses pengumpulan, pengolahan, dan 
+analisis data sesuai dengan kebutuhan penelitian. Penulis juga perlu memberikan 
+justifikasi 
+terhadap 
+pemilihan 
+metode 
+yang 
+digunakan 
+dengan 
+mempertimbangkan karakteristik permasalahan dan kesesuaiannya dengan kondisi 
+atau environment mitra. Uraian difokuskan pada alasan pemilihan dan 
+implementasi metode dalam penelitian sehingga tidak diperlukan analisis atau 
+perbandingan dengan metode lain. Apabila terdapat diagram alur, kerangka 
+penelitian, atau ilustrasi yang menjelaskan tahapan metode, maka setiap tabel 
+dan/atau gambar harus disebut atau diacu (mention) dalam paragraf. (12 pt, 1.5 
+spasi) 
+5 
+
+
+==================================================
+[HALAMAN 20 / 27]
+==================================================
+
+2. 5.​ Standar Mitra (optional) (12 pt, 1.5 spasi, bold) 
+Penulis dapat mencantumkan standar atau peran mitra yang relevan, 
+meskipun bagian ini bersifat opsional. Penulis dapat menyebutkan bagaimana 
+standar yang diterapkan oleh mitra (misalnya standar teknis atau prosedural) 
+mempengaruhi jalannya proyek dan pencapaian hasil yang diinginkan. Penyertaan 
+mitra dan standar yang mereka terapkan dapat memberikan gambaran lebih jelas 
+mengenai kualitas dan relevansi proyek dalam konteks industri atau akademik. 
+(12 pt, 1.5 spasi) 
+ 
+6 
+
+
+==================================================
+[HALAMAN 21 / 27]
+==================================================
+
+BAB 3 
+RANCANGAN PROYEK (14 pt, bold) 
+ 
+Pada bab ini, Rancangan Proyek diuraikan dengan mencakup garis besar 
+proyek, diagram alir atau flowchart, prosedur, konseptual proyek, kebutuhan 
+sumber daya, serta rencana jadwal proyek. Jika proyek dilakukan secara 
+kolaboratif, dijelaskan pula kontribusi masing-masing mitra. Setiap tahapan saling 
+berkaitan secara sistematis untuk membentuk satu kesatuan proses yang 
+terstruktur. (12 pt, 1.5 spasi) 
+3. 1​
+Garis Besar Proyek (12 pt, 1.5 spasi, bold) 
+Bagian ini memberikan gambaran singkat tentang apa yang akan dilakukan 
+dan hasil yang ingin dicapai dari proyek maupun output dari proyek yang 
+dikerjakan sesuai dengan metode yang digunakan. Informasi dalam garis besar 
+proyek menjadi dasar dalam menyusun diagram alir pada tahap berikutnya. (12 pt, 
+1.5 spasi) 
+3. 2​
+Diagram Alir atau Flowchart (12 pt, 1.5 spasi, bold) 
+Diagram alir atau flowchart adalah representasi grafis dari alur kerja, proses, 
+atau langkah-langkah yang akan dilalui berdasarkan garis besar proyek yang telah 
+ditetapkan. Diagram ini membantu memudahkan pemahaman hubungan antar unit 
+atau tahapan, serta memberikan gambaran umum mengenai jalannya proses atau 
+sistem yang dirancang. Jika memungkinkan, buat flowchart untuk alur proses 
+teknis dan alur kerja tahapan pelaksanaan proyek. Flowchart bisa berbentuk 
+sederhana (blok panah) atau lebih kompleks (menggunakan simbol standar proses 
+industri). Flowchart menggambarkan jalannya proyek secara garis besar. Setiap 
+kotak/tahapan dalam flowchart akan dijabarkan secara rinci dalam bagian 
+prosedur. (12 pt, 1.5 spasi) 
+3. 3​
+Prosedur (12 pt, 1.5 spasi, bold) 
+Prosedur adalah penjelasan teks dari langkah-langkah yang ada di flowchart. 
+Setiap tahapan langkah dalam diagram alir diuraikan lebih rinci, misalnya i 
+mencakup langkah-langkah teknis spesifik, persyaratan operasional, kondisi 
+7 
+
+
+==================================================
+[HALAMAN 22 / 27]
+==================================================
+
+proses, dan kontrol kualitas yang diperlukan untuk memastikan setiap bagian 
+proses berjalan sesuai standar yang ditetapkan. (12 pt, 1.5 spasi) 
+3. 4​
+Konseptual Proyek 
+Penulis menguraikan konsep atau rancangan awal proyek yang menjadi 
+dasar pelaksanaan penelitian dan pengembangan solusi. Uraian disusun sesuai 
+dengan karakteristik topik penelitian serta memuat artefak atau dokumen 
+konseptual yang menjadi acuan pada tahapan implementasi. Konseptual proyek 
+harus menggambarkan kondisi, kebutuhan, atau objek yang akan dikembangkan 
+sehingga pembaca memperoleh pemahaman yang jelas mengenai ruang lingkup 
+dan arah penyelesaian penelitian. 
+Bentuk konseptual proyek disesuaikan dengan rumpun penelitian, antara 
+lain: (1) pengembangan perangkat lunak, seperti daftar kebutuhan fungsional 
+(functional requirements), product backlog, user story, atau use case; (2) data dan 
+kecerdasan artifisial, seperti tabel data mentah, deskripsi atribut, karakteristik 
+dataset, atau hasil eksplorasi data awal; (3) keamanan sistem informasi, seperti 
+identifikasi aset, ancaman, kerentanan, kebutuhan pengamanan, hasil analisis 
+risiko, atau pemetaan kontrol keamanan; (4) infrastruktur dan manajemen pusat 
+data, seperti inventaris layanan, konfigurasi infrastruktur, topologi jaringan, 
+arsitektur pusat data, atau kondisi operasional yang menjadi objek penelitian; (5) 
+tata kelola teknologi informasi, seperti proses bisnis, struktur organisasi, katalog 
+layanan TI, pemetaan proses, kebijakan, atau dokumen tata kelola yang digunakan 
+sebagai acuan; serta (6) proses bisnis dan standar operasional prosedur (SOP), 
+seperti daftar proses bisnis, alur kerja, prosedur operasional, atau pemetaan 
+aktivitas pada instansi. Untuk rumpun penelitian sistem informasi lainnya, penulis 
+dapat menyajikan artefak konseptual yang relevan dengan objek penelitian 
+sebagai dasar pengembangan solusi. 
+Apabila menggunakan tabel, gambar, diagram, atau dokumen pendukung, 
+maka setiap tabel dan/atau gambar harus disebut atau diacu (mention) dalam 
+paragraf. (12 pt, 1.5 spasi) 
+3. 5​
+Sumber Daya (12 pt, 1.5 spasi, bold) 
+Jelaskan semua sumber daya yang diperlukan untuk pelaksanaan proyek, 
+meliputi:   
+8 
+
+
+==================================================
+[HALAMAN 23 / 27]
+==================================================
+
+1.​ Sumber Daya Manusia: Tim pelaksana, peran, dan keahlian  
+2.​ Material/Bahan: Daftar bahan baku, komponen elektronik, atau bahan 
+pendukung lainnya.   
+3.​ Alat dan Perangkat: Software (contoh: MATLAB, AutoCAD), hardware 
+(contoh: mikrokontroler Arduino, sensor), atau alat laboratorium.   
+4.​ Anggaran: Rincian biaya per item (opsional, bisa dipindahkan ke lampiran). 
+(12 pt, 1.5 spasi) 
+3. 6​
+Rencana Jadwal (12 pt, 1.5 spasi, bold) 
+Bagian ini memuat timeline pelaksanaan proyek dalam bentuk tabel atau 
+diagram Gantt. Sertakan fase utama atau tahapan penting seperti perencanaan, 
+pengadaan bahan, implementasi, pengujian, dan penyusunan laporan. Pastikan 
+jadwal realistis dan sesuai dengan batas waktu yang ditetapkan institusi. (12 pt, 
+1.5 spasi) 
+ 
+ 
+9 
+
+
+==================================================
+[HALAMAN 24 / 27]
+==================================================
+
+BAB 4 
+HASIL PROYEK (14 pt, bold) 
+ 
+Pada bab ini menyajikan penyelesaian masalah praktis melalui penerapan 
+metode sesuai dengan diagram alir. Hasil proyek dianalisis dan dievaluasi 
+pencapaiannya, serta jika ada mitra tambahkan relevansi solusi dengan kebutuhan. 
+Jika independen, fokus pada efektivitas dan inovasi. (12 pt, 1.5 spasi) 
+4. 1​
+Tahapan 1 (12 pt, 1.5 spasi, bold) 
+4. 2​
+Tahapan 2 (12 pt, 1.5 spasi, bold) 
+4. 3​
+Tahapan 3, dst. (12 pt, 1.5 spasi, bold) 
+ 
+ 
+ 
+10 
+
+
+==================================================
+[HALAMAN 25 / 27]
+==================================================
+
+BAB 5 
+PENUTUP (14 pt, bold) 
+Pada bab penutup berisi Kesimpulan dan Rekomendasi. Kesimpulan 
+merangkum pencapaian proyek dan tingkat keberhasilannya. Rekomendasi dapat 
+mencakup pengembangan lanjutan, validasi tambahan, atau penerapan lebih luas. 
+(12 pt, 1.5 spasi) 
+5. 1​
+Kesimpulan (12 pt, 1.5 spasi, bold) 
+Kesimpulan disusun berdasarkan analisis terhadap hasil penelitian. Penulis 
+menyampaikan sejauh mana tujuan tugas akhir telah tercapai, serta menguraikan 
+keberhasilan proyek dalam memenuhi konseptual proyek dan kebutuhan 
+pengguna. Bagian ini juga menyoroti aspek-aspek penting yang menjadi temuan 
+utama dalam proses penelitian, seperti efisiensi, fungsionalitas, atau inovasi yang 
+dihasilkan oleh proyek. Kesimpulan dapat berupa paragraf atau penomoran. (12 
+pt, 1.5 spasi) 
+5. 2​
+Rekomendasi (12 pt, 1.5 spasi, bold) 
+Rekomendasi ditujukan sebagai saran untuk pengembangan lebih lanjut 
+terhadap proyek. Saran dapat mencakup pengembangan lanjutan, validasi 
+tambahan, atau penerapan lebih luas. (12 pt, 1.5 spasi) 
+ 
+ 
+11 
+
+
+==================================================
+[HALAMAN 26 / 27]
+==================================================
+
+DAFTAR PUSTAKA (14 pt, bold) 
+ 
+Daftar pustaka yang digunakan harus ditulis secara benar, lengkap, dan 
+konsisten dengan menggunakan format atau standar tertentu. Penulisan daftar 
+pustaka diwajibkan menggunakan aplikasi pengolah referensi, seperti Mendeley, 
+Zotero, Endnote, atau lainnya. Daftar pustaka mengikuti aturan HARVARD style. 
+Setiap daftar pustaka harus dikutip dalam dalam uraian atau teks, tabel dan atau 
+gambar.  
+ 
+ 
+12 
+
+
+==================================================
+[HALAMAN 27 / 27]
+==================================================
+
+LAMPIRAN (14 pt, bold) 
+ 
+Lampiran merupakan data atau pelengkap atau hasil olahan yang menunjang 
+penulisan tugas akhir, tetapi tidak dicantumkan di dalam isi tugas akhir. Contoh: 
+tabulasi data penelitian, metode perhitungan, data pendukung atau data sekunder 
+yang mendukung penelitian dan riwayat penulis. (12 pt, 1.5 spasi) 
+ 
+13 
+
+
