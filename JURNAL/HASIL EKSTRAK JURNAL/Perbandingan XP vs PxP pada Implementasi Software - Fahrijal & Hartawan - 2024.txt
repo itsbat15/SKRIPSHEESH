@@ -1,0 +1,790 @@
+--- [Halaman 1] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+367 
+ 
+ 
+PERANCANGAN APLIKASI WEB PENGA W ASAN  
+PERANGKAT NTE OLEH TEKNISI DI UNIT  
+W AREHOUSE  PT. TELKOM AKSES 
+JAKARTA PUSAT 
+ 
+1Taufik Fahrijal, 2 Rumadi Hartawan 
+ 
+Program Studi Teknik Informatika, Sekolah Tinggi Manajemen Informatika Jayakarta 
+Jl. Salemba Raya No.24, RT.4/RW.6, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430. 
+ 
+*e-mail: 235770077@stmik.jayakarta.ac.id, rumadi_hartawan@stmik.jayakarta.ac.id 
+ 
+Abstrak 
+PT. Telkom Akses adalah perusahaan yang bergerak di bidang layananan dan pengadaan jaringan 
+telekomunikasi yang menggunakan teknologi fiber. Salah satu nya ialah indihome , pada layanan ini 
+menggunakan material fiber optic dan perangkat aktif, perangkat aktif yang di gunakan adalah NTE 
+(Network Terminal Equipment) perangkat ini di gunakan untuk layanan indihome yang di pasang oleh 
+teknisi. Teknisi melakukan pengambilan NTE di gudang setelah menerima order untuk layanan 
+indihome pelanggan, masalah yang di hadapi adalah sering kali pemasangan NTE tidak sesuai waktu 
+pemasangan yang di tentukan  sehingga terjadi penumpukan perangkat, NTE yang masih  ada pada 
+teknisi di sebut Intech (In Technition).  Hal ini  sangat di perhatikan  perusahaan karena jika belum 
+terpasang di pelanggan maka billing pelanggan pada layanan tidak di lakukan dan mengakibatkan 
+keterlambatan pemasukan bagi perushaan. Maka di perlukan pengawasan  NTE dari gudang untuk 
+segera di pasang pada layanan  indihome pelanggan menggunakan aplikasi website , dalam hal ini 
+penulis merancang suatu aplikasi untuk melakukan tugas pengawasan tersebut . A plikasi yang di 
+maksud a dalah NTE Intech Telkom Akses ( NITA). Penelitian ini menggunakan metode kualitatif 
+dengan cara observasi, wawancara dan studi pustaka. Analisa sistem yang berlangsung di unit gudang 
+di gambarkan dengan activity diagram . Perancangan aplikasi menggunakan met ode prototype dan 
+rancang bangun a plikasi NITA ini menggunakan bahasa pemrograman PHP, database MySQL , dan 
+template AdminLte. 
+Kata kunci: Pengawasan , Intech NTE , NITA dan gudang.  
+Abstract 
+PT Telkom Aksess is operates in the field of services and procurement of telecommunications 
+networks that use fiber opctic technology. Such is known service is Indihome, this service uses active 
+devices, the active device  is NTE (Network Terminal Equipment). This device is used for Indihome 
+services which are installed by technicians. The technician picks up the NTE at the warehouse after 
+receiving an order for the customer's Indihome service. The problem they face is that often the NTE 
+installation does not match the spe cified installation time, resulting in a buildup of devices. The NTE 
+that is still with the technician is called Intech (In Technition). Its really pays attention to companies 
+because if it has not been installed by customers then customer billing for the service cannot be 
+carried out and will result in delays in income for the company. So NTE monitoring from the 
+warehouse is needed to be immediately installed on the customer's Indihome service using a website 
+application, in this case the author designed a n application to carry out this monitoring task. The 
+application in question is NTE Intech Telkom Aksess (NITA). This research uses qualitative methods 
+by means of observation, interviews and literature study. The system analysis that takes place in the 
+
+--- [Halaman 2] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+368 
+ 
+warehouse unit is depicted with an activity diagram. The application design uses the prototype 
+method and the NITA application design uses the PHP programming language, MySQL database, and 
+AdminLte template. 
+Keywords: Supervision, Intech NTE, NITA and warehouse. 
+ 
+1 Pendahuluan 
+PT. Telkom akses adalah perusahaan yang bergerak di bidang penyedia jasa jaringan telekomunikasi 
+dan manage service, serta merupakan anak perusahaan PT. Telkom Indonesia, mengelola perangkat 
+Network Terminal Equipment (NTE).  NTE adalah singkatan dari Optical Network Terminal (ONT)  
+dan Set Top Box (STB)  yang merupakan aset perangkat aktif dari layanan indihome.  Dengan 
+demikian tujuan yang ingin dicapai  adalah untuk melakukan pengawasan terhadap NTE dari gudang 
+yang dibawa tekni si agar tidak terjadi penumpukan NTE yang terlalu lama ada pada teknisi dan 
+mengoptimalkan himbauan gudang kepada teknisi agar tidak terjadi penumpukan serta mempercepat 
+aliran keluar-masuk barang. Aplikasi NITA (NTE Intech Telkom Akses) pada admin gudang diciptakan 
+untuk memberikan kemudahan kepada gudang dalam mengawasi NTE di gudang. Dalam hal ini 
+petugas gudang sering mengalami hambatan untuk mengetahui informasi NTE yang ada di teknisi  
+oleh karena itu penulis  ingin membuat artikel untuk pembuatan apl ikasi pengawasan intech NTE di 
+unit gudang dengan nama dengan nama aplikasi NITA(NTE Intech Telkom Akses), dengan demikian 
+sistem informasi tersebut dapat membantu mengawasi intech NTE pada teknisi. 
+ 
+1.1 Latar Belakang 
+Faktor yang mempengaruhi pemasukan bagi Perusahaan yang bergerak di bidang jasa layanan internet 
+adalah proses instalasi dan pemasangan perangkat aktif di pelanggan yang sesuai ketentuan, maka dari 
+itu pengelolaan dan pengawasan perangkat yang mendukung pemasangan layanan sangat penting di 
+lakukan, apabila pemasangan di lakukan dengan tepat maka pemasukan keuangan bagi Perusahaan  
+akan berjalan dengan baik dan lancar. Hal ini juga yang membuat PT. Telkom Akses yang bergerak di 
+bidang yang sama selalu memperhatikan instalasi atau pemasangan layanan  yakni layanan indihome 
+yang menggunakan perangkat aktif yaitu NTE (Network Terminal Equipment) di jaringan FTTH 
+(Fiber To The Home). Pengawasan dalam instalasi NTE sangat penting untuk memberikan 
+pemasukan bagi Perusahaan, maka di butuhkan suatu cara lain  terkait pengawasan pemasangan NTE. 
+NTE yang masih ada pada Teknisi di sebut Intech (In technician). 
+ 
+1.2 Identifikasi Masalah 
+Identifikasi masalah pada penulisan artikel ini adalah: 
+1. Penumpukan Intech NTE pada teknisi yang membawa Work Order  karena tidak segera di 
+pasang di pelanggan. 
+2. Kurang nya pengawasan petugas gudang terkait pemasangan NTE oleh Teknisi 
+3. Teknisi tidak memberikan informasi terkait perangkat yang belum terpasang 
+ 
+1.3 Rumusan Masalah 
+Adapun perumusan masalah dalam penelitian ini adalah sebagai berikut :  
+1. Bagaimana merancang aplikasi pengawasan  NTE ketika terdapat penumpukan NTE 
+pada teknisi. 
+2. Bagaimana membuat notifikasi otomatis kepada teknisi jika terjadi penumpukan NTE 
+yang dibawa. 
+3. Bagaimana teknisi dapat langsung memberikan keterangan setelah adanya notifikasi. 
+ 
+
+--- [Halaman 3] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+369 
+ 
+2 Metode dan Materi 
+2.1 Metode Penelitian 
+2.1.1 Metode Penelitian 
+Dalam melakukan penelitian ini menggunakan penelitian kualitatif, tujuan penulis menggunakan 
+metode ini adalah untuk mendeskripsikan apa -apa yang saat ini berlaku, pada metode ini terdapat 
+langkah mendeskripsikan, mencatat, analisis dan menginterprestasikan kondisi yang saat ini terjadi, 
+sehingga akan diperoleh data yang menunjang penyusunan laporan penelitian. 
+ 
+2.1.2 Teknis Penggumpulan Data  
+Tahapan yang termasuk dan dip erlukan untuk membuat program adalah Menganalisis sistem dan 
+menganalisisnya berdasarkan hasil pengumpulan data . Penelitian ini dilakukan dengan langkah -
+langkah pengumpulan data sebagai berikut: 
+1. Observasi 
+Melakukan proses pengamatan pada gudang Kantor Telk om Akses Cempaka Putih teknisi dalam 
+melakukan pengambilan dan pemasangan NTE, untuk mengumpulkan data yang berkaitan  dengan 
+informasi mengenai bagaimana teknisi melakukan instalasi di pelanggan. 
+2. Wawancara 
+Wawancara dilakukan melalui proses tanya jawab la ngsung kepada pihak terkait untuk mendapatkan 
+wawasan  tentang masalah proses sistem yang ada. Dalam hal ini, penulis mewawancarai bapak Jamil 
+selaku Team Leader warehouse and inventory. 
+3. Studi Pustaka 
+Studi Data dan Dokumentasi dilakukan untuk memperoleh i nformasi dokumen dan prosedur 
+pengambilan barang di gudang yang akan dijadikan sebagai dasar pengembangan sistem. 
+ 
+2.1.3 Analisis Proses Sistem Berjalan Menggunakan SWOT 
+SWOT merupakan akronim yang teridiri dari Strengths (kekuatan), Weakness (kelemahan), 
+Opportunities (peluang), dan Threats (ancaman). Berikut adalah penjelasan mengenai analisis SWOT 
+pada sistem yang berjalan : 
+1. Strenghts (Kekuatan) 
+a. NTE (Network Terminal Equipment)  merupakan barang yang sangat penting dalam 
+pasang baru dan kebutuhan penanganan gangguan di pelanggan untuk di aktivasi. 
+b. Pengambilan NTE di lakukan dengan cepat untuk percepatan pekerjaan. 
+2. Weak (kelemahan) 
+a. Tidak ada pengawasan oleh admin gudang saat instalasi , karena sepenuh nya di 
+lakukan oleh teknisi pada saat pemasangan NTE di pelanggan. 
+b. Teknisi tidak segera memeberikan informasi terkait NTE yang belum terpasang. 
+c. Petugas gudang tidak mengecek hasil instalasi NTE oleh teknisi. 
+3. Oportunity (Peluang) 
+a. Banyak nya wo pasang baru membutuhkan banyak NTE dalam kondisi yang baik. 
+b. Material NTE yang cukup untuk penanganan gangguan demi meningkatkan 
+kepercayaan pelanggan maka di butuhkan kesiapan NTE yang baik. 
+4. Threats (Ancaman) 
+a. Pengawasan hanya di lakukan oleh Team Leader dari masing-masing teknisi. 
+b. Admin gudang tidak melakukan cek lapang an terhadap pekerjaan teknisi pada saat 
+pemasangan NTE. 
+ 
+2.1.4 Analisis kebutuhan Kebutuhan Fungsional dan Non Fungsional 
+Untuk mempermudah dalam menentukan kebutuhan fungsional dan non fungsional. Berikut ini 
+merupakan rincian dari analisis kebutuhan tersebut : 
+
+--- [Halaman 4] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+370 
+ 
+1. Kebutuhan Fungsional 
+Kebutuhan fungsional adalah kebutuhan yang berisikan proses apa saja yang nanti akan dilakukan 
+oleh sistem dan berkaitan dengan sistem yaitu : 
+a. Sistem dapat melakukan update dan input web aplikasi monitoring intech NTE. 
+b. Sistem dapat menampilkan informasi material NTE. 
+c. Sistem dapat mengupdate informasi material NTE. 
+        2.  Kebutuhan Non-Fungsional 
+Merupakan kebutuhan yang secara tidak langsung berhubungan dengan sistem, yaitu : 
+a. Sistem memiliki UI (User Interface) yang dapat dengan mudah dipahami dan diakses 
+secara efektif dan efisien. 
+b. Sistem dapat dijalankan oleh beberapa software web browser diantaranya Microsoft Edge, 
+Google Chrome, Mozila Firefox, Safari, dan sebagainya. 
+ 
+2.1.5 Analisis kebutuhan perangkat 
+Analisis k ebutuhan perangkat ada 2 yaitu kebutuhan  perangkat keras (Hardware) dan kebutuhan 
+perangkat lunak (Software), berikut penjelasannya: 
+1. Analisis kebutuhan perangkat keras (hardware).  
+Dalam membangun aplikasi NITA ini dibutuhkan perangkat keras untuk mendukung 
+dalam proses pembuatan aplikasi. 
+Tabel 2.1 
+Analisis Kebutuhan Perangkat keras 
+  
+ 
+ 
+  
+2. Analisis kebutuhan perangkat lunak (software) 
+Pada bagian ini menampilkan deskripsi perangkat lunak yang digunakan dalam proses 
+pembuatan hingga implementasi dari perancangan aplikasi:  
+Tabel 2.2 
+Analisis Kebutuhan Perangkat Lunak 
+No Perangkat Lunak (Software) 
+1 Sistem Operasi Windows 10 
+2 Visual Studio Code 
+3 Xampp 
+4 Template AdminLte 
+5 Browser 
+6 Telegram 
+7 Bot Telegram 
+8 Draw.io 
+ 
+No Komponen Hardware Spesifikasi Minimum 
+1 Processor core i 5 Mobile Gfx 2.10 
+1.2 GHz (4M Cache, up to 3.4 GHz) 
+2 RAM 4GB 
+3 VGA INTEl® Core™ i5-1035G1 
+4 Monitor  14 Inch 
+5 Mouse Usb 
+
+--- [Halaman 5] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+371 
+ 
+2.2 Metode Pengembangan 
+Metode yang di kembangkan pada penelitian ini menggunakan Metodologi berbasis 
+prototyping melakukan fase analisis, desain, dan implementasi secara bersamaan, dan ketiga 
+fase dilakukan berulang kali dalam satu siklus sampai sistem selesai.[1] 
+ 
+Gambar 2. 1 Metode Perancangan Prototype 
+ 
+1. Planning (perencanaan)  
+Perencanaan adalah tahap awal dari pengembangan aplika si ini dengan berdasarkan 
+pada latar belakang masalah yang di hadapi pada penelitian ini.  
+2. Analysis (Analisa) 
+Pada tahap ini, berdasarkan hasil diskusi, observasi, survei dan kajian data, dapat 
+dilakukan analisis topik utama untuk memodelkan sistem sesuai dengan yang 
+dibutuhkan dalam penelitian menggunakan diagram Unified Modelling Language 
+(UML). 
+3. Design (Desain) 
+berdasarkan hasil analisis masalah, kerangka sistem, kebutuhan program, 
+perancangan database menggunakan diagram UML, dan user interface (UI) yang 
+akan di buat. 
+4. Implementation (Implementasi). 
+Pada tahap ini, berdasarkan hasil wawancara dan analisis serta penelitian data dapat 
+disimpulkan tentang bahasa pemrograman yang digunakan yang menggunakan  PHP, 
+serta template AdminLte. HTML, CSS dan Bootstrap untuk merancang program pada 
+halaman website dan juga memberikan sentuhan atau interaksi a ntara pengguna dan 
+sistem komputer  dan untuk bot telegram untuk interaksi dari teknisi dengan website 
+yang di bangun.Dalam melakukan metode ini fase analisis, desain, dan  implementasi 
+secara bersamaan, dan ketiga fase dilakukan berulang kali dalam satu sik lus sampai 
+sistem selesai. 
+2.3 Materi 
+Dalam melakukan penelitian ini kebutuhan akan bahan materi di dapatkan dari hasil membaca 
+literatur jurnal dan artikel yang mempunyai konsep yang sama untuk menyelesaikan permasalahan 
+yang muncul. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- [Halaman 6] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+372 
+ 
+2.3.1 Artiket Jurnal Terdahulu 
+Tabel 2. 3 
+Daftar Review Jurnal Terdahulu 
+No Penulis Objek Teknologi Keterangan 
+1 Dhea Permata, Dkk 
+2023 
+Rancang Bangun Aplikasi Sistem 
+Database Material Warehouse Berbasis 
+Web 
+Pt Perta-Samtan Gas Prabumulih 
+PHP, Admin Lte 
+MySQL Website 
+2 Ariesman Yudistira 
+Dkk 2023 
+Rancang Bangun Aplikasi Administrasi 
+Pembangunan Infrastruktur Desa 
+Rambang Senuling Berbasis Website 
+PHP. 
+MySQL Website 
+3 Eko Febriansyah dan 
+Endar Nirmala , 2023 
+Perancangan Sistem Informasi Jual Beli 
+Properti Menggunakan Chat BOT 
+Telegram yang terintegrasi dengan WEB 
+Menggunakan Metode Prototype 
+PHP. 
+MySQL, 
+Telegram. 
+Website , Bot 
+Telegram 
+danmetode 
+Prototype 
+4 Angga Dwi Mulyanto Pemanfaatan Bot Telegram Untuk 
+Media Informasi Penelitian 
+PHP. 
+MySQL,Telegram. 
+Web dan Bot 
+Telegram 
+5 Eka Satryawati Dkk 
+Perancangan Aplikasi Warehouse 
+Management System Berbasis Web 
+Menggunakan Laravel dan MySQL 
+Pada PT. Sinergi Dua Akal 
+Laravel MysQL Website 
+ 
+2.3.2 Landasan Teori 
+Teori Pendukung: 
+1. MySQL 
+berperan sebagai mesin basis data atau server basis data yang mendukung penggunaan bahasa 
+SQL sebagai alat interaktif untuk mengelola data[2]. 
+2. AdminLte 
+Berguna sebagai template open source untuk aplikasi website yang terkenal sebagai dasboard 
+admin dan panel kontrol. AdminLTE didesain dengan pendekatan modular, pengguna dapat 
+disesuaikan dan dikustomisasi dengan mudah. Ini menjadikan AdminLT E sebagai dashboard 
+admin yang menggunakan Bootstrap, framework CSS yang paling umum digunakan saat 
+ini[3]. 
+3. PHP 
+PHP sangat ideal digunakan untuk pengembangan website karena dapat disisipkan ke dalam 
+kode HTML. Tujuan utama dari PHP adalah untuk memberikan kemampuan kepada 
+pengembang dalam membuat website yang dinamis dan responsif secara efisien[4] 
+4. HTML 
+Hypertext Markup Language (HTML)  adalah bahasa penandaan yang diguna kan untuk 
+menciptakan halaman web dan menampilkan berbagai informasi di dalam peramban web[5] 
+5. Telegram 
+Telegram adalah sebuah aplikasi pengirim pesan instan yang dirancang oleh Nikolai dan 
+Pavel Durov pada tahun 2013. Aplikasi ini bertujuan untuk memfasilitasi komunikasi 
+antarindividu dengan cara yang lebih mudah dan efisien[6] 
+6. API 
+API atau Application Programming Interface adalah sekumpulan perintah, fungsi, dan 
+protokol yang digunakan oleh pengembang saat menggunakan perangkat lunak untuk aplikasi 
+tertentu[7]. 
+7. UML 
+
+--- [Halaman 7] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+373 
+ 
+Unified Modelling Language (UML)  adalah teknik pemodelan visual yang digunakan untu k 
+menunjukkan desain sistem berbasis objek. UML bertujuan untuk menyediakan istilah umum 
+yang digunakan dalam pengembangan sistem berbasis objek. Istilah dan teknik diagram 
+cukup kaya untuk memodelkan proyek pengembangan sistem apa pun mulai dari analisis 
+hingga implementasi[1] 
+3 Hasil dan Pembahasan 
+Berdasarkan sistem yang ada, dimana teknisi tidak memberikan informasi terkait hasil pemasangan 
+NTE. dan tidak ada nya keterangan apabila NTE tidak terpasang pada layanan pelanggan, oleh karena 
+itu di penulis membuat rancangan pengembangan web aplikasi yan g memudahkan admin gudang 
+melakukan pengawasan terkait NTE agar tidak terjadi penumpukan. 
+3.1.1 Planning (Perencanaan) 
+Perancanaan pengembangan sistem di lakukan untuk membuat web aplikasi pengawasan 
+pemasangan NTE oleh teknisi pasang baru maupun assurance berda sarkan hasil dari latar belakang 
+permasalahan yang ada pada unit gudang PT. Telkom Akses Jakarta Pusat. Web aplikasi yang akan di 
+buat adalah NITA (NTE Intech Telkom Akses) yang nanti nya akan di gunakan oleh admin gudang. 
+3.1.2 Analysis (Analisa) 
+Analisa user t erkait kebutuhan akan kegunaan aplikasi dalam melakukan pekerjaan pengawasan 
+pemasangan NTE yaitu: 
+1. Admin Gudang 
+Melakukan input data pemegang NTE web aplikasi NITA , mengirimkan notifikasi ke 
+bot telegram teknisi, melakukan approval data status intech setelah melihat hasil 
+pemasangan perangkat oleh teknisi dan melakukan unduh data untuk di jadikan bahan 
+laporan kepada atasan. 
+2. Manager 
+Dapat mengakses laporan data terkini terkait NTE yang ada pada web aplikasi NITA. 
+3. Teknisi 
+Menerima Notifikasi perangkat NTE yang harus segera di pasang di pelanggan, serta 
+dapat melakukan unggah foto hasil pemasangan perangkat ke web aplikasi NITA 
+melalui bot telegram. 
+3.1.3 Design (Rancangan) 
+1.  Use Case Diagram NITA 
+ 
+
+--- [Halaman 8] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+374 
+ 
+ 
+Gambar 3.1 Use Case Diagram NITA 
+2. Activity diagram untuk menambah data status intech dibuat dengan maksud agar penulis dan 
+pembaca dapat memahami urutan langkah -langkah dalam proses penambahan data pada 
+aplikasi NITA. Diagram ini menguraikan dengan jelas alur dari proses tersebut. 
+ 
+     
+Gambar 3. 2 
+Tambah Data Status Intech 
+ 
+4. Activity diagram kirim notifikasi dibuat dengan tujuan agar penulis maupun pembaca dapat 
+mengetahui alur dari proses kirim notifikasi ke bot telegram teknisi pada aplikasi NITA 
+
+
+--- [Halaman 9] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+375 
+ 
+ 
+Gambar 3. 3 
+Kirim Notifikasi ke Bot Telegram Teknisi 
+5. Sequences diagram 
+ 
+Gambar 3.4 Sequences Diagram NITA dan Bot NITA 
+ 
+6. Class Diagram 
+
+
+--- [Halaman 10] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+376 
+ 
+ 
+Gambar 3.5 Class Diagram NITA 
+ 
+7. Prototype 
+Prototype aplikasi NITA yang di rancang melalui desain menggunakan bahasa 
+pemrograman PHP, kerangka Bootstrap dan template AdminLte. AdminLte adalah 
+template framework Bootstrap yang dasarnya adalah CSS, HTML dan 
+JavaScript.[8]yang membantu agar tampilan lebih menarik dan mudah di pahami oleh 
+pengguna. Untuk pen yimpanan data yang di gunakan yaitu MySQL yang sangat 
+mudah di gunakan untuk bahasa pemrograman PHP.[9] 
+a. Login  
+ 
+Gambar 3.6 Login 
+b. Dashboard 
+
+
+--- [Halaman 11] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+377 
+ 
+ 
+Gambar 3.7 Dashboard 
+c. Upload Data Intech 
+ 
+Gambar 3.8 Halaman Intech 
+d. Kirim Notifikasi  
+ 
+Gambar 3.9 Kirim Notifikasi 
+ 
+e. Tampilan Notifikasi Telegram 
+
+
+--- [Halaman 12] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+378 
+ 
+ 
+Gambar 3.10 Bot NITA 
+Pada gambar 2.10 merupakan tampilan bot  aplikasi pesan telegram, yang di gunakan teknisi yang 
+tidak memerlukan nomer telepon. [10] Bot NITA digunakan teknisi untuk mendapatkan notifikasi dan 
+update data atau foto pada web aplikasi NITA setelah melakukan registrasi  dan update teknisi oleh 
+admin gudang. 
+ 
+3.1.4 Implementation 
+Pengujian terhadap software menggunakan metode black box. Tujuan asal adanya kuisioner ini adalah 
+buat mengetahui dan  mengukur sejauh mana aplikasi dapat dipergunakan dengan baik. kuesioner 
+diberikan kepada beberapa user (pengguna) yakni para admin gudang yang terdapat di PT. Telkom 
+Akses Jakarta pusat. Menggunakan sebaran responden 8 laki -laki  serta 2 perempuan. Responden 
+diminta untuk memakai aplikasi yang telah terinstall di komputer yg telah disediakan. Adapun 
+spesifikasi personal komputer  yang digunakan untuk pengujian aplikasi adalah sebagai berikut: 
+ASUS Desktop Intel(R) Core (TM) i5-4590 CPU @3.30 GHz. OS: Windows 10 Pro, 64 bit. Memory 
+(RAM): 12 GB. Hardisk: 1 TB dengan koneksi internet WIFI.Ada lima tahap yang harus dilakukan 
+oleh masing-masing responden, yakni: 
+1. Tugas 1: Melakukan Login  
+2. Tugas 2: Menambahkan data  
+3. Tugas 3: Mengirim notifikasi 
+4. Tugas 4: Melakukan  perubahan pada Form Approval 
+5. Tugas 5: Unduh File Report All 
+
+
+--- [Halaman 13] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+379 
+ 
+Berdasarkan pengujian terhadap pengguna, selanjutnya dapat digunakan perhitunga ER (Error 
+Rate) yakni tingkat kesalahan pengguna diamati dengan menghitung jumlah pekerjaan yang tidak 
+terselsaikan oleh pengguna.  
+Perhitungan error rate dapat dilihat melalui rumus persamaan berikut: 
+ 𝐸𝑅 = 100% −
+(𝑇𝑢𝑔𝑎𝑠 𝐵𝑒𝑟ℎ𝑎𝑠𝑖𝑙)
+𝑇𝑜𝑡𝑎𝑙 𝑇𝑢𝑔𝑎𝑠 × 100% 
+1. Keberhasilan tugas pengujian I 
+Tabel 3.1 Keberhasilan Pengujian I 
+Tugas 
+Pengguna Ke 
+1 2 3 4 5 6 7 8 9 10 
+1 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+2 Bisa Bisa Bisa Tidak  Bisa Tidak  Bisa Bisa Tidak  Bisa 
+3 Bisa Bisa Bisa Bisa Bisa Bisa Tidak  Bisa Bisa Bisa 
+4 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+5 Bisa Tidak  Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+ 
+2. Keberhasilan tugas pengujian II 
+Tabel 3.2 Keberhasilan Pengujian II 
+Tugas 
+Pengguna Ke 
+1 2 3 4 5 6 7 8 9 10 
+1 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+2 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+3 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+4 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+5 Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa Bisa 
+ 
+3.2 Pembahasan 
+Setelah dilakukan nya penelitian serta pembuatan web aplikasi NITA dapat menjadi solusi dari 
+masalah penumpukan perangkat NTE yang belum terpasang oleh teknisi, admin gudang dapat 
+mengawasi pemasangan NTE serta teknisi dapat memberikan informasi terkait hasil pemasangan 
+perangkat di pelanggan. 
+1. Admin gudang dan manajer dapat mengawasi hasil instalasi pemasangan NTE oleh teknisi 
+agar tidak terjadi penumpukan dengan cara melakukan notifikasi NTE yang masih di 
+pegang teknisi melalui bot telegram. 
+2. Teknisi dapat melakukan unggah foto hasil pemasangan perangkat melalui bot telegram 
+dan masuk ke web aplikasi NITA untuk di tinjau oleh admin gudang. 
+Penulis menyusun survey kuesioner dengan 10 pertanyaan terkait aspek dari efisiensi, efektifitas dan 
+kepuasan pengguna tentang aplikasi NITA. Peneliti meyusun empat kriteria jawaban kuisioner  oleh 
+responden, yaitu: TT (Tidak Tahu=1), KS (Kurang Setuju=1), C(Cukup=2), S (Setuju=3), SB (Sangat 
+Baik=4).  
+Tabel 3.3 Efisiensi    Tabel 3.4 Efektifitas 
+Pengguna   Penilaian 
+Skors Maksimal % 
+1 40 40 100% 
+2 40 40 100% 
+3 26 40 65% 
+4 30 40 75% 
+
+--- [Halaman 14] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+380 
+ 
+5 23 40 58% 
+6 40 40 100% 
+7 40 40 100% 
+8 30 40 75% 
+9 22 40 55% 
+10 35 40 88% 
+Total 326 400 82% 
+ 
+Tabel 3.5 Kepuasan 
+Pengguna Penilaian 
+Skors Maksimal % 
+1 40 40 100% 
+2 40 40 100% 
+3 21 40 53% 
+4 29 40 73% 
+5 26 40 65% 
+6 40 40 100% 
+7 40 40 100% 
+8 30 40 75% 
+9 26 40 65% 
+10 40 40 100% 
+Total 332 400 83% 
+ 
+Hasil kuesioner dengan para responden dapat di simpulkan bahwa secara keseluruhan mengenai web 
+aplikasi monitoring intech NTE NITA yakni efisiensi aplikasi mencapai 82%, efektifitas 83% dan 
+kepuasan 83%. 
+ 
+Gambar 3.11  
+Efisiensi, Efektifitas dan Kepuasan Menurut Responden 
+ 
+4 Kesimpulan dan Saran 
+4.1 Kesimpulan 
+Pada bagian ini dibuatlah simpulan berdasarkan penelitian yang telah dipaparkan, kesimpulan 
+yang dibuat dari seluruh proses pada perancangan berbasis website. Berikut merupakan 
+kesimpulannya: 
+1. Telah di buat web ap likasi pengawasan NTE oleh Teknisi di unit gudang dengan 
+pengawasan di lakukan oleh admin gudang dengan nama NITA (NTE Intech 
+Telkom Akses). 
+[CATEGOR
+Y NAME] 
+83% 
+[CATEGOR
+Y NAME] 
+83% 
+[CATEGOR
+Y NAME] 
+82% 
+Pengguna Penilaian 
+Skors Maksimal % 
+1 40 40 100% 
+2 40 40 100% 
+3 26 40 65% 
+4 28 40 70% 
+5 25 40 63% 
+6 40 40 100% 
+7 40 40 100% 
+8 30 40 75% 
+9 24 40 60% 
+10 37 40 93% 
+Total 330 400 83% 
+
+--- [Halaman 15] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+381 
+ 
+2. Pemodelan perancangan web aplikasi menggunakan UML (Unified Model 
+Language). 
+3. Web aplikasi NITA mempunyai beberapa f itur yakni notifikasi status NTE yang 
+masih ada pada teknisi, rekap hasil pekerjaan teknisi serta approval oleh admin 
+gudang terhadap pekerjaaan pemasangan NTE di pelanggan. 
+4. Diharapkan dengan adanya aplikasi ini mampu memberikan solusi terkait 
+permasalahan yang muncul pada penelelitian ini , yakni penumpukan status NTE 
+yang masih ada pada teknisi, admin gudang dapat mengawasi NTE yang di pasang 
+oleh teknisi serta teknisi dapat mengirim kan foto bukti dan keterangan apabila 
+belum terpasangnya NTE di pelanggan. 
+5. Hasil pengujian aplikasi NITA dengan kesalahan bisa di minimalisir pada 
+pengujian pertama 10% ke pengujian kedua menjadi 0% , menunjukan bahwa 
+aplikasi ini mudah untuk di pahami dan di pelajari. 
+6. Hasil kuesioner dengan para responden dapat di simpulkan ba hwa secara 
+keseluruhan mengenai web aplikasi NITA yakni efisiensi aplikasi mencapai 82%, 
+efektifitas 83% dan kepuasan 83%. 
+4.2 Saran 
+Berdasarkan hasil penelitian ini, tentunya terdapat beberapa kekurangan. Berikut beberapa saran 
+dari penelitian ini: 
+1. Menambahkan fitur -fitur seperti terintegrasi email, berita acara digital dan 
+pengganti spreadsheet atau sebagai sumber data NTE. 
+2. Menambahkan fitur keamanan login seperti OTP  (One Time-Password). 
+3. Diintegrasikan dengan sistem internal agar lebih masksimal penggunaan nya. 
+4. Mampu menampung banyak data untuk bisa di masukan ke dalam website 
+aplikasi ini. 
+5. Melanjutkan pemeliharaan dan pengembangan aplikasi web aplikasi NITA. 
+ 
+Referensi 
+[1] A. Dennis, B. H. Wixom, and D. Tegarden, SYSTEMS ANALYSIS & DESIGN An Object -
+Oriented Approach with UML, 5TH ed. Wiley, 2015. 
+[2] S. K. M. K. Rahimi Fitri, Pemrograman Basis Data Menggunakan MySQL. Deepublish, 2020. 
+[Online]. Available: https://books.google.co.id/books?id=y9kZEAAAQBAJ 
+[3] S. Riyadi, “Adopsi Metode DevOps Sebagai Acuan Pengembangan Aplikasi Bantuan 
+Hukum,” Gener. J., vol. 7, no. 1, pp. 23–30, 2023, doi: 10.29407/gj.v7i1.19629. 
+[4] P. Hidayatullah, pemrograman web, Edisi Keti. Bandung: INFORMATIKA, 2021. 
+[5] D. R. A. F. A. Mufarroha, Dasar Pemrograman WEB Teori dan Implementasi : 
+HTML,CSS,Javascript,Bootstrap,Codelgniter. Media Nusa Creative (MNC Publishing), 2022. 
+[Online]. Available: https://books.google.co.id/books?id=-k2eEAAAQBAJ 
+[6] E. Febriansyah and E. Nirmala, “Perancangan Sistem Informasi Jual Beli Properti 
+Menggunakan Chat Bot Telegram Yang Terintegrasi Dengan Web Menggunakan Metode 
+Prototype,” JORAPI  J. Res. Publ. Innov. , vol. 1, no. 2, pp. 279 –284, 2023, [Online] . 
+Available: https://jurnal.portalpublikasi.id/index.php/JORAPI/index 
+[7] D. Arifin, Pengenalan WEB GIS Menggunakan Geoserver . CV Cendekia Press, 2019. 
+[Online]. Available: https://books.google.co.id/books?id=bt8MEAAAQBAJ 
+[8] P. D. Perdagangan, Y. Setyanin gsih, Y. Findawati, and A. S. Fitrani, “Perancangan Sistem 
+Informasi Pemeliharaan Barang Milik Daerah Berbasis Website Pada Dinas,” 2014. 
+[9] Jubile Enterprise, OTODIDAT MySQL untuk Pemula , Edisi Pert. Yogyakarta: Elex Media 
+Komputindo, 2017. 
+
+--- [Halaman 16] ---
+ 
+Jurnal Manajemen Informatika Jayakarta 
+Volume 4, Nomor 4, September: halaman 367-382                                                                                             
+P-ISSN: 2746-5985 
+e-ISSN: 2797-0930 
+DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  
+ 
+This work is licensed under a Creative Commons Attribution 4.0 INTErnational License. 
+http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta 
+ 
+382 
+ 
+[10] R. D. Ri santy and A. Sopiyan, “Pembuatan Aplikasi Kuesioner Evaluasi Belajar Mengajar 
+Menggunakan Bot Telegram Pada Fakultas Teknik Universitas Muhammadiyah Jakarta (Ft -
+Umj) Dengan Metode Polling,” Semin. Nas. Sains dan Teknol. , no. November, pp. 1 –9, 2017, 
+[Online]. Available: https://jurnal.umj.ac.id/index.php/semnastek/article/view/2071/1712 
+ 

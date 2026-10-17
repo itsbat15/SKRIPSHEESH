@@ -1,0 +1,666 @@
+--- [Halaman 1] ---
+1217 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+Pengembangan Sistem Pembayaran pada Website Bimbingan 
+Belajar Non-Formal Berbasis PHP MySQL di LOOP Coding 
+BSD, Tangerang, Banten 
+Arika Karpina 1*, Yuma Akbar 2, Widya Ayu Lestari  3, Fitriani Noer Jamilah  4 
+1*,2,3,4 Program Studi Teknik Informatika, Fakultas Teknik, Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Kota Jakarta Timur, Daerah 
+Khusus Ibukota Jakarta, Indonesia . 
+ 
+a r t i c l e  i n f o 
+ 
+Article history: 
+Received 21 February 2025 
+Received in revised form  
+20 March 2025 
+Accepted 1 April 2025 
+Available online October 
+2025. 
+ 
+Keywords: 
+Payment System; PHP; Mysql; 
+Courses; Administration; 
+Efficiency; Financial Reports.  
+ 
+ 
+ 
+ 
+Kata Kunci: 
+Sistem Pembayaran; PHP; 
+Mysql; Kursus; Administrasi; 
+Efisiensi; Laporan Keuangan. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ACM Computing Classification System (CCS) 
+ 
+Communication and Mass Media Complete (CMMC) 
+a b s t r a c t   
+This study develops a web-based payment system using PHP and MySQL to overcome 
+the problem of manual recording in course institutions. Many course places still use 
+manual recording that is prone to errors, administrative delays, and difficulties in making 
+financial reports. This system aims to improve efficiency and accuracy by providing a 
+more structured administration solution. Features such as dashboards, monthly and 
+annual payment monitoring, and financial data recaps allow for transparency and more 
+effective data management. The implementation of the system at Loop Coding BSD, 
+Tangerang, has been proven to speed up the recording process, reduce manual errors, 
+and improve financial reports. This system improves operational efficiency, data 
+security, and facilitates evaluation or auditing. Overall, the implementation of this web-
+based system makes it easier to manage payment data and supports smooth  
+administration and financial management in educational institutions. 
+ 
+a b s t r a k   
+Penelitian ini mengembangkan sistem pembayaran berbasis web menggunakan PHP dan 
+MySQL untuk mengatasi masalah pencatatan manual di lembaga kursus. Banyak tempat 
+kursus masih menggunakan pencatatan manual yang rawan kesalahan, keterlambatan 
+administrasi, dan kesulitan dalam membuat laporan ke uangan. Sistem ini bertujuan 
+meningkatkan efisiensi dan akurasi dengan memberikan solusi administrasi yang lebih 
+terstruktur. Fitur seperti dashboard, pemantauan pembayaran bulanan dan tahunan, 
+serta rekap data keuangan memungkinkan transparansi dan pengelolaan data yang lebih 
+efektif. Implementasi sistem di Loop Coding BSD, Tangerang, terbukti mempercepat 
+proses pencatatan, mengurangi kesalahan manual, dan memperbaiki laporan keuangan. 
+Sistem ini meningkatkan efisiensi  operasional, keamanan data, dan mempermudah 
+evaluasi atau audit. Secara keseluruhan, penerapan sistem berbasis web ini memberi 
+kemudahan dalam mengelola data pembayaran serta mendukung kelancaran 
+administrasi dan pengelolaan keuangan di lembaga pendidikan. 
+ 
+ 
+ 
+ 
+ 
+ 
+*Corresponding Author. Email: arikakarpina27@gmail.com 1*. 
+ 
+Copyright 2025 by the authors of this article. Published by Lembaga Otonom Lembaga Informasi dan Riset 
+Indonesia (KITA INFO dan RISET). This work is licensed under a Creative Commons Attribution-
+NonCommercial 4.0 International License.   
+E - I S S N : 2580 - 1 6 4 3  Volume 9 (4), October -December  202 5, 1217 -12 23  
+Jurnal JTIK (Jurnal Teknologi Informasi 
+dan Komunikasi)  
+DOI: https: //doi.org/1 0. 35870/ j tik .v 9i4. 3846  
+
+--- [Halaman 2] ---
+1218 
+ Arika Karpina, Yuma Akbar, Widya Ayu Lestari, Fitriani Noer Jamilah / Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 
+(4) 2025, 1217-1223 
+  
+ 
+ 
+ 
+1. Pendahuluan 
+ 
+Sistem informasi telah menjadi salah satu elemen 
+utama dalam perusahaan, instansi, maupun lembaga 
+pendidikan pada era digital saat ini (Imran & Al 
+Mujaddidi, 2024; Suhirman et al ., 2021). Tingkat 
+kenyamanan dan efektivitas layanan pendidikan, 
+termasuk kursus, sangat dipengaruhi oleh tata kelola 
+pembayaran. Proses pembayaran merupakan salah 
+satu faktor yang menentukan kelancaran operasional 
+lembaga kursus (Fatman et al., 2023). Namun, masih 
+banyak lembaga kursus yang mengelola pembayaran 
+peserta menggunakan pencatatan manual, baik 
+melalui buku catatan fisik maupun aplikasi sederhana 
+seperti spreadsheet (Yusuf et al ., 2022). Walaupun 
+metode tersebut mud ah diterapkan dan terjangkau, 
+berbagai kendala kerap muncul sehingga efisiensi dan 
+akurasi pengelolaan pembayaran belum optimal.  
+Pencatatan manual berisiko menimbulkan kesalahan, 
+seperti keliru mencatat tanggal transaksi, nominal 
+pembayaran, atau identitas peserta. Ketidakakuratan 
+data keuangan akibat kesalahan tersebut dapat 
+menimbulkan kebingungan antara pengelola dan 
+admin, serta  memperlambat penyelesaian masalah 
+(Adhiwibowo, 2017).  
+ 
+Proses pencatatan dan verifikasi pembayaran secara  
+manual juga membutuhkan waktu lebih lama, 
+terutama ketika jumlah peserta meningkat, sehingga 
+berdampak pada penumpukan pekerjaan 
+administrasi. Penyusunan laporan keuangan secara 
+manual memerlukan waktu tambahan karena data 
+harus diolah satu per satu. Sela in itu, potensi 
+terjadinya duplikasi atau ketidakpastian data semakin 
+menyulitkan pengelola dalam menghasilkan laporan 
+yang valid untuk keperluan evaluasi dan audit (Imran 
+& Al Mujaddidi, 2024).  Permasalahan tersebut 
+menuntut penerapan sistem terintegrasi dan 
+otomatis, seperti pengembangan website 
+pembayaran (Prakoso et al ., 2022). Sistem berbasis 
+web dirancang untuk memudahkan admin dalam 
+penyusunan serta pencatatan laporan keuangan 
+secara efisien. Melalui fitur otomatisasi, admin dapat 
+memantau total pembayaran yang diterima, 
+kekurangan pembayaran, serta menyusun laporan 
+keuangan bulanan dan tahunan dengan cepat dan 
+akurat (Fatman et al ., 2023).  Selain mendukung 
+administrasi, sistem berbasis web juga diharapkan 
+dapat meningkatkan akurasi data dan menurunka n 
+risiko kesalahan yang kerap terjadi pada pencatatan 
+manual (Imran & Al Mujaddidi, 2024). Penelitian ini 
+tidak hanya mengadopsi landasan dari kajian -kajian 
+sebelumnya, tetapi juga menawarkan inovasi dan 
+penyesuaian yang sesuai dengan kebutuhan Loop 
+Coding BSD. 
+ 
+ 
+2. Metodologi Penelitian 
+ 
+Metode User-Centered Design (UCD) 
+Pendekatan User -Centered Design (UCD) 
+menekankan pentingnya kebutuhan dan pengalaman 
+pengguna dalam proses pengembangan sistem 
+(Norman & Draper, 1986). Tahapan utama pada 
+metode ini meliputi Research, Align, Build, Test, dan 
+Iteration. Pengguna, dalam hal ini admin Loop Coding, 
+dilibatkan secara aktif dalam proses desain dan 
+pengujian agar sistem yang dihasilkan benar -benar 
+sesuai dengan kebutuhan mereka. 
+ 
+Metode Pengembangan Berulang ( Iterative 
+Development) 
+Metode pengembangan berulang (Iterative Development) 
+digunakan untuk memastikan setiap fitur yang 
+dikembangkan dapat diuji dan diperbaiki secara 
+bertahap (Larman & Basili, 2003). Pendekatan ini 
+menggunakan prinsip try and error  dalam proses 
+pengembangan, sehingga setiap komponen sistem 
+dapat dioptimalkan melalui siklus pengujian dan 
+perbaikan berulang hingga mencapai hasil yang 
+optimal. 
+ 
+Metode Pengumpulan Data 
+Pengumpulan data dilakukan dengan pendekatan 
+kuantitatif melalui wawancara dan observasi langsung 
+kepada admin Loop Coding (Sugiyono, 2017). Data 
+yang diperoleh digunakan untuk mengidentifikasi 
+permasalahan pada sistem pembayaran manual serta 
+merancang solusi yang lebih efisien dan sesuai 
+kebutuhan pengguna. 
+ 
+ 
+3.  Hasil dan Pembahasan 
+ 
+Hasil 
+Hasil pengembangan sistem pembayaran berbasis 
+website di Loop Coding  BSD menunjukkan adanya 
+peningkatan efisiensi dan efektivitas administrasi 
+
+--- [Halaman 3] ---
+1219 
+Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 (4) 2025, 1217-1223      
+ 
+ 
+ 
+pembayaran dibandingkan dengan metode manual 
+sebelumnya (Fatman et al ., 2023; Imran & Al 
+Mujaddidi, 2024). Berikut adalah ringkasan hasil dan 
+pembahasannya: 
+1) Efisiensi Administrasi 
+a) Proses pencatatan dan verifikasi pembayaran 
+menjadi lebih cepat dengan sistem berbasis 
+web. 
+b) Admin tidak perlu lagi mencatat transaksi 
+secara manual, sehingga risiko kesalahan 
+pencatatan dapat diminimalisir (Adhiwibowo, 
+2017). 
+2) Akurasi Data Pembayaran 
+a) Sistem secara otomatis menghitung total 
+pembayaran, tunggakan, dan menyusun 
+laporan keuangan secara real-time. 
+b) Risiko kesalahan input data berkurang 
+signifikan, dan laporan dapat diakses dengan 
+lebih mudah (Fatman et al., 2023). 
+3) Pemantauan Pembayaran Lebih Mudah 
+a) Admin dapat memantau status pembayaran  
+baik yang telah dibayar maupun yang masih 
+tertunggak melalui satu tampilan dashboard. 
+b) Data pembayaran disajikan dalam bentuk 
+rekap bulanan dan tahunan untuk analisis yang 
+lebih baik (Imran & Al Mujaddidi, 2024). 
+4) Pembuatan Laporan Lebih Cepat 
+a) Laporan keuangan otomatis dapat dibuat 
+dalam hitungan detik, sehingga menghemat 
+waktu dibandingkan dengan metode manual. 
+b) Grafik tahunan yang dihasilkan sistem 
+membantu dalam analisis keuangan dan 
+evaluasi bisnis. 
+5) Keamanan Data Terjaga 
+Data pembayaran tersimpan secara aman di server 
+berbasis MySQL, sehingga risiko kehilangan atau 
+manipulasi data dapat diminimalisir (Prakoso et al., 
+2022). 
+ 
+Hasil implementasi sistem, terbukti bahwa digitalisasi 
+pembayaran dapat meningkatkan efektivitas 
+operasional Loop Coding  BSD. Sistem memberikan 
+transparansi, kecepatan, dan struktur yang lebih baik 
+dalam pengelolaan transaksi. Penerapan metode User-
+Centered Design  (UCD), sistem yang dibangun juga 
+lebih sesuai dengan kebutuhan pengguna, khususnya 
+admin Loop Coding , dalam mengelola pembayaran 
+secara lebih efisien dan terstruktur. 
+Use Case Diagram 
+Use Case Diagram merupakan salah satu diagram dalam 
+Unified Modeling Language  (UML) yang digunakan 
+untuk menggambarkan interaksi antara pengguna 
+(aktor) dengan sistem dalam menyelesaikan suatu 
+proses atau tugas tertentu (Suhirman et al ., 2021). 
+Diagram ini menunjukkan bagaimana sistem 
+merespons tindakan pengguna dan fitur-fitur apa saja 
+yang dapat diakses oleh setiap aktor.  Berikut adalah 
+gambaran Use Case Diagram  sistem pembayaran di 
+Loop Coding BSD yang ditampilkan pada Gambar 1. 
+ 
+ 
+Gambar 1. Use Case Diagram 
+ 
+Class Diagram Sistem Berjalan 
+Class Diagram Sistem Berjalan merupakan 
+representasi visual yang menggambarkan struktur 
+sistem pembayaran yang masih menggunakan metode 
+manual di Loop Coding BSD. Diagram ini berfungsi 
+untuk memperlihatkan hubungan antar kelas, atribut 
+yang dimiliki masing -masing kelas, serta metode 
+(fungsi) yang digunakan dalam sistem pembayaran 
+manual. Pada sistem manual, class diagram biasanya 
+terdiri dari beberapa kelas utama seperti Siswa, 
+Admin, Pembayaran, dan Transaksi. Setiap kelas 
+memiliki atribut yang merepresentasikan data penting, 
+serta metode yang menggambarkan proses yang 
+terjadi, seperti pencatatan pembayaran, pembuatan 
+laporan, dan verifikasi transaksi.  Class Diagram ini 
+membantu dalam memahami bagaimana data dan 
+proses saling terhubung sebelum sistem diubah 
+menjadi berbasis website. Analisis kebutuhan dan 
+perancangan sistem baru dapat dilakukan secara lebih 
+terarah dan sistematis.  Gambaran Class Diagram 
+sistem pembayaran manual di Loop Coding BSD 
+dapat dilihat pada Gambar 2. 
+
+
+--- [Halaman 4] ---
+1220 
+ Arika Karpina, Yuma Akbar, Widya Ayu Lestari, Fitriani Noer Jamilah / Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 
+(4) 2025, 1217-1223 
+  
+ 
+ 
+ 
+ 
+Gambar 2. Class Diagram 
+ 
+Sistem Use Case Aplikasi Usulan 
+Sistem Use Case Aplikasi Usulan merupakan 
+gambaran interaksi antara pengguna (aktor) dengan 
+sistem pembayaran berbasis website yang diusulkan 
+untuk Loop Coding BSD. Diagram ini 
+memperlihatkan fitur-fitur utama yang dapat diakses 
+oleh setiap aktor, seperti admin dan siswa, serta 
+bagaimana sistem merespons setiap tindakan yang 
+dilakukan oleh pengguna.  Dengan adanya use case 
+diagram pada sistem usulan ini, proses-proses utama 
+seperti pencatatan pembayaran, verifikasi transaksi, 
+pembuatan laporan keuangan, dan pemantauan 
+status pembayaran dapat divisualisasikan dengan 
+jelas. Hal ini memudahkan dalam memah ami alur 
+kerja sistem serta memastikan seluruh kebu tuhan 
+pengguna telah terakomodasi dalam perancangan 
+aplikasi. Gambaran lengkap dari use case diagram 
+sistem aplikasi usulan dapat dilihat pada Gambar 3 
+berikut. 
+ 
+ 
+Gambar 3. Sistem Use Case Aplikasi 
+ 
+Tampilan Dashboard Admin 
+Tampilan awal yang muncul ketika admin mengakses 
+website adalah halaman dashboard. Pada halaman ini, 
+admin disajikan dengan beberapa kotak informasi 
+(info boxes) yang menampilkan ringkasan data dan 
+fitur utama yang tersedia pada sistem pembayaran 
+berbasis website.  Dashboard ini dirancang untuk 
+memberikan gambaran singkat dan jelas mengenai 
+kondisi terkini, seperti jumlah transaksi pembayaran, 
+total tunggakan, jumlah siswa yang sudah membayar, 
+serta akses cepat ke fitur-fitur penting lainnya. Dengan 
+tampilan dashboard yang informatif , admin dapat 
+memantau dan mengelola data pembayaran secara 
+lebih efisien dan terstruktur.  Tampilan dashboard ini 
+juga menjadi pusat navigasi utama, sehingga 
+memudahkan admin untuk berpindah ke menu lain 
+seperti pembuatan laporan, pengecekan detail 
+transaksi, dan pengelolaan data siswa. 
+ 
+ 
+Gambar 4. Tampilan Dashboard 
+ 
+Tampilan Data Payment 
+Pada halaman Data Payment, admin dapat melihat 
+seluruh informasi terkait data pembayaran yang telah 
+masuk ke sistem. Informasi yang ditampilkan 
+meliputi: 
+1) Tanggal Pembayaran: Menunjukkan waktu 
+transaksi dilakukan. 
+2) Nama Pengirim:  Identitas pihak yang melakukan 
+pembayaran. 
+3) Jumlah Transfer: Besaran dana yang ditransfer. 
+4) Keterangan: Informasi tambahan terkait transaksi, 
+seperti keterangan pembayaran atau status 
+verifikasi. 
+ 
+Selain itu, admin diberikan akses penuh untuk 
+melakukan edit atau delete pada data pembayaran. 
+Fitur ini sangat penting untuk mengatasi 
+kemungkinan terjadinya human error, seperti 
+kesalahan input data atau duplikasi transaksi. Dengan 
+adanya fungsi edit dan  delete, data pembayaran yang 
+tersimpan di sistem dapat selalu terjaga 
+
+
+--- [Halaman 5] ---
+1221 
+Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 (4) 2025, 1217-1223      
+ 
+ 
+ 
+keakuratannya. Tampilan data payment ini juga 
+biasanya dilengkapi dengan fitur pencarian dan filter, 
+sehingga admin dapat dengan mudah menemukan 
+dan memverifikasi transaksi tertentu sesuai 
+kebutuhan. 
+ 
+ 
+Gambar 5. Tampilan Data Payment 
+ 
+Tampilan Rekap Bulanan 
+Pada halaman Rekap Bulanan, admin dapat melihat 
+ringkasan informasi terkait pendapatan yang 
+diperoleh selama satu bulan, yang dikelompokkan 
+berdasarkan level atau kategori tertentu (misalnya: 
+level kelas, jenis program, atau paket kursus). Selain 
+itu, pada laman ini juga ditampilkan jumlah siswa 
+baru yang terdaftar pada periode bulan tersebut. Fitur 
+utama yang tersedia pada halaman rekap bulanan 
+meliputi: 
+1) Total Pendapatan Bulanan 
+Menampilkan jumlah pemasukan selama satu 
+bulan, disajikan berdasarkan level atau kategori. 
+2) Jumlah Siswa Baru 
+Informasi mengenai berapa banyak siswa yang 
+melakukan pendaftaran pada bulan berjalan. 
+3) Filter Data 
+Admin dapat memanfaatkan fitur filter untuk 
+mencari dan menampilkan data rekap berdasarkan 
+rentang waktu tertentu, seperti bulan atau tahun 
+yang diinginkan. 
+4) Visualisasi Data 
+Data rekap biasanya disajikan dalam bentuk tabel 
+dan grafik, sehingga memudahkan admin dalam 
+melakukan analisis dan evaluasi kinerja keuangan. 
+ 
+ 
+Gambar 6. Tampilan Rekap Bulanan 
+ 
+Tampilan Rekap Tahunan 
+Pada tampilan rekap tahunan admin dapat melihat 
+informasi terkait berapa pendapatan perusahaan di 
+setiap bulannya dan dapat melihat informasi terkait 
+berapa siswa yang terdaftar di setiap bulannya. Di 
+laman ini terdapat fitur filter agar admin bisa dengan 
+mudah mencari informasi berdasarkan waktu yang 
+admin inginkan. 
+ 
+ 
+Gambar 7. Tampilan Rekap Tahunan 
+ 
+Tampilan Grafik Tahunan 
+Pada tampilan grafik tahunan admin dapat melihat 
+informasi terkait berapa pendapatan tahunan 
+berdasarkan produk yang digambarkan dalam 
+tampilan grafik disertai dengan persentase setiap 
+produknya. 
+ 
+ 
+Gambar 8. Tampilan Rekap Grafik Tahunan 
+ 
+
+
+--- [Halaman 6] ---
+1222 
+ Arika Karpina, Yuma Akbar, Widya Ayu Lestari, Fitriani Noer Jamilah / Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 
+(4) 2025, 1217-1223 
+  
+ 
+ 
+ 
+Tampilan Data Produk dan Data Siswa 
+Pada tampilan data produk admin dapat melihat 
+informasi terkait data produk dan juga data siswa 
+yang terdaftar. Admin dapat menambahkan data baru 
+dan dapat perbaharui data jika suatu saat berubah. 
+ 
+ 
+Gambar 9. Tampilan Data Product 
+ 
+ 
+Gambar 10. Tampilan Data Siswa 
+ 
+Pembahasan 
+Penerapan sistem pembayaran berbasis website di 
+Loop Coding BSD didasarkan pada kebutuhan akan 
+efisiensi dan akurasi dalam pengelolaan administrasi 
+keuangan, yang sejalan dengan berbagai penelitian 
+sebelumnya mengenai pengembangan sistem 
+pembayaran digital. Penggunaan teknologi PHP dan 
+MySQL dalam sistem ini terbukti efektif untuk 
+membangun aplikasi pembayaran yang andal dan 
+mudah dikembangkan, sebagaimana telah 
+dikemukakan oleh Yusuf et al . (2022) dan 
+Adhiwibowo (2017) dalam pengembangan aplikasi e-
+commerce dan sistem pembayaran online. Sistem 
+pembayaran berbasis web memberikan kemudahan 
+dalam pencatatan transaksi dan pembuatan laporan 
+keuangan secara otomatis, sehingga dapat 
+meminimalkan kesalahan manusia yang sering terjadi 
+pada proses manual (Imran & Al Mujaddidi, 2024; 
+Subkhi et al ., 2024). Selain itu, fitur dashboard dan 
+rekapitulasi data pembayaran yang terintegrasi 
+memungkinkan admin untuk memantau status 
+pembayaran, tunggakan, serta pendapatan secara real-
+time. Hal ini selaras dengan penelitian Suhir man et al. 
+(2021) yang menunjukkan bahwa aplikasi berbasis 
+web dapat meningkatkan kecepatan dan akurasi dalam 
+pelayanan administrasi. Implementasi sistem 
+pembayaran digital juga mendukung transparansi dan 
+keamanan data, karena seluruh transaksi tersimpan 
+dalam basi s data yang terstruktur dan dapat diakses 
+dengan otorisasi tertentu. Menurut penelitian Fatman 
+et al. (2023) dan Habibullah et al. (2023), pemanfaatan 
+sistem pembayaran elektronik dan payment gateway 
+dapat meningkatkan kepercayaan serta meminimalisir 
+risiko kehilangan data. 
+ 
+Keunggulan lain dari sistem yang dikembangkan 
+adalah kemampuannya untuk menghasilkan laporan 
+keuangan bulanan dan tahunan secara otomatis, yang 
+sangat membantu dalam proses evaluasi dan 
+pengambilan keputusan manajerial. Mahardika & 
+Sumantri (2024) serta Prakoso et al . (2022) 
+menegaskan bahwa digitalisasi sistem pembayaran 
+mampu mempercepat proses administrasi dan 
+memberikan data yang lebih akurat untuk analisis 
+bisnis. Selain itu, aspek keamanan juga menjadi 
+perhatian utama, di mana penggunaan database 
+MySQL dan frame work PHP telah terbukti mampu 
+memberikan perlindungan data yang memadai (Oo, 
+2019; Yadav et al., 2019). 
+ 
+ 
+4. Kesimpulan dan Saran 
+ 
+Pengembangan sistem pembayaran berbasis website 
+di Loop Coding BSD berhasil meningkatkan efisiensi 
+administrasi, mengurangi kesalahan pencatatan, serta 
+mempercepat proses verifikasi dan pembuatan 
+laporan keuangan. Dengan menerapkan metode User-
+Centered Design  (UCD), sistem ini dirancang sesuai 
+dengan kebutuhan pengguna, sehingga lebih mudah 
+digunakan dan lebih transparan. Selain itu, 
+penggunaan PHP, Laravel, dan MySQL memastikan 
+sistem yang aman, terstruktur, serta mampu 
+mengelola data pembayaran secara otomatis. 
+Digitalisasi ini diharapkan dapat mendukung 
+operasional Loop Coding menjadi lebih modern dan 
+efektif. 
+ 
+ 
+ 
+
+
+--- [Halaman 7] ---
+1223 
+Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9 (4) 2025, 1217-1223      
+ 
+ 
+ 
+5. Daftar Pustaka 
+ 
+Abdulhussein, R. R., & Kamil, W. K. (2023). 
+Designing the electronic payment system for 
+the UOITC university using Zain Cash 
+wallet. Journal of Al -Qadisiyah for computer science 
+and mathematics, 15(1), Page-39. 
+ 
+Adhiwibowo, W. (2017). Model Pengembangan 
+Aplikasi Pembayaran Angsuran Pinjaman 
+Online Menggunakan Php -Mysql Dengan  
+Metode Object Oriented Programming.  Jurnal 
+Informatika Upgris, 3(2). 
+ 
+Ake, S., & Srivaramangai, P. (2022). SECURITY 
+REVIEW OF PAYMENT GATEWAY 
+INTEGRATION SYSTEMS IN AFRICA. 
+ 
+Fatman, Y., Nafisah, N. K., & Pambudi, P. B. J. 
+(2023). Implementasi Payment Gateway 
+dengan Menggunakan Midtrans pada Website 
+UMKM Geberco. Jurnal KomtekInfo, 64-72. 
+ 
+Habibullah, Y., Sudianto, A., & Permana, B. A. C. 
+(2023). Aplikasi Toko Online dengan 
+Penerapan Sistem Payment Gateway untuk 
+Transaksi Pembayaran Berbasis Web.  Jurnal 
+PRINTER: Jurnal Pengembangan Rekayasa 
+Informatika dan Komputer , 1(2), 103 -117. 
+https://doi.org/10.29408/jprinter.v1i2.22122. 
+ 
+Imran, M., & Al Mujaddidi, A. I. (2024). Perancangan 
+Sistem Pembayaran SPP MI Syamsul Huda 
+Kalipuro Berbasis Web.  Jurnal Sistem Informasi 
+dan Sistem Komputer , 9(2), 241 -253. 
+https://doi.org/10.51717/simkom.v9i2.543. 
+ 
+Long, L. J., Eaganathan, U., & Sabri, N. A. B. (2019, 
+May). Adopting information system security 
+services in online clothing marketing system 
+using rup methodology under php. In Journal of 
+Physics: Conference Series  (Vol. 1228, No. 1, p. 
+012062). IOP Publishing. 
+ 
+Nwachukwu-Nwokeafor, K. C., & Abraham, I. 
+(2015). Designing An Automatic Web -Based 
+Certificate Verification System For 
+Institutions. Journal of Multidisciplinary 
+Engineering Science and Technology (JMEST), 2(12). 
+Nyoka, M. A., Salifu, A. M. S., & Laar, D. S. (2023). 
+An Electronic Payment System for Revenue 
+Collection in the Kassena Nankana 
+Municipality. Asian J. Res. Com. Sci , 16(4), 428-
+437. 
+ 
+Oo, K. Z. (2019). Design and implementation of 
+electronic payment gateway for secure online 
+payment system.  Int. J. Trend Sci. Res. Dev , 3, 
+1329-1334. 
+ 
+Osuolale, A. F., & Ayanlola, D. Cloud -Enabled 
+Digital Cash Transaction System. 
+ 
+Prakoso, D. A. I., Hanggara, B. T., & Pramono, D. 
+(2022). Pengembangan Website E -Commerce 
+memanfaatkan Metode Pembayaran Split 
+Payment menggunakan API Payment Gateway 
+(Studi Kasus: Media Ar -Raihan). Jurnal 
+Pengembangan Teknologi Informasi dan Ilmu 
+Komputer, 6(7), 3062-3069. 
+ 
+Shaqiri, V. (2010). PHP & MySQL Simple Project 
+Management Application. 
+ 
+Suhirman, S., Hidayat, A. T., Saputra, W. A., & 
+Saifullah, S. (2021). Website -based e-pharmacy 
+application development to improve sales 
+services using waterfall method.  International 
+Journal of Advances in Data and Information 
+Systems, 2(2), 114-129. 
+ 
+Ya’Acob, N., Yusoff, A., Sarnin, S. S., Ali, D. M., 
+Naim, N. F., Kassim, M., & Azni, N. A. B. M. 
+(2019). A cashless payment transaction (CPaT) 
+using RFID technology.  Indones. J. Electr. Eng. 
+Comput. Sci. 
+ 
+Yadav, N., Rajpoot, D. S., & Dhakad, S. K. (2019, 
+November). LARAVEL: a PHP framework for 
+e-commerce website. In  2019 Fifth International 
+Conference on Image Information Processing 
+(ICIIP) (pp. 503-508). IEEE. 
+ 
+Yusuf, N., Kartinah, D., & Andryani, D. (2022). 
+IRON SHOP SENTOSA E -COMMERCE 
+WEBSITE APPLICATION USING PHP 
+AND MYSQL.  International Journal Science and 
+Technology, 1(3), 27-34. 

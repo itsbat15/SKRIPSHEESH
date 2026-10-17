@@ -1,0 +1,1007 @@
+--- [Halaman 1] ---
+ 
+ Lisensi  
+ Lisensi Internasional Creative Commons Attribution-ShareAlike 4.0. 
+ 
+424 
+ 
+ 
+Terbit online pada laman web jurnal: https://rjti.upp.ac.id/index.php/rjmldm 
+ 
+ 
+Vol. 4 No. 3 (2025) 424 – 435 | ISSN : 2829-2529 (Media Online)   
+Sistem Informasi Bimbingan Belajar RSDC Berbasis Website Dengan 
+Menggunakan Metode Waterfall Untuk Meningkatkan Efisiensi 
+Administrasi 
+ 
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+1,2,3Sistem Informasi, Fakultas Teknologi dan Desain, Universitas Ma Chung 
+322110009@student.machung.ac.id1,  muhammad.nurwegiono@machung.ac.id2, rudy.setiawan@machung.ac.id3  
+Abstract  
+This research aims to design and implement a web -based information system to support administrative activities 
+at RSDC Tutoring Center in Malang City. The system development is motivated by findings that several 
+operational processes —such as student and teacher registration, tutoring schedule management, attendance 
+recording, and payment processing —are still conducted manually, making data management difficult and 
+increasing the potential for errors. The system was developed using the Waterfall method through stages of 
+requirements analysis, system design, implementation, and testing using the Black Box Testing approach. The 
+system accommodates three types of users, namely the owner, teachers, and students, each equipped with role -
+specific features such as online registration, schedule management, attendance recording, and payment 
+verification. The testing results show that all main functions operate properly across all test scenarios. The 
+implementation of the system also provides a significant improvement in administrative efficiency, as data 
+processing becomes faster and more structured compared to previous manual procedures. This research is 
+expected to serve as a reference for the development of information systems in the non -formal education sector 
+that require integrated, efficient, and user-friendly administrative solutions. 
+Keywords: Information System, Bimbel RSDC, Waterfall Method, Website, PHP  
+Abstrak 
+Penelitian ini bertujuan merancang dan mengimplementasikan sistem informasi berbasis website untuk 
+mendukung kegiatan administrasi di Bimbingan Belajar RSDC Kota Malang. Pengembangan sistem 
+dilatarbelakangi oleh temuan bahwa proses operasional, seperti pendaftaran siswa dan guru, penjadwalan 
+bimbingan, pencatatan presensi, serta pengelolaan pembayaran, masih dilakukan secara manual sehingga 
+menyulitkan pengelolaan data dan berpotensi menimbulkan kesalahan. Sistem dikembangkan menggunakan 
+metode Waterfall melalui tahapan analisis kebutuhan, perancangan, implementasi, serta pengujian menggunakan 
+Black Box Testing . Sistem dirancang dengan tiga jenis pengguna, yaitu owner, guru, dan murid, yang masing -
+masing dibekali fitur sesuai kebutuhan, seperti pendaftaran online, pengaturan jadwal, pencatatan kehadiran, dan 
+verifikasi pembayaran. Hasil pengujian menunjukkan bahwa seluruh fungsi utama dapat berjalan dengan baik 
+pada setiap skenario uji yang dilakukan. Implementasi sistem juga memberikan peningkatan signifikan pada 
+efisiensi administrasi, di mana proses pengolahan data menjadi lebih cepat dan lebih terstruktur dibandingkan 
+prosedur manual sebelumnya. Penelitian ini diharapkan dapat menjadi rujukan dalam pengembangan sistem 
+informasi pada sektor pendidikan nonformal yang membutuhkan solusi administrasi terintegrasi, efisien, dan 
+mudah dioperasikan. 
+Kata kunci: Sistem Informasi, Bimbel RSDC, Metode Waterfall, Website, PHP
+1. Pendahuluan  
+Bimbingan belajar merupakan kegiatan yang 
+melibatkan dua pihak, yaitu guru dan murid, dengan 
+tujuan membantu siswa dalam memahami materi 
+sekolah dan mencapai hasil belajar yang optimal  [1].  
+Salah satu lembaga bimbingan belajar yang menjadi 
+objek penelitian ini adalah Bimbel RSDC (Rumah 
+Sinau Dhita Course), yang berlokasi di Kota Malang, 
+Jawa Timur. Bimbel ini melayani siswa mulai dari 
+
+
+--- [Halaman 2] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+425 
+ 
+ 
+tingkat Taman Kanak -Kanak (TKK) hingga Sekolah 
+Menengah Atas (SMA) untuk berbagai mata pelajaran, 
+dan dikenal sebagai salah satu lembaga yang cukup 
+direkomendasikan di wilayah tersebut. Fasilitas yang 
+disediakan juga mendukung suasana pembelajaran 
+yang kondusif bagi siswa. 
+Bimbel RSDC memiliki sekitar 40 –50 murid aktif dari 
+berbagai jenjang. Berdasarkan hasil observasi, 
+ditemukan bahwa beberapa proses administrasi masih 
+dilakukan secara manual. Pencatatan data siswa dan 
+guru masih menggunakan kertas, proses registrasi 
+dilakukan melalui pesan chat, dan pengaturan jadwal 
+sering kali tidak terstruktur sehingga menimbulkan 
+ketidakteraturan dan potensi kesalahan input. 
+Permasalahan tersebut berdampak pada efisiensi waktu 
+serta akurasi data, sehingga diperlukan solusi yang 
+dapat membantu meningkatkan kualitas pengelolaan 
+informasi. Sistem informasi merupakan sekumpulan 
+komponen yang saling terintegrasi untuk mengelola 
+data dan menghasilkan informasi yang dapat 
+mendukung pengambilan keputusan [2]. 
+Oleh karena itu, pengembangan sistem informasi 
+menjadi penting bagi Bimbel RSDC untuk 
+mempermudah proses pendaftaran, penjadwalan, 
+pencatatan presensi, hingga pembayaran melalui 
+platform berbasis website. Metode Waterfall 
+digunakan dalam perancangan sistem ini karena 
+menawarkan alur kerja yang terstruktur, mulai dari 
+analisis kebutuhan, perancangan, implementasi, hingga 
+pengujian [3]. Tahapan ini dilakukan secara berurutan 
+dan sesuai dengan fungsinya. Selain itu, Bimbel RSDC 
+diharapkan dapat melakukan pengoperasian data 
+dengan menggunakan sistem secara langsung guna 
+memudahkan pekerjaan dan menghemat waktu serta 
+biaya yang ada. Perancangan sistem informasi berbasis 
+website dengan Metode Waterfall juga menjadi acuan 
+paling umum dalam pengembangannya. 
+Menurut [4] Website adalah beberapa gabungan 
+halaman yang terintegrasi dan dapat diakses melalui 
+jaringan internet menggunakan browser. Website 
+berfungsi sebagai platform untuk menyajikan 
+informasi, menyediakan layanan, dan menjalin 
+interaksi antara pengguna juga penyedia informasi.  
+Untuk memperkuat kebaruan penelitian, beberapa studi 
+sebelumnya menunjukkan bahwa sistem informasi 
+berbasis website telah berhasil diterapkan pada 
+lembaga pendidikan nonformal dalam konteks yang 
+berbeda, seperti pengelolaan kursus, aplikasi 
+pendaftaran, atau administrasi lembaga pendidikan. 
+Namun, sebagian besar penelitian tersebut berfokus 
+pada satu atau dua fungsi saja, misalnya hanya pada 
+pendaftaran atau pengelolaan jadwal. Penelitian ini 
+memiliki nilai tambah karena mengintegrasikan 
+beberapa proses penting sekaligus —mulai dari 
+registrasi, penjadwalan, presensi, hingga 
+pembayaran—ke dalam satu platform yang menyasar 
+tiga jenis pengguna ( owner, guru, dan murid). Hal ini 
+menempatkan penelitian ini sebagai upaya 
+komprehensif dalam menghadirkan sistem informasi 
+terintegrasi untuk lembaga bimbingan belajar [5]. 
+2. Metode Penelitian 
+Analisa sistem perancangan sistem informasi 
+bimbingan belajar masih menggunakan sistem manual  
+dengan melakukan print-out data hingga mencatat di 
+kertas yang ada pada Bimbel RSDC. 
+ 
+Gambar 1. Workflow Sebelum Ada Sistem 
+Gambar 1 merupakan alur kerja proses pelaksanaan 
+bimbingan belajar secara menyeluruh, mulai dari tahap 
+awal hingga kegiatan belajar berlangsung. Proses 
+dimulai ketika calon murid baru mengirimkan pesan 
+untuk mendaftar bimbel, lalu owner menerima pesan 
+tersebut dan mendaftarkan murid dengan mencatatkan 
+pada sebuah file. Setelah itu, murid memilih paket 
+bimbel yang tersedia sesuai kebutuhannya. 
+ 
+Sistem yang akan dibangun ini digunakan oleh 
+seseorang pengguna yaitu owner dapat melakukan 
+mastering data serta guru dan murid dapat mengakses 
+beberapa fitur transaksi saja  dengan analisis sistem 
+baru sebagai berikut: 
+ 
+Gambar 2.  Workflow Setelah Ada Sistem 
+Gambar 2 menjelaskan proses pendaftaran dan alur 
+kerja sistem bimbel berbasis website. Proses dimulai 
+saat guru atau murid baru mendaftar sebagai anggota 
+melalui website. Setelah itu, mengisi form identitas diri 
+sebagai bagian dari registrasi awal. Di samping itu, 
+owner juga dapat mendaftarkan guru atau murid secara 
+manual, membuatkan akun masing -masing serta 
+menyebarkan data akun ke pengguna yang 
+bersangkutan. Setelah akun aktif, guru dan murid bisa 
+login ke sistem. 
+ 
+
+
+--- [Halaman 3] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+426 
+ 
+ 
+ 
+Gambar 3.  Usecase Diagram 
+Diagram Use Case  pada gambar 3 menampilkan 
+proses bisnis untuk manajemen bimbingan belajar. 
+Dalam diagram ini, terdapat tiga pengguna yang 
+terlibat, yaitu owner, guru dan murid. Pada pengguna 
+owner terdapat beberapa hal yang dapat dilakukan, 
+yaitu mendaftarkan calon guru atau murid baru, CRUD  
+data registrasi murid atau guru baru, CRUD  data 
+jadwal, CRUD  data pembayaran seluruh murid, input 
+presensi murid, view presensi, menggaji guru serta 
+export file  rekapan pembayaran dan penggajian. 
+Kemudian, pengguna guru dapat melakukan registrasi 
+pertama kali sebagai calon guru bimbel baru, view data 
+jadwal, view data registrasi murid baru, input presensi 
+murid, view presensi murid, view data guru, view gaji 
+guru serta export file  penggajian guru. Terakhir, 
+pengguna murid dapat melakukan registrasi pertama 
+kali sebagai calon murid bimbel baru, CRUD  
+pembayaran masing -masing, view data jadwal, view 
+data presensi masing -masing serta export file  
+pembayaran masing -masing murid. Masing -masing 
+pengguna memiliki hak akses yang berbeda dan 
+disesuaikan dengan situasi atau kondisi sebagaimana 
+mestinya. 
+ 
+Gambar 4. Activity Diagram Register Website 
+Gambar 4 merupakan alur diagram aktivitas register 
+website yang dilakukan oleh guru dan murid. Proses 
+ini dimulai dari  sistem menampilkan landing page 
+login, pengguna membuat akun username dan 
+password terbaru, mengisi formulir regsitrasi pertama 
+kali hingga data username dan password tersimpan 
+oleh sistem. Proses terakhir dari aktivitas ini ialah 
+sistem menampilkan halaman login kembali setelah 
+pengguna melakukan daftar akun. 
+ 
+Gambar 5. Activity Diagram Login Website 
+Gambar 5 menunjukkan alur diagram aktivitas login 
+website yang dilakukan oleh guru dan murid. Proses 
+ini dimulai dari  sistem menampilkan landing page 
+login dan pengguna input akun username dan 
+password terbaru yang telah dibuat sebelumnya. Jika 
+
+
+--- [Halaman 4] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+427 
+ 
+ 
+akun yang di input sudah benar, namun sistem 
+menampilkan pesan “Akun belum terverifikasi”, 
+pengguna guru dan murid dapat mengonfirmasi ke 
+owner agar dapat dilakukan validasi. Kemudian, 
+pengguna mencoba masuk lagi hingga ke website. 
+ 
+Gambar 6. Activity Diagram Registrasi Calon Guru Baru 
+Gambar 6 ialah alur diagram aktivitas registrasi calon 
+guru baru yang dilakukan oleh owner. Kegiatan 
+registrasi calon guru baru yang dilakukan oleh owner 
+diawali dari tambah data guru dengan cara mengisi 
+identitas di menu master. Data guru baru diperoleh dari 
+komunikasi langsung dengan owner ataupun chat di 
+media sosial. Setelah itu, owner akan membuatkan 
+akun untuk guru baru di master akun pengguna. Jika 
+sudah, owner akan mengonfirmasi guru baru untuk 
+bisa masuk website. 
+ 
+                 Gambar 7. Activity Diagram Registrasi Calon Murid Baru 
+Gambar 7 menunjukkan alur diagram aktivitas 
+registrasi calon murid baru yang dilakukan oleh owner. 
+Kegiatan registrasi calon murid baru yang dilakukan 
+oleh owner diawali dari input registrasi murid dengan 
+cara mengisi identitas di menu master. Sama seperti 
+registrasi calon guru baru sebelumnya, data diperoleh 
+dari komunikasi langsung dengan owner ataupun chat 
+di media sosial. Setelah itu, owner akan membuatkan 
+akun untuk murid baru di master akun pengguna. Jika 
+sudah, owner akan mengonfirmasi murid baru untuk 
+bisa masuk website. 
+
+
+--- [Halaman 5] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+428 
+ 
+ 
+ 
+Gambar 8. Activity Diagram Pembayaran Bimbel 
+Gambar 8 merupakan alur diagram aktivitas proses 
+transaksi pembayaran bimbel yang dilakukan oleh 
+murid dan owner. Proses ini diawali dari registrasi 
+murid sebelumnya yang dilakukan oleh owner. Lalu, 
+untuk pilihan paket bisa disesuaikan oleh masing -
+masing murid (bisa tetap atau berubah) tergantung 
+kebutuhan. Jika sudah dilakukan kegiatan tersebut, 
+data tidak hanya masuk di menu registrasi, namun juga 
+di pembayaran saat telah divalidasi. Murid bisa 
+melakukan pembayaran dengan cara verifikasi ( input 
+nominal yang dibayar dan bukti bayar), lalu menunggu 
+konfirmasi dari owner. Owner juga dapat membantu 
+input pembayaran, jika murid mengalami kendala pada 
+sistem atau hal yang lain.  Jika sudah benar, 
+pembayaran divalidasi oleh owner. Jika ada yang 
+salah, owner bisa langsung menghapusnya dari website 
+atau mengonfirmasi murid agar input ulang datanya. 
+Setelah data terkonfirmasi, owner dan murid dapat 
+melihat laporan rekap pada menu “laporan” guna 
+untuk mengetahui transaksi yang telah dilakukan 
+sebelumnya. Laporan rekap tersebut nantinya dapat 
+diekspor ke dalam file sesuai dengan kebutuhan. 
+ 
+Gambar 9. Activity Diagram Penggajian Guru 
+Gambar 9 ialah alur diagram aktivitas penggajian guru 
+yang melibatkan owner dan guru. Proses ini diawali 
+dari owner melakukan input jumlah gaji yang dapat 
+diterima masing -masing guru berdasarkan data 
+presensi yang telah disimpan sebelumnya dan 
+berdasarkan jumlah pertemuan yang dilakukan 
+terhadap murid. Owner akan menggaji guru dengan 
+mengunggah bukti bayar dan nominal sama seperti 
+pembayaran murid. Jika ada perubahan gaji, dapat 
+diedit melalui master guru. Setelah itu, guru akan 
+menerima gaji dan dapat melihat laporan rekapnya, 
+begitu pula dengan Owner. Laporan rekap transaksi ini 
+nantinya juga dapat diekspor dalam bentuk file sesuai 
+dengan kebutuhan. 
+ 
+Gambar 10. ERD Bimbel RSDC 
+Gambar 10 merupakan Entity Relationship Diagram  
+(ERD) dari sistem informasi bimbingan belajar yang 
+menggambarkan relasi antar tabel dalam database. 
+
+
+--- [Halaman 6] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+429 
+ 
+ 
+Setiap entitas atau tabel terdapat relasi yang 
+menunjukkan data saling terhubung, seperti antara 
+master murid dengan tabel registrasi valid, 
+pembayaran, dan presensi yang menjelaskan aktivitas 
+murid dalam proses registrasi, pembayaran bimbel, 
+dan kehadiran kelas. Diagram ini juga menampilkan 
+hubungan antara paket bimbel dengan berbagai tabel 
+lain, seperti jadwal, pembayaran, dan relasi paket 
+murid, yang memperlihatkan informasi paket  
+digunakan dalam perencanaan jadwal hingga 
+pembayaran. Selain itu, terdapat tabel lainnya seperti  
+keterangan presensi dan status murid atau guru yan g 
+memberikan informasi status pada presensi dan akun. 
+ 
+Gambar 11. Wireframe Tambah Data Registrasi Murid 
+Gambar 11 merupakan wireframe tambah data  
+registrasi murid. Pada wireframe ini, owner akan input 
+data berupa tanggal registrasi, memilih murid baru atau 
+lama, nama murid, tanggal lahir, alamat rumah, kelas, 
+asal sekolah, jenis kelamin dan memilih paket bimbel 
+yang telah dibuat sebelumnya. Sedangkan data nomor 
+registrasi sudah terisi secara otomatis. Setelah terisi 
+semua, klik button “simpan”. Pada pilihan murid baru 
+atau lama, owner akan input semua data jika murid 
+pertama kali melakukan pendaftaran. Sedangkan jika 
+memilih murid lama, data murid sebelumnya akan 
+muncul secara otomatis guna untuk melanjutkan 
+proses transaksi pembayaran bimbel nantinya. 
+ 
+Gambar 12. Wireframe Konfirmasi Registrasi Murid 
+Gambar 12 merupakan wireframe konfirmasi registrasi 
+murid. Pada wireframe ini, owner akan melakukan 
+validasi atau pembatalan  proses registrasi murid. Jika 
+murid memang ingin bimbel, maka owner akan klik 
+button ”validasi” dan data akan tersimpan di sistem. 
+Sedangkan jika murid tidak jadi bimbel atau terdapat 
+kesalahan teknis saat registrasi, maka owner akan klik 
+button “batalkan” dan data akan terhapus. 
+ 
+Gambar 13. Wireframe Lihat Konfirmasi Data Registrasi Murid 
+Gambar 13 merupakan wireframe lihat konfirmasi data 
+registrasi murid. Jika proses registrasi murid telah 
+divalidasi oleh owner, maka hasil data juga akan 
+muncul di sidemenu “lihat konfirmasi”.  
+ 
+ Gambar 14. Wireframe Master Guru 
+Gambar 14 merupakan wireframe master guru. Pada 
+wireframe ini, owner dapat melihat data guru 
+berdasarkan registrasi pertama kali pada button 
+“tambah data guru”. Di master ini, owner dapat 
+mengubah status guru menjadi aktif atau tidak akti f 
+serta fitur “edit” guna update data jika ada kesalahan. 
+ 
+Gambar 15. Wireframe Tambah Data Guru 
+Gambar 15 merupakan wireframe tambah data guru. 
+Pada wireframe ini, owner melakukan input data 
+berupa nama guru, tanggal lahir, alamat, nomor 
+telepon, Pendidikan dan gaji. Pada kolom gaji, owner 
+melakukan input pembayaran tiap guru disaat setelah 
+
+
+--- [Halaman 7] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+430 
+ 
+ 
+selesai mengajar murid berdasarkan hasil presensi 
+sebelumnya. Sedangkan ID guru sudah terisi otomatis. 
+Setelah input data, klik button “simpan” agar dapat 
+tersimpan di sistem. 
+ 
+Gambar 16. Wireframe Edit Data Guru 
+Gambar 16 merupakan wireframe edit data guru. Pada 
+wireframe ini, owner dapat melakukan perubahan data 
+(update) pada semua data jika terdapat kesalahan, 
+kecuali ID guru yang sudah terisi secara otomatis. 
+Setelah dilakukan perubahan, klik button  “perbarui”. 
+Jika tidak jadi update data, dapat klik button “batal”. 
+ 
+Gambar 17. Wireframe Hasil Data Pembayaran Murid 
+Gambar 17 merupakan wireframe hasil data 
+pembayaran. Pada wireframe ini, owner dapat melihat 
+hasil data berdasarkan validasi registrasi murid 
+sebelumnya. Selain itu, terdapat fitur “verifikasi” 
+untuk input pembayaran dan fitur “bukti bayar” untuk 
+melihat hasil pembayaran terbaru 
+ 
+ 
+ 
+ 
+Gambar 18. Wireframe Verifikasi Pembayaran 
+Gambar 18 merupakan wireframe verifikasi 
+pembayaran. Pada wireframe ini, owner melakukan 
+input pembayaran berupa nominal yang dibayarkan 
+dan unggah bukti pembayaran. Sedangkan data yang 
+lain sudah terisi otomatis. Setelah input data, klik 
+button “verifikasi pembayaran”. Jika tidak jadi update 
+data, klik button “batal”. 
+ 
+Gambar 19. Wireframe Hasil Bukti Pembayaran 
+Gambar 19 merupakan wireframe bukti pembayaran. 
+Pada wireframe ini, owner dapat melihat dan 
+mengecek bukti pembayaran bimbel murid. Selain itu, 
+terdapat button “konfirmasi” jika ada murid yang telah 
+melakukan pembayaran namun belum divalidasi 
+kesesuaiannya. Dan terdapat button “hapus” jika ada 
+ketidaksesuaian data yang diinput. 
+ 
+Gambar 20. Wireframe Hasil Data Pembayaran (Penggajian) Guru 
+Gambar 20 merupakan wireframe hasil data gaji guru. 
+Pada wireframe ini, owner dapat melakukan input 
+pembayaran gaji guru setelah selesai mengajar murid 
+berdasarkan presensi sebelumnya. Selain itu, terdapat 
+button “verifikasi” dan “bukti bayar” yang fungsinya 
+sama, seperti wireframe data pembayaran murid 
+sebelumnya berdasarkan pada gambar 18 dan 19. 
+
+
+--- [Halaman 8] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+431 
+ 
+ 
+ 
+Gambar 21. Wireframe Data Cashflow 
+Gambar 21 merupakan wireframe data cashflow. Pada 
+wireframe ini, owner dapat melihat data transaksi yang 
+telah dilakukan input sebelumnya berupa pembayaran 
+murid dan penggajian guru (keseluruhan transaksi). 
+Terdapat button “filter” untuk melihat beberapa data 
+yang dibutuhkan saja serta filter berupa bulan dan 
+tahun untuk membedakan waktu transaksi yang 
+dilakukan. Selain itu, terdapat button “Eksport ke 
+Excel” dan “Eksport ke PDF” jika membutuhkan 
+rekapan data cashflow aslinya. 
+Berdasarkan pada gambar 1 – 21 sebelumnya, analisis 
+awal menunjukkan bahwa proses pengelolaan data 
+pada Bimbel RSDC masih dilakukan secara manual, 
+seperti pencetakan data dan pencatatan pada kertas. 
+Kondisi ini diperlihatkan pada workflow sebelum 
+adanya sistem. Alur tersebut menggambarkan proses 
+pendaftaran yang dimulai dari pesan pendaftaran yang 
+dikirim calon murid, kemudian owner mencatat data 
+pada sebuah file, dan murid memilih paket bimbingan 
+sesuai kebutuhan [6]. 
+Sistem baru yang dikembangkan bertujuan 
+menggantikan proses manual tersebut dengan 
+mekanisme digital berbasis website. Pengguna sistem 
+terdiri dari tiga peran utama, yaitu owner, guru, dan 
+murid. Owner memiliki akses penuh terhadap 
+pengelolaan data, sedangkan guru dan murid memiliki 
+akses sesuai kebutuhan transaksi masing-masing.  
+Tahap perancangan sistem dilakukan dengan 
+menyusun Use Case Diagram  untuk 
+menggambarkan relasi antar pengguna dan fungsi yang 
+dapat diakses [7]. Owner dapat melakukan pendaftaran 
+guru dan murid, mengelola data jadwal, pembayaran, 
+presensi, serta melakukan ekspor data. Guru dapat 
+melihat jadwal, melakukan input presensi, dan 
+mengakses informasi gaji. Murid dapat melakukan 
+registrasi awal, mengunggah pembayaran, melihat 
+jadwal, serta melihat riwayat presensi [8]. 
+Menurut [9], u ntuk memperjelas alur proses, disusun 
+activity diagram  pada beberapa fungsi utama, 
+seperti proses registrasi akun guru dan murid, proses 
+pembayaran bimbel dan proses penggajian guru. Setiap 
+diagram menggambarkan langkah -langkah operasional 
+mulai dari input data hingga verifikasi oleh owner. 
+Selanjutnya, perancangan basis data dituangkan dalam 
+Entity Relationship Diagram (ERD) yang 
+menunjukkan hubungan antar tabel, seperti data murid, 
+guru, jadwal, paket bimbel, pembayaran, dan presensi. 
+Desain antarmuka pengguna ( user interface ) 
+dirancang menggunakan wireframe, mulai dari 
+formulir registrasi, halaman konfirmasi data, 
+pengelolaan guru, pembayaran murid, penggajian guru, 
+hingga laporan cashflow. Perancangan ini memastikan 
+bahwa setiap fitur dapat digunakan dengan alur yang 
+jelas dan mudah dipahami oleh pengguna. 
+Menurut [10] Tahap implementasi dilakukan 
+menggunakan bahasa pemrograman PHP dengan 
+framework native dan basis data MySQL. Sistem 
+dijalankan pada server lokal menggunakan XAMPP 
+selama proses pengembangan. Implementasi mengikuti 
+tahapan Waterfall, dimulai dari analisis kebutuhan, 
+desain, pembangunan kode, hingga pengujian. 
+Pengujian sistem menggunakan metode Black Box 
+Testing untuk memastikan setiap fungsi berjalan sesuai 
+dengan kebutuhan. Pengujian dilakukan pada seluruh 
+fitur utama, seperti registrasi, login, pengelolaan 
+jadwal, presensi, pembayaran, dan penggajian. 
+Skenario uji disusun berdasarkan input yang valid, 
+input tidak valid, kondisi batas, serta proses verifikasi. 
+Kriteria keberhasilan pengujian meliputi kesesuaian 
+output dengan kebutuhan fungsional, tampilan respons 
+sistem, serta validitas proses input data [11]. 
+Dengan tahapan tersebut, metode penelitian ini 
+memberikan gambaran lengkap mengenai proses 
+analisis, perancangan, implementasi, dan pengujian 
+sistem yang dilakukan secara sistematis sesuai model 
+Waterfall [12].  
+3.Hasil dan Pembahasan 
+ 
+Gambar 22. Input Registrasi Murid 
+Owner akan input data seperti yang tertera pada 
+landing page . Setelah terisi semua, klik button  
+“Simpan”. Pada pilihan murid baru, owner akan input 
+semua data murid yang pertama kali melakukan 
+pendaftaran dan otomatis masuk ke master murid. 
+Sedangkan jika memilih murid lama, data murid 
+sebelumnya akan muncul secara otomatis guna untuk 
+melanjutkan proses transaksi pembayaran bimbel 
+nantinya. 
+
+
+--- [Halaman 9] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+432 
+ 
+ 
+ 
+Gambar 13. Konfirmasi Registrasi Murid 
+UI ini menampilkan hasil data registrasi murid dengan 
+menampilkan status validasi dan button “validasi” atau 
+“batalkan”. Jika murid memang ingin bimbel, maka 
+owner akan klik button  ”validasi” dan data akan 
+tersimpan di sistem. Sedangkan jika terdapat kesalahan 
+teknis saat registrasi, maka owner akan klik button  
+“batalkan” dan data akan terhapus. 
+ 
+Gambar 24. Lihat Konfirmasi Data Registrasi Murid 
+Data di sidemenu akan muncul jika proses registrasi 
+murid telah divalidasi oleh owner.  
+ 
+Gambar 25. Master Guru 
+Owner dapat melihat data guru berdasarkan registrasi 
+pertama kali pada button “Tambah Data Guru”. Pada 
+button ini, owner akan mengisi identitas guru baru. Di 
+master guru, owner juga dapat mengubah status guru 
+menjadi aktif atau tidak aktif serta fitur “Edit” guna 
+untuk update data jika terjadi kesalahan atau 
+perubahan.  
+ 
+Gambar 26. Input Data Guru 
+Owner melakukan input data seperti yang tertera pada 
+landing page. Setelah input, klik button “Simpan” agar 
+data dapat tersimpan di sistem. 
+ 
+Gambar 27. Edit Data Guru 
+Owner dapat melakukan update data sesuai dengan 
+tampilan landing page  ini. Setelah dilakukan 
+perubahan, klik button  “Perbarui”. Jika tidak jadi 
+update data, dapat klik button “Batal”. 
+ 
+Gambar 28. Hasil Data Pembayaran  
+Owner dapat melihat hasil data berdasarkan validasi 
+registrasi murid sebelumnya, seperti yang tertera pada 
+landing page . Selain itu, terdapat button “Verifikasi” 
+untuk input pembayaran dan button “Bukti Bayar” 
+untuk lihat hasil pembayaran terbaru. Terdapat juga 
+tiga macam status pembayaran, yaitu lunas, belum 
+lunas dan menunggu konfirmasi. 
+ 
+Gambar 29. Form Verifikasi Pembayaran 
+Owner melakukan input pembayaran sesuai dengan 
+form yang tertera pada landing page . Setelah input 
+data, klik button “Verifikasi Pembayaran”. Jika tidak 
+jadi update data, klik button “Batal”.  
+ 
+
+
+--- [Halaman 10] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+433 
+ 
+ 
+Gambar 30. Hasil Bukti Pembayaran 
+ 
+Owner dapat melihat dan mengecek bukti pembayaran 
+bimbel murid. Data tabel yang ditampilkan adalah 
+tanggal bayar, jumlah bayar dan bukti transfer. Selain 
+itu, terdapat button “Konfirmasi” jika ada murid yang 
+telah melakukan pembayaran namun belum divalidasi 
+kesesuaiannya. Dan terdapat button “Hapus” jika ada 
+ketidaksesuaian data yang dimasukkan. 
+ 
+Gambar 31. Hasil Data Penggajian Guru 
+Owner dapat melakukan input pembayaran gaji guru 
+setelah selesai mengajar murid berdasarkan presensi 
+sebelumnya. Selain itu, terdapat button “verifikasi” 
+dan “bukti bayar” yang fungsinya sama, seperti UI 
+data pembayaran murid sebelumnya berdasarkan pada 
+gambar 8 dan gambar 9. 
+ 
+Gambar 32. Cashflow 
+Owner dapat melihat data transaksi yang telah  
+dilakukan input sebelumnya berupa pembayaran murid 
+dan penggajian guru (keseluruhan transaksi). Terdapat 
+button, seperti filter dan ekspor file yang dapat 
+digunakan sesuai dengan kebutuhan user. 
+Hasil implementasi sistem menunjukkan bahwa 
+seluruh fitur utama dapat berjalan sesuai kebutuhan 
+operasional Bimbel RSDC. Proses pendaftaran murid 
+kini dilakukan melalui formulir digital yang 
+memungkinkan owner input data dengan lebih 
+terstruktur. Data murid baru langsung tersimpan ke 
+database, sedangkan data murid lama ditampilkan 
+otomatis sehingga mempermudah kelanjutan proses 
+pembayaran. Validasi registrasi juga dilakukan secara 
+langsung melalui sistem, sehingga data yang tersimpan 
+lebih akurat dan bebas dari duplikasi menurut [13]. 
+Pengelolaan data guru dilakukan melalui halaman 
+khusus yang menampilkan daftar guru, dilengkapi fitur 
+tambah, ubah, dan pengaturan status aktif. Sistem 
+menyediakan formulir input dan pembaruan data yang 
+memudahkan owner dalam memelihara informasi guru 
+secara berkala  
+Pada proses pembayaran, sistem menampilkan daftar 
+transaksi yang dilengkapi status pembayaran  [14]. 
+Owner dapat melakukan verifikasi dengan 
+mengunggah bukti bayar dan mengonfirmasi transaksi 
+secara langsung. Fitur ini meningkatkan ketepatan 
+pencatatan sekaligus mempermudah pemeriksaan bukti 
+pembayaran apabila diperlukan. 
+Fitur penggajian guru juga berjalan dengan mekanisme 
+serupa, dimana nominal gaji dihitung berdasarkan 
+presensi mengajar dan diverifikasi sebelum disimpan  
+[15]. Guru dan owner dapat melihat riwayat 
+penggajian sehingga transparansi data dapat terjaga. 
+Sistem turut menyediakan fitur laporan cashflow yang 
+menyajikan keseluruhan transaksi, baik pemasukan 
+maupun pengeluaran. Pengguna dapat memfilter data 
+berdasarkan periode tertentu dan mengekspor laporan 
+ke format Excel atau PDF, sehingga administrasi 
+keuangan dapat dilakukan dengan lebih efisien. 
+Secara keseluruhan, sistem informasi yang 
+dikembangkan berhasil meningkatkan efisiensi 
+administrasi, mengurangi kesalahan input, dan 
+mempercepat proses pengolahan data. Fitur -fitur yang 
+disediakan membantu owner mengelola registrasi, 
+pembayaran, dan penggajian secara lebih terstruktur 
+dibandingkan proses manual sebelumnya [16].  
+Berikut ini adalah hasil survei dari salah satu user : 
+
+
+--- [Halaman 11] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+434 
+ 
+ 
+ 
+Gambar 33. Hasil Black Box Testing  
+4. Kesimpulan 
+Pengembangan sistem informasi bimbingan belajar 
+berbasis web di Bimbel RSDC telah dilakukan dengan 
+menggunakan Metode Waterfall. Sistem ini sudah diuji 
+menggunakan metode Blackbox Testing dengan tingkat 
+keefektisitas yang valid (sesuai) di tiap fitur dan proses 
+transaksi yang dilakukan, mulai dari registrasi guru 
+dan murid baru hingga presensi murid. Hasil 
+penerapan juga menunjukkan bahwa sistem dapat 
+mengoptimalkan proses kinerja pengguna menjadi 
+lebih efisien dan tepat. Evaluasi yang dilakukan 
+terhadap sistem menunjukkan bahwa pengguna merasa 
+terbantu dengan adanya sistem ini, terutama dalam 
+aspek user-friendly, kecepatan waktu dan keakuratan 
+data. 
+Pengembangan sistem informasi bimbingan belajar 
+berbasis web di Bimbel RSDC dengan metode 
+Waterfall telah menghasilkan sistem yang berfungsi 
+dengan baik dan sesuai kebutuhan pengguna. Hasil 
+pengujian Black Box Testing  menunjukkan bahwa 
+seluruh fitur, mulai dari registrasi hingga presensi dan 
+transaksi pembayaran, berjalan sesuai dengan 
+fungsinya. Sistem ini terbukti meningkatkan efisiensi 
+administrasi, mempercepat proses pengolahan data, 
+serta meminimalkan kesalahan input. 
+Secara keseluruhan, penerapan sistem ini berhasil 
+mendukung digitalisasi operasional Bimbel RSDC dan 
+diterima dengan baik oleh pengguna. Untuk 
+pengembangan selanjutnya, sistem masih dapat 
+ditingkatkan melalui penambahan fitur notifikasi 
+otomatis, integrasi pembayaran digital, serta 
+pengembangan aplikasi mobile agar aksesibilitas 
+pengguna semakin optimal. 
+5.    Daftar Rujukan  
+[1] Sukatin, Nurkhalipah, A. Kurnia, D. Ramadani, And Fatimah, 
+“Bimbingan Dan Konseling Belajar ,” Humantech J. Ilm. Multi 
+Disiplin Indones., Vol. 1, No. 9, Pp. 1278–1285, 2022. 
+[2] A. H. Manullang, M. Aritonang, And M. J. Purba, “ Sistem 
+Informasi Bimbingan Belajar Number One Medan Berbasis 
+Web,” TAMIKA J. Tugas Akhir Manaj. Inform. Komputerisasi 
+Akunt., Vol. 1, No. 1, Pp. 44 –49, 2021, Doi: 
+10.46880/Tamika.Vol1no1.Pp44-49. 
+[3] M. Nurwegiono, S. Nurdiati, And S. H. Wijaya, 
+“Pengembangan Sistem Manajemen Pengetahuan Di 
+Organisasi Asosiasi Alumni Program Beasiswa Amerika - 
+Indonesia (ALPHA-I),” J. Teknol. Inf. Dan Ilmu Komput ., 
+Vol. 7, No. 3, Pp. 511 –520, 2020, Doi: 
+10.25126/Jtiik.2020712249. 
+[4] Y. Z. Surentu, D. M. D. Warouw, And M. Rembang, 
+“Pentingnya Website Sebagai Media Informasi Destinasi 
+Wisata Di Dinas Kebudayaan Dan Pariwisata Kabupaten 
+Minahasa,” Acta Diurna Komun ., Vol. 2, No. 4, Pp. 1 –17, 
+2020, [ Online]. Available: 
+Https://Ejournal.Unsrat.Ac.Id/Index.Php/Actadiurnakomunikas
+i/Article/View/31117/29843 
+[5] A. Surahmat And T. D. Fuady, “Sistem Pendukung Keputusan 
+Penentuan Koperasi Terbaik Dinas Perdagangan Perindustrian 
+Dan Koperasi Menggunakan Metode Analytical Hierarchy 
+Process (Ahp) Di Kota Serang,” J. Innov. Futur. Technol., Vol. 
+4, No. 1, Pp. 67–76, 2022, Doi: 10.47080/Iftech.V4i1.1745. 
+[6] C. J. Nst, N. Putri, And N. F. Lawita, “Perancangan Basis Data 
+(Emos Marketplace ) Sebagai Transaksi PT . Primarintis 
+Sejahtera,” J. Pendidik. Tambusai, Vol. 5, No. 2, Pp. 3771 –
+3781, 2021, [ Online]. Available: 
+Https://Www.Jptam.Org/Index.Php/Jptam/Article/View/1463 
+[7] Ramadhan Ardi Lestyanto , A Dani Paska , Y.P Nugraha Sahna 
+Emmanuel, P Pundi Trianggulo , And Widiati Sholihah Ina , 
+“Perancangan UI /UX Di Dalam Aplikasi Reservasi Hotel 
+Hasil Testing 1 
+ 
+No. Deskripsi Kondisi atau 
+Input 
+Uji Hasil Status Keterangan 
+1. Registrasi Guru 
+dan Murid 
+Email, 
+Username, 
+Password valid 
+Validasi dan 
+simpan data 
+Registrasi 
+berhasil dan data 
+tersimpan 
+Berhasil Tanggal 
+lahir masih 
+bisa dipilih 
+hari besok 
+dan 
+seterusnya 
+2. Registrasi Guru 
+dan Murid 
+Field kosong Validasi 
+input 
+Muncul pesan 
+error 
+Berhasil - 
+3. Login Username dan 
+Password 
+benar 
+Proses login 
+dan redirect 
+Masuk ke 
+beranda sesuai 
+role 
+Berhasil - 
+4. Login Password salah Validasi akun Muncul pesan 
+'password salah' 
+Berhasil - 
+5. Registrasi 
+Murid 
+Identitas Murid Simpan ke 
+registrasi 
+Tampil di daftar 
+registrasi 
+Berhasil - 
+6. View Registrasi 
+Murid 
+Identitas 
+Murid 
+Tampilkan 
+registrasi 
+murid 
+Data registrasi 
+tampil 
+Berhasil - 
+7. Upload 
+Pembayaran 
+Bukti transfer 
+(foto atau file), 
+nominal 
+pembayaran 
+Upload dan 
+validasi file 
+Data masuk dan 
+tampil di daftar 
+pembayaran 
+Berhasil - 
+8. Upload 
+Pembayaran 
+File tidak 
+sesuai format 
+Validasi 
+format file 
+Muncul pesan 
+error 
+Berhasil - 
+9. View 
+Pembayaran 
+Bukti transfer 
+(foto atau file), 
+nominal 
+pembayaran 
+Tampilkan 
+pembayaran 
+murid 
+Data 
+pembayaran 
+tampil 
+Berhasil - 
+10. Input Jadwal Paket, Guru, Simpan ke Data tampil di Berhasil - 
+  Tanggal, Jam tabel jadwal daftar jadwal   
+11. Input Jadwal Jam 
+bertabrakan 
+Cek jadwal 
+tabrakan 
+Tolak input dan 
+tampil pesan 
+Berhasil Masih bisa 
+memilih 
+tanggal 
+sebelum 
+hari 
+tersebut 
+12. Edit Data 
+Jadwal 
+Ubah data Simpan data 
+perubahan 
+Perubahan 
+tersimpan 
+Berhasil - 
+13. Input Presensi ID Murid, 
+Tanggal, Jam 
+Simpan ke 
+presensi 
+Tampil di daftar 
+presensi 
+Berhasil - 
+14. Absensi 
+Presensi Murid 
+keterangan 
+kehadiran 
+Tampilkan 
+presensi 
+murid 
+Data kehadiran 
+muncul 
+Berhasil Data murid 
+detail 
+double 
+15. Edit Data 
+Murid 
+Ubah data Simpan data 
+perubahan 
+Perubahan 
+tersimpan 
+Berhasil - 
+16. Input Data 
+Guru 
+Klik tombol 
+“tambah data 
+guru” 
+Validasi dan 
+tambah data 
+Data tersimpan Berhasil - 
+17. Edit Data Guru Ubah data Simpan data 
+perubahan 
+Perubahan 
+tersimpan 
+Berhasil - 
+18. Input Data 
+Paket 
+Klik tombol 
+“tambah data 
+paket” 
+Validasi dan 
+tambah data 
+Data tersimpan Berhasil - 
+19. Edit Data Paket Ubah data Simpan data 
+perubahan 
+Perubahan 
+tersimpan 
+Berhasil - 
+20. Input Akun 
+Pengguna 
+Email, 
+Username, 
+Password valid 
+Validasi dan 
+simpan data 
+Akun berhasil 
+dibuat dan data 
+tersimpan 
+Berhasil - 
+21. Register Guru 
+dan Murid 
+Username 
+sudah 
+digunakan 
+Validasi 
+username 
+unik 
+Muncul pesan 
+error “username 
+telah digunakan” 
+Berhasil - 
+ 
+
+--- [Halaman 12] ---
+Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3 
+RJTI RIAU JURNAL TEKNIK INFORMATIKA Vol. 4 No. 3 (2025) 
+ 
+ 
+DOI : https://doi.org/10.52158/rjti.v4i3.3655 
+435 
+ 
+ 
+Menggunakan Metode Design Thinking,” J. Ilmu Komput. Dan 
+Inf. Formosa, Vol. 2, No. 2, Pp. 209–222, 2023. 
+[8] Febie Elfaladonna , “ Aplikasi Arsip Digital (E-Arsip) Data 
+Pegawai,” J. Ilm. Tek. Unida, Vol. 4, No. 1, Pp. 119 –127, 
+2023, Doi: 10.55616/Jitu.V4i1.533. 
+[9] A. Utomo, Y. Sutanto, E. Tiningrum, And E. M. Susilowati, 
+“Pengujian Aplikasi Transaksi Perdagangan Menggunakan 
+Black Box Testing Boundary Value Analysis ,” J. Bisnis 
+Terap., Vol. 4, No. 2, Pp. 133 –140, 2020, Doi: 
+10.24123/Jbt.V4i2.2170. 
+[10] W. S. Dharmawan And A. Ardiyansyah, “ Pemanfaatan 
+Framework Codeigniter Dalam Pembuatan Sistem Informasi 
+Bimbel Bahasa Inggris Berbasis Web ,” J. Sist. Komput. Dan 
+Inform., Vol. 3, No. 2, P. 108, 2021, Doi: 
+10.30865/Json.V3i2.3611. 
+[11] Hafizh, “ Kata Kunci و ”,Kinabalu, Vol. 2, No. 1, Pp. 1671 –
+1678, 2021. 
+[12] W. I. Rahayu, J. Mutiara Bintang , And D. A. Pramana, 
+“Implementasi Framework Laravel Pada Perancangan Aplikasi 
+Sistem Pendaftaran Programming Course Roblox,” J. Tek. 
+Inform., Vol. 15, No. 1, P. 9568, 2023. 
+[13] K. J. Teknologi, I. Industri, S. Spesifikasi, And K. Perangkat, 
+“ANALISIS KEBUTUHAN SOFTWARE UNTUK SISTEM 
+INFORMASI MANAJEMEN LAYANAN RSUD XYZ 
+Keywords : Software Requirements Specification Yang 
+Diterjemahkan Menjadi Spesifikasi Kebutuhan Perangkat 
+Lunak Ini Merupakan Kumpulan Terstruktur Dari Kebutuhan 
+Utama ( Fungsi ,” Vol. 6, Pp. 30–41, 2023. 
+[14] I. Maliki, K. Jaya, G. C. Lestari, D. Irawan, And A. Wasid, 
+“PERANCANGAN SISTEM INFORMASI BERBASIS 
+WEB,” Vol. 18, 2024. 
+[15] A. Mulyani And S. Sulastri, “ Sistem Informasi Lembaga 
+Bimbingan Belajar Fawwaaz Kiddy Club Berbasis Web ,” No. 
+1. 
+[16] J. Jtik And J. Teknologi, “Sistem Informasi Bimbingan Belajar 
+Berbasis Web Dengan Metode Waterfall,” Vol. 5, No. 4, Pp. 
+1–6, 2021. 
+ 
+ 
+ 
+ 
+ 
+ 

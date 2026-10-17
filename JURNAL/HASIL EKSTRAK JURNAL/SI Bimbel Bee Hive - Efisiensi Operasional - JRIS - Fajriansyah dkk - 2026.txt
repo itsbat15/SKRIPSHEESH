@@ -1,0 +1,1024 @@
+--- [Halaman 1] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+115 
+ 
+ 
+PENGEMBANGAN SISTEM INFORMASI BIMBINGAN BELAJAR 
+BERBASIS WEB UNTUK EFISIENSI OPERASIONAL BEE HIVE 
+ 
+Satria Nur Fajriansyah1), Muhammad Subaktiar Wijaya2), Daffa Arifta Eryana3), 
+Alaudin Safa4), Harsya Rafif Pramadhan5), Arya Wicaksono6), Muhammad Ilham 
+Baehaqi7), Filius Deivivi8),  Dandy Nurfajriansyah9), Sopiyan Apandi10) 
+Prodi Teknik Informatika, Fakultas Ilmu Komputer, Universitas Pamulang 
+ 
+Correspondence author: S Apandi, dosen02601@unpam.ac.id, Tangerang Selatan, Indonesia 
+ 
+ 
+ 
+Abstract 
+The rapid development of information t echnology is encouraging educational 
+institutions to adopt digi tal systems to support oper ational and administrative 
+processes. Bee Hive Tutoring, a non-formal  educational institution established in 
+2020, still manages most of its activi ties manually through Google Forms, 
+spreadsheets, and WhatsApp communicatio ns. This situation creates various 
+problems, such as unstructured tutor scheduling, scattered student and tutor data, 
+inefficient learning report submission processes, and potential data security risks. 
+This study aims to design and implem ent a web-based Tutoring Management 
+Information System (SIMB) to improve operational management at Bee Hive 
+Tutoring. System development was carrie d out through the stages of problem 
+identification, needs analysis, design, development, impl ementation, training, and 
+system evaluation. The implemented system  integrates student registration, tutor 
+management, scheduling, attendance, payment management, and learning reports 
+in one centralized platform. The results sh ow that the system is able to improve 
+operational efficiency, reduce administ rative burdens, minimize scheduling 
+conflicts, accelerate information delivery, and enhance data management security. 
+In addition, the system also contributes to improving the quality of service for 
+students and parents. Overall, the im plementation of the web-based SIMB 
+successfully supported the digital transfor mation in operational management at 
+Bee Hive Tutoring. 
+Keywords : information systems, tutoring, we b-based, operational management, 
+bee hive 
+ 
+Abstrak 
+Perkembangan teknologi in formasi yang semakin pesat mendorong lembaga 
+pendidikan untuk mengadopsi sistem digital guna mendukung proses operasional 
+dan administrasi. Bimbingan Belajar Bee Hive, sebagai lembaga pendidikan 
+nonformal yang berdiri sejak tahun 2 020, masih mengelola sebagian besar 
+aktivitasnya secara manual melalui Google Form, spreadsheet, serta komunikasi 
+WhatsApp. Kondisi tersebut menimbul kan berbagai permasalahan, seperti 
+penjadwalan tutor yang belum terstruktur,  data siswa dan tutor yang tersebar, 
+
+--- [Halaman 2] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+116 
+ 
+proses penyampaian laporan pembelajaran yang kurang efisien, serta potensi risiko 
+keamanan data. Penelitian ini bertujuan untuk merancang dan 
+mengimplementasikan Sistem Informasi Manajemen Bimbingan Belajar (SIMB) 
+berbasis web guna meningkatkan pengelol aan operasional di Bimbingan Belajar 
+Bee Hive. Pengembangan sistem dilakuka n melalui tahapan identifikasi masalah, 
+analisis kebutuhan, perancangan, peng embangan, implementasi, pelatihan, dan 
+evaluasi sistem. Sistem yang diim plementasikan mengi ntegrasikan fitur 
+pendaftaran siswa, pengelolaan tutor,  penjadwalan, absensi, pengelolaan 
+pembayaran, serta laporan pembelajaran dalam satu platform terpusat. Hasil 
+penelitian menunjukkan bahwa sistem mampu meningkatkan efisiensi operasional, 
+mengurangi beban administ rasi, meminimalkan konflik jadwal, mempercepat 
+penyampaian informasi, serta meningkatk an keamanan pengelolaan data. Selain 
+itu, sistem juga berkontribusi dalam meningkatkan kualitas layanan bagi siswa dan 
+orang tua. Secara keseluruhan, implem entasi SIMB berbasis web berhasil 
+mendukung transformasi digital dalam pengelolaan operasional di Bimbingan 
+Belajar Bee Hive. 
+Kata Kunci : sistem informasi, bimbingan bela jar, berbasis web, pengelolaan 
+operasional, bee hive 
+ 
+ 
+A. PENDAHULUAN  
+Perkembangan teknologi informasi di 
+era digital telah membawa perubahan yang 
+cukup signifikan di berbagai bidang 
+kehidupan, termasuk dunia pendidikan 
+(Abdullah et al., 2023). Saat ini, 
+pemanfaatan teknologi informasi bukan lagi 
+sekadar pelengkap, melainkan sudah 
+menjadi kebutuhan mendasar dalam 
+mendukung pengelolaan data, penyebaran 
+informasi, serta peningkatan kualitas 
+layanan pendidikan agar lebih cepat, akurat, 
+dan terintegrasi (Hartono et al., 2025). 
+Salah satu bentuk pe nerapan yang banyak 
+digunakan adalah sistem informasi berbasis 
+web yang menawarkan fleksibilitas akses 
+dari mana saja dan kapan saja serta mampu 
+meningkatkan efisiensi operasional 
+lembaga pendidikan secara keseluruhan 
+(Laudon & Laudon, 2020). Penerapan ini 
+tidak terbatas pada pendidikan formal saja, 
+tetapi juga sangat dibutuhkan oleh lembaga 
+pendidikan nonformal seperti bimbingan 
+belajar yang terus berkembang seiring 
+meningkatnya kebutuhan masyarakat 
+terhadap layanan pendidikan tambahan 
+(Junaedi & Akbar, 2025). 
+Lembaga bimbingan belajar memiliki 
+peran yang cukup strategis dalam 
+membantu siswa memahami materi 
+pelajaran, meningkatkan prestasi akademik, 
+serta mempersiapkan diri menghadapi ujian 
+sekolah (Sholichah et al., 2025). Seiring 
+dengan meningkatnya minat masyarakat 
+terhadap layanan pendidikan tambahan, 
+kompleksitas pengelolaan operasional 
+lembaga pun ikut meningkat. Berbagai 
+kegiatan administratif mulai dari 
+pengelolaan data siswa, pendataan guru, 
+penjadwalan kegiatan  belajar mengajar, 
+pencatatan dokumentasi pembelajaran, 
+hingga penyampaian laporan 
+perkembangan siswa kepada orang tua, 
+semuanya memerlukan sistem yang mampu 
+mengelola proses tersebut secara efektif 
+dan efisien (Armanto & Fathurrahmad, 
+2024). Meskipun demikian, kenyataannya 
+masih banyak lembaga bimbingan belajar 
+yang menjalankan seluruh proses tersebut 
+secara manual, sehingga memunculkan 
+berbagai kendala operasional yang 
+
+--- [Halaman 3] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+117 
+ 
+menghambat pelayanan (Safitri et al., 
+2026). 
+Pengelolaan data secara manual 
+memiliki sejumlah kelemahan yang sulit 
+dihindari, di antaranya risiko kehilangan 
+data, keterlambatan dalam mendistribusikan 
+informasi, potensi kesalahan pencatatan, 
+serta terbatasnya kemampuan untuk 
+memantau aktivitas operasional secara 
+menyeluruh. Selain itu, penggunaan media 
+komunikasi pribadi seperti WhatsApp 
+sebagai sarana utama penyimpanan maupun 
+penyebaran data j uga berpotensi 
+menimbulkan permasalahan pada aspek 
+keamanan dan keteraturan informasi 
+(Darmansah et al., 2025). Kondisi inilah 
+yang menjadikan kehadiran sistem 
+informasi berbasis web sebagai salah satu 
+kebutuhan penting untuk mendukung 
+pengelolaan data secara terpusat, 
+meningkatkan efisiensi administrasi, serta 
+mempercepat akses informasi bagi seluruh 
+pihak yang terlibat (Destrada et al., 2026). 
+Bee Hive Bimbingan Belajar 
+merupakan salah satu lembaga pendidikan 
+nonformal yang berlokasi di Depok dan 
+Tangerang Selatan. Lembaga ini 
+menyediakan layanan pembelajaran untuk 
+berbagai jenjang, mulai dari PAUD, TK, 
+SD, hingga SMP, dengan sistem 
+pembelajaran kelompok kecil yang terdiri 
+dari maksimal tiga hi ngga empat siswa per 
+kelompok serta layanan privat satu guru 
+satu siswa. Selain program belajar reguler, 
+Bee Hive juga menawarkan paket terapi 
+dengan variasi pertemuan bulanan yang 
+dapat disesuaikan dengan kebutuhan siswa. 
+Sejak didirikan pada tahun 2020, 
+pertumbuhan jumlah siswa dan guru di 
+lembaga ini terus meningkat sehingga 
+kebutuhan akan sistem pengelolaan 
+operasional yang lebi h terstruktur dan 
+terdigitalisasi menjadi semakin mendesak. 
+Berdasarkan hasil observasi dan 
+wawancara yang dilakukan, diketahui 
+bahwa seluruh kegiat an operasional Bee 
+Hive masih didominasi oleh proses manual. 
+Pendaftaran siswa ba ru dilakukan melalui 
+Google Form, sementara komunikasi antara 
+pengelola, guru, dan orang tua siswa 
+berlangsung melalui pesan pribadi maupun 
+grup WhatsApp. Data siswa, data guru, 
+jadwal pembelajaran, serta catatan 
+dokumentasi kegiatan belajar tersebar di 
+berbagai media yang berbeda dan tidak 
+terintegrasi satu sama lain. Penjadwalan 
+kegiatan belajar-mengajar juga belum 
+dikelola secara sistem atis sehingga tidak 
+jarang terjadi benturan jadwal antarguru. 
+Kondisi ini berdampak langsung pada 
+kurang optimalnya pengelolaan 
+administrasi serta meningkatnya waktu dan 
+tenaga yang dibutuhkan dalam proses 
+operasional sehari-hari. 
+Permasalahan lainnya terletak pada 
+penyampaian laporan perkembangan 
+belajar siswa. Sela ma ini, informasi 
+mengenai progres pembelajaran 
+disampaikan kepada orang tua secara 
+manual melalui pesan pribadi, yang tentu 
+kurang efisien baik dari segi waktu maupun 
+konsistensi informasi. Orang tua tidak 
+memiliki akses langsung untuk melihat 
+jadwal belajar, dokumentasi kegiatan, 
+maupun catatan perkembangan anak 
+mereka secara mandiri. Apabila kondisi 
+semacam ini terus dibiarkan, maka dapat 
+menghambat peningkatan kualitas layanan 
+serta pengembangan lembaga di masa 
+mendatang. 
+Sejumlah peneliti an sebelumnya 
+menunjukkan bahwa penerapan sistem 
+informasi berbasis web mampu 
+meningkatkan efektivitas pengelolaan 
+administrasi pendidi kan serta mendukung 
+integrasi data secara lebih optimal (Arina et 
+al., 2023). Penggunaan sistem berbasis web 
+pada institusi pendidi kan juga terbukti 
+dapat meningkatkan efisiensi operasional, 
+mengurangi kesalahan administrasi, serta 
+mempermudah akses informasi bagi 
+pengguna sistem (P rayoga, 2024). Di 
+samping itu, penerapan basis data terpusat 
+berkontribusi dalam meningkatkan 
+
+--- [Halaman 4] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+118 
+ 
+keamanan dan keteraturan pengelolaan 
+data. Penelitian lain  juga menyebutkan 
+bahwa pengembangan sistem informasi 
+berbasis web mampu membantu lembaga 
+pendidikan dalam meningkatkan kualitas 
+layanan dan efektivitas pengelolaan 
+administrasi secara digital (Hasan et al., 
+2023). 
+Berdasarkan permasalahan yang telah 
+diuraikan, diperlukan suatu solusi berupa 
+pengembangan Sistem Informasi 
+Manajemen Bimbel (SIMB) berbasis web 
+yang dapat mengintegrasikan seluruh 
+proses operasional Be e Hive Bimbingan 
+Belajar ke dalam satu platform terpadu. 
+Sistem ini dikembangkan menggunakan 
+framework Laravel 12 dengan template 
+engine Blade dan build tool Vite untuk sisi 
+front-end, serta database SQLite sebagai 
+penyimpanan data utama. Untuk 
+mendukung transisi dari proses manual 
+yang selama ini digunakan, sistem juga 
+diintegrasikan dengan Google Sheets API 
+sehingga data pendaftaran yang masuk 
+melalui website secara otomatis 
+tersinkronisasi ke spreadsheet yang sudah 
+familiar bagi pengelola. Selain itu, setiap 
+pendaftaran yang berhasil akan memicu 
+pengiriman email konfirmasi otomatis 
+kepada orang tua siswa melalui layanan 
+SMTP Brevo, se hingga komunikasi 
+menjadi lebih cepat dan profesional. 
+Sistem ini dirancang dengan tiga peran 
+pengguna yang berbeda, yaitu Admin, 
+Orang Tua ( User), dan Mentor. Admin 
+memiliki akses penuh untuk mengelola data 
+pendaftaran, data guru, penjadwalan, 
+dokumentasi pembelajaran, manajemen 
+akun pengguna, pengelolaan program 
+belajar, serta melihat laporan operasional 
+dan mengekspor data ke format Excel. 
+Orang tua siswa dapa t login ke dalam 
+sistem untuk melihat dashboard informasi 
+anak, jadwal belajar yang telah diatur, serta 
+dokumentasi progres pembelajaran yang 
+diunggah oleh admin berupa catatan dan 
+foto kegiatan bela jar. Sementara itu, 
+Mentor dapat mengakses informasi terkait 
+jadwal mengajar dan data siswa yang 
+menjadi tanggung jawabnya. Pengaturan 
+hak akses berbasis peran (role-based access 
+control) ini diterapkan melalui middleware 
+untuk menjaga keamanan dan keteraturan 
+penggunaan sistem. 
+Penelitian ini bertujuan untuk 
+mengembangkan dan 
+mengimplementasikan Sistem Informasi 
+Manajemen Bimbel (SIMB) berbasis web 
+pada Bee Hive Bimbingan Belajar guna 
+meningkatkan efektivitas dan efisiensi 
+pengelolaan operasional lembaga. Dengan 
+hadirnya sistem ini,  diharapkan proses 
+pendaftaran siswa menj adi lebih terstruktur 
+dan tercatat secara digital, penjadwalan 
+kegiatan belajar mengajar dapat dikelola 
+tanpa tumpang tindih, dokumentasi 
+pembelajaran tersimpan dengan rapi dan 
+mudah diakses, serta orang tua siswa 
+memiliki portal tersendiri untuk memantau 
+perkembangan belajar anaknya secara 
+langsung. Pada akhirnya, sistem ini 
+diharapkan dapat mendorong transformasi 
+digital pada Bee Hive  Bimbingan Belajar 
+dan meningkatkan kualitas layanan 
+pendidikan yang diberikan kepada siswa 
+dan orang tua. 
+B. METODE
+ PENELITIAN 
+Penelitian ini menggunakan metode 
+Research and Development  (R&D) dengan 
+pendekatan kualitatif. Metode R&D dipilih 
+karena penelitian ini tidak sekadar 
+mengamati suatu fenomena, melainkan 
+secara langsung menghasilkan sebuah 
+produk nyata berupa Sistem Informasi 
+Manajemen Bimbel (SIMB) berbasis web 
+yang dikembangkan dan diimplementasikan 
+pada Bee Hive Bimbingan Belajar. 
+Sebagaimana dikemukakan oleh (Sugiyono, 
+2021), metode R&D merupakan metode 
+penelitian yang digunakan untuk 
+menghasilkan produk tertentu sekaligus 
+menguji efektivitas produk tersebut. Dalam 
+
+--- [Halaman 5] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+119 
+ 
+konteks penelitian ini, produk yang 
+dihasilkan adalah sistem informasi berbasis 
+web yang dirancang untuk menjawab 
+permasalahan operasional yang selama ini 
+dialami oleh lembaga. Sementara itu, 
+pendekatan kualitatif  digunakan untuk 
+memahami secara mendalam kondisi 
+operasional lembaga, mengidentifikasi 
+permasalahan, serta mengevaluasi 
+efektivitas sistem yang dikembangkan 
+berdasarkan pengalaman dan perspektif 
+pengguna. 
+ 
+Waktu dan Tempat Penelitian 
+Penelitian ini dilaksanakan di Bee Hive 
+Bimbingan Belajar yang  berlokasi di Kota 
+Depok, Jawa Barat. Seluruh tahapan 
+penelitian mulai dari analisis kebutuhan, 
+perancangan, pengembangan, hingga 
+implementasi dan evaluasi sistem dilakukan 
+secara bertahap dengan melibatkan pihak 
+pengelola lembaga secara langsung. 
+ 
+Tahapan Pengembangan Sistem 
+Proses pengembangan sistem dalam 
+penelitian ini mengacu pada model 
+Waterfall yang dikemukakan oleh 
+(Pressman & Maxim, 2020). Model ini 
+dipilih karena sifatnya yang sistematis dan 
+berurutan, sehingga setiap tahap 
+pengembangan dapat diselesaikan secara 
+tuntas sebelum melanjutkan ke tahap 
+berikutnya. Adapun tahapan yang dilalui 
+meliputi: 
+1. Analisis Kebutuhan: Mengidentifikasi 
+permasalahan operasional yang 
+dihadapi lembaga serta merumuskan 
+kebutuhan fungsional dan non-
+fungsional sistem melalui observasi dan 
+wawancara. 
+2. Desain Sistem: Merancang arsitektur 
+sistem, struktur basis data, serta 
+antarmuka pengguna be rdasarkan hasil 
+analisis kebutuhan. 
+3. Pengembangan ( Coding): Membangun 
+sistem menggunakan framework 
+Laravel 12 dengan template engine  
+Blade dan build tool Vite untuk sisi 
+front-end, serta SQLite sebagai basis 
+data. Sistem juga diintegrasikan dengan 
+Google Sheets API untuk sinkronisasi 
+data pendaftaran dan layanan SMTP 
+Brevo untuk pengiriman email 
+konfirmasi otomatis. 
+4. Pengujian: Melakukan pengujian 
+fungsionalitas sistem menggunakan 
+metode Black Box Testing untuk 
+memastikan setiap fitur berjalan sesuai 
+dengan kebutuhan pengguna. 
+5. Implementasi: Menerapkan sistem 
+secara langsung pada lingkungan 
+operasional Bee Hive Bimbingan 
+Belajar dan memberikan pelatihan 
+penggunaan kepada pengelola. 
+6. Evaluasi: Mengumpulkan umpan balik 
+dari pengguna untuk menilai efektivitas 
+sistem serta mengidentifikasi aspek 
+yang perlu diperbaiki. 
+ 
+Populasi dan Sampel  
+Bee Hive Bimbingan Belajar memiliki 
+dua orang tutor yang sejak awal ikut terlibat 
+dalam membangun dan menjalankan 
+operasional lembaga ini selama kurang 
+lebih enam tahun, yaitu sejak lembaga 
+didirikan pada tahun 2020. Kedua tutor 
+tersebut tidak hanya berperan sebagai 
+tenaga pengajar, tetapi juga turut 
+menangani berbagai kegiatan administratif 
+seperti pengelol aan data siswa, pengaturan 
+jadwal pembelajaran, serta penyampaian 
+laporan perkembangan belajar kepada 
+orang tua siswa. 
+Mengingat jumlah tutor yang terbatas, 
+maka seluruh populasi dijadikan sampel 
+penelitian (sampling jenuh atau sensus). 
+Adapun kriteria yang menjadikan kedua 
+tutor layak sebagai responden adalah 
+sebagai berikut: 
+1. Telah aktif mengajar dan terlibat dalam 
+operasional Bee Hive Bimbingan 
+Belajar sejak lembaga berdiri (± 6 
+tahun). 
+
+--- [Halaman 6] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+120 
+ 
+2. Memiliki pemahaman menyeluruh 
+terhadap proses bisnis lembaga karena 
+ikut serta membangun dan 
+mengembangkan Bee Hive dari awal. 
+3. Terlibat langsung dalam kegiatan 
+administratif seperti pengelolaan 
+pendaftaran siswa, penyusunan jadwal, 
+dan pelaporan kegiatan belajar. 
+4. Menggunakan sistem SIMB yang 
+dikembangkan selama tahap 
+implementasi penelitian. 
+ 
+Teknik Pengumpulan Data 
+Pengumpulan data dalam penelitian ini 
+dilakukan melalui tiga teknik, yaitu: 
+1. Observasi: Pengamatan langsung 
+dilakukan terhadap proses operasional 
+yang berjalan di Be e Hive Bimbingan 
+Belajar, meliputi alur pendaftaran siswa 
+baru, pengelolaan data siswa dan guru, 
+proses penjadwalan kegiatan belajar 
+mengajar, pencatatan dokumentasi 
+pembelajaran, serta mekanisme 
+penyampaian laporan perkembangan 
+siswa kepada orang tua. Observasi ini 
+bertujuan untuk memperoleh gambaran 
+nyata mengenai kondisi operasional 
+sebelum dan sesudah implementasi 
+sistem. 
+2. Wawancara: Wawancara semi-
+terstruktur dilakukan kepada owner dan 
+kedua tutor untuk menggali informasi 
+secara lebih mendalam mengenai 
+kendala operasional yang selama ini 
+dialami, kebutuhan terhadap sistem 
+informasi, serta tanggapan dan evaluasi 
+mereka setelah menggunakan SIMB 
+yang dikembangkan. 
+3. Dokumentasi: Teknik dokumentasi 
+digunakan untuk meng umpulkan data 
+pendukung berupa jadwal 
+pembelajaran, data administrasi siswa, 
+catatan kegiatan belajar, serta 
+dokumentasi proses implementasi 
+sistem. Data dokumentasi ini berfungsi 
+sebagai bukti pendukung sekaligus 
+bahan verifikasi terhadap hasil 
+observasi dan wawancara. 
+ 
+Pengujian Sistem 
+Pengujian sistem dilakukan 
+menggunakan metode Black Box Testing , 
+yaitu metode pengujian yang berfokus pada 
+fungsionalitas sistem tanpa memperhatikan 
+struktur kode internal. Metode ini dipilih 
+karena tujuan pengujian adalah memastikan 
+bahwa setiap fitur yang dikembangkan 
+mulai dari pendaftaran siswa secara online, 
+pengelolaan data guru, penjadwalan 
+terintegrasi, pencatatan dokumentasi 
+pembelajaran, manajemen akun pengguna, 
+hingga fitur ekspor data dapat berjalan 
+dengan baik dan sesuai dengan kebutuhan 
+pengguna. 
+ 
+Analisis Data 
+Analisis data dilakukan secara deskriptif 
+kualitatif dengan menerapkan teknik 
+triangulasi untuk menjaga keabsahan data. 
+Triangulasi dilakukan dengan 
+membandingkan dan menyilangkan data 
+yang diperoleh dari tiga sumber yang 
+berbeda, yaitu hasil observasi, hasil 
+wawancara, dan data dokumentasi. Melalui 
+teknik ini, peneliti dapat memperoleh 
+pemahaman yang lebih komprehensif dan 
+data yang lebih valid mengenai efektivitas 
+implementasi Sistem Informasi Manajemen 
+Bimbel (SIMB) berbasis web pada Bee 
+Hive Bimbingan Belajar
+. 
+C. HASIL DAN PEMBAHASAN 
+Berdasarkan Pengembangan Sistem 
+Informasi Manajemen Bimbel (SIMB) pada 
+Bee Hive Bimbingan Belajar dilakukan 
+dengan mengadopsi model Waterfall 
+(Pressman & Maxim, 2021). Model ini 
+dipilih karena sifatnya yang berurutan 
+(sequential) dan terstruktur, memungkinkan 
+pengembangan setiap fungsi sistem berjalan 
+dengan presisi tinggi dan meminimalkan 
+celah kesalahan integrasi. Berikut 
+
+--- [Halaman 7] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+121 
+ 
+merupakan rincian kegiatan dan hasil nyata 
+dari setiap tahapan yang dilalui dalam 
+perancangan SIMB: 
+ 
+Gambar 1. Perancangan SIMB 
+ 
+Tahap Analisis Kebutuhan 
+(Requirements Analysis) 
+Pada tahap awal ini, dilakukan proses 
+penggalian data secara intensif untuk 
+memetakan alur bisn is operasional Bee 
+Hive serta mengidentifikasi kendala yang 
+dihadapi oleh pengelola. Proses ini 
+dijalankan melalui obser vasi partisipatif 
+terhadap aktivitas harian admin dan 
+wawancara mendalam (in-depth interview) 
+bersama owner dan dua tutor senior yang 
+telah mengawal operasional lembaga 
+selama 6 tahun. Ditemukan empat titik 
+lemah utama dalam sistem manual Bee 
+Hive, yaitu: 
+1. Redundansi dan Fragmentasi Data: 
+Data pendaftaran dari Google Form 
+harus dipindahkan secara manual satu 
+per satu ke beberapa file spreadsheet 
+terpisah. 
+2. Konflik Penjadwalan: Proses 
+pencocokan ketersediaan waktu tutor 
+dan ruang kelas belajar kelompok 
+(maksimal 3-4 anak) sering mengalami 
+tumpang tindih (clash). 
+3. Hambatan Pelaporan: Dokumentasi 
+perkembangan belajar (catatan dan foto 
+evaluasi) dikirim secara sporadis lewat 
+pesan pribadi WhatsApp, yang 
+menyulitkan pencarian arsip oleh orang 
+tua. 
+4. Celah Keamanan: Tidak adanya 
+pembatasan akses data sensitif siswa 
+dan keuangan. 
+Dari temuan tersebut, dirumuskan 
+dokumen spesifikasi kebutuhan sistem yang 
+mencakup tiga peran utama (multi-role): 
+Admin (pengelola utama), User (orang tua 
+siswa), dan Mentor (guru pengajar). 
+ 
+Tahap Perancangan Sistem (System 
+Design) 
+Menerjemahkan dokumen kebutuhan ke 
+dalam cetak biru ( blueprint) arsitektur 
+sistem. Perancangan ini berfokus pada 
+struktur basis data, alur navigasi pengguna 
+(user flow), logika bisnis, dan rancang 
+bangun diagram UML ( Unified Modeling 
+Language). Hasil dari tahap ini adalah 
+skema database relasional (ERD) dan 
+diagram interaksi sistem yang akan 
+diimplementasikan ke dalam program. 
+Diagram UML yang dirancang untuk 
+menggambarkan sistem ini 
+ 
+Use Case Diagram 
+Diagram ini memetakan batas sistem 
+serta interaksi antara aktor (Pengunjung, 
+admin, orang Tua/ User) dengan fungsi-
+fungsi utama di dalam SIMB. 
+
+--- [Halaman 8] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+122 
+ 
+ 
+Gambar 2. Use Case Diagram 
+ 
+Use Case Diagram  di atas 
+menggambarkan pembagian hak akses yang 
+tegas. Pengunjung umum hanya dapat 
+berinteraksi dengan landing page dan 
+melakukan pendaftaran online. Orang tua 
+siswa (User) memiliki portal mandiri untuk 
+memantau perkembangan akademik anak 
+mereka (jadwal, dokumentasi, dan progres 
+belajar). Sementara Admin bertindak 
+sebagai pemegang ke ndali penuh yang 
+memverifikasi pendaftaran, memanipulasi 
+master data guru dan mata pelajaran, 
+menyusun jadwal belajar agar terhindar dari 
+benturan, serta mendokumentasikan log 
+perkembangan harian. 
+ 
+Entity Relationship Diagram (ERD) 
+ERD menggambarkan struktur 
+penyimpanan terpusat  pada basis data 
+SQLite yang digunakan, memperlihatkan 
+bagaimana entitas siswa saling terhubung 
+dengan paket jadwal, mata pelajaran, guru, 
+dan log dokumentasi. 
+ 
+Gambar 3. Entity Relationship Diagram 
+(ERD) 
+ 
+Struktur ERD menunjukkan hubungan 
+relasional yang ketat untuk menjaga 
+integritas data. Setiap baris data 
+pendaftarans yang diaktifkan dapat 
+memiliki relasi satu-ke-banyak (one-to-
+many) dengan paket_jadwals. Di dalam 
+satu paket jadwal, sistem dapat menampung 
+beberapa entri jadwals pertemuan spesifik 
+(tanggal dan jam) yang masing-masing 
+mengikat satu entitas gurus (pengajar). 
+Untuk keperluan evaluasi perkembangan, 
+entitas users (akun orang tua) terhubung 
+langsung dengan entitas dokumentasis yang 
+menyimpan path file foto serta teks catatan 
+evaluasi dari guru pengajar.
+ 
+ 
+Tahap Implementasi / Penulisan Kode 
+(Implementation) 
+Mentransformasikan rancangan 
+desain ke dalam bentuk baris kode 
+pemrograman. Framework Laravel 12 
+digunakan sebagai fondasi utama backend 
+
+--- [Halaman 9] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+123 
+ 
+karena memiliki performa tinggi, sistem 
+keamanan bawaan (built-in security) seperti 
+proteksi CSRF, serta manajemen routing 
+yang rapi. 
+Antarmuka dikembangkan secara 
+dinamis menggunakan Blade Template 
+Engine yang dikombina sikan dengan Vite 
+sebagai assets bundler untuk mempercepat 
+proses rendering visu al. Data disimpan 
+secara efisien di dalam basis data SQLite. 
+Pada tahap ini pula dilakukan integrasi dua 
+layanan eksternal (third-party services): 
+1. Google Sheets API: Menggunakan 
+Google\Client untuk menghubungkan 
+formulir pendaftaran web dengan 
+spreadsheet mitra secara langsung (real-
+time). Ketika calon siswa mengisi 
+formulir di web, data otomatis 
+terduplikasi ke baris baru Google 
+Sheets admin. 
+2. Brevo SMTP ( Mail Service ): 
+Mengotomatiskan pengiriman email 
+konfirmasi resmi 
+(PendaftaranBerhasil.php) kepada 
+alamat email orang tua yang terdaftar 
+segera setelah data  divalidasi oleh 
+sistem. 
+ 
+Activity Diagram  (Alur Pendaftaran 
+Siswa) 
+Diagram ini menggambarkan alur kerja 
+sistem dari sudut pa ndang aktivitas saat 
+proses pendaftaran berlangsung. 
+ 
+ 
+Gambar 4. Activity Diagram (Alur 
+Pendaftaran Siswa) 
+Sequence Diagram  (Proses Pendaftaran 
+Siswa) 
+Sequence diagram menggambarkan 
+interaksi dinamis antar komponen 
+perangkat lunak (controller, model, mail 
+service, dan Google Sheets service) 
+berdasarkan urutan waktu. 
+ 
+Gambar 5. Sequence Diagram 
+ 
+Ketika pengunjung menekan tombol 
+submit, Pendaftaran Controller menangkap 
+request dan melakukan validasi. Jika lolos, 
+objek pendaftaran disimpan ke dalam 
+SQLite untuk menjamin persistensi data 
+internal. Setelah itu, secara asinkron, 
+controller memanggil GoogleSheetsService 
+untuk menyisipkan data pendaftaran ke 
+lembar kerja eksternal, disusul dengan 
+pemanggilan kelas Mailer untuk 
+mengirimkan email konfirmasi resmi 
+langsung ke alamat surel orang tua. 
+ 
+Pencapaian Hasil 
+Penerapan SIMB memberikan dampak 
+perubahan yang sangat signifikan terhadap 
+efisiensi kerja ope rasional Bee Hive 
+Bimbingan Belajar. Berikut perbandingan 
+sebelum dan sesudah sistem diterapkan: 
+
+--- [Halaman 10] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+124 
+ 
+ 
+Gambar 6. Analisis Efektivitas dan 
+Dampak Operasional 
+ 
+Sebelum adanya SIMB, pengelola 
+membutuhkan waktu ra ta-rata 10–15 menit 
+per siswa untuk memverifikasi pendaftaran 
+dari Google Form, menyalinnya ke 
+spreadsheet internal, dan mengetik pesan 
+konfirmasi manual di WhatsApp. Dengan 
+SIMB, proses verifi kasi, pencatatan 
+database, sinkronisasi Google Sheets, dan 
+pengiriman email konfirmasi berjalan 
+secara otomatis dalam waktu kurang dari 2 
+detik setelah tombol submit ditekan. 
+Dengan fitur penyusunan Paket Jadwal 
+terpusat yang dilengkapi visualisasi 
+ketersediaan guru, potensi terjadinya 
+benturan jadwal menga jar (tutor mengajar 
+dua kelompok berbeda di jam yang sama) 
+berkurang hingga 0%. 
+Orang tua tidak perlu lagi menunggu 
+kiriman pesan WhatsApp secara manual di 
+malam hari. Cukup dengan login ke portal 
+/user, orang tua dapat melihat jadwal aktif 
+terupdate serta memantau dokumentasi foto 
+kegiatan belajar bese rta catatan evaluasi 
+anak secara real-time. 
+Tampilan Interface 
+Berikut ini merupakan hasil tampilan 
+interface diantaranya: 
+ 
+ 
+Gambar 7. Halaman Utama/Landing Page 
+ 
+Menunjukkan wajah publik bimbel, 
+portofolio program (PAUD, TK, SD, SMP), 
+galeri kegiatan, serta FAQ interaktif. 
+ 
+ 
+Gambar 8. Formulir Pendaftaran Online 
+ 
+Memperlihatkan antarmuka tempat 
+orang tua melakukan input data anak secara 
+mandiri. 
+ 
+ 
+Gambar 9. Dashboard Admin 
+ 
+Pusat kendali operasional admin. 
+Menampilkan widget statistik utama 
+(Jumlah Siswa Aktif, Pendaftaran Baru 
+
+--- [Halaman 11] ---
+ 
+JURNAL REKAYASA INFORMASI 
+SWADHARMA (JRIS) 
+    VOLUME 06 NO 02 JULI  2026 
+   ISSN 2774 – 5759 | eISSN 2774-5732 
+ 
+ 
+125 
+ 
+Hari Ini, Total Progra m Aktif) dan daftar 
+log aktivitas (Activity Log) terbaru. 
+ 
+ 
+Gambar 10. Halaman Log Dokumentasi & 
+Progres Belajar Admin 
+ 
+Fitur input bukti belajar siswa. Form 
+upload foto dokumentasi kelas, pemilihan 
+mata pelajaran, pemilihan guru, dan 
+penulisan catatan perkembangan siswa. 
+D. PENUTUP 
+Pengembangan Sistem Informasi 
+Manajemen Bimbel (SIMB) berbasis web 
+dengan Laravel 12, Google Sheets API, dan 
+Brevo SMTP ini berhasil mewujudkan 
+transformasi digital yang nyata pada Bee 
+Hive Bimbingan Belajar. Berdasarkan 
+evaluasi bersama owner dan dua tutor 
+senior yang telah mengabdi selama enam 
+tahun, kehadiran sistem ini terbukti 
+memangkas waktu pendaftaran siswa secara 
+otomatis dari belasan menit menjadi di 
+bawah dua detik, seka ligus mengeliminasi 
+risiko benturan jadwal mengajar hingga nol 
+persen. Selain mengoptimalkan efisiensi 
+administrasi internal, SIMB juga 
+menghadirkan transparansi bagi orang tua 
+siswa yang kini dapat memantau jadwal 
+aktif serta catatan progres belajar anak 
+secara real-time melalui portal mandiri. 
+Pada akhirnya, inova si ini tidak hanya 
+sukses mendigitalisasi pengelolaan data 
+secara terpusat, tetapi juga berhasil 
+meningkatkan standar kualitas dan 
+profesionalisme laya nan pendidikan Bee 
+Hive di mata masyarakat luas. 
+Meskipun SIMB saat ini telah 
+menjawab kebutuhan mendasar pengelola, 
+pengembangan sistem di masa mendatang 
+disarankan untuk menambahkan modul 
+presensi digital guna melacak kehadiran 
+siswa dan tutor secara real-time. Selain itu, 
+integrasi dengan layanan payment gateway 
+sangat direkomendasikan untuk 
+mempermudah orang tua melakukan 
+transaksi pembayaran SPP bulanan secara 
+online dan aman. Untuk meningkatkan 
+kenyamanan aksesibilitas , sistem ini juga 
+dapat dikembangkan ke dalam aplikasi 
+mobile berbasis Android dan iOS yang 
+dilengkapi fitur push notification . Terakhir, 
+perluasan skala pengujian dengan 
+melibatkan lebih banyak responden (orang 
+tua dan tutor baru) di masa depan akan 
+sangat membantu dalam menyempurnakan 
+aspek pengalaman pengguna (user 
+experience) secara lebih komprehensif. 
+E. DAFTAR PUSTAKA 
+Abdullah, A. J., Wahid, A. H. A., & Rivai, 
+A. (2023). Pengaruh Teknologi 
+Informasi dan Komunikasi Terhadap 
+Pendidikan Indonesia. JIEP : Journal of 
+Islamic Education Policy , 8(2), 133–
+146. 
+https://doi.org/10.30984/jiep.v8i2.2715 
+Arina, Y., Febrianti, H., Amarta, Y., 
+Sabandi, A., & Yahya, Y. (2023). 
+Urgensi Sistem Informasi Manajemen 
+Dalam Meningkatkan Mutu Layanan 
+Pendidikan. Innovative : Journal Of 
+Social Science Research , 3(2), 8089–
+8098. https://j-
+innovative.org/index.php/Innovative/art
+icle/view/1348 
+Armanto, K. A., & Fathurrahmad. (2024). 
+Sistem Informasi Akademik Berbasis 
+Android Pada Bimbingan Belajar 
+(BIMBEL) Praja Edukasi Banda Aceh. 
+JIKTI : Jurnal Ilmu Komputer Dan 
+Teknologi Informasi , 1(2), 13–23. 
+
+--- [Halaman 12] ---
+Pengembangan Sistem Informasi Bimbingan Belaja r Berbasis Web Untuk Ef isiensi Operasional Bee 
+Hive 
+Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif 
+Pramadhan, Arya Wicakso no, Muhammad Ilham Baehaqi, Filius Deivivi,  Dandy Nurfajriansyah, 
+Sopiyan Apandi 
+ 
+ 
+126 
+ 
+https://doi.org/10.35870/jikti.v1i2.1066 
+Darmansah, T., Pasaribu, G. A., Juliani, D., 
+Pulungan, S. N., & Pangolangan, C. A. 
+(2025). Optimalisasi Sistem Informasi 
+Administrasi Digital Untuk 
+Meningkatkan Efisiensi Layanan dan 
+Keamanan Informasi Organisasi. 
+Socius : Jurnal Penelitian Ilmu-Ilmu 
+Sosial, 2(11), 108–112. 
+https://ojs.daarulhuda.or.id/index.php/S
+ocius/article/view/1489 
+Destrada, I. P., Sucipto, & Nugroho, A. 
+(2026). Perancangan Sistem Informasi 
+Administrasi Berbas is Website pada 
+LKP Inti Computer. JSITIK: Jurnal 
+Sistem Informasi Dan Teknologi 
+Informasi Komputer , 5(1), 1–12. 
+https://doi.org/10.53624/jsitik.v5i1.921 
+Hartono, J. V., Hartono, V. R., & Sunarsih, 
+U. (2025). Pemanfaatan Teknologi 
+Informasi Pada Masa Pandemi Hingga 
+Pasca Pandemi Dalam Dunia 
+Pendidikan: Systematic Literature 
+Review. Jurnal Penelitian Ilmiah 
+Interdisipliner, 9(12), 484–492. 
+https://sejurnal.com/pub/index.php/jpii/
+article/view/1900 
+Hasan, A. R., Chotimah, C., & Junaris, I. 
+(2023). Analisis Metode Perancangan 
+Sistem Informasi Akademik Berbasis 
+Web: Systematic Literatur Review. 
+JMMP :Jurnal Manajemen Mutu 
+Pendidikan, 11(2), 115–124. 
+https://jurnal.fkip.unila.ac.id/index.php/
+JMMP/article/view/27975 
+Junaedi, F. R., & Akbar, M. (2025). 
+Perancangan Sistem Informasi 
+Bimbingan Belajar dan Kursus di 
+Ganesha Tama Bandung Berbasis 
+Website. GREAT : Global Research 
+and Innovation Journal , 1(3), 2593–
+2602. 
+https://journaledutech.com/index.php/gr
+eat/article/view/791 
+Laudon, K. C., & Laudon, J. P. (2020). 
+Management Information Systems: 
+Managing the Digital Firm . New 
+Jersey : Pearson Education Inc. 
+Prayoga, M. A. (2024). Evaluasi Efektivitas 
+Sistem Informasi Manajemen 
+Pendidikan Dalam Meningkatkan 
+Pengelolaan Data Siswa Dan Proses 
+Pembelajaran Di Sekolah Menengah 
+Atas Sukma Bangsa Lhokseumawe. 
+Jurnal Manajemen Pendidikan , 6(2), 
+68–76. 
+https://doi.org/10.21831/jump.v6i2.744
+09 
+Pressman, R., & Maxim, B. (2020). 
+Software Engineering: A Practitioner’s 
+Approach, 9th Edition . New York  : Mc 
+Graw Hill. 
+Safitri, E. C. A., Listyorini, T., & Supriyati, 
+E. (2026). Perancangan Sistem 
+Informasi Manajemen Bimbingan 
+Belajar Berbasis Web Untuk Efisiensi 
+Administrasi dan Komunikasi Dengan 
+Fitur Notifikasi Otomatis: Studi Kasus 
+Bimbel Ilman Nafi’. JATI : Jurnal 
+Mahasiswa Teknik Informatika , 10(2), 
+2345–2352. 
+https://doi.org/10.36040/jati.v10i2.1732
+8 
+Sholichah, L. F., Safika, S., Rahayu, M. A., 
+Masnawati, E., Mardikaningsih, R., 
+Hariani, M., Masfufah, M., & Aliyah, 
+N. D. (2025). Efektifitas Bimbingan 
+Belajar Dalam Meningkatkan Prestasi 
+Akademik di Desa Balunganyar. 
+PROSPEKS : Prosiding Pengabdian 
+Ekonomi Dan Keuangan Syariah , 3(2), 
+685–693. 
+https://doi.org/10.32806/pps.v3i2.630 
+Sugiyono. (2021). Metode Penelitian 
+Kuantitatif, Kualitatif dan R&D, 
+Cetakan Ketiga. Bandung : Alfabeta. 
+ 

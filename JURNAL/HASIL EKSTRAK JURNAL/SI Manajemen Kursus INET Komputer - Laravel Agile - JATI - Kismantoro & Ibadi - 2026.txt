@@ -1,0 +1,864 @@
+--- [Halaman 1] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3195 
+PENERAPAN METODE AGILE DALAM PENGEMBANGAN WEBSITE  
+SISTEM MANAJEMEN KURSUS BERBASIS LARAVEL  
+(STUDI KASUS INET KOMPUTER) 
+ 
+Kismantoro, Taqrim Ibadi 
+Teknik Informatika, Universitas Bina Darma 
+Jl. Jenderal Ahmad Yani No.3, 9/10 Ulu Palembang, Indonesia 
+torokisman500@gmail.com 
+ 
+ABSTRAK 
+ 
+Perkembangan teknologi informasi mendorong transformasi digital di berbagai sektor, termasuk pendidikan. 
+Di INET Komputer, pengelolaan kursus masih dilakukan secara manual, yang menyebabkan kesalahan input data 
+dan keterlambatan informasi. Hal ini mengurangi efisiensi operasional dan menghambat pelayanan kepada peserta 
+kursus. Penelitian ini bertujuan untuk mengembangkan Sistem Informasi Manajemen Kursus (SIM K) berbasis 
+web guna mengatasi permasalahan tersebut. Sistem ini mencakup pengelolaan kursus, pengguna, pendaftaran, 
+pembayaran, jadwal, kehadiran, dan penilaian. Metode penelitian yang digunakan adalah metode Agile dengan 
+penerapan framework Laravel berba sis Model -View-Controller (MVC), yang memungkinkan pengembangan 
+sistem secara iteratif dan adaptif. Hasil penelitian menunjukkan bahwa sistem berhasil memenuhi kebutuhan aktor 
+utama, yaitu Admin, Siswa, dan Instruktur. Admin dapat mengelola kursus, memveri fikasi pembayaran, dan 
+menghasilkan laporan; Siswa dapat mendaftar dan mengunggah bukti pembayaran; Instruktur dapat mengelola 
+jadwal dan penilaian. Pengujian menggunakan Black Box Testing dan User Acceptance Testing (UAT) 
+menunjukkan bahwa sistem berfungsi dengan baik dan layak digunakan untuk meningkatkan efisiensi operasional 
+INET Komputer.  
+ 
+Kata kunci :  Sistem Informasi, Manajemen Kursus, Agile, Black Box Testing, UAT. 
+ 
+1. PENDAHULUAN 
+Perkembangan teknologi informasi telah 
+mengubah banyak aspek kehidupan, termasuk sektor 
+pendidikan. Kemajuan teknologi informasi 
+mengantarkan transformasi besar di berbagai bidang, 
+termasuk pendidikan. Proses belajar -mengajar 
+semakin dipermudah dengan adanya teknologi ini [1]. 
+Teknologi memungkinkan akses yang lebih mudah ke 
+materi pembelajaran dan memperkenalkan peluang 
+baru bagi lembaga pendidikan untuk meningkatkan 
+citra dan daya saingnya melalui digitalisasi layanan.  
+INET Ko mputer, sebagai lembaga kursus di 
+bidang teknologi komputer, masih menghadapi 
+berbagai tantangan dalam pengelolaan operasionalnya. 
+Proses-proses penting seperti pendaftaran peserta, 
+pengelolaan jadwal kursus, dan pemantauan 
+perkembangan peserta masih dilakukan secara manual 
+atau menggunakan sistem yang tidak terintegrasi 
+dengan baik. Hal ini menyebabkan terjadinya 
+duplikasi data, kesalahan input, serta keterlambatan 
+dalam pembaruan informasi. Akibatnya, efisiensi 
+operasional terganggu dan citra profesionali sme 
+lembaga menjadi terpengaruh. 
+Berdasarkan permasalahan yang dihadapi INET 
+Komputer, penelitian ini mengembangkan Sistem 
+Informasi Manajemen Kursus berbasis web yang dapat 
+mengintegrasikan seluruh proses operasional lembaga. 
+Sistem yang diusulkan diharap kan dapat mengelola 
+kursus, jadwal, pendaftaran peserta, pembayaran, 
+kehadiran, dan penilaian secara terpusat dan efisien. 
+Dengan penerapan sistem ini, diharapkan efisiensi 
+operasional INET Komputer dapat meningkat, 
+pengelolaan data menjadi lebih baik, dan kepercayaan 
+peserta terhadap kualitas layanan juga dapat terjaga. 
+Penelitian ini menggunakan metodologi Agile 
+untuk memfasilitasi pengembangan sistem, 
+memungkinkan adaptasi terhadap kebutuhan 
+pengguna yang selalu berubah [2].  Penggunaan 
+kerangka kerja Laravel dianggap cocok untuk 
+membangun sistem yang efisien, aman, dan mudah 
+fleksibel.  Dengan memanfaatkan Laravel, sistem 
+administrasi kursus yang dihasilkan dapat menjadi 
+lebih kontemporer, responsif, dan mudah beradaptasi 
+dengan kebutuhan teknologi yang berlaku. 
+ Dengan demikian, penelitian ini tidak hanya 
+menghasilkan sistem manajemen kursus berbasis web 
+yang fungsional, tetapi juga memberikan kontribusi 
+akademis dalam memahami penerapan metode Agile 
+dan framework Laravel dala m pengembangan sistem 
+informasi. Penelitian ini relevan dengan 
+perkembangan teknologi informasi modern, 
+khususnya dalam meningkatkan efisiensi operasional 
+dan kualitas layanan di sektor pendidikan, dan dapat 
+memperkuat posisi lembaga kursus seperti INET 
+Komputer di pasar yang semakin kompetitif. 
+ 
+2. TINJAUAN PUSTAKA 
+2.1. Sistem Manajemen Kursus 
+Menurut [3], Sistem Manajemen Kursus adalah 
+perangkat lunak perusahaan khusus yang dirancang 
+untuk mengotomatiskan dan mengoptimalkan 
+pengelolaan Instructor-Led Training (ILT) dan Virtual 
+Instructor-Led Training  (vILT). Misalnya, sistem 
+manajemen kursus mengotomatisk an tugas 
+
+--- [Halaman 2] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3196 
+administratif seperti penjadwalan, pendaftaran, 
+penagihan, dan pengiriman email. 
+Penerapan sistem manajemen kursus sangat 
+penting untuk meningkatkan efisiensi administratif 
+dan juga memperbaiki pengalaman pembelajaran bagi 
+peserta didik dan instru ktur. Dengan adanya sistem 
+manajemen kursus yang terotomatisasi, tugas -tugas 
+yang bersifat repetitif dan memakan waktu, seperti 
+pendaftaran, pengelolaan materi, serta pelaporan hasil, 
+dapat diselesaikan dengan cepat dan akurat. 
+ 
+2.2. Website 
+Website adalah sekumpulan halaman digital yang 
+berisi informasi berupa teks, gambar, audio, dan video 
+yang terkoneksi oleh internet [4]. 
+Website digunakan untuk menyediakan 
+informasi, layanan, atau aplikasi yang dapat diakses 
+oleh pengguna dari berbagai perangkat yang terhubung 
+dengan internet. Website di -host pada sebuah server 
+dan dapat berisi berbagai jenis konten, seperti teks, 
+gambar, video, serta interaksi melalui formulir, 
+pencarian, atau transaksi e-commerce. 
+ 
+2.3. Unified Modeling Language (UML) 
+UML adalah sebuah sekumpulan konvensi 
+permodelan yang digunakan untuk menentukan atau 
+menggambarkan sebuiah sistem perangkat lunak 
+dalam kaitannya dengan objek [5]. 
+UML menyediakan bahasa pemodelan grafis 
+standar yang memudahkan semua pihak yang terlibat 
+dalam pengembangan perangkat lunak termasuk analis 
+sistem, perancang (desainer), dan pengembang 
+(programmer) untuk berkomunikasi secara efektif dan 
+memiliki pemahaman yang sama mengenai sistem 
+yang akan dibangun. 
+ 
+2.4. Pemrograman 
+Pemrograman adalah suatu tahapan pembuatan 
+program dengan menggunakan algoritma dan struktur 
+data tertentu dengan memakai bahasa pemrograman  
+[6]. Dalam pengembangan aplikasi web modern 
+umumnya pemrograman dibagi menjadi dua bagian 
+utama, yaitu front-end dan back-end. 
+Dalam konteks pengembangan website sistem 
+manajemen kursus, front -end berfungsi sebagai 
+antarmuka penggun a yang memungkinkan interaksi 
+langsung antara sistem dengan pengguna, seperti 
+peserta, instruktur, maupun admin. Sedangkan back -
+end dalam pengembangan website sistem manajemen 
+kursus, bagian back -end bertanggung jawab atas 
+seluruh proses logika aplikasi, t ermasuk autentikasi 
+pengguna, manajemen data kursus, pengaturan akses 
+pengguna (admin, pengajar, peserta), serta 
+penyimpanan dan pengambilan data dari database. 
+  
+2.5. Basis Data (Database) 
+Database  merupakan  suatu  kesatuan yang  
+dibentuk  dari  gabungan tabel  dan file, di mana setiap 
+tabel terdiri dari record yang  disusun  atas  field -field  
+yang  ada  di dalamnya [7]. 
+2.6. Agile 
+Metode agile memiliki keunggulan dalam 
+memperbaiki sistem lama yang tidak memenuhi 
+kebutuhan pengguna. Metode ini menekankan 
+pentingnya interaksi personal dibanding alat dan 
+proses, menanggapi perubahan lebih penting daripada 
+mengikuti rencana, menjalankan perangkat lunak 
+melalui perangkat lunak yang terdokumentasi 
+sepenuhnya dan kolaborasi pengguna melalui  
+negosiasi kontak [8]. 
+Dalam penelitian [9], tahapan -tahapan dalam 
+metode agile secara visual dapat dilihat pada gambar 
+1. 
+ 
+Gambar 1. Tahapan metode agile 
+ 
+Berikut adalah enam langkah penting dalam 
+metode agile untuk mengembangkan perangkat lunak: 
+a. Plan (Perencanaan): Pada langkah ini, tim 
+pengembang dan pengguna bekerja sama untuk 
+menemukan dan mengumpulkan persyaratan untuk 
+prangkat lunak yang akan dibuat. 
+b.  Design (Desain): langkah ini mencakup desain 
+arsitektur informasi dan visual perangkat lunak 
+yang akan dibuat. 
+c. Develop (Pengembangan): Pengembangan 
+perangkat lunak dimulai dengan desain yang sudah 
+disepakati dan dilakukan secara iteratif. 
+d. Testing (Pengujian): setelah pengembangan, 
+perangkat lunak diuji untuk memastikan 
+kualitasnya dan menemukan kesalahan. 
+e. Deploy (Implementasi): Perangkat lunak yang 
+telah diuji dan dinyatakan siap digunakan untuk 
+diimplementasikan atau didistribusikan kepada 
+pengguna. 
+f. Review (Evaluasi): Tahap akhir ini melibatkan 
+meninjau dan menilai setiap siklus pengembangan 
+yang telah dilakukan. 
+ 
+2.7. Pengujian Sistem 
+Pengujian sistem sangat penting dilakukan untuk 
+mencari seluruh kekeliruan yang ada pada sistem 
+sehingga dapat mengurangi atau mencegah terjadinya 
+kerugian  [10]. 
+ 
+2.8. Pengujian Blackbox 
+Pengujian blackbox dikenal sebagai pengujian 
+fungsional sistem yaitu pengujian yang dilandaskan 
+pada persyaratan dan spesifikasi desain perangkat 
+lunak yang diuji [11].  
+Blackbox testing dilakukan dengan cara membuat 
+skenario untuk menguji semua fungsi sistem apakah 
+
+
+--- [Halaman 3] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3197 
+telah sesuai dengan spesifikasi yang dibutuhkan dan 
+tester yang melakukan blackbox testing tidak perlu 
+mempunyai pengetahuan pemrograman yang khusus. 
+  
+2.9. Pengujian User Acceptance Testing 
+User Acceptance Testing Merupakan salah  satu  
+tahap  penting  dalam  proses  pengujian  perangkat  
+lunak.  UAT  dilakukan  untuk memastikan  bahwa  
+perangkat  lunak  yang  dikembangkan  memenuhi  
+kebutuhan  dan  harapan pengguna  yang  sebenarnya  
+sebelum  diluncurkan  secara  resmi [12] 
+ 
+3. METODE PENELITIAN 
+Metode penelitian yang digunakan dalam 
+penelitian ini terdiri dari dari tiga tahapan utama, yaitu: 
+metode pengumpulan data, metode pengembangan 
+sistem, dan metode pengujian. 
+   
+3.1. Metode Pengumpulan Data 
+Metode pengumpulan data yang digunakan 
+dalam penelitian ini terdiri dari tiga tahapan utama, 
+yaitu wawancara, observasi, dan studi pustaka. 
+Wawancara dilakukan untuk menggali informasi 
+langsung dari calon pengguna aplikasi mengenai 
+sistem yang sedang berjalan dan kebutuhan mereka. 
+Observasi dilakukan dengan me ngamati secara 
+langsung proses dan interaksi dalam sistem yang ada. 
+Sedangkan studi pustaka dilakukan dengan 
+mempelajari buku, jurnal, dan sumber lainnya yang 
+relevan untuk mendukung pembahasan penelitian. 
+ 
+3.2. Metode Pengembangan Sistem 
+Metode Agile dipilih d alam pengembangan 
+sistem ini karena kemampuannya dalam merespons 
+perubahan dengan cepat dan memprioritaskan 
+kolaborasi antara tim dan pengguna. Metode ini 
+mendukung pengembangan jangka pendek, yang 
+memungkinkan penyesuaian dan perbaikan fitur 
+secara iterat if sesuai dengan kebutuhan pengguna. 
+Keberhasilan penerapan Agile memerlukan 
+komunikasi yang efektif dan tanggung jawab yang 
+baik antara klien dan tim pengembang [13]. 
+Berikut ini adalah Gambar 2 yang 
+menggambarkan siklus penge mbangan perangkat 
+lunak menggunakan metode Agile, yang mencakup 
+tahap perencanaan, desain, pengembangan, pengujian, 
+dan peluncuran secara iteratif. 
+ 
+ 
+Gambar 2. Tahapan metode agile dalam 
+pengembangan sistem 
+Berikut penjelasan dari tahapan -tahapan dari 
+metode agile dalam pengembangan sistem: 
+a. Plan (Perencanaan) 
+Pada tahap perencanaan, peneliti akan 
+mengidentifikasi kebutuhan sistem melalui 
+wawancara dan observasi langsung terhadap 
+aktivitas operasional di INET Komputer, 
+khususnya terkait pendaftaran peserta, pengelolaan 
+jadwal, dan pelaporan kursus. Data yang diperoleh 
+akan digunakan untuk menyusun product backlog 
+dan rencana sprint, dengan menetapkan prioritas 
+pengembangan serta estimasi waktu untuk setiap 
+iterasi berdasarkan kompleksitas fitur. 
+b. Design (Desain) 
+Pada tahap perancangan, peneliti akan membuat 
+wireframe atau mockup antarmuka pengguna 
+untuk menggambarkan struktur halaman utama, 
+seperti dashboard admin, form pendaftaran peserta, 
+tampilan jadwal kursus, dan halaman pembayaran. 
+Selain itu, peneliti akan merancang skema basis 
+data dan diagram alur sistem (flowchart) serta use 
+case diagram untuk menggambarkan interaksi 
+antara pengguna dan sistem. Desain ini akan 
+dikonsultasikan dengan stakeholder di INET 
+Komputer untuk memastikan kesesuaian dengan 
+kebutuhan fungsional yang telah dikumpulkan. 
+c. Develop (Pengembangan) 
+Pada tahap pengembangan, peneliti akan 
+mengimplementasikan sistem menggunakan 
+framework Laravel, berdasarkan perancangan 
+yang telah dibuat. Pengembangan dilakukan secara 
+bertahap dengan mengikuti siklus sprint yang 
+terencana, dengan fokus pada penyelesaian fitur 
+prioritas seperti pendaftaran peserta online, 
+manajemen jadwal dan kelas, serta sistem 
+pembayaran dan pelaporan. Progres harian akan 
+dicatat untuk memas tikan pengembangan sesuai 
+jadwal, dan fitur yang selesai akan diuji sebelum 
+memasuki sprint berikutnya. 
+d. Test (Pengujian) 
+Setelah pengembangan, peneliti akan melakukan 
+pengujian menyeluruh untuk memastikan sistem 
+berfungsi sesuai harapan. Pengujian meliputi  unit 
+testing untuk memverifikasi fungsi kecil, 
+integration testing untuk memastikan 
+keterhubungan antar modul, blackbox testing untuk 
+menguji fungsionalitas sistem tanpa melihat kode 
+sumber, dan user acceptance testing  (UAT) 
+bersama INET Komputer untuk menilai kecocokan 
+dengan kebutuhan pengguna. Temuan bug atau 
+kesalahan logika akan dicatat dan diperbaiki pada 
+sprint berikutnya. 
+e. Deploy (Penerapan) 
+Pada tahap deploy, sistem dipasang di server lokal 
+atau hosting online agar dapat diakses oleh 
+pengguna INET Komputer. Peneliti akan 
+memastikan sistem berjalan lancar di lingkungan 
+produksi dan dapat digunakan tanpa kendala 
+teknis. Setelah itu, uji coba dilakukan oleh admin 
+dan pengguna untuk mengevaluasi fungsionalitas 
+
+
+--- [Halaman 4] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3198 
+serta kemudahan penggunaan. Peneliti juga a kan 
+memberikan pendampingan singkat untuk 
+memastikan pemahaman dasar penggunaan sistem, 
+serta mengumpulkan umpan balik awal untuk 
+menilai efektivitas dan kenyamanan sistem dalam 
+mendukung operasional lembaga. 
+f. Review (Tinjauan) 
+Pada tahap review, peneliti a kan mengevaluasi 
+seluruh proses pengembangan dan implementasi 
+sistem, termasuk pengujian, feedback pengguna, 
+dan efektivitas sistem dalam mendukung 
+operasional lembaga. Evaluasi ini bertujuan untuk 
+mengidentifikasi kekuatan dan kelemahan sistem 
+serta menen tukan langkah perbaikan yang 
+diperlukan untuk meningkatkan kualitas dan 
+kinerja sistem ke depan 
+ 
+3.3. Metode Pengujian 
+Pada penelitian ini, metode pengujian yang 
+digunakan adalah blackbox Testing. Dimana blackbox 
+Testing merupakan suatu metode pengujian yang 
+menguji fungsionalitas sistem tanpa harus mengetahui 
+struktur internal atau kode program dari sistem yang 
+diuji [14]. 
+ 
+3.4. Perancangan Unified Modeling Language 
+(UML) 
+UML merupakan metode untuk mengembangkan 
+sistem menspesifikasikan, mendokumentasikan, dan 
+membangun sebuah perangkat lunak dan dikenal 
+sebagai bahasa standar dalam pengembangan sistem. 
+ 
+3.5. Usecase Diagram 
+Usecase diagram merupakan gambaran 
+fungsional dari setiap aktor dari sistem informasi dan 
+manajemen kursus. Berikut merupakan usecase 
+diagaram dari sistem manajemen kursus INET 
+Komputer dapat dilihat pada gambar 3. 
+ 
+ 
+Gambar 3. Usecase diagram 
+ 
+Usecase diagram  pada Gambar 3 
+menggambarkan rancangan sistem manajemen kursus 
+dengan tiga aktor utama: Admin, Guru, dan Siswa. 
+Aktor Siswa dapat melihat informasi kursus dan 
+jadwal, mendaftar kursus, mengunggah bukti 
+pembayaran, mengakses materi pembelajaran, dan 
+melihat riwayat kursus. Aktor Guru bertanggung 
+jawab untuk mengelola materi kursus, serta melihat 
+data kelas, jadwal, dan daftar siswa yang diampunya. 
+Aktor Admin memiliki otoritas tertinggi untuk 
+mengelola seluruh data master sistem, termasuk 
+mengelola data Sisw a dan Guru, mengelola Kursus, 
+Jadwal, dan Kategori, memverifikasi pembayaran 
+pendaftaran, serta mencetak laporan yang diperlukan. 
+Semua aktor wajib melakukan login dan logout serta 
+dapat mengelola akun pribadi mereka untuk 
+mengakses fungsionalitas yang ses uai dengan peran 
+masing-masing. 
+ 
+3.6. Activity Diagram 
+Activity diagram yang mendeskripsikan aktifitas 
+user dan tahapan -tahapan pengerjaannya secara 
+sekuensial. Activity diagram ini menggambarkan 
+secara rinci aktivitas pengguna dalam sistem dan 
+tahapan-tahapan pengerjaannya yang dilakukan secara 
+sekuensial. Diagram ini membantu untuk 
+memvisualisasikan setiap langkah yang dilakukan oleh 
+pengguna mulai dari awal hingga akhir, termasuk 
+interaksi dengan sistem dan keputusan yang diambil 
+sepanjang proses. Setiap aktivitas yang dilakukan oleh 
+pengguna diurutkan dengan jelas, menunjukkan urutan 
+langkah yang harus ditempuh untuk mencapai tujuan 
+tertentu. Selain itu, activity diagram ini juga mencakup 
+alur keputusan dan kondisi yang dapat mempengaruhi 
+jalannya aktivitas, sehingga memudahkan pemahaman 
+tentang bagaimana sistem dan pengguna berinteraksi 
+secara dinamis. Dengan demikian, activity diagram ini 
+berfungsi sebagai alat yang efektif untuk 
+mengidentifikasi dan mengoptimalkan proses kerja, 
+serta untuk memastikan bahwa setiap langkah 
+dilakukan dengan benar sesuai dengan urutan yang 
+telah ditentukan. 
+ 
+ 
+Gambar 4. Activity diagram admin 
+ 
+Berdasarkan Gambar 4 activity diagram  admin 
+menggambarkan alur proses login dan pengelolaan 
+data oleh admin. Proses dimulai dengan Admin 
+melakukan login menggunakan username dan 
+password. Sistem kemudian memvalidasi data yang 
+dimasukkan. Jika validasi berhasil, Admin diarahkan 
+
+
+--- [Halaman 5] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3199 
+ke halaman Supe r Admin untuk mengelola data. 
+Admin dapat melakukan pengelolaan data dan 
+menyimpan perubahan ke database. Jika validasi 
+gagal, admin akan diminta untuk mencoba login 
+kembali. Proses ini memastikan bahwa hanya admin 
+yang terotorisasi yang dapat mengakses dan mengelola 
+data dalam sistem. 
+ 
+ 
+Gambar 5. Activity diagram instruktur 
+ 
+ 
+Gambar 6. Activity diagram siswa 
+ 
+Gambar 5 activity diagram instruktur 
+menggambarkan alur login dan interaksi instruktur 
+dengan sistem. Proses dimulai dengan instruktur 
+melakukan login menggunakan username dan 
+password. Setelah validasi berhasil, instruktur 
+diarahkan ke halaman Dashboard G uru, di mana ia 
+dapat melihat materi dan mengakses halaman Daftar 
+Materi. Di halaman ini, instruktur dapat menginput 
+nilai siswa dan mengelola materi. Setelah mengedit 
+atau menambah materi, sistem akan melakukan 
+request dan menyimpan data ke database. Jika validasi 
+login gagal, instruktur akan diminta untuk mencoba 
+login kembali. 
+Gambar 6 activity diagram  siswa 
+menggambarkan alur login dan interaksi siswa dengan 
+sistem. Proses dimulai dengan siswa melakukan login 
+menggunakan username dan password. Setelah 
+validasi berhasil, siswa diarahkan ke halaman 
+dashboard siswa, di mana mereka dapat memilih 
+kursus dan melihat daftar kursus yang tersedia. Siswa 
+kemudian dapat mendaftar kursus yang dipilih, yang 
+akan memicu sistem untuk memuat data kursus dan 
+menyimpannya ke database. Setelah mendaftar, siswa 
+dapat memilih materi yang tersedia dan 
+mengunduhnya. Jika validasi login gagal, siswa 
+diminta untuk mencoba login kembali. 
+ 
+3.7. Sequence Diagram 
+Sequence diagram menggambarkan kelakuan 
+objek pada user use case dengan mend eskripsikan 
+waktu hidup objek dan pesan yang dikirimkan dan 
+diterima antar objek.  Sequence diagram adalah salah 
+satu jenis diagram yang digunakan untuk 
+menggambarkan interaksi antar objek dalam sebuah 
+sistem berdasarkan urutan waktu. Diagram ini 
+memberikan deskripsi yang jelas mengenai waktu 
+hidup setiap objek yang terlibat dalam sebuah use case, 
+serta pesan-pesan yang dikirimkan dan diterima antar 
+objek tersebut. Setiap objek pada diagram diwakili 
+dengan garis vertikal, yang menunjukkan waktu hidup 
+objek, sementara pesan antar objek digambarkan 
+dengan panah horizontal yang menghubungka n objek 
+yang saling berinteraksi. 
+ 
+ 
+Gambar 7. Sequence diagram pendaftaran siswa 
+ 
+Berdasarkan Gambar 7 sequence diagram  
+Pendaftaran Siswa menggambarkan proses 
+pendaftaran siswa pada sistem. Dimulai dengan siswa 
+membuka halaman daftar dan mengisi form 
+pendaftaran. Data yang dimasukkan kemudian 
+dikirimkan ke sistem untuk diverifikasi, khususnya 
+untuk validasi username dan em ail. Jika terdapat 
+kesalahan dalam data (misalnya format username atau 
+
+
+--- [Halaman 6] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3200 
+email tidak valid), sistem akan menampilkan pesan 
+error. Jika data valid, sistem akan menyimpan data 
+siswa baru ke dalam database dan menampilkan pesan 
+berhasil. Proses ini memastikan b ahwa hanya data 
+yang valid yang dapat diproses dan disimpan untuk 
+pendaftaran siswa. 
+ 
+ 
+Gambar 8. Sequence diagram login 
+ 
+Gambar 8 sequence diagram login  
+menggambarkan alur proses login pengguna ke sistem. 
+Pengguna memasukkan username dan password pada 
+halaman login. Data login dikirim ke sistem untuk 
+dilakukan autentikasi dan validasi melalui pengecekan 
+di database. Jika username atau password salah, sistem 
+akan menampilkan pesan kesalahan. Namun, jika 
+validasi berhasil, sistem akan menampilkan dashboard 
+yang sesuai dengan peran (role) pengguna, 
+memungkinkan mereka mengakses fitur yang relevan. 
+Proses ini memastikan hanya pengguna yang 
+terverifikasi yang dapat mengakses sistem. 
+ 
+3.8. Class Diagram 
+Class menggambarkan keadaan (atribut/properti) 
+suatu sistem, seka ligus menawarkan layanan untuk 
+memanipulasi keadaan tersebut (metoda/fungsi). 
+Berikut gambar 9 class diagram  dari sistem 
+manajemen kursus INET Komputer. 
+ 
+ 
+Gambar 9. Clas diagram 
+  
+Gambar Class Diagram ini menggambarkan 
+struktur sistem manajemen kursus dengan beberapa 
+kelas utama: User, Admin, Guru, Siswa, Kursus, 
+Materi, PendaftaranKursus, Nilai, dan Pembayaran. 
+Kelas User adalah kelas induk untuk Admin, Guru, dan 
+Siswa, yang masing -masing memiliki atribut dan 
+metode terkait dengan fungsinya. Admin bertanggung 
+jawab mengelola kursus dan pengguna, Guru dapat 
+melihat materi dan input nilai, sementara Siswa dapat 
+memilih kursus, mendaftar, dan melihat materi. Kelas 
+Kursus, Materi, dan P endaftaranKursus mengelola 
+informasi terkait kursus dan pendaftaran, sedangkan 
+Nilai mencatat penilaian siswa. Pembayaran 
+mengelola transaksi pembayaran dengan berbagai 
+metode. Relasi antar kelas ditunjukkan dengan garis 
+hubungan, menggambarkan asosiasi da n 
+ketergantungan antar objek dalam sistem. 
+ 
+4. HASIL DAN PEMBAHASAN 
+Penelitian ini menghasilkan sebuah website 
+Sistem Manajemen Kursus INET Komputer berbasis 
+Laravel yang mempermudah pengelolaan kursus, 
+mulai dari pendaftaran peserta hingga penilaian. 
+Sistem ini dirancang dengan fitur utama seperti 
+registrasi, login, manajemen kursus dan batch, 
+pendaftaran, unggah bukti pembayaran, serta 
+pengelolaan penilaian. Pengembangan dilakukan 
+menggunakan metode Agile, yang memungkinkan 
+penyesuaian fitur berdasarkan prioritas kebutuhan dan 
+masukan dari pihak INET Komputer. Hasil pengujian 
+menunjukkan bahwa seluruh modul utama berfungsi 
+sesuai harapan tanpa kesalahan signifikan. 
+Dokumentasi yang mencakup struktur basis data dan 
+alur proses mendukung pemeliharaan serta 
+pengembangan sistem di masa mendatang. 
+ 
+4.1. Implementasi 
+Implementasi adalah tahap dimana 
+diterapkannya hasil dari sistem diusulkan, 
+menggunakan pemodelan dan perancangan, yang 
+diterjemakan dalam sebuah dan menjadi sebuah 
+aplikasi yang dapat membantu meringankan suatu 
+pekerjaan 
+Implementasi pada sistem manajemen kursus 
+dapat dilihat pada beberapa gambar dibawah ini: 
+ 
+ 
+Gambar 10. Implementasi dashboard admin 
+ 
+Halaman Dashboard Admin menampilkan 
+ringkasan kondisi sistem untuk memudahkan 
+pemantauan dan kontrol fitur utama. Terdapat top bar 
+
+
+--- [Halaman 7] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3201 
+dengan ikon menu, kolom pencarian, dan informasi 
+akun, serta sidebar navigasi dengan menu-menu utama 
+seperti Dasbor, Manajeme n Kursus, Pengguna, 
+Pembayaran, Manajemen Akademik, dan Laporan. Di 
+konten utama, ada kartu statistik yang menampilkan 
+total pengguna, siswa, instruktur, dan status 
+pembayaran. Panel Verifikasi Pembayaran Tertunda 
+menunjukkan tidak ada pembayaran yang tert unda, 
+sementara panel Statistik Pembayaran merangkum 
+status transaksi dengan tingkat verifikasi 100%. 
+Aktivitas Pembayaran Terbaru menunjukkan transaksi 
+terakhir dengan rincian lengkap. Fitur Aksi Cepat 
+menyediakan tombol pintasan untuk verifikasi 
+pembayaran dan pengelolaan kursus atau pengguna, 
+diakhiri dengan footer identitas sistem. 
+ 
+ 
+Gambar 11. Implementasi halaman kelola kursus 
+ 
+Halaman Kelola Kursus ini memungkinkan 
+Admin untuk mengelola daftar kursus yang tersedia 
+dalam sistem. Tabel menampilkan inf ormasi terkait 
+setiap kursus, seperti nama kursus, kategori, durasi, 
+biaya, jumlah maksimal peserta, dan status kursus. 
+Admin dapat mencari kursus tertentu, serta melakukan 
+aksi seperti mengedit atau menghapus kursus yang 
+ada. Di bagian atas, terdapat tomb ol Tambah untuk 
+menambahkan kursus baru ke dalam sistem. Halaman 
+ini memberikan kontrol penuh kepada Admin dalam 
+pengelolaan kursus, memastikan data kursus selalu 
+terupdate dan dapat dikelola dengan mudah.  
+ 
+ 
+Gambar 12. Implementasi halaman verifikasi 
+pembayaran 
+ 
+Halaman Verifikasi Pembayaran ini 
+memungkinkan Admin untuk memverifikasi 
+pembayaran yang dilakukan oleh siswa. Tabel 
+menampilkan data transaksi pembayaran, termasuk 
+nama siswa, kursus yang diambil, jumlah pembayaran, 
+metode pembayaran (misalnya  transfer bank), serta 
+tanggal pembayaran. Status pembayaran yang telah 
+diverifikasi akan ditandai dengan label "Terverifikasi". 
+Admin dapat memantau dan mengonfirmasi setiap 
+transaksi pembayaran yang telah dilakukan, 
+memastikan bahwa pembayaran siswa tercatat dengan 
+benar dalam sistem. Halaman ini mendukung 
+pengelolaan pembayaran secara efisien dan 
+transparan. 
+ 
+ 
+Gambar 13. Implementasi halaman jadwal mengajar 
+instruktur 
+ 
+Halaman Jadwal Mengajar Instruktur ini 
+merupakan alat yang sangat berguna bagi instruktur 
+untuk memantau dan mengelola jadwal mengajar 
+mereka dengan lebih efisien. Halaman ini 
+menampilkan daftar lengkap jadwal yang mencakup 
+berbagai informasi penting seperti kursus yang 
+diajarkan, batch yang terlibat, tanggal dan waktu 
+pertemuan, serta ruangan yang digunakan untuk setiap 
+sesi. Selain itu, halaman ini juga mencakup informasi 
+terkait absensi, di mana instruktur dapat memantau 
+status kehadiran setiap siswa untuk setiap pertemuan, 
+dengan pilihan status yang bervariasi seperti Hadir, 
+Sakit, atau Izin. Halaman ini juga menunjukkan 
+apakah setiap jadwal pertemuan telah dilaksanakan 
+atau masih tertunda, sehingga instruktur dapat 
+mengetahui apakah semua sesi sudah berjalan sesuai 
+rencana. Fitur filter yang tersedia memberikan 
+kemudahan bagi inst ruktur untuk mencari jadwal 
+berdasarkan status kehadiran atau tanggal tertentu, 
+membantu mereka untuk lebih mudah menemukan 
+informasi yang relevan dengan cepat. Dengan adanya 
+halaman ini, instruktur dapat lebih terorganisir dalam 
+mengelola jadwal mengajar dan absensi siswa, 
+sehingga proses pembelajaran dapat berlangsung 
+dengan lebih tertata dan efisien. 
+ 
+ 
+Gambar 14. Implementasi halaman penilaian 
+intruktur 
+ 
+Pada halaman grading, instruktur dapat melihat 
+progress penilaian untuk kursus yang sedang mereka 
+
+
+--- [Halaman 8] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3202 
+ajarkan, dalam hal ini adalah Microsoft Office Dasar 
+(Word, Excel, PowerPoint). Terdapat informasi 
+tentang jumlah siswa yang terdaftar, jumlah komponen 
+penilaian, dan rata -rata nilai yang belum diisi. Pada 
+bagian bawah, terdapat daftar komponen penilaian 
+seperti latihan, praktik, dan ujian, yang masing-masing 
+memiliki bobot penilaian yang ditentukan (30%, 50%, 
+dan 20%). Untuk setiap komponen, instruktur dapat 
+menginput nilai siswa melalui tombol Input Nilai yang 
+tersedia. 
+4.2. Penguajian Blackbox Testing 
+Pengujian blackbox adalah pengujian fungsional 
+sistem yaitu pengujian didasarkan pada persyaratan 
+atau spesifikasi desain entitas perangkat lunak yang 
+diuji. Pengujian ini dimaksudkan untuk mengetahui 
+apakah sistem sudah sesuai dengan yang diharapkan 
+atau tidak. 
+Tabel 1. Hasil pengujian menggunakan blackbox testing 
+No Deskripsi pengujian Hasil yang diharapakan Valid Tidak 
+valid Skor 
+1 Pendaftaran akun siswa Sistem dapat menyimpan data dan akun siswa berhasil di 
+buat   100 
+2 Login sistem Sistem dapat menampilkan dashboard sesuai peran   100 
+3 Pilih kursus / batch Sistem mencatat pendaftaran dan menampilkan status 
+pendaftaran siswa   100 
+4 Upload bukti 
+pembayaran 
+Sistem menyimpan bukti pembayaran dengan status 
+menunggu verifikasi   100 
+5 Verifikasi pembayaran Admin dapat memverifikasi pembayaran dan mengubah 
+status pembayaran   100 
+6 Kelola kursus Admin dapat menambah, mengubah, atau menghapus kursus.   100 
+7 Hak akses role (RABC) Sistem membatasi akses berdasarkan peran   100 
+8 Logout Sistem Pengguna dapat keluar dari sistem dan kembali ke halaman 
+login   100 
+ 
+Berdasarkan Tabel 1 pengujian ini menunjukkan 
+blackbox testing untuk memverifikasi fungsionalitas 
+utama dalam sistem manajemen kursus. Pengujian 
+dimulai dengan pendaftaran akun siswa dan login 
+sistem, untuk memastikan akun siswa dapat dibuat dan 
+login berhasil. Selanjutnya, diuji pilih kursus / daftar 
+batch dan Upload Bukti Pembayaran, memastikan 
+pendaftaran dan pembayaran tercatat dengan benar. 
+Verifikasi Pembayaran oleh Admin diuji untuk 
+memvalidasi status pembayaran. Kelola kursus 
+memastikan admin dapat mengelola kursus, dan hak 
+akses role (RBAC) memverifikasi pembatasan akses 
+berdasarkan peran pengguna. Terakhir, Logout Sistem 
+memastikan pengguna dapat keluar dengan sukses. 
+Semua fitur diuji untuk memastikan sistem berfungsi 
+sesuai harapan dengan skor 100 pada setiap skenario. 
+  
+5. KESIMPULAN DAN SARAN 
+Berdasarkan hasil penelitian dan implementasi 
+website Sistem Manajemen Kursus (SIMK) berbasis 
+Laravel dengan penerapan metode Agile pada Studi 
+Kasus INET Komputer, dapat disimpulkan bahwa 
+pengembangan SIMK berhasil menggantikan proses 
+pengelolaan kursus ma nual menjadi lebih terstruktur 
+dan terkomputerisasi, mulai dari pengelolaan kategori 
+kursus, data kursus, hingga pengaturan batch/kelas dan 
+jadwal pelaksanaan. Sistem ini mendukung layanan 
+peserta secara end-to-end, memungkinkan siswa untuk 
+melakukan regis trasi, memilih kursus, melakukan 
+pembayaran, mengunggah bukti pembayaran, serta 
+memantau status pembayaran sampai diverifikasi oleh 
+admin. Penerapan fitur akademik seperti pencatatan 
+absensi dan penilaian membantu mendokumentasikan 
+proses pembelajaran deng an baik, sehingga siswa 
+dapat memantau riwayat kehadiran dan perkembangan 
+nilai. Metode Agile memungkinkan pengembangan 
+sistem secara bertahap dan adaptif, di mana perubahan 
+kebutuhan dapat diakomodasi dan hasil sistem 
+divalidasi melalui pengujian fungsion al. Saran untuk 
+pengembangan selanjutnya antara lain meliputi 
+penambahan fitur manajemen akun yang lebih lengkap 
+seperti reset password dan perubahan password 
+mandiri, peningkatan keamanan modul pembayaran 
+dengan validasi unggahan dan pencatatan riwayat 
+verifikasi, pengembangan fitur notifikasi untuk 
+komunikasi lebih efektif, perbaikan modul laporan 
+dengan filter dan visualisasi yang lebih detail, serta 
+pengujian lanjutan termasuk pengujian keamanan dan 
+performa untuk memastikan sistem stabil saat jumlah 
+pengguna dan transaksi meningkat. 
+ 
+DAFTAR PUSTAKA 
+[1] Silfiya and I. Siagian, "Penggunaan Teknologi 
+dalam Dunia Pendidikan Tanpa Menghilangkan 
+NilaiNilai Sosial," Journal on Education, vol. 07, 
+no. 01, pp. 2554-2568, 2024.  
+[2] K. Fajri, A. Saputra, Z. Umar and I. A lbana, 
+"ANALISIS PENDEKATAN METODE AGILE 
+DALAM MANAJEMEN PROYEK PADA 
+SISTEM INFORMASI," Jurnal Universitas 
+Metro, vol. 6, no. 1, pp. 2715-9426, 2024.  
+[3] Arlo, "Course Management System," 2025. 
+[Online]. Available: https://www.arlo.co/course-
+management-system. [Accessed 4 Maret 2026]. 
+[4] Rihana, I. Setiawan and Ariansyah, "Rancang 
+Bangun Aplikasi E -Musrenbang Pada Desa 
+
+--- [Halaman 9] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 
+ 
+3203 
+Jungai Berbasis Web," Jurnal Publikasi Teknik 
+Informatika (JUPTI),  vol. 2, no. 3, pp. 19 -27, 
+2023.  
+[5] M. A. Kurniawan, M. Rani, R. Ardiansyah, T. 
+Christy and M. A. Rahman, "Perancangan 
+Aplikasi Sistem Informasi untuk Pengelolaan 
+Data Validasi ODP (Studi Kasus : Divisi Data 
+Management Telkom Witel Sumbar )," Jurnal 
+Pustaka Data, vol. 2, no. 1, pp. 1-4, 2022.  
+[6] A. Ritonga and Y. Yahfizham, "Studi Literatu r 
+Perbandingan Bahasa Pemrograman C++ Dan 
+Bahasa Pemrograman Python Pada Algoritma 
+Pemrograman," Jurnal Teknik Informatika dan 
+Teknologi Informasi (JUTITI),  vol. 3, no. 3, pp. 
+56-63, 2023.  
+[7] T. Wulandari and S. Nurmiati, "RANCANG 
+BANGUN SISTEM PEMESANAN WEDDING 
+ORGANIZER MENGGUNAKAN METODE 
+RAD DI SHOFIA AHMAD WEDDING," Jurnal 
+Rekayasa Informasi,  vol. 11, no. 1, pp. 79 -85, 
+2022.  
+[8] Fitriastuti, Fatsyahrina, Krisdiyanto and Taofik, 
+"Implementasi Metode Agile Untuk Perancangan 
+Sistem Informasi Administrasi Akademik," 
+Jurnal Informasi Interaktif, vol. 7, no. 2, pp. 119-
+127, 2022.  
+[9] Z. H. Irawan, S. Lestanti and U. Mawaddah, 
+"RANCANG BANGUN SISTEM INFORMASI 
+MANAJEMEN ADMINISTRASI PADA GYM 
+BERBASIS WEB MENGGUNAKAN 
+METODE PENGEMBANGAN AGILE ," JATI 
+(Jurnal Mahasiswa Teknik Informatika) , vol. 8, 
+no. 5, pp. 10460-10468, 2024.  
+[10] F. C. Ningrum, S. A. H. A. P. Dandi Suherman 
+and A. Saifudin, "Pengu jian Blak Box pada 
+Aplikasi Sistem Seleksi Sales Terbaik 
+Menggunakan Teknik Equivalence Partitions," 
+Jurnal Informatika Universita Pamulang , vol. 
+Vol. 4 No.4, pp. 125-130, 2019.  
+[11] Aliyah, N. Hartono and A. A. Muin, 
+"Penggunaan User Acceptance Testing (UAT) 
+Pada Pengujian Sistem Informasi Penglolaan 
+Keuangan Dan Inventaris Barang," Switch: 
+Jurnal Sains dan Teknologi Informasi , vol. 
+Volume. 3 Nomor. 1, pp. 84-100, 2025.  
+[12] Aliyah, N. Hartono and A. A. Muin, 
+"Penggunaan User Acceptance Testing (UAT) 
+Pada Pengujia n Sistem Informasi Pengelolaan 
+Keuangan Dan Inventaris Barang," Switch: 
+Jurnal Sains dan Teknologi Informasi,  vol. 
+Volume. 3 Nomor. 1, pp. 84-100, 2025.  
+[13] Fitriastuti, Fatsyahrina, Krisdiyanto and Taofik, 
+"Implementasi Metode Agile Untuk Perancangan 
+Sistem Informasi Administrasi Akademik," 
+Jurnal Informasi Interaktif, vol. 7, no. 2, pp. 119-
+127, 2022.  
+[14] Saputra, Yanto, Mardiati and Dina, 
+"Implementasi Sistem Informasi Manajemen 
+Klinik Menggunakan Metode Agile Black Box 
+Testing," JITET (Jurnal Informatika dan Teknik 
+Elektro Terapan), vol. 13, no. 1, pp. 1611 -1618, 
+2025.
+ 

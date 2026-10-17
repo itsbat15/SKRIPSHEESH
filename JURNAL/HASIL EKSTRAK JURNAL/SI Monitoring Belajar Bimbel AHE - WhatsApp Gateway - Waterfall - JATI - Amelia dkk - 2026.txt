@@ -1,0 +1,602 @@
+--- [Halaman 1] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5314 
+INTEGRASI WHATSAPP GATEWAY PADA SISTEM MONITORING 
+PERKEMBANGAN BELAJAR ANAK AHE BERBASIS WEB  
+(STUDI KASUS: BIMBEL AHE MEGALUH JOMBANG) 
+ 
+Wilujeng Amelia, Nur Khafidhoh, M. Anshori Aris Widya  
+Informatika, Universitas KH.A Wahab Hasbullah 
+Jl. Garuda No. 9, Tambakberas, Tambakrejo, Kec. Jombang, Kabupaten Jombang, Jawa Timur 
+Wilujengamalia9512@gmail.com  
+ 
+ABSTRAK 
+ 
+Perkembangan teknologi informasi mendorong lembaga pendidikan untuk memanfaatkan sistem digital 
+dalam meningkatkan kualitas layanan, termasuk dalam monitoring perkembangan belajar anak. Bimbel AHE 
+Megaluh masih menggunakan pencatatan manual melalui kartu p restasi sehingga berisiko terjadi kesalahan 
+pencatatan, kehilangan data, serta keterlambatan penyampaian informasi kepada orang tua. Penelitian ini 
+bertujuan untuk merancang dan mengimplementasikan Sistem Informasi Monitoring Capaian Perkembangan 
+Belajar Anak berbasis web yang terintegrasi dengan WhatsApp Gateway guna meningkatkan efisiensi dan akurasi 
+pengelolaan data serta memperkuat komunikasi antara guru dan orang tua. Metode pengembangan sistem yang 
+digunakan adalah Waterfall yang meliputi tahap analis is kebutuhan, perancangan sistem, implementasi, 
+pengujian, dan pemeliharaan. Pengumpulan data dilakukan melalui wawancara, observasi, dan studi dokumentasi. 
+Hasil penelitian menunjukkan bahwa sistem yang dibangun mampu membantu guru dalam mencatat dan 
+mengelola perkembangan belajar anak secara digital, menyediakan visualisasi grafik perkembangan, serta 
+mengirimkan notifikasi otomatis kepada orang tua melalui WhatsApp. Berdasarkan pengujian Black Box Testing, 
+seluruh fungsi sistem berjalan dengan tingkat keb erhasilan sebesar 100%. Selain itu, hasil uji coba pengguna 
+terhadap 37 responden menunjukkan tingkat kepuasan pengguna sebesar 95%, sehingga sistem dinilai mampu 
+meningkatkan efektivitas monitoring perkembangan belajar anak di Bimbel AHE Megaluh.  
+ 
+Kata kunci :   Sistem Informasi, Monitoring Perkembangan Belajar Anak, Aplikasi Web, WhatsApp Gateway, 
+Bimbel AHE 
+ 
+1. PENDAHULUAN 
+Perkembangan teknologi informasi yang 
+semakin pesat memberikan dampak signifikan 
+terhadap berbagai sektor, termasuk sektor pendidikan. 
+Pemanfaatan teknologi berbasis web dalam 
+pengelolaan data pendidikan menjadi salah satu upaya 
+untuk meningkatkan efisiensi, akurasi, serta kualitas 
+layanan kepada peserta didik dan orang tua[1]. Sistem 
+informasi tidak hanya berperan sebagai media 
+penyimpanan data, tetapi juga sebagai sarana 
+monitoring, evaluasi, dan komunikasi yang 
+terintegrasi. 
+Bimbingan Belajar AHE (Anak Hebat) Megaluh 
+7059 merupakan lembaga pendidikan nonformal yang 
+berfokus pada pembelajaran membaca dan berhitung 
+untuk anak usia dini [2]. Dalam pelaksanaannya, guru 
+melakukan pencatatan perkembangan belajar anak 
+melalui Kartu Hebat yang diisi secara manual [3]. 
+Sistem pencatatan manual terseb ut masih memiliki 
+berbagai keterbatasan, antara lain risiko kesalahan 
+pencatatan (human error), kemungkinan kehilangan 
+atau kerusakan data, kesulitan dalam pencarian arsip, 
+serta proses rekapitulasi laporan yang memerlukan 
+waktu relatif lama [4]. Selain itu, data perkembangan 
+anak tidak tersimpan secara terpusat sehingga 
+menyulitkan pengelola dalam melakukan evaluasi 
+menyeluruh terhadap capaian pembelajaran[5]. 
+ 
+Permasalahan lain yang muncul adalah 
+keterbatasan akses informasi bagi orang tua. 
+Penyampaian laporan perkembangan belajar masih 
+dilakukan secara langsung pada waktu tertentu, 
+sehingga orang tua tidak dapat memantau 
+perkembangan anak secara cepat dan berkala. Kondisi 
+ini berdampak pada kurang optimalnya komunikasi 
+antara guru dan orang tua dalam mendukung proses 
+belajar anak. Padahal, keterlibatan orang tua memiliki 
+peran penting dalam menunjang keberhasilan 
+pembelajaran, khususnya pada anak usia dini[6]. 
+Digitalisasi monitoring perkembangan belajar 
+menjadi kebutuhan penting pada lembaga pendidikan 
+nonformal karena proses pencatatan manual sering 
+menimbulkan keterlambatan penyampaian informasi, 
+kesalahan pencatatan, serta kesulitan dalam 
+pengelolaan data jangka panjang. Pemanfaatan sistem 
+informasi berbasis web mampu meningkatkan 
+efisiensi pengelolaan data sek aligus mendukung 
+komunikasi yang lebih cepat antara guru dan orang 
+tua. Integrasi layanan pesan instan seperti WhatsApp 
+juga menjadi solusi efektif karena WhatsApp 
+merupakan media komunikasi yang umum digunakan 
+masyarakat sehingga informasi dapat diterima secara 
+real-time. 
+Berdasarkan permasalahan tersebut, diperlukan 
+suatu sistem informasi monitoring capaian 
+perkembangan belajar anak berbasis web yang mampu 
+mendukung proses pencatatan, pengelolaan, serta 
+
+--- [Halaman 2] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5315 
+penyampaian informasi secara digital dan terstruktur . 
+Sistem yang dikembangkan dalam penelitian ini 
+menyediakan fitur autentikasi pengguna berdasarkan 
+peran (admin, guru, dan orang tua), input nilai dan 
+catatan perkembangan, penyajian grafik 
+perkembangan belajar, serta pembuatan laporan 
+otomatis dalam forma t PDF. Selain itu, sistem 
+diintegrasikan dengan WhatsApp Gateway untuk 
+mengirimkan notifikasi otomatis kepada orang tua 
+setiap kali terdapat pembaruan data perkembangan 
+anak [7]. 
+Pengembangan sistem dilakuk an menggunakan 
+metode Waterfall yang terdiri dari tahapan analisis 
+kebutuhan, perancangan sistem, implementasi, 
+pengujian, dan pemeliharaan [8]. Den gan pendekatan 
+ini, sistem dirancang secara sistematis agar sesuai 
+dengan kebutuhan pengguna di lingkungan Bimbel 
+AHE Megaluh. 
+Diharapkan dengan diterapkannya sistem 
+informasi ini, proses monitoring perkembangan 
+belajar anak menjadi lebih efektif, efisien, dan akurat. 
+Data tersimpan secara terpusat dan aman, guru lebih 
+mudah dalam melakukan pencatatan dan penyusunan 
+laporan, serta orang tua dapat memperoleh informasi 
+perkembangan anak secara cepat melalui notifikasi 
+yang dikirimkan langsung ke aplikasi What sApp. 
+Dengan demikian, kualitas layanan pendidikan di 
+Bimbel AHE Megaluh dapat meningkat dan 
+komunikasi antara lembaga, guru, dan orang tua 
+menjadi lebih optimal. 
+ 
+2. TINJAUAN PUSTAKA 
+2.1. Sistem Informasi 
+Sistem informasi merupakan kombinasi dari 
+komponen manusia, perangkat keras, perangkat lunak, 
+jaringan, dan basis data yang saling berinteraksi untuk 
+mengolah data menjadi informasi yang berguna dalam 
+mendukung pengambilan keputusan [9]. Dalam 
+konteks pendidikan, sistem informasi berperan penting 
+dalam pengelolaan data akademik, pencatatan 
+perkembangan siswa, serta  penyajian laporan secara 
+terstruktur dan terintegrasi. Penerapan sistem 
+informasi berbasis web memungkinkan akses data 
+secara fleksibel, real-time, serta dapat digunakan oleh 
+berbagai pengguna sesuai dengan hak akses masing -
+masing. 
+ 
+2.2. Monitoring Perkembangan Belajar Anak 
+Monitoring perkembangan belajar anak adalah 
+proses pengamatan dan pencatatan capaian belajar 
+secara berkala untuk mengetahui kemajuan serta 
+hambatan yang dialami siswa. Pada lembaga 
+pendidikan nonformal seperti Bimbel AHE, 
+monitoring dilakukan melalui pencatatan nilai, 
+kemampuan membaca, menulis, dan berhitung, serta 
+catatan perilaku dan keaktifan siswa. Sistem 
+monitoring yang masih dilakukan secara manual 
+memiliki kelemahan, seperti risiko kehilangan data 
+dan kesulitan dalam rekapitulasi laporan. Oleh karena 
+itu, diperlukan sistem digital yang mampu menyimpan 
+data secara terpusat dan menampilkan perkembangan 
+dalam bentuk laporan maupun grafik[5]. 
+ 
+2.3. Sistem Informasi Berbasis Web 
+Sistem berbasis web adalah sistem yang diakses 
+melalui peramban (browser) dengan memanfaatkan 
+jaringan internet  atau intranet. Keunggulan sistem 
+berbasis web antara lain kemudahan akses tanpa 
+instalasi tambahan, pengelolaan data terpusat, serta 
+kemudahan pemeliharaan sistem. Dalam penelitian ini, 
+sistem dibangun menggunakan framework Laravel 
+yang mendukung arsitekt ur MVC (Model View 
+Controller) sehingga memudahkan pengembangan dan 
+pengelolaan kode program secara terstruktur[10]. 
+ 
+2.4. WhatsApp Gateway 
+WhatsApp Gateway  merupakan layanan yang 
+memungkinkan sistem untuk mengirimkan pesan 
+otomatis melalui aplikasi WhatsApp. Integrasi ini 
+bertujuan untuk meningkatkan efektivitas komunikasi 
+antara lembaga pendidikan dan orang tua siswa. 
+Dengan adanya notifikasi otomatis setiap kali terdapat 
+pembaruan nilai atau catatan perkembangan, orang tua 
+dapat memantau perkembangan anak secara lebih 
+cepat tanpa harus datang langsung ke lembaga. 
+Implementasi WhatsApp Gateway  dalam sistem 
+monitoring memberikan nilai tambah berupa 
+penyampaian informasi yang lebih responsif dan 
+efisien[11]. 
+ 
+2.5. Penelitian Terdahulu 
+Beberapa penelitian sebelumnya yang berkaitan 
+dengan sistem monitoring dan sistem informasi 
+berbasis web telah banyak dilakukan. Penelitian 
+mengenai sistem monitoring akademik berbasis web 
+menunjukkan bahwa digitalisasi pencatatan nilai dan 
+laporan perkembangan siswa mampu meningkatkan 
+efisiensi pengelolaan data serta meminimalkan 
+kesalahan pencatatan. Sistem yang terkomputerisasi 
+juga mempermudah proses pencarian data dan 
+penyusunan lapora n secara otomatis dibandingkan 
+metode manual. 
+Penelitian lain mengenai sistem notifikasi berbasis 
+WhatsApp Gateway  menyatakan bahwa integrasi 
+layanan pesan instan dalam sistem informasi dapat 
+meningkatkan efektivitas komunikasi antara institusi 
+dan pengguna. Pengiriman notifikasi secara otomatis 
+memungkinkan informasi diterima secara real -time 
+tanpa keterlambatan. Hal  ini sangat relevan dalam 
+lingkungan pendidikan, khususnya untuk 
+menyampaikan informasi nilai, absensi, maupun 
+pengumuman penting kepada orang tua. 
+Selain itu, beberapa penelitian tentang sistem 
+monitoring perkembangan anak usia dini menekankan 
+pentingnya pencatatan perkembangan secara berkala 
+dan terstruktur. Monitoring yang baik tidak hanya 
+membantu guru dalam melakukan evaluasi 
+pembelajaran, tetapi juga membantu orang tua dalam 
+memahami capaian belajar anak. Namun, sebagian 
+besar penelitian sebelumnya be lum mengintegrasikan 
+
+--- [Halaman 3] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5316 
+sistem monitoring dengan layanan notifikasi otomatis 
+berbasis WhatsApp secara langsung. 
+Berdasarkan tinjauan penelitian terdahulu 
+tersebut, dapat disimpulkan bahwa sistem monitoring 
+berbasis web telah terbukti efektif dalam 
+meningkatkan pengelolaan data akademik, dan 
+integrasi WhatsApp Gateway  mampu mempercepat 
+penyampaian informasi. Perbedaan penelitian ini 
+terletak pada penerapan sistem monitoring capaian 
+perkembangan belajar anak di Bimbel AHE Megaluh 
+yang terintegrasi dengan notifik asi otomatis 
+WhatsApp, serta dilengkapi dengan fitur visualisasi 
+grafik perkembangan dan laporan dalam format PDF. 
+Dengan demikian, penelitian ini memberikan 
+kontribusi dalam pengembangan sistem monitoring 
+yang lebih terintegrasi dan responsif terhadap 
+kebutuhan lembaga pendidikan nonformal. 
+ 
+3. METODE PENELITIAN 
+Penelitian ini menggunakan metode 
+pengembangan perangkat lunak Waterfall. Model ini 
+dipilih karena memiliki tahapan yang sistematis dan 
+terstruktur, sehingga sesuai dengan kebutuhan 
+pengembangan Sistem Informasi Monitoring Capaian 
+Perkembangan Belajar Anak di Bimbel AHE Megaluh 
+7059. Tahapan dalam metode Waterfall meliputi 
+analisis kebutuhan, perancangan sistem, implementasi, 
+pengujian, dan pemeliharaan. 
+ 
+Gambar 1  Metode Waterfall 
+ 
+Tahap pertama adalah analisis kebutuhan. Pada 
+tahap ini dilakukan identifikasi permasalahan yang 
+terjadi pada sistem pencatatan manual di Bimbel AHE. 
+Pengumpulan data dilakukan melalui observasi 
+langsung terhadap proses pencatatan perkembangan 
+anak, wawancara dengan gur u dan pengelola, serta 
+studi dokumentasi terhadap Kartu Hebat yang 
+digunakan sebelumnya. Hasil analisis menunjukkan 
+perlunya sistem yang mampu mengelola data siswa, 
+input nilai dan catatan perkembangan, serta 
+penyampaian laporan kepada orang tua secara 
+otomatis. 
+Tahap kedua adalah perancangan sistem. Pada 
+tahap ini dilakukan perancangan struktur sistem 
+meliputi perancangan basis data, perancangan 
+antarmuka pengguna, serta perancangan alur sistem. 
+Sistem dirancang menggunakan konsep Model View 
+Controller (MVC) untuk memisahkan logika program, 
+tampilan, dan pengelolaan data. Selain itu, dirancang 
+pula mekanisme integrasi dengan WhatsApp Gateway 
+untuk pengiriman notifikasi otomatis kepada orang 
+tua. 
+Tahap ketiga adalah implementasi sistem. Sistem 
+dikembangkan b erbasis web menggunakan bahasa 
+pemrograman PHP dengan framework Laravel serta 
+menggunakan MySQL sebagai basis data. Fitur utama 
+yang diimplementasikan meliputi manajemen data 
+siswa, input nilai dan catatan perkembangan, 
+visualisasi grafik capaian belajar, pembuatan laporan 
+dalam format PDF, serta pengiriman notifikasi 
+otomatis melalui WhatsApp Gateway. 
+Tahap keempat adalah pengujian sistem. 
+Pengujian dilakukan menggunakan metode Black Box 
+Testing untuk memastikan setiap fungsi sistem 
+berjalan sesuai dengan kebutuhan yang telah 
+ditentukan. Pengujian dilakukan pada seluruh fitur 
+utama, termasuk proses login, input data, 
+penyimpanan data, pembuatan laporan, dan 
+pengiriman notifikasi. Selain itu, dilakukan uji coba 
+penggunaan oleh guru untuk mengetahui kesesuaia n 
+sistem dengan kebutuhan operasional di lapangan. 
+Tahap terakhir adalah pemeliharaan. Pada tahap 
+ini dilakukan evaluasi terhadap sistem yang telah 
+diimplementasikan serta perbaikan apabila ditemukan 
+kesalahan atau kekurangan. Pemeliharaan bertujuan 
+untuk memastikan sistem dapat berjalan secara 
+optimal dan berkelanjutan dalam mendukung proses 
+monitoring perkembangan belajar anak di Bimbel 
+AHE Megaluh. 
+Dengan tahapan metode tersebut, sistem yang 
+dibangun diharapkan mampu meningkatkan 
+efektivitas pengelolaan data perkembangan belajar 
+anak serta memperkuat komunikasi antara guru dan 
+orang tua melalui integrasi notifikasi otomatis. 
+ 
+4. HASIL DAN PEMBAHASAN 
+Hasil dari penelitian ini adalah Sistem Informasi 
+Monitoring Capaian Perkembangan Belajar Anak 
+berbasis web yang terintegrasi dengan WhatsApp 
+Gateway pada Bimbel AHE Megaluh 7059. Sistem 
+dikembangkan sesuai dengan kebutuhan yang telah 
+dianalisis pada tahap sebelumnya dan dirancang untuk 
+mempermudah proses pencatatan, pengelolaan, serta 
+penyampaian informasi perkem bangan belajar anak 
+kepada orang tua. 
+ 
+4.1. Implementasi Sistem 
+Sistem memiliki tiga jenis hak akses pengguna, 
+yaitu admin, guru, dan orang tua. Admin bertugas 
+mengelola data pengguna, data siswa, dan data kelas. 
+Guru dapat melakukan input nilai, menambahkan 
+catatan perkembangan, serta melihat riwayat 
+
+
+--- [Halaman 4] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5317 
+perkembangan sisw a dalam bentuk tabel maupun 
+grafik. Orang tua dapat mengakses laporan 
+perkembangan anak secara daring melalui akun 
+masing-masing. 
+Fitur utama yang diimplementasikan meliputi: 
+a. Manajemen data siswa dan data kelas. 
+b. Input nilai dan catatan perkembangan belajar. 
+c. Visualisasi grafik perkembangan capaian belajar 
+siswa. 
+d. Pembuatan laporan otomatis dalam format PDF. 
+e. Pengiriman notifikasi otomatis melalui 
+WhatsApp Gateway. 
+ 
+Visualisasi grafik perkembangan membantu guru 
+dan orang tua dalam melihat peningkatan kemampuan 
+anak secara berkala. Laporan dalam format PDF dapat 
+diunduh sebagai arsip digital sehingga mengurangi 
+penggunaan kertas dan risiko kehilangan data. 
+Integrasi Wh atsApp Gateway dilakukan 
+menggunakan API WhatsApp yang dihubungkan 
+dengan sistem berbasis web melalui mekanisme HTTP 
+Request. Ketika guru menyimpan data perkembangan 
+belajar siswa, sistem secara otomatis mengambil 
+nomor WhatsApp orang tua dari basis data k emudian 
+mengirimkan notifikasi berisi informasi 
+perkembangan belajar anak. Proses pengiriman 
+dilakukan secara otomatis sehingga orang tua dapat 
+menerima informasi secara real -time tanpa harus 
+menunggu laporan manual dari guru. 
+ 
+4.2. Integrasi WhatsApp Gateway 
+Integrasi WhatsApp Gateway  memungkinkan 
+sistem mengirimkan pesan otomatis kepada orang tua 
+setiap kali guru menambahkan nilai atau catatan 
+perkembangan baru. Pesan yang dikirim berisi 
+informasi singkat mengenai hasil belajar anak serta 
+pemberitahuan bahwa l aporan lengkap dapat diakses 
+melalui sistem. Fitur ini meningkatkan kecepatan 
+penyampaian informasi dan memperkuat komunikasi 
+antara lembaga dan orang tua. 
+Berdasarkan hasil implementasi, notifikasi 
+berhasil terkirim secara otomatis sesuai dengan data 
+yang dimasukkan oleh guru. Hal ini menunjukkan 
+bahwa integrasi sistem dengan layanan pesan berjalan 
+dengan baik dan sesuai dengan perancangan awal. 
+ 
+4.3. Pengujian Sistem 
+Pengujian dilakukan menggunakan metode Black 
+Box Testing  untuk memastikan setiap fitur berjala n 
+sesuai dengan fungsinya. Pengujian mencakup proses 
+login, pengelolaan data siswa, input nilai, 
+penyimpanan data, pembuatan laporan PDF, serta 
+pengiriman notifikasi WhatsApp. 
+ 
+Tabel 1. Pengujian Sistem 
+Kasus Uji Skenario Hasil yang 
+Diharapkan Hasil 
+Login Kredensial 
+valid 
+Akses 
+diterima Lulus 
+Login Kredensial 
+tidak valid 
+Pesan 
+kesalahan Lulus 
+Kasus Uji Skenario Hasil yang 
+Diharapkan Hasil 
+Input Data 
+Simpan data 
+perkembangan 
+belajar 
+Data 
+tersimpan Lulus 
+Monitoring Melihat data 
+perkembangan 
+Data 
+ditampilkan Lulus 
+Notifikasi Pembaruan 
+data 
+WhatsApp 
+terkirim Lulus 
+ 
+Berdasarkan hasil Black Box Testing yang 
+dilakukan pada lima skenario pengujian utama, 
+seluruh fitur sistem berjalan sesuai dengan fungsi yang 
+diharapkan sehingga diperoleh tingkat keberhasilan 
+sebesar 100% 
+Hasil pengujian menunjukkan bahwa seluruh 
+fungsi sistem berjalan sesuai dengan kebutuhan yang 
+telah ditentukan. Tidak ditemukan kesalahan fungsi 
+pada proses utama sistem. Selain itu, dilakukan uji 
+coba penggunaan oleh guru di lingkungan Bimbel 
+AHE Megaluh. Hasil uji coba menunjukkan bahwa 
+sistem lebih memudahkan proses pencatatan 
+dibandingkan metode manual, serta mempercepat 
+proses penyampaian informasi kepada orang tua. 
+ 
+4.4. Pengujian Pengguna 
+Pengujian pengguna dilakukan untuk mengetahui 
+tingkat kepuasan pengguna terhadap sistem yang 
+dikembangkan. Pengujian dilakukan menggunakan 
+metode kuesioner kepada 37 responden yang terdiri 
+dari orang tua siswa dan pengguna sistem di 
+lingkungan Bimbel AHE Megaluh. 
+Hasil pengujian menunjukkan bahwa mayoritas 
+responden memberikan penilaian positif te rhadap 
+sistem. Pengguna menyatakan bahwa sistem 
+membantu proses monitoring perkembangan belajar 
+anak, mempermudah akses informasi, serta 
+meningkatkan efektivitas komunikasi antara guru dan 
+orang tua melalui notifikasi WhatsApp. 
+ 
+Tabel 2. Pengujian Pengguna 
+No Pernyataan Persentase 
+1 Sistem Mudah Digunakan 95% 
+2 Informasi mudah dipahami 95% 
+3 WhatsApp membantu monitoring 97% 
+4 Sistem mempercepat 
+penyampaian informasi 95% 
+5 Sistem layak digunakan 95% 
+ 
+Berdasarkan hasil pengujian pengguna, s item 
+memperoleh respon positif dengan rata -rata Tingkat 
+kepuasan sebesar 95%. Hal ini menunjukkan bahwa 
+system mampu membantu proses monitoring 
+perkembangan belajar anak secara lebih efektif dan 
+efisien dibandingkan metode manual yang sebelumnya 
+digunakan. 
+ 
+4.5. Pembahasan 
+Berdasarkan hasil implementasi dan pengujian, 
+sistem yang dibangun mampu mengatasi 
+permasalahan pencatatan manual yang sebelumnya 
+
+--- [Halaman 5] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5318 
+digunakan di Bimbel AHE Megaluh 7059. Data 
+perkembangan belajar anak kini tersimpan secara 
+terpusat sehingga lebih aman dan mudah diakses 
+kembali ketika diperlukan. Selain itu, proses pencarian 
+data, pengelolaan informasi, dan penyusunan laporan 
+menjadi lebih cepat, efektif, dan efisien dibandingkan 
+dengan metode manual sebelumnya. 
+Integrasi WhatsApp Gateway memberikan  
+dampak positif terhadap efektivitas komunikasi antara 
+lembaga dan orang tua. Sebelum sistem diterapkan, 
+penyampaian informasi perkembangan belajar 
+dilakukan melalui kartu prestasi manual sehingga 
+orang tua harus menunggu jadwal tertentu untuk 
+mengetahui p erkembangan belajar anak. Setelah 
+sistem diterapkan, informasi perkembangan belajar 
+dapat diterima secara otomatis dan real-time melalui 
+WhatsApp. Hal ini membuat proses monitoring 
+menjadi lebih cepat, transparan, dan memudahkan 
+orang tua dalam memantau perkembangan belajar 
+anak secara berkala. 
+Selain itu, penggunaan sistem berbasis web 
+membantu guru dalam mengurangi kesalahan 
+pencatatan serta mempercepat proses pengolahan 
+laporan perkembangan belajar. Data yang tersimpan 
+secara digital dan terpusat juga mempermudah proses 
+evaluasi perkembangan siswa secara berkala serta 
+membantu pihak lembaga dalam melakukan 
+pengelolaan data secara lebih terstruktur. 
+Berdasarkan hasil Black Box Testing , seluruh 
+fitur sistem berjalan dengan baik sesuai dengan fungsi 
+yang diharapkan dengan tingkat keberhasilan sebesar 
+100%. Hasil pengujian pengguna juga menunjukkan 
+tingkat kepuasan sebesar 95%, sehingga sistem dinilai 
+mampu memenuhi kebutuhan pengguna dan 
+meningkatkan kualitas layanan monitoring 
+perkembangan belajar anak di Bimbel AHE Megaluh 
+7059. 
+ 
+5. KESIMPULAN DAN SARAN 
+Berdasarkan hasil penelitian dan pembahasan 
+yang telah dilakukan, dapat disimpulkan bahwa Sistem 
+Informasi Monitoring Capaian Perkembangan Belajar 
+Anak berbasis web yang terintegrasi dengan 
+WhatsApp Gateway berhasil dirancang dan 
+diimplementasikan sesuai dengan kebutuhan Bimbel 
+AHE Megaluh 7059. Sistem ini mampu membantu 
+guru dalam melak ukan pencatatan dan pengelolaan 
+data perkembangan belajar secara digital, 
+menyediakan visualisasi grafik capaian belajar, serta 
+menghasilkan laporan otomatis dalam format PDF. 
+Integrasi notifikasi melalui WhatsApp Gateway 
+terbukti dapat mempercepat penyamp aian informasi 
+kepada orang tua dan meningkatkan efektivitas 
+komunikasi antara lembaga dan wali siswa. 
+Berdasarkan hasil pengujian menggunakan metode 
+Black Box Testing, seluruh fitur sistem berjalan dengan 
+tingkat keberhasilan sebesar 100%. Selain itu, has il 
+pengujian pengguna menunjukkan tingkat kepuasan 
+sebesar 95%, sehingga sistem dinilai mampu 
+membantu proses monitoring perkembangan belajar 
+anak secara lebih efektif dan efisien dibandingkan 
+metode manual sebelumnya. 
+Untuk pengembangan selanjutnya, siste m dapat 
+ditingkatkan dengan penambahan fitur monitoring 
+kehadiran siswa, pengembangan versi aplikasi 
+berbasis mobile, serta peningkatan keamanan data 
+guna mendukung penggunaan sistem dalam jangka 
+panjang dan skala yang lebih luas. 
+ 
+DAFTAR PUSTAKA  
+[1] F. Soufitri, Konsep Sistem Informasi , vol. 3. 
+2023. [Online]. Available: 
+https://ejournal.upi.edu/index.php/JAPSPs/articl
+e/viewFile/6095/4116 
+[2] D. Ismawati, “Penggunaan Metode AHE (Anak 
+Hebat) dalam Meningkatkan Literasi Anak Usia 
+Dini: Tantangan dan Potensi,” vol. 1, no. 2, pp. 
+1–14, 2024. 
+[3] S. Sd, D. I. Bimbingan, and B. Ahe,  َۚل ع ن م    َ ل 
+ق ْ ل ب ِ ِ ا ٢ ق ِ   لا ٣ م    ر ك ِ ِ ب ر م ِْ م   ل ع ٤ م ِ ن ِْ ق َ 
+ل خ ١ ق ا م ن ا س ن ل ْ ا م ل ع ي ذ ل ْ ا ك ب ر و أ ر ق ا 
+س ن ل ْ ا ْ ب   ”,ِvol. 2, no. July, 2024. 
+[4] S. Agustria, D. Meilantika, and S. Agustina, 
+“Sistem Informasi Manajemen Berbasis Web 
+Pada Bimbingan Belajar Ahe Lubuk Batang,” J. 
+Sist. Inf. Mahakarya , vol. 6, no. 2, pp. 45 –54, 
+2023. 
+[5] A. A. Abrori, “Sistem Monitoring Perkembangan 
+Anak TK ( Study Kasus : Tapas Al -Karimah 
+Singosari ),” J. Mhs. Tek. Inform. , vol. 2, no. 2, 
+pp. 13–18, 2018. 
+[6] S. R. Talango, “Konsep Perkembangan Anak 
+Usia Dini,” Early Child. Islam. Educ. J. , vol. 1, 
+no. 1 , pp. 92 –105, 2020, doi: 
+10.54045/ecie.v1i1.35. 
+[7] T. S. Maulidda and S. M. Jaya, “Perancangan 
+Sistem Informasi Berbasis Web Melalui 
+Whatsapp Gateway Studi Kasus Sekolah Luar 
+Biasa-Bc Nurani,” J. Teknol. Inf. dan Komun. , 
+vol. 11, no. 1, pp. 38 –44, 2021, d oi: 
+10.56244/fiki.v11i1.421. 
+[8] Y. Eka Achyani, S. Saumi, S. Informasi 
+Akuntansi Universitas Bina Sarana Informatika 
+Jl Kamal Raya No, and R. Road Barat 
+Cengkareng Jakarta Barat, “PENERAPAN 
+METODE WATERFALL PADA SISTEM 
+INFORMASI MANAJEMEN BUKU 
+PERPUSTAKAAN BERBASIS WEB Program 
+Studi Sistem Informasi Sekolah Tinggi 
+Manajemen Informatika dan Komputer Nusa 
+Mandiri Jakarta Jl. Damai no. 8 Warung Jati 
+Barat (Margasatwa) Jakarta Selatan ,” J. 
+Saintekom  Sains, Teknol. Komput. Dan Manaj. 9 
+(1)83-9, pp. 83 –93, 201 9, [Online]. Available: 
+https://doi.org/10.33020/saintekom.v9i1 
+[9] U. K. N. Q. Dian Kusuma Wardani, “SISTEM 
+INFORMASI PENDAFTARAN DAN 
+ADMINTRASI AHE SUDIMORO,” –EPiC, 
+vol. 2, no. 1, pp. 211–218, 2020. 
+[10] Erico Darmawan Handoyo, Sulaeman Santoso, 
+
+--- [Halaman 6] ---
+JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 
+5319 
+and Setia Budi, “Pembangunan Aplikasi Mobile 
+Pemantauan Perkembangan Anak Didik 
+Lembaga Mika Asih dengan Flutter Framework,” 
+J. Sist. dan Inform., vol. 17, no. 1, pp. 1–12, 2023, 
+doi: 10.30864/jsi.v17i1.388. 
+[11] S. Kasus, A. Hebat, P. Jl, and K. Kartosuro, 
+“IMPLEMENTASI TEKNOLOGI SISTEM 
+INFORMASI MANAJEMEN ADMINISTRASI 
+LES BACA ANAK HEBAT BERBASIS WEB 
+DILENGKAPI DENGAN SMS GATEWAY 
+(Studi Kasus Anak Hebat Pusat Jl. Kra ton 100 
+Kartosuro) Sri Sumarlinda,” vol. 1, 2015.
+ 
+ 
+ 

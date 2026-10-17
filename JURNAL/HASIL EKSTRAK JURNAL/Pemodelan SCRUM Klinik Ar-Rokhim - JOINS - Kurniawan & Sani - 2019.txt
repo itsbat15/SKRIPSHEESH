@@ -1,0 +1,652 @@
+--- [Halaman 1] ---
+76 
+  
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+p-ISSN : 2528-0228 
+e-ISSN : 2528-0236 
+Pemodelan SCRUM dalam Pengembangan Sistem 
+Informasi Kesehatan pada Klinik Ar-Rokhim Sragen 
+Kabupaten Sragen 
+SCRUM Model on Development of Health Information System at Ar-Rokhim Clinic in 
+Sragen Regency   
+ 
+Ikhwansyah Kurniawan1, Ramadhan Rakhmat Sani 2 
+1,2Fakultas Ilmu Komputer, Universitas Dian Nuswantoro Semarang 
+e-mail: 1kurniawan.ikhwansyah@gmail.com, 2ramadhan_rs@dsn.dinus.ac.id 
+ 
+ 
+Abstrak 
+Proses bisnis pada klinik Ar-Rokhim pada bagian pendaftaran, pencatatan rekam medis 
+pasien, penjualan obat, pembuatan laporan dan penghitungan biaya rawat belum 
+memaksimalkan aplikas sistemi yang ada . Hal ini membuat proses bisnis yang dilakukan oleh 
+klinik kurang efektif. Salah satu metode pengembangan sistem yang sering digunakan  untuk 
+mengembangkan sistem  yaitu waterfall, metode ini memiliki kekurangan karena tidak 
+diperkenankan adanya perubahan pada siklus pengembangan, membutuhkan tim yang banyak 
+dan waktu pengembangan yang cukup lama. Untuk itu pada penelitian ini menggunakan salah 
+satu Agile sofware development yaitu SCRUM model. Selain memiliki kelebihan requiredment 
+yang fleksibel, jumlah anggota tim yang diperlukan tidak banyak. Tujuan dari penelitian ini ialah 
+untuk menghasilkan  pengembangan sistem informasi dengan cepat d alam penyesuaian 
+perubahan dan sesuai dengan target yang diharapkan. D alam pembangunan sistem ini 
+menggunakan bahasa pemrograman PHP, dengan basis data MySql. Pada sisi server 
+menggunakan xampp sebagai penyimpanan database dan website. Untuk menguji produk  yang 
+dibuat menggunakan black box testing. Sedangkan untuk menguji efektifitas metode 
+pengembangan menggunakan burdown chart. User Acepptance Testing dilakukan untuk menguji 
+sistem dari sisi calon pengguna sistem. 
+ 
+Kata kunci : agile software development, scrum, black box testing, burdown chart 
+ 
+ 
+Abstract 
+The business process at the Ar -Rokhim clinic in the registration section, recording the 
+patient's medical record, drug sales, reporting and calculation of care costs have not maximized 
+the existing system application. This makes the business processes carried out by the clinic less 
+effective. One method of system development that is often used to develop systems is the waterfall, 
+this method has disadvantages because there is no change in the development cycle, it requires a 
+lot of teams and a long development time. For this reason, one of the Agile software development 
+uses SCRUM model. In addition to having the required excess flexibility, the number of team 
+members needed is not much. The purpose of this research is to produce information system 
+development quickly in adjusting changes and i n accordance with expected targets. In the 
+construction of this system using the PHP programming language, with MySql database. On the 
+server side using Xampp as a database and website storage. To test products that are made using 
+black box testing. Wherea s to test the effectiveness of the development method using burdown 
+chart. User Acceptance Testing is done to test the system from the side of the prospective user of 
+the system. 
+ 
+Keyword : agile software development, scrum, black box testing, burdown chart 
+ 
+
+--- [Halaman 2] ---
+◼ 77 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+    
+1. PENDAHULUAN 
+ 
+Proses bisnis dalam klinik Ar-Rokhim sudah memakai sebuah sistem yang seharusya bisa 
+membatu dalam kegiatannya, namum masih saja terdapat proses yang masih menggunakan cara 
+manual. Beberapa diantaranya yaitu pencatatan data rekam medis pasien, pendaftaran pasien, 
+pembuatan laporan dan penghit ungan biaya rawat pasien  [1]. Pencatatan rekam medis yang 
+dilakukan secara manual membuat petugas harus mencari data pasien pada buku besar, dimana 
+dalam mencarinya membutuhkan waktu yang tidak sebentar. Penyimpanan data rekam  medis 
+hanya berupa hardcopy membuat data rentan mengalami kerusakan dan kehilangan data [2]. Hal 
+ini menjadi penyebab antrian yang lama. Selain itu akumulasi biaya rawat pasien yang dilakuakan 
+menggunakan kalkulator membuat pa sien merasa khawatir dengan jumlah perhitungan biaya 
+yang salah. Pengembangan sistem informasi yang berbasis komputer membutuhkan waktu dalam 
+proses pengembangannya. Hal ini dikarenakan terdiri dari tugas -tugas yang kompleks yang 
+membutuhkan banyak sumber daya. Proses  pengembangan sistem melewati beberapa tahapan 
+dari mulai sistem itu direncanakan sampai dengan sistem tersebut dimplemnetasikan, 
+dioperasikan dan dipelihara. Bila operasi sistem yang telah dikembangkan masih memiliki 
+permasalahan-permasalahan yang kritis serta tidak dapat diatasi dalam tahapan  pemeliharaan 
+sistem, maka butuh dikembangkan kembali suatu sistem untuk mengatasinya dan proses ini 
+kembali ke tahap yang pertama (perencanaan sistem). Siklus demikian merupakan siklus hidup 
+suatu sistem (system life cycle ), suatu bentuk yang digunakan untuk menggambarkan tahapan 
+utama dan langkah-langkah di dalam tahapan tersebut dalam proses pengembangannya [3]. 
+Dalam rangka untuk melakukan  pengembangan sistem pada saat ini dapat dilakukan 
+dengan beberapa metode. Salah satu metode yang sudah lama digunakan yaitu metode Waterfall. 
+Selain mudah digunakan dan sudah banyak orang yang mengetahuinya, metode ini cocok 
+digunakan pada project yang ti dak mengalamai perubahan dalam pengembangannya. Hal ini 
+dikarenakan untuk melakukan perubahan produk terhadap keinginan client sangat sulit dan relatif 
+mahal [4]. Selain Waterfall terdapat metode Spiral, model ini lebih menekan kan pada analisis 
+risiko. Model spiral memiliki empat fase: perencanaan, analisis risiko, teknik dan evaluasi. 
+Kelebihan menggunakan metode ini yaitu, perangkat lunak diproduksi pada awal siklus hidup dan 
+memiliki analisis resiko yang tinggi. Penggunaan metode ini sesuai untuk proyek berskala besar. 
+Meskipun demikian dalam pengembangan, metode spiral mahal untuk digunakan dan untuk 
+melakukan analisis risiko membutuhkan keahlian yang sangat spesifik. Selain itu, keberhasilan 
+proyek sangat tergantung pada fase analisis risiko dan metode ini tidak berjalan dengan baik untuk 
+proyek dengan skala kecil [4]. Sehingga menjadikan permasalahan yang dihadapi dalam 
+pengembangan sistemnya di klinik Ar-Rakhim. 
+Pada penelitian [5] scrum dapat membantu semua pemangku kepentingan dalam 
+memahmi proyek sehingga proyek sesuai dengan perencanaan hingga tahap implementasi dan 
+dapat secara mudah mengontrol task. Penerapan model agile juga digunakan dalam 
+pengembangan e -trace alumni yang didasari pada masalah kecepatan pengembangan dan 
+terbatasanya tools untuk membatu prosen pengembangannya  [6]. Sebagaimana pada [7] 
+memberikan kemudahan peserta didik  baru dalam melakukan pendaftaran di SMK 17 Agustus 
+Genteng Banyuwangi sehingga dapat mempermudah panitia dalam mengelola peserta didik yang 
+terdaftar dari SMP/MTs. Dalam [8] scrum digunakan untuk pengembangan aplikasi penjadwalan 
+wisata pada smartphone yang dibangun secara cepat dalam menghadapi perubahan terhadap 
+requirement ataupun permasalahan yang muncul.  
+Dalam penelitian ini, pengembangan sistem dilakukan menggunakan agile method 
+dengan model Scrum. Secara umum, agile method adalah proses yang menerapkan siklus pendek 
+berulang, secara aktif melibatkan pengguna untuk membangun, memprioritaskan, dan 
+memverifikasi kebutuhan, dan bergantung pada pengetahuan tacit tim menggantikan dokumentasi 
+[9], [10]. Model ini m erupakan suatu kerangka kerja untuk mengembangkan produk  dimana 
+pertama mulai digunakan pada tahun 1990, metode Scrum digunakan untuk mengelola 
+pengembangan produk yang kompleks  [11]. Scrum yang Ditargetkan memiliki efek yang dapat 
+diabaikan pada peningkatan tim pengembangan perangkat lunak komunikasi eksternal dan 
+
+--- [Halaman 3] ---
+78 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+ 
+internal. Akhirnya, Targeted Scrum tidak berdampak pada kualitas produk oleh tim berkinerja 
+terbaik dan berkinerja terburuk  [12]. Untuk menerapkan Scrum pada pengembangan software 
+diperlukan tim dan peranperanya, acara ( sprint, scrum dailly), artefak (Produk Backlog, Sprint 
+Backlog dan Inkremen) serta atura n main  [12]. Masing -masing komponen yang berada pada 
+Scrum memiliki sasaran dan fungsi tertentu yang mendukung keberhasilan dari jalannya proses 
+Scrum. Tim Scrum tersusun dari Pemilik Produk ( Product Owner), Tim Pengembang (Team 
+Developer), dan seorang Scrum Master. Product owner memiliki tanggung jawab terhadap nilai 
+bisnis dari produk yang diciptakan. Tugas dari Scrum Master memastikan tim yang ikut untuk 
+mengerjakan project dapat bekerja secara produktif  dalam membantu tim untuk memenuhi 
+kendala kualitas dan waktu proyek [13]. Sedangkan Tim Pengembang berusaha untuk 
+menyelesaikan pekerjaan yang telah disepakati. Tim ini bertugas dalam membuat produk [10] . 
+ 
+2. METODELOGI PENELITIAN 
+ 
+Dalam motedelogi penelitian ini menggunakan pemodelan Scrum yang digambarkan 
+pada Gambar 1 yang menjelaskan tentang urutan atau tahapan kerangka scrum. 
+ 
+ 
+Gambar 1. Kerangka Scrum [14] 
+a. User Stories 
+Pada metode Scrum, rincian persyaratan dinegosiasikan melalui diskusi yang terjadi 
+secara berulang selama pengembangan  [10]. User stories digunakan untuk membuat Product 
+backlog. Dalam user stories berisi nama pengguna sitem, fitur -fitur yang menjadi kebutuhan 
+sistem dan tujuan dari fitur yang direncanakan. Dengan adanya user stories tim teknis dan tim 
+bisnis dapat berkomunikasi dengan mudah karena bahasa yang digunakan sangat umum.  
+b.  Product Backlog 
+Pada tahapan ini  pekerjaan-pekerjaan yang akan dilakukan ditulis dan dijelaskan oleh 
+Product Owner pada Product Backlog. Pekerjaan yang akan dilakukan memiliki prioritas dalam 
+pengerjaan. Kebutuhan customer dan kebutuhan secara teknikal sebagai acuan untun menentukan 
+priortas pengerjaan. Selain itu prioritas juga dapat ditentukan berdasarkan hal yang dinilai krusial 
+atau penting dengan sistem yang akan dibangun. Untuk menentukan priritas Product Owner dapat 
+meminta pendapat dari tim Scrum atau stakeholders. 
+c. Sprint Backlog 
+Pekerjaan-pekerjaan dari Product Backlog didiskusikan dan disepakati oleh tim untuk 
+dimasukan pada Sprint. Proses ini merupakan hasil perpindahan dari prioritas tertinggi dari 
+Product Owner yang kemudian akan dikembangkan melalui Sprint. Proses ini juga dapat disebut 
+sebagai inputan awal sebelum melakukan proses Sprint pada pengembangan produk.  
+d. Sprint 
+Sprint memiliki durasi waktu yang konsisten sepanjang masa pengembangan produk. 
+Setelah sprint selesai maka langsung mengerjakan Sprint berikutnya. Sprint memiliki dan terdiri 
+
+
+--- [Halaman 4] ---
+◼ 79 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+    
+dari Sprint Planning, Daily Scrums, The development  work (pengembangan), Sprint review, dan 
+Sprint Retrospective.  
+e. Review dan Demo Product 
+Tujuan dari kegiatan review dan demo produk adalah untuk memeriksa dan 
+menyesuaikan produk yang sedang dibangun. Kegiatan pada taha ini adalah komunikasi antarara 
+tim Scrum dengan pihak klinik. Percak apan difokuskan pada peninjauan fitur yang baru saja 
+selesai dalam konteks upaya pengembangan secara keseluruhan. Pada tahap ini pihak klinik dapat 
+mengajukan perbaikan jika dimungkin. Komunikasi yang berlangsung disertasi dengan demo 
+produk atau sistem ya ng sudah dibuat. Tahan demo aplikasi yang dimaksud yaitu tim 
+menyerahkan perangkat lunak atau produk increment kepada client dengan cara melakukan 
+demonstrasi dan client melakukan evaluasi terhadapt produk. 
+f. Delivery Product 
+Tahap dimana produk sudah selesai dibuat dan dalam kondisi useable. Tahap ini 
+merupakan hasil dari Sprint yang selesai dikerjakan berdasarkan Product Backlog. Konsumen 
+atau pemakai sudah sesuai dengan hasil sprint yang dilakukkan pada masing -masing item. 
+Sehingga produk dapat digunakan oleh user.  
+ 
+3. HASIL DAN PEMBAHASAN 
+ 
+1. User Stories 
+Dalam penggunaan metode Scrum hal yang harus ditentukan oleh Product Owner adalah 
+user stories. User stories digunakan untuk membuat backlog. Dalam user stories berisi nama 
+pengguna sitem, fitur -fitur yang menjadi kebutuhan sistem dan tujuan dari fitur yang 
+direncanakan. User stories dibuat dengan bahasa pengguna secara umum. Hal ini difungsikan 
+agar mudah dimengerti oleh orang bisnis dan orang teknis. Salah satu  hal yang paling penting 
+dengan adanya user stories  ini ialah kalaborasi antara orang teknis dan orang bisnis untuk 
+mencapai harapan dari pengembangan software. 
+User Stories Petugas 
+a. Sebagai seorang petugas klinik, saya ingin kinerja saya lebih efektif. Ket ika melakukan 
+pendaftaran saya ingin memasukan data pasien yang belum pernah berkunjung ke klinik. 
+Pasien yang sudah pernah berkunjung dan klinik memiliki datanya, tidak perlu saya 
+masukan lagi.  
+b. Sebagai seorang petugas klinik, saya ingin data pendaftaran dapat dicetak menjadi nomor 
+antrian dan dapat dihapus. 
+c. Sebagai seorang petugas klinik, saya ingin mencari dan menghapus data pasien rawat jalan.  
+d. Sebagai seorang petugas klinik, saya ingin memiliki sistem kasir untuk akumulasi biaya 
+rawat jalan. Setelah memasukan data saya dapat mencetak total biaya dan detailnya. 
+User stories Apoteker 
+a. Sebagai seorang apoteker saya ingin mencetak dan menghapus data penjualan obat. 
+b. Sebagai seorang apoteker saya ingin melayani transaksi penjualan obat. Data obat dan 
+harga secara otomatis muncul ketika transaksi. 
+User stories Admin 
+a. Sebagai seorang admin saya ingin melakukan proses yang bisa dilakukan oleh petugas dan 
+apoteker. 
+b. Sebagai seorang admin, saya ingin menambah, mengubah dan menghapus data dokter. 
+c. Sebagai seorang admin, saya  ingin menambah, mengubah dan menghapus pengguna yang 
+dapat masuk ke sistem. 
+d. Sebagai seorang admin, saya ingin mencari, menambah, mengubah dan menghapus data 
+tindakan. 
+e. Sebagai seorang admin, saya ingin melihat laporan data penjualan obat, pendaftaran  dan 
+rawat jalan pasien perperiode. 
+
+--- [Halaman 5] ---
+80 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+ 
+2. Pembuatan Product Backlog 
+Tahap pembuatan product backlog merupakan pembagian atau pengelompokan proses -
+proses berdasarkan dari analisis pada langkah sebelumnya. Dokumen ini memiliki isi estimasi 
+pengerjaan, fitur yang akan dibuat dan prioritas dari masing -masing fitur yang ditampilkan pada 
+tabel 1. Berdasarkan langkah pada user stories, maka product backlog ini dibagi menjadi tiga 
+kategori pengguna sistem, yaitu admin, petugas dan apoteker. Setiap fitur backlog memiliki 
+prioritas, hal ini ditentukan berdasarkan tingkat urgent dari kebutuhan dari pengguna. Priori tas 
+menentukan fitur mana yang harus dikerjakan terlebih dahulu. Selain prioritas hal yang 
+diperhatikan yaitu pembagian waktu pengerjaan fitur Backlog dalam Sprint. Prioritas dan panjang 
+sprint ditentukan oleh kesepakatan antara perwakilan tim pengembang, scrum master dan product 
+owner.  
+ 
+Tabel 1. Backlog Products 
+No. Fitur Estimasi  Priority 
+1. Login multi user  8 High Priority 
+ Dashboard pengguna sistem 9 Low Priority 
+Pengguna Level Apoteker 
+Mengelola data obat 14 Medium Priority 
+Mengelola penjualan obat 22 High Priority 
+2 Pengguna level petugas 
+ Mengelola pendaftaran pasien 15 High Priority 
+Mengelola pasien rawat jalan 29 High Priority 
+Mengelola data pasien 22 High Priority 
+3. Pengguna level admin 
+ Mengelola data pasien 22 High Priority 
+Mengelola data tindakan 12 High Priority 
+Mengelola data pengguna sistem 12 Low Priority 
+Mengelola data obat 14 High Priority 
+Mengelola data dokter 12 Medium Priority 
+Pembuatan laporan 18 Medium Priority 
+Mengelola penjualan obat 22 High Priority 
+4. Pengguna level apoteker 
+ Mengelola data obat 14 Medium Priority 
+Mengelola penjualan obat 22 High Priority 
+ 
+3. Melakukan Sprint 
+Tahap selanjutnya setelah Product Backlog dibuat yaitu melakukan Sprint. Tiap Sprint 
+memiliki waktu yang hampir sama. Dalam melakukan sekali sprint tidak boleh terlalu lama. 
+Untuk proyek yang besar maksimal sekali sprint 30 hari [14]. Alasan dalam sekali sprint waktunya 
+dibatasi yaitu dengan waktu yang singkat segala kemungkinan mudah untuk diprediksi. Selain itu 
+ruang lingkup yang kecil mudah untuk dikontrol.  
+Dalam melakukan sprint, terdapat beberapa tahapan pengerjaan yaitu sprint planing, sprint 
+backlog, sprint execution, daily scrum, sprint review dan sprint retrospective. Pada penelitian ini 
+pengembangan sistem dilakukan Sprint sebanyak empat kali. Sprint pertama lebih fokus pada 
+tampilan awal dan bentuk dari website yang dibangun. Dalam hal ini Sprint yang akan dikerjakan 
+meliputi login multi-user dan pembuatan dashboard masing-masing pengguna. Karena menurut 
+perhitungan jumlah waktu untuk menyelesaikannya terlalu singkat maka ditambah proses ativitas 
+yang dilakukan oleh pengguna apoteker. Sprint kedua yang dikerjakan pada sistem ini yaitu fitur-
+fitur pada halaman petugas klinik. Fitur tersebut meliputi pengelolaan data pasien, pendaftaran 
+pasien dan penanganan rawat pada pasien. Sprint selanjutnya yaitu sprint ketiga, pada sprint ini 
+tim mengerjakan fitur pada halaman pengguna admin. Untuk mengerjakan seluruh fitur-fitur pada 
+pengguna admin memerlukan waktu yang terlalu panjang untuk sekali sprint. Oleh karena itu 
+perlu adanya pembatasan ruang lingkup fitur pada sprint ketiga. Ruang lingkup sprint yang tidak 
+
+--- [Halaman 6] ---
+◼ 81 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+    
+dikerjakan pada sprint ketiga dikerjakan pada sprint keempat. Jadi untuk mengerjakan fitur 
+backlog yang ada di halaman pengguna admin memerlukan sprint ketiga dan sprint keempat.  
+a. Sprint planing 
+Pada sprint yang pertama ini ada tiga fitur yang disepakai yaitu pembuatan login multi-user, fitur-
+fitur pada halaman pengguna apoteker dan pembuatan dashboard pada masing-masing pengguna. 
+Pada halaman pengguna apoteker memiliki fitur mengelola data obat dan mengelola penjualan 
+obat. Setelah menentukan fitur backlog selanjutnya membaginya ke bagian -bagian lebih kecil. 
+Proses ini akan diuraikan pada tahap Sprint Backlog.  
+b. Sprint Backlog 
+Sprint backlog berisi penjabaran fitur-fitur backlog menjadi task-task yang lebih detail. Hal ini 
+difungsikan untuk mempermudah tim pengembang dalam menyelesaikan Sprint. Berdasarkan 
+sprint planing  yang telah dilakukan. Tabel  2 berisi penjabaran dari produk backlog menjadi 
+bagian-bagain yang lebih sederhana, sehingga memudahkan pengembang dal am membagai 
+pekerjaan. Tabel ini akan dikerjakan pada Sprint yang pertama. Untuk menggambarkan sistem 
+yang akan dibuat pada Sprint pertama menggunakan perancangan database seperti pada gambar 
+2. 
+ 
+Tabel 2. Sprint Backlog 
+Fitur backlog Task 
+Login multi-user Halaman utama sebelum masuk ke form login 
+Semua pengguna sistem masuk ke sistem menggunakan satu form 
+Dashboard 
+pengguna sistem 
+Dashboard Admin 
+Dashboard Petugas 
+Dashboard Apoteker 
+Membuat Grafik 
+Pengguna sistem level apoteker 
+Mengelola data obat 
+Menambah data obat 
+Menghapus data obat 
+Mengubah data obat 
+Mencari data obat 
+Mengelola 
+penjualan obat 
+Melakukan transaksi penjualan obat 
+Melihat data penjualan obat 
+Apoteker dapat melakukan cetak nota penjualan obat 
+Menghapus penjualan obat 
+ 
+ 
+obat
+ kd_obat *
+ nm_obat
+ harga_modal
+ harga_jual
+ stok
+ stok_min
+ satuan
+ kadaluarsa
+ keterangan
+ kd_suplier**
+ kd_golongan**
+---------------------------
+update()
+delete()
+add()
+search()
+petugas
+ kd_petugas *
+ nm_petugas
+ no_telepon
+ username
+ password
+ level 
+-------------------------
+update()
+delete()
+add()
+penjualan
+ no_penjualan *
+ tgl_penjualan
+ pelanggan
+ keterangan
+ uang_bayar
+ uang_kembali
+ total
+---------------------
+add()
+search()
+suplier
+kd_suplier*
+nama
+alamat
+--------------------
+update()
+delete()
+add()
+gol_obat
+kd_golongan*
+Golongan
+transaksi
+Id_transaksi*
+kd_obat**
+no_penjualan**
+kd_petugas**
+Jumlah
+ 
+Gambar 2. Perancangan Database Sprint 1 
+
+--- [Halaman 7] ---
+82 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+ 
+c. Sprint Execution dan Daily Scrum 
+Tahap ini merupakan kelanjutan dari tahap untuk menentukan sprint backlog. Ketika 
+sprint backlog sudah disepakati pada sprint planing maka mulailah melakukan pengembangan 
+sprint backlog tersebut. Proses ini dilakukan untuk mencapai tujuan dari masing-masing sprint 
+backlog. Keluaran dari proses ini berupa rilis produk. Tabel 3 menjelaskan status sprint backlog 
+pada saat proses pengerjaan task hasil penjabaran dari produk backlog. Dari tabel ini dapat 
+diperoleh status dari masing-masing task setiap hari. 
+Tabel 3. Status Sprint Backlog pada Sprint Execution  
+Fitur Backlog Task Est. Dur. Status 
+Login multi-user 
+Pengguna mengakses halaman utama 
+sebelum sebelum masuk ke form login 3 3 Done 
+Semua pengguna sistem masuk ke sistem 
+menggunakan satu form 
+5 6 Done 
+Dashboard 
+pengguna sistem 
+Dashboard Admin 3 5 Done 
+Dashboard Petugas 3 3 Done 
+Dashboard Apoteker 3 3 Done 
+Membuat Grafik 5 7 Done 
+Pengguna sistem level apoteker    
+Mengelola data 
+obat 
+Menambah data obat 3 - In Progres 
+Menghapus data obat 3 - In Progres 
+Mengubah data obat 3 - In Progres 
+Mencari data obat 5 - In Progres 
+Mengelola 
+penjualan obat 
+Melakukan transaksi penjualan obat 13 - Not Started 
+Melihat data penjualan obat 3 - Not Started 
+Apoteker dapat melakukan cetak nota 
+penjualan obat 3 - Not Started 
+Menghapus penjualan obat 3 - Not Started 
+ 
+Pada sprint execution, tahap pengembangan sistem yaitu testing terhadap fitur dilakukan. 
+Hal ini dilakukan untuk menguji fungsi sistem. Pada penelitian ini pengujian yang dilakukan 
+yaitu black box testing. Tabel 4 hasil dari pengujian yang dilakukan pada form dan fungsi dari 
+setiap menu sistem. Testing yang dilakukan meliputi fungsi validasi dari form dan hasil tampilan 
+dari setiap menu.  
+ 
+ 
+Tabel 4. Sekenario dan Hasil Pengujian pada Sprint 1 
+No. Skenario pengujian Output yang diharapkan Validasi 
+1. Pengguna memasukan 
+username dan password 
+dengan benar 
+Halaman akan berpindah ke dashboard 
+masing-masing pengguna 
+Sukses 
+2. Pengguna memasukan 
+username dan password yang 
+salah 
+Tidak masuk ke halaman dashboard dan 
+muncul notifikasi error. 
+Sukses 
+3. Pengguna memasukkan data 
+pada form transaksi 
+penjualan dengan benar 
+Data tersimpan dalam database dan tampil 
+pada halaman penjualan 
+Sukses 
+4. User menambahkan data 
+lebih dari satu obat pada 
+halaman transaksi 
+Jumlah total biaya obat secara otomatis 
+terakumulasi. 
+Sukses 
+ 
+
+--- [Halaman 8] ---
+◼ 83 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+    
+ 
+d. Rilis Produk 
+Pada tahap sprint pertama ini telah dikerjakan selama 71 jam.  Waktu ini lebih dari waktu 
+estimasi di awal yang diperkirakan dapat dikerjakan selama 63 jam. Dalam pengerjaan, tim 
+memiliki waktu kerja efektif sebanyak 6 jam per harinya. Selama waktu tersebu t tim mampu 
+mengerjakan 4 fitur backlog. Pada tabel sprint backlog ini dipaparkan mengenai pembagian dari 
+masing-masing fitur backlog. Setiap task atau pembagian yang dilakukan memiliki estimasi, 
+durasi dan status tertentu. Pada rilis produk ini status yan g digunakan harus sudah dalam 
+kategori Done atau sudah selesai dikerjakan. Jika semua fitur backlog sudah selesai dikerjakan 
+maka sprint pertama dapat dinyatakan selesai. 
+e. Sprint Review 
+Sprint review dilakukan setelah suatu produk atau feature selesai dibuat dalam sprint 
+execution dan menghasilkan rilis produk. Tujuan dari sprint review ini ialah melihat status dari 
+fitur produk yang telah selesai dikembangkan. Pada tahap ini pihak yang terlibat yaitu product 
+owner, scrum master, tim pengembang dan pengguna sistem. Dalam acara ini tim pengembang 
+melakukan demontrasi mengenai fitur produk yang telah dibuat pada pihak yang hadir dalam 
+acara. Orang yang harus memfasilitasi pada acara ini ialah scrum master. Setelah melakukan 
+demontrasi, pihak -pihak yang terlibat  menangapi mengenai fitur tersebut. Jika terdapat 
+penambahan fungsi atau fitur maka akan ditambahkan pada sprint selanjutnya. 
+f. Sprint Retrospective 
+Sesuai pada landasan teori yang digunakan, setelah dilakukan sprint review  proses 
+selanjutnya yaitu melakukan sprint retrospective. Proses ini hanya dihadiri oleh tim Scrum. 
+Dalam pertemuan membahas mengenai apa saja yang telah dilakukan untuk menyelesaika n 
+sprint pertama, adakah hambatan yang terjadi untuk menyelesaikan sprint pertama dan 
+bagaimana cara untuk menyelesaikan sprint selanjutnya. 
+Dari hasil pertemuan diperoleh hasil bahwa semua tim terlibat dalam pemenuhan sprint 
+yang pertama. Untuk mengerjaka nnya tim memiliki hambatan pada estimasi yang digunakan 
+pada saat sprint berlangsung. Ada beberapa fitur yang tidak sesuai estimasi. Hal ini dikarenakan 
+kurangnya pengetahuan yang mendalam dari tim mengenai fitur yang akan dibuat. Selain itu 
+kurangnya resp on yang cepat dan kontribusi dari anggota tim membuat proses pengerjaan 
+sedikit terganggu. Hal ini juga dipengaruhi oleh tim yang terlibat belum memahami tentang 
+implementasi metode Scrum yang digunakan. Hal yang lebih ditekankan pada sprint selanjutnya 
+yaitu sebelum membuat estimasi pengerjaan perlu mengetahui lebih detail mengenai fitur yang 
+akan dibuat. Pengetahuan setiap anggota tim perlu diperdalam mengenai metode pengembangan 
+yang dilakukan. Serta membuat anggota tim yang slow respon  untuk segera tang gap ketika 
+dibutuhkan anggota tim yang lainnya.  
+ 
+ 
+Gambar 3. Burndown Chart 
+0
+20
+40
+60
+80
+Day-1 Day-2 Day-3 Day-4 Day-5 Day-6 Day-7 Day-8 Day-9 Day-10
+Burndown Chart
+Actual Remaining Effort Ideal Remaining Effort
+
+--- [Halaman 9] ---
+84 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+ 
+Penjelasan Burndown Chart pada gambar 3 adalah p enggunaan sumbu Y sebagai time 
+unit, dimana sumbu Y digunakan untuk mengetahui sisa waktu yang tersedia untuk 
+menyelesaikan sprint. Sedangkan sumbu X beriisi hari yang digunakan untuk melakuakn sprint. 
+Pada sprint yang pertama ini jumlah waktu (jam) yang digunakan untuk menyelesaikan sprint 
+sebanyak 71 jam dengan lama pengerjaan sebanyak 10 hari. Jika pekerjaan di selesaikan sesuai 
+dengan jumlah hari yang ditentukan maka grafik akan mendekati waktu yang ideal dimana garis 
+yang menunjukkan waku ideal berwarna coklat.  Proses tahapan sprint yang dilakukan antara 
+sprint pertama hingga sprint terakhir memiliki tahapan ya ng sama. Hal yang membedakan yaitu 
+pada jumlah waktu yang diperlukan selama pengerjaan dan hambatan dari setiap sprint. Proses 
+yang efisien yaitu ketika dalam mpengerjaanya miliki tingkat efektifitas yang meningkat dari 
+sprint pertama hingga sprint terakhir. 
+4. Delivery produk 
+ 
+       
+ 
+       
+Gambar 4. Halaman Web 
+Tahap yang terakhir dalam menerapkan metode Scrum yaitu penyajian produk kepada 
+pengguna sistem. Setelah empat sprint selesai dikerjakan dan menghasilkan rilis produk dari 
+masing-masing sprint maka diperoleh produk sistem informasi untuk klinik Ar -Rokhim yang 
+dapat digunkan oleh petugas klinik. Delivey produk menyatakan bahwa produk sudah siap untuk 
+digunakan pada lingkungan klinik  dimana tampilan dari sistem tersebut digambarkan pada 
+gambar 4. 
+ 
+4.  KESIMPULAN 
+ 
+Berdasarkan hasil penelitian yang telah dilakukan, masalah yang dialami oleh klinik Ar-
+Rokhim yaitu pada manajemen data  dan pengembangan sistem yang ada dapat diatasi dengan 
+pemodelan scrum. Hal ini dapat dilihat dari Burndown Chart yang menunjukan kesesuian dengan 
+target waktunya. Dengan demikian, dapat diperoleh kesimpuan bahwa sistem informasi berbasis 
+website yang dibangun menggunakan metode Scrum dapat membantu dalam meningkatkan 
+pelayanan, efektifitas kinerja petugas dan pengelolaan data di klinik Ar -Rokhim. Sistem yang 
+telah d ibangun dapat digunakan untuk mengelola data pasien, mengelola data dokter, data 
+petugas, data pendaftaran, menyimpan data rekam medis, menghitung transaksi secara otomatis 
+dan pembuatan laporan.  
+
+
+--- [Halaman 10] ---
+◼ 85 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+    
+Selain itu, metode Scrum yang digunakan menuntut tim untuk memiliki skill yang 
+komplek dalam pengembangan sistem. Setiap anggota tim pengembang dituntut mengetahui 
+peran system analyst, programmer, tester maupun implementor. Hal yang ditekankan pada 
+metode ini ialah komunikasi, baik antara anggota tim maupun denga n pengguna sistem. Dalam 
+menerapkan Scrum memiliki fokus pada fitur pokok yang harus diselesaikan terlebih dahulu. Hal 
+ini memberi efek pada hasil produk lebih fokus untuk menyelesaikan masalah utama. 
+ 
+5. SARAN 
+ 
+Saran atau rekomendasi merupakan implikasi hasil penelitian terhadap perkembangan ilmu, 
+teknologi, serta penggunaan praktis. Peneliti memiliki saran untuk pengembangan penelitian 
+selanjutnya, yaitu; 
+1. Salah satu pelayanan kesehatan dari klinik Ar -Rokhin yaitu rawat inap. Pada penelitian ini 
+hanya sebatas  pelayanan rawat jalan. Sehingga perlu adanya penambahan fitur untuk 
+menangani pelayanan rawat inap pasien. 
+2. Perlu analisa lebih detail mengenai manajemen obat pada apotek.  
+3. Membuat sistem tidak hanya berbasis website tapi juga berbasis mobile. Hal ini digunakan 
+sebagai daya tarik pasien untuk melakukan perawtan pada klinik Ar-Rokhim. 
+4. Untuk menerapkan metode Scrum, anggota tim harus saling membantu demi menyelesaikan 
+tujuan sprint yang sedang berlangsung. Selain itu Scrum master perlu membangun suasana 
+tetap positif ketika melakukan evaluasi. Hal ini diperlukan agar tim tetap solid meski ada 
+anggota yang kurang maksimal dalam pengerjaan task.  Kemudian, jika metode Scrum 
+digunakan sebagai penelitian dengan tujuan akademis, perlu dikombinasi dengan metode 
+lain yang lebih menekankan pada desain sistem. Sehingga hasil yang diperoleh memiliki 
+desain dan perencanaan yang jelas. 
+ 
+DAFTAR PUSTAKA 
+ 
+[1]  G. Susanto dan S. , “Sistem Informasi Rekam Medis Pada Rumah Sakit Umum Daerah 
+(RSUD),” Journal Speed – Sentra Penelitian Engineering dan Edukasi, vol. 3, no. 4, pp. 
+18-24, 2011.  
+[2]  D. Iflahah, I. Aknuranda dan N. Y. Setiawan, “Analisis dan Perancangan Sistem Informasi 
+Rekam Medis Poli Gigi (Studi Kasus : Puskesmas Sumbersari Kecamatan Saradan 
+Kabupaten Madiun),” Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer, vol. 
+2, no. 6, pp. 2121-2130, 2018.  
+[3]  I. Sommerville, Software Engineering, 10th penyunt., Addison-Wesley, 2015.  
+[4]  N. M. A. Munassar dan A. Govardhan, “A Comparison Between Five Models Of Software 
+Engineering,” International Journal of Computer Science Issues , vol. VII, no. 5, pp. 94 -
+101, 2010.  
+[5]  W. Suharso, B. I. Wicaksono dan G. I. Marthasari, “Penerapan Scrum dan Algoritma 
+COCOMO Pada Aplikasi Manajemen Proyek Perangkat Lunak,” SATIN - Sains dan 
+Teknologi Informasi, vol. 4, no. 1, pp. 97-104, 2018.  
+[6]  U. Ependi, “Pengembangan E -Trace Alumni Dengan Menggunakan Pendekatan Metode 
+Agile,” dalam Seminar Nasional Informatika 2012 (semnasIF 2012), Yogyakarta, 2012.  
+
+--- [Halaman 11] ---
+86 
+ 
+Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 
+ 
+ 
+[7]  R. M. Zaef, N. C. Herbaviana dan A. Chusyairi, “Sistem Informasi Penerimaan Peserta 
+Didik Baru Berbasis Android Menggunakan Metod e Agile,” dalam Konferensi Nasional 
+Sistem Informasi 2018, Pangkalpinang, 2018.  
+[8]  Y. L. Prasetio, N. Hanafiah, A. Yosanny, C. Yolanda, F. P. Musbar dan D. Septianto, 
+“Pengembangan Aplikasi Penjadwalan Wisata Harian Pada Smartphone Dengan 
+Pendekatan Scrum,” ComTech, vol. 5, no. 2, pp. 534-543, 2014.  
+[9]  C. Ebert dan M. Paasivaara, “Scaling Agile,” IEEE Software, vol. 34, no. 6, pp. 98 -103, 
+November/December 2017.  
+[10]  L. Rising and N. S. Janoff, "The Scrum software development process for small te ams," 
+IEEE Software, vol. 17, no. 4, pp. 26-32, July-August 2000.  
+[11]  V. T. Faniran, A. Badru dan A. Ajayi, “Adopting Scrum as an Agile approach in distributed 
+software development: A review of literature,” dalam 2017 1st International Conference on 
+Next Generation Computing Applications (NextComp), Mauritius, 2017.  
+[12]  D. P. Harvie dan A. Agah, “Targeted Scrum: Applying Mission Command to Agile 
+Software Development,” IEEE Transactions on Software Engineering, vol. 42, no. 5, pp. 
+476-489, 2016.  
+[13]  R. T. Hans, “Work in Progress - The Impact of the Student Scrum Master on Quality and 
+Delivery Time on Students' Projects,” dalam 2017 International Conference on Learning 
+and Teaching in Computing and Engineering (LaTICE), Hongkong, 2017.  
+[14]  K. S. Rubbin, Essential Scrum, United States of America: Pearson Education, 2013.  
+[15]  A. S. S. Wijaya, L. S. Lawunugraha dan I. A. Iswanto, “Perancangan Sistem Informasi 
+Manajemen Pada Klinik Skala Kecil (Studi Kasus: Klinik Dr. Jonni),” ComTech, vol. 5, no. 
+2, pp. 1059-1072, 2014.  
+[16]  M. P. Kumara, A. P. Utomo dan F. Nugraha, “Sistem Informasi Manajemen Klinik Permata 
+Medical Center Pati,” dalam Pros iding SNATIF Ke -2 , Kudus, 2015.  
+[17]  S. Ramadhani, U. Anis dan S. T. Masruro, “Rancang Bangun Sistem Informasi Geografis 
+Layanan Kesehatan Di Kecamatan Lamongan Dengan PHP MySQL,” Jurnal Teknika, vol. 
+5, no. 2, pp. 479-483, 2013.  
+ 
+ 
+ 
+ 

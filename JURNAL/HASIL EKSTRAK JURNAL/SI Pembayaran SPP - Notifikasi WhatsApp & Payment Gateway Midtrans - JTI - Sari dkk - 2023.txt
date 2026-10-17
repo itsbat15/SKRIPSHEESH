@@ -1,0 +1,442 @@
+--- [Halaman 1] ---
+ 
+ 
+ 
+ 
+ 
+ 
+90 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+PENERAPAN SISTEM NOTIFIKASI CHAT DAN PAYMENT 
+GATEWAY PADA SISTEM INFORMASI PEMBAYARAN SPP 
+BERBASIS WEBSITE  
+Nova Noor Kamala Sari a,1,*, Septian Geges b,2, Noor Hasanah c,3 
+a,b,c Jurusan Teknik Informatika, Fakultas Teknik, Universitas Palangka Raya, Kampus UPR Tunjung Nyaho Jl. Yos 
+Sudarso,  
+Palangka Raya 
+1 novanoorks@it.upr.ac.id *; 2 septian.geges@it.upr.ac.id; 3 noorhasannah011@gmail.com  
+* corresponding author 
+ 
+ARTICLE INFO 
+ 
+ABSTRACT  
+ 
+Keywords 
+ 
+Information Systems 
+Payment 
+WhatsApp Gateways 
+midtrans 
+ 
+ 
+ Along with today's rapid technological developments, the application 
+of information systems to support business processes will be beneficial 
+in operational activities within an institution. To be able to manage 
+payment transactions for Education Development Contributions (SPP) 
+better, it is necessary to build an Information System that can help 
+manage data and transactions to be optimal. Therefore we need a 
+payment information system that can facilitate SMA Negeri 1 Palangka 
+Raya in dealing with the payment of tuition fees that are not yet optimal. 
+In this study, a tuition payment information system was created that 
+could be used for recording tuition data, ca sh, and non-cash payments, 
+as well as informing parents/guardians of students about tuition 
+payments and invoices. This study uses the Waterfall software 
+development method which has stages of analysis, design, program 
+code generation, testing, and mainten ance. Non -cash payments and 
+Whatsapp message delivery on applications use features on Midtrans 
+and Whatsapp API. Unit testing is carried out using the Blackbox 
+method. Based on the results of the research, it was found that this 
+tuition payment information  system could facilitate the school and 
+students. The SPP Payment Information System is used as a means of 
+managing SPP payment data for schools, non -cash SPP payments for 
+parents, and information on SPP payments for both. 
+ 
+ 
+ 
+  
+1. Pendahuluan  
+Perkembangan teknologi dan informasi berjalan begitu cepat dan pesat, seperti perkembangan 
+internet (website), komputer, teknologi telekomunikasi, dan lain -lain. Hal ini dikarenakan kebutuhan 
+akan teknologi dan informasi sangat tinggi untuk membantu berbagai jenis bidang pekerjaan manusia, 
+salah satunya adalah  bidang pendidikan. Hal tersebut selaras dengan tantangan pembangunan 
+pendidikan saat ini yaitu dibutuhkan  pengembangan kebijakan -kebijakan untuk memperkuat dan 
+memperluas pemanfaatan TIK (Teknologi Informasi dan Komunikasi) di bidang pendidikan[1].  
+Dalam dunia pendidikan, khususnya sekolah masih banyak sekali pekerjaan yang dilakukan dengan 
+cara manual. Salah satunya adalah pembayaran SPP yang masih menggunakan buku untuk mencatat 
+data pembayaran SPP siswa. Pembayaran SPP yang masih dilakukan dengan cara manual memiliki 
+kekurangan pada pengelolaan data.  
+Proses pencatatan pembayaran SPP yang ada di Sekolah Menengah Atas (SMA) Negeri 1 Palangka 
+Raya masih dilakukan secara manual yaitu pencatatan pada bu ku pembayaran SPP. Petugas keuangan 
+yang melayani  pembayaran masih harus melakukan beberapa kali proses pencatatan dalam setiap 
+transaksi pembayaran yang dilakukan siswa. Tentu saja hal ini tidak efisien karena akan membutuhkan 
+waktu yang tidak sedikit jik a terdapat banyak siswa yang akan membayar biaya sekolah pada waktu 
+yang bersamaan. Masalah lain yang timbul adalah pada saat pembuatan laporan, petugas harus melihat 
+
+--- [Halaman 2] ---
+ 
+ 
+ 
+ 
+ 
+ 
+91 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+data di dokumen lain terlebih dahulu, kemudian data tersebut diolah menjadi laporan untuk diserahkan 
+kepada kepala sekolah. 
+Selain masalah yang telah disebutkan di atas, perancangan sistem informasi pembayaran SPP ini 
+juga untuk meminimalisir kemungkinan siswa yang tidak jujur dalam proses pembayaran SPP sekolah. 
+Misal uang pembayaran telah diberikan oleh orang tua/wali kepada putra/putrinya namun oleh siswa 
+tersebut tidak segera dibayarkan kepada sekolah, bahkan digunakan untuk keperluan pribadinya sendiri. 
+Tentu saja hal ini sangat  memprihatinkan dan harus segera diatasi sedini m ungkin. Oleh karena itu, 
+dibutuhkan media penginformasian  yang tepat dari pihak sekolah kepada orang tua siswa mengenai 
+pembayaran SPP bahkan peringatan tenggat waktu pembayaran SPP dari pihak sekolah terhadap orang 
+tua/wali murid melalui notifikasi Whatsapp. Berdasarkan latar belakang tersebut, dibangunlah Sistem 
+Informasi yang terintegrasi dengan payment gateway Midtrans dan aplikasi Whatsapp. 
+Tinjauan pustaka digunakan sebagai pembanding dan acuan untuk pengembangan sistem. Penelitian 
+ini menggunakan beberapa daftar pustaka yang berhubungan dengan kasus yang akan diteliti. Penelitian 
+pertama oleh Erna Astriyani, Meri Mayang Sari, Herman (2020) [2] dengan judul “Perancangan Sistem 
+Informasi Pembayaran SPP Berbasis Web Menggunakan Notifikasi SMS Gateway (Studi Kasus : SMP 
+Puspita Tangerang)” . Penelitian ini membahas tentang perancangan sistem informasi yang digunakan 
+untuk membantu bagian keuangan dalam mendata pembayaran SPP serta sebagai sarana 
+penginformasian pembayaran setiap bulannya kep ada orang tua siswa/wali melalui notifikasi SMS. 
+Penelitian ketiga oleh Lutfi  Hakim, Sepyan Purnama Kristanto, Mohammad Nur Shodiq, dan Eka 
+Amaliyah (2021) [3] dengan judul  “Aplikasi Penerimaan dan Pengeluaran Kas Berbasis Web dan 
+WhatsApp Gateway”. Penelitian ini membahas tentang perancangan sebuah aplikasi berbasis web yang 
+digunakan untuk mengelola data tanggungan siswa  dan pencatatan transaksi pengeluaran sekolah, 
+seperti penggajian karyawan, pengelolaan pembayaran siswa  dan melihat transaksi penerimaan  dan 
+pengeluaran secara keseluruhan di SMK Nurul tanpa memerlukan waktu yang panjang lagi, sedangkan 
+untuk para wali murid dapat terbantu dalam memantau pembayaran yang  dilakukan oleh anaknya 
+melalui fitur Whatsapp Gateway. 
+ 
+2. Metodologi Penelitian  
+Dalam im plementasi sistem ini menggunakan metodologi pengembangan perangkat lunak 
+Waterfall, yang diawali dari tahapan analisis, desain, implementasi program, pengujian  dan 
+pemanfaatan program [4]. 
+• Analisis 
+Pada tahap ini pengembang melakukan analisis kebutuhan sistem terdiri dari analisis  
+kebutuhan fungsional yang bertujuan untuk mengetahui kebutuhan fungsi sistem dan analisis 
+kebutuhan non fungsional untuk mengetahui perangkat keras dan perangkat lunak yang 
+dibutuhkan serta kriteria  pengguna sistem. A nalisis kebutuhan sistem terbagi menjadi analisis 
+sistem bisnis proses sistem lama dan analisis sistem bisnis proses baru. 
+Analisa Sistem yang sedang berjalan. : Berdasarkan hasil wawancara yang dilakukan maka 
+dapat diketahui bahwa proses pembayaran SPP di SMA Negeri 1 Palangka Raya di awali dengan 
+siswa mendatangi bendahara sekolah menyerahkan uang dan kartu SPP, lalu bendahara sekolah 
+mengisi kartu SPP, lalu bendahara membuat kwitansi pembayaran dan mencap kartu SPP. 
+Setelah itu bendahara menyerahkan kartu SPP dan kwitansi pembayaran. Siswa menerima kartu 
+SPP dan  kwitansi pembayaran. Bendahara mengisi buku besar pembayaran SPP. Bendahara 
+memilah data  pembayaran SPP untuk digunakan sebagai pelaporan pembayaran SPP kepada 
+kepala sekolah. Bendahara membuat la poran pembayaran SPP serta menyerahkan laporan 
+kepada kepala sekolah. Kepala sekolah menerima laporan pembayaran SPP. 
+
+--- [Halaman 3] ---
+ 
+ 
+ 
+ 
+ 
+ 
+92 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+Analisa Sistem yang diperlukan : Berdasarkan analisis dari sistem yang sedang berjalan, maka 
+diperlukan sebuah sistem informasi yang dapat  mengatasi permasalahan pada pembayaran SPP 
+yaitu pencatatan data yang masih dilakukan manual, pemilahan data pembayaran SPP masih  
+dilakukan manual, pembuatan SPP secara manual serta dibutuhkan media penyampaian 
+informasi pembayaran SPP kepada orang tua/wa li siswa untuk meminimalisir penyalahgunaan 
+uang SPP oleh siswa dipakai untuk kebutuhan pribadi. Untuk sistem informasi yang akan dibuat 
+digunakan oleh siswa, bendahara dan kepala sekolah. Siswa merupakan aktor yang melakukan 
+pembayaran SPP, Bendahara meru pakan aktor yang memproses pembayaran SPP oleh siswa 
+serta Kepala Sekolah  merupakan aktor yang mengawasi transaksi pembayaran SPP oleh 
+bendahara dan siswa. Sistem  Informasi ini akan dibangun berbasis website, dimana basis data 
+dan logika pemrosesan data  terletak pada server maka masukan maupun perubahan suatu data 
+dapat langsung tersinkronisasi ke seluruh pengguna aplikasi. 
+• Desain 
+Tahap ini berfungsi sebagai dasar perancangan yang mengubah data -data yang didapat dari 
+analisis menjadi sebuah rancangan yang terdiri dari desain struktur data,struktur navigasi, dan 
+rancangan antar muka. Desain sistem dalam hal ini menggunakan teknik terstruktur dalam 
+pembuatannya. Desain dapat berupa bagan (chart) yang menunjukkan desain proses bisnis yang 
+dalam hal ini menggunakan Use case diagram , activity diagram  dan desain basis data 
+menggunakan class diagram. 
+• Use case diagram  
+Use case diagram adalah diagram yang menggambarkan fitur-fitur dari sistem yang dapat 
+dimanfaatkan oleh pengguna (aktor). Diagram ini juga dapat digunakan untuk menujukkan 
+proses bisnis/fungsionalitas dari sistem yang akan dibangun. 
+Pada aplikasi ini Bendahara (Admin) dapat mengelola tahun, jurusan, spp, kelas, siswa, kelas 
+aktif, siswa aktif, tagihan dan  pembayaran dengan sy arat login terlebih dahulu. Siswa dapat  
+mengelola mengelola profil siswa dan melihat tagihan dan  melakukan pembayaran Non -Tunai 
+dengan syarat login terlebih dahulu. Sedangkan Kepala Sekolah dapat mengelola pengguna serta 
+melihat data siswa dan tagihan dengan syarat login terlebih dahulu. 
+ 
+ 
+ 
+ 
+
+--- [Halaman 4] ---
+ 
+ 
+ 
+ 
+ 
+ 
+93 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+ 
+Gambar 1. Use case Bendahara (admin)  
+ 
+
+
+--- [Halaman 5] ---
+ 
+ 
+ 
+ 
+ 
+ 
+94 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+▪ Activity diagram 
+Activity diagram adalah diagram yang digunakan untuk menunjukan runtutan 
+aktivitas atau proses bisnis yang ter dapat pada sistem tersebut.  Berikut ini adalah 
+aktivity diagram bendahara (admin). 
+ 
+ 
+Gambar 2. Activity Diagram Bendahara (Admin) 
+ 
+▪ Class diagram 
+Class diagram  adalah jenis diagram struktur statis dalam UML yang 
+menggambarkan struktur sistem dengan menunjukkan sistem class, atributnya, 
+metode, dan hubungan antar objek . Dari class diagram ini, dapat dilakukan 
+perancangan mengenai struktur database dan relasi antar tabelnya. [7] 
+ 
+
+
+--- [Halaman 6] ---
+ 
+ 
+ 
+ 
+ 
+ 
+95 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+ 
+Gambar 3. Class Diagram Sistem 
+ 
+• Implementasi 
+Setelah proses perancangan sistem dibuat maka proses selanjutnya adalah membuat website 
+berdasarkan perancangan yang sudah dilakukan. Sistem Informasi ini akan dibuat berbasis 
+website dengan menggunakan teknik pemrograman berorientasi objek yang dalam hal ini 
+menggunakan bahasa pemrograman PHP pada sisi back -end sistem. PHP (Hypertext Processor) 
+adalah bahasa pemograman web server -side yang bersifat open source. Menggunakan HTML, 
+CSS, Java Script dan Framework Bootstrap pada sisi front -end sistem. HTML digunakan untuk 
+menandai secara khusus bagian-bagian yang terdapat dalam sebuah halaman web. Setiap bagian 
+menggunakan tag CSS dalam pemrograman web berfungsi untuk mengatur style dari halaman 
+web.  
+Bootstrap merupakan framework untuk membangun desain web seca ra responsif. Artinya, 
+tampilan web yang dibuat oleh bootstrap akan menyesuaikan ukuran layer dan browser yang kita 
+gunakan baik di desktop, tablet ataupun mobile device. 
+• Pengujian 
+Tahapan ini merupakan tahap dimana sistem atau aplikasi yang telah dibuat di uji dan 
+apakah website tersebut layak atau masih harus diperbaiki. Hal ini bertujuan agar website yang 
+sudah dibuat dan yang akan diimplementasikan pada SMA Negeri 1 Palangka Raya  sesuai 
+dengan yang dibutuhkan. Adapun pengujian sistem yang digunakan adalah pengujian dengan 
+metode Black box. Black box merupakan metode uji coba yang memfokuskan pada keperluan 
+fungsional dari software. Karna itu uji coba black box memungkinkan pengemb ang software 
+untuk membuat himpunan kondisi input yang akan diujikan pada seluruh syarat-syarat fungsional 
+suatu program. 
+• Pemanfaatan 
+Program yang telah diuji dapat mengalami perubahan ketika sudah dikirimkan ke pengguna. 
+Perubahan dapat terjadi karena ter jadi kesalahan yang tidak terdeteksi saat pengujian program 
+harus beradaptasi dengan lingkungan baru (hardware baru). Tahap pendukung atau pemeliharaan 
+
+
+--- [Halaman 7] ---
+ 
+ 
+ 
+ 
+ 
+ 
+96 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+bertujuan untuk menjaga stabilitas program yang telah dibuat tanpa harus membuat program yang 
+baru. 
+ 
+3. Hasil dan Pembahasan 
+Sistem Informasi Pembayaran SPP ini memiliki 3 level pengguna yakni Admin (Bendahara), Siswa 
+dan Kepala Sekolah. Sebelum masuk ke halaman masing-masing pengguna diharuskan terlebih dahulu 
+melakukan login. 
+Gambar 4. Antarmuka Utama Sistem 
+A. Antarmuka Admin 
+Pada halaman dashboard admin terdapat enam menu utama yaitu master data, kelas aktif, siswa aktif, 
+tagihan, pembayaran dan laporan . Admin dapat mengelola data tahun ajaran, data  jurusan, data spp, 
+data kelas, data siswa, mengaktifka n kelas, mengaktifkan siswa dan menaikkan kelas  siswa, 
+mengirimkan pesan peringatan pembayaran SPP, melakukan transaksi pembayaran tunai, 
+mengkonfirmasi pembayaran non-tunai.  
+ 
+B. Antarmuka Kepala Sekolah 
+Pada halaman dashboard kepala sekolah terdapat empat menu utama yaitu pengguna, siswa, tagihan 
+dan laporan . Kepala Sekolah dapat mengelola data pengguna, melihat data  siswa, melihat tagihan 
+siswa.  
+ 
+C. Antarmuka Siswa 
+Pada halaman dashboard Siswa terdapat empat menu utama yaitu profil, tagihan, pembayaran non 
+tunai dan history. Siswa dapat mengelola profil, melihat tagihan, melakukan pembayaran non tunai dan 
+melihat history pembayaran SPP. Berikut ini adalah tampilan pada saat siswa melakukan pembayaran 
+non tunai melalui sistem. 
+
+
+--- [Halaman 8] ---
+ 
+ 
+ 
+ 
+ 
+ 
+97 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+ 
+Gambar 5. Laman Transaksi Pembayaran Non-tunai Siswa 
+ 
+ 
+ 
+Gambar 6. Laman Konfirmasi Pembayaran Non-tunai Siswa 
+ 
+ 
+Gambar 7. Laman Proses pemilihan kanal pembayaran Non-tunai Siswa 
+ 
+ 
+
+
+--- [Halaman 9] ---
+ 
+ 
+ 
+ 
+ 
+ 
+98 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+ 
+Gambar 8. Laman tata cara pembayaran Non-tunai Siswa 
+ 
+ 
+ 
+Gambar 9. Laman keterangan nomor rekening pembayaran Non-tunai Siswa 
+ 
+ 
+Gambar 10. Notifikasi pembayaran Non-tunai Siswa telah selesai 
+ 
+
+
+--- [Halaman 10] ---
+ 
+ 
+ 
+ 
+ 
+ 
+99 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+D. Black Box Testing 
+Berdasarkan hasil pengujian blackbox testing dari pembuatan Rancang Bangun  Sistem Informasi 
+Pembayaran SPP berbasis Website dan Whatsapp Gateway di SMA Negeri 1 Palangka  Raya diuji 
+adalah sebagai berikut : 
+Tabel 1.Tabel  Pengujian Sistem  
+NO Uji Sistem  
+Pengujian Hasil Uji 
+ 1 Pembayaran Tunai  OK 
+2 Pengkonfirmasian Pembayaran Non Tunai oleh Admin OK  
+3 Pembayaran Non Tunai melalui sistem oleh Siswa OK  
+4 Pengiriman Pesan Peringatan Pembayaran OK  
+5 Pesan Notifikasi Lunas Pembayaran Tunai maupun 
+Non Tunai OK  
+ 
+2. Kesimpulan 
+Dari pembuatan Rancang Bangun Sistem Informasi Pembayaran SPP yang dilakukan, disimpulkan 
+bahwa integrasi Notifikasi dan Payment Gateway dapat dilakukan dengan menyesuaikan mekanisme 
+pembayaran yang sebelumnya hanya dilakukan melalui setoran manual menjadi  sistem yang dapat 
+memanfaatkan Payment Gateway Midtrans dan Whatsapp API Wablas.  
+Rancang Bangun Sistem Informasi Pembayaran SPP Berbasis Website dan Whatsapp Gateway di  
+SMA Negeri 1 Palangka Raya masih perlu pengembangan sistem, diharapkan pengembang selanjutnya 
+website ini dapat dikembangkan dengan platform lain yang mengikuti perkembangan teknologi seperti 
+aplikasi berbasis mobile android atau ios, serta pengembangan pada tenggat tanggal pembayaran SPP  
+dimana sistem akan mengirimkan pesan secara otomati s jika tenggat tanggal pembayaran sudah  
+mendekati jatuh tempo. 
+ 
+Daftar Pustaka 
+[1]  Tim Kemdikbudristek, “Rencana Strategis Kementrian Pendidikan dan Kebudayaan 2020 -2024,” 
+Kementeri. Pendidikan, Kebudayaan, Ris. dan Teknol., pp. 1 –129, 2020, [Online]. Available: 
+https://dikti.kemdikbud.go.id/ 
+[2] E. Astriyani and M. Mayang Sari, “PERANCANGAN SISTEM INFORMASI PEMBAYARAN SPP  
+BERBASIS WEB MENGGUNAKAN NOTIFIKASI SMS GATEWAY (Studi Kasus : SMP Puspita  
+Tangerang),” CERITA, vol. 6. 
+[3] L. Hakim, S. Purnama K ristanto, M. Nur Shodiq, E. Amaliyah, T. Informatika, and P. Negeri  Banyuwangi, 
+“Aplikasi Penerimaan dan Pengeluaran Kas Berbasis Web dan WhatsApp Gateway,” vol. 15, no. 1. 
+[4] A. Anna, N. Nurmalasari, and A. E. Yusnita, “Rancang Bangun Sistem Informasi Akuntansi Penerimaan dan 
+Pengeluaran Kas pada Kantor Camat Pontianak Timur,” J. Khatulistiwa Inform., vol.  6, no. 2, pp. 107–118, 
+2018. 
+[5] J. J. Robinson, “DIAGRAM: A Grammar for Dialogues,” Commun. ACM, vol. 25, no. 1, pp. 27 –47, 1982, 
+doi: 10.1145/358315.358387. 
+[6] S. Sandfreni, M. B. Ulum, and A. H. Azizah, “Analisis Perancangan Sistem Informasi Pusat Studi  Pada 
+Fakultas Ilmu Komputer Universitas Esa Unggul,” Sebatik, vol. 25, no. 2, pp. 345 –356, 2021,  doi: 
+10.46984/sebatik.v25i2.1587. 
+[7] P. Widodo and K. A. Wijayanti,  “Perancangan Sistem Informasi Penjualan Besi Berbasis Web Pada  CV. 
+Mulya Jaya Yogyakarta,” Bianglala Inform., vol. 8, no. 1, pp. 49–57, 2020, doi: 10.31294/bi.v8i1.8010. 
+
+--- [Halaman 11] ---
+ 
+ 
+ 
+ 
+ 
+ 
+100 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+[E-ISSN 2656-0321] 
+[Vol 17 No 1] 
+[Januari 2023] 
+[8] O. Musa, “Sistem Informasi Kepegawaian Berbasis Website pada Dinas Pariwisata Dan  Kebudayaan,” J. 
+Teknol. Inf. Indones., vol. 5, no. 2, pp. 9–15, 2020, doi: 10.30869/jtii.v5i2.641. 
+ 
+ 
