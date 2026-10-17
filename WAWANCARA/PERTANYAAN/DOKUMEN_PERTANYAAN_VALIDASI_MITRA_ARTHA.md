@@ -62,16 +62,16 @@ Pembagian jadwal selama ini dipengaruhi oleh budaya kekeluargaan dan senioritas 
 
 ### 2.2 Daftar Pertanyaan Validasi Lapangan
 1. **Klarifikasi Tumpang Tindih (*Overlap*) Jam Sesi Pagi**:
-   * *Pertanyaan*: Mengapa pada jadwal pagi Sesi 1 selesai pada pukul 09.30 sementara Sesi 2 sudah dimulai sejak pukul 09.00? Apakah kedua sesi tersebut menggunakan ruangan dan tentor yang berbeda, ataukah ada kekeliruan penulisan jam operasional di lapangan? Mengapa polanya berbeda dengan sesi siang yang bersambung secara runtut tanpa jeda?
+   * *Pertanyaan*: Mengapa pada jadwal pagi Sesi 1 selesai pada pukul 09.30 sementara Sesi 2 sudah dimulai sejak pukul 09.00? Apakah dapat dipastikan bahwa seorang tentor tidak mungkin mengajar di kedua sesi pagi tersebut secara bersamaan pada rentang pukul 09.00 hingga 09.30? Mengapa polanya berbeda dengan sesi siang yang bersambung secara runtut dan pas tanpa ada tumpang tindih waktu?
    * *Catatan Lapangan*: `[ ............................................................ ]`
 2. **Penanggung Jawab dan Prosedur Penetapan Jadwal**:
    * *Pertanyaan*: Siapa pejabat atau staf yang bertanggung jawab penuh dalam menyusun dan menetapkan pembagian jadwal tentor di awal semester? Bagaimana alur koordinasi antara manajemen pusat dengan frontdesk masing-masing cabang dalam mencocokkan ketersediaan waktu tentor?
    * *Catatan Lapangan*: `[ ............................................................ ]`
 3. **Struktur Penggajian dan Honorarium Tentor**:
-   * *Pertanyaan*: Bagaimana formula perhitungan gaji tentor di Bimbel Artha? Apakah bersifat honor flat bulanan, honor per jam mengajar, honor per sesi kelas, atau memperhitungkan jumlah siswa yang hadir di dalam kelas?
+   * *Pertanyaan*: Bagaimana formula perhitungan gaji tentor di Bimbel Artha? Apakah bersifat honor flat bulanan, honor per jam mengajar, honor per sesi kelas, atau memperhitungkan beban kerja dan jumlah siswa yang hadir di dalam kelas?
    * *Catatan Lapangan*: `[ ............................................................ ]`
-4. **Mobilitas Tentor Lintas Cabang**:
-   * *Pertanyaan*: Apakah seorang tentor diperbolehkan mengajar di dua cabang yang berbeda pada hari yang sama? Berapa estimasi jeda waktu perjalanan minimal yang diwajibkan oleh manajemen agar tentor tidak terlambat tiba di cabang berikutnya?
+4. **Mobilitas Tentor Lintas Cabang dan Kelas Paralel**:
+   * *Pertanyaan*: Apakah seorang tentor bisa terbagi mengajar di cabang yang berbeda pada hari yang sama? Selain itu, jika tentor mengajar di cabang yang sama tetapi di kelas yang berbeda pada waktu yang bersamaan (misalkan menangani dua kelas paralel sekaligus), apakah hal tersebut memungkinkan dan pernah terjadi di lapangan? Berapa estimasi jeda waktu perjalanan minimal yang diwajibkan oleh manajemen jika tentor harus berpindah cabang agar tidak terlambat?
    * *Catatan Lapangan*: `[ ............................................................ ]`
 5. **Dampak Keterlambatan dan Kompensasi Hak Siswa**:
    * *Pertanyaan*: Seberapa sering tentor terlambat tiba di kelas akibat macet atau cuaca hujan lebat di jalan saat berpindah cabang? Jika tentor terlambat selama 15 hingga 30 menit, bagaimana bentuk kompensasi jam belajar bagi siswa: apakah waktu kelas dimundurkan, diadakan sesi pengganti di hari lain, atau waktu belajar siswa hangus?
