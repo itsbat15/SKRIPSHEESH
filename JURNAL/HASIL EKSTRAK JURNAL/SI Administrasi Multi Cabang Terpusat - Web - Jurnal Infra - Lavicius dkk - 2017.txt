@@ -1,0 +1,882 @@
+=== HALAMAN 1 ===
+Sistem Informasi Administrasi Multi Cabang pada  
+PT. HC 
+Lavicius1, Lily Puspa Dewi2, Adi Wibowo3 
+1,2,3 Program Studi Teknik Informatika Fakultas Teknologi Industri Universitas Kristen Petra 
+Jl. Siwalankerto 121 – 131 Surabaya 60236 
+Telp. (031) – 2983455, Fax. (031) – 8417658 
+E-Mail: lavicius.work@gmail.com1, lily@petra.ac.id2, adiw@petra.ac.id3 
+ 
+ 
+ABSTRAK 
+Saat ini PT. HC menggunakan pencatatan dalam bentuk Microsoft 
+Excel dan dokumen fisik untuk proses bisnis yang dijalankan. PT. 
+HC memiliki beberapa cabang yang tersebar di beberapa daerah di 
+Indonesia, dengan proses bisnis penjualan produk, pemesanan 
+bahan baku dan peyimpanan stok. Tanpa menggunakan sistem 
+informasi, akurasi dan kecepatan dalam memproses dan menerima 
+data pada PT. HC dan cabang juga kurang baik serta 
+membutuhkan waktu yang lebih lama. 
+Aplikasi ini memiliki beberapa fitur utama diantaranya sales 
+order, purchase order, pencatatan stok gudang, perhitungan 
+reorder point,  pembayaran invoice dan menghasilkan laporan 
+omzet penjualan, pembelian dan stok. Aplikasi ini  dibuat dengan 
+menggunakan bahasa pemograman HTML, PHP, Javascript dan 
+database MySQL. Tampilan aplikasi menggunakan template 
+Gentellela dengan Bootstrap. 
+Hasil akhir dari peng embangan aplikasi ini adalah dapat 
+terintegrasinya informasi perusahaan seperti catatan sales order, 
+purchase order, invoice, stok gudang, delivery order dan laporan. 
+Pengguna dari pusat dapat melihat laporan penjualan, laporan 
+pembelian bahan baku dan sto k yang dimiliki oleh cabang. 
+Pengguna juga dapat menerima remainder beberapa informasi 
+seperti stok yang melebihi batas minimal stok dan invoice yang 
+melebihi tanggal jatuh tempo melalui notifikasi sesuai dengan hak 
+akses masing-masing. 
+Kata Kunci: Gentellela, Integrasi Informasi, multi cabang, 
+Sistem Informasi Administrasi, website 
+ABSTRACT 
+Currently, PT. HC records information in Microsoft Excel and 
+physical documents for running business processes. PT. HC has 
+several branches spread across several region s in Indonesia, with 
+the business process of selling products, ordering raw materials 
+and stock storage. Without using information system, accurate 
+and speed in processing and receiving of information at PT. HC 
+and branch are also less good and require a longer time. 
+This application has several main features including sales order, 
+purchase order, warehouse stock recordings, reorder point 
+calculation, invoice payment and generate sales turnover, 
+purchase and stock turnover. This application is made using the 
+programming language HTML, PHP, Javascript and MySQL 
+database. App interface created using Gentellela template with 
+Bootstrap. 
+The final result of the development of this application is able to 
+integrate company information such as sales order records,  
+ 
+purchase orders, invoices, warehouse stock, delivery orders and 
+reports. Users form the center of PT. HC can view sales reports, 
+raw material purchases and stock reports owned by the branch. 
+Users can also receive remainder of some information  
+such as stock that exceeds the minimum stock limit and invoices 
+that exceed the due date through notification in accordance with 
+their respective permissions. 
+Keywords: Gentellela, Information Integration, Information 
+Systems Administration, multi-branch.,website 
+1. PENDAHULUAN 
+Seiring dengan perkembangan sistem informasi saat ini, maka 
+sistem informasi memiliki peran yang cukup besar dalam sebuah 
+perusahaan menjalankan bisnisnya. Dengan sistem informasi yang 
+sudah terkomputerisasi dapat mengurangi resiko – resiko yang ada 
+dan juga mempersingkat waktu perolehan dan pemrosesan data. 
+Sehingga dapat menghasilkan informasi yang tepat dan akurat.  
+PT. HC merupakan perusahaan yang bergerak di bidang penyedia 
+produk – produk makanan ringan berkualitas tinggi dengan harga 
+yang sesuai dengan segmen pasar. PT. HC memiliki beberapa 
+cabang yang tersebar di beberapa daerah di Indonesia. Di setiap 
+cabang dari PT. HC terdapat beberapa proses bisnis. Diantaranya 
+proses bisnis penjualan produk kepada customer, proses produksi, 
+proses penyimpanan bahan baku dan produk jadi di gudang serta 
+permintaan pemesanan bahan baku ke pusat. Pemesanan bahan 
+baku dari cabang akan diproses oleh pusat untuk pemesanan 
+kepada supplier. Pusat perusahaan PT. HC melakukan 
+pemantauan terhadap proses bisnis ya ng ada pada cabang melalui 
+laporan penjualan produk, laporan produksi, dan laporan stok 
+gudang pada setiap cabang. 
+Saat ini, PT. HC dan cabang melakukan pengolahan data secara 
+manual dan belum memiliki sebuah sistem informasi yang 
+terintegrasi. Hal tersebu t menimbulkan kurang efisien waktu dan 
+efektivitas dalam proses pekerjaan. Pencatatan stok di gudang 
+cabang masih menggunakan metode manual sehingga informasi 
+stok tidak bisa didapat secara cepat oleh bagian yang 
+membutuhkan informasi tersebut. P erhitungan ketersediaan bahan 
+baku sering kali tidak tepat sehingga bahan baku sudah habis atau 
+menipis tetapi pesanan bahan baku yang dipesan belum tiba. 
+Mengakibatkan terhambatnya proses bisnis pada cabang. PT. HC 
+belum memiliki pencatatan data yang terpusat dan t erintegrasi. 
+Sehingga bagian pusat PT. HC yang perlu untuk memonitor setiap 
+cabang tidak dapat langsung mendapatkan laporan yang 
+dibutuhkan.
+
+=== HALAMAN 2 ===
+Berdasarkan masalah yang ada pada PT. HC, dibutuhkan sebuah 
+aplikasi pengelola data  yang terstruktur dan dapat mem permudah 
+akses informasi dari setiap proses yang ada di cabang oleh pusat 
+PT. HC. 
+2. LANDASAN TEORI 
+2.1. Sistem Informasi 
+Sistem merupakan kumpulan dari beberapa elemen yang saling 
+berinteraksi untuk mencapai suatu tujuan tertentu. Sistem 
+menggambarkan suatu kejadian-kejadian yang terjadi secara 
+nyata, tersusun atas tempat, benda dan orang -orang yang betul -
+betul ada dan terjadi. 
+Informasi merupakan data yang telah diolah menyajikan bentuk 
+lebih berguna bagi penerimanya. Informasi disusun dari data -data. 
+Informasi yang diterima oleh si penerima mempunyai nilai nyata 
+atau yang dapat dirasakan dalam keputusan -keputusan yang 
+sekarang atau keputusan-keputusan yang akan datang. 
+Sistem informasi adalah suatu sistem didalam suatu organisasi 
+yang mempertemukan kebutuhan  pengelolaan transaksi harian, 
+mendukung operasi, bersifat manajerial, dan kegiatan strategi dari 
+suatu organisasi dan menyediakan pihak luar tertentu dengan 
+laporan-laporan yang dibutuhkan. [2] 
+2.2. Reorder Point 
+Reorder point adalah keadaan dimana persediaan mencapai batas 
+tertentu dan segera dilakukan pemesanan kembali sehingga 
+penerimaan barang tepat waktu pada saat persediaan di atas safety 
+stock sama dengan nol. Keadaan ini terjadi saat jumlah persediaan 
+yang dimiliki berkurang terus menerus sehingga perlu  adanya 
+batas tingkat persediaan yang harus dipertimbangkan sehingga 
+tidak terjadi kekurangan ketersediaan. Jumlah tersebut 
+dipertimbangkan dengan kebutuhan persediaan bulanan atau 
+mingguan atau harian dan masa tenggang dari persediaan datang 
+setelah dilak ukan pemesanan. Ditambah jumlah persediaan yang 
+aman.  
+Re Order Point = Kebutuhan X Lead Time + Safety Stock. 
+Tenggang waktu merupakan waktu antara pemesanan barang 
+dengan diterimanya barang biasa disebut dengan istilah Lead 
+Time. Persediaan pengamanan ( safety stock ), merupakan jumlah 
+persediaan barang minimum yang harus dimiliki oleh perusahaan 
+untuk menjaga kemungkinan ket erlambatan datangnya bahan 
+baku. [6] 
+2.3. Hyper Text Markup Languange 5  
+HTML dikembangkan pada awal tahun 1990 -an digunakan untuk 
+sebuah dokumen singkat yang berisi beberapa elemen untuk 
+membuat sebuah halaman web. Banyak dari elemen -elemen 
+tersebut digunakan untuk mendeskripsikan bagian halaman web 
+diantaranya headings, paragraphs, dan lists. Dalam 
+perkembangannya terdapat beberapa versi dari HTML, setiap 
+perkembangan yang keluar juga memperkenalkan elemen -elemen 
+baru dan peraturan -peraturan yang menyesuaikan penggunaan 
+kedepannya. HTML5 merupakan versi HTML yang terbaru. 
+HTML5 adalah evolusi alami dari HTML versi sebelumnya untuk 
+menjawab kebutuhan web sekarang dan kebutuhan dimasa yang 
+akan datang. HTML5 juga menambahkan beberapa fitur baru. 
+Elemen-elemen tambahan seperti article, section, figure, dan lain-
+lain yang berfungsi untuk mendeskrip sikan content atau isi dari 
+web page tersebut. Fitur lainnya juga cukup kompleks dan dapat 
+digunakan untuk menciptakan powerful web applications.  
+HTML5 juga memperkenalkan audio dan video playback untuk 
+dapat digunakan pada web pages. [3] 
+2.4. Java Script 
+JavaScript diperkenalkan pertama kali oleh Netscape pada tahun 
+1995. Sebelum dikenal dengan nama JavaScript dikenal dengan 
+nama LiveScript dan berfungsi sebagai bahas sederhana untuk 
+brownser Netscape Navigator 2. JavaScript merupakan Bahasa 
+yang berbentuk kumpulan skrip yang berfungsi untuk memberikan 
+tampilan yang tampak lebih interaktif pada dokumen web. Bahasa 
+ini merupakan Bahasa pemrograman yntuk memberikan tambahan 
+ke dalam bahasa pemograman HTML (Hypertext Markup 
+Language) dengan mengijinkan pengeksekusi an perintah-perintah 
+pada sisi client, dan bukan pada sisi server dokumen web. 
+JavaScript berisi skrip yang diletakkan didala m dokumen HTML. 
+Sehingga bahasa JavaScript tidak memerlukan sebuah kompilator 
+atau penerjemah khusus untuk mengeksekusinya. [1] 
+2.5. MySQL 
+MySQL adalah software sistem manajemen database (Database  
+Management System/DBMS) yang sangat popu ler di kalangan 
+pemrograman web terutama di lingkungan Linux dengan 
+menggunakan script PHP dan Perl. Software database ini kini 
+telah tersedia juga pada p latform sistem operasi Windows. 
+MySQL merupakan database yang paling po puler digunakan 
+untuk membangun aplikasi web yang menggunakan database 
+sebagai sumber dan pengelola datanya. MySQL populer karena 
+kemudahan dalam penggun aan, cepat dalam kinerja query, dan 
+mencukupi untuk kebutuhan database perus ahaan-perusahaan 
+skala menengah kebawah. MySQL versi 4.0 telah dirilis sebagai  
+versi alpha pada Oktober 2001. Pada versi 4.0 diharapkan sudah 
+dapat digunaka n untuk transaksi yang bersifat ‘mission-critical’ 
+dan database dengan ukuran yan g sangat besar. MySQL versi 4.0 
+dirilis dengan dua lisensi, yaitu GPL dan komersial. Lisensi 
+komersial diberikan  kepada yang menginginkan produk yang 
+dikembangkan dengan menggunakan MySQL terikat dengan 
+aturan GPL, salah satunya adalah harus menyerahkan source code 
+kepada yang membeli atau menggunakan produk tersebut. [7] 
+2.6. PHP 
+PHP singkatan dari Hypertext Preprocessor yaitu sebuah Bahasa 
+pemrograman scripting untuk membuat halaman web yang 
+dinamis. PHP merupakan script yang terintegra si dengan HTML 
+dan berada pada server (server side HTML embedded scripting). 
+Web dinamis berarti halaman yang akan ditampilkan dibuat saat 
+halaman tersebut diminta oleh client. Mekanisme ini 
+menyebabkan informasi yang diterima client selalu ter update. 
+Semua script PHP dieksekusi pada server di mana script tersebut 
+dijalankan. 
+Kode PHP mempunyai beberapa ciri -ciri khusus diantaranya:  
+hanya dapat dijalankan menggunakan web server misalnya 
+apache, Kode PHP dapat digunakan untuk mengakses database, 
+seperti: MySQL, Po stgreSQL, Oracle, dan lain -lain, Kode PHP 
+dapat digunakan untuk mengakses database, seperti: MySQL, 
+PostgreSQL, Oracle, dan lain -lain. Memiliki sifat multiplatform, 
+yang berartian dapat dijalankan menggunakan sistem operasi 
+apapun, seperti: Linux, Unix, Windows, dan lain-lain. [5]
+
+=== HALAMAN 3 ===
+3. ANALISIS DAN DESAIN SISTEM 
+3.1. Desain Data Flow Diagram 
+Data Flow Diagram (DFD) merupakan gambaran suatu sistem 
+yang telah ada atau sistem baru yang sedang dikembangkan secara 
+logika tanpa mempertimbangkan lingkungan fisik di mana data 
+tersebut mengalir. Dengan adanya Data Flow Diagram dapat 
+mempermudah pemakai sistem yang kurang memahami bidang 
+komputer dapat mengerti sistem yang sedang berjalan atau sistem 
+yang sedang dikembangkan. Didalam Data Flow Diagram 
+terdapat 3 level y ang diantaranya diagram konteks, Diagram nol 
+(diagram level -1) dan diagram rinci. Diagram konsteks untuk 
+mewakili gambaran seluruh proses yang berjalan pada sistem. 
+Kemudian dapat digambarkan diagram level 1 untuk pemecahan 
+dari konteks diagram yang memuat  penyimpanan data. 
+Selanjutnya dapat ditambahkan diagram rinci untuk menguraikan 
+proses yang ada pada diagram level 1. [4] 
+3.1.1.  Context Diagram 
+Desain context diagram  dari sistem informasi administrasi multi 
+cabang pada PT. HC dapat dilihat pada Gambar 1. Dalam context 
+diagram tersebut, terdapat enam external entitas yang 
+memberikan input dan output kepada sistem, yaitu: 
+a. Customer melakukan pemesanan sales order, menerima 
+invoice, dan melakukan pembayaran. 
+b. Sales melakukan pencatatan customer. 
+c. Keuangan membuat invoice dari sales order  customer, 
+mencatat pembayaran dan melakukan pembayaran purchase 
+order ke pusat. 
+d. Gudang menerima informasi penggunaan bahan baku dan 
+produk masuk untuk melakukan perubahan persediaan, serta 
+mencatat barang jadi yang masuk ke gudang. 
+e. Administration/pusat PT.  HC meli hat laporan -laporan 
+penjualan, pembelian, hutang, dan stok dari cabang. 
+f. Direktur cabang menerima laporan -laporan 
+penjualan,pembelian dan stok gudang. Memvalidasi 
+purchase order dan sales order  khusus. Melak ukan 
+perhitungan reorder point. 
+ 
+ 
+ 
+Gambar 1. Context Diagram 
+3.2. Desain Entity Relationship Diagram 
+Entity Relationship Diagram  (ERD) adalah suatu metode 
+perancangan database yang sering digunakan dalam 
+perancangan sistem database yang efektif dan efisien. Dengan 
+adanya ERD maka akan terlihat dengan jelas tabel -tabel yang 
+dibutuhkan dalam sistem dan juga relasi apa saja yang terbentuk 
+antar tabel tersebut d alam aplikasi yang a kan dibuat. ERD 
+Physical Data Model dapat dilihat pada Gambar 2. Dari ERD ini 
+dapat diketahui dengan lebih jelas relasi antar tabel yang 
+terbentuk beserta dengan data type dari tabel tersebut. 
+Data Sales Order
+Data Customer
+Data Cabang
+Data Divisi
+Data Pegawai
+Data Produk
+Data Bahan Baku
+Data Stok Bahan Baku 
+MasukData Stok Bahan Baku 
+Keluar
+Data ReturData Purchase Order 
+Cabang
+Data Pembayaran Sales 
+Order
+Invoice
+Data Sales Order
+Laporan Sales Order
+Data Customer
+Data Sales Order
+Data Pembayaran 
+Purchase Order
+Data Purchase Order
+Data Penyesuaian Stok 
+Bahan Baku
+Data Penyesuaian Stok 
+Produk
+Laporan Sales Order 
+Cabang
+Data Purchase Order 
+Cabang
+Laporan Stok Bahan 
+Baku Cabang
+Laporan Stok Produk 
+Cabang
+Delivery Order
+Data Purchase Order 
+Cabang
+Data Harga Jual 
+Produk
+Data ROP
+Flow_39
+Hasil Perhitungan ROP
+Invoice
+1
+Sistem Informasi 
+Administrasi PT HC
+Admin/Pusat
+Sales Cabang
+ Keuangan 
+Cabang
+Gudang Cabang
+Direktur Cabang
+Customer
+Data Stok Produk Jadi 
+Masuk
+Data Stok Produk Jadi 
+Keluar
+Data Sales Order
+Laporan Stok Produk
+Laporan Stok Bahan 
+Baku
+Data Purchase Order 
+Belum Validasi
+Laporan Purchase Order
+Laporan Sales Order 
+Cabang
+Data Purchase Order 
+Sudah Validasi
+
+=== HALAMAN 4 ===
+Gambar 2. ERD Physical Data Model
+4. PENGUJIAN SISTEM 
+4.1. Pengujian Menu Sales Order 
+Menu sales order  digunakan untuk memasukan data pesanan 
+customer. Pengujian dilakukan dengan memilih customer Zivara 
+Toko, nama sales “ Denny”, pemesanan dilakukan tanggal 13-07-
+2017 dengan rincian pesanan produk yaitu gopek 100 ikat dan 
+belang 50 ikat dapat dilihat pada Gambar 3. 
+ 
+Gambar 3. Form Sales Order 
+Setelah mengisi form sales order , maka user dapat menekan 
+tombol simpan untuk memasu kan data sales order . Data sales 
+order yang sudah masuk dapat dilihat pada Gambar 4. 
+ 
+Gambar 4. Data Sales Order 
+4.2. Menu Invoice 
+Menu Invoice digunakan untuk mengelola invoice sales order  
+dengan submenu list invoice, buat invoice dan history invoice . 
+Pengujian aplikasi dengan user mengklik submenu buat invoice. 
+Kemudian aplikasi akan menampilkan form invoice . User 
+mengisi data invoice dengan memilih data sales order  yang 
+sebelumnya telah diinputkan. User memilih kode so SO -005-
+JAWA TIMUR-07-17 dan dibuat pada tanggal 13 -07-2017. 
+Setelah memilih field nama customer, alamat customer dan tabel 
+list produk akan menyesuaikan dengan data sales order  yang 
+dipilih. User memilih field payment terms  15 hari ya ng dapat 
+dilihat pada Gambar 5.  
+Divisi Pegawai
+Satuan Produk
+Satuan Bahan Baku customer sales order
+detail sales order
+so delivery order
+produk stok masuk
+bahan baku stok penyesuaian
+bahan baku stok keluar
+detail purchase order
+cabang pegawai
+Detail Deliery Order
+Detail Pengiriman
+Pegawai mencatat Sales Order
+Cabang stok penyesuaian
+Pegawai mencatat Stok Produk Masuk
+Stok Produk
+Pegawai mencatat Purchase Order
+Cabang PO
+Cabang Stok bahan baku
+Pegawai catat stok bahan baku keluar
+Produk masuk detail sales order
+Sales Order milik Cabang
+get data bahan baku
+get date sales order
+get data delivery order
+get idretur
+get idproduk to bom
+get idbahanbaku to bom
+get idproduk to stok penyesuaian retur
+get idpegawai to stok penyesuaian retur
+get idproduk to detail retur
+Customer Cabang
+Cabang
+idcabang
+nama_cabang
+nama_direktur
+area_cabang
+alamat_cabang
+notelp_cabang
+status_cabang
+leadtime_cabang
+<pi> Integer
+Variable characters (100)
+Variable characters (100)
+Variable characters (30)
+Variable characters (100)
+Variable characters (15)
+Variable characters (15)
+Integer
+<M>
+Identifier_1
+...
+<pi>
+Divisi
+id_divisi
+nama_Divisi
+<pi> Integer
+Variable characters (20)
+<M>
+Identifier_1
+...
+<pi>
+Pegawai
+id_pegawai
+nama_pegawai
+alamat_pegawai
+nohp_pegawai
+username
+password
+email_pegawai
+status_pegawai
+register_time_pegawai
+update_time_pegawai
+register_time_user
+<pi> Integer
+Variable characters (50)
+Variable characters (50)
+Variable characters (15)
+Variable characters (50)
+Variable characters (100)
+Variable characters (100)
+Variable characters (50)
+Date & Time
+Date & Time
+Date & Time
+<M>
+Identifier_1
+...
+<pi>
+Satuan
+id_satuan
+nama_satuan
+keterangan_satuan
+status_satuan
+<pi> Integer
+Variable characters (30)
+Variable characters (50)
+Variable characters (15)
+<M>
+Identifier_1
+...
+<pi>
+Customer
+idcustomer
+nama_customer
+telepon_customer
+alamat_customer
+area_customer
+kodepos
+kategori_outlet
+credit_limit
+sisa_credit
+top_hari
+register_date
+status_customer
+<pi> Integer
+Variable characters (50)
+Variable characters (15)
+Variable characters (100)
+Variable characters (30)
+Variable characters (10)
+Variable characters (20)
+Money (12,2)
+Money (12,2)
+Integer
+Date
+Variable characters (15)
+<M>
+Identifier_1
+...
+<pi>
+Sales Order
+id_salesorder
+kodeso
+tanggal_so
+nama_sales
+total_so
+catatan_so
+status_so
+status_validasi_so
+kodeinv_so
+tanggal_invoice_so
+top_invoice_so
+tanggal_jatuhtempo_so
+tanggal_bayar_so
+metode_pembayaran_so
+sisa_belum_dibayar
+status_pembayaran_so
+keterangan_so
+<pi> Integer
+Variable characters (50)
+Date
+Variable characters (50)
+Money (12,2)
+Text
+Variable characters (15)
+Variable characters (30)
+Variable characters (50)
+Date & Time
+Integer
+Date
+Date
+Variable characters (20)
+Money (12,2)
+Variable characters (15)
+Text
+<M>
+Identifier_1
+...
+<pi>
+Detail Sales Order
+iddetailso
+qty_produk
+harga_unit
+subtotal_detailso
+qty_belum_dikirim
+qty_sudah_dikirim
+status_terkirim_barang
+<pi> Integer
+Integer
+Money (12,2)
+Money (12,2)
+Integer
+Integer
+Variable characters (20)
+<M>
+Identifier_1
+...
+<pi>
+Delivery Order
+id_deliveryso
+tanggal_deliveryso
+status_deliveryso
+<pi> Integer
+Date
+Variable characters (15)
+<M>
+Identifier_1
+...
+<pi>
+Stok Penyesuaian Produk
+id_penyesuaian_produk
+stok_produk
+<pi> Integer
+Integer
+<M>
+Identifier_1
+...
+<pi>
+Kartu Stok Produk
+id_kartu_stok_produk
+tanggal_stok_produk
+hasil_produksi
+retur/sample
+retur_customer
+stok_masuk_produk
+penjualan
+bawa_retur
+bawa_sample
+stok_keluar_produk
+stok_akhir_produk
+keterangan_stok_produk
+nama_sales_stok_produk
+<pi> Integer
+Date
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Variable characters (50)
+<M>
+Identifier_1
+...
+<pi>
+Stok Penyesuaian Bahan Baku
+id_penyesuaian_bahanbaku
+stok_bahanbaku
+min_stok
+rekomendasi_rop
+<pi> Integer
+Integer
+Integer
+Integer
+<M>
+Identifier_1
+...
+<pi>
+Kartu Stok Bahan Baku
+id_kartu_stok_bahanbaku
+tanggal_stok_bb
+permintaan_keluar
+stok_keluar_bahanbaku
+pembelian
+sisa_produksi
+stok_masuk_bahanbaku
+stok_akhir
+keterangan_kartustok_bahanbaku
+<pi> Integer
+Date & Time
+Integer
+Integer
+Integer
+Integer
+Integer
+Integer
+Variable characters (100)
+<M>
+Identifier_1
+...
+<pi>
+Purchase_Order
+idpo
+kodepo
+tanggal_po
+tanggal_perkiraan_tiba_po
+tanggal_tiba_po
+nofaktur_po
+total_po
+status_po
+status_validasi_po
+tanggal_invoice_po
+tanggal_jatuhtempo_po
+kodeinv_po
+tanggal_pembayaranpo
+metode_pembayaran_po
+status_pembayaran_po
+keterangan_po
+status_konfirmasi_pembayaran_po
+<pi> Integer
+Variable characters (50)
+Date
+Date
+Date
+Variable characters (30)
+Money (12,2)
+Variable characters (15)
+Variable characters (30)
+Date
+Date
+Variable characters (30)
+Date
+Variable characters (20)
+Variable characters (15)
+Text
+Variable characters (30)
+<M>
+Identifier_1
+...
+<pi>
+Detail Purchase Order
+id_detail_po
+qty_bahanbaku
+qty_realisasi
+harga_bb
+subtotal_bahanbaku
+<pi> Integer
+Integer
+Integer
+Money (12,2)
+Money (12,2)
+<M>
+Identifier_1
+...
+<pi>
+Detail Delivery Order
+iddetaildo
+qty_dikirim
+<pi> Integer
+Integer
+<M>
+Identifier_1
+...
+<pi>
+Master Produk
+idproduk
+kode_produk
+nama_produk
+gambar_produk
+ip
+bahan_ip
+ukuran_karton
+isi_karton
+isi_ball
+ukuran_ball
+komposisi
+harga_produk
+status_produk
+create_time_produk
+update_time_produk
+<pi> Integer
+Variable characters (50)
+Variable characters (50)
+Image (50)
+Variable characters (30)
+Variable characters (30)
+Variable characters (50)
+Integer
+Integer
+Variable characters (30)
+Text
+Money (12,2)
+Variable characters (15)
+Date & Time
+Date & Time
+<M>
+Identifier_1
+...
+<pi>
+Retur
+idretur
+tanggal_retur
+catatan_retur
+<pi> Integer
+Date
+Variable characters (50)
+<M>
+Identifier_1
+...
+<pi>
+Detail Retur
+iddetailretur
+qty_retur
+<pi> Integer
+Integer
+Identifier_1... <pi>
+Bahan Baku
+id_bahanbaku
+nama_bahanbaku
+ukuran_bahanbaku
+harga_bahanbaku
+status_bahanbaku
+create_time_bahanbaku
+update_time_bahanbaku
+<pi> Integer
+Variable characters (50)
+Variable characters (30)
+Money (12,2)
+Variable characters (20)
+Date & Time
+Date & Time
+<M>
+Identifier_1
+...
+<pi>
+Bill Of Material
+idbom
+jumlah_bom
+status_bom
+<pi> Integer
+Float
+Variable characters (30)
+<M>
+Identifier_1
+...
+<pi>
+stok_penyesuaian_retur
+id_stok_penyesuaian_retur
+stok_retur
+<pi> Integer
+Integer
+<M>
+Identifier_1
+...
+<pi>
+
+=== HALAMAN 5 ===
+Gambar 5. Form Invoice 
+Setelah user mengecek kebenaran data, user mengklik tombol 
+simpan pada bagian bawah aplikasi. Kemudian aplikasi akan 
+menyimpan data invoice sales order dan membuka halaman list 
+invoice. Pada halaman list in voice menampilkan pemberitahuan 
+bahwa “Buat Invoice Berhasil, Kode INV -001-JAWATIMUR-
+07-17”. Menunjukkan bahwa data invoice yang diinput oleh user 
+berhasil tersimpan. 
+4.3. Menu Stok Produk 
+Menu stok produk digunakan untuk mengelola stok produk yang 
+dimiliki pada gudang cabang. Pengujian dilakukan dengan user 
+mengklik submenu list stok produk. Kemudian aplikasi akan 
+menampilkan isi dari halaman list stok produk yang berisi sebuah 
+tabel list stok produk seperti pada Gambar 6. 
+ 
+Gambar 6. List Stok Produk 
+Pengujian dilanjutkan dengan user memilih halaman buat stok 
+produk dari hasil produksi. User mengisi form produk masuk 
+pada nama produk “Gopek” dan hasil produksi “100 00” pcs 
+seperti pada Gambar 7. 
+ 
+Gambar 7. Form Produk Masuk 
+Setelah data benar user mengklik tombol tambah dan kemudian 
+data akan disimpan oleh aplikasi dan menampilkan alert 
+“Tambah Stok Produk Berhasil, Stok Gopek Sekarang  510400” 
+seperti pada Gambar 8. 
+ 
+Gambar 8. Form Produk Masuk yang Telah Diisi 
+4.4. Menu Hitung Reorder Point 
+Menu hitung reorder point berfungsi untuk melakukan 
+perhitungan dan menghasilkan rekomendasi untuk mengatur 
+minimal stok bahan  baku yang dimiliki di gudang. Perhitungan 
+reorder point membutuhkan beberapa data diantaranya data 
+penjualan 3 (tiga) bulan terakhir, leadtime cabang, jumlah bill of 
+material atau berapa bahan baku yang dibutuhkan untuk 
+menghasilkan 1 pcs produk dan nilai dalam persen 
+kenaikan/penurunan penjualan yang diinput oleh user dengan hak 
+akses direktur. Dalam pengujian user menginput 10 % k enaikan 
+seperti pada Gambar 9. 
+ 
+Gambar 9. Hitung Reorder Point 
+5. KESIMPULAN 
+Dari hasil perancangan dan pembuatan sistem informasi 
+administrasi multi cabang pada PT. HC, dapat diambil 
+kesimpulan antara lain: 
+ Semua fitur pada ruang lingkup telah diuji coba dan berhasil. 
+ Berdasar hasil kuisioner, 50% pengguna menilai tampilan 
+aplikasi baik, 50% pengguna menilai tampilan aplikasi sangat 
+baik, 50% pengguna menilai integrasi informasi baik, 50% 
+pengguna menilai  integrasi informasi sangat baik, 75% 
+pengguna menilai fitur sales order  baik, 25% pengguna 
+menilai fitur sales order sangat baik, 50% pengguna menilai 
+fitur purchase order  cukup, 50% pengguna menilai fitur 
+purchase order  baik, 25% pengguna menilai fitur invoice 
+cukup, 75% pengguna menilai fitur invoice baik, 75% 
+pengguna menilai fitur pengelolaan stok baik, 25% pengguna 
+menilai fitur pengelolaan stok sangat baik, 75% pengguna 
+menilai fitur remainder ROP, jatuh tempo baik, 25% 
+pengguna menilai fitur remainder ROP, jatuh tempo sangat 
+baik, 50% pengguna menilai fitur reorder point  baik, 50% 
+pengguna menilai fitur reorder point  sangat baik, 25% 
+pengguna menilai laporan yang dihasilkan baik, 75%
+
+=== HALAMAN 6 ===
+pengguna menilai laporan yang dihasilkan sangat baik, 25% 
+pengguna menilai kemudahan menggunakan aplikasi baik, 
+75% pengguna menilai kemudaha n menggunakan aplikasi 
+sangat baik, 50% pengguna menilai kesesuaian dengan 
+kebutuhan baik, 75% pengguna menilai kesesuaian dengan 
+kebutuhan sangat baik, 75% pengguna menilai keseluruhan 
+aplikasi baik dan 25% pengguna menilai keseluruhan aplikasi 
+sangat baik. 
+6. DAFTAR REFERENSI 
+[1] Castro, E., and Hyslop, B. 2013. Visual Quickstart Guide 
+HTML 5 and CSS 3. Peachpit Press, Berkeley, CA. 
+[2] Hutahean, J. 2015. Konsep Sistem Informasi . Deepublish, 
+Yogyakarta. 
+[3] Komputer, W. 2015. Pengembangan web dengan jquery. CV. 
+Andi Offset, Yogyakarta. 
+[4] Muslihudin, M. and Oktafianto. 2016. Analisis dan 
+Perancangan Sistem Informasi Menggunakan Model 
+Terstruktur dan UML. ANDI, Yogyakarta. 
+[5] Oktavian, D. P. 2010. Menjadi Programmer Jempolan 
+Menggunakan PHP. MediaKom, Yogyakarta. 
+[6] Inflowinventory. 2017. The reorder point formula and 
+calculating safety stock. URI = 
+https://www.inflowinventory.com/blog/reorder-point-
+formula-safety-stock/ 
+[7] Zaki, A. 2008. 36 Menit Belajar Komputer PHP dan MySQL. 
+PT. Elex Media Komputindo, Jakarta.
