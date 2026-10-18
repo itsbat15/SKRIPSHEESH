@@ -1,0 +1,1084 @@
+=== HALAMAN 1 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      216 
+Perancangan  Aplikasi Pe mbayaran SPP dan Penggajian Guru  Berbasis 
+Web Pada Bimbingan Belajar  
+ 
+Reagent Abadi1), Wasino2) ,Lina3) 
+1,2)Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Tarumanagara Jakarta 
+3)Program Studi Teknik Informasi, Fakultas Teknologi Informasi, Universitas Tarumanagara Jakarta 
+Email: reagent.825210001@stu.untar.ac.id1, wasino@fti.untar.ac.id2 , lina@fti.untar.ac.id3 
+  
+Submitted: 02-11-2024, Reviewed: 11-11-2024, Accepted 06-12-2024  
+https://doi.org/10.47233/jteksis.v7i1.1666  
+ 
+ 
+Abstract 
+Tutoring organizations have a history of financial management issues which can be attributed to errors in manual recording 
+and loss of data that consumes more time and effort during the verification and reporting. This project sets out to develop 
+an internet-based application that will define the efficiency of managing instructor payroll and student payments for tuition 
+fees. Focusing on the sequential design process, the application development follows a standardized and consistent Waterfall 
+SDLC template. The application was built using different programming tools including HTML, JavaScript, CSS, JQuery, 
+PHP and Bootstrap which collectively incorporate a dynamic UI. MySQL was also the main database that was integrated 
+within the application. The program acc ording to its objectives intended to ease the manual procedures advanced in the 
+earlier phases in payroll of the teachers and also unit fees and tuition payments recording increasing the efficiency in the 
+accuracy of the recording and naive errors associated with manual methods. 
+Keywords: Application; Website; SDLC; Financial Management; Tutoring Center. 
+ 
+Abstrak 
+Permasalahan dalam pengelolaan keuangan di bimbingan belajar sering kali muncul akibat pencatatan manual, yang rentan 
+terhadap kesalahan, kehilangan data, serta membutuhkan waktu dan tenaga lebih dalam proses pengecekan dan  pembuatan 
+pelaporan. Dalam penelitian ini bertujuan untuk  merancang aplikasi berbasis web untuk meningkatkan efisiensi pencatatan 
+pembayaran SPP siswa dan penggajian guru.  Metode pengembangan aplikasi mengikuti System Development Life Cycle  
+(SDLC) dengan pendekatan Waterfall, melalui tahapan -tahapan yang terstruktur dan sistematis. Aplikasi ini dibangun 
+menggunakan Bahasa program HTML, JavaScript, CSS, jQuery, PHP,  serta Bootstrap untuk antarmuka responsif, dengan 
+MySQL sebagai basis data utama . Hasil penelitian ini menunjukkan bahwa aplikasi yang di rancang berhasil 
+mengotomatiskan proses pencatatan pembayaran SPP dan penggajian  untuk guru , sehingga lebih efisien, akurat, dan  
+mengurangi risiko kesalahan yang sering terjadi dalam proses manual. 
+Keywords: Aplikasi; Website; SDLC; Management Keuangan; Bimbingan Belajar. 
+ 
+This work is licensed under Creative Commons Attribution License 4.0 CC-BY International license 
+ 
+ 
+PENDAHULUAN 
+Pengelolaan keuangan yang baik dan terstruktur 
+merupakan fondasi penting bagi keberlangsungan 
+operasional setiap organisasi, termasuk lembaga 
+pendidikan nonformal seperti bimbingan belajar [1]. 
+Manajemen keuangan yang efektif melalui aplikasi 
+merupakan penerapan dari sistem informasi yang 
+memastikan lembaga pendidikan dapat berjalan 
+secara efisien, mendukung pengambilan keputusan 
+yang tepat, serta memelihara transparansi terhadap 
+seluruh pemangku kepentingan, seperti guru, siswa, 
+dan orang tua. Dalam lembaga pendidikan, menjaga 
+kualitas sistem dan kualitas informasi sangatlah 
+penting, karena informasi yang kurang menarik, 
+kurang relevan, dan sulit dipahami akan 
+menurunkan kualitas informas i secara keseluruhan, 
+yang pada akhirnya dapat mengurangi tingkat 
+penggunaan aplikasi tersebut  [2]. Dalam lingkup 
+bimbingan belajar, pengelolaan keuangan yang 
+efisien sangat penting karena melibatkan banyak 
+transaksi rutin, seperti pembayaran SPP siswa dan 
+penggajian guru, yang harus dicatat dan dilaporkan 
+secara akurat dan tepat waktu.  Proses man ajemen 
+kas arus keuangan yang baik juga membantu dalam 
+hal pengambilan keputusan untuk analisis 
+operasional kedepannya [3]. 
+Meskipun sangat penting, masih banyak 
+lembaga bimbingan belajar  maupun banyak bisnis 
+lainnya yang bergantung pada metode pencatatan 
+manual dalam mengelola keuangannya  termasuk 
+pada s alah satu Bimbel di Jakarta yaitu Bimbel 
+Anugerah [4]. Proses manual ini mencakup 
+pencatatan pembayaran SPP siswa, penghitungan 
+gaji guru, hingga penyusunan laporan keuangan 
+yang dilakukan secara berkala. Penggunaan metode 
+manual sering kali menimbulkan sejumlah kendala, 
+seperti risiko kesalah an pencatatan, waktu 
+pemrosesan yang lambat, serta kesulitan dalam 
+mengakses informasi secara real -time [5]. Di 
+samping itu, peningkatan jumlah siswa dan guru 
+yang terjadi seiring berkembangnya lembaga turut 
+menambah kompleksitas dalam pengelolaan 
+keuangan, sehingga mempersulit penyajian 
+informasi yang akurat  dan transparan. 
+
+
+=== HALAMAN 2 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      217 
+Ketidakefisienan dalam sistem operasional suatu 
+lembaga, seperti lembaga pendidikan, dapat 
+mengganggu kelancaran aktivitas serta menghambat 
+pengambilan keputusan manajemen berbasis data. 
+Untuk mengatasi hal ini, penting untuk 
+mengembangkan model perencanaan yang 
+mempertimbangkan efisiensi sehingga 
+memungkinkan kelancaran dan efektivitas 
+proses[6]. 
+Sebagai lembaga pendidikan nonformal, 
+bimbingan belajar  memiliki kebutuhan spesifik 
+dalam hal pencatatan pembayaran SPP siswa dan 
+penggajian guru begitu pula dengan lembaga formal 
+[7]. Ketergantungan pada pencatatan manual yang 
+menggunakan kertas atau file spreadsheet membuat 
+proses ini rentan terhadap kelalaian manusia dan 
+membutuhkan waktu yang tidak efisien, terutama 
+dalam penyesuaian gaji guru berdasarkan kehadiran  
+Selain itu, pelaporan pembayaran SPP siswa sering 
+kali mengalami kendala karena prosesnya yang 
+tidak terintegrasi dengan baik, sehingga sulit bagi 
+orang tua maupun siswa untuk memantau status 
+pembayaran mereka. 
+Di er a digital saat ini, penggunaan teknologi 
+untuk mengotomatisasi proses administrasi 
+keuangan menjadi solusi yang sangat diperlukan, 
+terutama bagi lembaga pendidikan yang ingin 
+meningkatkan efisiensi dan akurasi pengelolaan 
+keuangan [8]. Pengembangan sistem berba sis web 
+untuk pembayaran dan penggajian di bimbingan 
+belajar memungkinkan penyimpanan data yang 
+lebih terstruktur dan tersentralisasi. Sistem ini 
+mampu mengurangi risiko kesalahan pencatatan 
+serta mempercepat proses administrasi dan akses 
+informasi real -time. Dalam hal ini, teknologi web 
+dapat menyediakan akses mudah bagi seluruh 
+pengguna sistem, termasuk admin, pemilik lembaga, 
+guru, siswa, dan orang tua, sehingga meningkatkan 
+efisiensi operasional dan transparansi dalam 
+pengelolaan keuangan  seperti halnya  dalam 
+transparasi dalam pengelolaan operasional dalam 
+hal pelayanan jasa [9]. 
+Penelitian ini bertujuan untuk merancang dan 
+mengembangkan aplikasi berbasis web yang 
+mendukung proses pembayaran SPP siswa dan 
+penggajian guru pada bimbingan belajar. Sistem ini 
+dirancang menggunakan bahasa pemrograman 
+HTML, CSS, dan JavaScript untuk tampilan 
+antarmuka, dengan jQuery yang digunakan untuk 
+interaksi dinamis pada halaman  [10]. Dalam back-
+end, PHP dipilih sebagai bahasa pemrograman 
+untuk memproses permintaan dan menjalankan 
+logika aplikasi. Untuk penyimpanan data, basis data 
+MySQL digunakan sebagai sistem manajemen basis 
+data yang terintegrasi  karena baik da lam 
+pengunaannya [11], MySQL memungkinkan 
+pengelolaan data siswa, guru, pembayaran, dan 
+penggajian secara efisien. Framework Bootstrap 
+juga diterapkan untuk mendukung antarmuka yang 
+responsif, sehingga aplikasi dapat diakses dengan 
+nyaman di berbagai perangkat. 
+Dengan penerapan aplikasi ini, diharapkan 
+bimbingan belajar dapat mencapai efisiensi yang 
+lebih tinggi dalam pengelolaan keuangan, 
+mengurangi pot ensi kesalahan akibat faktor 
+manusia, serta menyediakan akses informasi yang 
+transparan dan akurat bagi seluruh pengguna. 
+Aplikasi ini akan mendukung otomatisasi 
+pencatatan pembayaran SPP siswa, penghitungan 
+gaji guru, serta penyusunan laporan keuangan secara 
+cepat dan tepat. Pengembangan sistem ini bertujuan 
+untuk meningkatkan efisiensi dalam proses 
+administrasi keuangan, memberikan kemudahan 
+akses bagi pengguna, dan mendukung pengambilan 
+keputusan berbasis data yang akurat di tingkat 
+manajemen. 
+Pada penel itian ini dibahas  perancangan 
+aplikasi berbasis web yang secara khusus 
+dioptimalkan untuk kebutuhan bimbingan belajar 
+dalam pencatatan pembayaran SPP dan penggajian 
+guru, yang jarang menjadi fokus dalam penelitian 
+terdahulu. Sistem ini tidak hanya mengotom atisasi 
+pencatatan dan pelaporan keuangan, tetapi juga 
+memiliki fitur penyesuaian gaji berdasarkan 
+kehadiran guru, serta pelaporan yang dapat diakses 
+secara real -time oleh seluruh pemangku 
+kepentingan, termasuk orang tua siswa.  
+ 
+METODE PENELITIAN 
+2.1 Jenis dan Sumber Data 
+A. Data Primer 
+Data primer adalah informasi yang diperoleh 
+langsung dari sumber asal dan belum mengalami 
+pengolahan atau kompilas i [12]. Data ini tidak 
+tersedia dalam format file yang sudah ada  [13]. 
+Untuk mengumpulkan data primer, pen ulis perlu 
+melakukan pencarian melalui sumber atau 
+responden yang menjadi fokus penelitian dan 
+memberikan informasi. Dalam penelitian ini, data 
+primer akan dikumpulkan melalui wawancara 
+langsung dengan informan, termasuk pem ilik dan 
+guru di Bimbel Anugerah, untuk mengidentifikasi 
+masalah spesifik yang terkait dengan pengelolaan 
+keuangan. Hasil wawancara dengan pemiliki 
+Bimbel Anugerah  menunjukkan bahwa sering 
+terjadi kesalahan dalam  entri data manual, yang 
+memerlukan waktu ta mbahan untuk perbaikan. 
+Selain itu, pemilik bimbel mengungkapkan bahwa 
+terkadang perhitungan yang dicatat hilang, 
+menyebabkan kesalahan dalam penghitungan. 
+Wawancara juga mengungkapkan bahwa siswa 
+sering mengeluhkan keterlambatan dalam menerima 
+informasi p embayaran spp, yang mengakibatkan 
+kebingungan dan ketidaknyamanan. Di sisi lain, 
+para guru juga sering mengeluhkan adanya 
+kesalahan dalam perhitungan gaji mereka.  
+
+=== HALAMAN 3 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      218 
+ Dengan mengumpulkan data empiris ini, 
+penelitian ini dapat memberikan pemahaman yang 
+lebih m endalam tentang urgensi implementasi 
+aplikasi berbasis web di Bimbel Anugerah. Studi 
+kasus ini mendukung argumen bahwa solusi 
+teknologi dapat secara signifikan meningkatkan 
+efisiensi, akurasi, dan transparansi dalam 
+pengelolaan keuangan di bimbel. 
+B. Data Sekunder 
+ Data sekunder adalah data yang diperoleh 
+secara tidak langsung melalui pihak lain yang 
+relevan dengan objek penelitian  [14]. Data ini 
+biasanya dikumpulkan dari berbagai sumber yang 
+telah tersedia, seperti artikel jurnal, situs web, buku, 
+laporan, atau publikasi lainnya yang mengangkat 
+topik serupa dengan penelitian ini. Data sekunder 
+seringkali digunakan untuk melengkapi data primer 
+dan memberikan konteks yang lebih luas terhadap 
+permasalahan yang sedang diteliti. Dengan merujuk 
+pada informasi dari sumber -sumber tersebut, 
+peneliti dapat memperoleh pandangan atau hasil dari 
+penelitian terdahulu yang mendukung dan 
+memperkaya analisis. Dalam penelitian ini, data 
+sekunder yang dikumpulkan akan membantu 
+memberikan perspektif tambahan serta memperkuat 
+pemahaman mengenai aspek -aspek utama yang 
+terkait dengan topik pengelolaan keuangan bimbel, 
+serta memungkinkan perbandingan antara temuan 
+studi ini dengan penelitian serupa yang telah 
+dilakukan sebelumnya. 
+ 
+2.2 Metode Pengumpulan Data 
+A. Observasi 
+ Metode pengumpulan data melalui 
+observasi langsung di lokasi penelitian merupakan 
+dasar yang penting dalam berbagai disiplin ilmu  
+[15]. Observasi ini memainkan peran krusial, karena 
+hanya dengan mengamati fakta -fakta nyata di 
+lapangan, seorang peneliti dapat mengumpulkan 
+data yang akurat untuk men dukung penelitian 
+mereka. Melalui proses observasi, peneliti mampu 
+menangkap berbagai detail yang mungkin tidak 
+teridentifikasi melalui metode lain, seperti 
+wawancara atau survei. Observasi langsung 
+memungkinkan pengumpulan data yang faktual dan 
+berbasis r ealitas, yang kemudian dapat dianalisis 
+untuk memberikan wawasan lebih mendalam 
+terhadap objek studi. Dengan demikian, data hasil 
+observasi sering kali menjadi landasan bagi 
+pengembangan teori, penjelasan ilmiah, dan 
+pemecahan masalah yang objektif, sehing ga hasil 
+penelitian tidak hanya bersifat teoritis, tetapi juga 
+didasarkan pada bukti konkret yang dapat 
+diverifikasi. 
+B. Wawancara 
+ Wawancara adalah metode pengumpulan 
+data di mana peneliti berinteraksi langsung dengan 
+responden melalui sesi tanya jawab, biasanya dalam 
+pertemuan tatap muka [16]. Tujuan dari wawancara 
+adalah untuk mendapatkan informasi yang 
+mendalam dari individu yang terlibat langsung atau 
+memiliki pengetahuan tent ang topik yang sedang 
+diteliti. Dalam wawancara terstruktur, peneliti telah 
+menetapkan tujuan yang jelas terkait informasi 
+spesifik yang ingin digali dari narasumber. Untuk 
+mendukung hal ini, peneliti menyusun daftar 
+pertanyaan secara sistematis, yang dira ncang untuk 
+mengeksplorasi aspek-aspek penting dari penelitian. 
+Daftar pertanyaan tersebut menjadi panduan agar 
+wawancara tetap fokus dan sesuai dengan tujuan 
+penelitian, sekaligus memastikan bahwa semua 
+topik yang relevan dapat tercakup dengan baik. 
+Dengan teknik ini, wawancara terstruktur 
+memungkinkan pengumpulan data yang lebih 
+terarah dan mendalam, serta memungkinkan peneliti 
+menggali pandangan, pemahaman, dan pengalaman 
+narasumber secara komprehensif. 
+ 
+2.3 Metode Pengembangan Aplikasi 
+ Pengembangan apl ikasi Dashboard 
+manajemen keuangan di Bimbel Anugerah 
+menggunakan metode Waterfall sebagai pendekatan 
+utama. Waterfall adalah model pengembangan 
+perangkat lunak yang banyak diterapkan dalam 
+Systems Development Life Cycle (SDLC) dan 
+mengikuti alur linier serta berurutan, di mana setiap 
+tahap harus diselesaikan secara menyeluruh sebelum 
+melanjutkan ke tahap berikutnya. Pendekatan 
+bertahap ini memberikan kerangka kerja yang jelas 
+dan tertata, mulai dari analisis kebutuhan, desain 
+sistem, implementasi, pengujia n, hingga 
+pemeliharaan. Dengan struktur yang teratur, metode 
+Waterfall sangat sesuai untuk proyek -proyek yang 
+membutuhkan perencanaan yang cermat dan 
+dokumentasi yang lengkap pada setiap tahapnya, 
+sehingga meminimalkan potensi kesalahan dan 
+perubahan mendadak di kemudian hari. Pendekatan 
+ini memastikan setiap aspek dari pengembangan 
+aplikasi diperiksa secara mendalam, menjadikannya 
+ideal bagi proyek yang memiliki kebutuhan yang 
+stabil dan spesifik. 
+ 
+ 
+Gambar 1 Tahapan Metode Waterfall [17] 
+Tahapan dalam metode  Waterfall : 
+
+
+=== HALAMAN 4 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      219 
+1. Requirement 
+ Pada fase ini, penulis melakukan 
+wawancara mendalam dengan pemilik Bimbel 
+Anugerah, yaitu Pak Andie, unt uk menggali 
+kebutuhan dan harapan secara rinci terkait aplikasi 
+yang akan dikembangkan. Tujuan dari wawancara 
+ini adalah untuk memahami fitur-fitur spesifik yang 
+diinginkan oleh pengguna serta mengidentifikasi 
+bagaimana aplikasi ini dapat membantu mencapai  
+tujuan utama pengelolaan keuangan bimbel secara 
+lebih efektif. Selain wawancara, penulis juga 
+mengadakan survei untuk mengumpulkan data 
+terkait perangkat lunak dan teknologi yang 
+diperlukan. Survei ini bertujuan untuk memastikan 
+aplikasi dapat berjalan de ngan optimal berdasarkan 
+kebutuhan teknis yang telah ditentukan, termasuk 
+kompatibilitas perangkat keras dan perangkat lunak 
+yang ada. Dengan kombinasi wawancara dan survei 
+ini, diharapkan pengembangan aplikasi dapat benar-
+benar sesuai dengan kebutuhan pen gguna dan 
+memberikan solusi yang efektif dan efisien dalam 
+pengelolaan keuangan Bimbel Anugerah. 
+2. Design 
+ Setelah tahap Requirement, penulis 
+melanjutkan ke tahap Design untuk merancang 
+struktur aplikasi secara detail. Pada tahap ini, 
+perancangan dilakukan m enggunakan Unified 
+Modeling Language (UML), yang membantu 
+menggambarkan sistem aplikasi secara visual dan 
+terstruktur. UML digunakan untuk membuat 
+berbagai Diagram, seperti Use Case Diagram untuk 
+menunjukkan interaksi pengguna dengan sistem, 
+Entity Relatio nship Diagram (ERD) untuk 
+memodelkan struktur data dan hubungan antar kelas, 
+serta Sequence Diagram untuk menggambarkan alur 
+proses dalam sistem. Dengan pendekatan ini, setiap 
+aspek dari aplikasi dapat didokumentasikan dengan 
+jelas, sehingga memudahkan tim  pengembang 
+dalam memahami alur kerja, fungsi utama, dan 
+kebutuhan teknis yang telah direncanakan. Tahap 
+Design ini berperan penting dalam memastikan 
+bahwa aplikasi memiliki fondasi yang kuat dan siap 
+untuk tahap pengembangan berikutnya.  
+3. Implementation 
+ Pada tahap Implementation, penulis 
+mengubah desain yang telah direncanakan menjadi 
+kode program sesuai dengan spesifikasi rancangan 
+sebelumnya. Bahasa pemrograman yang digunakan 
+mencakup HTML dan CSS untuk membangun 
+tampilan antarmuka, PHP untuk logika back end, 
+serta JavaScript dan JQuery untuk meningkatkan 
+interaktivitas dan responsivitas aplikasi. Selain itu, 
+Framework Bootstrap 5 digunakan untuk 
+mempercepat proses pembuatan antarmuka yang 
+responsif dan konsisten di berbagai perangkat. 
+Untuk pengelolaan  basis data, MySQL dipilih 
+sebagai platform utama, yang memungkinkan 
+penyimpanan dan pengelolaan data dengan cepat 
+dan aman. Implementasi ini bertujuan untuk 
+merealisasikan semua fitur yang telah direncanakan 
+dan memastikan aplikasi dapat berfungsi sesuai 
+dengan kebutuhan pengguna. 
+4. Verification 
+ Di tahap Verification, penulis melakukan 
+memastikan dan melakukan pengujian sistem 
+aplikasi dari berbagai jenis pengujian. Pengujian 
+meliputi unit Testing untuk bagian tertentu dari 
+kode, sistem Testing untuk menguj i fungsi sistem 
+secara keseluruhan, dan User  Acceptance Testing 
+(UAT) untuk mendapatkan umpan balik langsung 
+dari pengguna terkait kesesuaian perangkat lunak. 
+Tujuan tahap ini adalah memastikan sistem siap 
+digunakan tanpa masalah signifikan dan semua fitur 
+berfungsi sebagaimana mestinya. 
+5. Maintenance 
+  Pada tahap Maintenance, penulis 
+melakukan pemeliharaan perangkat lunak secara 
+berkelanjutan untuk menangani berbagai perubahan 
+atau perbaikan yang mungkin diperlukan seiring 
+waktu. Tahap ini bertujuan memasti kan aplikasi 
+tetap berjalan secara optimal dan terus memenuhi 
+kebutuhan pengguna. Proses pemeliharaan 
+mencakup perbaikan bug atau kesalahan yang 
+mungkin tidak terdeteksi selama tahap pengujian, 
+serta penyesuaian pada kode untuk meningkatkan 
+kinerja atau me nambahkan fitur baru sesuai 
+permintaan pengguna. Selain itu, maintenance juga 
+melibatkan pembaruan berkala guna memastikan 
+kompatibilitas dengan teknologi terbaru, sehingga 
+perangkat lunak tetap aman, responsif, dan layak 
+digunakan dalam jangka panjang. 
+ 
+HASIL DAN PEMBAHASAN 
+3.1 Perancangan Proses 
+A. Use Case Diagram 
+Use Case Diagram adalah salah satu jenis Diagram 
+dalam model Unified Modeling Language (UML) 
+yang menggambarkan aspek fungsional sistem dari 
+sudut pandang interaksi antara pengguna dan sistem 
+[18] . Diagram ini menunjukkan bagaimana 
+pengguna atau aktor berinteraksi dengan sistem 
+melalui berbagai Use Case  atau skenario 
+penggunaan yang tersedia. Setiap Use Case  
+mewakili fungsi atau layanan yang disediakan ol eh 
+sistem untuk memenuhi kebutuhan pengguna.  
+ 
+
+
+=== HALAMAN 5 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      220 
+Gambar 2 Use Case Diagram 
+B. Activity Diagram 
+Activity Diagram adalah salah satu jenis 
+Diagram dalam Unified Modeling Language (UML) 
+yang digunakan untuk memodelkan alur kerja atau 
+rangkaian aktivitas dalam suatu sistem  [19]. 
+Diagram ini menekan kan pada urutan langkah -
+langkah atau aktivitas yang terjadi dalam proses 
+tertentu, menggambarkan bagaimana aktivitas 
+tersebut saling terhubung dan berinteraksi satu sama 
+lain.  Dalam Activity Diagram, setiap aktivitas 
+diwakili oleh simbol yang menunjukkan tindakan 
+atau proses yang sedang berlangsung, sementara 
+alur atau transisi antar aktivitas ditunjukkan dengan 
+panah. Diagram ini sangat berguna untuk 
+menggambarkan proses yang kompleks, karena 
+dapat memberikan visualisasi yang jelas tentang 
+bagaimana alur kerja berkembang dari satu tahap ke 
+tahap lainnya. Selain itu, Activity Diagram juga 
+dapat mencakup kondisi pengambilan keputusan 
+dan jalur alternatif yang mungkin diambil, sehingga 
+memberikan pemahaman yang lebih baik tentang 
+dinamika sistem dan bagaimana  pengguna atau 
+aktor berinteraksi dengan berbagai aktivitas dalam 
+proses yang ditentukan. 
+ 
+Gambar 3 Activity Diagram Menambah Data 
+Pembayaran SPP 
+C. Sequence Diagram 
+Sequence Diagram adalah salah satu jenis 
+Diagram dalam Unified Modeling Language (UML) 
+yang menggambarkan interaksi antara beberapa 
+objek dalam suatu sistem melalui pertukaran pesan 
+yang terjadi secara teratur dan diurutkan 
+berdasarkan waktu  [20]. Diagram ini fokus pada 
+urutan komunikasi antara objek dalam kon teks 
+tertentu, menunjukkan bagaimana objek 
+berkolaborasi untuk menyelesaikan tugas atau 
+mencapai tujuan tertentu.  Dalam Sequence 
+Diagram, setiap objek direpresentasikan sebagai 
+kolom vertikal, dan pesan yang dikirim antar objek 
+ditunjukkan dengan garis hor izontal yang 
+menghubungkan kolom -kolom tersebut. Urutan 
+pesan yang dikirim ditampilkan dari atas ke bawah, 
+menciptakan alur waktu yang jelas. Dengan cara ini, 
+Sequence Diagram memberikan pemahaman yang 
+lebih mendalam tentang bagaimana suatu proses 
+atau ske nario tertentu dilaksanakan, serta cara 
+objek-objek dalam sistem berinteraksi satu sama 
+lain untuk mencapai hasil yang diinginkan. Diagram 
+ini sangat berguna dalam memodelkan skenario 
+yang kompleks, seperti transaksi, alur kerja, atau 
+interaksi pengguna, k arena menampilkan urutan 
+komunikasi yang terjadi di antara objek -objek 
+tersebut. Dengan informasi yang jelas mengenai 
+urutan dan jenis pesan yang dikirim, pengembang 
+dapat lebih mudah merancang dan 
+mengimplementasikan sistem yang efektif. 
+Sequence Diagram juga membantu dalam 
+mengidentifikasi potensi masalah dalam alur 
+komunikasi, sehingga memungkinkan pengembang 
+untuk melakukan penyesuaian yang diperlukan 
+sebelum tahap pengembangan berlanjut. Dengan 
+demikian, Diagram ini berperan penting dalam 
+memfasilitasi pengembangan perangkat lunak yang 
+lebih terstruktur dan responsif terhadap kebutuhan 
+pengguna. 
+ 
+ 
+ 
+Gambar 4 Sequence Diagram Menambah Data 
+Penggajian 
+ 
+3.2 Perancangan Basis Data 
+ Entity Relationship Diagram (ERD) adalah 
+sebuah Diagram yang digunakan untuk 
+memvisualisasikan hubungan antara tabel -tabel 
+dalam suatu sistem basis data  [21]. ERD 
+menggambarkan bagaimana tabel -tabel tersebut 
+saling berinteraksi, mengikuti aturan kardinalitas 
+serta batasan-batasan tertentu yang dikenal dengan 
+sebutan constraint. Setiap entitas dalam ERD 
+dilengkapi dengan sejumlah atribut yang 
+menjelaskan karakteristik entitas tersebut. Di antara 
+atribut-atribut ini, terdapat atribu t kunci yang 
+bersifat unik, yang dikenal sebagai Primary Key. 
+Atribut ini berfungsi untuk mengidentifikasi setiap 
+record dalam tabel secara individual. Selain itu, 
+
+
+=== HALAMAN 6 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      221 
+Primary Key dapat digunakan sebagai Foreign Key 
+dalam tabel lain untuk membangun relasi anta r 
+entitas.  Dengan menggunakan Entity Relationship  
+Diagram (ERD), pengembang dapat merancang 
+struktur basis data yang lebih terorganisir dan 
+konsisten, yang pada gilirannya memudahkan dalam 
+pengelolaan data serta memastikan integritas data 
+tetap terjaga. Diagram ini memainkan peran yang 
+sangat penting dalam tahap perancangan sistem, 
+karena memberikan panduan visual yang jelas 
+mengenai cara data akan disimpan, dihubungkan, 
+dan dikelola dalam basis data yang sedang 
+dikembangkan. ERD tidak hanya membantu 
+pengembang dalam merencanakan struktur tabel dan 
+relasinya, tetapi juga memfasilitasi komunikasi yang 
+lebih baik di antara anggota tim proyek.  
+ 
+Gambar 5 Entity Relationship Diagram  
+ 
+3.3 Tampilan Aplikasi  
+A. Halaman Login 
+ 
+Gambar 6 Tampilan Halaman Login 
+ Untuk mengakses sistem, pengunjung 
+diwajibkan untuk melakukan proses login di 
+halaman login. Pada tahap ini, pengunjung harus 
+memasukkan Username dan Password yang telah 
+dibuat sebelumnya. Setelah data terse but 
+dimasukkan, sistem akan memverifikasi keabsahan 
+informasi yang diberikan. Jika kombinasi Username 
+dan Password yang dimasukkan sesuai dengan data 
+yang terdaftar, pengunjung akan diberikan akses 
+sesuai dengan peran (role) masing -masing dalam 
+sistem. Proses ini penting untuk memastikan bahwa 
+hanya pengguna yang terotorisasi yang dapat 
+mengakses informasi dan fitur yang sesuai dengan 
+hak akses mereka, menjaga keamanan dan integritas 
+data dalam sistem. 
+B. Halaman Website Info Pembayaran SPP 
+ 
+Gambar 7 Tampilan Halaman Website Info Pembayaran 
+SPP 
+ Pada halaman ini, siswa dapat mengakses 
+dan melihat informasi terkait pembayaran SPP yang 
+telah mereka lakukan sebelumnya. Tampilan ini 
+menyajikan detail lengkap mengenai transaksi 
+pembayaran, termasuk tanggal pembayaran, jumlah 
+yang dibayarkan. Dengan adanya informasi ini, 
+siswa dapat memantau riwayat pembayaran mereka 
+dengan lebih mudah, memastikan bahwa semua 
+kewajiban mereka telah terpenuhi, dan mengurangi 
+kemungkinan terjadinya kesalahan  atau 
+kebingungan terkait pembayaran SPP. Halaman ini 
+dirancang untuk memberikan transparansi dan 
+kemudahan akses informasi bagi siswa, sehingga 
+mereka dapat mengelola kewajiban keuangan 
+mereka dengan lebih baik.  
+C. Halaman Website Info Penggajian Guru 
+ 
+Gambar 8 Tampilan Website Info Penggajian Guru 
+ Pada halaman ini, guru dapat mengakses 
+dan melihat informasi terkait penggajian yang telah 
+mereka terima sebelumnya. Tampilan ini 
+menyajikan rincian lengkap mengenai gaji, 
+termasuk jumlah gaji yang diterima, periode 
+penggajian, serta potongan dan bonus yang mungkin 
+berlaku. Dengan adanya informasi ini, guru dapat 
+memantau riwayat penggajian mereka dengan lebih 
+mudah dan memastikan bahwa semua perhitungan 
+gaji telah dilakukan dengan b enar. Halaman ini 
+dirancang untuk memberikan transparansi dalam 
+pengelolaan keuangan bagi guru, sehingga mereka 
+
+
+=== HALAMAN 7 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      222 
+dapat mengelola dan memahami kondisi keuangan 
+mereka dengan lebih baik. 
+D. Halaman Dashboard Pembayaran SPP 
+ 
+Gambar 9 Tampilan Dashboard Pembayaran SPP 
+ Pada halaman tampilan awal dari menu 
+Pembayaran SPP, akan ditampilkan sebuah tabel 
+yang berisi informasi penting mengenai siswa. Tabel 
+ini mencakup kolom-kolom seperti IDSiswa, Nama 
+Siswa, Kelas yang diikuti, serta status  pembayaran 
+untuk setiap bulan.  Setiap bulan pembayaran akan 
+ditandai dengan simbol yang jelas: jika bulan 
+tersebut ditandai dengan centang, itu berarti siswa 
+telah melakukan pembayaran untuk bulan tersebut; 
+sedangkan jika ditandai dengan silang, itu 
+menandakan bahwa siswa belum melakukan 
+pembayaran pada bulan itu. Dengan tampilan ini, 
+siswa dan pihak yang berwenang dapat dengan 
+mudah memantau status pembayaran SPP secara 
+keseluruhan, sehingga memudahkan dalam 
+pengelolaan keuangan dan memastikan tidak ada 
+kewajiban yang terlewat. Desain tabel ini bertujuan 
+untuk memberikan kemudahan akses dan 
+pemahaman yang cepat mengenai informasi 
+pembayaran siswa. 
+ 
+E. Halaman Dashboard Kehadiran Guru 
+ 
+Gambar 10 Tampilan Dashboard Kehadiran Guru 
+ Pada halaman ini, admin atau pemilik dapat 
+mengisi data kehadiran guru yang sedang izin serta 
+informasi mengenai guru pengganti yang bertugas 
+menggantikan mereka. Proses ini memiliki dampak 
+langsung terhadap gaji dari guru-guru tersebut. Guru 
+yang mengambil izin akan dikenakan potongan gaji, 
+sedangkan guru pengganti akan mendapatkan bonus 
+sebagai imbalan atas tugas tambahan yang mereka 
+jalankan. Halaman ini dirancang untuk 
+memudahkan pengelolaan kehadiran dan 
+penghitungan gaji secara otomatis, sehingga 
+memastikan bahwa semua potongan dan bonus 
+dihitung dengan akurat. Dengan fitur ini, admin 
+dapat dengan cepat dan efisien mengelola absensi 
+guru, serta menjaga transparansi dan keadilan dalam 
+sistem penggajian yang diterapkan. 
+F. Halaman Dashboard Penggajian Guru 
+ 
+Gambar 11 Tampilan Dashboard Penggajian Guru 
+ Pada halaman ini, pemilik Bimbel 
+Anugerah akan mengisi informasi terkait penggajian 
+secara langsung. Halaman ini menyajikan berbagai 
+informasi penting, termasuk nominal gaji, pajak 
+yang harus dibayarkan, potongan yang berlaku, 
+bonus yang diterima, dan total gaji bersih yang akan 
+diterima oleh guru.  Sistem aplikasi secara otomatis 
+mengisi kolom-kolom ini berdasarkan catatan data 
+yang telah ada, sehingga pemilik dapat dengan 
+mudah melihat dan memverifikasi informasi 
+keuangan yang relevan tanpa perlu menghitung 
+manual. Dengan adanya fitur otomatisasi ini, proses 
+penggajian menjadi lebih efisien, akurat, dan 
+transparan, memungkinkan pemilik untuk fokus 
+pada aspek lain dalam pengelolaan bimbel. Halaman 
+ini dirancang untuk memberikan kemudahan dan 
+memastikan bahwa semua detail penggajian tercatat 
+dengan tepat. 
+G. Halaman Dashboard Laporan Pembayaran SPP 
+ 
+Gambar 12 Tampilan Dashboard Laporan Pembayaran 
+SPP 
+ Pada menu ini, pengguna dapat mengakses 
+laporan terkait pembayaran SPP secara keseluruhan 
+maupun berdasarkan bulan tertentu yang dipilih. 
+Halaman ini menyajikan data pembayaran dengan 
+format yang jelas dan mudah dipahami, 
+memungkinkan aktor untuk dengan cepa t melihat 
+informasi mengenai pembayaran yang telah 
+diterima. Selain itu, aktor memiliki opsi untuk 
+mengunduh laporan yang tersedia dalam berbagai 
+format, seperti PDF atau langsung dicetak. Fitur 
+unduh ini memberikan kemudahan bagi pengguna 
+untuk menyimpan dan membagikan data 
+pembayaran kepada pihak -pihak terkait, atau 
+
+
+=== HALAMAN 8 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      223 
+melakukan analisis lebih lanjut. Dengan demikian, 
+menu ini dirancang untuk memberikan transparansi 
+dalam pengelolaan pembayaran SPP, serta 
+memfasilitasi pengguna dalam memonitor dan 
+mengevaluasi informasi pembayaran yang telah 
+diterima. 
+H. Halaman Dashboard Laporan Penggajian Guru  
+ 
+Gambar 13 Tampilan Dashboard Laporan Penggajian 
+Guru 
+ Pada menu ini, pengguna dapat mengakses 
+dan melihat laporan terkait penggajian secar a 
+keseluruhan maupun berdasarkan bulan tertentu 
+yang dipilih untuk analisis lebih mendetail. Halaman 
+ini menyediakan tampilan laporan yang jelas dan 
+terstruktur, memudahkan aktor untuk memahami 
+data penggajian yang relevan. Selain itu, aktor juga 
+memiliki opsi untuk mengunduh laporan yang 
+tersedia dalam format yang mudah diakses, seperti 
+PDF atau dapat langsung dicetak. Fitur unduh ini 
+memberikan kemudahan bagi pengguna untuk 
+menyimpan, membagikan, atau melakukan analisis 
+lebih lanjut terhadap data penggaji an. Dengan 
+demikian, menu ini dirancang untuk memberikan 
+transparansi dan kemudahan dalam pengelolaan 
+informasi penggajian, serta mendukung kebutuhan 
+pengguna dalam melakukan monitoring dan 
+evaluasi terhadap sistem penggajian yang 
+diterapkan. 
+ 
+3.4 Pengujian Sistem 
+ Setelah aplikasi selesai dikembangkan dan 
+memasuki tahap implementasi, langkah selanjutnya 
+adalah melaksanakan tahapan pengujian (Testing). 
+Pada tahap ini, proses pengujian akan dibagi 
+menjadi dua bagian utama. 
+A. Black Box Testing 
+ Black Box Testing adalah metode 
+pengujian yang menitikberatkan pada fungsionalitas 
+aplikasi tanpa mempertimbangkan bagaimana 
+sistem bekerja di dalamnya. Dalam pendekatan ini, 
+pengujian dilakukan dengan cara mengevaluasi 
+berbagai fitur dan fungsi aplikasi untuk memastikan 
+bahwa semua proses beroperasi sesuai dengan 
+spesifikasi yang telah ditetapkan.  Pada saat 
+melakukan pengujian, penguji hanya memberikan 
+input ke sistem dan kemudian memeriksa output 
+yang dihasilkan untuk memastikan bahwa hasilnya 
+sesuai dengan ekspek tasi. Metode ini tidak 
+memerlukan pengetahuan tentang kode sumber atau 
+algoritma yang digunakan di balik layar, sehingga 
+memungkinkan penguji untuk fokus pada 
+pengalaman pengguna dan fungsionalitas aplikasi 
+secara keseluruhan. Dengan demikian, Black Box 
+Testing menjadi alat yang efektif untuk 
+mengevaluasi bagaimana aplikasi berfungsi dalam 
+situasi nyata, serta memastikan bahwa semua 
+kebutuhan dan harapan pengguna terpenuhi. 
+ 
+ 
+Gambar 14 Bagian Black Box Testing Role Owner 
+(Sumber : Dokumentasi Pribadi)  
+
+
+=== HALAMAN 9 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      224 
+ 
+Gambar 15 Bagian Black Box Testing Role Admin 
+(Sumber : Dokumentasi Pribadi) 
+B. User Acceptance Testing 
+ User Acceptance Testing (UAT) adalah 
+tahapan pengujian di mana pengguna akhir (end 
+user) atau pihak  yang terlibat langsung dengan 
+penggunaan aplikasi melakukan evaluasi 
+berdasarkan skenario penggunaan sehari -hari. 
+Tujuan dari pengujian ini adalah untuk memastikan 
+apakah aplikasi telah memenuhi kebutuhan dan 
+harapan pengguna dari berbagai aspek, termasuk  
+kemudahan penggunaan (usability), kinerja, serta 
+kemampuan aplikasi dalam menjalankan tugas -
+tugas yang dibutuhkan oleh pengguna. UAT sangat 
+krusial karena berfungsi sebagai validasi akhir 
+sebelum aplikasi diimplementasikan di lingkungan 
+produksi. Melalui proses ini, pengguna dapat 
+memberikan umpan balik langsung mengenai 
+pengalaman mereka dengan aplikasi, sehingga tim 
+pengembang dapat melakukan perbaikan jika 
+diperlukan. Dengan memastikan bahwa aplikasi 
+tidak hanya berfungsi secara teknis, tetapi juga 
+memenuhi ekspektasi dan kebutuhan pengguna, 
+UAT membantu mengurangi risiko masalah yang 
+mungkin muncul setelah peluncuran, sekaligus 
+meningkatkan kepuasan pengguna terhadap aplikasi 
+yang dikembangkan. 
+ 
+ 
+Gambar 16 UAT Interface and Usability Role Siswa 
+(Sumber : Dokementasi Pribadi) 
+ 
+ 
+Gambar 17 UAT Interface and Usability Role Guru 
+(Sumber : Dokementasi Pribadi) 
+ 
+SIMPULAN 
+Aplikasi Pembayaran SPP dan Penggajian Guru 
+Berbasis Web pada bimbin gan belajar ini 
+memberikan berbagai kemudahan dan efisiensi 
+dalam pengelolaan keuangan, dengan beberapa 
+manfaat utama. Pertama, aplikasi ini mempermudah 
+siswa dalam memantau riwayat pembayaran SPP 
+dan data kelas, sehingga informasi dapat diakses 
+dengan leb ih mudah dan transparan. Selain itu, 
+aplikasi ini memudahkan guru dalam melihat data 
+penggajian dan informasi kelas, yang membuat 
+proses penyampaian informasi gaji menjadi lebih 
+jelas dan transparan.  Aplikasi ini juga mendukung 
+pengelolaan data keuangan d an bimbingan belajar 
+secara terstruktur dan efisien, membantu pemilik 
+bimbingan belajar (Owner) dalam pembuatan 
+laporan keuangan dan pelaporan data terkait, 
+sehingga meningkatkan akurasi dan efisiensi 
+
+
+=== HALAMAN 10 ===
+Jurnal Teknologi Dan Sistem Informasi Bisnis  
+Vol. 7 No. 1 Januari 2025 Hal. 216-225 
+http://jurnal.unidha.ac.id/index.php/jteksis 
+ 
+ 
+ 
+E-ISSN : 2655-8238 
+P-ISSN : 2964-2132 
+ 
+ 
+ 
+ 
+    
+ 
+   
+ 
+Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      225 
+administrasi. Secara keseluruhan, aplikasi ini 
+meningkatkan efisiensi manajemen keuangan serta 
+mengurangi potensi kesalahan manusia dalam 
+pencatatan dan pelaporan keuangan di bimbingan 
+belajar. 
+ 
+UCAPAN TERIMAKASIH 
+Penulis mengucapkan terima kasih kepada  
+para dosen yang telah membimbing dan 
+mengarahkan penulis dalam hal pembuatan 
+manuskrip ini. Penulis juga mengucapkan terima 
+kasih kepada Pak Andie selaku pemilik Bimbel 
+Anugerah yang telah bersedia memberikan izin 
+dalam penelitian ini. 
+DAFTAR PUSTAKA 
+[1] R. Iskandar and M. Sinurat, “Enhancing The Quality Of 
+Non-Formal Education : A Study On Performance 
+Management At PKBM Imam Syafe ’ i In Bandung 
+Regency ),” vol. 13, no. 03, pp. 309–324, 2024. 
+[2] P. D. Dirgantari, Y. M. Hidayat, M. H. Mahphoth, and 
+R. Nugraheni, “Level of use and satisfaction of e -
+commerce customers in covid-19 pandemic period: An 
+information system success model (issm) approach,” 
+Indones. J. Sci. Technol. , vol. 5, no. 2, pp. 261 –270, 
+2020, doi: 10.17509/ijost.v5i2.24617. 
+[3] E. Sumarliah, K. Usma nova, F. Fauziyah, and K. 
+Mousa, “Managing the risks in the clothing supply 
+chain considering the coronavirus pandemic,” Oper. 
+Supply Chain Manag. , vol. 14, no. 4, pp. 576 –587, 
+2021, doi: 10.31387/oscm0470325. 
+[4] R. A. SETYO PRAYOGA, “Perencanaan Strategi s 
+Sistem Informasi Menggunakan TOGAF Pada SMK 
+Swasta Ponorogo,” J. Ilm. Media Sisfo, vol. 16, no. 2, 
+pp. 71 –80, 2022, doi: 
+10.33998/mediasisfo.2022.16.2.1158. 
+[5] A. al afif fadhil Aqilah, S. Bustamin, and S. Sultan 
+sahrir, “Sistem Informasi Manajemen Pers ediaan 
+Berbasis Web di CV. Makmur Sejahtera Palopo,” J. 
+Process., vol. 18, no. 2, 2023, doi: 
+10.33998/processor.2023.18.2.1385. 
+[6] Q. Huang, S. Ohmori, and K. Yoshimoto, 
+“Incorporating transportation mode decisions into 
+production-shipping planning: Consi dering shipping 
+consolidation,” Oper. Supply Chain Manag. , vol. 14, 
+no. 1, pp. 62–72, 2021, doi: 10.31387/oscm0440286. 
+[7] R. A. B. Ginting, N. Nurfaizah, D. Musliman, Z. Yasri, 
+and M. T. I. Rahmayani, “Rancang Bangun Sistem 
+Informasi Keuangan Berbasis Website,” J. Tek. Ind. 
+Terintegrasi, vol. 7, no. 1, pp. 259 –368, 2024, doi: 
+10.31004/jutin.v7i1.22656. 
+[8] W. H. Prasetiyo, N.  B. M. Naidu, B. P. Tan, and B. 
+Sumardjoko, “Digital citizenship trend in educational 
+sphere: A systematic review,” Int. J. Eval. Res. Educ., 
+vol. 10, no. 4, pp. 1192 –1201, 2021, doi: 
+10.11591/IJERE.V10I4.21767. 
+[9] V. No, O. Hal, C. Christine, P. Tolampi, and E. Maria, 
+“Perancangan Sistem Informasi Tracking dan 
+Monitoring Posisi Barang Menggunakan Metode 
+Waterfall,” vol. 6, no. 4, pp. 806–812, 2024. 
+[10] E. Dewayani et al. , “PERANCANGAN APLIKASI 
+PENJUALAN BARANG KOSMETIK SECARA B2B 
+BERBASIS WEBSITE PADA TOKO,” pp. 1–5. 
+[11] J. Pragantha and M. Dolok Lauro, “Aplikasi Rekam 
+Medis Klinik Kasih Bunda Berbasis Web,” J. Ilmu 
+Komput. dan Sist. Inf. , vol. 12, p. 1, 2024. 
+[12] R. M. Simamora and Ramsul Nababan, “Students’ 
+Experience of Online Learning during the CO VID-19 
+Pandemic,” JPI (Jurnal Pendidik. Indones., vol. 13, no. 
+1, pp. 146 –158, 2024, doi: 
+10.23887/jpiundiksha.v13i1.62723. 
+[13] R. I. Napitupulu, M. F. Mauludin, F. Gianadevi, and T. 
+Rumambi, “Rancang Bangun Aplikasi Konversi File 
+Berformat Image Menjadi File Berformat Txt,” J. 
+Cahaya Mandalika, vol. 4, no. 2, pp. 796–804, 2023. 
+[14] N. K. Sharma, “Instruments Used in the Collectio n of 
+Data in Research,” SSRN Electron. J., vol. 1, no. I, pp. 
+1–8, 2022, doi: 10.2139/ssrn.4138751. 
+[15] V. Virshella, S. Herdyana, F. Tanuel, and J. Loisa, 
+“Perancangan Sistem Pembelian dan Analisis Barang 
+Dagang Pada Divisi Household PT Puncak Prima 
+Lestari,” J. Teknol. Dan Sist. Inf. Bisnis , vol. 6, no. 2, 
+pp. 379–389, 2024, doi: 10.47233/jteksis.v6i2.1284. 
+[16] S. Widjaja, B. Mulyawan, and N. Jaya Perdana, 
+“Sistem Informasi Monitoring Murid Oleh Guru 
+Dengan Orangtua Berbasis Web Dan Mobile,” J. Ilmu 
+Komput. dan Sist. Inf. , vol. 11, no. 2, 2023, doi: 
+10.24912/jiksi.v11i2.26003. 
+[17] N. Hidayati and S. Sismadi, “Application of Waterfall 
+Model In Development of Work Training Acceptance 
+System,” INTENSIF J. Ilm. Penelit. dan Penerapan 
+Teknol. Sist. Inf. , vol. 4, no. 1, pp. 75 –89, 2020, doi: 
+10.29407/intensif.v4i1.13575. 
+[18] H. S. Fanfa, N. S. Firjatullah, D. M. Putra Pratama, and 
+A. S. Fitri, “Analisis Desain Berbasis Objek Pada 
+Pengembangan Aplikasi ‘Logistock’ Untuk Sistem  
+Informasi Manajemen Stok Barang Pada CV. Nuranech 
+Jaya Gemilang Sidoarjo,” Innov. J. Soc. Sci. Res., vol. 
+4, no. 3, pp. 10634 –10647, 2024, doi: 
+10.31004/innovative.v4i3.11768. 
+[19] M. Martin and L. Nilawati, “Rancang Bangun Sistem 
+Informasi Peminjaman Arsip Berbasis Web,” J. Teknol. 
+Dan Sist. Inf. Bisnis, vol. 6, no. 3, pp. 427 –434, 2024, 
+doi: 10.47233/jteksis.v6i3.1326. 
+[20] L. Setiyani and B. Setiawan, “Analisis Dan Design 
+Manajemen Control Produksi Menggunakan Business 
+Process Improvement Dan Unified Mod elling 
+Language (STUDI KASUS: PT. MULTISTRADA),” 
+J. Interkom J. Publ. Ilm. Bid. Teknol. Inf. dan Komun., 
+vol. 16, no. 1, pp. 27 –37, 2021, doi: 
+10.35969/interkom.v16i1.94. 
+[21] O. Fenardi and F. S. Lee, “Aplikasi Akademik Berbasis 
+Website Menggunakan Metode Extreme Programming 
+Pada SMAN1 Belinyu,” J. Teknol. Dan Sist. Inf. Bisnis, 
+vol. 5, no. 4, pp. 440 –447, 2023, doi: 
+10.47233/jteksis.v5i4.843. 
+ 
+ 
+
