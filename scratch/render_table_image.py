@@ -1,0 +1,407 @@
+import asyncio
+import os
+from playwright.async_api import async_playwright
+
+HTML_CONTENT = """<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 0;
+    color: #000000;
+  }
+  .title {
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    border: 1.5px solid #000000;
+  }
+  th, td {
+    border: 1px solid #000000;
+    padding: 4px 3px;
+    font-size: 10pt;
+    vertical-align: middle;
+  }
+  th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  .col-phase {
+    width: 110px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10pt;
+    background-color: #ffffff;
+  }
+  .col-act {
+    width: 320px;
+    text-align: left;
+    padding-left: 8px;
+    font-size: 9.5pt;
+  }
+  .col-week-th {
+    width: 22px;
+    text-align: center;
+    font-size: 8.5pt;
+    font-weight: bold;
+  }
+  .col-month-th {
+    font-size: 9.5pt;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cell-active {
+    background-color: #888888;
+  }
+  .cell-empty {
+    background-color: #ffffff;
+  }
+  .cell-note {
+    font-size: 9pt;
+    font-style: italic;
+    text-align: left;
+    padding: 6px 8px;
+    border: 1px solid #000000;
+  }
+</style>
+</head>
+<body>
+
+<div class="title">Tabel 3.14 Rencana Jadwal Pembuatan Prototipe Sistem Informasi ARTHA Berdasarkan Siklus Iterasi PxP (Oktober 2026 sampai Mei 2027)</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" rowspan="2" style="width: 430px; font-size: 11pt;">Kegiatan</th>
+      <th colspan="4" class="col-month-th">Okt 2026</th>
+      <th colspan="4" class="col-month-th">Nov 2026</th>
+      <th colspan="4" class="col-month-th">Des 2026</th>
+      <th colspan="4" class="col-month-th">Jan 2027</th>
+      <th colspan="4" class="col-month-th">Feb 2027</th>
+      <th colspan="4" class="col-month-th">Mar 2027</th>
+      <th colspan="4" class="col-month-th">Apr 2027</th>
+      <th colspan="4" class="col-month-th">Mei 2027</th>
+    </tr>
+    <tr>
+      <!-- 32 weeks -->
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+      <th class="col-week-th">1</th><th class="col-week-th">2</th><th class="col-week-th">3</th><th class="col-week-th">4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Fase Proposal -->
+    <tr>
+      <td rowspan="4" class="col-phase">Fase Proposal</td>
+      <td class="col-act">Studi literatur dan identifikasi masalah</td>
+      <!-- W1..8 active -->
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Analisis kebutuhan dan planning (12 User Stories)</td>
+      <!-- W3..9 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Perancangan diagram sistem (BPMN, Use Case, ERD, UI)</td>
+      <!-- W5..10 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Seminar proposal dan revisi naskah proposal</td>
+      <!-- W11..12 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Inisialisasi Teknis -->
+    <tr>
+      <td class="col-phase">Inisialisasi Teknis</td>
+      <td class="col-act">Setup repositori Git, framework Next.js, Laravel API, & basis data MySQL</td>
+      <!-- W13..16 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Iterasi 1 -->
+    <tr>
+      <td rowspan="3" class="col-phase">Iterasi 1</td>
+      <td class="col-act">Inisialisasi iterasi & perancangan detail (US-01 s.d. US-04)</td>
+      <!-- W17 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pembuatan prototipe (Autentikasi RBAC, Cabang, Siswa & Kuota)</td>
+      <!-- W17..19 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pengujian sistem (Black Box) & Retrospective 1</td>
+      <!-- W18..19 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Iterasi 2 -->
+    <tr>
+      <td rowspan="3" class="col-phase">Iterasi 2</td>
+      <td class="col-act">Inisialisasi iterasi & perancangan detail (US-05 s.d. US-07)</td>
+      <!-- W20 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pembuatan prototipe (Kasir Cabang, Kuitansi PDF & Bukti Bayar)</td>
+      <!-- W20..22 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pengujian sistem (Black Box) & Retrospective 2</td>
+      <!-- W21..22 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Iterasi 3 -->
+    <tr>
+      <td rowspan="3" class="col-phase">Iterasi 3</td>
+      <td class="col-act">Inisialisasi iterasi & perancangan detail (US-08 s.d. US-10)</td>
+      <!-- W23 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pembuatan prototipe (Validasi Transfer, SPP Otomatis & Tautan WA)</td>
+      <!-- W23..25 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pengujian sistem (Black Box) & Retrospective 3</td>
+      <!-- W24..25 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Iterasi 4 -->
+    <tr>
+      <td rowspan="3" class="col-phase">Iterasi 4</td>
+      <td class="col-act">Inisialisasi iterasi & perancangan detail (US-11 s.d. US-12)</td>
+      <!-- W26 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pembuatan prototipe (Tutup Kasir Harian & Dasbor 8 Cabang)</td>
+      <!-- W26..28 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Pengujian sistem (Black Box) & Retrospective 4 (Final)</td>
+      <!-- W27..28 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+
+    <!-- Pasca-Iterasi -->
+    <tr>
+      <td rowspan="3" class="col-phase">Pasca-Iterasi</td>
+      <td class="col-act">Uji penerimaan pengguna (UAT) dan deployment</td>
+      <!-- W27..30 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Penyusunan laporan akhir skripsi (Bab 4 dan Bab 5)</td>
+      <!-- W21..30 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td><td class="cell-active"></td>
+      <td class="cell-active"></td><td class="cell-active"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+    </tr>
+    <tr>
+      <td class="col-act">Sidang akhir, revisi naskah, dan penyerahan prototipe</td>
+      <!-- W31..32 active -->
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-empty"></td>
+      <td class="cell-empty"></td><td class="cell-empty"></td><td class="cell-active"></td><td class="cell-active"></td>
+    </tr>
+    <tr>
+      <td colspan="34" class="cell-note">Keterangan: angka 1 sampai 4 menunjukkan kelompok minggu; arsiran menunjukkan rencana kegiatan.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+"""
+
+async def render_table():
+    html_file = r"c:\Users\ARIEL\OneDrive - MSFT\Documents\ARTHA\scratch\temp_table.html"
+    with open(html_file, "w", encoding="utf-8") as f:
+        f.write(HTML_CONTENT)
+
+    png_targets = [
+        r"c:\Users\ARIEL\OneDrive - MSFT\Documents\ARTHA\DRAFT PROPOSAL MD\BAB 3\Tabel_3_14_Jadwal_Pembuatan_Prototipe_Per_Iterasi.png",
+        r"c:\Users\ARIEL\OneDrive - MSFT\Documents\ARTHA\DRAFT PROPOSAL MD\BAB 3\ASET BAB 3\Tabel_3_14_Jadwal_Pembuatan_Prototipe_Per_Iterasi.png",
+        r"C:\Users\ARIEL\.gemini\antigravity\brain\b4f2bb35-f783-4d11-88ed-819fbfb3f0fb\Tabel_3_14_Jadwal_Pembuatan_Prototipe_Per_Iterasi.png",
+    ]
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        page = await browser.new_page(viewport={"width": 1400, "height": 850}, device_scale_factor=2)
+        await page.goto(f"file:///{html_file.replace(os.sep, '/')}")
+        await page.wait_for_timeout(500)
+
+        element = await page.query_selector("body")
+        for target in png_targets:
+            os.makedirs(os.path.dirname(target), exist_ok=True)
+            await element.screenshot(path=target)
+            print(f"Rendered PNG to: {target}")
+
+        await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(render_table())
+

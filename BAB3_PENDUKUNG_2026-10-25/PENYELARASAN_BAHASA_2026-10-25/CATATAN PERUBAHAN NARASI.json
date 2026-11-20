@@ -1,0 +1,661 @@
+{
+  "date": "2026-10-25",
+  "scope": "Editorial revision of prose only; no academic-paper skill used",
+  "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (REVISI TEMPLATE TERBARU).md",
+  "before_sha256": "f735d1f10f8ff3a97a277adfefa897109c58f9b7ac9af4c1f226cdcfd4053808",
+  "after_sha256": "e886bfd1533db6392d560b4c4cbcd031a5b461e13dda96cfd94b0690e2b91ceb",
+  "paragraphs_changed": 129,
+  "revisions": [
+    {
+      "paragraph": 1,
+      "before": "Bab ini menguraikan rancangan prototipe sistem informasi manajemen operasional berbasis web untuk Bimbingan Belajar Artha Balikpapan. Pembahasan mencakup garis besar prototipe, tahapan pembuatan, prosedur pengembangan, konsep sistem, spesifikasi teknis, dan rencana jadwal pelaksanaan. Susunan subbab mengikuti template tugas akhir jalur prototipe (Institut Teknologi Kalimantan, 2025b).",
+      "after": "Bab ini menjelaskan bagaimana prototipe sistem informasi manajemen operasional ARTHA akan dikembangkan untuk Bimbingan Belajar Artha Balikpapan. Pembahasan dimulai dari gambaran sistem, kemudian dilanjutkan dengan tahapan pengembangan, prosedur penelitian, rancangan fungsi, spesifikasi teknis, dan jadwal pengerjaan. Keenam bagian tersebut mengikuti susunan laporan tugas akhir jalur prototipe (Institut Teknologi Kalimantan, 2025b)."
+    },
+    {
+      "paragraph": 2,
+      "before": "Prototipe ARTHA berupa sistem informasi manajemen operasional berbasis web untuk Bimbel Artha Balikpapan. Sistem menghubungkan administrasi siswa, kelas, jadwal, tagihan, dan penerimaan pada delapan cabang melalui kewenangan Admin Cabang serta Super Admin.",
+      "after": "Bimbingan Belajar Artha Balikpapan mengelola delapan cabang dengan kegiatan administrasi yang mencakup pendaftaran siswa, penempatan kelas, penjadwalan tentor, serta pembayaran biaya belajar. Kegiatan tersebut perlu dihubungkan agar informasi yang dicatat pada cabang dapat digunakan pula oleh pengelola pusat. Untuk kebutuhan tersebut, prototipe ARTHA dirancang sebagai sistem informasi berbasis web dengan dua peran pengguna, yaitu Admin Cabang dan Super Admin."
+    },
+    {
+      "paragraph": 3,
+      "before": "Kebutuhan pengembangan bersumber dari dokumentasi wawancara pengelola dan staf administrasi Artha. Penelitian sistem bimbel digunakan sebagai pembanding integrasi data siswa, jadwal, dan pembayaran (Fajriansyah dkk., 2026, hlm. 116, 124 sampai 125; Gunawan dkk., 2025, hlm. 424).",
+      "after": "Pengembangan ARTHA berangkat dari penelaahan wawancara dengan pengelola dan staf administrasi mengenai cara mereka mencatat serta menggunakan data operasional. Hasil penelaahan menjadi dasar untuk menghubungkan data siswa, jadwal, dan pembayaran dalam satu sistem. Rancangan integrasi ini juga merujuk penelitian sistem bimbel yang membahas hubungan antarfungsi tersebut (Fajriansyah dkk., 2026, hlm. 116, 124 sampai 125; Gunawan dkk., 2025, hlm. 424)."
+    },
+    {
+      "paragraph": 4,
+      "before": "Admin Cabang mengelola kegiatan pada cabang penugasannya, sedangkan Super Admin memantau lintas cabang dan menjalankan pengendalian berwenang. Pemisahan akses cabang dan pemantauan pusat mempunyai pembanding pada Ahadi dkk. (2025, hlm. 764 sampai 765) serta Thiovanda (2026, hlm. 4).",
+      "after": "Pembagian peran dalam ARTHA mengikuti pekerjaan administrasi cabang dan kebutuhan pengawasan pusat. Admin Cabang mengelola data pada cabang penugasannya, sementara Super Admin melihat informasi lintas cabang dan menjalankan pengendalian sesuai kewenangannya. Pemisahan akses semacam ini dibahas oleh Ahadi dkk. (2025, hlm. 764 sampai 765) serta Thiovanda (2026, hlm. 4) dalam pengelolaan informasi berdasarkan cabang."
+    },
+    {
+      "paragraph": 5,
+      "before": "Pengingat tunggakan menggunakan tombol WhatsApp dengan nomor dan pesan yang disiapkan sistem, kemudian dikirim oleh admin. Pengelolaan kelas menyediakan peringatan hampir penuh dan menolak penambahan ketika penuh, sementara tempat kembali tersedia setelah keanggotaan siswa diakhiri.",
+      "after": "Pada kegiatan penagihan, admin dapat membuka daftar tunggakan dan memilih tombol WhatsApp untuk menyiapkan pesan kepada wali siswa. Sistem mengisi nomor serta rincian tagihan, kemudian admin memeriksa dan mengirim pesan melalui WhatsApp. Untuk penempatan siswa, informasi keterisian membantu admin memilih kelas yang masih tersedia; penambahan ditolak ketika penuh dan tempat kembali terbuka setelah keanggotaan siswa diakhiri."
+    },
+    {
+      "paragraph": 6,
+      "before": "Pembayaran transfer dirancang melalui pengajuan Admin Cabang dan pemeriksaan Super Admin, dengan kewenangan rekening yang akan divalidasi bersama mitra. Lingkup inti mencakup administrasi internal dan pencocokan penerimaan manual, sedangkan pengiriman WhatsApp otomatis, integrasi bank otomatis, serta pembelajaran daring berada di luar lingkup tersebut.",
+      "after": "Alur pembayaran transfer dirancang dengan membagi tugas pengajuan bukti kepada Admin Cabang dan pemeriksaan dana masuk kepada Super Admin. Pembagian kewenangan rekening serta petugas pemeriksanya akan ditetapkan bersama mitra sebelum digunakan. Dengan cakupan administrasi internal tersebut, prototipe menyediakan pencocokan penerimaan secara manual, sementara pembelajaran daring, pengiriman WhatsApp otomatis, dan integrasi bank otomatis berada di luar lingkup pengembangan."
+    },
+    {
+      "paragraph": 7,
+      "before": "Pengembangan individual menggunakan metode *Personal Extreme Programming* (PxP), yang meliputi penggalian kebutuhan, perencanaan, inisialisasi iterasi, perancangan, implementasi, pengujian sistem, dan evaluasi iterasi (Dzhurov dkk., 2009, hlm. 253 sampai 256). Penelitian Fikri dan Arthawan Sugih Prabowo (2021, hlm. 103 sampai 105) menjadi pembanding penerapannya pada pengembangan sistem informasi.",
+      "after": "Pengembangan ARTHA dikerjakan secara individual menggunakan metode *Personal Extreme Programming* (PxP). Prosesnya mencakup penggalian kebutuhan, perencanaan, inisialisasi iterasi, perancangan, implementasi, pengujian sistem, dan evaluasi iterasi (Dzhurov dkk., 2009, hlm. 253 sampai 256). Penerapan metode ini pada pengembangan sistem informasi juga dijelaskan oleh Fikri dan Arthawan Sugih Prabowo (2021, hlm. 103 sampai 105), yang menjadi rujukan dalam menyusun pekerjaan pengembangan ARTHA."
+    },
+    {
+      "paragraph": 8,
+      "before": "Luaran yang ditargetkan meliputi perangkat lunak prototipe, dokumentasi pengembangan, dan bukti evaluasi bersama calon pengguna. Pengembangan diarahkan pada TKT 5 sesuai panduan tugas akhir prototipe, dengan bukti pencapaian yang akan diperiksa berdasarkan pelaksanaan (Institut Teknologi Kalimantan, 2026, hlm. 4).",
+      "after": "Hasil yang ditargetkan dari penelitian ini adalah prototipe perangkat lunak beserta dokumentasi pengembangan dan evaluasinya bersama calon pengguna. Pengembangan diarahkan pada TKT 5 sebagaimana ketentuan tugas akhir prototipe (Institut Teknologi Kalimantan, 2026, hlm. 4). Pencapaiannya akan dijelaskan melalui bukti pelaksanaan dan hasil evaluasi yang diperoleh selama penelitian."
+    },
+    {
+      "paragraph": 9,
+      "before": "Dokumentasi disiapkan untuk laporan, artikel ilmiah, dan bahan pengajuan HKI. Hasil pengujian dan penerimaan mitra akan dilaporkan setelah kegiatan dilaksanakan.",
+      "after": "Dokumentasi pengembangan disusun bersamaan dengan pengerjaan sistem agar dapat digunakan dalam laporan tugas akhir, artikel ilmiah, dan bahan pengajuan HKI. Bagian hasil nantinya memuat fungsi yang telah dibangun, pelaksanaan pengujian, serta keputusan penerimaan mitra. Dengan cara ini, uraian produk dapat dibaca bersama proses dan hasil penilaiannya."
+    },
+    {
+      "paragraph": 10,
+      "before": "Tahapan pembuatan disusun sebagai alur kerja dari penggalian kebutuhan sampai penyiapan luaran. Gambar 3.1 menyajikan urutan tersebut beserta perulangan evaluasi dan perbaikan yang direncanakan.",
+      "after": "Pembuatan prototipe dimulai dengan memahami kebutuhan pengguna, kemudian berlanjut ke perencanaan dan pengembangan fungsi secara bertahap. Setiap tahap menghasilkan bahan yang digunakan pada pekerjaan berikutnya, dengan ruang perbaikan ketika ditemukan masalah atau perubahan kebutuhan. Hubungan antartahap dan jalur perulangannya ditunjukkan pada Gambar 3.1."
+    },
+    {
+      "paragraph": 11,
+      "before": "Penggalian kebutuhan dan perencanaan menjadi dasar pemilihan pekerjaan setiap iterasi. Setelah implementasi, fungsi yang selesai diperiksa melalui pengujian sistem, kemudian waktu kerja, galat, dan usulan perbaikan ditelaah pada evaluasi iterasi.",
+      "after": "Kebutuhan yang telah dirumuskan digunakan untuk memilih pekerjaan pada setiap iterasi. Pengembang merancang dan mengimplementasikan fungsi tersebut, lalu memeriksa kesesuaiannya melalui pengujian sistem. Pada akhir iterasi, hasil pekerjaan dibahas bersama catatan waktu, galat, dan usulan perbaikan untuk menentukan langkah berikutnya."
+    },
+    {
+      "paragraph": 12,
+      "before": "Hasil pengujian yang belum memenuhi kriteria dikembalikan ke implementasi untuk diperbaiki dan diuji ulang sebelum iterasi ditutup. Setelah evaluasi iterasi, pekerjaan tersisa diarahkan ke inisialisasi berikutnya, sedangkan fungsi yang siap diarahkan ke UAT.",
+      "after": "Apabila hasil pengujian belum memenuhi kriteria, pengembang memperbaiki fungsi yang bermasalah dan menjalankan pengujian ulang sebelum menutup iterasi. Pekerjaan yang masih tersisa kemudian dimasukkan ke iterasi berikutnya sesuai prioritas dan ketergantungannya. Setelah fungsi siap dievaluasi oleh pengguna, proses berlanjut ke UAT."
+    },
+    {
+      "paragraph": 13,
+      "before": "Masukan UAT yang mengubah kebutuhan dikembalikan ke penggalian kebutuhan serta perencanaan. Masukan yang hanya memerlukan koreksi fungsi dikembalikan ke pekerjaan perbaikan, kemudian diuji ulang sebelum keputusan penerimaan dan penyiapan luaran.",
+      "after": "Masukan pengguna pada UAT ditindaklanjuti sesuai jenis perubahannya. Perubahan kebutuhan dibahas kembali pada penggalian kebutuhan dan perencanaan, sedangkan kesalahan fungsi ditangani melalui perbaikan serta pengujian ulang. Hasil tindak lanjut menjadi bahan untuk menentukan penerimaan dan menyiapkan luaran prototipe."
+    },
+    {
+      "paragraph": 14,
+      "before": "Evaluasi penerimaan pengguna dilakukan pada modul yang telah memenuhi pemeriksaan awal. Penggabungan pengembangan PxP dengan pengujian sistem dan evaluasi pengguna mempunyai contoh penerapan pada Apriyanti dkk. (2024, hlm. 3680, 3683 sampai 3685), tetapi instrumen penelitian ini disesuaikan dengan tugas operasional ARTHA.",
+      "after": "UAT dilaksanakan setelah modul melewati pemeriksaan awal agar pengguna dapat mencoba alur kerja yang telah dipersiapkan. Penerapan PxP bersama pengujian sistem dan evaluasi pengguna dijelaskan oleh Apriyanti dkk. (2024, hlm. 3680, 3683 sampai 3685). Dalam penelitian ARTHA, tugas evaluasi disusun berdasarkan pekerjaan administrasi cabang dan pengawasan pusat."
+    },
+    {
+      "paragraph": 15,
+      "before": "Tabel 3.1 merangkum kegiatan dan luaran setiap tahap pada Gambar 3.1. Rincian pelaksanaannya dijelaskan pada Subbab 3.3 agar hubungan antara diagram dan prosedur dapat diperiksa.",
+      "after": "Kegiatan dan luaran pada setiap tahap dirangkum dalam Tabel 3.1 untuk melengkapi diagram pada Gambar 3.1. Penjelasan mengenai cara melaksanakan kegiatan tersebut disajikan pada Subbab 3.3. Urutan ini menghubungkan gambaran proses dengan pekerjaan yang akan dilakukan selama pengembangan."
+    },
+    {
+      "paragraph": 16,
+      "before": "Prosedur menjelaskan pelaksanaan setiap kegiatan pada diagram alir. Instrumen, sumber data, pemeriksaan hasil, dan bentuk dokumentasi ditetapkan agar pengembangan dapat ditelusuri dari kebutuhan sampai evaluasi.",
+      "after": "Prosedur penelitian menjelaskan cara menjalankan tahapan pengembangan mulai dari penggalian kebutuhan sampai evaluasi pengguna. Pada setiap tahap, sumber informasi, instrumen, dan hasil pekerjaan dicatat untuk digunakan pada tahap berikutnya. Uraian ini menjadi pedoman pelaksanaan sekaligus penghubung antara kebutuhan mitra dan fungsi yang akan diuji."
+    },
+    {
+      "paragraph": 17,
+      "before": "Penggalian kebutuhan diawali dengan penelaahan transkrip wawancara pengelola dan staf administrasi yang telah tersedia. Setiap informasi dipetakan menurut topik, yaitu pendaftaran, tarif, pembayaran, pengelolaan kelas, jadwal tentor, dan pelaporan cabang.",
+      "after": "Penggalian kebutuhan dimulai dengan membaca kembali transkrip wawancara pengelola dan staf administrasi Artha. Informasi di dalamnya dikelompokkan menurut kegiatan pendaftaran, penentuan tarif, pembayaran, pengelolaan kelas, penjadwalan tentor, dan pelaporan cabang. Pengelompokan ini membantu menemukan hubungan antarkegiatan serta pertanyaan yang masih perlu dijelaskan oleh mitra."
+    },
+    {
+      "paragraph": 18,
+      "before": "Informan klarifikasi dipilih berdasarkan tanggung jawab serta pengetahuan terhadap proses yang diperiksa. Pengelola pusat digunakan sebagai sumber kebutuhan pemantauan dan kewenangan, sedangkan staf administrasi digunakan sebagai sumber pelaksanaan pencatatan pada cabang.",
+      "after": "Klarifikasi dilakukan kepada pihak yang memahami dan menjalankan proses terkait. Pengelola pusat menjelaskan kebutuhan pemantauan serta pembagian kewenangan, sedangkan staf administrasi menjelaskan pekerjaan pencatatan pada cabang. Pemilihan informan mengikuti tanggung jawab tersebut agar informasi diperoleh dari pihak yang sesuai."
+    },
+    {
+      "paragraph": 19,
+      "before": "Jumlah informan, identitas atau kode, cabang yang diwakili, tanggal, serta alasan pemilihannya akan dicatat dalam dokumentasi penelitian. Keterangan satu cabang tidak diberlakukan sebagai ketentuan seluruh cabang sebelum cakupannya dipastikan kepada pengelola.",
+      "after": "Setiap kegiatan klarifikasi dilengkapi catatan informan, cabang yang diwakili, tanggal, dan alasan pemilihannya. Keterangan yang khusus berlaku pada satu cabang akan dibahas dengan pengelola untuk menentukan apakah ketentuan serupa juga berlaku di cabang lain. Jumlah serta identitas atau kode informan kemudian dicantumkan dalam dokumentasi penelitian."
+    },
+    {
+      "paragraph": 20,
+      "before": "Tabel 3.2 membedakan dokumen yang telah tersedia dari klarifikasi yang masih direncanakan. Tanggal pelaksanaan akan dicocokkan dengan bukti asli karena penulisan tanggal pada notulensi belum seluruhnya tervalidasi.",
+      "after": "Tabel 3.2 menunjukkan bahan wawancara yang sudah tersedia dan topik klarifikasi yang masih diperlukan. Catatan ini membantu menentukan informasi yang dapat digunakan serta hal yang perlu ditanyakan kembali. Tanggal pada notulensi akan dicocokkan dengan bukti asli sebelum dilengkapi dalam dokumentasi pelaksanaan."
+    },
+    {
+      "paragraph": 21,
+      "before": "Indeks berkas, penanda waktu, dan batas penafsiran disimpan pada lampiran sumber kebutuhan. Catatan tarif atau peristiwa pada satu cabang digunakan sesuai konteksnya sampai pengelola menetapkan cakupan yang lebih luas.",
+      "after": "Berkas sumber dan penanda waktu wawancara dihimpun dalam lampiran agar bagian yang dirujuk mudah ditemukan kembali. Keterangan tentang tarif atau peristiwa tertentu tetap disertai konteks cabangnya. Pengelola kemudian diminta menjelaskan cakupan ketentuan tersebut ketika digunakan untuk merancang fungsi lintas cabang."
+    },
+    {
+      "paragraph": 22,
+      "before": "Wawancara lanjutan dilakukan secara semiterstruktur dengan panduan topik yang tetap memungkinkan pertanyaan klarifikasi. Topik instrumen disajikan pada Tabel 3.3, sedangkan pertanyaan rinci dan catatan pelaksanaan akan ditempatkan pada lampiran.",
+      "after": "Wawancara lanjutan dilakukan secara semiterstruktur, dengan topik utama yang telah disiapkan dan pertanyaan tambahan mengikuti jawaban informan. Cara ini memberi ruang untuk membahas perbedaan keterangan maupun rincian proses yang belum jelas. Topik wawancara dan pemeriksaan dokumen disajikan pada Tabel 3.3, sedangkan pertanyaan rinci ditempatkan pada lampiran."
+    },
+    {
+      "paragraph": 23,
+      "before": "Dokumen yang dapat ditelaah meliputi contoh kuitansi, daftar siswa, jadwal, rekap pembayaran, serta contoh bukti transfer yang penggunaannya diizinkan mitra. Apabila pengamatan langsung dilakukan, waktu, objek, dan hasilnya dicatat secara terpisah dari keterangan wawancara.",
+      "after": "Penjelasan informan dilengkapi dengan dokumen yang penggunaannya diizinkan, seperti kuitansi, daftar siswa, jadwal, rekap pembayaran, dan bukti transfer. Dokumen tersebut membantu memahami informasi yang dicatat serta perpindahannya dari cabang ke pusat. Jika dilakukan pengamatan langsung, waktu, kegiatan yang diamati, dan hasilnya dicatat tersendiri sebagai pelengkap keterangan wawancara."
+    },
+    {
+      "paragraph": 24,
+      "before": "Analisis kebutuhan dilakukan dengan mengelompokkan informasi, menandai pernyataan yang berbeda, dan mengubah kebutuhan yang telah diklarifikasi menjadi fungsi sistem. Pencatatan kebutuhan dalam bentuk *user story* mempunyai contoh pada Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105) serta Sidiq dkk. (2025, hlm. 37).",
+      "after": "Informasi yang terkumpul dianalisis dengan mengelompokkan kebutuhan, membandingkan keterangan yang berbeda, dan membahas bagian yang masih memerlukan klarifikasi. Kebutuhan yang telah diperjelas kemudian dirumuskan menjadi fungsi serta cerita pengguna. Penyusunan kebutuhan dalam bentuk *user story* merujuk contoh pada Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105) serta Sidiq dkk. (2025, hlm. 37)."
+    },
+    {
+      "paragraph": 25,
+      "before": "Setiap kebutuhan diberi kode, sumber, cakupan cabang, dan status validasi. Pernyataan faktual, potensi risiko, dan usulan fitur dibedakan agar kebutuhan preventif tidak ditulis sebagai kejadian yang sudah berulang.",
+      "after": "Kebutuhan yang dirumuskan diberi kode dan dihubungkan dengan sumber, cakupan cabang, serta hasil peninjauannya. Catatan ini juga membedakan kebutuhan yang berasal dari kendala yang telah dijelaskan informan dan fungsi pencegahan yang diusulkan dalam rancangan. Perbedaan tersebut membantu mitra menilai alasan pengembangan setiap fungsi."
+    },
+    {
+      "paragraph": 26,
+      "before": "Validasi dilakukan dengan meminta perwakilan mitra meninjau ringkasan proses dan kebutuhan yang berkaitan dengan kewenangannya. Perubahan setelah peninjauan disimpan dalam riwayat revisi, kemudian digunakan sebagai dasar perencanaan iterasi.",
+      "after": "Ringkasan proses dan kebutuhan kemudian ditinjau bersama perwakilan mitra yang berwenang. Masukan dari peninjauan digunakan untuk memperbaiki uraian fungsi sebelum pekerjaan dibagi ke dalam iterasi. Jika terdapat perubahan, versi sebelumnya tetap disimpan agar alasan penyesuaiannya dapat ditelusuri."
+    },
+    {
+      "paragraph": 27,
+      "before": "Perencanaan dilakukan dengan memecah kebutuhan menjadi tugas analisis, perancangan, pengodean, pengujian, dan perbaikan. Estimasi awal menggunakan rincian pekerjaan, kemudian diperbarui berdasarkan durasi aktual pada tugas sejenis (Dzhurov dkk., 2009, hlm. 254 sampai 255).",
+      "after": "Kebutuhan yang telah dirumuskan dibagi menjadi tugas analisis, perancangan, pengodean, pengujian, dan perbaikan. Pengembang memperkirakan waktu setiap tugas berdasarkan rincian pekerjaan, lalu memperbarui perkiraan tersebut menggunakan durasi aktual pada pekerjaan sejenis. Cara ini mengikuti penggunaan data pekerjaan dalam perencanaan PxP (Dzhurov dkk., 2009, hlm. 254 sampai 255)."
+    },
+    {
+      "paragraph": 28,
+      "before": "Empat iterasi diusulkan berdasarkan ketergantungan data dan proses pada Tabel 3.4. Akun, cabang, siswa, kelas, dan tarif menjadi prasyarat penempatan, penjadwalan, transaksi, serta rekap pusat.",
+      "after": "Pengembangan direncanakan dalam empat iterasi dengan memperhatikan urutan kebutuhan data dan hubungan antarfungsi. Akun, cabang, siswa, kelas, serta tarif disiapkan lebih dahulu karena digunakan pada penempatan, penjadwalan, pembayaran, dan pelaporan. Pembagian pekerjaan beserta ketergantungannya disajikan pada Tabel 3.4."
+    },
+    {
+      "paragraph": 29,
+      "before": "Pencocokan transfer pada I-03 memakai komponen dasar rekening dan referensi bank yang diperlukan untuk persetujuan. Pada I-04, komponen tersebut diperluas untuk pencocokan setoran tunai dan rekap lintas proses.",
+      "after": "Pada I-03, pemeriksaan transfer memerlukan data rekening dan referensi dana masuk agar pengajuan dapat diputuskan. Karena itu, komponen pencocokan dasar disiapkan bersama modul pembayaran. Pengembangannya dilanjutkan pada I-04 untuk mencakup setoran tunai dan rekap yang menghubungkan seluruh proses penerimaan."
+    },
+    {
+      "paragraph": 30,
+      "before": "Setiap iterasi dialokasikan dua minggu sebagai rencana awal dalam rentang iterasi PxP satu sampai tiga minggu (Dzhurov dkk., 2009, hlm. 255). Rincian jam per tugas belum ditetapkan dan akan diisi sebelum iterasi dimulai, sedangkan kalender dua belas minggu pada Subbab 3.6 masih bersifat relatif.",
+      "after": "Setiap iterasi direncanakan berlangsung dua minggu, sesuai rentang iterasi PxP satu sampai tiga minggu (Dzhurov dkk., 2009, hlm. 255). Alokasi ini akan dirinci menjadi estimasi jam per tugas sebelum iterasi dimulai. Jadwal dua belas minggu pada Subbab 3.6 digunakan sebagai rencana awal yang akan disesuaikan dengan kebutuhan dan ketersediaan waktu pelaksanaan."
+    },
+    {
+      "paragraph": 31,
+      "before": "Permintaan perubahan dicatat bersama sumber, kebutuhan terdampak, ketergantungan, serta pengaruhnya terhadap waktu dan pengujian. Formulir estimasi dan perubahan ditempatkan pada lampiran pelaksanaan agar penambahan pekerjaan tetap dapat ditelusuri.",
+      "after": "Masukan baru dari mitra dibahas dengan melihat fungsi yang terdampak, ketergantungan pekerjaan, dan kebutuhan pengujiannya. Keputusan perubahan dicatat bersama sumber permintaan serta pengaruhnya terhadap jadwal. Rincian estimasi dan formulir perubahan disimpan pada lampiran untuk mendukung penyesuaian rencana kerja."
+    },
+    {
+      "paragraph": 32,
+      "before": "Pada awal iterasi, daftar tugas dipilih dari rencana yang telah diperiksa. Setiap tugas dilengkapi kode kebutuhan, penanggung jawab pengembangan, estimasi waktu, data uji, dan kriteria selesai.",
+      "after": "Pada awal setiap iterasi, pengembang memilih tugas dari rencana kerja sesuai prioritas yang telah ditentukan. Tugas tersebut dilengkapi kode kebutuhan, penanggung jawab, estimasi waktu, data uji, dan kriteria selesai. Kelengkapan ini memberi gambaran tentang pekerjaan yang harus dihasilkan serta cara memeriksanya."
+    },
+    {
+      "paragraph": 33,
+      "before": "Data uji disiapkan untuk mewakili cabang yang berbeda dan kondisi normal maupun tidak sah. Identitas siswa dan bukti pembayaran menggunakan data buatan atau data tersamarkan sesuai izin mitra.",
+      "after": "Data uji disiapkan sebelum pengerjaan untuk menggambarkan kegiatan pada cabang yang berbeda. Selain kondisi normal, data mencakup masukan yang tidak sah dan keadaan batas yang dapat memengaruhi proses. Identitas siswa serta bukti pembayaran menggunakan data buatan atau tersamarkan sesuai izin mitra."
+    },
+    {
+      "paragraph": 34,
+      "before": "Perubahan perangkat lunak disimpan dalam repositori kode dengan penanda versi. Pencatatan waktu dilakukan per tugas agar durasi analisis, perancangan, pengodean, pengujian, serta perbaikan dapat dibedakan.",
+      "after": "Perubahan kode disimpan dalam repositori dengan penanda versi agar perkembangan modul dapat diikuti. Waktu pengerjaan dicatat per tugas, mulai dari analisis dan perancangan sampai pengujian serta perbaikan. Catatan tersebut digunakan untuk membandingkan rencana dan pelaksanaan ketika iterasi dievaluasi."
+    },
+    {
+      "paragraph": 35,
+      "before": "Tugas dinyatakan selesai secara teknis apabila kriteria penerimaannya terpenuhi dan tidak terdapat galat kritis yang belum ditangani. Penerimaan oleh mitra dicatat tersendiri, sehingga selesainya pengodean tidak disamakan dengan persetujuan pengguna.",
+      "after": "Penyelesaian tugas diperiksa berdasarkan kriteria penerimaan dan galat yang masih terbuka. Tugas selesai secara teknis apabila kriterianya terpenuhi dan tidak menyisakan galat kritis. Hasil tersebut kemudian menjadi bahan evaluasi mitra, dengan keputusan penerimaan pengguna dicatat tersendiri."
+    },
+    {
+      "paragraph": 36,
+      "before": "Perancangan dilakukan untuk modul yang akan dikerjakan pada iterasi berjalan. Model yang disusun meliputi kewenangan pengguna, alur tugas, hubungan data, dan susunan antarmuka.",
+      "after": "Perancangan menerjemahkan kebutuhan pada iterasi berjalan ke dalam gambaran fungsi yang akan dibangun. Pengembang menyusun pembagian kewenangan, alur pekerjaan pengguna, hubungan data, serta susunan antarmuka. Rancangan ini menjadi acuan ketika fungsi diimplementasikan dan diuji."
+    },
+    {
+      "paragraph": 37,
+      "before": "Pemilihan artefak disesuaikan dengan kebutuhan implementasi, sebagaimana anjuran penggunaan alat desain sederhana pada Dzhurov dkk. (2009, hlm. 255). Fikri dan Arthawan Sugih Prabowo (2021, hlm. 104) juga menggunakan rancangan basis data dan antarmuka sebagai bagian pengembangan sistem.",
+      "after": "Model dipilih sesuai kebutuhan modul agar dapat membantu pengembang memahami proses sebelum menulis kode. Penggunaan rancangan sederhana mengikuti penjelasan Dzhurov dkk. (2009, hlm. 255), sementara Fikri dan Arthawan Sugih Prabowo (2021, hlm. 104) menunjukkan penggunaan rancangan basis data dan antarmuka dalam pengembangan sistem. Pada ARTHA, model tersebut disusun untuk memperjelas pekerjaan pengguna dan hubungan antardata."
+    },
+    {
+      "paragraph": 38,
+      "before": "Rancangan proses memisahkan penerimaan pembayaran siswa, pemeriksaan transfer, dan penyerahan kas cabang. Pemisahan ini diperlukan agar pencatatan penerimaan tidak dihitung kembali sebagai pendapatan baru ketika dana disetorkan ke pusat.",
+      "after": "Pada proses pembayaran, rancangan membedakan penerimaan uang siswa, pemeriksaan transfer, dan penyerahan kas cabang. Ketiganya mempunyai pelaksana serta waktu pencatatan yang berbeda. Pemisahan ini menjaga agar uang yang sudah dicatat sebagai penerimaan tidak dihitung lagi ketika dipindahkan ke pusat."
+    },
+    {
+      "paragraph": 39,
+      "before": "Rancangan kelas memisahkan ruang fisik, kelompok belajar, dan keanggotaan siswa. Kapasitas diperiksa berdasarkan peserta aktif pada kelompok yang dipilih, sedangkan riwayat siswa keluar tetap disimpan untuk penelusuran data.",
+      "after": "Pengelolaan kelas dirancang dengan membedakan ruang fisik, kelompok belajar, dan keanggotaan siswa. Jumlah anggota aktif digunakan untuk menentukan ketersediaan tempat pada kelas yang dipilih. Ketika siswa keluar, keanggotaannya diakhiri dan riwayatnya tetap tersimpan sebagai bagian dari perjalanan belajar siswa pada kelas tersebut."
+    },
+    {
+      "paragraph": 40,
+      "before": "Rancangan modul kemudian diperiksa terhadap kebutuhan dan kasus uji yang terkait. Apabila ditemukan aturan yang belum jelas, pertanyaan klarifikasi dicatat sebelum aturan tersebut diterapkan pada kode.",
+      "after": "Setiap rancangan diperiksa kembali dengan melihat kebutuhan dan kasus uji yang berkaitan. Pemeriksaan ini membantu menemukan aturan yang perlu diperjelas sebelum memengaruhi struktur data atau alur aplikasi. Pertanyaan yang muncul dibahas melalui klarifikasi mitra, kemudian hasilnya digunakan untuk menyempurnakan rancangan."
+    },
+    {
+      "paragraph": 41,
+      "before": "Implementasi dilakukan melalui pengujian unit, pengodean fungsi, dan refaktorisasi. Urutan pengujian sebelum kode dan perbaikan struktur mengikuti praktik implementasi PxP yang dijelaskan oleh Dzhurov dkk. (2009, hlm. 255).",
+      "after": "Implementasi mengubah rancangan menjadi fungsi aplikasi melalui pengujian unit, pengodean, dan refaktorisasi. Pengujian disusun sebelum kode dilengkapi, lalu struktur kode diperbaiki setelah fungsi memenuhi hasil yang diharapkan. Urutan ini mengikuti praktik implementasi PxP pada Dzhurov dkk. (2009, hlm. 255)."
+    },
+    {
+      "paragraph": 42,
+      "before": "Penerapan *Test-Driven Development* (TDD) diprioritaskan pada aturan bisnis yang dapat diuji secara otomatis. Aturan tersebut meliputi penghitungan sisa tagihan, penolakan penambahan kelas penuh, dan pemeriksaan irisan waktu penugasan tentor.",
+      "after": "Praktik *Test-Driven Development* (TDD) dipusatkan pada aturan bisnis yang dapat diperiksa secara otomatis. Pada ARTHA, aturan tersebut mencakup penghitungan sisa tagihan, penolakan penambahan siswa ke kelas penuh, dan pemeriksaan irisan jadwal tentor. Pemilihan ini mengarahkan pengujian pada logika yang menentukan hasil pekerjaan pengguna."
+    },
+    {
+      "paragraph": 43,
+      "before": "Untuk setiap aturan, pengujian disusun sebelum fungsi dilengkapi, kemudian kode dikembangkan sampai keluaran yang diharapkan terpenuhi. Bukti pengujian gagal, pengujian lulus, dan perubahan terkait disimpan agar penerapan TDD dapat diperiksa.",
+      "after": "Untuk setiap aturan, pengembang lebih dahulu menyusun pengujian dengan hasil yang diharapkan. Kode kemudian dilengkapi sampai pengujian tersebut lulus. Hasil pengujian sebelum dan sesudah perbaikan disimpan bersama perubahan kode sebagai dokumentasi pelaksanaan TDD."
+    },
+    {
+      "paragraph": 44,
+      "before": "Kode yang telah memenuhi pengujian ditinjau untuk mengurangi pengulangan dan memperjelas pembagian tanggung jawab. Setelah refaktorisasi, pengujian dijalankan kembali untuk memastikan fungsi sebelumnya tetap bekerja sesuai kriteria.",
+      "after": "Setelah fungsi bekerja sesuai pengujian, struktur kode ditinjau agar pembagian tanggung jawabnya lebih jelas dan pengulangan dapat dikurangi. Refaktorisasi dilakukan dengan mempertahankan perilaku fungsi yang telah diperiksa. Pengujian dijalankan kembali setelahnya untuk memastikan perubahan struktur tetap menghasilkan keluaran yang sama."
+    },
+    {
+      "paragraph": 45,
+      "before": "Integrasi antarmuka dan layanan data dilakukan secara bertahap. Pemeriksaan akses diterapkan pada peladen, sehingga perubahan alamat halaman atau identitas objek oleh pengguna tidak memberikan akses ke data cabang lain.",
+      "after": "Antarmuka dan layanan data dihubungkan secara bertahap mengikuti fungsi yang sedang dikerjakan. Pada setiap permintaan, peladen memeriksa peran pengguna serta cabang pemilik data sebelum memberikan akses. Dengan demikian, pembatasan akses tetap berlaku ketika pengguna mengubah alamat halaman atau identitas objek pada permintaan."
+    },
+    {
+      "paragraph": 46,
+      "before": "Pengujian sistem menggunakan pendekatan kotak hitam atau *Black Box Testing* untuk memeriksa keluaran terhadap kebutuhan. Penerapannya bersama PxP mempunyai pembanding pada Apriyanti dkk. (2024, hlm. 3679, 3683), sedangkan kasus ARTHA disusun dari aturan akses, kelas, dan transaksi.",
+      "after": "Pengujian sistem memeriksa apakah fungsi aplikasi menghasilkan keluaran sesuai kebutuhan melalui pendekatan kotak hitam atau *Black Box Testing*. Penerapan pengujian ini dalam pengembangan PxP dijelaskan oleh Apriyanti dkk. (2024, hlm. 3679, 3683). Kasus ARTHA disusun berdasarkan pekerjaan pengguna, terutama pembatasan akses, kapasitas kelas, dan pencatatan transaksi."
+    },
+    {
+      "paragraph": 47,
+      "before": "Pengembang melaksanakan pemeriksaan pada lingkungan uji terpisah dengan data buatan atau tersamarkan. Identitas versi, perangkat, zona waktu, dan data awal dicatat sebelum kasus dijalankan agar hasil dapat diperiksa ulang.",
+      "after": "Pengembang menjalankan kasus pengujian pada lingkungan terpisah menggunakan data buatan atau tersamarkan. Sebelum pengujian dimulai, versi aplikasi, perangkat, zona waktu, dan keadaan data awal dicatat. Informasi ini digunakan ketika kasus perlu diulang atau hasilnya dibandingkan setelah perbaikan."
+    },
+    {
+      "paragraph": 48,
+      "before": "Tabel 3.5 menampilkan contoh kasus berisiko, sedangkan seluruh kasus BB-01 sampai BB-33 disimpan pada lampiran pengujian. Kelompok pemeriksaan PU-01 sampai PU-14 menghubungkan kasus tersebut dengan kebutuhan fungsional pada Tabel 3.13.",
+      "after": "Tabel 3.5 menampilkan beberapa kasus yang berkaitan dengan risiko utama pengelolaan data dan transaksi. Rincian seluruh kasus BB-01 sampai BB-33 tersedia pada lampiran pengujian. Kasus tersebut dihubungkan dengan kebutuhan melalui kelompok PU-01 sampai PU-14 pada Tabel 3.13."
+    },
+    {
+      "paragraph": 49,
+      "before": "Setiap kasus merekam prasyarat, langkah, masukan, keluaran yang diharapkan, hasil aktual, serta bukti pelaksanaan. Galat kritis meliputi akses cabang tanpa kewenangan, penghitungan pembayaran ganda, dan pelampauan kapasitas kelas.",
+      "after": "Pelaksanaan setiap kasus dicatat mulai dari prasyarat dan langkah pengujian sampai masukan, keluaran yang diharapkan, hasil aktual, serta bukti yang diperoleh. Masalah yang ditemukan dikelompokkan menurut dampaknya terhadap fungsi. Akses cabang tanpa kewenangan, pembayaran yang dihitung ganda, dan pelampauan kapasitas diperlakukan sebagai galat kritis."
+    },
+    {
+      "paragraph": 50,
+      "before": "Perbaikan diperiksa melalui pengulangan kasus gagal beserta kasus terkait. Hasil sebelum perbaikan tetap disimpan dan dihubungkan dengan versi yang diperiksa ulang.",
+      "after": "Fungsi yang gagal diuji diperbaiki, kemudian diperiksa kembali dengan kasus yang sama dan kasus lain yang berkaitan. Hasil uji ulang dihubungkan dengan versi aplikasi serta hasil sebelumnya. Catatan ini memperlihatkan perubahan dari kondisi awal sampai perbaikan dinyatakan memenuhi kriteria."
+    },
+    {
+      "paragraph": 51,
+      "before": "Evaluasi iterasi dilakukan dengan membandingkan rencana pekerjaan dan data pelaksanaan. Waktu aktual, perubahan kebutuhan, galat, serta pekerjaan yang belum selesai ditelaah untuk menentukan perbaikan iterasi berikutnya.",
+      "after": "Evaluasi iterasi dilakukan untuk memahami hasil pekerjaan dan kendala yang muncul selama pengembangan. Pengembang membandingkan rencana dengan waktu aktual, meninjau galat serta perubahan kebutuhan, dan memeriksa tugas yang belum selesai. Hasil pembahasan digunakan untuk menentukan perbaikan cara kerja dan pekerjaan berikutnya."
+    },
+    {
+      "paragraph": 52,
+      "before": "Pemanfaatan data proyek dalam evaluasi merupakan bagian proses PxP pada Dzhurov dkk. (2009, hlm. 256). Sidiq dkk. (2025, hlm. 45) juga melaporkan perubahan kebutuhan dan perbedaan durasi, sehingga waktu implementasi perlu dibedakan dari keseluruhan waktu pengembangan.",
+      "after": "Catatan pelaksanaan memberi dasar untuk memperbaiki perkiraan waktu dan proses pengembangan, sebagaimana dijelaskan dalam PxP oleh Dzhurov dkk. (2009, hlm. 256). Sidiq dkk. (2025, hlm. 45) juga membahas perubahan kebutuhan serta perbedaan durasi dalam pelaksanaan proyeknya. Karena itu, waktu implementasi dicatat sebagai bagian dari keseluruhan waktu pengembangan agar penyebab perbedaannya dapat dipahami."
+    },
+    {
+      "paragraph": 53,
+      "before": "Tabel 3.6 menyajikan unsur pencatatan proses yang direncanakan. Formulir diisi selama pelaksanaan, bukan direkonstruksi sebagai angka perkiraan setelah proyek selesai.",
+      "after": "Unsur yang digunakan dalam evaluasi iterasi dirangkum pada Tabel 3.6. Catatan waktu, galat, perubahan, dan usulan perbaikan diisi selama pekerjaan berlangsung. Dengan pencatatan tersebut, evaluasi menggunakan pengalaman pengerjaan yang masih dapat diperiksa kembali."
+    },
+    {
+      "paragraph": 54,
+      "before": "Selisih durasi dihitung dengan mengurangkan estimasi dari waktu aktual pada tugas yang sama. Nilai tersebut ditafsirkan bersama penyebabnya, sehingga keterlambatan karena perubahan kebutuhan tidak disamakan dengan kesalahan pengodean.",
+      "after": "Perbandingan waktu dilakukan pada tugas yang sama dengan mengurangkan estimasi dari durasi aktual. Selisihnya kemudian dibahas bersama penyebab yang tercatat selama pengerjaan. Penjelasan ini membantu membedakan pengaruh perubahan kebutuhan dari waktu yang digunakan untuk memperbaiki kesalahan kode."
+    },
+    {
+      "paragraph": 55,
+      "before": "Hasil evaluasi digunakan untuk memperbaiki estimasi, pembagian tugas, atau pengujian berikutnya. Formulir lengkap catatan waktu, galat, perubahan, dan evaluasi ditempatkan pada lampiran pelaksanaan.",
+      "after": "Hasil evaluasi digunakan untuk menyusun perkiraan yang lebih sesuai, menata pekerjaan yang tersisa, dan memperbaiki pengujian pada iterasi berikutnya. Formulir lengkap catatan waktu, galat, perubahan, serta evaluasi disimpan pada lampiran pelaksanaan. Bagian utama laporan menyajikan hasil yang diperlukan untuk menjelaskan perkembangan proses."
+    },
+    {
+      "paragraph": 56,
+      "before": "Pengujian penerimaan pengguna atau *User Acceptance Testing* (UAT) dilakukan bersama petugas yang menjalankan administrasi cabang dan pengawasan pusat. Pemilihan peserta dilakukan secara bertujuan menurut kewenangan, pengalaman tugas, kesediaan, dan cakupan proses yang diuji.",
+      "after": "Pengujian penerimaan pengguna atau *User Acceptance Testing* (UAT) memberi kesempatan kepada petugas cabang dan pengelola pusat untuk mencoba alur kerja ARTHA. Peserta dipilih secara bertujuan dengan mempertimbangkan kewenangan, pengalaman menjalankan tugas, kesediaan, dan proses yang akan dinilai. Pemilihan ini menghubungkan kegiatan evaluasi dengan pekerjaan pengguna sistem."
+    },
+    {
+      "paragraph": 57,
+      "before": "Rencana peserta mencakup sekurang-kurangnya perwakilan kedua peran, sedangkan nama, jumlah akhir, cabang, serta waktu pertemuan ditetapkan bersama mitra. Petugas yang sama dapat menilai beberapa tugas sesuai kewenangannya, tetapi penerimaan satu cabang tidak digeneralisasi sebagai pendapat seluruh delapan cabang.",
+      "after": "Peserta direncanakan mewakili Admin Cabang dan Super Admin, dengan jumlah, nama, cabang, serta waktu pelaksanaan yang akan disepakati bersama mitra. Seorang peserta dapat menjalankan beberapa tugas sesuai kewenangannya. Hasil evaluasi akan dijelaskan menurut peran dan cabang yang terwakili agar cakupan penerimaannya terlihat."
+    },
+    {
+      "paragraph": 58,
+      "before": "Sebelum UAT, pengembang menyiapkan versi uji, cadangan awal, akun terpisah, data simulasi, dan panduan singkat. Pemeriksaan awal memastikan fungsi inti dapat dijalankan serta peserta hanya memperoleh hak yang diperlukan untuk tugasnya.",
+      "after": "Sebelum pengguna mencoba aplikasi, pengembang menyiapkan versi uji, cadangan data awal, akun menurut peran, data simulasi, dan panduan singkat. Fungsi utama serta hak akses diperiksa lebih dahulu agar peserta dapat mengikuti tugas yang diberikan. Persiapan ini juga menyediakan kondisi awal yang sama ketika suatu tugas perlu diulang."
+    },
+    {
+      "paragraph": 59,
+      "before": "Pelaksanaan diawali pengarahan tujuan, penjelasan data uji, dan persetujuan pencatatan bukti. Peserta kemudian menjalankan tugas tanpa perubahan langkah yang tidak terdokumentasi, sedangkan pengembang mengamati, mencatat bantuan yang diberikan, dan menyimpan hasil sesuai kode tugas.",
+      "after": "Pelaksanaan UAT diawali dengan penjelasan tujuan, data yang digunakan, serta persetujuan pencatatan bukti. Peserta kemudian menjalankan tugas, sementara pengembang mengamati hasil dan mencatat kesulitan maupun bantuan yang diberikan. Jika langkah tugas perlu disesuaikan selama pelaksanaan, perubahan tersebut dicatat bersama hasilnya."
+    },
+    {
+      "paragraph": 60,
+      "before": "Tabel 3.7 merangkum tugas penerimaan dengan A sebagai Admin Cabang dan S sebagai Super Admin. Lembar rinci memuat identitas peserta atau kode, versi aplikasi, langkah, hasil aktual, bantuan, keputusan, alasan, serta penunjuk bukti.",
+      "after": "Tabel 3.7 merangkum tugas UAT berdasarkan pekerjaan masing-masing peran, dengan A menunjukkan Admin Cabang dan S menunjukkan Super Admin. Lembar pelaksanaannya memuat identitas atau kode peserta, versi aplikasi, langkah, hasil aktual, bantuan, keputusan, alasan, dan bukti. Catatan tersebut digunakan untuk membahas penerimaan setiap alur kerja."
+    },
+    {
+      "paragraph": 61,
+      "before": "Instrumen diperiksa keterbacaan dan kesesuaian isinya oleh pembimbing serta perwakilan mitra sebelum pelaksanaan. Penggunaan evaluasi bersama pengguna mempunyai pembanding pada Apriyanti dkk. (2024, hlm. 3683 sampai 3685), sedangkan instrumen ARTHA berbentuk tugas operasional.",
+      "after": "Sebelum digunakan, instrumen UAT ditinjau bersama pembimbing dan perwakilan mitra untuk memastikan langkahnya dapat dipahami dan sesuai dengan kebutuhan yang dinilai. Keterlibatan pengguna dalam evaluasi pengembangan PxP dijelaskan oleh Apriyanti dkk. (2024, hlm. 3683 sampai 3685). Pada ARTHA, keterlibatan tersebut diwujudkan melalui tugas administrasi yang dapat dicoba dan diamati hasilnya."
+    },
+    {
+      "paragraph": 62,
+      "before": "Setiap pelaksanaan tugas diberi keputusan diterima, memerlukan perbaikan, atau belum dapat dievaluasi, disertai alasan. Kegagalan akibat data yang belum tersedia dibedakan dari galat aplikasi, kemudian tugas yang diperbaiki diuji ulang pada versi yang dicatat.",
+      "after": "Hasil setiap tugas ditetapkan sebagai diterima, memerlukan perbaikan, atau belum dapat dievaluasi, dengan alasan yang dicatat pada lembar pelaksanaan. Kendala akibat data yang belum tersedia dibahas terpisah dari kesalahan fungsi aplikasi. Setelah perbaikan dilakukan, tugas terkait dijalankan kembali pada versi yang dicantumkan."
+    },
+    {
+      "paragraph": 63,
+      "before": "Analisis pengujian sistem menyajikan jumlah kasus direncanakan, dijalankan, lulus, gagal, dan belum dijalankan. Persentase kelulusan dihitung terhadap kasus yang dijalankan, sedangkan cakupan pelaksanaan dihitung terhadap kasus yang direncanakan.",
+      "after": "Hasil pengujian sistem dirangkum dengan menunjukkan jumlah kasus yang direncanakan, telah dijalankan, lulus, gagal, dan belum dijalankan. Persentase kelulusan dihitung dari kasus yang lulus dibandingkan kasus yang dijalankan. Cakupan pengujian dihitung dari kasus yang dijalankan terhadap seluruh kasus yang direncanakan, sehingga kedua ukuran menjelaskan hal yang berbeda."
+    },
+    {
+      "paragraph": 64,
+      "before": "Analisis UAT menggunakan satuan pelaksanaan tugas per peserta dan per versi yang dinyatakan jelas. Penerimaan dihitung dari pelaksanaan tugas yang diterima dibagi pelaksanaan tugas yang telah dievaluasi, sedangkan tugas belum dievaluasi serta hasil uji ulang tetap dilaporkan terpisah.",
+      "after": "Analisis UAT disusun menurut pelaksanaan tugas pada setiap peserta dan versi aplikasi. Persentase penerimaan dihitung dari pelaksanaan tugas yang diterima dibandingkan pelaksanaan tugas yang telah dievaluasi. Tugas yang belum dievaluasi dan hasil pengujian ulang dilaporkan tersendiri untuk melengkapi gambaran penerimaan pengguna."
+    },
+    {
+      "paragraph": 65,
+      "before": "Penerimaan menyeluruh memerlukan selesainya tugas penting dan tidak adanya galat kritis yang terbuka. Hasil dibahas menurut integrasi fungsi, pemantauan penerimaan, dan kesesuaian kebutuhan, tanpa menyatakan penghematan waktu apabila pengukuran pembanding tidak dilakukan.",
+      "after": "Keputusan penerimaan menyeluruh mempertimbangkan penyelesaian tugas penting dan penanganan galat kritis yang masih terbuka. Hasilnya dibahas menurut integrasi fungsi, pemantauan penerimaan, dan kesesuaian dengan kebutuhan pengguna. Pembahasan mengikuti data evaluasi yang dikumpulkan, sedangkan kesimpulan tentang penghematan waktu memerlukan pengukuran pembanding tersendiri."
+    },
+    {
+      "paragraph": 66,
+      "before": "Setelah tindak lanjut, pengembang menyiapkan versi serah uji, panduan penggunaan, daftar keterbatasan, prosedur pencadangan, dan berita acara evaluasi. Penyerahan untuk pemakaian operasional dilakukan sesuai persetujuan mitra, sehingga akses uji tidak otomatis diperlakukan sebagai penerapan produksi.",
+      "after": "Setelah masukan UAT ditindaklanjuti, pengembang menyiapkan versi serah uji beserta panduan penggunaan, daftar keterbatasan, prosedur pencadangan, dan berita acara evaluasi. Bahan tersebut menjelaskan kondisi prototipe ketika diserahkan serta pekerjaan yang masih perlu dilanjutkan. Pemakaian untuk operasional kemudian ditentukan bersama mitra sesuai hasil evaluasi dan kesiapan penggunaannya."
+    },
+    {
+      "paragraph": 67,
+      "before": "Konsep prototipe disusun sebagai rancangan awal yang akan diperiksa bersama mitra. Kebutuhan yang berasal dari penjelasan operasional, pilihan teknis, dan usulan pengendalian dibedakan dalam matriks keterlacakan agar dasar setiap keputusan tetap jelas.",
+      "after": "Konsep prototipe menjelaskan bagaimana kegiatan administrasi Artha diterjemahkan menjadi fungsi, pembagian peran, dan hubungan data dalam sistem. Rancangan ini menghubungkan kebutuhan yang telah ditelusuri dengan pilihan proses serta tampilan yang akan dikembangkan. Bagian yang masih memerlukan keputusan operasional dibahas bersama mitra melalui matriks kebutuhan dan contoh alur kerja."
+    },
+    {
+      "paragraph": 68,
+      "before": "Proses usulan menghubungkan pencatatan cabang dengan pengawasan pusat melalui transaksi yang dapat ditelusuri. Kajian penerimaan SPP pada Hendri dkk. (2025, hlm. 124 sampai 125) digunakan sebagai pembanding pencatatan serta penelusuran bukti.",
+      "after": "Dalam rancangan ARTHA, pencatatan pada cabang dihubungkan dengan kebutuhan pengelola pusat untuk melihat dan menelusuri penerimaan. Data yang dimasukkan admin digunakan kembali dalam pemeriksaan pembayaran serta penyusunan rekap. Kajian penerimaan SPP pada Hendri dkk. (2025, hlm. 124 sampai 125) menjadi rujukan untuk memahami pencatatan dan penelusuran bukti pada proses tersebut."
+    },
+    {
+      "paragraph": 69,
+      "before": "Tabel 3.8 merangkum perubahan proses yang dirancang. Rincian kebijakan pembayaran dan petugas pemeriksa akan divalidasi kepada pihak yang mempunyai kewenangan rekening.",
+      "after": "Tabel 3.8 memperlihatkan hubungan antara proses berjalan yang ditelusuri dan alur yang diusulkan dalam sistem. Perbandingan ini membantu menjelaskan perubahan pekerjaan dari pencatatan cabang menuju penggunaan data terpusat. Rincian kebijakan pembayaran dan penetapan pemeriksa akan dibahas dengan pihak yang mempunyai kewenangan rekening."
+    },
+    {
+      "paragraph": 70,
+      "before": "Satu pembayaran dirancang untuk satu siswa dan satu cabang transaksi, dengan alokasi ke satu atau beberapa tagihan. Jumlah alokasi harus sama dengan nominal pembayaran, sedangkan tagihan yang dipilih harus berasal dari siswa serta cabang yang sama.",
+      "after": "Ketika menerima pembayaran, admin memilih satu atau beberapa tagihan milik siswa pada cabang transaksi yang sama. Sistem mencatat penerimaan sebagai satu transaksi, kemudian membaginya ke dalam rincian alokasi tagihan. Jumlah seluruh alokasi harus sama dengan nominal pembayaran agar kewajiban yang dilunasi dan uang yang diterima tetap sesuai."
+    },
+    {
+      "paragraph": 71,
+      "before": "Transfer diajukan dengan status menunggu verifikasi dan belum mengurangi sisa tagihan. Persetujuan dilakukan setelah pemeriksa berwenang mencocokkan dana masuk; pengembalian menyimpan alasan, sedangkan perbaikan diajukan sebagai transaksi baru yang tertaut pada pengajuan sebelumnya.",
+      "after": "Pengajuan transfer dimulai dengan pencatatan rincian pembayaran dan unggahan bukti oleh admin. Selama menunggu verifikasi, nominal tersebut belum mengurangi sisa tagihan. Pemeriksa menyetujui pengajuan setelah dana masuk sesuai, atau mengembalikannya disertai alasan; perbaikan kemudian diajukan melalui transaksi baru yang tetap terhubung dengan pengajuan lama."
+    },
+    {
+      "paragraph": 72,
+      "before": "Pembayaran tunai dihitung sebagai penerimaan setelah uang diterima dan pencatatan diselesaikan. Pada rancangan awal, setiap tagihan yang dipilih dilunasi sebesar sisa kewajibannya; fasilitas cicilan baru diaktifkan jika kebijakannya telah divalidasi.",
+      "after": "Pada pembayaran tunai, admin menyelesaikan pencatatan setelah uang diterima sehingga penerimaan dan alokasi tagihannya dapat diproses. Rancangan awal menggunakan pelunasan sebesar sisa kewajiban pada setiap tagihan yang dipilih. Jika mitra menetapkan kebijakan cicilan, aturan pembayaran sebagian akan ditambahkan setelah ketentuannya diperjelas."
+    },
+    {
+      "paragraph": 73,
+      "before": "Penyerahan kas ke pusat memuat pembayaran asal, penyerah, penerima, dan waktu penerimaan. Penyetoran ke bank merupakan tahap berikutnya yang mempunyai rekening, bukti, serta waktu sendiri, sehingga keduanya tidak menghasilkan pendapatan siswa yang baru.",
+      "after": "Kas yang diterima cabang dapat dihimpun untuk diserahkan ke pusat dengan mencantumkan pembayaran sumber, penyerah, penerima, dan waktu penerimaan. Ketika uang tersebut disetorkan ke bank, rekening tujuan, bukti, serta waktu setornya dicatat sebagai tahap berikutnya. Kedua tahap menggambarkan perpindahan dana yang sama, sehingga nilainya tidak dihitung kembali sebagai penerimaan siswa."
+    },
+    {
+      "paragraph": 74,
+      "before": "Pencocokan prototipe dibatasi pada satu dana masuk bank untuk satu transfer siswa atau satu setoran kas dengan nominal penuh yang sama. Dana gabungan beberapa sumber, selisih biaya, serta pencocokan sebagian ditandai untuk tindak lanjut di luar cakupan pencocokan prototipe.",
+      "after": "Pencocokan pada prototipe menghubungkan satu dana masuk bank dengan satu transfer siswa atau satu setoran kas yang nominal penuhnya sama. Setelah petugas memeriksa kesesuaian tersebut, referensi bank dihubungkan dengan transaksi sumber. Dana gabungan, selisih biaya, dan pencocokan sebagian dicatat untuk tindak lanjut karena penanganannya berada di luar cakupan pencocokan awal."
+    },
+    {
+      "paragraph": 75,
+      "before": "Pemisahan pencatatan pusat dan cabang mempunyai pembanding pada Ramadhan dan Widodo (2026, bagian pembahasan). Sudirman dan Tristianti (2021, hlm. 126 sampai 127) menjadi acuan pembahasan pencocokan catatan internal dengan bank, sedangkan sisa tagihan siswa disajikan terpisah dari selisih pencocokan.",
+      "after": "Hubungan pencatatan pusat dan cabang dipelajari melalui Ramadhan dan Widodo (2026, bagian pembahasan), sedangkan pencocokan catatan internal dengan bank merujuk Sudirman dan Tristianti (2021, hlm. 126 sampai 127). Kedua rujukan membantu menjelaskan kebutuhan rekap serta pemeriksaan dana pada ARTHA. Dalam penyajiannya, sisa kewajiban siswa dipisahkan dari selisih pencocokan agar informasi penagihan dan penerimaan dapat dibaca dengan tepat."
+    },
+    {
+      "paragraph": 76,
+      "before": "Kebutuhan fungsional disusun dari proses operasional dan tujuan pengembangan. Tabel 3.9 menyajikan kebutuhan awal beserta hasil yang diharapkan agar dapat diturunkan menjadi kasus pengujian.",
+      "after": "Kebutuhan fungsional menggambarkan pekerjaan yang perlu dilayani sistem, mulai dari pengelolaan siswa sampai pemantauan penerimaan. Setiap kebutuhan dirumuskan bersama keluaran yang diharapkan agar dapat diterjemahkan ke dalam rancangan dan pengujian. Daftar kebutuhan tersebut disajikan pada Tabel 3.9."
+    },
+    {
+      "paragraph": 77,
+      "before": "Penjadwalan pada ARTHA membantu pemeriksaan konflik pada jadwal yang disusun pengelola. Calon jadwal berkonflik dapat disimpan nonaktif untuk ditinjau, sedangkan pengaktifan pengecualian belum diberlakukan sebelum kebijakannya ditetapkan bersama mitra. Khafidhoh dkk. (2026, hlm. 15 sampai 16, 19) digunakan sebagai pembanding kebutuhan penjadwalan bimbel, sedangkan algoritma genetika pada penelitian tersebut tidak diadopsi sebagai fitur penyusunan jadwal otomatis.",
+      "after": "Pada penjadwalan, pengelola menyusun penugasan tentor dan ruang dengan bantuan informasi tentang waktu yang beririsan. Calon jadwal yang berkonflik dapat disimpan nonaktif untuk ditinjau, sementara ketentuan pengaktifan pengecualian akan ditetapkan bersama mitra. Penelitian Khafidhoh dkk. (2026, hlm. 15 sampai 16, 19) menjadi rujukan kebutuhan penjadwalan bimbel; rancangan ARTHA menggunakan pemeriksaan konflik tanpa mengadopsi penyusunan jadwal otomatis dengan algoritma genetika."
+    },
+    {
+      "paragraph": 78,
+      "before": "Kapasitas diperiksa dengan membandingkan jumlah keanggotaan aktif terhadap batas kelas. Kabisatullah dan Noprisson (2026, hlm. 94) memberikan pembanding validasi batas kapasitas dan irisan waktu, tetapi nilai kapasitas serta kebijakan penambahan siswa ditetapkan dari kebutuhan ARTHA.",
+      "after": "Ketersediaan kelas ditentukan dengan membandingkan jumlah anggota aktif dan batas peserta yang ditetapkan. Pemeriksaan kapasitas serta irisan waktu mempunyai rujukan pada Kabisatullah dan Noprisson (2026, hlm. 94). Pada ARTHA, nilai kapasitas dan aturan penambahan siswa mengikuti kebutuhan kelas serta ketentuan mitra."
+    },
+    {
+      "paragraph": 79,
+      "before": "Ambang hampir penuh dinyatakan sebagai parameter sisa tempat yang dapat ditetapkan pengelola. Ambang sisa tempat bernilai satu sampai kapasitas kelas, sedangkan kondisi penuh dihitung dari jumlah peserta aktif dan tidak menggantikan status operasional kelas.",
+      "after": "Pengelola menentukan ambang hampir penuh berdasarkan sisa tempat yang ingin ditampilkan sebagai peringatan. Nilainya berada pada rentang satu sampai kapasitas kelas, sedangkan kondisi penuh ditentukan ketika jumlah peserta aktif mencapai batas tersebut. Indikator keterisian ini ditampilkan terpisah dari status operasional kelas agar kelas aktif atau ditutup tetap dapat dibedakan."
+    },
+    {
+      "paragraph": 80,
+      "before": "Pemeriksaan dilakukan kembali pada peladen saat penyimpanan, termasuk ketika dua petugas mengajukan penempatan secara bersamaan. Penghitungan tidak hanya bergantung pada angka yang telah ditampilkan di layar karena data tersebut dapat berubah setelah dibuka pengguna lain.",
+      "after": "Jumlah peserta diperiksa kembali oleh peladen ketika penempatan disimpan. Langkah ini diperlukan karena kelas yang masih tersedia saat halaman dibuka dapat terisi oleh petugas lain sebelum penyimpanan selesai. Apabila dua petugas menambahkan siswa secara bersamaan, sistem menggunakan keadaan terbaru untuk menjaga jumlah peserta tetap dalam kapasitas."
+    },
+    {
+      "paragraph": 81,
+      "before": "Pesan WhatsApp memuat identitas siswa yang diperlukan, periode, sisa tagihan, dan tanggal jatuh tempo. Tautan menggunakan nomor internasional dan pesan yang dikodekan sesuai mekanisme *click to chat* pada dokumentasi WhatsApp (WhatsApp, t.t.).",
+      "after": "Pesan penagihan disusun dari data siswa, periode, sisa tagihan, dan tanggal jatuh tempo yang dipilih admin. Nomor wali menggunakan format internasional, sedangkan isi pesan dikodekan agar dapat dibuka melalui tautan WhatsApp. Pembentukan tautan mengikuti mekanisme *click to chat* pada dokumentasi WhatsApp (WhatsApp, t.t.)."
+    },
+    {
+      "paragraph": 82,
+      "before": "Permintaan pembukaan tautan dicatat sebagai tindakan admin. Catatan tersebut tidak diberi makna pesan terkirim, diterima, atau dibaca karena pengiriman berlangsung di luar sistem prototipe.",
+      "after": "Saat admin memilih tombol WhatsApp, sistem mencatat permintaan pembukaan tautan untuk membantu penelusuran tindak lanjut tagihan. Admin kemudian memeriksa percakapan dan mengirim pesan melalui WhatsApp. Karena pengiriman berlangsung di luar ARTHA, catatan tindakan tersebut tidak menunjukkan apakah pesan telah terkirim, diterima, atau dibaca."
+    },
+    {
+      "paragraph": 83,
+      "before": "Tabel 3.10 menyajikan kebutuhan nonfungsional yang menyertai fungsi utama. Kriteria pengujiannya dirumuskan sebagai perilaku yang dapat diperiksa, sedangkan batas kuantitatif kinerja akan ditetapkan sebelum pengukuran dilaksanakan.",
+      "after": "Selain fungsi operasional, rancangan memperhatikan cara sistem membatasi akses, menjaga data, dan menyajikan informasi kepada pengguna. Kebutuhan nonfungsional pada Tabel 3.10 menjadi dasar pemeriksaan aspek tersebut. Target kinerja yang memerlukan ukuran kuantitatif akan ditetapkan sebelum pengukuran dilakukan."
+    },
+    {
+      "paragraph": 84,
+      "before": "Hak akses ditetapkan berdasarkan peran dan hubungan pengguna dengan cabang. Pemisahan cakupan data pada artikel Ahadi dkk. (2025, hlm. 764 sampai 765) dan Thiovanda (2026, hlm. 4) menjadi pembanding, sedangkan susunan dua peran pada prototipe mengikuti ruang lingkup ARTHA.",
+      "after": "Hak akses dibagi menurut pekerjaan pengguna dan cabang yang menjadi tanggung jawabnya. Pemisahan data cabang serta akses pemantauan pusat dibahas pada Ahadi dkk. (2025, hlm. 764 sampai 765) dan Thiovanda (2026, hlm. 4). Dalam ARTHA, pembagian tersebut diterapkan melalui peran Admin Cabang dan Super Admin."
+    },
+    {
+      "paragraph": 85,
+      "before": "Tabel 3.11 menyajikan matriks kewenangan awal. Kewenangan keuangan yang belum disepakati akan diperiksa sebelum rancangan pembayaran diterapkan pada lingkungan mitra.",
+      "after": "Tabel 3.11 menunjukkan fungsi yang dapat dijalankan setiap peran dan cakupan data yang dapat diakses. Pembagian ini menjadi acuan pada halaman aplikasi maupun layanan pengolahan data. Kewenangan keuangan yang masih perlu ditetapkan akan dibahas bersama mitra sebelum alur pembayaran diterapkan."
+    },
+    {
+      "paragraph": 86,
+      "before": "Nilai identitas cabang yang kosong tidak digunakan sebagai satu-satunya dasar pemberian hak Super Admin. Setiap permintaan tetap diperiksa berdasarkan peran yang sah dan kewenangan terhadap objek data yang diakses.",
+      "after": "Sistem memeriksa peran yang diberikan pada akun dan hubungan pengguna dengan objek data pada setiap permintaan. Identitas cabang membantu menentukan cakupan akses, tetapi nilai cabang yang kosong tidak memberikan hak Super Admin. Dengan pemeriksaan tersebut, izin mengikuti penugasan yang sah."
+    },
+    {
+      "paragraph": 87,
+      "before": "Tentor dan wali murid tidak diberi akun dasbor dalam rancangan inti. Data tentor digunakan untuk penjadwalan, sedangkan nomor wali digunakan sebagai tujuan komunikasi yang dijalankan admin.",
+      "after": "Tentor dan wali murid terlibat dalam proses operasional sebagai sumber data penjadwalan dan tujuan komunikasi. Dalam rancangan inti, keduanya tidak memerlukan akun dasbor. Admin mengelola penugasan tentor dan menggunakan nomor wali untuk menjalankan komunikasi yang berkaitan dengan tagihan."
+    },
+    {
+      "paragraph": 88,
+      "before": "Cerita pengguna disusun dengan peran, tindakan, manfaat, serta kriteria penerimaan yang dapat diamati. Penyusunannya mempunyai pembanding pada Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105), sedangkan isi Tabel 3.12 berasal dari kebutuhan ARTHA.",
+      "after": "Cerita pengguna menjelaskan fungsi dari sudut pandang orang yang akan menjalankannya, dengan menghubungkan tindakan dan manfaat yang dibutuhkan. Setiap cerita dilengkapi kriteria penerimaan untuk memperjelas hasil yang akan diperiksa. Bentuk penyusunannya merujuk Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105), sedangkan cerita pada Tabel 3.12 disesuaikan dengan pekerjaan pengguna ARTHA."
+    },
+    {
+      "paragraph": 89,
+      "before": "Tabel 3.13 menghubungkan setiap kebutuhan dengan sumber, cerita pengguna, use case, iterasi, dan kelompok pemeriksaan. Prioritas seluruh kebutuhan adalah inti, sedangkan urutan pengerjaannya mengikuti ketergantungan pada Tabel 3.4.",
+      "after": "Tabel 3.13 menghubungkan kebutuhan dengan sumber, cerita pengguna, *use case*, iterasi, dan kelompok pemeriksaannya. Pemetaan ini membantu mengikuti satu kebutuhan sejak dirumuskan sampai diuji. Seluruh kebutuhan termasuk lingkup inti, dengan urutan pengerjaan mengikuti ketergantungan pada Tabel 3.4."
+    },
+    {
+      "paragraph": 90,
+      "before": "Kelompok PU mencakup kasus normal, pengecualian, dan batas yang relevan, bukan satu hasil uji tunggal. Matriks rinci menghubungkan kelompok tersebut dengan kasus BB, tabel sumber, bukti, dan status validasi pada lampiran keterlacakan.",
+      "after": "Setiap kelompok PU memuat kondisi normal, pengecualian, serta keadaan batas yang perlu diperiksa pada fungsi terkait. Rincian kasusnya dijabarkan melalui kode BB dan dihubungkan dengan tabel sumber, bukti pelaksanaan, serta status validasi pada lampiran keterlacakan. Dengan hubungan ini, pengembang dapat melihat bagian kebutuhan yang sudah diperiksa dan yang masih perlu diuji."
+    },
+    {
+      "paragraph": 91,
+      "before": "Pemodelan kasus penggunaan atau *use case* menggambarkan tujuan pengguna di dalam batas sistem. Penggunaan model ini mempunyai pembanding pada Ahadi dkk. (2025, hlm. 765), sedangkan Gambar 3.2 memakai katalog yang telah diselaraskan dengan rancangan data ARTHA.",
+      "after": "Pemodelan kasus penggunaan atau *use case* memperlihatkan hubungan antara pengguna dan fungsi yang mereka jalankan di dalam sistem. Penggunaan model ini merujuk Ahadi dkk. (2025, hlm. 765). Diagram ARTHA pada Gambar 3.2 menyajikan tujuan pengguna yang kemudian dijelaskan lebih lanjut melalui skenario."
+    },
+    {
+      "paragraph": 92,
+      "before": "Katalog memuat empat belas tujuan UC-00 sampai UC-13 dengan dua aktor pengguna. Tabel 3.14 merangkum contoh proses lintas peran, sedangkan seluruh skenario dan peta perubahan kode lama disimpan pada dokumen use case pendamping.",
+      "after": "Rancangan mencakup empat belas kasus penggunaan, yaitu UC-00 sampai UC-13, yang melibatkan Admin Cabang dan Super Admin. Contoh alur lintas peran ditunjukkan pada Tabel 3.14 melalui proses pengajuan serta pemeriksaan transfer. Skenario lengkap dan peta perubahan kode sebelumnya tersedia pada dokumen use case pendamping."
+    },
+    {
+      "paragraph": 93,
+      "before": "Pembatasan akses berlaku pada setiap tindakan dan objek yang diproses. Diagram tidak memisahkan setiap validasi formulir menjadi tujuan pengguna tersendiri, sedangkan skenario menjelaskan kondisi normal serta pengecualiannya.",
+      "after": "Diagram menampilkan tujuan pengguna, sementara langkah pemeriksaan formulir dan kewenangan dijelaskan di dalam skenario. Setiap skenario memuat alur normal serta pengecualian yang mungkin dihadapi ketika fungsi dijalankan. Pembagian ini membuat hubungan pengguna dengan sistem tetap mudah dibaca tanpa menghilangkan aturan akses pada setiap tindakan."
+    },
+    {
+      "paragraph": 94,
+      "before": "Basis data terpusat dirancang menjadi dua puluh tiga tabel yang memisahkan identitas, keanggotaan, kewajiban, penerimaan, dan perpindahan dana. Gambar 3.3 menampilkan hubungan transaksi utama, sedangkan ERD lengkap serta kamus data tersedia pada dokumen basis data pendamping.",
+      "after": "Penyimpanan data ARTHA dirancang secara terpusat dengan dua puluh tiga tabel yang saling berhubungan. Identitas, keanggotaan kelas, tagihan, pembayaran, serta perpindahan dana dipisahkan agar perubahan pada satu proses tetap dapat ditelusuri dalam riwayatnya. Hubungan data utama ditampilkan pada Gambar 3.3, sedangkan ERD lengkap dan kamus data disediakan pada dokumen basis data pendamping."
+    },
+    {
+      "paragraph": 95,
+      "before": "Tabel 3.15 merangkum pengelompokan tabel beserta fungsinya. Hubungan pembayaran dan tagihan memakai rincian alokasi agar satu penerimaan dapat digunakan untuk beberapa tagihan siswa yang sama.",
+      "after": "Tabel 3.15 mengelompokkan tabel berdasarkan kegiatan yang dilayaninya. Pada pembayaran, hubungan dengan tagihan dicatat melalui rincian alokasi agar satu penerimaan dapat digunakan untuk beberapa tagihan siswa yang sama. Pengelompokan ini membantu menjelaskan fungsi masing-masing data dalam alur operasional."
+    },
+    {
+      "paragraph": 96,
+      "before": "Tabel 3.16 menjelaskan atribut dan kendala yang paling memengaruhi ketepatan prototipe. Penghitungan peserta aktif, sisa tagihan, kondisi terlambat, dan ringkasan penerimaan diturunkan dari data sumber, bukan angka yang dapat diubah secara terpisah.",
+      "after": "Atribut dan aturan yang memengaruhi ketepatan pencatatan dirangkum pada Tabel 3.16. Jumlah peserta aktif, sisa tagihan, keterlambatan, serta ringkasan penerimaan dihitung dari data yang menjadi sumbernya. Dengan cara ini, informasi yang ditampilkan tetap mengikuti perubahan pada keanggotaan dan transaksi."
+    },
+    {
+      "paragraph": 97,
+      "before": "Penempatan peserta memerlukan kelas aktif dengan jadwal dan ruang yang memenuhi kapasitas kelompok. Perubahan ruang atau batas kelas diperiksa kembali terhadap peserta aktif, sedangkan hitungan serta penyimpanannya dilindungi oleh transaksi yang sama.",
+      "after": "Siswa ditempatkan pada kelas aktif yang memiliki jadwal serta ruang dengan kapasitas memadai. Jika ruang atau batas kelas diubah, sistem memeriksa kembali kesesuaiannya dengan jumlah peserta aktif. Pemeriksaan dan penyimpanan dilakukan dalam transaksi yang sama agar perubahan tetap menjaga ketersediaan tempat."
+    },
+    {
+      "paragraph": 98,
+      "before": "Laporan menggunakan cabang yang tersimpan pada transaksi agar perpindahan siswa tidak memindahkan riwayat penerimaan. Sisa tagihan dihitung dari nilai kewajiban dikurangi alokasi pembayaran sah, sedangkan penanda lewat jatuh tempo dihitung terpisah dari tingkat pelunasannya.",
+      "after": "Cabang pemilik tagihan dan pembayaran disimpan sesuai keadaan ketika transaksi dicatat. Riwayat penerimaan karena itu tetap berada pada cabang asal meskipun profil siswa kemudian berpindah cabang. Sisa tagihan dihitung dari kewajiban dikurangi alokasi pembayaran sah, sementara penanda lewat jatuh tempo ditentukan terpisah dari tingkat pelunasannya."
+    },
+    {
+      "paragraph": 99,
+      "before": "Skema fisik ditargetkan pada MySQL dengan mesin transaksi InnoDB. Rancangan kunci, indeks, penguncian, dan aturan nilai akan diperiksa melalui migrasi serta pengujian implementasi sebelum dinyatakan berjalan.",
+      "after": "Skema fisik akan diterapkan pada MySQL dengan mesin transaksi InnoDB. Sebelum digunakan, hubungan kunci, indeks, penguncian, dan batas nilai diperiksa melalui migrasi serta pengujian implementasi. Hasil pemeriksaan tersebut digunakan untuk memastikan rancangan penyimpanan bekerja sesuai kebutuhan aplikasi."
+    },
+    {
+      "paragraph": 100,
+      "before": "Antarmuka disusun menurut urutan kerja dan kewenangan pengguna. Gambar 3.4 sampai Gambar 3.9 memperlihatkan enam rancangan layar inti, sedangkan Tabel 3.17 menghubungkan layar dengan tugas pengguna.",
+      "after": "Rancangan antarmuka mengikuti urutan pekerjaan pengguna agar informasi dan tindakan dapat ditemukan pada halaman yang sesuai. Enam layar inti pada Gambar 3.4 sampai Gambar 3.9 menggambarkan kegiatan administrasi cabang dan pemantauan pusat. Hubungan layar dengan cerita pengguna serta tindakan utamanya dirangkum pada Tabel 3.17."
+    },
+    {
+      "paragraph": 101,
+      "before": "Angka, nama, serta transaksi pada rancangan layar merupakan data simulasi dan tidak menunjukkan kondisi keuangan mitra. Penanda warna disertai teks, sedangkan istilah status mengikuti skenario serta kamus data yang sama.",
+      "after": "Nama, angka, dan transaksi pada gambar menggunakan data simulasi untuk memperlihatkan alur penggunaan. Setiap indikator warna dilengkapi label teks agar keadaan kelas atau pembayaran tetap dapat dipahami. Istilah status juga digunakan secara konsisten dengan skenario dan kamus data."
+    },
+    {
+      "paragraph": 102,
+      "before": "Gambar 3.4 memperlihatkan rancangan dasbor admin cabang. Dasbor cabang menampilkan tunggakan, pengajuan transfer menunggu pemeriksaan, dan keterisian kelas sesuai cabang pengguna. Daftar tindak lanjut menghubungkan ringkasan dengan transaksi sumber untuk mendukung US-08, US-10, dan US-12.",
+      "after": "Dasbor Admin Cabang pada Gambar 3.4 menempatkan tunggakan, pengajuan transfer yang menunggu pemeriksaan, dan keterisian kelas sebagai informasi tindak lanjut. Admin dapat membuka rincian dari ringkasan tersebut untuk melanjutkan pekerjaan pada cabangnya. Susunan ini mendukung pengajuan pembayaran, penagihan, dan penelusuran informasi pada US-08, US-10, serta US-12."
+    },
+    {
+      "paragraph": 103,
+      "before": "Gambar 3.5 memperlihatkan rancangan penempatan dan keanggotaan kelas. Halaman keanggotaan menampilkan kapasitas, peserta aktif, sisa tempat, serta peringatan hampir penuh untuk US-03 dan US-04. Tombol penambahan dinonaktifkan ketika penuh, sedangkan tindakan mengakhiri keanggotaan menyimpan tanggal serta alasan tanpa menghapus siswa.",
+      "after": "Pada halaman keanggotaan dalam Gambar 3.5, admin dapat membandingkan jumlah peserta aktif, kapasitas, dan sisa tempat sebelum menempatkan siswa. Peringatan hampir penuh membantu pemilihan kelas, sedangkan tombol penambahan dinonaktifkan ketika penuh. Tindakan mengakhiri keanggotaan mencatat tanggal dan alasan tanpa menghapus siswa, sesuai kebutuhan pada US-03 serta US-04."
+    },
+    {
+      "paragraph": 104,
+      "before": "Gambar 3.6 memperlihatkan rancangan pengajuan transfer oleh admin cabang. Formulir pengajuan menampilkan siswa, cabang, tagihan yang dipilih, jumlah alokasi, rekening tujuan, serta bukti transfer untuk US-08. Pengiriman menghasilkan status menunggu verifikasi, sedangkan perbaikan dari pengajuan yang dikembalikan tetap memperlihatkan hubungan dengan pengajuan sebelumnya.",
+      "after": "Formulir pada Gambar 3.6 menghubungkan pengajuan transfer dengan siswa, cabang, tagihan yang dipilih, jumlah alokasi, rekening tujuan, dan bukti pembayaran. Setelah dikirim, pengajuan pada US-08 masuk ke status menunggu verifikasi. Jika pengajuan dikembalikan, formulir perbaikan tetap memperlihatkan hubungannya dengan pengajuan sebelumnya."
+    },
+    {
+      "paragraph": 105,
+      "before": "Gambar 3.7 memperlihatkan rancangan pemeriksaan transfer oleh super admin. Layar pemeriksaan menyandingkan pengajuan dengan rincian dana masuk yang dimasukkan petugas berwenang untuk US-09. Persetujuan memerlukan nominal dan referensi yang sesuai, sedangkan pengembalian mewajibkan alasan yang dapat ditindaklanjuti admin.",
+      "after": "Layar Super Admin pada Gambar 3.7 menyandingkan pengajuan transfer dengan rincian dana masuk yang dicatat petugas berwenang. Pada alur US-09 ini, pemeriksa menilai kesesuaian nominal dan referensi sebelum memberikan persetujuan. Apabila pengajuan perlu dikembalikan, alasan wajib diisi agar admin mengetahui bagian yang harus diperbaiki."
+    },
+    {
+      "paragraph": 106,
+      "before": "Gambar 3.8 memperlihatkan rancangan tunggakan dan pratinjau pesan whatsapp. Halaman tunggakan menampilkan periode, sisa tagihan, jatuh tempo, nomor wali, dan pratinjau pesan untuk US-10. Tombol membuka WhatsApp dengan pesan terisi, sementara pengiriman tetap dilakukan admin dan catatan tindakan tidak menunjukkan status pesan terkirim.",
+      "after": "Halaman tunggakan pada Gambar 3.8 menyediakan periode, sisa tagihan, jatuh tempo, nomor wali, dan pratinjau pesan sebelum admin menjalankan US-10. Tombol WhatsApp membuka percakapan dengan pesan terisi untuk diperiksa dan dikirim oleh admin. Sistem mencatat tindakan pembukaan tautan, sedangkan status pengiriman pesan tetap berada di luar pencatatan ARTHA."
+    },
+    {
+      "paragraph": 107,
+      "before": "Gambar 3.9 memperlihatkan rancangan dasbor pusat dan pencocokan penerimaan. Dasbor pusat membedakan tunggakan, penerimaan sah, pengajuan tertunda, dan dana yang telah dicocokkan untuk US-12 serta US-13. Petugas dapat membuka sumber transfer atau setoran, memeriksa referensi bank, dan menelusuri nominal tanpa menghitung setoran sebagai pendapatan siswa yang baru.",
+      "after": "Dasbor pusat pada Gambar 3.9 menyajikan tunggakan, penerimaan sah, pengajuan tertunda, dan dana yang telah dicocokkan dalam kelompok informasi yang berbeda. Melalui US-12 dan US-13, petugas dapat membuka sumber transfer atau setoran untuk menelusuri nominal serta referensi banknya. Penelusuran tersebut mempertahankan hubungan dengan pembayaran asal, sehingga setoran tidak dihitung kembali sebagai penerimaan siswa."
+    },
+    {
+      "paragraph": 108,
+      "before": "Spesifikasi teknis disusun sebagai kebutuhan awal implementasi prototipe. Versi perangkat lunak, kapasitas perangkat, dan konfigurasi pengujian akan dibekukan serta dicatat sebelum hasil pengujian digunakan untuk penarikan simpulan.",
+      "after": "Spesifikasi teknis menjelaskan perangkat dan komponen yang digunakan untuk mewujudkan rancangan ARTHA. Informasi ini mencakup perangkat lunak, perangkat keras, arsitektur, serta lingkungan pengembangan dan pengujian. Versi dan konfigurasi yang digunakan pada evaluasi akan dicatat sebagai konteks hasil pengujian."
+    },
+    {
+      "paragraph": 109,
+      "before": "Arsitektur dirancang dengan pemisahan antarmuka web dan layanan pengolahan data. Next.js digunakan pada antarmuka, Laravel digunakan untuk aturan bisnis dan layanan data, sedangkan MySQL digunakan sebagai penyimpanan terpusat.",
+      "after": "ARTHA dirancang dengan memisahkan antarmuka web, layanan pengolahan data, dan penyimpanan. Next.js menyajikan halaman pengguna, Laravel menjalankan aturan bisnis serta layanan data, sedangkan MySQL menyimpan data terpusat. Pembagian ini menempatkan pengolahan setiap permintaan pada komponen yang sesuai."
+    },
+    {
+      "paragraph": 110,
+      "before": "Gambar 3.10 menyajikan hubungan pengguna, antarmuka, layanan, penyimpanan, dan proses eksternal. Pemilihan arsitektur merupakan keputusan teknis penelitian, sehingga tidak digunakan sebagai bukti otomatis bahwa prototipe lebih cepat atau lebih aman daripada arsitektur lain.",
+      "after": "Gambar 3.10 memperlihatkan hubungan pengguna dengan antarmuka, layanan aplikasi, dan penyimpanan data. Diagram juga menunjukkan tindakan yang berlangsung melalui WhatsApp dan pemeriksaan mutasi rekening. Hubungan tersebut menjadi dasar untuk menjelaskan bagian yang diolah aplikasi dan bagian yang tetap dijalankan petugas."
+    },
+    {
+      "paragraph": 111,
+      "before": "Autentikasi direncanakan menggunakan fasilitas Laravel Sanctum dengan sesi berbasis kuki untuk antarmuka milik aplikasi sendiri. Konfigurasi domain, perlindungan permintaan, serta masa sesi disesuaikan dengan lingkungan penerapan dan diperiksa sebelum pengujian pengguna (Laravel, t.t.-a).",
+      "after": "Akses pengguna direncanakan menggunakan Laravel Sanctum dengan sesi berbasis kuki untuk antarmuka milik aplikasi sendiri. Konfigurasi domain, perlindungan permintaan, dan masa berlaku sesi disesuaikan dengan lingkungan penerapan. Pengaturannya akan diperiksa sebelum pengujian pengguna dengan merujuk dokumentasi Laravel (Laravel, t.t.-a)."
+    },
+    {
+      "paragraph": 112,
+      "before": "Antrean pengajuan menunggu pemeriksaan ditampilkan dari status transaksi pada dasbor Super Admin. Apabila mitra memerlukan status notifikasi dibaca, fasilitas notifikasi tersimpan Laravel dapat ditambahkan sebagai perluasan setelah kebutuhannya disepakati (Laravel, t.t.-b).",
+      "after": "Pengajuan transfer yang belum diputuskan ditampilkan sebagai antrean pada dasbor Super Admin berdasarkan status transaksinya. Antrean ini menjadi tempat pemeriksa menemukan pekerjaan yang perlu ditindaklanjuti. Jika mitra memerlukan penanda notifikasi telah dibaca, fasilitas notifikasi tersimpan Laravel dapat ditambahkan setelah kebutuhan tersebut disepakati (Laravel, t.t.-b)."
+    },
+    {
+      "paragraph": 113,
+      "before": "Data dasbor dimuat dari layanan terpusat saat halaman dibuka atau diperbarui setelah tindakan pengguna. Istilah waktu nyata pada rancangan ini dibatasi pada informasi tersimpan terbaru yang dimuat melalui layanan, bukan jaminan pembaruan serentak tanpa pemuatan ulang pada seluruh perangkat.",
+      "after": "Dasbor mengambil data terbaru yang tersimpan ketika halaman dibuka atau dimuat kembali setelah tindakan pengguna. Dengan mekanisme ini, istilah waktu nyata merujuk pada informasi terbaru yang diminta dari layanan terpusat. Pembaruan serentak tanpa pemuatan ulang pada semua perangkat belum menjadi mekanisme yang dijanjikan dalam rancangan."
+    },
+    {
+      "paragraph": 114,
+      "before": "Kebutuhan pembaruan berkala dan batas waktu tanggapan akan diperiksa bersama mitra sebelum ditetapkan sebagai kriteria penerimaan. Mekanisme yang akhirnya digunakan serta hasil pengukurannya dicatat pada bab hasil agar tidak terjadi perbedaan antara istilah dan pelaksanaan.",
+      "after": "Kebutuhan pembaruan berkala dan batas waktu tanggapan akan dibahas bersama mitra sesuai cara penggunaan dasbor. Hasil pembahasan digunakan untuk menetapkan kriteria penerimaan sebelum pengukuran. Mekanisme yang diterapkan dan waktu tanggapannya kemudian dijelaskan pada bab hasil."
+    },
+    {
+      "paragraph": 115,
+      "before": "Perangkat pengembangan perlu menjalankan penyunting kode, antarmuka web, layanan aplikasi, dan basis data lokal. Tabel 3.18 membedakan informasi yang telah diketahui dari rincian perangkat yang masih perlu dicatat sebelum pengujian.",
+      "after": "Komputer pengembangan digunakan untuk menjalankan penyunting kode, antarmuka web, layanan aplikasi, dan basis data lokal. Kebutuhan perangkat pengguna ditentukan menurut tugas administrasi serta lingkungan evaluasi bersama mitra. Tabel 3.18 merangkum perangkat yang tersedia dan rincian yang masih perlu dilengkapi sebelum pengujian."
+    },
+    {
+      "paragraph": 116,
+      "before": "Kapasitas perangkat tidak ditetapkan dari spesifikasi artikel terdahulu. Inventaris aktual dan kondisi jaringan dicatat bersama hasil agar konteks pelaksanaan dapat diperiksa.",
+      "after": "Spesifikasi perangkat yang digunakan dicatat bersama kondisi jaringan pada saat pengujian. Catatan tersebut membantu menjelaskan lingkungan tempat fungsi ARTHA dijalankan dan hasilnya diperoleh. Inventaris perangkat pengguna maupun peladen uji akan dilengkapi sesuai perangkat yang dipilih untuk evaluasi."
+    },
+    {
+      "paragraph": 117,
+      "before": "Ruang kerja telah mempunyai proyek antarmuka `website-artha` dengan berkas penguncian dependensi. Versi pada Tabel 3.19 diperiksa dari berkas tersebut pada 25 Oktober 2026 dan belum menunjukkan bahwa layanan administrasi serta basis data telah selesai diimplementasikan.",
+      "after": "Proyek antarmuka `website-artha` telah mempunyai berkas penguncian dependensi yang digunakan untuk mencatat versi komponen. Versi pada Tabel 3.19 diperiksa dari berkas tersebut pada 25 Oktober 2026. Tabel juga menjelaskan pilihan layanan, penyimpanan, dan perangkat pendukung yang akan digunakan dalam pengembangan terintegrasi."
+    },
+    {
+      "paragraph": 118,
+      "before": "Kebutuhan lingkungan antarmuka diperiksa terhadap dokumentasi resmi Next.js sesuai versi yang akhirnya digunakan (Vercel, t.t.). Pasangan PHP dan Laravel dipilih menurut kompatibilitas serta kebijakan dukungan yang berlaku, kemudian dicatat bersama lingkungan evaluasi (Laravel, t.t.-c).",
+      "after": "Konfigurasi lingkungan antarmuka mengikuti kebutuhan instalasi pada dokumentasi resmi Next.js (Vercel, t.t.). Pasangan PHP dan Laravel diperiksa menurut kompatibilitas serta kebijakan dukungannya, kemudian dicatat bersama lingkungan evaluasi (Laravel, t.t.-c). Langkah ini menyamakan acuan versi pada pengembangan dan pengujian."
+    },
+    {
+      "paragraph": 119,
+      "before": "Keberadaan dependensi lokal digunakan sebagai bukti pilihan teknologi yang tersedia, bukan hasil pengujian prototipe. Versi layanan, konfigurasi koneksi, dan hasil migrasi akan dilengkapi sebelum pengujian terintegrasi.",
+      "after": "Berkas dependensi, pengaturan layanan, dan konfigurasi koneksi disimpan sebagai bagian dokumentasi teknis proyek. Sebelum pengujian terintegrasi, pengembang melengkapi versi layanan yang digunakan serta memeriksa hasil migrasi basis data. Informasi tersebut menjadi acuan untuk menyiapkan ulang lingkungan dengan konfigurasi yang sama."
+    },
+    {
+      "paragraph": 120,
+      "before": "Lingkungan pengembangan dipisahkan dari lingkungan evaluasi mitra. Data buatan atau tersamarkan digunakan untuk pengujian awal, sedangkan penggunaan data nyata dibatasi sesuai izin dan kebutuhan tugas yang diperiksa.",
+      "after": "Pengembangan dan evaluasi mitra menggunakan lingkungan yang terpisah agar kegiatan pengujian dapat dijalankan dengan data yang telah disiapkan. Pengujian awal memakai data buatan atau tersamarkan. Data nyata digunakan sesuai izin mitra dan dibatasi pada informasi yang diperlukan untuk menjalankan tugas evaluasi."
+    },
+    {
+      "paragraph": 121,
+      "before": "Berkas bukti pembayaran disimpan pada lokasi yang memerlukan pemeriksaan kewenangan. Kata sandi, pengaturan koneksi, dan kredensial rekening tidak dimasukkan ke laporan, repositori terbuka, atau gambar hasil pengujian.",
+      "after": "Bukti pembayaran disimpan pada penyimpanan privat dan hanya dapat dibuka setelah sistem memeriksa kewenangan pengguna. Kredensial koneksi, kata sandi, serta akses rekening dikelola terpisah dari bahan laporan. Pengaturan ini juga berlaku pada repositori terbuka dan gambar hasil pengujian agar informasi akses tidak ikut ditampilkan."
+    },
+    {
+      "paragraph": 122,
+      "before": "Waktu kejadian disimpan dalam UTC dan ditampilkan dalam zona waktu Asia/Makassar untuk operasional Balikpapan. Tanggal kewajiban dan jatuh tempo menggunakan kalender operasional tersebut, dengan tanggal yang ditetapkan pada setiap tagihan.",
+      "after": "Waktu kejadian disimpan dalam UTC, kemudian ditampilkan menggunakan zona waktu Asia/Makassar sesuai operasional Balikpapan. Tanggal kewajiban dan jatuh tempo mengikuti kalender operasional yang sama. Setiap tagihan menggunakan tanggal yang telah ditetapkan pada datanya."
+    },
+    {
+      "paragraph": 123,
+      "before": "Pengujian bersama mitra menggunakan akun simulasi minimal dua cabang dan satu akun pusat agar pembatasan data dapat diperiksa. Jumlah data uji, kondisi jaringan, versi, dan perangkat dicatat; cakupan tersebut merupakan rencana pengujian, bukan jumlah peserta yang sudah hadir.",
+      "after": "Untuk memeriksa pembatasan akses, lingkungan evaluasi disiapkan dengan akun simulasi minimal dua cabang dan satu akun pusat. Akun tersebut digunakan pada data uji yang mewakili pekerjaan kedua peran. Jumlah data, jaringan, versi, dan perangkat dicatat saat pelaksanaan, sedangkan peserta evaluasinya ditetapkan bersama mitra."
+    },
+    {
+      "paragraph": 124,
+      "before": "Data awal memuat kelas tersedia, hampir penuh, penuh, jadwal beririsan, beberapa siklus tagihan, transfer dikembalikan, serta setoran tunai. Pemeriksaan awal dilakukan setelah pemuatan data dan pencadangan, kemudian keadaan awal dipulihkan bila diperlukan untuk mengulang kasus.",
+      "after": "Data awal mencakup kelas yang masih tersedia, hampir penuh, dan penuh, serta jadwal yang beririsan dan tagihan dengan siklus berbeda. Pengajuan transfer yang dikembalikan dan setoran tunai juga disiapkan untuk mencoba perubahan status serta tindak lanjutnya. Setelah data dimuat, fungsi diperiksa dan cadangan awal disimpan agar keadaan yang sama dapat dipulihkan ketika kasus perlu diulang."
+    },
+    {
+      "paragraph": 125,
+      "before": "Pencadangan mencakup basis data dan berkas pendukung yang saling berkaitan. Pemulihan diperiksa pada lingkungan uji sebelum dinyatakan sebagai kemampuan prototipe.",
+      "after": "Pencadangan dilakukan terhadap basis data dan berkas pendukung yang saling berkaitan. Pengembang kemudian mencoba pemulihan pada lingkungan uji untuk memeriksa apakah data serta berkas dapat digunakan kembali. Hasil pemeriksaan ini menjadi bagian dokumentasi kemampuan pemulihan prototipe."
+    },
+    {
+      "paragraph": 126,
+      "before": "Rencana pengembangan disusun selama dua belas minggu relatif dengan empat iterasi dua mingguan. Penelaahan wawancara dan penyusunan rancangan telah memiliki artefak per 25 Oktober 2026, sedangkan tanggal mulai implementasi serta evaluasi belum disepakati.",
+      "after": "Pengembangan direncanakan selama dua belas minggu relatif, dengan empat iterasi yang masing-masing dialokasikan dua minggu. Dokumentasi wawancara dan rancangan yang telah tersedia per 25 Oktober 2026 menjadi bahan awal pelaksanaan. Tanggal mulai implementasi serta evaluasi akan ditetapkan bersama pembimbing dan mitra."
+    },
+    {
+      "paragraph": 127,
+      "before": "Tabel 3.20 menunjukkan alokasi pelaksanaan berikutnya dan tidak digunakan untuk mengklaim bahwa kegiatan yang telah terdokumentasi harus diulang seluruhnya. Minggu pertama dimulai pada tanggal yang akan ditetapkan bersama pembimbing dan mitra.",
+      "after": "Tabel 3.20 menyajikan alokasi kegiatan dari klarifikasi kebutuhan sampai penyiapan luaran. Bahan wawancara dan rancangan yang sudah tersedia digunakan kembali serta dilengkapi sesuai kebutuhan pelaksanaan. Minggu pertama dihitung dari tanggal mulai yang akan disepakati, sehingga tabel berfungsi sebagai rencana pembagian waktu."
+    },
+    {
+      "paragraph": 128,
+      "before": "Pengujian unit, pengujian sistem, dan evaluasi iterasi berlangsung di dalam setiap alokasi iterasi. Rincian jam tugas dan tanggal kalender dilengkapi sebelum pelaksanaan, kemudian disesuaikan apabila terdapat perubahan kebutuhan atau ketersediaan mitra.",
+      "after": "Pengujian unit, pengujian sistem, dan evaluasi dilakukan di dalam setiap iterasi agar hasilnya dapat digunakan pada pekerjaan berikutnya. Alokasi mingguan kemudian dirinci menjadi jam tugas dan tanggal pelaksanaan sebelum kegiatan dimulai. Jika kebutuhan atau ketersediaan mitra berubah, jadwal disesuaikan bersama catatan pengaruhnya terhadap pekerjaan yang tersisa."
+    },
+    {
+      "paragraph": 129,
+      "before": "Penyusunan laporan mengikuti panduan kepenulisan ITK, sedangkan luaran prototipe dilaporkan sesuai ketentuan program studi (Institut Teknologi Kalimantan, 2025a; Institut Teknologi Kalimantan, 2026). Jadwal akhir dicatat bersama versi rencana agar perubahan dari usulan awal dapat diperiksa.\n",
+      "after": "Penyusunan laporan mengikuti panduan kepenulisan ITK, sedangkan bahan luaran prototipe disiapkan sesuai ketentuan program studi (Institut Teknologi Kalimantan, 2025a; Institut Teknologi Kalimantan, 2026). Perkembangan pekerjaan dan perubahan jadwal dicatat sepanjang pelaksanaan. Catatan tersebut menghubungkan rencana awal dengan proses yang nantinya dijelaskan dalam laporan."
+    }
+  ],
+  "preserved_other_files": {
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAFT 1).md": "8b0ac0f84e59241264149941c08e45871c910e9d8e5400d5f3769b52eee0066c",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md": "a57dd4726f73ac4e87c80569342a941194c0f39f531fc71eb1b7f53b600a9d68",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN USE CASE & SKENARIO.md": "f86ea7b9d4dbb39db8622329f833f739a83a0344af08a3ea0c071dddc6d4a5ed",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN BASIS DATA (SKEMA & ERD).md": "fb6fe06228b9763d4976928b291782bbb92881f21fdd0bf9f153252feeaf8eae"
+  }
+}

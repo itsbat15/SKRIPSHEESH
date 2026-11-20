@@ -1,0 +1,39 @@
+Saya sangat paham. Catatan kritis dari **Ibu Ayu pada sesi bimbingan ketiga (khususnya pada menit 14:18 sampai 15:25)** mempermasalahkan penggunaan istilah ***research gap*** pada kalimat pembuka dan sintesis Bab 2.2 karena alasan metodologis berikut:
+
+---
+
+### Bagian 1: Mengapa Bu Ayu Mengomentari Kata *Research Gap* Tidak Sesuai?
+
+Di naskah sebelumnya, kalimat pembuka Bab 2.2 berbunyi:
+> *"Kajian terhadap penelitian terdahulu dilakukan guna memahami konteks penelitian serta **memetakan celah penelitian (research gap)** yang dapat diisi oleh penelitian ini. Rujukan empiris yang ditelaah mencakup sepuluh artikel ilmiah..."*
+
+Bu Ayu mengoreksi kalimat tersebut karena **tiga alasan mendasar**:
+
+1. **Syarat Ilmiah *Research Gap* Adalah Kesamaan Domain Masalah (*Same Problem Domain*)**:
+   * *Research gap* (celah penelitian) secara kaidah akademik murni hanya sah diklaim apabila kita membandingkan penelitian-penelitian yang berada dalam **satu domain masalah yang sama**, yaitu sesama sistem informasi bimbingan belajar atau kursus pendidikan nonformal.
+   * Di dalam sepuluh penelitian terdahulu Anda, terdapat artikel dari domain yang berbeda jauh, seperti sistem reservasi hotel (*Ahadi dkk.*), sistem kas perusahaan dagang (*Sudirman & Tristianti*), sistem buku tamu dinas (*Musofa dkk.*), atau penjualan tanah kavling (*Apriyanti dkk.*).
+2. **Tidak Boleh Mengklaim Celah Terhadap Domain yang Berbeda**:
+   * Kita **tidak bisa** menyatakan ada *research gap* terhadap sistem hotel atau penjualan tanah kavling hanya karena mereka tidak memiliki fitur bimbingan belajar. Sistem hotel tentu saja tidak mengurusi jadwal tentor atau murid! 
+   * Mengatakan sistem perhotelan memiliki "kekurangan" karena tidak menangani bimbel adalah perbandingan yang tidak adil (*false comparison*) dan cacat logika ilmiah.
+   * Bu Ayu menegaskan bahwa literatur non-bimbel tersebut bukan dicari *gap*-nya, melainkan diposisikan sebagai **rujukan adopsi fitur teknis dan metodologi (*lesson learned / features to consider*)**, seperti adopsi isolasi dat
+<truncated 3352 bytes>
+i Informasi dan Ilmu Komputer (JTIIK)*, **SINTA 2**
+   * *Fokus*: Penerapan tujuh tahapan PxP oleh pengembang tunggal (*single developer*) dengan tingkat keberhasilan pengujian fungsional 100%.
+10. **Rekomendasi Pembaruan: Dwi Praseptiawan dkk. (2025)** — *JPKM (Jurnal Pengabdian dan Pemberdayaan Masyarakat)* UGM, **SINTA 2**
+   * *Catatan*: Pada naskah lama, nomor 10 diisi oleh Apriyanti dkk. (2024, JATI, SINTA 4). Kita memiliki berkas `35_Praseptiawan_dkk_2025_JPKM_SINTA2.pdf` (terbitan UGM, **SINTA 2**) yang menerapkan PxP secara komprehensif. Mengganti Apriyanti dengan Praseptiawan membuat seluruh rujukan PxP Anda berada di tingkat bergengsi **SINTA 2**.
+
+---
+
+### Bagian 3: Usulan Kalimat Pembuka Subbab 2.2 yang Sudah Disesuaikan dengan Arahan Bu Ayu
+
+Kalimat pembuka diubah dari yang semula mengklaim *research gap* umum menjadi kalimat pemetaan literatur yang terstruktur:
+
+> ## 2.2 Penelitian Terdahulu
+> 
+> Kajian terhadap penelitian terdahulu dilakukan guna memetakan keadaan terkini (*state of the art*) dalam pengembangan sistem informasi serta mengidentifikasi fitur fungsional dan metodologi rekayasa perangkat lunak yang relevan untuk dipertimbangkan dalam perancangan sistem Bimbel ARTHA Balikpapan. Telaah literatur berfokus pada tiga ranah utama, yaitu digitalisasi tata kelola administrasi dan penjadwalan bimbingan belajar, pola arsitektur pendukung integrasi multi-cabang beserta rekonsiliasi keuangan kas bank, serta efektivitas penerapan metodologi *Personal Extreme Programming* (PxP) oleh pengembang mandiri. Ringkasan perbandingan sepuluh penelitian terdahulu disajikan pada Tabel 2.9.
+
+---
+
+### Pertimbangan untuk Anda:
+1. Apakah Anda setuju dengan penjelasan mengenai alasan Bu Ayu tersebut (membedakan antara *research gap* domain sejenis dengan adopsi fitur teknis)?
+2. Untuk nomor 10 pada Tabel 2.9, apakah Anda ingin tetap mempertahankan **Apriyanti dkk. (2024, SINTA 4)** atau memperbaruinya dengan **Praseptiawan dkk. (2025, SINTA 2 dari UGM)** yang berkas PDF-nya sudah tersedia di folder rujukan Anda?

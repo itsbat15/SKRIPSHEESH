@@ -1,0 +1,1135 @@
+=== HALAMAN 1 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+15 
+ 
+EVALUASI PERFORMA MYSQL DAN MONGODB PADA QUERY 
+PATTERN E-COMMERCE SKALA KECIL BERBASIS LITERATUR 
+ 
+Moch. Nazril Ilham, Andika Faza Setiawan, Imam Prawira,  
+Didi Purnomo, Dicky Anggriawan Nugroho, Imam Prayogo Pujiono 
+Informatika, UIN K.H. Abdurrahman Wahid Pekalongan 
+Jalan Pahlawan Km 5 Rowolaku, Kec. Kajen, Kab. Pekalongan, Indonesia 
+moch.nazril.ilham24071@mhs.uingusdur.ac.id 
+ 
+ABSTRAK 
+ 
+Pesatnya pertumbuhan platform e-commerce skala kecil di Indonesia menuntut pemilihan sistem manajemen 
+basis data (DBMS) yang optimal untuk menjamin performa, skalabilitas, dan integritas data. MySQL dan 
+MongoDB menawarkan keunggulan berbeda, yang perlu dievaluasi berdasarkan pola query khas pada platform 
+e-commerce. Penelitian ini bertujuan untuk mengevaluasi performa, fleksibilitas, dan skalabilitas kedua sistem 
+tersebut melalui Systematic Literature Review (SLR) terhadap 20 artikel ilmiah periode 2021–2025. Hasil sintesis 
+menunjukkan bahwa tidak ada satu basis data yang unggul mutlak, melainkan performa optimal sangat bergantung 
+pada jenis beban kerja. MongoDB menunjukkan keunggulan signifikan dalam operasi tulis intensif, pembacaan 
+data sederhana, fleksibilitas skema, dan skalabilitas horizontal, menjadikannya ideal untuk pengelolaan data 
+dinamis seperti katalog produk, sesi pengguna, dan keranjang belanja. MySQL unggul dalam menjaga integritas 
+transaksional melalui properti ACID, efisiensi dalam eksekusi query relasional kompleks, serta keandalan data, 
+sehingga lebih cocok untuk data kritikal seperti transaksi keuangan dan manajemen stok. Berdasarkan temuan ini, 
+penelitian merekomendasikan implementasi strategi Polyglot Persistence, di mana MySQL berfungsi sebagai 
+Source of Truth untuk data transaksional kritikal, sementara MongoDB menangani data dinamis yang 
+membutuhkan performa tinggi dan fleksibilitas. Strategi hibrida ini memberikan panduan berbasis bukti bagi 
+pengembang dan arsitek sistem untuk membangun platform e-commerce skala kecil yang efisien, responsif, dan 
+konsisten. 
+ 
+Kata kunci : MySQL, MongoDB, Basis Data Relasional, NoSQL, E-Commerce, Query Pattern. 
+ 
+1. 
+PENDAHULUAN 
+Perkembangan teknologi digital telah mengubah 
+cara bisnis beroperasi di berbagai sektor. E-commerce 
+menjadi 
+salah 
+satu 
+bidang 
+yang 
+mengalami 
+pertumbuhan paling pesat karena mampu menjangkau 
+konsumen secara luas melalui platform daring. 
+Peningkatan aktivitas transaksi, interaksi pengguna, 
+dan penelusuran produk menghasilkan volume data 
+yang terus bertambah dari waktu ke waktu. Kondisi ini 
+menjadikan sistem manajemen basis data (DBMS) 
+sebagai komponen utama dalam menjaga kinerja, 
+kecepatan, dan kestabilan aplikasi [1]. 
+Pemilihan 
+arsitektur 
+basis 
+data 
+memiliki 
+pengaruh langsung 
+terhadap 
+efisiensi 
+aplikasi, 
+kemampuan sistem beradaptasi terhadap pertumbuhan 
+data, serta efektivitas biaya operasional. MySQL, 
+sebagai basis data relasional, telah lama digunakan 
+karena kemampuannya menjaga konsistensi dan 
+integritas data melalui prinsip ACID (Atomicity, 
+Consistency, Isolation, Durability) [2]. Struktur tabel 
+yang terorganisir menjadikan MySQL unggul dalam 
+pengelolaan 
+data 
+transaksi 
+seperti 
+pesanan, 
+pembayaran, dan manajemen inventaris. 
+Kebutuhan akan sistem yang lebih fleksibel 
+dalam menangani data tidak terstruktur mendorong 
+munculnya paradigma baru berupa basis data NoSQL. 
+MongoDB merupakan salah satu implementasi yang 
+populer karena menggunakan model dokumen dengan 
+struktur data yang fleksibel serta mendukung 
+skalabilitas horizontal melalui mekanisme sharding 
+[3]. Kemampuan tersebut membuat MongoDB efisien 
+dalam menangani data berukuran besar, aktivitas tulis 
+intensif, serta perubahan skema data yang dinamis [4]. 
+Platform e-commerce skala kecil sering menghadapi 
+tantangan dalam memilih sistem basis data yang 
+sesuai. MySQL unggul dalam menjaga integritas 
+transaksi dan efisiensi query kompleks, sedangkan 
+MongoDB lebih fleksibel untuk pengelolaan data 
+produk dan aktivitas pengguna yang sering berubah 
+[5]. Perbedaan rancangan arsitektur antara keduanya 
+berpengaruh terhadap cara eksekusi query pattern yang 
+umum ditemukan pada lingkungan e-commerce, 
+seperti 
+pengelolaan 
+katalog 
+produk, 
+transaksi 
+pelanggan, dan aktivitas penelusuran data. 
+Beberapa penelitian terdahulu telah melakukan 
+perbandingan terhadap kedua sistem basis data ini 
+pada berbagai konteks pengujian. Studi yang dilakukan 
+oleh sejumlah peneliti [6,7] menunjukkan bahwa 
+MongoDB memiliki keunggulan dalam kecepatan 
+operasi tulis, sedangkan MySQL menunjukkan 
+performa lebih baik dalam query analitik yang 
+melibatkan hubungan antartabel. Penelitian lain [8] 
+menilai perbandingan performa keduanya dalam 
+arsitektur REST API yang banyak digunakan pada 
+aplikasi e-commerce modern. Meskipun sejumlah 
+penelitian telah dilakukan, pembahasan yang secara 
+spesifik 
+menyoroti 
+perbandingan 
+performa 
+berdasarkan query pattern khas e-commerce skala 
+kecil masih terbatas dan belum dianalisis secara 
+mendalam. 
+
+
+=== HALAMAN 2 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+16 
+ 
+Permasalahan utama dalam penelitian ini terletak 
+pada kurangnya pemahaman komprehensif mengenai 
+perbandingan performa MySQL dan MongoDB dalam 
+menangani pola akses data yang sering digunakan di 
+platform e-commerce skala kecil. Masih sedikit studi 
+yang menjelaskan secara detail bagaimana perbedaan 
+arsitektur keduanya memengaruhi waktu respons, 
+throughput, serta efisiensi eksekusi query. Kajian 
+sistematis diperlukan untuk memberikan gambaran 
+yang jelas dan terukur mengenai kinerja kedua sistem 
+dalam konteks operasional e-commerce berskala kecil. 
+Penelitian 
+ini 
+bertujuan 
+untuk 
+mengevaluasi 
+performa MySQL dan MongoDB berdasarkan query 
+pattern yang umum digunakan dalam e-commerce 
+skala kecil. Analisis dilakukan untuk memahami 
+karakteristik 
+keduanya 
+dalam 
+hal 
+kecepatan, 
+skalabilitas, dan fleksibilitas skema. Hasil dari 
+penelitian 
+ini 
+diharapkan 
+dapat 
+menghasilkan 
+rekomendasi arsitektur basis data yang efisien dan 
+sesuai karakteristik beban kerja yang berbeda. 
+Berdasarkan rumusan tersebut, penelitian ini 
+dirancang secara sistematis untuk memperoleh 
+pemahaman mendalam mengenai efektivitas kedua 
+sistem manajemen basis data. Pendekatan yang 
+digunakan adalah Systematic Literature Review (SLR) 
+dengan 
+mengidentifikasi, 
+menganalisis, 
+dan 
+mensintesis 20 artikel ilmiah terbitan tahun 2021– 
+2025 yang membahas performa MySQL dan 
+MongoDB. Proses SLR dilakukan melalui pencarian 
+literatur pada basis data akademik seperti Google 
+Scholar dan IEEE Xplore dengan kata kunci yang 
+relevan, kemudian dilanjutkan dengan tahap seleksi 
+berdasarkan kriteria inklusi dan eksklusi yang telah 
+ditentukan. 
+Setiap artikel yang terpilih dianalisis berdasarkan 
+metrik performa meliputi waktu respons, throughput, 
+skalabilitas, dan fleksibilitas skema. Hasil evaluasi 
+dikelompokkan sesuai jenis query pattern untuk 
+menemukan pola dan tren performa yang konsisten. 
+Sintesis hasil penelitian digunakan untuk menyusun 
+rekomendasi arsitektur basis data yang sesuai dengan 
+karakteristik operasional e-commerce skala kecil serta 
+mendukung implementasi sistem yang efisien dan 
+adaptif terhadap perkembangan kebutuhan bisnis 
+digital. 
+Hasil akhir dari penelitian ini diharapkan dapat 
+memberikan kontribusi bagi pengembang, peneliti, dan 
+perancang 
+sistem 
+dalam 
+menentukan 
+strategi 
+pengelolaan data yang tepat guna. Kajian ini juga 
+memperkaya literatur mengenai evaluasi performa 
+sistem manajemen basis data pada konteks e- 
+commerce 
+skala 
+kecil 
+serta 
+menjadi 
+dasar 
+pengembangan sistem yang responsif, stabil, dan 
+berorientasi pada efisiensi sumber daya. 
+ 
+2. 
+TINJAUAN PUSTAKA 
+Database 
+relasional 
+(SQL) 
+adalah 
+sistem 
+manajemen basis data yang didasarkan pada model 
+relasional yang diperkenalkan oleh Edgar F. Codd, 
+yang mengorganisasi data dalam tabel yang saling 
+terhubung melalui primary key dan foreign key [10]. 
+MySQL, sebagai salah satu RDBMS sumber terbuka 
+populer, mengimplementasikan prinsip ini dengan 
+menekankan konsistensi data melalui mekanisme 
+ACID (Atomicity, Consistency, Isolation, Durability) 
+untuk menjamin keandalan transaksi. Struktur skema 
+schema-on-write memastikan integritas data, sehingga 
+MySQL banyak digunakan untuk mengelola data 
+transaksi seperti pesanan, pembayaran, dan inventaris 
+produk [5, 11]. 
+Paradigma 
+NoSQL 
+dikembangkan 
+untuk 
+menangani keterbatasan sistem relasional, terutama 
+pada data besar dan kebutuhan skalabilitas tinggi [2]. 
+MongoDB menyimpan data dalam format BSON 
+(Binary JSON) dan mendukung skema fleksibel 
+(schema-on-read), memungkinkan variasi struktur 
+antar dokumen dalam satu koleksi [1]. MongoDB juga 
+mendukung skalabilitas horizontal melalui sharding, 
+sehingga performa sistem tetap tinggi meskipun 
+volume 
+data 
+besar, 
+meski 
+fleksibilitas 
+ini 
+mengorbankan sebagian konsistensi sesuai prinsip 
+eventual consistency dalam teorema CAP [5, 8]. 
+Penelitian empiris menunjukkan perbedaan 
+kinerja antara MySQL dan MongoDB. MongoDB 
+unggul pada operasi tulis (insert dan update), terutama 
+pada dataset besar dan skenario write-heavy, dengan 
+throughput lebih tinggi dan waktu respons lebih 
+rendah [3, 4]. MySQL lebih baik pada query kompleks 
+yang melibatkan JOIN antar tabel dan operasi analitik 
+[12]. 
+Pola akses data (query pattern) menjadi faktor 
+utama dalam evaluasi performa database. Operasi 
+katalog bersifat 
+read-heavy, sedangkan proses 
+pemesanan dan pembayaran bersifat write-heavy 
+dengan kebutuhan konsistensi tinggi [13]. Operasi 
+analitik dan personalisasi menghasilkan volume data 
+besar yang memerlukan agregasi cepat untuk analisis 
+waktu nyata [10]. Pemahaman karakteristik arsitektur 
+dan performa masing-masing sistem menjadi dasar 
+penting dalam memilih teknologi database yang tepat 
+bagi platform e-commerce skala kecil yang berpotensi 
+berkembang. 
+ 
+3. 
+METODE PENELITIAN 
+Penelitian ini menerapkan pendekatan Studi 
+Literatur Sistematis (Systematic Literature Review / 
+SLR), karena kemampuannya untuk mengidentifikasi, 
+mengevaluasi, dan mensintesis bukti penelitian secara 
+transparan dan dapat direplikasi [14]. Pendekatan SLR 
+memungkinkan 
+analisis 
+komprehensif 
+terhadap 
+temuan empiris dari berbagai studi tanpa perlu 
+eksperimen primer, sangat sesuai untuk mengevaluasi 
+performa teknologi berdasarkan literatur yang ada. 
+Proses penelitian mengikuti kerangka kerja mapan 
+dalam rekayasa perangkat lunak dan sistem informasi. 
+Tahapan penelitian diawali dengan perumusan 
+pertanyaan penelitian: 
+a. Bagaimana perbandingan performa MySQL dan 
+MongoDB pada query pattern operasi tulis 
+(create, update) untuk e-commerce? 
+
+
+=== HALAMAN 3 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+17 
+ 
+b. Bagaimana perbandingan performa pada query 
+pattern operasi baca (read), baik sederhana 
+maupun kompleks? 
+c. Faktor arsitektural apa yang paling signifikan 
+memengaruhi pemilihan di antara keduanya 
+untuk e-commerce skala kecil? 
+ 
+Pencarian literatur dilakukan secara sistematis 
+pada basis data akademik seperti Google Scholar dan 
+IEEE Xplore, menggunakan kombinasi kata kunci 
+seperti 
+“MySQL 
+vs 
+MongoDB 
+performance”, 
+“perbandingan kinerja MySQL dan MongoDB”, dan 
+“SQL vs NoSQL e-commerce benchmark”. 
+Kriteria 
+inklusi 
+ditetapkan 
+agar 
+artikel 
+merupakan studi empiris atau komparatif yang 
+diterbitkan antara 2021–2025 dan membahas metrik 
+performa relevan (misal: waktu respons, throughput). 
+Kriteria eksklusi menyaring materi non-ilmiah, studi 
+di luar rentang waktu, atau penelitian tanpa 
+perbandingan  langsung  MySQL  dan  MongoDB. 
+Proses seleksi menghasilkan 20 artikel inti, termasuk 
+karya signifikan dari [1, 3, 6]. 
+Ekstraksi data dilakukan secara terstruktur, 
+mencatat metodologi, volume data, metrik performa, 
+dan temuan kuantitatif dalam formulir standar. Data 
+kemudian disintesis secara naratif, mengelompokkan 
+temuan berdasarkan query pattern dan metrik 
+performa. Tren dan pola konsisten diidentifikasi untuk 
+membangun argumen koheren, sementara temuan 
+yang bertentangan dianalisis untuk memahami faktor 
+kontekstual seperti perbedaan konfigurasi atau beban 
+kerja. Sintesis ini menjadi dasar bagian hasil dan 
+pembahasan penelitian. 
+ 
+ 
+4. 
+HASIL DAN PEMBAHASAN 
+4.1. Analisis Hasil Kajian Literatur 
+Analisis sistematis terhadap 20 studi literatur 
+yang relevan dari periode 2021 hingga 2025 
+mengungkapkan temuan yang konsisten namun 
+beragam mengenai perbandingan performa antara 
+MySQL dan MongoDB, khususnya dalam konteks 
+query pattern yang lazim pada aplikasi e-commerce 
+skala kecil. Data yang terkumpul memberikan 
+wawasan komprehensif tentang keunggulan dan 
+kelemahan masing-masing sistem manajemen basis 
+data, serta konteks operasional di mana setiap basis 
+data menunjukkan performa terbaiknya. 
+Proses studi literatur berhasil mengidentifikasi 20 
+artikel ilmiah yang memenuhi kriteria inklusi. Setiap 
+literatur dianalisis secara kritis untuk mengekstraksi 
+fokus perbandingan, metodologi yang digunakan, serta 
+temuan utama yang relevan dengan query pattern e- 
+commerce. 
+Rangkuman 
+hasil 
+analisis 
+tersebut 
+disajikan pada Tabel 1, yang memuat fokus 
+perbandingan dan temuan utama dari masing-masing 
+peneliti. 
+ 
+ 
+Tabel 1. Sintesis Kajian Literatur MySQL dan MongoDB (2021-2025) 
+Penulis/Tahun 
+Fokus Perbandingan 
+Temuan Kunci 
+Setiawan (2025) 
+Performa REST API 
+(Response Time, Throughput) 
+MySQL unggul di hampir semua 
+metrik performa REST API [6]. 
+Ahmad Halimi,Ardi Sudarmanto, Ema 
+Utami, Kusnawi (2021) 
+Kinerja Waktu Respon Query 
+MongoDB unggul pada operasi write 
+dan read sederhana [8]. 
+Atta Zulfahrizan, Muhammad Raffi Akbar 
+Tanjung, Muhammad Zidane Al-Kautsar, 
+Dedy Kiswanto (2025) 
+Performa MySQL pada 
+Virtualisasi 
+Optimasi deployment (Virtualisasi) 
+krusial untuk performa MySQL [15]. 
+Jacintha Cordelie (2025) 
+Benchmarking NoSQL 
+NoSQL (MongoDB) lebih fleksibel 
+dan cepat untuk data semi-terstruktur 
+[16]. 
+Arini, Andrew, Ridwan Baharsyah (2025) 
+Load Balancing MySQL 
+Skalabilitas MySQL memerlukan 
+arsitektur Load Balancing yang 
+kompleks [17]. 
+Chandra Ramadhan, Mamok Andri 
+Senubekti, Suhendri Suhendri (2025) 
+Studi Literatur SQL vs 
+NoSQL 
+Pilihan tergantung kebutuhan: SQL 
+untuk integritas, NoSQL untuk 
+skalabilitas [14]. 
+Muhammad Sofyan Daud Pujas, Muh. Ikhsan 
+Amar, Muhammad Erwin Arif, Muhammad 
+Mukram Mustamin (2024) 
+Kinerja SQL vs NoSQL 
+MongoDB unggul pada create dan 
+read berkat replica dan size yang lebih 
+kecil [11]. 
+Lifan Dwinur Andrianto, Dwi Fatrianto 
+Suyatno (2024) 
+Performa Load Testing REST 
+API 
+MongoDB unggul pada load testing 
+untuk write dan read sederhana [9]. 
+I Made Dendi Maysanjaya, Kadek Teguh 
+Dermawan (2024) 
+Teori Manajemen Basis Data 
+Menyediakan dasar teori ACID vs 
+BASE [10]. 
+Budi Haryanto, Achmad Ardiansyah, Mepa 
+Kurniasih (2024) 
+Pengenalan NoSQL vs 
+Relasional 
+NoSQL mengatasi keterbatasan 
+skalabilitas RDBMS [5]. 
+Cornelia A. Gy˝orödi, Diana V. Dum¸se-
+Burescu, Doina R. Zmaranda and Robert¸S. 
+Gy˝orödi (2022) 
+Perbandingan CRUD 
+MongoDB lebih cepat pada operasi 
+CRUD seiring peningkatan volume 
+data [1]. 
+Augusto Gomes, Vitor Lopes, Edward 
+Ribeiro, Jorge Lima, Wagner Costa, Luis 
+Garcia, Maristela Holanda (2022) 
+Perbandingan Analytical 
+Queries 
+MySQL unggul pada analytical 
+queries (agregasi/JOIN) [12]. 
+
+
+=== HALAMAN 4 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+18 
+ 
+Penulis/Tahun 
+Fokus Perbandingan 
+Temuan Kunci 
+Danang Kastowo dan Suwanto Raharjo 
+(2022) 
+Perbandingan Penyimpanan 
+Data 
+MongoDB lebih fleksibel untuk data 
+yang tidak terstruktur [18]. 
+Mumtahana (2022) 
+Optimasi Desain Transaksi 
+(CRUD) 
+MongoDB memiliki running time lebih 
+cepat untuk Insert, Update, Delete, 
+Search [4]. 
+Yudha Yunanto Putra, Oktania 
+Purwaningrum, Rivaldo Hadi Winata (2022) 
+Performa Respon Waktu 
+Kueri 
+MongoDB lebih cepat untuk write dan 
+read sederhana [19]. 
+Nandy Naufal, Siti Nurkhodijah, Gregian 
+Bayu Anugrah, Arief Pratama, Muhammad 
+Ihsan Rabbani, Firgi Ahmad Dilla, Tiara 
+Nurhaliza Anggraeni, Ricky Firmansyah 
+(2022) 
+Kinerja Response Time Query 
+MongoDB unggul pada response time 
+untuk write dan read sederhana [3]. 
+Sudarsono (2021) 
+Perbandingan Performansi 
+Trade-off performa: MariaDB (SQL) 
+unggul pada read kompleks [20]. 
+Herianto Saputra (2021) 
+Kecepatan Modul 
+Administrasi 
+MySQL dapat memberikan kecepatan 
+yang memadai untuk aplikasi skala 
+kecil [21]. 
+Rivaldo Hadi Winata, Yudha Yunanto Putra 
+(2021) 
+Performa Waktu Respon 
+Kueri 
+PostgreSQL (SQL) unggul di hampir 
+semua skenario [22]. 
+Theresia Liana Sinaga, Novrido Charibaldi, 
+Nur Heri Cahyana (2023) 
+Perbandingan Waktu Respon 
+CRUD 
+MongoDB unggul pada operasi CRUD 
+dibandingkan NoSQL lain [23]. 
+ 
+Berdasarkan Tabel 1 dapat diamati bahwa 
+terdapat distribusi performa yang jelas antara kedua 
+sistem manajemen basis data. MySQL unggul pada 
+operasi kompleks, query relasional, dan integritas data, 
+sedangkan MongoDB menunjukkan performa tinggi 
+pada operasi write, read sederhana, dan fleksibilitas 
+skema. 
+Hasil studi ini menunjukkan bahwa tidak ada satu 
+solusi yang dapat dianggap superior secara universal; 
+pilihan optimal sangat bergantung pada jenis operasi, 
+volume data, dan kebutuhan konsistensi yang spesifik. 
+Temuan ini juga mengisi research gap penelitian 
+sebelumnya 
+yang 
+belum 
+secara 
+mendalam 
+mengevaluasi performa keduabasis data pada query 
+pattern e-commerce skala kecil. 
+Karakteristik beban kerja terbukti menjadi faktor 
+penentu utama dalam pemilihan basis data untuk e-
+commerce skala kecil. MySQL dapat mempertahankan 
+response time rendah untuk analytical queries dan 
+manajemen stok, sedangkan MongoDB unggul dalam 
+manajemen sesi pengguna, aktivitas klik, dan katalog 
+produk yang sering berubah. 
+ 
+4.2. Perbandingan Performa Berdasarkan Metrik 
+Utama 
+Berdasarkan hasil analisis literatur, dilakukan 
+sintesis lanjutan untuk mengelompokkan performa 
+MySQL dan MongoDB berdasarkan metrik yang 
+umum dihadapi pada platform e-commerce skala kecil. 
+Tabel 2 berikut menyajikan hasil sintesis perbandingan 
+performa kedua sistem berdasarkan enam metrik 
+utama, yaitu kinerja operasi tulis, operasi baca 
+sederhana, operasi baca kompleks, integritas dan 
+konsistensi data, skalabilitas dan throughput, serta 
+fleksibilitas skema. 
+ 
+ 
+Tabel 2. Perbandingan Performa MySQL vs MongoDB pada Query Pattern E-Commerce Skala Kecil 
+Metrik Performa 
+MySQL 
+MongoDB 
+Implikasi pada E-Commerce Skala 
+Kecil 
+Operasi Tulis (Write) 
+Sedang, overhead 
+validasi skema 
+Sangat tinggi, konsisten, 
+schema-on-read 
+Pencatatan log aktivitas, manajemen 
+keranjang belanja, ulasan produk. 
+MongoDB unggul. 
+Operasi Baca Sederhana 
+Cepat, efisien untuk 
+data terstruktur 
+Sangat cepat, single read 
+operation 
+Menampilkan halaman detail produk, 
+profil pengguna, data sesi. MongoDB 
+unggul. 
+Operasi Baca Kompleks 
+(Agregasi/JOIN) 
+Sangat cepat, 
+efisien untuk multi-
+tabel 
+Sedang, performa 
+menurun pada JOIN 
+mendalam 
+Laporan penjualan bulanan, analisis data 
+bisnis, segmentasi pelanggan. MySQL 
+unggul. 
+Integritas & Konsistensi 
+Data 
+Tinggi, ACID 
+compliant 
+Rendah, BASE, eventual 
+consistency 
+Proses pembayaran, manajemen stok, 
+transaksi keuangan. MySQL krusial. 
+Skalabilitas & 
+Throughput 
+Vertikal utama, 
+horizontal kompleks 
+Horizontal efisien via 
+sharding 
+Menangani lonjakan lalu lintas. 
+MongoDB unggul untuk pertumbuhan 
+data. 
+Fleksibilitas Skema 
+Rendah, perubahan 
+mahal 
+Sangat tinggi, dinamis 
+Iterasi fitur cepat, penambahan varian 
+produk, preferensi pengguna. MongoDB 
+unggul. 
+ 
+ 
+ 
+ 
+
+
+=== HALAMAN 5 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+19 
+ 
+Berdasarkan sintesis performa pada Tabel 2, hasil 
+analisis menunjukkan bahwa pemanfaatan kedua 
+sistem 
+manajemen 
+basis 
+data 
+secara 
+hibrida 
+memberikan solusi paling optimal untuk e- commerce 
+skala kecil. MongoDB unggul pada operasi write-
+heavy dan read sederhana yang bersifat intensif, serta 
+fleksibilitas skema yang memungkinkan penambahan 
+atribut produk tanpa downtime. Sementara itu, 
+MySQL tetap unggul dalam menjaga integritas dan 
+konsistensi data, terutama pada transaksi keuangan dan 
+operasi multi- tabel yang kompleks. 
+Keseimbangan antara kecepatan dan konsistensi 
+ini 
+menegaskan 
+relevansi 
+strategi 
+Polyglot 
+Persistence, di mana MySQL berperan sebagai sumber 
+data transaksi utama (Source of Truth), sementara 
+MongoDB digunakan sebagai lapisan dinamis untuk 
+data yang sering berubah dan memerlukan performa 
+tinggi pada operasi write- heavy. Keunggulan 
+MongoDB dalam operasi CRUD sederhana didukung 
+oleh sejumlah studi terkini,  seperti  penelitian  
+[1,3,4] yang menunjukkan peningkatan efisiensi 
+seiring bertambahnya volume data. 
+MongoDB 
+mengimplementasikan 
+arsitektur 
+schema-on-read, sehingga meminimalkan overhead 
+validasi data dan ideal untuk aktivitas pengguna secara 
+real-time. MySQL tetap unggul pada analytical 
+queries dan query relasional kompleks, seperti laporan 
+penjualan bulanan dan segmentasi pelanggan [12]. 
+Hasil analisis menegaskan adanya trade-off antara 
+performa dan integritas data. MongoDB menawarkan 
+fleksibilitas dan skalabilitas tinggi, sedangkan MySQL 
+memberikan 
+jaminan 
+integritas 
+transaksi 
+dan 
+keandalan data pada operasi kritikal. Kombinasi 
+keduanya memungkinkan sistem bekerja efisien tanpa 
+mengorbankan konsistensi maupun kecepatan. 
+Dalam konteks CRUD, MySQL dengan prinsip 
+ACID menjamin setiap transaksi selesai sepenuhnya 
+atau tidak sama sekali, sehingga risiko kehilangan data 
+atau inkonsistensi diminimalkan. Hal ini krusial pada 
+operasi yang melibatkan pembayaran, manajemen 
+stok, atau pemrosesan order multi-entitas. Studi [21] 
+menegaskan bahwa MySQL tetap menjadi pilihan 
+utama 
+ketika 
+integritas 
+data 
+tidak 
+boleh 
+dikompromikan, meski performanya menurun pada 
+operasi write-heavy dengan volume besar. 
+MongoDB menggunakan pendekatan BASE 
+(Basically 
+Available, 
+Soft 
+State, 
+Eventual 
+Consistency), menekankan ketersediaan dan performa 
+tinggi dengan mengorbankan konsistensi instan. Studi 
+[10] menunjukkan pendekatan ini sesuai untuk aplikasi 
+toleran 
+terhadap 
+konsistensi 
+tertunda, 
+seperti 
+manajemen katalog produk, sesi pengguna, atau histori 
+aktivitas pengguna. Penggunaan MongoDB untuk 
+transaksi kritikal sebaiknya dilengkapi dengan strategi 
+tambahan, seperti sistem log terpusat atau mekanisme 
+audit, agar konsistensi eventual tidak menimbulkan 
+kesalahan bisnis. 
+Skalabilitas menjadi sorotan utama pada lonjakan 
+pengguna, misalnya saat promo flash sale. MySQL 
+tradisional mengandalkan skalabilitas vertikal dengan 
+menambah kapasitas server, yang cukup untuk skala 
+kecil hingga menengah, tetapi terbatas saat volume 
+data besar. Studi [17] menyebut MySQL dapat 
+dioptimalkan melalui load balancing dan clustering, 
+meski kompleksitas meningkat seiring pertumbuhan 
+data. 
+Sementara 
+itu, 
+MongoDB 
+memanfaatkan 
+skalabilitas 
+horizontal 
+melalui 
+sharding, 
+menambahkan node baru untuk mengelola peningkatan 
+data. Studi [8] menunjukkan distribusi beban kerja 
+menjaga kecepatan respon tetap tinggi meski jumlah 
+transaksi bertambah. Keunggulan ini membuat 
+MongoDB lebih adaptif terhadap pertumbuhan data 
+yang cepat dan fluktuatif, terutama pada operasi write-
+heavy. Kombinasi MySQL untuk transaksi kritikal dan 
+MongoDB untuk operasi tulis serta baca sederhana 
+menawarkan strategi hibrida yang menyeimbangkan 
+performa, konsistensi, dan skalabilitas. 
+Fleksibilitas skema juga penting. MongoDB 
+memungkinkan penambahan atribut atau perubahan 
+struktur dokumen tanpa downtime, mendukung iterasi 
+fitur dan penambahan produk baru dengan cepat. Studi 
+[11] menekankan kemampuan ini penting bagi 
+platform e-commerce yang harus menyesuaikan diri 
+dengan tren pasar, variasi produk, dan preferensi 
+pengguna. MySQL, meski kurang fleksibel, unggul 
+menjaga integritas skema, sehingga perubahan struktur 
+tabel harus direncanakan hati-hati agar data tidak 
+rusak. 
+Sintesis temuan menunjukkan pola jelas: MySQL 
+unggul pada operasi integritas tinggi, query kompleks,  
+dan  transaksi  kritikal,  sementara MongoDB 
+unggul pada operasi write-heavy, baca sederhana, 
+fleksibilitas skema, dan skalabilitas horizontal. 
+Kombinasi keduanya dalam arsitektur hibrida menjadi 
+solusi ideal bagi e-commerce skala kecil, menjawab 
+kesenjangan penelitian sebelumnya yang belum 
+mengevaluasi performa kedua sistem secara integratif. 
+Pemilihan basis data sebaiknya tidak absolut, 
+tetapi disesuaikan kebutuhan operasional spesifik. 
+Strategi optimal untuk e-commerce skala kecil adalah 
+menggunakan MySQL sebagai basis data transaksi 
+utama yang menjaga konsistensi dan integritas, serta 
+MongoDB untuk manajemen data dinamis, write-
+heavy, dan baca sederhana, mendukung fleksibilitas 
+skema serta mempercepat respon terhadap permintaan 
+pengguna. Pendekatan ini memberikan panduan 
+praktis 
+bagi 
+pengembang 
+dan 
+peneliti 
+untuk 
+mengoptimalkan performa e- commerce skala kecil 
+tanpa mengorbankan integritas maupun fleksibilitas 
+data. 
+ 
+4.3. Rekomendasi 
+Arsitektur 
+dan 
+Implikasi 
+Praktis 
+Evaluasi literatur menunjukkan adanya korelasi 
+antara kompleksitas query pattern dan performa 
+masing-masing basis data. MySQL menonjol pada 
+query multi-tabel, JOIN, dan agregasi, sedangkan 
+MongoDB unggul pada query sederhana, batch write, 
+dan operasi baca/tulis intensif. Temuan ini konsisten di 
+
+
+=== HALAMAN 6 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+20 
+ 
+berbagai studi, termasuk dalam studi [4, 8, 16]. 
+Implikasi praktisnya adalah pengembangan 
+platform 
+e-commerce 
+dapat 
+membagi 
+query 
+berdasarkan kompleksitas: query kritikal dan analitik 
+menggunakan MySQL, sedangkan query dinamis dan 
+operasional menggunakan MongoDB. Strategi ini 
+dapat 
+mengurangi 
+bottleneck, 
+meningkatkan 
+throughput, dan menjaga kepuasan pengguna. Hasil 
+penelitian ini tidak hanya memperlihatkan perbedaan 
+performa, tetapi juga memberikan panduan desain 
+arsitektur hibrida yang jelas, menjawab kesenjangan 
+penelitian sebelumnya, serta memberikan dasar ilmiah 
+untuk pemilihan basis data pada e-commerce skala 
+kecil. 
+Kombinasi 
+MySQL 
+dan 
+MongoDB 
+memungkinkan platform memanfaatkan keunggulan 
+masing-masing 
+sistem, 
+sehingga 
+tetap 
+adaptif, 
+konsisten, dan memiliki performa tinggi, sekaligus 
+mendukung pertumbuhan data yang cepat dan dinamis. 
+Sebagai rangkuman tambahan, 
+Tabel 3 disusun untuk memberikan gambaran 
+menyeluruh mengenai perbandingan aspek utama 
+antara SQL (MySQL) dan NoSQL (MongoDB) 
+berdasarkan temuan literatur tahun 2021–2025. 
+ 
+ 
+Tabel 3. Perbandingan Aspek SQL (MySQL) dan NoSQL (MongoDB) 
+Aspek 
+SQL (MySQL) 
+NoSQL (MongoDB) 
+Struktur Data 
+Menggunakan model relasional dengan skema 
+ketat. Cocok untuk data yang sangat terstruktur 
+dan membutuhkan konsistensi tinggi. 
+Model non-relasional yang fleksibel (dokumen 
+JSON). Mampu menangani data semi-
+terstruktur dan tidak terstruktur yang umum 
+pada e-commerce modern. 
+Kinerja Operasi 
+CRUD 
+Performa create dan read cenderung menurun 
+ketika volume data mencapai ratusan ribu hingga 
+jutaan entri. Literatur menunjukkan bottleneck 
+pada insert dan update massal. 
+CRUD jauh lebih cepat dan stabil pada skala 
+besar. Beberapa studi melaporkan peningkatan 
+performa 30–70% pada operasi write-heavy dan 
+read-heavy untuk dataset besar. 
+Kinerja Query 
+Relasional 
+Sangat unggul untuk query kompleks berbasis 
+JOIN, agregasi multilevel, dan constraint 
+relasional yang kuat. 
+Kurang optimal untuk query relasional 
+kompleks. JOIN antar koleksi tidak sekuat SQL 
+sehingga membutuhkan denormalisasi atau 
+pipeline agregasi khusus. 
+Skalabilitas 
+Mendukung vertical scaling tetapi kurang efisien 
+dalam horizontal scaling. Ketergantungan pada 
+relasi tabel membuat distribusi data lebih sulit. 
+Mendukung horizontal scaling secara native 
+(sharding). Performa tetap stabil meskipun data 
+tumbuh sangat cepat, sesuai pola traffic e-
+commerce. 
+Efisiensi 
+Penyimpanan 
+Umumnya menghasilkan file penyimpanan lebih 
+besar karena normalisasi, indeks relasional, dan 
+redundansi struktur tabel. 
+Lebih efisien dalam penyimpanan. Studi 
+literatur menunjukkan penciutan ukuran 20–
+40% dibanding SQL untuk dataset e-commerce 
+berukuran sama. 
+Kecepatan 
+Waktu Respon 
+Waktu respon meningkat tajam pada query baca 
+massal dan transaksi paralel berskala besar. 
+Waktu respon baca dan tulis jauh lebih cepat 
+pada data besar, terutama pada skenario high 
+concurrency dan bulk operations. 
+Kompleksitas 
+Implementasi 
+Struktur yang terstandarisasi membuat 
+implementasi lebih mudah jika data memiliki 
+relasi jelas. Migrasi skema cukup kaku. 
+Desain skema fleksibel, tetapi bisa menjadi 
+kompleks jika tidak direncanakan matang 
+karena potensi inkonsistensi antar dokumen. 
+Kasus 
+Penggunaan 
+Sistem keuangan, ERP, aplikasi transaksi yang 
+menuntut ACID kuat dan integritas relasional. 
+E-commerce, aplikasi mobile, analitik big data, 
+logging, dan skenario high-traffic yang 
+membutuhkan performa baca/tulis tinggi. 
+Kelemahan 
+Utama 
+Performa menurun pada data besar, kurang 
+efisien untuk kebutuhan skalabilitas besar dan 
+beban kerja write-heavy. 
+Tidak optimal untuk query relasional kompleks 
+dan membutuhkan perancangan skema 
+denormalisasi yang lebih hati-hati. 
+ 
+ 
+Sintesis ini menegaskan bahwa baik MySQL 
+maupun MongoDB memiliki keunggulan masing-
+masing yang bergantung pada konteks penggunaan dan 
+pola query. Pemahaman karakteristik performa 
+keduanya 
+menjadi 
+landasan 
+penting 
+dalam 
+menentukan strategi pengelolaan data yang efisien, 
+konsisten, dan adaptif bagi e-commerce skala kecil. 
+ 
+5. 
+KESIMPULAN DAN SARAN 
+Penelitian ini menyimpulkan bahwa MySQL 
+unggul pada operasi yang membutuhkan integritas 
+tinggi dan query kompleks, sedangkan MongoDB 
+efektif untuk operasi write-heavy, read sederhana, 
+fleksibilitas 
+skema, 
+dan 
+skalabilitas 
+horizontal. 
+Kombinasi 
+keduanya 
+dalam 
+arsitektur 
+hibrida 
+memungkinkan platform e-commerce skala kecil 
+memanfaatkan keunggulan masing-masing sistem, 
+menjaga konsistensi, meningkatkan performa, dan 
+mendukung pertumbuhan data yang dinamis. Untuk 
+penelitian selanjutnya, disarankan mengeksplorasi 
+implementasi nyata strategi Polyglot Persistence pada 
+skenario e-commerce berskala besar, termasuk 
+optimasi replikasi data, evaluasi biaya operasional, dan 
+dampaknya terhadap pengalaman pengguna. 
+ 
+ 
+ 
+
+
+=== HALAMAN 7 / 7 ===
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 10 No. 1, Februari 2026 
+ 
+21 
+ 
+DAFTAR PUSTAKA 
+[1] 
+C. A. Győrödi, D. V. Dumşe-Burescu, D. R. 
+Zmaranda, And R. Győrödi, “A Comparative Study 
+Of Mongodb And Document-Based Mysql For Big 
+Data Application Data Management,” Big Data And 
+Cognitive Computing, Vol. 6, No. 2, P. 49, 2022, 
+Doi: 10.3390/Bdcc6020049. 
+[2] 
+A. A. Muhamad, D. A. Kusuma, I. Renaldi, And A. 
+Wibowo, “Studi Literatur Komparasi Sql Dan 
+Nosql Dalam Pemilihan Basis Data Ideal Untuk 
+Skalabilitas Tinggi,” Ikn: Jurnal Informatika Dan 
+Kesehatan, Vol. 2, No. 1, Pp. 37–48, 2025. 
+[3] 
+A. P. Nandy Naufal, Siti Nurkhodijah, Gregian 
+Bayu Anugrah And R. F. Muhammad Ihsan 
+Rabbani, Firgi Ahmad Dilla, Tiara Nurhaliza 
+Anggraeni, 
+“Analisa 
+Perbandingan 
+Kinerja 
+Response Time Query Mysql Dan Mongodb,” 
+Jurnal Jitek, Vol. 2, No. 2, Pp. 158–166, 2022. 
+[4] 
+H. A. Mumtahana, “Optimization Of Transaction 
+Database Design With Mysql And Mongodb,” 
+Sinkron, Vol. 7, No. 3, Pp. 883–890, 2022, Doi: 
+10.33395/Sinkron.V7i3.11528. 
+[5] 
+M. K. Budi Haryanto, Achmad Ardiansyah, 
+“Pengenalan Database Nosql Dan Perbandingannya 
+Dengan Database Relasional,” Jurnal Ipsikom, Vol. 
+12, No. 1, 2024. 
+[6] 
+I. Setiawan, “Comparative Study Of Mysql And 
+Mongodb Performance On Node . Js Rest Api Using 
+Chinook Database Studi Perbandingan Performa 
+Mysql Dan Mongodb Pada Rest Api Node . Js 
+Menggunakan Database Chinook,” Jurnal Media 
+Computer Science, Vol. 4, No. 2, Pp. 339–348, 
+2025, Doi: Https://Doi.Org/10.37676/Jmcs.V4i2. 
+[7] 
+H. Susanto, “Analisis Perbandingan Penggunaan 
+Mongodb Dengan Mysql Pada Sistem Informasi 
+Akademik,” 
+Institut 
+Teknologi 
+Adhi 
+Tama 
+Surabaya, 2022. 
+[8] 
+K. Ahmad Halimi, Ardi Sudarmanto, Ema Utami, 
+“Analisis Perbandingan Kinerja Waktu Respon 
+Mysql 8.0 Dan Nosql Mongodb Mengunakan 
+Restapi Nodejs Pada Studi Kasus Kelas Online,” 
+Jurnal Informatika, Vol. 10, No. 1, Pp. 26–33, 
+2021. 
+[9] 
+L. D. Andrianto And D. F. Suyatno, “Analisis 
+Performa Load Testing Antara Mysql Dan Nosql 
+Mongodb Pada Restapi Nodejs Menggunakan 
+Postman,” Jeisbi (Journal Of Emerging Information 
+Systems And Business Intelligent), Vol. 05, No. 01, 
+Pp. 18–26, 2024. 
+[10] I. M. D. M. K. T. Dermawan, Manajemen Basis 
+Data : Teori Dan Implementasi, No. December. 
+2024. 
+[11] M. Sofyan, D. Pujas, M. I. Amar, M. E. Arif, And 
+M. M. Mustamin, “Pengukuran Kinerja Database 
+Sql Dan Nosql Pada Aplikasi E- Commerce,” 
+Jurnal 
+Fokus 
+Elektroda : 
+Energi 
+Listrik, 
+Telekomunikasi, 
+Komputer, 
+Elektronika 
+Dan 
+Kendali, Vol. 09, No. 01, Pp. 12–15, 2024. 
+[12] A. Gomes Et Al., “An Empirical Performance 
+Comparison Between Mysql And Mongodb On 
+Analytical Queries In The Comex Database,” 
+Iberian Conference On Information Systems And 
+Technologies, Cisti, No. June, Pp. 23–26, 2021, 
+Doi: 10.23919/Cisti52073.2021.9476623. 
+[13] V. R. Putri, C. P. Wibowo, And H. A. Setia, 
+“Analisis Perbandingan Kecepatan Privileges Index 
+Pada Database Oracle Dan Database Mysql 
+Comparison Analysis Of Speed Privileges Index On 
+Oracle Database And Mysql Database,” Prosiding 
+Seminar Nasional Teknologi Dan Sistem Informasi 
+(Sitasi), No. September, Pp. 447–455, 2023. 
+[14] C. Ramadhan, M. A. Senubekti, S. Suhendri, And 
+U. T. Digital, “Perbandingan Sql Dan Nosql: Studi 
+Literatur Tentang Keunggulan, Kelemahan, Dan 
+Penerapannya,” Jupiter: Publikasi Ilmu Keteknikan 
+Industri, Teknik Elektro Dan Informatika, Vol. 3, 
+No. 
+3, 
+Pp. 
+1–6, 
+2025, 
+Doi: 
+Https://Doi.Org/10.61132/Jupiter.V3i3.785. 
+[15] A. Zulfahrizan, M. Raffi Akbar Tanjung, M. Zidane 
+Al-Kautsar, 
+And 
+D. 
+Kiswanto, 
+“Analisis 
+Perbandingan Performa Mysql Pada Lingkungan 
+Virtualisasi Pada Linux Debian Dan Ubuntu 
+Berbasis Web Server Nginx,” Jati (Jurnal 
+Mahasiswa Teknik Informatika), Vol. 9, No. 1, Pp. 
+1107–1112, 2025, Doi: 10.36040/Jati.V9i1.12545. 
+[16] J. Cordelie, “Benchmarking Basis Data Nosql Pada 
+Pt Infracom Technology,” Laporan, Universitas 
+Multimedia Nusantara, 2025. 
+[17] A. 
+Arini, 
+A. 
+Fiade, 
+And 
+R. 
+Baharsyah, 
+“Perbandingan Load Balancing Router Mysql Dan 
+Haproxy Menggunakan Sysbench Dan Cluster 
+Innodb Pada Sistem Operasi Centos,” Cyber 
+Security Dan Forensik Digital, Vol. 8, No. 1, Pp. 
+17–24, 
+2025, 
+Doi: 
+10.14421/Csecurity.2025.8.1.5004. 
+[18] D. 
+Kastowo 
+And 
+S. 
+Raharjo, 
+“Analisis 
+Perbandingan Penyimpanan Data Rekam Medis 
+Elektronik Berstandar Fhir Pada Sistem Basis Data: 
+Bigchaindb, Mysql Dan Mongodb,” Jnanaloka, Pp. 
+37–53, 2023, Doi: 10.36802/Jnanaloka.2023.V4-
+No01-37-4x. 
+[19] R. H. W. Yudha Yunanto Putra, Oktania 
+Purwaningrum, “Perbandingan Performa Respon 
+Waktu Kueri Mysql, Postgresql, Dan Mongodb,” 
+Jurnal Sistem Informasi Dan Bisnis Cerdas (Sibc), 
+Vol. 15, No. 1, Pp. 39–48, 2022. 
+[20] D. Sudarsono, M. D. Anggraini, C. Andriyani, A. N. 
+Widiyanto, 
+F. 
+Ilmawan, 
+And 
+E. 
+Utami, 
+“Perbandingan Performansi Antara Mongodb Dan 
+Mariadb,” Jurnal Fahma, Vol. 19, No. 2, Pp. 1–11, 
+2021. 
+[21] H. Saputra, “Pengembangan Sistem Informasi 
+Akademik Pondok Pesantren Sumber Barokah 
+Karawang Untuk Meningkatan Kecepatan Modul 
+Administrasi Keuangan,” Universitas Budi Luhur, 
+2021. 
+[22] Y. Y. P. Rivaldo Hadi Winata, “Analisis 
+Perbandingan Performa Waktu Respons Kueri 
+Antara 
+Mysql 
+Php 
+7.4.2, 
+Postgresql, 
+Dan 
+Mongodb,” Prosiding Seminar Sitasi 13 November 
+2021 Analisis, No. November, Pp. 38–47, 2021. 
+[23] T. L. Sinaga, N. Charibaldi, N. H. Cahyana, And F. 
+T. Industri, “Perbandingan Waktu Respon Aplikasi 
+Database Nosql Elasticsearch Dan Mongodb Pada 
+Pengujian Operasi Crud,” Jiska (Jurnal Informatika 
+Sunan Kalijaga), Vol. 8, No. 1, Pp. 22–35, 2023 

@@ -1,0 +1,500 @@
+[28:53 - 28:57] staff operasionalnya
+[28:57 - 28:58] yang memegang mereka pendata
+[28:58 - 28:59] itu lebih
+[28:59 - 29:02] ingin mengetahui
+[29:02 - 29:02] bagaimana
+[29:02 - 29:04] proses bisnis
+[29:04 - 29:05] atau operasionalnya
+[29:05 - 29:06] dijalankan secara nyata
+[29:06 - 29:07] gitu
+[29:07 - 29:07] bisnis darinya
+[29:07 - 29:08] karena
+[29:08 - 29:10] kalau untuk dari yang pertama ini
+[29:10 - 29:12] dari gunanya sendiri
+[29:12 - 29:13] itu juga kemarin
+[29:13 - 29:14] saya ada tanyakan
+[29:14 - 29:15] dia sedikit agak lupa
+[29:15 - 29:16] untuk
+[29:16 - 29:18] cara operasionalnya
+[29:18 - 29:18] untuk berjalan
+[29:18 - 29:19] karena beliau kan
+[29:19 - 29:20] di situ ya
+[29:20 - 29:20] ya
+[29:20 - 29:20] saya
+[29:20 - 29:21] langsung di tantor
+[29:21 - 29:22] percabangnya
+[29:22 - 29:22] jadi
+[29:22 - 29:23] saya
+[29:23 - 29:25] manfaatkan tiga orang ini
+[29:25 - 29:26] untuk mendapatkan informasi
+[29:26 - 29:28] realnya
+[29:28 - 29:28] yang terjadi
+[29:28 - 29:29] bagaimana
+[29:29 - 29:30] proses operasional
+[29:30 - 29:30] setiap hari
+[29:30 - 29:31] itu bekerja
+[29:31 - 29:32] lalu
+[29:32 - 29:33] setelah itu
+[29:33 - 29:34] saya ngevalidasi
+[29:34 - 29:35] nanti sama gunanya
+[29:35 - 29:36] apakah itu
+[29:36 - 29:38] sudah sesuai
+[29:38 - 29:38] dengan
+[29:38 - 29:39] proses bisnis
+[29:39 - 29:40] yang dijelaskan
+[29:40 - 29:41] atau
+[29:41 - 29:41] ada
+[29:41 - 29:42] salah gitu
+[29:42 - 29:43] karena pada akhirnya
+[29:43 - 29:44] nanti akan
+[29:44 - 29:45] saya validasi
+[29:45 - 29:46] dan tentunya
+[29:46 - 29:47] narasumber utamanya
+[29:47 - 29:48] untuk membuatkan sistem ini
+[29:48 - 29:48] dari
+[29:48 - 29:49] ibu Nana
+[29:49 - 29:49] yang terjadi
+[29:49 - 29:51] untuk
+[29:51 - 29:53] tahapan konteks
+[29:53 - 29:53] PXP-nya
+[29:53 - 29:54] lebih
+[29:54 - 29:55] fisik
+[29:55 - 29:56] nanti ada
+[29:56 - 29:57] tahap
+[29:57 - 29:58] desain
+[29:58 - 29:59] dan segala macam
+[29:59 - 29:59] itu tetap
+[29:59 - 30:00] butuh validasi
+[30:00 - 30:01] ke ibu Nana
+[30:01 - 30:01] aja
+[30:01 - 30:04] yang ketiga orangnya
+[30:04 - 30:04] ini
+[30:04 - 30:05] untuk
+[30:05 - 30:05] di tahap
+[30:05 - 30:06] pengujian
+[30:06 - 30:08] berarti
+[30:08 - 30:09] pengujian
+[30:09 - 30:10] lebih ke validasi
+[30:10 - 30:12] berarti
+[30:12 - 30:13] keputusan
+[30:13 - 30:14] fiturnya
+[30:14 - 30:15] akan jadi
+[30:15 - 30:15] seperti apa
+[30:15 - 30:16] berarti
+[30:16 - 30:16] hanya dengan
+[30:16 - 30:17] manajemen
+[30:17 - 30:17] saja
+[30:17 - 30:18] produk
+[30:18 - 30:19] orangnya
+[30:19 - 30:19] manajemen
+[30:19 - 30:21] walaupun
+[30:21 - 30:22] masih
+[30:22 - 30:23] dari
+[30:23 - 30:23] gunanya
+[30:23 - 30:24] ada yang
+[30:24 - 30:24] lupa
+[30:24 - 30:25] atau
+[30:25 - 30:26] fiturnya
+[30:26 - 30:26] tapi
+[30:26 - 30:26] dari
+[30:26 - 30:27] tiga orang
+[30:27 - 30:27] ini
+[30:27 - 30:28] ada
+[30:28 - 30:29] menyebutkan
+[30:29 - 30:30] nanti
+[30:30 - 30:30] saya
+[30:30 - 30:34] omongkan
+[30:34 - 30:34] atau
+[30:34 - 30:35] bicarakan
+[30:35 - 30:35] sama gunanya
+[30:35 - 30:36] bahwasannya
+[30:36 - 30:37] dari
+[30:37 - 30:37] tiga orang
+[30:37 - 30:37] ini
+[30:37 - 30:38] menyebutkan
+[30:38 - 30:39] fiturnya
+[30:39 - 30:39] fitur
+[30:39 - 30:40] atau
+[30:40 - 30:40] kolom
+[30:40 - 30:41] tambahan
+[30:41 - 30:43] tapi berarti
+[30:43 - 30:45] beliau yang bertiga ini
+[30:45 - 30:46] ketika sistem
+[30:46 - 30:46] testing itu
+[30:46 - 30:47] akan terlibat
+[30:47 - 30:49] kan periterasi
+[30:49 - 30:49] gitu kan
+[30:49 - 30:51] kan terlibat
+[30:51 - 30:53] dari staff admin
+[30:53 - 30:53] nya disini
+[30:53 - 30:54] karena kan
+[30:54 - 30:55] saya menurut
+[30:55 - 30:56] ada dua orang
+[30:56 - 30:57] dari
+[30:57 - 30:59] kepala cabang
+[30:59 - 31:00] dari
+[31:00 - 31:01] sisi
+[31:01 - 31:02] staff administrasi
+[31:02 - 31:04] yang menggunakan
+[31:04 - 31:04] langsung
+[31:04 - 31:05] setiap hari
+[31:05 - 31:06] jadi untuk
+[31:06 - 31:06] dari
+[31:06 - 31:07] staff operasional
+[31:07 - 31:09] yang ada
+[31:09 - 31:09] rekapan data
+[31:09 - 31:11] selama kepala cabang
+[31:11 - 31:11] itu sebagai
+[31:11 - 31:13] merasakan pertambahan
+[31:13 - 31:15] merasakan pertambahan
+[31:15 - 31:15] untuk
+[31:15 - 31:16] pemiriman ini
+[31:16 - 31:17] akan
+[31:17 - 31:17] dari
+[31:17 - 31:19] manajemen
+[31:19 - 31:19] guna-guna
+[31:19 - 31:19] sendiri
+[31:19 - 31:20] sama
+[31:20 - 31:21] staff
+[31:21 - 31:22] administrasi
+[31:22 - 31:23] berarti
+[31:23 - 31:23] nanti
+[31:23 - 31:24] kalau
+[31:24 - 31:24] sistem ini
+[31:24 - 31:25] ada
+[31:25 - 31:26] berarti
+[31:26 - 31:26] fungsi
+[31:26 - 31:28] yang kepala cabang
+[31:28 - 31:28] dan
+[31:28 - 31:28] tadi
+[31:28 - 31:31] staf operasional
+[31:31 - 31:31] berarti
+[31:31 - 31:32] gak ada
+[31:32 - 31:32] lagi
+[31:32 - 31:33] fungsi
+[31:33 - 31:33] untuk
+[31:33 - 31:34] mereka
+[31:34 - 31:34] itu
+[31:34 - 31:35] tetap
+[31:35 - 31:36] kalau di
+[31:36 - 31:36] sisi
+[31:36 - 31:36] memang
+[31:36 - 31:37] gak ada
+[31:37 - 31:37] sama
+[31:37 - 31:38] tapi
+[31:38 - 31:38] kalau
+[31:38 - 31:39] untuk
+[31:39 - 31:40] realnya
+[31:40 - 31:40] sendiri
+[31:40 - 31:41] pembagian
+[31:41 - 31:42] jadwal
+[31:42 - 31:42] tentor
+[31:42 - 31:43] sama
+[31:43 - 31:44] pembagian
+[31:44 - 31:46] jadwal
+[31:46 - 31:47] tentor
+[31:47 - 31:47] sama
+[31:47 - 31:48] mendiskusikan
+[31:48 - 31:49] dari
+[31:49 - 31:49] pembagian
+[31:49 - 31:50] monori
+[31:50 - 31:50] konor
+[31:50 - 31:51] itu
+[31:51 - 31:51] dari
+[31:51 - 31:51] staff
+[31:51 - 31:52] administrasi
+[31:52 - 31:53] sama
+[31:53 - 31:54] kepala cabang
+[31:54 - 31:55] itu
+[31:55 - 31:56] terus
+[31:56 - 31:56] nanti
+[31:56 - 31:56] gimana
+[31:56 - 31:57] maksudnya
+[31:57 - 31:58] kalau dari
+[31:58 - 31:58] sisi
+[31:58 - 31:59] admin
+[31:59 - 32:00] itu
+[32:00 - 32:00] sebagai
+[32:00 - 32:01] user
+[32:01 - 32:02] yang
+[32:02 - 32:03] meng-input
+[32:03 - 32:04] tapi
+[32:04 - 32:05] ternyata
+[32:05 - 32:05] untuk
+[32:05 - 32:06] pertimbangan
+[32:06 - 32:06] tadi
+[32:06 - 32:07] misalkan
+[32:07 - 32:08] perjadwalan
+[32:08 - 32:10] penghitungan
+[32:10 - 32:10] gaji
+[32:10 - 32:11] itu kan
+[32:11 - 32:11] tetap
+[32:11 - 32:11] kembali
+[32:11 - 32:12] ke kepala
+[32:12 - 32:12] cabang
+[32:12 - 32:14] sementara
+[32:14 - 32:14] dia kan
+[32:14 - 32:15] gak ada
+[32:15 - 32:15] pemerintah
+[32:15 - 32:15] di sistem
+[32:15 - 32:16] nanti
+[32:16 - 32:17] proses itu
+[32:17 - 32:19] dilakukan
+[32:19 - 32:20] di luar
+[32:20 - 32:20] sistem
+[32:20 - 32:20] iya
+[32:20 - 32:21] di luar
+[32:21 - 32:22] sistem
+[32:22 - 32:22] karena
+[32:22 - 32:23] dilakukan
+[32:23 - 32:24] sampai
+[32:24 - 32:24] saat ini
+[32:24 - 32:25] pun
+[32:25 - 32:26] dari
+[32:26 - 32:26] dua
+[32:26 - 32:27] orang
+[32:27 - 32:28] administrasi
+[32:28 - 32:28] sama
+[32:28 - 32:29] kepala
+[32:29 - 32:29] cabang
+[32:29 - 32:29] ini
+[32:29 - 32:30] juga
+[32:30 - 32:30] diskusi
+[32:30 - 32:31] secara
+[32:31 - 32:31] langsung
+[32:31 - 32:32] tetapi
+[32:32 - 32:32] yang
+[32:32 - 32:33] meng-handle
+[32:33 - 32:33] dan
+[32:33 - 32:35] melakukan
+[32:35 - 32:35] pemberkasan
+[32:35 - 32:36] dari
+[32:36 - 32:36] sisi
+[32:36 - 32:37] staff
+[32:37 - 32:37] administrasi
+[32:37 - 32:38] tetap dari
+[32:38 - 32:38] staff
+[32:38 - 32:39] administrasi
+[32:39 - 32:40] terus
+[32:40 - 32:40] gimana
+[32:40 - 32:41] nanti
+[32:41 - 32:42] misalkan
+[32:42 - 32:42] terkaitkan
+[32:42 - 32:43] penjadwalan
+[32:43 - 32:45] sementara
+[32:45 - 32:47] usernya
+[32:47 - 32:47] hanya
+[32:47 - 32:48] admin
+[32:48 - 32:51] kalau
+[32:51 - 32:51] misalkan
+[32:51 - 32:52] penjadwalan
+[32:52 - 32:52] itu kan
+[32:52 - 32:53] kalau
+[32:53 - 32:53] kondisi
+[32:53 - 32:54] real
+[32:54 - 32:54] berarti
+[32:54 - 32:54] hanya
+[32:54 - 32:55] tinggal input
+[32:55 - 32:56] sementara
+[32:56 - 32:56] jadwal itu
+[32:56 - 32:56] sudah
+[32:56 - 32:57] disusun
+[32:57 - 32:57] dulu
+[32:57 - 32:57] oleh
+[32:57 - 32:58] kepala
+[32:58 - 32:59] cabangan
+[32:59 - 33:00] tapi
+[33:00 - 33:00] kalau
+[33:00 - 33:01] misalkan
+[33:01 - 33:02] kemarin
+[33:02 - 33:03] itu
+[33:03 - 33:03] yang
+[33:03 - 33:04] ada
+[33:04 - 33:05] sempat
+[33:05 - 33:05] sampaikan
+[33:05 - 33:07] kondisinya
+[33:07 - 33:08] satu
+[33:08 - 33:10] pengajar
+[33:10 - 33:10] itu kan
+[33:10 - 33:11] ada yang
+[33:11 - 33:11] dia full
+[33:11 - 33:12] sesinya
+[33:12 - 33:13] sehingga
+[33:13 - 33:14] pada akhirnya
+[33:14 - 33:14] mungkin dia
+[33:14 - 33:16] pagi
+[33:16 - 33:16] di sini
+[33:16 - 33:17] siang
+[33:17 - 33:17] di mana
+[33:17 - 33:19] kondisi
+[33:19 - 33:19] seperti itu
+[33:19 - 33:20] nanti
+[33:20 - 33:20] gimana
+[33:20 - 33:21] untuk
+[33:21 - 33:21] intervensi
+[33:21 - 33:22] di sistem
+[33:22 - 33:22] kemarin
+[33:22 - 33:23] sudah saya validasi
+[33:23 - 33:24] itu
+[33:24 - 33:24] gak bisa
+[33:24 - 33:25] terjadi
+[33:25 - 33:27] jadi
+[33:27 - 33:27] cuma
+[33:27 - 33:28] hanya
+[33:28 - 33:28] satu cabang
+[33:28 - 33:29] saja
+[33:29 - 33:29] berarti
+[33:29 - 33:30] gak akan
+[33:30 - 33:30] mungkin
+[33:30 - 33:31] dia lintas cabang
+[33:31 - 33:31] ya
+[33:31 - 33:31] gak akan
+[33:31 - 33:32] mungkin
+[33:32 - 33:32] untuk
+[33:32 - 33:33] lintas cabang
+[33:33 - 33:33] berarti
+[33:33 - 33:34] aman
+[33:34 - 33:34] kalau
+[33:34 - 33:34] itu
+[33:34 - 33:35] kembalian
+[33:35 - 33:36] dari
+[33:36 - 33:37] sisi
+[33:37 - 33:38] atlin
+[33:38 - 33:39] sama
+[33:39 - 33:40] kepala cabang
+[33:40 - 33:41] per cabang
+[33:41 - 33:42] makanya
+[33:42 - 33:42] operasional
+[33:42 - 33:43] setiap cabang
+[33:43 - 33:43] itu
+[33:43 - 33:44] berbeda
+[33:44 - 33:44] kalau
+[33:44 - 33:45] gitu
+[33:45 - 33:45] jauh
+[33:45 - 33:45] lebih aman
+[33:45 - 33:46] karena
+[33:46 - 33:46] kalau
+[33:46 - 33:46] misalkan
+[33:46 - 33:47] lintas cabang
+[33:47 - 33:47] itu
+[33:47 - 33:48] sebet
+[33:48 - 33:48] sekali
+[33:48 - 33:49] harus
+[33:49 - 33:50] menantau
+[33:50 - 33:50] data
+[33:50 - 33:50] semua
+[33:50 - 33:58] nanti
+[33:58 - 33:59] mau gak
+[33:59 - 33:59] mau
+[33:59 - 33:59] kan
+[33:59 - 33:59] nanti
+[33:59 - 34:00] harus
+[34:00 - 34:00] bisa
+[34:00 - 34:01] apa
+[34:01 - 34:01] ya
+[34:01 - 34:01] maksudnya
+[34:01 - 34:02] sistemnya
+[34:02 - 34:02] harus
+[34:02 - 34:03] bisa
+[34:03 - 34:04] memberikan
+[34:04 - 34:05] gambaran
+[34:05 - 34:05] informasi
+[34:05 - 34:06] dari
+[34:06 - 34:07] misalkan
+[34:07 - 34:07] tadi
+[34:07 - 34:07] terkaitkan
+[34:07 - 34:08] jadualan
+[34:08 - 34:08] jadual
+[34:08 - 34:09] sementara
+[34:09 - 34:09] yang sudah
+[34:09 - 34:09] ada
+[34:09 - 34:10] itu
+[34:10 - 34:10] seperti
+[34:10 - 34:10] apa
+[34:10 - 34:11] sehingga
+[34:11 - 34:11] nanti
+[34:11 - 34:12] bisa jadi
+[34:12 - 34:12] input
+[34:12 - 34:13] untuk
+[34:13 - 34:14] kepala cabang
+[34:14 - 34:14] ketika
+[34:14 - 34:15] dia
+[34:15 - 34:15] menunjukkan
+[34:15 - 34:15] jadual
+[34:15 - 34:16] berikutnya
+[34:16 - 34:19] walaupun
+[34:19 - 34:19] secara
+[34:19 - 34:20] real
+[34:20 - 34:20] kan
+[34:20 - 34:20] dia
+[34:20 - 34:20] memang
+[34:20 - 34:20] dia
+[34:20 - 34:21] bukan
+[34:21 - 34:22] pengguna
+[34:22 - 34:22] langsung
+[34:22 - 34:22] di
+[34:22 - 34:23] sistem
+[34:23 - 34:23] ini
+[34:23 - 34:24] tapi
+[34:24 - 34:24] dia
+[34:24 - 34:25] tetap
+[34:25 - 34:25] mendapatkan
+[34:25 - 34:25] input
+[34:25 - 34:26] dari
+[34:26 - 34:26] sistem
+[34:26 - 34:26] tadi
+[34:26 - 34:26] untuk
+[34:26 - 34:27] pertimbangan
+[34:27 - 34:27] misalnya
+[34:27 - 34:32] ada
+[34:32 - 34:33] apa ya
+[34:33 - 34:33] mungkin
+[34:33 - 34:34] semacam
+[34:34 - 34:35] rekapitulasi
+[34:35 - 34:36] menyeluruh
+[34:36 - 34:36] atau seperti
+[34:36 - 34:37] apa
+[34:37 - 34:38] dari jadwal-jadwal
+[34:38 - 34:38] tentor
+[34:38 - 34:39] itu
+[34:39 - 34:39] sehingga
+[34:39 - 34:39] kalau dia
+[34:39 - 34:40] mau
+[34:40 - 34:40] assign
+[34:40 - 34:40] lagi
+[34:40 - 34:41] misalkan
+[34:41 - 34:41] ada
+[34:41 - 34:41] kelas baru
+[34:41 - 34:42] yang dimuka
+[34:42 - 34:42] dia mau
+[34:42 - 34:42] assign
+[34:42 - 34:43] lagi
+[34:43 - 34:43] siapa
+[34:43 - 34:44] yang bisa
+[34:44 - 34:44] tahu
+[34:44 - 34:48] berarti
+[34:48 - 34:48] kalau
+[34:48 - 34:49] misalkan
+[34:49 - 34:50] teman
+[34:50 - 34:51] menggunakan
+[34:51 - 34:51] sistem
+[34:51 - 34:52] dari sisi
+[34:52 - 34:52] front-base
+[34:52 - 34:53] sisi
+[34:53 - 34:54] admin
+[34:54 - 34:55] sama
+[34:55 - 34:55] management
+[34:55 - 34:56] tersebut
+[34:56 - 34:56] tapi
+[34:56 - 34:57] kalau
+[34:57 - 34:57] misalkan
+[34:57 - 34:58] dari kepala
+[34:58 - 34:58] cabang
+[34:58 - 34:59] yang membutuhkan
+[34:59 - 35:03] rencananya
+[35:03 - 35:04] saya
+[35:04 - 35:05] dan
+[35:05 - 35:05] kemarin
+[35:05 - 35:06] ada
+[35:06 - 35:06] diskusi
+[35:06 - 35:06] sama

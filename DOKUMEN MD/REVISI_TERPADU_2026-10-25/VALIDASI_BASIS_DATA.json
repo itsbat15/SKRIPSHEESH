@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-25",
+  "scope": "Document structure, field metadata and declared rules only; not SQL migration, concurrency test, or partner acceptance",
+  "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN BASIS DATA (SKEMA & ERD).md",
+  "sha256": "fb6fe06228b9763d4976928b291782bbb92881f21fdd0bf9f153252feeaf8eae",
+  "tables": 23,
+  "fields": 241,
+  "foreign_keys": 51,
+  "checks": {
+    "tables_exactly_23": true,
+    "all_erd_entities_match_metadata": true,
+    "dictionary_names_match_metadata": true,
+    "all_erd_fields_match_metadata": true,
+    "all_foreign_keys_have_valid_targets": true,
+    "all_51_foreign_keys_have_matching_cardinality": true,
+    "all_tables_covered_by_usecase_mapping": true,
+    "fourteen_usecases_present": true,
+    "no_long_dash_in_prose": true,
+    "no_double_dash_in_prose": true,
+    "all_prose_paragraphs_have_two_sentences": true,
+    "all_markdown_tables_have_matching_columns": true,
+    "explicitly_design_not_executed_ddl": true,
+    "review_is_single_final_decision": true,
+    "bankmatch_source_columns_are_optional_and_unique": true
+  },
+  "short_paragraphs": [],
+  "implementation_tests_executed": false
+}

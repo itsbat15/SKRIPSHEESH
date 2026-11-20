@@ -1,0 +1,770 @@
+[
+  {
+    "section": "# BAB 3 # RANCANGAN PROTOTIPE",
+    "paragraph": 1,
+    "line": 4,
+    "text": "Bab ini menguraikan rancangan prototipe sistem informasi manajemen operasional terintegrasi yang dikembangkan untuk Bimbingan Belajar Artha Balikpapan. Pembahasan disajikan secara sistematis meliputi gambaran umum prototipe, tahapan siklus hidup pengembangan, prosedur pelaksanaan teknis, konsep arsitektur fungsional dan data, spesifikasi teknis lingkungan komputasi, hingga jadwal pengerjaan proyek secara terperinci. Seluruh sistematika pembahasan ini disusun mengacu pada ketentuan pedoman penulisan tugas akhir jalur prototipe di lingkungan Program Studi Sistem Informasi (Institut Teknologi Kalimantan, 2025b)."
+  },
+  {
+    "section": "## 3.1 Garis Besar Prototipe",
+    "paragraph": 1,
+    "line": 8,
+    "text": "Bimbingan Belajar Artha Balikpapan saat ini mengelola delapan cabang operasional dengan aktivitas administrasi yang mencakup registrasi siswa, penempatan kelompok belajar, penjadwalan tentor, serta pengelolaan pembayaran biaya bimbingan. Seluruh proses operasional tersebut memerlukan integrasi data yang andal agar catatan transaksi di tingkat cabang dapat terkonsolidasi dan dipantau secara langsung oleh manajemen pusat. Berdasarkan kebutuhan strategis tersebut, prototipe ARTHA dirancang sebagai platform sistem informasi berbasis web terintegrasi dengan pembagian hak akses bertingkat, yaitu Admin Cabang dan Super Admin."
+  },
+  {
+    "section": "### 3.1.1 Objek dan Konteks Pengembangan",
+    "paragraph": 1,
+    "line": 12,
+    "text": "Pengembangan sistem informasi ARTHA berakar dari hasil eksplorasi empiris melalui wawancara mendalam bersama pihak manajemen dan staf administrasi mengenai tata kelola data operasional yang berjalan saat ini. Temuan lapangan tersebut mengonfirmasi urgensi unifikasi basis data guna menjembatani pengelolaan data siswa, pengaturan jadwal pembelajaran, serta rekonsiliasi kas dalam satu ekosistem digital. Urgensi integrasi proses bisnis lembaga pendidikan nonformal ini sejalan dengan temuan penelitian terdahulu yang menekankan pentingnya sinkronisasi data antarunit kerja untuk mencegah redundansi dan inefisiensi administrasi (Fajriansyah dkk., 2026; Gunawan dkk., 2025)."
+  },
+  {
+    "section": "### 3.1.2 Ruang Lingkup dan Pengguna Prototipe",
+    "paragraph": 1,
+    "line": 16,
+    "text": "Arsitektur fungsional ARTHA mengakomodasi diferensiasi tanggung jawab antara operasional cabang dan fungsi pengawasan di tingkat pusat. Admin Cabang berfokus pada eksekusi pencatatan operasional harian pada cabang penugasannya masing-masing, sedangkan Super Admin memegang otoritas pengendalian sistem, peninjauan transaksi lintas cabang, serta analisis keuangan agregat. Model pembatasan hak akses berbasis lokasi kerja dan peran manajerial semacam ini terbukti efektif dalam menjaga integritas data sekaligus menyederhanakan alur kerja organisasi multicabang (Ahadi dkk., 2025; Thiovanda, 2026)."
+  },
+  {
+    "section": "### 3.1.2 Ruang Lingkup dan Pengguna Prototipe",
+    "paragraph": 2,
+    "line": 18,
+    "text": "Pada aspek penagihan, sistem menyediakan fitur pemantauan tunggakan yang terhubung langsung dengan tautan pesan WhatsApp semiotomatis (*click to chat*) untuk memudahkan komunikasi dengan wali siswa. Melalui mekanisme tersebut, sistem secara otomatis menyusun rincian tagihan dan nomor tujuan, kemudian staf administrasi dapat meninjau serta mengirimkan pesan secara mandiri melalui aplikasi perpesanan resmi. Sementara itu, pengelolaan kelas dilengkapi visualisasi keterisian ruang secara dinamis guna memandu penempatan siswa baru, di mana sistem secara otomatis memblokir penambahan peserta saat kapasitas maksimum tercapai dan membuka kembali kuota kelas ketika masa keanggotaan siswa diakhiri."
+  },
+  {
+    "section": "### 3.1.2 Ruang Lingkup dan Pengguna Prototipe",
+    "paragraph": 3,
+    "line": 20,
+    "text": "Alur verifikasi pembayaran non-tunai (transfer bank) dirancang melalui pemisahan tugas (*segregation of duties*), yakni pengunggahan bukti bayar dilakukan oleh Admin Cabang, sedangkan persetujuan mutasi dana menjadi wewenang penuh Super Admin. Pembagian otoritas verifikasi rekening beserta personel pemeriksanya akan difinalisasi bersama pihak manajemen mitra sebelum sistem diuji coba. Adapun batasan ruang lingkup pengembangan prototipe ini berfokus pada administrasi internal dan rekonsiliasi kas manual, sehingga pembelajaran daring (*e-learning*), pengiriman pesan otomatis melalui *gateway*, serta integrasi *payment gateway* perbankan berada di luar lingkup penelitian."
+  },
+  {
+    "section": "### 3.1.3 Pendekatan Pengembangan Prototipe",
+    "paragraph": 1,
+    "line": 24,
+    "text": "Pengembangan prototipe ARTHA dilaksanakan secara mandiri menggunakan kerangka kerja *Personal Extreme Programming* (PxP). Metodologi ini memadukan kedisiplinan pencatatan waktu dan metrik perangkat lunak dari *Personal Software Process* (PSP) dengan kelincahan serta fleksibilitas *Extreme Programming* (XP) (Dzhurov dkk., 2009). Rangkaian tahapan PxP yang diterapkan mencakup analisis kebutuhan, perencanaan, inisialisasi iterasi, perancangan sistem, implementasi kode program, pengujian sistem, hingga evaluasi retrospektif. Efektivitas PxP bagi pengembang tunggal dalam menghasilkan perangkat lunak yang adaptif terhadap dinamika kebutuhan pengguna telah banyak dibuktikan pada berbagai studi terapan di Indonesia (Fikri dan Arthawan, 2021; Sidiq dkk., 2025; Apriyanti dkk., 2024)."
+  },
+  {
+    "section": "### 3.1.4 Luaran yang Ditargetkan",
+    "paragraph": 1,
+    "line": 28,
+    "text": "Luaran utama yang ditargetkan dari pelaksanaan tugas akhir ini adalah sebuah prototipe perangkat lunak sistem informasi manajemen operasional yang fungsional, disertai bundel dokumentasi teknis, artefak perancangan, dan laporan evaluasi empiris bersama pengguna akhir. Pengembangan sistem ini ditargetkan mencapai Tingkat Kesiapan Teknologi (TKT) Level 5, yakni teknologi telah divalidasi dan diuji coba pada lingkungan operasional yang sesungguhnya bersama mitra bimbingan belajar (Institut Teknologi Kalimantan, 2026)."
+  },
+  {
+    "section": "### 3.1.4 Luaran yang Ditargetkan",
+    "paragraph": 2,
+    "line": 30,
+    "text": "Seluruh dokumentasi teknis dan log aktivitas pengembangan disusun secara berkesinambungan bersamaan dengan penulisan kode program. Dokumentasi komprehensif ini disiapkan untuk melengkapi naskah laporan tugas akhir, publikasi artikel ilmiah, serta berkas permohonan pencatatan Hak Kekayaan Intelektual (HKI) berupa Hak Cipta Perangkat Lunak. Penyajian artefak penelitian yang transparan dan sistematis memungkinkan verifikasi kualitas sistem dapat ditelusuri secara utuh dari tahap analisis hingga penerimaan mitra."
+  },
+  {
+    "section": "## 3.2 Tahapan Pembuatan Prototipe",
+    "paragraph": 1,
+    "line": 34,
+    "text": "Tahapan pembuatan prototipe ARTHA dirancang mengikuti siklus hidup berulang (*iterative lifecycle*) dari metodologi *Personal Extreme Programming* (PxP). Pendekatan ini memungkinkan pengembangan sistem dilakukan secara bertahap dan terukur, di mana setiap fase menghasilkan luaran konkret yang menjadi fondasi bagi fase berikutnya. Fleksibilitas PxP memberikan ruang adaptasi bagi pengembang untuk menyempurnakan fungsi sistem apabila ditemukan kendala teknis atau pergeseran kebutuhan operasional dari pihak mitra. Keterkaitan logis dan jalur umpan balik antartahapan pengembangan disajikan pada Gambar 3.1."
+  },
+  {
+    "section": "## 3.2 Tahapan Pembuatan Prototipe",
+    "paragraph": 2,
+    "line": 42,
+    "text": "Siklus pengembangan diawali dengan perumusan spesifikasi kebutuhan fungsional yang kemudian dipetakan ke dalam daftar prioritas pekerjaan (*product backlog*). Pengembang merancang arsitektur modul dan mengimplementasikan kode program secara terstruktur, kemudian memverifikasi kesesuaian perilakunya melalui pengujian unit dan pengujian sistem berbasis *Black Box Testing*. Pada akhir setiap iterasi, pengembang melaksanakan sesi retrospektif untuk menelaah performa pengerjaan, mencatat anomali kode (*defect log*), serta membandingkan estimasi waktu terhadap durasi aktual guna mengoptimalkan perencanaan iterasi berikutnya."
+  },
+  {
+    "section": "## 3.2 Tahapan Pembuatan Prototipe",
+    "paragraph": 3,
+    "line": 44,
+    "text": "Apabila hasil pengujian sistem menunjukkan adanya ketidaksesuaian atau cacat logika, pengembang segera melakukan perbaikan kode (*debugging*) dan menjalankan pengujian regresi sebelum iterasi dinyatakan selesai (*definition of done*). Fitur-fitur yang belum terselesaikan dialokasikan kembali ke dalam rencana iterasi lanjutan berdasarkan tingkat ketergantungan antarmodul. Setelah seluruh fungsionalitas inti berhasil dibangun dan lulus verifikasi internal, prototipe kemudian dievaluasi secara langsung oleh calon pengguna melalui *User Acceptance Testing* (UAT)."
+  },
+  {
+    "section": "## 3.2 Tahapan Pembuatan Prototipe",
+    "paragraph": 4,
+    "line": 46,
+    "text": "Umpan balik dan catatan perbaikan yang diperoleh selama sesi UAT diklasifikasikan secara cermat berdasarkan karakteristik masalahnya. Penyesuaian yang menyangkut perubahan alur bisnis akan ditelaah kembali pada tahap analisis kebutuhan dan perencanaan, sedangkan temuan berupa kendala teknis ditangani langsung melalui fase implementasi dan pengujian ulang. Hasil evaluasi akhir UAT menjadi dasar penentuan tingkat penerimaan sistem oleh mitra sekaligus menandai kesiapan prototipe untuk diserahkan."
+  },
+  {
+    "section": "## 3.2 Tahapan Pembuatan Prototipe",
+    "paragraph": 5,
+    "line": 48,
+    "text": "Penerapan metodologi PxP yang dipadukan dengan pengujian sistem yang ketat serta keterlibatan aktif pengguna akhir mengadopsi kerangka kerja yang telah terbukti berhasil pada riset-riset sejenis (Apriyanti dkk., 2024; Dzhurov dkk., 2009). Dalam konteks ARTHA, skenario evaluasi disusun secara representatif mencakup seluruh spektrum tugas operasional cabang dan fungsi pengawasan terpusat. Rincian kegiatan utama beserta luaran yang direncanakan pada setiap fase pengembangan dirangkum pada Tabel 3.1."
+  },
+  {
+    "section": "## 3.3 Prosedur",
+    "paragraph": 1,
+    "line": 66,
+    "text": "Prosedur penelitian memaparkan tahapan operasional dan metodologis yang ditempuh dalam merealisasikan prototipe ARTHA, mulai dari fase elisitasi kebutuhan hingga evaluasi penerimaan pengguna. Pada setiap tahapan, instrumen penelitian, sumber data empiris, serta hasil pengujian didokumentasikan secara terstruktur guna menjamin keterlacakan (*traceability*) dan validitas ilmiah. Uraian prosedur ini menjadi pedoman baku pengembangan sekaligus jembatan pembuktian antara permasalahan nyata di Bimbingan Belajar Artha dengan solusi sistem yang diusulkan."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 1,
+    "line": 70,
+    "text": "Tahap penggalian kebutuhan diawali dengan analisis mendalam terhadap transkrip wawancara yang telah dilakukan bersama pengelola dan staf administrasi Artha. Informasi faktual di dalamnya diklasifikasikan ke dalam enam domain operasional utama, yaitu pendaftaran siswa, penetapan skema tarif, transaksi pembayaran, tata kelola kelas, penjadwalan tentor, serta pelaporan keuangan cabang. Pengelompokan tematik ini membantu mengidentifikasi dependensi antarfungsi sekaligus memetakan area operasional yang masih memerlukan klarifikasi teknis lebih lanjut."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 2,
+    "line": 72,
+    "text": "Proses klarifikasi diarahkan langsung kepada pemangku kepentingan yang memiliki otoritas dan pemahaman operasional pada domain terkait. Pengelola pusat dimintai konfirmasi mengenai kebijakan pemantauan manajerial dan pemisahan wewenang, sedangkan staf administrasi memberikan penjelasan faktual seputar rutinitas pencatatan di tingkat cabang. Pembagian informan ini memastikan bahwa setiap butir kebutuhan sistem dirumuskan berdasarkan sumber data primer yang kredibel dan akuntabel."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 3,
+    "line": 74,
+    "text": "Setiap sesi klarifikasi dilengkapi dokumentasi formal yang mencakup profil informan, representasi cabang, waktu pelaksanaan, serta justifikasi pemilihan narasumber. Ketentuan operasional yang bersifat unik pada cabang tertentu diuji silang bersama pengelola pusat guna memastikan apakah ketentuan tersebut dapat distandardisasi menjadi aturan sistem lintas cabang. Rekapitulasi profil narasumber dan kode sumber data elisitasi disajikan secara rinci pada dokumentasi penelitian."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 4,
+    "line": 76,
+    "text": "Tabel 3.2 merangkum inventaris bahan wawancara yang telah dihimpun beserta status verifikasi bukti pendukungnya. Catatan ini menjadi pedoman dalam membedakan antara kebutuhan yang telah tervalidasi secara faktual dan aspek prosedural yang masih memerlukan penegasan operasional. Verifikasi berkas fisik dan notulensi wawancara dilakukan secara berkala guna menjamin keaslian data yang digunakan sebagai dasar perancangan."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 5,
+    "line": 90,
+    "text": "Seluruh berkas transkrip mentah dan rekaman wawancara diarsipkan dalam lampiran penelitian dengan penanda waktu (*timestamp*) yang presisi agar setiap kutipan kebutuhan dapat diverifikasi dengan mudah. Data kuantitatif seperti variasi tarif bimbingan tetap dipetakan sesuai konteks cabang asalnya. Pihak manajemen kemudian meninjau batasan aturan tersebut sebelum diimplementasikan ke dalam modul logika bisnis sistem secara global."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 6,
+    "line": 92,
+    "text": "Wawancara lanjutan dirancang menggunakan pendekatan semiterstruktur, di mana pengembang menyiapkan pedoman pertanyaan inti dan mengembangkan eksplorasi lanjutan sesuai dinamika jawaban informan. Pendekatan fleksibel ini terbukti efektif dalam mengurai disparitas persepsi antarstaf dan mengungkap detail proses bisnis yang belum terakomodasi pada sistem manual sebelumnya. Matriks topik wawancara dan instrumen telaah dokumen dirangkum pada Tabel 3.3."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 7,
+    "line": 107,
+    "text": "Informasi verbal yang diperoleh dari narasumber dikonfirmasikan dengan bukti dokumen fisik yang diizinkan oleh mitra, meliputi kuitansi manual, buku induk siswa, jadwal pelajaran, rekapitulasi kas harian, dan mutasi transfer bank. Pemeriksaan artefak fisik ini membantu memetakan jalur perpindahan data aktual dari tingkat cabang hingga pelaporan manajemen pusat. Pengamatan langsung terhadap alur kerja kasir dan staf administrasi juga dicatat secara sistematis untuk melengkapi konteks wawancara."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 8,
+    "line": 109,
+    "text": "Data empiris yang telah terkumpul kemudian dianalisis melalui reduksi data, kategorisasi tematik, dan triangulasi sumber guna mengeliminasi inkonsistensi informasi. Kebutuhan fungsional yang telah disintesis kemudian diformulasikan ke dalam spesifikasi cerita pengguna (*user story*) yang berorientasi pada nilai bisnis. Format penyusunan spesifikasi kebutuhan berbasis cerita pengguna ini mengacu pada standar rekayasa perangkat lunak terapan (Fikri dan Arthawan, 2021; Sidiq dkk., 2025)."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 9,
+    "line": 111,
+    "text": "Setiap butir kebutuhan yang telah disintesis diberi kode identifikasi unik serta dipetakan hubungannya dengan sumber data primer, cakupan cabang, dan kriteria validasi. Matriks penelusuran ini secara tegas membedakan antara kebutuhan yang lahir dari kendala operasional riil dan fitur preventif yang diusulkan sebagai mitigasi risiko data. Pembedaan yang jelas ini memudahkan manajemen mitra dalam mengevaluasi urgensi dan justifikasi dari setiap fungsionalitas yang dikembangkan."
+  },
+  {
+    "section": "### 3.3.1 Penggalian Kebutuhan (*Requirements*)",
+    "paragraph": 10,
+    "line": 113,
+    "text": "Draf spesifikasi kebutuhan kemudian ditinjau bersama perwakilan mitra dalam sesi peninjauan formal guna mencapai kesepakatan spesifikasi akhir (*requirements sign-off*). Masukan dan revisi dari mitra langsung diakomodasi untuk menyempurnakan daftar kebutuhan sebelum dialokasikan ke dalam siklus iterasi PxP. Setiap perubahan ruang lingkup dicatat dalam log riwayat versi sehingga alasan penyesuaian fungsionalitas dapat ditelusuri secara transparan."
+  },
+  {
+    "section": "### 3.3.2 Perencanaan (*Planning*)",
+    "paragraph": 1,
+    "line": 117,
+    "text": "Spesifikasi kebutuhan yang telah diformulasikan selanjutnya didekomposisi menjadi paket tugas teknis yang meliputi analisis sistem, perancangan arsitektur, pengodean program, pengujian modul, serta refaktorisasi kode. Pengembang mengestimasi durasi kerja setiap tugas secara terperinci dan memperbarui estimasi tersebut secara adaptif berlandaskan metrik durasi historis dari pengerjaan fitur serupa. Pendekatan estimasi berulang ini selaras dengan disiplin pengelolaan waktu mandiri dalam kerangka kerja PxP (Dzhurov dkk., 2009)."
+  },
+  {
+    "section": "### 3.3.2 Perencanaan (*Planning*)",
+    "paragraph": 2,
+    "line": 119,
+    "text": "Pengembangan prototipe ARTHA dipetakan ke dalam empat siklus iterasi yang terstruktur dengan mempertimbangkan ketergantungan data dan relasi antarmodul. Modul fondasi yang mencakup manajemen akun pengguna, penetapan cabang, pendataan siswa, konfigurasi ruang kelas, serta struktur tarif diselesaikan pada iterasi awal sebagai prasyarat bagi modul penjadwalan, transaksi pembayaran, dan konsolidasi laporan. Distribusi alokasi modul beserta ketergantungan fungsionalnya disajikan secara sistematis pada Tabel 3.4."
+  },
+  {
+    "section": "### 3.3.2 Perencanaan (*Planning*)",
+    "paragraph": 3,
+    "line": 130,
+    "text": "Pada pelaksanaan Iterasi III (I-03), verifikasi pembayaran transfer mewajibkan ketersediaan data rekening resmi dan nomor referensi mutasi bank agar keputusan persetujuan dapat dieksekusi secara valid. Oleh karena itu, komponen dasar pencocokan transaksi dibangun bersamaan dengan modul verifikasi transfer pada iterasi tersebut. Pengembangan kemudian dilanjutkan pada Iterasi IV (I-04) guna mencakup penyerahan setoran tunai dan rekapitulasi kas terpadu yang mengonsolidasikan seluruh arus penerimaan operasional."
+  },
+  {
+    "section": "### 3.3.2 Perencanaan (*Planning*)",
+    "paragraph": 4,
+    "line": 132,
+    "text": "Setiap siklus iterasi dijadwalkan berlangsung selama dua minggu, mengacu pada rentang ideal siklus PxP yakni satu hingga tiga minggu per iterasi (Dzhurov dkk., 2009). Alokasi waktu dua mingguan ini kemudian dijabarkan ke dalam estimasi jam kerja spesifik untuk setiap tugas teknis sebelum iterasi dimulai. Garis waktu dua belas minggu yang tercantum pada Subbab 3.6 diposisikan sebagai target perencanaan dasar yang bersifat dinamis terhadap perkembangan di lapangan."
+  },
+  {
+    "section": "### 3.3.2 Perencanaan (*Planning*)",
+    "paragraph": 5,
+    "line": 134,
+    "text": "Permintaan perubahan atau penambahan fitur baru dari pihak mitra dievaluasi dampaknya terhadap ketergantungan modul yang sedang berjalan dan beban pengujian terkait. Keputusan manajerial terkait perubahan ruang lingkup dicatat secara formal beserta sumber usulan dan estimasi penyesuaian jadwalnya. Formulir kendali perubahan dan rincian pembagian jam kerja diarsipkan dalam lampiran untuk menjaga akuntabilitas pelaksanaan proyek."
+  },
+  {
+    "section": "### 3.3.3 Inisialisasi Iterasi (*Iteration Initialization*)",
+    "paragraph": 1,
+    "line": 138,
+    "text": "Fase inisialisasi iterasi menandai dimulainya setiap siklus pengembangan baru melalui pemilihan sejumlah cerita pengguna dari *product backlog* sesuai urutan prioritas yang disepakati. Setiap unit tugas dilengkapi dengan kode kebutuhan, deskripsi teknis, penanggung jawab, alokasi jam estimasi, data uji spesifik, serta kriteria penyelesaian (*definition of done*). Kelengkapan parameter ini memberikan batasan yang tegas mengenai target fungsional yang harus diwujudkan dan mekanisme pengujian yang wajib dipenuhi."
+  },
+  {
+    "section": "### 3.3.3 Inisialisasi Iterasi (*Iteration Initialization*)",
+    "paragraph": 2,
+    "line": 140,
+    "text": "Kumpulan data uji (*test data*) disiapkan sebelum proses penulisan kode dimulai guna merefleksikan variasi kondisi nyata operasional di delapan cabang bimbingan belajar. Selain mencakup skenario masukan normal, data uji secara khusus memuat kasus batas (*boundary cases*) dan masukan anomali untuk memvalidasi ketahanan validasi sistem. Data identitas siswa dan riwayat bukti pembayaran disamarkan (*anonymized*) atau menggunakan data sintetis sesuai protokol kerahasiaan informasi mitra."
+  },
+  {
+    "section": "### 3.3.3 Inisialisasi Iterasi (*Iteration Initialization*)",
+    "paragraph": 3,
+    "line": 142,
+    "text": "Perkembangan implementasi kode program dikelola menggunakan sistem pengendali versi Git dengan konvensi penamaan cabang (*branching*) dan penanda rilis (*tagging*) yang konsisten. Alokasi waktu kerja dicatat secara harian per unit tugas, mencakup aktivitas pemodelan, penulisan kode, perbaikan galat, hingga refaktorisasi. Log waktu aktual ini menjadi data komparatif terhadap estimasi awal saat dilakukan evaluasi retrospektif pada penutupan iterasi."
+  },
+  {
+    "section": "### 3.3.3 Inisialisasi Iterasi (*Iteration Initialization*)",
+    "paragraph": 4,
+    "line": 144,
+    "text": "Penyelesaian suatu tugas diukur secara ketat berdasarkan pemenuhan seluruh kriteria penerimaan fungsional dan ketiadaan cacat kode berstatus kritis. Suatu modul dinyatakan tuntas secara teknis hanya jika seluruh pengujian otomatis berhasil dilewati tanpa menimbulkan regresi pada modul sebelumnya. Hasil verifikasi teknis ini selanjutnya diajukan ke sesi peninjauan bersama mitra, di mana keputusan penerimaan operasional dicatat secara independen."
+  },
+  {
+    "section": "### 3.3.4 Perancangan (*Design*)",
+    "paragraph": 1,
+    "line": 148,
+    "text": "Tahap perancangan mentransformasikan spesifikasi kebutuhan iterasi berjalan ke dalam representasi arsitektur perangkat lunak yang terstruktur dan mudah diimplementasikan. Pengembang menyusun spesifikasi matriks hak akses, pemodelan alur aktivitas pengguna, rancangan konseptual basis data, serta tata letak antarmuka sistem. Artefak rancangan ini berfungsi sebagai cetak biru implementasi kode sekaligus acuan utama dalam penyusunan kasus pengujian sistem."
+  },
+  {
+    "section": "### 3.3.4 Perancangan (*Design*)",
+    "paragraph": 2,
+    "line": 150,
+    "text": "Pendekatan perancangan dalam penelitian ini mengadopsi prinsip desain sederhana (*simple design*) dari kerangka kerja PxP, di mana struktur sistem dibangun secara tepat guna untuk mengakomodasi kebutuhan iterasi aktif tanpa menambahkan kompleksitas yang berlebihan (Dzhurov dkk., 2009). Model perancangan sistem informasi yang memadukan diagram relasional data dan prototipe antarmuka terbukti efektif dalam memandu pengembang mandiri (Fikri dan Arthawan, 2021). Pada ARTHA, model perancangan difokuskan untuk memperjelas batas kewenangan pengguna dan integritas aliran data transaksi multicabang."
+  },
+  {
+    "section": "### 3.3.4 Perancangan (*Design*)",
+    "paragraph": 3,
+    "line": 152,
+    "text": "Pada domain transaksi keuangan, perancangan memisahkan secara tegas tiga fase pencatatan, yaitu penerimaan pembayaran dari siswa, verifikasi mutasi transfer bank, dan rekonsiliasi setoran kas cabang ke kas pusat. Ketiga peristiwa akuntansi tersebut memiliki aktor penanggung jawab, dokumen bukti, dan waktu pencatatan yang berbeda. Pemisahan logis ini mencegah terjadinya pencatatan ganda (*double counting*), sehingga perpindahan fisik uang kas tidak diakui secara keliru sebagai pendapatan baru lembaga."
+  },
+  {
+    "section": "### 3.3.4 Perancangan (*Design*)",
+    "paragraph": 4,
+    "line": 154,
+    "text": "Tata kelola kelas dirancang dengan membedakan entitas fisik ruangan bimbingan, kelompok rombongan belajar, dan data keanggotaan siswa aktif. Kuota ketersediaan kelas dihitung secara *real-time* berbasis jumlah siswa berstatus aktif pada rombongan belajar terkait. Apabila seorang siswa memutuskan keluar atau lulus, status keanggotaannya diakhiri dengan tetap melestarikan riwayat pembelajarannya sebagai rekam jejak historis yang tidak boleh terhapus dari basis data."
+  },
+  {
+    "section": "### 3.3.4 Perancangan (*Design*)",
+    "paragraph": 5,
+    "line": 156,
+    "text": "Setiap dokumen perancangan ditinjau kembali terhadap skenario pengujian yang telah dipersiapkan guna mendeteksi potensi kelemahan logika sebelum kode program ditulis. Peninjauan preventif ini membantu mengidentifikasi ambiguitas aturan bisnis sejak dini, sehingga struktur tabel basis data dan logika *routing* API dapat dirancang secara kokoh. Pertanyaan seputar pengecualian proses bisnis diselesaikan melalui klarifikasi singkat bersama mitra, lalu keputusannya dituangkan ke dalam pembaruan diagram perancangan."
+  },
+  {
+    "section": "### 3.3.5 Implementasi (*Implementation*)",
+    "paragraph": 1,
+    "line": 160,
+    "text": "Fase implementasi mewujudkan seluruh artefak perancangan menjadi kode program yang fungsional melalui penerapan praktik pengujian unit, penulisan kode sumber, dan refaktorisasi berkesinambungan. Pengujian disusun sebelum kode fungsional dilengkapi, kemudian struktur kode disempurnakan setelah seluruh pengujian berhasil dilewati. Rangkaian proses ini mengimplementasikan kaidah teknis dari siklus kerja PxP (Dzhurov dkk., 2009)."
+  },
+  {
+    "section": "### 3.3.5 Implementasi (*Implementation*)",
+    "paragraph": 2,
+    "line": 162,
+    "text": "Pendekatan *Test-Driven Development* (TDD) difokuskan secara spesifik pada modul logika bisnis inti yang memiliki kompleksitas tinggi dan berdampak langsung pada integritas operasional. Pada sistem ARTHA, aturan bisnis krusial tersebut mencakup kalkulasi akumulasi sisa tagihan, pembatalan otomatis penambahan siswa ke kelas yang telah penuh, serta validasi irisan jadwal mengajar tentor lintas cabang. Fokus pengujian unit pada aturan kritis ini menjamin keandalan kalkulasi sistem tanpa membebani jadwal pengembangan dengan penulisan uji coba yang berlebihan."
+  },
+  {
+    "section": "### 3.3.5 Implementasi (*Implementation*)",
+    "paragraph": 3,
+    "line": 164,
+    "text": "Dalam siklus TDD, pengembang terlebih dahulu menuliskan skrip uji coba unit yang mendefinisikan ekspektasi perilaku dan nilai keluaran yang diharapkan. Kode logika bisnis selanjutnya ditulis secara bertahap hingga seluruh unit uji menghasilkan status lolos (*pass*). Riwayat pengujian sebelum dan sesudah kode diselesaikan diarsipkan bersama kode sumber sebagai artefak pembuktian kepatuhan terhadap metodologi TDD."
+  },
+  {
+    "section": "### 3.3.5 Implementasi (*Implementation*)",
+    "paragraph": 4,
+    "line": 166,
+    "text": "Setelah fungsionalitas logika bisnis terbukti bekerja dengan benar, pengembang melakukan refaktorisasi kode guna meningkatkan keterbacaan, efisiensi eksekusi, serta mengurangi duplikasi logika (*code smell*). Proses refaktorisasi wajib mempertahankan perilaku eksternal kode, di mana skrip pengujian unit dijalankan kembali untuk memastikan tidak ada fungsionalitas yang terdegradasi. Tahap ini krusial dalam menjaga arsitektur perangkat lunak tetap bersih dan mudah dikembangkan oleh pengembang mandiri."
+  },
+  {
+    "section": "### 3.3.5 Implementasi (*Implementation*)",
+    "paragraph": 5,
+    "line": 168,
+    "text": "Lapisan antarmuka pengguna berbasis Next.js dihubungkan secara bertahap dengan layanan API Laravel melalui pertukaran data terstruktur berformat JSON. Setiap permintaan data dari sisi klien melewati lapisan *middleware* autentikasi dan otorisasi pada peladen guna memverifikasi peran pengguna serta cabang penugasannya. Mekanisme keamanan ini memastikan pembatasan akses data tetap kokoh meskipun pengguna mencoba memanipulasi parameter URL atau identitas objek pada permintaan HTTP."
+  },
+  {
+    "section": "### 3.3.6 Pengujian Sistem (*System Testing*)",
+    "paragraph": 1,
+    "line": 172,
+    "text": "Pengujian sistem dilaksanakan untuk memvalidasi bahwa seluruh modul perangkat lunak berfungsi secara harmonis dan menghasilkan luaran yang akurat sesuai spesifikasi kebutuhan pengguna. Pengujian ini menerapkan pendekatan pengujian kotak hitam (*Black Box Testing*) dengan teknik *Equivalence Partitioning* dan *Boundary Value Analysis*. Penerapan pengujian fungsional kotak hitam dalam kerangka PxP telah terbukti efektif dalam memverifikasi keandalan sistem informasi (Apriyanti dkk., 2024). Skenario uji ARTHA dirancang berdasarkan alur kerja pengguna, dengan penekanan khusus pada penegakan batas hak akses cabang, kontrol kapasitas kelas, dan konsistensi pencatatan transaksi keuangan."
+  },
+  {
+    "section": "### 3.3.6 Pengujian Sistem (*System Testing*)",
+    "paragraph": 2,
+    "line": 174,
+    "text": "Pengujian dijalankan pada lingkungan uji terisolasi dengan menggunakan basis data simulasi yang memuat karakteristik data delapan cabang bimbingan belajar. Sebelum pengujian dieksekusi, pengembang mencatat konfigurasi lingkungan uji yang mencakup nomor versi rilis aplikasi, spesifikasi perangkat keras pengujian, zona waktu komputasi, dan status awal data. Dokumentasi parameter awal ini diperlukan agar setiap skenario pengujian dapat direplikasi secara konsisten ketika proses pengujian ulang pascaperbaikan dilakukan."
+  },
+  {
+    "section": "### 3.3.6 Pengujian Sistem (*System Testing*)",
+    "paragraph": 3,
+    "line": 176,
+    "text": "Tabel 3.5 menyajikan representasi kasus pengujian sistem yang berfokus pada mitigasi risiko kritis integritas data dan konkurensi transaksi. Daftar lengkap yang mencakup kasus uji BB-01 hingga BB-33 didokumentasikan secara rinci pada lampiran pengujian sistem. Keterkaitan antara kasus uji kotak hitam dengan spesifikasi kebutuhan dipetakan melalui kelompok pengujian PU-01 hingga PU-14 pada Tabel 3.13."
+  },
+  {
+    "section": "### 3.3.6 Pengujian Sistem (*System Testing*)",
+    "paragraph": 4,
+    "line": 189,
+    "text": "Setiap eksekusi kasus pengujian dicatat secara rinci meliputi prasyarat pengujian, langkah operasional, data masukan, hasil yang diharapkan, hasil aktual, status kelulusan, serta tangkapan layar bukti eksekusi. Anomali yang teridentifikasi diklasifikasikan berdasarkan tingkat keparahannya terhadap keandalan operasional sistem. Pelanggaran isolasi data cabang, anomali duplikasi pencatatan kas, dan kegagalan penegakan kuota kelas dikategorikan sebagai galat kritis yang wajib diselesaikan sebelum pengujian dilanjutkan."
+  },
+  {
+    "section": "### 3.3.6 Pengujian Sistem (*System Testing*)",
+    "paragraph": 5,
+    "line": 191,
+    "text": "Modul yang belum memenuhi kriteria kelulusan segera diperbaiki melalui tahapan *debugging*, kemudian diuji kembali menggunakan skenario pengujian yang sama beserta uji regresi pada fungsi-fungsi yang terhubung. Hasil pengujian ulang dicatat secara komparatif dengan merekam nomor versi perbaikan dan tanggal verifikasi. Dokumentasi historis ini mencerminkan lintasan peningkatan kualitas perangkat lunak dari kondisi temuan awal hingga tercapainya status valid."
+  },
+  {
+    "section": "### 3.3.7 Evaluasi Iterasi (*Retrospective*)",
+    "paragraph": 1,
+    "line": 195,
+    "text": "Sesi evaluasi retrospektif diselenggarakan pada akhir setiap siklus iterasi guna meninjau efektivitas kinerja pengembang, menganalisis kendala teknis yang timbul, serta mengevaluasi kualitas modul yang telah diselesaikan. Pengembang membandingkan durasi kerja aktual terhadap estimasi perencanaan, menelaah log galat yang ditemukan, serta mengevaluasi status penyelesaian *backlog*. Kesimpulan yang ditarik dari sesi evaluasi ini menjadi landasan empiris untuk menyempurnakan strategi implementasi pada siklus iterasi berikutnya."
+  },
+  {
+    "section": "### 3.3.7 Evaluasi Iterasi (*Retrospective*)",
+    "paragraph": 2,
+    "line": 197,
+    "text": "Pencatatan metrik kerja secara disiplin memberikan bukti kuantitatif untuk meningkatkan akurasi estimasi waktu dan kedewasaan proses rekayasa perangkat lunak mandiri (Dzhurov dkk., 2009). Dinamika perubahan kebutuhan dan disparitas waktu pengerjaan modul juga menjadi perhatian utama dalam evaluasi proyek berbasis PxP (Sidiq dkk., 2025). Oleh sebab itu, pencatatan durasi kerja mencakup seluruh fase mulai dari pemodelan, penulisan kode, hingga pengujian guna mengidentifikasi sumber inefisiensi secara komprehensif."
+  },
+  {
+    "section": "### 3.3.7 Evaluasi Iterasi (*Retrospective*)",
+    "paragraph": 3,
+    "line": 199,
+    "text": "Dimensi dokumentasi yang menjadi instrumen utama dalam evaluasi retrospektif dirangkum pada Tabel 3.6. Seluruh catatan waktu, log galat, perubahan spesifikasi, serta usulan perbaikan diisi secara konsisten sepanjang aktivitas pengembangan berlangsung. Ketersediaan log aktivitas yang faktual ini memastikan proses refleksi retrospektif berlandaskan pada data empiris yang dapat diverifikasi keabsahannya."
+  },
+  {
+    "section": "### 3.3.7 Evaluasi Iterasi (*Retrospective*)",
+    "paragraph": 4,
+    "line": 210,
+    "text": "Analisis varians waktu dihitung secara sistematis pada setiap tugas dengan mengurangkan durasi estimasi dari durasi pengerjaan aktual. Deviasi yang signifikan selanjutnya dianalisis akar penyebabnya melalui penelusuran catatan kendala teknis harian. Pembahasan mendalam ini memungkinkan pemisahan yang jelas antara keterlambatan yang dipicu oleh perubahan kebutuhan pengguna dan waktu ekstra yang dihabiskan untuk menyelesaikan galat logika program."
+  },
+  {
+    "section": "### 3.3.7 Evaluasi Iterasi (*Retrospective*)",
+    "paragraph": 5,
+    "line": 212,
+    "text": "Rekomendasi perbaikan yang dirumuskan pada sesi retrospektif segera diterapkan untuk memperketat estimasi waktu, menata ulang prioritas tugas tersisa, serta menyempurnakan strategi pengujian pada iterasi berikutnya. Berkas lengkap catatan waktu pengerjaan, log anomali kode, riwayat perubahan kebutuhan, serta notulensi retrospektif diarsipkan secara teratur pada lampiran laporan tugas akhir. Ringkasan hasil evaluasi disajikan pada bab pembahasan guna memperlihatkan kurva pembelajaran dan evolusi kualitas perangkat lunak."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 1,
+    "line": 216,
+    "text": "Pengujian penerimaan pengguna atau *User Acceptance Testing* (UAT) dilaksanakan untuk mengevaluasi kesesuaian alur kerja prototipe ARTHA terhadap kebutuhan operasional nyata dari sudut pandang pemangku kepentingan langsung. Partisipan evaluasi dipilih menggunakan teknik penarikan sampel bertujuan (*purposive sampling*) dengan mempertimbangkan wewenang manajerial, pengalaman administratif harian, kesediaan waktu, serta keterkaitan peran terhadap fitur yang diuji. Kriteria seleksi ini memastikan bahwa pengujian operasional dijalankan oleh personel yang benar-benar memahami konteks bisnis bimbingan belajar."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 2,
+    "line": 218,
+    "text": "Kelompok peserta UAT dirancang mewakili dua peran utama dalam sistem, yaitu Admin Cabang dan Super Admin, dengan penetapan nama personel, representasi cabang, serta jadwal evaluasi yang dikoordinasikan secara resmi bersama manajemen mitra. Setiap peserta menguji serangkaian skenario tugas kerja sesuai hak akses yang dimilikinya. Hasil evaluasi disajikan secara terpilah berdasarkan peran dan cabang yang diwakili guna memberikan gambaran komprehensif mengenai tingkat penerimaan sistem di setiap tingkatan organisasi."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 3,
+    "line": 220,
+    "text": "Sebelum sesi pengujian dimulai, pengembang menyiapkan peladen uji mandiri, repositori basis data uji yang telah dinormalisasi, akun pengguna terverifikasi untuk setiap peran, bundel data simulasi transaksi, serta dokumen panduan operasional ringkas. Seluruh fungsionalitas inti dan mekanisme isolasi hak akses diverifikasi kestabilannya terlebih dahulu guna memastikan pengujian berjalan lancar. Lingkungan uji yang telah terstandardisasi ini juga memungkinkan pengulangan skenario tugas pada kondisi awal yang sama apabila terjadi kendala teknis."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 4,
+    "line": 222,
+    "text": "Pelaksanaan UAT diawali dengan sesi pembekalan singkat mengenai tujuan pengujian, etika kerahasiaan data, tata cara pengisian instrumen evaluasi, serta persetujuan dokumentasi hasil uji. Peserta selanjutnya menjalankan skenario tugas yang telah disiapkan secara mandiri, sementara pengembang mengamati interaksi pengguna dan mencatat kendala maupun bantuan teknis yang diperlukan. Setiap penyesuaian instruksi yang dilakukan selama pelaksanaan uji dicatat secara kronologis beserta justifikasi rasionalnya."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 5,
+    "line": 224,
+    "text": "Tabel 3.7 merangkum empat belas skenario tugas UAT yang merefleksikan proses bisnis operasional bimbingan belajar, di mana kode A merepresentasikan peran Admin Cabang dan kode S merepresentasikan Super Admin. Lembar kerja evaluasi mencakup identitas peserta, nomor versi aplikasi, instruksi langkah kerja, hasil aktual, tingkat intervensi pengembang, status keputusan penerimaan, catatan kualitatif, serta bukti tangkapan layar. Catatan terstruktur ini menjadi bahan telaah kuantitatif dan kualitatif dalam mengukur akseptabilitas sistem."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 6,
+    "line": 245,
+    "text": "Sebelum diujikan kepada pengguna, instrumen evaluasi UAT divalidasi terlebih dahulu bersama dosen pembimbing dan perwakilan manajemen mitra guna menjamin kejelasan instruksi serta keselarasan skenario tugas terhadap tujuan penelitian. Partisipasi aktif calon pengguna dalam evaluasi perangkat lunak berbasis PxP merupakan pilar utama dalam memastikan relevansi sistem terhadap kebutuhan operasional nyata (Apriyanti dkk., 2024). Pada prototipe ARTHA, validasi ini diwujudkan melalui pengujian skenario penanganan transaksi nyata yang dapat diobservasi hasilnya secara objektif."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 7,
+    "line": 247,
+    "text": "Status pencapaian pada setiap butir skenario tugas diklasifikasikan ke dalam tiga kategori keputusan, yaitu diterima (*accepted*), memerlukan perbaikan (*rework*), atau belum dapat dievaluasi (*blocked*), disertai catatan alasan yang komprehensif. Kendala yang timbul akibat ketidaksiapan data simulasi dipisahkan secara tegas dari kesalahan logika fungsional aplikasi. Setelah perbaikan kode program selesai dilaksanakan, skenario tugas yang bermasalah diuji kembali pada versi rilis perbaikan untuk memverifikasi efektivitas solusi yang diterapkan."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 8,
+    "line": 249,
+    "text": "Hasil pelaksanaan pengujian sistem dirangkum secara kuantitatif dengan menyajikan metrik total kasus uji yang direncanakan, kasus yang dieksekusi, jumlah kelulusan, kegagalan uji, serta kasus yang belum dijalankan. Persentase tingkat kelulusan dihitung berdasarkan perbandingan antara jumlah kasus uji yang berstatus lulus terhadap total kasus uji yang telah dieksekusi. Sementara itu, metrik cakupan pengujian dihitung dari rasio kasus uji yang dieksekusi terhadap seluruh populasi kasus uji yang direncanakan, sehingga kedua indikator tersebut memberikan interpretasi mutu yang saling melengkapi."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 9,
+    "line": 251,
+    "text": "Analisis hasil evaluasi UAT dikompilasi secara terstruktur berdasarkan capaian pelaksanaan tugas per peserta dan nomor iterasi rilis aplikasi. Tingkat penerimaan pengguna (*acceptance rate*) dihitung menggunakan formula persentase, yakni membagi jumlah skenario tugas yang diterima dengan total skenario tugas yang telah dievaluasi. Tugas yang memerlukan pengujian ulang dilaporkan secara terpisah guna memperlihatkan efektivitas siklus perbaikan sistem hingga disetujui oleh mitra."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 10,
+    "line": 253,
+    "text": "Keputusan akhir terkait akseptabilitas prototipe diambil secara komprehensif dengan mempertimbangkan pemenuhan seluruh tugas operasional prioritas tinggi serta tuntasnya penyelesaian seluruh galat kritis. Pembahasan hasil evaluasi difokuskan pada tingkat keterpaduan modul, kemudahan pemantauan transaksi kas, serta kepuasan pengguna terhadap pemenuhan kebutuhan administrasi. Seluruh interpretasi didasarkan secara ketat pada data evaluasi empiris yang terhimpun, sedangkan justifikasi terkait efisiensi waktu kerja dianalisis sebagai implikasi kualitatif dari otomatisasi proses bisnis."
+  },
+  {
+    "section": "### 3.3.8 Pengujian Penerimaan Pengguna dan Analisis Evaluasi",
+    "paragraph": 11,
+    "line": 255,
+    "text": "Setelah seluruh masukan evaluasi berhasil diakomodasi, pengembang menyusun paket rilis serah uji yang meliputi kode sumber terverifikasi, panduan instalasi dan penggunaan (*user manual*), daftar batasan sistem, prosedur pencadangan dan pemulihan basis data, serta berita acara pengujian UAT. Dokumen serah terima ini merekam status kesiapan teknologi prototipe pada akhir masa penelitian. Kebijakan mengenai implementasi operasional skala penuh selanjutnya diserahkan kepada kesiapan manajerial mitra bimbingan belajar sesuai hasil validasi yang dicapai."
+  },
+  {
+    "section": "## 3.4 Konsep Prototipe",
+    "paragraph": 1,
+    "line": 259,
+    "text": "Konsep prototipe menguraikan translasi proses bisnis operasional Bimbingan Belajar Artha ke dalam arsitektur fungsional, taksonomi peran pengguna, serta model keterhubungan data digital. Kerangka konseptual ini menjembatani temuan elisitasi empiris dengan keputusan desain antarmuka dan logika pemrosesan yang akan dibangun. Seluruh perumusan proses bisnis dan pemetaan entitas diselaraskan dengan tata kelola manajemen mitra guna menjamin efektivitas penerapan sistem pada lingkungan operasional nyata."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 1,
+    "line": 263,
+    "text": "Arsitektur usulan sistem ARTHA dirancang untuk mengintegrasikan proses pencatatan di tingkat cabang dengan kebutuhan pengawasan manajerial terpusat secara terpadu. Data operasional yang diinput oleh Admin Cabang secara otomatis mengalir ke basis data terpusat guna mendukung verifikasi transaksi keuangan dan pembentukan laporan manajerial secara *real-time*. Urgensi pembaruan tata kelola kas dan verifikasi berjenjang ini sejalan dengan kajian empiris sistem administrasi SPP yang menekankan pentingnya ketertelusuran dokumen bukti transaksi (Hendri dkk., 2025)."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 2,
+    "line": 265,
+    "text": "Tabel 3.8 membandingkan alur proses bisnis yang sedang berjalan (*as-is*) dengan rancangan proses usulan (*to-be*) dalam sistem ARTHA. Komparasi ini memperlihatkan transformasi operasional dari pencatatan manual yang terfragmentasi menuju pengelolaan data digital yang terkonsolidasi. Penegasan mengenai otoritas mutasi rekening resmi dan personel pemeriksa bank difinalisasi bersama pihak manajemen sebelum sistem diimplementasikan."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 3,
+    "line": 279,
+    "text": "Dalam mekanisme transaksi penerimaan pembayaran, staf administrasi memilih satu atau beberapa tagihan aktif milik siswa yang terdaftar pada cabang terkait. Sistem mencatat pembayaran tersebut sebagai satu entitas transaksi induk yang selanjutnya didekomposisi ke dalam rincian alokasi tagihan spesifik. Akumulasi nominal seluruh alokasi tagihan wajib bernilai ekuivalen dengan total uang yang disetorkan guna menjamin keseimbangan antara nilai pelunasan kewajiban dan fisik kas yang diterima."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 4,
+    "line": 281,
+    "text": "Pada skema pembayaran transfer, Admin Cabang mengawali proses dengan menginput rincian transaksi serta mengunggah berkas digital bukti transfer ke dalam sistem. Sebelum disetujui oleh Super Admin, status transaksi berada dalam antrean peninjauan dan belum mengurangi sisa tagihan siswa. Super Admin memverifikasi kesesuaian data transfer terhadap mutasi rekening koran bank; transaksi yang valid akan disetujui sehingga memotong piutang siswa, sedangkan pengajuan yang tidak sesuai akan ditolak disertai alasan koreksi untuk kemudian diajukan ulang melalui transaksi baru yang tetap tertaut pada riwayat sebelumnya."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 5,
+    "line": 283,
+    "text": "Pada transaksi pembayaran tunai di kasir, Admin Cabang memproses penerimaan kas secara langsung setelah fisik uang dihitung, sehingga status tagihan dapat terpotong secara instan. Rancangan dasar sistem menetapkan skema pelunasan penuh sesuai nilai kewajiban tagihan yang dipilih. Apabila pihak manajemen bimbingan belajar menyepakati adanya skema pembayaran cicilan, fungsionalitas alokasi parsial akan diakomodasi melalui penyesuaian parameter konfigurasi pembayaran."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 6,
+    "line": 285,
+    "text": "Fisik uang kas yang dihimpun di tingkat cabang dibundel ke dalam dokumen penyerahan kas (*cash batch*) yang merekam daftar transaksi sumber, petugas penyerah, penerima di kantor pusat, serta waktu serah terima. Tahap berikutnya adalah penyetoran akumulasi uang kas tersebut ke rekening giro resmi bimbingan belajar di bank dengan mencatat rekening tujuan, tanggal setor, dan bukti slip setoran. Kedua tahapan administratif ini merepresentasikan perpindahan fisik kas internal, sehingga pencatatannya tidak diakui sebagai penambahan pendapatan siswa baru dalam pembukuan lembaga."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 7,
+    "line": 287,
+    "text": "Mekanisme rekonsiliasi bank pada prototipe ARTHA menerapkan prinsip pencocokan satu-ke-satu (*one-to-one matching*), yakni menghubungkan satu baris mutasi kredit rekening koran dengan satu transaksi transfer siswa atau satu berkas setoran kas cabang yang bernilai nominal identik. Setelah petugas memverifikasi keabsahan data, kode referensi mutasi bank dikunci pada transaksi terkait agar tidak dapat digunakan ulang. Kasus mutasi gabungan (*bulk transfer*), biaya administrasi bank, maupun selisih transfer dicatat dalam log anomali untuk penanganan manajerial lebih lanjut karena berada di luar lingkup pencocokan otomatis prototipe."
+  },
+  {
+    "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+    "paragraph": 8,
+    "line": 289,
+    "text": "Pemisahan tanggung jawab operasional antara kantor cabang dan kantor pusat ini mengadopsi prinsip tata kelola sistem informasi terdistribusi (Ramadhan dan Widodo, 2026), sedangkan mekanisme rekonsiliasi internal dengan rekening koran perbankan merujuk pada standar pengendalian kas (Sudirman dan Tristianti, 2021). Kedua rujukan akademik tersebut mendasari perancangan modul pelaporan dan audit kas ARTHA. Dalam penyajian informasi keuangan, sisa tagihan siswa dipisahkan secara tegas dari status rekonsiliasi bank guna mencegah distorsi pemahaman antara piutang belajar dan posisi likuiditas kas."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 1,
+    "line": 293,
+    "text": "Kebutuhan fungsional merepresentasikan seluruh kemampuan operasional dan layanan komputasi yang wajib disediakan oleh sistem ARTHA untuk mendukung pekerjaan pengguna. Setiap butir kebutuhan diformulasikan secara presisi bersama indikator luaran yang diharapkan guna memudahkan verifikasi pada tahap pengujian perangkat lunak. Rincian empat belas kebutuhan fungsional sistem disajikan pada Tabel 3.9."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 2,
+    "line": 314,
+    "text": "Pada modul penjadwalan pembelajaran, staf administrasi menyusun penugasan mengajar tentor dan alokasi ruangan dengan dukungan fitur deteksi irisan waktu secara otomatis. Jadwal yang terindikasi mengalami benturan waktu atau ruang akan ditandai dengan peringatan visual dan disimpan dalam status nonaktif hingga pengelola menyelesaikan konflik tersebut. Pengaturan deteksi bentrok jadwal pada lembaga bimbingan belajar ini merujuk pada prinsip optimasi jadwal (Khafidhoh dkk., 2026), di mana ARTHA berfokus pada validasi aturan benturan deterministik tanpa menerapkan algoritma genetika yang berlebihan bagi skala operasional mitra."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 3,
+    "line": 316,
+    "text": "Penentuan ketersediaan kuota siswa dihitung melalui perbandingan dinamis antara jumlah peserta aktif pada rombongan belajar terhadap batas maksimum kapasitas ruangan fisik. Pendekatan kalkulasi kapasitas dan validasi irisan jadwal ini mengadaptasi model kontrol alokasi sumber daya institusi pendidikan (Kabisatullah dan Noprisson, 2026). Dalam konteks ARTHA, batasan kuota kelas dikonfigurasi secara spesifik berdasarkan kebijakan manajerial cabang masing-masing."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 4,
+    "line": 318,
+    "text": "Pengelola sistem menetapkan parameter ambang batas hampir penuh (*near-full threshold*) untuk memberikan sinyal peringatan dini apabila sisa kuota ruang mulai menipis. Nilai ambang batas ini dikonfigurasi dalam rentang numerik yang fleksibel, sementara status penuh (*full*) secara otomatis aktif ketika jumlah siswa terdaftar telah menyamai kapasitas maksimum. Indikator keterisian kelas ini ditampilkan secara independen dari status operasional kelas, sehingga staf dapat dengan mudah membedakan antara kelas yang aktif penuh dan kelas yang sengaja ditutup."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 5,
+    "line": 320,
+    "text": "Validasi kapasitas kelas dieksekusi kembali pada sisi peladen (*backend*) sesaat sebelum perintah penyimpanan data keanggotaan dijalankan. Pemeriksaan ganda ini krusial untuk mencegah anomali *race condition*, di mana dua staf administrasi cabang yang berbeda membuka formulir pendaftaran secara simultan saat kuota hanya tersisa satu kursi. Mekanisme transaksi terisolasi pada basis data menjamin hanya satu permintaan pendaftaran yang berhasil diproses, sedangkan permintaan lainnya akan ditolak secara anggun dengan pesan informatif."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 6,
+    "line": 322,
+    "text": "Fitur penagihan tunggakan mengompilasi data nama siswa, rincian periode belajar, sisa nominal tagihan, dan batas waktu jatuh tempo menjadi draf pesan teks terstruktur. Nomor kontak wali murid distandardisasi ke dalam format internasional, kemudian seluruh draf pesan dienkode ke dalam format URL protokol WhatsApp resmi. Pembentukan tautan perpesanan ini mengacu pada dokumentasi teknis antarmuka *click to chat* resmi (WhatsApp, t.t.)."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 7,
+    "line": 324,
+    "text": "Ketika staf administrasi menekan tombol WhatsApp, sistem merekam log aktivitas interaksi tersebut guna mencatat riwayat upaya penagihan yang telah dilakukan lembaga. Staf kemudian diarahkan ke aplikasi WhatsApp Web atau WhatsApp Desktop untuk meninjau redaksi pesan sebelum dikirimkan secara manual kepada wali siswa. Karena pengiriman pesan berlangsung di luar domain aplikasi ARTHA, log sistem mencatat status pembuatan tautan dan tidak mengklaim status keterbacaan pesan di perangkat penerima."
+  },
+  {
+    "section": "### 3.4.2 Kebutuhan Fungsional dan Nonfungsional",
+    "paragraph": 8,
+    "line": 326,
+    "text": "Selain fungsi operasional inti, perancangan prototipe menetapkan kriteria kualitas teknis yang mencakup aspek keamanan akses data, keandalan konkurensi, integritas audit, serta pengalaman pengguna. Kebutuhan nonfungsional yang menjadi standar penerimaan teknis dirangkum pada Tabel 3.10. Seluruh indikator kinerja kuantitatif akan diukur secara empiris pada lingkungan pengujian yang representatif."
+  },
+  {
+    "section": "### 3.4.3 Peran Pengguna dan Matriks Hak Akses",
+    "paragraph": 1,
+    "line": 344,
+    "text": "Struktur hak akses pengguna dalam sistem ARTHA dirancang menggunakan model *Role-Based Access Control* (RBAC) yang memadukan wewenang jabatan dengan batasan cabang penugasan. Pemisahan domain data operasional antarcabang disertai akses pemantauan terpusat untuk pimpinan merupakan praktik terbaik dalam tata kelola sistem informasi terdistribusi (Ahadi dkk., 2025; Thiovanda, 2026). Dalam implementasinya, ARTHA menetapkan dua peran utama, yaitu Admin Cabang dan Super Admin."
+  },
+  {
+    "section": "### 3.4.3 Peran Pengguna dan Matriks Hak Akses",
+    "paragraph": 2,
+    "line": 346,
+    "text": "Tabel 3.11 mendefinisikan pembagian kewenangan fungsional dan jangkauan akses data untuk masing-masing peran pengguna. Matriks otorisasi ini diterapkan secara ketat baik pada lapisan antarmuka pengguna maupun pada logika validasi API di sisi peladen. Pembagian tanggung jawab keuangan yang memerlukan keputusan kebijakan dibahas dan disepakati bersama manajemen sebelum modul diterapkan."
+  },
+  {
+    "section": "### 3.4.3 Peran Pengguna dan Matriks Hak Akses",
+    "paragraph": 3,
+    "line": 361,
+    "text": "Pada setiap permintaan data, peladen secara konsisten memeriksa identitas peran yang terenkripsi dalam token sesi serta memvalidasi relasi pengguna terhadap data cabang yang diminta. Nilai cabang yang kosong (*null*) pada profil pengguna ditangani secara ketat dan tidak secara otomatis mewarisi hak akses Super Admin. Melalui mekanisme pertahanan berlapis ini, seluruh tindakan manipulasi data dibatasi secara mutlak pada cabang penugasan yang sah."
+  },
+  {
+    "section": "### 3.4.3 Peran Pengguna dan Matriks Hak Akses",
+    "paragraph": 4,
+    "line": 363,
+    "text": "Pihak tentor dan orang tua atau wali siswa diposisikan sebagai entitas eksternal yang menjadi subjek operasional dan target komunikasi bimbingan belajar. Dalam batasan arsitektur prototipe ini, kedua pihak tersebut tidak diberikan akun interaktif untuk mengakses dasbor sistem. Staf administrasi bertindak sebagai operator yang mengelola data penugasan tentor serta menyalurkan informasi tagihan kepada wali siswa melalui kanal komunikasi resmi."
+  },
+  {
+    "section": "### 3.4.4 Cerita Pengguna (*User Story*) dan Kriteria Penerimaan",
+    "paragraph": 1,
+    "line": 367,
+    "text": "Spesifikasi kebutuhan operasional sistem dirumuskan ke dalam bentuk cerita pengguna (*user story*) guna menggambarkan interaksi fungsional dari perspektif persona pengguna akhir. Setiap butir cerita pengguna dilengkapi dengan kriteria penerimaan objektif yang menjadi tolak ukur kelulusan fitur pada saat pengujian. Struktur perumusan cerita pengguna ini mengadopsi standar rekayasa perangkat lunak tangkas (Fikri dan Arthawan, 2021; Sidiq dkk., 2025), dengan substansi yang disesuaikan pada konteks kebutuhan ARTHA sebagaimana disajikan pada Tabel 3.12."
+  },
+  {
+    "section": "### 3.4.4 Cerita Pengguna (*User Story*) dan Kriteria Penerimaan",
+    "paragraph": 2,
+    "line": 388,
+    "text": "Tabel 3.13 menyajikan matriks keterlacakan (*traceability matrix*) yang menghubungkan setiap butir kebutuhan fungsional dengan kode sumber elisitasi, cerita pengguna, pemodelan kasus penggunaan, alokasi iterasi PxP, serta kelompok validasi pengujiannya. Matriks komprehensif ini menjamin bahwa setiap kebutuhan bisnis yang disuarakan oleh mitra memiliki representasi nyata pada rancangan arsitektur dan dapat diverifikasi secara transparan hingga tahap akhir evaluasi."
+  },
+  {
+    "section": "### 3.4.4 Cerita Pengguna (*User Story*) dan Kriteria Penerimaan",
+    "paragraph": 3,
+    "line": 409,
+    "text": "Setiap gugus paket pengujian (PU) mencakup kombinasi kondisi pengujian normal, penanganan eksepsi sistem, serta kondisi batas ekstrem pada modul fungsional terkait. Rincian skenario pengujian kotak hitam dijabarkan secara terperinci menggunakan kode BB dan ditautkan langsung dengan sumber elisitasi primer serta status verifikasinya pada lampiran matriks keterlacakan. Keterkaitan terstruktur ini memberikan visibilitas penuh bagi pengembang dan dosen pembimbing untuk memantau kemajuan pengujian sistem secara objektif."
+  },
+  {
+    "section": "### 3.4.5 Pemodelan Kasus Penggunaan (*Use Case*) dan Skenario",
+    "paragraph": 1,
+    "line": 413,
+    "text": "Pemodelan kasus penggunaan (*use case*) mengabstraksikan interaksi fungsional antara aktor pengguna dengan kapabilitas komputasi yang disediakan oleh sistem ARTHA. Penerapan diagram kasus penggunaan ini merujuk pada standar rekayasa perangkat lunak untuk sistem informasi manajemen (Ahadi dkk., 2025). Diagram Use Case pada Gambar 3.2 merepresentasikan batasan fungsionalitas sistem yang selanjutnya dijabarkan secara terperinci ke dalam skenario interaksi tekstual."
+  },
+  {
+    "section": "### 3.4.5 Pemodelan Kasus Penggunaan (*Use Case*) dan Skenario",
+    "paragraph": 2,
+    "line": 421,
+    "text": "Arsitektur kasus penggunaan ARTHA mencakup empat belas skenario inti, yakni UC-00 hingga UC-13, yang melibatkan peran Admin Cabang dan Super Admin. Sebagai ilustrasi alur kerja kolaboratif lintas peran, proses pengajuan transfer dan verifikasi dana masuk disajikan pada Tabel 3.14. Penjabaran skenario lengkap beserta kamus interaksi setiap kasus penggunaan didokumentasikan secara mandiri pada dokumen pelengkap rancangan sistem."
+  },
+  {
+    "section": "### 3.4.5 Pemodelan Kasus Penggunaan (*Use Case*) dan Skenario",
+    "paragraph": 3,
+    "line": 438,
+    "text": "Diagram use case menyajikan batas interaksi fungsional tingkat tinggi, sedangkan rincian validasi formulir dan pengujian otorisasi diuraikan secara mendalam di dalam narasi skenario. Setiap skenario mengompilasi alur kerja normal (*happy path*) serta skenario penanganan eksepsi yang mengantisipasi kesalahan masukan maupun kegagalan jaringan. Dokumentasi berlapis ini menjaga kejelasan model fungsional tanpa mengorbankan ketelitian aturan bisnis pada setiap tahapan interaksi."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 1,
+    "line": 442,
+    "text": "Struktur persistensi data sistem ARTHA dimodelkan secara terpusat dengan mengintegrasikan dua puluh tiga tabel relasional yang ternormalisasi. Entitas identitas master, riwayat keanggotaan kelas, kewajiban tagihan, transaksi pembayaran kasir, serta log perpindahan kas dirancang secara terpisah guna menjaga integritas referensial dan ketertelusuran historis. Model data konseptual disajikan pada Gambar 3.3, sedangkan rincian Entity Relationship Diagram (ERD) fisik dan kamus data komprehensif dilampirkan pada dokumen basis data pendukung."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 2,
+    "line": 450,
+    "text": "Tabel 3.15 mengklasifikasikan dua puluh tiga tabel relasional ke dalam delapan gugus fungsional yang merefleksikan domain operasional bimbingan belajar. Pada domain transaksi keuangan, pencatatan pembayaran dihubungkan dengan tagihan melalui entitas alokasi agar satu transaksi penerimaan dapat melunasi beberapa tagihan siswa sekaligus secara fleksibel. Pengelompokan modular ini mempermudah pemeliharaan skema data dan optimalisasi kueri pelaporan di masa mendatang."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 3,
+    "line": 465,
+    "text": "Karakteristik atribut penting dan konstrain integritas data yang diterapkan pada skema basis data dirangkum pada Tabel 3.16. Kalkulasi metrik operasional seperti total siswa aktif, akumulasi sisa tagihan, status jatuh tempo, dan rekapitulasi penerimaan kas dihitung secara langsung dari transaksi sumber (*derived data*). Pendekatan integritas ini memastikan informasi yang ditampilkan pada dasbor pimpinan selalu konsisten terhadap dinamika transaksi di tingkat cabang."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 4,
+    "line": 481,
+    "text": "Proses penempatan siswa dikaitkan secara ketat pada rombongan belajar aktif yang memiliki jadwal valid dan alokasi ruangan dengan daya tampung yang mencukupi. Apabila kapasitas ruangan atau kelompok diubah oleh pengelola, sistem secara otomatis mengevaluasi ulang kesesuaian kuota terhadap jumlah siswa terdaftar saat itu. Seluruh operasi pembaruan keanggotaan dieksekusi dalam satu transaksi atomik guna menjamin ketiadaan anomali data saat terjadi akses bersamaan."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 5,
+    "line": 483,
+    "text": "Identitas cabang penerbit tagihan dan penerima pembayaran disimpan secara permanen pada saat transaksi pertama kali dibukukan (*snapshot data*). Mekanisme ini memastikan rekam jejak pendapatan kas historis tetap melekat pada cabang asal meskipun siswa yang bersangkutan di kemudian hari berpindah ke cabang bimbingan belajar lain. Sisa tagihan dihitung dari nilai kewajiban dikurangi alokasi pembayaran yang telah diverifikasi, sedangkan status keterlambatan ditentukan secara independen berdasarkan tanggal jatuh tempo yang berlaku."
+  },
+  {
+    "section": "### 3.4.6 Perancangan Basis Data",
+    "paragraph": 6,
+    "line": 485,
+    "text": "Implementasi skema fisik basis data direalisasikan menggunakan sistem manajemen basis data MySQL dengan mesin penyimpanan transaksi InnoDB. Seluruh keterhubungan kunci asing (*foreign key*), pengindeksan kolom pencarian, isolasi transaksi, dan validasi *check constraint* diuji secara ketat melalui skrip migrasi terautomasi. Verifikasi menyeluruh ini menjamin bahwa lapisan persistensi data mampu menjaga integritas data operasional bimbingan belajar di bawah beban kerja riil."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 1,
+    "line": 489,
+    "text": "Perancangan antarmuka pengguna disusun dengan mengutamakan prinsip ergonomi dan kemudahan navigasi agar staf administrasi dapat menjalankan tugas operasional secara intuitif dan efisien. Enam antarmuka utama pada Gambar 3.4 hingga Gambar 3.9 menggambarkan visualisasi halaman kerja dari aktivitas pencatatan cabang hingga modul pemantauan pusat. Keterkaitan fungsional antara halaman antarmuka, kode cerita pengguna, serta aksi operasional utamanya dirangkum pada Tabel 3.17."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 2,
+    "line": 502,
+    "text": "Seluruh nama siswa, angka transaksi, dan nomor rekening yang ditampilkan pada gambar purwarupa antarmuka merupakan data sintetis simulasi yang digunakan khusus untuk keperluan demonstrasi pengujian. Setiap indikator visual berbasis warna (seperti penanda status pembayaran atau kuota kelas) selalu disertai label teks deskriptif guna memastikan aksesibilitas informasi. Standardisasi istilah status transaksi juga diterapkan secara seragam antara tampilan antarmuka, diagram pemodelan, dan kamus data basis data."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 3,
+    "line": 504,
+    "text": "Halaman Dasbor Admin Cabang pada Gambar 3.4 menyajikan informasi rekapitulasi tunggakan siswa, antrean pengajuan transfer yang sedang ditinjau, serta status keterisian ruang kelas secara ringkas dan terfokus. Staf administrasi dapat langsung menelusuri rincian data melalui kartu navigasi tersebut untuk menindaklanjuti tugas operasional di cabangnya masing-masing. Tata letak informasi ini secara efektif mendukung pemenuhan cerita pengguna US-08, US-10, dan US-12."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 4,
+    "line": 512,
+    "text": "Halaman pengelolaan keanggotaan kelas pada Gambar 3.5 memvisualisasikan jumlah siswa aktif, daya tampung maksimum, dan sisa kursi kosong sebelum staf menempatkan siswa baru. Indikator peringatan hampir penuh memberikan panduan visual bagi staf dalam memilih kelas yang tepat, sedangkan tombol pendaftaran otomatis dinonaktifkan ketika kapasitas kelas telah penuh. Proses penghentian keanggotaan siswa mewajibkan pengisian tanggal dan alasan keluar tanpa menghapus profil siswa dari sistem, sesuai dengan spesifikasi cerita pengguna US-03 dan US-04."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 5,
+    "line": 520,
+    "text": "Formulir pengajuan transfer pada Gambar 3.6 mengintegrasikan pemilihan data siswa, penentuan cabang transaksi, daftar tagihan yang akan dilunasi, kalkulasi alokasi nominal, rekening tujuan transfer, serta pratinjau berkas bukti bayar. Pengajuan yang telah dikirimkan oleh Admin Cabang pada US-08 akan masuk ke dalam antrean verifikasi berstatus menunggu peninjauan. Apabila pengajuan tersebut sebelumnya pernah ditolak, formulir perbaikan tetap menampilkan keterkaitan historis dengan pengajuan awal guna menjaga rekam jejak pemeriksaan."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 6,
+    "line": 528,
+    "text": "Antarmuka verifikasi transfer bagi Super Admin pada Gambar 3.7 menyandingkan data pengajuan cabang secara berdampingan dengan berkas bukti transfer dan mutasi rekening bank yang dicatat petugas. Melalui alur kerja US-09 ini, Super Admin mengevaluasi kesesuaian nominal dan nomor referensi sebelum menetapkan keputusan persetujuan. Jika pengajuan dinyatakan tidak valid, pengisian catatan alasan penolakan diwajibkan oleh sistem agar staf administrasi cabang dapat segera melakukan perbaikan dokumen."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 7,
+    "line": 536,
+    "text": "Halaman pemantauan tunggakan pada Gambar 3.8 mengompilasi rincian periode belajar, akumulasi tunggakan, batas jatuh tempo, nomor kontak wali murid, dan pratinjau pesan otomatis sebelum staf mengeksekusi US-10. Penekanan tombol WhatsApp secara otomatis memicu pembukaan aplikasi perpesanan dengan format pesan dan nomor tujuan yang telah terisi lengkap untuk ditinjau oleh staf. Sistem secara internal mencatat log pembukaan tautan tersebut sebagai arsip penagihan, sedangkan pengiriman pesan berlangsung di luar lingkup aplikasi ARTHA."
+  },
+  {
+    "section": "### 3.4.7 Perancangan Antarmuka",
+    "paragraph": 8,
+    "line": 544,
+    "text": "Halaman Dasbor Pusat dan Rekonsiliasi pada Gambar 3.9 menyajikan agregasi tunggakan seluruh cabang, total penerimaan kas terverifikasi, antrean verifikasi transfer, serta transaksi yang telah direkonsiliasi dengan bank secara terpisah. Melalui fungsionalitas US-12 dan US-13, pimpinan dapat menelusuri setiap baris ringkasan hingga ke dokumen transaksi primer dan referensi mutasi perbankan. Penelusuran berjenjang ini menjaga keterkaitan data yang utuh, sehingga mutasi setoran kas cabang tidak akan dihitung ganda sebagai pendapatan bimbingan belajar baru."
+  },
+  {
+    "section": "## 3.5 Spesifikasi Teknis",
+    "paragraph": 1,
+    "line": 554,
+    "text": "Spesifikasi teknis menguraikan konfigurasi arsitektur komputasi, perangkat keras, teknologi perangkat lunak, serta standarisasi lingkungan yang digunakan dalam merealisasikan prototipe ARTHA. Pemaparan ini menetapkan parameter teknis yang menjamin sistem dapat direplikasi dan diuji secara objektif pada kondisi operasional bimbingan belajar. Seluruh versi pustaka dan spesifikasi fisik dicatat secara mendalam sebagai konteks komputasi dari hasil pengujian kinerja maupun fungsionalitas sistem."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 1,
+    "line": 558,
+    "text": "Sistem informasi ARTHA dibangun menggunakan arsitektur web modern yang memisahkan secara tegas lapisan presentasi antarmuka pengguna, lapisan logika bisnis aplikasi, dan lapisan persistensi data. Kerangka kerja Next.js digunakan untuk merender antarmuka pengguna di sisi klien secara responsif, kerangka kerja Laravel mengelola aturan bisnis melalui penyediaan *Application Programming Interface* (API) RESTful, sedangkan basis data MySQL berfungsi sebagai penyimpan data relasional terpusat. Pemisahan arsitektur terdistribusi (*decoupled architecture*) ini meningkatkan modularitas sistem serta memudahkan skalabilitas dan pemeliharaan kode secara mandiri."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 2,
+    "line": 560,
+    "text": "Gambar 3.10 memvisualisasikan interaksi komputasi antara aktor pengguna, antarmuka web, layanan API peladen, dan basis data terpusat. Diagram tersebut juga memetakan batas sistem (*system boundary*) terhadap aktivitas eksternal, seperti interaksi perpesanan melalui protokol WhatsApp dan verifikasi manual mutasi perbankan oleh petugas. Pemodelan arsitektur ini mempertegas batasan proses yang dikelola secara terautomasi oleh sistem dan domain verifikasi yang menjadi wewenang personel operasional."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 3,
+    "line": 568,
+    "text": "Mekanisme autentikasi dan otorisasi sesi pengguna diimplementasikan menggunakan pustaka Laravel Sanctum dengan pendekatan sesi berbasis kuki (*stateful cookie-based session*) yang aman untuk aplikasi satu halaman (*Single Page Application*). Konfigurasi domain silang (*cross-origin*), perlindungan terhadap serangan *Cross-Site Request Forgery* (CSRF), serta masa aktif sesi diselaraskan dengan parameter lingkungan penerapan. Kepatuhan implementasi keamanan ini diverifikasi secara berkala dengan merujuk pada standar dokumentasi resmi kerangka kerja (Laravel, t.t.-a)."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 4,
+    "line": 570,
+    "text": "Pengajuan transfer yang masuk dari seluruh cabang dihimpun secara dinamis ke dalam antrean verifikasi pada dasbor Super Admin berdasarkan status transaksi aktif. Antrean ini menjadi titik kendali utama bagi manajemen pusat dalam memantau dan memvalidasi arus dana masuk secara terstruktur. Apabila pihak mitra membutuhkan penanda notifikasi yang interaktif, mekanisme notifikasi basis data bawaan Laravel disiapkan untuk diintegrasikan setelah kebutuhan operasional tersebut difinalisasi (Laravel, t.t.-b)."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 5,
+    "line": 572,
+    "text": "Dasbor analitik mengambil data transaksi mutakhir langsung dari basis data terpusat setiap kali halaman diakses atau dimuat ulang oleh pengguna. Melalui mekanisme pemuatan data berbasis permintaan ini, pemantauan *real-time* didefinisikan sebagai penyajian data terkini yang konsisten terhadap transaksi terakhir yang tersimpan di peladen. Pembaruan data otomatis secara serentak tanpa pemuatan ulang (*real-time websocket broadcast*) tidak dimasukkan ke dalam ruang lingkup awal guna menjaga efisiensi konsumsi sumber daya peladen."
+  },
+  {
+    "section": "### 3.5.1 Arsitektur Sistem",
+    "paragraph": 6,
+    "line": 574,
+    "text": "Frekuensi pembaruan data dan toleransi ambang waktu tanggapan (*response time*) diselaraskan dengan ritme kerja kasir dan kapasitas infrastruktur mitra. Kesepakatan kriteria performa ini ditetapkan bersama pembimbing sebelum sesi pengujian beban dilakukan. Hasil pengukuran waktu tanggapan fungsi utama selanjutnya dilaporkan secara transparan pada bab hasil dan pembahasan."
+  },
+  {
+    "section": "### 3.5.2 Perangkat Keras",
+    "paragraph": 1,
+    "line": 578,
+    "text": "Lingkungan komputasi pengembang difungsikan untuk menjalankan penyunting kode sumber, peladen pengembangan antarmuka, layanan *backend* API, serta instans basis data lokal secara simultan. Kebutuhan spesifikasi perangkat keras bagi pengguna akhir ditentukan berdasarkan beban kerja administrasi harian dan skenario pengujian UAT bersama mitra. Tabel 3.18 merangkum spesifikasi perangkat keras workstation pengembang yang tersedia serta rencana perangkat uji coba pengguna."
+  },
+  {
+    "section": "### 3.5.2 Perangkat Keras",
+    "paragraph": 2,
+    "line": 590,
+    "text": "Spesifikasi rinci setiap perangkat yang terlibat dalam sesi pengujian dicatat bersama indikator stabilitas jaringan lokal pada saat evaluasi berlangsung. Dokumentasi lingkungan fisik ini penting untuk memberikan interpretasi yang valid terhadap hasil pengujian performa sistem ARTHA. Inventaris perangkat keras pengguna dan konfigurasi peladen uji akan diperbarui secara aktual sesuai alokasi fasilitas dari pihak mitra."
+  },
+  {
+    "section": "### 3.5.3 Perangkat Lunak dan Versi Teknologi",
+    "paragraph": 1,
+    "line": 594,
+    "text": "Repositori proyek antarmuka web ARTHA mengelola seluruh dependensi pustaka menggunakan berkas manifes penguncian dependensi guna menjamin reproduksibilitas lingkungan pengembangan. Pemetaan versi perangkat lunak pada Tabel 3.19 diverifikasi secara langsung dari berkas konfigurasi dependensi sistem per tanggal 25 Oktober 2026. Tabel tersebut juga merangkum tumpukan teknologi layanan aplikasi, mesin basis data, serta kakas pendukung yang digunakan dalam integrasi sistem."
+  },
+  {
+    "section": "### 3.5.3 Perangkat Lunak dan Versi Teknologi",
+    "paragraph": 2,
+    "line": 609,
+    "text": "Konfigurasi lingkungan antarmuka disesuaikan dengan prasyarat instalasi dan optimalisasi kompilasi pada dokumentasi resmi Next.js (Vercel, t.t.). Kompatibilitas antara versi PHP 8.3 dan kerangka kerja Laravel 11 diverifikasi terhadap pedoman rilis resmi untuk memastikan stabilitas dukungan jangka panjang (Laravel, t.t.-c). Standardisasi versi ini mengeliminasi disparitas perilaku aplikasi antara lingkungan pengembangan lokal dan lingkungan pengujian bersama pengguna."
+  },
+  {
+    "section": "### 3.5.3 Perangkat Lunak dan Versi Teknologi",
+    "paragraph": 3,
+    "line": 611,
+    "text": "Berkas dependensi, variabel konfigurasi lingkungan (*environment variables*), dan skrip migrasi basis data diarsipkan secara terstruktur pada repositori sistem. Sebelum pengujian terintegrasi dilaksanakan, pengembang membekukan versi pustaka (*version lock*) serta menguji konsistensi skema basis data hasil migrasi. Prosedur ini menjamin lingkungan evaluasi dapat dibangun kembali dengan karakteristik yang identik kapan pun diperlukan."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 1,
+    "line": 615,
+    "text": "Pengembangan kode program dan kegiatan evaluasi UAT dijalankan pada dua lingkungan komputasi yang terisolasi secara mandiri guna mencegah kontaminasi data transaksi. Pengujian modul pada fase awal memanfaatkan kumpulan data sintetis yang merepresentasikan karakteristik operasional cabang. Penggunaan data transaksi riil dari mitra dibatasi secara ketat berdasarkan perjanjian kerahasiaan dan hanya dialokasikan untuk memvalidasi skenario tugas penerimaan pengguna."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 2,
+    "line": 617,
+    "text": "Seluruh berkas bukti transfer yang diunggah pengguna disimpan dalam direktori penyimpanan terproteksi (*private storage*) yang mewajibkan verifikasi hak akses sebelum berkas dapat diunduh. Kredensial koneksi basis data, kunci enkripsi aplikasi, serta kata sandi akun dikelola melalui berkas konfigurasi terlindungi di luar repositori publik. Protokol keamanan ini ditegakkan secara disiplin guna memastikan informasi sensitif mitra tidak terekspos pada dokumentasi tugas akhir maupun media publikasi ilmiah."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 3,
+    "line": 619,
+    "text": "Pencatatan waktu transaksi pada lapisan basis data disimpan dalam format standar *Coordinated Universal Time* (UTC) dan dikonversikan ke dalam zona waktu Waktu Indonesia Tengah (WITA / Asia/Makassar) saat dirender pada antarmuka pengguna sesuai domisili operasional Balikpapan. Kalender penagihan dan perhitungan jatuh tempo mengacu secara seragam pada zona waktu lokal tersebut. Ketentuan ini menjamin akurasi kronologis transaksi pembayaran kasir dan riwayat log aktivitas pengguna."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 4,
+    "line": 621,
+    "text": "Pengujian isolasi akses multicabang disiapkan dengan mengonfigurasi minimal dua akun Admin Cabang dari cabang yang berbeda serta satu akun Super Admin pengendali. Akun simulasi ini dieksekusi terhadap bundel data uji yang mencerminkan variasi operasional nyata bimbingan belajar. Parameter jaringan, spesifikasi perangkat peramban, dan nomor rilis aplikasi dicatat secara berkala sepanjang proses pengujian."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 5,
+    "line": 623,
+    "text": "Struktur data awal mencakup data uji kelas dengan status kuota bervariasi (tersedia, mendekati penuh, dan penuh), jadwal tentor yang beririsan, tagihan multivariasi, serta transaksi pengajuan transfer dengan riwayat persetujuan maupun penolakan. Setelah data awal dimuat, integritas sistem diverifikasi dan titik pemulihan awal (*initial snapshot*) disimpan ke media cadangan. Ketersediaan cadangan data awal ini memungkinkan pemulihan instan ke status bersih ketika suatu skenario pengujian perlu diulang kembali."
+  },
+  {
+    "section": "### 3.5.4 Lingkungan Implementasi dan Pengujian",
+    "paragraph": 6,
+    "line": 625,
+    "text": "Prosedur pencadangan dieksekusi secara berkala mencakup ekspor skema basis data dan direktori penyimpanan berkas bukti bayar yang saling terhubung. Pengembang melakukan uji coba pemulihan data pada instans uji terpisah guna memverifikasi integritas dan kelengkapan data hasil restorasi. Dokumentasi prosedur pencadangan dan pemulihan ini disajikan sebagai bukti keandalan tata kelola data operasional prototipe."
+  },
+  {
+    "section": "## 3.6 Jadwal Pembuatan Prototipe",
+    "paragraph": 1,
+    "line": 629,
+    "text": "Rencana pelaksanaan tugas akhir prototipe ARTHA dipetakan ke dalam jangka waktu dua belas minggu kerja efektif, yang mencakup empat siklus iterasi PxP berdurasi masing-masing dua minggu. Dokumentasi elisitasi kebutuhan dan artefak perancangan sistem yang dihimpun per 25 Oktober 2026 diposisikan sebagai landasan awal pelaksanaan tahap implementasi. Tanggal peresmian dimulainya siklus pengodean dan jadwal evaluasi UAT disepakati secara resmi bersama dosen pembimbing dan perwakilan manajemen bimbingan belajar."
+  },
+  {
+    "section": "## 3.6 Jadwal Pembuatan Prototipe",
+    "paragraph": 2,
+    "line": 631,
+    "text": "Tabel 3.20 menyajikan distribusi jadwal kegiatan penelitian mulai dari tahap klarifikasi bukti empiris hingga penyiapan luaran akhir tugas akhir. Penomoran minggu (M1 hingga M12) dihitung secara relatif berdasarkan tanggal sepakatan pelaksanaan di lapangan. Jadwal komprehensif ini berfungsi sebagai instrumen kendali proyek agar setiap tahapan pengembangan berjalan sesuai alokasi waktu yang direncanakan."
+  },
+  {
+    "section": "## 3.6 Jadwal Pembuatan Prototipe",
+    "paragraph": 3,
+    "line": 647,
+    "text": "Aktivitas pengujian unit otomatis, pengujian sistem kotak hitam, serta sesi retrospektif dieksekusi secara terpadu di dalam setiap siklus iterasi PxP agar evaluasi mutu perangkat lunak berlangsung secara berkesinambungan. Alokasi mingguan dijabarkan ke dalam estimasi jam kerja per tugas teknis sesaat sebelum iterasi aktif dimulai. Apabila terjadi perubahan kebutuhan operasional dari mitra, jadwal disesuaikan secara adaptif dengan mendokumentasikan dampaknya terhadap sisa beban kerja."
+  },
+  {
+    "section": "## 3.6 Jadwal Pembuatan Prototipe",
+    "paragraph": 4,
+    "line": 649,
+    "text": "Penyusunan naskah laporan tugas akhir mengikuti pedoman tata tulis ilmiah resmi Institut Teknologi Kalimantan, sedangkan artefak luaran prototipe disiapkan sesuai dengan standar kompetensi tugas akhir jalur prototipe Program Studi Sistem Informasi (Institut Teknologi Kalimantan, 2025a; Institut Teknologi Kalimantan, 2026). Dinamika pengerjaan proyek dan penyesuaian jadwal dicatat secara transparan sepanjang pelaksanaan penelitian. Dokumentasi historis ini menghubungkan perencanaan awal dengan bukti empiris pelaksanaan yang dipertanggungjawabkan pada sidang tugas akhir."
+  }
+]

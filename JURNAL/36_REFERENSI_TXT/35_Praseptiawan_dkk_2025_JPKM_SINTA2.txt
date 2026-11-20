@@ -1,0 +1,460 @@
+--- PAGE 1 ---
+Indonesian Journal of Community Engagement
+Jurnal Pengabdian kepada Masyarakat V ol. 11, No. 1, March 2025, Page. 30-35
+DOI: http://doi.org/10.22146/jpkm.100850
+The Development and Implementation of M-Edupayment: A
+Multi-Payment Platform for SMK Negeri 7 Bandar Lampung
+Mugi Praseptiawan*, Meida Cahyo Utoro, Ilham Firman Ashari, Muhammad Habib Algifari,
+Aidil Afriansyah
+Department of Informatics Engineering, Faculty of Industrial T echnology, Institut T eknologi Sumatera, Lampung Selatan,
+Indonesia
+Submitted: October 19 th 2024; Revised: December 10 th 2024; Accepted: January 15 th 2025
+Keywords:
+Mini bank
+Multi-payment education
+T eaching factory
+Abstract This community engagement activity aimed to develop a mini
+bank website, m-EduPayment, integrated with the iPaymu payment gateway
+as an Application Programming Interface (API). The project was implemented
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+on a scale from 1 (strongly disagree) to 5 (strongly agree). SUS scores were
+calculated using standard formulas to determine a ﬁnal score, which was
+then classiﬁed into usability categories. The average SUS score was 91,
+falling under the "Excellent" category (Grade A). The development of the mini
+bank website introduced new features, including online payment services for
+tuition fees (SPP), waste banks, and savings. System testing achieved a 99%
+functional success rate, demonstrating the platform’s high usability in the
+school environment. Respondents provided overwhelmingly positive feedback,
+aﬃrming the successful implementation and functionality of the website.
+1. INTRODUCTION
+SMK Negeri 7 Bandar Lampung implemented the teaching
+factory concept through the Mini Bank program as part
+of its efforts to enhance the competencies of accounting
+students (Praseptiawan et al., 2023). This program provided
+practical experience for students in managing financial
+transactions, such as tuition payments and student savings,
+while also introducing them to modern financial technology.
+The Mini Bank functioned similarly to a real bank within
+the school environment, allowing students to directly learn
+about financial management and basic banking services.
+The program was designed to equip students with skills
+relevant to the workforce while enabling them to apply the
+theoretical knowledge they had learned in the classroom.
+The mini bank system used at SMK Negeri 7
+Bandar Lampung had not yet functioned optimally due
+to the inadequate implementation of several key features.
+Features such as user data management, transaction activity
+logs, and login security were still limited, which hindered
+the system’s functionality in supporting students’ learning
+processes. Moreover, the absence of these essential features
+significantly affected the school’s operational efficiency,
+particularly in managing tuition payments and student
+ISSN 2460-9447 (print), ISSN 2541-5883 (online)
+*Corresponding author: Mugi Praseptiawan
+Department of Informatics Engineering, Faculty of Industrial T echnology, Institut T eknologi Sumatera, Jalan T erusan Ryacudu, Ruang D105, Gedung D -
+Itera, Way Huwi, Lampung Selatan, 35365 Indonesia
+Email: mugi.praseptiawan@if.itera.ac.id
+Copyright ©2025 Jurnal Pengabdian kepada Masyarakat (Indonesian Journal of Community Engagement)
+This work is distributed under a Creative Commons Attribution-ShareAlike 4.0 International License
+30
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+--- PAGE 2 ---
+Praseptiawan et al. The Development and Implementation
+savings transactions (Sari et al., 2023). As the demand
+for technology in education continued to grow, there was
+a pressing need for a system that could provide secure,
+fast, and integrated financial services. Without proper
+improvements, the system could not deliver maximum
+benefits to the school and students.
+The development of the Mini Bank system was crucial
+to ensuring that financial transactions within the school
+environment could be conducted efficiently and securely
+(Maharditia, 2024). With the integration of the iPaymu
+payment gateway and enhancements to login security
+features, the system could offer a better user experience and
+support technology-based learning activities. The results
+of this development added value not only for students in
+practicing mini banking but also for the school in managing
+its finances more effectively.
+2. METHOD
+This community service activity was divided into two main
+tasks: (1) software development using Personal Extreme
+Programming (PXP), and (2) system evaluation using the
+System Usability Scale (SUS).
+2.1 Software development using personal
+extreme programming
+The development of the multi-payment platform
+followed the Personal Extreme Programming (PXP)
+approach, a variation of Extreme Programming tailored
+for individual developers. This method was selected for
+its flexibility in adapting to changing requirements without
+necessitating a complete restart of the development process.
+Personal Extreme Programming (PXP) is an adaptive
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+by Sulthoni et al. demonstrated the successful application
+of PXP in developing a meeting room reservation system
+for the Communication and Information Office of East Java
+Province [a]. The development process under PXP involved
+a series of structured stages, as shown in Figure 1, which
+ensured a systematic approach to achieving project goals.
+The following is a detailed explanation of the stages
+involved in the Personal Extreme Programming (PXP)
+method:
+1. Requirements
+In this stage, the developer gathered requirements
+through interviews and discussions with the client.
+The identified needs were documented in the form of
+user stories (Djamarullah & Kusuma, 2022).
+2. Planning
+The developer planned and created a list of tasks to
+be performed in each iteration based on the collected
+user stories. These tasks were prioritized according
+to the order of the user stories and the estimated time
+for completion.
+3. Iteration Initialization
+This was the initial stage where the tasks that would
+be the primary focus of the iteration were identified
+and selected.
+4. Design
+During this phase, the system to be implemented
+in the iteration was planned and modelled. The
+design developed by the developer was based on
+the requirements gathered during the requirements
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+II. Code Generation: Writing program code based
+on the design.
+III. Code Refactoring: Improving existing code for
+better efficiency and maintainability.
+6. System Testing In this stage, the functionality of
+all system features was tested. The testing results
+were presented through unit testing and black-box
+testing. Further testing involved using the System
+Usability Scale (SUS) to validate user acceptance.
+Performance testing was also conducted to ensure
+that the software functioned well and met expected
+standards.
+Figure 1 . Stages of the Personal Extreme Programming
+(PXP) method
+V ol. 11, No. 1,
+ www.jurnal.ugm.ac.id/jpkm
+ 31
+
+--- PAGE 3 ---
+Praseptiawan et al. The Development and Implementation
+T able1 . System Usability Scale (SUS) Instrument
+No. Question Scale
+1 2 3 4 5
+1 I think that I would like to use this system frequently
+2 I found the system unnecessarily complex
+3 I thought the system was easy to use
+4 I think that I would need the support of a technical person to be able to use this system
+5 I found the various functions in this system were well integrated
+6 I thought there was too much inconsistency in this system
+7 I would imagine that most people would learn to use this system very quickly
+8 I found the system very cumbersome to use
+9 I felt very confident using the system
+10 I needed to learn a lot of things before I could get going with this system
+2.2 System evaluation methods
+The System Usability Scale (SUS) has been a widely
+used method for evaluating the usability of various systems
+and applications. Developed by John Brooke in 1986, SUS
+provided a reliable tool for assessing user satisfaction and
+system effectiveness through a simple questionnaire (Tuloli
+et al., 2022). This method had been applied in diverse
+contexts, including educational modules, management
+systems, and interactive applications, to measure user
+experience and identify areas for improvement. For
+instance, a study conducted by Desak et al., titled Usability
+Evaluation of a Database E-Module Using the System
+Usability Scale (SUS), reported an evaluation score of 80.7.
+This score indicated that the system was acceptable and
+fell into the "excellent" category for usability (Putra et al.,
+2024).
+In its application, the System Usability Scale (SUS)
+employed a Likert scale ranging from one to five, where
+a score of 1 indicated "strongly disagree", 2 "disagree",
+3 "neutral", 4 "agree" and 5 "strongly agree" (Table 1).
+Once the raw SUS data had been collected, the SUS score
+was calculated using Formula 1 to obtain the measurement
+results (Akbar et al., 2024).
+S US = ((A − 1) + (B − 5)) × 2.5 (1)
+Description:
+A = Odd numbered questions
+B = Questions with even numbers
+After obtaining the results of the calculation of the total
+score, the next calculation was to find the average of the
+entire SUS score using formula 2 below.
+¯x = Σx
+n (2)
+Description:
+¯x = Average score
+Σx = Sum of SUS scores
+n = Number of Respondents
+Furthermore, if the value was known from the calculation
+of the average SUS score, the results were categorized in
+Table 2.
+T able2 . Category ﬁnal SUS score
+Category Final SUS
+Score Letter Grade Rating
+Above 80.3 A Very good
+Between 68 and 80.3 B Good
+68 C Medium
+Between 51 and 67 D Bad
+Below 51 F Very Bad
+3. RESULT AND DISCUSSION
+3.1 Multi-payment software development
+The outcomes of the community service activities
+were achieved through the development of multi-payment
+software. The following sections provide explanations of
+these activities.
+1. Need Analysis
+The results of the system needs analysis were
+gathered through interviews with the school
+representatives, including teachers and administrative
+staff involved in the Mini Bank at SMK Negeri
+7 Bandar Lampung, as found by Praseptiawan et
+al. (2023). The analysis revealed that key features
+such as user data management, transaction recording,
+payment processing, and login security were not
+functioning optimally. Additionally, the system
+required online payment integration to facilitate
+tuition and student savings payments.
+2. Planning
+Based on the needs analysis, system development
+planning was carried out using the Personal Extreme
+Programming (PXP) method, where the development
+of persona supported the process (Djamarullah &
+Kusuma, 2022). The development tasks were
+organized into small iterations, with priority given to
+the most urgent needs, such as login security and the
+integration of the iPaymu payment gateway.
+3. Interface design
+The system design comprised communication
+diagrams and transaction process flow diagrams, as
+well as the design of a database that supports Mini
+32
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+--- PAGE 4 ---
+Praseptiawan et al. The Development and Implementation
+Bank operations. Furthermore, the user interface (UI)
+design for both administrators and general users was
+developed with a focus on accessibility and ease of
+use (Figure 2).
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+the development of secure login features, user
+data processing, and the integration of the iPaymu
+payment gateway. Each element was tested through
+unit testing and the refactoring process to ensure
+optimal code quality.
+5. System testing
+Testing was conducted using Postman to ensure the
+API functioned correctly, as well as end-to-end (E2E)
+testing with Selenium IDE. The test results showed
+a 99% success rate, indicating that the system was
+operating effectively according to the specifications.
+Figure 2 . Interface design of multi-payment software
+3.2 Application evaluation with System Usability
+Scale (SUS)
+The results of the usability evaluation using the
+System Usability Scale (SUS) method were obtained
+through assessments conducted with teachers, students, and
+educational personnel at SMKN 7 Bandar Lampung, as
+illustrated on Figure 3.
+System Usability Scale (SUS) testing was used to
+evaluate the usability of the newly developed Mini Bank
+system at SMK Negeri 7 Bandar Lampung. This test
+involved 31 respondents consisting of teachers, students,
+and administrative staff who use the system to conduct
+various financial transactions, such as tuition payments and
+student savings.
+Based on the testing results, the system achieved a
+System Usability Scale (SUS) score of 91, which falls into
+the excellent category (Table 3). This score indicates that
+the new system is highly valued by users, both in terms of
+ease of use and functionality, as also highlighted by Akbar
+et al. (2024). It also suggests that the majority of users felt
+comfortable using the system, with features that are easily
+accessible and support their transactional needs.
+Figure 3 . T esting with administrative staﬀ
+The analysis of the System Usability Scale (SUS)
+results shows that a SUS score of 91 reflects a high level
+of user satisfaction. The system is considered user-friendly,
+enabling users to perform tasks more quickly and efficiently
+than with the previous system. Additionally, the adequate
+functionality demonstrates that the system successfully
+addressed previous issues, such as user data management,
+automatic transaction logging, and login security.
+Similar to finding highlighted by Tuloli et al. (2022), the
+SUS testing results indicate that the new Mini Bank system
+has delivered an optimal user experience, with a very high
+usability score. This analysis confirms that the system
+has met expectations in terms of usability, functionality,
+and security, and has made a positive contribution to
+supporting technology-based learning activities at SMK
+Negeri 7 Bandar Lampung. Following the community
+service activity, an analysis of the conditions before and
+after the community engagement was conducted. Before
+T able3 . System Usability Scale (SUS) evaluation results
+Respondent Calculated Score Total
+Score ScoreQ1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10
+Respondent 1 4 4 4 4 4 4 4 4 4 2 38 95
+Respondent 2 4 4 4 4 4 4 4 4 4 3 39 98
+..... ..... ..... ..... ..... ..... ..... ..... ..... ..... ..... ..... .....
+Respondent 31 4 4 4 4 4 4 4 4 4 4 40 100
+Total Score SUS 3.8 3.6 3.8 3.4 3.8 3.7 3.7 3.8 3.8 2.7 36.5 91
+V ol. 11, No. 1,
+ www.jurnal.ugm.ac.id/jpkm
+ 33
+
+--- PAGE 5 ---
+Praseptiawan et al. The Development and Implementation
+the implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung, the previous system had many
+limitations. User data management was still done manually,
+transaction logging was not automated, and login security
+was minimal, making the system vulnerable to unauthorized
+access. Additionally, the lack of online payment integration
+slowed down the process of handling tuition and student
+savings payments, causing inefficiencies and a risk of
+errors.
+After the Mini Bank implementation, there were
+significant improvements in several aspects:
+1. Data Management: The ability to upload data via
+Excel simplified and accelerated the process, while
+reducing errors.
+2. Automatic Transaction Logging: The system now
+logs transactions automatically, improving the
+accuracy of financial data.
+3. Security: The secure login feature using JSON Web
+Token (JWT) protects the system from unauthorized
+access.
+4. Payment Integration: The integration of the iPaymu
+payment gateway allows for online payments,
+speeding up the payment process and reducing the
+manual workload.
+In summary, the comparative analysis of the system
+before and after implementation revealed significant
+improvements. Initially, the system was slow, insecure,
+and relied on manual processes. After implementation,
+it became more efficient, secure, and integrated. This
+transformation was reflected in the SUS score of 91,
+indicating high user satisfaction. The implementation of
+the Mini Bank system significantly enhanced operational
+efficiency, security, and user experience, making the
+school’s financial processes faster, safer, and more reliable.
+4. CONCLUSSION
+The implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung demonstrated significant success in
+enhancing the efficiency and security of the school’s
+financial operations. Before implementation, the system
+faced limitations in data management, transaction
+recording, and security. Post-implementation, features such
+as Excel data uploading, automatic transaction recording,
+secure login using JSON Web Token (JWT), and iPaymu
+payment gateway integration effectively improved the
+system’s functionality.
+The Mini Bank application has the potential to be
+adopted by various schools, both public and private, that
+require streamlined payment transaction systems. It also
+has the potential to evolve into a larger educational
+digital payment platform. The benefits of this application
+include reducing the complexity and cost of school
+payment administration, expediting the payment process
+for students and parents, and increasing the accountability
+and transparency of school financial transactions. The
+System Usability Scale (SUS) test results indicated high
+user satisfaction, and the system achieved a functional
+success rate that highlighted its optimal reliability.
+ACKNOWLEDGMENTS
+We extend our deepest gratitude to the Ministry of
+Education, Culture, Research, and Technology for their
+support and assistance in the development of the m-
+Minibank Platform Prototype as a multi-payment software
+for schools This support has played a crucial role in
+the success of this activity and has greatly contributed
+to enhancing the quality of technology-based educational
+services. We also express our sincere thanks to SMKN 7
+Bandar Lampung for their collaboration and the facilities
+provided during the implementation of this community
+service program. The support from everyone at SMKN 7
+Bandar Lampung has been instrumental in the successful
+execution of the program, allowing it to deliver tangible
+benefits to both students and the school environment.
+CONFLICT OF INTERESTS
+The authors declare that there is no conflict of interest.
+REFERENCES
+Akbar, M. S., Nuryasin, I., & Chandranegara, D.
+R. (2024). Implementasi metode personal extreme
+programming dalam peracangan aplikasi pemesanan
+ruang rapat berbasis android diskominfo Jawa Timur.
+Jurnal Teknologi Informasi, Komputer , Dan Aplikasinya
+(JTIKA), 6(1), 308–315. https://doi.org/10.29303
+/jtika.v6i1.348
+Djamarullah, A. R., & Kusuma, W. A. (2022). Elicitation
+of needs using user personas to improve software user
+experience. Ultimatics: Jurnal Teknik Informatika, 14(1),
+28–35. https://doi.org/10.31937/ti.v14i1.26
+33
+Maharditia, R. (2024). Perancangan sistem informasi bank
+mini siswa SMK Diponegoro Banyuputih dengan metode
+cash basis. Jurnal Ilmiah Sistem Informasi, 3 (1), 43–50.
+https://doi.org/10.51903/juisi.v3i1.837
+Praseptiawan, M., Ashari, I. F., Bahri, S., Untoro, M.
+C., Pangestu, A., Afriasnyah, A., & Algifari, M. H.
+(2023). Empowerment of partner schools through the
+development of the mini bank application (m-MiniBank)
+at SMKN 7 Bandar Lampung. Jurnal Pengabdian Dan
+Pemberdayaan Masyarakat Indonesia, 2(9), 468–480.
+Putra, D. M. D. U., Kusuma, A. S., Willdahlia, A. G.,
+& Pande, N. K. N. N. (2024). Evaluasi usability e-
+modul basis data menggunakan metode System Usability
+Scale (SUS). Jurnal Ilmiah Global Education, 5 (2),
+1800–1809. https://doi.org/10.55681/jige.v5
+i2.2764
+Sari, N. N. K., Geges, S., & Hasanah, N. (2023). Penerapan
+sistem notifikasi chat dan payment gateway pada sistem
+34
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+--- PAGE 6 ---
+Praseptiawan et al. The Development and Implementation
+informasi pembayaran SPP berbasis website. Jurnal
+Teknologi Informasi, 17(1), 90–100.
+Tuloli, M. S., Patalangi, R., & Takdir, R. (2022).
+Pengukuran tingkat usability sistem aplikasi e-
+rapor menggunakan metode usability testing dan
+SUS. Jambura Journal of Informatics, 4 (1), 13–26.
+https://doi.org/10.37905/jji.v4i1.13411
+V ol. 11, No. 1,
+ www.jurnal.ugm.ac.id/jpkm
+ 35

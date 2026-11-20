@@ -1,0 +1,2233 @@
+--- HALAMAN 1 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+573 
+ 
+Desain Model Database Layanan Panti Werdha  
+dengan Menerapkan Metode Database Life Cycle 
+ 
+http://dx.doi.org/10.28932/jutisi.v6i3.3047 
+ 
+Stefanus Setyo Wibagso  #1, Enjel Lia #2 
+Program Studi Sistem Informasi,Universitas Katolik Musi Charitas 
+Jalan Bangau No.60, Palembang 
+1setyo.wibagso@ukmc.ac.id 
+2enjel.liaa24@gmail.com 
+ 
+Abstract — A nursing home is a place where the elderly get 
+care services to live out their parenthood. In the management 
+of nursing homes, many activities are carried out such as 
+nursing services for the elderly, family visit activities, receiving 
+donor 
+assistance, managing 
+elderly 
+contributions, and 
+transferring the elderly. Most of the information about these 
+activities is still referred to manually and some of it is 
+processed using separate applications. The aim of this research 
+is to design the database model needed by the nursing home. 
+The database model design can later be used as a reference for 
+software developers in building an integrated nursing home 
+information system. The form of research carried out is in the 
+form of case studies with data collection methods through 
+interview techniques and documentation studies. Meanwhile, 
+for the analysis and design of the database model itself, it uses 
+Database Life Cycle (DBLC) method which focuses on 
+conceptual database design, logical database design, and 
+physical database design. The result of this design is a 
+relational database consisting of 11 tables and 12 relations. 
+This research is a development from previous research with 
+the same type where the previous research produced 7 tables 
+with 6 relations.  
+ 
+Keywords— Database; Nursing Home; Database Life Cycle. 
+ 
+I. PENDAHULUAN 
+Panti werdha atau biasa disebut juga sebagai panti jompo 
+merupakan tempat dimana para lansia mendapatkan 
+perawatan untuk menjalani masa tuanya. Di panti werdha, 
+para lansia tidak merasa kesepian dan bahagia dikarenakan 
+mereka bisa bersosialiasi dengan rekan-rekan sebayanya. 
+Beragam aktivitas dan kegiatan yang ada di dalam panti 
+membuat para lansia menjadi lebih aktif dan bugar. Para 
+lansia mendapatkan perawatan kesehatan yang baik melalui 
+fasilitas perawatan intensif, pengobatan dan perhatian 
+khusus dari pengelola panti. 
+Terlepas dari segala kelebihan yang diberikan oleh panti 
+werdha, terdapat beberapa hal yang menjadi catatan bagi 
+para lansia maupun keluarganya. Sebagian besar panti 
+werdha memiliki aturan bahwa para lansia tidak bisa 
+dikunjungi 
+setiap 
+hari 
+oleh 
+para 
+tamu 
+sehingga 
+menyebabkan keluarga hanya bisa berkunjung sesuai 
+dengan jadwal kunjungan yang diperbolehkan oleh 
+pengelola panti.  Di samping itu tidak semua layanan 
+diberikan secara gratis sehingga diperlukan biaya ekstra 
+bagi keluarga untuk menitipkan orang tuanya ke panti. 
+Jika mengacu pada pola aktivitas layanan lansia yang 
+terjadi di dalam panti, maka sudah seharusnya media 
+berbasis teknologi komputer dilibatkan untuk mendukung 
+proses pendokumentasian data agar dapat lebih efektif. 
+Basis data merupakan salah satu pilihan tepat untuk 
+menggantikan media pengelolaan informasi yang dilakukan 
+secara manual. Basis data memiliki kemampuan sebagai 
+media penyimpanan untuk menampung banyak data dengan 
+waktu pengaksesan yang lebih cepat serta memberikan 
+kemudahan 
+kontrol 
+data 
+seperti 
+untuk 
+melakukan 
+penambahan, pengambilan, penyimpanan dan modifikasi 
+data [1]. Melalui studi pendahuluan di salah satu panti 
+werdha, didapatkan fakta bahwa hampir sebagian besar 
+catatan mengenai tindakan perawatan terhadap lansia 
+dilakukan dengan menggunakan kertas. Hasil dokumentasi 
+riwayat tindakan perawatan menjadi sangat rawan hilang 
+atau rusak mengingat hanya mengandalkan dokumentasi 
+dalam bentuk hard copy.  
+Masalah yang dihadapi dalam merancang basis data 
+layanan panti werdha adalah bagaimana membuat model 
+basis data yang diperlukan untuk mengelola serta 
+menampung 
+data 
+sesuai 
+dengan 
+kebutuhan. 
+Untuk 
+mengatasi permasalahan tersebut, metode perancangan basis 
+data menjadi hal yang sangat penting karena langkah 
+perancangan yang baik tentunya akan menghasilkan fungsi 
+basis data yang baik pula.  
+Penelitian ini akan menggunakan metode perancangan 
+basis data DBLC (Database Life Cycle). DBCL memiliki 
+kemampuan untuk menghasilkan bentuk basis data yang 
+efektif dan efisien karena berfokus pada rancangan basis 
+data relasional. Relasi data sendiri berguna untuk 
+meminimalisir terjadinya redundansi data atau duplikasi 
+data yang tersimpan di dalam basis data. Redudansi 
+
+
+--- HALAMAN 2 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+574 
+ 
+memiliki kekurangan yang menyebabkan data menjadi 
+inkonsisten sehingga pada akhirnya akan mengurangi ruang 
+penyimpanan basis data pada hard disk. Hasil yang ingin 
+dicapai dari penelitian ini adalah untuk menghasilkan 
+rancangan model basis data layanan panti werdha yang lebih 
+rinci dan detil dengan menggunakan metode DBLC.  
+II. TINJAUAN PUSTAKA 
+A. Penelitian Terdahulu 
+Kraugusteeliana menggunakan metode DBLC dalam 
+merancang basis data untuk mendukung pengembangan 
+aplikasi monitoring peralatan dan bahan praktikum pada lab 
+patologi 
+klinik 
+FK 
+UPNVJ 
+[2]. 
+Aplikasi 
+yang 
+dikembangkan digunakan untuk memonitor dan melaporkan 
+kondisi alat dan bahan praktikum sehingga pekerjaan  
+kepala  laboratorium menjadi terbantu terutama untuk 
+mengatur kelancaran proses belajar mengajar.  
+Nofiyani dalam penelitiannya yang berjudul “ Model 
+Basis 
+Data 
+untuk 
+Mendukung 
+Sistem 
+Administrasi 
+Pelayanan dan Perbaikan Motor ” mengungkapkan bahwa 
+metode DBLC mendukung perancangan basis data yang 
+baik sehingga menghasilkan aplikasi yang baik pula. Selain 
+itu mendukung optimalisasi kinerja dari sistem manajemen 
+basis data itu sendiri [3]. 
+Atanasia dan Gusti Syarifudin melakukan perancangan 
+basis data relasional lansia di panti jompo Graha Kasih Bapa 
+Kabupaten Kubu Raya dengan menggunakan metode DBLC. 
+Perancangan basis data tersebut menghasilkan desain 7 tabel 
+yang membantu pengguna dalam menyimpan, menampilkan 
+dan memanipulasi data yang ada pada panti jompo tersebut 
+[1]. 
+Sharazita Dyah Anggita mengimplementasikan metode 
+DBLC untuk merancang basis data sistem rekam medis 
+rawat jalan puskemas. Perancangan tersebut menghasilkan 
+desain tabel, kolom, tipe data  dan  constraint   yang dapat 
+menjadi 
+acuan 
+bagi 
+pengembang 
+ 
+untuk 
+mengimplementasikannya kedalam  sistem  rekam  medis 
+rawat  jalan. Penggunaan  constraint  pada  struktur  kolom  
+dapat bermanfaat dalam mengurangi kesalahan pencatatan 
+berkas serta menjaga konsistensi akan data yang diolah [4]. 
+Erly Krisnanik dan Kraugusteeliana dalam penelitiannya 
+yang berjudul “ Perancangan Model Basis Data Berbasis 
+Pakar Gangguan Rahim dan Kesehatan Janin pada Wanita 
+Hamil” mengungkapkan bahwa untuk merancang model 
+basis data yang baik diperlukan tahapan-tahapan yang 
+sistematis mulai dari perancangan  model  konseptual, 
+perancangan  skema  basis  data   dan  perancangan  model 
+fisik basis data [5]. 
+Febria Sri  Handayani dan Meidyan Permata Putri dalam 
+penelitiannya yang berjudul “Perancangan Basis Data 
+Instrumen Bimbingan  Konseling Alat Ungkap Pemahaman 
+Diri 
+Siswa 
+” 
+mengimplementasikan 
+DBLC 
+untuk 
+merancang basis data yang menjadi salah satu instrument 
+dalam pengembangan aplikasi manajemen data pada unit  
+bimbingan konseling  di sekolah [6]. 
+B. Panti Werdha 
+Panti werdha atau panti jompo merupakan rumah dimana 
+orang jompo atau lansia diurus dan diberikan perawatan [7]. 
+Lansia diberikan perawatan agar merasa aman sehingga 
+dapat menghilangkan rasa gelisah dan cemas dalam 
+menghadapi masa tuanya. Terdapat beberapa layanan yang 
+diberikan oleh panti werdha salah satunya yaitu layanan 
+dalam bentuk kesehatan yang dibutuhkan oleh lansia [8]. 
+Lansia atau lanjut usia adalah seseorang yang telah 
+mencapai usia 60 tahun sehingga perlu diberikan layananan 
+sebagai bentuk upaya membantu para lansia dalam 
+memulihkan dan mengembalikan fungsi sosialnya [9]. 
+Menurut Kurniawati, tujuan dari panti werdha adalah 
+untuk menampung lansia yang tidak memiliki tempat 
+tinggal memiliki masalah dalam keluarganya [10]. Selain 
+dari itu panti werdha memiliki beberapa fungsi diantaranya:  
+1. Sebagai tempat pelayanan penunjang kesejahteraan 
+lansia. 
+2. Sebagai 
+tempat 
+dimana 
+lansia 
+mendapatkan 
+kesempatan untuk untuk beraktivitas. 
+3. Membantu lansia untuk menikmati masa tuanya 
+melalui pemberian fasilitas-fasilitas pendukung. 
+C. Basis Data 
+Menurut Date, basis data atau database adalah 
+sekumpulan data  yang  mewakili  berbagai  macam entitas  
+beserta dengan hubungannya  yang  dirancang  untuk  
+memenuhi  kebutuhan  informasi untuk keperluan sebuah 
+organisasi [11]. Penggunaan basis data memungkinan data 
+dapat disimpan dalam jumlah yang besar serta dapat diakses 
+secara bersamaan oleh banyak pengguna [12]. Di dalam 
+basis data terdapat banyak entitas yang terdiri dari beragam 
+atribut serta memiliki hubungan logis antar entitas. 
+Kumpulan data pada database diatur secara terorganisir dan 
+memiliki relasi antar data. Tujuan utamanya adalah untuk 
+mendukung kemudahan berinteraksi dan meningkatkan 
+kecepatan terhadap pemrosesan data yang  diolah [13].   
+D. Metode DBLC (Database Life Cycle) 
+Basis data sesuai dengan konsep  DBLC  (Database  Life  
+Cycle) adalah konsep perancangan basis data yang  berfokus  
+basis  data  relasional [14]. Metode  DBLC merupakan  
+metode  yang menjelaskan mengenai siklus hidup dari basis 
+data. Siklus yang terjadi pada DBLC akan terus kembali 
+ketitik awal oleh karena basis data mengalami perubahan 
+sesuai dengan perkembangan kebutuhan.  Proses  utama 
+dalam mendesain basis data  terbagi menjadi  tiga  tahapan,  
+yaitu  perancangan  basis  data konseptual (conceptual  
+scheme  design), perancangan logikal (logical  design), dan 
+perancangan fisikal (phisycal design) [15]. Sebelum masuk 
+kedalam tahapan desain terdapat beberapa tahapan awal 
+yang harus dilakukan [13]  yaitu:  
+1.  Perencanaan Basis Data (Database Planning) : Tahap 
+ini  merupakan tahap awal dalam menentukan  tujuan dari 
+basis data yang akan dibuat (Mission Statement) dan 
+menentukan fungsi apa saya yang bisa dilakukan oleh 
+
+
+--- HALAMAN 3 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+575 
+ 
+basis data.  
+ 
+ 
+ 
+ 
+ 
+         2. Pendefinisian Sistem (System Definition) : 
+Pada tahap ini dilakukan identifikasi user view pada basis 
+data berdasarkan perannya masing-masing.  
+ 
+         3. Analisis dan Pengumpulan Kebutuhan 
+(Requirement  Collection and Analysis) : Tahap 
+selanjutnya adalah tahapan untuk menganalisis dan 
+mengumpulkan kebutuhan apa saja yang dibutuhkan untuk 
+membangun basis data yang diharapkan. 
+ 
+Terdapat tiga tahap dalam perancangan basis data yang 
+dilakukan yaitu meliputi [16]  :  
+1. Desain  Basis  Data  Konseptual (Conceptual  Scheme    
+Design) : Tahap perancangan untuk menentukan siapa saja 
+yang terlibat dalam  sistem,  apa  saja  input  yang 
+diperlukan, informasi  (output)  apa  yang diinginkan dari 
+basis data.  
+2. Desain Logikal Objek  Basis  Data  (Logical  Design) :        
+Tahapan 
+dimana 
+dilakukan 
+perancangan 
+database     
+logical yang dimulai dari penentuan entitas (data object)    
+dan 
+atribut 
+(field) 
+kemudian 
+dilanjutkan 
+dengan 
+perancangan ERD (Entity Relationship Diagram). ERD 
+atau Diagram  ER-D digunakan sebagai teknik pendekatan 
+yang menggambarkan adanya hubungan sebuah model. 
+ERD 
+digunakan 
+ 
+untuk 
+menunjukan 
+hubungan 
+(relationship) antar entitas pada sebuah basis data [4].  
+3. Desain Fisik Basis Data (Phisycal Design) : Tahap ini 
+merupakan tahapan transformasi  dari  perancangan logis 
+kedalam bentuk fisik ke dalam media penyimpanan 
+menggunakan DBMS (Database Management System). 
+ 
+Setelah tahap perancangan model fisik dilanjutkan 
+dengan tahap implementasi yang terdiri dari implementasi 
+basis data dan implementasi tabel. Tahap implementasi 
+merupakan bentuk dari perwujudan atau  realisasi  basis 
+data  kedalam pemrograman melalui penggunaan Bahasa 
+SQL (Structured  Query Language)  [12]. Tahapan-
+tahapan lengkap mengenai perancangan basis data dengan 
+metode DBLC dapat dilihat dari pada gambar 1.  
+  
+  
+Gambar 1. Metode DBLC. 
+
+
+--- HALAMAN 4 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+576 
+ 
+III. METODOLOGI 
+Permasalahan yang dihadapi dalam perancangan model 
+basis data layanan panti werdha adalah bagaimana 
+membangun basis data yang sesuai dengan kebutuhan 
+operasional layanan. Untuk itu dalam penelitian ini 
+dilakukan beberapa tahapan yang menjadi solusi pemecahan 
+masalah perancangan model basis tersebut. Tahapan itu 
+diantaranya: 
+A. Pengumpulan Data 
+1.  Kepustakaan :  
+     Kepustakaan 
+dilakukan 
+oleh 
+penulis 
+untuk 
+memperoleh informasi terkait dengan penelitian yang 
+dilakukan. Sumber pustaka bersumber dari data sekunder 
+seperti buku,  jurnal, artikel dan situs di internet. 
+ 
+2.  Wawancara 
+     Teknik wawancara dilakukan dengan cara mengajukan 
+pertanyaan petugas administrasi dan perawat pada panti 
+werdha. Wawancara dilakukan untuk menggali informasi 
+tentang analisis kebutuhan data yang diperlukan. Hasil 
+wawancara menjadi bahan pertimbangan yang sangat 
+penting karena dapat memberikan gambaran secara nyata 
+tentang alur proses informasi yang terjadi di panti. 
+ 
+3.  Studi dokumentasi 
+     Studi dokumentasi dilakukan untuk mengumpulkan 
+informasi dari data fisik yang ada pada objek yang diteliti. 
+ 
+B. Perancangan Basis Data Menggunakan Motode DBLC 
+Dalam penelitian ini akan dilakukan perancangan basis 
+data layanan Panti Werdha dengan menggunakan metode 
+DBLC.  Tidak semua tahapan pada metode DBLC 
+dijalankan karena output dari perancangan ini hanya sebatas 
+pada menghasilkan model basis data relasional. Gambaran 
+kegiatan yang dilakukan pada di tiap tahapan perancangan 
+ditunjukkan pada gambar 2. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gambar 2. Perancangan Basis Data dengan Metode DBLC. 
+Fase 1 
+• Perencanaan Basis Data (Database Planning).  
+Pada tahap paling awal akan dilakukan perencanaan 
+basis data terkait tujuan dan fungsi dari pengelolaan 
+data menggunakan basis data bagi pengelola panti 
+werdha. Perencanaan ini melibatkan otoritas yang 
+berwenang di panti tersebut melalui wawancara tatap 
+muka secara langsung dengan petugas administrasi dan 
+perawat panti wedha. 
+• Pendefinisian Sistem (System Definition). 
+Pada tahap ini dilakukan identifikasi pengguna yang 
+terlibat 
+didalam 
+layanan 
+panti 
+werdha 
+terkait 
+pengelolaan data berdasarkan pada perannya masing-
+masing.  
+• Analisis dan Pengumpulan Kebutuhan (Requirement  
+Collection and Analysis). 
+Pada tahap ini dilakukan analisis dan pengumpulan 
+informasi terkait kebutuhan apa saja yang dibutuhkan 
+untuk membangun basis data melalui pengamatan 
+langsung ke panti werdha maupun referensi dari 
+sumber lainnya seperi jurnal pendukung dan informasi-
+informasi website yang merujuk pada layanan panti 
+werdha. 
+ 
+Fase 2 
+• Desain  Basis  Data  Konseptual (Conceptual  Scheme  
+Design). 
+Langkah yang dilakukan pada tahap ini adalah 
+merancang input data dan output  informasi yang 
+diperlukan oleh basis data berdasarkan pada hasil 
+identifikasi pengguna yang terlibat di dalam sistem. 
+• Desain  Desain Logikal Objek  Basis  Data  (Logical  
+Design). 
+Pada tahapan desain logikal objek basis data dilakukan 
+perancangan database  logical yang dimulai dari 
+penentuan entitas dan atribut kemudian dilanjutkan 
+dengan 
+perancangan 
+ERD 
+(Entity 
+Relationship 
+Diagram) pada basis data layanan panti werdha. 
+• Desain Fisik Basis Data (Phisycal Design). 
+Pada tahap ini dilakukan proses transformasi  dari  
+hasil perancangan  logis basis data yang telah 
+dirancang sebelumnya kedalam bentuk fisik. Media 
+yang akan digunakan untuk penyimpanan data adalah 
+DMBS (Database Management System) MySql. 
+ 
+Fase 3  
+Implementasi. 
+Pada tahap ini dilakukan realisasi basis data melalui 
+pembuatan basis data dan tabel dengan menggunakan 
+tool phpMyAdmin. PhpyMyAdmin berfungsi untuk 
+mempermudah spembuatan basis data, tabel dan 
+perancangan ERD pada DBMS MySql. Tool ini 
+membantu menyederhanakan penggunaan baris perintah 
+bahasa SQL (Structured  Query Language) yang berisi 
+fitur DDL (Data Defintion Language) dan DML (Data 
+Manipulation Language) melalui tampilan antar muka 
+berbasis grafis. 
+ 
+
+
+--- HALAMAN 5 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+577 
+ 
+IV. HASIL DAN PEMBAHASAN 
+A. Perancangan Basis Data  
+Fase 1 
+• Perencanaan Basis Data (Database Planning). 
+Melalui wawancara tatap muka langsung yang 
+melibatkan petugas administrasi dan perawat panti 
+werdha, didapatkan hasil bahwa basis data yang 
+dirancang harus dapat digunakan untuk menyimpan 
+informasi yang terjadi di dalam panti. Informasi 
+tersebut meliputi data lansia, data iuran, data 
+sumbangan, data kunjungan lansia, data pegawai, data 
+menu makanan lansia, dan riwayat kesehatan lansia. 
+• Pendefinisian Sistem (System Definition).  
+Desain basis data panti werdha dirancang untuk 
+menyimpan informasi terkait aktifitas layanan yang 
+diberikan kepada lansia serta kebutuhan informasi lain 
+yang dibutuhkan oleh panti. Terdapat beberapa aktor 
+yang berperan dalam sistem pada panti werdha. Peran 
+aktor tersebut dapat dilihat pada tabel I. 
+TABEL I 
+PENDEFINISAN PENGGUNA BERDASARKAN KEBUTUHAN 
+No. 
+Aktor 
+Aktivitas 
+1. 
+Perawat 
+Memberikan perawatan 
+terhadap lansia. 
+2. 
+ 
+ 
+ 
+No. 
+Staf Administrasi  
+ 
+ 
+ 
+Aktor 
+Mengelola data lansia. 
+Mencatat mutasi 
+penghuni panti (lansia). 
+ 
+Aktivitas 
+ 
+ 
+Mengelola data pegawai 
+panti. 
+Mencatat kunjungan dari 
+keluarga lansia. 
+3. 
+ 
+ 
+Staf Keuangan 
+ 
+Menerima iuran 
+pembayaran lansia. 
+Mendata jumlah 
+sumbangan dalam bentuk 
+ 
+ 
+uang atau barang yang 
+diberikan oleh donatur. 
+Mendata informasi 
+tentang donatur. 
+4. 
+Staf Dapur 
+Mengelola data menu 
+asupan makanan yang 
+disajikan kepada lansia. 
+ 
+• Analisis dan Pengumpulan Kebutuhan (Requirement 
+Collection and Analysis) 
+Hasil dari analisis kebutuhan yang didapatkan 
+melalui pengamatan dan wawancara langsung 
+dengan pihak panti werdha adalah sebagai berikut : 
+1. Analisis Kebutuhan Informasi. 
+Pengelola panti werdha menghadapi beberapa 
+kesulitan dalam memonitor aktivitas yang terjadi di 
+dalam panti. Kesulitan tersebut diantaranya : 
+- 
+Mendapatkan informasi secara detil mengenai 
+perawatan terhadap lansia terutama mengenai 
+riwayat tindakan kesehatan setiap lansia.  
+- 
+Membuat menu makanan variatif yang sangat 
+berguna bagi asupan gizi lansia. 
+- 
+Catatan kunjungan lansia dan data sumbangan 
+dari donatur belum terdokumentasi dengan baik. 
+- 
+Membuat laporan yang baik terhadap data dari 
+masing-masing bagian. 
+- 
+Data masih tersimpan secara terpisah dengan 
+menggunakan 
+aplikasi 
+yang 
+berbeda 
+serta 
+sebagian pencatatan masih disimpan dalam 
+bentuk hard copy sehingga rentan untuk rusak. 
+Atas dasar permasalahan yang terjadi diatas maka 
+diperlukan basis data yang digunakan untuk 
+penyimpanan data dimana sewaktu-waktu data 
+tersebut dapat diakses kembali untuk proses 
+pembuatan laporan. 
+ 
+2. Analisis Kebutuhan Penyimpanan Data. 
+Dikarenakan sebagian data dalam bentuk hard copy 
+rentan akan kerusakan dan data-data lain tersimpan 
+dalam media penyimpanan yang berbeda-beda maka 
+peneliti menyarankan kepada pengelola untuk 
+menggunakan aplikasi basis data sebagai media 
+penyimpanan 
+tunggal 
+yang 
+berfungsi 
+mengintegrasikan semua data dari terkait aktivitas 
+yang terjadi di panti werdha. 
+ 
+3. Analisis Kebutuhan Teknologi. 
+Terdapat beragam media yang digunakan dalam 
+pengelolaan informasi di panti werdha, mulai dari 
+media konvensional sampai dengan menggunakan 
+aplikasi spread sheet dan words processor. Namun 
+demikian pengelola masih mengalami kendala dalam 
+proses pengelolaanya dikarenakan semua masih 
+diolah secara terpisah. Oleh sebab itu pemilihan 
+teknologi 
+yang 
+tepat 
+menjadi 
+solusi 
+dalam 
+meningkatkan efektifitas pengelolaan data sehingga 
+pada akhirnya menghasilkan kualitas informasi yang 
+semakin baik dan bermanfaat bagi panti. 
+ 
+Fase 2 
+• Desain  Basis  Data  Konseptual (Conceptual  
+Scheme  Design). 
+Tahap ini merupakan tahapan dimana model data 
+konseptual dirancang sesuai dengan kebutuhan data 
+panti werdha. Terdapat 2 kegiatan didalamnya yaitu 
+identifikasi tipe entitas dan identifikasi tipe relasional. 
+1. Identifikasi Tipe Entitas. 
+Tipe entitas yang dibutuhkan akan diperoleh melalui 
+identifikasi entitas berdasarkan daftar aktivitas 
+pengguna yang mengacu pada kata benda yang 
+terdapat didalamnya. Hasil dari proses identifikasi 
+tipe entitas dapat dilihat pada tabel II. 
+
+
+--- HALAMAN 6 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+578 
+ 
+TABEL III 
+IDENTIFIKASI TIPE ENTITAS  
+No. 
+Nama 
+Entitas 
+Deskripsi 
+Kegiatan 
+1. 
+perawatan_l
+ansia 
+Entitas  yang  
+berisikan 
+informasi terkait 
+perawatan 
+kesehatan 
+terhadap lansia. 
+Semua tindakan 
+perawatan yang 
+dilakukan kepada 
+lansia. 
+2.  
+lansia 
+Entitas  yang  
+berisikan data 
+lansia. 
+Semua lansia 
+yang menghuni di 
+panti werdha. 
+3. 
+mutasi_lansi
+a 
+Entitas  yang  
+berisikan 
+informasi   terkait  
+mutasi lansia. 
+Semua mutasi 
+lansia yang 
+terjadi di panti 
+werdha. 
+4.  
+pegawai 
+Entitas  yang  
+berisikan data 
+pegawai panti. 
+Semua pegawai 
+yang bekerja di 
+panti werdha. 
+5. 
+kunjungan 
+Entitas  yang  
+berisikan 
+informasi 
+kunjungan 
+keluarga lansia. 
+Setiap kali 
+adanya kunjungan 
+keluarga lansia  
+6. 
+iuran  
+Entitas  yang  
+berisikan data  
+pembayaran iuran 
+layanan panti. 
+Setiap 
+pembayaran iuran 
+yang dilakukan 
+atas nama 
+masing-masing 
+lansia. 
+7. 
+sumbangan_
+uang 
+Entitas  yang  
+berisikan data  
+sumbangan yang 
+diberikan oleh 
+donatur dalam 
+bentuk uang. 
+Setiap sumbangan 
+dalam bentuk 
+uang yang 
+diberikan oleh 
+donatur. 
+8. 
+sumbangan_
+barang 
+Entitas  yang  
+berisikan data  
+sumbangan yang 
+diberikan oleh 
+donatur dalam 
+bentuk barang. 
+Setiap sumbangan 
+dalam bentuk 
+barang yang 
+diberikan oleh 
+donatur. 
+9. 
+detil_sumba
+ngan_baran
+g 
+Entitas  yang  
+berisikan detil 
+data  sumbangan 
+barang yang 
+diberikan oleh 
+masing-masing 
+donatur. 
+Setiap sumbangan 
+dalam bentuk 
+barang yang 
+diberikan oleh 
+donatur. 
+10. 
+donatur 
+Entitas  yang  
+berisikan data 
+donatur. 
+Setiap donatur 
+yang telah 
+menyumbang. 
+11. 
+menu_lansia 
+Entitas  yang  
+berisikan 
+informasi terkait 
+data menu asupan 
+makanan yang 
+akan disajikan 
+kepada lansia. 
+Semua menu 
+.asupan makanan 
+yang akan 
+diberikan kepada 
+lansia. 
+ 
+2. Identifikasi Tipe Relasional. 
+Identifkasi 
+tipe 
+relasional 
+bertujuan 
+untuk 
+menentukan hubungan penting antar entitas yang 
+sebelumnya telah didapatkan dari proses identifikasi. 
+Hasil identifikasi mendapatkan bahwa terdapat 
+entitas yang mempunyai hubungan ke satu kejadian 
+pada entitas yang lainnya. Hal ini terlihat dari tipe 
+relasi satu ke banyak yang ditunjukkan  melalui 
+notasi 1..*. Berikut daftar entitas beserta penjelasan 
+mengenai relasinya yang diperlihatkan pada tabel III. 
+TABEL IIIII 
+IDENTIFIKASI  TIPE RELASIONAL   
+Nama 
+Entitas 
+Tipe 
+Relasi 
+Nama Entitas 
+Deskripsi 
+lansia  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1..* 
+ 
+ 
+ 
+ 
+1..* 
+ 
+ 
+ 
+ 
+1..* 
+perawatan_lansia 
+ 
+ 
+ 
+ 
+iuran 
+ 
+ 
+ 
+ 
+kunjungan 
+Lansia bisa 
+menerima lebih dari 
+satu kali tindakan 
+perawatan kesehatan.  
+Lansia bisa lebih dari 
+satu kali melakukan 
+pembayaran iuran 
+layanan panti. 
+Lansia bisa lebih dari 
+satu kali menerima 
+kunjungan. 
+ 
+1..* 
+mutasi_lansia 
+Mutasi lansia bisa 
+terjadi lebih dari satu 
+kali. 
+pegawai 
+ 
+ 
+ 
+ 
+ 
+ 
+1..* 
+ 
+ 
+ 
+ 
+1..* 
+ 
+ 
+perawatan_lansia 
+ 
+ 
+ 
+ 
+iuran 
+Pegawai bisa 
+memberikan 
+tindakan perawatan 
+kesehatan lebih dari 
+satu kali. 
+Pegawai bisa 
+menerima iuran 
+layanan lebih dari 
+satu kali. 
+ 
+1..* 
+ 
+ 
+ 
+ 
+1..* 
+ 
+ 
+ 
+1..* 
+ 
+menu_lansia 
+ 
+ 
+ 
+ 
+sumbangan_uang 
+ 
+ 
+ 
+sumbangan_baran
+g 
+ 
+Pegawai bisa 
+membuat menu 
+asupan makanan 
+lansia lebih dari satu 
+kali. 
+Pegawai bisa 
+menerima 
+sumbangan uang 
+lebih dari satu kali. 
+Pegawai bisa 
+menerima 
+sumbangan barang 
+lebih dari satu kali. 
+sumban
+gan_bar
+ang 
+1..* 
+detil_sumbangan_
+barang. 
+Satu kali penerimaan 
+sumbangan dalam 
+bentuk barang dapat 
+diterima lebih dari 
+satu item. 
+donatur 
+1..* 
+ 
+ 
+ 
+sumbangan_uang 
+ 
+ 
+Donatur dapat lebih 
+dari satu kali 
+berdonasi dalam 
+bentuk barang. 
+
+
+--- HALAMAN 7 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+579 
+ 
+Nama 
+Entitas 
+Tipe 
+Relasi 
+Nama Entitas 
+Deskripsi 
+ 
+1..* 
+Sumbangan_baran
+g 
+Donatur dapat lebih 
+dari satu kali 
+berdonasi dalam 
+bentuk barang. 
+ 
+• Desain  Desain Logikal Objek  Basis  Data  (Logical  
+Design). 
+Pada tahap selanjutnya dilakukan perancangan 
+database logical yang dimulai dari  identifikasi 
+atribut beserta dengan kandidat key  yang akan 
+digunakan pada tiap entitas. Fungsi dari penentuan 
+key dari masing-masing entitas digunakan untuk 
+kebutuhan perancangan relasi antar entitas (primary 
+key dan foreign key). Primary key merupakan kunci 
+utama atau field kunci pada sebuah tabel yang 
+menjadi acuan untuk mendefinisikan sebuah baris 
+data. Sementara foreign key merupakan suatu field 
+bagian dari tabel yang menunjukkan hubungan 
+(relasi) ke tabel induknya. 
+Setelah itu dilanjutkan ke tahap normalisasi terhadap 
+entitas 
+dengan 
+tujuan 
+untuk 
+menghindari 
+inkonsistensi desain basis data relasional akibat dari 
+redudansi data yang bisa timbul karena adanya 
+atribut-atribut yang kembar. Hasil dari identifikasi 
+atribut dan candidat key dapat dilihat pada tabel IV.  
+TABEL IVV 
+IDENTIFIKASI  ATRIBUT DAN KANDIDAT KEY  
+No. 
+Nama 
+Entitas 
+Atribut  
+Kandidat Key 
+1. 
+perawatan_la
+nsia 
+KdTindakan  
+TglTindakan 
+KdLansia 
+Nip 
+Keluhan 
+Tindakan 
+Keterangan 
+KdTindakan  
+ 
+2.  
+lansia 
+KdLansia  
+NoKTP 
+TglMasuk 
+Nama 
+JK 
+TempatLahir 
+TglLahir 
+Agama 
+Status 
+NamaPJ 
+Alamat 
+Telpon 
+Email 
+KdLansia  
+3. 
+mutasi_lansia 
+KdMutasi 
+TglMutasi 
+KdLansia  
+Alasan 
+Keterangan 
+KdMutasi 
+No. 
+Nama 
+Entitas 
+Atribut  
+Kandidat Key 
+4.  
+pegawai 
+Nip 
+NoKTP 
+Nama 
+JK 
+TempatLahir 
+TglLahir 
+Status 
+Alamat 
+Telpon 
+TglBergabung 
+Nip 
+ 
+5. 
+kunjungan 
+KdKunjungan 
+TglKunjungan 
+KdLansia 
+NamaPengunjung 
+Hubungan 
+WaktuKunjungan 
+KdKunjungan 
+6. 
+iuran  
+KdPembayaran  
+TglBayar 
+KdLansia 
+Nip 
+JumlahBayar 
+Keterangan 
+KdPembayaran  
+ 
+7. 
+ 
+ 
+ 
+sumbangan_
+uang 
+ 
+ 
+KdSmbUang 
+TglTerima 
+Nip 
+KdDonatur  
+Metode 
+Jumlah 
+KdSmbUang 
+8. 
+sumbangan_
+barang 
+KdSmbBarang  
+TglTerima  
+Nip  
+KdDonatur  
+Keterangan 
+KdSmbBarang 
+9. 
+detil_sumban
+gan_barang 
+KdSmbBarang  
+NamaBarang  
+Jumlah 
+Satuan 
+KdSmbBarang 
+10. 
+donatur 
+KdDonatur 
+Nama 
+Alamat 
+Telpon 
+Email 
+KdDonatur 
+11. 
+menu_lansia 
+KdMenu  
+Nip  
+Hari 
+Waktu 
+MenuMakanan 
+KdMenu 
+ 
+Berikut adalah entitas-entitas yang telah melewati 
+proses normalisasi tahap pertama (1NF), dimana 
+pada tahap tersebut telah ditentukan atribut primary 
+key serta telah menghilangkan atribut-atribut yang 
+tidak konsisten (attribute multi-valued). Tahap 
+normalisasi selanjutnya adalah sebagai berikut : 
+1. Perawatan Lansia 
+2NF  
+perawatan_lansia = @KdTindakan + TglTindakan + 
+KdLansia + NoKTP, TglMasuk + Nama + JK + 
+
+
+--- HALAMAN 8 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+580 
+ 
+TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email + Nip + 
+NoKTP + Nama + JK + TempatLahir + TglLahir + 
+Status + Alamat + Telpon + TglBergabung + 
+Keluhan + Tindakan + Keterangan 
+ 
+3NF  
+perawatan_lansia = @KdTindakan + TglTindakan + 
+#KdLansia + #Nip + Keluhan + Tindakan + 
+Keterangan 
+lansia =  @KdLansia + NoKTP, TglMasuk + Nama 
++ JK + TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email 
+pegawai =  @Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung 
+ 
+ 
+2. Mutasi Lansia 
+2NF 
+mutasi_lansia = @KdMutasi + TglMutasi + 
+KdLansia + NoKTP, TglMasuk + Nama + JK + 
+TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email + Alasan + 
+Keterangan 
+ 
+3NF  
+mutasi_lansia = @KdMutasi + TglMutasi + 
+#KdLansia + Alasan + Keterangan 
+lansia =  @KdLansia + NoKTP, TglMasuk + Nama 
++ JK + TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email 
+ 
+ 
+3. Kunjungan  
+2NF 
+kunjungan = @KdKunjungan + TglKunjungan + 
+KdLansia + NoKTP, TglMasuk + Nama + JK + 
+TempatLahir + TglLahir + Agama + Status + 
+NamaPJ 
++ 
+Alamat 
++ 
+Telpon 
++ 
+Email 
++ 
+NamaPengunjung + Hubungan + WaktuKunjungan 
+ 
+3NF  
+kunjungan = @KdKunjungan + KdKunjungan + 
+#KdLansia + NamaPengunjung + Hubungan + 
+WaktuKunjungan 
+lansia =  @KdLansia + NoKTP, TglMasuk + Nama 
++ JK + TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email 
+ 
+ 
+4. Iuran 
+2NF 
+iuran = @KdPembayaran + TglBayar + KdLansia + 
+NoKTP, TglMasuk + Nama + JK + TempatLahir + 
+TglLahir + Agama + Status + NamaPJ + Alamat + 
+Telpon + Email + Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung + JumlahBayar + Keterangan  
+ 
+3NF  
+iuran = @KdPembayaran + KdPembayaran + 
+#KdLansia + #Nip + JumlahBayar + Keterangan 
+lansia =  @KdLansia + NoKTP, TglMasuk + Nama 
++ JK + TempatLahir + TglLahir + Agama + Status + 
+NamaPJ + Alamat + Telpon + Email 
+pegawai =  @Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung 
+ 
+ 
+5. Sumbangan Uang 
+2NF 
+sumbangan_uang = @KdSmbUang + TglTerima + 
+Nip + NoKTP + Nama + JK + TempatLahir + 
+TglLahir 
++ 
+Status 
++ 
+Alamat 
++ 
+Telpon 
++ 
+TglBergabung + KdDonatur +  Nama + Alamat + 
+Telpon + Email + Metode + Jumlah 
+3NF  
+sumbangan_uang = @KdSmbUang + TglTerima + 
+#Nip + #KdDonatur  + Metode + Jumlah 
+pegawai =  @Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung 
+donatur =  @KdDonatur +  Nama + Alamat + Telpon 
++ Email 
+ 
+ 
+6. Sumbangan Barang 
+2NF 
+Sumbangan_barang = @KdSmbBarang + TglTerima 
++ Nip + NoKTP + Nama + JK + TempatLahir + 
+TglLahir 
++ 
+Status 
++ 
+Alamat 
++ 
+Telpon 
++ 
+TglBergabung + KdDonatur + Keterangan 
+ 
+3NF  
+sumbangan_barang = @KdSmbBarang + TglTerima 
++ #Nip + #KdDonatur + Keterangan 
+pegawai =  @Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung 
+donatur =  @KdDonatur +  Nama + Alamat + Telpon 
++ Email 
+detil_smb_barang = @KdSmbBarang + NamaBarang 
++ Jumlah + Satuan 
+ 
+ 
+7. Menu Lansia 
+2NF 
+menu_lansia = @KdMenu + Nip + NoKTP + Nama 
++ JK + TempatLahir + TglLahir + Status + Alamat + 
+
+
+--- HALAMAN 9 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+581 
+ 
+Telpon + TglBergabung + Hari + Waktu + 
+MenuMakanan 
+3NF  
+menu_lansia = @KdMenu + #Nip + Hari + Waktu + 
+MenuMakanan  
+pegawai =  @Nip + NoKTP + Nama + JK + 
+TempatLahir + TglLahir + Status + Alamat + Telpon 
++ TglBergabung 
+ 
+Setelah proses normalisasi dilanjutkan dengan 
+perancangan relasi entitas tabel yang hasilnya terlihat 
+pada gambar 3. 
+ 
+ 
+ 
+ 
+ 
+ 
+Gambar 3. Diagram Hubungan Entitas Konseptual Panti Werdha. 
+
+
+--- HALAMAN 10 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+582 
+ 
+• Desain Fisik Basis Data (Phisycal Design). 
+Pada tahap desain fisik basis data dilakukan 
+implementasi rancangan basis data logikal kedalam 
+bentuk fisik dengan menggunakan DMBS (Database 
+Management System) MySql. Hasil dari proses 
+transformasi entitas dan atribut menjadi tabel dan 
+field dalam basis data secara lengkap dapat dilihat 
+pada tabel V sampai dengan tabel XV. 
+TABEL V 
+TABEL PERAWATAN_LANSIA  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdTindak
+an (PK) 
+VARCHAR 
+10 
+Kode tindakan  
+2. 
+TglTindak
+an 
+DATE 
+10 
+Tanggal 
+tindakan 
+3. 
+KdLansia 
+VARCHAR 
+10 
+Kode lansia 
+4. 
+Nip (FK) 
+VARCHAR 
+10 
+No. induk 
+pegawai 
+5. 
+Keluhan 
+VARCHAR 
+150 
+Keluhan 
+6. 
+Tindakan 
+VARCHAR 
+150 
+Tindakan 
+7. 
+Keterangan 
+VARCHAR 
+150 
+Keterangan 
+ 
+ 
+Total 
+Ukuran 
+150 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL VI 
+TABEL LANSIA  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdLansia 
+(PK) 
+VARCHAR 
+10 
+Kode lansia  
+2. 
+NoKTP 
+VARCHAR 
+17 
+No. KTP 
+3. 
+TglMasuk 
+DATE 
+10 
+Tanggal 
+masuk lansia 
+4. 
+Nama 
+VARCHAR 
+50 
+Nama lansia 
+5. 
+JK 
+VARCHAR 
+10 
+Jenis kelamin 
+6. 
+TempatLa
+hir 
+VARCHAR 
+50 
+Tempat lahir 
+7. 
+TglLahir 
+DATE 
+10 
+Tanggal lahir 
+8. 
+Agama 
+VARCHAR 
+20 
+Agama 
+9. 
+Status 
+VARCHAR 
+20 
+Status 
+pernikahan 
+10. 
+NamaPJ 
+VARCHAR 
+50 
+Nama 
+penanggung 
+jawab 
+11. 
+Alamat 
+VARCHAR 
+150 
+Alamat 
+12. 
+Telpon 
+VARCHAR 
+17 
+Telpon 
+13. 
+Email 
+VARCHAR 
+50 
+Email 
+Penanggung 
+Jawab 
+ 
+ 
+Total 
+Ukuran 
+464 
+Byte 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL VII 
+TABEL MUTASI_LANSIA  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdMutasi 
+(PK) 
+VARCHAR 
+10 
+Kode mutasi 
+lansia 
+2. 
+TglMutasi 
+DATE 
+10 
+Tanggal 
+mutasi. 
+3. 
+KdLansia 
+(FK) 
+VARCHAR 
+10 
+Kode lansia 
+4. 
+Alasan 
+VARCHAR 
+50 
+Alasan mutasi 
+5. 
+Keterangan 
+VARCHAR 
+150 
+Keterangan 
+ 
+ 
+Total 
+Ukuran 
+230 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL VIII 
+TABEL PEGAWAI  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+Nip (PK) 
+VARCHAR 
+10 
+No. induk 
+pegawai 
+2. 
+NoKTP 
+VARCHAR 
+17 
+No. KTP 
+3. 
+Nama 
+VARCHAR 
+50 
+Nama 
+pegawai 
+4. 
+JK 
+VARCHAR 
+10 
+Jenis kelamin 
+5. 
+TempatLa
+hir 
+VARCHAR 
+35 
+Tempat lahir 
+6. 
+TglLahir 
+DATE 
+10 
+Tanggal lahir 
+7. 
+Status 
+VARCHAR 
+15 
+Status kawin 
+8. 
+Alamat 
+VARCHAR 
+150 
+Alamat  
+9. 
+Telpon 
+VARCHAR 
+17 
+Telpon 
+10. 
+TglBergab
+ung 
+VARCHAR 
+10 
+Tanggal 
+pertama kerja 
+ 
+ 
+Total 
+Ukuran 
+324 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL IX 
+TABEL PERAWATAN_LANSIA  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdKunjun
+gan (PK) 
+VARCHAR 
+10 
+Kode 
+kunjungan 
+2. 
+TglKunjun
+gan 
+DATE 
+10 
+Tanggal 
+kunjungan 
+3. 
+KdLansia 
+(FK) 
+VARCHAR 
+10 
+Kode lansia 
+4. 
+NamaPeng
+unjung 
+VARCHAR 
+50 
+Nama 
+pengunjung 
+5. 
+Hubungan 
+VARCHAR 
+50 
+Hubungan 
+keluarga 
+
+
+--- HALAMAN 11 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+583 
+ 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+6. 
+WaktuKun
+jungan 
+TIME 
+10 
+Waktu mulai 
+kunjungan 
+ 
+ 
+Total 
+Ukuran 
+140 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL X 
+TABEL IURAN  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdPemba
+yaran 
+(PK) 
+VARCHAR 
+10 
+Kode 
+pembayaran 
+2. 
+TglBayar 
+DATE 
+10 
+Tanggal bayar 
+3. 
+KdLansia 
+(FK) 
+VARCHAR 
+10 
+Kode lansia 
+4. 
+Nip (FK) 
+VARCHAR 
+10 
+No. induk 
+pegawai 
+5. 
+JumlahBa
+yar 
+VARCHAR 
+7 
+Jumlah iuran 
+dibayar 
+6. 
+Keteranga
+n 
+VARCHAR 
+100 
+Keterangan  
+ 
+ 
+Total 
+Ukuran 
+147 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL XI 
+TABEL SUMBANGAN_UANG 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdSmbUa
+ng (PK) 
+VARCHAR 
+10 
+Kode 
+sumbangan 
+uang 
+2. 
+TglTerima 
+DATE 
+10 
+Tanggal 
+terima 
+3. 
+Nip (FK) 
+VARCHAR 
+10 
+No. induk 
+pegawai 
+4. 
+KdDonatu
+r (FK) 
+VARCHAR 
+10 
+Kode donatur 
+5. 
+Metode 
+VARCHAR 
+25 
+Metode 
+sumbangan 
+6. 
+Jumlah 
+INT 
+11 
+Jumlah 
+besaran uang 
+ 
+ 
+Total 
+Ukuran 
+76 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL XII 
+TABEL SUMBANGAN_BARANG 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdSmbBa
+rang (PK) 
+VARCHAR 
+10 
+Kode 
+sumbangan 
+barang 
+2. 
+TglTerima 
+DATE 
+10 
+Tanggal 
+terima 
+No. 
+Nama 
+Tipe Data 
+Ukuran 
+Keterangan 
+Field 
+3. 
+Nip (FK) 
+VARCHAR 
+10 
+No. induk 
+pegawai 
+ 
+4. 
+KdDonatu
+r (FK) 
+VARCHAR 
+10 
+Kode donatur 
+5. 
+Keterangan 
+VARCHAR 
+150 
+Keterangan  
+ 
+ 
+Total 
+Ukuran 
+190 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL XIII 
+TABEL SUMBANGAN_BARANG 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdSmbBa
+rang 
+VARCHAR 
+10 
+Kode 
+sumbangan 
+barang 
+2. 
+NamaBara
+ng 
+VARCHAR 
+35 
+Nama barang 
+3. 
+Jumlah 
+INT 
+4 
+Jumlah 
+4. 
+Satuan 
+VARCHAR 
+20 
+Satuan  
+ 
+ 
+Total 
+Ukuran 
+69 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL XIV 
+TABEL SUMBANGAN_BARANG 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdDonatu
+r (PK) 
+VARCHAR 
+10 
+Kode donatur  
+2. 
+Nama 
+DATE 
+35 
+Nama donatur 
+3. 
+Alamat 
+VARCHAR 
+150 
+Alamat 
+4. 
+Telpon 
+VARCHAR 
+17 
+Telpon  
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+5. 
+Email 
+VARCHAR 
+35 
+Email donatur 
+ 
+ 
+Total 
+Ukuran 
+247 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+TABEL XV 
+TABEL MENU_LANSIA 
+No. 
+Nama 
+Field 
+Tipe Data 
+Ukuran 
+Keterangan 
+1. 
+KdDonatu
+r (PK) 
+VARCHAR 
+10 
+Kode donatur  
+2. 
+Nama 
+DATE 
+35 
+Nama donatur 
+3. 
+Alamat 
+VARCHAR 
+150 
+Alamat 
+4. 
+Telpon 
+VARCHAR 
+17 
+Telpon  
+5. 
+Email 
+VARCHAR 
+35 
+Email donatur 
+ 
+ 
+Total 
+Ukuran 
+247 
+Byte 
+ 
+*) PK = Primary Key, FK = Foreign Key 
+ 
+ 
+
+
+--- HALAMAN 12 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+584 
+ 
+Fase 3 
+Implementasi. 
+Berdasarkan hasil dari tahap desain fisik basis data maka 
+basis data sudah dapat direalisasikan ke dalam DMBS 
+(Database Management System) MySql melalui tool 
+phpMyAdmin. Terdapat 4 tahapan dalam proses 
+membangun 
+basis 
+data 
+dengan 
+menggunakan 
+phpMyAdmin yaitu : 
+1. Membuat Basis Data yang diperlihatkan pada 
+gambar 4. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gambar 4. Membuat Basis Data Panti Werdha Menggunakan 
+phpMyAdmin. 
+2. Mendesain tabel disertai dengan memilih field 
+utama atau primary key. Gambar 5 dibawah 
+menunjukkan cara untuk mendesain tabel baru 
+dengan menggunakan tool phpMyAdmin. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gambar 5. Mendesain Tabel Menggunakan phpMyAdmin. 
+3. Membuat relasi tabel dengan menggunakan fitur 
+desainer yang diperlihatkan pada gambar 6. 
+Gambar 6. Mendesain Relasi Tabel Menggunakan phpMyAdmin. 
+
+
+--- HALAMAN 13 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+585 
+ 
+4. Melakukan pengujian basis data. 
+Pada gambar 7 menunjukkan hasil proses pengujian input tabel donatur. Pengujian dilakukan dengan menggunakan 
+2 cara yaitu dengan menggunakan perintah query dan form input data phpMyAdmin. 
+Gambar 7. Pengujian Input Data pada Tabel Donatur. 
+Selanjutnya dilakukan pengujian relasi tabel yang ditunjukkan pada gambar 8. Pada gambar tersebut terlihat bahwa 
+pada form input data tabel sumbangan_barang terdapat dua input field dropdown berisikan data yang telah berelasi 
+dengan tabel yang lain. Field Nip berelasi dengan field Nip pada tabel pegawai dan field KdDonatur berelasi 
+dengan field KdDonatur pada tabel donatur 
+.Gambar 8. Pengujian Relasi Tabel Melalui Input Data Dropdown. 
+ 
+Gambar 9, 10 dan 11 menunjukkan tahapan pengujian untuk relasi tahap ketiga (3NF). Pada gambar 9 terlihat form 
+input yang digunakan untuk memasukan data sumbangan barang dimana terdapat field KdSmbBarang sebagai primary 
+key.
+ 
+Gambar 9. Pengujian Input Data Tabel Sumbangan_Barang. 
+
+
+--- HALAMAN 14 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+586 
+ 
+Untuk input data detil item sumbangan barang diperlihatkan melalui form input pada gambar 10. Pada tabel tersebut 
+terlihat bahwa field KdSmbBarang tidak diatur sebagai primary key dikarenakan fungsinya digunakan untuk 
+menampung data kode yang sama secara berulang. Field KdSmbBarang berelasi dengan field KdSmbBarang pada 
+tabel sumbangan_barang 
+.Gambar 10. Pengujian Input Data Tabel Detil_Smb_Barang. 
+ 
+Hasil pengujian query untuk relasi tahap ketiga yang melibatkan tabel sumbangan_barang, detil_smb_barang, pegawai 
+dan donator diperlihatkan pada gambar 11 dibawah ini. 
+Gambar 11. Hasil Pengujian Query untuk Relasi ketiga. 
+ 
+B. Hasil Perancangan Basis Data  
+Hasil yang didapat dari perancangan basis data layanan 
+panti 
+werdha 
+dengan 
+menggunakan 
+metode 
+DBLC 
+(Database Life Cycle) adalah basis data relasional yang 
+terdiri dari 11 tabel dan 12 relasi tabel. Berikut hasil 
+rancangan 
+basis 
+data 
+layanan 
+panti 
+werdha 
+yang 
+diperlihatkan pada gambar 12 dibawah ini. 
+
+
+--- HALAMAN 15 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 6 Nomor 3 Desember 2020 
+ 
+587 
+ 
+ 
+Gambar 12. Hasil Rancangan Basis Data Layanan Panti Werdha. 
+ 
+V. KESIMPULAN 
+Hasil dari penelitian ini adalah sebuah model rancangan 
+basis data relasional yang dapat digunakan untuk 
+menampung data serta menjawab kebutuhan pengelolaan 
+informasi yang diharapkan oleh panti werdha. Metode 
+DBLC memberikan tahapan yang sistematis sehingga 
+mempermudah proses perancangan basis data yang sesuai 
+dengan kebutuhan. Penelitian ini merupakan pengembangan 
+dari penelitian sebelumnya dimana ditambahkan beberapa 
+entitas untuk kebutuhan informasi terkait kunjungan 
+terhadap lansia, menu asupan lansia, tindakan perawatan 
+kesehatan terhadap lansia dan memisahkan jenis sumbangan 
+dari donatur (barang dan uang). Diharapkan dengan adanya 
+rancangan ini para pengembang perangkat lunak dapat 
+melihat gambaran umum tentang informasi apa saja yang 
+dibutuhkan dalam pengembangan sistem informasi panti 
+werdha. 
+ 
+UCAPAN TERIMA KASIH 
+Penulis mengucapkan banyak terima kasih atas dukungan 
+morel serta materi dari civitas akademika Universitas 
+Katolik Musi Charitas dan juga pengelola jurnal Jutisi 
+sehingga artikel jurnal ini dapat diselesaikan dengan baik. 
+Penulis berharap kiranya artikel ini memberikan kontribusi 
+
+
+--- HALAMAN 16 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 3 Desember 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+588 
+ 
+bagi peningkatan manajemen informasi layanan panti 
+werdha serta menambah wawasan bagi para pembacanya. 
+ 
+DAFTAR PUSTAKA 
+[1] 
+Atanasia, G. Syarifudin,“Perancangan Database Relasional Data 
+Lansia Panti Jompo Graha Kasih Bapa Kabupaten Kubu Raya,” 
+Jurnal INSERT, vol. 1, pp. 25-35,  Agustus 2018.  
+[2] 
+Kraugusteeliana, “Desain Database Aplikasi Monitoring Peralatan 
+dan Bahan Praktikum pada Lab Patologi Klinik FK UPNVJ,” 
+JURNAL INFORMATIK, edisi 16, no. 1, pp. 1-10, April 2020. 
+[3] 
+Nofiyani, 
+“Model 
+Basis 
+Data 
+Untuk 
+Mendukung 
+Sistem 
+Administrasi Pelayanan dan Perbaikan Motor,” Simposium Nasional 
+Ilmiah dengan tema: (Peningkatan Kualitas Publikasi Ilmiah 
+melalui Hasil Riset dan Pengabdian kepada Masyarakat), 7 
+November 2019, pp. 367-375. 
+[4] 
+D. S. Anggita, “Proses Perencanaan Basis Data Sistem Rekam 
+Medis Rawat Jalan Puskemas,” IT Journal, vol. 6, no. 2, pp. 111-123, 
+Oktober  2018. 
+[5] 
+E. Krisnanik, Kraugusteeliana, “Perancangan Model Basis Data 
+Berbasis Pakar Gangguan Rahim dan Kesehatan Janin Pada Wanita 
+Hamil,” Seminar Nasional Teknologi Informasi dan Multimedia 
+AMIKOM,  4 Februari 2017, pp. 1-6 .  
+[6] 
+F. S. Handayani, M. P Putri, “Perancangan Basis Data Instrumen 
+Bimbingan  Konseling Alat Ungkap Pemahaman Diri Siswa,” Citec 
+Journal, vol. 4, no. 2, pp. 128-140, Februari 2017.  
+[7] 
+(2020) Website Kamus Besar Bahasa Indonesia. [Online].Tersedia 
+https://kbbi.kemdikbud.go.id/. 
+[8] 
+E. S. Oktaviana, "Hubungan Interaksi Sosial dan Self Efficacy 
+dengan Kesejahteraan Psikologis Lansia yang Tinggal di Panti 
+Wedha", Skripsi. Fakultas Keperawatan, Program Studi Ners, 
+Universitas Airlangga, Surabaya, 2018. 
+[9] 
+(2020) Website Departemen Sosial Republik Indonesia. [Online]. 
+Tersedia: http://www.bphn.go.id/data/documents/12pmsos019.pdf. 
+[10] F. Kurniawati, Hubungan Sleep Hygiene dan Kualitas Tidur Lansia. 
+Universitas Erlangga. 2017. 
+[11] C. J. Date, An Introduction to Database Systems, 8th Edition, 
+Pearson: 2004. 
+[12] E. Mulyana, A. Wahana, ”Rancang Bangun Sistem Basis Data 
+Penelitian Menggunakan Top Down Approach,” TELKA: Jurnal 
+Telekomunikasi, Elektronika, Komputasi, dan Kontrol, vol. 3, no. 2, 
+pp. 152-167 , November 2017. 
+[13] T. Connolly,  C. Begg, A Practical Approach to Design, 
+Implementation, and Management,  6th Edition. Glasgow: Pearson 
+Education Limited, 2015. 
+[14] Gat, “Perancangan Basis Data Perpustakaan Sekolah Dengan  
+Menerapkan Model Data Relasional,” Citec  Journal, vol. 2, no. 4, 
+pp. 304-315,  Agustus  2015  -  Oktober  2015,  ISSN:  2460-4259. 
+[15] W. S. Prasetya, “Perancangan Model Basis Data Relasional Dengan 
+Metode Database Life Cycle,” Seminar Nasional Informatika. 2015. 
+pp. 91-98 , 
+[16] A. Kurnianti, Angguningtyas, R. G. Isnanda, “Perancangan Database 
+Pada Sistem Asessmen Dan Pemetaan Hasil Asessmen Berbasis Tag 
+Sebagai Pembantu Penyusunan Strategi Pembelajaran,” Jurnal 
+Ilmiah Semesta Teknika, vol. 20, no.2, pp. 106-115, 2017. 
+ 
+ 
+

@@ -39,3 +39,11 @@ yarn-debug.log*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Python cache
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# Temporary
+tmp/

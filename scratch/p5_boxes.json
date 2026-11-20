@@ -1,0 +1,947 @@
+﻿[
+    {
+        "Text":  "2.",
+        "X":  676,
+        "Y":  255,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "3.",
+        "X":  676,
+        "Y":  276,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "IO.",
+        "X":  113,
+        "Y":  456,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "11.",
+        "X":  113,
+        "Y":  477,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "12.",
+        "X":  113,
+        "Y":  518,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "13.",
+        "X":  113,
+        "Y":  540,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "14.",
+        "X":  113,
+        "Y":  582,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "15.",
+        "X":  113,
+        "Y":  603,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "16.",
+        "X":  113,
+        "Y":  624,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "17.",
+        "X":  113,
+        "Y":  645,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "18.",
+        "X":  113,
+        "Y":  665,
+        "W":  20,
+        "H":  14
+    },
+    {
+        "Text":  "19.",
+        "X":  113,
+        "Y":  687,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "0.",
+        "X":  120,
+        "Y":  708,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "2.",
+        "X":  120,
+        "Y":  750,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "3.",
+        "X":  120,
+        "Y":  770,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "4.",
+        "X":  120,
+        "Y":  792,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "5.",
+        "X":  120,
+        "Y":  813,
+        "W":  13,
+        "H":  13
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  147,
+        "Y":  225,
+        "W":  315,
+        "H":  18
+    },
+    {
+        "Text":  "Get the requirement statement from the customer",
+        "X":  147,
+        "Y":  246,
+        "W":  359,
+        "H":  18
+    },
+    {
+        "Text":  "Create domain-driven design",
+        "X":  147,
+        "Y":  267,
+        "W":  212,
+        "H":  17
+    },
+    {
+        "Text":  "Pick a User Story and break it into features",
+        "X":  147,
+        "Y":  288,
+        "W":  314,
+        "H":  17
+    },
+    {
+        "Text":  "Group features into FeatureSets",
+        "X":  147,
+        "Y":  308,
+        "W":  232,
+        "H":  18
+    },
+    {
+        "Text":  "Sort FeatureSets by priority to create a",
+        "X":  148,
+        "Y":  330,
+        "W":  281,
+        "H":  17
+    },
+    {
+        "Text":  "FeatureSetPriorityList",
+        "X":  147,
+        "Y":  351,
+        "W":  162,
+        "H":  18
+    },
+    {
+        "Text":  "Check for any changes in user stories and features.",
+        "X":  147,
+        "Y":  372,
+        "W":  370,
+        "H":  17
+    },
+    {
+        "Text":  "Update the FeatureSet and re-sort the",
+        "X":  147,
+        "Y":  393,
+        "W":  272,
+        "H":  18
+    },
+    {
+        "Text":  "FeatureSetPriorityList.",
+        "X":  147,
+        "Y":  413,
+        "W":  166,
+        "H":  18
+    },
+    {
+        "Text":  "Break FeatureSet into Tasks.",
+        "X":  147,
+        "Y":  435,
+        "W":  210,
+        "H":  14
+    },
+    {
+        "Text":  "Create unit tests for tasks",
+        "X":  147,
+        "Y":  455,
+        "W":  184,
+        "H":  14
+    },
+    {
+        "Text":  "Update design and create an iteration plan for the current",
+        "X":  147,
+        "Y":  476,
+        "W":  416,
+        "H":  18
+    },
+    {
+        "Text":  "FeatureSet.",
+        "X":  147,
+        "Y":  498,
+        "W":  82,
+        "H":  13
+    },
+    {
+        "Text":  "Sort tasks by their priority to create TaskPriorityList.",
+        "X":  148,
+        "Y":  518,
+        "W":  386,
+        "H":  18
+    },
+    {
+        "Text":  "Pick a task from the top of the TaskPriorityList and",
+        "X":  147,
+        "Y":  540,
+        "W":  376,
+        "H":  18
+    },
+    {
+        "Text":  "write/modify the code to implement the task",
+        "X":  147,
+        "Y":  560,
+        "W":  324,
+        "H":  18
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  147,
+        "Y":  582,
+        "W":  199,
+        "H":  17
+    },
+    {
+        "Text":  "Compile and unit test the developed code.",
+        "X":  147,
+        "Y":  602,
+        "W":  306,
+        "H":  18
+    },
+    {
+        "Text":  "Perform integration test.",
+        "X":  147,
+        "Y":  623,
+        "W":  177,
+        "H":  18
+    },
+    {
+        "Text":  "Refactor code in the Refactor baseline",
+        "X":  147,
+        "Y":  644,
+        "W":  279,
+        "H":  14
+    },
+    {
+        "Text":  "Perform acceptance testing for Refactored code",
+        "X":  147,
+        "Y":  665,
+        "W":  348,
+        "H":  18
+    },
+    {
+        "Text":  "Trace from user stories to features.",
+        "X":  147,
+        "Y":  686,
+        "W":  253,
+        "H":  14
+    },
+    {
+        "Text":  "Trace from features to FeatureSets.",
+        "X":  147,
+        "Y":  707,
+        "W":  256,
+        "H":  14
+    },
+    {
+        "Text":  "Trace from FeatureSets to tasks.",
+        "X":  147,
+        "Y":  728,
+        "W":  235,
+        "H":  14
+    },
+    {
+        "Text":  "Integrate code into the Development baseline",
+        "X":  147,
+        "Y":  749,
+        "W":  331,
+        "H":  18
+    },
+    {
+        "Text":  "Integrate code into the Refactor baseline",
+        "X":  147,
+        "Y":  770,
+        "W":  296,
+        "H":  18
+    },
+    {
+        "Text":  "Integrate code into the Production baseline",
+        "X":  147,
+        "Y":  791,
+        "W":  313,
+        "H":  18
+    },
+    {
+        "Text":  "Create a new task",
+        "X":  147,
+        "Y":  812,
+        "W":  130,
+        "H":  14
+    },
+    {
+        "Text":  "Write System Metaphor",
+        "X":  712,
+        "Y":  234,
+        "W":  176,
+        "H":  17
+    },
+    {
+        "Text":  "Write User Stories",
+        "X":  712,
+        "Y":  255,
+        "W":  136,
+        "H":  14
+    },
+    {
+        "Text":  "Pick all user stories and break them into features",
+        "X":  712,
+        "Y":  275,
+        "W":  355,
+        "H":  14
+    },
+    {
+        "Text":  "Figure 2: Features for the user stories",
+        "X":  110,
+        "Y":  860,
+        "W":  293,
+        "H":  18
+    },
+    {
+        "Text":  "Figure 4: TaskPriorityList",
+        "X":  657,
+        "Y":  325,
+        "W":  207,
+        "H":  18
+    },
+    {
+        "Text":  "The task with highest priority for development was then coded",
+        "X":  657,
+        "Y":  357,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "and unit tested, and saved in development baseline. The next",
+        "X":  657,
+        "Y":  378,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "task in the TaskPriorityList was picked for development.",
+        "X":  657,
+        "Y":  399,
+        "W":  414,
+        "H":  18
+    },
+    {
+        "Text":  "The code was maintained by versions in development baseline.",
+        "X":  657,
+        "Y":  432,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "Upon completion of a FeatureSet (i.e. an iteration), the",
+        "X":  657,
+        "Y":  453,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "development baseline was refactored and integration tested and",
+        "X":  657,
+        "Y":  474,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "moved to the refactor baseline. Acceptance testing was then",
+        "X":  657,
+        "Y":  495,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "performed on the code in the refactor baseline and was moved to",
+        "X":  657,
+        "Y":  516,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "the production baseline upon successful test and was stored as a",
+        "X":  657,
+        "Y":  537,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "release version.",
+        "X":  657,
+        "Y":  558,
+        "W":  113,
+        "H":  14
+    },
+    {
+        "Text":  "5. Conclusions",
+        "X":  658,
+        "Y":  593,
+        "W":  161,
+        "H":  18
+    },
+    {
+        "Text":  "Personal Extreme Programming (PXP) is a software",
+        "X":  657,
+        "Y":  619,
+        "W":  474,
+        "H":  17
+    },
+    {
+        "Text":  "development process for a single person team. It is based on the",
+        "X":  657,
+        "Y":  640,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "values of Extreme Programming (XP) i.e. simplicity,",
+        "X":  657,
+        "Y":  661,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "communication, feedback, and courage. It works by keeping the",
+        "X":  657,
+        "Y":  682,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "important aspects of XP and refining the values so that they can",
+        "X":  657,
+        "Y":  703,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "fit in a lone programmer situation.",
+        "X":  658,
+        "Y":  724,
+        "W":  249,
+        "H":  18
+    },
+    {
+        "Text":  "PXP can still be refined and improved. It is in the tradition of",
+        "X":  657,
+        "Y":  757,
+        "W":  477,
+        "H":  18
+    },
+    {
+        "Text":  "XP practitioners to vary XP to encompass whatever works. We",
+        "X":  657,
+        "Y":  778,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "hope that PXP inherits these pragmatic roots, as well. Giving up",
+        "X":  657,
+        "Y":  799,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "XP tenets like pair programming is not necessarily a tragedy.",
+        "X":  657,
+        "Y":  820,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "We still believe that following XP strictly is a more effective",
+        "X":  657,
+        "Y":  841,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "way to pursue multi-person projects. But we are also convinced",
+        "X":  657,
+        "Y":  862,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "that many of the XP practices and methods can be applied to",
+        "X":  657,
+        "Y":  883,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "individual work.",
+        "X":  658,
+        "Y":  904,
+        "W":  119,
+        "H":  14
+    },
+    {
+        "Text":  "The PXP approach tries to balance between the \"too heavy\" and",
+        "X":  657,
+        "Y":  946,
+        "W":  474,
+        "H":  17
+    },
+    {
+        "Text":  "the \"too light\" methodologies. PXP will inject the right amount",
+        "X":  657,
+        "Y":  967,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "of rigor for the situation without overburdening the team with",
+        "X":  657,
+        "Y":  988,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "unnecessary bureaucracy.",
+        "X":  657,
+        "Y":  1009,
+        "W":  187,
+        "H":  18
+    },
+    {
+        "Text":  "2.",
+        "X":  126,
+        "Y":  984,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "3.",
+        "X":  126,
+        "Y":  1048,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "4.",
+        "X":  125,
+        "Y":  1090,
+        "W":  13,
+        "H":  13
+    },
+    {
+        "Text":  "5.",
+        "X":  126,
+        "Y":  1153,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "6.",
+        "X":  126,
+        "Y":  1236,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "7.",
+        "X":  126,
+        "Y":  1321,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "8.",
+        "X":  126,
+        "Y":  1363,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "9.",
+        "X":  126,
+        "Y":  1384,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "Get the requirement statement from the customer.",
+        "X":  162,
+        "Y":  942,
+        "W":  363,
+        "H":  18
+    },
+    {
+        "Text":  "Pick a User Story and break it into features.",
+        "X":  162,
+        "Y":  963,
+        "W":  318,
+        "H":  18
+    },
+    {
+        "Text":  "Group features into FeatureSets.",
+        "X":  162,
+        "Y":  984,
+        "W":  236,
+        "H":  18
+    },
+    {
+        "Text":  "Sort FeatureSets by priority to create a",
+        "X":  163,
+        "Y":  1006,
+        "W":  281,
+        "H":  17
+    },
+    {
+        "Text":  "FeatureSetPriorityList.",
+        "X":  162,
+        "Y":  1026,
+        "W":  166,
+        "H":  18
+    },
+    {
+        "Text":  "Break FeatureSet into Tasks.",
+        "X":  162,
+        "Y":  1048,
+        "W":  210,
+        "H":  14
+    },
+    {
+        "Text":  "Create unit tests for tasks..",
+        "X":  162,
+        "Y":  1068,
+        "W":  193,
+        "H":  14
+    },
+    {
+        "Text":  "Update design and create an iteration plan for the",
+        "X":  163,
+        "Y":  1089,
+        "W":  359,
+        "H":  18
+    },
+    {
+        "Text":  "current FeatureSet.",
+        "X":  162,
+        "Y":  1111,
+        "W":  138,
+        "H":  13
+    },
+    {
+        "Text":  "Sort tasks by their priority to create TaskPriorityList.",
+        "X":  163,
+        "Y":  1131,
+        "W":  386,
+        "H":  18
+    },
+    {
+        "Text":  "Pick a task from the top of the TaskPriorityList and",
+        "X":  162,
+        "Y":  1153,
+        "W":  376,
+        "H":  17
+    },
+    {
+        "Text":  "write/modify the code to implement the task.",
+        "X":  162,
+        "Y":  1173,
+        "W":  328,
+        "H":  18
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  162,
+        "Y":  1194,
+        "W":  199,
+        "H":  18
+    },
+    {
+        "Text":  "Compile and unit test the developed code.",
+        "X":  162,
+        "Y":  1215,
+        "W":  306,
+        "H":  18
+    },
+    {
+        "Text":  "Integrate code into the Development baseline.",
+        "X":  162,
+        "Y":  1236,
+        "W":  335,
+        "H":  18
+    },
+    {
+        "Text":  "Integrate code into the Refactor baseline.",
+        "X":  162,
+        "Y":  1257,
+        "W":  300,
+        "H":  18
+    },
+    {
+        "Text":  "Integrate code into the Production baseline.",
+        "X":  162,
+        "Y":  1278,
+        "W":  317,
+        "H":  18
+    },
+    {
+        "Text":  "Perform integration test.",
+        "X":  162,
+        "Y":  1299,
+        "W":  177,
+        "H":  17
+    },
+    {
+        "Text":  "Refactor code in the Refactor baseline.",
+        "X":  162,
+        "Y":  1320,
+        "W":  283,
+        "H":  14
+    },
+    {
+        "Text":  "Perform acceptance testing for Refactored code.",
+        "X":  162,
+        "Y":  1341,
+        "W":  351,
+        "H":  18
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  162,
+        "Y":  1362,
+        "W":  316,
+        "H":  18
+    },
+    {
+        "Text":  "Create domain-driven design.",
+        "X":  162,
+        "Y":  1383,
+        "W":  216,
+        "H":  18
+    },
+    {
+        "Text":  "Figure 3: FeatureSetPriorityList",
+        "X":  110,
+        "Y":  1442,
+        "W":  253,
+        "H":  17
+    },
+    {
+        "Text":  "6.",
+        "X":  658,
+        "Y":  1045,
+        "W":  17,
+        "H":  17
+    },
+    {
+        "Text":  "[11",
+        "X":  658,
+        "Y":  1082,
+        "W":  20,
+        "H":  18
+    },
+    {
+        "Text":  "[21",
+        "X":  658,
+        "Y":  1166,
+        "W":  20,
+        "H":  18
+    },
+    {
+        "Text":  "[3]",
+        "X":  658,
+        "Y":  1229,
+        "W":  20,
+        "H":  17
+    },
+    {
+        "Text":  "[41",
+        "X":  658,
+        "Y":  1292,
+        "W":  20,
+        "H":  18
+    },
+    {
+        "Text":  "[5]",
+        "X":  658,
+        "Y":  1376,
+        "W":  20,
+        "H":  17
+    },
+    {
+        "Text":  "[6]",
+        "X":  658,
+        "Y":  1460,
+        "W":  20,
+        "H":  17
+    },
+    {
+        "Text":  "86",
+        "X":  612,
+        "Y":  1608,
+        "W":  17,
+        "H":  12
+    },
+    {
+        "Text":  "References",
+        "X":  694,
+        "Y":  1045,
+        "W":  113,
+        "H":  17
+    },
+    {
+        "Text":  "Akpata E., and Riha K. , (2004), \"Can Extreme",
+        "X":  694,
+        "Y":  1082,
+        "W":  437,
+        "H":  17
+    },
+    {
+        "Text":  "Programming be used by a Lone Programmer?\", Systems",
+        "X":  694,
+        "Y":  1103,
+        "W":  437,
+        "H":  18
+    },
+    {
+        "Text":  "Integration 2004 .",
+        "X":  694,
+        "Y":  1124,
+        "W":  129,
+        "H":  17
+    },
+    {
+        "Text":  "Beck K., (2000), \"eXtreme Programming eXplained:",
+        "X":  694,
+        "Y":  1166,
+        "W":  436,
+        "H":  18
+    },
+    {
+        "Text":  "Embrace Change\". Addison Wesley.",
+        "X":  694,
+        "Y":  1187,
+        "W":  267,
+        "H":  18
+    },
+    {
+        "Text":  "Brewer J., Design J. , (2001) \"Extreme Programming",
+        "X":  694,
+        "Y":  1229,
+        "W":  438,
+        "H":  17
+    },
+    {
+        "Text":  "FAQ\", http://www.jera.com/techinfo/xpfaq.html",
+        "X":  694,
+        "Y":  1250,
+        "W":  358,
+        "H":  18
+    },
+    {
+        "Text":  "Cockburn A. , (2004), \"Crystal Clear: A Human-Powered",
+        "X":  694,
+        "Y":  1292,
+        "W":  437,
+        "H":  17
+    },
+    {
+        "Text":  "Methodology for Small Teams (The Agile Software",
+        "X":  694,
+        "Y":  1313,
+        "W":  437,
+        "H":  18
+    },
+    {
+        "Text":  "Development Series)\" , Addison-Wesley Professional.",
+        "X":  694,
+        "Y":  1334,
+        "W":  392,
+        "H":  17
+    },
+    {
+        "Text":  "Fowler, M. , (2003), \"The new methodology\",",
+        "X":  694,
+        "Y":  1376,
+        "W":  333,
+        "H":  17
+    },
+    {
+        "Text":  "http://wvvvv.martinfowler.com/articles/newMethodology.ht",
+        "X":  694,
+        "Y":  1397,
+        "W":  429,
+        "H":  18
+    },
+    {
+        "Text":  "ml",
+        "X":  694,
+        "Y":  1418,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "Humphrey W., (1996), \"Introduction to the Personal",
+        "X":  694,
+        "Y":  1459,
+        "W":  437,
+        "H":  18
+    },
+    {
+        "Text":  "Software Process\". Addison Wesley Longman.",
+        "X":  694,
+        "Y":  1481,
+        "W":  342,
+        "H":  17
+    }
+]

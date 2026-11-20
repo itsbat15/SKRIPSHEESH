@@ -1,0 +1,518 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 920" width="1420" height="920">
+  <defs>
+    <style>
+      .diagram-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #1A237E; }
+      .diagram-sub { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; fill: #555555; }
+      .legend-text { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #333333; }
+      .tbl-header { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; text-anchor: middle; }
+      .col-key { font-family: 'Consolas', monospace; font-size: 10.5px; font-weight: bold; fill: #C62828; }
+      .col-fk { font-family: 'Consolas', monospace; font-size: 10.5px; font-weight: bold; fill: #1565C0; }
+      .col-name { font-family: 'Consolas', monospace; font-size: 11px; font-weight: 600; fill: #212121; }
+      .col-type { font-family: 'Consolas', monospace; font-size: 10.5px; fill: #616161; text-anchor: end; }
+      .crow-line { fill: none; stroke-width: 1.6; }
+      .crow-blue { stroke: #0288D1; }
+      .crow-green { stroke: #2E7D32; }
+      .crow-orange { stroke: #E65100; }
+    </style>
+
+    <!-- Crow's Foot Markers -->
+    <!-- Mandatory One (||) -->
+    <marker id="one-blue" viewBox="0 0 16 16" refX="1" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <line x1="6" y1="2" x2="6" y2="14" stroke="#0288D1" stroke-width="2" />
+      <line x1="12" y1="2" x2="12" y2="14" stroke="#0288D1" stroke-width="2" />
+    </marker>
+    <marker id="one-green" viewBox="0 0 16 16" refX="1" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <line x1="6" y1="2" x2="6" y2="14" stroke="#2E7D32" stroke-width="2" />
+      <line x1="12" y1="2" x2="12" y2="14" stroke="#2E7D32" stroke-width="2" />
+    </marker>
+    <marker id="one-orange" viewBox="0 0 16 16" refX="1" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <line x1="6" y1="2" x2="6" y2="14" stroke="#E65100" stroke-width="2" />
+      <line x1="12" y1="2" x2="12" y2="14" stroke="#E65100" stroke-width="2" />
+    </marker>
+
+    <!-- Many / Crow's Foot (>|) -->
+    <marker id="many-blue" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 2 L 14 8 L 0 14 M 14 2 L 14 14" fill="none" stroke="#0288D1" stroke-width="1.8" />
+    </marker>
+    <marker id="many-green" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 2 L 14 8 L 0 14 M 14 2 L 14 14" fill="none" stroke="#2E7D32" stroke-width="1.8" />
+    </marker>
+    <marker id="many-orange" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 0 2 L 14 8 L 0 14 M 14 2 L 14 14" fill="none" stroke="#E65100" stroke-width="1.8" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1420" height="920" fill="#FAFAFA" />
+
+  <!-- Title & Legend -->
+  <text x="45" y="32" class="diagram-title">Entity Relationship Diagram (ERD) - Sistem Informasi ARTHA</text>
+  <text x="45" y="50" class="diagram-sub">Pemodelan Basis Data Relasional MySQL Menggunakan Notasi Crow's Foot</text>
+
+  <!-- Legend Box -->
+  <g transform="translate(740, 16)">
+    <rect width="630" height="36" rx="5" ry="5" fill="#ffffff" stroke="#D1D5DB" stroke-width="1.2" />
+    <rect x="15" y="11" width="14" height="14" rx="2" fill="#0288D1" />
+    <text x="36" y="23" class="legend-text" font-weight="600">Master &amp; Pengguna</text>
+    
+    <rect x="175" y="11" width="14" height="14" rx="2" fill="#2E7D32" />
+    <text x="196" y="23" class="legend-text" font-weight="600">Akademik &amp; Rombel</text>
+
+    <rect x="345" y="11" width="14" height="14" rx="2" fill="#E65100" />
+    <text x="366" y="23" class="legend-text" font-weight="600">Keuangan &amp; Kas Harian</text>
+
+    <text x="530" y="23" class="legend-text" font-style="italic">PK = Primary, FK = Foreign</text>
+  </g>
+
+  <!-- ================= ENTITY TABLE HELPER FUNCTION IN SVG ================= -->
+
+  <!-- Table: branches -->
+  <g transform="translate(45, 80)">
+    <rect width="275" height="138" rx="4" ry="4" fill="#FFFFFF" stroke="#0288D1" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 271 0 Q 275 0 275 4 L 275 28 L 0 28 Z" fill="#0288D1" />
+    <text x="137.5" y="19" class="tbl-header">branches</text>
+    <rect x="1" y="28" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="274" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="265" y="43" class="col-type">INT(10)</text>
+    <rect x="1" y="50" width="273" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="274" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-key" fill="#7B1FA2">UK</text>
+    <text x="34" y="65" class="col-name">branch_code</text>
+    <text x="265" y="65" class="col-type">VARCHAR(10)</text>
+    <rect x="1" y="72" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="274" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="87" class="col-name">branch_name</text>
+    <text x="265" y="87" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="94" width="273" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="274" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">address</text>
+    <text x="265" y="109" class="col-type">TEXT</text>
+    <rect x="1" y="116" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="274" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">phone</text>
+    <text x="265" y="131" class="col-type">VARCHAR(20)</text>
+  </g>
+
+  <!-- Table: users -->
+  <g transform="translate(45, 280)">
+    <rect width="275" height="160" rx="4" ry="4" fill="#FFFFFF" stroke="#0288D1" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 271 0 Q 275 0 275 4 L 275 28 L 0 28 Z" fill="#0288D1" />
+    <text x="137.5" y="19" class="tbl-header">users</text>
+    <rect x="1" y="28" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="274" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="265" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="273" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="274" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">branch_id</text>
+    <text x="265" y="65" class="col-type">INT(10) [NULL]</text>
+    <rect x="1" y="72" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="274" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-key" fill="#7B1FA2">UK</text>
+    <text x="34" y="87" class="col-name">email</text>
+    <text x="265" y="87" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="94" width="273" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="274" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">name</text>
+    <text x="265" y="109" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="116" width="273" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="274" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">password</text>
+    <text x="265" y="131" class="col-type">VARCHAR(255)</text>
+    <rect x="1" y="138" width="273" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="274" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">role</text>
+    <text x="265" y="153" class="col-type">ENUM(2)</text>
+  </g>
+
+  <!-- Table: daily_reconciliations -->
+  <g transform="translate(45, 510)">
+    <rect width="295" height="314" rx="4" ry="4" fill="#FFFFFF" stroke="#E65100" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 291 0 Q 295 0 295 4 L 295 28 L 0 28 Z" fill="#E65100" />
+    <text x="147.5" y="19" class="tbl-header">daily_reconciliations</text>
+    <rect x="1" y="28" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="294" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="285" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="294" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">branch_id</text>
+    <text x="285" y="65" class="col-type">INT(10)</text>
+    <rect x="1" y="72" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="294" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-fk">FK</text>
+    <text x="34" y="87" class="col-name">user_id</text>
+    <text x="285" y="87" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="94" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="294" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">reconciliation_date</text>
+    <text x="285" y="109" class="col-type">DATE</text>
+    <rect x="1" y="116" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="294" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">system_cash_total</text>
+    <text x="285" y="131" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="138" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="294" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">system_transfer_tot</text>
+    <text x="285" y="153" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="160" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="294" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">physical_cash_amount</text>
+    <text x="285" y="175" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="182" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="182" x2="294" y2="182" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="197" class="col-name">discrepancy_amount</text>
+    <text x="285" y="197" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="204" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="204" x2="294" y2="204" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="219" class="col-name">discrepancy_note</text>
+    <text x="285" y="219" class="col-type">TEXT</text>
+    <rect x="1" y="226" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="226" x2="294" y2="226" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="241" class="col-name">review_status</text>
+    <text x="285" y="241" class="col-type">ENUM(3)</text>
+    <rect x="1" y="248" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="248" x2="294" y2="248" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="263" class="col-name">is_locked</text>
+    <text x="285" y="263" class="col-type">BOOLEAN</text>
+    <rect x="1" y="270" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="270" x2="294" y2="270" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="285" class="col-name">locked_at</text>
+    <text x="285" y="285" class="col-type">TIMESTAMP</text>
+    <rect x="1" y="292" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="292" x2="294" y2="292" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="307" class="col-name">report_pdf_path</text>
+    <text x="285" y="307" class="col-type">VARCHAR(255)</text>
+  </g>
+
+  <!-- Table: students -->
+  <g transform="translate(380, 80)">
+    <rect width="295" height="292" rx="4" ry="4" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 291 0 Q 295 0 295 4 L 295 28 L 0 28 Z" fill="#2E7D32" />
+    <text x="147.5" y="19" class="tbl-header">students</text>
+    <rect x="1" y="28" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="294" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="285" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="294" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">branch_id</text>
+    <text x="285" y="65" class="col-type">INT(10)</text>
+    <rect x="1" y="72" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="294" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-key" fill="#7B1FA2">UK</text>
+    <text x="34" y="87" class="col-name">registration_no</text>
+    <text x="285" y="87" class="col-type">VARCHAR(20)</text>
+    <rect x="1" y="94" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="294" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">full_name</text>
+    <text x="285" y="109" class="col-type">VARCHAR(150)</text>
+    <rect x="1" y="116" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="294" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">birth_place</text>
+    <text x="285" y="131" class="col-type">VARCHAR(50)</text>
+    <rect x="1" y="138" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="294" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">birth_date</text>
+    <text x="285" y="153" class="col-type">DATE</text>
+    <rect x="1" y="160" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="294" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">gender</text>
+    <text x="285" y="175" class="col-type">ENUM(L/P)</text>
+    <rect x="1" y="182" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="182" x2="294" y2="182" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="197" class="col-name">school_origin</text>
+    <text x="285" y="197" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="204" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="204" x2="294" y2="204" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="219" class="col-name">grade_level</text>
+    <text x="285" y="219" class="col-type">VARCHAR(20)</text>
+    <rect x="1" y="226" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="226" x2="294" y2="226" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="241" class="col-name">home_address</text>
+    <text x="285" y="241" class="col-type">TEXT</text>
+    <rect x="1" y="248" width="293" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="248" x2="294" y2="248" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="263" class="col-name">parent_name</text>
+    <text x="285" y="263" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="270" width="293" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="270" x2="294" y2="270" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="285" class="col-name">parent_phone</text>
+    <text x="285" y="285" class="col-type">VARCHAR(20)</text>
+  </g>
+
+  <!-- Table: study_groups -->
+  <g transform="translate(730, 80)">
+    <rect width="280" height="182" rx="4" ry="4" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#2E7D32" />
+    <text x="140.0" y="19" class="tbl-header">study_groups</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">INT(10)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">branch_id</text>
+    <text x="270" y="65" class="col-type">INT(10)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="87" class="col-name">group_name</text>
+    <text x="270" y="87" class="col-type">VARCHAR(50)</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">schedule_day</text>
+    <text x="270" y="109" class="col-type">VARCHAR(50)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">schedule_time</text>
+    <text x="270" y="131" class="col-type">VARCHAR(30)</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">max_capacity</text>
+    <text x="270" y="153" class="col-type">INT(5)</text>
+    <rect x="1" y="160" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="279" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">current_count</text>
+    <text x="270" y="175" class="col-type">INT(5)</text>
+  </g>
+
+  <!-- Table: course_packages -->
+  <g transform="translate(1070, 80)">
+    <rect width="280" height="160" rx="4" ry="4" fill="#FFFFFF" stroke="#0288D1" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#0288D1" />
+    <text x="140.0" y="19" class="tbl-header">course_packages</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">INT(10)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="65" class="col-name">package_name</text>
+    <text x="270" y="65" class="col-type">VARCHAR(100)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="87" class="col-name">grade_level</text>
+    <text x="270" y="87" class="col-type">ENUM(SD/SMP/SMA)</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">monthly_fee</text>
+    <text x="270" y="109" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">description</text>
+    <text x="270" y="131" class="col-type">TEXT</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">is_active</text>
+    <text x="270" y="153" class="col-type">BOOLEAN</text>
+  </g>
+
+  <!-- Table: enrollments -->
+  <g transform="translate(730, 340)">
+    <rect width="280" height="182" rx="4" ry="4" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#2E7D32" />
+    <text x="140.0" y="19" class="tbl-header">enrollments</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">student_id</text>
+    <text x="270" y="65" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-fk">FK</text>
+    <text x="34" y="87" class="col-name">study_group_id</text>
+    <text x="270" y="87" class="col-type">INT(10)</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="109" class="col-fk">FK</text>
+    <text x="34" y="109" class="col-name">course_package_id</text>
+    <text x="270" y="109" class="col-type">INT(10)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">registration_date</text>
+    <text x="270" y="131" class="col-type">DATE</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">due_day</text>
+    <text x="270" y="153" class="col-type">INT(2)</text>
+    <rect x="1" y="160" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="279" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">status</text>
+    <text x="270" y="175" class="col-type">ENUM(3)</text>
+  </g>
+
+  <!-- Table: tuition_bills -->
+  <g transform="translate(730, 585)">
+    <rect width="280" height="160" rx="4" ry="4" fill="#FFFFFF" stroke="#E65100" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#E65100" />
+    <text x="140.0" y="19" class="tbl-header">tuition_bills</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">enrollment_id</text>
+    <text x="270" y="65" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="87" class="col-name">bill_period</text>
+    <text x="270" y="87" class="col-type">VARCHAR(20)</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">amount</text>
+    <text x="270" y="109" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">due_date</text>
+    <text x="270" y="131" class="col-type">DATE</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">payment_status</text>
+    <text x="270" y="153" class="col-type">ENUM(3)</text>
+  </g>
+
+  <!-- Table: payments -->
+  <g transform="translate(1070, 315)">
+    <rect width="280" height="204" rx="4" ry="4" fill="#FFFFFF" stroke="#E65100" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#E65100" />
+    <text x="140.0" y="19" class="tbl-header">payments</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">tuition_bill_id</text>
+    <text x="270" y="65" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-fk">FK</text>
+    <text x="34" y="87" class="col-name">branch_id</text>
+    <text x="270" y="87" class="col-type">INT(10)</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="109" class="col-fk">FK</text>
+    <text x="34" y="109" class="col-name">user_id</text>
+    <text x="270" y="109" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="131" class="col-key" fill="#7B1FA2">UK</text>
+    <text x="34" y="131" class="col-name">receipt_number</text>
+    <text x="270" y="131" class="col-type">VARCHAR(50)</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">payment_method</text>
+    <text x="270" y="153" class="col-type">ENUM(3)</text>
+    <rect x="1" y="160" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="279" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">amount_paid</text>
+    <text x="270" y="175" class="col-type">DECIMAL(12,2)</text>
+    <rect x="1" y="182" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="182" x2="279" y2="182" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="197" class="col-name">payment_date</text>
+    <text x="270" y="197" class="col-type">TIMESTAMP</text>
+  </g>
+
+  <!-- Table: payment_proofs -->
+  <g transform="translate(1070, 585)">
+    <rect width="280" height="182" rx="4" ry="4" fill="#FFFFFF" stroke="#E65100" stroke-width="1.6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.06))" />
+    <path d="M 0 4 Q 0 0 4 0 L 276 0 Q 280 0 280 4 L 280 28 L 0 28 Z" fill="#E65100" />
+    <text x="140.0" y="19" class="tbl-header">payment_proofs</text>
+    <rect x="1" y="28" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="28" x2="279" y2="28" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="43" class="col-key">PK</text>
+    <text x="34" y="43" class="col-name">id</text>
+    <text x="270" y="43" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="50" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="50" x2="279" y2="50" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="65" class="col-fk">FK</text>
+    <text x="34" y="65" class="col-name">payment_id</text>
+    <text x="270" y="65" class="col-type">BIGINT(20)</text>
+    <rect x="1" y="72" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="72" x2="279" y2="72" stroke="#EEEEEE" stroke-width="1" />
+    <text x="8" y="87" class="col-fk">FK</text>
+    <text x="34" y="87" class="col-name">validated_by</text>
+    <text x="270" y="87" class="col-type">BIGINT [NULL]</text>
+    <rect x="1" y="94" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="94" x2="279" y2="94" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="109" class="col-name">file_path</text>
+    <text x="270" y="109" class="col-type">VARCHAR(255)</text>
+    <rect x="1" y="116" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="116" x2="279" y2="116" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="131" class="col-name">validated_at</text>
+    <text x="270" y="131" class="col-type">TIMESTAMP</text>
+    <rect x="1" y="138" width="278" height="22" fill="#F8FAFC" />
+    <line x1="1" y1="138" x2="279" y2="138" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="153" class="col-name">validation_status</text>
+    <text x="270" y="153" class="col-type">ENUM(3)</text>
+    <rect x="1" y="160" width="278" height="22" fill="#FFFFFF" />
+    <line x1="1" y1="160" x2="279" y2="160" stroke="#EEEEEE" stroke-width="1" />
+    <text x="34" y="175" class="col-name">rejection_note</text>
+    <text x="270" y="175" class="col-type">TEXT</text>
+  </g>
+
+  <!-- ================= RELATIONSHIP PATHS ================= -->
+  <!-- 1. branches (1) -> users (M) -->
+  <path d="M 140 218 L 140 280" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 2. branches (1) -> students (M) -->
+  <path d="M 320 120 L 380 120" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 3. branches (1) -> study_groups (M) -->
+  <path d="M 230 80 L 230 60 L 780 60 L 780 80" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 4. branches (1) -> payments (M) -->
+  <path d="M 270 80 L 270 50 L 1280 50 L 1280 315" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 5. branches (1) -> daily_reconciliations (M) -->
+  <path d="M 45 160 L 22 160 L 22 555 L 45 555" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 6. users (1) -> daily_reconciliations (M) -->
+  <path d="M 180 440 L 180 510" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 7. users (1) -> payments (M) -->
+  <path d="M 320 395 L 350 395 L 350 480 L 700 480 L 700 410 L 1070 410" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 8. users (1) -> payment_proofs (validated_by, M optional) -->
+  <path d="M 280 440 L 280 495 L 360 495 L 360 835 L 1040 835 L 1040 655 L 1070 655" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 9. students (1) -> enrollments (M) -->
+  <path d="M 675 365 L 730 365" class="crow-line crow-green" marker-start="url(#one-green)" marker-end="url(#many-green)" />
+
+  <!-- 10. study_groups (1) -> enrollments (M) -->
+  <path d="M 820 262 L 820 340" class="crow-line crow-green" marker-start="url(#one-green)" marker-end="url(#many-green)" />
+
+  <!-- 11. course_packages (1) -> enrollments (M) -->
+  <path d="M 1070 190 L 1040 190 L 1040 380 L 1010 380" class="crow-line crow-blue" marker-start="url(#one-blue)" marker-end="url(#many-blue)" />
+
+  <!-- 12. enrollments (1) -> tuition_bills (M) -->
+  <path d="M 870 522 L 870 585" class="crow-line crow-green" marker-start="url(#one-green)" marker-end="url(#many-green)" />
+
+  <!-- 13. tuition_bills (1) -> payments (M) -->
+  <path d="M 1010 635 L 1040 635 L 1040 360 L 1070 360" class="crow-line crow-orange" marker-start="url(#one-orange)" marker-end="url(#many-orange)" />
+
+  <!-- 14. payments (1) -> payment_proofs (1:1) -->
+  <path d="M 1210 519 L 1210 585" class="crow-line crow-orange" marker-start="url(#one-orange)" marker-end="url(#one-orange)" />
+
+</svg>

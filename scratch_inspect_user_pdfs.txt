@@ -1,0 +1,177 @@
+=== PRASEPTIAWAN 2025 (100850) ===
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+identify initial requirements and gather feedback on the system design. Data
+tuition fees (SPP), waste banks, and savings. System testing achieved a 99%
+The program was designed to equip students with skills
+2. METHOD
+tasks: (1) software development using Personal Extreme
+Programming (PXP), and (2) system evaluation using the
+extreme programming
+followed the Personal Extreme Programming (PXP)
+approach, a variation of Extreme Programming tailored
+for individual developers. This method was selected for
+Personal Extreme Programming (PXP) is an adaptive
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+the system’s successful implementation. This method
+of PXP in developing a meeting room reservation system
+Province [a]. The development process under PXP involved
+a series of structured stages, as shown in Figure 1, which
+The following is a detailed explanation of the stages
+involved in the Personal Extreme Programming (PXP)
+method:
+In this stage, the developer gathered requirements
+This was the initial stage where the tasks that would
+4. Design
+During this phase, the system to be implemented
+design developed by the developer was based on
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+I. Unit Testing: Ensuring individual components
+on the design.
+6. System Testing In this stage, the functionality of
+all system features was tested. The testing results
+were presented through unit testing and black-box
+testing. Further testing involved using the System
+Performance testing was also conducted to ensure
+Figure 1 . Stages of the Personal Extreme Programming
+(PXP) method
+2.2 System evaluation methods
+used method for evaluating the usability of various systems
+et al., 2022). This method had been applied in diverse
+planning was carried out using the Personal Extreme
+Programming (PXP) method, where the development
+3. Interface design
+The system design comprised communication
+well as the design of a database that supports Mini
+design for both administrators and general users was
+During the implementation phase, the system was
+developed according to the design, starting with
+payment gateway. Each element was tested through
+unit testing and the refactoring process to ensure
+5. System testing
+Testing was conducted using Postman to ensure the
+testing with Selenium IDE. The test results showed
+Figure 2 . Interface design of multi-payment software
+System Usability Scale (SUS) method were obtained
+System Usability Scale (SUS) testing was used to
+system at SMK Negeri 7 Bandar Lampung. This test
+Based on the testing results, the system achieved a
+SUS testing results indicate that the new Mini Bank system
+System Usability Scale (SUS) test results indicated high
+R. (2024). Implementasi metode personal extreme
+rapor menggunakan metode usability testing dan
+
+=== MARTHASARI 2018 (MoSCoW) ===
+Personal Extreme Programming with MoSCoW 
+conventional software development methodology. The 
+we combine personal extreme programming (PXP) 
+methodology with Moscow technique to overcome those 
+problems. PXP is suitable to use in small to medium-sized 
+relatively quick time, and the development phase is adjusted to 
+prioritizing requirements elicited in PXP methodology. 
+Moscow is a method to determine priority needs based on cost, 
+planning phase of PXP to develop library application, thereby 
+Keywords—personal extreme programming, Batu state 
+attorney, library information syst em, moscow prioritization, test 
+development methodology which has an incremental and 
+members [2]. Examples of methodologies in Agile 
+Development are SCRUM and Extreme Programming (XP) 
+development, the phase in XP practice is adjusted to use by 
+a single programmer called Personal Extreme Programming 
+(PXP) [5], [6]. In PXP, the priority requirements need to be 
+user’s request. The priority setting in PXP is based on 
+The initial stage of creating an application is to clearly 
+In the PXP project, clients play an essential role to 
+priority method.  A quick and easy approach to help clients 
+set priorities is MoSCoW. MoSCoW is a method for 
+process of making the application. PXP and MoSCoW were 
+used as the development methodology to support the roles 
+II. RESEARCH METHOD 
+This research used Personal Extreme Programming 
+(PXP) as the development methodology combine with the 
+iteration phase is started. This phase starts with design step 
+end of iteration stage.  
+ FIG I. STAGES OF PXP METHODOLOGY [6]. 
+This stage was done by collecting data at Batu State 
+application library. In the PXP methodology, needs refer to 
+user stories written on cards which are called user story 
+[purpose]" [13]. User story criteria are negotiable, estimable, 
+and testable.
+Planning stage describes the procedure on the user story 
+obtained from the requirements stage. We determined the 
+estimated time of implement the user story, the priority 
+Must have criteria lists all of user story meets the 
+a. Registering members, this user story must be 
+b. Signing up the book, the user story becomes a 
+c. Borrowing the book, this user story is the main 
+d. Automatic reminder messages, this user story also 
+e. Book searching by title, this user story helps users 
+f. Calculating automatic fines, this user story is 
+g. Notice of due date on the admin side, user story plays 
+h. New book notification, user story becomes a key 
+feature to make users aware of the latest book list. 
+i. User-specific access, user story restricts and 
+j. Restoring the book, user story must exist as a critical 
+k. Registering a new admin, user story stores admin 
+Should have category is a user story criteria that does 
+story in the “should have” category is implemented within 
+failed even if not implemented. User story included in this 
+story provides library information of Batu State 
+b. Reminding due date, user story can help users to see 
+c. Proposing a new book, user story helps members 
+Design 
+ Unit Testing 
+System Testing 
+538d. Uploading a book file, this user story is essential as it 
+Could have category is a user story that is not included 
+help to complete the application features. The user story that 
+story.   
+the title of each user story, each of them has a story point 
+used to describe the difficulty level of working, a user story 
+story points, it takes 4 times of iteration. There is reiteration 
+1, the user story done in the first iteration is to register the 
+user story done in the first iteration is to register the 
+D. Design 
+Figure 2 shows a database design table for user stories 
+next phase, the developers begin to write the process of 
+program code according to the design that has been made. 
+FIG II. DATABASE DESIGN IN THE FIRST ITERATION 
+The implementation of the program using Test Driven 
+Development (TDD) consists of 3 stages: unit testing, code 
+generation, and refactoring. The unit testing results of each 
+user story are shown in Figure 3. Member Controller 
+(Controllermember.php) is used for the user story of 
+passed unit testing shown by value of 100%. The process of 
+after the program code of each user story passes the unit 
+testing. Besides, it is also created user views from each user 
+story. The user view in one of the users story is shown in 
+FIG III. TESTING RESULT IN FIRST ITERATION 
+F. System Test 
+This stage tests the results of the implementation of 
+features that have been obtained. The test applies the user 
+acceptance test criteria. It is based on the user story. The test 
+is done by the client. The test results are shown in Table 2 
+TABLE II.  USER ACCEPTANCE TEST 
+User Stories Acceptance test 
+verification is done at this stage to ascertain whether the 
+User Stories Priority Story 
+Personal extreme programming (PXP) could be used to 
+changing requirements flexibly. MoSCoW method was 
+needs. The methodology used in this study was personal 
+extreme programming in developing application of Batu 
+been discussed, PXP is able to meet the needs of clients with 
+library application which has been built using PXP is only 
+[5] R. Agarwal and D. Umphress, “Extreme programming for a single 
+[6] Y. Dzhurov, I. Krasteva, and S. Ilieva, “Personal Extreme 
+[7] K. Beck and C. Andres, Extreme Programming Explained : Embrace 
+[9] R. Fojtik, “Extreme programming in development of specific 
+of software tools for user story management,” Inf. Softw. Technol. , 
+540[16] Y. Sugianto, S. Tjandra, and P. Method, “Aplikasi Point of Sale Pada 
+Method,” vol. 8, no. 1, pp. 1–8, 2016. 
+Personal Extreme Programming,” J. Informatics Technol., vol. 2, no. 

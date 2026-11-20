@@ -1,0 +1,330 @@
+[01:14:31 - 01:14:33] menerima itu
+[01:14:33 - 01:14:35] saya juga ada menyebutkan
+[01:14:35 - 01:14:37] di dalam sini
+[01:14:37 - 01:14:39] kalau disini ya
+[01:14:39 - 01:14:40] kalau ini kan
+[01:14:40 - 01:14:41] batasan nih
+[01:14:41 - 01:14:42] batasan ini artinya
+[01:14:42 - 01:14:44] membatasi keseluruhan penelitian gitu
+[01:14:44 - 01:14:45] jadi
+[01:14:45 - 01:14:47] kalau hal-hal yang sifatnya teknis sekali
+[01:14:47 - 01:14:49] dan mungkin itu masih bisa berubah
+[01:14:49 - 01:14:51] misalnya jangan dibatasi di sini
+[01:14:51 - 01:14:53] karena kontennya jadi mengikat gitu
+[01:14:53 - 01:14:54] sehingga nanti
+[01:14:54 - 01:14:55] oh ada perubahan
+[01:14:55 - 01:14:56] kita gak bisa mengubah
+[01:14:56 - 01:14:58] kenapa udah kita batasi di sini
+[01:14:58 - 01:15:00] tapi misalkan kayak tadi ya
+[01:15:00 - 01:15:02] misalkan SDLC nya gitu
+[01:15:02 - 01:15:04] dari PXP itu kan
+[01:15:04 - 01:15:06] sebenarnya selesai
+[01:15:06 - 01:15:07] sampai membuat saja
+[01:15:07 - 01:15:08] gak perlu di deploy
+[01:15:08 - 01:15:09] kan selesai juga gitu
+[01:15:09 - 01:15:10] tapi kan nanti
+[01:15:10 - 01:15:11] kalau misalkan ini
+[01:15:11 - 01:15:12] tiangnya sampai prototype
+[01:15:12 - 01:15:13] berarti kan ada proses deployment
+[01:15:13 - 01:15:14] yang dilakukan
+[01:15:14 - 01:15:16] kalau itu tidak dilakukan
+[01:15:16 - 01:15:18] berarti dibatasi
+[01:15:18 - 01:15:19] dibatasnya di mana
+[01:15:19 - 01:15:20] di sini
+[01:15:20 - 01:15:23] atau kalau misalkan ada
+[01:15:23 - 01:15:25] apa ya
+[01:15:25 - 01:15:26] output lain
+[01:15:26 - 01:15:27] yang misalkan
+[01:15:27 - 01:15:28] Arya hasilkan juga
+[01:15:28 - 01:15:29] dari penelitian ini gitu
+[01:15:29 - 01:15:30] yang diminta oleh mitra
+[01:15:30 - 01:15:31] misalkan
+[01:15:31 - 01:15:32] ya bisa ditambahkan juga
+[01:15:32 - 01:15:34] dibatasi
+[01:15:34 - 01:15:38] ya tapi kalau hal yang sifatnya teknis
+[01:15:38 - 01:15:39] menurut saya
+[01:15:39 - 01:15:40] jangan dimasukkan di sini
+[01:15:40 - 01:15:41] karena khawatirnya
+[01:15:41 - 01:15:42] nanti gak bisa
+[01:15:42 - 01:15:43] kan kita gak tahu nih
+[01:15:43 - 01:15:44] apalagi kan pakai gel ya
+[01:15:44 - 01:15:45] ternyata pas
+[01:15:45 - 01:15:46] udah lihat
+[01:15:46 - 01:15:48] oh bagus ya
+[01:15:48 - 01:15:49] gimana kalau minta ditambahin ini
+[01:15:49 - 01:15:50] gitu
+[01:15:50 - 01:15:51] nah gak bisa
+[01:15:51 - 01:15:52] terkunci dibatasan
+[01:15:52 - 01:15:53] kan sulitnya
+[01:15:53 - 01:15:55] itu
+[01:15:55 - 01:15:56] itu perlu diperhatikan
+[01:15:56 - 01:15:57] cuma yang bisa jadi
+[01:15:57 - 01:16:00] dulu itu mungkin
+[01:16:00 - 01:16:01] yang dibagiin ini
+[01:16:01 - 01:16:02] kayaknya
+[01:16:02 - 01:16:03] payment gateway
+[01:16:06 - 01:16:07] kan udah dibatasi
+[01:16:07 - 01:16:08] tapi balik lagi
+[01:16:08 - 01:16:09] bila terbekam
+[01:16:09 - 01:16:13] ya asal ini clear saja
+[01:16:13 - 01:16:14] artinya
+[01:16:14 - 01:16:15] jangan sampai nanti
+[01:16:15 - 01:16:16] tiba-tiba berubah pikiran
+[01:16:16 - 01:16:17] gitu
+[01:16:17 - 01:16:18] khusus saya
+[01:16:18 - 01:16:19] maunya tetap ada
+[01:16:19 - 01:16:20] payment gateway
+[01:16:20 - 01:16:21] misalkan
+[01:16:21 - 01:16:22] ini cerita lagi
+[01:16:22 - 01:16:28] ini gak perlu pakai point
+[01:16:28 - 01:16:29] ya
+[01:16:29 - 01:16:34] sebenarnya bisa pakai point juga
+[01:16:34 - 01:16:35] kalau mau
+[01:16:35 - 01:16:36] ini kan udah dipisah-pisah ya
+[01:16:36 - 01:16:37] ya
+[01:16:37 - 01:16:38] udah bagi fitrah
+[01:16:38 - 01:16:39] bagi
+[01:16:39 - 01:16:41] bagi metra
+[01:16:41 - 01:16:43] ada peneliti
+[01:16:43 - 01:16:48] dibuat point juga gak apa-apa
+[01:16:48 - 01:16:50] tapi kalau mau dikembangkan
+[01:16:50 - 01:16:51] panjang lebar ya paragraph
+[01:16:51 - 01:17:28] ini sebenarnya saya juga baru tahu
+[01:17:28 - 01:17:29] ternyata kalau
+[01:17:29 - 01:17:31] di panduan juga
+[01:17:31 - 01:17:33] saya kurang tahu itu
+[01:17:33 - 01:17:34] gue gak pakai Facebook
+[01:17:34 - 01:17:35] lagi ya
+[01:17:35 - 01:17:36] iya udah diganti ya
+[01:17:36 - 01:17:38] diagram alir keseluruhan
+[01:17:38 - 01:17:40] ini apa
+[01:17:40 - 01:17:41] belanda santai hari
+[01:17:41 - 01:17:44] analisis kebutuhan sistem
+[01:17:44 - 01:17:46] analisis kebutuhan sistem
+[01:17:46 - 01:17:48] lalu ini juga belum
+[01:17:48 - 01:17:50] ini kan harusnya ada iterasi ya
+[01:17:50 - 01:17:51] cuma saya belum tambahkan
+[01:17:51 - 01:17:53] untuk dari sisi
+[01:17:53 - 01:17:54] iterasi
+[01:17:54 - 01:17:55] kalau
+[01:17:55 - 01:17:57] BXP itu tahapan awalnya apa sih
+[01:17:57 - 01:17:59] requirement
+[01:17:59 - 01:18:01] requirement itu masuk kemana
+[01:18:01 - 01:18:02] analisis kebutuhan
+[01:18:02 - 01:18:03] ini seharusnya
+[01:18:03 - 01:18:04] terus
+[01:18:04 - 01:18:05] itu di luar
+[01:18:05 - 01:18:06] ya di luar ini
+[01:18:06 - 01:18:07] tadi keliru kayak
+[01:18:07 - 01:18:08] keliru ini
+[01:18:08 - 01:18:09] masih keliru
+[01:18:09 - 01:18:11] kita belum ada iterasi
+[01:18:11 - 01:18:14] tapi secara umum
+[01:18:14 - 01:18:15] pakai voucher gini ya Bu
+[01:18:15 - 01:18:17] iya pakai voucher aja
+[01:18:17 - 01:18:18] nanti kalau disini kan
+[01:18:18 - 01:18:19] dijelaskan
+[01:18:19 - 01:18:20] gambaran umum
+[01:18:20 - 01:18:21] tahapan aja
+[01:18:21 - 01:18:22] karena nanti yang lebih detail
+[01:18:22 - 01:18:23] kan ada di bab tiga ya
+[01:18:23 - 01:18:24] iya Bu
+[01:18:24 - 01:18:28] BXP nya ini pelajar diulang
+[01:18:28 - 01:18:29] iya Bu
+[01:18:29 - 01:18:31] oke
+[01:18:31 - 01:18:38] itu kurang lebih sudah sih
+[01:18:38 - 01:18:39] coba tapi
+[01:18:39 - 01:18:40] terakhir tadi
+[01:18:40 - 01:18:42] setelah tahapan akhir apa
+[01:18:42 - 01:18:44] evaluasi
+[01:18:47 - 01:18:48] di peluangnya
+[01:18:48 - 01:18:50] jadi berarti di sebelah mana
+[01:18:50 - 01:18:51] kan di luar dari
+[01:18:51 - 01:18:52] BXP
+[01:18:52 - 01:18:53] berarti kan ya
+[01:18:53 - 01:18:54] nah itu perlu diceritakan
+[01:18:54 - 01:18:56] di dalam tahapan ini
+[01:18:57 - 01:19:00] dan mungkin nanti perlu di cross check ulang juga dengan
+[01:19:00 - 01:19:02] konsep BXP ya
+[01:19:02 - 01:19:05] sebenarnya kalau di BXP kan ada sistem testing tuh
+[01:19:05 - 01:19:07] sistem testing ini
+[01:19:07 - 01:19:09] pengujiannya itu sifatnya seperti apa
+[01:19:09 - 01:19:11] apakah
+[01:19:11 - 01:19:13] UAT itu termasuk dalam sistem testing
+[01:19:13 - 01:19:15] atau itu di luar dari sistem testing yang harus kita perhatikan
+[01:19:15 - 01:19:19] sehingga kalau misalkan itu dua hal yang terpisah
+[01:19:19 - 01:19:21] berarti
+[01:19:21 - 01:19:23] berarti ada tahapan lain ya
+[01:19:23 - 01:19:25] yang dilakukan setelah BXP
+[01:19:25 - 01:19:26] tadi termasuk di PON
+[01:19:26 - 01:19:27] UAT
+[01:19:27 - 01:19:29] nah itu coba nanti diperjelasin lagi
+[01:19:29 - 01:19:31] konsep UAT itu sebenarnya apakah
+[01:19:31 - 01:19:33] di dalam fase SDLC pengembangan itu
+[01:19:33 - 01:19:36] atau dia sebenarnya udah selesai jadi sistemnya
+[01:19:36 - 01:19:38] terus dia di luar gitu ya
+[01:19:38 - 01:19:40] ketika sudah mau digunakan
+[01:19:40 - 01:19:41] apa yang seperti itu
+[01:19:41 - 01:19:45] black box dan UAT itu
+[01:19:45 - 01:19:48] nah black box itu dimana mau dipakai
+[01:19:48 - 01:19:50] black box itu setelah dari
+[01:19:50 - 01:19:52] di bagian sini
+[01:19:52 - 01:19:55] bahkan di luar dari tahapan dari BXP
+[01:19:55 - 01:19:57] kalau misalkan sudah selesai
+[01:19:57 - 01:19:58] baru dilakukan
+[01:19:58 - 01:20:00] eh selesai dari tahapan BXP
+[01:20:00 - 01:20:02] baru dilakukan tahapan
+[01:20:02 - 01:20:04] kemudian black box sama dia
+[01:20:04 - 01:20:06] targetnya siapa yang akan melakukan pengujian
+[01:20:06 - 01:20:08] yang akan melakukan pengujian
+[01:20:08 - 01:20:09] di black box sama di UAT
+[01:20:09 - 01:20:12] dari pengguna manajemen
+[01:20:12 - 01:20:13] ya ini beda berarti
+[01:20:13 - 01:20:15] beda pengujian yang berbeda
+[01:20:15 - 01:20:16] black box dan UAT ini
+[01:20:16 - 01:20:17] atau jadi satu
+[01:20:17 - 01:20:18] jadi satu
+[01:20:18 - 01:20:21] jadi satu
+[01:20:21 - 01:20:22] jadi satu
+[01:20:22 - 01:20:24] black box dulu
+[01:20:24 - 01:20:27] lalu dari user acceptance testing
+[01:20:27 - 01:20:30] saran saya coba nanti mungkin dipahami dulu aja deh
+[01:20:30 - 01:20:34] sistem testing yang dikerjakan di dalam BXP
+[01:20:34 - 01:20:37] dalam BXP itu pengujian yang bagaimana sih
+[01:20:37 - 01:20:41] dan teknikalnya secara teknis itu kita melakukan pengujiannya gimana
+[01:20:41 - 01:20:44] karena itu kan sebenarnya tidak hanya developer kan
+[01:20:44 - 01:20:45] ya betul
+[01:20:45 - 01:20:47] pasti harus melibatkan product award
+[01:20:47 - 01:20:49] teknis pengujian di dalam sistem testing itu
+[01:20:49 - 01:20:53] kalau di hubungkan ke dalam metode pengujian gitu ya
+[01:20:53 - 01:20:57] black box, white box, grey box itu masuk kemana sih dia gitu
+[01:20:57 - 01:20:59] nah itu mungkin itu dipiliarkan
+[01:20:59 - 01:21:01] sehingga nanti baru
+[01:21:01 - 01:21:03] apa ya
+[01:21:03 - 01:21:05] kalau memang perlu ada tahapan pengujian
+[01:21:05 - 01:21:07] setelah SDLC nya ini selesai
+[01:21:07 - 01:21:09] PXP nya selesai gitu kan ya
+[01:21:09 - 01:21:11] kalau memang ada pengujian
+[01:21:11 - 01:21:13] nah ini nanti pengujian nya di level apanya
+[01:21:13 - 01:21:18] oh pengujian real user
+[01:21:18 - 01:21:20] nama metode nya apa
+[01:21:20 - 01:21:21] itu dipahami dulu
+[01:21:21 - 01:21:24] nanti gimana cara pengujian nya akan dilakukan
+[01:21:24 - 01:21:26] paling gak itu juga harus jelas juga
+[01:21:26 - 01:21:31] ya paling gak itu di bab 2 dululah
+[01:21:31 - 01:21:34] menurut saya nanti baru kita ke bab 3 gitu ya
+[01:21:34 - 01:21:45] soalnya saya baru detail juga ternyata gak ke sebelahnya gini
+[01:21:45 - 01:21:48] iya diganti soalnya di yang baru kita pake orang-orang
+[01:21:48 - 01:21:53] dan gak perlu kalau misalkan hanya menyebutkan
+[01:21:53 - 01:21:55] poinnya seperti ini aja gak mau
+[01:21:55 - 01:21:58] gak usah menjelaskan jalan identifitas pengujian
+[01:21:58 - 01:22:01] kan juga gak setahapan kan nanti di paragrafi
+[01:22:01 - 01:22:07] itu dulu deh nanti berikutnya kita bahas yang bab 2 ya
+[01:22:07 - 01:22:11] bahas PXP nya dulu deh secara konseptual
+[01:22:11 - 01:22:14] Ariel cari dulu referensi utamanya
+[01:22:14 - 01:22:16] tapi jangan hanya referensi utama ya nanti
+[01:22:16 - 01:22:20] karena referensi utama itu kadang terbatas juga informasinya
+[01:22:20 - 01:22:23] gimana tahapan yang dilakukan itu mungkin ada yang belum clear gitu
+[01:22:23 - 01:22:26] nah itu nanti silahkan dari jurnal dari buku yang lain yang lebih baru
+[01:22:26 - 01:22:29] jadi paling gak ada beberapa opsi
+[01:22:29 - 01:22:31] gimana cara mengerjakannya gitu
+[01:22:31 - 01:22:36] kalau kemarin itu sebenernya saya ada nyari di buku
+[01:22:36 - 01:22:39] apa namanya
+[01:22:39 - 01:22:41] Summerfield di buku
+[01:22:41 - 01:22:43] itu saya baru mencatat dari
+[01:22:43 - 01:22:47] penjelasan umumnya
+[01:22:47 - 01:22:49] nah itu gak ada buku
+[01:22:49 - 01:22:51] jadi penjelasan umumnya
+[01:22:51 - 01:22:53] iya sampe ke
+[01:22:53 - 01:22:55] exp sehingga saya
+[01:22:55 - 01:22:58] iya sampe untuk exp
+[01:22:58 - 01:23:00] penerapan PXP nya baru di tahun 2009
+[01:23:00 - 01:23:02] dan itu saya belum terlalu baca di PEM
+[01:23:02 - 01:23:06] karena itu yang mau dipakai itu di pelajaran dulu ya
+[01:23:06 - 01:23:09] oke
+[01:23:09 - 01:23:11] oh iya
+[01:23:11 - 01:23:13] oh iya
+[01:23:13 - 01:23:15] saya sudah dimasukin citasi bu
+[01:23:15 - 01:23:17] oh iya belum saya cek lagi
+[01:23:17 - 01:23:20] terus
+[01:23:20 - 01:23:22] ini juga ada
+[01:23:22 - 01:23:24] minta saya untuk mau pilih nanya
+[01:23:24 - 01:23:26] turnitin bu
+[01:23:26 - 01:23:28] oh iya
+[01:23:28 - 01:23:30] menginfokan lebih lanjut
+[01:23:30 - 01:23:32] nanti mungkin dari Prodi menginfokan lebih lanjut
+[01:23:32 - 01:23:34] kan korma mata kuliah proposal
+[01:23:34 - 01:23:36] Bu Amal ya
+[01:23:36 - 01:23:39] nanti Bu Amal menginfokan
+[01:23:39 - 01:23:41] karena per berapa bulan ini ya
+[01:23:41 - 01:23:43] ada perubahan dari turnitin
+[01:23:43 - 01:23:45] kalau selama ini kan sebenarnya
+[01:23:45 - 01:23:47] temen-temen cek sendiri gitu
+[01:23:47 - 01:23:49] sekarang ini ada perubahan dari turnitin
+[01:23:49 - 01:23:50] pakai OTP dia
+[01:23:50 - 01:23:52] jadi hanya bisa masuk lewat
+[01:23:52 - 01:23:54] kasih kode OTP dulu
+[01:23:54 - 01:23:56] jadi itu agak
+[01:23:56 - 01:23:57] bingung juga sih
+[01:23:57 - 01:23:59] kita belum deal kan
+[01:23:59 - 01:24:01] ya mungkin nanti saya
+[01:24:01 - 01:24:02] ini dulu sama Bu Amal ya
+[01:24:02 - 01:24:03] gimana baiknya gitu
+[01:24:03 - 01:24:06] karena kalau OTP kan gak mungkin
+[01:24:06 - 01:24:09] kalau kita kasih akses ke temen-temen
+[01:24:09 - 01:24:11] kayaknya nanti bisa jadi keblokir khawatirnya gitu
+[01:24:11 - 01:24:14] karena kan banyak email tiba-tiba mengakseskan saya juga
+[01:24:14 - 01:24:16] karena asumsi dari saya dan temen-temen tuh
+[01:24:16 - 01:24:19] dikira ada yang bisa merubah password
+[01:24:19 - 01:24:20] iya
+[01:24:20 - 01:24:23] iya memang baru ada perubahan dari turnitinnya juga
+[01:24:23 - 01:24:25] makanya pas kemarin ini
+[01:24:25 - 01:24:27] baru pasti sudah sih gak saya
+[01:24:27 - 01:24:28] baru ada yang pakai kan
+[01:24:28 - 01:24:29] baru ada yang melaporkan
+[01:24:29 - 01:24:31] ini kok minta OTP gitu
+[01:24:31 - 01:24:32] nah itu sih
+[01:24:32 - 01:24:33] nanti paling ya
+[01:24:33 - 01:24:36] kita informasikan di citasi
+[01:24:37 - 01:24:39] mungkin itu aja
+[01:24:39 - 01:24:40] makanya di saya
+[01:24:40 - 01:24:41] hari ini
+[01:24:41 - 01:24:43] terimakasih atas wakunya
+[01:24:43 - 01:24:44] iya
+[01:24:44 - 01:24:45] kalau lama
+[01:24:45 - 01:24:46] iya
+[01:24:46 - 01:24:47] iya
+[01:24:47 - 01:24:48] dipelajari lagi lho
+[01:24:48 - 01:24:49] iya
+[01:24:49 - 01:24:50] iya
+[01:24:50 - 01:24:51] berarti ini saya lanjut ke
+[01:24:51 - 01:24:52] bab 2
+[01:24:52 - 01:24:54] dan coba untuk lanjut ke bab 2 ya
+[01:24:54 - 01:24:55] iya
+[01:24:55 - 01:24:56] nanti sambil
+[01:24:56 - 01:24:59] bab 2 nya dicicilkan bisa masuk ke bab 3
+[01:24:59 - 01:25:00] yang penting bab 2 nya udah
+[01:25:00 - 01:25:03] maksudnya secara konsep udah bisa clear gitu
+[01:25:03 - 01:25:04] iya
+[01:25:04 - 01:25:06] terima kasih banyak
+[01:25:06 - 01:25:07] oke
+[01:25:07 - 01:25:08] oke
+[01:25:08 - 01:25:10] oke
+[01:25:10 - 01:25:11] berarti sudah ada yang mau ngecek
+[01:25:11 - 01:25:12] pakai turnitin teman-teman ya
+[01:25:12 - 01:25:13] iya
+[01:25:13 - 01:25:14] sama ada banyak yang
+[01:25:14 - 01:25:15] but nanti sekalian
+[01:25:15 - 01:25:16] selesai ya
+[01:25:16 - 01:25:17] nanti saya diskusi sama gue
+[01:25:17 - 01:25:19] aman dan minggu lalu saya gak pernah bahas
+[01:25:19 - 01:25:20] cuma belum
+[01:25:20 - 01:25:21] tau gimana solusinya
+[01:25:21 - 01:25:22] iya
+[01:25:22 - 01:25:23] iya
+[01:25:23 - 01:25:24] iya
+[01:25:24 - 01:25:25] iya
+[01:25:25 - 01:25:26] iya
+[01:25:26 - 01:25:27] iya
+[01:25:27 - 01:25:28] iya
+[01:25:28 - 01:25:30] iya

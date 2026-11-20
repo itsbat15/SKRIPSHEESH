@@ -1,0 +1,336 @@
+--- HALAMAN 1 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+15 
+ 
+ 
+Sistem Penjadwalan Menggunakan Algoritma Genetika Berbasis 
+Web 
+ 
+Nur Khafidhoh a,1,*, Arfia Rahmi Febrianti b,2, Sujono c,3 
+a,b,c Universitas KH.A. Wahab Hasbullah, Jl. Garuda No. 9, Tambakberas, Jombang, Jawa Timur, 61419 
+1 nurkhafidhohunwaha@gmail.com*; 2 arfiafebrianti04@gmail.com; 3 sujono@unwaha.ac.id 
+* corresponding author 
+ 
+ARTICLE INFO 
+ABSTRACT (10PT) 
+Keywords 
+Genetic Algorithm, Web-Based 
+Information System, Learning 
+Scheduling, Tutoring 
+Institution, Scheduling System 
+The scheduling process of learning activities at Bimbingan Belajar 
+Anak Hebat Megaluh 7059 was previously conducted manually, which 
+led to potential schedule conflicts, uneven distribution of teaching 
+assignments among tutors, and difficulties for parents in adjusting their 
+children’s study time. This research develops a web-based automatic 
+scheduling system by implementing a genetic algorithm to generate 
+structured and efficient learning schedules. The system is designed by 
+considering tutor availability, learning time preferences, and tutor 
+teaching confirmation. The system development method uses the 
+Waterfall model, which includes requirement analysis, system design, 
+implementation, testing, deployment, and maintenance. The testing 
+results indicate that the system is capable of generating schedules 
+automatically, minimizing tutor schedule conflicts, and supporting a 
+more balanced distribution of teaching assignments. In addition, the 
+system provides reminder notification features via WhatsApp for tutors 
+and parents to support punctuality in learning activities. The 
+implementation of this system improves scheduling management 
+efficiency and supports the smooth operation of Bimbingan Belajar 
+Anak Hebat Megaluh. 
+    
+ 
+1. Pendahuluan 
+Bimbingan belajar merupakan salah satu bentuk pendidikan nonformal yang berperan dalam membantu 
+siswa memahami materi pelajaran di luar jam sekolah. Agar proses pembelajaran berjalan secara optimal, 
+diperlukan pengelolaan jadwal kegiatan belajar yang terstruktur serta sesuai dengan ketersediaan sumber 
+daya. Penjadwalan yang tidak terorganisasi berpotensi menimbulkan berbagai permasalahan, seperti bentrok 
+jadwal, pembagian jadwal mengajar yang kurang seimbang antar guru, serta kesulitan bagi orang tua dalam 
+menyesuaikan waktu belajar anak. Kondisi tersebut pada akhirnya dapat memengaruhi kualitas layanan 
+pembelajaran yang diberikan. 
+Bimbingan Belajar Anak Hebat (AHE) Megaluh 7059 merupakan lembaga pendidikan nonformal yang 
+berfokus pada pengembangan kemampuan membaca, menulis, dan berhitung. Dalam pelaksanaannya, proses 
+penjadwalan kegiatan belajar masih dilakukan secara manual dengan memberikan kebebasan kepada orang 
+tua dalam menentukan waktu belajar anak. Pola penjadwalan seperti ini sering menimbulkan kendala ketika 
+terjadi keterbatasan ketersediaan guru maupun perubahan jadwal secara mendadak, sehingga menyulitkan 
+pengelola dalam menyusun jadwal belajar secara efektif dan efisien. 
+Sejumlah penelitian sebelumnya telah membahas penerapan sistem informasi untuk mendukung 
+pengelolaan kegiatan akademik dan layanan pendidikan. Pemanfaatan sistem berbasis web terbukti mampu  
+
+
+--- HALAMAN 2 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+16 
+ 
+ 
+meningkatkan efisiensi pengelolaan data serta memperbaiki proses administrasi dan pelayanan pendidikan 
+[1], [2]. Selain itu, berbagai penelitian menunjukkan bahwa algoritma genetika banyak digunakan sebagai 
+metode optimasi dalam permasalahan penjadwalan pendidikan karena kemampuannya dalam menangani 
+banyak batasan serta menghasilkan solusi jadwal yang lebih terstruktur dan minim konflik [3][4][5][6][7]. 
+Penerapan algoritma genetika dalam sistem penjadwalan juga telah diimplementasikan pada berbagai konteks 
+pendidikan, seperti penjadwalan mata pelajaran, penjadwalan praktikum, dan distribusi beban mengajar, 
+dengan hasil yang menunjukkan peningkatan efisiensi dan keadilan penjadwalan [8][9]. 
+Berdasarkan permasalahan dan penelitian terdahulu tersebut, penelitian ini mengembangkan sistem 
+penjadwalan otomatis berbasis web dengan menerapkan algoritma genetika pada Bimbingan Belajar Anak 
+Hebat Megaluh 7059. Sistem dirancang untuk membantu pengelola dalam menyusun jadwal belajar yang 
+optimal dengan mempertimbangkan ketersediaan guru, preferensi waktu belajar, serta pemerataan jadwal 
+mengajar. Diharapkan penerapan sistem ini mampu meningkatkan efisiensi pengelolaan jadwal serta 
+mendukung kelancaran operasional kegiatan belajar mengajar. 
+ 
+2. Metodologi Penelitian 
+Metodologi penelitian menjelaskan tahapan pengembangan sistem serta metode penyusunan jadwal yang 
+digunakan pada penelitian ini. Metode yang diterapkan disusun secara sistematis agar proses pengembangan 
+sistem penjadwalan otomatis berbasis web berjalan terarah dan sesuai dengan tujuan penelitian. 
+ 
+2.1. Tahapan Penelitian 
+Tahapan penelitian digunakan sebagai pedoman dalam pengembangan sistem penjadwalan otomatis 
+berbasis web menggunakan algoritma genetika. Penyusunan tahapan dilakukan secara sistematis untuk 
+memastikan setiap proses pengembangan sistem berjalan sesuai dengan kebutuhan pengguna. Tahapan 
+penelitian yang dilakukan ditunjukkan pada Tabel 1. 
+ 
+Tabel 1. Tahapan Penelitian 
+Tahap 
+Kegiatan 
+Analisis Kebutuhan 
+Mengidentifikasi permasalahan penjadwalan dan kebutuhan sistem melalui observasi dan 
+wawancara 
+Perancangan Sistem 
+Merancang alur sistem, struktur basis data, dan antarmuka pengguna 
+Implementasi Sistem 
+Membangun sistem penjadwalan otomatis berbasis web menggunakan PHP dan MySQL 
+Pengujian Sistem 
+Menguji fungsi sistem dan hasil penjadwalan untuk memastikan tidak terjadi bentrok 
+Penerapan dan 
+Pemeliharaan 
+Menerapkan sistem serta melakukan perbaikan apabila ditemukan kendala 
+ 
+2.2. Metode Penyusunan Jadwal Menggunakan Algoritma Genetika 
+Metode algoritma genetika digunakan untuk menyusun jadwal kegiatan belajar secara otomatis pada sistem 
+yang dikembangkan. Algoritma ini banyak diterapkan pada permasalahan penjadwalan pendidikan karena 
+kemampuannya dalam menangani kombinasi solusi yang kompleks serta berbagai batasan, seperti 
+ketersediaan pengajar, pembagian beban mengajar, dan konflik waktu [3], [4], [5]. Penerapan algoritma  
+ 
+
+
+--- HALAMAN 3 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+17 
+ 
+ 
+genetika terbukti mampu menghasilkan jadwal yang lebih terstruktur dan meminimalkan bentrok 
+dibandingkan metode konvensional [6], [7]. 
+ 
+Pada penelitian ini, jadwal direpresentasikan dalam bentuk kromosom yang tersusun dari kombinasi data 
+guru, siswa, hari, dan waktu belajar. Proses algoritma genetika diawali dengan pembentukan populasi awal 
+secara acak. Setiap kromosom kemudian dievaluasi menggunakan fungsi fitness yang dirancang untuk 
+meminimalkan pelanggaran terhadap aturan penjadwalan. [5], [6]. 
+ 
+Fungsi Fitness dirumuskan sebagai berikut : 
+ 
+ 𝑓(𝑥) =  
+1
+1 + (𝑤1𝑃1 + 𝑤2𝑃2 + 𝑤3𝑃3) 
+ 
+ 
+(1) 
+Nilai 𝑃1, 𝑃2, 𝑃3 menunjukkan jumlah pelanggaran terhadap aturan penjadwalan, sedangkan 𝑤1, 𝑤2, 𝑤3 
+merupakan bobot pelanggaran yang menunjukkan tingkat kepentingan masing-masing aturan. Pendekatan 
+evaluasi menggunakan fungsi fitness serupa juga diterapkan pada penelitian penjadwalan pendidikan 
+sebelumnya 
+ 
+Kromosom dengan nilai fitness terbaik dipilih melalui proses seleksi untuk membentuk generasi selanjutnya. 
+Proses crossover dilakukan dengan mengombinasikan kromosom terpilih sehingga menghasilkan variasi 
+solusi jadwal, sedangkan proses mutation diterapkan untuk menjaga keberagaman solusi dan menghindari 
+konvergensi pada solusi yang kurang optimal [9], [10]. Proses ini dilakukan secara berulang hingga diperoleh 
+jadwal yang memenuhi seluruh batasan yang telah ditetapkan. 
+ 
+Hasil akhir dari algoritma genetika berupa jadwal kegiatan belajar yang disimpan ke dalam basis data dan 
+ditampilkan melalui sistem berbasis web. Jadwal tersebut digunakan sebagai acuan pelaksanaan kegiatan 
+belajar di Bimbingan Belajar Anak Hebat (AHE) Megaluh 7059. 
+ 
+2.3. Perancangan Sistem Penjadwalan 
+ 
+Gambar 1. Alur Sistem Penjadwalan Otomatis 
+
+
+--- HALAMAN 4 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+18 
+ 
+ 
+Gambar 1 menunjukkan alur sistem penjadwalan otomatis yang diusulkan. Proses dimulai dengan 
+aktivasi sistem oleh admin agar guru dan orang tua dapat memilih waktu belajar. Selanjutnya, admin 
+memastikan data guru, siswa, dan orang tua telah lengkap. Sistem mengirimkan notifikasi WhatsApp 
+kepada guru dan orang tua untuk mengisi ketersediaan waktu belajar. Data tersebut kemudian diproses 
+menggunakan algoritma genetika untuk menghasilkan jadwal belajar otomatis. Jadwal yang dihasilkan 
+digunakan sebagai acuan kegiatan belajar serta didukung dengan fitur pengingat dan akses jadwal bagi 
+pengguna.  
+ 
+2.4. Pengujian Sistem 
+Pengujian sistem dilakukan untuk memastikan bahwa sistem penjadwalan otomatis berbasis web 
+berfungsi sesuai dengan kebutuhan dan mampu menghasilkan jadwal belajar tanpa konflik. Pengujian 
+difokuskan pada pengujian fungsional sistem, khususnya pada proses input data, penyusunan jadwal otomatis 
+menggunakan algoritma genetika, serta penyampaian informasi jadwal kepada pengguna. 
+Metode pengujian yang digunakan pada penelitian ini berupa black box testing, yaitu pengujian yang 
+menitikberatkan pada fungsi sistem tanpa melihat struktur kode program. Pengujian dilakukan dengan 
+memberikan sejumlah skenario input, seperti data guru, data siswa, ketersediaan waktu belajar, serta 
+perubahan jadwal, kemudian mengamati keluaran yang dihasilkan oleh sistem. Sistem dinyatakan berjalan 
+dengan baik apabila hasil keluaran sesuai dengan fungsi yang diharapkan dan tidak ditemukan bentrok jadwal 
+pengajar. 
+Selain itu, pengujian juga dilakukan pada fitur notifikasi WhatsApp untuk memastikan pesan pengingat 
+jadwal dapat diterima oleh guru dan orang tua sesuai dengan jadwal yang telah ditetapkan. Hasil pengujian 
+menunjukkan bahwa seluruh fungsi utama sistem berjalan sesuai dengan perancangan dan mampu 
+mendukung proses penjadwalan kegiatan belajar secara efektif. 
+ 
+3. Hasil dan Pembahasan 
+Bagian ini menyajikan hasil implementasi sistem penjadwalan otomatis berbasis web yang dikembangkan 
+serta pembahasan terhadap hasil pengujian sistem. Pembahasan difokuskan pada kemampuan sistem dalam 
+menyusun jadwal belajar secara otomatis, meminimalkan bentrok jadwal, serta mendukung proses 
+pengelolaan jadwal di Bimbingan Belajar Anak Hebat Megaluh 7059. 
+ 
+3.1 Hasil Implementasi Sistem 
+Hasil implementasi menunjukkan bahwa sistem penjadwalan otomatis berbasis web dapat berjalan sesuai 
+dengan perancangan yang telah ditetapkan. Sistem mampu mengelola data guru, data siswa, serta data 
+ketersediaan waktu belajar sebagai dasar dalam proses penyusunan jadwal. Melalui antarmuka berbasis web, 
+admin dapat mengelola data dengan mudah, sedangkan guru dan orang tua dapat mengisi preferensi waktu 
+belajar sesuai dengan ketersediaan masing-masing. 
+Setelah data ketersediaan waktu terkumpul, sistem memproses data tersebut menggunakan algoritma 
+genetika untuk menghasilkan jadwal belajar otomatis. Jadwal yang dihasilkan disimpan ke dalam basis data 
+dan dapat diakses oleh pengguna melalui sistem. Selain itu, sistem menyediakan fitur notifikasi WhatsApp 
+untuk menyampaikan informasi jadwal dan pengingat kepada guru serta orang tua siswa. 
+ 
+
+
+--- HALAMAN 5 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+19 
+ 
+ 
+3.2 Hasil Pengujian Sistem 
+Pengujian sistem dilakukan menggunakan metode black box testing untuk memastikan setiap fungsi 
+sistem berjalan sesuai dengan kebutuhan. Hasil pengujian menunjukkan bahwa fungsi input data, proses 
+penyusunan jadwal otomatis, serta penyampaian informasi jadwal dapat berjalan dengan baik. Sistem mampu 
+meminimalkan terjadinya bentrok jadwal pengajar dan memastikan jadwal disusun sesuai dengan 
+ketersediaan waktu yang telah ditentukan. 
+Pengujian pada fitur notifikasi WhatsApp juga menunjukkan bahwa sistem berhasil mengirimkan pesan 
+pengingat jadwal kepada guru dan orang tua secara tepat. Dengan adanya fitur ini, pengguna memperoleh 
+informasi jadwal secara lebih cepat dan akurat, sehingga mendukung ketepatan waktu pelaksanaan kegiatan 
+belajar. 
+ 
+3.3 Pembahasan 
+Berdasarkan hasil implementasi dan pengujian, penerapan algoritma genetika pada sistem penjadwalan 
+otomatis terbukti mampu membantu pengelola dalam menyusun jadwal belajar secara lebih efisien 
+dibandingkan metode manual. Algoritma genetika memungkinkan sistem untuk mempertimbangkan berbagai 
+batasan penjadwalan secara bersamaan, sehingga jadwal yang dihasilkan lebih terstruktur dan minim konflik. 
+ 
+Selain itu, integrasi sistem berbasis web dengan notifikasi WhatsApp memberikan kemudahan bagi guru 
+dan orang tua dalam memperoleh informasi jadwal serta melakukan penyesuaian apabila terjadi perubahan. 
+Hasil ini sejalan dengan penelitian sebelumnya yang menyatakan bahwa algoritma genetika efektif digunakan 
+dalam permasalahan penjadwalan pendidikan dan mampu meningkatkan efisiensi pengelolaan jadwal. 
+ 
+4. Kesimpulan 
+Berdasarkan hasil perancangan, implementasi, dan pengujian yang telah dilakukan, sistem penjadwalan 
+otomatis berbasis web dengan penerapan algoritma genetika mampu membantu proses penyusunan jadwal 
+kegiatan belajar di Bimbingan Belajar Anak Hebat Megaluh 7059. Sistem dapat menghasilkan jadwal belajar 
+secara otomatis dengan mempertimbangkan ketersediaan guru, preferensi waktu belajar, serta pemerataan 
+jadwal mengajar. 
+Penerapan algoritma genetika pada sistem penjadwalan terbukti mampu meminimalkan terjadinya bentrok 
+jadwal pengajar dan meningkatkan efisiensi pengelolaan jadwal dibandingkan dengan metode manual. Selain 
+itu, integrasi fitur notifikasi WhatsApp mempermudah guru dan orang tua dalam memperoleh informasi 
+jadwal serta mendukung ketepatan waktu pelaksanaan kegiatan belajar. 
+Secara keseluruhan, sistem yang dikembangkan mampu mendukung kelancaran operasional bimbingan 
+belajar dan meningkatkan kualitas layanan pembelajaran. Pengembangan selanjutnya dapat dilakukan dengan 
+menambahkan parameter penjadwalan yang lebih kompleks serta memperluas integrasi sistem dengan fitur 
+pendukung lainnya. 
+ 
+Daftar Pustaka 
+ 
+[1] 
+F. Nurul, U. Teguh, and A. Chandra, “Upaya Meningkatkan Pelayanan Vaksinasi COVID-19 
+Memanfaatkan Website dan WhatsApp Gateway,” J. Teknol., vol. 12, no. 1, pp. 1–8, 2022. 
+[2] 
+H. Mukhtar, “Aplikasi Penjadwalan Otomatis Ujian Proposal Dan Sidang Skripsi Pada Fakultas Ilmu 
+Komputer Universitas Muhammadiyah Riau,” J. Fasilkom, vol. 8, no. 1, pp. 315–333, 2019, doi: 
+
+
+--- HALAMAN 6 ---
+[E-ISSN 2656-0321] 
+[Vol 20 No 2] 
+https://doi.org/10.47111/JTI 
+Available online at https://e-journal.upr.ac.id/index.php/JTI 
+ 
+ 
+ 
+ 
+20 
+ 
+10.37859/jf.v8i1.1196. 
+[3] 
+K. N. Subang, E. I. Balaba, and J. C. Agoylo Jr., “Optimizing Course Scheduling with Genetic 
+Algorithms : A Dynamic Approach,” SAR J., vol. 7, no. 4, pp. 296–302, 2024, doi: 10.18421/SAR74-
+02. 
+[4] 
+N. S. Meutia and R. P. N. Budiarti, “Optimizing Course Scheduling Efficiency through Genetic 
+Algorithms,” Appl. Technol. Comput. Sci. J., vol. 8, no. 1, pp. 1–11, 2025. 
+[5] 
+A. B. N. Aji, A. S. Lutfifassa, B. A. Thanta, R. A. Pangestu, and P. Rosyani, “Sistem Penjadwalan 
+Mata Kuliah Menggunakan Algoritma Genetika,” J. Artif. Intel. dan Sist. Penunjang Keputusan, vol. 
+2, no. 1, pp. 75–78, 2024, [Online]. Available: https://jurnalmahasiswa.com/index.php/aidanspk 
+[6] 
+L. A. Pangestu, S. H. Suryawan, and A. J. Latipah, “Penerapan Algoritma Genetika Dalam 
+Penjadwalan Mata Pelajaran,” J. Inform., vol. 10, no. 2, pp. 194–205, 2023, doi: 
+10.31294/inf.v10i2.16701. 
+[7] 
+B. Muqdamien and A. Hestiningtyas, “Towards Fair and Efficient Timetabling : A Genetic Algorithm 
+Model Integrating Lecturer Day-Off Requests,” Int. J. Informatics Dev., vol. 14, no. 1, pp. 575–586, 
+2025, doi: 10.14421/ijid.2025.5067. 
+[8] 
+A. S. Setyorini, T. Listyorini, and E. Supriyati, “Forecasting Straight Line Method in the Learning 
+Monitoring System at Anak Hebat Education (AHE) in Kudus,” J. Tek. Inform., vol. 15, no. 1, pp. 81–
+90, 2022, doi: 10.15408/jti.v15i1.24683. 
+[9] 
+T. M. Alexander and A. T. Putra, “Course Scheduling Optimization Using Genetic Algorithms with 
+Fuzzy Tsukamoto-Based Fitness Adjustment,” J. Penelit. Pendidik., vol. 42, no. 2, pp. 321–326, 2025. 
+[10] 
+M. C. Yustina, I. N. Ichsan, and G. M. Suranegara, “Implementasi Algoritma Genetika Proses Mutasi 
+Differential Evolution,” KLIK Kaji. Ilm. Inform. dan Komput., vol. 5, no. 1, pp. 116–130, 2024, doi: 
+10.30865/klik.v5i1.2109. 
+ 
+ 
+ 
+ 
+

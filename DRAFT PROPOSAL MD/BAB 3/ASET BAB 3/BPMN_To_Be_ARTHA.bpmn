@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_ToBe"
+             targetNamespace="http://www.bizagi.com/definitions/ToBe"
+             exporter="Bizagi Process Modeler"
+             exporterVersion="12.0">
+  <collaboration id="Collaboration_ToBe">
+    <participant id="Participant_ToBe" name="Proses Bisnis Usulan Operasional Terintegrasi Bimbel ARTHA (To-Be)" processRef="Process_ToBe" />
+  </collaboration>
+  <process id="Process_ToBe" isExecutable="false">
+    <laneSet id="LaneSet_ToBe">
+      <lane id="Lane_WaliMurid_TB" name="Wali Murid / Siswa">
+        <flowNodeRef>StartEvent_TB</flowNodeRef>
+        <flowNodeRef>Task_IsiFormulir_TB</flowNodeRef>
+        <flowNodeRef>Gateway_Bayar_TB</flowNodeRef>
+        <flowNodeRef>Task_TransferBank_TB</flowNodeRef>
+        <flowNodeRef>EndEvent_TB</flowNodeRef>
+      </lane>
+      <lane id="Lane_KakAgian_TB" name="Staf Administrasi Cabang (Kak Agian)">
+        <flowNodeRef>Task_InputWeb_TB</flowNodeRef>
+        <flowNodeRef>Task_KasirTunai_TB</flowNodeRef>
+        <flowNodeRef>Task_SerahkanJadwal_TB</flowNodeRef>
+      </lane>
+      <lane id="Lane_IbuEmi_TB" name="Pengelola Keuangan Pusat (Ibu Emi)">
+        <flowNodeRef>Task_VerifPusat_TB</flowNodeRef>
+      </lane>
+    </laneSet>
+
+    <!-- Data Objects & Data Store -->
+    <dataObject id="DO_Formulir_TB" name="Formulir Pendaftaran Fisik" />
+    <dataStoreReference id="DSR_MySQL_TB" name="Basis Data Terpusat MySQL" />
+    <dataObject id="DO_BuktiTransfer_TB" name="Bukti Transfer / QRIS" />
+    <dataObject id="DO_KuitansiPDF_TB" name="Kuitansi PDF dan Jadwal Belajar" />
+
+    <!-- Flow Nodes -->
+    <startEvent id="StartEvent_TB" name="Mulai">
+      <outgoing>Flow_TB_1</outgoing>
+    </startEvent>
+
+    <manualTask id="Task_IsiFormulir_TB" name="Wali Murid Mengisi Formulir Pendaftaran Fisik di Meja Cabang">
+      <incoming>Flow_TB_1</incoming>
+      <outgoing>Flow_TB_2</outgoing>
+    </manualTask>
+
+    <userTask id="Task_InputWeb_TB" name="Kak Agian Input Data Formulir ke Aplikasi Web ARTHA">
+      <incoming>Flow_TB_2</incoming>
+      <outgoing>Flow_TB_3</outgoing>
+    </userTask>
+
+    <exclusiveGateway id="Gateway_Bayar_TB" name="Pilihan Metode Bayar (Tunai atau Transfer)">
+      <incoming>Flow_TB_3</incoming>
+      <outgoing>Flow_TB_Tunai</outgoing>
+      <outgoing>Flow_TB_Transfer</outgoing>
+    </exclusiveGateway>
+
+    <userTask id="Task_KasirTunai_TB" name="Kak Agian Terima Uang Tunai dan Konfirmasi Lunas di Dasbor Kasir Cabang">
+      <incoming>Flow_TB_Tunai</incoming>
+      <outgoing>Flow_TB_4</outgoing>
+    </userTask>
+
+    <userTask id="Task_TransferBank_TB" name="Wali Murid Transfer via m-Banking dan Unggah Bukti Bayar">
+      <incoming>Flow_TB_Transfer</incoming>
+      <outgoing>Flow_TB_5</outgoing>
+    </userTask>
+
+    <userTask id="Task_VerifPusat_TB" name="Ibu Emi Verifikasi dan Validasi Bukti Transfer via Dasbor Pusat">
+      <incoming>Flow_TB_5</incoming>
+      <outgoing>Flow_TB_6</outgoing>
+    </userTask>
+
+    <userTask id="Task_SerahkanJadwal_TB" name="Kak Agian Serahkan Kuitansi PDF dan Tempatkan Siswa ke Rombel Sesi">
+      <incoming>Flow_TB_4</incoming>
+      <incoming>Flow_TB_6</incoming>
+      <outgoing>Flow_TB_7</outgoing>
+    </userTask>
+
+    <endEvent id="EndEvent_TB" name="Siswa Resmi Mengikuti KBM di Cabang">
+      <incoming>Flow_TB_7</incoming>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_TB_1" sourceRef="StartEvent_TB" targetRef="Task_IsiFormulir_TB" />
+    <sequenceFlow id="Flow_TB_2" sourceRef="Task_IsiFormulir_TB" targetRef="Task_InputWeb_TB" />
+    <sequenceFlow id="Flow_TB_3" sourceRef="Task_InputWeb_TB" targetRef="Gateway_Bayar_TB" />
+    <sequenceFlow id="Flow_TB_Tunai" name="Tunai" sourceRef="Gateway_Bayar_TB" targetRef="Task_KasirTunai_TB" />
+    <sequenceFlow id="Flow_TB_Transfer" name="Transfer atau QRIS" sourceRef="Gateway_Bayar_TB" targetRef="Task_TransferBank_TB" />
+    <sequenceFlow id="Flow_TB_4" sourceRef="Task_KasirTunai_TB" targetRef="Task_SerahkanJadwal_TB" />
+    <sequenceFlow id="Flow_TB_5" sourceRef="Task_TransferBank_TB" targetRef="Task_VerifPusat_TB" />
+    <sequenceFlow id="Flow_TB_6" sourceRef="Task_VerifPusat_TB" targetRef="Task_SerahkanJadwal_TB" />
+    <sequenceFlow id="Flow_TB_7" sourceRef="Task_SerahkanJadwal_TB" targetRef="EndEvent_TB" />
+
+    <!-- Associations -->
+    <association id="Assoc_Formulir_TB" sourceRef="DO_Formulir_TB" targetRef="Task_IsiFormulir_TB" />
+    <association id="Assoc_MySQL_TB" sourceRef="Task_InputWeb_TB" targetRef="DSR_MySQL_TB" />
+    <association id="Assoc_Bukti_TB" sourceRef="Task_TransferBank_TB" targetRef="DO_BuktiTransfer_TB" />
+    <association id="Assoc_KuitansiPDF_TB" sourceRef="Task_SerahkanJadwal_TB" targetRef="DO_KuitansiPDF_TB" />
+  </process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_ToBe">
+    <bpmndi:BPMNPlane id="BPMNPlane_ToBe" bpmnElement="Collaboration_ToBe">
+      <!-- Pool -->
+      <bpmndi:BPMNShape id="Participant_ToBe_di" bpmnElement="Participant_ToBe" isHorizontal="true">
+        <dc:Bounds x="100" y="80" width="1380" height="660" />
+      </bpmndi:BPMNShape>
+
+      <!-- Lanes -->
+      <bpmndi:BPMNShape id="Lane_WaliMurid_TB_di" bpmnElement="Lane_WaliMurid_TB" isHorizontal="true">
+        <dc:Bounds x="130" y="80" width="1350" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_KakAgian_TB_di" bpmnElement="Lane_KakAgian_TB" isHorizontal="true">
+        <dc:Bounds x="130" y="300" width="1350" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_IbuEmi_TB_di" bpmnElement="Lane_IbuEmi_TB" isHorizontal="true">
+        <dc:Bounds x="130" y="520" width="1350" height="220" />
+      </bpmndi:BPMNShape>
+
+      <!-- Start Event (x=162, y=172) -->
+      <bpmndi:BPMNShape id="StartEvent_TB_di" bpmnElement="StartEvent_TB">
+        <dc:Bounds x="162" y="172" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="166" y="215" width="28" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 1: Wali Murid Isi Formulir (x=240, y=155) -->
+      <bpmndi:BPMNShape id="Task_IsiFormulir_TB_di" bpmnElement="Task_IsiFormulir_TB">
+        <dc:Bounds x="240" y="155" width="140" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_Formulir_TB_di" bpmnElement="DO_Formulir_TB">
+        <dc:Bounds x="290" y="95" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="265" y="75" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2: Kak Agian Input Web (x=420, y=375) -->
+      <bpmndi:BPMNShape id="Task_InputWeb_TB_di" bpmnElement="Task_InputWeb_TB">
+        <dc:Bounds x="420" y="375" width="150" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DSR_MySQL_TB_di" bpmnElement="DSR_MySQL_TB">
+        <dc:Bounds x="470" y="465" width="50" height="45" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="445" y="515" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway Bayar (x=610, y=165) -->
+      <bpmndi:BPMNShape id="Gateway_Bayar_TB_di" bpmnElement="Gateway_Bayar_TB" isMarkerVisible="true">
+        <dc:Bounds x="610" y="165" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="575" y="135" width="120" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Tunai: Task 3 Kasir Tunai (x=700, y=375) -->
+      <bpmndi:BPMNShape id="Task_KasirTunai_TB_di" bpmnElement="Task_KasirTunai_TB">
+        <dc:Bounds x="700" y="375" width="160" height="70" />
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Transfer: Task 4 Wali Murid Transfer (x=700, y=155) -->
+      <bpmndi:BPMNShape id="Task_TransferBank_TB_di" bpmnElement="Task_TransferBank_TB">
+        <dc:Bounds x="700" y="155" width="160" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_BuktiTransfer_TB_di" bpmnElement="DO_BuktiTransfer_TB">
+        <dc:Bounds x="760" y="95" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="740" y="75" width="80" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Transfer: Task 5 Ibu Emi Verifikasi (x=900, y=595) -->
+      <bpmndi:BPMNShape id="Task_VerifPusat_TB_di" bpmnElement="Task_VerifPusat_TB">
+        <dc:Bounds x="900" y="595" width="160" height="70" />
+      </bpmndi:BPMNShape>
+
+      <!-- Merged: Task 6 Serahkan Jadwal & Rombel (x=1120, y=375) -->
+      <bpmndi:BPMNShape id="Task_SerahkanJadwal_TB_di" bpmnElement="Task_SerahkanJadwal_TB">
+        <dc:Bounds x="1120" y="375" width="160" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_KuitansiPDF_TB_di" bpmnElement="DO_KuitansiPDF_TB">
+        <dc:Bounds x="1180" y="465" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1150" y="520" width="100" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- End Event (x=1340, y=172) -->
+      <bpmndi:BPMNShape id="EndEvent_TB_di" bpmnElement="EndEvent_TB">
+        <dc:Bounds x="1340" y="172" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1310" y="215" width="100" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges (Exact Orthogonal Waypoints) -->
+      <!-- Flow 1: Start -> Isi Formulir -->
+      <bpmndi:BPMNEdge id="Flow_TB_1_di" bpmnElement="Flow_TB_1">
+        <di:waypoint x="198" y="190" />
+        <di:waypoint x="240" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 2: Isi Formulir -> Input Web -->
+      <bpmndi:BPMNEdge id="Flow_TB_2_di" bpmnElement="Flow_TB_2">
+        <di:waypoint x="380" y="190" />
+        <di:waypoint x="400" y="190" />
+        <di:waypoint x="400" y="410" />
+        <di:waypoint x="420" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 3: Input Web -> Gateway -->
+      <bpmndi:BPMNEdge id="Flow_TB_3_di" bpmnElement="Flow_TB_3">
+        <di:waypoint x="570" y="410" />
+        <di:waypoint x="590" y="410" />
+        <di:waypoint x="590" y="190" />
+        <di:waypoint x="610" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow Tunai: Gateway -> Kasir Tunai -->
+      <bpmndi:BPMNEdge id="Flow_TB_Tunai_di" bpmnElement="Flow_TB_Tunai">
+        <di:waypoint x="635" y="215" />
+        <di:waypoint x="635" y="410" />
+        <di:waypoint x="700" y="410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="645" y="290" width="30" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow Transfer: Gateway -> Wali Murid Transfer -->
+      <bpmndi:BPMNEdge id="Flow_TB_Transfer_di" bpmnElement="Flow_TB_Transfer">
+        <di:waypoint x="660" y="190" />
+        <di:waypoint x="700" y="190" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="665" y="170" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 4: Kasir Tunai -> Serahkan Jadwal -->
+      <bpmndi:BPMNEdge id="Flow_TB_4_di" bpmnElement="Flow_TB_4">
+        <di:waypoint x="860" y="410" />
+        <di:waypoint x="1120" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 5: Transfer Bank -> Verifikasi Pusat -->
+      <bpmndi:BPMNEdge id="Flow_TB_5_di" bpmnElement="Flow_TB_5">
+        <di:waypoint x="860" y="190" />
+        <di:waypoint x="880" y="190" />
+        <di:waypoint x="880" y="630" />
+        <di:waypoint x="900" y="630" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 6: Verifikasi Pusat -> Serahkan Jadwal -->
+      <bpmndi:BPMNEdge id="Flow_TB_6_di" bpmnElement="Flow_TB_6">
+        <di:waypoint x="1060" y="630" />
+        <di:waypoint x="1090" y="630" />
+        <di:waypoint x="1090" y="410" />
+        <di:waypoint x="1120" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 7: Serahkan Jadwal -> End Event -->
+      <bpmndi:BPMNEdge id="Flow_TB_7_di" bpmnElement="Flow_TB_7">
+        <di:waypoint x="1280" y="410" />
+        <di:waypoint x="1310" y="410" />
+        <di:waypoint x="1310" y="190" />
+        <di:waypoint x="1340" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Associations -->
+      <bpmndi:BPMNEdge id="Assoc_Formulir_TB_di" bpmnElement="Assoc_Formulir_TB">
+        <di:waypoint x="310" y="145" />
+        <di:waypoint x="310" y="155" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_MySQL_TB_di" bpmnElement="Assoc_MySQL_TB">
+        <di:waypoint x="495" y="445" />
+        <di:waypoint x="495" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_Bukti_TB_di" bpmnElement="Assoc_Bukti_TB">
+        <di:waypoint x="780" y="145" />
+        <di:waypoint x="780" y="155" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_KuitansiPDF_TB_di" bpmnElement="Assoc_KuitansiPDF_TB">
+        <di:waypoint x="1200" y="445" />
+        <di:waypoint x="1200" y="465" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

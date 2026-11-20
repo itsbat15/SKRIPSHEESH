@@ -1,0 +1,2313 @@
+ 
+BAB 3​
+RANCANGAN PROTOTIPE 
+ 
+Bab ini menguraikan rancangan prototipe sistem informasi manajemen 
+operasional berbasis web untuk Bimbingan Belajar Artha Balikpapan. 
+Pembahasan mencakup garis besar prototipe, tahapan pembuatan, prosedur 
+pengembangan, konsep sistem, spesifikasi teknis, dan rencana jadwal 
+pelaksanaan. 
+3.1.​
+Garis Besar Prototipe 
+Penelitian ini merancang prototipe Sistem Informasi Manajemen 
+Operasional 
+Bimbingan 
+Belajar 
+Multicabang 
+berbasis 
+web 
+untuk 
+mengintegrasikan operasional delapan kantor cabang Bimbel ARTHA di Kota 
+Balikpapan. Prototipe ini diarahkan untuk mendigitalisasi tata kelola administrasi 
+operasional dan keuangan lembaga secara terpusat sebagai pengganti mekanisme 
+pencatatan manual. Empat fungsi utama yang dibangun meliputi pengelolaan data 
+pendaftaran siswa baru, pencatatan transaksi pembayaran oleh Staf Administrasi 
+Cabang, verifikasi berkas bukti transfer oleh Manajemen Pusat, serta pemantauan 
+rekapitulasi kas seluruh cabang. Seluruh transaksi operasional tersebut 
+diintegrasikan ke dalam satu database MySQL untuk menjamin integritas data 
+transaksi dan transparansi pelaporan kas lembaga. 
+Akses operasional sistem dibatasi pada dua peran pengguna utama, yaitu 
+Super Admin bagi Pemilik Lembaga dan Staf Administrasi bagi karyawan 
+operasional di delapan kantor cabang. Ruang lingkup fungsional sistem 
+difokuskan pada transaksi penerimaan pembayaran dan administrasi kesiswaan, 
+sehingga tidak mencakup modul pengelolaan jadwal mengajar tentor dan 
+penyediaan akun bagi siswa dan orang tua murid. Penetapan batasan ruang 
+lingkup ini selaras dengan kesepakatan bersama Pemilik Lembaga yang 
+menempatkan digitalisasi tata kelola pendaftaran, pembayaran dan administrasi 
+siswa serta pengawasan kas multicabang sebagai prioritas operasional paling 
+mendesak. 
+50 
+ 
+Proses perancangan dan pembangunan prototipe ini menerapkan 
+metodologi Personal Extreme Programming (PxP) melalui tujuh tahapan 
+terstruktur, yaitu Requirements, Planning, Iteration Initialization, Design, 
+Implementation, System Testing, dan Retrospective. Prototipe yang dihasilkan 
+berupa aplikasi web yang dapat diakses secara fleksibel menggunakan internet 
+pada tablet di masing-masing cabang. Keberhasilan prototipe dievaluasi secara 
+objektif melalui pengujian User Acceptance Testing (UAT) bersama Pemilik 
+Lembaga serta Staf Administrasi untuk memastikan seluruh skenario kebutuhan 
+fungsional telah terpenuhi secara optimal. 
+3.2.​
+Tahapan Pembuatan Prototipe 
+Pembuatan prototipe sistem informasi manajemen bimbingan belajar 
+multicabang 
+ARTHA 
+menerapkan 
+kerangka 
+kerja 
+Personal 
+Extreme 
+Programming (PxP) dengan evaluasi penerimaan pengguna. Metodologi ini 
+membagi alur kerja ke dalam tujuh tahapan utama, yaitu requirements, planning, 
+iteration initialization, design, implementation, system testing, dan retrospective, 
+yang ditutup dengan tahap User Acceptance Testing (UAT) serta deployment. 
+Diagram alir tahapan pembuatan prototipe disajikan pada Gambar 3.1.  
+ 
+51 
+ 
+ 
+Gambar 3.1 Tahapan Pembuatan Prototipe  
+Berdasarkan Gambar 3.1, proses diawali dari perumusan user stories pada 
+tahap requirements, yang kemudian diestimasi bobotnya dan dipetakan urutan 
+pengerjaannya pada tahap planning. Siklus pengembangan selanjutnya berjalan 
+52 
+ 
+secara berulang melalui tahapan inisialisasi iterasi, perancangan diagram dan 
+antarmuka, implementasi kode, hingga pengujian sistem. Setiap siklus ditutup 
+dengan evaluasi retrospeksi untuk menentukan kesiapan prototipe atau kebutuhan 
+iterasi lanjutan. Setelah seluruh siklus iterasi PxP terpenuhi, sistem diuji 
+kelayakannya bersama pihak mitra melalui User Acceptance Testing sebelum 
+tahap deployment. Penjelasan untuk setiap tahapan tersebut dijabarkan secara 
+mendalam pada Subbab 3.3.  
+3.3.​
+Prosedur 
+Subbab ini menjelaskan langkah kerja yang detail untuk setiap tahapan 
+dalam siklus pengembangan prototipe sistem informasi ARTHA. Prosedur 
+pengembangan prototipe disajikan pada sembilan sub-subbab berikut.  
+3.3.1.​
+Requirements 
+Tahap kebutuhan berfokus pada penggalian masalah dan kebutuhan 
+operasional di delapan kantor cabang Bimbel ARTHA. Pengumpulan data 
+dilakukan melalui wawancara bersama Pemilik Lembaga dan Staf 
+Administrasi Cabang, disertai observasi langsung terhadap dokumen 
+pencatatan fisik seperti buku besar pendaftaran dan lembar rekapitulasi 
+harian kas. Seluruh temuan kebutuhan pengguna kemudian dipetakan ke 
+dalam User Stories yang dilengkapi dengan acceptance criteria. Skala 
+prioritas pengerjaan fitur ditentukan berdasarkan customer business value 
+dan ketergantungan antarmodul, untuk memastikan pendaftaran siswa 
+terselesaikan terlebih dahulu sebelum modul pelaporan lanjutan.  
+3.3.2.​
+Planning 
+Tahap 
+perencanaan 
+bertujuan 
+menyusun 
+rencana 
+kerja 
+pengembangan perangkat lunak secara realistis. Setiap User Story yang 
+telah 
+disusun 
+pada 
+tahap 
+kebutuhan 
+diberikan 
+estimasi 
+bobot 
+menggunakan Story Points. Keterkaitan antarmodul dipetakan secara 
+terstruktur untuk menentukan urutan modul yang harus dibangun lebih 
+awal. Seluruh beban kerja kemudian dialokasikan ke dalam perencanaan 
+iterasi sebagai target acuan jadwal penyelesaian prototipe.  
+53 
+ 
+3.3.3.​
+Iteration Initialization 
+Tahap inisialisasi iterasi menandai dimulainya satu siklus 
+pengembangan spesifik. Pengembang menyiapkan konfigurasi repositori 
+Git dengan strategi branch yang teratur, instalasi Next.js dan Laravel, serta 
+persiapan database MySQL. Pada tahap ini, sekumpulan User Stories 
+dengan prioritas tertinggi untuk iterasi dipilih untuk memastikan fokus 
+pengerjaan perangkat lunak terarah.  
+3.3.4.​
+Design 
+Tahap perancangan menerjemahkan kebutuhan fungsional menjadi 
+blueprint sebelum kode program dibuat. Pemodelan proses bisnis usulan 
+(To-Be) dirancang untuk menggambarkan alur interaksi operasional 
+antarpengguna. Kebutuhan fungsional dan alur interaksi pengguna dengan 
+perangkat lunak dimodelkan menggunakan Use Case Diagram serta 
+Activity Diagram. Struktur data relasional dirancang menggunakan Entity 
+Relationship Diagram (ERD) lengkap dengan spesifikasi data di MySQL. 
+Selain itu, tahap ini mencakup penerapan arsitektur sistem serta rancangan 
+antarmuka pengguna dalam bentuk wireframe low-fidelity.  
+3.3.5.​
+Implementation 
+Tahap implementasi menerapkan siklus berulang antara Unit 
+Testing, Code, dan Refactor. Pengembang melakukan pengujian fungsi 
+unit kode secara langsung untuk memvalidasi logika perhitungan dan 
+pembatasan hak akses cabang. Pengembangan antarmuka web dibangun 
+menggunakan Next.js App Router dan Tailwind CSS, pengembangan API 
+backend dibangun menggunakan Laravel RESTful API, serta pengelolaan 
+basis data relasional dikelola melalui migrasi MySQL. Setelah fitur 
+berhasil lolos pengujian fungsi, refactoring dilakukan untuk merapikan 
+kode program yang duplikat dan mengoptimasi kinerja algoritma tanpa 
+mengubah fungsional sistem.  
+3.3.6.​
+System Testing 
+Pengujian fungsionalitas antarmuka dan alur transaksi dilakukan 
+menggunakan metode Black Box Testing dengan skenario uji coba positif 
+54 
+ 
+maupun negatif. Pengujian integrasi antarmuka Next.js dengan server 
+Laravel API melalui otentikasi token Sanctum dievaluasi untuk 
+memastikan tidak terjadi kebocoran data antarcabang. Seluruh bug yang 
+ditemukan selama pengujian dicatat pada log pengujian untuk segera 
+diperbaiki sebelum siklus iterasi ditutup.  
+3.3.7.​
+Retrospective 
+Tahap retrospeksi berfungsi sebagai evaluasi penutup dari setiap 
+siklus iterasi yang telah selesai dijalankan. Pengembang meninjau tingkat 
+ketercapaian Story Points yang berhasil diselesaikan dibandingkan dengan 
+target 
+awal 
+perencanaan. 
+Prototipe 
+fungsional 
+hasil 
+iterasi 
+didemonstrasikan kepada Pemilik Lembaga dan perwakilan Staf 
+Administrasi Cabang untuk memperoleh umpan balik secara langsung. 
+Evaluasi retrospeksi menentukan keputusan apakah sistem masih 
+memerlukan iterasi perbaikan lanjutan, atau telah siap ke tahap validasi 
+penerimaan akhir.  
+3.3.8.​
+User Acceptance Testing 
+Pengujian penerimaan pengguna dilaksanakan setelah seluruh 
+siklus iterasi PxP dan seluruh fungsionalitas utama selesai dijalankan. 
+Pengujian ini melibatkan Pemilik Lembaga dan staf administrasi dari 
+cabang sebagai pengguna akhir sistem. Instrumen pengujian menggunakan 
+Lembar Skenario Uji Fungsional (UAT Test Cases Checklist) yang 
+mencakup uji operasional modul pendaftaran, pembayaran, penjadwalan, 
+dan rekonsiliasi kas. Pelaksanaan UAT difokuskan pada pengisian 
+checklist fungsional dan diselesaikan dengan penandatanganan Berita 
+Acara Penerimaan Sistem (Sign-Off) sebagai bukti formal bahwa prototipe 
+telah disetujui dan memenuhi kebutuhan operasional mitra.  
+3.3.9.​
+Deployment 
+Tahap deployment merupakan langkah finalisasi teknis untuk 
+mempublikasikan prototipe aplikasi web. Frontend Next.js diterapkan 
+pada platform Vercel untuk memanfaatkan otomatisasi CI/CD repositori 
+Git. Dari sisi backend Laravel API dan database MySQL diterapkan pada 
+55 
+ 
+Cloud Hostinger yang dikonfigurasi dengan web server Nginx dan 
+proteksi sertifikat keamanan HTTPS SSL. Pengujian kemudian dilakukan 
+dari delapan kantor cabang untuk memastikan sistem dapat diakses secara 
+stabil dan bersamaan.  
+3.4.​
+Konsep Prototipe 
+Konsep prototipe menjelaskan rancangan awal, kondisi objek penelitian, 
+serta dokumen yang menjadi landasan dan acuan utama dalam pengembangan 
+sistem informasi manajemen operasional Bimbel ARTHA. Rincian konsep 
+prototipe tersebut disajikan pada delapan sub-subbab berikut. 
+3.4.1.​
+Perancangan Arsitektur Sistem 
+Sistem informasi manajemen operasional bimbingan belajar 
+ARTHA dirancang menggunakan pola arsitektur perangkat lunak terpisah 
+dengan three-tier architecture (Sommerville, 2011; Yusup dkk., 2010). 
+Pemisahan ini membagi batasan tanggung jawab antara lapisan antarmuka 
+pengguna pada sisi klien (frontend), lapisan pemrosesan logika operasional 
+backend, dan lapisan penyimpanan data (database). Pendekatan tersebut 
+diterapkan untuk menjamin responsivitas antarmuka di delapan kantor 
+cabang saat diakses melalui tablet, menjaga keamanan logika transaksi 
+keuangan, serta mempermudah pemeliharaan sistem. Konsep arsitektur 
+sistem informasi multicabang ARTHA disajikan pada Gambar 3.2.  
+ 
+56 
+ 
+Gambar 3.2 Konsep Arsitektur Sistem Multicabang ARTHA 
+Berdasarkan Gambar 3.2, sistem ARTHA tersusun atas tiga lapisan 
+fungsional utama yang saling terhubung. Lapisan pertama yaitu 
+Presentation Tier, memfasilitasi interaksi pengguna untuk peran Super 
+Admin di kantor pusat dan Staf Administrasi di delapan cabang 
+menggunakan aplikasi web klien yang dibangun dengan Next.js App 
+Router dan Tailwind CSS untuk antarmuka yang responsif. Lapisan kedua 
+yaitu Application Tier, dikembangkan menggunakan kerangka kerja 
+Laravel RESTful API yang dilengkapi mekanisme otentikasi token 
+Laravel Sanctum untuk memberikan pembatasan hak akses berbasis peran 
+(Role-Based Access Control), serta mengeksekusi logika validasi kuota 
+kelas, verifikasi transfer bank, dan rekonsiliasi kas. Lapisan ketiga yaitu 
+Data Storage Tier, mengintegrasikan sistem database MySQL dengan 
+prinsip transaksi ACID untuk mengelola data operasional terstruktur, serta 
+direktori penyimpanan berkas digital untuk mengarsipkan dokumen 
+kuitansi resmi dan berkas bukti transfer bank. 
+Pertukaran data antarlapisan pada arsitektur sistem berlangsung 
+melalui dua alur komunikasi utama yang terstandarisasi. Alur pertama 
+menghubungkan Presentation Tier dengan Application Tier melalui 
+protokol Hypertext Transfer Protocol Secure (HTTPS), di mana klien 
+mengirimkan permintaan layanan (HTTPS Request) berotentikasi token 
+57 
+ 
+dan mengembalikan data dalam format JavaScript Object Notation (JSON 
+Response) beserta kode status HTTP. Alur kedua menghubungkan 
+Application Tier dengan Data Storage Tier, di mana logika bisnis 
+mengeksekusi perintah SQL Query untuk menghasilkan baris data 
+transaksi (Result Sets), sekaligus mencatat direktori berkas fisik ke dalam 
+tabel basis data terkait.  
+3.4.2.​
+Analisis Proses Bisnis As-Is 
+Proses bisnis berjalan (As-Is) di Bimbingan Belajar ARTHA 
+Balikpapan diperoleh dari hasil observasi dan wawancara bersama pihak 
+mitra penelitian. Wawancara tersebut melibatkan Pemilik Lembaga yang 
+merangkap sebagai pengelola keuangan pusat dan Staf Administrasi. 
+Rangkaian observasi terhadap dokumen pencatatan fisik dan wawancara 
+ini dilakukan untuk menggali aktivitas operasional yang berlangsung di 
+lapangan secara menyeluruh. Berdasarkan hasil wawancara dan observasi 
+tersebut, kegiatan operasional di delapan kantor cabang ARTHA saat ini 
+masih bertumpu pada pencatatan manual menggunakan buku tulis fisik. 
+Ketiadaan sistem informasi terpusat menimbulkan hambatan pemantauan 
+data keuangan antarcabang serta menyulitkan pengawasan status 
+pembayaran siswa oleh pihak manajemen pusat. 
+58 
+ 
+Gambar 3.3 Proses As-Is Operasional Bimbel ARTHA 
+Berdasarkan Gambar 3.3, proses bisnis berjalan melibatkan tiga 
+pihak utama, yaitu Wali Murid atau Siswa, Staf Administrasi Cabang, dan 
+Pemilik Lembaga. Diagram tersebut memperlihatkan bahwa kelemahan 
+pada alur manual terletak pada proses pencatatan berulang dari formulir 
+fisik ke buku besar, ketergantungan pada selembar kertas rekapan harian, 
+serta ketiadaan pengingat jatuh tempo SPP yang masih dilakukan secara 
+manual. Selain itu, pimpinan lembaga harus mencocokkan mutasi kas 
+masuk secara manual di ponsel tanpa adanya pencatatan riwayat digital 
+yang terpusat, sehingga pengelolaan operasional di delapan cabang 
+menjadi kurang efisien. 
+Alur pendaftaran, pembayaran, dan penjadwalan saat ini diuraikan 
+sebagai berikut. Setiap langkah menggambarkan interaksi langsung antara 
+orang tua siswa dengan Staf Administrasi Cabang serta Pengelola 
+Keuangan Pusat. Rangkaian alur kerja manual tersebut terdiri dari lima 
+tahapan utama: 
+1.​ Konsultasi Program dan Pengecekan Jadwal 
+Calon siswa atau orang tua datang langsung ke meja staf 
+administrasi kantor cabang untuk menanyakan jenjang kelas dan tarif 
+bimbingan belajar. Staf Administrasi Cabang mencocokkan jadwal sekolah 
+59 
+ 
+calon siswa dengan ketersediaan sesi belajar pada Buku Jadwal Cabang, 
+seperti sesi Senin, Rabu, Jumat atau sesi Selasa, Kamis, Sabtu atau 
+Minggu pada pukul 14.00, 15.30, 17.00, hingga 19.00 WITA. 
+2.​ Pengisian Formulir Pendaftaran Fisik dan Penyalinan ke Buku 
+Besar 
+Setelah jadwal disepakati dan orang tua memastikan anaknya 
+bimbingan belajar di ARTHA, orang tua mengisi lembaran kecil formulir 
+pendaftaran fisik. Formulir tersebut memuat data nama lengkap, kelas, 
+tempat tanggal lahir, asal sekolah, alamat tempat tinggal, nomor telepon, 
+jenis pembayaran, serta pilihan hari dan sesi waktu belajar. Selanjutnya, 
+Staf Administrasi Cabang menyalin data dari formulir fisik tersebut secara 
+manual ke dalam Buku Besar cabang, yang secara ringkas hanya mencatat 
+nomor urut, nama lengkap murid, nomor telepon, dan asal sekolah, serta 
+kolom pembayaran bulanan periode tahun ajaran baru (Juli hingga Juni). 
+3.​ Penerimaan Pembayaran, Kuitansi, dan Kartu SPP Bulanan 
+Sebagian besar orang tua siswa membayar biaya pendaftaran dan 
+SPP secara tunai di meja administrasi cabang. Staf Administrasi Cabang 
+mencatat penerimaan uang tersebut pada kolom bulan terkait di Buku 
+Besar dengan menuliskan tanggal bayar dan nominal uang, menerbitkan 
+lembaran kuitansi manual bertanda tangan dan berstempel lembaga untuk 
+diberikan kepada orang tua, serta memperbarui Kartu Pembayaran SPP 
+Bulanan. Kartu SPP tersebut memuat identitas siswa, rincian biaya les 
+bulanan, tanda tangan orang tua, serta tanda tangan staf pengajar atau 
+administrasi beserta tanggal pembayaran, yang kemudian tetap disimpan 
+oleh staf administrasi di kantor cabang. Uang tunai hasil transaksi harian 
+beserta selembar kertas rekapan harian yang hanya memuat ringkasan 
+angka total uang pembayaran yang diterima serta total siswa yang masuk 
+dan keluar pada hari tersebut dikumpulkan setiap malam hari untuk 
+disetorkan langsung ke kantor pusat lembaga. 
+60 
+ 
+4.​ Penerimaan Pembayaran Transfer dan Pengecekan Mobile Banking  
+Orang tua yang memilih metode pembayaran transfer melakukan pengiriman 
+dana secara langsung ke rekening bank resmi lembaga. Setelah transaksi 
+berhasil, orang tua menunjukkan bukti transaksi melalui layar ponsel kepada 
+Staf Administrasi Cabang. Selanjutnya, Staf Administrasi Cabang memotret 
+tampilan bukti transfer tersebut dan mengirimkannya kepada pemilik lembaga 
+melalui aplikasi pesan instan WhatsApp. Staf Administrasi Cabang tidak 
+mengarsipkan bukti transfer tersebut di kantor cabang, melainkan hanya mencatat 
+tanggal pembayaran dan nominal transaksi ke dalam Buku Besar cabang serta 
+mencatat rincian pembayaran pada lembar rekapan harian. Setelah lembar rekapan 
+harian dari cabang diserahkan ke kantor pusat, pemilik lembaga melakukan 
+pemeriksaan mutasi rekening melalui aplikasi mobile banking pada malam hari. 
+Pemeriksaan dilakukan dengan mencocokkan setiap transaksi transfer yang 
+tercatat dalam lembar rekapan harian dengan mutasi rekening untuk memastikan 
+bahwa dana pembayaran telah diterima oleh rekening lembaga. 
+5.​ Pengaturan Kelompok Belajar dan Pengingat Jatuh Tempo 
+Staf Administrasi Cabang memasukkan siswa baru ke dalam 
+kelompok belajar berdasarkan catatan pada Buku Jadwal cabang, dengan 
+ketentuan setiap staf pengajar hanya mengajar secara tetap pada satu 
+cabang dan tidak mengajar lintas cabang. Pengingat jatuh tempo 
+pembayaran SPP bulanan mengacu pada tanggal pertama kali siswa 
+mendaftar dan membayar di bulan pertama, sebagaimana tercantum pada 
+bagian bawah Kartu SPP siswa. Pada proses berjalan, ketiadaan sistem 
+pengingat otomatis mengharuskan staf administrasi memeriksa Kartu SPP 
+dan Buku Besar satu per satu secara manual untuk mencari siswa yang 
+telah melewati tanggal jatuh tempo, sehingga proses penagihan sering 
+terlambat dan tunggakan SPP kerap tidak terdeteksi secara dini oleh pihak 
+manajemen pusat. 
+Identifikasi permasalahan operasional dari proses bisnis As-Is 
+tersebut dirangkum ke dalam Tabel 3.1. Rangkuman ini menegaskan pain 
+points pada alur kerja manual yang menjadi landasan utama perancangan 
+solusi pada sistem informasi ARTHA. 
+ 
+ 
+61 
+ 
+Tabel 3.1 Identifikasi Masalah Proses Bisnis As-Is 
+No. 
+Aktivitas 
+Operasional 
+Kondisi Berjalan (As-Is) 
+Dampak Masalah 
+Operasional 
+1 
+Pendaftaran 
+Siswa Baru 
+Pengisian 
+lembar 
+formulir 
+fisik 
+dan 
+penyalinan 
+manual 
+ke 
+Buku Besar cabang. 
+Terjadi 
+duplikasi 
+pencatatan, risiko salah 
+mencatat data siswa, dan 
+arsip 
+formulir 
+kertas 
+rentan terselip. 
+2 
+Pembayaran 
+Kasir Tunai 
+Pencatatan nominal pada 
+kolom bulan di Buku 
+Besar 
+dan 
+penulisan 
+lembar 
+kuitansi 
+fisik 
+bertanda tangan. 
+Kuitansi 
+fisik 
+rentan 
+hilang, 
+rekapan 
+kasir 
+tidak 
+tercatat 
+secara 
+real-time. 
+3 
+Pembayaran 
+Transfer Bank 
+Orang 
+tua 
+memperlihatkan 
+bukti 
+pembayaran 
+ke 
+staf 
+cabang, 
+lalu 
+pemilik 
+memeriksa 
+mutasi 
+melalui 
+aplikasi 
+m-banking. 
+Tidak terdapat arsip bukti 
+transfer 
+digital, 
+rawan 
+bukti transfer palsu, dan 
+pencocokan dana tidak di 
+saat 
+pembayaran 
+dilakukan. 
+4 
+Pengawasan 
+Jatuh Tempo SPP 
+Pemeriksaan 
+lembar 
+Kartu SPP satu per satu 
+secara 
+manual 
+untuk 
+mencari 
+siswa 
+yang 
+menunggak. 
+Keterlambatan penagihan 
+SPP bulanan, tunggakan 
+menumpuk 
+tanpa 
+disadari, dan arus kas 
+lembaga terganggu. 
+5 
+Rekonsiliasi Kas 
+Harian 
+Pembuatan 
+ringkasan 
+pemasukan 
+kas 
+pada 
+selembar kertas memo 
+yang disetorkan malam 
+hari ke kantor pusat. 
+Selembar kertas rekapan 
+rentan hilang, rekonsiliasi 
+kas lambat, dan pemilik 
+kesulitan 
+memantau 
+posisi 
+kas 
+delapan 
+cabang. 
+ 
+62 
+ 
+3.4.3.​
+Perancangan Proses Bisnis To-Be 
+Perancangan proses bisnis To-Be dirancang untuk mengatasi 
+kendala operasional yang ditemukan pada proses bisnis As-Is di 
+Bimbingan Belajar ARTHA Balikpapan. Perubahan proses bisnis ini 
+menyatukan kegiatan operasional di delapan kantor cabang ke dalam 
+sistem informasi berbasis web yang terpusat. Rangkaian proses To-Be tetap 
+mempertahankan alur kerja utama antara orang tua siswa, Staf 
+Administrasi Cabang, dan Pemilik Lembaga yang merangkap sebagai 
+pengelola keuangan pusat, namun mengubah media pencatatan dari buku 
+tulis fisik menjadi basis data digital. Berdasarkan rancangan tersebut, 
+integrasi data operasional dan pemantauan transaksi keuangan antarcabang 
+dapat dilakukan secara real-time oleh manajemen pusat. 
+Gambar 3.4 Proses Bisnis To-Be Operasional Bimbel ARTHA 
+Diagram tersebut memperlihatkan bahwa proses bisnis To-Be 
+memangkas proses pencatatan ganda pada buku besar, menghilangkan 
+ketergantungan pada kertas rekapan harian, serta menyediakan pengingat 
+jatuh tempo SPP dan verifikasi transfer secara terpusat. Dengan demikian, 
+data siswa dan transaksi keuangan dari delapan cabang disimpan secara 
+digital dan terpusat. 
+63 
+ 
+Alur pendaftaran, pembayaran, dan penjadwalan diuraikan sebagai 
+berikut. Rangkaian alur kerja usulan tersebut terdiri dari lima tahapan 
+utama: 
+1.​ Konsultasi Program dan Pengecekan Ketersediaan Sesi Belajar  
+Calon siswa atau orang tua datang langsung ke meja staf 
+administrasi kantor cabang untuk memilih jenjang kelas dan paket 
+bimbingan belajar. Staf Administrasi Cabang mengecek ketersediaan 
+kapasitas sesi belajar secara langsung melalui aplikasi web ARTHA, 
+sehingga kepastian kuota kelas pada hari dan jam yang dipilih dapat 
+diketahui secara cepat tanpa perlu membuka buku jadwal fisik. 
+2.​ Pengisian Formulir Pendaftaran dan Penginputan ke Aplikasi Web 
+Setelah jadwal disepakati, orang tua mengisi lembaran formulir 
+pendaftaran fisik sebagai dokumen pencatatan awal identitas siswa. Staf 
+Administrasi Cabang kemudian menginput data dari formulir tersebut 
+langsung ke dalam formulir pendaftaran aplikasi web ARTHA, yang 
+secara otomatis memvalidasi data dan menyimpannya ke database tanpa 
+perlu disalin ulang ke Buku Besar cabang. 
+3.​ Penerimaan Pembayaran Kasir Tunai dan Penerbitan Kuitansi 
+Orang tua siswa yang membayar biaya pendaftaran dan SPP secara 
+tunai menyerahkan uang di meja administrasi cabang. Staf Administrasi 
+Cabang menerima pembayaran tersebut dan menekan tombol konfirmasi 
+pada modul pendaftaran web, sehingga mutasi kas cabang tercatat, status 
+pembayaran otomatis menjadi lunas, dan sistem langsung menerbitkan 
+kuitansi resmi berformat PDF yang dicetak untuk orang tua siswa. 
+4.​ Penerimaan Pembayaran Transfer dan Validasi Bukti Bayar  
+Orang tua yang memilih membayar melalui transfer mengirimkan 
+dana ke rekening bank kantor resmi lembaga, lalu memperlihatkan bukti 
+transfer kepada Staf Administrasi Cabang. Staf mengunggah berkas bukti 
+64 
+ 
+transfer tersebut ke dalam aplikasi web ARTHA, kemudian Pengelola 
+Keuangan Pusat memeriksa mutasi rekening dan memvalidasi bukti bayar 
+melalui dashboard, sehingga status transaksi berubah otomatis menjadi 
+lunas tanpa perlu menunggu rekapan fisik di malam hari. 
+5.​ Pengaturan Kelompok Belajar dan Pengingat Otomatis Jatuh 
+Tempo 
+Sistem secara otomatis menempatkan siswa baru ke dalam 
+kelompok belajar yang telah dipilih sesuai kuota yang tersedia, dengan 
+ketentuan setiap staf pengajar tetap mengajar pada cabang yang 
+bersangkutan. Begitu status pembayaran dinyatakan lunas, sistem secara 
+otomatis menetapkan tanggal pendaftaran tersebut sebagai parameter jatuh 
+tempo SPP bulanan berikutnya, serta menampilkan pengingat visual 
+apabila terdapat siswa yang melewati batas tanggal pembayaran. 
+Perbandingan mendasar antara alur kerja lama dengan alur kerja 
+usulan dirangkum ke dalam Tabel 3.2. Rangkuman ini menunjukkan 
+perubahan proses operasional dari kondisi manual menuju sistem 
+informasi terintegrasi pada Bimbel ARTHA. 
+ 
+65 
+ 
+Tabel 3.2 Perbandingan Proses Bisnis As-Is dan Proses Bisnis To-Be 
+No. 
+Aktivitas 
+Operasional 
+Kondisi 
+Berjalan (As-Is) 
+Perancangan 
+Proses Usulan 
+(To-Be) 
+Dampak 
+Efisiensi Solusi 
+1 
+Pendaftaran 
+Siswa Baru 
+Pengisian lembar 
+formulir fisik 
+dan penyalinan 
+manual ke Buku 
+Besar cabang. 
+Penginputan data 
+pendaftaran 
+langsung ke 
+aplikasi web 
+ARTHA yang 
+tersimpan di 
+basis data 
+terpusat. 
+Menghilangkan 
+duplikasi 
+penulisan, 
+meminimalkan 
+salah catat, dan 
+data siswa 
+terintegrasi 
+secara aman. 
+2 
+Pembayaran 
+Kasir Tunai 
+Pencatatan 
+nominal pada 
+kolom bulan di 
+Buku Besar dan 
+penulisan lembar 
+kuitansi fisik 
+bertanda tangan. 
+Pencatatan 
+transaksi pada 
+modul 
+pendaftaran web 
+dengan 
+penerbitan dan 
+pencetakan 
+kuitansi format 
+PDF otomatis. 
+Mempercepat 
+transaksi di meja 
+cabang dan 
+mutasi kas 
+masuk tercatat 
+secara real-time. 
+3 
+Pembayaran 
+Transfer Bank 
+Orang tua 
+memperlihatkan 
+bukti 
+pembayaran ke 
+staf cabang, lalu 
+pemilik 
+memeriksa 
+mutasi melalui 
+aplikasi 
+m-banking. 
+Pengunggahan 
+berkas bukti 
+transfer digital 
+oleh staf cabang 
+dan validasi 
+langsung oleh 
+pemilik lembaga 
+di dashboard 
+pusat. 
+Menyediakan 
+arsip bukti 
+transfer digital 
+yang valid dan 
+memverifikasi 
+pelunasan tanpa 
+menunggu kertas 
+rekapan. 
+4 
+Pengawasan 
+Jatuh Tempo 
+SPP 
+Pemeriksaan 
+lembar Kartu 
+SPP satu per satu 
+secara manual 
+untuk mencari 
+siswa yang 
+Sistem 
+menetapkan 
+tanggal 
+pendaftaran 
+secara otomatis 
+dan 
+Mencegah 
+tunggakan SPP 
+yang tidak 
+terdeteksi, 
+mempermudah 
+penagihan, dan 
+66 
+ 
+No. 
+Aktivitas 
+Operasional 
+Kondisi 
+Berjalan (As-Is) 
+Perancangan 
+Proses Usulan 
+(To-Be) 
+Dampak 
+Efisiensi Solusi 
+menunggak. 
+menampilkan 
+pengingat siswa 
+yang melewati 
+batas bayar. 
+menjaga 
+stabilitas arus 
+kas lembaga. 
+5 
+Rekonsiliasi 
+Kas Harian 
+Pembuatan 
+ringkasan 
+pemasukan kas 
+pada selembar 
+kertas memo 
+yang disetorkan 
+malam hari ke 
+kantor pusat. 
+Rekapitulasi 
+mutasi kas 
+harian otomatis 
+per cabang yang 
+dapat dipantau 
+setiap saat oleh 
+pemilik 
+lembaga. 
+Menghilangkan 
+risiko hilangnya 
+lembar rekapan 
+fisik dan 
+memberikan 
+transparansi kas 
+delapan cabang. 
+ 
+3.4.4.​
+Analisis Kebutuhan Fungsional dan Non-Fungsional 
+Analisis kebutuhan sistem dirumuskan berdasarkan proses bisnis 
+To-Be serta hasil identifikasi masalah operasional pada delapan cabang 
+Bimbingan Belajar ARTHA Balikpapan. Perumusan kebutuhan ini 
+bertujuan mendefinisikan batasan fungsional dari dashboard manajemen 
+operasional ARTHA yang dikembangkan sebagai aplikasi web terintegrasi, 
+sekaligus menetapkan kriteria operasional perangkat lunak. Pemetaan 
+kebutuhan sistem dibagi ke dalam dua kategori utama, yaitu kebutuhan 
+fungsional (functional requirements) dan kebutuhan non-fungsional 
+(non-functional requirements). 
+Daftar kebutuhan fungsional mendetailkan fungsi-fungsi yang 
+disediakan oleh dashboard manajemen operasional ARTHA untuk 
+memfasilitasi interaksi pengguna di kantor cabang maupun kantor pusat. 
+Fungsionalitas sistem dijabarkan ke dalam dua belas kebutuhan (FR-01 
+hingga FR-12) yang terbagi ke dalam enam modul operasional utama, 
+yaitu modul autentikasi dan manajemen hak akses, modul pendaftaran 
+siswa dan kelompok belajar, modul kasir pencatatan pembayaran cabang, 
+67 
+ 
+modul validasi mutasi pembayaran transfer perbankan, modul pengawasan 
+jatuh tempo dan penagihan SPP, serta modul rekonsiliasi kas dan 
+pxpkonsolidasi pelaporan multicabang. Setiap kebutuhan mencantumkan 
+aktor pelaksana yang berwenang, dengan ketentuan Super Admin 
+merepresentasikan Pemilik Lembaga atau Pengelola Keuangan Pusat, Staf 
+Administrasi Cabang merepresentasikan petugas administrasi di meja 
+operasional delapan kantor cabang, dan Sistem merepresentasikan 
+mekanisme otomasi perangkat lunak. Rincian kebutuhan fungsional sistem 
+disajikan pada Tabel 3.3.  
+Tabel 3.3 Daftar Kebutuhan Fungsional Sistem  
+Kode  
+Modul 
+Deskripsi  
+Aktor 
+FR-01 
+Autentikasi 
+Pengguna 
+Sistem harus 
+menyediakan fungsi 
+login yang membatasi 
+hak akses pengguna 
+berdasarkan peran dan 
+identitas cabang tempat 
+staf administrasi 
+bertugas. 
+Pemilik Lembaga, 
+Staf Administrasi 
+Cabang 
+FR-02 
+Manajemen 
+Pengguna & 
+Cabang 
+Pemilik Lembaga dapat 
+membuat, memperbarui, 
+dan menonaktifkan akun 
+staf administrasi untuk 
+delapan kantor cabang 
+ARTHA. 
+Pemilik Lembaga 
+FR-03 
+Pendaftaran 
+Siswa Baru 
+Sistem harus 
+menyediakan formulir 
+input pendaftaran siswa 
+baru yang mencatat 
+biodata lengkap, asal 
+sekolah, kontak orang 
+tua, dan pilihan program 
+bimbingan belajar. 
+Staf Administrasi 
+Cabang  
+68 
+ 
+Kode  
+Modul 
+Deskripsi  
+Aktor 
+FR-04 
+Validasi 
+Kapasitas 
+Rombel 
+Sistem harus secara 
+otomatis memvalidasi 
+ketersediaan kuota siswa 
+pada kelompok belajar 
+cabang yang dipilih agar 
+tidak melebihi kapasitas 
+maksimum ruang kelas. 
+Sistem, Staf 
+Administrasi 
+Cabang 
+FR-05 
+Pencatatan 
+Pembayaran  
+Sistem harus 
+menyediakan pencatatan 
+pembayaran yang 
+terintegrasi pada 
+formulir pendaftaran 
+awal dan data tagihan 
+SPP. 
+Staf Administrasi 
+Cabang 
+FR-06 
+Penerbitan 
+Kuitansi  
+Sistem harus mampu 
+menerbitkan bukti 
+pembayaran resmi 
+berformat PDF yang 
+memuat nomor kuitansi 
+otomatis, rincian biaya, 
+identitas siswa, dan 
+stempel digital. 
+Staf Administrasi 
+Cabang 
+FR-07 
+Pengunggahan 
+Bukti Transfer 
+Sistem harus 
+menyediakan fitur 
+pengunggahan berkas 
+bukti pembayaran 
+non-tunai yang 
+disertakan pada saat 
+transaksi pendaftaran 
+atau SPP. 
+Staf Administrasi 
+Cabang 
+FR-08 
+Validasi 
+Transfer Pusat 
+Sistem harus 
+menyediakan dashboard 
+bagi Super Admin untuk 
+memeriksa berkas bukti 
+transfer dan konfirmasi 
+pelunasan tagihan siswa 
+Super Admin 
+69 
+ 
+Kode  
+Modul 
+Deskripsi  
+Aktor 
+secara terpusat. 
+FR-09 
+Penguncian 
+Jatuh Tempo 
+Sistem harus secara 
+otomatis menetapkan 
+tanggal pendaftaran 
+siswa sebagai tanggal 
+jatuh tempo pembayaran 
+SPP bulanan pada 
+periode berikutnya. 
+Sistem 
+FR-10 
+Notifikasi 
+Tunggakan SPP 
+Sistem harus 
+menampilkan daftar 
+siswa yang melewati 
+batas jatuh tempo 
+pembayaran SPP serta 
+tautan pengingat 
+WhatsApp. 
+Super Admin, Staf 
+Administrasi 
+Cabang 
+FR-11 
+Rekonsiliasi 
+Kas Cabang 
+Sistem harus mencatat 
+arus kas masuk dan kas 
+keluar operasional 
+harian serta 
+merekapitulasi saldo kas 
+pada masing-masing 
+kantor cabang. 
+Staf Administrasi 
+Cabang 
+FR-12 
+Konsolidasi 
+Kas 
+Multicabang 
+Sistem harus 
+menyediakan dashboard 
+rekapitulasi keuangan 
+terpusat yang 
+menggabungkan seluruh 
+mutasi kas dari delapan 
+kantor cabang secara 
+real-time. 
+Super Admin 
+ 
+Kebutuhan non-fungsional menetapkan karakteristik, batasan 
+teknis, dan keandalan operasional yang wajib dipenuhi oleh dashboard 
+manajemen operasional ARTHA. Klasifikasi kebutuhan non-fungsional ini 
+mencakup aspek performa, keandalan layanan, keamanan informasi , serta 
+70 
+ 
+kemudahan penggunaan. Parameter ini memastikan prototipe aplikasi web 
+dapat beroperasi secara konsisten, aman, dan mudah dioperasikan di 
+delapan cabang. Rincian spesifikasi kebutuhan non-fungsional sistem 
+disajikan pada Tabel 3.4.  
+Tabel 3.4 Daftar Kebutuhan Non-Fungsional Sistem  
+Kode  
+Kategori  
+Deskripsi Kebutuhan 
+NFR-01 
+Performa 
+Sistem 
+harus 
+mampu 
+menampilkan 
+antarmuka 
+halaman staf administrasi 
+dan dashboard operasional 
+dengan durasi yang cepat. 
+NFR-02 
+Keandalan Layanan 
+Sistem harus dapat diakses 
+secara stabil selama jam 
+operasional 
+bimbingan 
+belajar berlangsung, yaitu 
+pukul 08.00 hingga 21.00 
+WITA. 
+NFR-03 
+Keamanan Komunikasi Data 
+Seluruh 
+komunikasi 
+data 
+antara 
+device stakeholder 
+dan 
+server 
+API 
+wajib 
+terenkripsi 
+menggunakan 
+protokol 
+HTTPS 
+yang 
+diamankan sertifikat SSL. 
+NFR-04 
+Keamanan Autentikasi API 
+Setiap 
+permintaan 
+pertukaran data API dari 
+antarmuka 
+web 
+wajib 
+divalidasi 
+menggunakan 
+token autentikasi sesi yang 
+terlindungi dari pemalsuan. 
+NFR-05 
+Keamanan Isolasi Data 
+Sistem 
+harus 
+menjamin 
+bahwa staf administrasi satu 
+cabang tidak dapat melihat, 
+memanipulasi, 
+atau 
+mengunduh data transaksi 
+71 
+ 
+Kode  
+Kategori  
+Deskripsi Kebutuhan 
+keuangan 
+dari 
+cabang 
+lainnya. 
+NFR-06 
+Kemudahan Penggunaan 
+Antarmuka 
+dashboard 
+pengguna 
+harus memiliki 
+tata 
+letak 
+yang 
+bersih, 
+konsisten, 
+dan 
+mudah 
+dipelajari 
+oleh 
+staf 
+administrasi 
+yang 
+belum 
+mahir 
+mengoperasikan 
+sistem informasi rumit. 
+ 
+3.4.5.​
+Identifikasi Peran Pengguna dan User Stories 
+Kebutuhan pengguna dalam kerangka kerja Personal Extreme 
+Programming (PxP) dibuatkan ke dalam bentuk User Stories. Pendekatan 
+ini berfungsi sebagai media komunikasi yang ringkas dan efektif antara 
+pengembang dengan pemangku kepentingan mitra tanpa membebani 
+proses pengembangan dengan dokumentasi yang berlebihan. Pembahasan 
+pada bagian ini menegaskan batasan hak akses pengguna lembaga serta 
+memetakan seluruh user stories ke dalam rencana pengembangan 
+perangkat lunak. 
+Ruang lingkup hak akses sistem dibatasi pada dua peran internal 
+lembaga, yaitu Super Admin dan Staf Administrasi Cabang. Pembatasan 
+ini mengacu pada batasan penelitian Bab 1.4 yang berfokus pada efisiensi 
+administrasi operasional internal tanpa membuka akses bagi tentor, siswa, 
+maupun wali murid. Pemisahan hak akses menggunakan prinsip 
+Role-Based Access Control (RBAC) dengan pemisahan baris data dengan 
+identitas cabang. Matriks batasan kewenangan antarpengguna disajikan 
+secara terperinci pada Tabel 3.5. 
+ 
+72 
+ 
+Tabel 3.5 Role-Based Access Control  
+Fungsionalitas Sistem 
+Pemilik Lembaga 
+Staf Administrasi 
+Cabang 
+Manajemen Data Master 
+Cabang dan Pengguna 
+Hak Akses (Membuat, 
+Mengedit, 
+Menonaktifkan) 
+Tidak Memiliki Hak 
+Akses 
+Pendaftaran Siswa Baru 
+dan Penempatan 
+Kelompok Belajar 
+Hak Akses Melihat 
+Seluruh Cabang 
+Hak Akses pada Cabang 
+Pencatatan Pembayaran 
+Hak Akses Melihat 
+Seluruh Cabang 
+Hak Akses Mencatat 
+Transaksi Siswa Cabang 
+Penerbitan dan 
+Pencetakan Kuitansi 
+PDF 
+Hak Akses Melihat dan 
+Mengunduh Kuitansi 
+Hak Akses Menerbitkan 
+dan Mencetak Kuitansi 
+Cabang 
+Pengunggahan Berkas 
+Bukti Transfer Bank 
+Hak Akses Melihat 
+Seluruh Berkas 
+Hak Akses Mengunggah 
+Bukti Bayar Siswa 
+Cabang 
+Validasi dan Konfirmasi 
+Pelunasan Bukti 
+Transfer 
+Hak Akses Memvalidasi 
+Dana Masuk 
+Tidak Memiliki Hak 
+Akses (Hanya Melihat 
+Status) 
+Pemantauan Jatuh 
+Tempo dan Tunggakan 
+SPP 
+Hak Akses Melihat 
+Rekapitulasi Seluruh 
+Cabang 
+Hak Akses Melihat 
+Daftar Siswa 
+Menunggak di Cabang 
+Rekonsiliasi Kas Harian 
+dan Tutup Kasir Cabang 
+Hak Akses Menyetujui 
+Kas Cabang 
+Hak Akses Menginput 
+Rekapitulasi Kas Fisik 
+Cabang 
+Laporan Konsolidasi 
+Keuangan Multicabang 
+Hak Akses Mengunduh 
+Laporan Keuangan 
+Tidak Memiliki Hak 
+Akses Laporan 
+ 
+Seluruh kebutuhan operasional tersebut kemudian diterjemahkan 
+ke dalam dua belas daftar User Stories yang dilengkapi dengan acceptance 
+criteria, estimasi bobot kompleksitas Story Points, serta target pengerjaan 
+73 
+ 
+ke dalam empat siklus iterasi PxP. Penentuan target iterasi didasarkan pada 
+peta ketergantungan antarmodul, di mana modul autentikasi dan 
+pendaftaran dikerjakan terlebih dahulu pada iterasi awal sebelum modul 
+rekonsiliasi kas dan dashboard diselesaikan pada iterasi akhir. Rincian 
+User Stories prototipe sistem informasi ARTHA disajikan pada Tabel 3.6.  
+Tabel 3.6 User Stories Prototipe Sistem Informasi ARTHA 
+Kode 
+Peran 
+I Want To 
+So That 
+Acceptance Criteria 
+Target 
+Iterasi 
+Bobot 
+US-01 
+Staf 
+Administrasi 
+Cabang 
+Masuk ke 
+sistem 
+mengguna
+kan email 
+dan kata 
+sandi 
+terenkripsi 
+Hak akses 
+dibatasi 
+hanya pada 
+data kantor 
+cabang 
+tempat staf 
+bertugas 
+1. Masuk berhasil 
+dengan kredensial akun 
+valid. 
+2. Sistem menolak 
+akses dengan pesan 
+error jika akun salah. 
+3. Dashboard hanya 
+menampilkan data 
+operasional sesuai 
+cabang. 
+Iterasi 1 
+3 
+US-02 
+Super Admin 
+Mengelola 
+data kantor 
+cabang dan 
+akun staf 
+administra
+si delapan 
+cabang 
+Setiap staf 
+cabang 
+memiliki 
+akun resmi 
+sesuai 
+kantor 
+cabang 
+penugasann
+ya 
+1. Super Admin dapat 
+menambah, mengubah, 
+dan menonaktifkan 
+akun staf. 
+2. Super Admin dapat 
+mengatur penugasan 
+cabang akun staf. 
+3. Sistem mencegah 
+pembuatan akun ganda 
+dengan email yang 
+sama. 
+Iterasi 1 
+5 
+US-03 
+Staf 
+Administrasi 
+Cabang 
+Menginput 
+data 
+formulir 
+pendaftara
+n murid 
+baru dari 
+formulir 
+Data 
+tersimpan 
+rapi pada 
+database 
+tanpa perlu 
+ditulis ke 
+1. Seluruh kolom 
+biodata siswa tersimpan 
+di database. 
+2. Sistem memvalidasi 
+kelengkapan data 
+sebelum disimpan. 
+Iterasi 1 
+5 
+74 
+ 
+fisik ke 
+sistem 
+buku besar 
+fisik 
+3. Sistem mencegah 
+pendaftaran ganda 
+dengan nama dan 
+kontak yang sama. 
+US-04 
+Staf 
+Administrasi 
+Cabang 
+Memilih 
+kelompok 
+belajar 
+yang 
+masih 
+memiliki 
+kapasitas 
+Tidak terjadi 
+kelebihan 
+kapasitas 
+murid dalam 
+satu ruang 
+kelas 
+1. Sistem menampilkan 
+sisa kapasitas kelompok 
+belajar 
+2. Tombol pilih 
+kelompok belajar 
+nonaktif otomatis jika 
+kelas penuh. 
+3. Jadwal sesi belajar 
+terhubung langsung 
+dengan kelompok 
+belajar siswa. 
+Iterasi 1 
+5 
+US-05 
+Staf 
+Administrasi 
+Cabang 
+Mencatat 
+penerimaa
+n uang 
+tunai saat 
+pendaftara
+n maupun 
+pembayara
+n SPP 
+bulanan 
+Mutasi kas 
+masuk 
+tercatat pada 
+sistem 
+1. Form pendaftaran 
+dan kartu tagihan 
+menyediakan input 
+nominal bayar. 
+2. Status tagihan 
+berubah lunas dan saldo 
+kas cabang bertambah. 
+Iterasi 2 
+5 
+US-06 
+Staf 
+Administrasi 
+Cabang 
+Mencetak 
+kuitansi 
+pembayara
+n format 
+PDF 
+secara 
+langsung 
+setelah 
+transaksi 
+Orang tua 
+siswa 
+memperoleh 
+bukti 
+pembayaran 
+resmi 
+bertanda 
+tangan 
+digital 
+1. Kuitansi memuat 
+nomor unik otomatis, 
+tanggal, dan rincian 
+biaya. 
+2. Tata letak presisi saat 
+dicetak pada kertas 
+struk atau kertas 
+kuitansi. 
+3. Dokumen dapat 
+diunduh ulang 
+sewaktu-waktu dari 
+riwayat transaksi. 
+Iterasi 2 
+5 
+75 
+ 
+US-07 
+Staf 
+Administrasi 
+Cabang 
+Mengungg
+ah berkas 
+foto bukti 
+transfer 
+bank orang 
+tua siswa 
+ke sistem 
+Kantor pusat 
+dapat 
+memeriksa 
+dan 
+memverifika
+si dana 
+masuk 
+tersebut 
+1. Menerima format 
+berkas JPG, PNG, atau 
+PDF. 
+2. Ukuran berkas 
+dibatasi maksimal dua 
+megabyte. 
+3. Status pembayaran 
+otomatis menjadi 
+menunggu validasi. 
+Iterasi 2 
+5 
+US-08 
+Super Admin 
+Memvalida
+si bukti 
+transfer 
+yang 
+diunggah 
+dari 
+cabang 
+melalui 
+dashboard 
+pusat 
+Status 
+pembayaran 
+tagihan 
+siswa 
+berubah 
+menjadi 
+lunas pada 
+sistem 
+1. Pemilik dapat 
+melihat gambar bukti 
+bayar dengan jelas pada 
+dashboard pusat. 
+2. Tombol konfirmasi 
+lunas mengubah status 
+transaksi. 
+3. Tersedia opsi 
+penolakan bukti bayar 
+dengan catatan alasan. 
+Iterasi 3 
+8 
+US-09 
+Staf 
+Administrasi 
+Cabang 
+Sistem 
+menetapka
+n tanggal 
+pendaftara
+n sebagai 
+batas jatuh 
+tempo SPP 
+bulanan 
+Staf cabang 
+tidak perlu 
+memeriksa 
+dan 
+menghitung 
+tanggal 
+jatuh tempo 
+secara 
+manual 
+1. Tanggal pendaftaran 
+tersimpan otomatis 
+sebagai parameter 
+siklus. 
+2. Tagihan SPP bulan 
+berikutnya terbit 
+otomatis pada tanggal 
+yang sama. 
+3. Riwayat tanggal 
+jatuh tempo 
+terdokumentasi. 
+Iterasi 3 
+5 
+US-10 
+Staf 
+Administrasi 
+Cabang 
+Melihat 
+daftar 
+siswa yang 
+melewati 
+batas jatuh 
+tempo dan 
+mengakses 
+tautan 
+WhatsApp 
+Staf cabang 
+dapat segera 
+menghubun
+gi orang tua 
+siswa yang 
+menunggak 
+secara cepat 
+1. Siswa yang melewati 
+tanggal jatuh tempo 
+diberi indikator visual 
+merah. 
+2. Terdapat tombol 
+yang langsung 
+membuka obrolan 
+WhatsApp. 
+Iterasi 3 
+5 
+76 
+ 
+3. Daftar dapat difilter 
+berdasarkan jenjang 
+kelas dan kelompok 
+belajar. 
+US-11 
+Staf 
+Administrasi 
+Cabang 
+Melakukan 
+proses 
+pendaftara
+n dan 
+pembayara
+n harian 
+serta 
+mencetak 
+lembar 
+rekonsilias
+i kas 
+cabang 
+Uang tunai 
+di cabang 
+terbukti 
+sesuai 
+dengan 
+pencatatan 
+mutasi di 
+sistem 
+1. Sistem menampilkan 
+total pemasukan tunai 
+dan transfer cabang. 
+2. Tersedia kolom input 
+penghitungan fisik uang 
+kasir. 
+3. Sistem menghitung 
+selisih kas fisik dan 
+catatan sistem secara 
+otomatis. 
+Iterasi 4 
+8 
+US-12 
+Super Admin 
+Melihat 
+grafik dan 
+tabel 
+rekapitulas
+i keuangan 
+dari 
+delapan 
+cabang 
+Pemilik 
+lembaga 
+dapat 
+mengawasi 
+posisi kas 
+dan 
+performa 
+seluruh 
+cabang 
+1. Dashboard 
+menampilkan total 
+pendapatan harian 
+delapan cabang. 
+2. Menampilkan grafik 
+perbandingan 
+pemasukan kas 
+antarcabang. 
+3. Tersedia fitur ekspor 
+laporan ke format 
+lembar kerja Excel dan 
+PDF. 
+Iterasi 4 
+8 
+ 
+77 
+ 
+3.4.6.​
+Pemodelan Interaksi Sistem 
+Fungsionalitas sistem dirancang menggunakan diagram UML 
+untuk memetakan batasan sistem dan interaksi aktor. Pemodelan ini 
+mengikuti kaidah baku perancangan berorientasi objek untuk menghindari 
+ambiguitas pada antarmuka sistem (Kurniawan, 2018). Interaksi pengguna 
+dengan dashboard ARTHA dimodelkan melalui dua perspektif diagram, 
+yaitu Use Case Diagram untuk memetakan pembagian fungsi kerja serta 
+Activity Diagram untuk memvisualisasikan alur dinamis pertukaran data 
+operasional. 
+Diagram Use Case memetakan seluruh kapabilitas fungsional yang 
+menghubungkan dua aktor internal lembaga dengan sistem informasi 
+ARTHA. Rancangan diagram disajikan pada Gambar 3.5. 
+Gambar 3.5 Use Case Diagram Sistem Informasi ARTHA  
+ 
+78 
+ 
+Berdasarkan Gambar 3.5, batasan sistem melingkupi dua belas 
+fungsionalitas utama yang terbagi ke dalam dua aktor pengguna internal, 
+yaitu Staf Administrasi Cabang di sisi operasional pelayanan dan Super 
+Admin di sisi manajemen. Keduanya berbagi fungsionalitas bersama dalam 
+mengakses sistem melalui use case Melakukan Autentikasi Login. Pada 
+sisi operasional cabang, fungsionalitas dirancang untuk menangani 
+pencatatan pendaftaran siswa, transaksi, serta penutupan buku harian kasir 
+cabang. Sementara itu, pada sisi manajemen pusat, Super Admin memiliki 
+otoritas mengelola konfigurasi akun pengguna, pengaturan data cabang 
+dan kelompok belajar, validasi berkas transfer bank, hingga pemantauan 
+konsolidasi keuangan multicabang. 
+Hubungan ketergantungan antarfungsionalitas pada Gambar 3.5 
+diterapkan melalui dua jenis relasi UML, yaitu include dan relasi extend. 
+Relasi include diterapkan pada use case Mendaftarkan Siswa Baru yang 
+secara wajib menyertakan fungsi Memvalidasi Kuota Kelas, sehingga 
+sistem menjamin bahwa pendaftaran hanya dapat diproses apabila kuota 
+kelas masih tersedia. Relasi include juga diterapkan pada use case 
+Mencatat Pembayaran Kasir Cabang yang secara otomatis menyertakan 
+use case Mencetak Kuitansi Pembayaran (PDF) untuk menerbitkan bukti 
+transaksi resmi bagi wali murid. Di sisi lain, relasi extend digunakan pada 
+use case Mengunggah Bukti Transfer Bank yang memperluas fungsi 
+Mencatat Pembayaran Kasir Cabang secara kondisional, yakni hanya 
+dieksekusi apabila pihak orang tua siswa memilih jalur pembayaran 
+non-tunai melalui rekening bank. 
+Skenario Use Case dijabarkan untuk mendeskripsikan interaksi 
+antara pengguna dan perangkat lunak pada tiga aktivitas bisnis yang 
+bersifat krusial. Rincian skenario disajikan pada Tabel 3.7, Tabel 3.8, dan 
+Tabel 3.9. 
+ 
+79 
+ 
+Tabel 3.7 Skenario Use Case Pendaftaran Siswa Baru dan Pembayaran  
+Komponen Skenario 
+Uraian Rincian Skenario 
+Identitas Use Case 
+UC-01 : Pendaftaran Siswa Baru dan Transaksi 
+Pembayaran 
+Aktor 
+Staf Administrasi Cabang 
+Deskripsi 
+Staf administrasi memasukkan biodata siswa 
+dari lembar fisik, memilih kelompok belajar 
+yang masih tersedia, dan memproses 
+pembayaran biaya bimbingan belajar. 
+Pre-conditions 
+Staf administrasi telah berhasil masuk ke 
+sistem dengan kredensial cabang yang valid. 
+Post-conditions 
+Data siswa baru tersimpan pada database, 
+kuota kelompok belajar berkurang satu kursi, 
+mutasi kas masuk tercatat, tanggal jatuh tempo 
+SPP, dan kuitansi format PDF terbit. 
+Main Flow 
+1. Staf membuka menu Pendaftaran Siswa 
+Baru pada dashboard cabang. 
+2. Sistem menampilkan formulir pendaftaran 
+dan daftar kelompok belajar aktif beserta sisa 
+kuotanya. 
+3. Staf memasukkan data identitas siswa, 
+kontak orang tua, dan asal sekolah. 
+4. Staf memilih paket bimbingan dan 
+kelompok belajar yang diinginkan. 
+5. Sistem memvalidasi ketersediaan kuota dan 
+menghitung total rincian tagihan secara 
+otomatis. 
+6. Staf memilih metode pembayaran dan 
+memasukkan nominal uang yang diterima. 
+7. Sistem memperbarui status transaksi 
+menjadi lunas. 
+8. Sistem menetapkan tanggal pendaftaran 
+sebagai parameter jatuh tempo SPP bulan 
+berikutnya. 
+9. Sistem mencetak kuitansi berformat PDF 
+dan memperbarui kuota kelompok belajar. 
+80 
+ 
+Komponen Skenario 
+Uraian Rincian Skenario 
+Alternative Flow 
+4a. Pilihan kelompok belajar telah penuh 
+(kuota sama dengan nol): 
+1. Sistem menampilkan pesan peringatan 
+bahwa kuota telah mencapai kapasitas 
+maksimum. 
+2. Staf menawarkan jadwal sesi belajar 
+alternatif kepada orang tua siswa. 
+6a. Orang tua siswa memilih metode 
+pembayaran via transfer perbankan: 
+1. Staf mengunggah foto bukti transfer bank 
+pada formulir pendaftaran. 
+2. Sistem mengubah status pembayaran 
+menjadi menunggu validasi pusat dan menunda 
+penerbitan kuitansi lunas hingga disetujui 
+pemilik lembaga. 
+ 
+Tabel 3.8 Skenario Use Case Verifikasi dan Validasi Pembayaran Transfer  
+Komponen Skenario 
+Uraian Rincian Skenario 
+Identitas Use Case 
+UC-02 : Verifikasi dan Validasi Pembayaran 
+Transfer 
+Aktor 
+Super Admin (Pemilik Lembaga) 
+Deskripsi 
+Pemilik lembaga memeriksa berkas bukti transfer 
+dana yang diunggah dari cabang dan 
+mencocokkannya dengan mutasi rekening bank 
+untuk mengesahkan transaksi. 
+Pre-conditions 
+Terdapat transaksi pembayaran dari kantor cabang 
+yang berstatus menunggu validasi dengan berkas 
+bukti transfer yang telah terunggah. 
+Post-conditions 
+Status transaksi berubah menjadi lunas, kuitansi 
+PDF resmi terbit, saldo kas cabang bertambah, 
+dan hak akses belajar siswa aktif di cabang. 
+81 
+ 
+Komponen Skenario 
+Uraian Rincian Skenario 
+Main Flow 
+1. Pemilik lembaga membuka menu Validasi 
+Pembayaran pada dashboard pusat. 
+2. Sistem menyajikan daftar antrean pembayaran 
+transfer dari seluruh kantor cabang. 
+3. Pemilik memilih satu baris transaksi untuk 
+melihat pratinjau gambar bukti transfer bank. 
+4. Pemilik mencocokkan nominal transaksi, 
+tanggal transfer, dan nama pengirim dengan 
+mutasi rekening bank. 
+5. Pemilik menekan tombol Validasi Pembayaran. 
+6. Sistem memperbarui status transaksi menjadi 
+lunas. 
+7. Sistem secara otomatis menetapkan tanggal 
+transaksi untuk SPP dan mengizinkan cabang 
+mencetak kuitansi resmi. 
+Alternative Flow 
+5a. Bukti transfer tidak valid, tidak terbaca, atau 
+dana belum masuk ke rekening lembaga: 
+1. Pemilik menekan tombol Tolak Transaksi. 
+2. Sistem menampilkan form untuk memasukkan 
+catatan alasan penolakan. 
+3. Pemilik lembaga mengisi alasan penolakan dan 
+menekan tombol konfirmasi. 
+4. Sistem memperbarui status transaksi menjadi 
+ditolak dan mengirimkan pesan notifikasi 
+penolakan ke dashboard staf cabang terkait untuk 
+ditindaklanjuti. 
+ 
+ 
+82 
+ 
+Tabel 3.9 Skenario Use Case Rekonsiliasi Kas Harian dan Pemantauan SPP  
+Komponen Skenario 
+Uraian Rincian Skenario 
+Identitas Use Case 
+UC-03 : Rekonsiliasi Kas Harian Cabang dan 
+Pemantauan Tunggakan SPP 
+Aktor 
+Staf Administrasi Cabang dan Pemilik Lembaga 
+Deskripsi 
+Staf cabang melakukan tutup buku kasir harian 
+dengan mencocokkan fisik uang tunai, sementara 
+pemilik memantau status rekonsiliasi dan daftar 
+tunggakan SPP multicabang. 
+Pre-conditions 
+Jam operasional cabang telah berakhir dan 
+seluruh transaksi harian telah dientri ke dalam 
+sistem. 
+Post-conditions 
+Rekonsiliasi kas cabang ditutup, laporan mutasi 
+harian terbit, dan daftar tunggakan SPP terbarui 
+pada dashboard pusat. 
+Main Flow 
+1. Staf cabang membuka menu Rekonsiliasi Kas 
+Harian pada akhir jam kerja operasional. 
+2. Sistem menghitung rekapitulasi total 
+penerimaan uang tunai dan transfer cabang pada 
+hari tersebut. 
+3. Staf menghitung jumlah fisik lembaran uang 
+pada laci kasir dan memasukkan nominal 
+tersebut ke sistem. 
+4. Sistem menghitung selisih antara saldo sistem 
+dan uang tunai. 
+5. Jika selisih bernilai nol, staf menekan tombol 
+Tutup Buku Kasir Harian. 
+6. Sistem mengunci transaksi hari tersebut dan 
+menerbitkan Lembar Berita Acara Kasir format 
+PDF. 
+7. Pada dashboard pusat, pemilik menerima 
+pembaruan data kas dan melihat daftar siswa 
+yang melewati batas jatuh tempo SPP. 
+83 
+ 
+Komponen Skenario 
+Uraian Rincian Skenario 
+Alternative Flow 
+4a. Terdapat selisih antara saldo sistem dengan 
+uang tunai: 
+1. Sistem menampilkan peringatan selisih kas 
+berwarna merah. 
+2. Staf wajib mengisi formulir catatan penjelasan 
+selisih sebelum tombol tutup kasir dapat ditekan. 
+3. Sistem menandai laporan kas cabang tersebut 
+dengan status perlu peninjauan pusat agar 
+diperiksa lebih lanjut oleh pemilik lembaga. 
+ 
+Alur kerja dari ketiga proses transaksi kritis di atas dibuatkan 
+menggunakan Activity Diagram pada Gambar 3.6, Gambar 3.7, dan 
+Gambar 3.8. Setiap diagram membagi tanggung jawab penanganan tugas 
+ke dalam kolom swimlane agar batasan wewenang antara pengguna 
+antarmuka dengan pemrosesan basis data terpetakan secara transparan. 
+ 
+84 
+ 
+Gambar 3.6 Activity Diagram Alur Pendaftaran Siswa dan Transaksi 
+Pembayaran 
+Berdasarkan Gambar 3.6, aktivitas pendaftaran siswa baru dan 
+transaksi pembayaran melibatkan tiga jalur wewenang (swimlane), yaitu 
+Staf Administrasi Cabang, Antarmuka Web ARTHA, dan Basis Data & 
+Server ARTHA. Alur diawali dari pengisian identitas siswa oleh staf 
+cabang yang kemudian memicu pemeriksaan kuota kursi secara otomatis 
+pada database. Decision node mengevaluasi ketersediaan kuota kelompok 
+belajar; apabila kuota telah penuh, sistem menampilkan notifikasi 
+penolakan dan mengarahkan staf untuk memilih kelompok belajar 
+85 
+ 
+alternatif. Setelah pembayaran tunai dikonfirmasi, sistem menjalankan 
+pemrosesan paralel (fork) untuk menyimpan rekam mutasi kas masuk 
+cabang sekaligus menetapkan tanggal pendaftaran sebagai parameter 
+penentu jatuh tempo SPP bulan berikutnya. Kedua proses tersebut 
+kemudian disinkronkan kembali (join) untuk mencetak bukti kuitansi 
+resmi berformat PDF yang diserahkan kepada pihak wali murid.   
+ 
+86 
+ 
+Gambar 3.7 Activity Diagram Alur Validasi Bukti Transfer 
+Berdasarkan Gambar 3.7, aktivitas validasi bukti transfer untuk 
+menjamin bahwa seluruh pembayaran non-tunai diverifikasi secara ketat 
+oleh manajemen pusat sebelum status belajar siswa aktif. Jalur wewenang 
+dibagi ke dalam tiga entitas, yaitu Staf Administrasi Cabang, Super Admin, 
+dan Sistem Informasi ARTHA. Proses dimulai saat staf cabang 
+mengunggah gambar bukti transfer yang menyebabkan sistem menetapkan 
+status transaksi menjadi menunggu validasi. Super Admin kemudian 
+memeriksa kesesuaian nominal, nama pengirim, dan tanggal transfer pada 
+87 
+ 
+antrean dashboard pusat dengan mutasi rekening bank resmi lembaga. 
+Melalui decision node, transaksi yang dinilai tidak valid akan ditolak 
+dengan kewajiban mengisi catatan alasan penolakan, sementara transaksi 
+yang valid akan disahkan menjadi lunas melalui (fork/join) yang 
+menambah saldo kas serta mencetak kuitansi resmi pada kantor cabang 
+terkait. 
+ 
+ 
+88 
+ 
+Gambar 3.8 Activity Diagram Rekonsiliasi Kas Harian Antarcabang 
+dan Pemantauan Tunggakan SPP 
+Berdasarkan Gambar 3.8, aktivitas penutupan buku harian dan 
+rekonsiliasi kas cabang menggambarkan mekanisme pengendalian internal 
+lembaga untuk mencegah terjadinya kebocoran dana operasional di tingkat 
+cabang. Pada akhir jam kerja operasional, staf cabang memasukkan 
+nominal uang fisik yang ada pada laci kasir untuk dibandingkan dengan 
+total mutasi kas yang dihitung otomatis oleh sistem. Titik keputusan 
+(decision node) mengevaluasi ada atau tidaknya selisih kas; apabila 
+ditemukan selisih nominal, staf diwajibkan memberikan keterangan 
+89 
+ 
+justifikasi tertulis dan laporan ditandai dengan status perlu peninjauan 
+pusat. Setelah tombol tutup kasir ditekan, sistem mengeksekusi proses 
+paralel (fork) untuk menetapkan history transaksi cabang hari tersebut dan 
+menyinkronkan data secara real-time ke dashboard pusat, sehingga 
+pimpinan lembaga dapat memantau posisi kas terkini serta mendeteksi 
+siswa yang melewati batas jatuh tempo pembayaran SPP.  
+3.4.7.​
+Perancangan Entity Relationship Diagram 
+Perancangan basis data relasional sistem informasi ARTHA 
+disusun mengikuti tahapan siklus hidup basis data atau Database Life 
+Cycle (DBLC), mulai dari perancangan konseptual hingga perancangan 
+pada sistem manajemen basis data relasional MySQL (Wibagso & Lia, 
+2020). Struktur relasi data dirancang untuk mendukung operasional 
+multicabang secara terintegrasi dengan menerapkan mekanisme isolasi 
+data berbasis kode cabang. Penerapan ini menjamin keutuhan data serta 
+kepatuhan terhadap prinsip transaksi ACID, yaitu atomicity, consistency, 
+isolation, dan durability sepanjang operasional lembaga berlangsung 
+(Ilham dkk., 2026). 
+Keterkaitan antarentitas data operasional dibuat secara konseptual 
+menggunakan Entity Relationship Diagram dengan Notasi Chen. 
+Visualisasi perancangan konseptual basis data disajikan pada Gambar 3.9. 
+90 
+ 
+Gambar 3.9 Entity Relationship Diagram (ERD) Sistem Informasi 
+ARTHA  
+Berdasarkan Gambar 3.9, arsitektur basis data relasional ARTHA 
+disusun atas sepuluh entitas data yang terdistribusi ke dalam tiga klaster 
+fungsional utama, yaitu klaster organisasi dan pengguna, klaster akademik 
+dan pendaftaran siswa, serta klaster transaksi keuangan dan rekonsiliasi 
+kas. Entitas branches bertindak sebagai entitas induk organisasi yang 
+merepresentasikan delapan kantor cabang operasional bimbingan belajar. 
+Keterkaitan antara entitas branches dengan entitas operasional lainnya 
+menggunakan 
+kardinalitas 
+satu 
+ke 
+banyak 
+(one-to-many), 
+yang 
+menghubungkan satu kantor cabang dengan banyak akun staf melalui 
+relasi Memiliki pada entitas users, banyak kelompok belajar melalui relasi 
+Mengelola pada entitas study_groups, banyak siswa aktif melalui relasi 
+Menaungi pada entitas students, penerimaan kasir melalui relasi Menerima 
+pada entitas payments, serta pencatatan penutupan kas melalui relasi 
+Mengadakan pada entitas daily_reconciliations. 
+91 
+ 
+Mekanisme pengendalian data multicabang dihubungkan melalui 
+penempatan atribut branch_id sebagai Foreign Key pada seluruh tabel 
+transaksi operasional. Penerapan strategi ini memastikan bahwa staf 
+administrasi cabang hanya memiliki hak akses baca dan tulis pada data 
+transaksi 
+yang 
+terikat 
+dengan 
+kode 
+cabangnya 
+masing-masing, 
+sebagaimana ditetapkan pada kebutuhan non-fungsional NFR-05 Subbab 
+3.4.4. Di sisi lain, akun manajemen pusat dengan peran super_admin 
+memiliki nilai branch_id bernilai kosong (null) pada tabel users, sehingga 
+wewenang manajemen pusat mencakup pemantauan konsolidasi data 
+transaksi dari seluruh kantor cabang secara terpusat. 
+Klaster entitas akademik dan pendaftaran menunjukkan alur bisnis 
+bimbingan belajar secara berkesinambungan. Entitas course_packages 
+menyimpan paket bimbingan belajar beserta tarif SPP bulanan per jenjang 
+pendidikan, yang menjadi acuan kalkulasi otomatis tagihan pada saat 
+pendaftaran siswa baru sesuai alur use case UC-01 Subbab 3.4.6. 
+Pendaftaran siswa dipetakan melalui entitas asosiatif enrollments yang 
+menghubungkan entitas students melalui relasi Mengambil, entitas 
+study_groups melalui relasi Ditempati, serta entitas course_packages 
+melalui relasi Ditawarkan. Setiap kali transaksi pendaftaran disahkan, 
+sistem menetapkan parameter tanggal pendaftaran pada kolom due_day 
+yang menjadi landasan dasar dalam menerbitkan catatan tagihan SPP 
+bulanan pada entitas tuition_bills melalui relasi Menerbitkan. 
+Klaster entitas transaksi keuangan dibuat untuk pengendalian 
+penerimaan kas dan audit mutasi. Pembayaran tagihan yang dilayani oleh 
+staf administrasi dicatat ke dalam entitas payments melalui relasi Melayani 
+dari entitas users serta relasi Diselesaikan dari entitas tuition_bills. Khusus 
+untuk transaksi non-tunai melalui transfer bank, entitas payments 
+terhubung dengan entitas payment_proofs melalui relasi Melampirkan, 
+yang selanjutnya diverifikasi oleh pemilik lembaga melalui relasi 
+Memvalidasi dari entitas users. Selain itu, uang tunai cabang dikendalikan 
+melalui entitas daily_reconciliations yang dihubungkan melalui relasi 
+92 
+ 
+Melakukan dari entitas users dan relasi Mengadakan dari entitas branches, 
+untuk memberikan perbandingan saldo kas sistem terhadap penghitungan 
+fisik kasir pada setiap penutupan jam kerja sebagaimana dimodelkan pada 
+Activity Diagram Gambar 3.8. 
+3.5.​
+Spesifikasi Teknis 
+Spesifikasi teknis menjelaskan batasan arsitektur perangkat keras 
+(hardware) dan perangkat lunak (software) yang digunakan dalam merancang dan 
+mengembangkan prototipe aplikasi web ARTHA yang disiapkan untuk akses 
+pengguna di delapan kantor cabang dan kantor pusat manajemen. 
+3.5.1.​
+Hardware 
+Kebutuhan perangkat keras diklasifikasikan ke dalam tiga 
+tingkatan operasional, mencakup perangkat komputer pengembang 
+(workstation) dan perangkat komputer klien pengguna (client devices). 
+Rincian spesifikasi perangkat keras disajikan pada Tabel 3.11.  
+Tabel 3.11 Spesifikasi Kebutuhan Perangkat Keras Sistem  
+Kategori  
+Komponen 
+Perangkat 
+Keras 
+Spesifikasi 
+Minimum 
+Komponen 
+Fungsi  
+Development 
+CPU 
+Intel Core i5 
+Generasi ke-11 / 
+AMD Ryzen 5  
+Menjalankan proses 
+kode program Next.js, 
+aset Tailwind CSS, 
+dan layanan backend. 
+RAM 
+16 GB DDR4 
+Dual-Channel 
+Menjaga stabilitas 
+kinerja sistem, 
+pengelola database. 
+93 
+ 
+Kategori  
+Komponen 
+Perangkat 
+Keras 
+Spesifikasi 
+Minimum 
+Komponen 
+Fungsi  
+Storage 
+512 GB Solid 
+State Drive (SSD) 
+NVMe PCIe Gen 
+3.0 
+Mempercepat proses 
+baca dan tulis berkas 
+proyek perangkat 
+lunak, dependensi 
+modul Node.js. 
+Frontdesk 
+Tablet 
+Tablet Layar 
+Sentuh 10.1 Inci / 
+Komputer Meja 
+(Dual-Core 1.8 
+GHz, RAM 4 GB, 
+Storage 64 GB) 
+Menjalankan aplikasi 
+web menggunakan 
+internet di meja 
+administrasi delapan 
+cabang. 
+Koneksi 
+Jaringan 
+Internet 
+Jaringan Wi-Fi / 
+Seluler 4G. 
+Menghubungkan 
+antarmuka kasir 
+cabang untuk 
+pertukaran data 
+transaksi secara real 
+time. 
+Manajemen Pusat 
+Executive Office 
+Laptop / 
+Komputer 
+Manajemen 
+Intel Core i3 / 
+RAM 8 GB 
+Memfasilitasi Pemilik 
+Lembaga dalam 
+memantau dashboard 
+konsolidasi delapan 
+cabang dan memeriksa 
+gambar bukti transfer 
+mutasi bank. 
+ 
+3.5.2.​
+Software 
+Spesifikasi perangkat lunak menjelaskan bahasa pemrograman, 
+kerangka kerja rekayasa, sistem manajemen database, serta perangkat 
+lunak pendukung pengujian sistem. Rincian spesifikasi perangkat lunak 
+dirincikan pada Tabel 3.12.  
+ 
+94 
+ 
+Tabel 3.12 Spesifikasi Kebutuhan Perangkat Lunak Sistem 
+Kategori  
+Nama Perangkat Lunak  
+Fungsi 
+Sistem Operasi 
+Microsoft Windows 11 
+Pro 64-bit 
+Sistem operasi utama 
+yang digunakan. 
+Lingkungan Kode 
+Program 
+Visual Studio Code 
+Editor teks yang 
+dilengkapi ekstensi 
+Tailwind CSS 
+IntelliSense, ESLint, 
+dan Prettier. 
+Kerangka Kerja 
+Antarmuka 
+Next.js  
+Kerangka kerja frontend 
+berbasis React. 
+Tailwind CSS  
+Kerangka kerja 
+penataan gaya visual 
+untuk membangun 
+antarmuka web 
+responsif. 
+Kerangka Kerja 
+Backend 
+Laravel  
+Kerangka kerja logika 
+yang menyediakan 
+arsitektur 
+Model-View-Controller 
+dan ORM. 
+Laravel Sanctum Package 
+Library autentikasi 
+untuk pengamanan 
+endpoint RESTful API. 
+95 
+ 
+Kategori  
+Nama Perangkat Lunak  
+Fungsi 
+Basis Data Relasional 
+MySQL  
+Sistem manajemen 
+database relasional.  
+Perangkat Lunak 
+Pemodelan 
+Bizagi Modeler 
+Perangkat lunak untuk 
+merancang diagram 
+pemodelan proses bisnis 
+berstandar BPMN 2.0. 
+Draw.io 
+Pemodelan visual untuk 
+merancang diagram. 
+Figma 
+Perancangan antarmuka 
+pengguna untuk 
+membuat wireframe. 
+ 
+96 
+ 
+3.6.​
+Jadwal Pembuatan Prototipe 
+Rencana jadwal pembuatan prototipe disusun untuk memandu pelaksanaan Tugas Akhir agar berlangsung secara sistematis, 
+terukur, dan selesai tepat waktu. Jadwal pengerjaan dirancang mengadopsi siklus hidup metodologi Personal Extreme Programming 
+(PxP). 
+Tabel 3.13 Rencana Kegiatan Proposal  
+Kegiatan 
+Okt 2026 
+Nov 2026 
+Des 2026 
+Jan 2027 
+Feb 2027 
+Mar 2027 
+Apr 2027 
+Mei 2027 
+1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4 
+Studi literatur  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Analisis kebutuhan 
+dan planning 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Perancangan Diagram 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Inisialisasi iterasi 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pembuatan prototipe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pengujian sistem dan 
+Retrospective 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Uji penerimaan 
+pengguna (UAT) dan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+97 
+ 
+Deployment 
+ 
+98 

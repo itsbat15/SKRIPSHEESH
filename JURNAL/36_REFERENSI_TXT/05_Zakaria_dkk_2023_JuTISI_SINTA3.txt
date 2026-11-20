@@ -1,0 +1,662 @@
+--- HALAMAN 1 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+127 
+ 
+Rancang Bangun Sistem Pembayaran Kursus 
+Mandarin Dengan Metode Waterfall 
+ 
+ 
+http://dx.doi.org/10.28932/jutisi.v9i1.5979  
+Riwayat Artikel 
+Received: 02 Januari 2023 | Final Revision: 13 Januari 2023 | Accepted: 17 Januari 2023 
+ 
+Creative Commons License 4.0 (CC BY – NC)  
+ 
+Teddy Marcus Zakaria #1, Julianti Kasih#2, Natanael Halim#3, Michael Sebastian Gunadi#4 
+# Jurusan Teknik Informatika, Universitas Kristen Maranatha 
+Jl. Prof. drg. Suria Sumantri No. 65, Bandung 40164, Jawa Barang, Indonesia  
+1teddy.marcus@it.maranatha.edu 
+2julianti.kasih@it.maranatha.edu 
+3it1872012@student.it.maranatha.edu 
+4it1872005@student.it.maranatha.edu 
+Corresponding author: teddy.marcus@it.maranatha.edu 
+ 
+ 
+Abstrak — Kebutuhan suatu sistem berbasis komputer bagi lembaga kursus Bahasa Mandarin yang masih melakukan proses 
+administrasi pembayarannya secara manual, dengan menuliskan rincian pembayaran pada kuitansi dan kartu pembayaran siswa.  
+Sistem manual membuat proses pembayaran menjadi lama dan kurang efisien serta membutuhkan waktu lagi untuk membuat 
+pelaporan keuangannya.  Permasalahannya adalah bagaimana cara membuat proses pembayaran lebih  mudah, praktis, efisien 
+dan terkontrol dengan baik.  Dengan adanya sistem informasi manajemen pembayaran berbasis komputer, akan menyelesaikan 
+permasalahan ini.   Selain itu ada manfaat tambahan, yaitu manajemen data siswa yang aktif, cuti, berhenti, laporan keuangan 
+yang lebih rinci dibanding secara manual. Penelitian ini mencoba mengembangkan sebuah sistem pembayaran uang kursus untuk 
+pengelolaan keuangan siswa yang terkontrol. Hal ini dilakukan untuk mencegah penyalahgunaan keuangan dan pelaporan 
+keuangan yang lebih praktis, efisien dan akurat.  Metode rekayasa perangkat lunak yang digunakan adalah Waterfall dengan 
+model pengembangan SDLC (Software Development Life Cycle) yang mampu membuat sistem secara bertahap. Diharapkan 
+dengan adanya sistem ini pendaftaran siswa baru, proses pembayaran dan laporan keuangan menjadi lebih baik bagi lembaga 
+kursus ini.  Sistem Pembayaran Kursus MandarinPro sudah diujicoba dan digunakan oleh Feng Huang Mandarin Course Bali 
+untuk menunjang pendaftaran siswa, pembayaran kursus dan laporan keuangan. Sistem ini dapat diterapkan untuk kursus-
+kursus yang serupa. 
+ 
+Kata kunci— Biaya Kursus; Pembayaran Uang Kursus; Sistem Informasi; Waterfall. 
+ 
+ Design and Build a Mandarin Course Payment 
+System Using the Waterfall Method  
+ 
+Abstract — The need for a computer-based system for Chinese language course institutions that still carry out the payment 
+administration process manually, by writing payment details on receipts and student payment cards. The manual system makes 
+the payment process longer and less efficient and requires more time to make financial reports. The problem is how to make the 
+payment process more manageable, practical, efficient, and well-controlled.  The computer-based payment management 
+information system will solve this problem.   In addition, there are additional benefits, good data management of students, and 
+more detailed financial statements than manually. This research is develop a course payment system for the controlled management 
+of student finances. The purpose is to prevent financial abuse and financial reporting more efficiently and accurately.  The software 
+engineering method used is Waterfall with the SDLC (Software Development Life Cycle) development model which is able to build 
+
+
+--- HALAMAN 2 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+128 
+ 
+the system in stages. It is hoped that with this system new student registration, payment processes and financial reports will be 
+better for this course institution.The MandarinPro Course Payment System has been tested and used by Feng Huang Mandarin 
+Course Bali to support student registration, course payments and financial reports. This system can be applied to similar courses. 
+ 
+Keywords— Course Fees; Information Systems; Payment of Course Fees; Waterfall. 
+ 
+I. PENDAHULUAN 
+Lembaga Kursus Bahasa Feng Huang (Feng Huang Mandarin Course) berlokasi di Jl. Cargo Permai, Citraland, Ruko 
+Waterpark Blok CC-09, Kota Denpasar, Ubung Kaja, Kec. Denpasar Utara, adalah badan usaha yang bergerak dalam bidang 
+pendidikan non formal berupa kursus Bahasa Mandarin untuk siswa TK, SD, SMP, SMA, mahasiswa dan umum.  Proses 
+pendaftaran siswa, proses pembayaran uang kursus dan pelaporan keuangan dilakukan semi-manual, menggunakan program 
+Microsoft Excel untuk pencatatannya. Admin yang melakukan kegiatan administrasi seperti pendaftaran siswa, pembayaran 
+biaya kursus, pelaporan keuangan dan mencari siswa mana yang sudah membayar dan belum membayar, akan membutuhkan 
+waktu tambahan. Sistem administrasi pendaftaran, pembayaran dan pelaporan yang digunakan dalam lembaga kursus ini 
+kurang efisien dan kurang efektif. Selain masalah pendaftaran, pembayaran dan pelaporan, lembaga kursus ini perlu untuk 
+mendata siswa yang aktif, cuti dan berhenti.  Walau sudah menggunakan komputer dalam proses pembayaran, beberapa 
+kegiatan lainnya belum dapat dikerjakan segera, sehingga kadang menyebabkan keterlambatan pelaporan keuangan . 
+Beberapa penelitian terkait sistem pembayaran kursus antara lain, berjudul “Aplikasi Pembelajaran Bahasa Mandarin 
+Dasar”. Aplikasi ini bertujuan untuk membantu siswa SD Advent 1 Tikala Manado dalam mempelajari bahasa Mandarin.  
+Aplikasi ini dikembangkan menggunakan metode Unified Software Development Process (USDP) disesuaikan dengan 
+kebutuhan siswa. USDP adalah framework perancangan perangkat lunak berorientasi objek. USDP, yang kemudian dikenal 
+sebagai Unified Process, yang dikembangkan oleh Graddy Booch, Ivar Jacobson, dan James Rumbaugh.  USDP dirancang 
+untuk beradaptasi dengan pengembangan perangkat lunak yang selalu berkembang . USDP menggunakan UML (Unified 
+Modeling Language) sebagai teknik pemodelan pengembangan perangkat lunak [1]. Penelitian lainnya berjudul 
+“Perancangan Sistem Informasi Administrasi Pada Erlin’s Chinese Course Jambi”.  Aplikasi ini digunakan untuk proses 
+pendaftaran, pencatatan data siswa yang sudah dan belum membayar uang kursus tiap bulannya. Aplikasi ini dibangun 
+menggunakan bahasa pemrograman PHP dan basisdata yang digunakan adalah MySQL [2].  Penelitian pembayaran uang les 
+yang dilakukan lembaga Bimbingan Vbelajar Be Excellent menunjukkan bahwa  dengan sistem pembayaran yang terbangun 
+mempermudah pendataan dan pembayaran dapat dilakukan dengan effektif dan efisien [3].  Penelitian lainnya yang berjudul 
+“Rancangan Sistem Informasi Petty Cash Bimbingan Belajar dan Kursus”, dilakukan untuk merancang sistem informasi, 
+database, yang memiliki kemampuan untuk menyaring pencarian data berdasarkan kategori sehingga menghasilkan laporan 
+dengan lebih cepat dan tepat, yaitu dengan cara mengambil data yang hendak dicari sehingga menarik data dari database 
+dengan cepat juga. Sistem informasi ini dibangun menggunakan pemrograman PHP dan basisdata MySQL [4].  Penelitian 
+lainnya lagi yang berjudul “Sistem Administrasi dan Layanan Pelanggan Berbasis Web dan Android Mobile untuk Kursus 
+Bahasa Mandarin X”, dilakukan dengan tujuan agar penjadwalan dan pencatatan data yang tadinya dilakukan manual menjadi 
+digital untuk memudahkan akses serta proses belajar pada kursus mandarin x, dann juga agar terdapat sistem yang dapat 
+berjalan cepat serta praktis dalam pemakaian. Sistem administrasi dan layanan ini dibangun menggunakan Bahasa 
+pemrograman JavaScript, CSS, JQuery Mobile yang memakai framework PhoneGap dan dengan DBMS MySQL [5]. 
+Berdasarkan penelitian terdahulu, maka rumusan masalah yaitu sistem pembayaran kursus akan membantu pihak 
+manajemen dalam mengelola data siswa, data kursus, data pembayaran serta laporan keuangan secara otomatis. Penelitian 
+ini bertujuan untuk membangun sistem untuk  mengembangkan sistem pembayaran uang kursus untuk pengelolaan keuangan 
+siswa yang terkontrol mulai dari pendaftaran siswa, penetapan tagihan kursus bulanan [6], pembayaran kursus dan pencetakan 
+kuitansi, sampai pelaporan keuangan serta pengelolaan data siswa dari lembaga kursus ini.   
+Rekayasa perangkat lunak menggunakan Siklus Pengembangan Perangkat Lunak / SDLC (Software Development Life 
+Cycle).  adalah suatu siklus pembuatan perangkat lunak untuk menyelesaikan masalah secara bertahap, terstruktur sehingga 
+efektif dan efisien [7].  SDLC berkembang dari waktu kewaktu, sesuai kebutuhan pembangunan perangkat lunak yang cepat, 
+tepat, efisien, efektif dalam memenuhi kebutuhan pemilik sistem maupun pengguna.  Beberapa metode dan teknik SDLC 
+antara lain : Waterfall, Prototype, RAD (Rapid Application Development),  JAD (Joint Application Development), UML 
+(Unified Model Language) [8], BPMN (Business Process Model and Notation) [9]. Metode SDLC yang digunakan dalam 
+penelitian ini adalah Metode Waterfall, tahapannya akan dijelaskan pada metodologi penelitian,  teknik desain perangkat 
+lunak menggunakan UML [8] dan desain basisdata menggunakan ERD (Entity Relationship Diagram) [10].  Pengujian 
+dilakukan melalui alfa testing dan beta testing. 
+ 
+ 
+ 
+
+
+--- HALAMAN 3 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+129 
+ 
+II. METODOLOGI PENELITIAN 
+Metodologi penelitian ini meliputi tahapan Studi Penelitian, Perumusan Masalah dan Tujuan, Studi Pustaka, Siklus 
+Pengembangan Perangkat Lunak Metode Waterfall yang terdiri dari lima proses Analisis Kebutuhan, Perancangan Sistem, 
+Implementasi Sistem, Pengujian Sistem dan Pemeliharaan Sistem seperti gambar 1. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+Gambar 1. Metode Penelitian MandarinPro 
+ 
+A. Studi Penelitian 
+Studi Penelitian adalah menetapkan tempat penelitian adalah Lembaga Kursus Mandarin Feng Huang Bali. Kemudian 
+menetapkan teknik pengambilan data. Teknik pengambilan data melalui observasi dan wawancara.  Observasi atau 
+pengamatan langsung terhadap rangkaian kegiatan yang dilakukan oleh pengguna untuk memperoleh data dan mengetahui 
+proses bisnis sistem.  Wawancara yaitu proses tanya jawab secara langsung kepada nara sumber, yaitu manager keuangan 
+terkait administrasi dari awal sampai akhir untuk memperoleh informasi yang dibutuhkan oleh sistem.   
+Hasil studi penelitian, maka diperoleh analisis SWOT (Strenghts-Weaknesses-Oppurtunites-Threats) untuk lembaga 
+kursus ini.  Analisis SWOT ditujukan untuk memetakan kekuatan (strengths) juga kelemahan (weaknesses) internal 
+organisasi, serta peluang (opportunities) juga ancaman (threats) eksternal organisasi [11]. 
+Studi Penelitian
+Perumusan Masalah 
+dan Tujuan
+Studi Pustaka
+Analisis 
+Kebutuhan
+Perancangan
+Implementasi
+Pengujian
+Pemeliharaan
+SIKLUS PENGEMBANGAN PERANGKAT LUNAK 
+WATERFALL 
+
+
+--- HALAMAN 4 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+130 
+ 
+ Strengths (Kekuatan) yaitu sumber daya yang tersedia di organisasi, yang lebih baik dibanding pesaingnya dalam 
+memenuhi semua kebutuhan konsumen.  Kekuatan lembaga kursus yaitu sistem pembayaran manual sudah berjalan, dan 
+memiliki sumber daya manusia yaitu staf administasi dan pengajar yang profesional, lokasi strategis, dan biaya kursus 
+yang relatif terjangkau.  
+Weaknesses (Kelemahan) yaitu kekurangan sumber daya atau kemampuan organisasi terhadap pesaingnya dalam 
+memenuhi kebutuhan konsumen.  Kelemahan lembaga kursus yaitu keterbatasan fasilitas yang ada, dan pelaporan dan 
+pengontrolan pembayaran masih manual.  
+Opportunities (Kesempatan) yaitu kondisi lingkungan yang menguntungkan organisasi.  Peluang bagi lembaga kursus 
+ini adalah jumlah siswa yang meningkat, jenis kursus Mandarin di Bali masih sedikit, biaya kursus relatif terjangkau, dan 
+kesediaan pihak manajemen untuk mengembangkan sistem yang terkomputerisasi [12].  
+Threats (Ancaman) yaitu situasi lingkungan yang tidak menguntungkan organisasi. Ancaman merupakan penghalang 
+utama bagi organisasi dalam mencapai harapan.  Ancamannya adalah meningkatnya kreativitas dan inovasi dalam 
+merekrut siswa oleh kursus sejenis, perkembangan teknologi yang semakin pesat dan tersedianya pembelajaran online [12], 
+naiknya harga sarana untuk mendukung keberlangsungan proses belajar mengajar dan honor pengajar. 
+ 
+B. Perumusan Masalah dan Tujuan 
+Berdasarkan hasil studi terhadap kebutuhan sistem di lembaga kursus, yang menjadi masalah utama adalah bagaimana 
+mengembangkan sistem pembayaran uang kursus untuk menunjang Lembaga Kursus Mandarin dan mengelola data 
+siswanya lebih baik dibanding secara manual.  Tujuan penelitian ini adalah rancang bangun sistem pembayaran uang 
+kursus dan pengelolaan data siswa. 
+ 
+C. Studi Pustaka 
+Studi Pustaka dilakukan dengan mengumpulkan informasi dari buku, jurnal, perangkat lunak yang berkaitan dengan 
+penelitian ini, supaya sistem yang dibangun memiliki keunikan dan memberikan solusi terbaik bagi lembaga kursus tersebut. 
+ 
+D. Siklus Pengembangan Perangkat Lunak Waterfall 
+Metode SDLC Waterfall yang akan digunakan dalam penelitiaan ini terdiri dari 5 tahapan utama. Analisa Kebutuhan, 
+Desain, Implementasi, Pengujian dan Pemeliharaan. 
+Analisa Kebutuhan adalah menganalisis kebutuhan sistem akan dijalankan nantinya. Hasil analisis berupa Dokumen 
+Spesifikasi Kebutuhan, meliputi kelebihan dan kekurangan sistem yang ada/berjalan bila ada, pembaharuan yang dapat 
+diterapkan dalam sistem baru, perencanaan sumber daya dan kapasitasnya, manajemen proyek, estimasi biaya yang 
+dibutuhkan.  Analis Sistem dan Manajer Proyek akan banyak berperan dalam tahapan ini. 
+Desain Perangkat Lunak adalah merancang perangkat lunak, berdasarkan Dokumen Spesfikasi Kebutuhan.  Rancangan 
+Perangkat Lunak merupakan cetak biru sebuah sistem yang akan dibuat. Rancangan dapat berupa rancangan proses, maupun 
+rancangan objek. Dalam penelitian ini, model yang digunakan adalah pemodelan UML dan rancangan basisdata ERD.   
+Implementasi Perangkat Lunak adalah membuat aplikasi atau program sesuai rancangan yang telah dibuat dalam tahap 
+desain. Analoginya mirip pembanguan rumah, tahap ini merupakan tahap membangun rumah tersebut.  Langkah-langkah 
+dalam implementasi ini adalah translasi ERD ke basisdata yang berisi tabel-tabel dan relasi antar tabel, pembuatan antar 
+muka, pembuatan menu, pembuatan subprogram, integrasi setiap subprogram. Luaran yang dihasilkan adalah perangkat 
+lunak sesuai desain, berfungsi dan siap ujicoba. 
+Pengujian Perangkat Lunak adalah mencoba apakah sistem yang dibuat, dapat bekerja sesuai harapan atau tidak?  Pada 
+tahap ini, ada beberapa hal yang harus diperhatikan, seperti pemenuhan spesifikasi kebutuhan sistem sampai rancangan 
+perangkat lunak, apakah sistem mudah digunakan (user friendly). Jika ditemukan kesalahan (bug), perangkat lunak akan 
+diperbaiki, kemudian dilakukan pengujian kembali.   Pengujian meliputi memeriksa kualitas kode, menguji fungsional sistem, 
+menguji integrasi sistem, menguji performa sistem, memeriksa keamanan sistem dan ujicoba penggunaan sistem.  Perangkat 
+lunak yang telah diuji, siap untuk digunakan atau didistribusikan kepada pengguna. 
+Pemeliharaan Perangkat Lunak adalah tahap akhir sekaligus menjadi permulaan fase baru saat sistem digunakan.  SDLC 
+belum berakhir di tahap ini. Perangkat lunak harus dipantau berkala untuk memastikan apakah berjalan sempurna ketika 
+digunakan oleh pengguna/operator. Pemantauan celah keamanan, performa, dan kerusakan ketika perangkat lunak digunakan, 
+harus dilaporkan dan ditindaklanjuti. Bila ada versi terbaru maka perangkat lunak akan dirilis untuk menggantikan versi 
+sebelumnya.  
+Metode Waterfall memiliki kelebihan diantaranya terdapat keteraturan urutan proses pembuatan perangkat lunak; 
+pengguna dapat menyiapkan seluruh kebutuhan data;  dan jadwal setiap proses dapat ditentukan secara pasti, sehingga target 
+penyelesaian dapat terpenuhi dengan lebih baik [13][14].  Meskipun demikian metode ini memiliki kelemahan yaitu proses 
+yang panjang sehingga perangkat lunak belum tampak sampai pertengahan siklus.  Metode ini tidak sesuai bila perubahan 
+sistem yang direncanakan sangat dinamis. 
+
+
+--- HALAMAN 5 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+131 
+ 
+III. HASIL DAN PEMBAHASAN 
+Hasil berupa Spesifikasi Kebutuhan Sistem, Use Case, Activity Diagram, ERD dan Relasi Antar Tabel, Antarmuka, 
+Perangkat Lunak dan Buku Panduan Penggunaan. 
+A. Spesifikasi Kebutuhan Sistem 
+Dari hasil wawancara didapatkan informasi bahwa Sistem Pengelolaan Pembayaran Uang Kursus terdiri dari 2 bagian 
+utama yaitu Pengelolaan Keuangan Siswa dan Pengelolaan Persediaan Barang, seperti pada Gambar 2. 
+ 
+ 
+Gambar 2. Spesifikasi Sistem MandarinPro 
+ 
+Pengelolaan Keuangan Siswa, meliputi Pengelolaan Data Siswa, Pembuatan Penetapan (Tagihan), Proses Pembayaran 
+(Cetak Kuitansi) dan Pembuatan Laporan Keuangan.  Sedangkan Pengelolaan Persediaan Barang, berhubungan dengan 
+Pengelolaan Data Barang dan Jenis Barang berupa buku, alat tulis yang berhubungan dengan kursus, Pengelolaan Data 
+Suplier (Vendor), Pengelolaan Pembelian sebagai transaksi barang masuk, Pengelolaan Penjualan sebagai transaksi 
+pengeluaran barang, dan Pembuatan Laporan Persediaan. 
+ 
+B. Desain Sistem dan Implementasi Sistem 
+Hasil dari spesifikasi kebutuhan sistem yang telah diuraikan kemudian dibuat desain sistem menggunakan pemodelan UML,  
+ERD untuk relasi antar entitas yang ditranslasikan menjadi Relasi Antar Tabel.  Use case diagram adalah salah satu dari 
+berbagai jenis diagram UML Use case menggambarkan hubungan interaksi antara aktor dan sistemnya.  Pada Sistem 
+Pembayaran Uang Kursus (MandarinPro), terdapat 2 aktor yaitu Admin dan Staf, sesuai kesepakatan organisasi.  Admin 
+memiliki seluruh akses ke sistem, sedangkan Staf hampir sama dengan Admin kecuali tidak mendapat akses ke Kelola 
+Pengguna dan Kelola Penetapan, seperti tampak pada Gambar 3.  Staf tidak diperkenankan untuk mengelola data pengguna, 
+seperti menambah, menghapus, mengganti.  Staf tidak diperkenankan untuk mengelola penetapan tagihan, seperti mengubah 
+data tarif, membatalkan pembayaran, mengganti biaya kursus.  Hal ini dimaksudkan untuk menjaga keamanan data penetapan 
+tagihan dan pembayaran yang sudah dilakukan. 
+
+
+--- HALAMAN 6 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+132 
+ 
+ 
+Gambar 3. Use Case Sistem Pembayaran Uang Kursus 
+ 
+Activity diagram digunakan untuk memodelkan proses-proses yang terjadi pada sebuah sistem. Diagram aktivitas ini 
+MandarinPro pada bagian Pengelolaan Keuangan Siswa MandarinPro dimulai dari pendaftaran siswa, penetapan tagihan 
+siswa, pembayaran dan pelaporan pembayaran, seperti tampak pada Gambar 4. Dalam sistem Pengelolaan Keuangan Siswa, 
+siswa tidak terlibat langsung dalam use case dikarenakan siswa tidak mendapat akses ke dalam sistem, namun pada diagram 
+aktivitas, siswa akan memberikan data yang akan dimasukkan oleh staf ke sistem MandarinPro.  Diagram aktivitas bagian 
+Pengelolaan Persediaan Barang dimulai dari pendaftaran barang, kelola pembelian, kelola penjualan dan pelaporan 
+persediaan barang, seperti tampak pada Gambar 5.  Dalam sistem Pengelolaan Persediaan Barang, suplier tidak terlibat 
+langsung dalam use case, namun pada diagram aktivitas, suplier akan memberikan data pembelian yang akan dimasukkan 
+oleh staf ke sistem MandarinPro.  
+
+
+--- HALAMAN 7 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+133 
+ 
+ 
+Gambar 4. Activity Diagram Pengelolaan Keuangan Siswa 
+ 
+ 
+Gambar 5. Activity Diagram Pengelolaan Persediaan Barang 
+
+
+--- HALAMAN 8 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+134 
+ 
+Relasi Antar Tabel memetakan hubungan antar objek data yang akan digunakan dalam operasi basisdata (Insert, Update, 
+Delete, Select). Relasi Antar Tabel merupakan translasi dari ERD.  Relasi yang digunakan dalam basisdata MandarinPro 
+adalah Satu-ke-Banyak (1-N) yaitu setiap baris data dari tabel pertama dapat dihubungkan ke satu baris atau lebih data pada 
+tabel ke dua.   
+ 
+ 
+Gambar 6. Relasi Antar Tabel MandarinPro 
+ 
+Pada Gambar 6, relasi antar tabel untuk sistem MandarinPro.  Bagian kiri merupakan tabel yang digunakan untuk 
+pengelolaan keuangan siswa : tbSiswa (data siswa), tbIdBelajar (data kode kursus), tbKelas (data tarif kursus per kelas), 
+tbPiutangSiswa (data tagihan dan pembayaran kursus).  Bagian kanan atas digunakan untuk transaksi penjualalan dan 
+pembayaran penjualan : FJ (data faktur penjualan), FJDet (data barang yang dijual), FJBayar (data pembayaran penjualan), 
+FJBayarDet (data faktur yang dibayar), Pelanggan (data konsumen). Bagian kanan bawah digunakan untuk transaksi 
+pembelian dan pembayaran pembelian : FB (data pembelian), FBDet (data barang yang dibeli), FBBayar (data pembayaran 
+pembelian), FBBayarDet (data barang yang dibeli), Supplier (data pemasok barang).  Tampilan awal dan menu MandarinPro, 
+tampak pada Gambar 7. 
+ 
+ 
+Gambar 7. Tampilan Awal dan menu-menu MandarinPro 
+
+
+--- HALAMAN 9 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+135 
+ 
+Pengelolaan Data Siswa merupakan aktivitas yang dilakukan oleh staf, yaitu [kelola data siswa] pada Gambar 4. 
+Pada modul ini terdapat proses untuk New, Clone, Edit Delete, Search, Print data siswa, seperti pada Gambar 8.  Tombol 
+untuk pengoperasian data tampak di bagian atas seperti Gambar 9.  Tabel data bagian tengah merupakan data siswa yang 
+terdaftar, dan tabel data bagian bawah merupakan Tab data piutang dan pembayaran siswa. 
+ 
+Gambar 8. Tampilan Data Siswa 
+ 
+ 
+Gambar 9. Icon Pengelolaan Data Siswa 
+ 
+New = tambah data siswa baru; Clone = duplikasi data siswa dari data sebelumnya; Edit = ubah data siswa yang sudah 
+ada; Delete = hapus data; Search = cari data berdasarkan kode atau nama; Refresh = refresh tampilan basisdata; Print 
+= cetak data siswa aktif/cuti/berhenti ; To Excel = Kirim data ke program MS Excel; Presence = masukkan kehadiran 
+siswa; Close - Keluar dari program. 
+ 
+Untuk mengisi data siswa, saat pilih icon New/Clone/Edit akan tampak seperti pada Gambar 10.  
+ 
+
+
+--- HALAMAN 10 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+136 
+ 
+ 
+Gambar 10. Mengisi Data Siswa  
+ 
+Penetapan Biaya Kursus Bulanan merupakan aktivitas yang dilakukan oleh admin, yaitu [penetapan tagihan seluruh 
+data siswa] pada Gambar 4.  Modul ini digunakan untuk membuat tagihan biaya kursus yang menjadi kewajiban siswa setiap 
+bulannya, seperti pada Gambar 11. Hanya siswa yang aktif yang akan dibuat tagihan pada bulan dan tahun diminta, sesuai 
+tarif IDBelajar dan Kelasnya. Tagihan hanya dibuat satu kali untuk siswa yang sama pada bulan dan tahun yang sama, artinya 
+dalam periode yang sama, sistem hanya membuat satu tagihan.  Siswa yang cuti dan keluar tidak akan dibuat tagihan.  Laporan 
+Penetapan Biaya Kursus akan ditampilkan setelah proses penetapan dilakukan, seperti pada Gambar 12. 
+ 
+ 
+Gambar 11. Penetapan Biaya Kursus Bulanan 
+
+
+--- HALAMAN 11 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+137 
+ 
+ 
+Gambar 12. Laporan Penetapan Biaya Kursus 
+ 
+Mengelola Pembayaran. merupakan aktivitas yang dilakukan oleh staf, yaitu [proses pembayaran] dan [cetak kuitansi 
+pembayaran] pada Gambar 4.  Modul ini digunakan untuk mengelola pembayaran uang kursus siswa. Staf dapat memilih 3 
+jenis pembayaran yaitu Registrasi (Biaya pendaftaran 1x saat mendaftar), Biaya Kursus atau/dan Penjualan Barang, seperti 
+pada Gambar 13.  Data yang harus dibayar akan muncul setelah nama siswa diisi, sesuai tagihan yang telah dibuat sebelumnya. 
+Kuitansi yang dihasilkan dapat dicetak ke printer.  Contoh kwitansi pembayaran kursus seperti pada Gambar 14. Apabila 
+tagihan pada bulan dan tahun tertentu sudah dibayar, maka tidak bisa dibayar ulang.  Hal ini untuk mencegah pembayaran 
+ganda.  Bila ada tagihan bulan-bulan sebelumnya yang belum dibayar, maka siswa tidak bisa membayar tagihan bulan 
+sekarang.  Siswa harus membayar tagihan yang paling lama.  Hal ini untuk mencegah terlewatnya tagihan sebelumnya.  
+ 
+ 
+Gambar 13. Pembayaran Uang Kursus 
+Masukkan Nama Siswa yang akan membayar 
+
+
+--- HALAMAN 12 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+138 
+ 
+ 
+Gambar 14. Contoh Kuitansi Pendaftaran dengan kertas 8.5" x 2.7" 
+ 
+Laporan Pembayaran Kursus untuk melihat penerimaan uang dari daftar ulang, pembayaran kursus bulanan dan 
+penjualan barang. Aktivitas yang dilakukan oleh staf sesuai activity diagram pada Gambar 4.   Jenis pembayaran dan total 
+penerimaan per jenis pembayaran akan ditampilkan untuk memudahkan perhitungan.  Jenis pembayaran meliputi Tunai, 
+Transfer Bank, Kartu Debit, Kartu Kredit, eWalet dan sebagainya. Langkah untuk mencetak laporan pembayaran, seperti 
+tampilan pada Gambar 15. Laporan Pembayaran Kursus per periode akan muncul seperti pada Gambar 16. 
+ 
+ 
+Gambar 15. Mencetak Laporan Pembayaran 
+ 
+ 
+Gambar 16. Laporan Pembayaran Uang Kursus per Periode 
+
+
+--- HALAMAN 13 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+Volume 9 Nomor 1 April 2023 
+ 
+139 
+ 
+C. Hasil Pengujian Sistem 
+Sistem informasi MandarinPro telah diuji menggunakan Alpha Testing dan Beta Testing. Pengujian dilakukan untuk 
+menguji fungsional dan non fungsional setiap fitur yang ada, apakah sudah sesuai dengan fungsinya atau belum [15]. 
+MandarinPro sudah diujicoba oleh tim pengembang atau tim penguji menggunakan alpha testing dengan meniru apa yang 
+akan dilakukan pengguna. Tahapan yang dilakukan yaitu meninjau spesifikasi desain dan fungsional setiap fitur. Setelah itu 
+membuat kasus pengujian yang diperlukan dan harapannya. Tim melakukan pengujian untuk memeriksa cacat pada sistem.  
+Apabila ditemukan cacat, maka  akan dicari permasalahannya, kemudian cacat diperbaiki. Setelah cacat diperbaiki, tim 
+melakukan uji ulang. Siklus pengujian ini akan berulang, sampai tidak ditemukan masalah. Semua fitur MandarinPro sesuai 
+spesifikasi desain pada Gambar 2 telah dilakukan pengujian alpha, hasilnya berjalan dengan sesuai harapan.   
+Beta testing diuji coba oleh operator/admin/staf Feng Huang Mandarin Course berfokus pada fungsionalitas sistem,  
+integritas sistem dan performa sistem secara keseluruhan.  Pengujian dilakukan selama beberapa bulan, mulai dari proses 
+pendaftaran siswa, mengubah tarif kursus, membuat penetapan tagihan, melakukan pembayaran kursus, mencetak kuitansi 
+ke printer, membatalkan kuitansi, membuat laporan penerimaan uang, melakukan pembelian barang, melakukan penjualan 
+barang, menampilkan persediaan, semua uji kasus berjalan baik.  Pengujian beta akan difokuskan pada modul utama 
+Pengelolaan Keuangan Siswa, sedangkan modul Persediaan Barang dibahas hanya bagian penjualan saja yang bersatu dengan 
+pembayaran uang kursus. Pada Tabel 1 Skenario Pengujian Beta MandarinPro Bagian Pengelolaan Keuangan Siswa  skenario 
+pengujian Pengelolaan Keuangan Siswa, yang dilakukan untuk menguji fungsional MandarinPro. 
+ 
+TABEL 1 
+SKENARIO PENGUJIAN BETA MANDARINPRO BAGIAN PENGELOLAAN KEUANGAN SISWA 
+ 
+No 
+Skenario Pengujian Kasus  
+Harapan Pengujian 
+Hasil 
+Pengujian 
+1 
+Pendaftaran Siswa 
+Siswa baru mendaftar, kelas HSK maka data pribadi 
+diisikan pada form data siswa (contoh siswa : Ni 
+Putu Wiryastuti) 
+Siswa mendapat KodeSiswa baru, semua data tersimpan  
+Sesuai 
+harapan 
+2 
+Ubah Tarif Kursus 
+Tarif kursus kelas HSK, biaya pendaftaran 200.000 
+dan biaya bulanan 1.450.000 
+Tarif Kursus kelas HSK berubah, semua data tersimpan. 
+Penetapan biaya kursus kelas HSK yang sudah diproses 
+sebelumnya, tidak boleh berubah 
+Sesuai 
+harapan 
+3 
+Penetapan tagihan 
+Membuat tagihan untuk siswa yang baru mendaftar 
+sesuai bulan dan tahun masuk. 
+Tagihan baru dengan KodeSiswa an. Ni Putu Wiryastuti 
+muncul untuk biaya pendaftaran 200.000 dan biaya 
+bulanan 1.450.000 sesuai kelas HSK pada bulan dan tahun 
+masuk 
+Sesuai 
+harapan 
+4 
+Pembayaran kursus 
+Melakukan pembayaran sekalian menjual buku 
+pelajaran untuk siswa Ni Putu Wiryastuti, 
+Data tagihan KodeSiswa an. Ni Putu Wiryastuti muncul, 
+siap untuk dibayar. 
+Data pembayaran tersimpan (pendaftaran, uang kursus 
+bulanan dan penjualan) 
+Kuitansi bukti pembayaran dicetak 
+Stok buku yang dijual berkurang 
+Sesuai 
+harapan 
+5 
+Pembayaran kursus untuk siswa yang sama 
+Melakukan pembayaran kursus untuk siswa Ni Putu 
+Wiryastuti, untuk mengecek apakah tagihan yang 
+sudah dibayar sebelumnya masih muncul? 
+Data tagihan KodeSiswa an. Ni Putu Wiryastuti tidak 
+boleh muncul karena sudah dibayar. 
+Pembayaran terakhir dimunculkan sebagai informasi 
+bahwa tagihan sebelumnya sudah dibayar 
+Sesuai 
+harapan 
+6 
+Pelaporan penerimaan uang 
+Skenario 1, 3 dan 4 diulang untuk beberapa siswa, 
+untuk menguji dan melihat laporan keuangan pada 
+suatu periode.   
+Melihat laporan penerimaan uang untuk suatu 
+periode (Contoh tanggal 01/12/2022 sd 31/12/2022) 
+Laporan penerimaan uang muncul untuk periode tanggal 
+01/12/2022 
+sd 
+31/12/2022, 
+data 
+siswa, 
+tanggal 
+penerimaan, keterangan penerimaan, jenis pembayaran 
+(tunai/transfer/kartu/wallet),  jumlah uang,   
+Sesuai 
+harapan 
+7 
+Pencarian data siswa 
+Skenario mencari data siswa yang sudah terdaftar 
+dalam 
+basisdata, 
+dan 
+kemudian 
+dilakukan 
+perubahan 
+Data siswa ditemukan, dan perubahan sesuai data siswa 
+tersebut 
+Sesuai 
+harapan 
+ 
+Pernah ditemukan suatu kasus, saat pencarian data siswa tidak berjalan baik, misal mencari nama A yang keluar nama B.  
+Hal ini terjadi karena indeks basisdata mengalami kerusakan.  Solusi untuk memperbaikinya, dengan melakukan Compact & 
+Repair Database menggunakan aplikasi MS Access.  MandarinPro sudah digunakan sejak 2018 dan masih digunakan 
+
+
+--- HALAMAN 14 ---
+Jurnal Teknik Informatika dan Sistem Informasi 
+ 
+  
+                                                   p-ISSN : 2443-2210 
+Volume 9 Nomor 1 April 2023 
+                                                                         e-ISSN : 2443-2229 
+ 
+140 
+ 
+sekarang  [16]. Sistem Informasi Manajemen ini sesuai digunakan di era informasi yang memberikan fleksibilitas untuk 
+memberikan solusi kebutuhan yang tepat untuk kursus [17]. 
+IV. SIMPULAN 
+Berdasarkan hasil pengujian pada penelitian Rancang Bangun Sistem Pembayaran Kursus Mandarin Feng Huang 
+(MandarinPro) ini dapat disimpulkan bahwa aplikasi dapat menangani pengelolaan keuangan mulai dari pendaftaran siswa, 
+penetapan tagihan, pembayaran kursus, penjualan barang, pelaporan keuangan. Aplikasi ini dapat dikembangkan untuk 
+pembayaran kursus sejenis, seperti kursus bahasa lainnya. Aplikasi ini masih berbasis desktop, sehingga hanya digunakan di 
+sistem operasi Windows, penelitian selanjutnya dapat dikembangkan aplikasi berbasis web, Android maupun IOS. 
+UCAPAN TERIMA KASIH 
+Terima kasih kepada LPPM (Lembaga Penelitian dan Pengabdian Kepada Masyarakat) Universitas Kristen Maranatha 
+Bandung yang telah memfasilitasi penelitian ini, Terima kasih kepada Feng Huang Mandarin Course Bali yang bersedia 
+menjadi tempat penelitian.  Terima kasih kepada LPIK (Lembaga Pengembangan Inovasi dan Kewirausahaan) yang 
+memfasilitasi terbitnya HKI Program Komputer dengan Judul Ciptaan : MandarinPro, tanggal dan tempat : 10 Oktober 2022, 
+di Bandung dengan Nomor pencatatan : 000423874. 
+DAFTAR PUSTAKA 
+[1] 
+A. Kulung, S. Sentinuwo, dan A. Sinsuw, “Perancangan Aplikasi Pembelajaran Bahasa Mandarin Dasar Menggunakan Metode Unified Software 
+Development Process,” J. Tek. Inform., vol. 9, 2016. 
+[2] 
+L. Letisia, X. Sika, dan E. Suratno, “PERANCANGAN SISTEM INFORMASI ADMINISTRASI PADA ERLIN’S CHINESE COURSE JAMBI,” 
+J. Ilm. Mhs. Sist. Inf., vol. 3, no. 1, hal. 56–66, 2021. 
+[3] 
+P. W. Septiantari, “Sistem Informasi Pembayaran Les Pada Lembaga Bimbingan Belajar Be Excellent Pacitan,” J. Speed – Sentra Penelit. Eng. dan 
+Edukasi ISSN  1979-9330 - 2088-0154, vol. 7, no. 2, hal. 30–37, 2015. 
+[4] 
+Dedi, A. R. Mariana, dan S. Husnia, “Rancangan Sistem Informasi Petty Cash Bimbingan Belajar dan Kursus,” J. Sisfotek Glob., vol. 7, no. 1, hal. 
+42–48, 2017. 
+[5] 
+N. William, H. Palit, dan L. P. Dewi, “Sistem Administrasi dan Layanan Pelanggan Berbasis Web dan Android Mobile untuk Kursus Bahasa Mandarin 
+X,” J. INFRA, vol. 4, no. 2, hal. 1–5, 2016. 
+[6] 
+A. Goli, P. K. Chintagunta, dan S. Sriram, “Effects of Payment on User Engagement in Online Courses,” J. Mark. Res., vol. 59, no. 1, hal. 11–34, 
+2022. 
+[7] 
+S. Mulyani, Metode Analisis dan Perancangan Sistem. Bandung: Abdi Sistematika, 2017. 
+[8] 
+Software 
+Ideas 
+Modeler, 
+“UML 
+Tool 
+with 
+Free 
+Edition.” 
+Software 
+Ideas 
+Modeler 
+Is, 
+2022, 
+[Daring]. 
+Tersedia 
+pada: 
+https://www.softwareideas.net/en/free-uml-tool#. 
+[9] 
+M. Von Rosing, S. A. White, F. Cummins, dan H. De Man, “Business process model and notation-BPMN,” Complet. Bus. Process Handb. Body 
+Knowl. from Process Model. to BPM, vol. 1, no. 1, hal. 429–453, 2014. 
+[10] D. Rodina, “Chen ER Diagram - Entity-Relationship Diagram in Chen Notation.” Software Ideas Modeler Is, 2020, [Daring]. Tersedia pada: 
+https://www.softwareideas.net/chen-er-diagram-erd. 
+[11] M. F. Rohman, Teknik analisis manajemen SWOT: Untuk menyusun KKP Diklatpim & Renstra, 3 ed. Malang: AFJ Mobicons, 2015. 
+[12] H. L. Ting, K. Y. Soo, L. C. Siang, S. E. Ooi, dan P. H. Chong, “Effectiveness of ‘Pocket Mandarin’ for Online Learning among Mandarin as a 
+Foreign Language Basic Learners,” Int. J. Mod. Lang. Appl. Linguist., vol. 5, no. 3, hal. 122–137, 2021. 
+[13] M. K. Juansyah,S.Kom, “Lembaga Kursus Mubatek Berbasis Web,” Teknol. Inf. dan Komput. Politek. Sekayu, vol. 9, hal. 56–68, 2019. 
+[14] W. Nugraha, M. Syarif, dan W. S. Dharmawan, “Penerapan Metode Sdlc Waterfall Dalam Sistem Informasi Inventori Barang Berbasis Desktop,” 
+JUSIM (Jurnal Sist. Inf. Musirawas), vol. 3, no. 1, hal. 22–28, 2018. 
+[15] W. Suryn, Software Quality Engineering: A Practitioner’s Approach. Wiley-IEEE Computer Society Pr, 2014. 
+[16] M. Zakaria, Teddy, J. Kasih, N. Halim, dan S. Gunadi, Michael, “MandarinPro.” Universitas Kristen Maranatha, Bandung, 2022, [Daring]. Tersedia 
+pada: https://pdki-indonesia.dgip.go.id/search?type=copyright&keyword=000423874&page=1. 
+[17] H. Stephen, Management Information Systems for the Information Age, 9 ed. McGraw Hill, 2012. 
+ 
+

@@ -1,0 +1,1633 @@
+--- HALAMAN 1 ---
+e-ISSN : 2443-2229
+ 
+RESTFul Web 
+St
+Penidas F
+Magis
+JL
+Abstract – PT. XYZ is a PT that enga
+jewelry. There ara several units at PT. X
+for information and using of different sys
+influence the process of integration and
+PT. XYZ. The impact of these condition
+performance of the company. The obje
+from this research is discusses the R
+architecture that uses security by imple
+Token  and use was in the system of reco
+PT XYZ. This research resulted in a R
+architecture applied in PT. XYZ. 
+ 
+Keywords − Web Service, RESTFul, JSON
+I. PENDAHULUAN
+Pemanfaatan teknologi saat ini, me
+besar baik dalam lingkup individu 
+Teknologi selalu dikembangkan den
+memenuhi setiap kebutuhan bagi para p
+lingkungan bisnis, proses bisnis saat 
+bersifat dinamis, didistribusikan dan k
+perlu untuk beradaptasi dengan pros
+dengan lebih sering, dan integrasi prose
+organisasi [1]. 
+PT. XYZ adalah sebuah PT yang be
+pemasaran perhiasan yang beroperasi 
+semenjak tahun 2012. Terdapat be
+lingkungan perusahan. Masing-masing 
+yang berbeda platform dan bahasa pe
+seperti ini memberikan pengaruh bes
+kinerja dari masing-masing unit. Da
+terdapat transaksi-transaksi yang me
+stok barang, pencatatan dan lapor
+dilakukan. Proses tersbut berdampak pa
+antara data pergudangan dan data p
+dikarenakan terdapat beberapa databa
+secara terpisah dan aplikasi-aplikasi 
+Permasalahan lain yang terdapat pa
+membangun integrasi antar aplikasi
+lingkungan PT. XYZ, dan akses yang ak
+para petinggi perusahaan yang berloka
+ 
+                    Jurnal Teknik Info
+Service Untuk Sistem 
+Transaksi  
+tudi Kasus PT. XYZ 
+ 
+Fiodinggo Tanaem#1, Danny Manongga*2, Ade Iriani
+ster Sistem Informasi, Fakultas Teknologi Informasi 
+Universitas Kristen Satya Wacana Salatiga 
+L. Diponegoro 52-60, Salatiga 50711, Indonesia 
+1fiodinggo@gmail.com 
+2dmanongga@gmail.com 
+3adeiriani@gmail.com 
+ 
+aged in marketing of 
+XYZ that have a need 
+stems. These condition 
+d distributing data at 
+ns that descrease the 
+ctives to be achieved 
+RESTful Web Service 
+ementing JSON Web 
+ording transactions in 
+RESTful Web Service 
+N Web Token . 
+N 
+emberikan pengaruh 
+maupun organisasi. 
+ngan tujuan untuk 
+penggunanya. Dalam 
+ini lebih cenderung 
+kolaboratif, sehingga 
+es bisnis yang lain 
+es melalui batas-batas 
+ergerak dalam bidang 
+di daerah Semarang 
+eberapa unit dalam 
+unit memiliki sistem 
+mrograman. Kondisi 
+ar dalam penurunan 
+alam kesehariannya, 
+empengaruhi jumlah 
+ran transaksi yang 
+ada penyesuaian data 
+pencatatan transaksi, 
+ase yang digunakan 
+yang berbeda-beda. 
+ada PT. XYZ yaitu 
+i yang terdapat di 
+kan diberikan kepada 
+asi di luar Indonesia. 
+Hal ini memberikan tantang
+XYZ sendiri. Penerapan W
+alternative terbaik yang digun
+integrasi sistem dan distribus
+perusahaan. 
+WS merupakan suatu 
+teknologi saat ini yang dap
+sistem, terutama dalam lin
+Dustdar memberikan pand
+membangun sebuah WS un
+berkembang dari waktu ke w
+integrasi dan fleksibilitas 
+kepentingan dalam mengint
+pendekatan manajemen dan 
+Bentuk nyata dari perkemban
+hadirnya WS berbasis RESTf
+[3] RESTFul WS sangat 
+kinerja. Ketika server REST
+besar dan secara bersamaan 
+internet, karena memiliki kin
+keamanan RESTFul merupa
+yang harus di perhatikan. 
+mencakup mengamankan da
+untuk melindungi kerahasiaan
+satu langkah yang dapat d
+permasalahan tersebut yaitu m
+(JWT). 
+JWT 
+adalah 
+sta
+mendefinisikan cara yang 
+transmisi informasi yang am
+menggunakan format data o
+ditransmisikan dengan aman 
+menggunakan digital signatur
+menggunakan kunci rahasia (
+sepasang kunci publik/privat m
+Artikel ini akan dibahas 
+WS yang memanfaatkan secu
+dan pemanfaatanya dalam 
+pencatatan 
+transaksi 
+PT 
+penggabungan ini dikarenak
+ormatika dan Sistem Informasi 
+Volume 2 Nomor 1 April 2016 
+ 
+1 
+Pencatatan 
+#3 
+gan tersendiri bagi pihak PT. 
+Web Service (WS) merupakan 
+nakan dalam mengatasi kondisi 
+i data yang dialami oleh pihak 
+bentuk perkembangan dari 
+pat digunakan untuk integrasi 
+ngkungan bisnis. Vasco dan 
+dangan bahwa manfaat dari 
+ntuk kebutuhan bisnis yang 
+waktu yaitu peningkatan jumlah 
+untuk pengembangan demi 
+tegrasikan service ke dalam 
+proses bisnis yang ada [2]. 
+ngan WS saat ini yaitu dengan 
+Tful. Meng berpendapat bahwa 
+baik dalam mengoptimalkan 
+TFul WS diakses dalam skala 
+dalam sistem terdistribusi di 
+nerja tinggi dan stabil. Namun, 
+akan salah satu poin penting 
+Mengamankan RESTFul WS 
+ata, serta seluruh komunikasi 
+n dan integritas data [4]. Salah 
+di gunakan dalam mengatasi 
+menggunakan JSON Web Token 
+andar 
+(RFC 
+7519) 
+yang 
+simpel dan independen dari  
+man antar setiap pihak dengan 
+objek JSON. Informasi yang 
+dan dapat diverifikasi karena 
+re. Digital signature JWT dapat 
+dengan algoritma HMAC) atau 
+menggunakan RSA [5]. 
+mengenai arsitektur RESTFul 
+urity dengan menerapkan JWT 
+pemanfaatannya pada sistem 
+XYZ. 
+Faktor 
+penyebab 
+kan RESTFul memanfaatkan 
+
+
+--- HALAMAN 2 ---
+Jurnal Teknik Informatika dan Sistem In
+Volume 2 Nomor 1 April 2015 
+ 
+ 
+2  
+format 
+data 
+JSON, 
+dengan 
+demi
+memungkinkan dalam proses menggabu
+JWT [6] dengan tujuan yaitu untuk men
+data dengan menggunakan RESTFul
+menghasilkan 
+sebuah 
+arsitektur 
+R
+diterapkan di lingkungan PT. XYZ untu
+distribusi data pada sistem yang berbeda
+II. KAJIAN PUSTAK
+Su dan Chiang menekankan ba
+mengikuti prinsip-prinsip REST sering
+[7]. Konsep REST WS diperkenalkan p
+Roy Fielding. Fielding mengungka
+Transfer Representasi State (REST) m
+dari 
+elemen 
+arsitektur 
+dalam 
+s
+terdistribusi. 
+Dalam 
+membangun 
+menggunakan protokol HTTP, Sedangk
+dan setiap proses dimodelkan sebaga
+dengan URI yang unik [8]. Dengan kat
+adalah WS sederhana yang dapat 
+kumpulan 
+sumber 
+daya 
+yang 
+menggunakan HTTP dan prinsip-prinsip
+A. Penelitian Terdahulu 
+Terdapat penelitian terdahulu dibid
+Hussain dan Dilber dengan judul “R
+security by using ASP.NET web API M
+tujuan yaitu mengeksplorasi API Web A
+menggunakan 
+framework 
+mengimplementasikan RESTFul WS. 
+keamanan yang berbeda seperti claim 
+Web token  sederhana dan delegation ba
+kendala keamanan yang serius sep
+stateless, client-server dll. Hasil dari 
+mengamankan representasi dari sumber
+Berbeda dengan penelitian yang dilakuk
+penelitian ini menggabungkan RESTFu
+JWT dalam mengamankan pertukaran 
+yang terjadi. 
+Kariluoma menyajikan penelitian 
+RESTFul Architecture For Multiuser V
+And Simulations” berfokus pada proses
+desain MOO (MUD Object Oriented
+terdistribusi 
+dan 
+modifikasi 
+Ja
+memungkinkan MOO yang didistribus
+yaitu mengurangi beban komputasi per-
+dengan pendekatan single-server trad
+penelitian tersebut yaitu membangun
+menggunakan interface RESTFul da
+design MOO, menggunakan sumber da
+server-side, dan dapat diimplementasik
+server terdistribusi [9]. Fokus penel
+mendistribusikan data dengan mem
+RESTFul yaitu format data JSON, karen
+sangat sederhana dan memiliki ukura
+dibandingkan dengan XML. 
+nformasi  
+ikian 
+akan 
+sangat 
+ubgkan RESTFul dan 
+ngamankan distribusi 
+WS. Penelitian ini 
+ESTFul 
+WS 
+yang 
+uk menunjang proses 
+a-beda. 
+KA 
+ahwa sistem yang 
+g disebut "RESTFul" 
+pada tahun 2000 oleh 
+apkan bahwa gaya 
+merupakan abstraksi 
+sistem 
+hypermedia 
+komunikasi, 
+REST 
+kan Setiap dokumen 
+ai sumberdaya Web 
+ta lain, RESTFul WS 
+dianggap sebagai 
+diimplementasikan 
+p REST [7]. 
+dang ini. Penelitian 
+Restful web services 
+MVC based” dengan 
+ASP.NET yang akan 
+MVC 
+untuk 
+Penggunaan teknik 
+based, OAuth2 dan 
+ased karena memiliki 
+perti itu cashable, 
+penelitian ini yaitu 
+r daya informasi  [1]. 
+kan di PT.XYZ yaitu 
+ul WS dengan konsep 
+data atau informasi 
+dengan judul “A 
+Virtual Environments 
+s penggabungan pola 
+d) dengan arsitektur 
+ava 
+MOO 
+yang 
+ikan. Dengan tujuan 
+-server dibandingkan 
+disional. Hasil dari 
+n sebuah arsitektur 
+an mendukung pola 
+aya yang minim dari 
+kan sebagai jaringan 
+litian saat ini yaitu 
+manfaatkan interface 
+na format data JSON 
+an yang lebik kecil 
+B. RESTFul WS  
+Gagasan utama dari RE
+sebagai komponen dari aplik
+dialamatkan [10]. REST WS
+cara yang lebih ringan dan 
+sumberdaya [11]. REST d
+batasan, diantaranya: 
+• 
+Resource 
+Identificatio
+Uniform 
+Resource
+mengidentifikasi sumb
+sumber daya dapat d
+identifikasi yang mudah
+• 
+Connectedness: artinya
+seharusnya mengikuti l
+daya agar dapat  berinte
+• 
+ Uniform Interface: 
+tersedia melalui antar
+semantik yang mend
+Hypertext Transfer P
+mencakup metode PO
+[12]. 
+• 
+Self-Describing 
+Mess
+resource yang ada, RES
+satu 
+format 
+data 
+dibandingkan dengan 
+tergantung developer. 
+• 
+Stateless Interactions: 
+dari klien lengkap, dala
+untuk melayani reques
+informasi yang dibu
+dipahami [10], dan tid
+state atau penanda dari 
+Terdapat dua bagian pe
+membangun komunikasi deng
+dan pesan Body. HTTP H
+header request diilustrasika
+response pada gambar 2, dan 
+[13]. Setiap request sumberd
+dapat dikendalikan dengan 
+[14]. Setiap kolom Header te
+titik dua (":") atau white spac
+bersifat case-sensitive. Head
+yang diperlukan untuk mengu
+dan respon. 
+Gambar 1. H
+e-ISSN : 2443-2229 
+ 
+EST adalah konsep resource 
+kasi yang perlu digunakan atau 
+membangun integrasi dengan 
+sederhana, dan berfokus pada 
+dapat dijelaskan dalam lima 
+on: 
+Web 
+bergantung 
+pada 
+Identifier 
+(URI) 
+untuk 
+ber daya, sehingga link  ke 
+dibentuk menggunakan skema 
+h untuk dikenali [10].  
+a klien dari RESTFul Service 
+link  untuk menemukan sumber 
+eraksi dengan Service [10]. 
+artinya sumber daya harus 
+rmuka yang seragam dengan 
+definisikan interaksi, seperti 
+Protocol (HTTP) [10]. HTTP 
+OST, GET, PUT dan DELETE 
+sages: 
+artinya 
+mengekspos 
+STFul menggunakan lebih dari 
+(XML, 
+JSON, 
+RDF, 
+dll) 
+SOAP (XML), namun hal ini 
+mengharuskan setiap request 
+am arti bahwa semua informasi 
+st ke server harus berisi setiap 
+utuhkan agar request dapat 
+ak ada ketergantungan dengan 
+client. 
+esan yang digunakan untuk 
+gan server yaitu pesan Header 
+Header, yang umum meliputi 
+an pada gambar 1, header 
+terdapat bidang entitas-header 
+daya dari masing-masing client 
+memanfaatkan HTTP Header 
+erdiri dari nama diikuti dengan 
+ce dan konten field. Nama field 
+der berisikan semua informasi 
+umpulkan metode request [15] 
+ 
+Header Request. 
+
+
+--- HALAMAN 3 ---
+e-ISSN : 2443-2229
+ 
+Gambar 2. Headers Respon
+Sedangkan HTTP body mencakup 
+digunakan untuk memuat entitas bo
+HTTP yang berhubungan dengan req
+gambar 3 dan respon pada gambar 
+melakukan request, HTTP body bisanya
+setiap parameter yang untuk request
+berisikan informasi yang didapatkan dar
+Gambar 3. Body Request
+Gambar 4. Body Respon
+REST menentukan sekumpulan prin
+mana dapat digunakan untuk merancan
+pada sumber daya sistem, termasuk bag
+yang dialamatkan dan ditransfer m
+Operasi 
+CRUD 
+HTTP 
+Method 
+Format Applicati
+form-URLen
+Create 
+POST 
+HTTP Form Encod
+Read  
+GET 
+None 
+Update  
+PUT 
+HTTP Form Encod
+Delete  
+DELETE 
+None 
+ 
+C. JSON Web Token  (JWT) 
+JSON Web Token  (JWT) adalah keam
+token  encoding yang memungkin
+keamanan informasi untuk dibagikan 
+keamanan [18]. Hal ini memungk
+mendapatkan token  dengan member
+password mereka [19]. Sebuah token  u
+oleh penyedia layanan dan dikonsum
+mengandalkan konten untuk mengiden
+dengan tujuan yang berhubungan den
+JWT adalah Format representasi ya
+ditujukan untuk ruang yang dapat digu
+Header Authorization dan parameter UR
+adalah suatu cara merepresentasikan
+ditransfer antara dua pihak [6],[21
+ditawarkan oleh JWT adalah statel
+memungkinkan pengguna untuk ber
+kembali dan kontrol akses ke sumberday
+ 
+                    Jurnal Teknik Info
+ 
+nse. 
+pesan HTTP yang 
+ody melalui protkol 
+quest tuangkan pada 
+4 [13]. Saat client 
+a berisikan informasi 
+. Sedangkan respon 
+ri hasil request. 
+ 
+t. 
+ 
+n. 
+nsip arsitektur yang 
+ng WS yang berfokus 
+gaimana sumber daya 
+melalui HTTP oleh 
+berbagai klien yang ditulis 
+yang berbeda [16]. Deng
+mengoperasikan operasi CRU
+delete) yang [17] dapat dil
+metode HTTP antara lain PO
+Tabel 1 menyajikan pemeta
+permohonan HTTP. 
+Format 
+application/x-ww
+digunakan oleh masing-masi
+GET dan DELETE berbeda d
+berbeda, hal ini dikarenakan c
+Parsing data pada metode GE
+URL, sedangkan POST dan 
+melalui payload HTTP deng
+‘application/x-www-form-UR
+Kode status HTTP respo
+dilakukan oleh client.  
+• Kode status 201: r
+menghasilkan sumber d
+• Kode status 200: respo
+dari client yang diny
+Respon sebenarnya ak
+request yang digunakan
+ 
+TABEL 1. PEMETAAN METODE HTTP PADA REST 
+ion/x-www-
+ncoded 
+HTTP Statu
+ded 
+Status 201 CREATED 
+Status 200 Ok 
+ded 
+Status 200 Ok 
+Status 200 Ok 
+manan berbasis JSON 
+nkan identitas dan 
+di seluruh domain 
+kinkan client untuk 
+rikan username dan 
+umumnya diterbitkan 
+msi oleh pihak yang 
+ntifikasi subjek token  
+ngan keamanan [18]. 
+ang sederhana yang 
+unakan seperti HTTP 
+RI Request [20]. JWT 
+n klaim yang akan 
+1]. Kelebihan yang 
+less. Stateless JWT 
+rbagi, menggunakan 
+ya [22]. 
+Gamba
+JSON Web Token  terdiri da
+oleh titik “.” (gambar 5), 
+Signature. Header biasanya 
+token , yaitu JWT, dan algo
+SHA256 (gambar 5) [5].   
+Gambar 6. J
+Bagian kedua dari JWT
+klaim. Klaim adalah perny
+(biasanya, pengguna) dan m
+yang dituangkan pada gambar
+ormatika dan Sistem Informasi 
+Volume 2 Nomor 1 April 2016 
+ 
+3 
+dalam bahasa pemrograman 
+gan demikian REST dapat 
+UD (create, read, update dan 
+lakuan dengan memanfaatkan 
+OST, GET, PUT dan DELETE. 
+aan operasi CRUD ke dalam 
+ww-form-URLencoded 
+yang 
+ing metode HTTP diantaranya 
+dengan POST dan PUT adalah 
+cara parsing data yang berbeda. 
+ET dan DELETE dimuai melalui 
+PUT melakukan parsing data 
+gan memanfaatkan media type 
+RLencoded’. 
+on server terhadap aksi yang 
+request telah terpenuhi dan 
+daya yang baru Create. 
+on standar untuk request HTTP 
+yatakan sukses oleh server. 
+kan tergantung pada metode 
+n. 
+us 
+ 
+ar 5. JWT 
+ari tiga bagian yang dipisahkan 
+yaitu Header, Payload dan 
+terdiri dari dua bagian: jenis 
+oritma hashing seperti HMAC 
+ 
+JWT Header. 
+adalah payload, yang berisi 
+yataan tentang suatu entitas 
+metadata tambahan [5] seperti 
+r 7. 
+
+
+--- HALAMAN 4 ---
+Jurnal Teknik Informatika dan Sistem In
+Volume 2 Nomor 1 April 2015 
+ 
+ 
+4  
+Gambar 7. JWT Payload
+Bagian ketiga dan terakhir dari kam
+akan menjadi signature. Signature ini t
+komponen-komponen yaitu Header, 
+rahasia [5]. Bedasarkan setiap kompon
+terdapat pada JWT, akan di signin d
+seperti yang dituangkan pada gambar 8.
+Gambar 8. JWT Signatur
+Alur kerja enkripsi dari JWT yaitu d
+Base64URL encoding digunakan encri
+dan signature token  yang menghasilkan
+Kemudian sebuah signatur yang unik 
+proses Base64URL menggunakan algori
+HMAC SHA-256 dan sebuah private ke
+bagian signature untuk integritas data d
+Hash Algorithm 256 (SHA-256) me
+digest dengan panjang 256 bit. SHA-2
+satu fungsi hash satu arah, kare
+menemukan pesan dari message dig
+karena SHA-256 menggunakan enam fu
+setiap fungsi beroperasi pada 32-bit [23
+Klaim dalam JWT di encode sebag
+dapat ditandatangani dan/atau dienk
+menggunakan JSON Web Signature
+pilihan dienkripsi menggunakan JSO
+(JWE) [6]. Sebuah token  adalah string
+struktur data JSON, dengan demikian 
+merepresentasikan suatu objek JSON ya
+disampaikan oleh JSON Web Token  [
+dan mendekripsi token  dilakukan m
+Algorithm (JWA ) [19]. Standar spesifi
+oleh Internet Engineering Task For
+kebutuhan implementasi ditentukan untu
+Penerapan JWT dapat digunakan p
+kondisi 
+saat 
+autentikasi 
+dan 
+per
+Autentikasi merupakan kondisi yang
+untuk menggunakan JWT, setelah pen
+permintaan yang dilakukan oleh client
+JWT, yang dapat memungkinkan pen
+router, service, dan sumber daya yan
+token  yang dibuat [5]. Single Sign On m
+banyak menggunakan JWT saat ini, ka
+kecil dan kemampuannya untuk denga
+nformasi  
+ 
+d. 
+mi JSON Web Token  
+terdiri dari hash dari 
+payload dan kunci 
+nen komponen yang 
+engan kunci rahasia 
+. 
+ 
+re. 
+dengan menggunakan 
+ipsi header, payload 
+n hasil enkripsi 64bit. 
+akan dihasilkan dari 
+itma kriptografi hash 
+ey yang terdapat pada 
+dan otorisasi. Secure 
+enghasilkan message 
+256 merupakan salah 
+ena tidak mungkin 
+gest yang dihasilkan 
+ungsi logika, di mana 
+]. 
+ai objek JSON yang 
+kripsi secara digital 
+(JWS) dan sebagai 
+ON Web Encryption 
+g yang mengkodekan 
+sebuah string dapat 
+ang berisi klaim yang 
+[24]. Proses enkripsi 
+menurut JSON Web 
+ikasi JWT ditentukan 
+rce (IETF), tingkat 
+uk setiap JWA  [19]. 
+pada 2 kondisi yaitu 
+rtukaran 
+informasi. 
+g umum ditemukan 
+ngguna login, setiap 
+t harus menyertakan 
+ngguna untuk akses 
+ng diizinkan dengan 
+merupakan fitur yang 
+arena overhead yang 
+an mudah digunakan 
+pada sistem dan domain yang
+dimaksudkan dengan pertuk
+JWT adalah cara yang bai
+dengan 
+aman 
+antara 
+se
+ditandatangani, misalnya me
+Selain itu, signature dibentuk
+dan 
+payload [5]. 
+Denga
+memberikan kemudahan ba
+sumberdaya tanpa harus meng
+berulang 
+kali 
+[19]. 
+P
+memungkinkan client untuk 
+server di domain karena p
+Header HTTP untuk mengirim
+III. METO
+Penelitian ini dilakukan 
+beberaapa unit dilingkungan p
+unit memiliki sistem yang
+kebutuhan tiap-tiap unit. 
+terkumpul dari hasil wawanc
+mendesain WS yang diban
+dengan tujuan untuk melihat 
+yang dipakai pada sistem yan
+informasi, hardware, softwar
+manusia 
+yang 
+tersedia 
+Berdasarkan hasil wawancar
+desain sistem yang menghasil
+system berupa desain konsep
+yaitu 
+menghasilkan 
+spesif
+kebutuhan pengguna.   
+Konsep arsitektur yang d
+pada system transaksi PT. XY
+Gambar 9. Arsi
+Arsitektur tersebut terdir
+Business Logic dan data 
+berfungsi untuk memproses se
+PUT dan DELETE). Pada pe
+menerjemahkan setiap reque
+token  dari client. Sedangk
+mengimplementasikan fungsi
+e-ISSN : 2443-2229 
+ 
+g berbeda [5]. Sedangkan yang 
+karan informasi menggunakan 
+ik untuk transmisi informasi 
+etiap 
+pihak, 
+karena 
+dapat 
+nggunakan public/private key. 
+k dengan menggunakan Header 
+n 
+demikian, 
+JWT 
+mampu 
+agi client  untuk mengakses 
+ginput username dan password 
+Pendekatan 
+berbasis 
+token  
+membuat panggilan AJAX ke 
+anggilan dapat menggunakan 
+mkan informasi pengguna [5].  
+ODOLOGI 
+di PT. XYZ karena terdapat 
+perusahaan dan masing-masing 
+g berbeda-beda berdasarkan 
+Data atau informasi yang 
+ara dan dijadikan acuan dalam 
+ngun. Wawancara dilakukan 
+lebih jauh berbagai komponen 
+ng digunakan meliputi data atau 
+re, jaringan dan sumber daya 
+di 
+lingkungan 
+perusahaan. 
+ra yang dilakukan, dilakukan 
+lkan desain fungsional. Desain 
+ptual dari sistem dengan tujuan 
+fikasi 
+yang sesuia dengan 
+digunakan pada RESTFul WS 
+YZ dituangkan pada gambar 9. 
+ 
+itektur RESTFul. 
+ri atas lapisan Middleware, 
+Access. Lapisan Middleware 
+etiap komunikasi (POST, GET, 
+enerapannya, Middleware akan 
+est HTTP Body dan validasi 
+kan Business layer berfungsi 
+ionalitas inti dari sistem, dan 
+
+
+--- HALAMAN 5 ---
+e-ISSN : 2443-2229
+ 
+merangkum logika bisnis yang relevan. 
+berperan untuk mengekspos data b
+batasan yang dimiliki oleh sistem. Data
+diekspos menggunakan format data J
+bahasa independen dan berdasarkan
+key/value dan 
+mempunyai list 
+v
+memungkinkan untuk digunakan da
+pemrograman modern yang membuatn
+yang baik untuk berkomunikasi di dunia
+Penelitian ini menggunakan beberapa
+POST, GET dan DELETE. POST digu
+Create dan Update. Metode GET digun
+Read. Sedangkan metode DELETE un
+Namun, Price berpendapat bahwa [26]
+paling banyak digunakan yaitu metode 
+kerena HTTP GET akan dipanggil seti
+meminta URI dari Web server. Dampak
+situasi tersebut yaitu penurunan kin
+Dalam mengatasi metode GET, cach
+yang bisa digunakan untuk mengatasi m
+bisa diartikan sebagai memiliki inform
+sementara yang disimpan untuk peng
+atau berhubungan erat dengan int
+penerapannya, cache digunakan pada 
+untuk mengatasi response ke client. 
+Alur kerja dari RESTFul WS yan
+dijelaskan pada gambar 10 sebagai berik
+Gambar 10. GET Token 
+Sebelum 
+client 
+melakukan 
+aks
+sumberdaya yang dimiliki, client har
+terlebih dahulu. Respon dari proses log
+akan digunakan pada HTTP Heade
+sumberdaya. 
+ 
+                    Jurnal Teknik Info
+Lapisan Data access 
+erdasarkan batasan-
+a atau informasi yang 
+JSON. JSON adalah 
+n koleksi pasangan 
+value. 
+Struktur ini 
+alam setiap bahasa 
+nya menjadi pilihan 
+a Web [25]. 
+a metode HTTP yaitu 
+unakan untuk operasi 
+nakan untuk operatsi 
+ntuk operasi Delete. 
+ metode HTTP yang 
+request HTTP GET, 
+ap kali browser Web 
+k yang dirasakan dari 
+nerja dari RESTFul. 
+he merupakan solusi 
+masalah ini. Caching 
+masi, data dan obyek 
+ggunaan yang sering 
+terval [27]. Dalam 
+lapisan middleware 
+ng dibangun, dapat 
+kut: 
+ 
+. 
+ses 
+kepada 
+setiap 
+rus melakukan login 
+gin yaitu token  yang 
+r untuk mengakses 
+Gambar 11. J
+Terdapat grup router yang
+sumberdaya yaitu group rut
+untuk menempatkan proses v
+yang ingin mengakses data.
+tangani, RESTFul akan mela
+muat melalui HTTP Header o
+ormatika dan Sistem Informasi 
+Volume 2 Nomor 1 April 2016 
+ 
+5 
+ 
+JWT Validation. 
+g digunakan untuk mengakses 
+ter ”/WS”. Hal ini dilakukan 
+alidasi JWT untuk setiap client 
+. Sebelum setiap response di 
+akukan validasi token  yang di 
+oleh client (gambar 11). 
+
+
+--- HALAMAN 6 ---
+Jurnal Teknik Informatika dan Sistem In
+Volume 2 Nomor 1 April 2015 
+ 
+ 
+6  
+Gambar 12. Akses RESTFul
+RESTFul memberikan abstraksi untu
+informasi dan memberikan akses rem
+Access. Isi Data Access yang dianggap 
+yang direferensikan oleh URI sederhan
+JSON. Misalnya, data list item deng
+offset: “0” dapat diakses melalui m
+sederhana dengan URI: '/WS/listitem/10
+data 
+item 
+juga 
+dapat 
+diappl
+URLencoded, diubah dan di hapus m
+HTTP POST ataupun DELETE (G
+komunikasi yang diterapkan untuk men
+yang digunakan PT.XYZ pada saat i
+(Virtual Private Network) menyediaka
+antara perusahaan dan Cloud [28].
+perusahan 
+sepenuhnya 
+memiliki 
+sumberdaya mereka sendiri.  
+Dalam penerapannya, database yan
+mengoleksi sumberdaya yaitu mysql se
+menggunakan server apache 2. Kompu
+menggunakan Ubuntu server LTS 14.04
+seperti yang di tuangkan pada gambar 1
+nformasi  
+ 
+l WS. 
+uk mempublikasikan 
+ote ke lapisan Data 
+sebagai sumber daya 
+na dan diwakili oleh 
+gan limit: “10” dan 
+metode GET HTTP 
+0/0’. Demikian pula, 
+lication/x-www-form-
+menggunakan metode 
+Gambar 12). Jalur 
+ngakses RESTFul WS 
+ini yaitu VPN. VPN 
+an akses yang aman 
+ Dengan demikian 
+control 
+terhadap 
+ng digunakan untuk 
+erver. Aplikasi server 
+uter Server RESTFul 
+4. dengan spesifikasi 
+3. 
+Gambar 13. Sp
+IV. HASIL DAN
+A. Hasil 
+Sistem pencatatan transaks
+dibangun dengan tujuan u
+transaksi yang terjadi. Nam
+sistem ini dikembangkan aga
+sistem lain yang dimiliki oleh
+menunjang pelaksanaan pr
+perusahaan secara menyeluru
+pada fungsi bisnis tertentu 
+bagi sejumlah area fungsional
+Berdasarkan implementas
+dijalankan pada jaringan local
+PT.XYZ 
+untuk 
+mengitegr
+dilingkungan PT.XYZ baik 
+jaringan lokal, maupun ya
+internet. Jalur komunikasi y
+mengintegrasikan RESTFul W
+di lingkungan PT. XYZ yaitu 
+VPN. Cakupan dari sistem
+transaksi yang terjadi, rekap
+data account user, rekapan d
+Order / transaksi, print Pro
+status Provide Order / transak
+dan laporan setiap transaksi 
+dari pencatatan tiap transaksi 
+grafik tahunan maupun bula
+informasi mengenai rangkum
+terjadi dalam setahun (gam
+bulanan berisiskan informas
+transaksi yang terjasi dalam
+e-ISSN : 2443-2229 
+ 
+ 
+pesifikasi Server. 
+ 
+N PEMBAHASAN 
+si yang dimiliki oleh PT.XYZ 
+utama yaitu mencatat setiap 
+mun dalam perkembangannya 
+ar dapat di integrasikan dengan 
+h PT. XYZ dengan tujuan yaitu 
+roses bisnis di lingkungan 
+uh, yang [29] bukan terbatas 
+saja namun dapat bermanfaat 
+l (across functional areas). 
+si saat ini, RESTFul WS 
+l. RESTFul WS digunakan oleh 
+rasikan 
+sistem 
+yang 
+ada 
+sistem yang dijalankan pada 
+ng dijalankan pada jaringan 
+ang digunakan saat ini untuk 
+WS dengan sistem yang berada 
+dengan menggunakan jaringan 
+m ini yaitu pencatatan setiap 
+pan tiap produk, pengelolaan 
+data stamp, pencatatan Provide 
+ovide Order / transaksi, rekap 
+ksi, setting Access control List 
+yang terjadi / summary. Hasil 
+akan dituangkan dalam bentuk 
+nan. Grafik tahunan berisikan 
+man dari setiap transaksi yang 
+mbar 14). Sedangkan grafik 
+si mengenai rangkuman hasil 
+m satu bulan (gambar 15). 
+
+
+--- HALAMAN 7 ---
+e-ISSN : 2443-2229
+ 
+ 
+                    Jurnal Teknik Info
+Gambar 14. Grafik Per Tahun 
+ 
+Gambar 15. Grafik Per Bulan. 
+ormatika dan Sistem Informasi 
+Volume 2 Nomor 1 April 2016 
+ 
+7 
+ 
+ 
+
+
+--- HALAMAN 8 ---
+Jurnal Teknik Informatika dan Sistem In
+Volume 2 Nomor 1 April 2015 
+ 
+ 
+8  
+Pemanfaatan RESTFul pada sistem
+difokuskan pada integrasi antara setiap 
+dan sumberdaya dialamatkan. RESTF
+harus mampu mengatasi setiap integras
+demikian, ketika pengguna ingin mem
+yang ada, sumberdaya harus di d
+individual 
+atau 
+menambahkan 
+mendistribusikan sumberdaya tersebut
+request yang dilakukan client. Reques
+dilakukan oleh client memanfaatkan
+untuk mengambil data summary berda
+dialamatkan 
+dengan 
+URL
+‘/WS/GET_summary {tahun}’. Denga
+URL dapat mengandung satu atau lebih 
+Umumnya pada sistem yang diban
+terhadap sumberdaya yang dilakukan
+menyertakan data token  client. Data
+akan di sertakan pada HTTP header d
+dengan menggunakan tipe konten appl
+URLencoded untuk di validasi pada 
+RESTFul. Dan setiap respon dari 
+menggunakan format data standar yaitu
+Client akan diberikan token  saat clie
+melakukan login ke server seperti yang
+gambar 16. 
+Gambar 16. Diagram alur kerja akses 
+Tipe 
+konten 
+‘application/x-www
+adalah jenis konten default komunikasi
+Semua 
+karakter 
+dikodekan 
+sebelu
+dikonversi ke simbol "+", dan karakter k
+nilai-nilai ASCII HEX) [31]. Hasil konv
+dimuat dalam HTTP Header. HTTP 
+beberapa entitas diantaranya metode 
+username, content type dan panjang 
+nformasi  
+m transaksi PT.XYZ 
+sistem yang berbeda 
+Ful WS sepenuhnya 
+si yang ada. Dengan 
+manggil sumberdaya 
+distribusikan secara 
+aplikasi 
+untuk 
+t berdasarkan setiap 
+st sumberdaya yang 
+n URL. Contohnya, 
+asarkan tahun, yang 
+berikut 
+POST 
+an demikian, Setiap 
+sumberdaya [30]. 
+ngun, setiap request 
+n oleh client harus 
+a tersebut kemudian 
+dan di kirim ke WS 
+ication/x-www-form-
+lapisan middleware 
+hasil request yang 
+u format data JSON. 
+ent tersebut berhasil 
+g diilustrasikan pada 
+ 
+RESTFul WS. 
+w-form-URLencoded’ 
+i metode HTTP [13]. 
+um 
+dikirim 
+(spasi 
+khusus dikonversi ke 
+versi yang dilakukan, 
+Header terdiri dari 
+HTTP, URL, token, 
+konten seperti yang 
+diilustrasikan pada gambar 
+yang didapatkan merupaka
+memiliki entitas data berbed
+yang direquest (gambar 18). 
+Gambar 17. R
+Gambar 18. Hasil doku
+Pada lapisan middleware R
+yang digunakan untuk mem
+ruter “/login” dan sub ruter 
+JWT, terdapat tiga bagian JW
+signature [5]. Isi dari JW
+algorithm. Conten dari type
+yaitu “HS256”. Sedangkan 
+dateCreate (berisikan waktu
+(berisikan waktu kadaluarsa
+(berisikan id client), usernam
+dan ip (berisikan ipaddress
+signature diantaranya hasil 
+menggunakan base64uelenc
+payload, kunci rahasia dan 
+Sedangkan pada proses valida
+header dari client dan menggu
+e-ISSN : 2443-2229 
+ 
+17. Sedangkan hasil request 
+an format data JSON yang 
+da-beda berdasarkan jenis data 
+ 
+Request Header 
+ 
+umen dalam format JSON. 
+RESTFul WS, terdapat dua ruter 
+mbuat JWT. Diantaranya yaitu 
+“/WS”. Dalam proses enkripsi 
+WT yaitu header, payload dan 
+WT Header yaitu: type dan 
+e yaitu “JWT” dan algorithm 
+isi dari JWT payload yaitu 
+u membuat token), dateexpire 
+a token  yaitu 15 menit), id 
+me (berisikan username client) 
+s client). Sedangkan isi dari 
+kombinasi dari enkripsi yang 
+ode JWT header dan JWT 
+algoritma dari JWT header. 
+asi JWT, menggunakan request 
+unakan kunci rahasia. 
+
+
+--- HALAMAN 9 ---
+e-ISSN : 2443-2229
+ 
+Gambar 19. JWT encrypted and d
+Dalam melakukan proses enkripsi d
+digunakan kunci publik untuk melaku
+Pada penerapannya, jika data JWT dar
+atau persyaratan konfirmasi tidak dap
+harus menyusun suatu respon error
+dihasilkan untuk client harus berdasark
+server. Client menggunakan token 
+sumber daya yang dilindungi oleh Ser
+dituangkan pada gambar 19.  
+B. Pembahasan 
+Mengatasi setiap permintaan d
+memanfaatkan RESTFul WS merupaka
+Hal ini didasarkan pada RESTFul WS
+dengan REST Application Programmi
+API), yang secara luas diterapkan diba
+seperti Google Map, Google docs, Wik
+dan sebagainya [7]. Salah satu fakto
+menjadi keunggulan dari RESTFul W
+system dan memudahkan client aga
+sumberdaya sebagaimana adanya, 
+sumberdaya tersebut [30]. Yang di
+lightweight system (sistem yang rin
+komunikasi yang digunakan untuk kom
+client yaitu menggunakan protokol HTT
+Stateless dapat diartikan dengan tida
+penanda dari client. Contohnya pada p
+Session adalah cara untuk menyimpa
+variabel) yang akan digunakan di beb
+Session merupakan penanda dari clien
+server agar client dengan mudah dap
+pada 
+pendekatan 
+session 
+tidak 
+d
+RESTFul.  
+Keuntungan dari stateless antaralain:
+• RESTFul WS dapat merespon 
+client 
+secara 
+independen 
+d
+sumberdaya 
+dari 
+RESTFul
+menggunakan URI yang unik. 
+ 
+                    Jurnal Teknik Inf
+ 
+decrypted. 
+dan deskripsi token , 
+ukan proses tersebut. 
+ri client tidak valid, 
+pat terpenuhi, server 
+[32]. Token  yang 
+kan persetujuan dari 
+ untuk mengakses 
+rver [6] seperti yang 
+dari client dengan 
+an solusi yang tepat. 
+WS atau juga dikenal 
+ing Interface (REST 
+anyak aplikasi besar 
+kipedia, FacebookTM 
+or pendukung yang 
+WS yaitu lightweight 
+ar dapat mengakses 
+atau memodifikasi 
+imaksudkan dengan 
+ngan) karena jalur 
+munikasi server dan 
+TP. 
+ak adanya state atau 
+penggunaan Session. 
+an informasi (dalam 
+erapa halaman [31]. 
+nt yang disimpan di 
+pat dikenali. Namun 
+diperbolehkan 
+pada 
+ 
+setiap request dari 
+dikarenakan, 
+setiap 
+WS 
+dialamatkan 
+• RESTFul WS tidak m
+demikian RESTFul
+aplikasi-aplikasi berska
+JWT menyediakan cara ba
+setiap permintaan tanpa harus
+melakukan login berulang 
+otentikasi stateless sebagai pe
+disimpan pada memory serve
+validasi JWT yang digunak
+tersebut dinyatakn valid, 
+mengekspos data yang diingin
+RESTFul WS menggun
+berkomunikasi dengan clien
+jalur komunikasi yang sta
+RESTFul WS dan JWT s
+pendukung yang memungk
+tersebut yaitu penggunaan f
+format data JSON dan konse
+tawar dari pendekatan RESTF
+V. KESIM
+Membangun komunikasi d
+informasi antar sistem merup
+untuk mengatasi permasala
+Langkah 
+tersebut 
+dapat 
+pembentukan  arsitektur integ
+aman, ketersediaan informasi
+kemampuan integrasi antar 
+dalam menunjang setiap 
+kelompok maupun individu [
+suatu cara yang dapat digun
+sistem dan mendistribusika
+berbeda-beda. Dalam hal pen
+yang dapat diambil yaitu 
+RESTFul WS dan JWT. JW
+yang dapat digunakan untuk m
+JWT memanfaatkan HMAC
+enkripsi dan dekripsi data yan
+bagian dari JWT itu sendiri. 
+Penelitian ini menghasilka
+WS yang aman bagi PT. XY
+dibangun, menggunakan JSO
+mengamankan komunikasi y
+dapat disimpulkan bawa san
+XYZ dalam mengintegrasik
+dengan menggunakan aplik
+diintegrasikan dengan jalur k
+memanfaatkan 
+RESTFul
+komunikasi yang di bangun
+melakukan request, client ha
+didapat dari dari hasil logi
+request client di proses.  
+Keterbatasan penelitian in
+pemanfaatan arsitektur RESTF
+berdasarkan permasalahan t
+dilakukan 
+dilakukan 
+kajia
+formatika dan Sistem Informasi 
+Volume 2 Nomor 1 April 2016 
+ 
+9 
+menggunakan Session. Dengan 
+WS dapat digunakan pada 
+ala besar. 
+agi client untuk mengotentikasi 
+s mempertahankan session atau 
+kali ke server. Mekanisme 
+enanda bagi client tidak pernah 
+er [5]. Server akan melakukan 
+kan oleh client dan jika JWT 
+client akan diijinkan untuk 
+nkan. 
+akan protokol HTTP untuk 
+nt. Protokol HTTP merupakan 
+ateless. Proses penggabungan 
+sangat dimungkinkan. Faktor 
+kinkan untuk penggabungan 
+format data yang sama yaitu 
+ep stateless yang menjadi nilai 
+Ful dan JWT. 
+MPULAN 
+dan menditribusikan data atau 
+akan langkah yang dapat ambil 
+ahan keterbatasan informasi. 
+dibuktikan 
+dengan 
+cara 
+grasi, penyediaan layanan yang 
+i dan proses yang memberikan 
+sistem yang dapat digunakan 
+aktifitas dalam lingkungan 
+[29]. RESTFul WS merupakan 
+nakan dalam mengintegrasikan 
+an data untuk sistem yang 
+ngamanan sumberdaya, langkah 
+dengan cara menggabungkan 
+WT merupakan sebuah konsep 
+mengamankan data oleh karena 
+C SHA256 dalam melakukan 
+ng komplex berdasarkan setiap 
+an sebuah arsitektur RESTFul 
+YZ. Adapun RESTFul WS yang 
+ON Web Token  (JWT) dalam 
+ang terjadi. Dengan demikian, 
+ngat memungkinkan bagi PT. 
+kan sumberdaya dari sistem 
+kasi yang berbeda dan dapat 
+komunikasi yang aman dengan 
+WS. 
+Dikarenakan 
+prosedur 
+n dalam RESTFul yaitu setiap 
+arus menyertakan token  yang 
+in untuk di validasi sebelum 
+ni yaitu hanya berfokus pada 
+TFul WS dan pemanfaatan JWT. 
+tersebut, maka penting untuk 
+an 
+lebih 
+lanjut 
+mengenai 
+
+
+--- HALAMAN 10 ---
+Jurnal Teknik Informatika dan Sistem In
+Volume 2 Nomor 1 April 2015 
+ 
+ 
+10  
+pemanfaatan RESTFul WS dan penggu
+JWT, terutama algoritma yang digunak
+sangat umum digunakan, sehingga dap
+tersandiri bagi keamanan RESTFul WS.
+DAFTAR PUSTAKA
+[1] 
+M. I. Hussain and N. Dilber, “Restful web 
+ASP . NET web API MVC based,” vol. 12, n
+[2] 
+R. Sommermeier, A. Heil, and M. Gae
+Integration using the WebComposition 
+Proceedings of the First International W
+Integration on the Web (ComposableWeb’09
+[3] 
+J. Meng, S. Mei, and Z. Yan, “RESTful Web
+Distributed Data Integration,” Comput. Inte
+2009. Int. Conf., vol. 6, no. 4, pp. 1–4, 2009
+[4] 
+K. V. Kanmani and P. S. Smitha, “Survey 
+Using Open Authorization (Oauth) ,” IOSR 
+no. 4, pp. 53–56, 2013. 
+[5] 
+IETF, “JSON Web Token.” [Online]. A
+[Accessed: 16-Jan-2016]. 
+[6] 
+M. B. Jones, “The Emerging JSON-Based
+W3C Work. Identity Brows., pp. 1–3, 2011. 
+[7] 
+C.-J. Su and C.-Y. Chiang, “Enabling succe
+REST-based Web Service and Web 2
+information platform for collaborative 
+Comput. Ind., vol. 63, no. 9, pp. 948–959, 20
+[8] 
+R. T. Fielding, “Architectural Styles and 
+based Software Architectures,” Building, vo
+[9] 
+M. Kariluoma, “A RESTFUL ARCHITECT
+VIRTUAL ENVIRONMENTS AND S
+Dakota State University of Agriculture and A
+[10] D. Guinard, M. Mueller, and V. Trifa, 
+Systems: A Practical Case Study in RFID,”
+to Practice, E. Wilde and C. Pautasso, Ed
+Science+Business Media, LLC, 233 Sprin
+10013, USA, 2015, pp. 359–379. 
+[11] A. J. Rettig, S. Khanna, and R. a. Beck, “Op
+for environmental sensor networking,” Ap
+294–300, 2015. 
+[12] J. Sandoval, RESTFul Java Web Service,
+Mumbai: Packt Publishing Ltd., 2009. 
+[13] www.w3.org, “WWW.” [Online]. Availab
+[Accessed: 16-Feb-2016]. 
+[14] C. Timmons, “Thin Client Distributed Simu
+Models,” Carleton University, 2013. 
+[15] T. Schreiber, “Amazon Web Services Secu
+SQS Interfaces,” Ruhr-Universität Bochum,
+[16]  a Rodriquez, “RESTful Web services: The 
+1–11, 2008. 
+nformasi  
+unaan algoritma pada 
+an oleh JWT saat ini 
+pat menjadi ancaman 
+A 
+services security by using 
+no. 1, 2014. 
+edke, “Lightweight Data 
+Data Grid Service,” in 
+Workshop on Lightweight 
+9), 2009, pp. 30–38. 
+b Services: A Solution for 
+ll. Softw. Eng. 2009. CiSE 
+. 
+on Restful Web Services 
+J. Comput. Eng., vol. 15, 
+Available: https://jwt.io/. 
+ Identity Protocol Suite,” 
+essful Collaboration 2.0: A 
+2.0 technology oriented 
+product development,” 
+012. 
+the Design of Network-
+ol. 54, p. 162, 2000. 
+TURE FOR MULTIUSER 
+SIMULATIONS,” North 
+Applied Science, 2014. 
+“RESTifying Real-World 
+ in REST: From Research 
+ds. Switzerland: Springer 
+ng Street, New York, NY 
+pen source REST services 
+ppl. Geogr., vol. 60, pp. 
+, vol. 53. Brimingham - 
+ble: https://www.w3.org/. 
+ulation Of Discrete Event 
+urity Analysis of S3 and 
+, 2011. 
+basics,” no. February, pp. 
+[17] S. Jamal and R. Deters, “Usi
+Mobile Consumers of RESTf
+vol. 5, pp. 625–632, 2011. 
+[18] M. B. Jones, B. Campbell, an
+(JWT) Profile,” Internet Eng. T
+[19] M. Dosé, “A schematic for 
+frameworks With regards to 
+Chalmers University Of Techno
+[20] J. Bradley, N. Sakimura, and M
+[21] M. B. Jones, “IDENTITY PR
+PRACTICE : Establishing Su
+Sign-On ( ESPReSSO ),” Inf. S
+[22] N. Birwadkar, P. Malone, J. Ha
+S. Ivanov, Ł. Radziwonowicz, a
+Implementing a User-Centric 
+Control for Cloud-based Data 
+pp. 570–574, 2015. 
+[23] S. Yusmantoro, E. Hermansya
+KEASLIAN 
+SURAT 
+ELG
+ALGORITHM 256 STUDI 
+PERIZINAN TERPADU ( BPP
+1, pp. 28–36, 2014. 
+[24] J. Huff, D. Schlacht, A. Nad
+Madsen, and T. Ace, “Online M
+Industry Standard for Authorize
+[25] T. Guenther, “Bachelor Thesis
+and Attacking of Single S
+Erklärung,” Ruhr-University Bo
+[26] S. Price, P. a. Flach, S. Spiegle
+web services and workflows f
+and their published works,” Fu
+2, pp. 569–581, 2013. 
+[27] I. Abdullahi, S. Arif, and S. Ha
+in Information Centric Network
+no. 2015, pp. 48–59, 2015. 
+[28] K. 
+Annapureddy, 
+“Security
+Infrastructures,” Aalto Univ. 
+2010. 
+[29] T. Kristanti, “Integrasi Enterpr
+‘X’),” J. Sist. Inf., vol. 4, p. 19,
+[30] M. Athanasopoulos and K. Kon
+models from procedure-oriente
+vol. 100, pp. 149–166, 2015. 
+[31] www.w3schools.com, “HTML
+Available: http://www.w3schoo
+[32] M. Jones, B. Campbell, and C. 
+Bearer Token Profiles for OA
+bearer-04.txt, 2012. 
+ 
+e-ISSN : 2443-2229 
+ 
+ing a Cloud-Hosted Proxy to support 
+ful Services,” Procedia Comput. Sci., 
+nd C. Mortimore, “JSON Web Token 
+Task Force, no. 1, pp. 1–5, 2015. 
+comparing web backend application 
+responsiveness and load scalability,” 
+ology, 2015. 
+M. Jones, “JSON Web Token (JWT).” 
+ROTOCOL SUITE RECOMMENDED 
+uggested Practices Regarding Single 
+Stand. Q., vol. 2, no. 3, p. 32, 2014. 
+ange, K. Doyle, E. Robson, D. Conway, 
+and R. Kleinfeld, “Personal Cloudlets : 
+Datastore with Privacy Aware Access 
+Platforms,” IJARCCE, vol. 4, no. 12, 
+ah, and R. Efendi, “PENGAMANAN 
+GAMAL 
+DAN 
+SECURE 
+HASH 
+KASUS : BADAN PELAYANAN 
+PT ) KOTA BENGKULU,” vol. 2, no. 
+dalin, J. Simmons, P. Rosenberg, P. 
+Multimedia Authorization Protocol An 
+ed Access to,” 2012. 
+s Automatic Recognition , Processing 
+ign-On Protocols with Burp Suite 
+ochum, Germany, 2015. 
+er, C. Bailey, and N. Rogers, “SubSift 
+for profiling and comparing scientists 
+utur. Gener. Comput. Syst., vol. 29, no. 
+assan, “Survey on caching approaches 
+king,” J. Netw. Comput. Appl., vol. 56, 
+y 
+Challenges 
+in 
+Hybrid 
+Cloud 
+Semin. Netw. Secur., p. T–110.5290, 
+rise (Studi Kasus: Yayasan Pendidikan 
+ 2012. 
+ntogiannis, “Extracting REST resource 
+ed service interfaces,” J. Syst. Softw., 
+L form enctype Attribute.” [Online]. 
+ols.com. [Accessed: 16-Feb-2016]. 
+Mortimore, “JSON Web Token (JWT) 
+Auth 2.0,” no. draft-jones-oauth-jwt-
+ 
+

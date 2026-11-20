@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="diagram_kerangka_ta" name="Gambar 1.1 Diagram Alir Kerangka Pengerjaan Tugas Akhir">
+    <mxGraphModel dx="1200" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="980" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== FASE INISIASI PENELITIAN ==================== -->
+        <!-- Mulai -->
+        <mxCell id="node_mulai" value="Mulai" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="23" y="21" width="157" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Mulai -> Identifikasi Masalah -->
+        <mxCell id="edge_mulai_identifikasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_mulai" target="node_identifikasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Identifikasi Masalah -->
+        <mxCell id="node_identifikasi" value="Identifikasi Masalah" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="254" y="22" width="224" height="67" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Identifikasi Masalah -> Studi Literatur -->
+        <mxCell id="edge_identifikasi_studi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_identifikasi" target="node_studi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Studi Literatur -->
+        <mxCell id="node_studi" value="Studi Literatur" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="548" y="22" width="239" height="67" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Studi Literatur -> Requirements (Menembus Kontainer PXP) -->
+        <mxCell id="edge_studi_req" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.2;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="node_studi" target="node_req">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== KONTAINER UTAMA PXP ==================== -->
+        <!-- PXP Container Outer Box -->
+        <mxCell id="container_pxp" value="" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="157" y="117" width="781" height="718" as="geometry" />
+        </mxCell>
+
+        <!-- PXP Label (Top-Right inside Container) -->
+        <mxCell id="lbl_pxp" value="&lt;b&gt;PXP&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Requirements -->
+        <mxCell id="node_req" value="Requirements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="506" y="160" width="178" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Requirements -> Planning -->
+        <mxCell id="edge_req_plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="node_req" target="node_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Planning -->
+        <mxCell id="node_plan" value="Planning" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="255" y="160" width="171" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Planning -> Iteration Initialization -->
+        <mxCell id="edge_plan_init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="node_plan" target="node_init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Iteration Initialization -->
+        <mxCell id="node_init" value="Iteration Initialization" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="237" y="281" width="208" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Iteration Initialization -> Design -->
+        <mxCell id="edge_init_des" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_init" target="node_des">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Design -->
+        <mxCell id="node_des" value="Design" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="542" y="281" width="142" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Design -> Implementation Outer Box -->
+        <mxCell id="edge_des_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.5;exitY=1;entryX=0.483;entryY=0;" edge="1" parent="1" source="node_des" target="container_impl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== KONTAINER IMPLEMENTATION ==================== -->
+        <!-- Implementation Outer Box -->
+        <mxCell id="container_impl" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="356" y="397" width="532" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Implementation Label (Top Center inside Container) -->
+        <mxCell id="lbl_impl" value="Implementation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="545" y="410" width="150" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Unit Testing -->
+        <mxCell id="node_ut" value="Unit Testing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="374" y="458" width="135" height="71" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Unit Testing -> Code -->
+        <mxCell id="edge_ut_code" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_ut" target="node_code">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Code -->
+        <mxCell id="node_code" value="Code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="554" y="458" width="130" height="71" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Code -> Refactor -->
+        <mxCell id="edge_code_refactor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_code" target="node_refactor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Refactor -->
+        <mxCell id="node_refactor" value="Refactor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="730" y="458" width="140" height="71" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Implementation Box -> System Testing -->
+        <mxCell id="edge_impl_st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.483;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="container_impl" target="node_st">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== TAHAP TESTING & SIKLUS ITERASI ==================== -->
+        <!-- System Testing -->
+        <mxCell id="node_st" value="System Testing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="514" y="592" width="195" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: System Testing -> Retrospective -->
+        <mxCell id="edge_st_retro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="node_st" target="node_retro">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Retrospective -->
+        <mxCell id="node_retro" value="Retrospective" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="255" y="592" width="178" height="66" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Retrospective -> Perlu Iterasi Lanjutan? -->
+        <mxCell id="edge_retro_diamond" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="node_retro" target="node_diamond">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Decision Diamond: Perlu Iterasi Lanjutan? -->
+        <mxCell id="node_diamond" value="Perlu Iterasi&lt;br&gt;Lanjutan?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="248" y="683" width="186" height="131" as="geometry" />
+        </mxCell>
+
+        <!-- Branch: Ya (Loopback to Iteration Initialization) -->
+        <mxCell id="edge_diamond_ya" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_diamond" target="node_init">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="749" />
+              <mxPoint x="190" y="314" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Label: Ya -->
+        <mxCell id="lbl_ya" value="Ya" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="165" y="495" width="40" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Branch: Tidak (Exits PXP towards UAT) -->
+        <mxCell id="edge_diamond_tidak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_diamond" target="node_uat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="341" y="891" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Label: Tidak -->
+        <mxCell id="lbl_tidak" value="Tidak" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="350" y="830" width="55" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== FASE AKHIR ==================== -->
+        <!-- User Acceptance Testing (UAT) -->
+        <mxCell id="node_uat" value="User Acceptance Testing (UAT)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="462" y="857" width="302" height="67" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: UAT -> Selesai -->
+        <mxCell id="edge_uat_selesai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="node_uat" target="node_selesai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Selesai -->
+        <mxCell id="node_selesai" value="Selesai" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;fontSize=14;fontFamily=Helvetica;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="844" y="856" width="157" height="69" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

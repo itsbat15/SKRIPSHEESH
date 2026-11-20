@@ -1,0 +1,520 @@
+﻿[
+    {
+        "Text":  "Table I shows the process script for the Personal Extreme",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programming (PXP). User stories are written on cards. The card",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "does not contain all the information that makes up the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requirement. Instead, the card has just enough text to identify the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requirement, and to remind everyone what the story is. The card is",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "a token representing the requirement. It\u0027s used in planning. Notes",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "are written on it, reflecting priority and cost. It\u0027s always handed to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the programmers when the story is scheduled to be implemented,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and given back to the customer when the story is complete.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Table 1: Personal Extreme Programming (PXP) Process Script",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "El.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pl.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Tasks",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "1. Planmng",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Development",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Codin standard is available.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Produce or obtain a uirements statement.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A. Write S em Meta hor.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "B. Write User Stories",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "P2. FOR all User Stories",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A. Pick a User St and break it into features.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "END",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "P3. Create domain-driven desi to reflect the domain model in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "P4. Gro features into meanin",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "u s FeatureSets .1",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "PS. Write acce tance tests for FeatureSets",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "P5. Estimate FeatureSet size and uired develo ent time usi",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "our desi",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ideal da s.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "P7. Sort FeatureSet according to riori to create FeatureSetPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "PS. Establish Iteration schedule.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "DI. FOR all FeatureSets in the FeatureSetPriori List",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A. Pick a FeatureSet to im lement from to of the FeatureSetPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "B. IF chan e introduced in this FeatureSet = YES",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "l. U date the FeatureSet.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2. Re-sort the FeatureSetPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "C. ELSE",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "l. U date desi and create an iteration Ian for the current FeatureSet.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2. FOR all Features in the FeatureSet",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "a. Pick a feature from the FeatureSet and break it into tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "b. Sort tasks accordin to their riori to create a TaskPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c. FOR all task in the TaskPriori List",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "cl. Pick a task from the to of the TaskPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c2. Write unit tests for the task.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c3. Write/Modi the code to lement the task.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c4. DO eode walkthrou",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c5. U ate the Develo ment baseline and maintain versions in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "e6. Com ile and unit test the develo ed code.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "c7.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "IF (Unit test = Success) then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "i. Perform acce tance testin for code.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ii. IF acce tanee test = Success then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "a. Inte te into the Refactor baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "osito",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "iii. ELSE",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create anew task (\"fix code\" as",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "cs. ELSE",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create anew task \"fix code \")as riori",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "END",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "D. Perform in ation test on the Refactor baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "E. IF Inte tion test • Success then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "l. Refactor the code in the Refactor baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2. Inte te into the Production baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "F. ELSE",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "riori",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "l. Create a new task \"fix the Refactor baseline\") as riori",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "H. Perform acc tance testin for code in Production baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  ". IF acc tance test = Success then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "l. Iteration release",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2. IF ew FeatureSet introduced Yes then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "a. U date FeatureSetPriori List.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "J. ELSE",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "83",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    }
+]

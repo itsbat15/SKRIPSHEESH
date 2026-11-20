@@ -1,0 +1,2342 @@
+--- HALAMAN 1 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+206 
+ 
+Pengembangan Sistem Pengelolaan dan Pemantauan 
+Proyek dengan Metode Agile Pola Scrum 
+ 
+http://dx.doi.org/10.28932/jutisi.v6i2.2592 
+ 
+Adhe Rama Febrianto  #1, Anita Wulansari*2, Latipah #3 
+#Jurusan Sistem Informasi, Universitas Narotama 
+Jl. Arief Rachman Hakim 51, Sukolilo, Kota Surabaya 
+1adheramaf7@gmail.com 
+3latifah.rifani@narotama.ac.id 
+*Jurusan Sistem Informasi, Universitas Narotama 
+Jl. Arief Rachman Hakim 51, Sukolilo, Kota Surabaya 
+2anita.wsari@narotama.ac.id 
+ 
+Abstract — Vsualproject is a business unit of Visi Prima Group 
+which is located in Gresik, a business engaged in software 
+development. In working on the project, the Vsualproject is 
+required to complete the task on time as well as under the 
+customers' requirement. Current management processes were 
+still done manually which consist of recording in the Whatsapp 
+application chat group. In a software development project, it is 
+also necessary to develop the desired interests to find out 
+whether it is under the organization' demands and needs. 
+Keeping notes in the WhatsApp chat group makes notes 
+frequently disappeared and the search process was more 
+complicated about who requests the development process. The 
+purpose of this research is to develop a system that can help 
+Vsualproject to manage projects and provide services to their 
+customers with the project monitoring feature. The system was 
+developed using the Scrum pattern Agile development method 
+which was carried out during the four-cycle sprints. The 
+results of the development of the system were tested by the 
+Black Box Testing method to ensure that the system meets the 
+user's requirements. The result of this study produced a 
+project management system that can be used by internal users 
+of Vsualproject management projects includes managing the 
+stages, payment, and project’s works. The system can also be 
+used by customers to monitor projects through a web profile 
+without asking for special access rights. 
+ 
+Keywords— Project Management; Project Monitoring; Agile; 
+Scrum.  
+ 
+I. PENDAHULUAN 
+Software house merupakan sebuah bisnis yang bergerak 
+di bidang software development yang produk utamanya 
+adalah mengembangkan dan menyediakan software [1]. 
+Vsualproject merupakan cabang usaha dari Visi Prima 
+Group 
+yang 
+bergerak 
+di 
+bidang 
+software 
+house. 
+Vsualproject berlokasi di Kabupaten Gresik. Proses 
+pengelolaan dan pencatatan perkembangan proyek yang 
+dilakukan masih secara manual yaitu berupa pencatatan di 
+grup obrolan aplikasi WhatsApp. Selain pengelolaan dari 
+sisi internal, dalam suatu pengembangan perangkat lunak 
+juga diperlukan adanya pemantauan perkembangan dari 
+pelanggan untuk mengetahui apakah hasilnya sesuai dengan 
+permintaan dan kebutuhan. Dengan disimpannya catatan di 
+grup obrolan aplikasi WhatsApp, maka membuat proses 
+pencarian catatan proyek menjadi kurang cepat dan sering 
+hilangnya catatan. 
+Dalam pengembangan sebuah sistem sulit untuk 
+memprediksi hal-hal yang akan terjadi selama proses 
+pengembangan salah satunya yaitu adanya perubahan atau 
+penambahan kebutuhan sistem. Kegagalan dalam adaptasi 
+menjadi salah satu penyebab kegagalan pengembangan 
+sistem, maka diperlukan sebuah metode pengembangan 
+yang tanggap dalam menangani perubahan sistem. Salah 
+satu metode yang tanggap dalam menangani perubahan 
+adalah metode pengembangan Agile dengan pola Scrum. 
+Metode pengembangan Agile dengan pola Scrum selain 
+mempunyai prinsip tanggap dalam menangani perubahan, 
+metodi ini juga menekankan iterasi dalam proses 
+pengembangan dan pengiriman produk kepada pemangku 
+kepentingan [2]. 
+Berdasarkan 
+latar 
+belakang 
+tersebut, 
+tujuan 
+dari 
+penelitian ini yaitu mengembangkan sistem yang dapat 
+membantu proses pengelolaan proyek meliputi proses 
+pengelolaan tahapan, pembayaran dan pekerjaan proyek. 
+Selain itu, juga akan dikembangkan website company 
+profile yang bertujuan untuk memudahkan pelanggan dalam 
+melakukan pemantauan perkembangan proyek yang dipesan. 
+Pengembangan sistem dilakukan dengan mengadaptasi 
+metode pengembangan Agile dengan pola Scrum untuk 
+dapat menangani apabila terjadi perubahan pada proses 
+pengembangan. 
+Manfaat yang dapat diambil dari implementasi sistem ini 
+yaitu memberikan kemudahan kepada Visi Prima Group 
+
+
+--- HALAMAN 2 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+207 
+ 
+khususnya Vsualproject dalam pengelolaan proyek meliputi 
+pencatatan tahapan proyek, pembayaran proyek, dan 
+pekerjaan proyek. Selain itu, sistem ini dapat memberikan 
+nilai layanan lebih kepada pelanggan Vsualproject dengan 
+adanya fitur pemantauan perkembangan proyek yang dapat 
+dilakukan secara langsung oleh pelanggannya melalui 
+halaman pencarian proyek. 
+Batasan masalah pada penelitian ini yaitu: Pertama, 
+pengembangan sistem berfokus pada pengelolaan proyek 
+sisi administrator dan pemantauan perkembangan sisi 
+pelanggan dari Visi Prima Group. Kedua, metode dalam 
+mengembangkan sistem dengan menerapkan metode 
+pengembangan Agile dengan pola pendekatan Scrum. Ketiga, 
+Perancangan sistem menggunakan Unified Modelling 
+Language dan uji coba sistem menggunakan Black Box 
+Testing. 
+II. TINJAUAN PUSTAKA 
+A. Penelitian Terdahulu 
+Dalam penelitian ini dipaparkan delapan penelitian 
+terdahulu yang relevan dengan penelitian yang akan 
+dilakukan. Penelitian pertama berjudul “Pengembangan 
+Sistem Aplikasi Manajemen Proyek Berbasis Web (Studi 
+Kasus: PT. Swadaya Graha)” yang ditulis oleh Ardian 
+Riftha Dhuha, Fajar Pradana, dan Bayu Priyambadha. 
+Penelitian tersebut menjelaskan pemanfaatan teknologi 
+informasi yang dikombinasikan dengan metode Critical 
+Path Method. Penelitian ini menghasilkan sistem yang dapat 
+membantu perusahaan dalam melakukan perencanaan, 
+meminimalisir ketidaksesuaian antara rencana dan realisasi, 
+optimalisasi perhitungan biaya, dan memudahkan proses 
+dokumentasi laporan [3]. Perbedaan penelitian tersebut 
+dengan penelitian yang akan dilakukan yaitu pada metode 
+yang digunakan dalam sistem yang dibuat. Pada penelitian 
+yang akan dilakukan tidak menggunakan metode untuk 
+sistem yang akan dikembangkan. 
+Penelitian kedua berjudul “Rancang Bangun Sistem 
+Informasi Kolaboratif Berbasis Web Untuk Manajemen 
+Proyek Teknologi 
+Informasi” 
+oleh 
+Dewi 
+Paramita. 
+Penelitian kedua ini menjelaskan pengembangan sistem 
+informasi berbasis web dengan fitur kolaboratif yang 
+membuat interaksi antara pemilik dan pengguna menjadi 
+lebih 
+mudah 
+dan 
+fleksibel. 
+Penelitian 
+kedua 
+ini 
+menghasilkan sistem untuk membantu perusahaan dalam 
+memilih konsultan, mengelola, serta mengawasi proyek 
+yang berlangsung [4]. Keterkaitan dengan penelitian yang 
+akan dilakukan yaitu terdapatnya fitur untuk klien atau 
+pelanggan melakukan pemantauan perkembangan proyek. 
+Penelitian ketiga yaitu penelitian oleh Kresna Ramanda 
+(2017) yang berjudul “Sistem Informasi Manajemen Proyek 
+Berbasis 
+Web”. 
+Penelitian 
+ketiga 
+ini 
+menjelaskan 
+manajemen sangat membutuhkan bantuan secara sistem 
+untuk manajemen proyek karena proses pengerjaan data 
+masih dikerjakan secara manual. Sehingga dengan adanya 
+sistem, manajemen dapat mengelola data dan dapat melihat 
+perkembangan proyek yang kemudian dijadikan sebagai 
+acuan dalam pengambilan keputusan. Proses pengembangan 
+sistem menggunakan metode Waterfall. Penelitian ketiga ini 
+menghasilkan sistem yang dapat membantu perusahaan 
+dalam melakukan pengawasan terhadap proyeknya, serta 
+dapat digunakan sebagai acuan dalam pengambilan 
+keputusan berdasarkan data yang ada pada sistem [5]. 
+Perbedaan dengan penelitian yang akan dilakukan yaitu 
+pada metode pengembangan yang digunakan untuk 
+mengembangkan sistem, pada penelitian yang akan 
+dilakukan menggunakan metode Agile pola Scrum. 
+Penelitian keempat yaitu penelitian oleh Tata Sumitra dan 
+M. Arief Sutina yang berjudul “Sistem Informasi 
+Manajemen 
+Proyek 
+pada 
+PT. 
+Sempana 
+Pratama 
+Menggunakan PHP & My SQL”. Penelitian ketiga ini 
+menjelaskan tentang pengembangan sistem informasi  
+manajemen proyek menggunakan metode Prototyping. 
+Penelitian keempat ini menghasilkan sistem yang dapat 
+membantu proses manajamen proyek perusahaan menjadi 
+lebih baik sehingga dapat meningkatkan kualitas dan 
+menghasilkan pola kerja yang efektif dan efisien [6]. 
+Perbedaan dengan penelitian yang akan dilakukan yaitu 
+pada metode pengembangan yang digunakan untuk 
+mengembangkan sistem, pada penelitian yang akan 
+dilakukan menggunakan metode Agile pola Scrum. 
+Penelitian kelima yaitu berjudul “Perancangan Aplikasi 
+Berbasis Android untuk Manajemen Proyek Reparasi Kapal” 
+oleh Marlen Jenri Hutapea, Triwilaswandio Wuruk Pribadi, 
+dan Imam Baihaqi. Penelitian ini menggunakan metode 
+Mock Up Aplikasi dalam proses pengembangannya. 
+Penelitian ini menjelaskan manajemen proyek sebuah 
+galangan dalam mereparasi kapal sangat dibutuhkan agar 
+sebuah proyek berjalan sesuai rencana yang telah dibuat. 
+Manajemen proyek akan lebih mudah dilakukan dengan 
+adanya sistem yang mendukung agar informasi dapat 
+tersampaikan dengan cepat. Penelitian ini menghasilkan 
+aplikasi berbasis android yang dapat membantu galangan 
+khususnya 
+Project 
+Manager 
+dalam 
+perencanaan, 
+penjadwalan, dan pengawasan terhadap pengerjaan proyek 
+[7]. Perbedaan dengan penelitian yang akan dilakukan yaitu 
+pada metode pengembangan yang digunakan untuk 
+mengembangkan sistem, pada penelitian yang akan 
+dilakukan menggunakan metode Agile pola Scrum, dan 
+platform sistem yang digunakan pada penelitian ketiga ini 
+adalah platform mobile, sedangkan pada penelitian yang 
+akan dilakukan menggunakan platform web. 
+Penelitian keenam berjudul “Agile Project Management 
+pada Pengembangan E-Musrenbang Kelurahan Benoa Bali” 
+oleh Kadek Cahya Dewi, Putu Indah Ciptayani, dan I 
+Wayan Rizky Wijaya. Pada penelitian tersebut menjelaskan 
+penerapan manajemen proyek berbasis Agile. Penelitian 
+tersebut menghasilkan sistem yang yang dapat membantu 
+perencanaan pembangunan tingkat Kelurahan Benoa 
+sehingga dapat menghasilkan laporan yang sesuai dengan 
+musrenbang tingkat kecamatan. Dari penelitian tersebut 
+didapatkan data waktu pengembangan dengan Agile yaitu 
+
+
+--- HALAMAN 3 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+208 
+ 
+selama delapan minggu yang terbagi menjadi empat sprint 
+[8]. Keterkaitan dengan penelitian yang akan dilakukan 
+yaitu 
+pada 
+metode 
+yang 
+digunakan 
+sama-sama 
+menggunakan metode Agile, sehingga penelitian tersebut 
+dapat dijadikan acuan dalam penelitian yang akan dilakukan. 
+Penelitian 
+ketujuh 
+berjudul 
+“Scrum 
+Method 
+Implementation in a Software Development Project 
+Management” oleh Putu Adi Guna Permana. Pada penelitian 
+tersebut menjelaskan bahwa dalam implementasi metode 
+Scrum, selama proses pengembangan dapat segera diketahui 
+kualitas dan resiko secara cepat, perubahan alur bisnis dan 
+feedback pelanggan dapat diketahui di sprint terakhir, dan 
+proses deployment dapat dilakukan di setiap product 
+backlog [9]. Keterkaitan dengan penelitian yang akan 
+dilakukan yaitu pada penerapan metode Scrum, sehingga 
+penelitian tersebut dapat dijadikan acuan penelitian yang 
+akan dilakukan. 
+Penelitian kedelapan yaitu penelitian oleh Ikhwansyah 
+Kurniawan dan Ramadhan Rakhmat Sani yang berjudul 
+“Pemodelan 
+SCRUM 
+dalam 
+Pengembangan 
+Sistem 
+Informasi Kesehatan pada Klinik Ar-Rokhim Sragen 
+Kabupaten Sragen”. Pada penelitian tersebut menjelaskan 
+bahwa pada Klinik Ar-Rokhim dalama proses bisnisnya 
+belum memaksimalkan aplikasi sistem yang ada, sehingga 
+perlu dikembangkan sistem yang dapat membuat proses 
+bisnis pada klinik menjadi efektif dan efisien. Penelitian 
+tersebut bertujuan menghasilkan sistem informasi dengan 
+cepat dalam menanggapi perubahan dan sesuai dengan 
+target yang diharapkan, sehingga penelitian tersebut 
+memanfaatkan 
+Scrum 
+untuk 
+mendukung 
+proses 
+pengembangan sistem [10]. Keterkaitan dengan penelitian 
+yang akan dilakukan yaitu pada penerapan metode Scrum, 
+sehingga 
+penelitian 
+tersebut 
+dapat 
+dijadikan 
+acuan 
+penelitian yang akan dilakukan. 
+ 
+B. Manajemen Proyek Perangkat Lunak 
+Kegiatan manajemen proyek perangkat lunak dimulai 
+sebelum berbagai kegiatan teknis dimulai dan berlanjut 
+sepanjang proses modeling, construction, dan deployment 
+software [11]. Terdapat “Four P’s” elemen yang mempunyai 
+pengaruh besar terhadap manajemen proyek, yaitu: 1) 
+People, orang-orang harus diatur ke dalam tim yang efektif, 
+dimotivasi untuk melakukan pengembangan perangkat 
+lunak yang berkualitas tinggi, dan terkoordinasi untuk 
+mencapai komunikasi yang efektif; 2) Product, kebutuhan 
+perangkat lunak harus disampaikan dari pelanggan ke 
+pengembang, kebutuhan perangkat lunak didekomposisi 
+sesuai dengan bagiannya, dan diposisikan untuk kemudian 
+dikerjakan oleh tim pengembang; 3) Process, harus 
+disesuaikan dengan people dan product. Pemilihan kerangka 
+kerja, penereapan paradigma pengembangan perangkat 
+lunak, dan sekumpulan tugas kerja untuk menyelesaikan 
+suatu pekerjaan; 4) Project, harus diatur sedemikian rupa 
+sehingga tim pengembang dapat berhasil menyelesaikan 
+proyek [11]. 
+Elemen penting dalam semua proyek perangkat lunak 
+adalah elemen people. Software engineer dapat diatur dalam 
+sejumlah struktur tim yang berbeda, mulai dari hierarki 
+kontrol tradisional hingga tim "paradigma terbuka". 
+Berbagai 
+teknik 
+koordinasi 
+dan 
+komunikasi 
+dapat 
+diterapkan untuk mendukung pekerjaan tim. Secara umum, 
+ulasan teknis dan komunikasi orang-ke-orang informal 
+memiliki nilai paling tinggi bagi para praktisi [11]. 
+C. Metode Pengembangan Agile dengan Pola Pendekatan 
+Scrum 
+Metode pengembangan Agile secara umum bergantung 
+pada 
+pendekatan 
+tambahan 
+untuk 
+spesifikasi, 
+pengembangan, dan pengiriman perangkat lunak kepada 
+pelanggan. Metode ini paling cocok digunakan untuk 
+pengembangan aplikasi yang spesifikasi sistemnya berubah 
+dengan cepat selama proses pengembangan [2]. Ada lima 
+prinsip dari metode pengembangan Agile yaitu customer 
+involvement, incremental delivery, people not process, 
+embrace change, dan maintain simplicity. Customer 
+envolvement berarti pelanggan harus terlibat selama proses 
+pengembangan perangkat lunak. Peran dari pelanggan di 
+sini yaitu sebagai sumber penyedia persyaratan maupun 
+spesifikasi baru dalam sistem dan untuk mengevaluasi 
+sistem yang sudah dikembangkan. Incremental delivery 
+berarti pengembangan perangkat lunak dilakukan secara 
+bertahap dengan pelanggan menentukan persyaratan untuk 
+dimasukkan dalam setiap kenaikan. Pada prinsip people not 
+process, setiap anggota tim pengembang dibiarkan untuk 
+mengelola pekerjaan mereka secara mandiri tanpa proses 
+preskriptif atau memberi arahan secara berlebihan atau biasa 
+disebut self organized. Prinsip embrace change berarti 
+perubahan persyaratan maupun spesifikasi dan desain sistem 
+yang dapat mengakomodasi perubahan. Dan prinsip 
+maintain simplicity dapat diartikan sebagai fokus pada 
+kesederhanaan dari perangkat lunak yang dikembangkan 
+dan dalam proses pengembangan. Jika memungkinkan, 
+bekerja secara aktif untuk mengurangi kompleksitas dari 
+sistem [2]. 
+Pola pendekatan Scrum menerapkan metode Agile secara 
+umum tetapi berfokus pada pengelolaan pengembangan 
+berulang daripada pendekatan teknis secara spesifik untuk 
+rekayasa perangkat lunak dengan metode Agile. Terdapat 
+tiga fase dalam Scrum seperti yang ditunjukkan pada 
+Gambar 1.  
+ 
+Gambar 1. Proses Scrum [2] 
+
+
+--- HALAMAN 4 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+209 
+ 
+Fase pertama adalah fase perencanaan garis besar yang 
+digunakan untuk menetapkan tujuan umum untuk proyek 
+dan merancang arsitektur perangkat lunak. Kemudian fase 
+kedua adalah sprint cycle atau siklus sprint, dimana setiap 
+siklus mengembangkan penambahan dari sistem. Di fase 
+sprint ini dilakukan perencanaan mana pekerjaan yang akan 
+dilakukan, dinilai, fitur dipilih untuk pengembangan, dan 
+perangkat lunak diimplementasikan. Di akhir sprint, 
+fungsionalitas 
+yang 
+selesai 
+dikirim 
+ke 
+pemangku 
+kepentingan. Fase ketiga atau terakhir yaitu fase penutupan 
+proyek dengan melengkapi dokumentasi yang diperlukan 
+seperti kerangka bantuan sistem dan buku pedoman 
+pengguna, serta menilai pelajaran yang dipetik dari proyek 
+yang sudah dikerjakan [2]. 
+D. Unified Modeling Language (UML) Versi 2.5 
+Unified Modeling Language (UML) digunakan untuk 
+mendokumentasikan, menspesifikasikan, dan membangun 
+perangkat lunak dengan bahasa spesifikasi standar. UML 
+sering digunakan sebagai metodololgi pengembangan sistem 
+berorientasi obyek dan juga sebagai alat untuk mendukung 
+pengembangan system. Jenis-jenis diagram yang digunakan 
+dalam perancangan berorientasi obyek yaitu: 
+1)  Use Case Diagram: Use case digunakan untuk 
+mengetahui fungsi apa saja yang ada di dalam sistem dan 
+siapa saja yang berhak menggunakan fungsi-fungsi tersebut. 
+Simbol-simbol yang terdapat pada Use Case Diagram yaitu 
+use case, actor, dan asosiasi antara use case dan actor. 
+Simbol use case menggambarkan fungsionalitas yang 
+disediakan sistem sebagai unit yang bertukar pesan antar 
+unit dengan aktor dan dinyatakan dengan kata kerja. Simbol 
+actor menggambarkan abstraksi dari orang atau sistem lain 
+yang mengaktifkan fungsi dari target sistem. Asosiasi antara 
+actor dan use case digambarkan dengan garis tanpa panah 
+yang mengindikasikan siapa yang meminta interaksi secara 
+langsung [12]. 
+2)  Activity Diagram (Diagram Aktivitas): Diagram 
+aktivitas digunakan untuk menggambarkan aliran kerja atau 
+aktivitas dari sebuah sistem atau proses bisnis. Simbol-
+simbol yang digunakan dalam diagram aktivitas yaitu start 
+point, end point, decision point, dan swimlane. Start point 
+digunakan sebagai symbol penanda dimulainya alur dari 
+diagram aktivitas. End point digunakan sebagai simbol 
+penanda berakhirnya diagram aktivitas. Simbol activities 
+menggambarkan proses atau kegiatan bisnis yat pada 
+diagram 
+aktivitas. 
+Percabangan 
+digunakan 
+untuk 
+menunjukkan kegiatan yang dilakukan secara paralel atau 
+menggabungkan dua kegiatan menjadi satu. Decision point 
+digunakan sebagai simbol yang menggambarkan pilihan 
+untuk pengambilan keputusan. Swimlane digunakan untuk 
+menggambarkan pembagian stakeholder yang melakukan 
+suatu aktivtitas [12].  
+3)  Sequence Diagram (Diagram Urutan): Diagram 
+urutan digunakan untuk menggambarkan kelakukan obyek 
+pada use case dengan mendeskripsikan waktu hidup obyek 
+dan pesan yang dikirimkan dan diterima antar obyek. 
+Simbol yang digunakan pada sequence diagram yaitu entity 
+class, boundary class, control class, message, dan activation. 
+Entity class berisi kumpulan kelas berupa entitas-entitas 
+yang membentuk gambaran awal sistem dan menjadi 
+landasan untuk menyusun basis data. Boundary class berisi 
+kumpulan kelas yang menjadi interfaces atau interaksi 
+antara satu atau lebih aktor dengan sistem. Control class 
+berisi logika aplikasi yang tidak memiliki tanggung jawab 
+terhadap entitas. Message digunakan sebagai symbol 
+mengirim pesan antar class. Activation digunakan untuk 
+mewakili sebuah eksekusi operasi dari obyek [12]. 
+4)  Class Diagram (Diagram Kelas): Class Diagram 
+menggambarkan hubungan antar kelas dan penjelasan detail 
+tiap-tiap kelas yang juga memperlihatkan aturan dan 
+tanggung jawab entitas yang menentukan perilaku sistem. 
+Class diagram juga menunjukkan atribut dan operasi dari 
+sebuah kelas dan batasan yang berhubungan dengan objek 
+yang dikoneksikan. Unsur dari class diagram meliputi kelas, 
+relasi, atribut, operasi, dan visibility. Hubungan antar kelas 
+mempunyai keterangan disebut dengan kardinalitas [12]. 
+III. METODOLOGI PENELITIAN 
+A. Identifikasi Masalah dan Studi Literatur 
+Pada proses identifikasi dilakukan kegiatan observasi dan 
+diskusi informal dengan anggota Visi Prima Group untuk 
+melihat keadaan serta kebutuhan terkait pengembangan 
+sistem. Pada proses ini juga dilakukan penentuan ruang 
+lingkup dan tujuan yang akan dicapai dalam penelitian. Pada 
+proses studi literatur dilakukan pencarian sumber pustaka 
+dari buku maupun jurnal untuk dijadikan referensi 
+pendukung penelitian pengembangan sistem pengelolaan 
+dan pemantauan proyek. 
+B. Perencanaan Garis Besar 
+Pada proses perencanaan garis besar dilakukan dua hal 
+yaitu pembuatan user story dan pembuatan product backlog. 
+Pembuatan user story mengacu pada proses sebelumnya 
+yaitu identifikasi masalah yang sudah ada. User story yang 
+dibuat berisi deskripsi mengenai kebutuhan sistem. 
+Pembuatan product backlog dari user story yang sudah 
+disusun di tahap sebelumnya. Pada setiap product backlog 
+diberi bobot pekerjaan dan tingkat prioritas. Pemberian 
+bobot pekerjaan pada product backlog menggunakan 
+bilangan Fibonacci yaitu 3, 5, 8, dan 13. Bilangan 3 
+melambangkan 
+bobot 
+pekerjaan 
+kecil, 
+bilangan 
+5 
+melambangkan bobot pekerjaan sedang, bilangan 8 
+melambangkan bobot pekerjaan besar, dan bilangan 13 
+melambangkan bobot pekerjaan sangat besar. Pemberian 
+tingkat prioritas menggunakan skala Small, Medium, dan 
+Large. Tingkat prioritas menunjukkan tingkat urgent dari 
+setiap pengguna sistem serta dapat sebagai penentuan urutan 
+product backlog yang dikerjakan terlebih dahulu. Peneliti 
+
+
+--- HALAMAN 5 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+210 
+ 
+menggunakan perangkat lunak Trello untuk membantu 
+penerapan Agile dengan pendekatan Scrum. 
+C. Desain Sistem 
+Pada tahapan desain sistem ini dilakukan dengan 
+menggunakan 
+pemodelan 
+UML 
+(Unified 
+Modeling 
+Language) versi 2.5. Pemodelan UML yang digunakan 
+adalah Use Case Diagram dan Class Diagram. Pembuatan 
+UML menggunakan perangkat lunak Enterprise Architect. 
+D. Siklus Sprint 
+Durasi setiap siklus sprint yang dilakukan pada penelitian 
+ini yaitu satu minggu. Siklus sprint dilakukan sampai 
+seluruh product backlog yang dibuat terselesaikan. Pada 
+siklus sprint terdapat lima tahapan yang dilakukan, yaitu: 
+1) Perencanaan Sprint (Sprint Planning): Tahap 
+perencanaan sprint dilakukan pemilihan product backlog 
+sebagai target yang akan dikerjakan pada sprint terkait yang 
+kemudian dinamakan dengan sprint backlog. Pemilihan 
+product backlog mengacu pada bobot pekerjaan, tingkat 
+prioritas, dan keterkaitan fungsional antar product backlog. 
+2) Pengembangan Sistem: Pada tahap pengembangan 
+sistem 
+dilakukan 
+pembuatan 
+desain 
+antarmuka 
+menggunakan 
+template 
+web ThemeKit 
+V.2.1 yang 
+berbasiskan framework CSS (Cascading Style Sheet) 
+Bootstrap V4. Pada tahap ini juga dilakukan pengkodean 
+aplikasi menggunakan bahasa PHP (Hypertext Preprocessor) 
+dengan framework Laravel. Database Management System 
+(DBMS) yang digunakan yaitu MariaDB. Pada proses 
+pengembangan peneliti menggunakan perangkat lunak 
+Sublime Text Editor dan database browser SQLYog 
+Ultimate. 
+3) Testing: Tahap testing sistem menggunakan Black 
+Box Testing untuk menguji fungsional system yang sudah 
+selesai dikembangkan. 
+4) Sprint Review: Pada tahap sprint review dilakukan 
+demonstrasi hasil dari sprint terkait kepada pemangku 
+kepentingan untuk mendapatkan umpan balik dari apa yang 
+sudah dikerjakan. Apabila terdapat revisi pada hasil yang 
+dikerjakan di sprint terkait maka menjadi product backlog 
+baru dan dikerjakan pada siklus sprint selanjutnya. 
+5) Deployment: Pada tahap deployment fungsionalitas 
+pada sprint backlog yang selesai dikerjakan diserahkan 
+kepada pemangku kepentingan untuk dapat langsung 
+digunakan. Fungsionalitas sistem yang diserahkan yaitu 
+fungsionalitas yang tidak mengalami revisi pada tahap 
+testing dan sprint review yang melibatkan pemangku 
+kepentingan. 
+IV. HASIL DAN PEMBAHASAN 
+A. User Stories 
+User stories berisi nama pengguna sistem dan fitur-fitur 
+yang menjadi kebutuhan sistem. User stories dibuat dengan 
+bahasa pengguna secara umum. Format yang digunakan 
+dalam penulisan user stories dalam penelitian ini yaitu 
+Sebagai seorang <nama pengguna>, dan saya ingin <fitur 
+atau kebutuhan sistem>. Dalam sistem yang dibuat terdapat 
+tiga pengguna utama yaitu: administrator, PIC proyek, dan 
+pelanggan. Berikut adalah user stories dari setiap pengguna 
+sistem. 
+1)  User Stories Administrator: Daftar user stories dari 
+administrator yaitu sebagai berikut. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola kelompok jenis proyek. Contoh: Website, 
+Desktop, Mobile. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola kelompok kelajuan atau tahapan dari 
+proyek secara global. Contoh: Tahap Requirement, 
+Tahap Pembayaran, Tahap Pengerjaan. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola data PIC proyek berupa menambah, 
+mengubah, dan menghapus. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola hak akses user yang dapat masuk ke 
+aplikasi. 
+• Sebagai seorang Administrator, dan saya ingin 
+mencatat proyek yang masuk dan melakukan 
+pencarian dan difilter sesuai jenis dan tahap kelajuan 
+dari proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+mencatat data pembayaran proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+mencetak atau mengunduh kuitansi pembayaran 
+proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+melakukan plotting PIC proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola kelajuan dari proyek yang sudah dicatat. 
+• Sebagai seorang Administrator, dan saya ingin 
+mengelola daftar pekerjaan proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+memperbarui status daftar pekerjaan proyek. 
+• Sebagai seorang Administrator, dan saya ingin 
+melihat laporan proyek berdasarkan jenis proyek dan 
+jenis tahapan. 
+• Sebagai seorang Administrator, dan saya ingin 
+melihat laporan jumlah pembayaran dari setiap 
+proyek dan keseluruhan proyek. 
+2)  User Stories PIC Proyek: Daftar user stories dari PIC 
+proyek yaitu sebagai berikut. 
+• Sebagai seorang PIC proyek, saya ingin melihat 
+proyek yang sudah ditentukan untuk saya. 
+• Sebagai seorang PIC proyek, saya ingin melihat dan 
+mengelola status kelajuan proyek yang sudah 
+ditentukan untuk saya. 
+
+
+--- HALAMAN 6 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+211 
+ 
+• Sebagai seorang PIC proyek, saya ingin melihat dan 
+mengelola daftar pekerjaan dari proyek yang sudah 
+ditentukan untuk saya. 
+3)  User Stories Pelanggan: Daftar user stories dari 
+pelanggan yaitu sebagai berikut. 
+• Sebagai seorang Pelanggan, saya ingin memantau 
+status pengerjaan dari proyek aplikasi yang saya 
+pesan di Visi Prima Group hanya dengan melakukan 
+pencarian berdasarkan nomor proyek pada halaman 
+profil atau halaman tertentu yang disediakan oleh 
+Visi Prima Group tanpa menggunakan hak akses 
+khusus. 
+• Sebagai seorang Pelanggan, saya ingin memberi 
+feedback pada poin pekerjaan dari proyek aplikasi 
+yang saya pesan di Visi Prima Group. Feedback 
+berupa komentar maupun status selesai dari poin 
+pekerjaan. 
+• Sebagai seorang Pelanggan, saya ingin memberi 
+penilaian untuk proyek yang aplikasi yang saya 
+pesan di Visi Prima Group ketika proyek sudah 
+berstatus selesai. 
+B. Product Backlog 
+Product backlog berisi fitur yang akan dibuat, bobot 
+pekerjaan, dan tingkat prioritas dari masing-masing fitur. 
+Berdasarkan tahapan pembuatan user stories, maka product 
+backlog ini dibagi menjadi tiga kelompok pengguna sistem, 
+yaitu administrator, PIC proyek, dan pelanggan. Product 
+backlog untuk pengguna administrator dapat dilihat pada 
+Tabel I, untuk PIC proyek dapat dilihat pada Tabel II, dan 
+untuk pelanggan dapat dilihat pada Tabel III. 
+ 
+TABEL I 
+PRODUCT BACKLOG ADMINISTRATOR 
+No 
+Fitur 
+Bobot 
+Prioritas 
+1. 
+ Login aplikasi 
+5 
+Large 
+2. 
+ Mengelola Data Jenis Proyek 
+5 
+Large 
+3. 
+ Mengelola 
+Data 
+Tahapan 
+Proyek 
+5 
+Large 
+4. 
+ Mengelola Data PIC Proyek 
+5 
+Large 
+5. 
+ Mengelola Hak Akses User 
+5 
+Large 
+6. 
+ Mengelola Data Proyek 
+8 
+Large 
+7. 
+ Mencatat 
+Data 
+Pembayaran 
+Proyek 
+3 
+Large 
+8. 
+ Mencetak Kuitansi Pembayaran 
+3 
+Medium 
+9. 
+ Plotting PIC Proyek 
+8 
+Large 
+10.  Mengelola 
+Daftar 
+Pekerjaan 
+Proyek 
+8 
+Large 
+11.  Mengelola 
+Detail 
+Pekerjaan 
+Proyek 
+8 
+Large 
+12.  Laporan Proyek Berdasarkan 
+Jenis dan Tahapan 
+5 
+Medium 
+13.  Laporan Pembayaran Proyek  
+5 
+Medium 
+No 
+Fitur 
+Bobot 
+Prioritas 
+14.  Dashboard Administrator 
+8 
+Low 
+TABEL II 
+PRODUCT BACKLOG PIC PROYEK 
+No 
+Fitur 
+Bobot 
+Prioritas 
+1. 
+ Daftar Proyek Diplot 
+3 
+Large 
+2. 
+ Mengelola 
+Daftar 
+Pekerjaan 
+Proyek 
+5 
+Large 
+3. 
+ Mengelola 
+Detail 
+Pekerjaan 
+Proyek 
+5 
+Large 
+4. 
+ Dashboard PIC Proyek 
+5 
+Low 
+TABEL III 
+PRODUCT BACKLOG PELANGGAN 
+No 
+Fitur 
+Bobot 
+Prioritas 
+1. 
+ Halaman Pencarian Proyek 
+3 
+Large 
+2. 
+ Pencarian Proyek 
+5 
+Large 
+3. 
+ Feedback poin-poin pekerjaan 
+proyek 
+5 
+Medium 
+4. 
+ Pemberian Penilaian 
+3 
+Medium 
+ 
+C. Desain Sistem 
+Desain sistem pada penelitian ini menggunakan UML. 
+UML yang digunakan yaitu Use Case Diagram dan Class 
+Diagram. Use Case pada sistem di penelitian ini memiliki 
+tiga aktor dan tujuh belas aktivitas. Tiga aktor pada use case 
+yaitu administrator, PIC proyek, dan pelanggan. Sedangkan 
+tujuh belas aktivitas pada use case yaitu Login, Mengelola 
+Jenis Proyek, Mengelola Tahapan Proyek, Mengelola PIC 
+Proyek, Mengelola Hak Akses User, Mengelola Proyek, 
+Mencatat 
+Pembayaran 
+Proyek, 
+Mencetak 
+Kuitansi 
+Pembayaran, Plotting PIC Proyek, Mengelola Daftar 
+Pekerjaan, 
+Mengelola 
+Detail 
+Pekerjaan, 
+Laporan, 
+Dashboard 
+Administrator, 
+Dashboard 
+PIC 
+Proyek, 
+Pencarian Data Proyek, Feedback Hasil Pekerjaan, dan 
+Pemberian Penilaian. Use Case dari penilitian ini dapat 
+dilihat pada Gambar 2. 
+ 
+Class Diagram pada penelitian ini mempunyai sepuluh 
+kelas yang saling berhubungan satu dengan yang lainnya. 
+Sepuluh kelas tersebut yaitu: User, PIC Proyek, Jenis 
+Proyek, Tahapan Proyek, Proyek, PIC Proyek Plot, 
+Pembayaran Proyek, Perkembangan Proyek, Pekerjaan 
+Proyek, dan Pekerjaan ProyekDetail. Class Diagram dari 
+penelitian ini dapat dilihat pada Gambar 3. 
+D. Sprint I 
+1)  Sprint Planning: Target dari sprint pertama yaitu 
+menyelesaikan fitur login, fitur mengelola data master 
+proyek, pengelolaan PIC proyek, pengelolaan hak akses user, 
+dan fitur mengelola data proyek. Sprint backlog untuk sprint 
+pertama dapat dilihat pada Tabel IV. 
+
+
+--- HALAMAN 7 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+212 
+ 
+ 
+Gambar 2. Use Case Diagram 
+TABEL IV 
+SPRINT I BACKLOG 
+No 
+Fitur 
+Bobot 
+Prioritas 
+Status 
+1. 
+Login 
+5 
+Large 
+Baru 
+2. 
+Mengelola 
+data 
+PIC 
+proyek 
+5 
+Large 
+Baru 
+3. 
+Mengelola hak akses 
+user 
+5 
+Large 
+Baru 
+4. 
+Mengelola data jenis 
+proyek 
+5 
+Large 
+Baru 
+5. 
+Mengelola data tahapan 
+proyek 
+5 
+Large 
+Baru 
+6. 
+Mengelola data proyek 
+8 
+Large 
+Baru 
+2)  Testing: 
+Pengujian 
+sistem 
+dilakukan 
+dengan 
+menjalankan skenario pengujian yang sudah dibuat beserta 
+luaran yang diharapkan dari setiap skenario. Daftar skenario 
+dan hasil pengujian dapat dilihat pada Tabel V. 
+ 
+TABEL V 
+SKENARIO PENGUJIAN DAN HASIL PENGUJIAN SPRINT I 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+Login 
+1. 
+ 
+Pengguna 
+memasukkan email 
+dan password yang 
+sesuai. 
+Pengguna dialihkan 
+ke halaman utama 
+aplikasi. 
+Sukses 
+2. 
+ 
+Pengguna 
+memasukkan email 
+Sistem memunculkan 
+pesan gagal. 
+Sukses 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+dan password yang 
+tidak sesuai. 
+Mengelola jenis proyek 
+3. 
+ 
+Administrator 
+membuka halaman 
+kelola jenis proyek. 
+Sistem menampilkan 
+halaman kelola dan 
+daftar jenis proyek. 
+Sukses 
+4. 
+ 
+Administrator 
+menambahkan data 
+jenis proyek 
+Data tersimpan ke 
+database dan tampil 
+di daftar jenis proyek. 
+Sukses 
+5. 
+ 
+Administrator 
+mengubah data jenis 
+proyek 
+Data tersimpan ke 
+database dan di daftar 
+jenis proyek data 
+mengalami perubahan 
+Sukses 
+6. 
+ 
+Administrator 
+menghapus data 
+jenis proyek 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar jenis 
+proyek 
+Sukses 
+Mengelola tahapan proyek 
+7. 
+ 
+Administrator 
+membuka halaman 
+kelola tahapan 
+proyek. 
+Sistem menampilkan 
+halaman kelola dan 
+daftar tahapan proyek. 
+Sukses 
+8. 
+ 
+Administrator 
+menambahkan data 
+tahapan proyek 
+Data tersimpan ke 
+database dan tampil 
+di daftar tahapan 
+proyek. 
+Sukses 
+9. 
+ 
+Administrator 
+mengubah data 
+tahapan proyek 
+Data tersimpan ke 
+database dan di daftar 
+tahapan proyek data 
+mengalami perubahan 
+Sukses 
+uc Use Case Sistem Pengelolaan dan Pemantauan Proyek
+Sistem Pengelolaan dan Pemantauan Proyek
+Administrator
+PIC Proyek
+Pelanggan
+UC02-
+Mengelola 
+Jenis Proyek
+UC03-Mengelola 
+Tahapan Proyek
+UC04-
+Mengelola PIC 
+Proyek
+UC05-Mengelola 
+Hak Akses User
+UC06-Mengelola 
+Proyek
+UC07-Mencatat 
+Pembayaran 
+Proyek
+UC08-Mencetak 
+Kuitansi 
+Pembayaran
+UC09-Plotting PIC 
+Proyek
+UC10-Mengelola 
+Daftar Pekerjaan
+UC15-Pencarian 
+Data Proyek
+UC16-Feedback 
+Hasil Pekerjaan
+UC13-Dashboard 
+Administrator
+UC14-
+Dashboard PIC 
+Proyek
+Pengguna
+UC01-Login
+UC12-Laporan
+UC17-
+Pemberian 
+Penilaian
+UC11-Mengelola 
+Detil Pekerjaan
+«extend»
+«extend»
+«extend»
+«extend»
+«extend»
+«extend»
+«extend»
+
+
+--- HALAMAN 8 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+213 
+ 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+10.  
+Administrator 
+menghapus data 
+tahapan proyek 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar 
+tahapan proyek 
+Sukses 
+Mengelola PIC proyek 
+11.  
+Administrator 
+membuka halaman 
+kelola PIC proyek. 
+Sistem menampilkan 
+halaman kelola dan 
+daftar PIC proyek. 
+Sukses 
+12.  
+Administrator 
+menambahkan data 
+PIC proyek 
+Data tersimpan ke 
+database dan tampil 
+di daftar PIC proyek. 
+Sukses 
+13.  
+Administrator 
+mengubah data PIC 
+proyek 
+Data tersimpan ke 
+database dan di daftar 
+PIC proyek data 
+mengalami perubahan 
+Sukses 
+14.  
+Administrator 
+menghapus data PIC 
+proyek 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar PIC 
+proyek 
+Sukses 
+Mengelola Hak Akses User 
+15.  
+Administrator 
+membuka halaman 
+kelola hak akses 
+user. 
+Sistem menampilkan 
+halaman kelola dan 
+daftar hak akses user. 
+Sukses 
+16.  
+Administrator 
+menambahkan data 
+hak akses user 
+Data tersimpan ke 
+database dan tampil 
+di daftar hak akses 
+Sukses 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+user. 
+17.  
+Administrator 
+mengubah data hak 
+akses user 
+Data tersimpan ke 
+database dan di daftar 
+PIC proyek data 
+mengalami perubahan 
+Sukses 
+18.  
+Administrator 
+menghapus data hak 
+akses user 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar hak 
+akses user 
+Sukses 
+Mengelola Proyek 
+19.  
+Administrator 
+membuka halaman 
+kelola proyek. 
+Sistem menampilkan 
+halaman kelola dan 
+daftar proyek. 
+Sukses 
+20.  
+Administrator 
+menambahkan data 
+proyek 
+Data tersimpan ke 
+database dan tampil 
+di daftar proyek. 
+Sukses 
+21.  
+Administrator 
+mengubah data 
+proyek 
+Data tersimpan ke 
+database dan di daftar 
+proyek data 
+mengalami perubahan 
+Sukses 
+22.  
+Administrator 
+menghapus data 
+proyek 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar 
+proyek 
+Sukses 
+ 
+ 
+Gambar 3. Class Diagram 
+class Class Model
+User
+- 
+emailUser: String
+- 
+grupUser: char
+- 
+idUser: int {id}
+- 
+namaUser: String
+- 
+passwordUser: String
+- 
+statusUser: boolean
++ 
+delete(int)
++ 
+getData(int): User
++ 
+insert(User)
++ 
+update(User)
+PICProyek
+- 
+alamatPicProyek: String
+- 
+emailPicProyek: String
+- 
+idPicProyek: int {id}
+- 
+namaPicProyek: String
+- 
+noIdentitasPicProyek: String
+- 
+teleponPicProyek: char
++ 
+delete(int)
++ 
+getData(int): PICProyek
++ 
+insert(PICProyek)
++ 
+update(PICProyek)
+JenisProyek
+- 
+iconJenisProyek: String
+- 
+idJenisProyek: int {id}
+- 
+namaJenisProyek: String
++ 
+delete(int)
++ 
+getData(int): JenisProyek
++ 
+insert(JenisProyek)
++ 
+update(JenisProyek)
+TahapanProyek
+- 
+flagTahapanProyek: char
+- 
+idTahapanProyek: int {id}
+- 
+namaTahapanProyek: char
+- 
+urutanTahapanProyek: int
++ 
+delete(int)
++ 
+getData(int): TahapanProyek
++ 
+insert(TahapanProyek)
++ 
+update(TahapanProyek)
+Proyek
+- 
+alamatPelanggan: String
+- 
+deskripsiProyek: String
+- 
+dokumentasiProyek: json
+- 
+emailPelanggan: String
+- 
+idProyek: int
+- 
+instansiPelanggan: String
+- 
+jumlahDibayar: int
+- 
+jumlahDibayarTambahan: int
+- 
+namaPelanggan: int
+- 
+namaProyek: int
+- 
+nominalProyek: int
+- 
+nominalTambahan: int
+- 
+noProyek: char
+- 
+ratingProyek: int
+- 
+sisaTagihan: int
+- 
+sisaTagihanTambahan: int
+- 
+tanggalMulai: Date
+- 
+tanggalSelesai: Date
+- 
+tanggalTargetSelesai: Date
+- 
+teleponPelanggan: char
+- 
+testimoniProyek: String
++ 
+delete(int)
++ 
+getData(int): Proyek
++ 
+insert(Proyek)
++ 
+update(Proyek)
+PembayaranProyek
+- 
+idPembayaran: int {id}
+- 
+noKuitansiPembayaran: int
+- 
+nominalPembayaran: int
+- 
+tanggalWaktuPembayaran: Datetime
++ 
+getData(int): PembayaranProyek
++ 
+insert(PembayaranProyek)
+PekerjaanProyek
+- 
+feedbackPekerjaanProyek: String
+- 
+fiturBaru: Boolean
+- 
+hargaFiturBaru: int
+- 
+idPekerjaanProyek: int {id}
+- 
+namaPekerjaanProyek: String
+- 
+statusApprovePekerjaanProyek: char
+- 
+statusPekerjaanProyek: char
+- 
+tanggalWaktuFeedback: Datetime
+- 
+tanggalWaktuSelesai: Datetime
++ 
+delete(int)
++ 
+getData(int): int
++ 
+insert(PekerjaanProyek)
++ 
+update(PekerjaanProyek)
+PICProyekPlot
+- 
+idPicProyek: int {id}
+- 
+idProyek: int {id}
++ 
+delete(int, array)
++ 
+getData(int): PICProyekPlot
++ 
+insert(PICProyekPlot)
+PerkembanganProyek
+- 
+idProyek: int {id}
+- 
+idTahapanProyek: int {id}
+- 
+tanggalWaktuPerkembangan: Datetime
++ 
+getData(int): PerkembanganProyek
++ 
+insert(PerkembanganProyek)
+PekerjaanProyekDetil
+- 
+idPekerjaanProyekDetil: int {id}
+- 
+namaPekerjaanProyekDetil: int
+- 
+statusPekerjaanProyekDetil: char
+- 
+tanggalWaktuSelesai: Datetime
++ 
+delete(int)
++ 
+getData(int): PekerjaanProyekDetil
++ 
+insert(PekerjaanProyekDetil)
++ 
+update(PekerjaanProyekDetil)
+1..*
+Mempunyai
++idJenisProyek
+1
++idPekerjaanProyek 1
+Mempunyai
+1..*
+1..*
+Ditugaskan
+1..*
+1
+Mempunyai
++idPicProyek
+1
++idProyek
+1
+Mempunyai
+1..*
+1..*
+Dicatat
++idProyek
+1
+1..*
+Dicatat
+1..*
+
+
+--- HALAMAN 9 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+214 
+ 
+3)  Sprint Review: Pada tahap ini dilakukan demonstrasi 
+hasil dari sprint pertama, dan didapatkan hasil review dari 
+pemangku kepentingan yaitu: 
+• Semua fitur berjalan dengan baik. 
+• Tampilkan bagus dan responsif. 
+• Menu yang ditampilkan tidak membingungkan. 
+• Label dan formulir isian sangat jelas. 
+4)  Deployment: Pada tahap ini dilakukan pemasangan 
+fitur berdasarkan yang telah disetujui oleh pemangku 
+kepentingan untuk dapat digunakan secara langsung. 
+Tampilan antar muka dari fitur yang telah dipasang pada 
+sprint pertama dapat dilihat pada Gambar 4 dan Gambar 5. 
+E. Sprint II 
+1)  Sprint Planning: Target dari sprint kedua yaitu 
+menyelesaikan fitur pencatatan pembayaran dan cetak 
+kuitansi pembayaran, plotting PIC proyek, mengelola daftar 
+pekerjaan dan detail pekerjaan, dan laporan daftar proyek 
+berdasarkan jenis proyek dan tahapan proyek. Sprint 
+backlog untuk sprint kedua dapat dilihat pada Tabel VI. 
+ 
+TABEL VI 
+SPRINT II BACKLOG 
+No 
+Fitur 
+Bobot 
+Prioritas 
+Status 
+1. 
+Mencatat data 
+pembayaran proyek 
+3 
+Large 
+Baru 
+2. 
+ Mencetak kuitansi 
+pembayaran 
+3 
+Medium 
+Baru 
+3. 
+ Plotting PIC proyek 
+8 
+Large 
+Baru 
+4. 
+ Mengelola daftar 
+pekerjaan proyek (sisi 
+administrator) 
+8 
+Large 
+Baru 
+5. 
+ Mengelola detail 
+pekerjaan proyek  (sisi 
+administrator) 
+8 
+Large 
+Baru 
+6. 
+ Laporan proyek 
+berdasarkan jenis dan 
+tahapan 
+5 
+Medium 
+Baru 
+ 
+2)  Testing: 
+Pengujian 
+sistem 
+dilakukan 
+dengan 
+menjalankan skenario pengujian yang sudah dibuat beserta 
+luaran yang diharapkan dari setiap skenario. Daftar skenario 
+dan hasil pengujian dapat dilihat pada Tabel VII. 
+ 
+Gambar 4. Halaman Login 
+ 
+Gambar 5. Halaman Kelola Proyek 
+
+
+--- HALAMAN 10 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+215 
+ 
+TABEL VII 
+SKENARIO PENGUJIAN DAN HASIL PENGUJIAN SPRINT II 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+Mencatat data pembayaran proyek 
+1. 
+ 
+Administrator 
+membuka aksi data 
+pembayaran proyek 
+pada halaman kelola 
+proyek 
+Memunculkan daftar 
+riwayat pembayaran 
+dan sisa tagihan 
+proyek 
+Sukses 
+2. 
+ 
+Administrator 
+menambahkan data 
+pembayaran 
+Data tersimpan di 
+database dan tampil di 
+daftar riwayat 
+pembayaran 
+Sukses 
+Mencetak Kuitansi Pembayaran 
+3. 
+ 
+Administrator 
+memilih data 
+pembayaran proyek 
+dari riwayat 
+pembayaran yang 
+akan dicetak. 
+Sistem menampilkan 
+pratinjau kuitansi 
+pembayaran proyek 
+Sukses 
+Plotting PIC proyek 
+4. 
+ 
+Administrator 
+membuka aksi 
+plotting PIC pada 
+halaman kelola 
+proyek 
+Sistem menampilkan 
+halaman plotting PIC 
+proyek. 
+Sukses 
+5. 
+ 
+Administrator 
+melakukan plot PIC 
+Proyek pada proyek 
+Data tersimpan ke 
+database dan tampil 
+di daftar PIC proyek 
+diplot. 
+Sukses 
+6. 
+ 
+Administrator 
+menghapus data 
+plot PIC Proyek 
+pada proyek 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar di PIC 
+proyek diplot. 
+Sukses 
+Mengelola daftar pekerjaan proyek (sisi administrator) 
+7. 
+ 
+Administrator 
+membuka aksi 
+kelola pekerjaan 
+pada halaman kelola 
+proyek 
+Sistem menampilkan 
+halaman kelola 
+pekerjaan proyek. 
+Sukses 
+8. 
+ 
+Administrator 
+menambahkan data 
+pekerjaan 
+Data tersimpan ke 
+database dan tampil 
+di daftar pekerjaan 
+proyek. 
+Sukses 
+9. 
+ 
+Administrator 
+mengubah data 
+pekerjaan 
+Data tersimpan ke 
+database dan di daftar 
+pekerjaan proyek data 
+mengalami perubahan 
+Sukses 
+10.  
+Administrator 
+menghapus data 
+pekerjaan 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar di 
+pekerjaan proyek. 
+Sukses 
+Mengelola detail pekerjaan proyek (sisi administrator) 
+11.  
+Administrator 
+membuka aksi 
+kelola detail 
+pekerjaan pada 
+halaman kelola 
+Sistem menampilkan 
+halaman kelola detail 
+pekerjaan proyek. 
+Sukses 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+pekerjaan 
+12.  
+Administrator 
+menambahkan data 
+detail pekerjaan 
+Data tersimpan ke 
+database dan tampil 
+di daftar detail 
+pekerjaan proyek. 
+Sukses 
+13.  
+Administrator 
+mengubah data 
+detail pekerjaan 
+Data tersimpan ke 
+database dan di daftar 
+detail pekerjaan 
+proyek data 
+mengalami perubahan 
+Sukses 
+14.  
+Administrator 
+menghapus data 
+detail pekerjaan 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar di 
+detail  pekerjaan 
+proyek. 
+Sukses 
+Laporan proyek berdasarkan jenis dan tahapan 
+15.  
+Administrator 
+membuka halaman 
+laporan berdasarkan 
+jenis dan tahapan 
+Sistem menampilkan 
+halaman dan daftar 
+proyek berdasarkan 
+jenis dan tahapan 
+yang dipilih 
+Sukses 
+16.  
+Administrator 
+mencetak laporan 
+berdasarkan jenis 
+dan tahapan 
+Sistem menampilkan 
+pratinjau laporan 
+Sukses 
+  
+3)  Sprint Review: Pada tahap ini dilakukan demonstrasi 
+hasil dari sprint kedua, dan didapatkan hasil review dari 
+pemangku kepentingan yaitu: 
+• Semua fitur berjalan dengan baik. 
+• Fitur pengelolaan pekerjaan proyek dan detail 
+pekerjaan interaktif. 
+• Desain kuitansi jelas dan informatif 
+• Minta penambahan laporan untuk daftar PIC proyek 
+yang sudah diplot di setiap proyek. 
+4)  Deployment: Pada tahap ini dilakukan pemasangan 
+fitur berdasarkan yang telah disetujui oleh pemangku 
+kepentingan untuk dapat digunakan secara langsung. 
+Tampilan antar muka dari fitur yang telah dipasang pada 
+sprint kedua dapat dilihat pada Gambar 6 dan Gambar 7. 
+F. Sprint III 
+1)  Sprint Planning: Target dari sprint ketiga yaitu 
+menyelesaikan fitur laporan pembayaran proyek, dashboard 
+sisi administrator dan fitur yang terdapat pada sisi PIC 
+proyek yaitu: daftar proyek diplot, mengelola daftar 
+pekerjaan, mengelola detail pekerjaan, dan dashboard sisi 
+PIC proyek. Pada review sprint kedua didapatkan satu 
+tambahan menu laporan yaitu laporan daftar PIC proyek 
+dari setiap proyek. Tambahan tersebut akan dikerjakan pada 
+sprint ketiga. Sprint backlog untuk sprint ketiga dapat 
+dilihat pada Tabel VIII. 
+
+
+--- HALAMAN 11 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+216 
+ 
+ 
+Gambar 6. Halaman Kelola Pembayaran 
+ 
+Gambar 7. Halaman Kelola Pekerjaan Proyek 
+TABEL VIII 
+SPRINT III BACKLOG 
+No 
+Fitur 
+Bobot 
+Prioritas 
+Status 
+1. 
+Laporan pembayaran 
+proyek 
+5 
+Medium 
+Baru 
+2. 
+ Laporan plot PIC 
+Proyek 
+5 
+Medium 
+Tamb
+ahan 
+3. 
+ Dashboard 
+administrator 
+8 
+Low 
+Baru 
+No 
+Fitur 
+Bobot 
+Prioritas 
+Status 
+4. 
+ Daftar proyek diplot 
+(sisi PIC proyek) 
+3 
+Large 
+Baru 
+5. 
+ Mengelola daftar 
+pekerjaan proyek (sisi 
+PIC proyek) 
+5 
+Large 
+Baru 
+6. 
+ Mengelola detail 
+pekerjaan proyek (sisi 
+PIC Proyek) 
+5 
+Large 
+Baru 
+7. 
+ Dashboard PIC proyek 
+5 
+Low 
+Baru 
+
+
+--- HALAMAN 12 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+217 
+ 
+2)  Testing: 
+Pengujian 
+sistem 
+dilakukan 
+dengan 
+menjalankan skenario pengujian yang sudah dibuat beserta 
+luaran yang diharapkan dari setiap skenario. Daftar skenario 
+dan hasil pengujian dapat dilihat pada Tabel IX. 
+TABEL IX 
+SKENARIO PENGUJIAN DAN HASIL PENGUJIAN SPRINT III 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+Laporan pembayaran proyek 
+1. 
+ 
+Administrator 
+membuka halaman 
+laporan pembayaran 
+proyek 
+Sistem menampilkan 
+halaman laporan 
+pembayaran proyek 
+Sukses 
+2. 
+ 
+Administrator 
+mencetak laporan 
+pembayaran proyek 
+Sistem menampilkan 
+pratinjau laporan 
+Sukses 
+Laporan plot PIC proyek 
+3. 
+ 
+Administrator 
+membuka halaman 
+laporan plot PIC 
+proyek 
+Sistem menampilkan 
+halaman laporan plot 
+PIC proyek 
+Sukses 
+4. 
+ 
+Administrator 
+mencetak laporan 
+plot PIC proyek 
+Sistem menampilkan 
+pratinjau laporan 
+ 
+Dashboard administrator 
+5. 
+ 
+Administrator 
+membuka halaman 
+dashboard 
+Sistem menampilkan 
+halaman dashboard 
+dan data yang sesuai 
+dengan jenis 
+pengguna 
+administrator 
+Sukses 
+Daftar proyek diplot (sisi PIC proyek) 
+6. 
+ 
+PIC Proyek 
+membuka halaman 
+kelola proyek 
+Sistem menampilkan 
+halaman kelola 
+proyek dan daftar 
+proyek sesuai data 
+plot PIC proyek 
+Sukses 
+Mengelola daftar pekerjaan proyek (sisi PIC proyek) 
+7. 
+ 
+PIC Proyek 
+membuka aksi 
+kelola pekerjaan 
+pada halaman kelola 
+proyek 
+Sistem menampilkan 
+halaman kelola 
+pekerjaan proyek. 
+Sukses 
+8. 
+ 
+PIC Proyek 
+menambahkan data 
+pekerjaan 
+Data tersimpan ke 
+database dan tampil 
+di daftar pekerjaan 
+proyek. 
+Sukses 
+9. 
+ 
+PIC Proyek 
+mengubah data 
+pekerjaan 
+Data tersimpan ke 
+database dan di daftar 
+pekerjaan proyek data 
+mengalami perubahan 
+Sukses 
+10.  
+PIC Proyek 
+menghapus data 
+pekerjaan 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar di 
+pekerjaan proyek. 
+Sukses 
+Mengelola detail pekerjaan proyek (sisi PIC proyek) 
+11.  
+PIC Proyek 
+membuka aksi 
+kelola detail 
+pekerjaan pada 
+Sistem menampilkan 
+halaman kelola detail 
+pekerjaan proyek. 
+Sukses 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+halaman kelola 
+pekerjaan 
+12.  
+PIC Proyek 
+menambahkan data 
+detail pekerjaan 
+Data tersimpan ke 
+database dan tampil 
+di daftar detail 
+pekerjaan proyek. 
+Sukses 
+13.  
+PIC Proyek 
+mengubah data 
+detail pekerjaan 
+Data tersimpan ke 
+database dan di daftar 
+detail pekerjaan 
+proyek data 
+mengalami perubahan 
+Sukses 
+14.  
+PIC Proyek 
+menghapus data 
+detail pekerjaan 
+Data terhapus dari 
+database dan tidak 
+tampil di daftar di 
+detail  pekerjaan 
+proyek. 
+Sukses 
+Dashboard PIC proyek 
+15.  
+PIC Proyek 
+membuka halaman 
+dashboard 
+Sistem menampilkan 
+halaman dashboard 
+dan data yang sesuai 
+dengan jenis 
+pengguna PIC Proyek 
+Sukses 
+ 
+3)  Sprint Review: Pada tahap ini dilakukan demonstrasi 
+hasil dari sprint ketiga, dan didapatkan hasil review dari 
+pemangku kepentingan yaitu: 
+• Semua fitur berjalan dengan baik. 
+• Desain dashboard sudah menampilkan data yang ada 
+pada sistem. 
+• Penambahan untuk melihat timeline tahapan setiap 
+proyek pada halaman kelola proyek. 
+4)  Deployment: Pada tahap ini dilakukan pemasangan 
+fitur berdasarkan yang telah disetujui oleh pemangku 
+kepentingan untuk dapat digunakan secara langsung. 
+Tampilan antar muka dari fitur yang telah dipasang pada 
+sprint ketiga dapat dilihat pada Gambar 8 dan Gambar 9. 
+G. Sprint IV 
+1)  Sprint Planning: Target dari sprint keempat yaitu 
+menyelesaikan fitur dari sisi pelanggan yaitu halaman 
+pencarian proyek dengan nomor proyek, hasil pencarian 
+proyek dengan nomor proyek, feedback hasil pekerjaan 
+proyek, dan pemberian penilaian. Pada review sprint ketiga 
+didapatkan satu tambahan fitur yaitu melihat timeline 
+tahapan untuk setiap proyek. Tambahan tersebut akan 
+dikerjakan pada sprint keempat. Sprint backlog untuk sprint 
+keempat dapat dilihat pada Tabel X. 
+TABEL X 
+SPRINT IV BACKLOG 
+No 
+Fitur 
+Bobot 
+Prioritas 
+Status 
+1. 
+ Melihat timeline 
+tahapan per proyek 
+3 
+Medium 
+Tamb
+ahan 
+2. 
+ Halaman pencarian 
+proyek dengan nomor 
+3 
+Large 
+Baru 
+
+
+--- HALAMAN 13 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+218 
+ 
+proyek 
+3. 
+ Pencarian Proyek 
+dengan nomor proyek 
+5 
+Large 
+Baru 
+4. 
+ 
+Feedback poin-poin 
+pekerjaan proyek 
+5 
+Medium 
+Baru 
+5. 
+ Pemberian penilaian 
+3 
+Medium 
+Baru 
+ 
+ 
+Gambar 8. Halaman Dashboard Administrator 
+ 
+Gambar 9. Halaman Dashboard PIC Proyek
+2)  Testing: 
+Pengujian 
+sistem 
+dilakukan 
+dengan 
+menjalankan skenario pengujian yang sudah dibuat beserta 
+luaran yang diharapkan dari setiap skenario. Daftar skenario 
+dan hasil pengujian dapat dilihat pada Tabel XI. 
+ 
+TABEL XI 
+SKENARIO PENGUJIAN DAN HASIL PENGUJIAN SPRINT IV 
+No 
+Skenario  
+Luaran yang 
+diharapkan 
+Hasil 
+Melihat timeline per proyek 
+1. 
+ Administrator 
+membuka aksi 
+Sistem menampilkan 
+halaman timeline 
+Sukses 
+
+
+--- HALAMAN 14 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+219 
+ 
+timeline tahapan pada 
+halaman kelola 
+proyek 
+tahapan dari proyek 
+yang dipilih 
+Halaman pencarian proyek dengan nomor proyek 
+2. 
+ Pelanggan 
+memasukkan alamat 
+web untuk pencarian 
+proyek 
+Sistem menampilkan 
+halaman pencarian 
+proyek 
+Sukses 
+Pencarian proyek dengan nomor proyek 
+3. 
+ Pelanggan 
+memasukkan nomor 
+proyek  
+Sistem menampilkan 
+informasi proyek 
+yang dicari 
+Sukses 
+Feedback poin-poin pekerjaan proyek 
+4. 
+ Pelanggan membuka 
+bagian proses 
+pengerjaan pada 
+halaman hasil 
+pencarian 
+Sistem menampilkan 
+bagian pengerjaan dan 
+daftar pekerjaan dari 
+proyek  
+Sukses 
+5. 
+ Pelanggan mengisi 
+feedback pada 
+pekerjaan dan submit 
+feedback 
+Data tersimpan ke 
+database dan sistem 
+menampilkan 
+notifikasi berhasil 
+Sukses 
+Pemberian penilaian 
+6. 
+ Pelanggan membuka 
+bagian tahapan 
+Sistem menampilkan 
+bagian tahapan selesai 
+Sukses 
+selesai pada halaman 
+hasil pencarian 
+berupa formulir isian 
+penilaian 
+7. 
+ Pelanggan mengisi 
+dan submit penilaian 
+Data tersimpan ke 
+database dan sistem 
+menampilkan 
+notifikasi berhasil 
+Sukses 
+ 
+3)  Sprint Review: Pada tahap ini dilakukan demonstrasi 
+hasil dari sprint ketiga, dan didapatkan hasil review dari 
+pemangku kepentingan yaitu: 
+• Semua fitur yang dipasang berjalan dengan baik. 
+• Desain 
+halaman 
+pencarian 
+informatif 
+dan 
+memudahkan pelanggan. 
+• Informasi timeline tahapan proyek informatif. 
+4)  Deployment: Pada tahap ini dilakukan pemasangan 
+fitur berdasarkan yang telah disetujui oleh pemangku 
+kepentingan untuk dapat digunakan secara langsung. 
+Tampilan antar muka dari fitur yang telah dipasang pada 
+sprint keempat dapat dilihat pada Gambar 10, Gambar 11, 
+dan Gambar 12. 
+ 
+ 
+ 
+Gambar 10. Halaman Pencarian Proyek 
+
+
+--- HALAMAN 15 ---
+Jurnal Teknik Informatika dan Sistem Informasi  
+ 
+p-ISSN : 2443-2210 
+Volume 6 Nomor 2 Agustus 2020 
+                                                                         e-ISSN : 2443-2229 
+ 
+ 
+ 
+220 
+ 
+ 
+Gambar 11. Halaman Hasil Pencarian Proyek 
+ 
+Gambar 12. Halaman Pemberian Penilaian 
+V. KESIMPULAN 
+Berdasarkan penelitian yang sudah dilakukan dapat 
+diperoleh tiga kesimpulan. Pertama, sistem pengelolaan 
+proyek mampu membantu administrator Visi Prima Group 
+untuk mengelola proyek serta mendapatkan berbagai 
+laporan terkait proyek, dan dapat membantu PIC proyek dari 
+Visi Prima Group untuk mengelola pekerjaan dan detail 
+pekerjaan proyek. Kedua, sistem pemantauan perkembangan 
+proyek mampu membantu pelanggan untuk memantau 
+perkembangan proyeknya dan menjadi nilai tambah Visi 
+Prima Group dalam hal pelayanan. Ketiga, pengembangan 
+sistem menggunakan Agile Development Method dengan 
+pola pendekatan Scrum mempermudah untuk pengembang 
+lebih cepat mendapatkan ulasan dari fitur-fitur yang 
+dikerjakan, dan sistem dapat langsung dipakai oleh Visi 
+Prima Group karena proses deployment yang dilakukan di 
+setiap akhir sprint. 
+UCAPAN TERIMA KASIH 
+Terimakasih saya ucapkan kepada pembimbing saya 
+yaitu Ibu Latipah dan Ibu Anita Wulansari yang telah 
+membimbing saya sehingga dapat menyelesaikan penelitian 
+ini. Terimakasih kepada Visi Prima Group yang telah 
+memberikan izin kepada saya untuk melakukan penelitian 
+dengan studi kasus sistem pada Visi Prima Group. 
+DAFTAR PUSTAKA 
+[1] 
+F. Panggabean, “Mengenal Bisnis Software House di Semarang,” 
+2017. [Online]. Available: https://rectmedia.com/mengenal-bisnis-
+software-house-di-semarang/. [Accessed: 18-Sep-2019]. 
+[2] 
+I. Sommerville, Software Engineering, 9th ed. Boston, Mass: 
+Addison-Wesley, 2009. 
+[3] 
+A. R. Dhuha, F. Pradana, and B. Priyambadha, “Pengembangan 
+Sistem Aplikasi Manajemen Proyek Berbasis Web (Studi Kasus : 
+PT . Swadaya Graha ),” J. Pengemb. Teknol. Inf. dan Ilmu Komput. 
+Univ. Brawijaya, vol. 1, no. 11, pp. 1367–1375, 2017. 
+
+
+--- HALAMAN 16 ---
+p-ISSN : 2443-2210 
+ 
+Jurnal Teknik Informatika dan Sistem Informasi  
+e-ISSN : 2443-2229 
+ 
+                                     Volume 6 Nomor 2 Agustus 2020 
+ 
+221 
+ 
+[4] 
+D. Paramita, “Rancang Bangun Sistem Informasi Kolaboratif 
+Berbasis Web Untuk Manajemen Proyek Teknologi Informasi,” J. 
+Buana Inform., vol. 6, no. 3, pp. 195–202, 2015. 
+[5] 
+K. Ramanda, “Sistem Informasi Manajemen Proyek Berbasis Web,” 
+Indones. J. Netw. Secur., vol. 6, no. 4, pp. 14–17, 2017. 
+[6] 
+T. Sumitra and M. A. Sutina, “Sistem Informasi Manajemen Proyek 
+pada PT. Sempana Pratama Menggunakan PHP & My SQL,” J. 
+Sibernetika, vol. 2, no. 1, pp. 86–93, 2017. 
+[7] 
+M. J. Hutapea, T. W. Pribadi, and I. Baihaqi, “Perancangan Aplikasi 
+Berbasis Android untuk Manajemen Proyek Reparasi Kapal,” J. Tek. 
+ITS, vol. 6, no. 2, pp. 158–163, 2017. 
+[8] 
+K. C. Dewi, P. I. Ciptayani, and I. W. R. Wijaya, “Agile Project 
+Management Pada Pengembangan E-Musrenbang Kelurahan Benoa 
+Bali,” J. Teknol. Inf. dan Ilmu Komput., vol. 5, no. 6, pp. 723–730, 
+2018. 
+[9] 
+P. A. Guna Permana, “Scrum Method Implementation in a Software 
+Development Project Management,” Int. J. Adv. Comput. Sci. Appl., 
+vol. 6, no. 9, pp. 198–204, 2015. 
+[10] I. Kurniawan and R. R. Sani, “Pemodelan SCRUM dalam 
+Pengembangan Sistem Informasi Kesehatan pada Klinik Ar-Rokhim 
+Sragen Kabupaten Sragen,” JOINS (Journal Inf. Syst., vol. 4, no. 1, 
+pp. 76–86, 2019. 
+[11] R. S. Pressman, Software Engineering: A Practitioner’s Approach, 
+7th ed. Boston, Mass: McGraw-Hill/Higher Education, 2010. 
+[12] W. Gata and G. Gata, Sukses Membangun Aplikasi Penjualan 
+dengan 
+Java. 
+Jakarta: 
+Elex 
+Media 
+Komputindo, 
+2013.
+ 
+ 
+

@@ -1,0 +1,406 @@
+[00:33] Iya silahkan. Saya udah nyoba mendalami alasan saya menggunakan metode PxP. PxP sendiri, kenapa saya milih. Sebelumnya saya ada bandingin berapa, itu ada Waterfall, RAD, Scrum, sama XP itu sendiri. Kan kalau kemarin itu dari Boi bilang, jangan memfokuskan ke orang yang bisa mengerjakan sistem tersebut kalau bisa ke faktor lain.
+
+[01:13] Nah kalau untuk Waterfall sendiri, itu tentu aja dari sistemnya yang kaku, dimana dia nggak bisa balik ke tahapan sebelumnya, kalaupun balik itu perlu melakukan revisi atau perbaikan yang cukup banyak dan juga mahal untuk biaya operasionalnya. Sedangkan dari lapan cabang ini belum memiliki standarisasi operasional secara teknis dan juga pembagian gaji dari sistempernya yang berbeda-beda, karena itu berdasarkan dari pemban jam kerja sistempernya itu sendiri.
+
+[01:55] Dan juga rekapitalasi SKP yang berbeda setiap bulannya, karena dari siswa yang masuk dan ada yang keluar juga. Maksudnya berarti dari sisi proses yang berjalan itu belum sama gitu kan? Iya, di lapan cabang. Di lapan cabang ini kemarin juga ada setelah bimbing yang dari Boi ada melakukan wawancara lagi ke staff front desknya, administrasinya.
+
+[02:18] Bahkan untuk total dari pengajarannya itu juga berbeda di setiap cabangnya, dan juga total siswanya berbeda, serta pemberian rekapitulasi laporan hariannya itu dikasih dengan dari setiap cabang ini, yang akan ngasih rekap itu ke manajemen pusat dan itu berbeda orang, jadi ada perbedaan di setiap data yang dikasih dari setiap cabang.
+
+[02:53] Berarti dari sisi formatnya pun belum besar agar ya? Iya, betul. Seperti itu. Dan juga di Waterfall pun ini juga masih memiliki visualisasi di awal, jadi prosesnya itu dapat dilihat ketika itu di tahapan terakhir. Lalu untuk kedua dari RAD, sebenarnya ini ada keunggulan yang sendiri dari RAD, itu tentu saja dari sisi visualisasi,
+
+[03:22] karena RAD memerlukan visualisasi yang cepat di awal, jadi sebenarnya ini cocok untuk mitra artan ini, karena pertama kali menerapkan sistem gitu, jadi belum pernah sama sekali, kalau misalkan saya menerapkan RAD sebenarnya sangat cocok, apalagi ada visualisasi di awal.
+
+[03:42] Tetapi dengan melihat rentang waktunya itu selesai harus 60-90 hari, jadi nah, yang dimana dari proses bisnis dari ARTA itu berbeda setiap cabangnya, dan ini pertama kalinya dari ARTA menggunakan sistem, pasti membutuhkan perubahan-perubahan yang enggak sedikit untuk kedepannya, karena belum ada sistem yang pasti atau pernah digunakan.
+
+[04:08] dan juga RAD ini berfokus di visualnya, jadi terutama dibandingkan dengan kualitas kode yang ini dibuat sistem gitu. Lalu selanjutnya di sini ada scrum, ini scrum ini yang menurut saya susah untuk diterapkan, karena dasarnya sendiri scrum ini untuk lebih ke manajemen proses dibandingkan dengan kualitas kode yang itu sendiri,
+
+[04:38] dan juga scrum ini juga ada bagian peran yang sudah pasti dari scrum master, product owner, sama developer. Dan kalau misalkan hanya digunakan atau diimplementasikan hanya satu orang, itu akan membuat tiga job desk ini sulit untuk dilakukan gitu. Terutama di bagian BXP itu, kalau misalkan kita bandingkan dengan BXP,
+
+[05:04] itu ada unit test, jadi itu ada, kalau misalkan ada perubahan atau requirement dari sistem yang diperlukan, itu lebih fleksibel dibandingkan dengan scrum yang dimana ada screen interview sama screen goal yang harus terus dilakukan gitu, secara aktif. Kemarin opsi metodenya apa? PXP? PXP atau XP?
+
+[05:36] Yang saya gunakan, PXP. Lalu untuk perbandingan selanjutnya ini ada XP, system programming, dimana di sini mewajibkan juga seperti hal yang sudah dengan scrum, ini di pair programming. Jadi kalau misalkan saya menggunakan metode XP ini, saya harus mengembangkan sistem, di samping saya juga agak harus dari sisi pengelolaannya,
+
+[06:03] sama juga dari sisi staff administrasinya atau produsenya, dimana untuk logika bisnisnya, dari mereka yang menjelaskan, sembari saya juga harus melakukan perbedaan secara langsung gitu. Oleh karena itu, makanya di nampakkan dengan XP konvensional gitu. Lalu untuk penerapannya sendiri, ini ada automated testing network untuk dari XP,
+
+[06:28] yang mana ini menyeluruh dan periodik atau berdasarkan periode, dan juga ada proses refactoring atau rebaling yang secara kuat untuk mendukung penggunaan metode PXP yang saya jelai gitu. Terus juga dari XP ini, perlu ada keterlibatan mitra yang seperti saya bilang tadi,
+
+[06:49] itu membutuhkan keterlibatan mitra yang sangat tinggi, sedangkan untuk proses operasional dari lapan cabang ini, itu sulit untuk diperapkan kalau misalkan memakan XP, karena dari sisi mitra harus melongkar waktunya, itu untuk bisa membantu saya membuat sistem dari manajemen dashboard.
+
+[07:12] Mungkin itu, makanya saya tetap memilih dari XP yang dari tahapannya sendiri, itu faktor utama saya memilih XP karena memang dari keterlibatan mitra yang fleksibilitasnya itu bisa dan sesuai dengan tahapan dari XP. Jadi bisa dibilang nggak terlalu sendang, nggak terlalu strict gitu,
+
+[07:36] untuk waktu yang dikasih sama mitra. Jadi kalau misalkan saya masih membutuhkan, itu mitra bisa saja menolak dan menerima, tapi kalaupun itu menolak, akan direschedule sesuai dengan kesepakatan kita atau operasi yang sudah, atau yang akan dilakukan di tahapan dari XP.
+
+[07:53] Oke. Kalau yang lain, nggak bisa seperti itu? Nggak bisa fleksibel begitu? Kalau yang dari saya lihat dan saya baca, itu di awal aja, khususnya kalau misalkan contoh di waterfall, itu lebih mendalamnya di wawancara, di awal wawancara aja atau wawancara pertama,
+
+[08:12] itu pun langsung harus membutuhkan data, fungsi-fungsi apa saja, atau sistem ini, yang pasti dari awal sampai akhir tanpa perubahan itu bagaimana. Mungkin saya menggunakan mitra XP. Ini ya, apa namanya, nanti saran saya sebaiknya tetap ada beberapa aspek gitu ya,
+
+[08:41] yang di bandingkan dari masing-masing. Tadi kan ada beberapa, lima metode kayaknya. Iya, lima metode yang dibandingkan, terus aspek perbandingannya apa saja, sehingga akhirnya yang terpilih yang mana. Tapi nanti juga tetap dijelaskan, kesesuaiannya berdasarkan proyek penelitiannya. Jadi bukan hanya dari sisi teori,
+
+[09:07] tapi juga dari sisi kesesuaian dengan objek penelitian. Tadi misalkan dari pertimbangan mitra, pertlibatan mitra, dari sisi waktu, kemudian dari sisi skoprojek, dan seterusnya itu dibahas. Jadi keluarlah yang mana yang paling cocok gitu. Kayak di dalam penelitian ini. Kalau untuk,
+
+[09:33] apa ya, nanti yang akan terlibat di mitra itu siapa? Dari manajemennya, itu ada dua orang. Yang pertama itu dari ketuanya sendiri, dari Guru Nana, itu selaku ketua dari seluruh cabang. Terus yang kedua itu dari staf operasional, operasionalnya memegang data Excel atau rekapan terpusatnya gitu.
+
+[09:58] Yang menerima... Ini bukan yang dicabang berarti? Bukan yang dicabang. Pusat juga dua orang. Lalu dari staf cabangnya. Salah satunya gitu. Kemarin saya salah satunya itu wawancara di cabang yang kelima. Tapi untuk persetujuan ini kan mau membuat sistem ya.
+
+[10:19] Berarti yang untuk dari pihak manajemen yang mengetahui siapa? Gunana itu kan? Gunana itu secara langsung diri. Saya kemarin awalnya langsung di video setuju. Baru saya minta untuk wawancara lagi dengan staf yang memang rekapan datanya. Lalu saya juga minta kontak sekalian musuh di staf administrasi cabangnya.
+
+[10:42] Kalau yang rekapan data ini kan terkait apa? Jumlah pembayaran, siswa gitu ya? Tentor tadi ya? Nah, kalau terkait yang proses bisnis yang berjalan di cabang gimana? Dari staf administrasi sama kepala cabangnya. Kepala cabang tadi mewakili salah satu? Iya, saat ini masih salah satu saja.
+
+[11:07] Karena, maksudnya gini. Kalau misalkan nanti, ini kan ada delapan cabang ya. Dan tadi kan kalau dari yang Arief sampaikan tadi beberapa kondisi, kalau dari sisi pelaporan datanya aja itu kan formatnya bisa enggak sama kan? Ya. Nah, kalau format yang enggak sama saya rasa kan tidak akan terlalu sulit ya.
+
+[11:28] Untuk, oh nanti yaudah apa yang dibutuhkan oleh manajemen kan itu yang turun ke bawah. Nah, tapi kondisi yang enggak sama itu mungkin perlu dicek juga dari sisi proses bisnis yang berjalan juga nanti seperti apa. Karena kan kalau misalkan sistem jadi yang gunanya ada delapan cabang,
+
+[11:49] kalau misalkan selama ini probisnya aja di situ berjalannya enggak seragam, ini kan agak sulit nih. Berarti kan mau tidak mau nanti dari sisi di level manajemen itu harus clear nih. Proses bisnis yang mana yang akan nanti akan ditransformasikan ke dalam sistem ini.
+
+[12:06] Sehingga kan tidak mengganggu. Apa ya, kalaupun nanti pada akhirnya sistemnya jadi digunakan, cabang-cabang yang memang secara probis itu mungkin ada sedikit perbedaan gitu ya dengan yang berjalan di sistem itu kan harusnya nanti perlu menyesuaikan. Jadi paling enggak untuk ketok palunya,
+
+[12:26] oh yaudah probis yang seperti ini yang dijalankan itu dari sisi level manajemennya itu ada gitu. Yang bisa mau, apa namanya, yang menyetujui gitu ya. Karena kan kalau nanti misalkan mengawancar dengan kepala cabang, bisa jadi kepala cabang satu dengan yang lain menjelaskan alur itu kan enggak sama gitu.
+
+[12:44] Jadi paling tidak menurut saya validasi akhir ya harus dengan manajemen. Jadi yang akan ditransformasi di dalam sistem ini nanti prosesnya yang bagaimana. Mungkin sedikit tambahan, kemarin dari wawancara dengan staffan administrasi itu juga ada perbedaan jadwal untuk gimbalnya itu sendiri.
+
+[13:11] Dan itu rentangnya sudah sederaskan juga di Ibu 1 secara detail itu dari penampuan harganya sendiri berdasarkan dari jenjang sama juga pemilihan jamnya. Jadi jadi setiap jenjang sama pemilihan jam kalau misalkan setiap malam itu akan lebih mahal kalau misalkan dibandingkan dengan pagi dan siang itu, simpelnya seperti itu.
+
+[13:36] Tapi rentenya sama kah semua cabang? Rate semuanya sama. Cuma ada perbedaan harga kalau pagi dan malam gitu ya? Ya, betul. Dan juga itu untuk dari keuangannya, terus kalau untuk dari pembagian kantor dan juga ruangan kelas serta siswanya, itu di setiap cabang juga berbeda-beda karena bergantung pada besar kecilnya ruangan tersebut.
+
+[14:02] Jadi kalau misalkan ngambil rata-ratanya itu dari 8 sampai 15 orang per ruangan, itu balik lagi itu. Menyai dengan kecil dan masarnya ruangan tersebut. Maksudnya dalam rules penentuannya itu gimana? Bergantung-bergantung ya sedikit banyak. Contohnya di sini di RK5 itu ada 6 ruangan.
+
+[14:28] Jadi kalau untuk ruangan pertama itu anak SD kelas 4 sampai 6, itu 10 orang, itu ruangan pertama. Ruangan kedua, RK sampai SD itu 4 orang. Dan itu totalnya maksimal di 8 anak. Di ruangan ketiga, kelas 6 sampai 9 SMP itu 12 anak.
+
+[14:51] Itu berdasarkan... Sampai kelas 9? Iya, bu. Atau sesinya berbeda. Sesinya berbeda, tapi di peruntungan yang itu ya? Ya. Di ruangan ketiga sampai 6 itu 12 anak. Ini dari jenjangnya. Dari SD sampai... Dari TK, akhir sampai SD ada. SMP, SD sampai SMP ada.
+
+[15:15] Dan untuk ruangan terakhir ini SMA, kelas 10 sampai 12 itu maksimal di 13 anak. Dan untuk totalnya sendiri di setiap cabang itu berbeda-beda untuk dari setiap staffnya. Kalau di Artaian Ultimah Maret itu ada 6 guru. Termasuk di dalamnya itu ada 1 kepala cabang
+
+[15:36] plus 1 staff administrasi. Kepala cabangnya di guru juga? Iya. Kepala cabangnya juga di guru. Berarti 6 itu sama beliau? Iya. Dan itu harus setiap hari kasih rekapan dengan... Sebenarnya formatnya sudah ada. Formatnya sudah ada. Dari manajemen sudah ada yang melakukan.
+
+[15:55] Cuma yang maksud saya tadi berbeda itu asumsi saya dari setiap total siswa dan total mentor itu yang berbeda. Jadi formatnya sebenarnya sudah ada. Dari kertas itu sudah ada. Saya rasa mungkin kalau dari sisi jumlah banyak sedikitnya itu kan gak masalah ya.
+
+[16:17] Cuma rulesnya sih mungkin yang nanti akan berpengaruhkan ke sistem. Apakah nanti pembagiannya apakah akan dibantu terotomasi sekian persen oleh sistem atau nanti karena banyak constraint tadi banyak constraint dan banyak kontrol yang diperhatikan mau gak mau ini tetap harus dilakukan secara manual
+
+[16:40] oleh adminnya gitu ya untuk membagi tadi gitu. Itu perlunya perhatikan juga sih. Dan juga dari kepala camang ini di setiap harinya itu tutup rekapan dari setiap administrasinya harus tutup rekapan di jam 7.20 itu gak boleh anil-anil pendaftaran dan biaya yang masuk.
+
+[17:07] Malam. Itu setiap harinya lalu nanti akan diakhiri di sesi terakhir pembagian belajar di setengah 9 malam dan di setengah 9 malam itu dari setiap kepala cabang ini akan langsung mengirimkan kertas rekapan itu ke manajemen pusat cabang yang kedua.
+
+[17:26] Jadi semua lapan cabang yang tersebar di Bukalwan itu harus ngasih ke cabang yang kedua. Pusatnya yang di kedua itu? Iya, pusat yang di kedua itu. Berarti sudah ditentukan gitu ya cut off waktunya ada gitu ya. Ya cut off waktunya sudah ada.
+
+[17:41] Diasanya memang ini kemarin dulu. Saya udah banyak yang divalidasi. Saya rasa mungkin nanti perlu kali ya dibuatkan apa ya. Ini kan nanti skopnya dari pendaftaran kan ya. Nah kalau menurut saya sebaiknya nanti bisa dibuatkan alur proses bisnisnya kali
+
+[18:10] untuk memudahkan. Jadi yang terlibat itu siapa saja di dalamnya aktivitasnya apa saja input dokumennya berupa apa saja paling enggak untuk gambaran sementara ini untuk diproposal. Terus nanti pas menjelaskan proses bisnis. Tapi proses bisnisnya tadi ya saran saya sebaiknya tetap divalidasi oleh manajemen nanti gitu ya.
+
+[18:36] Walaupun kalau secara induk kan ada di yang cabang kedua tadi gitu. Tapi tetap kalau bisa tetap ada validasi manajemen bahwa oh seperti ini loh proses yang berjalan di cabang itu seperti ini gitu. Nah kalau misalkan ada perbedaan kan berarti jalan tengahnya yang mana yang akan digambarkan
+
+[18:55] di dalam notasi proses bisnis itu yang mana gitu. Jadi kan baiknya didiskusikan. Jadi biar clear dulu nih alur prosesnya seperti apa. Nah nanti ketika menjelaskan proses itu menurut saya constraint tadi, kontrol-kontrol yang tadi disebutkan Aril itu kalau bisa dijelaskan dulu aja
+
+[19:13] sedapatnya saat ini gitu. Apa saja sih kondisi-kondisinya yang perlu diperhatikan. karena nanti kan ya kemungkinan kan akan banyak yang masuk ke teknis di kode program ya. Ya betul. Jadi paling nggak kontrol-kontrol itu menurut saya ceritakan aja sih sekali dengan proses bisnisnya.
+
+[19:34] Untuk bisa menilai ini seberapa kompleks sih. Karena kalau misalkan itu nggak dijelaskan kan orang mikir ya udah daftar-daftar aja kan tinggal ngisi fog, udah selesai gitu. Apa yang buat sulit kan gitu. Nah jadi mungkin untuk menceritakan kompleksitasnya menurut saya diceritakan aja sih itu.
+
+[19:49] Di bab 2 deh kayaknya nanti ya, domain penelitian. Ini pakai prototipe ya. Yang prototipe. Itu kan ada pembagiannya di bab 2. Di bab 2 itu penelitian terdahulu sama dasar teori. Kalau domain itu diproyek. Kalau domain itu diproyek? Iya.
+
+[20:20] Proyek domain penelitian. Ya harusnya kurang-kurangnya seperti ini juga sih. Di situ dijelaskan juga. Mungkin nanti bisa masuk ke... Ya coba lihat ini prototipe tadi. Apalian bab 3-nya apa? Apalian bab 3 itu udah kemasuk ke rancangan. Ini sudah ada yang mencintai masuk.
+
+[20:46] Di kecil dan konteks ini subbabnya ditambahkan Aril ya? Yang mana? Yang 311 ya? Saya tambahin. Kalau untuk penjelasan masalah dari spoknya itu saya jelaskan yang 21 sudah terbelakang. Jadi cut off timenya segalanya macam. Detail itu di bab 1?
+
+[21:04] Iya. Itu terlalu panjang. Iya bab 1 itu perlu tetap menjelaskan pro bisnisnya seperti apa. Terus permasalahannya gimana. Tapi lebih ke poin inti ya. Kalau misalkan yang detail banget sih saya rasa dipindahkan aja. Kalau misalkan... Coba ya? 311 itu apa?
+
+[21:31] 3112 ruang lingkup penggunaan prototipenya untuk langsung ke tahapannya. Objek dan konteks ini apa yang mau dijelaskan? Objek yang konteks ini lebih menjelaskan pembuatan dari Arta ini berdasarkan masalahnya apa secara singkat. Saya rasa kalau mau ini dikembangkan mungkin bisa di sini kali itu.
+
+[22:00] Objek dan konteks itu yang proses bisnisnya. Untuk detail dari contohnya kayak cut off timenya tadi gitu. Ya proses bisnisnya dulu dipetakan. Kalau salah sih lebih mudah kalau ada diagram ya. Diagram BPM gitu. Dibuatkan. Nanti baru dijelaskan secara detail
+
+[22:17] masing-masing perubahan. Diagram mana? BPM. Oh BPM. Ah BPM. Yang SS tuh ya gue? Iya yang SS. Karena kan ini kemarin seurancangan prototip kan. Nanti kalau bab 4 itu kan udah langsung ke hasil tahapan pengerjaan gitu ya. Kalau misalkan pakai PXP
+
+[22:45] berarti tahapan pertama requirement ya? Requirement terus dari sisi kebutuhan penggunaannya lalu dari planning, design, iteration, iteration, analyzation. Iya tapi kalau requirement pun kan sebenarnya sudah lebih ke requirement system kan. Nah masalahnya kita belum menjelaskan kondisi dari domain masalahnya dulu tuh
+
+[23:12] yang dari proses bisnisnya gitu masalahnya. Mungkin lebih baik ditambahkan di 311 itu sih objek dan konteks yang. Karena sebenarnya kalau melihat referensi yang disitasi tahun kemarin tuh beda banget template-nya ya Bu ya? Kalau misalkan. Tahun sebelumnya kan ya agak-agak rancu ya.
+
+[23:30] Jadinya banyak interpretasi gitu. Jadi tahun sekarang kan disamakan lah. terutama yang prototipe dan proyek ini. Karena kurang lebih kan sebenarnya sama. Selanjutnya sih disini aja gak apa-apa. Karena ini bab 3 rancangan prototipe kan. Jadi gimana mau merancang prototipe kan?
+
+[23:47] Kita mau mengembut prototipe ini yang merujuk dari proses bisnis yang ada. Tapi kan bukan serta-merta hanya mengkonversi gitu ya. Dari proyek yang ada langsung jadi system kan. celah-celah yang masih kurang kan harusnya bisa ditingkatkan kan. Bisa diimprove. Berarti kan harusnya udah kondisi 2D lah.
+
+[24:06] Jadi kita jelaskan disini. Oh ini prototipe ya. Kalau proyek itu kan di bagian ya saya lupa ya. Bab 1 kayaknya ya. Ada yang menjelaskan mitra itu. Kan kontribusi mitra juga atau keterlibatan mitra seperti apa? Itu kan dijelaskan kondisi ini di mana?
+
+[24:43] Di proyek itu kemarin saya ada buat. Ini jadinya pakai 2 template? Buat 2 template? Iya bu. Kemarin karena awalnya proyek terus akhirnya ya mitra itu ada di sini. Bab 1 tadi. Ada yang standar mitra. Itu lebih ke standar ya.
+
+[25:09] Ini di proyek ya bu. Cuman saya kayaknya hapus sekarang. Kalau misalnya. Ini nih. Tapi ini lebih ke standar ya. Kalau yang menjelaskan peran mitra di dalam tegas akhir ini itu di mana? Saya lupa di bab 3 kalau gak salah.
+
+[25:46] Bab 3 nya prototipe atau proyek itu ada. Kalau gak salah. Itu kan sebenarnya tidak hanya menjelaskan peran mitra tapi juga ada juga pendanaan kalau tidak salah. Oh itu di proyek berarti bukul ada pendanaan yang lain. Sumber daya. Sumber daya.
+
+[26:15] Sumber daya, material, bahan, alat, bahan. Kalau prototipe gak ada ya? Kalau prototipnya gak ada. Dia sebatas langsung di bab 3 nya langsung ada renganan prototipe sama konsep serta jatuan. Kalau gak ada supep sendiri itu berarti nanti dijelaskannya ya ketika menjelaskan tahapan aja
+
+[26:46] berarti keterlibatan tadi kan ada banyak tuh dari manajemen kan ada 2 orang kemudian nanti palacabang sama admin ya satu lagi Sama admin berarti kan ada 4 orang yang paling tidak dari mitra itu akan terlibat dengan penelitian ini dan untuk kapasitas apaan
+
+[27:03] gitu saya rasa juga nanti perlu dijelaskan di dalam mengetahuan berarti masuk di sini juga gak buk 3.1 nya atau ini saya buat sebab sendiri sih untuk menjelaskan kayak menceritakan masalahnya Kalau yang dari template apa? buk 3 ini isinya apa ya?
+
+[27:26] 3.1 ini garis besar lalu masuk ke 3.2 itu konsep prototype konsep prototype spesifikasi sama jadwal pembuatan prototipan ini konseptual ya konseptual prototype ini dari tahapan lupar penggunaan nonton konseptual berarti konseptual spesifikasi sama jadwalnya ya bisa juga sih kalau mau dijelaskan
+
+[28:02] di 3.1 satu itu nanti tambahkan aja satu paragraf yang menjelaskan keterlibatan itu karena kalau yang proyek kan enak ya misalnya ada satu sebabnya sendiri gitu peran serta mitra itu di bagian apa saja oke tapi tadi ini ya tadi ya
+
+[28:29] berarti kan ada cukup banyak yang terlibat berarti dari mitra ada 4 kan? total ada 4 nah kalau nanti mengarah ke pxp itu bagaimana sih keterlibatan dari mitra itu kalau dari 4 orang ini kalau dari saya sendiri yang sekarang ini
+
+[28:48] dari 4 orang ini khususnya dari staff admin kepala cabang sama yang satunya dari staff operasionalnya yang memegang mereka pendata itu lebih ingin mengetahui bagaimana proses bisnis atau operasionalnya dijalankan secara nyata gitu bisnis darinya karena kalau untuk dari yang pertama ini
+
+[29:10] dari gunanya sendiri itu juga kemarin saya ada tanyakan dia sedikit agak lupa untuk cara operasionalnya untuk berjalan karena beliau kan di situ ya ya saya langsung di tantor percabangnya jadi saya manfaatkan tiga orang ini untuk mendapatkan informasi realnya
+
+[29:28] yang terjadi bagaimana proses operasional setiap hari itu bekerja lalu setelah itu saya ngevalidasi nanti sama gunanya apakah itu sudah sesuai dengan proses bisnis yang dijelaskan atau ada salah gitu karena pada akhirnya nanti akan saya validasi dan tentunya narasumber utamanya
+
+[29:47] untuk membuatkan sistem ini dari ibu Nana yang terjadi untuk tahapan konteks PXP-nya lebih fisik nanti ada tahap desain dan segala macam itu tetap butuh validasi ke ibu Nana aja yang ketiga orangnya ini untuk di tahap pengujian berarti pengujian
+
+[30:09] lebih ke validasi berarti keputusan fiturnya akan jadi seperti apa berarti hanya dengan manajemen saja produk orangnya manajemen walaupun masih dari gunanya ada yang lupa atau fiturnya tapi dari tiga orang ini ada menyebutkan nanti saya omongkan atau bicarakan sama gunanya
+
+[30:35] bahwasannya dari tiga orang ini menyebutkan fiturnya fitur atau kolom tambahan tapi berarti beliau yang bertiga ini ketika sistem testing itu akan terlibat kan periterasi gitu kan kan terlibat dari staff admin nya disini karena kan saya menurut ada dua orang
+
+[30:56] dari kepala cabang dari sisi staff administrasi yang menggunakan langsung setiap hari jadi untuk dari staff operasional yang ada rekapan data selama kepala cabang itu sebagai merasakan pertambahan merasakan pertambahan untuk pemiriman ini akan dari manajemen guna-guna sendiri sama staff
+
+[31:21] administrasi berarti nanti kalau sistem ini ada berarti fungsi yang kepala cabang dan tadi staf operasional berarti gak ada lagi fungsi untuk mereka itu tetap kalau di sisi memang gak ada sama tapi kalau untuk realnya sendiri pembagian jadwal tentor
+
+[31:42] sama pembagian jadwal tentor sama mendiskusikan dari pembagian monori konor itu dari staff administrasi sama kepala cabang itu terus nanti gimana maksudnya kalau dari sisi admin itu sebagai user yang meng-input tapi ternyata untuk pertimbangan tadi misalkan perjadwalan penghitungan gaji
+
+[32:10] itu kan tetap kembali ke kepala cabang sementara dia kan gak ada pemerintah di sistem nanti proses itu dilakukan di luar sistem iya di luar sistem karena dilakukan sampai saat ini pun dari dua orang administrasi sama kepala cabang ini
+
+[32:29] juga diskusi secara langsung tetapi yang meng-handle dan melakukan pemberkasan dari sisi staff administrasi tetap dari staff administrasi terus gimana nanti misalkan terkaitkan penjadwalan sementara usernya hanya admin kalau misalkan penjadwalan itu kan kalau kondisi real berarti hanya tinggal input
+
+[32:55] sementara jadwal itu sudah disusun dulu oleh kepala cabangan tapi kalau misalkan kemarin itu yang ada sempat sampaikan kondisinya satu pengajar itu kan ada yang dia full sesinya sehingga pada akhirnya mungkin dia pagi di sini siang di mana kondisi
+
+[33:19] seperti itu nanti gimana untuk intervensi di sistem kemarin sudah saya validasi itu gak bisa terjadi jadi cuma hanya satu cabang saja berarti gak akan mungkin dia lintas cabang ya gak akan mungkin untuk lintas cabang berarti aman kalau itu
+
+[33:34] kembalian dari sisi atlin sama kepala cabang per cabang makanya operasional setiap cabang itu berbeda kalau gitu jauh lebih aman karena kalau misalkan lintas cabang itu sebet sekali harus menantau data semua nanti mau gak mau kan nanti harus bisa
+
+[34:00] apa ya maksudnya sistemnya harus bisa memberikan gambaran informasi dari misalkan tadi terkaitkan jadualan jadual sementara yang sudah ada itu seperti apa sehingga nanti bisa jadi input untuk kepala cabang ketika dia menunjukkan jadual berikutnya walaupun secara real kan dia
+
+[34:20] memang dia bukan pengguna langsung di sistem ini tapi dia tetap mendapatkan input dari sistem tadi untuk pertimbangan misalnya ada apa ya mungkin semacam rekapitulasi menyeluruh atau seperti apa dari jadwal-jadwal tentor itu sehingga kalau dia mau assign lagi misalkan
+
+[34:41] ada kelas baru yang dimuka dia mau assign lagi siapa yang bisa tahu berarti kalau misalkan teman menggunakan sistem dari sisi front-base sisi admin sama management tersebut tapi kalau misalkan dari kepala cabang yang membutuhkan rencananya saya dan kemarin ada
+
+[35:06] diskusi sama pengguna juga dari management juga bisa dalam pdf itu bisa langsung dikirimkan kepala cabang report gitu menurut saya walaupun dia enggak harus login ke sistem paling enggak dari admin bisa dapat report nanti kan diserahkan jadi jangan semuanya
+
+[35:28] nanti table apa namanya table untuk data semua gitu ya enggak ada report susah orang buat ngelihat paling enggak nanti ada dashboard juga yang bisa diterima penyerahan ke klutansi fisik itu yang pertama untuk paket yang normal paket yang normal ini
+
+[36:05] yang enggak ngambil siswa yang enggak ngambil satu paket per semester loh klutansi yang kedua itu khusus untuk paket yang memang paket yang memang siswanya ini mengambil full satu semester yang pertama tadi per bulan terus yang ketiga itu dari
+
+[36:28] mereka pun ternyata juga ada menambahkan atau membuat satu form itu secara fisik untuk menuliskan dari wali muridnya ini nama nomor telepon dan lain-lain jadi setelah dari formnya itu dipulis sama wali muridnya baru akan dimasukkan langsung dimasukkan lagi sama staff administrasi
+
+[36:52] ke dalam buku masalah dan penyimpanan pembisaran itu ternyata enggak disimpan kemanajemen pusat atau diberikan kemanajemen pusat tapi disimpan di setiap camangnya jadi enggak ada pemberian itu data siswa data siswa yang enggak ada pemberian kemanajemen pusat berarti manajemen pusat itu
+
+[37:13] ya taunya cuman berapa orang jumlahnya makanya untuk dari akapan excel juga sebenarnya itu hanya angka dan juga belum dipastikan itu bakal terus di update gitu rekapan excel yang jumlah gitu kan iya rekapan excel yang jumlah karena harus terus kan
+
+[37:32] pengbayaran gimana kalau enggak tahu ini kan biasanya mungkin transfer gitu ya ini yang transfer orang tuanya siapa gitu udah didata di sekolah itu ada data yang rekapan gitu tapi maksud saya karena ada pembatasan waktunya jadi terbatas gitu karena
+
+[37:50] dari sisi staff personal selaku mentor pengajar juga jadi double drop gitu sebagai staff personal dan untuk memvalidasi pembayaran itu seperti yang saya bilangin dengan sebut itu dari sisi menegang akan memkomotasi rekening dan akan bayar dari kertas rekapan secara
+
+[38:14] satu-satu kalau ini yang ngerekap yang ngumpulin pembayaran kan di admin ya itu ada sistem kalau telat membayar gitu kondisinya apakah akan diberikan semacam SP atau gimana kalau kemarin ada kalau ada tumbakan waktu jatuh tempoh itu dari lebih tepatnya
+
+[38:43] untuk remainer pertama itu langsung ke wali muridnya tapi dari admin dari admin sisi admin dan itu dari sisi admin nge-WA dari hasil data yang sudah di yang ada di dalam berkebesaran itu kalau misalkan tidak ditanggapin mau gak mau
+
+[39:03] langsung ke siswanya jadi siswanya sudah menyampaikan langsung ke admin makanya sistem yang rencangan yang saya buat itu ada otomat kalau atas jadi si admin bakal bisa langsung melihat yang belum itu tambahannya berapa sebagainya ya ke dalam bukan harus
+
+[39:24] di cek satu persatu berapa jumlah siswa bisa cabangnya contohnya kemarin saya sudah pastikan ada 400 cabang yang paling banyak di Arta 6 cabang 6 siswanya 400 udah kayak satu sekolah kalau yang diproses bisnis sepertinya alur yang penting kalau yang kontrol
+
+[40:13] kalau misalkan memang perlu validasi kalau misalkan sifatnya kontrol-kontrol atau constraint itu memang misalkan hanya tidak untuk di expose keluar tapi nanti di sistem memang perlu diakomodir saya rasa mungkin tidak perlu dimasukkan secara detail di laporan karena khawatirnya nanti
+
+[40:37] bisa jadikan itu rahasia bisnis mereka itu kan mungkin kita tidak tahu terlalu detail juga disitu jadi tetap ada pertimbangan itu tetap di validasi ulang dengan narasumbernya aja jadi kalau yang secara flow menurut saya kalau proses bisnis kan mau
+
+[40:56] gak mau perlu ya karena itu nanti akan di validasi lagi di sistem bagaimana eksekusinya itu sebaiknya tapi kalau sifatnya constraint tadi kalau memang itu sifatnya lebih ke kebijakan perusahaan atau sifatnya memang hanya manajemen saja yang boleh mengetahui itu
+
+[41:16] misalkan tapi mau tetap diakomodit di sistem gimana caranya gak usah terlalu diekspos selain penokoran gitu saya terus juga ada saya berbual lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya coba untuk selesaikan lukesatunya lukesatunya lukesatunya lukesatunya tapi sudah lukesatunya sudah gimana ini
+
+[41:43] jadi lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya lukesatunya pembinaan belajar itu apa terus juga dihitung dengan data yang saya dapatkan dari undang-undang republik indonesia lukesatunya memang ada peraturan tentang sistem pendidikan yang mendukung untuk pembinaan
+
+[42:09] informal saya lanjut kenapa disitu langsung bahas sistem informasi manajemen informasi web karena yang di paragraf mulai karena saya selesai menceritakan bahwasannya dari sistem bimbel yang saat ini memang belum ada sama sekali sistem yang digunakan dan langsung menyebutkan sistem informasi
+
+[42:55] itu apa dan lingkup yang mau saya ambil di penelitian itu apa terima kasih di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian di penelitian
+
+[44:22] jangan hanya menyebutkan tentornya kayaknya real tambahkan coba estimasi jumlah siswa oh jumlah siswa juga saya yang terima kasih menyebutkan secara spesifik untuk jatuhannya sendiri ini paragraf ini mau menceritakan apa dari sisi kompleksitas jatuhannya dari sisi admin juga perlu
+
+[45:31] untuk secara detail melihat satu persatu nyata yang ada di 20% coba scroll dulu ke atas tadi paragraf atas ini kan menceritakan mitra ya kalau menurut saya coba apa ya coba mungkin dari umum ke khusus dulu kan ini kan
+
+[45:55] nanti skop TA-nya terkait pendaftaran itu kan ya pendaftaran kemudian pembayaran itu kayaknya di akhir pendaftaran penjadwalan pembayaran gitu kan nah coba diceritakan dulu tiga proses itu kayaknya secara umum kan yang mau disedikan skopnya adalah jadi nanti dibahas dulu
+
+[46:21] itu walaupun sebenarnya secara keseluruhan banyak proses yang berjalan juga kan tidak hanya cuma membayar terus dapat jadwal apa namanya mendaftar ya tapi proses belajar pun kan harusnya juga bisa gak ini masuk ke skop sistem tapi kan dalam case
+
+[46:37] ini jadi cerita ceritakan dulu aja secara garis besar satu ini soalnya ini masih umum disini ya masih cerita mitranya kemudian dari sekian cabang jumlah jumlah bulu sekian jumlah siswa sekian mungkin nanti satu paragraf itu menceritakan proses bisnis umumnya
+
+[47:00] dulu deh yang berjalan yang berjalan itu apa saja nah kemudian nanti boleh baru masuk ke ini proses bisnis utama yang memang ada kendala saat ini yang mau diselesaikan di dalam penelitian ini berarti kan hanya fokus pada tiga itu
+
+[47:18] baru nanti berikutnya ceritakanlah kendalanya itu tadi ya mungkin dari sisi kompleksitas dari sisi masalah yang terjadi di masing-masing probis itu seperti apa jadi biar ada ide besarnya dulu jadi nanti kalau menjelaskan yang lebih detail pembacanya udah nyambung menjelaskan
+
+[47:39] apa sih nanti kalau setelah menjelaskan detail ini bahwa cukup banyak kombinasi jadwal tapi masalahnya kan apa ya oh ini udah tergabung juga ada jadwal ada pembayaran di dalam satu paragraf dibedakan maksudnya biar mudah menangkap ide-nya gimana enaknya kalau tadi
+
+[48:10] saya mikir sebaik dipisahkan dulu cerita proses bisnis yang berjalan dulu secara umum apa terus baru dari kendala yang berjalan itu apa di proses bisnis yang mana berarti mau dihalat yang 30 bisnis yang intinya nanti kalau ini mau diselesaikan
+
+[48:27] kita mau buatkan fiturnya di sistem entah itu secara menyeluruh dari keseluruhan aktivitas di probisnya atau ya mungkin sebagian jadi kompleksitasnya itu lebih ke apaannya gitu kan ya dari 3 probis itu kendalanya lebih ke apaannya mungkin masing-masing dijelaskan misalnya
+
+[48:56] biar lebih runtut kali ini jadi kayak untuk pembahasan secara umumnya masih kurang ya iya tambahkan satu paragraf lagi sih menurut saya untuk menjelaskan proses bisnis yang berjalan secara umum nanti baru spesifik di proses bisnis yang memang dirasa apa ya
+
+[49:18] paling banyak kendalanya sehingga nanti kan mau dijadikan skopulit dan yang proses pembelajaran-pembelajaran juga permintaan umum aja sih diseritakan di proses utama itu sih umum soalnya kan mungkin nanti jadinya timbul pertanyaan coba yang paragraf atas yang ini kan banyak
+
+[49:50] kombinasi ini apa namanya siswanya seperti ini terus per level pendidikan itu biaya yang dibayarkan berbeda balik lagi nanti kalau jadwal yang dipilih pun berbeda biaya yang dibayarkan pun berbeda nah sebenarnya yang mau apa namanya ditekankan dari banyaknya kombinasi
+
+[50:18] informasi itu yang akan menjadi masalah karena apanya sih ada kan intinya sebenarnya semuanya itu masih dicatat di dalam buku belum tak sistem jadi kan gak bisa dengan mudah langsung dilihat kondisinya kondisi real datanya kalau butuh tadi misalkan yang masalah
+
+[50:42] yang paling krusial kan di ujungan ini kan pasti di pembayaran punya siswa segini tapi kok misalkan real pembayaran yang diterima per bulan itu kok gak sesuai sih misalkan padahal ya tadi karena kan gak tahu paket-paket yang dipilih oleh siswa ini
+
+[50:58] sebenarnya apa aja sih terus yang active existing itu apa aja kan sulit dilihat karena semuanya masih dalam untuk buku jadi menurut saya lebih ke apa ya nanti manajemennya gitu ya manajemen dalam reporting itu semua itu kendala apa sih
+
+[51:16] yang dia hadapi karena tadi semua cabang ini masih masih panung mal kolek datanya masih panung mal jadi ditambahkan satu paragraf setelah ini ini kan nanti diperdetail untuk totalnya iya bahas provisnya dulu setelah itu nanti baru bicara masalah lebih ke
+
+[51:47] permasalahan yang memang apa sih bawahnya ini apa setelah ini bawahnya ini dari masyarakat wawancaran isi dari bukunya terus bagaimana cara setiap cabang ini mencatat di buku tersebut juga putansi yang tadi saya sebutkan tapi Arun boleh melihat yang dicatat
+
+[52:56] di masing-masing cabang buku desarnya boleh melihat ada saya dapat dikasih gambar kalau itu gak perlu dilampirkan kalau misalkan dilampirkan kalau misalkan seminar nanti minta ditunjukkan kalau misalkan minta dilampirkan data aslinya disambarkan ini bahasa paragraf ini terkait dari multi cabang
+
+[53:47] bagaimana menikronkan dari semua cabang yang ada yang kemarin saya tanyakan jadi nanti kalau sistemnya ada terkait mutasi rekeningnya nanti gimana apakah nanti transfernya akan menjadi fitur di sistem atau kemarin juga udah ada saya tanyakan ke gunana kalau misalkan
+
+[54:16] untuk saat ini untuk prosesnya akan tetap sama tetap akan dilakukan seperti itu cuman akan lebih mudahkan kalau misalkan dari sistem yang atau dari super admin mengakses secara langsung bisa mengetahui review itu berapa dan juga ada data dan juga
+
+[54:37] ada bukti dari transfer yang udah ditransfer oleh wali murid karena dari artapun juga udah menyadari bahwasannya bisa terjadi kemungkinan pengeditan bukti transfer jadi jadi untuk prosesnya sekarang itu dari sisi staff admin ini ketika ada dari wali murid yang mengirimkan
+
+[54:59] bukti transfer itu gak akan langsung dicatat dan diterima tapi akan meminta validasi dari bu gunana terlebih dahulu apakah sudah masuk ke rekening atau enggak baru akan dicatatat jadi gak ada otomatisasi dari sisi itunya karena dari gunana sendiri pun
+
+[55:18] juga tetap kegak pengen dilakukan secara manual karena rekeningnya itu langsung ke gunana itu sendiri gak ke rekening kantor soalnya berarti kan apa ya berarti kan proses pembayaran yang dilakukan itu tetap di luar sistem berarti kan ya nanti kan dikirimkan
+
+[55:40] ke admin gitu ya katakanlah kulitransfer dikirimkan berarti admin ini akan verifikasi dulu ini udah masuk atau belum tapi kayaknya verifikasinya kan tetap perhari seperti tadi kan verifikasinya tetap perhari seperti yang per jam setengah sembilan itu cuman saya ada terpikirkan
+
+[55:58] yang disebut pilihannya itu kemarin saya ada baca-baca dan cari-cari kalau misalkan sebenarnya bisa menggunakan otomatisasi whatsapp memberituan notifikasi sekedar untuk memberitahu bahwasannya dari staff admin ini membutuhkan validasi apakah pembayaran yang masuk atau enggak atau hanya sekedar main return notification
+
+[56:20] lewat gmail untuk memberitahukan sama juga ada perlu validasi apakah apakah sudah masuk rekening atau enggak transferannya cuman untuk saat ini rancangan yang saya buat itu dari manajemen harus login terlebih dahulu di super admin dan melihat dan verifikasi secara langsung
+
+[56:47] melalui manajemen kondisinya berarti gimana nanti ketika ada pembayaran masuk berarti admin itu akan tetap mengupload bukti itu di masing-masing mengupload bukti itu dari data-data yang sudah ada dan dari si super admin akan ngecek validasi tapi kan perbedaannya kalau misalkan
+
+[57:07] yang sebelum adanya sistem itu harus tertas dan juga mutasi kalau ini dari sistem walaupun secara dilihat itu tetap sama untuk mengajak validasi harus kesempatan dari mitra yang maunya seperti itu soalnya maksudnya nanti berarti apa ya kalau solusinya mau
+
+[57:36] tetap seperti itu artinya kan tidak di otomasi di proses itu cara menyampaikan di latar belakang ini jangan sampai nanti disini menyebutkan bahwa proses tadi ya kitansi fisik dan buku itu kan masih dilakukan secara manual proses rekapitulasinya sementara nanti
+
+[57:56] ketika ada sistem proses rekapitulasinya juga masih manual juga bedanya cuman udah langsung di upload gitu ya kan bukti transfernya sudah langsung di upload tapi kan proses pengecekannya tetap masih manual dilakukan jadi itu juga perlu clear gitu kalau dari sisi
+
+[58:21] developer mungkin bisa aja kita kasih otomasi aja misalkan tapi kan masalahnya ini keputusan bukan di developer tapi lebih ke pihak manajemen atau stakeholdernya maunya yang seperti apa karena mereka kan yang melakukan investasi disitu dan pertimbangan misalkan nanti kenapa tetap
+
+[58:42] seperti ini dari sisi keamanan kan mungkin jadinya ada celah gitu ya ada celah dan bisa jadikan bukti waktu yang digunakan untuk proses pengecekan jadi malah double check jadi lebih lama kan juga effort lagi nah itu juga sebaiknya clear juga
+
+[59:02] kenapa tetap solusi yang seperti ini yang dipakai itu jelasin nanti aja di requirement menurut saya nanti kan ya setidaknya maksudnya nanti ketika Ariel ditanya Ariel bisa menyampaikan gitu ya kenapa kamu gak usulkan aja itu di otomasi kan sekarang banyak
+
+[59:24] teknologinya gitu dan ya mungkin gak semahal itu juga jauh lebih bisa mempercepat tapi kenapa tetap dilakukan seperti ini nah itu jadi pertimbangan dari sisi manajemen itu yang saya perlu clear gitu ya alasannya ini kemarin juga ada nyari-nyari pilihannya
+
+[59:44] antara yang digunakan apa namanya otomatisasi yang seperti gini pembayaran atau melakukan manual cuman dilihat secara manual pun juga banyak celahnya sebenarnya untuk dilakukan cuman dari nuker kemarin saya coba untuk validasi lagi inginnya seperti itu berarti kan sebenarnya yang terbantu
+
+[01:00:15] itu bukan proses apa namanya bukan proses rekapannya tapi lebih ke bagaimana mungkin informasinya itu ditampilkan agar dia bisa langsung melihat oh ini ada ada yang masuk loh pembayaran dari sini cuman kan butuh rendasi lagi cuman dia kan bisa overview
+
+[01:00:32] aja dari sekian siswa di cabang ini untuk pembayaran itu sudah misalkan sudah berprogres berapa persen oh ini per paragrafnya per ini ya per masalah ya ya ini berarti kan harus ada dashboard dengan solusinya kan dari sisi artinya dari sisi artinya
+
+[01:01:07] dari sisi artinya dari sisi artinya dari sisi artinya dari sisi artinya berikutnya dari rujukan jurnal yang saya temukan dari sistem baik dari metode yang berbeda tapi mengembangkan sistem yang sama baik itu pada bimbel ataupun non bimbel memang kebayangkan
+
+[01:01:44] itu menggunakan TXP sebenarnya lalu banyak menggunakan waterfall dan juga XP karena dari mereka juga kebanyakan yang saya baca itu dari awal sudah pernah menggunakan sistem dan juga proses bisnisnya itu udah jelas di awal dan akhirnya saya tebelin bahwasannya
+
+[01:02:24] memang yang saya buat ini yang saya cari itu belum ada untuk di multi cabang di siap bimbel yang ada untuk integrasi data di siap bimbel di siap bimbel di siap bimbel di siap bimbel di siap bimbel di siap bimbel
+
+[01:03:16] sama perbandingan dari metode yang lain saya juga menanyakan ini kalau penggunaan ini boleh kan yang menggunakan titik koma ini untuk menjelaskan kesinambungan per kali ini ada beberapa kondisi coba nanti bisa ditambahkan inilah kayaknya referensinya kurang disitu justifikasi dari referensi
+
+[01:04:11] mana oke citasinya ditambahin ya dari rujukan teori gitu ya kalau buku gak apa kan di tahun 2000-an penambahan lagi kenapa saya menggunakan PXP PXP nanti pelajari dari pengembang metodenya ya yang di bab 2 saya tahu itu di pengembangan
+
+[01:04:56] PXP pertama kali itu 2009 nah itu coba nanti cari jurnal atau buku gitu jadi nanti dari sisi tinjauan perusahaan untuk metode tetap rujukan utamanya dari pengembang metode nanti kalau dari sisi implementasi penerapan tahapan misalkan gitu seperti ini ya
+
+[01:05:16] boleh lah pakai yang lebih baru misalkan seperti di mana yang terakhir kemarin itu saya jadikan awalnya lima bu sebenarnya saya jadikan tiga untuk memandatkan rumusan masalah yang sebelumnya itu dari merancang protokat untuk sisi dari staff operasionalnya si adminnya
+
+[01:05:45] terus yang keluar ini dari super admin atau sebenarnya dari dua poin ini jadikan satu ini dari sudut panah aktor ya ya sudut panah aktornya sama bisa dibilang fitur yang menanti ada itu seperti soalnya kata kerjanya disini hanya menyebutkan
+
+[01:06:10] merancang gitu loh saya khawatirnya kalau dalam konteks SDLC merancang itu kan gak sampai selesai ya harusnya sampai ke kemudian gak ada proses developmentnya gitu jadi kalau misalkan kata kerjanya hanya merancang khawatirnya nanti salah interpretasi gitu jadi jangan hanya
+
+[01:06:29] merancang tapi kan lebih ke mengembangkan prototipenya juga kan mengembangkan atau membangun kemarin saya menambahin merancang dan membangun mengembangkan mengembangkan mengembangkan mengembangkan mengembangkan mengembangkan mengembangkan pxp-nya pxp-nya belum ada disebutkan tergantung tergantung dibentuk prototipenya tergantung dibentuk prototipenya ini ya PTA-nya
+
+[01:07:01] kalau misalkan kalau prototipenya sebenarnya harapannya itu nanti bisa deployment sampai ke real user jadi kalau memang targetnya mau itu mengembangkan ini merancangnya kan udah maksudnya udah include di dalam tahapan si pxp-nya sendiri kan sebenarnya coba kau tujuan ya sebenarnya
+
+[01:07:44] pxp-nya belum ada disebutkan kalau menurut saya sih lebih baik tetap disebutkan ini judulnya apa sebenarnya? rancang bangun informasi manajemen dashboard operasional berbasis web studi kasus harta tidak disebutkan metodenya oh ada metodenya yang akan menggunakan metode peralasan kalau menurut saya
+
+[01:08:13] kalau untuk ini ya apa namanya teman-teman TAS1 lebih baik metode itu dimasukkan di judul nah jadi nanti di bagian tujuan rumusan dan tujuan ini metode itu disebutkan juga per butirnya bu atau yang berhubungan sama pxp-nya kalau ini kan
+
+[01:08:35] di tahapan ini 3 menggunakan blackbook sama IWT karena ini kan fokusnya di pengujian kalau di pengembangan misalnya yang pxp-nya itu disebutkan di badan pengembangan atau sebenarnya bisa di apa ya mungkin diatur lagi cara penyusunan rumusan masalah dan tujuannya itu
+
+[01:08:57] dibalik gitu misalkan poin 1 dan 2 ini kan sebenarnya sama cuma fokus aktornya aja kan ini berbeda gitu tapi sama-sama fokus ke pengembangan sistemnya yang nanti bisa menyelesaikan beberapa poin masalah itu tadi tapi untuk untuk untuk untuk untuk
+
+[01:09:17] untuk untuk cara menuliskan menurut saya berarti opsinya pilihan itu ada ada karena ini sebenarnya 1 dan 2 ini sama-sama fitur kan sebenarnya fitur dari sisi aktor yang berbeda kalau yang bawah itu kan ngomongin tingkat kesesuaian berbeda lagi berarti nggak apa-apa kalau misalkan digabung itu
+
+[01:09:40] iya nggak apa-apa sih kalau mau digabung jadi sebenarnya poin 1 itu fokus di pengembangan prototipenya yang nanti dapat menyelesaikan masalah apa gitu kan poin kedua berarti nanti fokus untuk mengevaluasi tadi kesesuaian dari hasil prototipe dengan proses bisnis yang berjalan
+
+[01:10:02] misalkan seperti itu tujuannya menyesuaikan iya jadi kalau misalkan tujuannya tadi di rumah masalah-masalah itu merancang eh sorry di mengembangkan berarti nomor 1 mengembangkan juga gitu iya karena kalau cuma merancang itu kan definisinya hanya sebatas apa ya awalnya doang
+
+[01:10:29] iya awalnya aja kan mungkin hanya sebatas analisis kebutuhannya saja kan tetap merancang juga gak nyata tapi kalau memang sampai jadi sistemnya dan nanti harapannya targetnya juga dipeluhi itu menurut saya pakai kata kerja lebih tinggi aja karena kan pasti merancang
+
+[01:10:46] ter-cover di dalam situ udah bawaan dari metodenya gitu iya oke akhirnya ada batasan ini saya ada buat lima yang pertama dari aktornya terus ini juga nomor poin 2 ini kayak planasi genderis kalau misalkan interpretasi dari orang itu jangan sampai ke
+
+[01:11:11] dari pembelajaran online dengan soal sama poin 5 itu kenapa dituliskan karena saya juga takutnya ada yang dari datanya sudah ada karena udah 18 tahun dari 1990 tapi saya perlu nambahin lagi ke dalam sistem yang baru atau gak perlu
+
+[01:12:04] gini kalau kita ngembangkan sistem itu masalah deploy dengan data dengan deploy sampai environment menurut saya itu kondisi yang berbeda kalau misalkan ketika ini dideploy apakah datanya harus kita juga yang menginputkan menurut saya itu di luar skop penelitian kita kan
+
+[01:12:25] apa namanya yang harus dilakukan membangun sistem yang memang kebutuhannya sesuai dengan apa yang dibutuhkan tadi misalkan contoh dari sisi kebutuhan data kebutuhan data yang mereka laporkan ini loh atributnya terus nanti yang akan kita gunakan di database kurang lebih sama
+
+[01:12:41] seperti itu kewajiban kita itu hanya meng-transferkan itu menurut saya tapi bagaimana real data itu dimigrasikan itu menurut saya persoalan lain dan mungkin kalau misalkan mau dibantu ya itu di luar skop penelitian artinya sampai itu nanti jadi masuk ke dalam
+
+[01:12:59] timeline itu karena itu kan nggak bisa cepat ya kerjakan itu dan tentu juga mereka juga iya available dan berkenan juga untuk dibantu misalkan ya jadi paling tidak dari sisi apa yang harus ter input di sistem itu udah sama
+
+[01:13:16] sesuai dengan kebutuhan mereka masalah nanti mereka punya data dan itu mau digabungkan ya kita mengakomodir gimana nanti kalau misalkan memang mereka ada data dan mau dimasukkan ke sana yang besar gitu jangan sampai dia input satu-satu kan mungkin difasilitasi
+
+[01:13:31] bisa di import dengan berbagai inilah macam-macam tipe file misalkan itu difasilitasi dan mungkin nanti ketika pengujian dilakukan itu harus diajarkan barangkali gitu ya usernya gimana caranya kalian bisa menurutkan jadi sistem itu udah siap pakai kalau masalah data misalnya itu
+
+[01:13:54] jadi tanggung jawab mereka sih kalau memang mereka mau digabung itu ya gak masalah tapi dilusuk oke berarti kalau misalkan hanya empat gak masalah gak masalah dan kalaupun nanti ketika ini jadi terus pakai data dummy saja gak masalah juga
+
+[01:14:08] gitu gak harus data real juga ya asal tadi atribut datanya sih yang pasti yang harus benar karena ada beberapa kolom atau data ini perlu format data yang ada saat ini terus nanti pada akhirnya anda yang saya rekomendasikan dan dari mitra
+
+[01:14:30] juga menerima itu saya juga ada menyebutkan di dalam sini kalau disini ya kalau ini kan batasan nih batasan ini artinya membatasi keseluruhan penelitian gitu jadi kalau hal-hal yang sifatnya teknis sekali dan mungkin itu masih bisa berubah misalnya jangan dibatasi di sini
+
+[01:14:51] karena kontennya jadi mengikat gitu sehingga nanti oh ada perubahan kita gak bisa mengubah kenapa udah kita batasi di sini tapi misalkan kayak tadi ya misalkan SDLC nya gitu dari PXP itu kan sebenarnya selesai sampai membuat saja gak perlu di deploy
+
+[01:15:08] kan selesai juga gitu tapi kan nanti kalau misalkan ini tiangnya sampai prototype berarti kan ada proses deployment yang dilakukan kalau itu tidak dilakukan berarti dibatasi dibatasnya di mana di sini atau kalau misalkan ada apa ya output lain yang misalkan
+
+[01:15:27] Arya hasilkan juga dari penelitian ini gitu yang diminta oleh mitra misalkan ya bisa ditambahkan juga dibatasi ya tapi kalau hal yang sifatnya teknis menurut saya jangan dimasukkan di sini karena khawatirnya nanti gak bisa kan kita gak tahu nih
+
+[01:15:43] apalagi kan pakai gel ya ternyata pas udah lihat oh bagus ya gimana kalau minta ditambahin ini gitu nah gak bisa terkunci dibatasan kan sulitnya itu itu perlu diperhatikan cuma yang bisa jadi dulu itu mungkin yang dibagiin ini kayaknya
+
+[01:16:02] payment gateway kan udah dibatasi tapi balik lagi bila terbekam ya asal ini clear saja artinya jangan sampai nanti tiba-tiba berubah pikiran gitu khusus saya maunya tetap ada payment gateway misalkan ini cerita lagi ini gak perlu pakai point ya
+
+[01:16:29] sebenarnya bisa pakai point juga kalau mau ini kan udah dipisah-pisah ya ya udah bagi fitrah bagi bagi metra ada peneliti dibuat point juga gak apa-apa tapi kalau mau dikembangkan panjang lebar ya paragraph ini sebenarnya saya juga baru tahu
+
+[01:17:28] ternyata kalau di panduan juga saya kurang tahu itu gue gak pakai Facebook lagi ya iya udah diganti ya diagram alir keseluruhan ini apa belanda santai hari analisis kebutuhan sistem analisis kebutuhan sistem lalu ini juga belum ini kan harusnya ada iterasi ya
+
+[01:17:50] cuma saya belum tambahkan untuk dari sisi iterasi kalau BXP itu tahapan awalnya apa sih requirement requirement itu masuk kemana analisis kebutuhan ini seharusnya terus itu di luar ya di luar ini tadi keliru kayak keliru ini masih keliru kita belum ada iterasi
+
+[01:18:11] tapi secara umum pakai voucher gini ya Bu iya pakai voucher aja nanti kalau disini kan dijelaskan gambaran umum tahapan aja karena nanti yang lebih detail kan ada di bab tiga ya iya Bu BXP nya ini pelajar diulang iya Bu
+
+[01:18:29] oke itu kurang lebih sudah sih coba tapi terakhir tadi setelah tahapan akhir apa evaluasi di peluangnya jadi berarti di sebelah mana kan di luar dari BXP berarti kan ya nah itu perlu diceritakan di dalam tahapan ini dan mungkin nanti perlu di cross check ulang juga dengan
+
+[01:19:00] konsep BXP ya sebenarnya kalau di BXP kan ada sistem testing tuh sistem testing ini pengujiannya itu sifatnya seperti apa apakah UAT itu termasuk dalam sistem testing atau itu di luar dari sistem testing yang harus kita perhatikan sehingga kalau misalkan itu dua hal yang terpisah
+
+[01:19:19] berarti berarti ada tahapan lain ya yang dilakukan setelah BXP tadi termasuk di PON UAT nah itu coba nanti diperjelasin lagi konsep UAT itu sebenarnya apakah di dalam fase SDLC pengembangan itu atau dia sebenarnya udah selesai jadi sistemnya terus dia di luar gitu ya
+
+[01:19:38] ketika sudah mau digunakan apa yang seperti itu black box dan UAT itu nah black box itu dimana mau dipakai black box itu setelah dari di bagian sini bahkan di luar dari tahapan dari BXP kalau misalkan sudah selesai baru dilakukan
+
+[01:19:58] eh selesai dari tahapan BXP baru dilakukan tahapan kemudian black box sama dia targetnya siapa yang akan melakukan pengujian yang akan melakukan pengujian di black box sama di UAT dari pengguna manajemen ya ini beda berarti beda pengujian yang berbeda
+
+[01:20:15] black box dan UAT ini atau jadi satu jadi satu jadi satu jadi satu black box dulu lalu dari user acceptance testing saran saya coba nanti mungkin dipahami dulu aja deh sistem testing yang dikerjakan di dalam BXP dalam BXP itu pengujian yang bagaimana sih
+
+[01:20:37] dan teknikalnya secara teknis itu kita melakukan pengujiannya gimana karena itu kan sebenarnya tidak hanya developer kan ya betul pasti harus melibatkan product award teknis pengujian di dalam sistem testing itu kalau di hubungkan ke dalam metode pengujian gitu ya
+
+[01:20:53] black box, white box, grey box itu masuk kemana sih dia gitu nah itu mungkin itu dipiliarkan sehingga nanti baru apa ya kalau memang perlu ada tahapan pengujian setelah SDLC nya ini selesai PXP nya selesai gitu kan ya kalau memang ada pengujian
+
+[01:21:11] nah ini nanti pengujian nya di level apanya oh pengujian real user nama metode nya apa itu dipahami dulu nanti gimana cara pengujian nya akan dilakukan paling gak itu juga harus jelas juga ya paling gak itu di bab 2 dululah
+
+[01:21:31] menurut saya nanti baru kita ke bab 3 gitu ya soalnya saya baru detail juga ternyata gak ke sebelahnya gini iya diganti soalnya di yang baru kita pake orang-orang dan gak perlu kalau misalkan hanya menyebutkan poinnya seperti ini aja gak mau
+
+[01:21:55] gak usah menjelaskan jalan identifitas pengujian kan juga gak setahapan kan nanti di paragrafi itu dulu deh nanti berikutnya kita bahas yang bab 2 ya bahas PXP nya dulu deh secara konseptual Ariel cari dulu referensi utamanya tapi jangan hanya referensi utama ya nanti
+
+[01:22:16] karena referensi utama itu kadang terbatas juga informasinya gimana tahapan yang dilakukan itu mungkin ada yang belum clear gitu nah itu nanti silahkan dari jurnal dari buku yang lain yang lebih baru jadi paling gak ada beberapa opsi gimana cara mengerjakannya gitu
+
+[01:22:31] kalau kemarin itu sebenernya saya ada nyari di buku apa namanya Summerfield di buku itu saya baru mencatat dari penjelasan umumnya nah itu gak ada buku jadi penjelasan umumnya iya sampe ke exp sehingga saya iya sampe untuk exp penerapan PXP nya baru di tahun 2009
+
+[01:23:00] dan itu saya belum terlalu baca di PEM karena itu yang mau dipakai itu di pelajaran dulu ya oke oh iya oh iya saya sudah dimasukin citasi bu oh iya belum saya cek lagi terus ini juga ada minta saya untuk mau pilih nanya
+
+[01:23:24] turnitin bu oh iya menginfokan lebih lanjut nanti mungkin dari Prodi menginfokan lebih lanjut kan korma mata kuliah proposal Bu Amal ya nanti Bu Amal menginfokan karena per berapa bulan ini ya ada perubahan dari turnitin kalau selama ini kan sebenarnya
+
+[01:23:45] temen-temen cek sendiri gitu sekarang ini ada perubahan dari turnitin pakai OTP dia jadi hanya bisa masuk lewat kasih kode OTP dulu jadi itu agak bingung juga sih kita belum deal kan ya mungkin nanti saya ini dulu sama Bu Amal ya
+
+[01:24:02] gimana baiknya gitu karena kalau OTP kan gak mungkin kalau kita kasih akses ke temen-temen kayaknya nanti bisa jadi keblokir khawatirnya gitu karena kan banyak email tiba-tiba mengakseskan saya juga karena asumsi dari saya dan temen-temen tuh dikira ada yang bisa merubah password
+
+[01:24:19] iya iya memang baru ada perubahan dari turnitinnya juga makanya pas kemarin ini baru pasti sudah sih gak saya baru ada yang pakai kan baru ada yang melaporkan ini kok minta OTP gitu nah itu sih nanti paling ya kita informasikan di citasi
+
+[01:24:37] mungkin itu aja makanya di saya hari ini terimakasih atas wakunya iya kalau lama iya iya dipelajari lagi lho iya iya berarti ini saya lanjut ke bab 2 dan coba untuk lanjut ke bab 2 ya iya nanti sambil bab 2 nya dicicilkan bisa masuk ke bab 3
+
+[01:24:59] yang penting bab 2 nya udah maksudnya secara konsep udah bisa clear gitu iya terima kasih banyak oke oke oke berarti sudah ada yang mau ngecek pakai turnitin teman-teman ya iya sama ada banyak yang but nanti sekalian selesai ya
+
+[01:25:16] nanti saya diskusi sama gue aman dan minggu lalu saya gak pernah bahas cuma belum tau gimana solusinya iya iya iya iya iya iya iya iya
+

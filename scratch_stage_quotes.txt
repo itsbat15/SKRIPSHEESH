@@ -1,0 +1,2974 @@
+==============================
+STAGE: Requirements
+==============================
+--- DZHUROV (2009) ---
+3  Phases of Personal eXtreme Programming
+PXP process is iterative and comprises a couple of inline iterations and cycles. 
+Requirements and tasks planning are usually done for the whole project 
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+---
+PXP process is iterative and comprises a couple of inline iterations and cycles. 
+Requirements and tasks planning are usually done for the whole project 
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+---
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+---
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+be acquired from another software engineer, in case of extension of already 
+existing product.
+•	
+Time Recording 
+---
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+be acquired from another software engineer, in case of extension of already 
+existing product.
+•	
+Time Recording 
+•	
+---
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+be acquired from another software engineer, in case of extension of already 
+existing product.
+•	
+Time Recording 
+•	
+Defect Type Standard 
+---
+Fig. 1. PXP process phases.
+In the planning phase the developer assemblies a set of tasks based on the 
+requirements list document. Each task could be composed of smaller tasks that 
+are categorized. Each small task is estimated based on planning data for tasks of 
+the same type from previous projects (if previously collected data does not exist, 
+then the developer must try to make best assumption about approximate time 
+the task will cost). The sum of the estimates of child tasks is the estimate for 
+the parent task. During this phase prior to task planning major design decisions 
+are made – what programming language will be used, development framework, 
+application model, etc. 
+---
+modules and classes that will be implemented in the ongoing iteration. The 
+developer should aim to design the system to meet only the current client 
+requirements without trying to make guesses what would be required in the 
+future. The design method is selected by the developer, but it’s recommended 
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+To exit the implementation phase the code should compile without any errors 
+---
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+Developer should verify whether the implemented solution meets the initial 
+project requirements. All found defects are recorded and fixed.
+Retrospective marks the end of process iteration. An analysis of collected 
+during the other phases data is being made. The developer must verify 
+whether the estimated tasks time equals the actual one, find the reasons for 
+potential delay in order to prevent under- or over estimates in future projects. 
+The developer analyzes all process improvement proposals and, if needed, he 
+could adapt any of the accompanying process practices. Changes addressing 
+problems in the process and practices should happen in earliest stage possible 
+---
+candidate or in a product release. The ‘Retrospective’ phase could start a new 
+iteration by moving in ‘Iteration Initialization’ phase or to mark the end of 
+project development when all client requirements for the software system are 
+met, and there are no remaining open defects.
+4  Implementing Personal eXtreme Programming
+In the current research Microsoft Visual Studio System (VSTS) was employed 
+for the implementation of Personal Extreme Programming. VSTS is a platform 
+of productive and integrated tools during the whole life cycle of software 
+development. They improve the communication and collaboration in software 
+development process, and allow extensibility by the team using it. Despite 
+---
+The process template contains information about the phases of the PXP process, 
+specific for this development methodology work items (defects, tasks, scenarios, 
+quality of service requirements, process improvement proposals), definitions of 
+reports used during the planning phase, version control system settings and 
+permissions, and associated to the project web portal for document storage. [6] 
+gives an overview of VSTS built-in tools that support all accompanying PXP 
+practices – tools for refactoring, automated code review, work items tracking, 
+report viewing, automated remote builds and continuous integration, tests 
+implementation and execution, software size and quality measurement, and 
+tools for system design. A detailed description on implementation of PXP with 
+---
+Ratio between found defects and number of functional and non-
+•	
+functional requirements
+Unit Tests Code Coverage – the percent of code covered (executed) 
+•	
+when unit tests are executed. This metrics allows tracking what part of 
+the application could be tested in an automated way.
+Fig. 2. Results from planning phase in ad-hoc development and PXP.
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+---
+Fig. 2. Results from planning phase in ad-hoc development and PXP.
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+---
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+estimated is bigger.
+---
+was performed and part of the defects was introduced during development of 
+new features.
+Fig. 3. Ratio between found defects and requirements in both project phases.
+Requirements 
+Count
+Defects
+found
+Ratio
+Ad-hoc 
+development
+---
+new features.
+Fig. 3. Ratio between found defects and requirements in both project phases.
+Requirements 
+Count
+Defects
+found
+Ratio
+Ad-hoc 
+development
+PXP
+---
+
+--- MARTHASARI (2018) ---
+of development which can not be resolved by using 
+conventional software development methodology. The 
+implementation of the less significant requirements either from 
+the clients or the other stakeholders causes the project 
+development becomes longer. Therefore, a technique is needed 
+to arrange the priority of software requirements. In this paper, 
+we combine personal extreme programming (PXP) 
+methodology with Moscow technique to overcome those 
+problems. PXP is suitable to use in small to medium-sized 
+projects if the clients do not know in detail about the needs in 
+---
+the clients or the other stakeholders causes the project 
+development becomes longer. Therefore, a technique is needed 
+to arrange the priority of software requirements. In this paper, 
+we combine personal extreme programming (PXP) 
+methodology with Moscow technique to overcome those 
+problems. PXP is suitable to use in small to medium-sized 
+projects if the clients do not know in detail about the needs in 
+the development of applications, applications needed in 
+relatively quick time, and the development phase is adjusted to 
+use by a single programmer. Moscow technique was used for 
+---
+relatively quick time, and the development phase is adjusted to 
+use by a single programmer. Moscow technique was used for 
+prioritizing requirements elicited in PXP methodology. 
+Moscow is a method to determine priority needs based on cost, 
+risk, and business value. This technique was applied during the 
+planning phase of PXP to develop library application, thereby 
+it reduced the time of project completion. The result was a 
+library application suited the needs of clients to support 
+business processes at Batu State Attorney's library. 
+Keywords—personal extreme programming, Batu state 
+---
+make faster response change and will reduce the completion 
+time of application development projects. The changes are 
+in the form of cost, requirements, schedule, and team 
+members [2]. Examples of methodologies in Agile 
+Development are SCRUM and Extreme Programming (XP) 
+[3], [4]. The comparison between them is that SCRUM 
+focuses on project management and team member [3], while 
+XP focuses on application programming, feedback, and 
+communication with clients. XP is suitable to use in small to 
+medium-sized projects if the clients do not know in detail 
+---
+development, the phase in XP practice is adjusted to use by 
+a single programmer called Personal Extreme Programming 
+(PXP) [5], [6]. In PXP, the priority requirements need to be 
+determined so that the application is completed on time as 
+user’s request. The priority setting in PXP is based on 
+technical risk, and business value [7]. 
+State Attorney is one of the institutions that play an 
+essential role in the control of the law and the welfare of the 
+people, especially in the territory of its power in Indonesia 
+[8]. Based on the preliminary survey, we have found a few 
+---
+define all needs, controls, and functions [9], but it is known 
+that the clients, as well as the users (librarian), do not have a 
+detailed knowledge of the functional requirements for the 
+library application to be developed. As a result, many 
+changes and adjustments of requirements will potentially 
+occur. Changes to needs that have lack significant 
+functionality in the application will increase the project 
+duration. The solution is involving the clients’ roles through 
+intensive communication throughout the project. One of the 
+clients’ roles is describing all the desirable needs and 
+---
+detailed knowledge of the functional requirements for the 
+library application to be developed. As a result, many 
+changes and adjustments of requirements will potentially 
+occur. Changes to needs that have lack significant 
+functionality in the application will increase the project 
+duration. The solution is involving the clients’ roles through 
+intensive communication throughout the project. One of the 
+clients’ roles is describing all the desirable needs and 
+determining its priority based on the impact on the 
+functionality of the application. Priority setting of 
+---
+determining its priority based on the impact on the 
+functionality of the application. Priority setting of 
+requirements also has an impact on project completion time. 
+In the PXP project, clients play an essential role to 
+determine priority. Referring to the needs and clients’ 
+requirements, it is necessary to select the appropriate 
+priority method.  A quick and easy approach to help clients 
+set priorities is MoSCoW. MoSCoW is a method for 
+prioritizing requirements based on cost, risk, and business 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+---
+In the PXP project, clients play an essential role to 
+determine priority. Referring to the needs and clients’ 
+requirements, it is necessary to select the appropriate 
+priority method.  A quick and easy approach to help clients 
+set priorities is MoSCoW. MoSCoW is a method for 
+prioritizing requirements based on cost, risk, and business 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+978-1-5386-8402-3/18/$31.00 ©2018 IEEE 537
+
+--- PAGE 2 ---
+---
+priority method.  A quick and easy approach to help clients 
+set priorities is MoSCoW. MoSCoW is a method for 
+prioritizing requirements based on cost, risk, and business 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+978-1-5386-8402-3/18/$31.00 ©2018 IEEE 537
+
+--- PAGE 2 ---
+value. These requirements will be grouped into four 
+categories: Must have, Should have, Could have, and Will 
+not have [10], [11]. Therefore, we created a web-based 
+---
+
+--- PAGE 2 ---
+value. These requirements will be grouped into four 
+categories: Must have, Should have, Could have, and Will 
+not have [10], [11]. Therefore, we created a web-based 
+library system by involving the role of clients during the 
+process of making the application. PXP and MoSCoW were 
+used as the development methodology to support the roles 
+of the clients. The result is a web-based library system of 
+Batu State Attorney to assist the performance of library 
+---
+This research used Personal Extreme Programming 
+(PXP) as the development methodology combine with the 
+MoSCoW as requirements prioritization technique (Figure 
+1). Overall, we conduct requirements elicitation from clients 
+to identify functional specification of the system then the 
+iteration phase is started. This phase starts with design step 
+and continue untill the final step, retrospective, which is the 
+end of iteration stage.  
+ 
+ 
+---
+(PXP) as the development methodology combine with the 
+MoSCoW as requirements prioritization technique (Figure 
+1). Overall, we conduct requirements elicitation from clients 
+to identify functional specification of the system then the 
+iteration phase is started. This phase starts with design step 
+and continue untill the final step, retrospective, which is the 
+end of iteration stage.  
+ 
+ 
+ 
+---
+ 
+III. RESULT AND DISCUSSION  
+A. Requirements  
+This stage was done by collecting data at Batu State 
+Attorney Office. We asked the developers and the clients to 
+describe the needs based on the problems encountered. These 
+needs will be converted into a functional specification in the 
+application library. In the PXP methodology, needs refer to 
+user stories written on cards which are called user story 
+cards. The format of the writing is "As [role] I can [action] so 
+---
+B. Planning 
+Planning stage describes the procedure on the user story 
+obtained from the requirements stage. We determined the 
+estimated time of implement the user story, the priority 
+needs using Moscow with technical risk criteria, and 
+business value based on [14], [15], and to create a list of 
+release planning. The results of prioritizing Moscow refer to 
+[16] as follows: 
+Must have criteria lists all of user story meets the 
+criteria of business value and technical risk as follows: 
+---
+Personal extreme programming (PXP) could be used to 
+develop an application fast because it could overcome 
+changing requirements flexibly. MoSCoW method was 
+useful in planning and processing which focused on the main 
+needs. The methodology used in this study was personal 
+extreme programming in developing application of Batu 
+State Attorney library which clients were still unfamiliar 
+with software technology. Based on the research that has 
+been discussed, PXP is able to meet the needs of clients with 
+the construction of Batu State Attorney library applications 
+---
+
+--- MUSOFA (2025) ---
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+Bahasa Sasak), integrasi dengan sistem administrasi pemerintahan, dan model distribusi yang lebih efisien biaya. 
+Hasil pengujian kuantitatif menunjukkan performa yang responsif, dengan waktu respons pemindaian QR 
+mencapai 312 ms dan tingkat akurasi verifikasi identitas tamu sebesar 98.7%. Aplikasi ini diharapkan dapat 
+memberikan solusi yang efektif dan efisien untuk pengelolaan kunjungan di instansi pemerintah. 
+ 
+Kata kunci: Aplikasi buku tamu, QR code, Personal Extreme Programming (PXP), Black Box Testing. Pengujian 
+Kuantitatif 
+---
+Kabupaten Lombok Tengah. Pengembang secara 
+langsung berkomunikasi dengan pengguna untuk 
+mengidentifikasi kebutuhan dan mendapatkan umpan 
+balik segera setelah implementasi fitur-fitur baru. 
+Setiap perubahan atau fitur baru yang dikembangkan 
+diuji oleh pengguna dalam waktu singkat, sehingga 
+keputusan pengembangan dapat dibuat dengan cepat 
+dan tepat.Contoh penerapan: Setelah iterasi pertama, 
+pengguna memberikan umpan balik langsung 
+
+---
+Berfokus 
+pada 
+Kebutuhan Inti 
+Salah 
+satu 
+prinsip 
+dari 
+PXP 
+adalah 
+kesederhanaan dalam desain dan implementasi. PXP 
+---
+mendorong pengembang untuk menghindari fitur-
+fitur yang tidak perlu dan hanya fokus pada 
+kebutuhan inti pengguna. Dalam pengembangan 
+aplikasi buku tamu ini, pengembang memprioritaskan 
+fitur-fitur 
+yang 
+secara 
+langsung 
+mendukung 
+pengelolaan data tamu, keamanan melalui verifikasi 
+---
+QR code, dan statistik kunjungan yang relevan 
+dengan 
+kebutuhan 
+Dinas 
+Kominfo.Contoh 
+penerapan: Fitur seperti dashboard statistik yang 
+menampilkan data kunjungan dinas dan pegawai 
+disesuaikan untuk memberikan informasi yang paling 
+relevan, tanpa membebani pengguna dengan data 
+yang tidak dibutuhkan. 
+---
+Terhadap 
+Perubahan 
+Kebutuhan 
+Salah satu aspek paling menonjol dari PXP 
+adalah fleksibilitas terhadap perubahan kebutuhan 
+pengguna yang terjadi seiring berjalannya waktu. 
+Pengembang tidak hanya mengikuti rencana yang 
+telah ditetapkan, tetapi juga siap untuk mengubah 
+atau memperbaiki aplikasi berdasarkan permintaan 
+baru yang muncul selama pengembangan. Hal ini 
+---
+Kebutuhan 
+Salah satu aspek paling menonjol dari PXP 
+adalah fleksibilitas terhadap perubahan kebutuhan 
+pengguna yang terjadi seiring berjalannya waktu. 
+Pengembang tidak hanya mengikuti rencana yang 
+telah ditetapkan, tetapi juga siap untuk mengubah 
+atau memperbaiki aplikasi berdasarkan permintaan 
+baru yang muncul selama pengembangan. Hal ini 
+memungkinkan aplikasi untuk selalu relevan dengan 
+kebutuhan 
+---
+baru yang muncul selama pengembangan. Hal ini 
+memungkinkan aplikasi untuk selalu relevan dengan 
+kebutuhan 
+dinamika 
+operasional 
+di 
+instansi 
+pemerintahan.Contoh 
+penerapan: 
+Dalam 
+---
+ 
+Tahap ini dimulai dengan mengumpulkan 
+kebutuhan untuk pengembangan aplikasi buku tamu. 
+Proses pengumpulan informasi dilakukan melalui 
+wawancara dengan penanggung jawab bidang Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah guna memahami kebutuhan mereka. 
+Berdasarkan hasil wawancara tersebut, dibuatlah 
+User Story yang mendeskripsikan fitur-fitur dan hal-
+hal penting yang harus disertakan dalam aplikasi. 
+---
+wawancara dengan penanggung jawab bidang Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah guna memahami kebutuhan mereka. 
+Berdasarkan hasil wawancara tersebut, dibuatlah 
+User Story yang mendeskripsikan fitur-fitur dan hal-
+hal penting yang harus disertakan dalam aplikasi. 
+User Story ini nantinya akan menjadi panduan dalam 
+merancang dan mengembangkan aplikasi sesuai 
+dengan ekspektasi pengguna(Fadhallah et al, 
+2021). 
+---
+keinginan 
+atau 
+kebutuhan 
+pengguna. Estimasi waktu untuk menyelesaikan 
+masing-masing User Story ini diwakili oleh Story 
+Points, yang mencerminkan tingkat kesulitan dan 
+durasi yang diperlukan untuk mewujudkan fitur 
+tersebut (Chon et al, 2022). 
+2.5 
+Iteration Initialization 
+---
+dimulai 
+dari 
+Requirements, 
+planning, 
+iteration 
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+---
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah. Selanjutnya, hasil wawancara 
+tersebut digunakan untuk membuat User Story yang 
+mencerminkan 
+kebutuhan 
+---
+tersebut digunakan untuk membuat User Story yang 
+mencerminkan 
+kebutuhan 
+sistem 
+yang 
+akan 
+dikembangkan (Saleha et al, 2022). 
+Proses dimulai dengan identifikasi pengguna 
+sistem, lalu dilanjutkan dengan pembuatan User Story 
+yang merangkum segala kebutuhan dari pengguna 
+---
+Proses dimulai dengan identifikasi pengguna 
+sistem, lalu dilanjutkan dengan pembuatan User Story 
+yang merangkum segala kebutuhan dari pengguna 
+terhadap sistem yang akan dirancang (Shafardan et 
+al., n.d.). Berdasarkan wawancara yang dilakukan, 
+terdapat 27 User Story yang menjadi kebutuhan 
+utama dalam penelitian ini, serta dua aktor utama 
+yang akan menggunakan aplikasi buku tamu 
+3.2 
+Planning 
+---
+terhadap sistem yang akan dirancang (Shafardan et 
+al., n.d.). Berdasarkan wawancara yang dilakukan, 
+terdapat 27 User Story yang menjadi kebutuhan 
+utama dalam penelitian ini, serta dua aktor utama 
+yang akan menggunakan aplikasi buku tamu 
+3.2 
+Planning 
+Tahap perencanaan dilakukan setelah kebutuhan 
+sistem berhasil dikumpulkan pada tahap sebelumnya. 
+Pada tahap ini, pengembang menyusun rencana 
+---
+3.2 
+Planning 
+Tahap perencanaan dilakukan setelah kebutuhan 
+sistem berhasil dikumpulkan pada tahap sebelumnya. 
+Pada tahap ini, pengembang menyusun rencana 
+pembangunan sistem dengan melihat hasil dari User 
+Story yang telah diperoleh. Hasil dari proses ini 
+mencakup estimasi waktu pengerjaan, dan penentuan 
+jumlah iterasi   yang dibutuhkan selama proses 
+pengembangan (Akbar et al, 2024). 
+---
+Gambar 5 menampilkan menu QR code, yaitu 
+halaman di mana admin dapat membuat QR code 
+sesuai dengan kebutuhan instansi atau dinas yang 
+bersangkutan. Pada halaman ini, admin memiliki 
+kemampuan untuk menyesuaikan QR code serta 
+menambahkan, mengedit, dan menghapus data QR 
+code sesuai kebutuhan. 
+d. 
+Menu Tamu 
+Gambar 6. Menu Tamu 
+---
+kemampuan untuk menyesuaikan QR code serta 
+menambahkan, mengedit, dan menghapus data QR 
+code sesuai kebutuhan. 
+d. 
+Menu Tamu 
+Gambar 6. Menu Tamu 
+ 
+Gambar 6 menampilkan menu Tamu, yaitu 
+halaman di mana admin dapat melihat data 
+pengunjung atau tamu yang telah terdaftar. Pada 
+---
+Dashboard Statistik 
+Kunjungan 
+✓ Ada, disesuaikan kebutuhan 
+✓ Ada, tetapi lebih umum 
+Multi Bahasa / Bahasa Lokal 
+✓ Bisa dikustomisasi (mis. Bahasa 
+Indonesia, Sasak) 
+✗ Umumnya hanya bahasa internasional 
+Integrasi dengan Sistem 
+Pemerintah 
+---
+kontekstual 
+terhadap 
+kebutuhan 
+organisasi 
+pemerintah daerah. Aplikasi Buku Tamu Digital yang 
+dikembangkan dengan pendekatan Personal Extreme 
+Programming (PXP) mampu menghadirkan fitur-
+fitur yang lebih disesuaikan, seperti manajemen data 
+pegawai, 
+pengelolaan 
+---
+manual 
+sesuai 
+kebutuhan. 
+Keunggulan 
+lain 
+adalah 
+dashboard 
+statistik 
+kunjungan yang dapat disesuaikan per unit kerja, 
+serta model distribusi gratis atau open-source yang 
+---
+Personal 
+Extreme Programming (PXP), dimulai dari tahap 
+perencanaan kebutuhan hingga pengujian sistem. 
+Sebanyak 27 User Story berhasil diimplementasikan 
+melalui 8 iterasi dengan total 40 Story Points. Hasil 
+pengujian Black-box menunjukkan bahwa seluruh 
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+---
+
+--- PRASEPTIAWAN (2025) ---
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+---
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+on a scale from 1 (strongly disagree) to 5 (strongly agree). SUS scores were
+calculated using standard formulas to determine a ﬁnal score, which was
+then classiﬁed into usability categories. The average SUS score was 91,
+falling under the "Excellent" category (Grade A). The development of the mini
+bank website introduced new features, including online payment services for
+tuition fees (SPP), waste banks, and savings. System testing achieved a 99%
+---
+approach, a variation of Extreme Programming tailored
+for individual developers. This method was selected for
+its flexibility in adapting to changing requirements without
+necessitating a complete restart of the development process.
+Personal Extreme Programming (PXP) is an adaptive
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+---
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+---
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+by Sulthoni et al. demonstrated the successful application
+of PXP in developing a meeting room reservation system
+for the Communication and Information Office of East Java
+---
+involved in the Personal Extreme Programming (PXP)
+method:
+1. Requirements
+In this stage, the developer gathered requirements
+through interviews and discussions with the client.
+The identified needs were documented in the form of
+user stories (Djamarullah & Kusuma, 2022).
+2. Planning
+The developer planned and created a list of tasks to
+be performed in each iteration based on the collected
+---
+method:
+1. Requirements
+In this stage, the developer gathered requirements
+through interviews and discussions with the client.
+The identified needs were documented in the form of
+user stories (Djamarullah & Kusuma, 2022).
+2. Planning
+The developer planned and created a list of tasks to
+be performed in each iteration based on the collected
+user stories. These tasks were prioritized according
+---
+in the iteration was planned and modelled. The
+design developed by the developer was based on
+the requirements gathered during the requirements
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+II. Code Generation: Writing program code based
+---
+==============================
+STAGE: Planning
+==============================
+--- DZHUROV (2009) ---
+methodology is extended with proven efficient development practices 
+from the Extreme Programming in order to support better project 
+planning and product quality control. The paper presents the results of 
+methodology adoption and compares it to ad-hock development.
+   
+Keywords:  software process optimization, Personal Software Process, 
+Extreme Programming, agile software development, autonomous 
+development
+1  Introduction
+Autonomous developers are software engineers who implement software 
+---
+Autonomous developers are facing big challenges in handling projects in 
+time and with high product quality and minimizing failure. Preconditions for 
+this are the lack of planning and quality control. Autonomous developers need 
+a rigid development process to better organize their daily activities and control 
+projects quality. Most of the current software development processes (both the 
+traditional and agile ones) are mainly targeting team development and need to 
+be customized when adopted for autonomous developers. Only the Personal 
+Software Process is explicitly specified to be used by individual engineers. 
+However, applying PSP correctly requires very good knowledge of the process 
+specification which is quite extensive. Furthermore, PSP involves a lot of efforts 
+---
+while keeping the PSP basic principles. The new methodology is extended 
+with proven efficient development practices from the Extreme Programming in 
+order to support better project planning and product quality control. The main 
+objective of the suggested methodology, named Personal eXtreme Programming 
+(PXP), is to improve the performance and quality of autonomous engineers by 
+automating daily developer activities and performing regular retrospections. 
+The paper consists of 5 sections. In the next section and overview of 
+principles and practices of PXP is made. Section 3 presents phases that comprise 
+the development process. How the new methodology was implemented in by 
+an autonomous developer is described in section 4. The section also presents 
+---
+PXP is accompanied by 14 development and organization practices. The 
+methodology relies on its practices to ensure good product quality and accurate 
+project planning. Some of the PSP practices are kept and others from XP are 
+introduced to replace the formal and complex methods for planning, system 
+design and its verification. 
+
+
+--- HALAMAN 3 ---
+254	
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+---
+methodology relies on its practices to ensure good product quality and accurate 
+project planning. Some of the PSP practices are kept and others from XP are 
+introduced to replace the formal and complex methods for planning, system 
+design and its verification. 
+
+
+--- HALAMAN 3 ---
+254	
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+Six of the PXP practices are preserved from PSP as explained in [2]:
+---
+•	
+One of the PXP practices, namely Coding Standard, is present in both PSP 
+and XP. PXP suggests a new way to perform planning activities. In PXP the 
+planning of a task is mainly based on reports from previous projects. For 
+each functional requirement a set of technical task is defined. Each technical 
+task is assigned a category – for example creation of unit test, business class 
+implementation, SP creation, UI form design, etc. A task estimate is based 
+on estimates of tasks of the same category in previous projects. Developers 
+should use previously collected data from other projects in order to predict 
+their performance – they should not get the average time for a task of a specific 
+---
+One of the PXP practices, namely Coding Standard, is present in both PSP 
+and XP. PXP suggests a new way to perform planning activities. In PXP the 
+planning of a task is mainly based on reports from previous projects. For 
+each functional requirement a set of technical task is defined. Each technical 
+task is assigned a category – for example creation of unit test, business class 
+implementation, SP creation, UI form design, etc. A task estimate is based 
+on estimates of tasks of the same category in previous projects. Developers 
+should use previously collected data from other projects in order to predict 
+their performance – they should not get the average time for a task of a specific 
+category, but take into consideration the trend of the values in the report. The 
+---
+3  Phases of Personal eXtreme Programming
+PXP process is iterative and comprises a couple of inline iterations and cycles. 
+Requirements and tasks planning are usually done for the whole project 
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+---
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+---
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+be acquired from another software engineer, in case of extension of already 
+existing product.
+---
+          Personal Extreme Programming – An Agile Process for Autonomous Developers       255
+Fig. 1. PXP process phases.
+In the planning phase the developer assemblies a set of tasks based on the 
+requirements list document. Each task could be composed of smaller tasks that 
+are categorized. Each small task is estimated based on planning data for tasks of 
+the same type from previous projects (if previously collected data does not exist, 
+then the developer must try to make best assumption about approximate time 
+the task will cost). The sum of the estimates of child tasks is the estimate for 
+the parent task. During this phase prior to task planning major design decisions 
+are made – what programming language will be used, development framework, 
+---
+In the planning phase the developer assemblies a set of tasks based on the 
+requirements list document. Each task could be composed of smaller tasks that 
+are categorized. Each small task is estimated based on planning data for tasks of 
+the same type from previous projects (if previously collected data does not exist, 
+then the developer must try to make best assumption about approximate time 
+the task will cost). The sum of the estimates of child tasks is the estimate for 
+the parent task. During this phase prior to task planning major design decisions 
+are made – what programming language will be used, development framework, 
+application model, etc. 
+Iteration Initialization indicates the beginning of each iteration. Iteration 
+---
+then the developer must try to make best assumption about approximate time 
+the task will cost). The sum of the estimates of child tasks is the estimate for 
+the parent task. During this phase prior to task planning major design decisions 
+are made – what programming language will be used, development framework, 
+application model, etc. 
+Iteration Initialization indicates the beginning of each iteration. Iteration 
+starts with tasks selection, which will be the focus of the iteration. Iteration 
+length could vary from 1 to 3 weeks depending on the project scope. Each 
+iteration could result both a release-candidate or in a released version of the 
+product.
+---
+specific for this development methodology work items (defects, tasks, scenarios, 
+quality of service requirements, process improvement proposals), definitions of 
+reports used during the planning phase, version control system settings and 
+permissions, and associated to the project web portal for document storage. [6] 
+gives an overview of VSTS built-in tools that support all accompanying PXP 
+practices – tools for refactoring, automated code review, work items tracking, 
+report viewing, automated remote builds and continuous integration, tests 
+implementation and execution, software size and quality measurement, and 
+tools for system design. A detailed description on implementation of PXP with 
+VSTS refer to [7].
+---
+During both phases the following process and project metrics are tracked 
+and analyzed:
+Planning effort – the time spent on planning phase of the process
+•	
+Planning effectiveness – analysis of the ratio between planned and 
+•	
+actual time spent on project tasks.
+
+
+--- HALAMAN 6 ---
+---
+Planning effort – the time spent on planning phase of the process
+•	
+Planning effectiveness – analysis of the ratio between planned and 
+•	
+actual time spent on project tasks.
+
+
+--- HALAMAN 6 ---
+          Personal Extreme Programming – An Agile Process for Autonomous Developers       257
+Ratio between found defects and number of functional and non-
+---
+when unit tests are executed. This metrics allows tracking what part of 
+the application could be tested in an automated way.
+Fig. 2. Results from planning phase in ad-hoc development and PXP.
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+---
+the application could be tested in an automated way.
+Fig. 2. Results from planning phase in ad-hoc development and PXP.
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+---
+Fig. 2. Results from planning phase in ad-hoc development and PXP.
+Figure 2 provides information about the planning effort in both phases. The 
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+---
+planning phases cover approximately the same number of requirements for each 
+development method (ad-hoc development - 14 requirements, and PXP – 15). 
+Due the lack of previously collected data for PXP projects, the planning in both 
+phases happens in relatively the same way. The main difference comes in the 
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+estimated is bigger.
+Table 1 gives an overview of the planning effectives in both project phases. 
+---
+number of technical tasks being defined – PXP defines more fine grained tasks 
+compared to ad-hoc development. Phase I defines one task for each requirement 
+- 14, where as for phase II are define 22 tasks. In PXP the time spent on planning 
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+estimated is bigger.
+Table 1 gives an overview of the planning effectives in both project phases. 
+Ad-hoc development does not include time tracking of planned tasks, so it’s 
+not possible to provide detailed information about it, but the total additional 
+time that was spent on development – 16h which is 20% of the total planned 
+time. In PXP time tracking is one of the main practices that facilitate project 
+---
+is 37.5% more than ad-hoc development, because the number of tasks to be 
+estimated is bigger.
+Table 1 gives an overview of the planning effectives in both project phases. 
+Ad-hoc development does not include time tracking of planned tasks, so it’s 
+not possible to provide detailed information about it, but the total additional 
+time that was spent on development – 16h which is 20% of the total planned 
+time. In PXP time tracking is one of the main practices that facilitate project 
+data collection so more detailed information is available – 5 tasks were finished 
+before the planned time, 3 tasks were finished on time, and 14 were finished 
+after the planned time. The actual development time spent in PXP was 67,5h 
+---
+before the planned time, 3 tasks were finished on time, and 14 were finished 
+after the planned time. The actual development time spent in PXP was 67,5h 
+when the planned was 58. The results shows that the planning effectiveness 
+in both project phases is approximately the same – the reason for this is that 
+the planning itself was performed in very similar way. PXP has slightly better 
+planning effectiveness due to the greater number of tasks being defined – it is 
+easier to better estimate a set of smaller tasks compared to a single big task (as 
+is the case in ad-hoc development).
+Table 1. Overview of planning effectiveness in ad-hoc development and PXP.
+Ad-hoc Development
+---
+when the planned was 58. The results shows that the planning effectiveness 
+in both project phases is approximately the same – the reason for this is that 
+the planning itself was performed in very similar way. PXP has slightly better 
+planning effectiveness due to the greater number of tasks being defined – it is 
+easier to better estimate a set of smaller tasks compared to a single big task (as 
+is the case in ad-hoc development).
+Table 1. Overview of planning effectiveness in ad-hoc development and PXP.
+Ad-hoc Development
+PXP
+Number of overestimated tasks
+---
+in both project phases is approximately the same – the reason for this is that 
+the planning itself was performed in very similar way. PXP has slightly better 
+planning effectiveness due to the greater number of tasks being defined – it is 
+easier to better estimate a set of smaller tasks compared to a single big task (as 
+is the case in ad-hoc development).
+Table 1. Overview of planning effectiveness in ad-hoc development and PXP.
+Ad-hoc Development
+PXP
+Number of overestimated tasks
+-
+---
+easier to better estimate a set of smaller tasks compared to a single big task (as 
+is the case in ad-hoc development).
+Table 1. Overview of planning effectiveness in ad-hoc development and PXP.
+Ad-hoc Development
+PXP
+Number of overestimated tasks
+-
+5
+Number of correctly estimated tasks
+-
+---
+is carried in order to validate how PXP influences autonomous developer 
+work. A comparison of the set of generated artifacts of both phases is made. 
+Other monitored metrics of the process about project planning and product 
+quality state that planning when PXP is applied for the very first time is as 
+effective as planning in ad-hoc development. The reason for this is that there 
+is no previously collected data about other project planning phases that could 
+be used as a base for the current project. In the first project developed with 
+PXP the time for planning is significantly more than in ad-hoc development 
+(about 40% more) but this is an initial investment that will pay off immediately 
+
+---
+work. A comparison of the set of generated artifacts of both phases is made. 
+Other monitored metrics of the process about project planning and product 
+quality state that planning when PXP is applied for the very first time is as 
+effective as planning in ad-hoc development. The reason for this is that there 
+is no previously collected data about other project planning phases that could 
+be used as a base for the current project. In the first project developed with 
+PXP the time for planning is significantly more than in ad-hoc development 
+(about 40% more) but this is an initial investment that will pay off immediately 
+
+
+---
+Other monitored metrics of the process about project planning and product 
+quality state that planning when PXP is applied for the very first time is as 
+effective as planning in ad-hoc development. The reason for this is that there 
+is no previously collected data about other project planning phases that could 
+be used as a base for the current project. In the first project developed with 
+PXP the time for planning is significantly more than in ad-hoc development 
+(about 40% more) but this is an initial investment that will pay off immediately 
+
+
+--- HALAMAN 8 ---
+---
+quality state that planning when PXP is applied for the very first time is as 
+effective as planning in ad-hoc development. The reason for this is that there 
+is no previously collected data about other project planning phases that could 
+be used as a base for the current project. In the first project developed with 
+PXP the time for planning is significantly more than in ad-hoc development 
+(about 40% more) but this is an initial investment that will pay off immediately 
+
+
+--- HALAMAN 8 ---
+          Personal Extreme Programming – An Agile Process for Autonomous Developers       259
+---
+is no previously collected data about other project planning phases that could 
+be used as a base for the current project. In the first project developed with 
+PXP the time for planning is significantly more than in ad-hoc development 
+(about 40% more) but this is an initial investment that will pay off immediately 
+
+
+--- HALAMAN 8 ---
+          Personal Extreme Programming – An Agile Process for Autonomous Developers       259
+in the next project development. Unlike planning, taking into account defect 
+tracking PXP makes positives results even in the first project development. 
+---
+--- HALAMAN 8 ---
+          Personal Extreme Programming – An Agile Process for Autonomous Developers       259
+in the next project development. Unlike planning, taking into account defect 
+tracking PXP makes positives results even in the first project development. 
+During the development of modules of approximately same scope, a decline 
+in the number of defects found in PXP phase with about 50% compared to 
+ad-hoc development is observed. PXP focus on test driven development leads 
+to approximately 85% business logic code coverage by unit tests. In addition 
+to this web UI and performance load tests are implemented and executed. All 
+tests could be executed in an automated way, which aims to facilitate system 
+---
+it by autonomous developer who is experienced in PXP and has history data 
+from previous implementations of the process. In this way, the developer could 
+gain the whole potential of PXP planning practice. Furthermore, the developer 
+could adapt his practices to his needs based on retrospectives and suggestions 
+for improvements made in previous iterations and projects.
+Acknowledgements. This work is partly funded by Bulgarian Ministry of Edu­
+cation and Science, NSF.
+References
+Software Engineering Institute, Carnegie Mellon, (August 2005) “The Personal 
+1.	
+---
+
+--- MARTHASARI (2018) ---
+Moscow is a method to determine priority needs based on cost, 
+risk, and business value. This technique was applied during the 
+planning phase of PXP to develop library application, thereby 
+it reduced the time of project completion. The result was a 
+library application suited the needs of clients to support 
+business processes at Batu State Attorney's library. 
+Keywords—personal extreme programming, Batu state 
+attorney, library information syst em, moscow prioritization, test 
+driven development. 
+I. INTRODUCTION 
+---
+and testable.
+ 
+B. Planning 
+Planning stage describes the procedure on the user story 
+obtained from the requirements stage. We determined the 
+estimated time of implement the user story, the priority 
+needs using Moscow with technical risk criteria, and 
+business value based on [14], [15], and to create a list of 
+release planning. The results of prioritizing Moscow refer to 
+[16] as follows: 
+---
+ 
+B. Planning 
+Planning stage describes the procedure on the user story 
+obtained from the requirements stage. We determined the 
+estimated time of implement the user story, the priority 
+needs using Moscow with technical risk criteria, and 
+business value based on [14], [15], and to create a list of 
+release planning. The results of prioritizing Moscow refer to 
+[16] as follows: 
+Must have criteria lists all of user story meets the 
+---
+needs using Moscow with technical risk criteria, and 
+business value based on [14], [15], and to create a list of 
+release planning. The results of prioritizing Moscow refer to 
+[16] as follows: 
+Must have criteria lists all of user story meets the 
+criteria of business value and technical risk as follows: 
+a. Registering members, this user story must be 
+implemented in the system. It explains the business 
+processes of borrowing books and to do that a user 
+must be registered as a member. 
+---
+Iteration 
+Requirement 
+Planning 
+Iteration Initialization 
+Design 
+Implementation 
+ Unit Testing 
+Code
+Refactoring 
+System Testing 
+---
+last category is “would not have” criteria that not using user 
+story.   
+Referring to [17], the result of the release planning list 
+used to develop the application of Batu State Attorney 
+library is shown in table 1. 
+TABLE I.  LIST OF RELEASE PLAN 
+ Use Stories Priority Point 
+Iteration 1 Registering the members Must have 1 
+Registering the books Must have 1 
+Inputting the book 
+---
+One iteration development is provided for one time 
+iteration. This paper explains the results of working on the 
+first iteration. Based on the list of planning released in Table 
+1, the user story done in the first iteration is to register the 
+members, register the books, input the book loans, and 
+automated reminder messages. 
+C. Iteration Initialization 
+Based on the list of planning released in Table 1, the 
+user story done in the first iteration is to register the 
+members, register the books, input the book loans, and 
+---
+automated reminder messages. 
+C. Iteration Initialization 
+Based on the list of planning released in Table 1, the 
+user story done in the first iteration is to register the 
+members, register the books, input the book loans, and 
+automated reminder messages. 
+D. Design 
+Figure 2 shows a database design table for user stories 
+that consist of a member entity for registering the members, 
+a book entity for registering the books, a loan entity for 
+---
+develop an application fast because it could overcome 
+changing requirements flexibly. MoSCoW method was 
+useful in planning and processing which focused on the main 
+needs. The methodology used in this study was personal 
+extreme programming in developing application of Batu 
+State Attorney library which clients were still unfamiliar 
+with software technology. Based on the research that has 
+been discussed, PXP is able to meet the needs of clients with 
+the construction of Batu State Attorney library applications 
+to overcome the problems encountered. Batu State Attorney 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+2021). 
+2.4 
+Planning 
+Tahap 
+ini 
+dimulai 
+dengan 
+pengembang 
+melakukan estimasi waktu yang diperlukan untuk 
+menyelesaikan setiap User Story yang telah 
+---
+Tahap ini, pengembangan sistem dimulai 
+berdasarkan urutan iterasi  yang telah direncanakan 
+pada tahap perencanaan. Setiap iterasi  akan merinci 
+tugas-tugas yang perlu diselesaikan untuk setiap User 
+Story, sesuai dengan urutan yang telah ditetapkan 
+sebelumnya. Penentuan tugas-tugas ini dilakukan 
+dengan mempertimbangkan keterkaitan antar User 
+Story untuk memastikan pengembangan berjalan 
+dengan baik. Setiap iterasi  juga menggunakan nilai 
+velocity, yang menggambarkan durasi waktu yang 
+---
+dari 
+Requirements, 
+planning, 
+iteration 
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+---
+yang akan menggunakan aplikasi buku tamu 
+3.2 
+Planning 
+Tahap perencanaan dilakukan setelah kebutuhan 
+sistem berhasil dikumpulkan pada tahap sebelumnya. 
+Pada tahap ini, pengembang menyusun rencana 
+pembangunan sistem dengan melihat hasil dari User 
+Story yang telah diperoleh. Hasil dari proses ini 
+mencakup estimasi waktu pengerjaan, dan penentuan 
+jumlah iterasi   yang dibutuhkan selama proses 
+---
+3.2 
+Planning 
+Tahap perencanaan dilakukan setelah kebutuhan 
+sistem berhasil dikumpulkan pada tahap sebelumnya. 
+Pada tahap ini, pengembang menyusun rencana 
+pembangunan sistem dengan melihat hasil dari User 
+Story yang telah diperoleh. Hasil dari proses ini 
+mencakup estimasi waktu pengerjaan, dan penentuan 
+jumlah iterasi   yang dibutuhkan selama proses 
+pengembangan (Akbar et al, 2024). 
+---
+adalah 40, yang menunjukkan bahwa estimasi waktu 
+keseluruhan untuk pengembangan sistem adalah 40 
+hari. Proses perencanaan ini membantu memastikan 
+bahwa setiap fitur dikerjakan sesuai prioritas dan 
+waktu yang telah ditetapkan. Rincian User Story dan 
+Story Point dapat dilihat pada Tabel 1. 
+ 
+3.3 
+Iteration Initialization 
+ 
+---
+dilakukanSetelah 
+proses 
+perencanaan 
+dan 
+penyusunan iterasi   selesai, langkah berikutnya 
+adalah tahap desain. Pada tahap ini, dirancang use 
+case diagram sebagai representasi visual untuk 
+memodelkan interaksi antara pengguna (user) dengan 
+sistem. Use case diagram ini berfungsi untuk 
+menggambarkan peran pengguna dan menu-menu 
+---
+Personal 
+Extreme Programming (PXP), dimulai dari tahap 
+perencanaan kebutuhan hingga pengujian sistem. 
+Sebanyak 27 User Story berhasil diimplementasikan 
+melalui 8 iterasi dengan total 40 Story Points. Hasil 
+pengujian Black-box menunjukkan bahwa seluruh 
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+---
+
+--- PRASEPTIAWAN (2025) ---
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+---
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+---
+The identified needs were documented in the form of
+user stories (Djamarullah & Kusuma, 2022).
+2. Planning
+The developer planned and created a list of tasks to
+be performed in each iteration based on the collected
+user stories. These tasks were prioritized according
+to the order of the user stories and the estimated time
+for completion.
+3. Iteration Initialization
+This was the initial stage where the tasks that would
+---
+required online payment integration to facilitate
+tuition and student savings payments.
+2. Planning
+Based on the needs analysis, system development
+planning was carried out using the Personal Extreme
+Programming (PXP) method, where the development
+of persona supported the process (Djamarullah &
+Kusuma, 2022). The development tasks were
+organized into small iterations, with priority given to
+the most urgent needs, such as login security and the
+---
+2. Planning
+Based on the needs analysis, system development
+planning was carried out using the Personal Extreme
+Programming (PXP) method, where the development
+of persona supported the process (Djamarullah &
+Kusuma, 2022). The development tasks were
+organized into small iterations, with priority given to
+the most urgent needs, such as login security and the
+integration of the iPaymu payment gateway.
+3. Interface design
+---
+==============================
+STAGE: Iteration Initialization
+==============================
+--- DZHUROV (2009) ---
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+---
+are made – what programming language will be used, development framework, 
+application model, etc. 
+Iteration Initialization indicates the beginning of each iteration. Iteration 
+starts with tasks selection, which will be the focus of the iteration. Iteration 
+length could vary from 1 to 3 weeks depending on the project scope. Each 
+iteration could result both a release-candidate or in a released version of the 
+product.
+During the design phase the autonomous developer is modeling the system 
+modules and classes that will be implemented in the ongoing iteration. The 
+developer should aim to design the system to meet only the current client 
+---
+in order to prevent project failures. This phase could end either in a release-
+candidate or in a product release. The ‘Retrospective’ phase could start a new 
+iteration by moving in ‘Iteration Initialization’ phase or to mark the end of 
+project development when all client requirements for the software system are 
+met, and there are no remaining open defects.
+4  Implementing Personal eXtreme Programming
+In the current research Microsoft Visual Studio System (VSTS) was employed 
+for the implementation of Personal Extreme Programming. VSTS is a platform 
+of productive and integrated tools during the whole life cycle of software 
+development. They improve the communication and collaboration in software 
+---
+
+--- MARTHASARI (2018) ---
+Requirement 
+Planning 
+Iteration Initialization 
+Design 
+Implementation 
+ Unit Testing 
+Code
+Refactoring 
+System Testing 
+Retrospective 
+---
+members, register the books, input the book loans, and 
+automated reminder messages. 
+C. Iteration Initialization 
+Based on the list of planning released in Table 1, the 
+user story done in the first iteration is to register the 
+members, register the books, input the book loans, and 
+automated reminder messages. 
+D. Design 
+Figure 2 shows a database design table for user stories 
+that consist of a member entity for registering the members, 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+tersebut (Chon et al, 2022). 
+2.5 
+Iteration Initialization 
+ 
+Tahap ini, pengembangan sistem dimulai 
+berdasarkan urutan iterasi  yang telah direncanakan 
+pada tahap perencanaan. Setiap iterasi  akan merinci 
+tugas-tugas yang perlu diselesaikan untuk setiap User 
+Story, sesuai dengan urutan yang telah ditetapkan 
+sebelumnya. Penentuan tugas-tugas ini dilakukan 
+---
+dalam 
+implementasi sistem, maka proses akan kembali ke 
+tahap iteration initialization untuk melakukan 
+perbaikan, penyesuaian, atau penyempurnaan yang 
+diperlukan. Hal ini bertujuan untuk memastikan 
+bahwa sistem yang dikembangkan sesuai dengan 
+ekspektasi dan dapat berfungsi dengan baik sebelum 
+melanjutkan ke tahap selanjutnya. Evaluasi dan 
+perbaikan yang terus-menerus selama proses iterasi  
+memastikan kualitas sistem yang lebih baik (Hasan et 
+---
+ 
+3.3 
+Iteration Initialization 
+ 
+Setelah proses estimasi waktu untuk setiap User 
+Story selesai dilakukan, langkah berikutnya adalah 
+menyusun iterasi . Penyusunan iterasi  ini didasarkan 
+pada keterkaitan antara masing-masing User Story . 
+Di tahap selanjutnya, dihasilkan 8 iterasi   dengan 
+rincian nilai velocity sebagai berikut: iterasi   1 
+---
+
+--- PRASEPTIAWAN (2025) ---
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+---
+to the order of the user stories and the estimated time
+for completion.
+3. Iteration Initialization
+This was the initial stage where the tasks that would
+be the primary focus of the iteration were identified
+and selected.
+4. Design
+During this phase, the system to be implemented
+in the iteration was planned and modelled. The
+design developed by the developer was based on
+---
+==============================
+STAGE: Design
+==============================
+--- DZHUROV (2009) ---
+2  Principles and Practices of Personal eXtreme Programming
+Personal Extreme Programming (PXP) is a software development process 
+designed to be applied by software engineers individually. PXP aims at lightening 
+PSP by reducing the number of scripts being followed and the amount of data to 
+be filled in the forms (for complete reference on PSP specification please refer 
+to [1]). PXP keeps the basic principles of PSP but diminishes the amount of 
+documentation and maintenance efforts. In addition, PXP introduces a subset 
+of the XP development practices which are appropriated to be performed 
+by autonomous developers. The PXP development process is iterative and 
+applying its practices allows the developer to be more flexible and responsive 
+---
+project planning. Some of the PSP practices are kept and others from XP are 
+introduced to replace the formal and complex methods for planning, system 
+design and its verification. 
+
+
+--- HALAMAN 3 ---
+254	
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+Six of the PXP practices are preserved from PSP as explained in [2]:
+Six of the PXP practices are proven effective development practices from 
+---
+versioning, automated builds, automated test executions, and automated 
+defect submitting.
+Simple Design 
+•	
+Small releases
+•	
+Refactoring 
+•	
+Test Driven Development
+•	
+---
+each functional requirement a set of technical task is defined. Each technical 
+task is assigned a category – for example creation of unit test, business class 
+implementation, SP creation, UI form design, etc. A task estimate is based 
+on estimates of tasks of the same category in previous projects. Developers 
+should use previously collected data from other projects in order to predict 
+their performance – they should not get the average time for a task of a specific 
+category, but take into consideration the trend of the values in the report. The 
+assumption is that when a developer performs a task regularly at some point it 
+become a routine that take less or equal time to perform as the last time the task 
+was implemented.
+---
+then the developer must try to make best assumption about approximate time 
+the task will cost). The sum of the estimates of child tasks is the estimate for 
+the parent task. During this phase prior to task planning major design decisions 
+are made – what programming language will be used, development framework, 
+application model, etc. 
+Iteration Initialization indicates the beginning of each iteration. Iteration 
+starts with tasks selection, which will be the focus of the iteration. Iteration 
+length could vary from 1 to 3 weeks depending on the project scope. Each 
+iteration could result both a release-candidate or in a released version of the 
+product.
+---
+iteration could result both a release-candidate or in a released version of the 
+product.
+During the design phase the autonomous developer is modeling the system 
+modules and classes that will be implemented in the ongoing iteration. The 
+developer should aim to design the system to meet only the current client 
+requirements without trying to make guesses what would be required in the 
+future. The design method is selected by the developer, but it’s recommended 
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+---
+During the design phase the autonomous developer is modeling the system 
+modules and classes that will be implemented in the ongoing iteration. The 
+developer should aim to design the system to meet only the current client 
+requirements without trying to make guesses what would be required in the 
+future. The design method is selected by the developer, but it’s recommended 
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+---
+developer should aim to design the system to meet only the current client 
+requirements without trying to make guesses what would be required in the 
+future. The design method is selected by the developer, but it’s recommended 
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+To exit the implementation phase the code should compile without any errors 
+and all unit tests should pass successfully.
+---
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+To exit the implementation phase the code should compile without any errors 
+and all unit tests should pass successfully.
+All features developed so far are tested during the system testing phase. 
+
+
+---
+development process, and allow extensibility by the team using it. Despite 
+VSTS is mainly targeting development teams, autonomous developers could 
+also take advantage of its powerful tools. VSTS was designed to fit the needs 
+of the software engineer who is employing it by software development process 
+templates. A process template consists of a structured set of xml documents that 
+describe different aspects of the process (detailed specifications of a process 
+template are available in [5]). For PXP a new process template was created. 
+The process template contains information about the phases of the PXP process, 
+specific for this development methodology work items (defects, tasks, scenarios, 
+quality of service requirements, process improvement proposals), definitions of 
+---
+report viewing, automated remote builds and continuous integration, tests 
+implementation and execution, software size and quality measurement, and 
+tools for system design. A detailed description on implementation of PXP with 
+VSTS refer to [7].
+In order to study the extent to which PXP helps to optimize the development 
+process, the methodology was adopted by an autonomous developer. A software 
+project was developed in two phases – each of them planned to last 2 weeks. 
+The first phase was developed with ad-hoc development, and the second with 
+PXP.
+During both phases the following process and project metrics are tracked 
+---
+that addresses their current needs and daily work problems, enhance the 
+developed software systems quality and shorten the implementation time. PXP 
+excludes from PSP the formal scripts, forms and design verification methods, 
+and introduces some of the XP development practices. The implementation of 
+the new process is supported by Microsoft Visual Studio Team System platform 
+which gives opportunities for automating most of its activities. Furthermore, 
+comparative analysis of development following ad-hock process and the PXP 
+is carried in order to validate how PXP influences autonomous developer 
+work. A comparison of the set of generated artifacts of both phases is made. 
+Other monitored metrics of the process about project planning and product 
+---
+
+--- MARTHASARI (2018) ---
+1). Overall, we conduct requirements elicitation from clients 
+to identify functional specification of the system then the 
+iteration phase is started. This phase starts with design step 
+and continue untill the final step, retrospective, which is the 
+end of iteration stage.  
+ 
+ 
+ 
+ 
+ 
+---
+Planning 
+Iteration Initialization 
+Design 
+Implementation 
+ Unit Testing 
+Code
+Refactoring 
+System Testing 
+Retrospective 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+---
+members, register the books, input the book loans, and 
+automated reminder messages. 
+D. Design 
+Figure 2 shows a database design table for user stories 
+that consist of a member entity for registering the members, 
+a book entity for registering the books, a loan entity for 
+inputting the loan books, and an automated reminder 
+message using an email attribute in a member entity. In the 
+next phase, the developers begin to write the process of 
+program code according to the design that has been made. 
+---
+automated reminder messages. 
+D. Design 
+Figure 2 shows a database design table for user stories 
+that consist of a member entity for registering the members, 
+a book entity for registering the books, a loan entity for 
+inputting the loan books, and an automated reminder 
+message using an email attribute in a member entity. In the 
+next phase, the developers begin to write the process of 
+program code according to the design that has been made. 
+ 
+---
+message using an email attribute in a member entity. In the 
+next phase, the developers begin to write the process of 
+program code according to the design that has been made. 
+ 
+FIG II. DATABASE DESIGN IN THE FIRST ITERATION 
+E. Implementation 
+The implementation of the program using Test Driven 
+Development (TDD) consists of 3 stages: unit testing, code 
+generation, and refactoring. The unit testing results of each 
+user story are shown in Figure 3. Member Controller 
+---
+program code according to the design that has been made. 
+ 
+FIG II. DATABASE DESIGN IN THE FIRST ITERATION 
+E. Implementation 
+The implementation of the program using Test Driven 
+Development (TDD) consists of 3 stages: unit testing, code 
+generation, and refactoring. The unit testing results of each 
+user story are shown in Figure 3. Member Controller 
+(Controllermember.php) is used for the user story of 
+member registration, Book Controller (Controllerbook.php) 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+iteration 
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+---
+
+--- PRASEPTIAWAN (2025) ---
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+---
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+on a scale from 1 (strongly disagree) to 5 (strongly agree). SUS scores were
+calculated using standard formulas to determine a ﬁnal score, which was
+then classiﬁed into usability categories. The average SUS score was 91,
+falling under the "Excellent" category (Grade A). The development of the mini
+bank website introduced new features, including online payment services for
+tuition fees (SPP), waste banks, and savings. System testing achieved a 99%
+---
+the school environment, allowing students to directly learn
+about financial management and basic banking services.
+The program was designed to equip students with skills
+relevant to the workforce while enabling them to apply the
+theoretical knowledge they had learned in the classroom.
+The mini bank system used at SMK Negeri 7
+Bandar Lampung had not yet functioned optimally due
+to the inadequate implementation of several key features.
+Features such as user data management, transaction activity
+logs, and login security were still limited, which hindered
+---
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+---
+be the primary focus of the iteration were identified
+and selected.
+4. Design
+During this phase, the system to be implemented
+in the iteration was planned and modelled. The
+design developed by the developer was based on
+the requirements gathered during the requirements
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+---
+During this phase, the system to be implemented
+in the iteration was planned and modelled. The
+design developed by the developer was based on
+the requirements gathered during the requirements
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+---
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+II. Code Generation: Writing program code based
+on the design.
+III. Code Refactoring: Improving existing code for
+better efficiency and maintainability.
+---
+functioned as intended.
+II. Code Generation: Writing program code based
+on the design.
+III. Code Refactoring: Improving existing code for
+better efficiency and maintainability.
+6. System Testing In this stage, the functionality of
+all system features was tested. The testing results
+were presented through unit testing and black-box
+testing. Further testing involved using the System
+Usability Scale (SUS) to validate user acceptance.
+---
+the most urgent needs, such as login security and the
+integration of the iPaymu payment gateway.
+3. Interface design
+The system design comprised communication
+diagrams and transaction process flow diagrams, as
+well as the design of a database that supports Mini
+32
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+---
+integration of the iPaymu payment gateway.
+3. Interface design
+The system design comprised communication
+diagrams and transaction process flow diagrams, as
+well as the design of a database that supports Mini
+32
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+--- PAGE 4 ---
+---
+The system design comprised communication
+diagrams and transaction process flow diagrams, as
+well as the design of a database that supports Mini
+32
+ www.jurnal.ugm.ac.id/jpkm V ol. 11, No. 1,
+
+
+--- PAGE 4 ---
+Praseptiawan et al. The Development and Implementation
+Bank operations. Furthermore, the user interface (UI)
+---
+Praseptiawan et al. The Development and Implementation
+Bank operations. Furthermore, the user interface (UI)
+design for both administrators and general users was
+developed with a focus on accessibility and ease of
+use (Figure 2).
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+the development of secure login features, user
+data processing, and the integration of the iPaymu
+---
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+the development of secure login features, user
+data processing, and the integration of the iPaymu
+payment gateway. Each element was tested through
+unit testing and the refactoring process to ensure
+optimal code quality.
+5. System testing
+Testing was conducted using Postman to ensure the
+---
+a 99% success rate, indicating that the system was
+operating effectively according to the specifications.
+Figure 2 . Interface design of multi-payment software
+3.2 Application evaluation with System Usability
+Scale (SUS)
+The results of the usability evaluation using the
+System Usability Scale (SUS) method were obtained
+through assessments conducted with teachers, students, and
+educational personnel at SMKN 7 Bandar Lampung, as
+illustrated on Figure 3.
+---
+==============================
+STAGE: Implementation
+==============================
+--- DZHUROV (2009) ---
+each functional requirement a set of technical task is defined. Each technical 
+task is assigned a category – for example creation of unit test, business class 
+implementation, SP creation, UI form design, etc. A task estimate is based 
+on estimates of tasks of the same category in previous projects. Developers 
+should use previously collected data from other projects in order to predict 
+their performance – they should not get the average time for a task of a specific 
+category, but take into consideration the trend of the values in the report. The 
+assumption is that when a developer performs a task regularly at some point it 
+become a routine that take less or equal time to perform as the last time the task 
+was implemented.
+---
+Requirements and tasks planning are usually done for the whole project 
+as usually requirements are specified in advance and stay stable during the 
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+---
+future. The design method is selected by the developer, but it’s recommended 
+to use as simple as possible tools.
+Implementation phase is where the actual code generation takes place. The 
+developer implements all objects defined in the previous design phase and tests 
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+To exit the implementation phase the code should compile without any errors 
+and all unit tests should pass successfully.
+All features developed so far are tested during the system testing phase. 
+
+---
+for them. This phase consists of three sub-phases- unit testing, code generation 
+and code refactoring, executed in this order:
+To exit the implementation phase the code should compile without any errors 
+and all unit tests should pass successfully.
+All features developed so far are tested during the system testing phase. 
+
+
+--- HALAMAN 5 ---
+256	
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+---
+4  Implementing Personal eXtreme Programming
+In the current research Microsoft Visual Studio System (VSTS) was employed 
+for the implementation of Personal Extreme Programming. VSTS is a platform 
+of productive and integrated tools during the whole life cycle of software 
+development. They improve the communication and collaboration in software 
+development process, and allow extensibility by the team using it. Despite 
+VSTS is mainly targeting development teams, autonomous developers could 
+also take advantage of its powerful tools. VSTS was designed to fit the needs 
+of the software engineer who is employing it by software development process 
+templates. A process template consists of a structured set of xml documents that 
+---
+practices – tools for refactoring, automated code review, work items tracking, 
+report viewing, automated remote builds and continuous integration, tests 
+implementation and execution, software size and quality measurement, and 
+tools for system design. A detailed description on implementation of PXP with 
+VSTS refer to [7].
+In order to study the extent to which PXP helps to optimize the development 
+process, the methodology was adopted by an autonomous developer. A software 
+project was developed in two phases – each of them planned to last 2 weeks. 
+The first phase was developed with ad-hoc development, and the second with 
+PXP.
+---
+report viewing, automated remote builds and continuous integration, tests 
+implementation and execution, software size and quality measurement, and 
+tools for system design. A detailed description on implementation of PXP with 
+VSTS refer to [7].
+In order to study the extent to which PXP helps to optimize the development 
+process, the methodology was adopted by an autonomous developer. A software 
+project was developed in two phases – each of them planned to last 2 weeks. 
+The first phase was developed with ad-hoc development, and the second with 
+PXP.
+During both phases the following process and project metrics are tracked 
+---
+The number of defects found in the second project phase is significantly 
+lower compared to the first one (Figure 3). PXP mainly focuses on test driven 
+development which allows defects to be prevented during implementation 
+phase of the process. In phase I of the project development only manual testing 
+was performed and part of the defects was introduced during development of 
+new features.
+Fig. 3. Ratio between found defects and requirements in both project phases.
+Requirements 
+Count
+Defects
+---
+The paper presents a new software process targeting autonomous developer 
+that addresses their current needs and daily work problems, enhance the 
+developed software systems quality and shorten the implementation time. PXP 
+excludes from PSP the formal scripts, forms and design verification methods, 
+and introduces some of the XP development practices. The implementation of 
+the new process is supported by Microsoft Visual Studio Team System platform 
+which gives opportunities for automating most of its activities. Furthermore, 
+comparative analysis of development following ad-hock process and the PXP 
+is carried in order to validate how PXP influences autonomous developer 
+work. A comparison of the set of generated artifacts of both phases is made. 
+---
+developed software systems quality and shorten the implementation time. PXP 
+excludes from PSP the formal scripts, forms and design verification methods, 
+and introduces some of the XP development practices. The implementation of 
+the new process is supported by Microsoft Visual Studio Team System platform 
+which gives opportunities for automating most of its activities. Furthermore, 
+comparative analysis of development following ad-hock process and the PXP 
+is carried in order to validate how PXP influences autonomous developer 
+work. A comparison of the set of generated artifacts of both phases is made. 
+Other monitored metrics of the process about project planning and product 
+quality state that planning when PXP is applied for the very first time is as 
+---
+As future work, validation of the approach should be made by implementing 
+it by autonomous developer who is experienced in PXP and has history data 
+from previous implementations of the process. In this way, the developer could 
+gain the whole potential of PXP planning practice. Furthermore, the developer 
+could adapt his practices to his needs based on retrospectives and suggestions 
+for improvements made in previous iterations and projects.
+Acknowledgements. This work is partly funded by Bulgarian Ministry of Edu­
+cation and Science, NSF.
+References
+Software Engineering Institute, Carnegie Mellon, (August 2005) “The Personal 
+---
+
+--- MARTHASARI (2018) ---
+of development which can not be resolved by using 
+conventional software development methodology. The 
+implementation of the less significant requirements either from 
+the clients or the other stakeholders causes the project 
+development becomes longer. Therefore, a technique is needed 
+to arrange the priority of software requirements. In this paper, 
+we combine personal extreme programming (PXP) 
+methodology with Moscow technique to overcome those 
+problems. PXP is suitable to use in small to medium-sized 
+projects if the clients do not know in detail about the needs in 
+---
+Iteration Initialization 
+Design 
+Implementation 
+ Unit Testing 
+Code
+Refactoring 
+System Testing 
+Retrospective 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+538
+---
+ 
+FIG II. DATABASE DESIGN IN THE FIRST ITERATION 
+E. Implementation 
+The implementation of the program using Test Driven 
+Development (TDD) consists of 3 stages: unit testing, code 
+generation, and refactoring. The unit testing results of each 
+user story are shown in Figure 3. Member Controller 
+(Controllermember.php) is used for the user story of 
+member registration, Book Controller (Controllerbook.php) 
+for book registration, Loan Controller (Controllerloan.php) 
+---
+FIG II. DATABASE DESIGN IN THE FIRST ITERATION 
+E. Implementation 
+The implementation of the program using Test Driven 
+Development (TDD) consists of 3 stages: unit testing, code 
+generation, and refactoring. The unit testing results of each 
+user story are shown in Figure 3. Member Controller 
+(Controllermember.php) is used for the user story of 
+member registration, Book Controller (Controllerbook.php) 
+for book registration, Loan Controller (Controllerloan.php) 
+for loaning the book, and Email (Email.php) for 
+---
+FIG IV.USER VIEW OF REGISTER MEMBER REQUIREMENT 
+F. System Test 
+This stage tests the results of the implementation of 
+features that have been obtained. The test applies the user 
+acceptance test criteria. It is based on the user story. The test 
+is done by the client. The test results are shown in Table 2 
+TABLE II.  USER ACCEPTANCE TEST 
+Iteration 1    Results 
+User Stories Acceptance test 
+criteria Priority Yes No 
+---
+ 
+G. Restrospective 
+Based on the results of the first iteration implementation, 
+verification is done at this stage to ascertain whether the 
+realization time is equal to the initial estimation time. The 
+verification results are shown in table 3. 
+TABLE III.  TIME VERIFICATION RESULT ON THE FIRST ITERATION 
+Iteration 1 
+User Stories Priority Story 
+Point 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Kuantitatif 
+ 
+IMPLEMENTATION OF PERSONAL EXTREME PROGRAMMING (PXP) 
+METHOD IN GUEST BOOK APPLICATION DEVELOPMENT 
+(Case study: Dinas Komunikasi Dan Informatika Kabupaten Lombok Tengah) 
+ 
+Abstract  
+The Digital Guest Book application developed at the Central Lombok Regency Communication and 
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+---
+
+--- PRASEPTIAWAN (2025) ---
+Jurnal Pengabdian kepada Masyarakat V ol. 11, No. 1, March 2025, Page. 30-35
+DOI: http://doi.org/10.22146/jpkm.100850
+The Development and Implementation of M-Edupayment: A
+Multi-Payment Platform for SMK Negeri 7 Bandar Lampung
+Mugi Praseptiawan*, Meida Cahyo Utoro, Ilham Firman Ashari, Muhammad Habib Algifari,
+Aidil Afriansyah
+Department of Informatics Engineering, Faculty of Industrial T echnology, Institut T eknologi Sumatera, Lampung Selatan,
+Indonesia
+Submitted: October 19 th 2024; Revised: December 10 th 2024; Accepted: January 15 th 2025
+Keywords:
+---
+at SMK Negeri 7 Bandar Lampung. System development followed the
+Personal Extreme Programming (PXP) method, which included the stages of
+Requirements, Planning, Iteration Initialization, Design, Implementation, and
+System T esting. PXP , a variant of Extreme Programming, was speciﬁcally
+adapted for individual developers. The activity involved 31 respondents,
+consisting of 10 th and 11 th-grade students, who evaluated the system using
+the System Usability Scale (SUS) to measure its usability. Interviews with
+teachers (superadmins) and student administrators were also conducted to
+identify initial requirements and gather feedback on the system design. Data
+analysis utilized a Likert scale, where respondents rated various system aspects
+---
+functional success rate, demonstrating the platform’s high usability in the
+school environment. Respondents provided overwhelmingly positive feedback,
+aﬃrming the successful implementation and functionality of the website.
+1. INTRODUCTION
+SMK Negeri 7 Bandar Lampung implemented the teaching
+factory concept through the Mini Bank program as part
+of its efforts to enhance the competencies of accounting
+students (Praseptiawan et al., 2023). This program provided
+practical experience for students in managing financial
+transactions, such as tuition payments and student savings,
+---
+The mini bank system used at SMK Negeri 7
+Bandar Lampung had not yet functioned optimally due
+to the inadequate implementation of several key features.
+Features such as user data management, transaction activity
+logs, and login security were still limited, which hindered
+the system’s functionality in supporting students’ learning
+processes. Moreover, the absence of these essential features
+significantly affected the school’s operational efficiency,
+particularly in managing tuition payments and student
+ISSN 2460-9447 (print), ISSN 2541-5883 (online)
+---
+
+--- PAGE 2 ---
+Praseptiawan et al. The Development and Implementation
+savings transactions (Sari et al., 2023). As the demand
+for technology in education continued to grow, there was
+a pressing need for a system that could provide secure,
+fast, and integrated financial services. Without proper
+improvements, the system could not deliver maximum
+benefits to the school and students.
+The development of the Mini Bank system was crucial
+---
+software development methodology that emphasizes
+iterative processes and flexibility. It included stages such as
+requirements gathering, planning, design, implementation,
+and testing, all of which could be revisited as needed. PXP
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+---
+relied on skilled developers who had to clearly identify
+requirements and accurately estimate workloads to ensure
+the system’s successful implementation. This method
+proved highly effective in accelerating project completion
+and improving organizational efficiency, making it suitable
+for IT-based application development. For instance, a study
+by Sulthoni et al. demonstrated the successful application
+of PXP in developing a meeting room reservation system
+for the Communication and Information Office of East Java
+Province [a]. The development process under PXP involved
+---
+the requirements gathered during the requirements
+collection phase.
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+II. Code Generation: Writing program code based
+on the design.
+III. Code Refactoring: Improving existing code for
+---
+5. Implementation This stage involved translating
+each design element into program code. The
+implementation process included three steps:
+I. Unit Testing: Ensuring individual components
+functioned as intended.
+II. Code Generation: Writing program code based
+on the design.
+III. Code Refactoring: Improving existing code for
+better efficiency and maintainability.
+6. System Testing In this stage, the functionality of
+---
+
+--- PAGE 3 ---
+Praseptiawan et al. The Development and Implementation
+T able1 . System Usability Scale (SUS) Instrument
+No. Question Scale
+1 2 3 4 5
+1 I think that I would like to use this system frequently
+2 I found the system unnecessarily complex
+3 I thought the system was easy to use
+4 I think that I would need the support of a technical person to be able to use this system
+---
+
+--- PAGE 4 ---
+Praseptiawan et al. The Development and Implementation
+Bank operations. Furthermore, the user interface (UI)
+design for both administrators and general users was
+developed with a focus on accessibility and ease of
+use (Figure 2).
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+---
+developed with a focus on accessibility and ease of
+use (Figure 2).
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+the development of secure login features, user
+data processing, and the integration of the iPaymu
+payment gateway. Each element was tested through
+unit testing and the refactoring process to ensure
+optimal code quality.
+---
+use (Figure 2).
+4. Implementation
+During the implementation phase, the system was
+developed according to the design, starting with
+the development of secure login features, user
+data processing, and the integration of the iPaymu
+payment gateway. Each element was tested through
+unit testing and the refactoring process to ensure
+optimal code quality.
+5. System testing
+---
+
+--- PAGE 5 ---
+Praseptiawan et al. The Development and Implementation
+the implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung, the previous system had many
+limitations. User data management was still done manually,
+transaction logging was not automated, and login security
+was minimal, making the system vulnerable to unauthorized
+access. Additionally, the lack of online payment integration
+slowed down the process of handling tuition and student
+---
+--- PAGE 5 ---
+Praseptiawan et al. The Development and Implementation
+the implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung, the previous system had many
+limitations. User data management was still done manually,
+transaction logging was not automated, and login security
+was minimal, making the system vulnerable to unauthorized
+access. Additionally, the lack of online payment integration
+slowed down the process of handling tuition and student
+savings payments, causing inefficiencies and a risk of
+---
+savings payments, causing inefficiencies and a risk of
+errors.
+After the Mini Bank implementation, there were
+significant improvements in several aspects:
+1. Data Management: The ability to upload data via
+Excel simplified and accelerated the process, while
+reducing errors.
+2. Automatic Transaction Logging: The system now
+logs transactions automatically, improving the
+accuracy of financial data.
+---
+manual workload.
+In summary, the comparative analysis of the system
+before and after implementation revealed significant
+improvements. Initially, the system was slow, insecure,
+and relied on manual processes. After implementation,
+it became more efficient, secure, and integrated. This
+transformation was reflected in the SUS score of 91,
+indicating high user satisfaction. The implementation of
+the Mini Bank system significantly enhanced operational
+efficiency, security, and user experience, making the
+---
+before and after implementation revealed significant
+improvements. Initially, the system was slow, insecure,
+and relied on manual processes. After implementation,
+it became more efficient, secure, and integrated. This
+transformation was reflected in the SUS score of 91,
+indicating high user satisfaction. The implementation of
+the Mini Bank system significantly enhanced operational
+efficiency, security, and user experience, making the
+school’s financial processes faster, safer, and more reliable.
+4. CONCLUSSION
+---
+it became more efficient, secure, and integrated. This
+transformation was reflected in the SUS score of 91,
+indicating high user satisfaction. The implementation of
+the Mini Bank system significantly enhanced operational
+efficiency, security, and user experience, making the
+school’s financial processes faster, safer, and more reliable.
+4. CONCLUSSION
+The implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung demonstrated significant success in
+enhancing the efficiency and security of the school’s
+---
+school’s financial processes faster, safer, and more reliable.
+4. CONCLUSSION
+The implementation of the Mini Bank at SMK Negeri
+7 Bandar Lampung demonstrated significant success in
+enhancing the efficiency and security of the school’s
+financial operations. Before implementation, the system
+faced limitations in data management, transaction
+recording, and security. Post-implementation, features such
+as Excel data uploading, automatic transaction recording,
+secure login using JSON Web Token (JWT), and iPaymu
+---
+7 Bandar Lampung demonstrated significant success in
+enhancing the efficiency and security of the school’s
+financial operations. Before implementation, the system
+faced limitations in data management, transaction
+recording, and security. Post-implementation, features such
+as Excel data uploading, automatic transaction recording,
+secure login using JSON Web Token (JWT), and iPaymu
+payment gateway integration effectively improved the
+system’s functionality.
+The Mini Bank application has the potential to be
+---
+financial operations. Before implementation, the system
+faced limitations in data management, transaction
+recording, and security. Post-implementation, features such
+as Excel data uploading, automatic transaction recording,
+secure login using JSON Web Token (JWT), and iPaymu
+payment gateway integration effectively improved the
+system’s functionality.
+The Mini Bank application has the potential to be
+adopted by various schools, both public and private, that
+require streamlined payment transaction systems. It also
+---
+services. We also express our sincere thanks to SMKN 7
+Bandar Lampung for their collaboration and the facilities
+provided during the implementation of this community
+service program. The support from everyone at SMKN 7
+Bandar Lampung has been instrumental in the successful
+execution of the program, allowing it to deliver tangible
+benefits to both students and the school environment.
+CONFLICT OF INTERESTS
+The authors declare that there is no conflict of interest.
+REFERENCES
+---
+
+--- PAGE 6 ---
+Praseptiawan et al. The Development and Implementation
+informasi pembayaran SPP berbasis website. Jurnal
+Teknologi Informasi, 17(1), 90–100.
+Tuloli, M. S., Patalangi, R., & Takdir, R. (2022).
+Pengukuran tingkat usability sistem aplikasi e-
+rapor menggunakan metode usability testing dan
+SUS. Jambura Journal of Informatics, 4 (1), 13–26.
+https://doi.org/10.37905/jji.v4i1.13411
+---
+==============================
+STAGE: System Testing
+==============================
+--- DZHUROV (2009) ---
+To exit the implementation phase the code should compile without any errors 
+and all unit tests should pass successfully.
+All features developed so far are tested during the system testing phase. 
+
+
+--- HALAMAN 5 ---
+256	
+Y. Dzhurov, I. Krasteva, and S. Ilieva
+Developer should verify whether the implemented solution meets the initial 
+project requirements. All found defects are recorded and fixed.
+---
+
+--- MARTHASARI (2018) ---
+Code
+Refactoring 
+System Testing 
+Retrospective 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+538
+
+--- PAGE 3 ---
+d. Uploading a book file, this user story is essential as it 
+helps users save book files in softcopy form into the 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+Bahasa Sasak), integrasi dengan sistem administrasi pemerintahan, dan model distribusi yang lebih efisien biaya. 
+Hasil pengujian kuantitatif menunjukkan performa yang responsif, dengan waktu respons pemindaian QR 
+---
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+Bahasa Sasak), integrasi dengan sistem administrasi pemerintahan, dan model distribusi yang lebih efisien biaya. 
+Hasil pengujian kuantitatif menunjukkan performa yang responsif, dengan waktu respons pemindaian QR 
+mencapai 312 ms dan tingkat akurasi verifikasi identitas tamu sebesar 98.7%. Aplikasi ini diharapkan dapat 
+memberikan solusi yang efektif dan efisien untuk pengelolaan kunjungan di instansi pemerintah. 
+ 
+Kata kunci: Aplikasi buku tamu, QR code, Personal Extreme Programming (PXP), Black Box Testing. Pengujian 
+Kuantitatif 
+ 
+IMPLEMENTATION OF PERSONAL EXTREME PROGRAMMING (PXP) 
+---
+memberikan solusi yang efektif dan efisien untuk pengelolaan kunjungan di instansi pemerintah. 
+ 
+Kata kunci: Aplikasi buku tamu, QR code, Personal Extreme Programming (PXP), Black Box Testing. Pengujian 
+Kuantitatif 
+ 
+IMPLEMENTATION OF PERSONAL EXTREME PROGRAMMING (PXP) 
+METHOD IN GUEST BOOK APPLICATION DEVELOPMENT 
+(Case study: Dinas Komunikasi Dan Informatika Kabupaten Lombok Tengah) 
+ 
+Abstract  
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+administration systems, and a more cost-efficient distribution model. Quantitative testing results show responsive 
+performance, with a QR scan response time of 312 ms and a guest identity verification accuracy rate of 98.7%. 
+---
+berikutnya. 
+b. 
+Siklus Iterasi Pendek dan Pengujian 
+Berkelanjutan 
+PXP mendorong pengembangan dalam iterasi 
+pendek, yang biasanya berdurasi antara satu hingga 
+dua minggu. Setiap iterasi berfokus pada pengujian 
+fitur 
+secara 
+langsung 
+---
+PXP mendorong pengembangan dalam iterasi 
+pendek, yang biasanya berdurasi antara satu hingga 
+dua minggu. Setiap iterasi berfokus pada pengujian 
+fitur 
+secara 
+langsung 
+dengan 
+pengguna 
+dan 
+melakukan penyesuaian cepat jika diperlukan. 
+---
+memastikan aplikasi selalu berfungsi sesuai dengan 
+ekspektasi pengguna.Contoh penerapan: Setiap dua 
+minggu, dilakukan evaluasi dan pengujian fungsi 
+utama, seperti pendaftaran tamu melalui QR code dan 
+dashboard 
+statistik, 
+untuk 
+memastikan 
+fungsionalitasnya sesuai dengan yang diinginkan 
+pengguna. 
+---
+ 
+e. 
+Pengujian Otomatis dan Refactoring 
+Salah satu pilar dalam PXP adalah pengujian 
+otomatis untuk memastikan setiap bagian aplikasi 
+berfungsi dengan baik setiap saat, meskipun terjadi 
+perubahan besar dalam sistem. Pengembang juga 
+melakukan refactoring kode secara teratur untuk 
+menjaga kualitas dan kebersihan kode. Pengujian 
+otomatis memberikan jaminan bahwa perubahan 
+---
+e. 
+Pengujian Otomatis dan Refactoring 
+Salah satu pilar dalam PXP adalah pengujian 
+otomatis untuk memastikan setiap bagian aplikasi 
+berfungsi dengan baik setiap saat, meskipun terjadi 
+perubahan besar dalam sistem. Pengembang juga 
+melakukan refactoring kode secara teratur untuk 
+menjaga kualitas dan kebersihan kode. Pengujian 
+otomatis memberikan jaminan bahwa perubahan 
+yang dilakukan tidak merusak fungsionalitas yang 
+---
+perubahan besar dalam sistem. Pengembang juga 
+melakukan refactoring kode secara teratur untuk 
+menjaga kualitas dan kebersihan kode. Pengujian 
+otomatis memberikan jaminan bahwa perubahan 
+yang dilakukan tidak merusak fungsionalitas yang 
+sudah ada sebelumnya.Contoh penerapan: Pengujian 
+otomatis dilakukan untuk memastikan verifikasi 
+identitas tamu berjalan dengan benar, dan setelah 
+setiap iterasi, kode diperbarui dan disempurnakan 
+untuk memperbaiki potensi masalah teknis. 
+---
+otomatis memberikan jaminan bahwa perubahan 
+yang dilakukan tidak merusak fungsionalitas yang 
+sudah ada sebelumnya.Contoh penerapan: Pengujian 
+otomatis dilakukan untuk memastikan verifikasi 
+identitas tamu berjalan dengan benar, dan setelah 
+setiap iterasi, kode diperbarui dan disempurnakan 
+untuk memperbaiki potensi masalah teknis. 
+ 
+f. 
+Kualitas Kode yang Tinggi 
+---
+pengkodean 
+selesai, 
+dilakukan pengujian melalui unit testing untuk 
+memastikan bahwa setiap bagian dari sistem berjalan 
+dengan baik. Apabila ditemukan kesalahan atau 
+kekurangan, dilakukan perbaikan atau refactor pada 
+bagian kode yang bermasalah. Setelah tidak 
+ditemukan lagi kesalahan, pengembangan kemudian 
+dapat dilanjutkan ke tahap berikutnya (Prasetyo et al, 
+2020). 
+---
+ 
+2.8 
+System Testing 
+Pada tahap ini, dilakukan pengujian terhadap 
+fungsionalitas aplikasi dengan menggunakan metode 
+Black Box Testing. Proses pengujian dilakukan 
+dengan menjalankan aplikasi dan mengamati hasil 
+yang muncul. Pegawai dari Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah berperan 
+dalam melaksanakan pengujian ini. Hasil pengujian 
+---
+2.8 
+System Testing 
+Pada tahap ini, dilakukan pengujian terhadap 
+fungsionalitas aplikasi dengan menggunakan metode 
+Black Box Testing. Proses pengujian dilakukan 
+dengan menjalankan aplikasi dan mengamati hasil 
+yang muncul. Pegawai dari Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah berperan 
+dalam melaksanakan pengujian ini. Hasil pengujian 
+tersebut kemudian dievaluasi untuk memastikan 
+---
+Pada tahap ini, dilakukan pengujian terhadap 
+fungsionalitas aplikasi dengan menggunakan metode 
+Black Box Testing. Proses pengujian dilakukan 
+dengan menjalankan aplikasi dan mengamati hasil 
+yang muncul. Pegawai dari Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah berperan 
+dalam melaksanakan pengujian ini. Hasil pengujian 
+tersebut kemudian dievaluasi untuk memastikan 
+apakah aplikasi berfungsi sesuai dengan harapan dan 
+tujuan yang telah ditentukan (Ulfi et al, 2020). 
+---
+yang muncul. Pegawai dari Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah berperan 
+dalam melaksanakan pengujian ini. Hasil pengujian 
+tersebut kemudian dievaluasi untuk memastikan 
+apakah aplikasi berfungsi sesuai dengan harapan dan 
+tujuan yang telah ditentukan (Ulfi et al, 2020). 
+2.9 
+Retrospektive 
+Pada tahap ini, dilakukan evaluasi terhadap 
+setiap iterasi  yang telah dijalankan sebelumnya. Jika 
+---
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+---
+992   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+Tabel 3. Pengujian Black box 
+No 
+Menu 
+Aksi 
+Hasil 
+Status 
+1 
+Login 
+---
+3.6 
+Sistem Testing 
+Pengujian dilakukan untuk memastikan sistem 
+bisa berfungsi dengan baik, pada tahap pengujian 
+akan dilakukan dengan 2 pendekatan yaitu Alpha 
+Testing 
+(Black-box), 
+Analisis 
+komparatif 
+dan 
+---
+Sistem Testing 
+Pengujian dilakukan untuk memastikan sistem 
+bisa berfungsi dengan baik, pada tahap pengujian 
+akan dilakukan dengan 2 pendekatan yaitu Alpha 
+Testing 
+(Black-box), 
+Analisis 
+komparatif 
+dan 
+Pengujian data kuantitatif 
+---
+komparatif 
+dan 
+Pengujian data kuantitatif 
+a. 
+Pengujian Black-box 
+Pengujian Black-box berdasarkan fungsi  
+sistem yang dilakukan pengembang untuk 
+mencari kesalahan atau error pada saat sistem 
+dijalankan, sehingga apabila terdapat error bisa 
+langsung diperbaiki.  
+---
+Pengujian data kuantitatif 
+a. 
+Pengujian Black-box 
+Pengujian Black-box berdasarkan fungsi  
+sistem yang dilakukan pengembang untuk 
+mencari kesalahan atau error pada saat sistem 
+dijalankan, sehingga apabila terdapat error bisa 
+langsung diperbaiki.  
+ 
+Rumus : 𝑠=
+---
+a. 
+Pengujian Black-box 
+Pengujian Black-box berdasarkan fungsi  
+sistem yang dilakukan pengembang untuk 
+mencari kesalahan atau error pada saat sistem 
+dijalankan, sehingga apabila terdapat error bisa 
+langsung diperbaiki.  
+ 
+Rumus : 𝑠=
+𝑃
+---
+Dimana : 
+s: Persentase keberhasilan (success rate) 
+p: Jumlah pengujian yang berhasil (pass) 
+i: Jumlah total pengujian (iterations atau input 
+yang diuji) 
+ 
+𝑠=
+80
+80 × 100
+𝑠= 100
+---
+s: Persentase keberhasilan (success rate) 
+p: Jumlah pengujian yang berhasil (pass) 
+i: Jumlah total pengujian (iterations atau input 
+yang diuji) 
+ 
+𝑠=
+80
+80 × 100
+𝑠= 100
+ 
+---
+ 
+Hasil 
+pengujian 
+aplikasi 
+Buku 
+Tamu 
+menggunakan 
+metode 
+Black 
+Box 
+---
+tingkat 
+keberhasilan sebesar 100% pada seluruh skenario 
+pengujian yang dilakukan. Sebagian besar fitur dalam 
+aplikasi berfungsi dengan baik sesuai dengan yang 
+diharapkan. Fitur Login dapat memproses data 
+username dan password dengan benar. Menu 
+Dashboard berhasil menampilkan grafik kunjungan 
+tamu 
+secara 
+real-time. 
+---
+keseluruhan tidak ditemukan error kritis selama 
+proses 
+pengujian. 
+Oleh 
+karena 
+itu, 
+aplikasi 
+dinyatakan siap digunakan oleh pegawai Diskominfo. 
+b. 
+Ananlisi Komparatif dan Pengujian data 
+---
+dinyatakan siap digunakan oleh pegawai Diskominfo. 
+b. 
+Ananlisi Komparatif dan Pengujian data 
+kuantitatif 
+ 
+Perbandingan 
+fitur 
+antara 
+aplikasi 
+yang 
+---
+dikembangkan dengan beberapa Guest Management 
+System (GMS) komersial disajikan pada Tabel 5. 
+Hasil pengujian kuantitatif terhadap performa 
+sistem, seperti waktu respons pemindaian QR dan 
+akurasi verifikasi tamu, dapat dilihat pada Tabel 6. 
+ 
+
+
+--- HALAMAN 9 ---
+Musofa, dkk, Implementasi Metode Personal…   993 
+---
+internal) 
+✗ Berlangganan (berbayar per bulan) 
+Tabel 5 Pengujian data kuantitatif 
+Parameter Pengujian 
+Hasil 
+Rata-rata 
+Standar 
+Deviasi 
+Keterangan 
+Waktu Respons Pemindaian 
+---
+✗ Berlangganan (berbayar per bulan) 
+Tabel 5 Pengujian data kuantitatif 
+Parameter Pengujian 
+Hasil 
+Rata-rata 
+Standar 
+Deviasi 
+Keterangan 
+Waktu Respons Pemindaian 
+QR (ms) 
+---
+sangat mendukung efisiensi biaya bagi instansi 
+pemerintah. Untuk mendukung validitas sistem, 
+dilakukan pula pengujian kuantitatif terhadap 
+performa teknis aplikasi. Hasilnya menunjukkan 
+bahwa aplikasi memiliki performa yang responsif dan 
+akurat. Waktu rata-rata pemindaian QR code tercatat 
+sebesar 312 milidetik dengan standar deviasi ±28 ms, 
+menunjukkan kemampuan respons yang baik dalam 
+berbagai kondisi jaringan. Tingkat keberhasilan 
+registrasi QR mencapai 99,2%, dengan hanya satu 
+---
+Personal 
+Extreme Programming (PXP), dimulai dari tahap 
+perencanaan kebutuhan hingga pengujian sistem. 
+Sebanyak 27 User Story berhasil diimplementasikan 
+melalui 8 iterasi dengan total 40 Story Points. Hasil 
+pengujian Black-box menunjukkan bahwa seluruh 
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+---
+Sebanyak 27 User Story berhasil diimplementasikan 
+melalui 8 iterasi dengan total 40 Story Points. Hasil 
+pengujian Black-box menunjukkan bahwa seluruh 
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+waktu respons pemindaian QR sebesar 312 ms dan 
+akurasi verifikasi identitas tamu sebesar 98,7%. 
+Dibandingkan dengan aplikasi Guest Management 
+---
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+waktu respons pemindaian QR sebesar 312 ms dan 
+akurasi verifikasi identitas tamu sebesar 98,7%. 
+Dibandingkan dengan aplikasi Guest Management 
+System (GMS) komersial, aplikasi ini memiliki 
+keunggulan dalam hal kustomisasi lokal, pengelolaan 
+data pegawai dan kegiatan, serta potensi integrasi 
+---
+
+--- PRASEPTIAWAN (2025) ---
+falling under the "Excellent" category (Grade A). The development of the mini
+bank website introduced new features, including online payment services for
+tuition fees (SPP), waste banks, and savings. System testing achieved a 99%
+functional success rate, demonstrating the platform’s high usability in the
+school environment. Respondents provided overwhelmingly positive feedback,
+aﬃrming the successful implementation and functionality of the website.
+1. INTRODUCTION
+SMK Negeri 7 Bandar Lampung implemented the teaching
+factory concept through the Mini Bank program as part
+of its efforts to enhance the competencies of accounting
+---
+III. Code Refactoring: Improving existing code for
+better efficiency and maintainability.
+6. System Testing In this stage, the functionality of
+all system features was tested. The testing results
+were presented through unit testing and black-box
+testing. Further testing involved using the System
+Usability Scale (SUS) to validate user acceptance.
+Performance testing was also conducted to ensure
+that the software functioned well and met expected
+standards.
+---
+unit testing and the refactoring process to ensure
+optimal code quality.
+5. System testing
+Testing was conducted using Postman to ensure the
+API functioned correctly, as well as end-to-end (E2E)
+testing with Selenium IDE. The test results showed
+a 99% success rate, indicating that the system was
+operating effectively according to the specifications.
+Figure 2 . Interface design of multi-payment software
+3.2 Application evaluation with System Usability
+---
+==============================
+STAGE: Retrospective
+==============================
+--- DZHUROV (2009) ---
+implementation. 
+In case of requirements change task planning could be revised. Development 
+iterations start with iteration initialization and end with iteration retrospective. 
+During the whole process the developer maintains log files with information 
+regarding tasks planning and actual duration, improvement suggestions and 
+defects count and details. Figure 1 gives an overview of PXP process.
+During the requirements phase a document with the functional and non-
+functional requirements for the system is created. This phase is optional – the 
+requirements document could be generated in a meeting between the client and 
+another employee of the organization the developer is working for, or could 
+---
+Developer should verify whether the implemented solution meets the initial 
+project requirements. All found defects are recorded and fixed.
+Retrospective marks the end of process iteration. An analysis of collected 
+during the other phases data is being made. The developer must verify 
+whether the estimated tasks time equals the actual one, find the reasons for 
+potential delay in order to prevent under- or over estimates in future projects. 
+The developer analyzes all process improvement proposals and, if needed, he 
+could adapt any of the accompanying process practices. Changes addressing 
+problems in the process and practices should happen in earliest stage possible 
+in order to prevent project failures. This phase could end either in a release-
+---
+problems in the process and practices should happen in earliest stage possible 
+in order to prevent project failures. This phase could end either in a release-
+candidate or in a product release. The ‘Retrospective’ phase could start a new 
+iteration by moving in ‘Iteration Initialization’ phase or to mark the end of 
+project development when all client requirements for the software system are 
+met, and there are no remaining open defects.
+4  Implementing Personal eXtreme Programming
+In the current research Microsoft Visual Studio System (VSTS) was employed 
+for the implementation of Personal Extreme Programming. VSTS is a platform 
+of productive and integrated tools during the whole life cycle of software 
+---
+from previous implementations of the process. In this way, the developer could 
+gain the whole potential of PXP planning practice. Furthermore, the developer 
+could adapt his practices to his needs based on retrospectives and suggestions 
+for improvements made in previous iterations and projects.
+Acknowledgements. This work is partly funded by Bulgarian Ministry of Edu­
+cation and Science, NSF.
+References
+Software Engineering Institute, Carnegie Mellon, (August 2005) “The Personal 
+1.	
+Software Process – Body of Knowledge , v.1.0”, http://www.sei.cmu.edu/tsp/tools/
+---
+
+--- MARTHASARI (2018) ---
+to identify functional specification of the system then the 
+iteration phase is started. This phase starts with design step 
+and continue untill the final step, retrospective, which is the 
+end of iteration stage.  
+ 
+ 
+ 
+ 
+ 
+ 
+---
+Refactoring 
+System Testing 
+Retrospective 
+Proceeding of EECSI 2018, Malang - Indonesia, 16-18 Oct 2018
+538
+
+--- PAGE 3 ---
+d. Uploading a book file, this user story is essential as it 
+helps users save book files in softcopy form into the 
+system. 
+---
+
+--- MUSOFA (2025) ---
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+---
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+---
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+---
+
+--- PRASEPTIAWAN (2025) ---

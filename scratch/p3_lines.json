@@ -1,0 +1,856 @@
+﻿[
+    {
+        "Text":  "3. Post Mortem",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Exit",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "1. Create a new task \"fix the Production baseline\" as riori",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "MI. Co leteaece tance testin for code in Production baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Xl. Tested ro m",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The code is developed in iterations and is released as versions.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Each iteration starts with iteration planning and updating the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "designs. The developer maintains three baselines, namely",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development, refactor, and production baselines. After initial code",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development, the code is maintained by versions in the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development baseline. Upon completion of the iteration, the code",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "is integration tested and is moved to refactor baseline to be",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "refactored. After refactoring is completed and acceptance tests are",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "done, the code is moved to the production baseline for release.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "3. Twelve Core Practices Compared",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Table 2 shows the one to one mapping between XP [l] and PXP",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "in terms of the twelve core practices followed by XP followers.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Most of the core practices of XP are applicable to a single person",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "team, while the others can be put into practice with a few",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "modifications.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Table 2: Twelve Core Practices Compared",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Twelve Core",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Practices",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The Planning",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Game",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Small Releases",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Metaphor",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Simple Design",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Testing",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Refactoring",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pair",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programming",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Collective Code",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Ownership",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Continuous",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Int ation",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Extreme Programming (XP)",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The main activity in the planning game is the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "writing-estimation-prioritization back and forth",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "negotiation of stories between programmers and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "customers. The customer and development teams",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "get together to decide on what features of the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "required system will be of maximum value to the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "business.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A simple system containing a useful set of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "features is put into production early and updated",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "fre",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "tl in short cles.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Each project has a \"system of names\" and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "description which helps to guide the development",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "rocess and communication between all arties.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The simplest design is always used to build the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "application as long as it meets the current business",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requirements. Do not worry about future",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requirements as requirements change with time",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "an a .",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Test-driven development is one of XP\u0027s main",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "strengths. Software developed with XP is",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "validated at all times. Before new features are",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "added tests are written to verify the software. The",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "software is then developed to pass these tests.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "This is a technique for improving the design of an",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "existing codebase. Its essence is applying a series",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "of small behavior-preserving transformations that",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "improve the structure of the code. Doing them in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "small ste s reduces the risk of introduci errors.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programmers using XP are paired and write all",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "production code using a single machine per pair.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "This helps the code to be constantly reviewed",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "while being written. Pair Programming has",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "proved to produce high quality code with little or",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "no decrease in productivity.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "All the code belongs to every member Of the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "team, no single member of the team owns a piece",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "of code and anyone can make changes to the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "codebase at any time. This encourages everyone",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "to contribute new ideas to all segments of the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ro•ect.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The aim of continuous integration is to prevent or",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "reduce code from s readin from the main",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "84",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Personal Extreme Programming (PXP)",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "If the developer is working for himself or knows enough to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "stand in for the customer, then one only needs to switch",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "roles (role-playing) during planning. It is a good practice to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "write stories on cards, estimate, prioritize, and track when",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "developing alone. Writing and using stories is a good way to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "break down a big project into smaller chunks that are easier",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "to deal with and mana e.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Early and often releases can be applied as easily with a lone",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "programmer as with a team of developers.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A single person team can use and refine whatever metaphor",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "proves best. Always choose a metaphor that helps you",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "understand the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "of thes stem ouareta about.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "As a lone developer it is easy to maintain a simple design. A",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "solution would be to use the high level design as a goal to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "work towards but develop an alternate design that is simpler",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and better but still delivers all the functionality.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "When writing a new module, programmers should write the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "interface first, then the unit test, and only then go on to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "implement the module. In a single person team test suits can",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "be easily written and used. The developer should test and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "compile his code before putting it into refactor baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Until that int the code sta in the develo ment baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "As a lone programmer one can and should practice",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "refactoring to the hilt except in situations where you don\u0027t",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "have permission to change code you don\u0027t own. The",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "refactored code should be integrated with the production",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "baseline and tested.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "When working as a lone programmer, benefits of pair",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "programming are lost. You could ask a colleague to give",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "you reminders often.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Informal walkthroughs and test first philosophy can be",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "applied.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "If you are the only developer in the project then there is no",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "problem as you own all the source code. However, you will",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "not be benefiting from other programmers\u0027 input. The",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "developer can maintain versions Of code in a repository and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "version-control techniques can be applied.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "If the developer is working alone with no other person",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "makin chan es to the main codebase then there is no",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    }
+]

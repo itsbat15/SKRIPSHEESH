@@ -1,0 +1,1477 @@
+--- HALAMAN 1 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3678 
+PEMANFAATAN METODOLOGI PXP DAN PENGUJIAN USER ACCEPTANCE 
+TESTING (UAT) DALAM PENGEMBANGAN WEBSITE E-KAVLING 
+ 
+Narti Apriyanti, Seftin Fitri Ana Wati, Abdul Rezha Efrat Najaf 
+Sistem Informasi, UPN “Veteran” Jawa Timur 
+Jl. Rungkut Madya No. 1, Gn. Anyar, Surabaya, Jawa Timur 
+nartiapriyanti@gmail.com 
+ 
+ABSTRAK 
+ 
+Di era kemajuan teknologi, transformasi digital telah menjadi suatu keharusan, terutama dalam dunia bisnis. 
+Penyebaran internet yang semakin menjangkau sebagian besar masyarakat indonesia telah mengubah dunia 
+industri, termasuk industri properti real estate. PT. Mutiara Putri Gemilang merupakan sebuah perusahaan 
+properti yang berlokasi di Jombang, Jawa Timur yang saat ini sedang menghadapi tantangan dalam meningkatkan 
+visibilitas dan efisiensi bisnis dengan mengandalkan sistem manual. Sistem manual tersebut menjadi salah satu 
+faktor yang menghambat kinerja perusahaan dalam meningkatkan profitabilitas. Sehingga dilakukan penelitian 
+ini yang bertujuan untuk mengembangkan website penjualan properti secara online (e-kavling) yang digunakan 
+untuk pencatatan transaksi penjualan perusahaan. Pengembangan website e-kavling menggunakan metode 
+Personal Extreme Programming (PXP) serta diimplementasikan menggunakan framework Laravel. Adapun fitur 
+yang disediakan pada website e-kavling yaitu, penjualan properti disertai validasi berkas pembelian dan unggah 
+bukti pembayaran, daftar properti beserta detailnya, landing page, manajemen properti, serta manajemen transaksi 
+untuk menyetujui pembelian. Pengujian yang dilakukan menggunakan metode Black Box Testing yang 
+menghasilkan status sukses bahwa semua fungsi telah berhasil diuji tanpa kendala. Selain itu pengujian Pengguna 
+Acceptance Testing (UAT) juga dilakukan kepada masing-masing role pengguna dengan menggunakan kuisioner 
+yang disebarkan kepada 13 pengguna, 1 direktur, 1 admin dan mencapai keberhasilan 91% yang menandakan 
+sistem termasuk dalam kategori sangat baik. Penelitian ini berhasil mengembangkan sebuah sistem penjualan 
+yang bermanfaat untuk keberlangsungan bisnis perusahaan dalam memudahkan pencatatan data transaksi 
+sehingga data yang dihasilkan tidak tercecer dan dapat disimpan dengan baik melalui sistem.  
+ 
+Kata kunci :  Personal Extreme Programming (PXP), Black Box Testing, User Acceptance Testing, Laravel, E-
+commerce, Kevling 
+ 
+1. 
+PENDAHULUAN 
+Teknologi informasi mengalami kemajuan yang 
+cukup pesat dibuktikan dengan data pengguna internet 
+di Indonesia pada tahun 2024 yang mencapai 79,5% 
+atau menembus 221.563.479 jiwa dari total populasi 
+penduduk Indonesia sebanyak 278.696.200 jiwa pada 
+tahun 2023 [1]. Kemajuan tersebut menjadi pemicu 
+peningkatan produktivitas kerja dan membuat aktivitas 
+teknologi 
+semakin 
+bermunculan 
+di 
+kalangan 
+masyarakat, salah satunya kegiatan jual beli yang 
+terjadi 
+pada 
+e-commerce 
+[2]. 
+E-commerce 
+memberikan pengaruh positif terhadap pertumbuhan 
+ekonomi jangka panjang karena sistem yang dilakukan 
+dipercaya mampu meminimalisir biaya produksi [3]. 
+PT. Mutiara Putri Gemilang merupakan sebuah 
+perusahaan properti real estate yang berdiri pada tahun 
+2022, menjual beberapa tipe properti seperti kaveling 
+siap bangun, berlokasi di Desa/ Kelurahan Gondek, 
+Kecamatan 
+Mojowarno, 
+Kabupaten 
+Jombang, 
+Provinsi Jawa Timur. Kaveling merupakan sebuah 
+properti yang populer di kalangan masyarakat yang 
+mencakup seluruh aset fisik sebidang tanah di suatu 
+wilayah yang dapat digunakan untuk pembangunan 
+tempat tinggal [4]. Keberadaan PT. Mutiara Putri 
+Gemilang belum banyak dikenal oleh masyarakat luas 
+karena masih mengandalkan sistem manual dalam 
+semua proses bisnisnya. Promosi perusahaan terbatas 
+pada penggunaan brosur dan postingan Facebook oleh 
+pemilik perusahaan. Selain itu, penyimpanan data 
+penjualan dan keuangan juga masih menggunakan 
+sistem pencatatan manual melalui pembukuan yang 
+menyebabkan data terpencar dan rawan kehilangan. 
+Oleh karena itu, diperlukan sistem penjualan berbasis 
+online seperti e-commerce untuk mempermudah 
+transaksi dan pencatatan data perusahaan. Terdapat 
+penelitian yang telah dilakukan dengan membahas 
+pengembangan 
+website 
+menggunakan 
+metode 
+Personal Extreme Programming dan Pengguna 
+Acceptance Testing. 
+Berdasarkan penelitian terdahulu dengan topik 
+terkait, dilakukan penelitian untuk merancang dan 
+mengimplementasikan sistem penjualan berbasis 
+online yang memenuhi kebutuhan perusahaan. Metode 
+yang 
+digunakan 
+adalah 
+Personal 
+Extreme 
+Programming (PXP), sebuah variasi dari Extreme 
+Programming 
+(XP) 
+yang 
+merupakan 
+sebuah 
+metodologi paling populer dalam kerangka turunan 
+Agile 
+Development 
+[5]–[7]. 
+Personal 
+Extreme 
+Programming (PXP) dipilih karena cocok digunakan 
+untuk proyek individu, berbeda dengan Extreme 
+Programming (XP) yang mengharuskan keterlibatan 
+tim kecil minimal anggota yang berpasangan untuk 
+saling 
+meninjau 
+satu 
+sama 
+lain 
+dalam 
+pengembangannya [8]. Selain itu, Personal Extreme 
+Programming 
+(PXP) 
+memiliki 
+lebih 
+sedikit 
+dokumentasi sehingga proses yang dilakukan berjalan 
+
+
+--- HALAMAN 2 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3679 
+lebih cepat jika dibandingkan dengan model lainnya 
+[9]. Dalam pengembangannya yaitu menggunakan 
+framework PHP berupa Laravel 10. 
+Selain pengembangan sistem, juga dilakukan 
+pengujian dengan menggunakan metode black box 
+testing dan Pengguna Acceptance Testing (UAT). 
+Black box testing digunakan programmer dan tester 
+untuk menguji apakah fungsionalitas sistem dapat 
+berjalan sesuai dengan yang diinginkan tanpa 
+melakukan pengujian terhadap struktur kode dan 
+backend 
+sistem 
+[10]. 
+Sedangkan 
+Pengguna 
+Acceptance 
+Testing 
+(UAT) 
+dilakukan 
+untuk 
+memastikan bahwa sistem yang dijalankan sesuai 
+dengan kebutuhan pengguna [11], [12]. Sehingga 
+keduanya dapat daling melengkapi dalam memastikan 
+kualitas dan kesiapan sistem sebelum dirilis. 
+Tujuan dilakukan penelitian ini yaitu untuk 
+merancang dan membangun sistem penjualan (e-
+kavling) berbasis website yang terintegrasi dan 
+memenuhi kriteria yang diperlukan untuk diterima dan 
+digunakan oleh pengguna dibuktikan melalui hasil 
+pengujian yang dilakukan. Sistem tersebut dirancang 
+agar memungkinkan pembeli menjelajahi tipe properti 
+siap bangun yang ditawarkan PT. Mutiara Putri 
+Gemilang dengan mudah melalui internet. Proses 
+pencatatan 
+data 
+penjualan 
+dan 
+keuangan 
+diintegrasikan ke dalam sistem untuk menghindari 
+kehilangan 
+data 
+dan 
+meningkatkan 
+efisiensi 
+operasional perusahaan. Selain itu juga disediakan 
+fitur-fitur yang memungkinkan perusahaan untuk 
+memperluas 
+jangkauan 
+promosi 
+dengan 
+mengintegrasikan media sosial dan pemasaran digital. 
+Sehingga penelitian ini diharapkan dapat membantu 
+perusahaan 
+dalam 
+meningkatkan 
+penjualan 
+perusahaan dan pengalaman pengguna. 
+ 
+2. 
+TINJAUAN PUSTAKA 
+Tinjauan 
+pustaka 
+yang 
+digunakan 
+dalam 
+penelitian ini yaitu sebagai berikut. 
+ 
+2.1. Penelitian Terdahulu 
+Penelitian ini dilakukan berdasarkan beberapa 
+referensi dari jurnal terdahulu yang sejenis. Beberapa 
+penelitian tersebut meliputi pembahasan penjualan 
+tanah kaveling yang masih menggunakan proses 
+pencatatan sederhana dengan Microsoft Excel 2007 
+dan sistem pembayaran yang dicatat menggunakan 
+buku agenda, serta penyimpanan berkas berbentuk 
+folder terpisah. Hal ini menyebabkan potensi 
+terjadinya kesalahan pencatatan data transaksi dan 
+risiko kerusakan data. Sebagai hasil dari penelitian 
+tersebut, 
+dikembangkan 
+sebuah 
+website 
+untuk 
+mengelola sistem administrasi perusahaan guna 
+mengatasi masalah kehilangan dan kerusakan data 
+[13].  
+Penelitian selanjutnya menggunakan topik sistem 
+pengawasan tahanan dan barang bukti dengan 
+menjadikan Badan Narkotika Nasional (BNN) tingkat 
+provinsi sebagai tempat studi kasus. Penelitian 
+tersebut dilakukan dengan menggunakan Model View 
+Controller (MVC) sebagai model pengembangan dan 
+Pengguna Acceptance Testing (UAT) untuk mengukur 
+desain sistem yang dikembangkan. Proses administrasi 
+di BNN tersebut masih tidak beraturan dan kesulitan 
+dalam mencari arsip sehingga dilakukan penelitian 
+yang menghasilkan sebuah sistem untuk mengelola 
+proses pengawasan tahanan dan barang bukti [11]. 
+Penelitian 
+lain 
+yang 
+menggunakan 
+pengembangan 
+Rapid 
+Application 
+Development 
+(RAD) dengan pengujian User Acceptance Testing 
+(UAT) 
+dalam 
+pengembangan 
+aplikasi 
+katalog 
+perpustakaan berbasis website. Penelitian tersebut 
+menghasilkan sebuah website yang dapat diterima 
+pengguna ditunjukkan dengan hasil pengujian sebesar 
+80% yang menunjukkan kategori setuju. Dalam arti 
+lain bahwasanya pembuatan website tersebut dapat 
+menyelesaikan 
+permasalahan 
+pengguna 
+dalam 
+pencarian buku ketika tidak berada pada komputer 
+pencarian, sehingga pencarian buku dapat dilakukan 
+kapanpun dan dimanapun [14]. 
+ 
+2.2. Agile Development 
+Agile Development Method merupakan sebuah 
+metode 
+pengembangan 
+perangkat 
+lunak 
+yang 
+menekankan kecepatan, fleksibilitas dan cepat 
+beradaptasi dengan perubahan yang terjadi ketika 
+proses pengembangan sistem [15]. 
+ 
+2.3. Website 
+Website adalah aplikasi yang memuat beberapa 
+halaman yang di dalamnya berisi dokumen atau 
+informasi seperti text, gambar, video, dan suara yang 
+bisa diakses melalui web browser [16]. 
+ 
+2.4. Laravel 
+Laravel adalah sebuah framework PHP yang 
+dirilis dibawah lisensi MIT dengan dumber kode yang 
+sudah disediakan oleh GitHub seperti famework 
+lainnya, 
+dibangun 
+dengan 
+konsep 
+MVC 
+dan 
+dilengkapi command line tool yang bernama “Artisan” 
+yang digunakan untik packaging bundle dan instalasi 
+bundle melalui command prompt[17]. 
+ 
+2.5. Black Box Testing 
+Black Box Testing merupakan jenis pengujian 
+perangkat lunak yang difokuskan untuk menguji 
+fungsionalitas perangkat lunak tanpa memperhatikan 
+struktur internal atau detail kode. Tujuan dilakukannya 
+pengujian ini yaitu untuk memerikasa apakah 
+perangkat lunak memenuhi persyaratan fungsional 
+yang telah ditetapkan termasuk pengujian dari setiap 
+fitur, fungsi, dan interaksi yang diharapkan dari 
+perangkat lunak. Keuntungan menggunakan Black 
+Box Testing yaitu penguji tidak perlu memiliki 
+pengetahuan spesifik terkait bahasa pemrograman dan 
+implementasi sistem[18]. 
+ 
+2.6. User Acceptance Testing (UAT) 
+User Acceptance Testing (UAT) merupakan 
+pengujian yang dilakukan oleh end user dalam hal ini 
+
+
+--- HALAMAN 3 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3680 
+yaitu role pengguna, admin, dan direktur yang 
+langsung 
+berinteraksi 
+dengan 
+sistem 
+untuk 
+memastikan apakah sistem berjalan sesuai dengan 
+kebutuhan/fungsinya serta memenuhi ekspektasi 
+pengguna. Standard pengujian pengguna acceptance 
+menggunakan skala likert yang terdiri dari lima 
+kriteria dan range persentase pada Tabel 1 berikut.  
+ 
+Tabel 1. Kategori Penilaian UAT 
+No 
+Keterangan 
+Kode 
+1. 
+Sangat Tidak Setuju 
+STS 
+2. 
+Tidak Setuju 
+TS 
+3. 
+Netral 
+N 
+4. 
+Setuju 
+S 
+5. 
+Sangat Setuju 
+SS 
+ 
+Selanjutnya kategori bobot berdasarkan rentang 
+persentase User Acceptance Testing untuk menilai 
+kualitas sistem yang diuji diperlihatkan pada Tabel 2 
+berikut[19]. 
+ 
+Tabel 2. Bobot UAT 
+No 
+Keterangan 
+Range 
+1 
+Sangat Buruk 
+0% - 20% 
+2 
+Buruk 
+21% -40% 
+3 
+Cukup 
+41% - 60% 
+4 
+Baik 
+61% - 80% 
+5 
+Sangat Baik 
+81% -100% 
+ 
+3. 
+METODE PENELITIAN 
+Pada bagian ini memuat metode yang digunakan 
+pada pembuatan skripsi. Terdapat 2 metodologi 
+penelitian yang digunakan dalam penelitian yaitu 
+metode pengumpulan data dan metode pengembangan 
+sistem. Penjelasan dan langkah-langkah dari masing-
+masing metodologi yaitu dijelaskan sebagai berikut. 
+ 
+3.1. Metode Pengumpulan Data 
+Terdapat beberapa metode pengumpulan data 
+yang digunakan pada penelitian ini yaitu meliputi. 
+ 
+3.1.1. Metode Wawancara 
+Wawancara dilakukan dengan melakukan 
+tanya jawab kepada Direktur dari PT. Mutiara Putri 
+Gemilang untuk menggali informasi dan kebutuhan 
+perusahaan. Selain itu pada tahapan wawancara juga 
+dilakukan identifikasi proses bisnis yang saat ini 
+dilakukan di perusahaan. 
+ 
+3.1.2. Metode Studi Literatur 
+Studi literatur melibatkan pengumpulan data, 
+analisis, dan penggabungan informasi dari sumber-
+sumber literatur yang sebelumnya didapatkan yang 
+bersumber sari jurnal, buku, skripsi atau tesis, 
+penelitian, dan website terkait. 
+ 
+3.2. Metode Pengembangan Sistem 
+Metode pengembangan sistem yang digunakan 
+yaitu Personal Extreme Programming. Personal 
+Extreme Programming (PXP) mengadopsi beberapa 
+prinsip dasar Extreme Programmin (XP) dengan 
+menekankan pengujian dan perbaikan berkelanjutan, 
+serta mengadopsi prinsip Agile yang cepat dan tanggap 
+terhadap perubahan [20]. Gambar 1 menunjukkan 
+tahapan-tahapan yang terdapat pada metode Personal 
+Extreme Programming (PXP). 
+ 
+ 
+Gambar 1. Tahapan Personal Extreme Programming 
+(PXP) 
+3.2.1. Requirements 
+Tahapan requirements merupakan tahapan 
+yang penting dalam merancang dan membangun 
+sistem karena pada tahapan inilah identifikasi segala 
+kebutuhan pengguna dalam pembuatan sistem akan 
+dilakukan. Pengumpulan kebutuhan dilakukan dengan 
+melakukan wawancara terhadap Direktur dari PT. 
+Mutiara Putri Gemilang. Dari hasil wawancara 
+tersebut maka didapatkan data berupa user story untuk 
+mendokumentasikan kebutuhan pengguna dengan 
+menggunakan bahasa yang mudah dipahami yang 
+sekaligus dipergunakan untuk mendefinisikan fitur di 
+dalam sistem yang akan dibangun. 
+ 
+3.2.2. Planning 
+Tahapan 
+perencanaan 
+berisi 
+penentuan 
+fungsionalitas keseluruhan berdasarkan user story 
+yang telah didapatkan pada tahapan requirements. 
+Proses perencanaan terdiri dari beberapa tahapan 
+meliputi penentuan story points yang digunakan untuk 
+merencanakan estimasi pengerjaan dari masing-
+masing 
+pengguna 
+stories 
+berdasarkan 
+tingkat 
+kesulitannya, 
+penentuan 
+jumlah 
+iterasi 
+yang 
+dibutuhkan dalam pengerjaan proyek, serta penentuan 
+velocity dari masing-masing iterasi. Penentuan skala 
+prioritas dari masing-masing 
+pengguna 
+stories 
+menggunakan metode MoSCoW yang terdiri dari 
+empat kategori prioritas yang meliputi Must-Have (M), 
+Should-Have 
+(S), 
+Could-Have(C), 
+dan 
+Won’t-
+Have(W). 
+
+
+--- HALAMAN 4 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3681 
+3.2.3. Iteration Initialization 
+Tahapan iteration initialization merupakan 
+tahapan dimana pengerjaan dari setiap iterasi dumulai. 
+Pada tahapan ini, sudah diketahui jumlah iterasi dan 
+estimasi waktu pengerjaan yang dibutuhkan dalam 
+sekali iterasi. 
+ 
+3.2.4. Design 
+Tahapan design termasuk tahapan iterasi, yang 
+mana di tahapan design ini merupakan tahapan yang 
+penting dalam pengembangan perangkat lunak karena 
+tahapan design yang menentukan gambaran sistem 
+yang akan dibangun berdasarkan kebutuhan pengguna 
+yang telah diidentifikasi pada tahapan sebelumnya. 
+Design pada metode Personal Extreme Programming 
+(PXP) lebih fleksibel dan ringkas jika dibandingkan 
+dengan pengembangan perangkat lunak lainnya karena 
+PXP menekankan fleksibilitas dan responsifitas 
+terhadap perubahan. Design yang digunakan meliputi 
+desain database dan use case diagram. 
+ 
+3.2.5. Implementation 
+Tahapan implementation berisi tiga tahapan 
+penting 
+dalam 
+metode 
+Personal 
+Extreme 
+Programming yang meliputi unit testing, code, dan 
+refactor. Unit testing berisi tahapan pengujian 
+terhadap 
+masing-masing 
+user 
+story 
+sebelum 
+melakukan pengkodean early detection of issues atau 
+mendeteksi 
+kegagalan 
+yang 
+terjadi 
+sebelum 
+menginvestasikan banyak waktu dalam coding. 
+Kemudian code berisi tahapan penulisan kode untuk 
+mengimplementasikan fitur yang sudah direncanakan. 
+Selanjutnya yaitu refactor, refactor sendiri merupakan 
+proses memperbaiki kode yang sudah ada tanpa 
+mengubah fungsionalitasnya. 
+ 
+3.2.6. System Testing 
+Tahapan system testing menerapkan dua 
+metode, yaitu Black Box Testing dan Pengguna 
+Acceptance Testing (UAT). Black Box Testing 
+merupakan suatu pengujian fungsionalitas sistem yang 
+berfokus pada input dan output sistem serta perilaku 
+eksternal dan internal sistem tanpa memperhatikan 
+struktur kode.  
+ 
+3.2.7. Retrospective 
+Tahapan retrospective disebut juga tahapan 
+evaluasi yang digunakan untuk memperbaiki dan 
+mengoptimalkan proses pengembangan. Pada tahapan 
+ini dilakukan review terkait iterasi yang sebelumnya 
+direncanakan dan iterasi yang telah dijalankan, 
+tujuannya untuk memastikan bahwa tujuan dari 
+masing-masing iterasi dapat tercapai sesuai dengan 
+estimasi yang ditentukan. 
+ 
+4. 
+HASIL DAN PEMBAHASAN 
+Hasil dari penelitian menggunakan metode 
+Personal Extreme Programming yaitu sebagai berikut. 
+ 
+4.1. Requirements 
+Berdasarkan hasil wawancara, diperoleh rincian 
+kebutuhan fungsional dan non fungsional yang 
+dikemas dalam bentuk user story. User story 
+didefinisikan 
+dalam 
+format 
+penulisan 
+seperti 
+“Sebagai<jenis 
+pengguna>saya 
+ingin<melakukan 
+sesuatu>agar dapat<manfaat yang didapatkan dari 
+tindakan tersebut>”. Kebutuhan sistem terhadap 
+pengguna, admin, dan direktur dapat dideskripsikan 
+dalam Tabel 3 di bawah. 
+ 
+Tabel 3. User Stories 
+Kode 
+User Stories 
+Story-
+01 
+Sebagai direktur dan admin, kami ingin login 
+ke sistem sehingga dapat mengakses sistem 
+Story-
+02 
+Sebagai direktur, saya ingin melihat berkas 
+administrasi sehingga saya dapat memvalidasi 
+pembayaran 
+Story-
+03 
+Sebagai direktur, saya ingin memvalidasi 
+pembayaran sehingga saya dapat 
+mengonfirmasi pembayaran. 
+Story-
+04 
+Sebagai direktur dan admin, saya ingin 
+melakukan live chat sehingga saya dapat 
+melakukan tanya jawab kepada pembeli. 
+Story-
+05 
+Sebagai admin, saya ingin memvalidasi berkas 
+administrasi sehingga saya dapat mamastikan 
+berkas tersebut valid. 
+Story-
+06 
+Sebagai admin, saya ingin dapat melihat 
+informasi pembayaran sehingga saya dapat 
+mengontrol data pembayaran. 
+Story-
+07 
+Sebagai seorang admin, saya ingin mengelola 
+properti sehingga saya dapat menyesuaikan 
+properti yang terdapat pada sistem dengan 
+properti aslinya. 
+Story-
+08 
+Sebagai pengguna, saya ingin login dan 
+register sehingga saya dapat menikmati fitur 
+yang terdapat pada sistem. 
+Story-
+09 
+Sebagai pengguna, saya ingin unggah berkas 
+administrasi yang valid sehingga ajuan 
+pembelian saya dapat disetujui. 
+Story-
+10 
+Sebagai pengguna, saya ingin mengunggah 
+bukti pembayaran sehingga pembayaran 
+terkonfirmasi 
+Story-
+11 
+Sebagai pengguna, saya ingin melakukan live 
+chat sehingga saya dapat melakukan tanya 
+jawab dgn perusahaan 
+Story-
+12 
+Sebagai pengguna, saya ingin melihat properti 
+beserta detail properti sehingga saya dapat 
+mengakses informasi sebelum melakukan 
+pembelian. 
+Story-
+13 
+Sebagai pengguna, saya ingin melihat rincian 
+pembelian sehingga saya dapat memantau 
+proses pembelian. 
+Story-
+14 
+Sebagai pengguna, saya ingin melihat landing 
+page perusahaan sehingga saya mengetahui 
+profil perusahaan secara detail 
+ 
+4.2. Planning 
+Output dari tahapan planning yaitu berupa iterasi 
+yang terdapat pada Tabel 4. 
+ 
+ 
+ 
+
+
+--- HALAMAN 5 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3682 
+Tabel 4. User Planning 
+Iterasi 
+Kode 
+Prioritas 
+Points 
+Iterasi 1 
+Story-08 
+Must Have 
+1 
+Story-01 
+Must Have 
+3 
+Story-07 
+Must Have 
+3 
+Story-12 
+Must Have 
+2 
+velocity 
+9 
+Iterasi 2 
+Story-04 
+Must Have 
+3 
+Story-11 
+Must Have 
+3 
+Story-09 
+Must Have 
+3 
+Story-10 
+Must Have 
+5 
+velocity 
+12 
+Iterasi 3 
+Story-05 
+Must Have 
+2 
+Story-02 
+Should Have 
+1 
+Story-03 
+Must Have 
+3 
+Story-06 
+Should Have 
+2 
+Story-13 
+Must Have 
+3 
+velocity 
+11 
+ 
+4.3. Design 
+Pada tahapan design dibuat use case diagram 
+untuk menggambarkan interaksi antara aktor dengan 
+sistem serta Entity Relationship Diagram (ERD) yang 
+digunakan untuk menggambarkan database.  
+ 
+ 
+Gambar 2. Use Case E-Kavling 
+ 
+Gambar 2 merupakan use case diagram dari e-
+kavling. Terdapat 3 role yang berhubungan dengan 
+sistem yaitu user, admin, dan direktur. Setiap aktor 
+memiliki akses yang berbeda-beda. User merupakan 
+pembeli yang ingin membeli properti melalui sistem, 
+admin merupakan role yang bertugas untuk mengelola 
+seluruh aktivitas pada website, dan direktur yaitu role 
+yang bertugas menyetujui pembayaran yang telah 
+dilakukan pembeli.  
+Entity Relationship Diagram (ERD) pada 
+Gambar 3 menggambarkan entitas dan atribut yang 
+digunakan dalam pembuatan sistem beserta relasi yang 
+saling terhubung satu sama lain. Dalam framework 
+laravel, ERD diimplementasikan menggunakan model 
+Eloquent yang telah disediakan oleh Laravel, 
+digunakan 
+untuk berinteraksi dengan database 
+menggunakan representasi objek. Entitas dalam 
+Laravel direpresentasikan sebagai model Eloquent 
+yang mana setiap model Eloquent dapat mewakili satu 
+tabel dalam database. 
+ 
+ 
+Gambar 3. Entity Relationship Diagram (ERD) E-
+Kavling 
+ 
+4.4. Implementation 
+Tahap 
+implementasi 
+merupakan 
+tahapan 
+direalisasikan perancangan sistem yang telah dibuat 
+agar dapat diakses oleh pengguna. Hasil cuplikan 
+implementasi code pada iterasi 1-3 sesuai dengan 
+perencanaan pada website e-kavling yaitu sebagai 
+berikut. 
+ 
+a) 
+Tampilan Story-15 
+ 
+ 
+Gambar 4. Halaman Landing Page Perusahaan 
+ 
+Story-15 berisi tampilan halaman landing page 
+perusahaan. Landing page perusahaan merupakan 
+halaman awal yang ditampilkan setelah pengguna 
+mengakses website e-kavling. Landing page menjadi 
+salah satu halaman penting yang harus ditampilkan 
+pada website sebagai media promosi perusahaan agar 
+pengguna merasa yakin untuk membeli properti yang 
+dijual pada perusahaan tersebut. Halaman landing 
+page dapat dilihat pada Gambar 4. 
+
+
+--- HALAMAN 6 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3683 
+b) 
+Tampilan Story-07 
+ 
+ 
+Gambar 5. Halaman Properti 
+ 
+Story-07 berisi tampilan admin untuk mengelola 
+properti. Halaman tersebut digunakan oleh admin 
+untuk melakukan tambah, edit, dan hapus properti 
+yang akan ditampilkan pada user. Sebaliknya, direktur 
+hanya dapat melihat properti yang telah dibuat. Selain 
+itu, untuk menambahkan properti baru, admin 
+diharuskan sudah membuat kategori properti terlebih 
+dahulu. Halaman properti pada admin dapat dilihat 
+pada Gambar 5. 
+ 
+c) 
+Tampilan Story-10 
+ 
+ 
+Gambar 6. Halaman Properti Pengguna 
+ 
+Story-10 berisi halaman properti keseluruhan 
+beserta detail dari masing-masing properti. Pada 
+Gambar 6 ditampilkan halaman properti yang terdapat 
+pada pengguna, halaman tersebut jika di klik pada 
+bagian nama propertinya maka akan memunculkan 
+detail properti. Pada halaman detail properti terdapat 
+informasi keseluruhan seperti harga, deskripsi, lokasi, 
+dan informasi lainnya. Selain itu juga terdapat fitur 
+untuk menambahkan ke wishlist, live chat, dan beli 
+properti. 
+ 
+d) 
+Tampilan Story-10 
+Story-10 
+berisi 
+halaman 
+memilih 
+metode 
+pembayaran beserta unggah bukti pembayaran yang 
+telah dilakukan. Pilih metode pembayaran tersedia 
+pada halaman konfirmasi pembelian dan unggah bukti 
+pembayaran dapat dilihat pada Gambar 7. Terdapat 2 
+metode pembayaran yang dapat dilakukan oleh 
+pengguna, 
+yaitu 
+pembayaran 
+cash/KPR 
+dan 
+pembayaran inhouse.  
+ 
+Gambar 7. Halaman Unggah Bukti Pembayaran 
+ 
+4.5. System Testing 
+Pengujian black box dilakukan oleh developer di 
+semua iterasi yang terdapat pada sistem. Pada 
+pengujian ini hanya diambil beberapa sampel 
+pengujian yang telah dilakukan yaitu pada fitur 
+validasi berkas pembelian yang terdapat pada sisi 
+admin. 
+Pengujian dilakukan pada bagian validasi berkas 
+oleh admin untuk memastikan bahwa fungsionalitas 
+sistem telah berjalan dengan baik. Pengujian Story-05 
+dapat dilihat pada Tabel 5. 
+ 
+Tabel 5. Pengujian Validasi Berkas 
+No 
+Skenario 
+Hasil yang 
+Diharapkan 
+Hasil 
+Pengujian 
+Status 
+Alur Normal 
+1 
+Klik tombol 
+validasi 
+berkas 
+Mengalihkan 
+ke halaman 
+validasi 
+berkas 
+Mengalihkan 
+ke halaman 
+validasi berkas
+Sukses 
+2 
+Admin 
+mengganti 
+status 
+validasi 
+berkas 
+Status validasi 
+berkas 
+otomatis 
+terupdate 
+Status validasi 
+berkas 
+otomatis 
+terupdate 
+Sukses 
+3 
+Admin 
+dapat 
+menghapus 
+data 
+validasi 
+berkas 
+Validasi 
+berkas 
+berhasil 
+terhapus dari 
+sistem dan 
+database 
+Validasi 
+berkas 
+berhasil 
+terhapus dari 
+sistem dan 
+database 
+Sukses 
+ 
+Dilakukan pengujian sistem secara langsung 
+dengan end user dengan metode User Acceptance 
+Testing menggunakan media kuisioner. Pertanyaan 
+yang digunakan pada kuisioner user acceptance 
+testing yaitu terdiri dari pertanyaan terkait desain, 
+kemudahan, dan efisiensi seperti pada Tabel 6. 
+ 
+Tabel 6. Kuisioner User Acceptance Testing 
+No. 
+Variabel 
+Pertanyaan 
+1 
+Desain 
+Apakah tampilan website e-kavling 
+secara keseluruhan menarik? 
+2 
+Apakah menu atau fitur website e-
+kavling mudah dipahami? 
+3 
+Apakah pemilihan warna dan latar 
+belakang (background) e-kavling 
+sesuai? 
+4 
+Kemudahan 
+Apakah menu atau fitur pada e-
+kavling mudah dipahami dan sesuai 
+dengan keinginan (user friendly) 
+
+
+--- HALAMAN 7 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3684 
+No. 
+Variabel 
+Pertanyaan 
+5 
+Apakah detail informasi pada 
+properti seperti harga, luas, lokasi, 
+fasilitas dan detail lainnya mudah 
+diakses? 
+6 
+Apakah sistem pencarian properti 
+pada website e-kavling memberikan 
+hasil yang relevan dengan kriteria 
+yang anda masukkan? 
+7 
+Apakah website e-kavling 
+memberikan panduan yang memadai 
+untuk membantu proses pencarian 
+dan pembelian properti? 
+8 
+Efisiensi 
+Apakah fitur live chat pada website e
+kavling membantu anda dengan cepa
+mendapatkan jawaban atas 
+pertanyaan atau kebutuhan terkait 
+properti? 
+9 
+Apakah informasi ketersediaan 
+properti lebih cepat diketahui 
+dengan website e-kavling? 
+10 
+Apakah proses pembelian properti 
+lebih cepat dilakukan dengan 
+menggunakan website e-kavling? 
+ 
+Pengujian user acceptance testing dilakukan 
+dengan melakukan penyebaran kuisioner kepada 1 
+direktur, 1 admin, dan 13 pengguna yang hasilnya 
+yaitu tertulis pada Tabel 7 berikut. 
+ 
+Tabel 7. Hasil Pengujian User Acceptance Testing 
+Pertanyaan 
+Frekuensi Jawaban 
+SS 
+S 
+N 
+TS 
+STS 
+P1 
+10 
+5 
+- 
+- 
+- 
+P2 
+6 
+9 
+- 
+- 
+- 
+P3 
+10 
+5 
+- 
+- 
+- 
+P4 
+12 
+2 
+1 
+- 
+- 
+P5 
+9 
+6 
+- 
+- 
+- 
+P6 
+8 
+   4 
+3 
+- 
+- 
+P7 
+8 
+5 
+2 
+- 
+- 
+P8 
+9 
+5 
+1 
+- 
+- 
+P9 
+11 
+4 
+- 
+- 
+- 
+P10 
+9 
+5 
+1 
+- 
+- 
+Total 
+92 
+50 
+8 
+0 
+0 
+ 
+Dari hasil kuisioner yang diperoleh, kemudian 
+dianalisis dengan menghitung rata-rata jawaban 
+berdasarkan skor yang diperoleh dari setiap jawaban. 
+Berdasarkan skor yang ditetapkan maka dapat dihitung 
+sebagai berikut. 
+Total skor pengguna yang 
+menjawab SS   
+= 92 x 5 
+= 460 
+Total skor pengguna yang 
+menjawab S      
+= 50 x 4 
+= 200 
+Total skor pengguna yang 
+menjawab N      
+= 8 x 3 
+= 24 
+Total skor pengguna yang 
+menjawab TS    
+= 0 x 2 
+= 0 
+Total skor pengguna yang 
+menjawab STS  
+= 0 x 1 
+= 0 
+ Jumlah Total Skor 
+ 
+= 684 
+Hasil jawaban yang diperoleh dari 13 pengguna 
+dapat dijadikan dasar untuk menghitung nilai tertinggi 
+dan terendah, seperti yang terlihat di bawah ini 
+ Skor tertinggi = 15 x 10 x 5 = 750 (jika jawab SS 
+semua) 
+ Skor terendah = 15 x 10 x 1 = 150 (jika jawab STS 
+semua) 
+Skor tertinggi yang ditemukan digunakan sebagai 
+dasar 
+untuk 
+menghitung 
+persentase 
+dengan 
+menggunakan rumus berikut. 
+  
+ 
+%
+91
+%
+100
+750
+684
+%
+100
+
+
+
+x
+x
+Tertinggi
+Nilai
+Total
+Skor
+Jumlah
+  
+        (1) 
+ 
+Selain 
+itu 
+dilakukan 
+pengujian 
+terkait 
+responsivitas halaman e-kavling di beberapa browser 
+dan perangkat yang berbeda. Hasil pengujian halaman 
+tidak ditampilkan, namun disajikan dalam Tabel 8 
+berikut ini. 
+ 
+Tabel 8. Pengujian Responsivitas  
+No 
+Halaman 
+Chrome 
+Edge 
+Android 
+iOS 
+1 
+Login & 
+Register 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+2 
+Validasi 
+Berkas 
+[Y] 
+[Y] 
+[N] 
+[N] 
+3 
+Validasi 
+Pembayaran 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+4 
+Live Chat 
+[Y] 
+[Y] 
+[N] 
+[N] 
+5 
+Kelola 
+Properti 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+6 
+Unggah 
+Berkas 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+7 
+Unggah 
+Pembayaran 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+8 
+Detail 
+Properti 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+9 
+Rincian 
+Pembelian 
+[Y] 
+[Y] 
+[Y] 
+[Y] 
+10 
+Landing 
+Page 
+[Y] 
+[Y] 
+[N] 
+[N] 
+ 
+Hasil pengujian responsivitas menunjukkan 
+sebagian besar halaman responsif di beberapa browser 
+dan perangkat kecuali halaman live chat, validasi 
+berkas, dan landing page yang kurang responsif di 
+perangkat android dan Ios. 
+Catatan: Pilihan “Yes” [Y] menunjukkan bahwa 
+halaman website responsif terhadap perangkat yang 
+dipakai dan “No” [N] menunjukkan bahwa halaman 
+website tidak responsif terhadap perangkat yang 
+dipakai. 
+Sehingga 
+didapatkan 
+kesimpulan 
+bahwa 
+berdasarkan Tabel 2 yang berisi bobot user acceptance 
+testing, maka hasil perhitungan user acceptance 
+testing dapat dikategorikan sangat baik karena berada 
+dalam rentang antara 81%-100%. Dari hasil kuisioner 
+
+
+--- HALAMAN 8 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3685 
+yang diisi oleh 15 pengguna dari role yang berbeda, 
+diperoleh hasil persentase jawaban sebesar 91% yang 
+menunjukkan bahwa website e-kavling telah berhasil 
+memenuhi kebutuhan pengguna di PT. Mutiara Putri 
+Gemilang. 
+ 
+4.6. Retrospective 
+Tahapan retrospective berisi evaluasi antara 
+estimasi waktu yang ditentukan pada iterasi dan 
+pengerjaan yang dilakukan. Pada Tabel 9 merupakan 
+cuplikan retrospective pada Iterasi 1 yang dikerjakan 
+tepat sesuai estimasi. 
+ 
+Tabel 9. Retrospective Iterasi 1 
+User Story 
+Story Points/ 
+Estimasi 
+Pengerjaan 
+Story-01 
+3 
+3 
+Story-07 
+3 
+3 
+Story-08 
+1 
+1 
+Story-15 
+1 
+1 
+Story-12 
+2 
+2 
+ 
+5. 
+KESIMPULAN DAN SARAN 
+Pengembangan 
+website 
+e-kavling 
+untuk 
+penjualan properti di PT. Mutiara Putri Gemilang 
+menggunakan 
+metode 
+Personal 
+Extreme 
+Programming 
+dan 
+framework 
+Laravel 
+dengan 
+dilakukan iterasi sebanyak 3 kali. Hasilnya yaitu 
+berupa website e-kavling yang memiliki fitur 
+penjualan properti disertai validasi berkas pembelian 
+dan unggah bukti pembayaran, daftar properti beserta 
+detailnya, landing page, manajemen properti, serta 
+manajemen transaksi untuk menyetujui pembelian 
+yang responsif terhadap beberapa perangkat. Website 
+e-kavling telah diuji menggunakan metode Black Box 
+dan User Acceptance Testing (UAT) yang dilakukan 
+kepada 1 direktur, 1 admin, dan 1 pengguna dengan 
+persentase 
+keberhasilan 
+sebanyak 
+91% 
+yang 
+dikategorikan sangat baik.  
+Berdasarkan pengujian yang dilakukan maka 
+disimpulkan bahwa website e-kavling berjalan sesuai 
+dengan 
+kebutuhan/fungsinya 
+serta 
+memenuhi 
+ekspektasi pengguna. Saran untuk pengembangan 
+selanjutnya yaitu agar ditambahkan fitur legalisasi 
+sertifikat tanah dalam website e-kavling, sehingga 
+pembeli dapat mengetahui history penerbitan sertifikat 
+yang dilakukan oleh developer. 
+ 
+DAFTAR PUSTAKA  
+[1] APJII, 
+“APJII 
+Jumlah 
+Pengguna 
+Internet 
+Indonesia Tembus 221 Juta Orang,” 2024. 
+https://apjii.or.id/berita/d/apjii-jumlah-
+pengguna-internet-indonesia-tembus-221-juta-
+orang (accessed Mar. 28, 2024). 
+[2] S. K. Hery Nuryanto, Sejarah Perkembangan 
+Teknologi dan Komunikasi, 1st ed. Jakarta 
+Timur, 
+2012. 
+[Online]. 
+Available: 
+https://books.google.co.id/books?hl=en&lr=&id
+=d5jJDAAAQBAJ&oi=fnd&pg=PA1&dq=Nur
+yanto,+Hery.+Sejarah+Perkembangan+Teknolo
+gi+dan+Komunikasi&ots=CShJWxx8Bj&sig=Z
+ImtD6cvKEB10BxlJx607KE0DQ8&redir_esc=
+y#v=onepage&q=Nuryanto%2C Hery. Sejarah 
+Perkembangan Teknolo 
+[3] R. G. F. Dianari, “Pengaruh E-Commerce 
+Terhadap Pertumbuhan Ekonomi Indonesia,” 
+Bina Ekon., vol. 22, no. 1, pp. 43–62, 2019, doi: 
+10.26593/be.v22i1.3619.45-64. 
+[4] K. Kadarsih and S. Andrianto, “Membangun 
+Website 
+Cv. 
+Marisa 
+Kavling 
+Baturaja 
+Menggunakan Php Dan Mysql,” JTIM J. Tek. 
+Inform. Mahakarya, vol. 03, no. 2, pp. 37–44, 
+2022. 
+[5] R. Hoda, N. Salleh, J. Grundy, and H. M. Tee, 
+“Systematic literature reviews in agile software 
+development: A tertiary study,” Inf. Softw. 
+Technol., vol. 85, pp. 60–70, 2017, doi: 
+10.1016/j.infsof.2017.01.007. 
+[6] M. Ulfi, G. I. Marthasari, and I. Nuryasin, 
+“Implementasi 
+Metode 
+Personal 
+Extreme 
+Programming dalam Pengembangan Sistem 
+Manajemen Transaksi Perusahaan (Studi Kasus : 
+CV. Todjoe Sinar Group),” J. Repos., vol. 2, no. 
+3, 
+pp. 
+261–268, 
+2020, 
+doi: 
+10.22219/repositor.v2i3.619. 
+[7] H. 
+J. 
+Meeker, 
+“Software 
+Development,” 
+Bioinformatics, Med. Informatics Law, pp. 70–
+79, 2022, doi: 10.1145/638750.638777. 
+[8] R. Agarwal, D. Umphress, D. Hall, U. Auburn, 
+D. Hall, and U. Auburn, “Pemrograman Ekstrem 
+untuk Tim Satu Orang,” pp. 82–87, 2008. 
+[9] R. Anjuliani, L. W. Astuti, and H. Hartini, 
+“Aplikasi Isc (Informatics Student Center) 
+Menggunakan 
+Metode 
+Personal 
+Extreme 
+Programming Berbasis Android,” J. Ilm. Inform. 
+Glob., vol. 6, no. 1, pp. 20–25, 2016, doi: 
+10.36982/jiig.v6i1.12. 
+[10] T. S. Jaya, “Pengujian Aplikasi dengan Metode 
+Blackbox Testing Boundary Value Analysis 
+(Studi Kasus: Kantor Digital Politeknik Negeri 
+Lampung),” J. Inform. J. Pengemb. IT, vol. 3, no. 
+1, pp. 45–48, 2018, doi: 10.30591/jpit.v3i1.647. 
+[11] O. Rizan, H. Hamidah, D. Wahyuningsih, and S. 
+Sarwindah, “Prisoner and Goods Control System 
+Design Evidence Using MVC and UAT Models 
+at the Provincial National Narcotics Agency,” J. 
+Sisfokom (Sistem Inf. dan Komputer), vol. 11, no. 
+1, 
+pp. 
+114–119, 
+2022, 
+doi: 
+10.32736/sisfokom.v11i1.1380. 
+[12] R. Novita, I. Yani, and G. Ali, “Sistem Prediksi 
+untuk Penentuan Jumlah Pemesanan Obat 
+Menggunakan 
+Regresi 
+Linier,” 
+MALCOM 
+Indones. J. Mach. Learn. Comput. Sci., vol. 2, no. 
+1, 
+pp. 
+62–70, 
+2022, 
+doi: 
+10.57152/malcom.v2i1.198. 
+[13] J. P. Sari, “Beserta Pengurusan Sertifikatnya 
+Pada Cv . Sajasa Banjarmasin Berbasis Web,” 
+Uniska, 2018. 
+[14] D. Azzahra and S. Ramadhani, “Pengembangan 
+Aplikasi Online Public Access Catalog (Opac) 
+Perpustakaan 
+Berbasis 
+Web 
+Pada 
+Stai 
+
+
+--- HALAMAN 9 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3686 
+Auliaurrasyiddin Tembilahan,” J. Teknol. Dan 
+Sist. Inf. Bisnis, vol. 2, no. 2, pp. 152–160, 2020, 
+doi: 10.47233/jteksis.v2i2.127. 
+[15] R. Pamungkas, “Implementasi Model Personal 
+Extreme 
+Programming,” 
+2019, 
+[Online]. 
+Available: 
+http://repository.unej.ac.id/handle/123456789/9
+0122 
+[16] Penda Sudarto Hasugian, “Perancangan Website 
+Sebagai Media Promosi Dan Informasi,” J. 
+Inform. Pelita Nusant., vol. 3, no. 1, pp. 82–86, 
+2018. 
+[17] N. Aziz Amirudin, Rosita, Yesy Diah, Yanuarini, 
+“SISTEM 
+INFORMASI 
+PEMANTAUAN 
+PENGGUNAAN ANGGARAN DANA DESA 
+DI 
+DESA 
+GAMBIRAN 
+KECAMATAN 
+MOJOAGUNG KABUPATEN JOMBANG,” 
+Universitas Islam Majapahit, 2020. [Online]. 
+Available: 
+http://repository.unim.ac.id/id/eprint/2967 
+[18] S. Nidhra, “Black Box and White Box Testing 
+Techniques - A Literature Review,” Int. J. 
+Embed. Syst. Appl., vol. 2, no. 2, pp. 29–50, 2012, 
+doi: 10.5121/ijesa.2012.2204. 
+[19] D. R. Mahendra, R. D. Gunawan, and F. Ariany, 
+“Aplikasi Pengelolaan Keuangan UMKM Toko 
+Kripik Pisang Asa Cipto Roso Menggunakan 
+Framework Laravel,” Swarnadwipa, vol. 1, no. 1, 
+pp. 
+29–34, 
+2023, 
+[Online]. 
+Available: 
+https://jurnal.kertekmedia.com/index.php/media
+swarnadwipa/article/view/27 
+[20] S. Dzhurov, Y., Krasteva, I. dan Ilieva, “Personal 
+Extreme Programming – An Agile Process for 
+Autonomous Developers Personal Extreme 
+Programming 
+– 
+An 
+Agile 
+Process 
+for 
+Autonomous 
+Developers,” 
+Choos. 
+Secur. 
+Passwords., no. January 2015, 2014, [Online]. 
+Available: 
+https://research.uni-
+sofia.bg/bitstream/10506/647/1/S3T2009_37_Y
+Dzhurov_IKrasteva_SIlieva.pdf
+ 
+

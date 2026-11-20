@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #ffffff; overflow: hidden; width: 2240px; height: 1580px; }
+  svg { display: block; width: 2240px; height: 1580px; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2240 1580" width="2240" height="1580">
+  <defs>
+    <style>
+      .title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #000000; }
+      .sub-title { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; fill: #444444; }
+      .legend-box { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; fill: #000000; text-anchor: middle; }
+      .ent-label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13.5px; font-weight: bold; fill: #000000; text-anchor: middle; }
+      .att-label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; fill: #000000; text-anchor: middle; }
+      .att-pk { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: bold; text-decoration: underline; fill: #000000; text-anchor: middle; }
+      .rel-label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #000000; text-anchor: middle; }
+      .card-label { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: bold; fill: #000000; }
+      .line-solid { stroke: #000000; stroke-width: 1.5; fill: none; }
+      .line-att { stroke: #000000; stroke-width: 1.1; fill: none; }
+      .box-ent { fill: #ffffff; stroke: #000000; stroke-width: 1.8; }
+      .box-att { fill: #ffffff; stroke: #000000; stroke-width: 1.2; }
+      .box-rel { fill: #ffffff; stroke: #000000; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect width="2240" height="1580" fill="#ffffff" />
+
+  <!-- Title -->
+  <text x="50" y="42" class="title">Entity Relationship Diagram (ERD) - Notasi Peter Chen</text>
+  <text x="50" y="62" class="sub-title">Pemodelan Konseptual Basis Data Relasional Sistem Informasi ARTHA</text>
+
+  <!-- Legend -->
+  <g transform="translate(1250, 26)">
+    <rect width="940" height="42" rx="4" ry="4" fill="#FAFAFA" stroke="#000000" stroke-width="1.2" />
+    <text x="470" y="26" class="legend-box"><b>Standar Notasi Peter Chen (1976):</b> &#160; [ Persegi Panjang ] = Entitas &#160;|&#160; ( Elips ) = Atribut &#160;|&#160; <u>Garis Bawah</u> = Kunci Utama (PK) &#160;|&#160; &lt; Belah Ketupat &gt; = Relasi &#160;|&#160; 1 / N = Rasio Kardinalitas</text>
+  </g>
+
+  <!-- ================= 1. ENTITY: branches ================= -->
+  <rect x="460" y="280" width="140" height="45" class="box-ent" />
+  <text x="530" y="308" class="ent-label">branches</text>
+
+
+
+
+
+
+
+  <!-- ================= 2. ENTITY: users ================= -->
+  <rect x="200" y="650" width="140" height="45" class="box-ent" />
+  <text x="270" y="678" class="ent-label">users</text>
+
+
+
+
+
+
+
+  <!-- ================= 3. ENTITY: daily_reconciliations ================= -->
+  <rect x="200" y="1180" width="180" height="45" class="box-ent" />
+  <text x="290" y="1208" class="ent-label">daily_reconciliations</text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================= 4. ENTITY: study_groups ================= -->
+  <rect x="1050" y="280" width="150" height="45" class="box-ent" />
+  <text x="1125" y="308" class="ent-label">study_groups</text>
+
+
+
+
+
+
+
+
+  <!-- ================= 5. ENTITY: course_packages ================= -->
+  <rect x="1750" y="280" width="160" height="45" class="box-ent" />
+  <text x="1830" y="308" class="ent-label">course_packages</text>
+
+
+
+
+
+
+
+
+  <!-- ================= 6. ENTITY: students ================= -->
+  <rect x="600" y="650" width="140" height="45" class="box-ent" />
+  <text x="670" y="678" class="ent-label">students</text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================= 7. ENTITY: enrollments ================= -->
+  <rect x="1150" y="650" width="140" height="45" class="box-ent" />
+  <text x="1220" y="678" class="ent-label">enrollments</text>
+
+
+
+
+
+
+  <!-- ================= 8. ENTITY: tuition_bills ================= -->
+  <rect x="1150" y="1000" width="140" height="45" class="box-ent" />
+  <text x="1220" y="1028" class="ent-label">tuition_bills</text>
+
+
+
+
+
+
+
+  <!-- ================= 9. ENTITY: payments ================= -->
+  <rect x="1750" y="1000" width="140" height="45" class="box-ent" />
+  <text x="1820" y="1028" class="ent-label">payments</text>
+
+
+
+
+
+
+
+  <!-- ================= 10. ENTITY: payment_proofs ================= -->
+  <rect x="1750" y="1340" width="150" height="45" class="box-ent" />
+  <text x="1825" y="1368" class="ent-label">payment_proofs</text>
+
+
+
+
+
+
+
+  <!-- ================= 14 RELATIONSHIPS (DIAMONDS & LINES) ================= -->
+
+  <!-- 1. branches -[1]- <Memiliki> -[N]- users -->
+  <polygon points="392,470 445,495 392,520 340,495" class="box-rel" />
+  <text x="392" y="499" class="rel-label">Memiliki</text>
+  <line x1="488" y1="325" x2="392" y2="470" class="line-solid" />
+  <text x="465" y="355" class="card-label">1</text>
+  <line x1="392" y1="520" x2="298" y2="650" class="line-solid" />
+  <text x="315" y="630" class="card-label">N</text>
+
+  <!-- 2. branches -[1]- <Mengelola> -[N]- study_groups -->
+  <polygon points="865,278 920,303 865,328 810,303" class="box-rel" />
+  <text x="865" y="307" class="rel-label">Mengelola</text>
+  <line x1="600" y1="303" x2="810" y2="303" class="line-solid" />
+  <text x="630" y="295" class="card-label">1</text>
+  <line x1="920" y1="303" x2="1050" y2="303" class="line-solid" />
+  <text x="1015" y="295" class="card-label">N</text>
+
+  <!-- 3. branches -[1]- <Menaungi> -[N]- students -->
+  <polygon points="632,470 685,495 632,520 580,495" class="box-rel" />
+  <text x="632" y="499" class="rel-label">Menaungi</text>
+  <line x1="572" y1="325" x2="632" y2="470" class="line-solid" />
+  <text x="585" y="360" class="card-label">1</text>
+  <line x1="632" y1="520" x2="656" y2="650" class="line-solid" />
+  <text x="635" y="625" class="card-label">N</text>
+
+  <!-- 4. students -[1]- <Mengambil> -[N]- enrollments -->
+  <polygon points="985,648 1040,673 985,698 930,673" class="box-rel" />
+  <text x="985" y="677" class="rel-label">Mengambil</text>
+  <line x1="740" y1="673" x2="930" y2="673" class="line-solid" />
+  <text x="765" y="665" class="card-label">1</text>
+  <line x1="1040" y1="673" x2="1150" y2="673" class="line-solid" />
+  <text x="1115" y="665" class="card-label">N</text>
+
+  <!-- 5. study_groups -[1]- <Ditempati> -[N]- enrollments -->
+  <polygon points="1142,470 1195,495 1142,520 1090,495" class="box-rel" />
+  <text x="1142" y="499" class="rel-label">Ditempati</text>
+  <line x1="1125" y1="325" x2="1142" y2="470" class="line-solid" />
+  <text x="1135" y="360" class="card-label">1</text>
+  <line x1="1142" y1="520" x2="1185" y2="650" class="line-solid" />
+  <text x="1170" y="625" class="card-label">N</text>
+
+  <!-- 6. course_packages -[1]- <Ditawarkan> -[N]- enrollments -->
+  <polygon points="1505,470 1560,495 1505,520 1450,495" class="box-rel" />
+  <text x="1505" y="499" class="rel-label">Ditawarkan</text>
+  <line x1="1782" y1="325" x2="1560" y2="495" class="line-solid" />
+  <text x="1745" y="365" class="card-label">1</text>
+  <line x1="1450" y1="495" x2="1255" y2="650" class="line-solid" />
+  <text x="1275" y="630" class="card-label">N</text>
+
+  <!-- 7. enrollments -[1]- <Menerbitkan> -[N]- tuition_bills -->
+  <polygon points="1220,830 1280,855 1220,880 1160,855" class="box-rel" />
+  <text x="1220" y="859" class="rel-label">Menerbitkan</text>
+  <line x1="1220" y1="695" x2="1220" y2="830" class="line-solid" />
+  <text x="1228" y="735" class="card-label">1</text>
+  <line x1="1220" y1="880" x2="1220" y2="1000" class="line-solid" />
+  <text x="1228" y="970" class="card-label">N</text>
+
+  <!-- 8. tuition_bills -[1]- <Diselesaikan> -[N]- payments -->
+  <polygon points="1540,998 1600,1023 1540,1048 1480,1023" class="box-rel" />
+  <text x="1540" y="1027" class="rel-label">Diselesaikan</text>
+  <line x1="1290" y1="1023" x2="1480" y2="1023" class="line-solid" />
+  <text x="1315" y="1015" class="card-label">1</text>
+  <line x1="1600" y1="1023" x2="1750" y2="1023" class="line-solid" />
+  <text x="1715" y="1015" class="card-label">N</text>
+
+  <!-- 9. payments -[1]- <Melampirkan> -[1]- payment_proofs -->
+  <polygon points="1820,1170 1880,1195 1820,1220 1760,1195" class="box-rel" />
+  <text x="1820" y="1199" class="rel-label">Melampirkan</text>
+  <line x1="1820" y1="1045" x2="1820" y2="1170" class="line-solid" />
+  <text x="1828" y="1085" class="card-label">1</text>
+  <line x1="1820" y1="1220" x2="1820" y2="1340" class="line-solid" />
+  <text x="1828" y="1315" class="card-label">1</text>
+
+  <!-- 10. branches -[1]- <Mengadakan> -[N]- daily_reconciliations -->
+  <polygon points="345,980 400,1005 345,1030 290,1005" class="box-rel" />
+  <text x="345" y="1009" class="rel-label">Mengadakan</text>
+  <path d="M 460 314 L 345 314 L 345 980" class="line-solid" />
+  <text x="420" y="307" class="card-label">1</text>
+  <line x1="345" y1="1030" x2="345" y2="1180" class="line-solid" />
+  <text x="352" y="1155" class="card-label">N</text>
+
+  <!-- 11. users -[1]- <Melakukan> -[N]- daily_reconciliations -->
+  <polygon points="250,890 300,915 250,940 200,915" class="box-rel" />
+  <text x="250" y="919" class="rel-label">Melakukan</text>
+  <line x1="250" y1="695" x2="250" y2="890" class="line-solid" />
+  <text x="235" y="735" class="card-label">1</text>
+  <line x1="250" y1="940" x2="250" y2="1180" class="line-solid" />
+  <text x="258" y="1155" class="card-label">N</text>
+
+  <!-- 12. users -[1]- <Melayani> -[N]- payments -->
+  <polygon points="1560,865 1610,890 1560,915 1510,890" class="box-rel" />
+  <text x="1560" y="894" class="rel-label">Melayani</text>
+  <path d="M 340 684 L 360 684 L 360 890 L 1510 890" class="line-solid" />
+  <text x="370" y="880" class="card-label">1</text>
+  <path d="M 1610 890 L 1680 890 L 1680 1011 L 1750 1011" class="line-solid" />
+  <text x="1710" y="1003" class="card-label">N</text>
+
+  <!-- 13. users -[1]- <Memvalidasi> -[N]- payment_proofs -->
+  <polygon points="1535,1337 1590,1362 1535,1387 1480,1362" class="box-rel" />
+  <text x="1535" y="1366" class="rel-label">Memvalidasi</text>
+  <path d="M 312 695 L 312 730 L 550 730 L 550 1362 L 1480 1362" class="line-solid" />
+  <text x="560" y="1352" class="card-label">1</text>
+  <line x1="1590" y1="1362" x2="1750" y2="1362" class="line-solid" />
+  <text x="1715" y="1354" class="card-label">N</text>
+
+  <!-- 14. branches -[1]- <Menerima> -[N]- payments -->
+  <polygon points="2120,650 2170,675 2120,700 2070,675" class="box-rel" />
+  <text x="2120" y="679" class="rel-label">Menerima</text>
+  <path d="M 530 280 L 530 80 L 2120 80 L 2120 650" class="line-solid" />
+  <text x="540" y="110" class="card-label">1</text>
+  <path d="M 2120 700 L 2120 1220 L 1855 1220 L 1855 1045" class="line-solid" />
+  <text x="1862" y="1075" class="card-label">N</text>
+
+</svg>
+</body>
+</html>

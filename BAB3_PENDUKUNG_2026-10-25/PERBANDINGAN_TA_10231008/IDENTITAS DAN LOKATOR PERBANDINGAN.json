@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-25",
+  "reference_pdf": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\REFERENSI TA PXP\\TA_10231008.pdf",
+  "reference_sha256": "9e9a9eb8f407c0babba72f8174e35a721676b53d966e69975221bb6f1a247ce4",
+  "reference_pdf_pages": 135,
+  "review_scope": "Close reading of Chapter 3, PDF pages 50-77; selected supporting pages outside Chapter 3; not a complete review of all thesis chapters",
+  "draft": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md",
+  "draft_sha256": "468858d34159f32b0fb85694ca1f87db041b6321ec9df3073240591ac4fbb220",
+  "draft_unchanged": true,
+  "reference_unchanged": true,
+  "report": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB3_PENDUKUNG_2026-10-25\\PERBANDINGAN_TA_10231008\\HASIL PERBANDINGAN DAN RENCANA REVISI BAB 3.md",
+  "recommendation_count": 14,
+  "locators": [
+    {
+      "topic": "concept_and_architecture",
+      "pdf": [
+        50,
+        51
+      ],
+      "printed": [
+        39,
+        40
+      ]
+    },
+    {
+      "topic": "components_and_services",
+      "pdf": [
+        52,
+        53
+      ],
+      "printed": [
+        41,
+        42
+      ]
+    },
+    {
+      "topic": "flowchart",
+      "pdf": [
+        55
+      ],
+      "printed": [
+        44
+      ]
+    },
+    {
+      "topic": "actors",
+      "pdf": [
+        57
+      ],
+      "printed": [
+        46
+      ]
+    },
+    {
+      "topic": "user_stories",
+      "pdf": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "printed": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "topic": "screen_designs",
+      "pdf": [
+        69,
+        70,
+        71,
+        72
+      ],
+      "printed": [
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "topic": "unit_tests_system_tests_SUS",
+      "pdf": [
+        73,
+        74
+      ],
+      "printed": [
+        62,
+        63
+      ]
+    },
+    {
+      "topic": "deployment",
+      "pdf": [
+        74
+      ],
+      "printed": [
+        63
+      ]
+    },
+    {
+      "topic": "implementation_method",
+      "pdf": [
+        74,
+        75,
+        76
+      ],
+      "printed": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "topic": "calendar_schedule",
+      "pdf": [
+        77
+      ],
+      "printed": [
+        66
+      ]
+    },
+    {
+      "topic": "example_implementation_and_tests",
+      "pdf": [
+        91,
+        96,
+        98,
+        99
+      ],
+      "printed": [
+        80,
+        85,
+        87,
+        88
+      ]
+    },
+    {
+      "topic": "remaining_template_text",
+      "pdf": [
+        128
+      ],
+      "printed": [
+        117
+      ]
+    }
+  ],
+  "local_links_verified": true,
+  "visual_pages": [
+    50,
+    55,
+    58,
+    69,
+    73,
+    74,
+    77,
+    98
+  ],
+  "notes": "PDF page means physical order; printed page verified at cited locations, not inferred for front matter or every page"
+}

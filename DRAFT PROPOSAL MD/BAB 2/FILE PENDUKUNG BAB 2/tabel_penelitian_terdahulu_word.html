@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tabel 2.9 Komparasi Sistematis Penelitian Terdahulu terhadap Prototipe ARTHA</title>
+<style>
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    line-height: 1.35;
+    color: #000;
+    margin: 20px;
+  }
+  .table-title {
+    font-weight: bold;
+    font-size: 11pt;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 2pt solid black;
+    border-bottom: 2pt solid black;
+    margin-bottom: 25px;
+  }
+  thead th {
+    border-top: 2pt solid black;
+    border-bottom: 1pt solid black;
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 10.5pt;
+  }
+  tbody td {
+    padding: 8px 6px;
+    vertical-align: top;
+    border-bottom: 0.5pt solid #d0d0d0;
+    font-size: 10pt;
+  }
+  tbody tr:last-child td {
+    border-bottom: 2pt solid black;
+  }
+  .col-no { width: 4%; text-align: center; }
+  .col-author { width: 18%; text-align: justify; }
+  .col-problem { width: 23%; text-align: justify; }
+  .col-method { width: 10%; text-align: center; font-weight: bold; }
+  .col-results { width: 22%; text-align: justify; }
+  .col-gap { width: 23%; text-align: justify; }
+</style>
+</head>
+<body>
+
+<h2 style="font-size: 12pt; font-weight: bold; margin-bottom: 12px;">2.2 Penelitian Terdahulu</h2>
+<p style="text-align: justify; line-height: 1.5; margin-bottom: 14px;">Kajian terhadap penelitian terdahulu dilakukan guna memahami konteks penelitian serta memetakan celah penelitian (<em>research gap</em>) yang dapat diisi oleh penelitian ini. Rujukan empiris yang ditelaah mencakup sepuluh artikel ilmiah pada jurnal nasional terakreditasi SINTA yang relevan dengan tata kelola bimbingan belajar, sistem informasi multi-cabang, rekonsiliasi kas bank, serta penerapan metodologi <em>Personal Extreme Programming</em> (PxP). Berikut adalah rangkuman hasil penelitian terdahulu yang memiliki keterkaitan dengan penelitian yang dilakukan, sebagaimana disajikan pada Tabel 2.9.</p>
+
+<div class="table-title">Tabel 2.9 Komparasi Sistematis Penelitian Terdahulu terhadap Prototipe ARTHA</div>
+
+<table>
+  <thead>
+    <tr>
+      <th class="col-no">No</th>
+      <th class="col-author">Penulis dan Tahun</th>
+      <th class="col-problem">Permasalahan</th>
+      <th class="col-method">Metode</th>
+      <th class="col-results">Hasil Penelitian</th>
+      <th class="col-gap">Keterkaitan dan Perbedaan dengan Bimbel ARTHA Balikpapan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="col-no">1</td>
+      <td class="col-author">Satria Nur Fajriansyah, Muhammad Subaktiar Wijaya, Daffa Arifta Eryana, Alaudin Safa, Harsya Rafif Pramadhan, Arya Wicaksono, Muhammad Ilham Baehaqi, Filius Deivivi, Dandy Nurfajriansyah, dan Sopiyan Apandi (2026), <em>Jurnal Rekayasa Informasi Swadharma (JRIS)</em>, <strong>SINTA 3</strong></td>
+      <td class="col-problem">Pengelolaan operasional bimbingan belajar Bee Hive Tutoring di Tangerang Selatan masih mengandalkan Google Forms, spreadsheets, dan grup WhatsApp. Kondisi konvensional tersebut memicu penjadwalan kelas tutor tidak terstruktur, data peserta didik dan tutor tercecer, pelaporan hasil evaluasi belajar terhambat, serta minimnya proteksi keamanan data akademik.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan Sistem Informasi Bimbingan Belajar (SIMB) berbasis web yang menyediakan layanan pendaftaran daring mandiri, pencatatan presensi, pelaporan log belajar, serta pengiriman notifikasi terpusat. Pengujian fungsional melalui Black Box Testing membuktikan seluruh alur berjalan valid tanpa kendala teknis. Penerapan sistem ini berhasil memangkas durasi pendaftaran siswa baru menjadi di bawah dua detik serta meniadakan potensi benturan jadwal mengajar tutor hingga 0%.</td>
+      <td class="col-gap">Keterkaitan terletak pada kesamaan domain digitalisasi administrasi bimbingan belajar nonformal. Perbedaannya, sistem Bee Hive berfokus pada operasional satu unit lokasi tunggal (<em>single-branch</em>) dengan basis data lokal SQLite, sedangkan sistem Bimbel ARTHA Balikpapan mengelola delapan kantor cabang terpadu dengan pembatasan hak akses berbasis peran, rekonsiliasi kas bank, serta dikembangkan menggunakan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">2</td>
+      <td class="col-author">Stefanus Christian Gunawan, Muhammad Nurwegiono, dan Rudy Setiawan (2025), <em>Riset Jurnal Teknologi Informasi (RJTI)</em>, <strong>SINTA 5</strong></td>
+      <td class="col-problem">Administrasi operasional bimbingan belajar di Rumah Sinau Dhita Course (RSDC) Kota Malang masih diproses secara manual dan terfragmentasi. Ketiadaan sistem informasi terintegrasi menyulitkan pemantauan 40 hingga 50 murid aktif, memperlambat rekapitulasi presensi, serta memperbesar potensi salah input pada transaksi pembayaran les.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem informasi bimbingan belajar berbasis web yang mengintegrasikan layanan registrasi murid dan guru baru, pengelolaan paket belajar, pengaturan jadwal les, serta pencatatan absensi secara terpusat. Pengujian sistem melalui Black Box Testing membuktikan bahwa seluruh fungsionalitas dan proses transaksi berjalan valid sesuai perancangan. Penerapan sistem ini terbukti meningkatkan efisiensi administrasi, mempercepat proses pengolahan data akademik, serta meminimalkan kesalahan input data transaksi.</td>
+      <td class="col-gap">Keterkaitan terletak pada automasi administrasi akademik dan pengelolaan transaksi siswa bimbingan belajar. Perbedaannya, sistem Bimbel RSDC dibangun dengan struktur monolitik satu lokasi tanpa pemisahan hak akses cabang, sedangkan sistem Bimbel ARTHA Balikpapan menerapkan arsitektur terdistribusi multi-cabang pada delapan lokasi di Balikpapan dan dikembangkan secara mandiri menggunakan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">3</td>
+      <td class="col-author">Veren Thiovanda (2026), <em>Jurnal Ilmu Komputer dan Sistem Informasi (JIKSI)</em>, <strong>SINTA 5</strong></td>
+      <td class="col-problem">Proses tata kelola administrasi pada Jia Jia Education di Apartemen Royal Mediterania Garden, Jakarta Barat, masih dilaksanakan secara konvensional. Keadaan tersebut menimbulkan berbagai kendala operasional, seperti jadwal kegiatan les yang saling bentrok, keterlambatan penyampaian tagihan pembayaran kepada orang tua, serta kesulitan manajemen dalam memantau transaksi keuangan.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem informasi pencatatan jadwal dan pembayaran les berbasis web dengan pembagian peran pengguna bagi pimpinan (<em>head admin</em>), pengelola cabang (<em>admin cabang</em>), dan orang tua murid. Sistem ini memfasilitasi otomasi penyusunan jadwal belajar, pencatatan absensi, penagihan iuran kursus, serta pengunggahan bukti pembayaran. Hasil pengujian menunjukkan bahwa sistem mampu meniadakan jadwal bentrok serta mempermudah pemantauan transaksi keuangan secara terpadu.</td>
+      <td class="col-gap">Keterkaitan terletak pada pemisahan otorisasi pengguna antara pihak pengelola pusat (<em>head admin</em>) dan pengelola cabang (<em>admin cabang</em>). Perbedaannya, sistem Jia Jia Education belum mengintegrasikan pencocokan bukti transfer dengan mutasi rekening bank secara objektif, belum menyediakan pembatasan kuota kapasitas kelas fisik, serta tidak menerapkan metodologi Personal Extreme Programming (PxP) seperti pada Bimbel ARTHA Balikpapan.</td>
+    </tr>
+    <tr>
+      <td class="col-no">4</td>
+      <td class="col-author">Ahmad Husna Ahadi, Pariyadi, dan Teuku Djauhari (2025), <em>Djtechno : Jurnal Teknologi Informasi</em>, <strong>SINTA 4</strong></td>
+      <td class="col-problem">Manajemen Hotel Royal Heritage Jambi di Kota Jambi merencanakan ekspansi penambahan unit cabang perhotelan di berbagai wilayah kabupaten/kota lain hingga ke luar Provinsi Jambi. Sistem informasi manajemen eksisting belum mendukung integrasi multi-cabang, sehingga menyulitkan pemilik dalam memantau operasional, okupansi kamar, dan laporan pendapatan keuangan cabang secara terpusat.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem informasi manajemen multi-cabang berbasis web yang mengintegrasikan pemantauan operasional, reservasi antarcabang, dan konsolidasi pelaporan transaksi secara terpusat. Pengujian sistem melalui Black Box Testing membuktikan seluruh fungsi operasional berjalan valid sesuai rancangan. Hasil evaluasi menegaskan bahwa sistem telah memenuhi standar kelayakan fungsional untuk mendukung ekspansi cabang dan siap diterapkan pada tahap <em>deployment</em>.</td>
+      <td class="col-gap">Keterkaitan terletak pada arsitektur sistem informasi multi-cabang dengan isolasi hak akses cabang dan konsolidasi data terpusat bagi pimpinan. Perbedaannya, sistem Ahadi dkk. diterapkan pada sektor industri perhotelan, sedangkan sistem Bimbel ARTHA Balikpapan diterapkan pada domain bimbingan belajar delapan cabang dengan fitur batas kuota ruang kelas, rekonsiliasi kas bank, dan rekayasa perangkat lunak berbasis Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">5</td>
+      <td class="col-author">Hendri, Muhammad Alghifary, Herlina Yani Putri, Mutia Rahayu, dan Nurmalasari (2025), <em>JUSTIAN (Jurnal Sistem Informasi Akuntansi)</em>, <strong>SINTA 3</strong></td>
+      <td class="col-problem">Tata kelola sistem informasi akuntansi penerimaan kas, khususnya pembayaran Sumbangan Pembinaan Pendidikan (SPP) pada Yayasan Semesta Khatulistiwa di Pontianak, masih menggunakan pencatatan buku kas manual. Sistem manual ini sering menimbulkan ketidakefisienan pembukuan, keterlambatan penerbitan laporan keuangan berkala, serta rentan terhadap risiko kesalahan pencatatan riwayat tagihan murid.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan rancangan prototipe sistem informasi akuntansi penerimaan kas berbasis digital yang memodelkan alur pencatatan iuran SPP, pemantauan tagihan bulanan siswa, serta penyusunan laporan keuangan yayasan. Prototipe sistem menyediakan antarmuka untuk verifikasi transaksi pembayaran nontunai dan penerbitan bukti kuitansi otomatis. Evaluasi perancangan menunjukkan bahwa sistem ini mampu meningkatkan akurasi pembukuan dan mempermudah bendahara dalam mengontrol arus penerimaan kas secara tertib.</td>
+      <td class="col-gap">Keterkaitan terletak pada fokus tata kelola penerimaan kas pembayaran SPP pendidikan dan pencegahan kesalahan pembukuan transaksi siswa. Perbedaannya, penelitian Hendri dkk. berfokus pada analisis kebutuhan dan perancangan prototipe antarmuka pada satu yayasan tanpa implementasi basis data multi-cabang, sedangkan sistem Bimbel ARTHA Balikpapan membangun aplikasi web operasional terintegrasi pada delapan cabang di Balikpapan dengan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">6</td>
+      <td class="col-author">Bagus Sudirman dan Mawada Tristianti (2021), <em>MEANS (Media Informasi Analisa dan Sistem)</em>, <strong>SINTA 4</strong></td>
+      <td class="col-problem">Perusahaan CV. Lisa Pratama di Semarang belum mengimplementasikan proses rekonsiliasi kas bank secara rutin dan terkomputerisasi. Kondisi tersebut menyebabkan pencatatan penerimaan dan pengeluaran kas internal sering mengalami perbedaan saldo dengan rekening koran bank, sehingga menyulitkan pengendalian internal dan membuka celah risiko kerugian finansial perusahaan.</td>
+      <td class="col-method">Prototyping</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem informasi pengendalian kas bank berbasis <em>client-server</em> yang mengotomatisasi pencatatan penerimaan dan pengeluaran kas, penerbitan jurnal koreksi penyesuaian, serta pencocokan saldo kas terhadap rekening koran bank. Sistem ini dilengkapi dengan mekanisme pembatasan hak akses guna menjamin keamanan data transaksi keuangan. Hasil implementasi membuktikan bahwa metode rekonsiliasi kas bank efektif dalam mengeliminasi selisih pembukuan dan memperkuat pengendalian internal perusahaan.</td>
+      <td class="col-gap">Keterkaitan terletak pada penerapan teknik rekonsiliasi mutasi rekening bank guna mengeliminasi selisih kas antara pembukuan internal dengan rekening bank. Perbedaannya, sistem Sudirman dan Tristianti dibangun berbasis aplikasi desktop client-server pada perusahaan dagang tunggal, sedangkan sistem Bimbel ARTHA Balikpapan mengintegrasikan verifikasi mutasi bank ke dalam arsitektur web multi-cabang bimbingan belajar dengan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">7</td>
+      <td class="col-author">Nur Khafidhoh, Arfia Rahmi Febrianti, dan Sujono (2026), <em>Jurnal Teknologi Informasi (JTI)</em>, <strong>SINTA 4</strong></td>
+      <td class="col-problem">Pengelolaan jadwal kegiatan belajar mengajar di Bimbingan Belajar Anak Hebat (AHE) Unit Megaluh 7059 di Jombang masih dilakukan secara manual. Mekanisme manual ini sering memicu bentrokan jam mengajar tutor, alokasi beban mengajar guru yang tidak merata, serta menyulitkan orang tua murid dalam menyelaraskan waktu belajar anak secara fleksibel.</td>
+      <td class="col-method">Waterfall</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem penjadwalan otomatis bimbingan belajar berbasis web yang menerapkan optimasi Algoritma Genetika dengan mempertimbangkan ketersediaan guru, preferensi waktu belajar, dan konfirmasi mengajar. Pengujian fungsional melalui Black Box Testing membuktikan seluruh fitur sistem berjalan valid tanpa kesalahan logika. Sistem terbukti berhasil mengeliminasi bentrokan jadwal antarmurid dan pengajar secara otomatis serta mendistribusikan notifikasi jadwal terpadu kepada orang tua siswa.</td>
+      <td class="col-gap">Keterkaitan terletak pada manajemen otomasi penjadwalan bimbingan belajar guna mencegah konflik waktu mengajar. Perbedaannya, sistem Bimbel AHE beroperasi pada satu unit belajar mandiri tanpa mekanisme pembatasan kapasitas fisik ruangan multi-cabang, sedangkan sistem Bimbel ARTHA Balikpapan menggabungkan validasi kuota kapasitas ruang kelas dan ketersediaan tentor pada delapan cabang dengan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">8</td>
+      <td class="col-author">Febrianto Kabisatullah dan Handrie Noprisson (2026), <em>JUSIBI (Jurnal Sistem Informasi dan E-Bisnis)</em>, <strong>SINTA 5</strong></td>
+      <td class="col-problem">Pengelolaan reservasi ruang rapat di lingkungan PT Haleyora Powerindo Jakarta masih berjalan konvensional, sehingga memerlukan koordinasi antardivisi yang memakan waktu. Prosedur manual tersebut menimbulkan risiko tinggi terjadinya bentrokan jadwal ganda (*double booking*) serta ketiadaan informasi ketersediaan kapasitas ruang secara waktu nyata.</td>
+      <td class="col-method">Agile Scrum</td>
+      <td class="col-results">Penelitian ini menghasilkan aplikasi manajemen reservasi ruang rapat berbasis <em>mobile</em> dan web yang menerapkan algoritma <em>Constraint Satisfaction Problem</em> (CSP) guna validasi batas kapasitas dan waktu penggunaan ruang secara otomatis. Pengujian fungsional Black Box Testing menunjukkan seluruh fitur beroperasi valid tanpa galat kritis. Validasi logika algoritma CSP mencapai akurasi 100% dalam menolak pemesanan bentrok dari 25 skenario uji, serta evaluasi User Acceptance Testing (UAT) terhadap 30 responden menghasilkan skor kepuasan rata-rata 4,26 dari skala 5,0 dengan kategori Baik.</td>
+      <td class="col-gap">Keterkaitan terletak pada penerapan validasi pembatasan kapasitas dan kuota sumber daya ruang secara waktu nyata untuk menghindari konflik pemesanan. Perbedaannya, penelitian RapaTrack diterapkan pada ruang rapat kantor perusahaan melalui kolaborasi tim Agile Scrum, sedangkan sistem Bimbel ARTHA Balikpapan menegakkan validasi kuota kapasitas ruang belajar pada delapan cabang bimbingan di Balikpapan yang dikembangkan oleh pengembang mandiri dengan metode Personal Extreme Programming (PxP).</td>
+    </tr>
+    <tr>
+      <td class="col-no">9</td>
+      <td class="col-author">Alfin Lutfi Sidiq, Gita Indah Marthasari, dan Aminudin (2025), <em>Jurnal Jaring SainTek</em>, <strong>SINTA 5</strong></td>
+      <td class="col-problem">Tata kelola proses bisnis persuratan dinas pada Dinas Pendidikan Pemuda dan Olahraga Kabupaten Tambrauw masih dikerjakan secara manual. Kondisi tersebut menghambat proses registrasi surat masuk dan keluar, menimbulkan risiko kehilangan dokumen arsip kedinasan, serta memperlambat birokrasi penyampaian surat tugas dan disposisi pimpinan.</td>
+      <td class="col-method">Personal Extreme Programming (PxP)</td>
+      <td class="col-results">Penelitian ini menghasilkan Sistem Informasi Surat Menyurat berbasis web yang berhasil menyelesaikan 15 <em>user stories</em> melalui pelaksanaan tujuh tahapan pengembangan mandiri. Pengujian melalui Unit Testing dan Black Box Testing membuktikan bahwa seluruh fungsionalitas pembuatan, pencarian, dan pengelolaan disposisi surat berjalan sesuai spesifikasi pengguna. Proses implementasi diselesaikan dalam durasi riil 37 hari kerja, yang terbukti 13 hari kerja lebih cepat dibandingkan estimasi waktu revisi sebesar 50 hari kerja.</td>
+      <td class="col-gap">Keterkaitan terletak pada adopsi metodologi PxP oleh pengembang tunggal dalam merespons dinamika perubahan kebutuhan pengguna secara iteratif. Perbedaannya, penelitian Sidiq dkk. diterapkan pada sistem pengarsipan surat instansi kedinasan pemerintah daerah, sedangkan sistem Bimbel ARTHA Balikpapan menguji PxP pada proses bisnis operasional bimbingan belajar komersial delapan cabang di Balikpapan yang mencakup transaksi kas dan penjadwalan kelas.</td>
+    </tr>
+    <tr>
+      <td class="col-no">10</td>
+      <td class="col-author">Narti Apriyanti, Seftin Fitri Ana Wati, dan Abdul Rezha Efrat Najaf (2024), <em>JATI (Jurnal Mahasiswa Teknik Informatika)</em>, <strong>SINTA 4</strong></td>
+      <td class="col-problem">Perusahaan properti PT Mutiara Putri Gemilang di Jombang menghadapi kendala efisiensi operasional dan keterbatasan pemasaran properti akibat sistem pencatatan penjualan kavling yang masih manual. Hal ini memicu risiko data transaksi tercecer, menghambat verifikasi kelengkapan berkas pembeli, serta memperlambat proses persetujuan akad transaksi penjualan.</td>
+      <td class="col-method">Personal Extreme Programming (PxP)</td>
+      <td class="col-results">Penelitian ini menghasilkan sistem informasi penjualan properti secara daring yang mencakup fitur katalog properti, pemesanan daring, pengunggahan berkas administrasi, serta verifikasi bukti transfer pembayaran. Pengujian fungsional melalui Black Box Testing membuktikan seluruh alur transaksi berjalan sukses 100% tanpa kendala. Evaluasi penerimaan sistem melalui User Acceptance Testing (UAT) yang melibatkan 15 responden (13 pengguna, satu direktur, dan satu admin) memperoleh persentase keberhasilan 91% dengan kategori Sangat Baik.</td>
+      <td class="col-gap">Keterkaitan terletak pada efektivitas penerapan metodologi PxP oleh pengembang mandiri dan perancangan alur verifikasi berkas bukti bayar transaksi. Perbedaannya, sistem E-Kavling menangani objek penjualan tanah properti satu lokasi tanpa modul rekonsiliasi saldo kas mutasi bank, sedangkan sistem Bimbel ARTHA Balikpapan mengintegrasikan rekonsiliasi mutasi bank dan pembagian kelas siswa pada delapan cabang bimbingan belajar di Balikpapan.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

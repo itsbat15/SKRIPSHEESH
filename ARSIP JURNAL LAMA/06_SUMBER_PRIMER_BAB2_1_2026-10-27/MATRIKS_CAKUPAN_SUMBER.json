@@ -1,0 +1,116 @@
+[
+  {
+    "subbab": "2.1.1",
+    "judul": "Sistem Informasi Manajemen dan Pengembangannya",
+    "status_sebelum": "Cukup untuk dasar",
+    "sumber": "Laudon dan Laudon (2014); Sommerville (2011); Pressman (2010)",
+    "lokator": "Laudon cetak 45 sampai 48/PDF 47 sampai 50; Sommerville Bab 2, cetak 28 sampai 55/PDF 45 sampai 72, dan cetak 63/PDF 80 untuk pertimbangan pemilihan pendekatan.",
+    "batas": "Gunakan PDF Laudon edisi ke-13 global tahun 2014. Klaim tahun 2020 atau 2022 harus memakai edisi lain yang memang tersedia, bukan PDF ini."
+  },
+  {
+    "subbab": "2.1.2",
+    "judul": "Personal Extreme Programming",
+    "status_sebelum": "Cukup untuk dasar",
+    "sumber": "Dzhurov, Krasteva, dan Ilieva (2009); Beck dan Andres (2004)",
+    "lokator": "Dzhurov cetak 253 sampai 256/PDF 2 sampai 5; Beck salinan digital PDF 109 sampai 110 untuk stories dan siklus mingguan, serta PDF 120 untuk test-first.",
+    "batas": "Dzhurov merupakan sumber asli PxP berbentuk prosiding, bukan jurnal SINTA. Sidiq dan Apriyanti menjadi contoh penerapan, bukan pengganti sumber dasar."
+  },
+  {
+    "subbab": "2.1.3",
+    "judul": "User Stories",
+    "status_sebelum": "Ada, perlu diperkuat",
+    "sumber": "Beck dan Andres (2004); Cohn (2004), ditambah cuplikan resmi buku dan artikel penulis",
+    "lokator": "Cohn cetak 4 sampai 5/PDF 13 sampai 14 untuk definisi dan tiga aspek; cetak 17/PDF 26 untuk INVEST. Template kalimat tiga bagian dijelaskan dalam artikel resmi Cohn yang ditautkan.",
+    "batas": "Berkas Cohn hanya bab contoh 61 halaman, bukan buku lengkap. Cohn tidak dinyatakan sebagai pencipta awal seluruh konsep user stories."
+  },
+  {
+    "subbab": "2.1.4",
+    "judul": "Use Case Diagram",
+    "status_sebelum": "Cukup, diperkuat standar",
+    "sumber": "Sommerville (2011); OMG UML 2.5.1 (2017)",
+    "lokator": "Sommerville cetak 124 sampai 126/PDF 141 sampai 143; OMG Bab 18, cetak 639 dan seterusnya/PDF 681 dan seterusnya.",
+    "batas": "Gunakan spesifikasi OMG untuk makna include dan extend. Contoh penerapan jurnal bukan standar notasi UML."
+  },
+  {
+    "subbab": "2.1.5",
+    "judul": "Business Process Model and Notation",
+    "status_sebelum": "Belum ada sumber khusus yang memadai",
+    "sumber": "OMG BPMN 2.0.2 (2013), ditambahkan",
+    "lokator": "Bab 7, terutama §7.3.1 dan Tabel 7.1, cetak 26 sampai 28/PDF 56 sampai 58. Halaman sampul menyebut Desember 2013; katalog formal mencatat adopsi Januari 2014.",
+    "batas": "BPMN bukan bagian UML. Pesan antarpool dan urutan aktivitas di dalam proses tidak boleh digambarkan dengan jenis garis yang sama tanpa mengikuti aturannya."
+  },
+  {
+    "subbab": "2.1.6",
+    "judul": "Class Diagram",
+    "status_sebelum": "Cukup, diperkuat standar",
+    "sumber": "Sommerville (2011); OMG UML 2.5.1 (2017)",
+    "lokator": "Sommerville cetak 129 sampai 133/PDF 146 sampai 150; OMG §11.4 Classes, cetak 194 sampai 195/PDF 236 sampai 237 sebagai titik masuk.",
+    "batas": "Jelaskan atribut, operasi, hubungan, dan multiplicity. Jangan menyamakan class diagram dengan tabel ERD atau membuat diagram yang tidak digunakan pada Bab 3."
+  },
+  {
+    "subbab": "2.1.7",
+    "judul": "Entity Relationship Diagram",
+    "status_sebelum": "Ada, perlu sumber asal dan notasi",
+    "sumber": "Pressman (2010); Chen (1976), ditambah cuplikan penulis; dokumentasi Mermaid untuk notasi implementasi",
+    "lokator": "Pressman cetak 165 sampai 166/PDF 194 sampai 195; Chen cetak 9 sampai 13/PDF 1 sampai 5 pada cuplikan yang tersedia.",
+    "batas": "Cuplikan Chen hanya lima halaman pertama dari artikel 28 halaman. Notasi Crow’s Foot tidak boleh seluruhnya diatribusikan kepada cuplikan Chen; gunakan dokumentasi notasi yang benar-benar dipakai."
+  },
+  {
+    "subbab": "2.1.8",
+    "judul": "Next.js",
+    "status_sebelum": "Belum ada dokumentasi primer lokal",
+    "sumber": "Vercel, dokumentasi Next.js; React, Managing State, ditambahkan",
+    "lokator": "Dokumentasi Next.js: halaman pengantar dan Layouts and Pages; React: Managing State. Gunakan judul bagian, URL, dan tanggal akses karena halaman HTML tidak memiliki halaman cetak tetap.",
+    "batas": "Dokumentasi berubah. Bedakan fungsi yang tersedia dalam dokumentasi dari versi dan fitur yang benar-benar dipakai proyek."
+  },
+  {
+    "subbab": "2.1.9",
+    "judul": "Tailwind CSS",
+    "status_sebelum": "Belum ada dokumentasi primer lokal",
+    "sumber": "Tailwind Labs, dokumentasi Tailwind CSS, ditambahkan",
+    "lokator": "Styling with Utility Classes dan Responsive Design; lokator menggunakan judul bagian serta URL.",
+    "batas": "Framework tampilan tidak otomatis membuktikan kemudahan penggunaan, aksesibilitas, atau kepuasan pengguna."
+  },
+  {
+    "subbab": "2.1.10",
+    "judul": "Laravel",
+    "status_sebelum": "Ada contoh penerapan, belum cukup untuk teori teknis",
+    "sumber": "Laravel, dokumentasi resmi Sanctum, Authorization, Validation, Database dan Eloquent, ditambahkan",
+    "lokator": "Sanctum: SPA Authentication; Authorization: Gates dan Policies; Validation: form/input validation; Database: Database Transactions; Eloquent: pengantar model.",
+    "batas": "Dokumentasi seri 12.x dipakai sebagai referensi versi yang jelas, bukan bukti proyek sudah memakai Laravel 12. Mode SPA Sanctum menggunakan sesi berbasis kuki; token CSRF berbeda dari personal access token."
+  },
+  {
+    "subbab": "2.1.11",
+    "judul": "REST API",
+    "status_sebelum": "Belum ada sumber asal REST lokal",
+    "sumber": "Fielding (2000); Fielding, Nottingham, dan Reschke (2022), RFC 9110, ditambahkan",
+    "lokator": "Fielding Bab 5 dimulai cetak 76/PDF 94; §5.1.3 Stateless cetak 78/PDF 96 dan §5.1.5 Uniform Interface cetak 81/PDF 99. RFC 9110 §9 untuk metode dan §15 untuk status.",
+    "batas": "Disertasi merupakan sumber asli REST, bukan buku atau jurnal SINTA. HTTP, JSON, dan CRUD saja belum cukup membuktikan seluruh batasan REST dipenuhi; uraikan arsitektur secara jujur."
+  },
+  {
+    "subbab": "2.1.12",
+    "judul": "MySQL",
+    "status_sebelum": "Ada contoh penggunaan, perlu manual resmi",
+    "sumber": "Oracle, MySQL 8.4 Reference Manual, ditambahkan sebagai tautan resmi",
+    "lokator": "General Information; §15.1.20.5 FOREIGN KEY Constraints; §17.7.2 InnoDB Transaction Model. Ketiga halaman diverifikasi lewat layanan web, tetapi unduhan HTML langsung ditolak server.",
+    "batas": "Pilih versi basis data implementasi yang konsisten. Dukungan transaksi tidak berarti sistem otomatis memenuhi seluruh aturan bisnis atau kepatuhan perbankan.",
+    "pembaruan_berkas": "PDF lengkap resmi Oracle tersimpan, mendokumentasikan 8.4 sampai 8.4.9, dokumen dibentuk 21 April 2026.",
+    "lokator_tambahan": "Cetak 4/PDF 36; cetak 3152/PDF 3184; cetak 3234/PDF 3266."
+  },
+  {
+    "subbab": "2.1.13",
+    "judul": "Black Box Testing",
+    "status_sebelum": "Cukup untuk dasar, diperkuat silabus",
+    "sumber": "Pressman (2010); ISTQB CTFL v4.0.1 (2024), ditambahkan",
+    "lokator": "Pressman cetak 497 sampai 498/PDF 526 sampai 527; ISTQB §4.2.1 EP halaman 39 dan §4.2.2 BVA halaman 40, sama dengan nomor PDF.",
+    "batas": "EP dan BVA tidak menggantikan semua skenario alur, perubahan status, otorisasi, atau akses serentak. Tentukan varian BVA dan kaitkan nilai uji dengan aturan yang benar-benar dipilih."
+  },
+  {
+    "subbab": "2.1.14",
+    "judul": "User Acceptance Testing",
+    "status_sebelum": "Cukup untuk dasar, diperkuat silabus",
+    "sumber": "Sommerville (2011); ISTQB Acceptance Testing v1.0 (2019), ditambahkan",
+    "lokator": "Sommerville cetak 228 sampai 230/PDF 245 sampai 247; ISTQB §1.1.2 halaman 11, §2.1 halaman 15, Bab 3 halaman 19 sampai 21, dan §4.1.2 halaman 25.",
+    "batas": "UAT tidak selalu memakai Likert. Sullivan dan Artino (2013) ditemukan untuk pendamping analisis Likert bila diperlukan, tetapi bukan sumber awal Likert atau standar ambang kelayakan."
+  }
+]

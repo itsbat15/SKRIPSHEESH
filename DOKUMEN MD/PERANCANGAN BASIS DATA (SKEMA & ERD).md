@@ -1,854 +1,1011 @@
-# 📐 PERANCANGAN BASIS DATA — SKEMA & ERD
-**Sistem Informasi Manajemen Operasional Bimbel Artha**
-**Metode: Personal Extreme Programming (PxP)**
+# PERANCANGAN BASIS DATA (SKEMA DAN ERD)
 
----
+Dokumen ini memperbarui rancangan basis data prototipe Sistem Informasi Manajemen Operasional Bimbel Artha Balikpapan pada 25 Oktober 2026. Rancangan diselaraskan dengan audit sebelumnya, keputusan pengguna tentang WhatsApp dan kapasitas, serta kebutuhan integrasi pada Bab 1.
 
-**Penyusun**: Mahasiswa Tugas Akhir — Institut Teknologi Kalimantan (ITK)
-**Tanggal Dibuat**: 6 Oktober 2026
-**Terakhir Diperbarui**: 9 Oktober 2026
-**Total Tabel**: 16 Tabel (5 Fondasi + 7 Operasional + 2 Keuangan + 2 Monitoring)
-**DBMS Target**: MySQL 8.x / PostgreSQL 15+
+Skema terdiri atas **23 tabel rancangan** dengan MySQL dan mesin transaksi InnoDB sebagai DBMS sasaran. Versi implementasi belum dibekukan, sedangkan kamus data dan diagram ini belum merupakan migrasi SQL yang telah dieksekusi atau hasil pengujian aplikasi.
 
----
+## 1. Dasar keputusan dan batas rancangan
 
-## 📊 1. Entity Relationship Diagram (ERD) — Mermaid
+WhatsApp menggunakan tombol yang menyiapkan nomor wali serta pesan tagihan lewat jatuh tempo, kemudian Admin mengirim melalui WhatsApp. Kelas hampir penuh menampilkan peringatan, kelas penuh menolak penambahan, dan tempat tersedia setelah keanggotaan diakhiri tanpa menghapus sejarah.
+
+Pengajuan transfer oleh Admin Cabang dan keputusan oleh Super Admin dipakai sebagai rancangan kerja untuk divalidasi dengan mitra. Akses mutasi rekening, pemberi persetujuan potongan, prosedur tunai, ambang hampir penuh, serta pembayaran sebagian belum dinyatakan sebagai kebijakan mitra yang telah disahkan.
+
+Model mendukung satu penerimaan untuk beberapa tagihan milik siswa dan cabang yang sama. Pembayaran sebagian belum diaktifkan pada rancangan awal, sehingga nominal tiap alokasi wajib sama dengan sisa tagihan yang dipilih sampai kebijakannya ditetapkan.
+
+Pencocokan bank dibatasi pada satu dana masuk untuk satu transfer siswa atau satu setoran kelompok kas dengan nominal penuh. Pencocokan sebagian atau satu mutasi untuk beberapa sumber belum dipaksakan masuk ke rancangan inti, dan perbedaan nominal tetap ditampilkan untuk tindak lanjut.
+
+| Pokok rancangan | Kedudukan dan penerapan |
+| :--- | :--- |
+| Dua peran pengguna | Admin Cabang dan Super Admin; tentor serta wali tidak memiliki akun dasbor inti |
+| Kepemilikan cabang | Data operasional dibatasi penugasan; bills dan payments menyimpan cabang historis |
+| Tarif dan diskon | Tarif disimpan per cakupan; potongan aktual disimpan pada tagihan tanpa nominal global |
+| Kapasitas | Jumlah aktif dihitung dari interval keanggotaan; status penuh merupakan nilai turunan |
+| Jadwal | Mata pelajaran berada pada sesi jadwal; konflik diperiksa menurut masa berlaku |
+| Pembayaran | Penerimaan induk dipisahkan dari alokasi tagihan, pengajuan, dan keputusan |
+| Kas dan bank | Penerimaan siswa, penyerahan ke pusat, setoran bank, dan pencocokan dibedakan |
+| Templat WhatsApp | Berkas aplikasi berversi; Super Admin tidak dijanjikan penyunting templat melalui dasbor |
+| Fitur di luar inti | Daftar tunggu otomatis, pengiriman otomatis, portal wali, kartu anggota, QRIS, dan peta publik ditunda |
+
+Jumlah tabel mengikuti kebutuhan riwayat dan hubungan data, bukan sasaran pengurangan tabel. Nama learning_programs, capacity_rules, discount_rules, wa_templates, wa_logs, dan revenue_validations tidak digunakan sebagai tabel aktif pada skema revisi ini.
+
+## 2. Entity Relationship Diagram
+
+Diagram berikut menggambarkan seluruh tabel dan setiap kunci asing yang tercantum dalam kamus data. Kardinalitas opsional mengikuti kolom yang boleh kosong, sedangkan aturan gabungan dan validasi lintas tabel dijelaskan sesudah diagram.
 
 ```mermaid
 erDiagram
-    %% ============================================================
-    %%  GRUP A - FONDASI & KONFIGURASI (5 TABEL)
-    %% ============================================================
-
     academic_years {
-        int id PK "ID unik tahun ajaran"
-        varchar name "Nama tahun ajaran cth: 2026-2027"
-        date start_date "Tanggal awal tahun ajaran"
-        date end_date "Tanggal akhir tahun ajaran"
-        boolean is_active "Status aktif tahun ajaran"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        varchar name UK
+        date start_date
+        date end_date
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     branches {
-        int id PK "ID unik cabang"
-        varchar branch_name "Nama cabang cth: Artha 1"
-        varchar address "Alamat lengkap cabang"
-        varchar phone_wa "Nomor WhatsApp cabang"
-        varchar google_maps_url "Tautan Google Maps lokasi"
-        int total_rooms "Jumlah ruang belajar"
-        boolean is_active "Status operasional cabang"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        varchar code UK
+        varchar name
+        text address
+        varchar phone_wa
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     users {
-        int id PK "ID unik pengguna"
-        int branch_id FK "ID cabang atau NULL untuk Super Admin"
-        varchar name "Nama lengkap staf atau admin"
-        varchar email UK "Email unik akun pengguna"
-        varchar password_hash "Hash kata sandi bcrypt"
-        enum role "super_admin atau branch_admin"
-        boolean is_active "Status aktif akun pengguna"
-        datetime last_login_at "Waktu terakhir login"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        varchar name
+        varchar email UK
+        varchar password_hash
+        enum role
+        boolean is_active
+        datetime last_login_at
+        datetime created_at
+        datetime updated_at
     }
-
     subjects {
-        int id PK "ID unik mata pelajaran"
-        varchar subject_name "Nama mapel cth: Matematika"
-        text description "Deskripsi materi mapel"
-        boolean is_active "Status aktif kurikulum"
-        datetime created_at "Waktu data dibuat"
+        bigint id PK
+        varchar code UK
+        varchar name
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     fee_tariffs {
-        int id PK "ID unik tarif biaya"
-        int academic_year_id FK "Relasi ke tahun ajaran"
-        enum learning_program "reguler atau intensif atau paket"
-        enum grade_level "TK atau SD atau SMP atau SMA"
-        int class_grade_start "Tingkat kelas mulai"
-        int class_grade_end "Tingkat kelas akhir"
-        enum fee_type "spp_monthly atau module_semester atau registration"
-        decimal amount "Besaran biaya tarif"
-        varchar description "Keterangan tarif"
-        boolean is_active "Status aktif tarif"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        bigint academic_year_id FK
+        varchar session_code
+        enum learning_program
+        enum grade_level
+        tinyint class_grade_start
+        tinyint class_grade_end
+        enum fee_type
+        enum billing_cycle
+        decimal amount
+        date valid_from
+        date valid_until
+        varchar description
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
-    %% ============================================================
-    %%  GRUP B - DATA OPERASIONAL (7 TABEL)
-    %% ============================================================
-
     students {
-        int id PK "ID unik data siswa"
-        int branch_id FK "Cabang tempat siswa belajar"
-        int academic_year_id FK "Tahun ajaran pendaftaran"
-        varchar registration_no UK "Nomor induk registrasi unik"
-        varchar full_name "Nama lengkap siswa"
-        varchar birth_place "Kota tempat lahir siswa"
-        date birth_date "Tanggal lahir siswa"
-        enum gender "L atau P"
-        varchar parent_name "Nama orang tua atau wali"
-        varchar parent_phone_wa "Nomor WhatsApp aktif wali"
-        varchar school_origin "Nama sekolah asal siswa"
-        enum grade_level "TK atau SD atau SMP atau SMA"
-        int class_grade "Tingkat kelas saat ini"
-        text home_address "Alamat domisili rumah"
-        enum learning_program "reguler atau intensif atau paket"
-        int sibling_student_id FK "Relasi saudara kandung"
-        decimal discount_amount "Nominal diskon per tagihan"
-        enum status "active atau alumni atau inactive"
-        datetime registered_at "Waktu pendaftaran siswa"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        bigint academic_year_id FK
+        varchar registration_no UK
+        varchar full_name
+        date birth_date
+        varchar parent_name
+        varchar parent_phone_wa
+        varchar school_origin
+        enum grade_level
+        tinyint class_grade
+        text home_address
+        enum learning_program
+        varchar session_code
+        varchar family_reference
+        enum status
+        datetime registered_at
+        datetime created_at
+        datetime updated_at
     }
-
     mentors {
-        int id PK "ID unik tentor pengajar"
-        int branch_id FK "Cabang pangkalan utama tentor"
-        varchar full_name "Nama lengkap tentor"
-        varchar phone_wa "Nomor WhatsApp aktif tentor"
-        boolean is_active "Status aktif mengajar"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        varchar full_name
+        varchar phone_wa
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     mentor_subjects {
-        int id PK "ID unik keahlian tentor"
-        int mentor_id FK "Relasi ke tentor pengajar"
-        int subject_id FK "Relasi ke mata pelajaran"
-        datetime created_at "Waktu data dibuat"
+        bigint id PK
+        bigint mentor_id FK
+        bigint subject_id FK
+        datetime created_at
     }
-
     class_rooms {
-        int id PK "ID unik ruang belajar"
-        int branch_id FK "Cabang lokasi ruangan"
-        varchar room_name "Nama ruangan cth: Ruang 1"
-        enum room_type "standard atau large"
-        int physical_capacity "Daya tampung meja kursi fisik"
-        boolean is_active "Status ketersediaan ruang"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        varchar room_name
+        smallint physical_capacity
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     classes {
-        int id PK "ID unik rombel kelas"
-        int branch_id FK "Cabang lokasi rombel kelas"
-        int academic_year_id FK "Tahun ajaran rombel aktif"
-        int subject_id FK "Mata pelajaran yang diajarkan"
-        enum learning_program "reguler atau intensif atau paket"
-        varchar class_name "Nama rombel cth: 10 IPA 1"
-        enum grade_level "TK atau SD atau SMP atau SMA"
-        int class_grade "Tingkat kelas siswa"
-        int max_students "Batas kuota kapasitas rombel"
-        int current_students "Jumlah siswa terisi saat ini"
-        enum status "open atau almost_full atau full atau closed"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint branch_id FK
+        bigint academic_year_id FK
+        varchar class_name
+        enum learning_program
+        varchar session_code
+        enum grade_level
+        tinyint class_grade
+        smallint max_students
+        smallint near_full_remaining
+        enum status
+        datetime created_at
+        datetime updated_at
     }
-
     class_schedules {
-        int id PK "ID unik slot jadwal"
-        int class_id FK "Relasi ke rombel kelas"
-        int mentor_id FK "Tentor yang bertugas mengajar"
-        int room_id FK "Ruangan yang dialokasikan"
-        enum day_of_week "monday sampai sunday"
-        time start_time "Waktu mulai sesi les"
-        time end_time "Waktu selesai sesi les"
-        boolean is_active "Status aktif jadwal sesi"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint class_id FK
+        bigint subject_id FK
+        bigint mentor_id FK
+        bigint room_id FK
+        tinyint day_of_week
+        time start_time
+        time end_time
+        date valid_from
+        date valid_until
+        boolean is_active
+        datetime created_at
+        datetime updated_at
     }
-
     class_enrollments {
-        int id PK "ID unik keanggotaan kelas"
-        int class_id FK "Relasi ke rombel kelas"
-        int student_id FK "Relasi ke siswa terdaftar"
-        enum enrollment_status "active atau waiting_list atau completed atau dropped"
-        datetime waiting_since "Waktu masuk daftar tunggu"
-        datetime enrolled_at "Waktu efektif masuk kelas"
-        datetime created_at "Waktu data dibuat"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint class_id FK
+        bigint student_id FK
+        bigint created_by_user_id FK
+        datetime joined_at
+        datetime ended_at
+        varchar end_reason
+        datetime created_at
+        datetime updated_at
     }
-
-    %% ============================================================
-    %%  GRUP C - KEUANGAN & PEMBAYARAN (2 TABEL)
-    %% ============================================================
-
     bills {
-        int id PK "ID unik tagihan siswa"
-        int student_id FK "Siswa penerima tagihan"
-        int academic_year_id FK "Tahun ajaran tagihan"
-        enum bill_type "spp_monthly atau module_semester atau registration"
-        varchar bill_period "Periode cth: YYYY-MM"
-        decimal base_amount "Nominal biaya dasar tarif"
-        decimal discount_amount "Nominal potongan diskon"
-        decimal total_amount "Total tagihan setelah diskon"
-        enum payment_status "unpaid atau partial atau paid atau overdue"
-        date due_date "Batas tanggal jatuh tempo"
-        datetime created_at "Waktu tagihan terbit"
-        datetime updated_at "Waktu pembaruan data"
+        bigint id PK
+        bigint student_id FK
+        bigint branch_id FK
+        bigint academic_year_id FK
+        bigint fee_tariff_id FK
+        bigint created_by_user_id FK
+        enum fee_type
+        enum billing_cycle
+        varchar period_key
+        date period_start
+        date period_end
+        decimal base_amount
+        decimal discount_amount
+        varchar discount_reason
+        bigint discount_approved_by_user_id FK
+        decimal total_amount
+        date due_date
+        enum status
+        datetime created_at
+        datetime updated_at
     }
-
     payments {
-        int id PK "ID unik transaksi bayar"
-        int bill_id FK "Relasi ke tagihan dibayar"
-        int verified_by_user_id FK "Staf kasir pemverifikasi"
-        varchar receipt_no UK "Nomor kuitansi resmi unik"
-        decimal amount_paid "Nominal uang yang disetor"
-        enum payment_method "cash atau bank_transfer atau qris"
-        varchar proof_image_url "Tautan foto bukti transfer"
-        datetime payment_date "Waktu setoran diterima"
-        datetime verified_at "Waktu diverifikasi kasir"
-        text notes "Catatan transaksi pembayaran"
-        datetime created_at "Waktu data dibuat"
+        bigint id PK
+        bigint student_id FK
+        bigint branch_id FK
+        bigint submitted_by_user_id FK
+        bigint bank_account_id FK
+        bigint resubmission_of_id FK
+        varchar submission_no UK
+        varchar idempotency_key UK
+        enum payment_method
+        enum status
+        decimal amount_paid
+        datetime payment_date
+        datetime submitted_at
+        varchar proof_storage_key
+        char proof_sha256
+        varchar receipt_no UK
+        datetime confirmed_at
+        text notes
+        datetime created_at
+        datetime updated_at
     }
-
-    %% ============================================================
-    %%  GRUP D - MONITORING & LOG (2 TABEL)
-    %% ============================================================
-
-    wa_logs {
-        int id PK "ID unik riwayat pesan WA"
-        int bill_id FK "Relasi ke tagihan penagihan"
-        int student_id FK "Relasi ke siswa terkait"
-        varchar template_type "Jenis template pesan digunakan"
-        varchar recipient_phone "Nomor telepon WA tujuan"
-        text message_content "Teks pesan yang dikirimkan"
-        enum sent_status "pending atau sent atau failed"
-        datetime sent_at "Waktu pesan terkirim"
-        datetime created_at "Waktu data dibuat"
+    payment_allocations {
+        bigint id PK
+        bigint payment_id FK
+        bigint bill_id FK
+        decimal amount
+        datetime created_at
     }
-
-    revenue_validations {
-        int id PK "ID unik rekonsiliasi bank"
-        int branch_id FK "Cabang yang direkonsiliasi"
-        varchar period_month "Bulan rekonsiliasi YYYY-MM"
-        decimal expected_revenue "Total target penerimaan SPP"
-        decimal actual_revenue "Penerimaan riil kasir"
-        int validated_by_user_id FK "Bendahara pusat pemeriksa"
-        enum validation_status "pending atau validated atau discrepancy"
-        text notes "Catatan selisih mutasi bank"
-        datetime validated_at "Waktu validasi disahkan"
-        datetime created_at "Waktu data dibuat"
+    payment_reviews {
+        bigint id PK
+        bigint payment_id FK
+        bigint reviewer_user_id FK
+        enum decision
+        text reason
+        datetime reviewed_at
+        datetime created_at
     }
-
-    %% ============================================================
-    %%  RELASI ANTAR TABEL
-    %% ============================================================
-
-    %% --- academic_years ---
-    academic_years ||--o{ fee_tariffs : "memiliki tarif"
-    academic_years ||--o{ classes : "memiliki kelas"
-    academic_years ||--o{ bills : "memiliki tagihan"
-    academic_years ||--o{ students : "tahun daftar"
-
-    %% --- branches ---
-    branches ||--o{ users : "memiliki admin"
-    branches ||--o{ students : "mendaftar di"
-    branches ||--o{ mentors : "bertugas di"
-    branches ||--o{ class_rooms : "memiliki ruang"
-    branches ||--o{ classes : "menjalankan kelas"
-    branches ||--o{ revenue_validations : "divalidasi"
-
-    %% --- users ---
-    users ||--o{ payments : "memverifikasi"
-    users ||--o{ revenue_validations : "memvalidasi"
-
-    %% --- subjects & mentors ---
-    subjects ||--o{ mentor_subjects : "diajarkan oleh"
-    subjects ||--o{ classes : "mata pelajaran"
-    mentors ||--o{ mentor_subjects : "mengajar"
-    mentors ||--o{ class_schedules : "dijadwalkan"
-
-    %% --- class_rooms ---
-    class_rooms ||--o{ class_schedules : "dipakai di"
-
-    %% --- classes ---
-    classes ||--o{ class_schedules : "dijadwalkan"
-    classes ||--o{ class_enrollments : "memiliki siswa"
-
-    %% --- students ---
-    students ||--o{ class_enrollments : "terdaftar di"
-    students ||--o{ bills : "ditagihkan ke"
-    students ||--o{ wa_logs : "dikirimi pesan"
-
-    %% --- bills ---
-    bills ||--o{ payments : "dibayar melalui"
-    bills ||--o{ wa_logs : "reminder untuk"
+    cash_batches {
+        bigint id PK
+        bigint branch_id FK
+        bigint created_by_user_id FK
+        bigint submitted_by_user_id FK
+        bigint received_by_user_id FK
+        bigint deposited_by_user_id FK
+        bigint bank_account_id FK
+        varchar batch_no UK
+        enum status
+        datetime submitted_at
+        datetime received_at
+        datetime deposited_at
+        varchar handover_proof_key
+        varchar deposit_proof_key
+        text notes
+        datetime created_at
+        datetime updated_at
+    }
+    cash_batch_items {
+        bigint id PK
+        bigint cash_batch_id FK
+        bigint payment_id FK
+        decimal amount
+        datetime created_at
+    }
+    bank_accounts {
+        bigint id PK
+        varchar bank_name
+        varchar account_number UK
+        varchar account_holder
+        boolean is_active
+        datetime created_at
+        datetime updated_at
+    }
+    bank_entries {
+        bigint id PK
+        bigint bank_account_id FK
+        bigint recorded_by_user_id FK
+        varchar entry_reference
+        date entry_date
+        decimal amount
+        varchar description
+        varchar evidence_storage_key
+        enum status
+        varchar void_reason
+        datetime created_at
+        datetime updated_at
+    }
+    bank_matches {
+        bigint id PK
+        bigint bank_entry_id FK
+        bigint payment_id FK
+        bigint cash_batch_id FK
+        bigint matched_by_user_id FK
+        decimal matched_amount
+        datetime matched_at
+        varchar notes
+        datetime created_at
+    }
+    reminder_actions {
+        bigint id PK
+        bigint bill_id FK
+        bigint requested_by_user_id FK
+        varchar recipient_phone
+        text message_content
+        decimal outstanding_amount
+        varchar template_version
+        datetime requested_at
+        datetime created_at
+    }
+    activity_logs {
+        bigint id PK
+        bigint actor_user_id FK
+        bigint branch_id FK
+        varchar action
+        varchar entity_type
+        bigint entity_id
+        json change_summary
+        varchar request_id
+        datetime occurred_at
+        datetime created_at
+    }
+    branches |o--o{ users : "branch_id"
+    branches ||--o{ fee_tariffs : "branch_id"
+    academic_years ||--o{ fee_tariffs : "academic_year_id"
+    branches ||--o{ students : "branch_id"
+    academic_years ||--o{ students : "academic_year_id"
+    branches |o--o{ mentors : "branch_id"
+    mentors ||--o{ mentor_subjects : "mentor_id"
+    subjects ||--o{ mentor_subjects : "subject_id"
+    branches ||--o{ class_rooms : "branch_id"
+    branches ||--o{ classes : "branch_id"
+    academic_years ||--o{ classes : "academic_year_id"
+    classes ||--o{ class_schedules : "class_id"
+    subjects ||--o{ class_schedules : "subject_id"
+    mentors ||--o{ class_schedules : "mentor_id"
+    class_rooms ||--o{ class_schedules : "room_id"
+    classes ||--o{ class_enrollments : "class_id"
+    students ||--o{ class_enrollments : "student_id"
+    users ||--o{ class_enrollments : "created_by_user_id"
+    students ||--o{ bills : "student_id"
+    branches ||--o{ bills : "branch_id"
+    academic_years ||--o{ bills : "academic_year_id"
+    fee_tariffs ||--o{ bills : "fee_tariff_id"
+    users ||--o{ bills : "created_by_user_id"
+    users |o--o{ bills : "discount_approved_by_user_id"
+    students ||--o{ payments : "student_id"
+    branches ||--o{ payments : "branch_id"
+    users ||--o{ payments : "submitted_by_user_id"
+    bank_accounts |o--o{ payments : "bank_account_id"
+    payments |o--o| payments : "resubmission_of_id"
+    payments ||--o{ payment_allocations : "payment_id"
+    bills ||--o{ payment_allocations : "bill_id"
+    payments ||--o| payment_reviews : "payment_id"
+    users ||--o{ payment_reviews : "reviewer_user_id"
+    branches ||--o{ cash_batches : "branch_id"
+    users ||--o{ cash_batches : "created_by_user_id"
+    users |o--o{ cash_batches : "submitted_by_user_id"
+    users |o--o{ cash_batches : "received_by_user_id"
+    users |o--o{ cash_batches : "deposited_by_user_id"
+    bank_accounts |o--o{ cash_batches : "bank_account_id"
+    cash_batches ||--o{ cash_batch_items : "cash_batch_id"
+    payments ||--o| cash_batch_items : "payment_id"
+    bank_accounts ||--o{ bank_entries : "bank_account_id"
+    users ||--o{ bank_entries : "recorded_by_user_id"
+    bank_entries ||--o| bank_matches : "bank_entry_id"
+    payments |o--o| bank_matches : "payment_id"
+    cash_batches |o--o| bank_matches : "cash_batch_id"
+    users ||--o{ bank_matches : "matched_by_user_id"
+    bills ||--o{ reminder_actions : "bill_id"
+    users ||--o{ reminder_actions : "requested_by_user_id"
+    users ||--o{ activity_logs : "actor_user_id"
+    branches |o--o{ activity_logs : "branch_id"
 ```
 
-> **Catatan**: Tabel `students` memiliki relasi *self-referencing* (`sibling_student_id → students.id`) untuk menghubungkan data saudara kandung (kakak-adik) yang terdaftar di bimbel. Relasi ini tidak digambarkan secara visual di diagram Mermaid karena keterbatasan *renderer*, namun tetap diimplementasikan sebagai *foreign key* di database.
+Relasi pengguna atau tentor dengan cabang dapat bersifat opsional sesuai peran atau pangkalannya. Dua relasi sumber pada bank_matches masing-masing opsional, tetapi kendala gabungan mewajibkan tepat satu sumber terisi.
 
----
+## 3. Kamus data
 
-## 🎯 2. Latar Belakang & Urgensi Perancangan 16 Tabel Basis Data
+Setiap tabel mempunyai id sebagai kunci utama, sedangkan atribut FK menunjuk kunci pada tabel yang disebutkan. Kolom created_at mencatat waktu pembuatan, dan updated_at hanya dipakai pada objek yang mempunyai perubahan keadaan.
 
-### 2.1 Dasar Pemikiran Arsitektur 16 Tabel
+Nominal menggunakan DECIMAL, bukan bilangan pecahan biner, dengan satuan rupiah. Waktu kejadian disimpan dalam UTC dan ditampilkan sebagai Asia/Makassar, sedangkan tanggal jatuh tempo dan jam jadwal menggunakan kalender operasional Balikpapan.
 
-Perancangan basis data relasional pada sistem ini terdiri atas **16 entitas tabel** yang dikelompokkan ke dalam 4 pilar arsitektur: **Grup A (Fondasi & Konfigurasi — 5 Tabel)**, **Grup B (Data Operasional — 7 Tabel)**, **Grup C (Keuangan & Pembayaran — 2 Tabel)**, dan **Grup D (Monitoring & Log — 2 Tabel)**.
+Nilai ENUM merupakan pilihan rancangan untuk MySQL, bukan klaim portabilitas langsung ke PostgreSQL. Keterangan unik per kolom berbeda dari kunci unik gabungan yang dituliskan pada aturan tiap tabel.
 
-Jumlah 16 tabel ini merupakan hasil optimasi dari rancangan awal 20 tabel, dengan pertimbangan berikut:
+### 3.1 academic_years: Tahun ajaran
 
-| Aspek | Pertimbangan |
+Menyimpan rentang tahun ajaran yang dipakai kelas, tarif, dan tagihan. Arsip tahun sebelumnya tetap tersedia ketika tahun operasional berubah.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `name` | `VARCHAR(30)` | Tidak | Tidak ada FK; UNIQUE | Nama tahun ajaran |
+| `start_date` | `DATE` | Tidak | Tidak ada FK | Tanggal mulai tahun ajaran |
+| `end_date` | `DATE` | Tidak | Tidak ada FK | Tanggal akhir tahun ajaran |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Penanda tahun operasional aktif, awal FALSE |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Tanggal akhir tidak mendahului tanggal mulai. Pergantian tahun aktif dilakukan dalam transaksi yang mencegah lebih dari satu tahun aktif.
+- Tanggal kalender tahun ajaran berasal dari ketentuan mitra. Aktivasi tahun baru tidak mengubah tingkat kelas pada tagihan historis.
+
+### 3.2 branches: Cabang
+
+Menyimpan identitas cabang untuk pemisahan data operasional. Jumlah ruang diperoleh dari data ruang aktif, sehingga tidak ditulis ulang sebagai penghitung bebas.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `code` | `VARCHAR(20)` | Tidak | Tidak ada FK; UNIQUE | Kode cabang |
+| `name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama cabang |
+| `address` | `TEXT` | Ya | Tidak ada FK | Alamat cabang |
+| `phone_wa` | `VARCHAR(20)` | Ya | Tidak ada FK | Kontak cabang dengan format internasional |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status operasional cabang |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Cabang yang mempunyai transaksi dinonaktifkan, bukan dihapus. Lokasi pada peta publik tidak menjadi kebutuhan inti prototipe.
+
+### 3.3 users: Akun pengguna
+
+Menyimpan akun Admin Cabang dan Super Admin. Peran menentukan izin fungsi, sedangkan penugasan cabang membatasi objek yang dapat diakses.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Ya | FK ke `branches.id` | Cabang penugasan Admin Cabang; kosong untuk Super Admin |
+| `name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama pengguna |
+| `email` | `VARCHAR(190)` | Tidak | Tidak ada FK; UNIQUE | Identitas masuk yang unik |
+| `password_hash` | `VARCHAR(255)` | Tidak | Tidak ada FK | Hasil hash kata sandi, bukan kata sandi terbuka |
+| `role` | `ENUM('branch_admin','super_admin')` | Tidak | Tidak ada FK | Peran yang diberikan melalui proses berwenang |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status akun aktif |
+| `last_login_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu masuk terakhir |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Admin Cabang wajib mempunyai branch_id yang sah; Super Admin menggunakan branch_id kosong. Nilai cabang kosong pada akun tidak sah tidak memberikan hak Super Admin.
+- Pemeriksaan izin dijalankan pada peladen untuk setiap objek. Mutasi akun tidak mengubah cabang pemilik transaksi lama atau menghapus jejak pelakunya.
+
+### 3.4 subjects: Mata pelajaran
+
+Menyediakan nama mata pelajaran yang dipakai pada jadwal. Mata pelajaran dilekatkan pada sesi jadwal agar satu kelompok belajar dapat mengikuti beberapa mata pelajaran.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `code` | `VARCHAR(20)` | Tidak | Tidak ada FK; UNIQUE | Kode mata pelajaran |
+| `name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama mata pelajaran |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status penggunaan mata pelajaran |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Mata pelajaran yang sudah dipakai dinonaktifkan tanpa menghapus riwayat. Daftar mata pelajaran ditetapkan dari layanan yang benar-benar tersedia.
+
+### 3.5 fee_tariffs: Tarif berdasarkan cabang dan sesi
+
+Menyimpan tarif yang dapat dikelola Super Admin melalui aplikasi. Pemilihan tarif memperhitungkan cabang, sesi, jenjang, program, jenis biaya, dan periode pembayaran.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang tempat tarif berlaku, tanpa tarif global implisit |
+| `academic_year_id` | `BIGINT UNSIGNED` | Tidak | FK ke `academic_years.id` | Tahun ajaran tarif |
+| `session_code` | `VARCHAR(30)` | Tidak | Tidak ada FK | Kode sesi belajar atau kode all yang dipilih secara eksplisit |
+| `learning_program` | `ENUM('reguler','intensif','paket')` | Tidak | Tidak ada FK | Kategori program, bukan penentu otomatis siklus pembayaran |
+| `grade_level` | `ENUM('TK','SD','SMP','SMA')` | Tidak | Tidak ada FK | Jenjang sasaran |
+| `class_grade_start` | `TINYINT UNSIGNED` | Ya | Tidak ada FK | Tingkat awal; kosong untuk TK |
+| `class_grade_end` | `TINYINT UNSIGNED` | Ya | Tidak ada FK | Tingkat akhir; kosong untuk TK |
+| `fee_type` | `ENUM('tuition','module','registration')` | Tidak | Tidak ada FK | Komponen biaya |
+| `billing_cycle` | `ENUM('monthly','semester','annual','once')` | Tidak | Tidak ada FK | Siklus kewajiban yang ditetapkan mitra |
+| `amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nominal tarif dasar yang positif |
+| `valid_from` | `DATE` | Tidak | Tidak ada FK | Tanggal mulai berlaku |
+| `valid_until` | `DATE` | Tidak | Tidak ada FK | Tanggal akhir berlaku |
+| `description` | `VARCHAR(255)` | Ya | Tidak ada FK | Dasar atau nama paket |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status ketersediaan untuk tagihan baru |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Tidak boleh ada dua tarif aktif dengan cakupan cabang, sesi, program, jenjang, komponen, siklus, tingkat, dan tanggal yang bertumpang tindih. Pemeriksaan rentang dilakukan pada aplikasi dalam transaksi.
+- Tarif tidak dipilih melalui prioritas tersembunyi antara sesi tertentu dan all. Pengguna memilih cakupan yang sah dan sistem menolak kandidat ambigu.
+- Perubahan tarif hanya memengaruhi tagihan baru. Tarif yang sudah dirujuk tidak diubah nominal atau cakupannya, melainkan diganti versi baris baru dengan masa berlaku yang tidak bertumpang tindih.
+- Nilai yang sudah dikenakan disimpan pada bills bersama periode dan dasar penyesuaiannya. Identitas tarif sumber tetap dapat ditelusuri pada baris terdahulu.
+
+### 3.6 students: Siswa dan kontak wali
+
+Menyimpan identitas siswa yang dibutuhkan administrasi. Kontak wali menjadi tujuan pesan, sedangkan potongan biaya tidak dipatok sebagai nilai global pada profil siswa.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang administratif siswa saat ini |
+| `academic_year_id` | `BIGINT UNSIGNED` | Tidak | FK ke `academic_years.id` | Tahun ajaran pendaftaran pertama |
+| `registration_no` | `VARCHAR(30)` | Tidak | Tidak ada FK; UNIQUE | Nomor pendaftaran unik |
+| `full_name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama lengkap siswa |
+| `birth_date` | `DATE` | Ya | Tidak ada FK | Tanggal lahir jika dibutuhkan formulir |
+| `parent_name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama wali yang dihubungi |
+| `parent_phone_wa` | `VARCHAR(20)` | Tidak | Tidak ada FK | Nomor WhatsApp wali tervalidasi formatnya |
+| `school_origin` | `VARCHAR(150)` | Ya | Tidak ada FK | Sekolah asal |
+| `grade_level` | `ENUM('TK','SD','SMP','SMA')` | Tidak | Tidak ada FK | Jenjang pendidikan |
+| `class_grade` | `TINYINT UNSIGNED` | Ya | Tidak ada FK | Tingkat kelas; kosong untuk TK |
+| `home_address` | `TEXT` | Ya | Tidak ada FK | Alamat atau kelurahan sesuai kebutuhan data |
+| `learning_program` | `ENUM('reguler','intensif','paket')` | Tidak | Tidak ada FK | Program administratif saat ini |
+| `session_code` | `VARCHAR(30)` | Tidak | Tidak ada FK | Sesi administratif untuk pemilihan tarif |
+| `family_reference` | `VARCHAR(50)` | Ya | Tidak ada FK | Kode kelompok saudara setelah diperiksa admin |
+| `status` | `ENUM('active','alumni','inactive')` | Tidak | Tidak ada FK | Status administratif siswa |
+| `registered_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pendaftaran |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Tingkat TK kosong, SD satu sampai enam, SMP tujuh sampai sembilan, dan SMA sepuluh sampai dua belas. Kelengkapan akhir formulir dikonfirmasi kepada mitra.
+- Kode keluarga mendukung lebih dari dua saudara tanpa menentukan diskon otomatis. Nominal, alasan, dan pemberi persetujuan potongan disimpan pada tagihan.
+- Perpindahan cabang merupakan tindakan berwenang yang tercatat pada activity_logs dan mengakhiri keanggotaan lama bila diperlukan. Cabang tagihan dan penerimaan yang telah tercatat tidak ikut berubah.
+
+### 3.7 mentors: Tentor
+
+Menyimpan satu identitas tentor yang digunakan lintas cabang. Identitas ini memungkinkan pemeriksaan benturan tanpa menggandakan tentor pada setiap cabang.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Ya | FK ke `branches.id` | Cabang pangkalan, boleh kosong bagi tentor lintas cabang |
+| `full_name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama tentor |
+| `phone_wa` | `VARCHAR(20)` | Ya | Tidak ada FK | Kontak tentor bila diperlukan |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status aktif tentor |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Tentor tidak memperoleh akun dasbor dalam lingkup inti. Jumlah tentor tidak dipatok sebelum daftar mitra diperiksa.
+
+### 3.8 mentor_subjects: Kompetensi mata pelajaran tentor
+
+Menghubungkan tentor dengan mata pelajaran yang dapat diampunya. Hubungan ini dipakai saat penugasan jadwal dan tidak membentuk akun pengguna baru.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `mentor_id` | `BIGINT UNSIGNED` | Tidak | FK ke `mentors.id` | Tentor |
+| `subject_id` | `BIGINT UNSIGNED` | Tidak | FK ke `subjects.id` | Mata pelajaran |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Pasangan mentor_id dan subject_id unik. Penghapusan penugasan kompetensi tidak menghapus jadwal historis.
+
+### 3.9 class_rooms: Ruang fisik
+
+Menyimpan ruang dan daya tampung fisik pada suatu cabang. Data ini dibedakan dari kelompok belajar agar pemakaian ruang pada setiap jadwal dapat diperiksa.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang pemilik ruang |
+| `room_name` | `VARCHAR(60)` | Tidak | Tidak ada FK | Nama ruang yang unik dalam cabang |
+| `physical_capacity` | `SMALLINT UNSIGNED` | Tidak | Tidak ada FK | Daya tampung fisik yang positif |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status ruang tersedia untuk penjadwalan |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Pasangan branch_id dan room_name unik. Penurunan kapasitas ruang diperiksa terhadap seluruh kelas dan jadwal aktif yang masih berlaku sebelum disimpan.
+
+### 3.10 classes: Kelompok belajar
+
+Menyimpan identitas dan batas peserta kelompok belajar. Kondisi penuh dihitung dari keanggotaan aktif, sehingga tidak dicampur dengan status kelas ditutup.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang penyelenggara kelas |
+| `academic_year_id` | `BIGINT UNSIGNED` | Tidak | FK ke `academic_years.id` | Tahun ajaran kelas |
+| `class_name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama kelompok belajar |
+| `learning_program` | `ENUM('reguler','intensif','paket')` | Tidak | Tidak ada FK | Kategori program kelas |
+| `session_code` | `VARCHAR(30)` | Tidak | Tidak ada FK | Sesi kelompok belajar |
+| `grade_level` | `ENUM('TK','SD','SMP','SMA')` | Tidak | Tidak ada FK | Jenjang kelompok belajar |
+| `class_grade` | `TINYINT UNSIGNED` | Ya | Tidak ada FK | Tingkat kelas; kosong untuk TK |
+| `max_students` | `SMALLINT UNSIGNED` | Tidak | Tidak ada FK | Batas peserta aktif yang positif |
+| `near_full_remaining` | `SMALLINT UNSIGNED` | Tidak | Tidak ada FK | Ambang sisa tempat untuk peringatan, ditetapkan sebelum UAT |
+| `status` | `ENUM('active','closed')` | Tidak | Tidak ada FK | Status operasional kelompok belajar |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Nama kelas unik dalam cabang dan tahun ajaran. near_full_remaining bernilai paling sedikit satu dan tidak melebihi max_students; nilai aktual ditetapkan bersama mitra.
+- current_students dan indikator almost_full atau full merupakan nilai turunan dari keanggotaan aktif, bukan kolom penghitung tersimpan. Kelas penuh tetap dapat berstatus active.
+- Penerimaan anggota baru mensyaratkan sedikitnya satu jadwal aktif yang masih berlaku dengan ruang aktif. max_students tidak melebihi kapasitas setiap ruang pada jadwal aktif yang relevan.
+
+### 3.11 class_schedules: Jadwal kelas
+
+Menghubungkan kelas, mata pelajaran, tentor, dan ruang pada suatu rentang tanggal. Rentang tersebut mencegah jadwal lama atau nonaktif dianggap benturan yang masih berlaku.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `class_id` | `BIGINT UNSIGNED` | Tidak | FK ke `classes.id` | Kelompok belajar |
+| `subject_id` | `BIGINT UNSIGNED` | Tidak | FK ke `subjects.id` | Mata pelajaran sesi |
+| `mentor_id` | `BIGINT UNSIGNED` | Tidak | FK ke `mentors.id` | Tentor dengan kompetensi yang sesuai |
+| `room_id` | `BIGINT UNSIGNED` | Tidak | FK ke `class_rooms.id` | Ruang yang berada pada cabang kelas |
+| `day_of_week` | `TINYINT UNSIGNED` | Tidak | Tidak ada FK | Hari satu sampai tujuh, Senin sampai Minggu |
+| `start_time` | `TIME` | Tidak | Tidak ada FK | Jam mulai pada zona waktu operasional |
+| `end_time` | `TIME` | Tidak | Tidak ada FK | Jam selesai pada hari yang sama |
+| `valid_from` | `DATE` | Tidak | Tidak ada FK | Tanggal awal jadwal berlaku |
+| `valid_until` | `DATE` | Tidak | Tidak ada FK | Tanggal akhir jadwal berlaku |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Status jadwal aktif |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Jam selesai sesudah jam mulai dan tanggal akhir tidak mendahului tanggal awal. Jadwal wajib berada dalam rentang tahun ajaran kelas.
+- Benturan diperiksa jika ada kejadian hari yang sama dalam irisan rentang tanggal dan jamnya beririsan. Pengubahan jadwal mengecualikan id jadwal yang sedang disunting.
+- Benturan ditampilkan sebagai peringatan untuk ditinjau, bukan diklaim sebagai larangan mutlak yang telah disepakati mitra. Calon jadwal dapat disimpan nonaktif sampai penetapan ditinjau; aktivasi dengan konflik belum diaktifkan sebelum kebijakan mitra ditetapkan.
+- Tentor diperiksa lintas cabang; ruang dan kelompok belajar diperiksa pada identitasnya. Admin Cabang hanya menerima informasi konflik yang diperlukan, tanpa memperoleh daftar lengkap data cabang lain.
+- Perubahan ruang, jadwal, kapasitas kelas, dan kapasitas ruang menggunakan pemeriksaan yang saling konsisten. Penugasan tentor harus sesuai pasangan kompetensi mentor_subjects.
+
+### 3.12 class_enrollments: Riwayat keanggotaan kelas
+
+Mencatat setiap interval masuk dan keluar siswa pada kelompok belajar. Siswa yang kembali setelah keluar memperoleh baris interval baru agar sejarah sebelumnya tidak ditimpa.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `class_id` | `BIGINT UNSIGNED` | Tidak | FK ke `classes.id` | Kelompok belajar |
+| `student_id` | `BIGINT UNSIGNED` | Tidak | FK ke `students.id` | Siswa yang menjadi anggota |
+| `created_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Pengguna yang menempatkan siswa |
+| `joined_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu mulai keanggotaan |
+| `ended_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu akhir keanggotaan; kosong ketika aktif |
+| `end_reason` | `VARCHAR(255)` | Ya | Tidak ada FK | Alasan keluar atau selesai; wajib jika ended_at terisi |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Satu siswa tidak boleh mempunyai dua interval aktif pada kelas yang sama. Baris lama boleh tetap ada untuk keanggotaan yang sudah berakhir.
+- Jumlah peserta aktif diperoleh dari ended_at kosong; pengaktifan baru dimulai segera dan tidak dijadwalkan ke masa depan pada lingkup inti. Penempatan siswa pada cabang berbeda tidak diaktifkan sebelum kebijakannya ditetapkan.
+- Semua jalur tambah dan keluar anggota mengunci baris kelas dalam transaksi. Indeks unik bersyarat melalui kolom generated yang bernilai NULL untuk interval berakhir dapat digunakan pada MySQL dan harus diuji saat migrasi fisik.
+
+### 3.13 bills: Tagihan dan nilai historis
+
+Menyimpan kewajiban yang diterbitkan untuk siswa pada cabang tertentu. Nilai dasar, potongan, periode, dan cabang pemilik merupakan rekaman historis saat penerbitan.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `student_id` | `BIGINT UNSIGNED` | Tidak | FK ke `students.id` | Siswa yang ditagih |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang pemilik tagihan yang tidak mengikuti mutasi siswa |
+| `academic_year_id` | `BIGINT UNSIGNED` | Tidak | FK ke `academic_years.id` | Tahun ajaran tagihan |
+| `fee_tariff_id` | `BIGINT UNSIGNED` | Tidak | FK ke `fee_tariffs.id` | Tarif sumber penerbitan |
+| `created_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Penerbit tagihan |
+| `fee_type` | `ENUM('tuition','module','registration')` | Tidak | Tidak ada FK | Salinan jenis kewajiban |
+| `billing_cycle` | `ENUM('monthly','semester','annual','once')` | Tidak | Tidak ada FK | Salinan siklus kewajiban |
+| `period_key` | `VARCHAR(30)` | Tidak | Tidak ada FK | Kode periode yang baku menurut siklus |
+| `period_start` | `DATE` | Tidak | Tidak ada FK | Tanggal awal cakupan biaya |
+| `period_end` | `DATE` | Tidak | Tidak ada FK | Tanggal akhir cakupan biaya |
+| `base_amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nilai dasar saat diterbitkan |
+| `discount_amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Potongan aktual, awal nol |
+| `discount_reason` | `VARCHAR(255)` | Ya | Tidak ada FK | Dasar potongan; wajib jika ada potongan |
+| `discount_approved_by_user_id` | `BIGINT UNSIGNED` | Ya | FK ke `users.id` | Pemberi persetujuan potongan berwenang |
+| `total_amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nilai dasar dikurangi potongan |
+| `due_date` | `DATE` | Tidak | Tidak ada FK | Jatuh tempo spesifik tagihan |
+| `status` | `ENUM('issued','cancelled')` | Tidak | Tidak ada FK | Status penerbitan, berbeda dari pelunasan |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Kunci bisnis unik adalah student_id, branch_id, academic_year_id, fee_type, billing_cycle, dan period_key. Satu komponen tidak ditagih dua kali untuk periode sama.
+- Nilai dasar positif, potongan antara nol dan nilai dasar, serta total_amount sama dengan base_amount dikurangi discount_amount. Potongan positif memerlukan alasan serta pemberi persetujuan.
+- Tarif sumber harus berasal dari cabang, tahun ajaran, jenjang, program, dan sesi yang sesuai pada saat penerbitan. Penugasan serta identitas historis tagihan tidak boleh mengikuti perubahan profil siswa secara otomatis.
+- Kode bulanan menggunakan YYYY-MM; semester menggunakan kode tahun ajaran dan S1 atau S2; tahunan menggunakan tahun ajaran; sekali menggunakan kode kewajiban yang disepakati. Paket semester tidak diterbitkan setiap bulan.
+- Status unpaid, partial, paid, dan penanda lewat jatuh tempo dihitung terpisah dari alokasi pembayaran sah. Pembatalan hanya boleh sebelum terdapat pembayaran sah atau pengajuan aktif yang terkait.
+
+### 3.14 payments: Penerimaan atau pengajuan pembayaran
+
+Menyimpan satu pembayaran untuk satu siswa, cabang historis, dan kanal. Satu bukti dapat dialokasikan ke beberapa tagihan melalui payment_allocations tanpa menggandakan penerimaan.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `student_id` | `BIGINT UNSIGNED` | Tidak | FK ke `students.id` | Siswa pemilik seluruh tagihan alokasi |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang pemilik seluruh tagihan alokasi |
+| `submitted_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Admin yang mencatat atau mengajukan |
+| `bank_account_id` | `BIGINT UNSIGNED` | Ya | FK ke `bank_accounts.id` | Rekening tujuan; wajib untuk transfer, kosong untuk tunai |
+| `resubmission_of_id` | `BIGINT UNSIGNED` | Ya | FK ke `payments.id`; UNIQUE | Pengajuan returned yang diperbaiki; kosong untuk pengajuan awal |
+| `submission_no` | `VARCHAR(40)` | Tidak | Tidak ada FK; UNIQUE | Nomor pencatatan atau pengajuan yang unik |
+| `idempotency_key` | `VARCHAR(80)` | Tidak | Tidak ada FK; UNIQUE | Kunci permintaan agar kiriman ulang tidak membuat transaksi ganda |
+| `payment_method` | `ENUM('cash','bank_transfer')` | Tidak | Tidak ada FK | Kanal inti prototipe |
+| `status` | `ENUM('recorded','submitted','verified','returned')` | Tidak | Tidak ada FK | recorded hanya tunai; status lain mengikuti pemeriksaan transfer |
+| `amount_paid` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nominal penerimaan atau pengajuan positif |
+| `payment_date` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu penerimaan tunai atau transfer menurut bukti |
+| `submitted_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan atau pengajuan disimpan |
+| `proof_storage_key` | `VARCHAR(255)` | Ya | Tidak ada FK | Kunci berkas privat, wajib untuk transfer |
+| `proof_sha256` | `CHAR(64)` | Ya | Tidak ada FK | Digest berkas untuk penelusuran, bukan bukti keaslian |
+| `receipt_no` | `VARCHAR(40)` | Ya | Tidak ada FK; UNIQUE | Kuitansi resmi setelah recorded atau verified |
+| `confirmed_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu penerimaan sah; kosong sebelum konfirmasi |
+| `notes` | `TEXT` | Ya | Tidak ada FK | Catatan transaksi |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Seluruh rincian alokasi harus memiliki student_id dan branch_id yang sama dengan induk. Jumlah alokasi sama persis dengan amount_paid.
+- Tunai recorded dan transfer verified dihitung sebagai penerimaan sah. Transfer submitted atau returned tidak mengurangi sisa tagihan dan tidak memperoleh kuitansi resmi.
+- Bukti serta rincian pengajuan transfer tidak disunting setelah submitted. Perbaikan membuat baris baru yang merujuk pengajuan returned, sedangkan baris lama dan keputusan lamanya dipertahankan.
+- Satu pengajuan returned mempunyai paling banyak satu pengajuan lanjutan langsung. Gunakan UNIQUE(resubmission_of_id), cegah siklus rujukan, dan izinkan rantai perbaikan melalui pengajuan berikutnya.
+- Perubahan status dilakukan hanya melalui transaksi prosedur yang sah. Koreksi pembayaran yang sudah terkonfirmasi memerlukan prosedur koreksi berwenang tersendiri dan bukan penghapusan transaksi lama.
+
+### 3.15 payment_allocations: Alokasi pembayaran ke tagihan
+
+Mencatat pembagian satu pembayaran ke satu atau beberapa tagihan. Rincian ini membuat jumlah kuitansi dan jumlah penerimaan tetap satu meskipun mencakup beberapa periode.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `payment_id` | `BIGINT UNSIGNED` | Tidak | FK ke `payments.id` | Induk penerimaan atau pengajuan |
+| `bill_id` | `BIGINT UNSIGNED` | Tidak | FK ke `bills.id` | Tagihan tujuan alokasi |
+| `amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nominal alokasi yang positif |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Pasangan payment_id dan bill_id unik. Tagihan berbeda siswa atau cabang ditolak, serta total alokasi wajib sama dengan nominal induk.
+- Alokasi hanya menuju tagihan issued dan tidak boleh melampaui sisa tagihan saat konfirmasi. Pembayaran sebagian secara bawaan tidak diaktifkan sebelum validasi mitra, sehingga setiap alokasi harus melunasi sisa tagihan yang dipilih.
+- Pengajuan menunggu pemeriksaan tidak dianggap pelunasan dan tidak menjamin saldo masih tersedia. Saat disetujui, seluruh tagihan dikunci berurutan dan sisa dihitung ulang.
+
+### 3.16 payment_reviews: Keputusan pemeriksaan transfer
+
+Menyimpan keputusan pemeriksa atas satu pengajuan transfer. Keputusan lama tidak diganti ketika Admin membuat pengajuan perbaikan baru.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `payment_id` | `BIGINT UNSIGNED` | Tidak | FK ke `payments.id`; UNIQUE | Pengajuan yang diputuskan |
+| `reviewer_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Super Admin dengan kewenangan yang telah ditetapkan |
+| `decision` | `ENUM('verified','returned')` | Tidak | Tidak ada FK | Keputusan akhir untuk pengajuan tersebut |
+| `reason` | `TEXT` | Ya | Tidak ada FK | Wajib untuk returned; catatan pemeriksaan untuk verified |
+| `reviewed_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu keputusan disimpan |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Hanya transfer submitted dapat diputuskan. Setiap pengajuan mempunyai paling banyak satu keputusan akhir, sedangkan tindak lanjut perbaikan menjadi pengajuan baru.
+- Keputusan verified mensyaratkan bank_matches yang sah dan dibuat atomik bersama pembaruan status, alokasi, serta nomor kuitansi. Pengembalian tidak membuat pencocokan bank.
+
+### 3.17 cash_batches: Penyerahan dan setoran kas
+
+Mengelompokkan penerimaan tunai cabang untuk penyerahan kepada pusat dan penyetoran ke rekening. Penyerahan kepada pusat dibedakan dari masuknya uang ke bank.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `branch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `branches.id` | Cabang asal seluruh pembayaran tunai |
+| `created_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Penyusun kelompok penerimaan |
+| `submitted_by_user_id` | `BIGINT UNSIGNED` | Ya | FK ke `users.id` | Penyerah yang mengajukan, kosong sebelum diserahkan |
+| `received_by_user_id` | `BIGINT UNSIGNED` | Ya | FK ke `users.id` | Penerima pusat, kosong sebelum penerimaan dikonfirmasi |
+| `deposited_by_user_id` | `BIGINT UNSIGNED` | Ya | FK ke `users.id` | Petugas pencatat setoran bank, kosong sebelum disetor |
+| `bank_account_id` | `BIGINT UNSIGNED` | Ya | FK ke `bank_accounts.id` | Rekening tujuan setoran, wajib ketika deposited |
+| `batch_no` | `VARCHAR(40)` | Tidak | Tidak ada FK; UNIQUE | Nomor kelompok kas yang unik |
+| `status` | `ENUM('draft','submitted','received','deposited')` | Tidak | Tidak ada FK | Tahap penguasaan kas |
+| `submitted_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu penyerahan diajukan |
+| `received_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu penerimaan pusat dikonfirmasi |
+| `deposited_at` | `DATETIME(6)` | Ya | Tidak ada FK | Waktu kas disetor ke bank |
+| `handover_proof_key` | `VARCHAR(255)` | Ya | Tidak ada FK | Bukti penyerahan privat jika digunakan |
+| `deposit_proof_key` | `VARCHAR(255)` | Ya | Tidak ada FK | Bukti setoran bank privat |
+| `notes` | `TEXT` | Ya | Tidak ada FK | Catatan penyerahan atau selisih yang perlu ditindaklanjuti |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Jumlah kelompok berasal dari penjumlahan cash_batch_items, bukan nilai target tagihan. Anggota hanya pembayaran tunai recorded dari cabang yang sama.
+- Daftar anggota dapat diperbaiki pada draft; setelah submitted, daftar dikunci. Kolom petugas dan waktu tiap tahap wajib terisi berpasangan sesuai statusnya.
+- Prototipe mengasumsikan satu kelompok disetor penuh dalam satu transaksi bank. Pemecahan atau penggabungan setoran lintas kelompok memerlukan perubahan kebutuhan dan alokasi yang belum diaktifkan.
+- Penerimaan pusat dan pencocokan setoran tidak menghasilkan pendapatan siswa baru. Kelompok received yang belum deposited menunjukkan kas di pusat, bukan selisih bank otomatis.
+
+### 3.18 cash_batch_items: Rincian asal kas
+
+Menghubungkan kelompok kas dengan pembayaran tunai sumbernya. Hubungan ini memungkinkan pusat menelusuri nominal setoran sampai ke kuitansi siswa.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `cash_batch_id` | `BIGINT UNSIGNED` | Tidak | FK ke `cash_batches.id` | Kelompok penyerahan kas |
+| `payment_id` | `BIGINT UNSIGNED` | Tidak | FK ke `payments.id`; UNIQUE | Pembayaran tunai sumber |
+| `amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Seluruh nominal pembayaran tunai sumber |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Satu pembayaran tunai hanya menjadi anggota satu kelompok kas. Nominal anggota harus sama dengan nominal pembayaran, tanpa pembagian setoran pada lingkup inti.
+- Penghapusan anggota hanya diperbolehkan pada draft dan dicatat dalam jejak aktivitas. Anggota kelompok submitted atau sesudahnya tidak dihapus diam-diam.
+
+### 3.19 bank_accounts: Rekening resmi
+
+Menyimpan rekening resmi yang boleh menjadi tujuan pembayaran dan setoran. Data rekening dikelola Super Admin tanpa menyimpan kata sandi atau kredensial layanan bank.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `bank_name` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama bank |
+| `account_number` | `VARCHAR(40)` | Tidak | Tidak ada FK; UNIQUE | Nomor rekening |
+| `account_holder` | `VARCHAR(100)` | Tidak | Tidak ada FK | Nama pemilik rekening |
+| `is_active` | `BOOLEAN` | Tidak | Tidak ada FK | Boleh digunakan untuk pengajuan baru |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Rekening yang sudah dirujuk tidak dihapus dari sejarah. Kewenangan siapa yang boleh memeriksa mutasi rekening dikonfirmasi sebelum evaluasi mitra.
+
+### 3.20 bank_entries: Rujukan dana masuk bank
+
+Mencatat satu dana masuk dari mutasi yang diperiksa manual oleh petugas berwenang. Tabel ini tidak menyatakan adanya koneksi otomatis dengan bank atau penyimpanan seluruh rekening koran.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `bank_account_id` | `BIGINT UNSIGNED` | Tidak | FK ke `bank_accounts.id` | Rekening tempat dana diterima |
+| `recorded_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Petugas berwenang yang menyalin rujukan |
+| `entry_reference` | `VARCHAR(120)` | Tidak | Tidak ada FK | Referensi unik dalam rekening atau kode sumber yang dapat ditelusuri |
+| `entry_date` | `DATE` | Tidak | Tidak ada FK | Tanggal dana masuk menurut mutasi |
+| `amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nominal dana masuk positif |
+| `description` | `VARCHAR(255)` | Ya | Tidak ada FK | Uraian terbatas dari sumber yang diizinkan |
+| `evidence_storage_key` | `VARCHAR(255)` | Ya | Tidak ada FK | Potongan bukti privat bila diizinkan |
+| `status` | `ENUM('active','void')` | Tidak | Tidak ada FK | Keabsahan rujukan untuk pencocokan |
+| `void_reason` | `VARCHAR(255)` | Ya | Tidak ada FK | Alasan pembatalan rujukan salah |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+| `updated_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu perubahan terakhir, disimpan dalam UTC |
+
+- Pasangan bank_account_id dan entry_reference unik. Jika mutasi tidak menyediakan nomor unik, petugas memakai kode sumber yang dapat ditemukan ulang pada dokumen dan memeriksa duplikasi tanggal serta nominal.
+- Rujukan active yang sudah dicocokkan tidak disunting atau dibatalkan melalui alur biasa. Koreksi rujukan yang belum dipakai wajib mencatat alasan dan jejak pelaku.
+
+### 3.21 bank_matches: Pencocokan penuh sumber dengan dana masuk
+
+Menghubungkan satu rujukan dana masuk dengan satu sumber penerimaan. Sumber tersebut hanya boleh transfer siswa atau setoran satu kelompok kas, bukan keduanya.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `bank_entry_id` | `BIGINT UNSIGNED` | Tidak | FK ke `bank_entries.id`; UNIQUE | Dana masuk bank yang dipakai sekali |
+| `payment_id` | `BIGINT UNSIGNED` | Ya | FK ke `payments.id`; UNIQUE | Transfer siswa sumber, kosong bila sumber kelompok kas |
+| `cash_batch_id` | `BIGINT UNSIGNED` | Ya | FK ke `cash_batches.id`; UNIQUE | Kelompok kas sumber, kosong bila sumber transfer |
+| `matched_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Pemeriksa pusat yang berwenang |
+| `matched_amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Nominal cocok penuh yang positif |
+| `matched_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencocokan |
+| `notes` | `VARCHAR(255)` | Ya | Tidak ada FK | Penjelasan pemeriksaan jika diperlukan |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Tepat satu dari payment_id dan cash_batch_id wajib terisi. Satu sumber dan satu bank_entry_id hanya dipakai satu kali pada lingkup pencocokan penuh.
+- matched_amount sama dengan nominal bank_entries dan seluruh nominal sumber, serta rekening tujuan keduanya sama. Sumber payment harus transfer; sumber kelompok kas harus deposited.
+- Pencocokan transfer dibuat dalam transaksi yang sama dengan keputusan verified dan penerbitan kuitansi. Setoran kas yang cocok hanya mengubah informasi penguasaan dana, bukan pendapatan.
+- Pencocokan sebagian, satu mutasi untuk beberapa sumber, biaya bank, pengembalian dana, dan pembalikan pencocokan belum menjadi alur inti. Kasus demikian ditandai untuk tindak lanjut tanpa memaksa status cocok.
+
+### 3.22 reminder_actions: Tindakan membuka tautan pengingat
+
+Menyimpan konteks ketika Admin meminta tautan WhatsApp untuk tagihan lewat jatuh tempo. Data ini hanya membuktikan tindakan pada aplikasi, bukan pesan terkirim, diterima, atau dibaca.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `bill_id` | `BIGINT UNSIGNED` | Tidak | FK ke `bills.id` | Tagihan sumber pesan |
+| `requested_by_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Admin yang meminta tautan |
+| `recipient_phone` | `VARCHAR(20)` | Tidak | Tidak ada FK | Salinan nomor wali saat tindakan |
+| `message_content` | `TEXT` | Tidak | Tidak ada FK | Pratinjau pesan yang disiapkan |
+| `outstanding_amount` | `DECIMAL(14,2)` | Tidak | Tidak ada FK | Sisa tagihan pada waktu tindakan |
+| `template_version` | `VARCHAR(30)` | Tidak | Tidak ada FK | Versi templat aplikasi yang dipakai |
+| `requested_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu permintaan tautan dicatat |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Tagihan harus issued, lewat jatuh tempo, dan masih mempunyai sisa saat tautan dibentuk. Nomor serta isi pesan diperiksa ulang sebelum admin mengirim melalui WhatsApp.
+- Tidak ada sent_status, sent_at, atau penjadwal pengiriman otomatis. Templat dasar berada pada berkas aplikasi dan tidak dijanjikan dapat diedit Super Admin melalui dasbor.
+
+### 3.23 activity_logs: Jejak tindakan penting
+
+Mencatat pelaku dan perubahan penting untuk penelusuran operasional. Catatan ini membantu pemeriksaan riwayat tanpa mengklaim sebagai bukti keaslian hukum atau sistem audit yang lengkap.
+
+| Kolom | Tipe rancangan | Boleh kosong | Kunci atau rujukan | Keterangan |
+| :--- | :--- | :---: | :--- | :--- |
+| `id` | `BIGINT UNSIGNED` | Tidak | PK, AUTO_INCREMENT | Kunci utama, AUTO_INCREMENT |
+| `actor_user_id` | `BIGINT UNSIGNED` | Tidak | FK ke `users.id` | Pelaku terautentikasi |
+| `branch_id` | `BIGINT UNSIGNED` | Ya | FK ke `branches.id` | Konteks cabang bila relevan |
+| `action` | `VARCHAR(80)` | Tidak | Tidak ada FK | Jenis tindakan yang terdaftar |
+| `entity_type` | `VARCHAR(80)` | Tidak | Tidak ada FK | Jenis objek dari daftar aplikasi yang dibatasi |
+| `entity_id` | `BIGINT UNSIGNED` | Tidak | Tidak ada FK | Identitas objek; rujukan logis polimorfik, bukan FK fisik |
+| `change_summary` | `JSON` | Tidak | Tidak ada FK | Ringkasan perubahan yang tidak memuat kata sandi atau bukti penuh |
+| `request_id` | `VARCHAR(80)` | Tidak | Tidak ada FK | Penanda permintaan untuk penelusuran |
+| `occurred_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu tindakan |
+| `created_at` | `DATETIME(6)` | Tidak | Tidak ada FK | Waktu pencatatan, disimpan dalam UTC |
+
+- Jejak aktivitas bersifat tambah saja melalui aplikasi. Pelaku tidak dapat mengubah log melalui fungsi administrasi biasa.
+- Entity_type dan entity_id tidak digambarkan sebagai FK ke semua tabel. Ketergantungan objek divalidasi oleh aplikasi, sedangkan data rahasia dan kredensial tidak disalin ke log.
+
+## 4. Aturan transaksi dan konsistensi
+
+### 4.1 Penempatan siswa dan perubahan kapasitas
+
+Penambahan anggota, pengakhiran keanggotaan, pengubahan kapasitas, serta penggantian ruang wajib mengikuti penguncian yang konsisten. Pemeriksaan antarmuka membantu pengguna, tetapi keputusan akhir tetap dilakukan ulang oleh peladen pada saat transaksi disimpan.
+
+Urutan penempatan adalah memeriksa kewenangan, memulai transaksi, mengunci baris kelas, lalu menghitung anggota aktif. Sistem menolak kelas ditutup, tidak memiliki jadwal ruang aktif, tidak sesuai cabang atau jenjang, atau telah mencapai kapasitas.
+
+Ketika masih tersedia tempat, satu interval keanggotaan ditambahkan dan jejak tindakan dicatat sebelum transaksi diselesaikan. Ketika siswa keluar, ended_at dan alasan diisi, sehingga hitungan aktif berkurang tanpa menghapus identitas siswa atau interval lama.
+
+Kapasitas ruang diperiksa pada seluruh jadwal aktif yang masa berlakunya masih relevan. Penurunan batas kelas atau daya tampung ruang ditolak bila tidak memenuhi jumlah peserta aktif atau melanggar ruang yang digunakan.
+
+### 4.2 Benturan jadwal
+
+Benturan mensyaratkan jadwal aktif, rentang tanggal yang memiliki kejadian hari sama, serta waktu yang beririsan. Rumus irisan jam adalah mulai_lama < selesai_baru dan selesai_lama > mulai_baru, sehingga dua sesi yang bersentuhan tepat pada batas waktu tidak dianggap bertumpang tindih.
+
+Pada penyuntingan, identitas jadwal sendiri dikecualikan dan masa berlaku diperiksa kembali. Pemeriksaan mencakup tentor lintas cabang, ruang yang sama, dan kelompok belajar yang sama tanpa mengumumkan seluruh rincian cabang lain.
+
+Peringatan benturan menjadi bahan peninjauan pengelola, bukan bukti bahwa seluruh irisan selalu dilarang oleh mitra. Calon jadwal dapat disimpan dengan is_active bernilai FALSE selama peninjauan, sedangkan catatan keputusan dicatat pada activity_logs.
+
+Jadwal yang telah diperbaiki diperiksa ulang sebelum ditetapkan aktif. Kebijakan mengaktifkan jadwal yang masih mempunyai konflik harus ditetapkan bersama mitra terlebih dahulu, sehingga prototipe belum menjanjikan pengabaian konflik secara sepihak.
+
+Penyimpanan jadwal perlu mengunci objek tentor, ruang, dan kelas yang relevan dalam urutan tetap agar dua permintaan tidak lolos bersamaan. Jika pemeriksaan memakai rentang tanggal mingguan, pelaksanaan fisik harus memastikan irisan tersebut benar-benar memuat hari yang dimaksud, bukan hanya menganggap setiap irisan satu hari pasti benturan.
+
+### 4.3 Pembayaran dan alokasi
+
+Penerimaan tunai dicatat satu kali dengan status recorded, alokasi sah, dan nomor kuitansi. Pengajuan transfer diberi status submitted tanpa kuitansi resmi dan belum mengurangi sisa tagihan.
+
+Persetujuan transfer dimulai dengan mengunci pengajuan, seluruh tagihan terkait dalam urutan id, dan rujukan mutasi. Sistem memeriksa status awal, rekening, nominal penuh, sisa tagihan, jumlah alokasi, kewenangan, serta penggunaan rujukan bank sebelum menyimpan bank_matches dan payment_reviews.
+
+Pembaruan status verified, waktu konfirmasi, kuitansi, dan jejak aktivitas disimpan dalam transaksi yang sama. Permintaan ganda mengembalikan hasil yang sudah ada atau ditolak tanpa menambah alokasi sah dan pencocokan kedua.
+
+Pengembalian pengajuan wajib mempunyai alasan dan tidak mencatat dana sebagai diterima. Perbaikan dibuat sebagai pengajuan baru yang merujuk baris returned, sehingga bukti dan keputusan sebelumnya tetap tersedia.
+
+### 4.4 Kas, setoran, dan pencocokan
+
+Kelompok kas hanya memuat pembayaran tunai yang sudah tercatat dari cabang yang sama. Status submitted menandai penyerahan yang diajukan, received menandai penerimaan pusat, dan deposited menandai kas disetor ke rekening resmi.
+
+Pencocokan setoran dilakukan terhadap nominal penuh kelompok dan satu rujukan dana masuk. Satu pembayaran tunai tidak dapat dimasukkan kembali ke kelompok lain, dan satu mutasi tidak boleh dipakai ulang untuk transfer maupun setoran lain.
+
+Uang tunai yang belum disetor tetap termasuk penerimaan siswa dan ditampilkan pada posisi penguasaan kas yang sesuai. Nominal setoran serta bank_matches tidak dijumlahkan lagi sebagai penerimaan siswa, sehingga pengalihan tempat uang tidak menambah pendapatan.
+
+### 4.5 Perlindungan data dan riwayat
+
+Kunci asing transaksi menggunakan pembatasan penghapusan objek yang telah dirujuk. Pengguna, siswa, cabang, tarif, serta rekening dinonaktifkan atau diberi status yang sesuai agar riwayat tetap dapat ditelusuri.
+
+Bukti transfer dan potongan mutasi berada pada penyimpanan privat dengan pemeriksaan izin pada setiap pembacaan. Nomor rekening tidak disertai kredensial bank, dan log tidak menyalin kata sandi, berkas bukti penuh, atau rahasia sesi.
+
+Tindakan penting mencatat pelaku, waktu, objek, dan ringkasan perubahan secara proporsional. Retensi data, akses bukti, serta penghapusan data setelah penelitian ditetapkan bersama mitra sebelum penggunaan data nyata.
+
+## 5. Dasar penghitungan laporan
+
+Penghitungan laporan memisahkan kewajiban siswa, penerimaan sah, dan keberadaan dana pada kas atau bank. Penyaringan periode memakai tanggal yang sesuai untuk ukuran yang dilaporkan, sehingga periode tagihan tidak dicampur dengan waktu penerimaan.
+
+| Ukuran | Dasar penghitungan |
 | :--- | :--- |
-| **Metodologi PxP** | Personal Extreme Programming dikerjakan oleh pengembang tunggal, sehingga kompleksitas skema harus proporsional dengan kapasitas pengembangan. |
-| **Cakupan Fitur Tetap Utuh** | Seluruh 27 fitur hasil wawancara mitra tetap terpenuhi tanpa pengurangan fungsionalitas. |
-| **Perpindahan Logika** | 4 tabel konfigurasi (`capacity_rules`, `discount_rules`, `learning_programs`, `wa_templates`) dipindahkan menjadi konstanta/konfigurasi di lapisan kode aplikasi (Laravel config/enum). |
+| Nilai kewajiban | Jumlah total_amount pada tagihan issued sesuai periode cakupan biaya |
+| Alokasi sah | Alokasi dengan induk cash recorded atau bank_transfer verified |
+| Sisa tagihan | Total tagihan dikurangi alokasi sah; tidak boleh negatif |
+| Pelunasan | paid jika sisa nol termasuk pembebasan penuh; unpaid jika kewajiban positif tanpa alokasi; partial jika sisa positif setelah alokasi |
+| Lewat jatuh tempo | Tagihan issued dengan sisa positif dan due_date sebelum tanggal operasional saat ini |
+| Penerimaan cabang | Jumlah payments sah menurut branch_id historis dan payment_date, bukan jumlah baris setelah JOIN alokasi |
+| Pengajuan tertunda | Jumlah transfer submitted, disajikan terpisah dari penerimaan sah |
+| Tunai belum diserahkan | Pembayaran tunai yang belum masuk kelompok submitted atau sesudahnya |
+| Kas dalam proses penyerahan | Kelompok submitted yang belum received |
+| Kas di pusat | Kelompok received yang belum deposited |
+| Setoran menunggu pencocokan | Kelompok deposited tanpa bank_matches |
+| Dana masuk cocok | Jumlah bank_matches pada sumber yang tepat; bukan tambahan penerimaan siswa |
+| Tindakan pengingat | Jumlah reminder_actions; bukan jumlah pesan terbukti terkirim |
+| Beban tentor | Jumlah durasi sesi yang berlaku pada minggu yang diperiksa, tanpa label berlebih sebelum batas disepakati |
 
-### 2.2 Justifikasi 4 Tabel yang Dioptimasi ke Kode Aplikasi
+Laporan penerimaan dihitung pada tingkat induk pembayaran untuk mencegah penggandaan ketika satu pembayaran memiliki beberapa alokasi. Laporan per komponen biaya menggunakan alokasi, dengan agregasi yang menjaga jumlah total tetap sama dengan penerimaan induk.
 
-#### ❌ `learning_programs` → Diganti `ENUM` di 3 Tabel
+Perbandingan penerimaan sah dan dana yang telah cocok bank menggunakan kelompok transaksi sumber serta periode penerimaan yang sama. Untuk kelompok kas lintas periode, rincian cash_batch_items ditelusuri ke payment_date sumber, sehingga tanggal pencocokan tidak langsung dibandingkan dengan periode penerimaan yang berbeda.
 
-| Sebelum | Sesudah |
+## 6. Hubungan dengan kebutuhan dan use case
+
+Pemetaan berikut mengikuti penomoran use case revisi yang dipakai pada dokumen skenario dan Bab 3. Rumusan masalah ketiga diwujudkan melalui pengujian serta UAT atas kebutuhan, bukan melalui penambahan tabel operasional bernama UAT.
+
+| Use case | Kelompok tabel utama | Kaitan kebutuhan |
+| :--- | :--- | :--- |
+| UC-00 Autentikasi | users, branches, activity_logs | Pembatasan akses seluruh fungsi |
+| UC-01 Siswa | students, branches, academic_years, activity_logs | Integrasi data pendaftaran, RM 1 |
+| UC-02 Kelas dan ruang | classes, class_rooms, branches, academic_years, activity_logs | Kapasitas dan wadah belajar, RM 1 |
+| UC-03 Keanggotaan | class_enrollments, students, classes, class_schedules, class_rooms, activity_logs | Penempatan dan siswa keluar, RM 1 |
+| UC-04 Jadwal | class_schedules, mentors, mentor_subjects, subjects, classes, class_rooms, activity_logs | Penjadwalan dan pencegahan irisan, RM 1 |
+| UC-05 Tarif dan tagihan | fee_tariffs, bills, students, users, academic_years, branches, activity_logs | Kewajiban dan dasar biaya, RM 1 |
+| UC-06 Tunai | payments, payment_allocations, bills, users, activity_logs | Penerimaan sah, RM 1 |
+| UC-07 Pengajuan transfer | payments, payment_allocations, bills, bank_accounts, users, activity_logs | Pengajuan lintas peran, RM 1 dan RM 2 |
+| UC-08 Pemeriksaan transfer | payment_reviews, payments, payment_allocations, bills, bank_entries, bank_matches, bank_accounts, users, activity_logs | Keputusan dan sumber dana, RM 2 |
+| UC-09 Tautan WhatsApp | reminder_actions, bills, payment_allocations, payments, students, users | Pengingat manual berbasis tunggakan, RM 1 |
+| UC-10 Kelompok kas | cash_batches, cash_batch_items, payments, bank_accounts, users, activity_logs | Penelusuran kas cabang sampai pusat, RM 2 |
+| UC-11 Pencocokan bank | bank_entries, bank_matches, payments, cash_batches, cash_batch_items, bank_accounts, users, activity_logs | Pencocokan penerimaan, RM 2 |
+| UC-12 Dasbor dan laporan | branches, students, classes, class_enrollments, class_schedules, mentors, subjects, bills, payments, payment_allocations, payment_reviews, cash_batches, cash_batch_items, bank_entries, bank_matches, reminder_actions | Konsolidasi cabang dan penelusuran sumber, RM 2 |
+| UC-13 Data induk dan akun | academic_years, branches, users, subjects, mentors, mentor_subjects, bank_accounts, activity_logs | Fondasi seluruh fungsi |
+
+Seluruh tabel mempunyai fungsi yang dapat ditelusuri, tetapi keberadaan rujukan tabel tidak membuktikan implementasi berhasil. Keterlacakan kebutuhan, cerita pengguna, iterasi, dan pengujian dijabarkan lebih lanjut pada matriks pendamping Bab 3.
+
+## 7. Pemeriksaan yang diperlukan sebelum implementasi
+
+Pemeriksaan dokumen memastikan kesamaan nama tabel, atribut, relasi, dan skenario yang direncanakan. Validasi fisik tetap memerlukan migrasi pada versi MySQL terpilih, data uji, serta pengujian transaksi serentak pada aplikasi.
+
+| Pemeriksaan | Hasil yang harus diperiksa saat implementasi |
 | :--- | :--- |
-| Tabel terpisah `learning_programs` (id, program_name, description, is_active) | Kolom `ENUM('reguler','intensif','paket')` langsung di `students`, `classes`, dan `fee_tariffs` |
+| Akun tanpa cabang yang sah | Tidak memperoleh hak Super Admin atau akses cabang lain |
+| Dua penempatan pada tempat terakhir | Hanya satu interval aktif baru tersimpan |
+| Keluar dan masuk kembali | Interval lama tetap ada dan tidak muncul dua keanggotaan aktif |
+| Jadwal disunting atau nonaktif | Tidak berbenturan dengan dirinya sendiri atau jadwal lama yang tidak berlaku |
+| Ruang berbeda cabang atau terlalu kecil | Penetapan ditolak dengan alasan yang dapat dipahami |
+| Tarif ganda pada cakupan sama | Pemilihan ambigu ditolak sebelum tagihan diterbitkan |
+| Paket semester | Tidak dibuat ulang sebagai kewajiban bulanan |
+| Satu pembayaran dua tagihan | Alokasi seimbang dan penerimaan dihitung satu kali |
+| Bukti dikembalikan lalu diajukan ulang | Rantai pengajuan dan keputusan lama tetap terlihat |
+| Dua persetujuan untuk sisa tagihan sama | Konfirmasi kedua tidak melampaui sisa kewajiban |
+| Rujukan bank dipakai ulang | Kendala unik dan transaksi menolak pencocokan kedua |
+| Tunai diserahkan dan disetor | Tidak menambah penerimaan siswa untuk kedua kalinya |
+| Siswa berpindah cabang | Tagihan dan penerimaan historis tetap pada cabang asalnya |
+| Tautan WhatsApp dibuka | Log hanya mencatat permintaan tautan, tanpa mengklaim pesan terkirim |
 
-**Alasan**: Program bimbingan di Bimbel Artha bersifat tetap dan stabil (Reguler, Intensif, Paket). Perubahan program hanya terjadi saat ada keputusan strategis manajemen, bukan operasional harian. Dengan hanya 3 opsi, overhead tabel + JOIN + CRUD terpisah tidak sebanding dengan frekuensi perubahannya. Jika di masa depan program bertambah, cukup tambahkan nilai ENUM baru melalui migrasi database.
+Tidak ada hasil pengujian aplikasi yang dinyatakan lulus dalam dokumen rancangan ini. Bukti eksekusi migrasi, skenario uji, dan penerimaan mitra baru diisi setelah pelaksanaan.
 
-#### ❌ `capacity_rules` → Logika di Kode Aplikasi
+## 8. Perubahan dari rancangan sebelumnya dan keputusan terbuka
 
-| Sebelum | Sesudah |
+Rancangan sebelumnya yang berisi enam belas tabel disimpan pada folder SEBELUM_REVISI untuk pembandingan. Revisi mempertahankan data operasional inti dan menambah hubungan yang diperlukan untuk alokasi, pemeriksaan, kas, bank, serta jejak tindakan.
+
+| Bagian lama | Bentuk revisi |
 | :--- | :--- |
-| Tabel terpisah `capacity_rules` (grade_level, room_type, max_students) | Logika validasi kapasitas di `App\Services\ClassCapacityService` (Laravel) + `classes.max_students` diisi langsung saat pembuatan kelas |
-
-**Alasan**: Aturan kapasitas bersumber dari wawancara mitra dan bersifat pedagogis (SD Kelas 1: 5 siswa, SD 2: 7, SD 3–6: 10, SMP standar: 12, SMP besar: 14, SMA: 14). Aturan ini jarang berubah karena terikat pada filosofi pengajaran Bimbel Artha. Validasi cukup dijalankan oleh service class di backend saat Admin Cabang membuat rombel baru. Kolom `classes.max_students` tetap menyimpan batas kuota final per rombel.
-
-#### ❌ `discount_rules` → Logika di Kode Aplikasi
-
-| Sebelum | Sesudah |
-| :--- | :--- |
-| Tabel terpisah `discount_rules` (discount_name, discount_type, discount_value) | Logika diskon saudara kandung di `App\Services\DiscountService` (Laravel) + `students.discount_amount` menyimpan nominal diskon final |
-
-**Alasan**: Kebijakan diskon saat ini hanya satu jenis, yaitu diskon saudara kandung (kakak-adik) dengan besaran tetap Rp 200.000. Relasi `students.sibling_student_id` sudah mencukupi untuk deteksi hubungan saudara, dan `students.discount_amount` menyimpan nominal pasti yang akan dipotongkan dari setiap tagihan. Tidak diperlukan tabel terpisah untuk satu aturan bisnis yang stabil.
-
-#### ❌ `wa_templates` → File Konfigurasi di Backend
-
-| Sebelum | Sesudah |
-| :--- | :--- |
-| Tabel terpisah `wa_templates` (template_name, template_type, message_body) | File konfigurasi `config/wa_templates.php` atau Blade template di Laravel |
-
-**Alasan**: Template pesan WhatsApp berjumlah terbatas (reminder H-7, H-1, overdue H+3, konfirmasi registrasi, notifikasi waiting list). Perubahan redaksi jarang dilakukan dan dapat dikelola melalui file konfigurasi yang di-deploy bersama kode aplikasi. Tabel `wa_logs` tetap mencatat `template_type` (VARCHAR) sebagai penanda jenis template yang digunakan, sehingga auditabilitas tidak hilang.
-
----
-
-### 2.3 Penjelasan Latar Belakang & Urgensi 16 Tabel
-
-Setiap tabel dirancang untuk memecahkan problematika empiris yang telah berlangsung selama 29 tahun (sejak 10 Oktober 1997) di 8 cabang operasional Bimbel Artha Balikpapan, serta mengakomodasi batasan teknis yang disepakati bersama mitra dan dosen pembimbing.
-
----
-
-### GRUP A: FONDASI & KONFIGURASI SISTEM (5 TABEL)
-
-Kelompok tabel ini berfungsi sebagai parameter sistem (*system settings*) yang fleksibel. Tujuannya adalah memastikan sistem adaptif terhadap perubahan kebijakan manajemen tanpa memerlukan perombakan kode program (*hardcoding*).
-
-#### 1. Tabel `academic_years` (Tahun Ajaran)
-* **Latar Belakang Masalah Riil**: Siklus operasional lembaga bimbingan belajar tidak mengikuti kalender masehi (Januari s.d. Desember), melainkan mengikuti kalender akademik nasional dengan siklus **Juli s.d. Juni**. Setiap pergantian tahun ajaran memicu kenaikan tingkat kelas siswa, pembentukan rombel baru, serta evaluasi tarif SPP tahunan.
-* **Urgensi Teknis & Bisnis**: Berfungsi sebagai *temporal anchor* (jangkar waktu) bagi seluruh entitas transaksional. Tabel ini mengisolasi data tagihan 12 bulan (`bills`), pendaftaran siswa (`students`), rombongan belajar (`classes`), dan struktur tarif (`fee_tariffs`). Hanya satu baris yang berstatus aktif (`is_active = TRUE`) untuk operasional berjalan, sementara data tahun ajaran terdahulu dipertahankan sebagai arsip historis.
-* **Dampak Fatal jika Ditiadakan**: Tagihan SPP antar periode tahunan akan bercampur aduk (misalnya SPP bulan Juli 2026 tidak dapat dibedakan dari Juli 2027), riwayat kelulusan siswa menjadi rancu, dan sistem gagal mengarsipkan data akademik secara terstruktur.
-
-#### 2. Tabel `branches` (Cabang Bimbel Artha)
-* **Latar Belakang Masalah Riil**: Bimbel Artha mengoperasikan 8 cabang aktif di Kota Balikpapan (Artha 1 s.d. Artha 8) dengan skala kapasitas yang beragam (Artha 1 sebagai cabang induk menampung 400 hingga 450 siswa). Selama 29 tahun, setiap cabang beroperasi seperti pulau terisolasi (*data silo*) dengan pencatatan buku besar fisik masing-masing.
-* **Urgensi Teknis & Bisnis**: Menjadi fondasi arsitektur multi-cabang (*multi-branch*). Tabel ini menyediakan partisi relasional untuk menautkan akun pengguna (`users`), siswa (`students`), inventaris ruangan (`class_rooms`), rombel (`classes`), tentor pangkal (`mentors`), dan validasi setoran kas (`revenue_validations`). Tabel ini juga menyimpan metadata publik (alamat lengkap, nomor WhatsApp resmi, dan tautan Google Maps) yang disinkronkan ke landing page publik.
-* **Dampak Fatal jika Ditiadakan**: Sistem tidak mampu memisahkan hak akses dan data operasional per cabang. Super Admin kehilangan kemampuan memantau performa cabang secara komparatif, dan Admin Cabang berisiko mengakses atau mengacaukan data cabang lain.
-
-#### 3. Tabel `users` (Akun Pengguna Sistem)
-* **Latar Belakang Masalah Riil**: Berdasarkan hasil wawancara mitra dan keputusan bimbingan bersama Pak Arif, hak akses sistem dibatasi secara terfokus menjadi **2 peran (role)**: *Branch Admin* (frontdesk cabang) dan *Super Admin* (manajemen pusat: Ibu Emi, Om Tok, dan Bendahara Pak Subagio). Pembatasan ini disesuaikan dengan kesiapan SDM operasional lembaga.
-* **Urgensi Teknis & Bisnis**: Mengatur autentikasi login terenkripsi (*bcrypt*) dan otorisasi kontrol (*Role-Based Access Control / RBAC*). Keterikatan kolom `branch_id` menentukan cakupan wewenang: jika bernilai ID cabang, staf terkunci hanya pada cabangnya; jika bernilai `NULL`, pengguna bertindak sebagai Super Admin lintas cabang. Kolom ini juga menjadi jejak audit verifikasi kasir (`verified_by_user_id`) dan validasi omzet cabang (`validated_by_user_id`).
-* **Dampak Fatal jika Ditiadakan**: Tidak ada mekanisme keamanan data dan akuntabilitas kerja. Transaksi setoran kasir dapat dimanipulasi tanpa jejak identitas staf, dan data sensitif pendapatan seluruh cabang dapat diakses oleh pihak yang tidak berwenang.
-
-#### 4. Tabel `subjects` (Mata Pelajaran)
-* **Latar Belakang Masalah Riil**: Bimbel Artha menyelenggarakan bimbingan beragam mata pelajaran kurikulum sekolah (Matematika, Bahasa Inggris, IPA, Fisika, Kimia, Biologi, dan lainnya) untuk jenjang SD, SMP, hingga SMA.
-* **Urgensi Teknis & Bisnis**: Melakukan normalisasi katalog kurikulum. Mencegah inkonsistensi penamaan akibat ketikan manual bebas (seperti redundansi antara "Matematika", "MTK", dan "Math"). Menjadi relasi acuan penentuan kompetensi mengajar tentor (`mentor_subjects`) dan pembentukan rombongan belajar (`classes`).
-* **Dampak Fatal jika Ditiadakan**: Penamaan mapel pada jadwal les menjadi tidak beraturan, pencarian tentor berdasarkan spesialisasi mata pelajaran tidak dapat difilter secara akurat, dan pelaporan akademik menjadi tidak konsisten.
-
-#### 5. Tabel `fee_tariffs` (Master Tarif Les Dinamis)
-* **Latar Belakang Masalah Riil**: Struktur tarif SPP di Bimbel Artha bersifat dinamis dan bervariasi menurut jenjang (SD Rp 330.000 sampai Rp 340.000, SMP Rp 350.000, SMA Kelas 10-11 Rp 380.000, Paket SMA 12 Rp 2.250.000, dan Biaya Modul Rp 200.000). Manajemen pusat secara berkala melakukan penyesuaian nominal tarif pada tahun ajaran baru.
-* **Urgensi Teknis & Bisnis**: Mengeliminasi *hardcoding* biaya dalam kode program aplikasi. Super Admin dapat memperbarui atau menambah tarif per jenjang, rentang kelas, program, dan tahun ajaran langsung melalui dashboard web. Kolom `learning_program` (ENUM) menggantikan relasi ke tabel `learning_programs` yang sebelumnya terpisah, karena kategori program bersifat tetap (Reguler, Intensif, Paket). Tabel ini menjadi rujukan otomatis (*lookup source*) saat sistem menerbitkan tagihan siswa (`bills`).
-* **Dampak Fatal jika Ditiadakan**: Setiap ada penyesuaian tarif SPP atau penambahan biaya modul di tahun ajaran baru, pengembang harus mengubah kode sumber aplikasi (*source code*), yang berisiko memicu bug regresi dan menghambat proses penerimaan siswa baru.
-
----
-
-### GRUP B: DATA OPERASIONAL HARIAN (7 TABEL)
-
-Kelompok tabel ini menangani seluruh aktivitas inti lembaga, mulai dari registrasi peserta didik baru, penugasan tentor, pemakaian ruangan fisik, pengelompokan kelas, hingga slot jadwal belajar.
-
-#### 6. Tabel `students` (Master Data Siswa)
-* **Latar Belakang Masalah Riil**: Menyelesaikan **Rumusan Masalah 1 (Urgensi Kritis)**. Selama 29 tahun, data siswa dicatat di Buku Besar A4 fisik per cabang yang hanya memuat 5 kolom data dan sama sekali tidak mencatat alamat domisili. Dokumen fisik rentan lapuk, tercecer, dan sulit ditelusuri riwayatnya. Cabang Artha 1 sendiri menampung 400 hingga 450 siswa.
-* **Urgensi Teknis & Bisnis**: Menjadi entitas sentral operasional bimbingan belajar. Menyimpan profil lengkap siswa, termasuk atribut baru yang esensial: alamat/kelurahan domisili (`home_address`) untuk pemetaan persebaran siswa, nomor WhatsApp aktif wali murid (`parent_phone_wa`) sebagai tujuan penagihan, relasi saudara kandung (`sibling_student_id`) untuk automasi diskon keluarga, serta status keaktifan (`active`, `alumni`, `inactive`). Kolom `learning_program` (ENUM) langsung menyimpan kategori program yang diikuti siswa, menggantikan relasi FK ke tabel terpisah.
-* **Dampak Fatal jika Ditiadakan**: Sistem lumpuh total karena tidak memiliki entitas utama yang dilayani. Pencatatan pendaftaran kembali ke buku manual, penagihan SPP kehilangan subjek pembayaran, dan integrasi antar 8 cabang mustahil terwujud.
-
-#### 7. Tabel `mentors` (Master Data Tentor / Pengajar)
-* **Latar Belakang Masalah Riil**: Bimbel Artha menaungi lebih dari 60 tentor aktif yang mengajar di 8 cabang. Sesuai keputusan bimbingan bersama Pak Arif, tentor tidak diberikan akun login sistem demi simplifikasi penggunaan dan kesiapan pengguna lapangan, melainkan menerima cetak PDF jadwal resmi mingguan.
-* **Urgensi Teknis & Bisnis**: Menyimpan data administratif seluruh tenaga pengajar. Entitas ini menjadi rujukan penugasan jadwal belajar (`class_schedules`), pemetaan keahlian mata pelajaran (`mentor_subjects`), dan kompilasi analitik beban mengajar mingguan di dashboard eksekutif Super Admin (Menu 2.3).
-* **Dampak Fatal jika Ditiadakan**: Sistem tidak memiliki pencatatan tenaga pengajar resmi. Super Admin tidak dapat memantau distribusi jam mengajar tentor, sehingga ketimpangan beban kerja (tentor yang mengajar lebih dari 8 kelas/minggu versus yang kekurangan jam) tidak dapat dideteksi dan dievaluasi.
-
-#### 8. Tabel `mentor_subjects` (Pemetaan Keahlian Tentor ↔ Mata Pelajaran)
-* **Latar Belakang Masalah Riil**: Dalam operasional bimbingan belajar, seorang tentor seringkali memiliki kapabilitas mengajar lebih dari satu mata pelajaran (misalnya Matematika dan Fisika), dan satu mata pelajaran diampu oleh puluhan tentor yang berbeda.
-* **Urgensi Teknis & Bisnis**: Mengimplementasikan relasi banyak-ke-banyak (*many-to-many*) antara `mentors` dan `subjects`. Tabel ini bertindak sebagai filter validasi saat Admin Cabang melakukan plotting jadwal: antarmuka sistem hanya memunculkan daftar tentor yang terbukti kompeten mengampu mata pelajaran pada rombel bersangkutan.
-* **Dampak Fatal jika Ditiadakan**: Terjadi salah penugasan pengajar (*mismatching*), seperti tentor mata pelajaran Bahasa Indonesia ditugaskan mengajar Kimia SMA. Hal ini merusak reputasi akademik dan mutu bimbingan belajar Artha.
-
-#### 9. Tabel `class_rooms` (Inventaris Ruang Kelas Fisik)
-* **Latar Belakang Masalah Riil**: Setiap cabang Bimbel Artha memiliki fasilitas ruangan dengan kuantitas dan dimensi yang bervariasi (ruang tipe *standard* dan ruang tipe *large*).
-* **Urgensi Teknis & Bisnis**: Mengelola data fisik ruang belajar per cabang beserta kapasitas meja-kursi nyatanya (`physical_capacity`). Tabel ini berpasangan dengan jadwal belajar (`class_schedules`) untuk menjalankan algoritma pencegahan bentrok penggunaan ruang fisik secara bersamaan di cabang yang sama.
-* **Dampak Fatal jika Ditiadakan**: Dua rombongan belajar berbeda berpotensi dialokasikan pada satu ruangan yang sama di jam yang sama (*room collision*), memicu kekacauan operasional dan terganggunya proses belajar mengajar siswa.
-
-#### 10. Tabel `classes` (Rombongan Belajar / Rombel)
-* **Latar Belakang Masalah Riil**: Siswa bimbingan belajar tidak belajar secara privat individual melainkan dikelompokkan ke dalam rombongan belajar (rombel) berdasarkan jenjang sekolah, tingkat kelas, mata pelajaran, dan program les (contoh: "SD Kelas 5, Matematika, Artha 1 Sesi Pagi").
-* **Urgensi Teknis & Bisnis**: Menjadi wadah agregasi akademik yang menghubungkan program bimbingan, mata pelajaran, tahun ajaran, dan kapasitas kuota. Kolom `learning_program` (ENUM) langsung menyimpan kategori program rombel. Kolom `max_students` diisi oleh Admin Cabang berdasarkan aturan kapasitas yang divalidasi oleh service class di backend (menggantikan tabel `capacity_rules` yang terpisah). Tabel ini dilengkapi *counter cache* `current_students` dan status kapasitas (`open`, `almost_full`, `full`, `closed`) yang menggerakkan indikator visual warna (🟢 Hijau, 🟡 Kuning, 🔴 Merah) pada dashboard operasional cabang.
-* **Dampak Fatal jika Ditiadakan**: Pengelolaan jadwal harus dikaitkan langsung ke tiap siswa secara individual, menciptakan redundansi data masif dan menghilangkan konsep manajemen rombel kelas terstruktur.
-
-#### 11. Tabel `class_schedules` (Slot Jadwal Pembelajaran)
-* **Latar Belakang Masalah Riil**: Menyelesaikan **Rumusan Masalah 3 (Urgensi Tinggi)**. Pada operasional manual, pernah terjadi insiden seorang tentor dijadwalkan mengajar di dua cabang berbeda pada hari dan jam yang sama akibat koordinasi jadwal yang hanya mengandalkan percakapan grup WhatsApp.
-* **Urgensi Teknis & Bisnis**: Menghubungkan rombel kelas (`classes`), pengajar (`mentors`), ruang fisik (`class_rooms`), hari (`day_of_week`), serta jam mulai dan selesai. Tabel ini menjadi kunci utama mesin *Collision Detection* (deteksi bentrok) dua arah: mendeteksi bentrok jadwal tentor di seluruh 8 cabang, serta mendeteksi bentrok pemakaian ruangan di cabang bersangkutan secara *real-time*.
-* **Dampak Fatal jika Ditiadakan**: Terjadinya jadwal tumpang tindih (*schedule collision*) pada tentor dan ruangan yang merugikan waktu belajar siswa, memicu keluhan orang tua murid, dan mencoreng reputasi manajemen bimbel.
-
-#### 12. Tabel `class_enrollments` (Keanggotaan Kelas & Antrian Waiting List)
-* **Latar Belakang Masalah Riil**: Satu rombel kelas menampung banyak siswa, dan seorang siswa dapat mengambil lebih dari satu kelas bimbingan. Selain itu, rombel bimbingan favorit seringkali mengalami kelebihan peminat ketika kuota kelas sudah penuh.
-* **Urgensi Teknis & Bisnis**: Mengakomodasi relasi banyak-ke-banyak (*many-to-many*) antara `classes` dan `students`. Tabel ini mencatat status keikutsertaan (`active`, `completed`, `dropped`) sekaligus mengelola antrian daftar tunggu (`waiting_list`) dengan timestamp pencatatan `waiting_since`. Saat ada siswa yang keluar, sistem secara adil (*FIFO*) memanggil antrian teratas dan menembakkan notifikasi ketersediaan slot via WhatsApp.
-* **Dampak Fatal jika Ditiadakan**: Sistem tidak memiliki catatan siswa mana yang belajar di rombel apa. Siswa yang berminat pada kelas penuh akan tercecer begitu saja tanpa tindak lanjut (*lost potential students*).
-
----
-
-### GRUP C: TRANSAKSI KEUANGAN & PEMBAYARAN (2 TABEL)
-
-Kelompok tabel ini menopang pilar vital bisnis bimbel, mendigitalkan penagihan SPP bulanan, dan mencatat transaksi kasir secara transparan dan akuntabel.
-
-#### 13. Tabel `bills` (Master Tagihan Keuangan Siswa)
-* **Latar Belakang Masalah Riil**: Menyelesaikan **Rumusan Masalah 2 (Urgensi Kritis)**. Sebelumnya, penagihan SPP mengandalkan ingatan staf admin yang membuka buku besar catatan satu per satu. Akibatnya, keterlambatan pembayaran hingga 1 sampai 2 bulan lumrah terjadi karena orang tua lupa tanggal jatuh tempo dan tidak ada penagihan rutin yang terorganisir.
-* **Urgensi Teknis & Bisnis**: Mencatat seluruh kewajiban finansial siswa (SPP bulanan 12 periode per tahun ajaran, biaya modul semester, dan biaya registrasi). Menyimpan rincian tarif dasar (`base_amount`), potongan diskon keluarga (`discount_amount`), total akhir (`total_amount`), tanggal jatuh tempo (`due_date`), serta status pelunasan (`unpaid`, `partial`, `paid`, `overdue`). Tabel ini menjadi pemicu otomatis jadwal pengiriman reminder WhatsApp (H-7, H-1, dan H+3).
-* **Dampak Fatal jika Ditiadakan**: Lembaga tidak memiliki rekapitulasi piutang (*accounts receivable*). Manajemen tidak dapat mengetahui siswa mana yang telah membayar dan siapa yang menunggak, memicu kebocoran arus kas bimbingan belajar.
-
-#### 14. Tabel `payments` (Transaksi Pembayaran Kasir & Kuitansi)
-* **Latar Belakang Masalah Riil**: Berdasarkan arahan tegas Pak Arif pada bimbingan ke-3, sistem **tidak menggunakan payment gateway otomatis pihak ketiga** (seperti Midtrans atau DOKU) untuk menghindari biaya per transaksi dan kompleksitas rekening giro bimbel. Pembayaran dilakukan via tunai di meja frontdesk atau transfer bank manual/QRIS ke rekening resmi yayasan, yang diverifikasi manual oleh admin kasir cabang.
-* **Urgensi Teknis & Bisnis**: Mencatat setiap setoran uang riil dari orang tua murid ke tagihan terkait (`bill_id`). Menyimpan nomor kuitansi unik resmi (`receipt_no`), nominal setoran (`amount_paid`), kanal pembayaran (`cash`, `bank_transfer`, `qris`), tautan foto bukti transfer (`proof_image_url`), waktu setor, serta identitas staf pemverifikasi (`verified_by_user_id`). Data ini menjadi sumber data cetak Kuitansi Pembayaran berformat PDF.
-* **Dampak Fatal jika Ditiadakan**: Tidak ada pencatatan arus kas masuk (*cash inflow*). Uang setoran rawan digelapkan (*fraud*), kuitansi resmi tidak dapat diterbitkan, dan rekonsiliasi kas dengan rekening koran bank menjadi mustahil dilakukan.
-
----
-
-### GRUP D: MONITORING, AUDIT & REKONSILIASI (2 TABEL)
-
-Kelompok tabel ini memberikan transparansi, auditabilitas operasional komunikasi, dan validasi keuangan tingkat eksekutif.
-
-#### 15. Tabel `wa_logs` (Jejak Audit Notifikasi WhatsApp)
-* **Latar Belakang Masalah Riil**: Automasi pengiriman pesan WhatsApp melalui WhatsApp Gateway (Fonnte atau WA-Web) membutuhkan pengawasan transmisi jaringan agar kegagalan pengiriman akibat nomor salah atau kuota API habis dapat terdeteksi segera.
-* **Urgensi Teknis & Bisnis**: Menyimpan riwayat seluruh pesan keluar dari sistem (reminder tagihan, notifikasi waiting list, konfirmasi registrasi). Menyimpan nomor tujuan, konten teks terkirim, status pengiriman (`pending`, `sent`, `failed`), dan waktu pengiriman riil. Kolom `template_type` (VARCHAR) mencatat jenis template yang digunakan (cth: `spp_reminder_h7`, `waitlist_available`) sebagai penanda audit, meskipun template itu sendiri disimpan di file konfigurasi backend. Tabel ini menjadi bukti audit legal bagi bimbel jika orang tua murid mengklaim tidak pernah menerima pemberitahuan jatuh tempo SPP.
-* **Dampak Fatal jika Ditiadakan**: Sistem bekerja secara *blind operation* (tanpa jejak transmisi). Admin tidak mengetahui pesan mana yang gagal terkirim, sehingga siswa yang seharusnya diingatkan tetap tidak tertagih.
-
-#### 16. Tabel `revenue_validations` (Rekonsiliasi Pendapatan Cabang ke Pusat)
-* **Latar Belakang Masalah Riil**: Menyelesaikan **Rumusan Masalah 4 (Urgensi Tinggi)**. Selama 29 tahun, rekapitulasi pendapatan 8 cabang dilakukan manual dengan menyerahkan laporan kertas saat pertemuan rapat koordinasi mingguan setiap hari Sabtu di Artha 1. Ketua Yayasan (Ibu Emi) dan Bendahara (Pak Subagio) tidak dapat memverifikasi kesesuaian fisik kas dengan catatan pembukuan secara *real-time*.
-* **Urgensi Teknis & Bisnis**: Menyediakan sarana rekonsiliasi dan otorisasi berkala per bulan per cabang. Membandingkan target pendapatan tagihan (`expected_revenue`) dengan penerimaan kasir riil (`actual_revenue`), status validasi (`pending`, `validated`, `discrepancy`), pencatatan selisih mutasi bank, dan tanda tangan digital otorisator (`validated_by_user_id`).
-* **Dampak Fatal jika Ditiadakan**: Rekapitulasi pendapatan kembali mengandalkan laporan fisik mingguan yang lambat. Selisih atau kebocoran dana setoran kas cabang baru terdeteksi berminggu-minggu kemudian saat audit manual dilakukan.
-
----
-
-## 📖 3. Kamus Data (Data Dictionary)
-
-Bagian ini menjelaskan setiap kolom dari 16 tabel secara detail, mencakup tipe data, constraint, dan deskripsi fungsinya.
-
----
-
-### GRUP A — FONDASI & KONFIGURASI
-
----
-
-#### Tabel 1: `academic_years` — Tahun Ajaran
-
-Menyimpan data tahun ajaran aktif. Siklus bimbel Artha mengikuti pola **Juli–Juni** (bukan Januari–Desember).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik tahun ajaran |
-| 2 | `name` | `VARCHAR(20)` | — | ❌ | Nama periode, cth: "2026/2027" |
-| 3 | `start_date` | `DATE` | — | ❌ | Tanggal mulai (cth: 2026-07-01) |
-| 4 | `end_date` | `DATE` | — | ❌ | Tanggal berakhir (cth: 2027-06-30) |
-| 5 | `is_active` | `BOOLEAN` | DEFAULT FALSE | ❌ | Hanya 1 baris yang bernilai TRUE (tahun berjalan) |
-| 6 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 7 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 2: `branches` — Cabang Bimbel (8 Cabang Artha)
-
-Menyimpan data master seluruh cabang Bimbel Artha (Artha 1 s.d. Artha 8). Terhubung ke landing page publik melalui URL peta.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik cabang |
-| 2 | `branch_name` | `VARCHAR(50)` | — | ❌ | Nama cabang, cth: "Artha 1" |
-| 3 | `address` | `VARCHAR(255)` | — | ❌ | Alamat lengkap cabang |
-| 4 | `phone_wa` | `VARCHAR(20)` | — | ❌ | Nomor WhatsApp resmi cabang |
-| 5 | `google_maps_url` | `VARCHAR(500)` | — | ✅ | URL embed Google Maps lokasi cabang |
-| 6 | `total_rooms` | `INT` | DEFAULT 0 | ❌ | Jumlah ruang kelas fisik di cabang ini |
-| 7 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif cabang |
-| 8 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 9 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 3: `users` — Akun Pengguna Sistem (2 Role)
-
-Menyimpan akun login untuk Admin Cabang dan Super Admin (Owner/Manajemen Pusat). Super Admin ditandai dengan `branch_id = NULL`.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik akun |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ✅ | Cabang yang dikelola. **NULL = Super Admin** |
-| 3 | `name` | `VARCHAR(100)` | — | ❌ | Nama lengkap pengguna |
-| 4 | `email` | `VARCHAR(100)` | UNIQUE | ❌ | Email login (unik) |
-| 5 | `password_hash` | `VARCHAR(255)` | — | ❌ | Hash password (bcrypt) |
-| 6 | `role` | `ENUM('super_admin','branch_admin')` | — | ❌ | Peran akses pengguna |
-| 7 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif akun (FALSE = dinonaktifkan) |
-| 8 | `last_login_at` | `DATETIME` | — | ✅ | Timestamp terakhir login |
-| 9 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 10 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 4: `subjects` — Mata Pelajaran
-
-Master data mata pelajaran yang diajarkan di Bimbel Artha (Matematika, Bahasa Inggris, Fisika, dll.).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik mata pelajaran |
-| 2 | `subject_name` | `VARCHAR(100)` | — | ❌ | Nama mapel, cth: "Matematika" |
-| 3 | `description` | `TEXT` | — | ✅ | Keterangan tambahan |
-| 4 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif |
-| 5 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-
----
-
-#### Tabel 5: `fee_tariffs` — Master Tarif Les
-
-Menyimpan tarif SPP bulanan, biaya modul per semester, dan biaya pendaftaran. Tarif ditentukan berdasarkan **tahun ajaran + program + jenjang + kelas**, sehingga Super Admin dapat mengubah tarif tanpa menyentuh kode.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik tarif |
-| 2 | `academic_year_id` | `INT` | FK → `academic_years.id` | ❌ | Tahun ajaran berlaku |
-| 3 | `learning_program` | `ENUM('reguler','intensif','paket')` | — | ❌ | Program belajar (menggantikan FK ke tabel terpisah) |
-| 4 | `grade_level` | `ENUM('TK','SD','SMP','SMA')` | — | ❌ | Jenjang pendidikan |
-| 5 | `class_grade_start` | `INT` | — | ❌ | Kelas awal berlaku (cth: 1) |
-| 6 | `class_grade_end` | `INT` | — | ❌ | Kelas akhir berlaku (cth: 6 untuk SD) |
-| 7 | `fee_type` | `ENUM('spp_monthly','module_semester','registration')` | — | ❌ | Jenis biaya |
-| 8 | `amount` | `DECIMAL(12,2)` | — | ❌ | Nominal tarif (cth: 330000.00) |
-| 9 | `description` | `VARCHAR(255)` | — | ✅ | Keterangan tambahan |
-| 10 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif |
-| 11 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 12 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
-**Contoh Data:**
-
-| academic_year | program | grade_level | grade | fee_type | amount |
-| :--- | :--- | :--- | :--- | :--- | ---: |
-| 2026/2027 | reguler | SD | 1–6 | spp_monthly | 330.000 |
-| 2026/2027 | reguler | SMP | 7–9 | spp_monthly | 350.000 |
-| 2026/2027 | reguler | SMA | 10–11 | spp_monthly | 380.000 |
-| 2026/2027 | paket | SMA | 12 | spp_monthly | 2.250.000 |
-| 2026/2027 | reguler | SD | 1–6 | module_semester | 200.000 |
-
----
-
-### GRUP B — DATA OPERASIONAL
-
----
-
-#### Tabel 6: `students` — Master Data Siswa
-
-Tabel inti pengganti **Buku Besar A4** fisik yang selama 29 tahun dipakai manual di 8 cabang. Mencakup seluruh data pendaftaran siswa termasuk field baru yang sebelumnya tidak dicatat secara manual (alamat, no WA wali murid).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik siswa |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ❌ | Cabang tempat mendaftar |
-| 3 | `academic_year_id` | `INT` | FK → `academic_years.id` | ❌ | Tahun ajaran saat pendaftaran |
-| 4 | `registration_no` | `VARCHAR(20)` | UNIQUE | ❌ | Nomor pendaftaran (auto-generate) |
-| 5 | `full_name` | `VARCHAR(100)` | — | ❌ | Nama lengkap siswa |
-| 6 | `birth_place` | `VARCHAR(100)` | — | ❌ | Tempat lahir |
-| 7 | `birth_date` | `DATE` | — | ❌ | Tanggal lahir |
-| 8 | `gender` | `ENUM('L','P')` | — | ❌ | Jenis kelamin |
-| 9 | `parent_name` | `VARCHAR(100)` | — | ❌ | Nama wali murid / orang tua |
-| 10 | `parent_phone_wa` | `VARCHAR(20)` | — | ❌ | **No. WhatsApp aktif wali murid** (wajib, untuk reminder SPP) |
-| 11 | `school_origin` | `VARCHAR(100)` | — | ❌ | Asal sekolah yang sedang diikuti |
-| 12 | `grade_level` | `ENUM('TK','SD','SMP','SMA')` | — | ❌ | Jenjang pendidikan |
-| 13 | `class_grade` | `INT` | — | ❌ | Kelas (1 s.d. 12) |
-| 14 | `home_address` | `TEXT` | — | ❌ | **Alamat / Kelurahan** *(field baru — tidak ada di buku manual)* |
-| 15 | `learning_program` | `ENUM('reguler','intensif','paket')` | DEFAULT 'reguler' | ❌ | Program belajar yang diikuti (menggantikan FK ke tabel terpisah) |
-| 16 | `sibling_student_id` | `INT` | FK → `students.id` | ✅ | **Self-reference** ke data saudara kandung yang juga terdaftar |
-| 17 | `discount_amount` | `DECIMAL(12,2)` | DEFAULT 0 | ❌ | Nominal diskon yang diterapkan (cth: Rp 200.000 untuk kakak-adik) |
-| 18 | `status` | `ENUM('active','alumni','inactive')` | DEFAULT 'active' | ❌ | Status keaktifan siswa |
-| 19 | `registered_at` | `DATETIME` | — | ❌ | Tanggal & waktu pendaftaran |
-| 20 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 21 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 7: `mentors` — Data Tentor / Pengajar
-
-Menyimpan data seluruh tentor (60+ tentor aktif) yang mengajar di Bimbel Artha. Tentor tidak memiliki akun login ke sistem — informasi jadwal disebarkan melalui cetak PDF.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik tentor |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ✅ | Cabang utama (NULL jika mengajar lintas cabang) |
-| 3 | `full_name` | `VARCHAR(100)` | — | ❌ | Nama lengkap tentor |
-| 4 | `phone_wa` | `VARCHAR(20)` | — | ✅ | Nomor WhatsApp tentor |
-| 5 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif mengajar |
-| 6 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 7 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 8: `mentor_subjects` — Pivot Tentor ↔ Mata Pelajaran
-
-Tabel perantara relasi **many-to-many**: 1 tentor bisa mengajar beberapa mata pelajaran, dan 1 mata pelajaran bisa diajar beberapa tentor.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik |
-| 2 | `mentor_id` | `INT` | FK → `mentors.id` | ❌ | ID tentor |
-| 3 | `subject_id` | `INT` | FK → `subjects.id` | ❌ | ID mata pelajaran |
-| 4 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-
-> **Constraint**: `UNIQUE(mentor_id, subject_id)` — mencegah duplikasi pasangan tentor-mapel.
-
----
-
-#### Tabel 9: `class_rooms` — Ruang Kelas Fisik
-
-Menyimpan data ruang kelas fisik di setiap cabang beserta tipe dan kapasitas fisiknya (kursi/meja).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik ruangan |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ❌ | Cabang pemilik ruangan |
-| 3 | `room_name` | `VARCHAR(50)` | — | ❌ | Nama ruang, cth: "Ruang 1", "Ruang Besar A" |
-| 4 | `room_type` | `ENUM('standard','large')` | — | ❌ | Tipe ruangan |
-| 5 | `physical_capacity` | `INT` | — | ❌ | Kapasitas fisik (jumlah kursi/meja) |
-| 6 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif |
-| 7 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 8 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 10: `classes` — Rombongan Belajar
-
-Merepresentasikan **kelompok belajar** (bukan ruang fisik). Contoh: "SD Kelas 5 — Matematika — Artha 1 (Sesi A)". Setiap kelas memiliki kuota maksimal siswa yang diisi Admin Cabang dan divalidasi oleh service class di backend berdasarkan aturan kapasitas pedagogis.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik kelas |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ❌ | Cabang penyelenggara |
-| 3 | `academic_year_id` | `INT` | FK → `academic_years.id` | ❌ | Tahun ajaran |
-| 4 | `subject_id` | `INT` | FK → `subjects.id` | ❌ | Mata pelajaran |
-| 5 | `learning_program` | `ENUM('reguler','intensif','paket')` | DEFAULT 'reguler' | ❌ | Program belajar rombel (menggantikan FK ke tabel terpisah) |
-| 6 | `class_name` | `VARCHAR(100)` | — | ❌ | Nama kelas, cth: "SD 5 — Matematika (A)" |
-| 7 | `grade_level` | `ENUM('TK','SD','SMP','SMA')` | — | ❌ | Jenjang |
-| 8 | `class_grade` | `INT` | — | ❌ | Kelas (1–12) |
-| 9 | `max_students` | `INT` | — | ❌ | Kuota maks (divalidasi oleh `ClassCapacityService` di backend) |
-| 10 | `current_students` | `INT` | DEFAULT 0 | ❌ | Jumlah siswa aktif saat ini (counter cache) |
-| 11 | `status` | `ENUM('open','almost_full','full','closed')` | DEFAULT 'open' | ❌ | Status kapasitas kelas |
-| 12 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 13 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
-> **Logika Status Otomatis**: `open` (<80%), `almost_full` (80–99%), `full` (100%), `closed` (ditutup manual).
->
-> **Validasi Kapasitas**: Aturan batas maksimal siswa (SD 1: 5, SD 2: 7, SD 3–6: 10, SMP standar: 12, SMP besar: 14, SMA: 14) dikelola di `App\Services\ClassCapacityService` (Laravel). Service ini memvalidasi nilai `max_students` saat Admin Cabang membuat atau mengedit rombel kelas.
-
----
-
-#### Tabel 11: `class_schedules` — Jadwal Kelas
-
-Menghubungkan **kelas + tentor + ruangan + hari + jam**. Tabel ini adalah **kunci utama untuk deteksi bentrok jadwal** (konflik tentor dan konflik ruangan).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik jadwal |
-| 2 | `class_id` | `INT` | FK → `classes.id` | ❌ | Kelas yang dijadwalkan |
-| 3 | `mentor_id` | `INT` | FK → `mentors.id` | ❌ | Tentor yang ditugaskan |
-| 4 | `room_id` | `INT` | FK → `class_rooms.id` | ❌ | Ruangan yang dipakai |
-| 5 | `day_of_week` | `ENUM('monday','tuesday','wednesday','thursday','friday','saturday','sunday')` | — | ❌ | Hari dalam seminggu |
-| 6 | `start_time` | `TIME` | — | ❌ | Jam mulai (cth: 15:00) |
-| 7 | `end_time` | `TIME` | — | ❌ | Jam selesai (cth: 16:30) |
-| 8 | `is_active` | `BOOLEAN` | DEFAULT TRUE | ❌ | Status aktif jadwal |
-| 9 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 10 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
-> **Validasi Bentrok**:
-> - **Bentrok Tentor**: `SELECT * FROM class_schedules WHERE mentor_id = ? AND day_of_week = ? AND start_time < ? AND end_time > ?`
-> - **Bentrok Ruangan**: `SELECT * FROM class_schedules WHERE room_id = ? AND day_of_week = ? AND start_time < ? AND end_time > ?`
-
----
-
-#### Tabel 12: `class_enrollments` — Pendaftaran Siswa ke Kelas
-
-Tabel perantara relasi **many-to-many** antara `students` dan `classes`. Mendukung **waiting list** dengan notifikasi WA otomatis saat slot terbuka.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik |
-| 2 | `class_id` | `INT` | FK → `classes.id` | ❌ | ID kelas |
-| 3 | `student_id` | `INT` | FK → `students.id` | ❌ | ID siswa |
-| 4 | `enrollment_status` | `ENUM('active','waiting_list','completed','dropped')` | DEFAULT 'active' | ❌ | Status pendaftaran |
-| 5 | `waiting_since` | `DATETIME` | — | ✅ | Tanggal masuk antrian waiting list (NULL jika langsung aktif) |
-| 6 | `enrolled_at` | `DATETIME` | — | ❌ | Tanggal resmi terdaftar di kelas |
-| 7 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 8 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
-> **Constraint**: `UNIQUE(class_id, student_id)` — 1 siswa hanya bisa terdaftar 1x di kelas yang sama.
->
-> **Logika Waiting List**: Ketika siswa `active` berstatus `dropped` atau `completed`, sistem otomatis mencari siswa tertua di `waiting_list` (ORDER BY `waiting_since` ASC) lalu mengirim notifikasi WA menggunakan template `waitlist_available` dari file konfigurasi backend.
-
----
-
-### GRUP C — KEUANGAN & PEMBAYARAN
-
----
-
-#### Tabel 13: `bills` — Tagihan (SPP Bulanan + Modul Semester)
-
-Menyimpan seluruh tagihan keuangan siswa: SPP bulanan (12x per tahun ajaran), biaya modul per semester, dan biaya pendaftaran. Format mirip dengan kolom 12 bulan di Buku Besar A4 manual, namun dalam bentuk digital.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik tagihan |
-| 2 | `student_id` | `INT` | FK → `students.id` | ❌ | Siswa yang ditagih |
-| 3 | `academic_year_id` | `INT` | FK → `academic_years.id` | ❌ | Tahun ajaran tagihan |
-| 4 | `bill_type` | `ENUM('spp_monthly','module_semester','registration')` | — | ❌ | Jenis tagihan |
-| 5 | `bill_period` | `VARCHAR(10)` | — | ❌ | Periode: "2026-07" (bulanan) atau "2026-S1" (semester) |
-| 6 | `base_amount` | `DECIMAL(12,2)` | — | ❌ | Tarif dasar sebelum diskon |
-| 7 | `discount_amount` | `DECIMAL(12,2)` | DEFAULT 0 | ❌ | Potongan diskon |
-| 8 | `total_amount` | `DECIMAL(12,2)` | — | ❌ | Total tagihan (base - discount) |
-| 9 | `payment_status` | `ENUM('unpaid','partial','paid','overdue')` | DEFAULT 'unpaid' | ❌ | Status pembayaran |
-| 10 | `due_date` | `DATE` | — | ❌ | Tanggal jatuh tempo |
-| 11 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-| 12 | `updated_at` | `DATETIME` | ON UPDATE CURRENT | ❌ | Timestamp terakhir diperbarui |
-
----
-
-#### Tabel 14: `payments` — Pembayaran & Kuitansi
-
-Mencatat setiap transaksi pembayaran dari wali murid. Mendukung pembayaran tunai, transfer bank, dan QRIS — **tanpa payment gateway pihak ketiga** (sesuai arahan Pak Arif). Admin cabang memverifikasi bukti transfer secara manual.
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik pembayaran |
-| 2 | `bill_id` | `INT` | FK → `bills.id` | ❌ | Tagihan yang dibayar |
-| 3 | `verified_by_user_id` | `INT` | FK → `users.id` | ✅ | Admin yang memverifikasi (NULL = belum diverifikasi) |
-| 4 | `receipt_no` | `VARCHAR(30)` | UNIQUE | ❌ | Nomor kuitansi (auto-generate) |
-| 5 | `amount_paid` | `DECIMAL(12,2)` | — | ❌ | Jumlah yang dibayarkan |
-| 6 | `payment_method` | `ENUM('cash','bank_transfer','qris')` | — | ❌ | Metode pembayaran |
-| 7 | `proof_image_url` | `VARCHAR(500)` | — | ✅ | URL foto bukti transfer (NULL jika tunai) |
-| 8 | `payment_date` | `DATETIME` | — | ❌ | Tanggal & waktu pembayaran |
-| 9 | `verified_at` | `DATETIME` | — | ✅ | Tanggal & waktu diverifikasi admin |
-| 10 | `notes` | `TEXT` | — | ✅ | Catatan tambahan |
-| 11 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-
----
-
-### GRUP D — MONITORING & LOG
-
----
-
-#### Tabel 15: `wa_logs` — Log Pesan WhatsApp Terkirim
-
-Mencatat riwayat setiap pesan WhatsApp yang dikirim ke wali murid (reminder SPP H-7, H-1, H+3, notifikasi waiting list, dll.). Template pesan diambil dari file konfigurasi backend (`config/wa_templates.php`).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik log |
-| 2 | `bill_id` | `INT` | FK → `bills.id` | ✅ | Tagihan terkait (NULL jika bukan reminder SPP) |
-| 3 | `student_id` | `INT` | FK → `students.id` | ❌ | Siswa terkait |
-| 4 | `template_type` | `VARCHAR(50)` | — | ✅ | Jenis template yang digunakan (cth: `spp_reminder_h7`, `waitlist_available`) |
-| 5 | `recipient_phone` | `VARCHAR(20)` | — | ❌ | Nomor WA tujuan |
-| 6 | `message_content` | `TEXT` | — | ❌ | Isi pesan yang terkirim (sudah di-render dari template) |
-| 7 | `sent_status` | `ENUM('pending','sent','failed')` | DEFAULT 'pending' | ❌ | Status pengiriman |
-| 8 | `sent_at` | `DATETIME` | — | ✅ | Waktu terkirim (NULL jika pending/failed) |
-| 9 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-
----
-
-#### Tabel 16: `revenue_validations` — Validasi Revenue Cabang
-
-Digunakan Super Admin (Ibu Emi / Bendahara) untuk menandai laporan pendapatan bulanan setiap cabang sebagai "Sudah Divalidasi" setelah pengecekan rekening bank (Menu 2.2).
-
-| No | Kolom | Tipe Data | Constraint | Nullable | Deskripsi |
-| :-: | :--- | :--- | :--- | :---: | :--- |
-| 1 | `id` | `INT` | PK, AUTO_INCREMENT | ❌ | ID unik validasi |
-| 2 | `branch_id` | `INT` | FK → `branches.id` | ❌ | Cabang yang divalidasi |
-| 3 | `period_month` | `VARCHAR(7)` | — | ❌ | Periode bulan, cth: "2026-07" |
-| 4 | `expected_revenue` | `DECIMAL(14,2)` | — | ❌ | Pendapatan yang diharapkan (total tagihan) |
-| 5 | `actual_revenue` | `DECIMAL(14,2)` | — | ❌ | Pendapatan aktual (total pembayaran masuk) |
-| 6 | `validated_by_user_id` | `INT` | FK → `users.id` | ❌ | Super Admin yang memvalidasi |
-| 7 | `validation_status` | `ENUM('pending','validated','discrepancy')` | DEFAULT 'pending' | ❌ | Status validasi |
-| 8 | `notes` | `TEXT` | — | ✅ | Catatan (cth: selisih karena pembayaran belum masuk) |
-| 9 | `validated_at` | `DATETIME` | — | ✅ | Tanggal & waktu divalidasi |
-| 10 | `created_at` | `DATETIME` | DEFAULT CURRENT | ❌ | Timestamp dibuat |
-
----
-
-## 📊 4. Ringkasan Statistik Skema
-
-| Aspek | Jumlah |
-| :--- | :---: |
-| **Total Tabel** | 16 |
-| **Relasi One-to-Many** | 16 |
-| **Relasi Many-to-Many** (via pivot) | 2 (`mentor_subjects`, `class_enrollments`) |
-| **Self-Referencing FK** | 1 (`students.sibling_student_id`) |
-| **Enum Fields** | 15 |
-| **Total Kolom (seluruh tabel)** | ~155 |
-| **Tabel Fondasi & Konfigurasi** | 5 |
-| **Tabel Operasional** | 7 |
-| **Tabel Keuangan** | 2 |
-| **Tabel Monitoring** | 2 |
-
----
-
-## 🔄 5. Peta Migrasi: 20 Tabel → 16 Tabel
-
-| No | Tabel Dihapus | Pengganti di Skema 16 Tabel | Lokasi Logika Baru |
-| :-: | :--- | :--- | :--- |
-| 1 | `learning_programs` | Kolom `ENUM('reguler','intensif','paket')` di `students`, `classes`, `fee_tariffs` | Database (ENUM column) |
-| 2 | `capacity_rules` | Kolom `classes.max_students` + validasi di backend | `App\Services\ClassCapacityService` |
-| 3 | `discount_rules` | Kolom `students.discount_amount` + `sibling_student_id` | `App\Services\DiscountService` |
-| 4 | `wa_templates` | Kolom `wa_logs.template_type` (VARCHAR) + file template | `config/wa_templates.php` + Blade |
-
----
-
-## ✅ 6. Validasi Silang terhadap Dokumen DISKUSI 1 (ACC MITRA)
-
-| No | Fitur dari Dokumen Mitra & Pak Arif | Tabel/Mekanisme yang Mengakomodasi | Status |
-| :-: | :--- | :--- | :---: |
-| 1 | Pendaftaran siswa baru + seluruh field | `students` | ✅ |
-| 2 | No. WhatsApp wali murid (wajib) | `students.parent_phone_wa` | ✅ |
-| 3 | Alamat/kelurahan (field baru) | `students.home_address` | ✅ |
-| 4 | Diskon kakak-adik otomatis | `students.sibling_student_id` + `students.discount_amount` + `DiscountService` | ✅ |
-| 5 | Cetak bukti pendaftaran PDF | Query `students` → PDF | ✅ |
-| 6 | Plotting kelas + validator kapasitas | `classes.max_students` + `class_enrollments` + `ClassCapacityService` | ✅ |
-| 7 | Waiting list + WA notif slot terbuka | `class_enrollments.waiting_since` + `wa_logs` | ✅ |
-| 8 | Deteksi bentrok jadwal tentor | `class_schedules` (cek mentor + day + time overlap) | ✅ |
-| 9 | Filter tentor berdasarkan mata pelajaran | `mentor_subjects` + `subjects` | ✅ |
-| 10 | Dashboard beban mengajar tentor | Aggregate `class_schedules` per `mentor_id` | ✅ |
-| 11 | Kasir SPP + kuitansi PDF | `bills` + `payments` | ✅ |
-| 12 | Transfer manual, tampilkan no. rekening | `payments.payment_method` (tanpa payment gateway) | ✅ |
-| 13 | Upload bukti transfer | `payments.proof_image_url` | ✅ |
-| 14 | WA reminder H-7, H-1, H+3 | `wa_logs` + `bills.due_date` + `config/wa_templates.php` | ✅ |
-| 15 | Template WA kustom oleh Super Admin | `config/wa_templates.php` (dikelola via deployment) | ✅ |
-| 16 | Tarif bisa diubah tanpa ubah kode | `fee_tariffs` (dikonfigurasi Super Admin via dashboard) | ✅ |
-| 17 | Tarif beda per program (Reguler/Intensif/Paket) | `fee_tariffs.learning_program` (ENUM) | ✅ |
-| 18 | Biaya modul per semester/tahun ajaran | `bills.bill_type = module_semester` | ✅ |
-| 19 | Riwayat pembayaran 12 bulan per tahun ajaran | `bills` (12 baris per siswa per tahun ajaran) | ✅ |
-| 20 | Monitoring revenue 8 cabang | Aggregate `payments` per `branches` | ✅ |
-| 21 | Validasi rekonsiliasi revenue | `revenue_validations` | ✅ |
-| 22 | Master data 8 cabang + peta Google Maps | `branches.google_maps_url` | ✅ |
-| 23 | Manajemen akun pengguna (CRUD) | `users` (is_active, reset password) | ✅ |
-| 24 | Tahun ajaran aktif | `academic_years.is_active` | ✅ |
-| 25 | Ekspor Excel/CSV & cetak laporan PDF | Query-based (tanpa tabel tambahan) | ✅ |
-| 26 | Status alumni (siswa yang selesai/keluar) | `students.status = 'alumni'` | ✅ |
-| 27 | Cetak kartu siswa / kartu anggota PDF | Query `students` → PDF | ✅ |
-
-> **Hasil**: **27/27 fitur terakomodasi** — tidak ada fitur yang terlewat dari dokumen DISKUSI 1 (ACC MITRA). Pengurangan 4 tabel dilakukan murni pada lapisan konfigurasi, bukan pada fungsionalitas.
+| payments langsung ke satu bill | payments sebagai induk dan payment_allocations sebagai rincian beberapa tagihan |
+| Penanda verifikasi tanpa riwayat pengembalian | payment_reviews dan resubmission_of_id pada pengajuan baru |
+| revenue_validations membandingkan tagihan dengan penerimaan | bank_accounts, bank_entries, bank_matches, cash_batches, dan cash_batch_items |
+| wa_logs berstatus terkirim | reminder_actions hanya mencatat permintaan tautan manual |
+| Diskon global pada profil siswa | Potongan aktual, alasan, dan pemberi persetujuan pada bills |
+| Kelas berstatus hampir penuh atau penuh tersimpan | classes.status active atau closed, dengan keterisian turunan |
+| Satu baris siswa dan kelas seumur hidup | Interval keanggotaan yang dapat berulang setelah interval lama berakhir |
+| Mata pelajaran langsung pada kelas | Mata pelajaran pada sesi class_schedules |
+| Tarif tanpa pembeda cabang atau sesi | Tarif bercabang dan bersesi dengan masa berlaku serta siklus eksplisit |
+| Klaim cakupan seratus persen | Pemeriksaan struktur yang dibatasi, diikuti pengujian implementasi yang belum dilaksanakan |
+
+Kewenangan pemeriksa rekening, batas potongan, tarif berlaku, ambang hampir penuh, serta keterwakilan cabang pada UAT tetap dicatat sebagai keputusan terbuka. Kebijakan tersebut perlu ditetapkan sebelum fungsi terkait dibekukan dan digunakan sebagai dasar penerimaan.
+
+Bab 1 yang lama masih menyatakan verifikasi transfer oleh Admin Cabang, sehingga perlu diselaraskan apabila rancangan pemeriksaan pusat dipilih. Perubahan Bab 1 tidak dilakukan diam-diam melalui dokumen basis data ini, dan status rancangan tersebut juga dinyatakan pada Bab 3.

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25",
+  "scope": "Draft diagrams and UI wireframes; all UI values fictional, not implemented application screenshots",
+  "figures": [
+    "Gambar_3_1_Alur_Pembuatan_Prototipe",
+    "Gambar_3_2_Use_Case_Inti",
+    "Gambar_3_3_Model_Data_Konseptual",
+    "Gambar_3_4_Dasbor_Cabang",
+    "Gambar_3_5_Keanggotaan_Kelas",
+    "Gambar_3_6_Pengajuan_Transfer",
+    "Gambar_3_7_Pemeriksaan_Transfer",
+    "Gambar_3_8_Tunggakan_WhatsApp",
+    "Gambar_3_9_Dasbor_Pusat_Pencocokan",
+    "Gambar_3_10_Arsitektur_Prototipe"
+  ],
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "source_script": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\scripts\\gambar_revisi_terpadu_20261025.py"
+}

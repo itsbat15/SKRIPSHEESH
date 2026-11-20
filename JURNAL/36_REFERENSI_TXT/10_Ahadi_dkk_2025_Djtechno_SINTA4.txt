@@ -1,0 +1,770 @@
+--- HALAMAN 1 ---
+758 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+PENGEMBANGAN SISTEM INFORMASI MANAJEMEN 
+HOTEL MULTI-CABANG BERBASIS WEB DENGAN 
+FRAMEWORK LARAVEL 
+ 
+Ahmad Husna Ahadi1, Pariyadi2, Teuku Djauhari3 
+1, 3) Teknologi Informasi, Fakultas Ilmu Komputer, Universitas Nurdin Hamzah, Indonesia 
+2) Teknik Informatika, Fakultas Ilmu Komputer, Universitas Nurdin Hamzah, Indonesia 
+ 
+ 
+Article Info 
+ 
+ABSTRACT 
+Article history: 
+Received: 07 Juli 2025 
+Revised: 25 Juli 2025 
+Accepted: 28 Juli 2025 
+ 
+ 
+Abstrak 
+Perhotelan adalah salah satu bisnis yang saat ini juga sudah banyak menggunakan 
+teknologi seperti sistem informasi manajemen hotel. Hotel Royal Heritage Jambi 
+sudah menggunakan sistem informasi manajemen hotel untuk operasional dan 
+reservasinya. Tetapi owner memiliki target ingin menambah cabang hotel di 
+kota/kabupaten lain bahkan di luar provinsi Jambi. Pihak manajemen hotel 
+menginginkan adanya sebuah sistem yang dapat mengakomodir hal tersebut 
+sehingga beberapa cabang hotel bisa dilakukan pemantauan terpusat melalui satu 
+sistem. Berdasarkan dari permasahalan tersebut, penulis memiliki ketertarikan 
+untuk mengembangkan sistem informasi manajemen hotel yang dapat memiliki 
+beberapa cabang pada Hotel Royal Heritage Jambi. Pengembangan sistem informasi 
+ini meneruskan dari sistem yang sudah ada yaitu sistem informasi berbasis website 
+menggunakan framework Laravel. Metode pengembangan sistem yang digunakan 
+adalah metode waterfall dengan pemodelan menggunakan UML, dan pengujian 
+dengan metode black box testing. Dari hasil pengujian, sistem yang telah 
+dikembangkan ini sudah layak untuk dilanjutkan ke tahap deployment. 
+Pengembangan ini diharapkan dapat menjadi penyelesaian masalah dan solusi bagi 
+pihak Hotel Royal Heritage Jambi ataupun bagi hotel lainnya yang memiliki 
+permasalahan serupa. 
+Kata Kunci: sistem informasi, manajemen hotel, multi-cabang, framework 
+laravel, metode waterfall. 
+Abstract 
+Hospitality is one of the businesses that currently also uses technology such as hotel 
+management information systems. Royal Heritage Hotel already uses a hotel 
+management information system for its operations and reservations. But the owner has 
+a target of wanting to add hotel branches in other cities / regencies even outside Jambi 
+province. Owner wants a system that can accommodate this so that several hotel 
+branches can be monitored centrally through one system. Based on these problems, the 
+author has an interest in developing a hotel management information system that can 
+have several branches at the Royal Heritage Jambi Hotel. The development of this 
+information system continues from the existing system, namely a website-based 
+information system using the Laravel framework. The system development method 
+used is the waterfall method with modeling using UML, and testing using the black box 
+testing method. From the test results, the system that has been developed is feasible to 
+proceed to the deployment stage. This development is expected to be a problem solving 
+and solution for the Royal Heritage Hotel or for other hotels that have similar problems. 
+Keywords: information system, hotel management, multi-branch, laravel 
+framework, waterfall method. 
+ 
+Djtechno: 
+Jurnal 
+Teknologi 
+Informasi 
+oleh 
+Universitas 
+Dharmawangsa 
+Artikel 
+ini 
+bersifat 
+open 
+access 
+yang 
+didistribusikan di bawah syarat dan ketentuan dengan Lisensi 
+Internasional Creative Commons Attribution NonCommerciaL 
+ShareAlike 4.0 (CC-BY-NC-SA). 
+ 
+
+
+--- HALAMAN 2 ---
+759 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+Corresponding Author: 
+E-mail : ahmad_husna@unh.ac.id  
+ 
+1. 
+PENDAHULUAN 
+Berkembang pesatnya teknologi memiliki peran yang penting pada berbagai jenis 
+proses bisnis seperti dalam peningkatan operasional, memperluas target pasar, 
+memberikan dukungan keputusan, peningkatan pada pelayanan terhadap pelanggan, 
+dan membuat sistem yang terintegrasi [1]. Bisnis perhotelan juga saat ini sudah banyak 
+memanfaatkan teknologi seperti mengembangkan sistem informasi manajemen hotel 
+sendiri [2]. Hotel adalah sebuah bentuk usaha yang menyediakan akomodasi berbentuk 
+kamar-kamar pada suatu gedung atau lokasi, menyediakan juga jasa penyediaan 
+makanan dan minuman, fasilitasi seperti hiburan atau fasilitas lainnya. Pelanggan dapat 
+melakukan pemesanan secara harian [3].  
+Perhotelan ini sangat penting dalam pertumbuhan ekonomi pada sektor pariwisata 
+[4]. Pariwisata sendiri adalah salah satu pendorong pertumbuhan perekonomian baik di 
+daerah dan nasional [5]. Hotel Royal Heritage Jambi adalah hotel yang ada di Provinsi 
+Jambi dan memiliki visi untuk menjadi hotel pilihan pertama, memberikan pengalaman 
+menginap yang nyaman, aman dan memuaskan untuk tamu yang datang [6]. Hotel Royal 
+Heritage Jambi saat ini memiliki 1 cabang di Kota Jambi dan memiliki target untuk 
+membuka cabang lagi pada kota/kabupaten yang lain bahkan di luar Provinsi Jambi. Saat 
+ini memang sudah ada sistem yang berjalan tetapi tidak memiliki fitur untuk bisa 
+mengakomodir beberapa cabang sekaligus. Pihak manajemen hotel menginginkan 
+adanya sebuah sistem yang dapat mengakomodir hal tersebut sehingga beberapa cabang 
+hotel bisa dilakukan pemantauan terpusat melalui satu sistem.  
+Berdasarkan dari permasahalan tersebut, penulis memiliki ketertarikan untuk 
+mengembangkan sistem informasi manajemen hotel yang dapat memiliki beberapa 
+cabang pada Hotel Royal Heritage Jambi. Pengembangan sistem informasi ini 
+meneruskan dari sistem yang sudah ada yaitu menggunakan framework Laravel. Laravel 
+merupakan framework favorit bagi para programmer pemrograman PHP yang dapat 
+digunakan secara bebas [7]. Penggunaan framework laravel ini dapat memberikan 
+keuntungan yang baik, serta dapat mencapai target yang telah ditentukan [8].  Hal yang 
+membuat unggulnya laravel dan menjadi favorit para programmer adalah dengan adanya 
+penggunaan arsitektur Model-View-Controller (MVC) yang menjadi kekuatan dari 
+
+
+--- HALAMAN 3 ---
+760 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+framework Laravel. MVC ini merupakan sebuah arsitektur yang mengelompokkan modul 
+aplikasi menjadi 3 bagian yaitu Model sebagai logika dari data dan pengelolaan dengan 
+basis data, view yang berisi struktur HTML, CSS, dan JS untuk membuat antar muka ke 
+pengguna, kemudian controller sebagai pengatur bagaimana antara data, algoritma, dan 
+tampilan dapat tampil secara utuh dalam bentuk halaman web [9]. 
+Pemilihan laravel sebagai framework utama dalam pengembangan sistem ini juga 
+berdasarkan keunggulan yang dimiliki laravel jika dibandingkan dengan framework lain 
+seperti codeigniter atau symfony. Keunggulan tersebut antara lain adalah tersedianya 
+dukungan fitur bawaan seperti authentication, queue, task scheduling, ORM eloquent, 
+serta dukungan komunitas yang besar dan aktif. Selain itu, tim pengembang sistem 
+informasi manajemen hotel multi-cabang juga sudah terbiasa menggunakan framework 
+laravel, sehingga dapat mempercepat proses pengembangan dan mengurangi risiko 
+kesalahan teknis. 
+Meskipun demikian, penggunaan laravel juga  memiliki sejumlah tantangan yang 
+perlu menjadi perhatian. Beberapa fitur laravel yang bersifat kompleks membutuhkan 
+pemahaman mendalam dari pengembang, terutama dalam hal optimasi performa dan 
+pengelolaan dependency pada sistem berskala besar. Selain itu, dikarenakan bergantung 
+penuh pada framework laravel, maka sangat penting memastikan kesiapan dari tim 
+pengembang dan kebutuhan sistem sebelum implementasi. 
+Pada penelitian ini, akan dibahas mengenai perancangan sistem yang telah 
+dikembangkan untuk kebutuhan sistem informasi manajemen hotel multi-cabang. 
+Pengembangan ini diharapkan dapat menjadi penyelesaian masalah dan solusi bagi pihak 
+Hotel Royal Heritage Jambi ataupun bagi hotel – hotel lainnya yang memiliki 
+permasalahan serupa. 
+ 
+2. 
+METODE PENELITIAN  
+Pengembangan sistem informasi manajemen hotel pada Hotel Royal Heritage Jambi 
+yang akan dibahas akan mengimplementasikan metode waterfall. Metode waterfall 
+dipilih karena kebutuhan untuk pengembangan sistem ini telah dirancang dengan baik 
+[10]. Proses pada metode waterfall dilakukan secara terstruktur sehingga sesuai dengan  
+kasus dan kebutuhan yang telah didapatkan untuk melakukan penelitian ini. Metode 
+waterfall merupakan metode pengembangan sistem yang mengikuti urutan yang jelas 
+
+
+--- HALAMAN 4 ---
+761 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+dan linier. Ini berarti bahwa setiap fase yang dilakukan, mulai dari analisis kebutuhan, 
+desain, implementasi, pengujian, hingga pemeliharaan, harus diselesaikan satu per satu. 
+Satu tahapan diselesaikan sepenuhnya baru bisa melanjutkan ke tahap berikutnya [11].   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gambar 1. Tahapan Pada Metode Waterfall [12] 
+Adapun penejelasan mengenai masing – masing tahapan  adalah sebagai berikut : 
+a. 
+Analisis Kebutuhan (Analysis) 
+Pengembang melakukan pengumpulan kebutuhan selengkap mungkin dan 
+berikutnya dilakukan analisis, mendefinisikan kebutuhan yang harus dipenuhi. 
+Tahapan ini harus benar – benar sudah selesai, baru bisa dilanjutkan ke tahap 
+berikutnya. 
+b. Desain (Design) 
+Pengembang telah menghasilkan rancangan sistem secara utuh dan berikutnya 
+adalah menentukan flow perangkat lunak sampai ke algoritmanya secara detail. 
+c. 
+Implementasi (Implementation) 
+Tahap ini adalah tahap yang melakukan proses coding program berdasarkan dari 
+desain yang dibuat pada tahap sebelumnya. Bisa berupa modul-modul dan akan 
+digabungkan menjadi satu untuk menjadi sistem yang lengkap. 
+d. Pengujian (Testing) 
+Pengguna melakukan uji pada sistem yang telah dikembangkan. Jika pada fase 
+pengujian pengguna menemukan bahwa sistem tidak sesuai dengan desain, maka 
+pengembang harus melakukan perbaikan. Jika pengguna sudah melakukan verifikasi 
+dan menyetujui sistem, maka dapat melanjutkan ke tahap berikutnya. 
+e. 
+Penerapan/Penyebaran (Deployment) 
+Sistem yang telah selesai di pengujian dan sudah diverifikasi, Langkah berikutnya 
+adalah mengimplementasikan sistem ke lingkungan produksi (production).  
+
+
+--- HALAMAN 5 ---
+762 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+f. 
+Pemeliharaan (Maintenance) 
+Pada tahap ini, pengembang dapat melakukan perbaikan temuan bugs, pengingkatan 
+fitur, dan melakukan perbaikan sistem sesuai dengan yang disetujui. 
+Metode waterfall ini merupakan metode pengembangan sistem yang sederhana dan 
+sangat cocok untuk sistem yang memiliki spesifikasi jarang dilakukan perubahan [12]. 
+Metode ini juga memungkinkan pengembang untuk merancang, mengembangkan, 
+menguji, dan mengimplementasikan sistem informasi manajemen hotel yang basisnya 
+adalah sebuah website secara responsif dan bisa lebih efisien [13]. 
+Meskipun metode waterfall memiliki alur yang terstruktur, tetapi metode ini 
+memiliki tantangan tersendiri, khususnya jika terdapat perubahan kebutuhan tetapi 
+fasenya sudah terlewati. Dalam konteks pengembangan sistem hotel yang dinamis, hal 
+seperti ini akan menjadi kendala, terutama jika ada kebutuhan yang sifatnya mendadak.  
+Oleh karena itu, metode waterfall pada pengembangan ini menerapkan pendekatan 
+waterfall-iterative. Pada pendekatan ini fase-fase dieksekusi secara iteratif seiring 
+dengan pengembangan sistem. Pendekatan ini memungkinkan pengembang untuk 
+mengadaptasi dan mengubah sistem informasi hotel sesuai dengan kebutuhan yang 
+mungkin berubah selama proses pengembangan. Dengan demikian, meskipun mengikuti 
+struktur waterfall, pendekatan ini tetap memberikan ruang untuk penyesuaian yang 
+diperlukan [14]. 
+ 
+Gambar 2. Tahapan Waterfall-iterative yang Memungkinkan Iterasi untuk Menyesuaikan Kebutuhan 
+Perubahan. 
+ 
+3. 
+HASIL DAN PEMBAHASAN  
+Pengembangan sistem informasi manajemen hotel multi-cabang ini dikembangkan 
+dengan menerapkan metode waterfall. Sehingga untuk tahapannya mengikuti tahapan 
+apa saja yang ada pada metode waterfall. 
+
+
+--- HALAMAN 6 ---
+763 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+a. Analisis Kebutuhan (Analysis) 
+Untuk melakukan analisis kebutuhan data yang lengkap, penulis melakukan 
+beberapa cara dalam memperolah data dan informasi. Beberapa cara tersebut yaitu : 
+1. Wawancara 
+Merupakan salah satu Teknik untuk mengumpulkan data dengan mengajukan 
+beberapa pertanyaan langsung kepada responden. Jawaban dari responden ini dapat 
+direkam atau dicatat manual [15]. 
+Penulis terlibat dalam wawancara langsung kepada stakeholder dari Hotel Royal 
+Heritage Jambi agar mendapatkan informasi yang akurat dan dapat memberikan 
+keputusan langsung jika mendapatkan ide dan solusi lain. 
+2. Observasi 
+Observasi merupakan cara untuk melakukan pengumpulan data menggunakan 
+pengindra tanpa mengajukan pertanyaan ke responden. Hal yang dilakukan adalah 
+mengamati situasi, kondisi, kegiatan, objek, atau peristiwa yang terjadi [15]. Observasi 
+ini dilakukan penulis dengan turun ke Lokasi secara langsung untuk mendapatkan 
+informasi yang lebih tepat. 
+3. Studi Literatur 
+Membaca dan memahami buku, jurnal, ataupun karya ilmiah lain berkaitan dengan 
+masalah yang akan diselesaikan dan berikutnya dibuat penulisan yang terstruktur 
+merupakan maksud dari studi literatur [16]. Penulis melakukan Teknik ini untuk 
+mendapatkan referensi mengenai sistem informasi manajemen perhotelan yang 
+memiliki beberapa cabang. 
+Dari hasil analisa yang dilakukan berdasarkan pengumpulan data dengan beberapa 
+teknik di atas, maka teridentifikasi apa saja yang menjadi kebutuhan sistem yang akan 
+dikembangkan. Kebutuhan yang pertama adalah kebutuhan fungsional. Kebutuhan 
+fungsional berkaitan dengan kemampuan apa yang dapat dilakukan oleh sistem. Apa 
+yang dibuat pada kebutuhan fungsional harus berdasarkan prosedur dan proses bisnis 
+[17].  
+Tabel 1. Tabel Kebutuhan  Fungsional Sistem 
+No. 
+Kebutuhan Fungsional  
+Keterangan 
+1 
+Master data cabang hotel. 
+Modul ini diperlukan untuk menentukan cabang 
+hotel. 
+
+
+--- HALAMAN 7 ---
+764 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+2 
+Pencatatan 
+kamar 
+berdasarkan cabang hotel. 
+Modul kamar yang saat ini sudah ada perlu 
+dilakukan penambahan pilih cabang hotel. 
+3 
+Pencatatan transaksi 
+berdasarkan cabang hotel. 
+Modul transaksi yang saat ini sudah ada perlu 
+dilakukan penyesuaian agar transaksi yang 
+masuk berdasarkan dari cabang hotel. 
+4 
+Halaman depan dari web 
+menampilkan kamar untuk 
+lebih dari satu cabang hotel. 
+Pada halaman depan saat ini hanya menampilkan 
+kamar yang tersedia. Perubahan yang perlu 
+ditambahkan adalah perlu adanya keterangan 
+cabang hotel yang mana yang kamarnya tersedia. 
+5 
+Laporan dan dashboard pada 
+akun pemilik/owner. 
+Perlu adanya penambahan kondisi pemilihan 
+cabang hotel untuk melihat laporan, dashboard 
+masing – masing cabang. 
+ 
+Kebutuhan berikutnya adalah kebutuhan non fungsional. Kebutuhan non fungsional 
+berkaitan dengan seperti apa sistem yang dikembangkan ini akan berjalan kedepannya 
+[18]. Adapun kebutuhan non-fungsional yang akan ditentukan pada penelitian ini dapat 
+dilihat pada tabel di bawah ini. 
+Tabel 2. Tabel Kebutuhan Non-Fungsional 
+No. 
+Kebutuhan Non-
+Fungsional 
+Keterangan 
+1 
+Keamanan 
+Sistem diharapkan bisa memberikan batasan akses 
+berdasarkan aktor pengguna yang login ke dalam sistem. 
+2 
+Keandalan 
+Sistem harus memiliki kemampuan untuk menampilkan 
+data dan informasi secara real-time agar proses beroperasi 
+secara efisien. 
+3 
+Kecocokan 
+Sistem harus responsif pada perangkat apapun yang 
+digunakan untuk mengakses sistem. Selain perangkat 
+perlu juga bisa dibuka oleh peramban apapun. 
+4 
+Kinerja 
+Waktu respon sistem dapat dilakukan secepat mungkin, 
+misalnya di bawah <2 detik. 
+5 
+Skalabilitas 
+Sistem harus mampu ditingkatkan skalabilitasnya jika data 
+dan pengguna semakin besar. 
+ 
+Terdapat juga kebutuhan lain yaitu kebutuhan pengguna pada sistem untuk 
+menggambarkan aktor yang login ke dalam sistem. Setelah dilakukan analisa, kebutuhan 
+pengguna terbagi menjadi 4 aktor yaitu Owner, PIC cabang, front office cabang, house 
+keeping cabang. 
+Tabel 3. Tabel Kebutuhan Pengguna 
+No. 
+Aktor 
+Kebutuhan  
+1 
+Owner 
+• Melihat semua laporan. 
+• Mengelola master data cabang. 
+
+
+--- HALAMAN 8 ---
+765 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+• Mengelola data user semua cabang. 
+2 
+PIC Cabang 
+• Mengelola master data tipe kamar. 
+• Mengelola master data kamar. 
+• Mengelola master data fasilitas kamar. 
+• Mengelola tipe harga kamar. 
+• Mengelola data karyawan masing – masing cabang. 
+• Melihat semua laporan per cabang. 
+3 
+Front office Cabang 
+• Mengelola reservasi kamar. 
+• Melihat laporan reservasi kamar. 
+• Mengelola closing shift. 
+4 
+House keeping cabang 
+• Mengelola data persiapan kamar 
+• Mengelola data checkout property. 
+• Mengelola data perubahan status kamar. 
+ 
+b. Desain (Design) 
+Pada tahap desain ini, terdapat beberapa pemodelan sistem yang akan dibuat 
+menggunakan UML. UML (Unified Modeling Language) merupakan satu dari sekian 
+banyak solusi yang menggunakan paradigma objek pada desain sistem atau perangkat 
+lunak. Dengan UML, maka dapat memberikan visualisasi, menentukan, membangun, dan 
+membuat dokumentasi dari sistem yang dikembangkan. Gambaran UML adalah berupa 
+diagram [19]. Diagram UML yang digunakan yaitu use case diagram dan activity diagram. 
+Kemudian menggunakan Entity Relationship Diagram (ERD) untuk memberikan 
+penggambaran desain database. 
+1. Use Case Diagram 
+Merupakan satu dari berbagai macam diagram dari UML yang memberikan 
+Gambaran tentang ikatan dan hubungan aktor ke sistem. Diagram ini umumnya 
+menampilkan seperti apa akses yang dapat diakses oleh aktor terhadap sistem [20]. 
+ 
+Use Case Diagram Aktor Owner 
+ 
+Gambar 3. Use Case Diagram Aktor Owner 
+
+
+--- HALAMAN 9 ---
+766 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+ 
+Use Case Diagram Aktor PIC Cabang 
+ 
+Gambar 4. Use Case Diagram Aktor PIC Cabang 
+ 
+Use Case Diagram Aktor Front Office Cabang 
+ 
+Gambar 5. Use Case Diagram Aktor Front Office Cabang 
+ 
+Use Case Diagram Aktor House Keeping Cabang 
+ 
+Gambar 6. Use Case Diagram Aktor House Keeping Cabang 
+2. Activity Diagram 
+Salah satu jenis dari UML (Unified Modeling Language) yang bertujuan memberikan 
+penggambaran proses bisnis, aliran kerja, atau aktivitas pada suatu sistem [21]. Dengan 
+penggunaan activity diagram ini, maka masing – masing proses akan mudah 
+tergambarkan. Pada penelitian ini, akan diambil aktivitas yang menjadi percontohan 
+yaitu aktivitas mengelola master data cabang dan aktivitas reservasi kamar. 
+ 
+ 
+ 
+
+
+--- HALAMAN 10 ---
+767 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+Menambah data, Mengubah data, dan Menghapus Master Data Cabang 
+ 
+ 
+ 
+Gambar 7. Activity Diagram Mengelola Master Data Cabang (Dari Kiri) 
+Menambah Reservasi Kamar dan Pembayaran Reservasi Kamar 
+ 
+Gambar 8. Activity Diagram Menambah Reservasi Kamar dan Pembayaran Reservasi Kamar (Dari Kiri) 
+  Check In dan Chekout Reservasi Kamar 
+ 
+Gambar 9. Activity Diagram Check In dan Chekout Reservasi Kamar (Dari Kiri) 
+ 
+ 
+
+
+--- HALAMAN 11 ---
+768 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+3. Entity Relationship Diagram (ERD) 
+Merupakan model yang digunakan untuk memberikan informasi dan memberikan 
+penjelasan secara detail mengenai relasi (hubungan) antar data yang ada pada basis data. 
+Penggambaran ERD ini menggunakan notasi yang sudah terkonsep [22]. 
+ 
+Gambar 10. Entity Relationship Diagram (ERD) Sistem Informasi Manajemen Hotel Multi-Cabang 
+c. Implementasi (Implementation) 
+Pemrograman PHP dengan menggunakan framework laravel dipilih sebagai 
+kerangka kerja pada pengembangan sistem informasi manajemen hotel multi-cabang ini. 
+Framework laravel dipilih karena dapat memberikan keuntungan yang baik, serta dapat 
+mencapai target yang telah ditentukan [8]. Framework laravel juga dapat mempersingkat 
+waktu pengembangan sistem karena salah satu fitur yang dimilikinya yaitu ORM (Object  
+Relational  Mapping) [23].  
+Tampilan pada sistem informasi manajemen hotel ini dapat memastikan 
+kompatibilitas dan kenyamanan ketika di akses melalui perangkat desktop, tablet, 
+maupun smartphone karena telah menerapkan pendekatan desain yang responsif. Desain 
+responsif ini dapat menyesuaikan dengan seberapa besar ukuran layar dari perangkat 
+yang digunakan [24]. Hal ini sangat penting dalam konteks sistem multi-cabang, karena 
+ada kemungkinan staf hotel di berbagai lokasi mengakses sistem dengan perangkat yang 
+beragam. 
+Hasil implementasi dari penelitian ini akan ditampilkan per halaman beserta 
+dengan snapshot tampilannya. 
+
+
+--- HALAMAN 12 ---
+769 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+Halaman Login 
+Menyediakan form yang dapat dipergunakan oleh pengguna untuk masuk ke dalam 
+sistem berdasarkan aktornya masing – masing. Form ini berisikan inputan username, 
+password, dan captcha. 
+ 
+Gambar 11. Halaman Login 
+Halaman Dashboard 
+Halaman dashboard dibuka pertama kali saat pengguna sukses login ke dalam 
+sistem. Dashboard ini akan menyesuaikan dengan aktor pengguna yang login ke dalam 
+sistem.  
+ 
+Gambar 12. Halaman Dashboard 
+Halaman Master Data Cabang 
+ 
+Memberikan tampilan menu yang digunakan untuk mengelola data cabang hotel. 
+Pada menu ini terdapat beberapa link berbentuk tombol yaitu tombol tambah data baru, 
+edit data, dan hapus data. 
+      
+ 
+Gambar 13. Halaman Depan dan Form Tambah, Ubah Master Data Cabang (Dari Kiri) 
+
+
+--- HALAMAN 13 ---
+770 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+Halaman Data Kamar 
+Halaman data kamar ini berisikan menu yang digunakan untuk mengelola data 
+kamar. Pada menu ini terdapat beberapa link berbentuk tombol untuk tambah data baru, 
+edit data, dan hapus data. 
+    
+ 
+Gambar 14. Halaman Depan dan Tambah Data Baru 
+Halaman Reservasi Kamar  
+Halaman reservasi kamar ini berisi menu yang digunakan untuk membuat reservasi 
+kamar yang dilakukan oleh pelanggan. Pada menu ini terdapat beberapa tombol yaitu 
+tombol untuk menambah data baru reservasi kamar, cetak invoice, pembayaran, pindah 
+kamar, check in, check out, dan cancel. 
+    
+ 
+Gambar 15. Halaman Depan dan Tambah Data Pada Menu Reservasi Kamar (Dari Kiri) 
+  
+ 
+Gambar 16. Halaman Pembayaran dan Status Pembayaran Sudah Berubah (Dari Kiri) 
+ 
+ 
+ 
+
+
+--- HALAMAN 14 ---
+771 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+d. Pengujian (Testing) 
+Pengujain pada penelitian ini menggunakan metode black box testing. Targetnya 
+adalah melakukan pembuktian dari apa yang dieksekusi oleh sistem berdasarkan input 
+data yang diberikan oleh pengguna. Fokus pengujian ini adalah tampilan dan fungsinya 
+apakah sudah sesuai atau belum dengan rancangan [25].  
+Tabel 4. Skenario Pengujian Sistem 
+No 
+Fitur 
+Skenario Pengujian 
+Hasil Dari Pengujian 
+yang Diinginkan 
+Hasil 
+1 
+Login. 
+Memasukkan 
+username, 
+password, 
+dan 
+centang 
+captcha 
+kemudian 
+klik 
+tombol login. 
+Sistem 
+menampilkan 
+pesan 
+halaman 
+dashboard. 
+✓ 
+2 
+Tambah data 
+cabang. 
+Mengisi formulir tambah 
+data cabang secara valid 
+Data cabang tersimpan 
+dan tampil pada daftar 
+data cabang. 
+✓ 
+3 
+Tambah 
+reservasi 
+kamar. 
+Mengisi formulir tambah 
+reservasi 
+kamar 
+secara 
+valid. 
+Data 
+reservasi 
+kamar 
+berhasil tersimpan dan 
+tampil 
+pada 
+daftar 
+reservasi kamar. 
+✓ 
+4 
+Pembayaran 
+reservasi 
+kamar 
+Mengisi 
+formulir 
+pembayaran 
+dengan 
+nominal yang tidak sama. 
+Menampilkan 
+pesan 
+bahwa data tersimpan, 
+tetapi 
+pembayaran 
+belum lunas. 
+✓ 
+5 
+Check In 
+Mengisi data check in kamar 
+hotel 
+dengan 
+memilih 
+menggunakan kartu atau 
+akun login. 
+Menampilkan 
+data 
+sukses tersimpan dan 
+status reservasi kamar 
+berubah menjadi Check 
+In. 
+✓ 
+ 
+e. Penerapan/Penyebaran (Deployment) 
+Tahap penerapan ini adalah tahap yang menandakan bahwa pengembangan sistem 
+informasi manajemen hotel multi-cabang sudah layak untuk digunakan. Peneliti sebagai 
+pengembang menyerahkan source code yang telah dikembangkan kepada pelanggan 
+yaitu Hotel Royal Heritage Jambi. 
+f. Pemeliharaan (Maintenance) 
+Tahap pemeliharaan dilakukan ketika sistem sudah digunakan secara penuh. Ketika 
+ada temuan bugs atau ada fitur yang tidak sesuai rancangan, maka pihak pengembang 
+wajib untuk melakukan perbaikan. Pihak pengembang bisa memberikan garansi 
+
+
+--- HALAMAN 15 ---
+772 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+pemeliharaan dengan durasi tertentu misalnya selama 1 tahun setelah dilakukan 
+deployment. 
+ 
+4. 
+SIMPULAN  
+Pengembangan sistem informasi manajemen hotel dengan konsep multi-cabang ini 
+merupakan solusi yang sesuai untuk menyelesaikan permasalahan yang terjadi pada 
+Hotel Royal Heritage Jambi. Dengan adanya pengembangan sistem ini, manajemen hotel 
+dapat melakukan kontrol dan pemantauan semua cabang. Sistem informasi manajemen 
+hotel multi-cabang ini memiliki kontribusi bagi manajemen hotel dan dapat diterapkan 
+juga pada hotel yang memiliki permasalahan yang sama. 
+ 
+REFERENCES  
+ 
+[1] 
+Timoty Agustian Berutu, Dina Lorena Rea Sigalingging, Gaby Kasih Valentine Simanjuntak, and Friska 
+Siburian, “Pengaruh Teknologi Digital terhadap Perkembangan Bisnis Modern,” Neptunus: Jurnal Ilmu 
+Komputer 
+Dan 
+Teknologi 
+Informasi, 
+vol. 
+2, 
+no. 
+3, 
+pp. 
+358–370, 
+Jul. 
+2024, 
+doi: 
+10.61132/neptunus.v2i3.258. 
+[2] 
+R. Giovani and D. Irwanto, “Sistem Informasi Manajemen Hotel Berbasis Web Pada Tidung Nirwana 
+Cottage.” [Online]. Available: https://journal.mediapublikasi.id/index.php/logic 
+[3] 
+Menteri Pariwisata Dan Ekonomi Kreatif, “Peraturan Menteri Pariwisata Dan Ekonomi Kreatif Nomor 
+PM.53/HM.001/MPEK/2013 Tentang Standar Usaha Hotel.,” 2013. Accessed: Jul. 05, 2025. [Online]. 
+Available: 
+https://jdih.maritim.go.id/cfind/source/files/permenparekraf/permenparekraf-nomor-pm-53-
+tahun-2013.pdf 
+[4] 
+Yudistira Setiawan, Riski Intan Pertiwi, and Buntoro Irawan, “Perancangan Sistem Informasi Front Office 
+Hotel Berbasis Web Dengan Pemodelan UML,” Indonesian Journal of Education And Computer Science, 
+vol. 2, no. 2, pp. 50–62, Aug. 2024, doi: 10.60076/indotech.v2i2.635. 
+[5] 
+N. Hadian, “Pengembangan Aplikasi Rekomendasi Wisata Berbasis Augmented Reality Di Kabupaten 
+Pekalongan,” Djtechno: Jurnal Teknologi Informasi, vol. 6, no. 1, pp. 180–192, Apr. 2025, doi: 
+10.46576/djtechno.v6i1.6092. 
+[6] 
+Royal Heritage Jambi, “Home Page Website Royal Heritage Jambi.” 
+[7] 
+Rohi Abdulloh, 7 Materi Pemrograman Web untuk Pemula 5: Laravel & MariaDB. Jakarta: PT Elex 
+Media Komputindo, 2022. 
+[8] 
+I. Santosa et al., “CYCLOTRON : Jurnal Teknik Elektro Implementasi Framework Laravel Untuk 
+Pengembangan Website Radio SBFM Full Stack,” 2025. 
+[9] 
+L. Rahmawati and S. Sumarsono, “Desain Pengembangan Website dengan Arsitektur Model View 
+Controller pada Framework Laravel,” Jurnal Teknologi Dan Sistem Informasi Bisnis, vol. 6, no. 4, pp. 
+785–790, Oct. 2024, doi: 10.47233/jteksis.v6i4.1497. 
+[10] 
+G. Ramanda, B. Mulyawan, and N. J. Perdana, “Perancangan Sistem Operasional Indekos Berbasis Web 
+Untuk Meningkatkan Kemudahan Pengelolaan dan Pengalaman Penghuni”. 
+[11] 
+Maria Atik Sunarti Ekowati, Analisa dan Perancangan Sistem Informasi. Bekasi: Penerbit Alung Cipta, 
+2025. 
+[12] 
+Fitria Nur Hasanah and Rahmania Sri Untari, Rekayasa Perangkat Lunak (Buku Ajar). Sidoarjo: UMSIDA 
+Press, 2020. 
+[13] 
+M. F. Allard and A. Voutama, “Rancang Bangun Sistem Informasi Reservasi Hotel ‘Hotel Hebat’ 
+Berbasis Website,” Jurnal Informatika dan Teknik Elektro Terapan, vol. 12, no. 2, Apr. 2024, doi: 
+10.23960/jitet.v12i2.4224. 
+[14] 
+I. K. Kirpitsas and T. P. Pachidis, “Evolution towards Hybrid Software Development Methods and 
+Information Systems Audit Challenges,” Software, vol. 1, no. 3, pp. 316–363, Aug. 2022, doi: 
+10.3390/software1030015. 
+
+
+--- HALAMAN 16 ---
+773 
+Djtechno : Jurnal Teknologi Informasi 
+Vol. 6, No. 2, Agustus 2025  
+E-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno 
+[15] 
+Addin Aditya, Yekti Asmoro Kanthi, and Siti Aminah, Metodologi Penelitian Ilmiah Dalam Disiplin Ilmu 
+Sistem Informasi. Yogyakarta: Penerbit Andi, 2022. 
+[16] 
+Leon Andretti Abdillah et al., Metode Penelitian dan Analisis Data Comprehensive. Cirebon: Penerbit 
+Insania, 2021. 
+[17] 
+L. Setiyani and E. Tjandra, “Analisis Kebutuhan Fungsional Aplikasi Penanganan Keluhan Mahasiswa 
+Studi Kasus: STMIK Rosma Karawang,” Jurnal Inovasi Pendidikan dan Teknologi Informasi (JIPTI), 
+vol. 2, no. 1, pp. 8–17, Feb. 2021, doi: 10.52060/pti.v2i01.465. 
+[18] 
+A. Aulia Aziiza and A. Nur Fadhilah, “Analisis Metode Identifikasi dan Verifikasi Kebutuhan Non 
+Fungsional,” Applied Technology and Computing Science Journal, vol. 3, no. 1, pp. 13–21, Sep. 2020, 
+doi: 10.33086/atcsj.v3i1.1623. 
+[19] 
+Achmad jauhari, Devie Rosa Anamisa, and Fifin Ayu Mufarroha, Analisis dan Desain Sistem Informasi : 
+Pendekatan Pengembangan Sistem. Malang: Penerbit Media Nusa Creative, 2022. 
+[20] 
+Nazaruddin Ahmad et al., Analisa & Perancangan Sistem Informasi Berorientasi Objek. Kabupaten 
+Bandung: Penerbit Widina Media Utama, 2022. 
+[21] 
+A. Septiansyah, S. Hasanah, V. Nita Permatasari, and A. Yuliawati, “Sistem Informasi Otomatisasi 
+Pelaporan Data Penjualan Toko Buku Nazwa Yang Masuk Dan Yang Keluar”, doi: 10.37817/ikraith-
+informatika.v8i1. 
+[22] 
+Dedek Indra Gunawan Hts et al., Basis Data : Teori Dan Praktik Dengan SQL Server. Indramayu: 
+Penerbit Adab, 2024. 
+[23] 
+R. Yuniarti, I. Hartami Santi, and W. Dwi Puspitasari, “Perancangan Aplikasi Point Of Sale Untuk 
+Manajemen Pemesanan Bahan Pangan Berbasis Framework Laravel,” JATI (Jurnal Mahasiswa Teknik 
+Informatika), vol. 6, no. 1, pp. 67–74, Jan. 2022, doi: 10.36040/jati.v6i1.4283. 
+[24] 
+Ade Ramdani, Informatika Terapan. Pangandaran: CV. Intake Pustaka, 2024. 
+[25] 
+M. Mintarsih, “Pengujian Black Box Dengan Teknik Transition Pada Sistem Informasi Perpustakaan 
+Berbasis Web Dengan Metode Waterfall Pada SMC Foundation,” Jurnal Teknologi  Dan Sistem Informasi 
+Bisnis, vol. 5, no. 1, pp. 33–35, Feb. 2023, doi: 10.47233/jteksis.v5i1.727. 
+  
+

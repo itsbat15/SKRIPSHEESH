@@ -1,0 +1,75 @@
+[
+  {
+    "file": "SK_72_2024_I.pdf",
+    "url": "https://stikesnas.ac.id/source/Pengumuman_Pemberitahuan_Hasil_Akreditasi_Jurnal_Periode_I_Tahun_2024_dan_Lampiran_SK_No72_E_KPT_2024.pdf",
+    "bytes": 4227978,
+    "sha256": "f56b5e4dc84ebbe85a358c46516177e013e0468556209ae83c6e779763f94b53",
+    "status": "downloaded"
+  },
+  {
+    "file": "SK_21_2018_I.pdf",
+    "url": "https://drive.google.com/uc?export=download&id=1YnHXnH7auWp3LI70V08qLQ40Y9XZGFtg",
+    "bytes": 772636,
+    "sha256": "e25cb9b9d0395ddda9cdb63087f1baf3f42de13e06c9b6c904c0788a3e27b0c9",
+    "status": "downloaded"
+  },
+  {
+    "file": "SK_225_2022_III.pdf",
+    "url": "https://drive.google.com/uc?export=download&id=1QBv-KIg9_6iI0ZgESxD7bM4nzR3b-p0o",
+    "bytes": 2513086,
+    "sha256": "b843c3ce55a3ddeda1074e3a1c9c51dda6af972580849fbac3d165e4f937d779",
+    "status": "downloaded"
+  },
+  {
+    "file": "SK_177_2024_II.pdf",
+    "url": "https://lp2m.unsuda.ac.id/wp-content/uploads/2025/04/Pemberitahuan_Hasil_Akreditasi_Jurnal_Ilmiah_Periode_II_Tahun_2024.pdf",
+    "bytes": 5352411,
+    "sha256": "d60c46c19661fe7e4a3714dde5c26d68b1c7ab91f503fd30f3e00e57a2739268",
+    "status": "downloaded"
+  },
+  {
+    "file": "SK_204_2022_II.pdf",
+    "url": "https://ejournal.undip.ac.id/public/fileAccrDecree/2022-II-Elektronik.pdf",
+    "bytes": 2265027,
+    "sha256": "a8f6413071791edb365649d8c8f11911bb75398bc77aabd64b85318b6e288220",
+    "status": "downloaded"
+  },
+  {
+    "file": "JATI_SK_177_SALINAN_ITS.pdf",
+    "url": "https://www.its.ac.id/ppi/wp-content/uploads/sites/148/2024/11/Pemberitahuan-Masa-Perpanjangan-Akreditasi-Jurnal-Ilmiah-2024.pdf",
+    "bytes": 4602256,
+    "sha256": "85e93419a769784ca0d3ac1c8d763388087baf113fa1a40ddafd53b32c919791",
+    "status": "downloaded"
+  },
+  {
+    "file": "INFOTEK_ABOUT.html",
+    "url": "https://e-journal.hamzanwadi.ac.id/index.php/infotek/about",
+    "bytes": 19305,
+    "sha256": "81311c0c83cd414ed2e1585a5efc804d1bb5eb48dabba1462f840a361684d950",
+    "status": "downloaded"
+  },
+  {
+    "file": "DJTECHNO_ABOUT.html",
+    "url": "https://jurnal.dharmawangsa.ac.id/index.php/djtechno/en",
+    "status": "failed",
+    "error": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nFound"
+  },
+  {
+    "file": "MULTITEK_SINTA.html",
+    "url": "https://sinta.kemdiktisaintek.go.id/journals/google/3417",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "JARING_SAINTEK_SINTA.html",
+    "url": "https://sinta.kemdiktisaintek.go.id/journals/profile/9505",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "REPOSITOR_SINTA_DIRECTORY.html",
+    "url": "https://sinta.kemdiktisaintek.go.id/journals/index?page=1068",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

@@ -1,0 +1,903 @@
+{
+  "date": "2026-10-25",
+  "draft": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 1 - PENDAHULUAN (VERSI 11 PARAGRAF).md",
+  "snapshot_sha256": "bc6d83c6a5fdbf52aef9f0c6aa01865191139f57c4bbfb89ffbf5ded4ccf7ec3",
+  "scope": "Kecocokan isi per penggunaan rujukan; bukan penilaian peringkat jurnal",
+  "counts": {
+    "SEBAGIAN": 11,
+    "TIDAK DIDUKUNG": 5,
+    "DIDUKUNG": 10,
+    "BERTENTANGAN": 1
+  },
+  "rows": [
+    {
+      "id": "A01",
+      "paragraph": 1,
+      "source": "S01",
+      "status": "SEBAGIAN",
+      "claim": "Seluruh faktor tersebut saling berkaitan dalam menciptakan kegiatan belajar yang efektif dan teratur",
+      "locations": [
+        [
+          1,
+          "1631",
+          "Pendahuluan dan abstrak"
+        ],
+        [
+          2,
+          "1632",
+          "Lanjutan pendahuluan"
+        ]
+      ],
+      "anchor": "alternatif pendidikan non-formal",
+      "finding": "Artikel mendukung peran bimbel serta kebutuhan administrasi pendaftaran, jadwal, kehadiran dan pembayaran. Uraian khusus seluruh faktor siswa, tentor, ruang dan efektivitas pembelajaran merupakan sintesis yang lebih luas; artikel ini juga tidak menjadi sumber hukum UU 20/2003.",
+      "correction": "Tulis lebih dekat ke sumber: Tiana dan Gunanto (2026, hlm. 1631-1632) membahas pengelolaan pendaftaran, jadwal, kehadiran dan pembayaran pada bimbel. Beri sumber hukum tersendiri untuk Pasal 26 dan hindari satu sitasi di ujung paragraf seolah mendukung seluruh kalimat.",
+      "draft_line": 11,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A02",
+      "paragraph": 2,
+      "source": "S02",
+      "status": "TIDAK DIDUKUNG",
+      "claim": "Sistem informasi merupakan seperangkat prosedur yang dirancang untuk mengumpulkan, mengolah, menyimpan, dan mendistribusikan informasi",
+      "locations": [
+        [
+          2,
+          "6856",
+          "Pendahuluan; bagian terkait, bukan definisi tersebut"
+        ],
+        [
+          4,
+          "6858",
+          "Pembahasan administrasi; bagian terkait"
+        ]
+      ],
+      "anchor": "sistem informasi yang terintegrasi",
+      "finding": "Penelusuran seluruh enam halaman tidak menemukan definisi SI dengan susunan konsep yang ditulis pada Bab 1. Halaman 6856 dan 6858 membahas integrasi informasi serta otomatisasi administrasi sekolah, bukan definisi tersebut.",
+      "correction": "Ganti menjadi klaim fungsi yang benar-benar dibahas, misalnya Pradana (2024, hlm. 6858) membahas penggunaan sistem informasi untuk pengelolaan data siswa dan keuangan sekolah. Jika ingin mempertahankan definisi, cari sumber teori yang memang menyatakan definisi itu.",
+      "draft_line": 13,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A03",
+      "paragraph": 2,
+      "source": "S03",
+      "status": "SEBAGIAN",
+      "claim": "penerapan teknologi informasi terbukti meningkatkan efektivitas administrasi",
+      "locations": [
+        [
+          2,
+          "116",
+          "Abstrak Indonesia"
+        ],
+        [
+          10,
+          "124",
+          "Analisis Efektivitas dan Dampak Operasional"
+        ],
+        [
+          11,
+          "125",
+          "Kesimpulan dan evaluasi"
+        ]
+      ],
+      "anchor": "Analisis Efektivitas dan Dampak Operasional",
+      "finding": "Artikel memang melaporkan dampak pada Bee Hive, termasuk waktu pendaftaran dari sekitar 10-15 menit menjadi kurang dari dua detik dan evaluasi bersama owner serta dua tutor senior. Klaim itu merupakan laporan studi kasus tersebut; kalimat Bab 1 menggeneralisasikannya ke pendidikan nonformal secara keseluruhan.",
+      "correction": "Gunakan atribusi terbatas: Pada Bee Hive, Fajriansyah dkk. (2026, hlm. 124-125) melaporkan perbaikan proses administrasi setelah pengembangan sistem. Jangan memindahkan hasil waktunya menjadi hasil atau jaminan untuk ARTHA.",
+      "draft_line": 13,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A04",
+      "paragraph": 2,
+      "source": "S04",
+      "status": "DIDUKUNG",
+      "claim": "pemisahan kewenangan antar-peran dan penyediaan laporan terpusat",
+      "locations": [
+        [
+          7,
+          "764",
+          "Tabel 1 lanjutan, Tabel 2 dan Tabel 3"
+        ],
+        [
+          8,
+          "765",
+          "Tabel 3 lanjutan"
+        ]
+      ],
+      "anchor": "Owner; PIC Cabang",
+      "finding": "Kebutuhan laporan per cabang, batasan akses dan hak Owner melihat semua laporan tercantum pada halaman 764. Halaman 765 membedakan kewenangan PIC cabang, front office dan housekeeping; ini mendukung prinsip pembagian akses yang dipakai sebagai acuan rancangan.",
+      "correction": "Pertahankan dengan batas konteks: Ahadi dkk. (2025, hlm. 764-765) menjadi contoh pembagian hak akses dan laporan pada hotel multicabang. Kata harus pada seluruh lembaga merupakan keputusan rancangan yang perlu dijustifikasi, bukan hukum universal yang diuji artikel.",
+      "draft_line": 13,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A05",
+      "paragraph": 6,
+      "source": "S05",
+      "status": "SEBAGIAN",
+      "claim": "menyulitkan pencocokan antara catatan kasir dan bukti transaksi yang sebenarnya",
+      "locations": [
+        [
+          1,
+          "124",
+          "Pendahuluan, paragraf terakhir"
+        ],
+        [
+          2,
+          "125",
+          "Landasan penerimaan kas dan metode"
+        ]
+      ],
+      "anchor": "catatan siswa dan catatan bendahara",
+      "finding": "Masalah yang disebut eksplisit ialah kesulitan pencocokan catatan siswa dengan catatan bendahara pada Yayasan Semesta Khatulistiwa. Penyimpanan di setiap cabang, keadaan kasir ARTHA dan proses bukti transaksi ARTHA tidak diteliti artikel ini; hasilnya juga berupa rancangan antarmuka.",
+      "correction": "Pisahkan bukti: Hendri dkk. (2025, hlm. 124) menemukan kesulitan pencocokan catatan siswa dan bendahara pada penerimaan SPP. Letakkan uraian ARTHA pada kalimat tersendiri dengan rujukan wawancara atau dokumen mitra.",
+      "draft_line": 21,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A06",
+      "paragraph": 6,
+      "source": "S06",
+      "status": "SEBAGIAN",
+      "claim": "pimpinan pusat memerlukan laporan setoran dari seluruh cabang untuk dicocokkan dengan mutasi rekening bank",
+      "locations": [
+        [
+          13,
+          "footer 13/15",
+          "Temuan pencatatan gabungan dan operasional"
+        ],
+        [
+          15,
+          "footer 15/15",
+          "Rekomendasi pencatatan per cabang"
+        ],
+        [
+          17,
+          "footer 17/15",
+          "Tabel 8 Rekap Penjualan Harian dan simpulan"
+        ]
+      ],
+      "anchor": "Rekap Penjualan Harian",
+      "finding": "Artikel mendukung pemisahan catatan cabang, rekap pusat, dokumen pendukung dan rekonsiliasi penerimaan harian. Bagian tersebut bukan pembuktian pencocokan mutasi bank pada ARTHA; yang dibahas adalah UMKM Rams Dimsum dan tata kelola akuntansinya.",
+      "correction": "Gunakan Ramadhan dan Widodo (2026, halaman PDF 15 dan 17) untuk pemisahan catatan dan rekap harian pusat-cabang. Gunakan sumber rekonsiliasi bank secara terpisah, serta wawancara ARTHA untuk siapa yang memeriksa penerimaan di ARTHA.",
+      "draft_line": 21,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A07",
+      "paragraph": 6,
+      "source": "S07",
+      "status": "SEBAGIAN",
+      "claim": "pimpinan pusat memerlukan laporan setoran dari seluruh cabang untuk dicocokkan dengan mutasi rekening bank",
+      "locations": [
+        [
+          1,
+          "126",
+          "Abstrak dan akhir pendahuluan"
+        ],
+        [
+          2,
+          "127",
+          "Definisi dan tujuan rekonsiliasi"
+        ]
+      ],
+      "anchor": "rekening koran bank",
+      "finding": "Sumber ini memang menjelaskan pencocokan catatan perusahaan dengan rekening koran bank dan manfaat pengendalian kas bank. Artikel tidak meneliti delapan cabang ARTHA atau membuktikan keterlambatan informasi pusat ARTHA; kedua sumber dalam kurung ini saling melengkapi konsep, tetapi tidak menggantikan data kasus.",
+      "correction": "Pertahankan sebagai konsep: Sudirman dan Tristianti (2021, hlm. 126-127) membahas rekonsiliasi catatan kas perusahaan dengan rekening koran. Pisahkan konsep tersebut dari temuan proses setoran dan keterlambatan ARTHA.",
+      "draft_line": 21,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A08",
+      "paragraph": 7,
+      "source": "S08",
+      "status": "SEBAGIAN",
+      "claim": "status ketersediaan ruang secara langsung kepada staf",
+      "locations": [
+        [
+          5,
+          "93",
+          "Perancangan antarmuka reservasi"
+        ],
+        [
+          6,
+          "94",
+          "Lima constraint dan pengujian CSP"
+        ]
+      ],
+      "anchor": "Capacity",
+      "finding": "RapaTrack menunjukkan reservasi ruang, batas jumlah peserta terhadap kapasitas dan validasi waktu. Ketiadaan alat bantu visual pada ARTHA atau perbaikan pengarahan siswa tidak dibuktikan oleh studi ruang rapat ini; penolakan reservasi juga berbeda dari peringatan yang mengikuti kebijakan pengelola.",
+      "correction": "Tulis hubungan adaptasinya: Aturan kapasitas pada Kabisatullah dan Noprisson (2026, hlm. 94) menjadi acuan validasi penempatan kelas. Sumber kebutuhan keterisian dan penempatan siswa ARTHA tetap berasal dari wawancara atau observasi.",
+      "draft_line": 23,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A09",
+      "paragraph": 7,
+      "source": "S09",
+      "status": "SEBAGIAN",
+      "claim": "berpotensi memunculkan konflik penugasan dan ketidakmerataan alokasi pengajar",
+      "locations": [
+        [
+          1,
+          "15",
+          "Abstrak dan pendahuluan"
+        ],
+        [
+          2,
+          "16",
+          "Tujuan dan rancangan penelitian"
+        ]
+      ],
+      "anchor": "uneven distribution of teaching assignments",
+      "finding": "Konflik jadwal dan pemerataan penugasan memang menjadi masalah pada AHE Megaluh 7059. Artikel tidak mengamati grup percakapan, pergantian tentor atau ketidakmerataan penugasan di ARTHA, sehingga sitasi tidak boleh membuat kesan bahwa temuan AHE adalah temuan mitra.",
+      "correction": "Pisahkan pembanding: Khafidhoh dkk. (2026, hlm. 15-16) membahas risiko jadwal manual pada AHE. Setelah itu jelaskan pencatatan dan komunikasi ARTHA berdasarkan wawancara, serta posisikan peringatan sebagai rancangan pencegahan.",
+      "draft_line": 23,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A10",
+      "paragraph": 8,
+      "source": "S10",
+      "status": "DIDUKUNG",
+      "claim": "mencakup modul registrasi, penjadwalan, presensi, dan verifikasi pembayaran",
+      "locations": [
+        [
+          1,
+          "424",
+          "Abstract dan abstrak"
+        ],
+        [
+          9,
+          "432",
+          "Antarmuka verifikasi pembayaran"
+        ]
+      ],
+      "anchor": "payment verification",
+      "finding": "Keempat fungsi disebut langsung pada abstrak artikel RSDC. Uraian antarmuka memperlihatkan pengelolaan verifikasi pembayaran; kalimat Bab 1 sudah menyebut objek penelitian dengan jelas dan tidak memindahkan hasilnya ke ARTHA.",
+      "correction": "Dapat dipertahankan: Gunawan dkk. (2025, hlm. 424) mengembangkan sistem RSDC yang mencakup registrasi, penjadwalan, presensi dan verifikasi pembayaran. Tambahkan hlm. 432 jika pembahasan difokuskan pada antarmuka pembayaran.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A11",
+      "paragraph": 8,
+      "source": "S03",
+      "status": "DIDUKUNG",
+      "claim": "mengintegrasikan pengelolaan data siswa, jadwal, dan pembayaran dalam satu platform",
+      "locations": [
+        [
+          2,
+          "116",
+          "Abstrak Indonesia"
+        ],
+        [
+          10,
+          "124",
+          "Dampak operasional dan tampilan sistem"
+        ],
+        [
+          11,
+          "125",
+          "Kesimpulan"
+        ]
+      ],
+      "anchor": "pendaftaran siswa",
+      "finding": "Integrasi fungsi tersebut dinyatakan pada abstrak Indonesia dan pembahasan sistem Bee Hive. Uraian Bab 1 sudah dibatasi pada studi tersebut; bila menyebut efisiensi, gunakan bahasa melaporkan sesuai bentuk evaluasinya.",
+      "correction": "Dapat dipertahankan dengan halaman: Fajriansyah dkk. (2026, hlm. 116, 124-125) mengembangkan platform administrasi Bee Hive dan melaporkan dampak operasionalnya. Hindari menyebut peningkatan yang sama sebagai hasil ARTHA.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A12",
+      "paragraph": 8,
+      "source": "S11",
+      "status": "DIDUKUNG",
+      "claim": "menyatukan modul pembayaran dan penjadwalan dalam satu platform",
+      "locations": [
+        [
+          1,
+          "332",
+          "Abstrak dan judul Java"
+        ],
+        [
+          5,
+          "336",
+          "Tampilan aplikasi"
+        ],
+        [
+          6,
+          "337",
+          "Tampilan data jadwal dan pembayaran"
+        ],
+        [
+          7,
+          "338",
+          "Simpulan"
+        ]
+      ],
+      "anchor": "penjadwalan kursus; pembayaran kursus",
+      "finding": "Abstrak menyebut pengelolaan siswa, guru, kursus, penjadwalan dan pembayaran, dan simpulan mengulang fungsi tersebut. Bentuk desktop dikenali dari implementasi dan tampilan Java; judul eksplisitnya menyebut berbasis Java, sehingga istilah itu lebih langsung dibandingkan istilah desktop.",
+      "correction": "Dapat dipertahankan atau diperjelas: Barizi dkk. (2023, hlm. 332, 337-338) merancang aplikasi administrasi berbasis Java yang mencakup penjadwalan dan pembayaran kursus. Jangan menjadikan aplikasi ini pembuktian sistem multicabang.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A13",
+      "paragraph": 8,
+      "source": "S12",
+      "status": "DIDUKUNG",
+      "claim": "guna mengurangi benturan jadwal dan mempercepat pengelolaan transaksi",
+      "locations": [
+        [
+          1,
+          "1",
+          "Abstrak"
+        ],
+        [
+          4,
+          "4",
+          "Gambar 9-13: cabang, siswa dan penjadwalan"
+        ],
+        [
+          5,
+          "5",
+          "Verifikasi pembayaran dan kesimpulan"
+        ]
+      ],
+      "anchor": "Cabang Management",
+      "finding": "Abstrak dan pembahasan mendukung sistem penjadwalan serta pembayaran les dengan tujuan penanganan benturan dan administrasi transaksi. Temuan penting yang tidak disebut dalam Bab 1 ialah head admin dapat mengelola semua cabang dan admin dibatasi pada cabangnya di hlm. 4; ini melemahkan klaim kebaruan umum setelah daftar penelitian.",
+      "correction": "Pertahankan deskripsi fungsi, tetapi tambahkan perbandingan multicabang: Thiovanda (2026, hlm. 4-5) sudah mencakup cabang, akses siswa berdasarkan cabang dan verifikasi pembayaran. Bedakan ARTHA berdasarkan aturan kapasitas, mekanisme penerimaan dan evaluasi yang benar-benar akan dikerjakan.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A14",
+      "paragraph": 8,
+      "source": "S13",
+      "status": "SEBAGIAN",
+      "claim": "fitur notifikasi otomatis melalui WhatsApp untuk penagihan SPP",
+      "locations": [
+        [
+          1,
+          "2345",
+          "Abstrak"
+        ],
+        [
+          5,
+          "2349",
+          "Broadcast jadwal dan modul pembayaran"
+        ],
+        [
+          6,
+          "2350",
+          "Tabel 1, baris 11-14"
+        ]
+      ],
+      "anchor": "Notifikasi WhatsApp",
+      "finding": "WhatsApp, broadcast jadwal, tagihan otomatis dan verifikasi pembayaran memang dijelaskan. Namun, baris pengujian notifikasi pembayaran pada tabel menampilkan hasil logout, sehingga bukti uji spesifik pengiriman penagihan SPP tidak konsisten; pembuatan tagihan juga tidak sama dengan pengiriman pesan penagihan.",
+      "correction": "Persempit menjadi Safitri dkk. (2026, hlm. 2349) mengembangkan broadcast jadwal WhatsApp dan modul pembayaran. Jika tetap menyebut penagihan SPP otomatis, jelaskan bahwa artikel mengklaim fitur itu, sedangkan bukti pengujian pada hlm. 2350 perlu dikonfirmasi.",
+      "draft_line": 25,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A15",
+      "paragraph": 8,
+      "source": "S09",
+      "status": "DIDUKUNG",
+      "claim": "pengelolaan jadwal tanpa sistem terpusat berpotensi memunculkan konflik penugasan",
+      "locations": [
+        [
+          1,
+          "15",
+          "Abstrak dan masalah penjadwalan manual"
+        ],
+        [
+          2,
+          "16",
+          "Tujuan"
+        ],
+        [
+          5,
+          "19",
+          "Hasil dan kesimpulan"
+        ]
+      ],
+      "anchor": "Sistem Penjadwalan",
+      "finding": "Artikel mendukung masalah jadwal manual pada AHE, pemerataan tugas dan pengembangan sistem web. Frasa paling dekat dengan sumber adalah penjadwalan manual atau tidak terorganisasi; algoritma genetika merupakan komponen utama yang sebaiknya disebut dalam perbandingan.",
+      "correction": "Gunakan Khafidhoh dkk. (2026, hlm. 15-16, 19) untuk contoh penjadwalan otomatis dengan algoritma genetika pada AHE. Jangan menambahkan angka penurunan konflik karena artikel tidak memberi perbandingan kuantitatif sebelum-sesudah yang rinci.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A16",
+      "paragraph": 8,
+      "source": "S08",
+      "status": "SEBAGIAN",
+      "claim": "membuktikan perlunya validasi kapasitas secara digital",
+      "locations": [
+        [
+          6,
+          "94",
+          "Constraint kapasitas dan pengujian"
+        ],
+        [
+          7,
+          "95",
+          "Lanjutan kesimpulan"
+        ]
+      ],
+      "anchor": "Constraint Satisfaction Problem",
+      "finding": "Artikel melaporkan penerapan CSP dan 25 skenario validasi pada ruang rapat, termasuk batas kapasitas. Hasil itu mendukung contoh penerapan validasi, bukan pembuktian universal bahwa setiap lembaga harus memakai validasi digital atau bahwa aturan ruang rapat identik dengan kelas ARTHA.",
+      "correction": "Ganti membuktikan perlunya menjadi menerapkan: Kabisatullah dan Noprisson (2026, hlm. 94) menerapkan batas kapasitas peserta dan validasi waktu pada reservasi ruang rapat berbasis Android. Jelaskan adaptasinya untuk kelas bimbel.",
+      "draft_line": 25,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A17",
+      "paragraph": 8,
+      "source": "S04",
+      "status": "DIDUKUNG",
+      "claim": "fitur pemisahan kewenangan Owner dan PIC Cabang",
+      "locations": [
+        [
+          7,
+          "764",
+          "Tabel kebutuhan sistem dan pengguna"
+        ],
+        [
+          8,
+          "765",
+          "Tabel pengguna lanjutan"
+        ]
+      ],
+      "anchor": "Owner; PIC Cabang",
+      "finding": "Owner dan PIC Cabang serta kewenangannya dinyatakan langsung pada tabel pengguna. Artikel memang memakai Laravel dan objek hotel; kedua detail itu sudah sesuai dengan uraian Bab 1.",
+      "correction": "Dapat dipertahankan dengan hlm. 764-765. Bila menjelaskan jumlah peran, sebutkan bahwa artikel juga mempunyai front office dan housekeeping, sehingga dua peran ARTHA adalah adaptasi rancangan, bukan salinan seluruh struktur artikel.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A18",
+      "paragraph": 8,
+      "source": "S06",
+      "status": "DIDUKUNG",
+      "claim": "pemisahan pencatatan keuangan per cabang beserta rekap yang dapat diakses pusat",
+      "locations": [
+        [
+          15,
+          "footer 15/15",
+          "Rekomendasi tata kelola; laporan per cabang"
+        ],
+        [
+          17,
+          "footer 17/15",
+          "Tabel 8 dan simpulan"
+        ]
+      ],
+      "anchor": "pencatatan transaksi secara mandiri",
+      "finding": "Rekomendasi secara eksplisit mengusulkan catatan transaksi cabang sebelum direkap pusat dan informasi pendapatan per outlet. Ini mendukung kebutuhan pelaporan pusat-cabang, tetapi belum membuktikan bahwa artikel membangun dasbor web yang telah diimplementasikan.",
+      "correction": "Tulis Ramadhan dan Widodo (2026, halaman PDF 15 dan 17) merekomendasikan pemisahan pencatatan cabang serta rekap pusat. Gunakan kata rekomendasi atau kajian akuntansi agar tidak menimbulkan kesan hasilnya aplikasi operasional.",
+      "draft_line": 25,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A19",
+      "paragraph": 10,
+      "source": "S14",
+      "status": "BERTENTANGAN",
+      "claim": "yang dilarang dirangkap oleh satu orang",
+      "locations": [
+        [
+          6,
+          "5",
+          "Scrum Team dan tiga accountabilities"
+        ],
+        [
+          10,
+          "9",
+          "Daily Scrum"
+        ]
+      ],
+      "anchor": "Daily Scrum",
+      "finding": "Panduan menyebut tiga akuntabilitas, bukan larangan mutlak setiap bentuk perangkapan. Pada hlm. 9, Product Owner atau Scrum Master yang aktif mengerjakan Sprint Backlog dapat berpartisipasi sebagai Developers; karena itu larangan mutlak seluruh perangkapan yang diatribusikan kepada panduan tidak benar.",
+      "correction": "Hapus larangan mutlak dan penilaian tidak dapat dipertanggungjawabkan secara akademis. Gunakan pembahasan struktur akuntabilitas dan kebutuhan koordinasi sebagai pertimbangan kecocokan, tanpa menganggap perangkapan yang dimungkinkan berarti proyek solo otomatis memenuhi seluruh Scrum.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A20",
+      "paragraph": 10,
+      "source": "S15",
+      "status": "TIDAK DIDUKUNG",
+      "claim": "tidak menghasilkan bukti metrik yang memadai untuk dipertanggungjawabkan dalam sidang Tugas Akhir",
+      "locations": [
+        [
+          62,
+          "45",
+          "2.3.1 Prototyping dan Figure 2.9"
+        ],
+        [
+          63,
+          "46",
+          "Evaluasi dan keterbatasan throwaway prototype"
+        ]
+      ],
+      "anchor": "Evaluation Report",
+      "finding": "Buku membahas tujuan, fungsi, evaluasi serta keterbatasan prototipe, termasuk dokumentasi dan kualitas pada throwaway prototype. Tidak ada kesimpulan bahwa Prototyping tidak dapat menghasilkan metrik memadai untuk sidang; Figure 2.9 bahkan menyebut rencana dan laporan evaluasi.",
+      "correction": "Hapus alasan ketidaklayakan sidang. Jika dibandingkan dengan PxP, sebutkan fokus prototyping untuk eksplorasi kebutuhan menurut Sommerville (2011, hlm. 45-46), lalu dukung pencatatan waktu dan cacat PxP dengan sumber yang memang menjelaskannya.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A21",
+      "paragraph": 10,
+      "source": "S16",
+      "status": "DIDUKUNG",
+      "claim": "dua pemrogram wajib bekerja berpasangan secara fisik di satu stasiun kerja",
+      "locations": [
+        [
+          104,
+          "tidak tampil pada salinan digital ini",
+          "Chapter 7, Primary Practices, Pair Programming"
+        ]
+      ],
+      "anchor": "Write all production programs",
+      "finding": "Bagian tersebut secara langsung menganjurkan kode produksi ditulis oleh dua orang yang duduk pada satu mesin dan menjelaskan praktik pasangan. Buku juga mengizinkan eksplorasi ide sendiri sebelum membawanya kembali ke tim; kutipan mendukung praktik pair programming, bukan larangan semua bentuk kerja individual.",
+      "correction": "Pertahankan secara terbatas: Beck dan Andres (2004, Chapter 7, Pair Programming; halaman PDF 104 pada salinan ini) menempatkan pair programming sebagai praktik kode produksi XP. Jangan menulis hlm. 104 sebagai halaman cetak buku jika nomor cetaknya tidak terlihat.",
+      "draft_line": 29,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A22",
+      "paragraph": 10,
+      "source": "S17",
+      "status": "SEBAGIAN",
+      "claim": "mengharuskan perwakilan pengguna hadir mendampingi pengembang setiap hari",
+      "locations": [
+        [
+          4,
+          "85",
+          "Table 2 lanjutan, baris On-site Customer"
+        ]
+      ],
+      "anchor": "On-site Customer",
+      "finding": "Tabel membandingkan pelanggan yang dialokasikan ke tim pada XP dengan komunikasi email atau telepon pada PXP. Artikel mendukung pentingnya kedekatan komunikasi, tetapi tidak membuktikan bahwa mitra ARTHA tidak mampu hadir setiap hari; kesimpulan tentang ketersediaan ARTHA harus berasal dari mitra.",
+      "correction": "Gunakan Agarwal dan Umphress (2008, hlm. 85) untuk membandingkan keterlibatan pelanggan dalam XP dan PXP. Tuliskan mekanisme komunikasi serta jadwal mitra ARTHA sebagai rencana atau kesepakatan tersendiri, bukan temuan artikel.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A23",
+      "paragraph": 10,
+      "source": "S18",
+      "status": "TIDAK DIDUKUNG",
+      "claim": "sulit diterapkan secara mandiri tanpa bimbingan orang yang berpengalaman",
+      "locations": [
+        [
+          3,
+          "1506",
+          "Kajian kohesivitas tim Agile umum"
+        ],
+        [
+          4,
+          "1507",
+          "Tabel 1 kajian terdahulu"
+        ],
+        [
+          9,
+          "1512",
+          "3.1.1 Agile development frameworks"
+        ],
+        [
+          12,
+          "1515",
+          "Tabel perbandingan expertise dan pengorganisasian"
+        ]
+      ],
+      "anchor": "team cohesiveness",
+      "finding": "Artikel membahas kohesivitas tim dalam kajian Agile umum dan mengenalkan XP terutama melalui test-driven development. Penelusuran isi tidak menemukan kesimpulan spesifik bahwa penerapan XP individual memerlukan mentor berpengalaman; klaim Bab 1 memperluas konteks tim umum menjadi syarat XP.",
+      "correction": "Hapus syarat bimbingan orang berpengalaman kecuali ada sumber langsung yang mendukung. Gunakan Mishra dan Alzoubi (2023) untuk perbandingan karakteristik pendekatan secara proporsional, dengan membedakan temuan kajian terdahulu yang mereka rangkum dari kesimpulan tentang ARTHA.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A24",
+      "paragraph": 10,
+      "source": "S15",
+      "status": "TIDAK DIDUKUNG",
+      "claim": "RAD tidak hanya menuntut beberapa tim kecil yang bekerja paralel pada modul berbeda",
+      "locations": [
+        [
+          760,
+          "743",
+          "Glossary, rapid application development (RAD)"
+        ],
+        [
+          77,
+          "60",
+          "Keterbatasan customer involvement pada Agile umum"
+        ]
+      ],
+      "anchor": "rapid application development (RAD)",
+      "finding": "Glosarium mendefinisikan RAD sebagai pendekatan untuk penyampaian cepat dengan dukungan perangkat pengembangan. Pembahasan keterlibatan pelanggan pada hlm. 60 adalah tentang Agile umum, bukan bukti syarat mutlak tim paralel RAD atau ketidakmungkinan keterlibatan mitra ARTHA.",
+      "correction": "Jangan gunakan halaman-halaman ini sebagai dukungan kalimat sekarang. Jika RAD akan ditolak atas dasar organisasi tim dan workshop, diperlukan sumber langsung tentang model RAD yang dimaksud serta data sumber daya dan jadwal mitra.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A25",
+      "paragraph": 10,
+      "source": "S19",
+      "status": "TIDAK DIDUKUNG",
+      "claim": "tidak cocok untuk sistem dengan logika bisnis yang bersifat unik dan tidak tersedia",
+      "locations": [
+        [
+          79,
+          "50",
+          "2.4.1 Component-Based Development; pembanding terdekat"
+        ],
+        [
+          80,
+          "51",
+          "Lanjutan pengembangan berbasis komponen"
+        ]
+      ],
+      "anchor": "Component-Based Development",
+      "finding": "Bagian terdekat dalam edisi ketujuh membahas pengembangan berbasis komponen dan penggunaan kembali, bukan larangan RAD terhadap aturan diskon atau rekap cabang. Penelusuran teks seluruh salinan, daftar isi dan bagian model proses tidak menghasilkan halaman yang mendukung klaim spesifik tersebut; halaman 50-51 bukan pengganti bukti yang hilang.",
+      "correction": "Hapus kesimpulan bahwa diskon saudara dan rekap cabang membuat RAD tidak cocok. Evaluasi ketersediaan komponen, modularitas, waktu dan partisipasi pengguna secara nyata, lalu rujuk edisi serta halaman sumber yang memang membahas RAD jika digunakan.",
+      "draft_line": 29,
+      "claim_supported_as_written": false
+    },
+    {
+      "id": "A26",
+      "paragraph": 11,
+      "source": "S20",
+      "status": "DIDUKUNG",
+      "claim": "seluruh proses mulai dari eksplorasi kebutuhan hingga pengujian sistem secara mandiri",
+      "locations": [
+        [
+          3,
+          "103",
+          "Metode penelitian dan Requirements"
+        ],
+        [
+          4,
+          "104",
+          "Planning sampai Retrospective"
+        ],
+        [
+          5,
+          "105",
+          "Umpan balik pada akhir iterasi"
+        ]
+      ],
+      "anchor": "Requirements; System Testing",
+      "finding": "Artikel menjelaskan PxP untuk pengembang individual dan tahapan dari kebutuhan hingga pengujian serta retrospektif. Mandiri perlu dibaca sebagai pengerjaan pengembangan individual, bukan tanpa komunikasi klien; artikel justru menjelaskan pengujian bersama klien dan timbal balik iterasi.",
+      "correction": "Dapat dipertahankan dengan batas arti: Fikri dan Arthawan (2020, hlm. 103-105) menerapkan PxP untuk pengembangan individual dengan keterlibatan klien. Gunakan sumber ini untuk rancangan evaluasi, tetapi bukan bukti bahwa mitra ARTHA sudah menyepakati jadwal evaluasi.",
+      "draft_line": 31,
+      "claim_supported_as_written": true
+    },
+    {
+      "id": "A27",
+      "paragraph": 11,
+      "source": "S21",
+      "status": "SEBAGIAN",
+      "claim": "PxP juga mengedepankan prinsip kesederhanaan dan desain yang berkembang seiring iterasi tanpa mengorbankan kualitas sistem secara keseluruhan",
+      "locations": [
+        [
+          3,
+          "37",
+          "Alasan pemilihan dan metode"
+        ],
+        [
+          4,
+          "38",
+          "Design, Implementation, System Testing dan Retrospective"
+        ],
+        [
+          11,
+          "45",
+          "Kesimpulan waktu dan pengujian"
+        ]
+      ],
+      "anchor": "Retrospective; refactoring",
+      "finding": "Artikel mendukung komunikasi, perubahan kebutuhan, estimasi, iterasi, refactoring serta pengujian. Pernyataan tanpa mengorbankan kualitas keseluruhan dan kesesuaian dengan keterbatasan waktu mitra ARTHA lebih kuat daripada bukti studi surat-menyurat; total proyek pada simpulan justru bertambah dari 40 menjadi 50 hari.",
+      "correction": "Persempit: Sidiq dkk. (2025, hlm. 37-38, 45) menerapkan komunikasi klien, iterasi dan pengujian untuk menangani perubahan kebutuhan. Jangan menjadikannya jaminan kualitas atau ketepatan waktu ARTHA; bedakan implementasi 37 hari dari total pengembangan 50 hari.",
+      "draft_line": 31,
+      "claim_supported_as_written": false
+    }
+  ],
+  "sources": [
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel - Web Mobile - Waterfall - Tiana & Gunanto - 2026.pdf",
+      "sha256": "44bcc1146eb4ef49d3e4c90efc4a45cf724880e1452b032819fdab4482ed46c8",
+      "id": "S01",
+      "author": "Tiana dan Gunanto (2026)",
+      "title": "Perancangan dan Implementasi Sistem Informasi Bimbingan Belajar Berbasis Web Mobile Menggunakan Metode Waterfall",
+      "note": "Artikel JUKTISI; konteks Texas Kotabumi, bukan ARTHA.",
+      "pdf_pages": 8
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Peran TI Manajemen Pendidikan - JRPP - Pradana - 2024.pdf",
+      "sha256": "ad03623a30b0d8c3c1a0c004b3bdb44feb12e24a392fac380db2787e50e390af",
+      "id": "S02",
+      "author": "Pradana (2024)",
+      "title": "Peran Teknologi Informasi dalam Meningkatkan Efektivitas Manajemen Pendidikan di Sekolah",
+      "note": "Kajian literatur manajemen pendidikan sekolah; bukan sumber definisi SI yang ditulis pada Bab 1.",
+      "pdf_pages": 6
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf",
+      "sha256": "359ca40ddbbc58532945ca586f55b89eb40a0b6fdd29f7c0d5bc94c19872bd25",
+      "id": "S03",
+      "author": "Fajriansyah dkk. (2026)",
+      "title": "Pengembangan Sistem Informasi Bimbingan Belajar Berbasis Web untuk Efisiensi Operasional Bee Hive",
+      "note": "Artikel memuat laporan dampak pada hlm. 124 dan simpulan pada hlm. 125; batasi kesimpulan pada kasus Bee Hive.",
+      "pdf_pages": 12
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\01_Multicabang_Hotel_Laravel_Djtechno_Ahadi_2025.pdf",
+      "sha256": "019768594f222f6b2b8ee6d8c668ab153a864429e98dd47c4a65c567f37b1eb0",
+      "id": "S04",
+      "author": "Ahadi dkk. (2025)",
+      "title": "Pengembangan Sistem Informasi Manajemen Hotel Multi-Cabang Berbasis Web dengan Framework Laravel",
+      "note": "Tabel kebutuhan pengguna mencakup empat aktor; jangan menyederhanakannya menjadi sistem yang hanya memiliki Owner dan PIC.",
+      "pdf_pages": 16
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\05_Penerimaan Kas.pdf",
+      "sha256": "c6d402bfc0bac2e7de1a2b97d84f8fa75c51a905488e64d3287c8b0641c0f9a7",
+      "id": "S05",
+      "author": "Hendri dkk. (2025)",
+      "title": "Analisis Sistem Informasi Akuntansi Penerimaan Kas (SPP) pada Yayasan Semesta Khatulistiwa",
+      "note": "Hasil berupa analisis dan rancangan antarmuka Figma; masalah pencocokan catatan siswa dan bendahara disebut pada hlm. 124.",
+      "pdf_pages": 12
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\02_Keuangan_Pusat_Cabang_Rams_Dimsum_IJLER_Ramadhan_2026.pdf",
+      "sha256": "57b13811cdef3f6591a9a5c8fbd6ab67b33a616a4c7cc01978063001baea7ea7",
+      "id": "S06",
+      "author": "Ramadhan dan Widodo (2026)",
+      "title": "Accounting Treatment Of Head Office And Branches Based On SAK EP: A Study on UMKM Rams Dimsum",
+      "note": "PDF lokal 19 halaman, tetapi footer memakai penyebut 15. Gunakan urutan PDF; footer 17/15 bukan nomor halaman jurnal yang stabil.",
+      "pdf_pages": 19
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\06_Rekonsiliasi_Kas_Bank_MEANS_Sudirman_2021.pdf",
+      "sha256": "beeb584afbb8b22f42f1c523f830b972223196001a6d74c6cdc82217b50ff821",
+      "id": "S07",
+      "author": "Sudirman dan Tristianti (2021)",
+      "title": "Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis Client-Server",
+      "note": "Edisi Desember 2021; sumber rekonsiliasi bank, bukan studi bimbel atau pusat-cabang.",
+      "pdf_pages": 4
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\04_Kapasitas_Ruang_RapaTrack_JUSIBI_Kabisatullah_2026.pdf",
+      "sha256": "92fab76e802b0a736b431a82cc3aa0d921c95e63ca24c52eb32f6bfadffd4346",
+      "id": "S08",
+      "author": "Kabisatullah dan Noprisson (2026)",
+      "title": "Pengembangan Aplikasi RapaTrack untuk Manajemen Ruang Rapat Menggunakan Constraint Satisfaction Problem Berbasis Android",
+      "note": "Konteks reservasi ruang rapat. PDF menulis Noprison, sedangkan metadata penerbit menggunakan Noprisson.",
+      "pdf_pages": 8
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\03_Penjadwalan_Bimbel_AHE_JTI_Khafidhoh_2026.pdf",
+      "sha256": "f42f95a5725ba661e67e6c8960bf8fd4971910f62cf5089109c7adfeb9a6fc97",
+      "id": "S09",
+      "author": "Khafidhoh dkk. (2026)",
+      "title": "Sistem Penjadwalan Menggunakan Algoritma Genetika Berbasis Web",
+      "note": "Konteks AHE Megaluh 7059 dengan penyusunan jadwal otomatis, bukan hanya peringatan konflik.",
+      "pdf_pages": 6
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf",
+      "sha256": "d65231f042ca09f3959c729486fba4c0f32c33393dbb6e9913d5325ffc4ebe04",
+      "id": "S10",
+      "author": "Gunawan dkk. (2025)",
+      "title": "Sistem Informasi Bimbingan Belajar RSDC Berbasis Website dengan Menggunakan Metode Waterfall untuk Meningkatkan Efisiensi Administrasi",
+      "note": "Modul yang disebut Bab 1 terdapat pada abstrak hlm. 424.",
+      "pdf_pages": 12
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Aplikasi Administrasi Sekolah Musik ABC - Pembayaran & Penjadwalan - Barizi dkk - 2023.pdf",
+      "sha256": "759997c81190eca479ac2c7a3c6184f2e5433762f3418b05aa636de7c497aa1f",
+      "id": "S11",
+      "author": "Barizi dkk. (2023)",
+      "title": "Perancangan Aplikasi Sistem Administrasi Sekolah Musik pada Sekolah Musik ABC Berbasis Java",
+      "note": "Identitas eksplisit menyebut Java. Antarmuka aplikasi pada hlm. 336-337 menjadi dasar pengenalan bentuk aplikasi desktop.",
+      "pdf_pages": 7
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Penjadwalan & Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf",
+      "sha256": "89c356da90494ba0610b38660a462348ca3f4ef44bcfe5f027b75939ea23c4d2",
+      "id": "S12",
+      "author": "Thiovanda (2026)",
+      "title": "Perancangan Sistem Informasi Pencatatan Penjadwalan dan Pembayaran Les Berbasis Web",
+      "note": "Tahun 2026 dan DOI 10.24912/yctfww47 dikonfirmasi dari laman penerbit; tahun tidak tercantum jelas pada header PDF lokal. Halaman 4 memuat pengelolaan cabang dan pembatasan akses.",
+      "pdf_pages": 6
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Manajemen Bimbel Ilman Nafi - Notifikasi - Waterfall - Safitri dkk - 2026.pdf",
+      "sha256": "61e3d962ae457699422ecea0d449b0931aa1c5e338e958f3489ead87084b9e22",
+      "id": "S13",
+      "author": "Safitri dkk. (2026)",
+      "title": "Perancangan Sistem Informasi Manajemen Bimbingan Belajar Berbasis Web untuk Efisiensi Administrasi dan Komunikasi dengan Fitur Notifikasi Otomatis",
+      "note": "Tabel 1 baris 14 pada hlm. 2350 tidak konsisten: label notifikasi WhatsApp, tetapi hasilnya menjelaskan logout.",
+      "pdf_pages": 8
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Scrum Guide 2020 - Schwaber & Sutherland - Official.pdf",
+      "sha256": "ed83eb2378459c9e5da5e695844a24c3770fba33687cafaf0a0683ad5070b3ec",
+      "id": "S14",
+      "author": "Schwaber dan Sutherland (2020)",
+      "title": "The Scrum Guide",
+      "note": "Hlm. cetak 5 sama dengan PDF 6; hlm. cetak 9 sama dengan PDF 10 karena sampul ikut dihitung.",
+      "pdf_pages": 14
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\BUKU\\Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf",
+      "sha256": "1c454dd4b7bbfe02f5392708d01e5802977353a217a5a17848f82e777152a24e",
+      "id": "S15",
+      "author": "Sommerville (2011)",
+      "title": "Software Engineering, Ninth Edition",
+      "note": "Pada halaman rujukan yang diperiksa, urutan PDF = nomor cetak + 17. Gunakan nomor yang tertulis, bukan asumsi offset untuk seluruh buku.",
+      "pdf_pages": 790
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\BUKU\\Extreme-Programming-Explained-2nd-Edition-Kent-Beck.pdf",
+      "sha256": "c236a45762c55e74534cb0211ed9bedae78aab0d10dee861210c91627d1ff8f7",
+      "id": "S16",
+      "author": "Beck dan Andres (2004)",
+      "title": "Extreme Programming Explained: Embrace Change, Second Edition",
+      "note": "Salinan digital mengalir ulang menjadi 294 halaman PDF. Nomor cetak asli tidak tampil pada halaman yang dirujuk; gunakan PDF 104 dan nama subbagian, jangan mengarang nomor cetak.",
+      "pdf_pages": 294
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Extreme programming for a single person team.pdf",
+      "sha256": "beba18faab6aadcfa67cfb6b4eb1c63a2dfab52cda484174a08efa6d673deee1",
+      "id": "S17",
+      "author": "Agarwal dan Umphress (2008)",
+      "title": "Extreme Programming for a Single Person Team",
+      "note": "PDF pindai enam halaman, cetak 82-87. Teks OCR hanya alat bantu; halaman 82, 85 dan 86 diperiksa visual. DOI 10.1145/1593105.1593127.",
+      "pdf_pages": 6
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Structured vs Agile Development Comparative Analysis - Mishra & Alzoubi - Springer - 2023.pdf",
+      "sha256": "32e1425c830ef2fc561cabf123be04eb0880e79e775f97df0ef0c7a396c7fb62",
+      "id": "S18",
+      "author": "Mishra dan Alzoubi (2023)",
+      "title": "Structured Software Development versus Agile Software Development: A Comparative Analysis",
+      "note": "Artikel cetak 1504-1522. Pembahasan kohesivitas tim berada dalam kajian Agile umum, bukan bukti kewajiban mentor pada XP individual.",
+      "pdf_pages": 19
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\BUKU\\ebook-pressman-sw-engineering.pdf",
+      "sha256": "df0f2b723bd3a9b5bdf526500dd5eacffbb8638686196d2fbecf87070c5784e0",
+      "id": "S19",
+      "author": "Pressman (2010)",
+      "title": "Software Engineering: A Practitioner's Approach, Seventh Edition",
+      "note": "Bagian model proses dan pengembangan berbasis komponen diperiksa pada cetak 39-51. Tidak ditemukan dukungan bagi larangan RAD untuk diskon atau rekap multicabang pada salinan ini.",
+      "pdf_pages": 930
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri & Prabowo (ITK) - 2020.pdf",
+      "sha256": "a614301e32c53b12031cf68687242c1912ceb50101e8c33715eb7936299d7bb7",
+      "id": "S20",
+      "author": "Fikri dan Arthawan (2020)",
+      "title": "Rancang Bangun Sistem Informasi Buku Tamu pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan dengan Metode Personal Extreme Programming",
+      "note": "Nama Prabowo pada nama file keliru; PDF menyebut I Putu Deny Arthawan S. P. Nomor halaman 103-104 terlihat jelas meskipun rentang pada header awal artikel salah ketik.",
+      "pdf_pages": 10
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf",
+      "sha256": "997615c1bb02cd907414cc4cdb6933215bed19bc1557e3931210936c275ec100",
+      "id": "S21",
+      "author": "Sidiq dkk. (2025)",
+      "title": "Implementasi Metode Personal Extreme Programming pada Pengembangan Sistem Informasi Surat Menyurat",
+      "note": "Hlm. 45 membedakan total pengembangan 50 hari dan implementasi 37 hari. Jangan menafsirkan angka implementasi sebagai keseluruhan proyek lebih cepat.",
+      "pdf_pages": 12
+    }
+  ]
+}

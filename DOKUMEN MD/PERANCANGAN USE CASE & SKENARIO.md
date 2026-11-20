@@ -1,606 +1,691 @@
-# 📐 PERANCANGAN USE CASE & SKENARIO SISTEM
-**Sistem Informasi Manajemen Operasional Terintegrasi Bimbel Artha Balikpapan**  
-**Metodologi: Personal Extreme Programming (PxP) — Sprint 0**
+# Perancangan Use Case dan Skenario Sistem ARTHA
 
----
+Dokumen ini memperbarui rancangan proses sistem informasi manajemen operasional Bimbel Artha Balikpapan pada 25 Oktober 2026. Rancangan digunakan sebagai pendamping Bab 3 dan dasar penyusunan pengujian, sehingga uraian alur belum merupakan laporan keberhasilan implementasi.
 
-**Penyusun**: Mahasiswa Tugas Akhir (Institut Teknologi Kalimantan)  
-**Mitra Penelitian**: Bimbingan Belajar Artha Balikpapan (8 Cabang Aktif)  
-**Dosen Pembimbing**: Pak Arif (Pembimbing 1) & Bu Ayu (Pembimbing 2)  
-**Tanggal Dokumen**: Oktober 2026  
-**Jumlah Aktor**: 2 Aktor (Branch Admin & Super Admin)  
-**Jumlah Use Case Utama**: 13 Use Case (Termasuk Autentikasi) + 11 Sub Use Case (Include / Extend)
+## 1. Dasar dan batas rancangan
 
----
+Model menggunakan dua aktor aplikasi, yaitu Admin Cabang dan Super Admin, untuk mendukung operasional delapan cabang yang menjadi konteks penelitian. Identitas pegawai yang mewakili peran tersebut ditentukan bersama mitra dan tidak langsung diberikan berdasarkan nama seseorang dalam transkrip.
 
-## 📌 1. Deskripsi Aktor Sistem
+### 1.1 Kedudukan keputusan
 
-Berdasarkan hasil kesepakatan bimbingan ke-3 bersama Pak Arif dan wawancara mitra, sistem dibatasi secara terfokus pada **2 peran (role) aktor**:
+| Kode | Dasar atau keputusan | Kedudukan dalam rancangan |
+| :--- | :--- | :--- |
+| DK-01 | Tombol WhatsApp dengan nomor terdaftar dan pesan tagihan terisi | Acuan pengguna; pengiriman dilakukan Admin Cabang |
+| DK-02 | Peringatan hampir penuh, kelas penuh menolak peserta, dan tempat terbuka setelah siswa keluar | Acuan pengguna; batas hampir penuh ditetapkan per kelas setelah validasi |
+| DK-03 | Admin mengajukan bukti transfer dan Super Admin memeriksa dana masuk | Usulan pengendalian yang digunakan untuk perancangan; kewenangan rekening dan pemeriksa masih perlu divalidasi |
+| DK-04 | Satu penerimaan dapat dialokasikan ke beberapa tagihan satu siswa pada cabang yang sama | Pilihan pemodelan pembayaran beberapa periode; persetujuan proses mitra masih diperlukan |
+| DK-05 | Alokasi melunasi sisa setiap tagihan yang dipilih | Batas operasional awal; pembayaran sebagian belum diaktifkan sebelum kebijakannya ditetapkan |
+| DK-06 | Satu mutasi dicocokkan dengan satu transfer atau satu setoran kas dengan nominal penuh | Batas prototipe; penggabungan atau pemecahan sumber dicatat sebagai pengecualian |
+| DK-07 | Penempatan memerlukan kelas dan jadwal aktif dengan ruangan layak | Usulan operasional untuk mencegah penempatan pada kelompok tanpa ruang belajar yang memenuhi kapasitas |
+| DK-08 | Tarif dan potongan mengikuti cabang, sesi, periode, serta ketentuan berwenang | Nominal dan cakupan ditetapkan mitra; tidak mematok potongan Rp200.000 pada semua tagihan |
+| DK-09 | Konflik jadwal memberi peringatan untuk ditinjau | Calon jadwal dapat disimpan nonaktif; pengaktifan dengan konflik belum diizinkan sebelum kebijakan mitra ditetapkan |
 
-| No | Aktor | Karakteristik & Lingkup Akses | Subjek Nyata di Bimbel Artha |
-|:--:|:---|:---|:---|
-| 1 | **Branch Admin** (Admin Cabang) | Staf operasional/frontdesk yang bertugas di meja pendaftaran dan kasir cabang. Memiliki hak akses penuh pada data operasional cabang tempatnya ditugaskan (`branch_id` spesifik). Tidak dapat melihat atau memanipulasi data cabang lain. | Staf kasir dan admin meja depan di masing-masing cabang Artha 1 s.d. Artha 8. |
-| 2 | **Super Admin** (Manajemen Pusat) | Pimpinan dan pengelola keuangan tingkat yayasan/pusat. Memiliki hak akses menyeluruh (*multi-branch access*, `branch_id = NULL`) untuk memantau performa 8 cabang, mengesahkan rekonsiliasi kas, mengatur konfigurasi sistem, dan mengelola akun pengguna. | Ibu Emi Ratnawati, S.E. (Ketua Yayasan), Bapak Miskam Yudianto / Om Tok (Wakil Ketua), dan Bapak Subagio, S.Sos. (Bendahara). |
+DK-03 sampai DK-09 merupakan pilihan rancangan yang akan dibahas melalui contoh kasus bersama mitra. Penggunaan pilihan tersebut dalam dokumen tidak berarti mitra telah menyetujui seluruh ketentuannya.
 
-> **Catatan Aktor**: Sesuai arahan Pak Arif, **Tentor** dan **Wali Murid** sengaja **tidak dijadikan aktor login sistem** (*non-user aktor*). Tentor menerima jadwal fisik dalam format cetak PDF, sedangkan Wali Murid berinteraksi secara pasif melalui kanal pesan WhatsApp Gateway dan kuitansi cetak. Hal ini menjaga sistem tetap sederhana dan ramah adaptasi bagi SDM lembaga.
+### 1.2 Cakupan
 
----
+Fungsi inti meliputi siswa, kelas, keanggotaan, jadwal, tarif, tagihan, penerimaan, pengingat manual, rekap, serta pencocokan penerimaan. Daftar tunggu otomatis, WhatsApp terjadwal, akun wali atau tentor, kartu anggota, integrasi halaman publik, dan penyusunan jadwal otomatis berada di luar rancangan inti.
 
-## 📊 2. Diagram Use Case (Use Case Diagram)
+Rekap tunggakan dibedakan dari pencocokan mutasi bank. Pencocokan penerimaan tidak mencakup keseluruhan siklus akuntansi, biaya bank, bunga, pengembalian dana, dan rekonsiliasi seluruh saldo rekening.
 
-### 2.1. Kode Diagram Mermaid (Dapat Ter-render Langsung di Markdown)
+### 1.3 Aktor dan akses
+
+| Aktor | Kewenangan | Batas akses |
+| :--- | :--- | :--- |
+| Admin Cabang | Siswa, keanggotaan, jadwal, tagihan, tunai, pengajuan transfer, pengingat, dan penyerahan kas cabang | Cakupan berasal dari akun sah dan diperiksa peladen pada setiap permintaan |
+| Super Admin | Data induk, akun, pemantauan, pemeriksaan transfer, penerimaan setoran, dan pencocokan mutasi | Akses rekening serta petugas pemeriksa ditetapkan mitra; koreksi mempertahankan riwayat |
+
+Peran akun menjadi dasar kewenangan, sedangkan identitas cabang membatasi objek yang dapat diakses. Cabang kosong tidak memberikan hak Super Admin, dan akun cabang tanpa penugasan sah ditolak dari fungsi operasional.
+
+Data tentor digunakan untuk penugasan dan pencegahan konflik jadwal. Nomor wali menjadi tujuan komunikasi manual, sehingga tentor dan wali tidak menjadi aktor yang masuk ke dasbor.
+
+## 2. Katalog dan diagram kasus penggunaan
+
+Empat belas kasus penggunaan disusun menurut tujuan pekerjaan pengguna. Pemeriksaan formulir, kapasitas, dan kewenangan menjadi langkah internal agar diagram tidak dipenuhi subkasus yang tidak mewakili tujuan terpisah.
+
+| Kode | Tujuan pengguna | Aktor utama | Kebutuhan |
+| :--- | :--- | :--- | :--- |
+| UC-00 | Masuk dan keluar sistem | Kedua peran | KF-01 |
+| UC-01 | Mengelola data siswa | Admin Cabang | KF-02 |
+| UC-02 | Mengelola kelas dan ruang | Kedua peran sesuai kewenangan | KF-03 |
+| UC-03 | Mengelola keanggotaan kelas | Admin Cabang | KF-04 |
+| UC-04 | Mengelola jadwal tentor dan ruang | Admin Cabang | KF-05 |
+| UC-05 | Mengelola tarif dan menerbitkan tagihan | Super Admin untuk tarif; Admin Cabang untuk tagihan | KF-06 |
+| UC-06 | Mencatat penerimaan tunai | Admin Cabang | KF-07 |
+| UC-07 | Mengajukan pembayaran transfer | Admin Cabang | KF-08 |
+| UC-08 | Memeriksa pembayaran transfer | Super Admin | KF-09 |
+| UC-09 | Membuka tautan pengingat WhatsApp | Admin Cabang | KF-10 |
+| UC-10 | Menyerahkan, menerima, dan menyetor kas cabang | Kedua peran sesuai tahap | KF-11 |
+| UC-11 | Mencocokkan penerimaan dengan mutasi bank | Super Admin | KF-13 |
+| UC-12 | Memantau dasbor dan laporan | Kedua peran sesuai cakupan | KF-12 |
+| UC-13 | Mengelola data induk dan akun | Super Admin | KF-14 |
+
+### 2.1 Diagram hubungan aktor dan fungsi
+
+Diagram berikut menunjukkan hubungan aktor dengan tujuan pekerjaan. Asosiasi pada kasus gabungan tidak memberikan seluruh tindakan kepada setiap aktor, sehingga rincian kewenangan tetap mengikuti skenario.
 
 ```mermaid
 flowchart LR
-    %% ============================================================
-    %% DEFINISI AKTOR
-    %% ============================================================
-    Admin(["👤 Branch Admin<br/>(Frontdesk Cabang)"])
-    SuperAdmin(["👑 Super Admin<br/>(Manajemen Pusat)"])
-
-    %% ============================================================
-    %% BOUNDARY SISTEM INFORMASI BIMBEL ARTHA
-    %% ============================================================
-    subgraph Sistem_Bimbel_Artha ["Sistem Informasi Manajemen Operasional Bimbel Artha"]
-
-        %% Autentikasi
-        UC_Auth(["UC-00: Autentikasi Login & Logout"]):::authStyle
-
-        %% Paket Fungsionalitas Admin Cabang
-        subgraph Modul_Admin ["Modul Operasional Cabang (Branch Admin)"]
-            UC01(["UC-01: Melihat Dashboard Operasional Cabang"])
-            UC02(["UC-02: Mengelola Pendaftaran Siswa Baru"])
-            UC02A(["UC-02A: Memvalidasi Diskon Saudara Kandung"]):::subStyle
-            UC02B(["UC-02B: Mencetak Bukti Registrasi PDF"]):::subStyle
-
-            UC03(["UC-03: Mengelola Plotting Kelas & Jadwal"])
-            UC03A(["UC-03A: Memvalidasi Batas Kapasitas Kuota"]):::subStyle
-            UC03B(["UC-03B: Mendeteksi Bentrok Jadwal & Ruangan"]):::subStyle
-            UC03C(["UC-03C: Mendaftarkan ke Waiting List"]):::subStyle
-
-            UC04(["UC-04: Mengelola Pembayaran Kasir & SPP"])
-            UC04A(["UC-04A: Menerbitkan Kuitansi PDF"]):::subStyle
-            UC04B(["UC-04B: Memverifikasi Bukti Transfer Manual"]):::subStyle
-            UC04C(["UC-04C: Mengirim Reminder WhatsApp"]):::subStyle
-
-            UC05(["UC-05: Mengelola Master Data Siswa Cabang"])
-            UC05A(["UC-05A: Mengekspor Data Siswa Excel/CSV"]):::subStyle
-            UC05B(["UC-05B: Mencetak Kartu Siswa PDF"]):::subStyle
-            UC05C(["UC-05C: Memperbarui Status Alumni"]):::subStyle
-
-            UC06(["UC-06: Melihat & Mencetak Laporan Harian"])
-        end
-
-        %% Paket Fungsionalitas Super Admin
-        subgraph Modul_SuperAdmin ["Modul Eksekutif & Manajemen Pusat (Super Admin)"]
-            UC07(["UC-07: Memantau Executive Multi-Branch Dashboard"])
-            UC08(["UC-08: Memonitor & Memvalidasi Revenue 8 Cabang"])
-            UC08A(["UC-08A: Mengesahkan Rekonsiliasi Kas"]):::subStyle
-
-            UC09(["UC-09: Memonitor Beban Mengajar Tentor"])
-            UC09A(["UC-09A: Mencetak Rekap Jadwal Tentor PDF"]):::subStyle
-
-            UC10(["UC-10: Mengelola Master Data 8 Cabang"])
-            UC11(["UC-11: Mengelola Konfigurasi Sistem & Tarif"])
-            UC12(["UC-12: Mengelola Akun Pengguna Sistem"])
-        end
-
+    A["Admin Cabang"]
+    S["Super Admin"]
+    subgraph ARTHA["Sistem Informasi Manajemen Operasional ARTHA"]
+        U00(["UC-00 Masuk dan keluar"])
+        U01(["UC-01 Data siswa"])
+        U02(["UC-02 Kelas dan ruang"])
+        U03(["UC-03 Keanggotaan kelas"])
+        U04(["UC-04 Jadwal tentor dan ruang"])
+        U05(["UC-05 Tarif dan tagihan"])
+        U06(["UC-06 Penerimaan tunai"])
+        U07(["UC-07 Pengajuan transfer"])
+        U08(["UC-08 Pemeriksaan transfer"])
+        U09(["UC-09 Tautan WhatsApp"])
+        U10(["UC-10 Penyerahan dan setoran kas"])
+        U11(["UC-11 Pencocokan mutasi"])
+        U12(["UC-12 Dasbor dan laporan"])
+        U13(["UC-13 Data induk dan akun"])
     end
-
-    %% ============================================================
-    %% RELASI ASOSIASI AKTOR KE USE CASE
-    %% ============================================================
-    Admin --- UC_Auth
-    Admin --- UC01
-    Admin --- UC02
-    Admin --- UC03
-    Admin --- UC04
-    Admin --- UC05
-    Admin --- UC06
-
-    SuperAdmin --- UC_Auth
-    SuperAdmin --- UC07
-    SuperAdmin --- UC08
-    SuperAdmin --- UC09
-    SuperAdmin --- UC10
-    SuperAdmin --- UC11
-    SuperAdmin --- UC12
-
-    %% ============================================================
-    %% RELASI INCLUDE & EXTEND
-    %% ============================================================
-    UC02 -. "<<include>>" .-> UC02A
-    UC02 -. "<<extend>>" .-> UC02B
-
-    UC03 -. "<<include>>" .-> UC03A
-    UC03 -. "<<include>>" .-> UC03B
-    UC03 -. "<<extend>>" .-> UC03C
-
-    UC04 -. "<<include>>" .-> UC04A
-    UC04 -. "<<extend>>" .-> UC04B
-    UC04 -. "<<extend>>" .-> UC04C
-
-    UC05 -. "<<extend>>" .-> UC05A
-    UC05 -. "<<extend>>" .-> UC05B
-    UC05 -. "<<extend>>" .-> UC05C
-
-    UC08 -. "<<include>>" .-> UC08A
-    UC09 -. "<<extend>>" .-> UC09A
-
-    %% STYLING
-    classDef authStyle fill:#fef3c7,stroke:#d97706,stroke-width:2px;
-    classDef subStyle fill:#f1f5f9,stroke:#64748b,stroke-dasharray: 5 5;
+    A --- U00
+    A --- U01
+    A --- U02
+    A --- U03
+    A --- U04
+    A --- U05
+    A --- U06
+    A --- U07
+    A --- U09
+    A --- U10
+    A --- U12
+    S --- U00
+    S --- U02
+    S --- U05
+    S --- U08
+    S --- U10
+    S --- U11
+    S --- U12
+    S --- U13
 ```
 
----
+### 2.2 Sumber UML untuk laporan
 
-### 2.2. Kode Diagram Standar PlantUML (Untuk Export Visual Bab 3)
-
-Bagi penyusunan lembar laporan Word Tugas Akhir, kode di bawah ini dapat di-copy langsung ke alat render PlantUML (seperti PlantText.com) untuk menghasilkan diagram standar OMG UML beresolusi tinggi:
+PlantUML berikut mempertahankan katalog dan asosiasi yang sama dengan diagram di atas. Relasi *include* atau *extend* tidak dipaksakan untuk menjadikan setiap pemeriksaan internal sebagai kasus terpisah.
 
 ```plantuml
 @startuml
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
-skinparam actorStyle awesome
-
-actor "Branch Admin\n(Frontdesk Cabang)" as Admin
-actor "Super Admin\n(Manajemen Pusat)" as SuperAdmin
-
-rectangle "Sistem Informasi Manajemen Bimbel Artha" {
-    
-    (UC-00: Login & Autentikasi Akun) as UC00
-    
-    package "Operasional Cabang" {
-        (UC-01: Melihat Dashboard Cabang) as UC01
-        (UC-02: Mengelola Pendaftaran Siswa Baru) as UC02
-        (UC-02A: Cek Diskon Saudara Kandung) as UC02A
-        (UC-02B: Cetak Bukti Pendaftaran PDF) as UC02B
-        
-        (UC-03: Plotting Kelas & Penjadwalan) as UC03
-        (UC-03A: Validasi Kuota Kapasitas) as UC03A
-        (UC-03B: Deteksi Bentrok Jadwal & Ruang) as UC03B
-        (UC-03C: Masuk Antrian Waiting List) as UC03C
-        
-        (UC-04: Transaksi Kasir & Pembayaran SPP) as UC04
-        (UC-04A: Terbitkan Kuitansi PDF) as UC04A
-        (UC-04B: Verifikasi Bukti Transfer Manual) as UC04B
-        (UC-04C: Trigger Reminder WhatsApp) as UC04C
-        
-        (UC-05: Mengelola Data Siswa Cabang) as UC05
-        (UC-05A: Ekspor Data Siswa CSV/Excel) as UC05A
-        (UC-05B: Cetak Kartu Siswa PDF) as UC05B
-        (UC-05C: Mutasi Status Alumni) as UC05C
-        
-        (UC-06: Melihat & Cetak Laporan Harian) as UC06
-    }
-    
-    package "Eksekutif & Manajemen Pusat" {
-        (UC-07: Executive Multi-Branch Dashboard) as UC07
-        (UC-08: Monitoring & Validasi Omzet Cabang) as UC08
-        (UC-08A: Sahkan Rekonsiliasi Kas Cabang) as UC08A
-        
-        (UC-09: Monitoring Beban Mengajar Tentor) as UC09
-        (UC-09A: Cetak Rekap Jadwal Tentor PDF) as UC09A
-        
-        (UC-10: Mengelola Master 8 Cabang) as UC10
-        (UC-11: Konfigurasi Sistem, Tarif, & Aturan) as UC11
-        (UC-12: Manajemen Akun Pengguna) as UC12
-    }
-    
-    Admin --> UC00
-    Admin --> UC01
-    Admin --> UC02
-    Admin --> UC03
-    Admin --> UC04
-    Admin --> UC05
-    Admin --> UC06
-    
-    SuperAdmin --> UC00
-    SuperAdmin --> UC07
-    SuperAdmin --> UC08
-    SuperAdmin --> UC09
-    SuperAdmin --> UC10
-    SuperAdmin --> UC11
-    SuperAdmin --> UC12
-    
-    UC02 ..> UC02A : <<include>>
-    UC02 <.. UC02B : <<extend>>
-    
-    UC03 ..> UC03A : <<include>>
-    UC03 ..> UC03B : <<include>>
-    UC03 <.. UC03C : <<extend>>
-    
-    UC04 ..> UC04A : <<include>>
-    UC04 <.. UC04B : <<extend>>
-    UC04 <.. UC04C : <<extend>>
-    
-    UC05 <.. UC05A : <<extend>>
-    UC05 <.. UC05B : <<extend>>
-    UC05 <.. UC05C : <<extend>>
-    
-    UC08 ..> UC08A : <<include>>
-    UC09 <.. UC09A : <<extend>>
+actor "Admin Cabang" as A
+actor "Super Admin" as S
+rectangle "Sistem Informasi Manajemen Operasional ARTHA" {
+    usecase "UC-00 Masuk dan keluar" as U00
+    usecase "UC-01 Data siswa" as U01
+    usecase "UC-02 Kelas dan ruang" as U02
+    usecase "UC-03 Keanggotaan kelas" as U03
+    usecase "UC-04 Jadwal tentor dan ruang" as U04
+    usecase "UC-05 Tarif dan tagihan" as U05
+    usecase "UC-06 Penerimaan tunai" as U06
+    usecase "UC-07 Pengajuan transfer" as U07
+    usecase "UC-08 Pemeriksaan transfer" as U08
+    usecase "UC-09 Tautan WhatsApp" as U09
+    usecase "UC-10 Penyerahan dan setoran kas" as U10
+    usecase "UC-11 Pencocokan mutasi" as U11
+    usecase "UC-12 Dasbor dan laporan" as U12
+    usecase "UC-13 Data induk dan akun" as U13
 }
+A -- U00
+A -- U01
+A -- U02
+A -- U03
+A -- U04
+A -- U05
+A -- U06
+A -- U07
+A -- U09
+A -- U10
+A -- U12
+S -- U00
+S -- U02
+S -- U05
+S -- U08
+S -- U10
+S -- U11
+S -- U12
+S -- U13
 @enduml
 ```
 
----
-
-## 📝 3. Skenario Use Case Rinci (Use Case Specification)
-
-Bagian ini menyajikan dokumen spesifikasi skenario langkah demi langkah untuk setiap fungsionalitas sistem. Format disusun mengacu pada standar akademik perancangan perangkat lunak Tugas Akhir ITK.
-
----
-
-### UC-00: Autentikasi Pengguna (Login & Logout)
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-00** |
-| **Nama Use Case** | Autentikasi Pengguna Sistem (Login & Logout) |
-| **Aktor Utama** | Branch Admin, Super Admin |
-| **Deskripsi** | Proses verifikasi kredensial pengguna (email dan password) untuk mendapatkan hak akses ke dashboard aplikasi sesuai peran dan cabang masing-masing. |
-| **Pre-kondisi** | Pengguna telah memiliki akun terdaftar yang berstatus aktif (`is_active = TRUE`) pada tabel `users`. |
-| **Post-kondisi** | Pengguna terautentikasi, sesi tersimpan, dan diarahkan ke dashboard yang sesuai (Dashboard Cabang untuk Admin atau Dashboard Eksekutif untuk Super Admin). |
-| **Tabel Terkait** | `users`, `branches` |
-
-#### Alur Normal (Main Success Scenario)
-1. Pengguna membuka peramban web dan mengakses tautan `/admin`.
-2. Sistem menampilkan antarmuka formulir login (input email dan password).
-3. Pengguna memasukkan alamat email dan password yang terdaftar, lalu menekan tombol "Masuk".
-4. Sistem memverifikasi kredensial dengan mencocokkan hash password bcrypt di basis data.
-5. Sistem memeriksa peran pengguna:
-   - Jika peran adalah `branch_admin`, sistem mengunci konteks sesi pada `branch_id` pengguna dan menampilkan Dashboard Cabang (Menu 1.1).
-   - Jika peran adalah `super_admin`, sistem membuka akses lintas cabang dan menampilkan Executive Multi-Branch Dashboard (Menu 2.1).
-6. Sistem memperbarui waktu terakhir login pada kolom `users.last_login_at`.
-
-#### Alur Alternatif & Pengecualian
-* **4a. Email atau Password Salah**:
-  1. Sistem menolak autentikasi dan menampilkan pesan peringatan: *"Email atau kata sandi yang Anda masukkan salah."*
-  2. Pengguna diminta menginput ulang data yang benar.
-* **4b. Akun Berstatus Nonaktif (`is_active = FALSE`)**:
-  1. Sistem menolak akses dan menampilkan pesan: *"Akun Anda telah dinonaktifkan oleh administrator pusat. Silakan hubungi manajemen."*
-
----
-
-### UC-01: Melihat Dashboard Operasional Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-01** |
-| **Nama Use Case** | Melihat Dashboard Operasional Cabang |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Menampilkan rangkuman statistik harian dan bulanan cabang yang dikelola secara ringkas (total siswa, pendaftar baru, tunggakan SPP, status kapasitas kelas, dan jadwal hari ini). |
-| **Pre-kondisi** | Branch Admin berhasil login ke sistem. |
-| **Post-kondisi** | Seluruh kartu KPI dan tabel jadwal kelas hari ini terkompilasi dan ditampilkan di layar. |
-| **Tabel Terkait** | `students`, `bills`, `classes`, `class_schedules`, `mentors`, `class_rooms` |
-
-#### Alur Normal
-1. Admin memilih menu "Dashboard Cabang".
-2. Sistem menjalankan kueri agregasi terfilter berdasarkan `branch_id` admin:
-   - Menghitung total siswa aktif di cabang (`students.status = 'active'`).
-   - Menghitung jumlah pendaftar baru bulan berjalan (`students.registered_at`).
-   - Menghitung total siswa yang belum melunasi tagihan SPP bulan ini (`bills.payment_status != 'paid'`).
-   - Menghitung rasio kelas penuh versus tersedia.
-   - Mengambil daftar sesi les yang berjalan pada hari ini (`class_schedules.day_of_week = hari_ini`).
-3. Sistem menampilkan kartu ringkasan KPI dan tabel kelas hari ini lengkap dengan nama tentor, jam, dan ruangan.
-
----
-
-### UC-02: Mengelola Pendaftaran Siswa Baru
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-02** |
-| **Nama Use Case** | Mengelola Pendaftaran Siswa Baru (Pengganti Buku Besar A4) |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Menginput data siswa baru yang mendaftar secara tatap muka (*walk-in*) ke frontdesk cabang, menghitung tarif les otomatis, menerapkan diskon saudara kandung bila ada, dan mencetak bukti registrasi. |
-| **Pre-kondisi** | Admin berada di halaman menu "Pendaftaran Siswa Baru". Tahun ajaran aktif (`academic_years.is_active = TRUE`) telah terdefinisi. |
-| **Post-kondisi** | Data siswa tersimpan di tabel `students`, tagihan awal diterbitkan di tabel `bills`, dan nomor registrasi unik diterbitkan. |
-| **Tabel Terkait** | `students`, `branches`, `learning_programs`, `fee_tariffs`, `discount_rules`, `bills` |
-
-#### Alur Normal
-1. Admin membuka formulir pendaftaran siswa baru.
-2. Admin mengisi data identitas siswa: Nama Lengkap, Tempat & Tanggal Lahir, Jenis Kelamin, Nama Wali Murid, Nomor WhatsApp Wali Murid (wajib), Asal Sekolah, Jenjang (SD/SMP/SMA), Tingkat Kelas (1 s.d. 12), dan Alamat/Kelurahan Domisili.
-3. Admin memilih Program Belajar (Reguler/Intensif/Paket).
-4. Sistem secara otomatis mencari tarif pada tabel `fee_tariffs` sesuai kombinasi tahun ajaran aktif, program, jenjang, dan kelas yang dipilih.
-5. **(Include UC-02A)**: Admin memeriksa opsi "Apakah memiliki saudara kandung yang les di Artha?". Jika ya, admin memilih nama saudara kandung, sistem memverifikasi relasi dan menerapkan potongan biaya dari `discount_rules` (potongan Rp 200.000).
-6. Sistem menampilkan kalkulasi rincian biaya pendaftaran dan SPP bulan pertama setelah dipotong diskon.
-7. Admin menekan tombol "Simpan Pendaftaran".
-8. Sistem melakukan validasi isian, meng-generate nomor registrasi unik (`registration_no`), menyimpan data ke tabel `students`, serta menerbitkan tagihan pertama di tabel `bills`.
-9. **(Extend UC-02B)**: Sistem menawarkan opsi "Cetak Bukti Pendaftaran". Jika admin memilih tombol tersebut, sistem men-generate dokumen Bukti Pendaftaran resmi berformat PDF untuk diserahkan ke wali murid.
-
-#### Alur Alternatif & Pengecualian
-* **8a. Nomor WhatsApp Wali Murid Kosong atau Tidak Valid**:
-  1. Sistem memblokir penyimpanan dan memberi penanda merah pada field WhatsApp: *"Nomor WhatsApp wali murid wajib diisi untuk keperluan pengingat tagihan SPP."*
-  2. Admin melengkapi nomor WA sebelum menyimpan kembali.
-
----
-
-### UC-03: Mengelola Plotting Kelas & Penjadwalan
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-03** |
-| **Nama Use Case** | Mengelola Plotting Kelas dan Penjadwalan Belajar |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Memasukkan siswa ke dalam rombongan belajar (rombel), menugaskan tentor dan ruangan pada jadwal sesi, memvalidasi kuota kelas, serta mendeteksi bentrok jadwal. |
-| **Pre-kondisi** | Siswa terdaftar aktif di basis data, rombel kelas telah dibentuk, dan tentor tersedia. |
-| **Post-kondisi** | Siswa resmi terdaftar di rombel (`class_enrollments.enrollment_status = 'active'`) atau masuk daftar tunggu (`waiting_list`). |
-| **Tabel Terkait** | `classes`, `class_enrollments`, `class_schedules`, `capacity_rules`, `mentors`, `mentor_subjects`, `class_rooms` |
-
-#### Alur Normal
-1. Admin membuka menu "Plotting Kelas & Jadwal".
-2. Admin melihat daftar rombel kelas yang ditampilkan dalam bentuk kartu status visual warna:
-   - 🟢 Hijau: Kuota terisi < 80% (`status = 'open'`).
-   - 🟡 Kuning: Kuota hampir penuh 80–99% (`status = 'almost_full'`).
-   - 🔴 Merah: Kuota penuh 100% (`status = 'full'`).
-3. Admin memilih kelas tujuan dan memilih siswa yang akan dimasukkan ke kelas.
-4. **(Include UC-03A)**: Sistem mengecek batasan kuota kelas berdasarkan `capacity_rules`:
-   - Contoh: SD Kelas 1 dibatasi maksimal 5 siswa (calistung intensif).
-   - Jika kuota masih tersedia, sistem mengizinkan penambahan siswa dan memperbarui kolom `classes.current_students`.
-5. Saat menjadwalkan sesi les baru (menentukan tentor, ruangan, hari, dan jam):
-   - Sistem memfilter daftar tentor berdasarkan kompetensi mapel dari tabel `mentor_subjects`.
-   - **(Include UC-03B)**: Sistem menjalankan algoritma deteksi bentrok:
-     - Memeriksa apakah tentor yang dipilih telah terjadwal di jam yang sama pada cabang manapun di 8 cabang Artha.
-     - Memeriksa apakah ruangan yang dipilih pada cabang ini sedang digunakan oleh kelas lain pada jam yang sama.
-   - Jika tidak ada bentrok, jadwal disimpan ke tabel `class_schedules`.
-
-#### Alur Alternatif & Pengecualian
-* **4a. Kuota Kelas Penuh (Extend UC-03C)**:
-  1. Sistem menolak penambahan siswa ke rombel dan menampilkan dialog: *"Kelas ini telah mencapai kapasitas maksimal pedagogis. Apakah siswa ingin dimasukkan ke Waiting List?"*
-  2. Jika Admin menyetujui, sistem mencatat siswa ke tabel `class_enrollments` dengan status `waiting_list` beserta waktu antri (`waiting_since`).
-  3. Siswa akan diprioritaskan saat ada siswa lain yang mengundurkan diri atau pindah kelas.
-* **5a. Terjadi Bentrok Jadwal Tentor**:
-  1. Sistem menolak alokasi jadwal dan memunculkan peringatan merah: *"Bentrok Jadwal: Tentor [Nama] sudah dijadwalkan mengajar di Cabang [Artha X] pada hari [Hari] pukul [Jam]."*
-  2. Admin memilih tentor pengganti yang memiliki kualifikasi mata pelajaran yang sama.
-* **5b. Terjadi Bentrok Penggunaan Ruangan**:
-  1. Sistem memunculkan peringatan: *"Ruangan [Nama Ruang] sudah terpakai oleh Kelas [Nama Kelas Lain] pada slot waktu ini."*
-  2. Admin memilih ruangan lain yang masih kosong.
-
----
-
-### UC-04: Mengelola Pembayaran Kasir & SPP
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-04** |
-| **Nama Use Case** | Mengelola Pembayaran Kasir dan Manajemen SPP |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Melayani pembayaran SPP bulanan atau biaya modul, mencatat metode bayar (tunai, transfer bank manual, QRIS), memverifikasi bukti bayar, menerbitkan kuitansi resmi, dan memantau status pengingat WhatsApp. |
-| **Pre-kondisi** | Tagihan siswa telah terbit pada tabel `bills`. |
-| **Post-kondisi** | Status tagihan berubah menjadi `paid`, record transaksi tercatat di tabel `payments`, kuitansi ber-nomor unik terbit, dan kuitansi dapat dicetak. |
-| **Tabel Terkait** | `bills`, `payments`, `users`, `wa_templates`, `wa_logs` |
-
-#### Alur Normal
-1. Admin membuka menu "Kasir & Pembayaran SPP".
-2. Admin mengetikkan nama siswa pada kolom autocomplete. Sistem menampilkan riwayat buku besar digital tagihan 12 bulan siswa tersebut.
-3. Admin memilih satu atau lebih periode bulan tagihan yang ingin dibayarkan.
-4. Sistem mengkalkulasi total nominal yang harus disetor sesuai rincian tarif dasar dan potongan diskon.
-5. Admin memilih metode pembayaran:
-   - **Tunai (Cash)**: Admin menerima uang fisik di meja kasir.
-   - **Transfer Bank / QRIS**: Sistem menampilkan nomor rekening resmi Bimbel Artha kepada wali murid.
-6. **(Extend UC-04B)**: Jika pembayaran via Transfer/QRIS, Admin mengunggah foto struk/bukti transfer ke sistem (`proof_image_url`) dan menekan tombol konfirmasi verifikasi.
-7. Admin menekan tombol "Proses Pembayaran".
-8. Sistem menerbitkan nomor kuitansi unik (`receipt_no`), memperbarui status `bills.payment_status = 'paid'`, dan mencatat ID staf kasir pemverifikasi pada `payments.verified_by_user_id`.
-9. **(Include UC-04A)**: Sistem secara otomatis menghasilkan lembar Kuitansi Resmi Pembayaran berformat PDF yang siap dicetak untuk diserahkan ke wali murid.
-10. **(Extend UC-04C)**: Secara terjadwal di latar belakang (*background scheduler*), sistem memindai tagihan jatuh tempo dan mengirimkan pesan notifikasi WhatsApp reminder otomatis ke wali murid (H-7 sebelum jatuh tempo, H-1 jelang tempo, dan H+3 keterlambatan), serta mencatat riwayatnya pada tabel `wa_logs`.
-
-#### Alur Alternatif & Pengecualian
-* **6a. Bukti Transfer Tidak Cocok / Belum Masuk Rekening**:
-  1. Admin menahan proses verifikasi kasir hingga mutasi rekening bank resmi terkonfirmasi.
-  2. Status tagihan tetap `unpaid` sampai dana benar-benar valid.
-
----
-
-### UC-05: Mengelola Master Data Siswa Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-05** |
-| **Nama Use Case** | Mengelola Master Data Siswa Cabang |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Menampilkan tabel basis data seluruh siswa yang terdaftar di cabang tersebut, melakukan penyaringan (filter), melihat rekam jejak siswa, mengekspor data, mencetak kartu pelajar, dan memperbarui status alumni. |
-| **Pre-kondisi** | Admin berada di menu "Data Siswa Cabang". |
-| **Post-kondisi** | Informasi profil siswa dapat ditampilkan, diperbarui, diekspor, atau dicetak. |
-| **Tabel Terkait** | `students`, `classes`, `class_enrollments`, `bills`, `payments` |
-
-#### Alur Normal
-1. Admin membuka halaman "Data Siswa Cabang".
-2. Sistem menyajikan tabel data siswa cabang yang memuat kolom: No. Registrasi, Nama Lengkap, Jenjang & Kelas, Rombel/Tentor, Status SPP Bulan Ini, dan Opsi Aksi.
-3. Admin dapat menyaring data menggunakan filter: Jenjang (SD/SMP/SMA), Status SPP (Lunas/Belum Lunas/Terlambat), dan Kelas.
-4. Admin dapat mengklik salah satu baris siswa untuk melihat profil lengkap, riwayat kelas yang pernah diambil, dan rekapitulasi pembayaran SPP dari awal masuk.
-5. **(Extend UC-05A)**: Admin menekan tombol "Ekspor Excel/CSV" untuk mengunduh rekapitulasi siswa ke format spreadsheet.
-6. **(Extend UC-05B)**: Admin memilih opsi "Cetak Kartu Siswa" untuk menghasilkan dokumen Kartu Tanda Anggota bimbingan belajar berformat PDF.
-7. **(Extend UC-05C)**: Jika siswa telah menyelesaikan masa bimbingan atau lulus sekolah, Admin mengubah status siswa menjadi `alumni` (data tetap dipertahankan di database sebagai arsip historis).
-
----
-
-### UC-06: Melihat & Mencetak Laporan Harian Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-06** |
-| **Nama Use Case** | Melihat dan Mencetak Laporan Harian Cabang |
-| **Aktor Utama** | Branch Admin |
-| **Deskripsi** | Menyusun rekapitulasi transaksi kasir masuk dan ringkasan aktivitas siswa pada hari/bulan berjalan untuk keperluan pelaporan internal cabang. |
-| **Pre-kondisi** | Terdapat transaksi yang terjadi pada periode berjalan. |
-| **Post-kondisi** | Laporan harian/bulanan terkompilasi dan dapat diunduh dalam format PDF. |
-| **Tabel Terkait** | `payments`, `bills`, `students`, `branches` |
-
-#### Alur Normal
-1. Admin memilih menu "Laporan Harian Cabang".
-2. Admin menentukan tanggal atau rentang bulan yang ingin dilaporkan.
-3. Sistem mengagregasi data pemasukan kasir riil, daftar siswa yang telah melunasi SPP versus yang menunggak, dan rekapitulasi kapasitas kelas terisi.
-4. Admin meninjau kesesuaian fisik uang di laci kasir dengan laporan di layar.
-5. Admin menekan tombol "Cetak Laporan PDF". Sistem men-generate dokumen resmi laporan harian cabang untuk arsip frontdesk.
-
----
-
-### UC-07: Memantau Executive Multi-Branch Dashboard
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-07** |
-| **Nama Use Case** | Memantau Executive Multi-Branch Dashboard |
-| **Aktor Utama** | Super Admin (Ibu Emi / Om Tok / Pak Subagio) |
-| **Deskripsi** | Menampilkan gambaran kondisi menyeluruh dari 8 cabang Bimbel Artha secara *real-time* dalam satu layar visual terpadu. |
-| **Pre-kondisi** | Super Admin berhasil login dengan kredensial pusat. |
-| **Post-kondisi** | Seluruh metrik eksekutif, KPI cards, dan grafik analitik ter-render secara interaktif. |
-| **Tabel Terkait** | `branches`, `students`, `payments`, `bills`, `classes` |
-
-#### Alur Normal
-1. Super Admin membuka halaman utama dashboard sistem.
-2. Sistem mengompilasi data dari seluruh 8 cabang dan menampilkan:
-   - **Kartu Ringkasan KPI**: Total Siswa Aktif Seluruh Cabang, Total Revenue Bulan Ini (gabungan 8 cabang), Cabang dengan Pendapatan Tertinggi, dan Total Siswa Menunggak.
-   - **Grafik Tren Garis (*Line Chart*)**: Tren pemasukan bulanan per cabang sepanjang tahun ajaran berjalan.
-   - **Grafik Batang (*Bar Chart*)**: Perbandingan jumlah siswa aktif antar 8 cabang (Artha 1 s.d. Artha 8).
-   - **Diagram Donat (*Donut Chart*)**: Proporsi sebaran siswa menurut jenjang pendidikan (SD vs SMP vs SMA).
-   - **Tabel Peta Tunggakan (*Heatmap*)**: Visualisasi cabang dan bulan mana yang memiliki persentase tunggakan SPP tertinggi.
-3. Super Admin dapat menerapkan filter dinamis: Filter per Cabang tertentu, Filter per Periode Bulan/Tahun, atau Filter per Jenjang.
-
----
-
-### UC-08: Memonitor & Memvalidasi Rekonsiliasi Revenue Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-08** |
-| **Nama Use Case** | Memonitor dan Memvalidasi Rekonsiliasi Revenue 8 Cabang |
-| **Aktor Utama** | Super Admin (Bendahara Yayasan: Pak Subagio) |
-| **Deskripsi** | Memeriksa detail setoran uang kasir setiap cabang secara harian/bulanan, mencocokkannya dengan mutasi rekening bank pusat, dan memberikan status pengesahan resmi (*validated*). |
-| **Pre-kondisi** | Cabang telah mencatatkan transaksi kasir pada periode bersangkutan. |
-| **Post-kondisi** | Rekonsiliasi bulanan cabang disahkan (`revenue_validations.validation_status = 'validated'`). |
-| **Tabel Terkait** | `revenue_validations`, `branches`, `payments`, `bills`, `users` |
-
-#### Alur Normal
-1. Super Admin membuka menu "Monitoring & Validasi Revenue".
-2. Sistem menyajikan tabel rekapitulasi 8 cabang dengan kolom: Nama Cabang, Target SPP Bulan Ini (`expected_revenue`), Setoran Riil Kasir (`actual_revenue`), Selisih Kas, Status Validasi, dan Opsi Aksi.
-3. Super Admin mengklik salah satu cabang untuk melihat rincian transaksi harian dan membuka foto-foto bukti transfer bank yang diunggah kasir cabang.
-4. Super Admin mencocokkan total setoran dengan mutasi rekening koran bank resmi yayasan.
-5. **(Include UC-08A)**: Jika angka telah sesuai, Super Admin menekan tombol "Sahkan Validasi". Sistem memperbarui record pada `revenue_validations` menjadi `validation_status = 'validated'`, mencatat ID bendahara pada `validated_by_user_id`, serta membubuhkan timestamp pengesahan.
-6. Super Admin dapat mengekspor laporan komparasi omzet 8 cabang ke format spreadsheet atau PDF untuk rapat evaluasi yayasan.
-
-#### Alur Alternatif & Pengecualian
-* **4a. Ditemukan Selisih Antara Kasir Cabang dan Rekening Bank**:
-  1. Super Admin memilih status `discrepancy` (terdapat selisih) dan menuliskan catatan keterangan pada kolom `revenue_validations.notes`.
-  2. Sistem menandai laporan cabang tersebut dengan label merah peringatan untuk diklarifikasi langsung kepada admin cabang bersangkutan pada rapat mingguan.
-
----
-
-### UC-09: Memonitor Beban Mengajar Tentor Seluruh Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-09** |
-| **Nama Use Case** | Memonitor Beban Mengajar Tentor Seluruh Cabang |
-| **Aktor Utama** | Super Admin |
-| **Deskripsi** | Memvisualisasikan distribusi jam kerja dan jadwal mengajar lebih dari 60 tentor yang tersebar di 8 cabang untuk memastikan pemerataan beban kerja. |
-| **Pre-kondisi** | Data jadwal pembelajaran telah terinput di tabel `class_schedules`. |
-| **Post-kondisi** | Matriks beban mengajar tentor ditampilkan dengan indikator warna dan dapat dicetak ke format PDF. |
-| **Tabel Terkait** | `mentors`, `class_schedules`, `classes`, `branches`, `subjects` |
-
-#### Alur Normal
-1. Super Admin membuka menu "Monitoring Beban Tentor".
-2. Sistem mengagregasi seluruh slot jadwal mengajar pada `class_schedules` dan menyajikan tabel matriks tentor:
-   - Nama Tentor, Cabang Tempat Mengajar, Total Jam Les per Minggu, dan Jumlah Rombel Aktif.
-3. Sistem memberi label warna beban kerja secara otomatis:
-   - 🟢 Hijau: Beban Normal (1 s.d. 5 kelas per minggu).
-   - 🟡 Kuning: Beban Sedang (6 s.d. 8 kelas per minggu).
-   - 🔴 Merah: Beban Berlebih (> 8 kelas per minggu, perlu didistribusikan ke tentor lain).
-4. Super Admin melihat grafik perbandingan jam mengajar untuk mendeteksi tentor yang kekurangan jam atau kelebihan beban.
-5. **(Extend UC-09A)**: Super Admin memilih opsi "Cetak Rekap Jadwal Tentor PDF" untuk mencetak lembar jadwal fisik resmi yang akan dibagikan kepada masing-masing tentor.
-
----
-
-### UC-10: Mengelola Master Data 8 Cabang
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-10** |
-| **Nama Use Case** | Mengelola Master Data 8 Cabang (Master Cabang) |
-| **Aktor Utama** | Super Admin |
-| **Deskripsi** | Menambah, mengedit, atau menonaktifkan data master cabang Artha (Artha 1 s.d. Artha 8), meliputi alamat, nomor kontak WA, jumlah ruang belajar, dan URL tautan peta Google Maps. |
-| **Pre-kondisi** | Super Admin memiliki hak akses penuh ke menu Master Cabang. |
-| **Post-kondisi** | Data cabang pada tabel `branches` diperbarui dan disinkronkan ke peta lokasi pada Landing Page publik. |
-| **Tabel Terkait** | `branches`, `class_rooms` |
-
-#### Alur Normal
-1. Super Admin membuka menu "Master Cabang".
-2. Sistem menampilkan daftar 8 cabang aktif beserta detail alamat, kapasitas ruangan, kontak WhatsApp, dan status aktif.
-3. Super Admin memilih cabang yang ingin disunting, lalu memperbarui nomor telepon WhatsApp, alamat baru, atau tautan Google Maps.
-4. Super Admin menekan tombol "Simpan Perubahan".
-5. Sistem memvalidasi data dan memperbarui tabel `branches`. Perubahan tautan peta secara otomatis tampil pada halaman publik website.
-
----
-
-### UC-11: Mengelola Konfigurasi Sistem & Aturan Bisnis
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-11** |
-| **Nama Use Case** | Mengelola Konfigurasi Sistem, Tarif, dan Aturan Bisnis |
-| **Aktor Utama** | Super Admin |
-| **Deskripsi** | Mengatur seluruh parameter dinamis sistem tanpa perlu memodifikasi kode program, mencakup master tarif les, aturan diskon, aturan kuota kelas, templat WhatsApp, dan tahun ajaran aktif. |
-| **Pre-kondisi** | Super Admin berada di halaman pengaturan konfigurasi sistem. |
-| **Post-kondisi** | Konfigurasi parameter pada tabel terkait diperbarui secara aman. |
-| **Tabel Terkait** | `fee_tariffs`, `discount_rules`, `capacity_rules`, `wa_templates`, `academic_years`, `learning_programs` |
-
-#### Alur Normal
-1. Super Admin membuka menu "Konfigurasi Sistem".
-2. Super Admin dapat memilih sub-modul yang ingin dikonfigurasi:
-   - **Sub-Modul Tarif Les (`fee_tariffs`)**: Menyesuaikan nominal SPP bulanan atau biaya modul per jenjang/kelas untuk tahun ajaran baru.
-   - **Sub-Modul Aturan Diskon (`discount_rules`)**: Menambah atau mengubah nilai potongan diskon saudara kandung (nominal tetap atau persentase).
-   - **Sub-Modul Batas Kapasitas (`capacity_rules`)**: Mengubah kuota maksimal per rombel (contoh: batasan calistung SD 1 atau kelas besar SMP).
-   - **Sub-Modul Templat WhatsApp (`wa_templates`)**: Mengedit redaksi pesan pengingat tagihan SPP, menyisipkan placeholder dinamis (`{nama_siswa}`, `{nominal}`).
-   - **Sub-Modul Tahun Ajaran (`academic_years`)**: Mengaktifkan tahun ajaran baru (Juli–Juni) dan mengarsipkan tahun ajaran sebelumnya.
-3. Super Admin menyimpan perubahan. Sistem memvalidasi integritas data dan menerapkan konfigurasi secara global di seluruh cabang.
-
----
-
-### UC-12: Mengelola Akun Pengguna Sistem
-
-| Komponen | Penjelasan |
-|:---|:---|
-| **Kode Use Case** | **UC-12** |
-| **Nama Use Case** | Mengelola Akun Pengguna Sistem (Manajemen User) |
-| **Aktor Utama** | Super Admin |
-| **Deskripsi** | Mengelola kredensial akun login untuk seluruh staf Admin yang bertugas di 8 cabang (tambah akun staf baru, mutasi cabang, nonaktifkan akun staf yang resign, dan reset password). |
-| **Pre-kondisi** | Super Admin berada di menu manajemen akun pengguna. |
-| **Post-kondisi** | Akun pengguna pada tabel `users` dibuat, diperbarui, dinonaktifkan, atau kata sandinya di-reset. |
-| **Tabel Terkait** | `users`, `branches` |
-
-#### Alur Normal
-1. Super Admin membuka menu "Manajemen Akun Pengguna".
-2. Sistem menyajikan daftar seluruh akun staf beserta nama, email, cabang yang dikelola (`branch_id`), peran (`role`), waktu terakhir login, dan status aktif.
-3. Super Admin dapat:
-   - **Menambah Akun Staf Baru**: Menginput nama staf, email login, memilih cabang penugasan, dan kata sandi sementara.
-   - **Menonaktifkan Akun**: Mengubah status `is_active = FALSE` jika ada staf admin cabang yang mengundurkan diri atau diberhentikan (mencegah login tanpa menghapus riwayat transaksi lama).
-   - **Reset Kata Sandi**: Menghasilkan kata sandi acak baru apabila admin cabang mengalami kendala lupa password.
-4. Sistem mengenkripsi kata sandi baru menggunakan algoritma bcrypt dan menyimpan perubahan ke tabel `users`.
-
----
-
-## 📋 4. Matriks Keterhubungan Use Case dengan Skema Database (20 Tabel)
-
-Matriks berikut memastikan keterlacakan (*traceability*) 100% antara fungsionalitas sistem yang dimodelkan pada Use Case dengan struktur tabel relasional yang telah disahkan sebelumnya:
-
-| Kode Use Case | Nama Use Case | Aktor | Tabel Basis Data yang Digunakan |
-|:---:|:---|:---:|:---|
-| **UC-00** | Autentikasi Pengguna (Login/Logout) | Admin, Super Admin | `users`, `branches` |
-| **UC-01** | Dashboard Operasional Cabang | Branch Admin | `students`, `bills`, `classes`, `class_schedules`, `mentors`, `class_rooms` |
-| **UC-02** | Pendaftaran Siswa Baru | Branch Admin | `students`, `branches`, `learning_programs`, `fee_tariffs`, `discount_rules`, `bills` |
-| **UC-03** | Plotting Kelas & Penjadwalan | Branch Admin | `classes`, `class_enrollments`, `class_schedules`, `capacity_rules`, `mentors`, `mentor_subjects`, `class_rooms` |
-| **UC-04** | Pembayaran Kasir & SPP | Branch Admin | `bills`, `payments`, `users`, `wa_templates`, `wa_logs` |
-| **UC-05** | Master Data Siswa Cabang | Branch Admin | `students`, `classes`, `class_enrollments`, `bills`, `payments` |
-| **UC-06** | Laporan Harian Cabang | Branch Admin | `payments`, `bills`, `students`, `branches` |
-| **UC-07** | Executive Multi-Branch Dashboard | Super Admin | `branches`, `students`, `payments`, `bills`, `classes` |
-| **UC-08** | Monitoring & Validasi Revenue | Super Admin | `revenue_validations`, `branches`, `payments`, `bills`, `users` |
-| **UC-09** | Monitoring Beban Mengajar Tentor | Super Admin | `mentors`, `class_schedules`, `classes`, `branches`, `subjects` |
-| **UC-10** | Kelola Data 8 Cabang | Super Admin | `branches`, `class_rooms` |
-| **UC-11** | Konfigurasi Sistem & Tarif | Super Admin | `fee_tariffs`, `discount_rules`, `capacity_rules`, `wa_templates`, `academic_years`, `learning_programs` |
-| **UC-12** | Manajemen Akun Pengguna | Super Admin | `users`, `branches` |
-
-> **Status Integritas**: **20 dari 20 tabel basis data** telah terhubung secara penuh (*fully referenced*) ke dalam fungsionalitas Use Case di atas. Tidak ada entitas tabel yang terisolasi atau mubazir.
+## 3. Skenario terperinci
+
+Setiap skenario memuat tujuan, pelaksana, prakondisi, langkah, alternatif, dan keluaran yang dapat diperiksa. Pengujian turunannya belum dilaksanakan sampai tersedia aplikasi serta bukti pelaksanaan.
+
+### UC-00. Masuk dan keluar sistem
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Kedua peran |
+| Tujuan | Memperoleh sesi sesuai peran dan mengakhirinya. |
+| Prakondisi | Akun aktif dengan peran dan penugasan sah. |
+| Pascakondisi | Sesi sesuai kewenangan atau sesi telah diakhiri. |
+| Data terkait | `users`, `branches`, `activity_logs` |
+
+**Alur utama**
+
+1. Pengguna membuka formulir masuk dan mengisi identitas akun serta kata sandi.
+2. Sistem memeriksa kredensial, status akun, peran, dan cabang penugasannya.
+3. Sistem membuat sesi dan menampilkan dasbor sesuai peran; waktu masuk dicatat tanpa menyimpan kata sandi asli.
+4. Pada setiap permintaan berikutnya, peladen memeriksa sesi dan kewenangan terhadap objek.
+5. Pengguna memilih Keluar; sistem mengakhiri sesi dan menolak permintaan berikutnya yang menggunakan sesi tersebut.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Kredensial salah atau akun nonaktif | Akses ditolak dan sesi berwenang tidak diterbitkan. |
+| Akun cabang tanpa cabang sah | Fungsi operasional ditolak; cabang kosong tidak mengubah peran menjadi Super Admin. |
+| Identitas objek cabang lain dikirim langsung | Peladen menolak dan tidak mengirim isi objek cabang lain. |
+
+**Kriteria penerimaan:** Sesi yang diakhiri tidak dapat digunakan kembali, dan perubahan identitas objek tidak memberikan akses lintas cabang. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-01. Mengelola data siswa
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Mencatat dan memperbarui identitas siswa serta kontak wali. |
+| Prakondisi | Admin berwenang pada cabang aktif dan tahun pendaftaran tersedia. |
+| Pascakondisi | Profil dan riwayat perubahan tersimpan pada cabang yang benar. |
+| Data terkait | `students`, `branches`, `academic_years`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin membuka daftar siswa cabangnya dan memilih Tambah Siswa atau rincian yang akan diperbarui.
+2. Admin mengisi nama, jenjang TK/SD/SMP/SMA, tingkat sesuai jenjang, sekolah jika relevan, kontak wali, dan data lain yang ditetapkan wajib.
+3. Sistem memvalidasi kelengkapan dan kontak; tingkat TK boleh kosong sesuai kamus data dan tidak dipaksa menjadi kelas satu.
+4. Admin meninjau lalu menyimpan; sistem menerbitkan nomor registrasi unik untuk siswa baru dan mencatat perubahan.
+5. Penonaktifan siswa memerlukan alasan dan penyelesaian atau pengakhiran keanggotaan melalui UC-03; tagihan serta pembayaran historis dipertahankan.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Data wajib tidak lengkap atau nomor tidak valid | Penyimpanan ditolak dengan penjelasan kolom terkait. |
+| Kemungkinan siswa ganda | Kandidat ditampilkan untuk diperiksa; nama atau nomor wali sama tidak otomatis berarti siswa sama. |
+| Perpindahan cabang | Gunakan koreksi berwenang dengan riwayat; kepemilikan cabang transaksi lama tetap. |
+
+**Kriteria penerimaan:** Semua jenjang didukung, identitas tersimpan sesuai hasil pemeriksaan, dan penonaktifan tidak menghapus transaksi lama. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-02. Mengelola kelas dan ruang
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang dan Super Admin sesuai kewenangan |
+| Tujuan | Menyiapkan kelompok belajar dan ruang dengan kapasitas yang jelas. |
+| Prakondisi | Cabang, tahun ajaran, dan parameter kelas telah ditinjau pihak berwenang. |
+| Pascakondisi | Kelas serta ruang mempunyai batas kapasitas dan status operasional yang konsisten. |
+| Data terkait | `classes`, `class_rooms`, `branches`, `academic_years`, `activity_logs` |
+
+**Alur utama**
+
+1. Super Admin mencatat ruangan cabang, kapasitas fisik, dan status aktif berdasarkan informasi yang diperiksa.
+2. Admin Cabang menyiapkan kelas pada cabangnya dengan tahun ajaran, jenjang, sesi, dan nama; batas serta ambang sisa tempat mengikuti ketentuan berwenang.
+3. Sistem memeriksa kapasitas positif dan ambang hampir penuh yang sah; penambahan peserta dilakukan terpisah pada UC-03.
+4. Sistem menyimpan status operasional aktif/ditutup yang terpisah dari indikator keterisian berdasarkan peserta aktif.
+5. Perubahan kapasitas atau ruangan diperiksa terhadap peserta dan semua jadwal aktif; perubahan yang membuat kapasitas tidak layak ditolak.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Batas diturunkan di bawah peserta aktif | Perubahan ditolak sampai peserta ditata ulang dengan riwayat. |
+| Ruang lebih kecil dari batas kelas | Jadwal atau perubahan ruang ditolak; pilih ruang layak atau sesuaikan kelas secara sah. |
+| Kelas ditutup | Keanggotaan baru ditolak dan riwayat tetap tersedia. |
+
+**Kriteria penerimaan:** Jumlah peserta, kapasitas, sisa tempat, dan label keterisian konsisten tanpa persentase tetap yang belum disepakati. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-03. Mengelola keanggotaan kelas
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Menempatkan siswa dan mengakhiri keikutsertaan tanpa menghapus riwayat. |
+| Prakondisi | Siswa dan kelas aktif pada cabang yang diizinkan; jadwal aktif memakai ruang yang memenuhi batas kelas. |
+| Pascakondisi | Keanggotaan baru aktif atau keanggotaan lama berakhir dengan waktu serta alasan. |
+| Data terkait | `students`, `classes`, `class_enrollments`, `class_schedules`, `class_rooms`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin memilih siswa dan kelas tujuan lalu melihat peserta aktif, kapasitas, sisa tempat, serta peringatan hampir penuh.
+2. Sistem memeriksa cabang, status siswa/kelas, jadwal aktif, ruang layak, dan ketiadaan keanggotaan aktif ganda.
+3. Saat Simpan, sistem menjalankan transaksi serta mengunci kelas melalui mekanisme yang digunakan seluruh jalur perubahan peserta.
+4. Sistem menghitung ulang peserta aktif saat penyimpanan; keanggotaan baru dibuat dengan joined_at hanya jika masih ada tempat.
+5. Untuk siswa keluar, admin memilih Akhiri Keanggotaan, mengisi ended_at dan end_reason; sistem menghitung kembali sisa tempat.
+6. Jika siswa kembali, sistem membuat periode keanggotaan baru setelah pemeriksaan kapasitas diulang.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Kelas penuh | Penambahan ditolak tanpa menambah peserta aktif; pilih kelas lain, tanpa antrean otomatis. |
+| Dua admin memperebutkan tempat terakhir | Hanya satu penambahan diterima; permintaan lain memperoleh keterangan kelas penuh. |
+| Jadwal atau ruang belum layak | Penempatan ditolak sampai rancangan kelas dilengkapi. |
+| Keanggotaan sudah berakhir | Tidak diakhiri atau dikurangi kembali untuk kedua kalinya. |
+
+**Kriteria penerimaan:** Kapasitas tidak terlampaui, siswa keluar membuka satu tempat, dan siswa kembali mempunyai periode riwayat baru. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-04. Mengelola jadwal tentor dan ruang
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Menyusun jadwal dengan pemeriksaan konflik tentor, kelas, dan ruangan. |
+| Prakondisi | Kelas, tentor, mata pelajaran, dan ruang tersedia serta aktif. |
+| Pascakondisi | Jadwal sah menyimpan periode berlaku, hari, jam, pengajar, mata pelajaran, dan ruang. |
+| Data terkait | `class_schedules`, `classes`, `class_rooms`, `mentors`, `subjects`, `mentor_subjects`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin memilih kelas, tentor, mata pelajaran sesi, ruang, hari, jam mulai/selesai, serta tanggal awal/akhir berlaku.
+2. Sistem memeriksa akhir sesudah awal, periode berlaku, cabang ruang, dan kapasitas ruang sekurang-kurangnya batas kelas.
+3. Sistem memeriksa jadwal aktif pada periode relevan untuk tentor lintas cabang, ruang, dan kelas; baris yang diedit dikecualikan.
+4. Irisan jam terjadi jika mulai lama lebih awal daripada selesai baru dan selesai lama lebih akhir daripada mulai baru pada hari yang relevan.
+5. Calon jadwal dengan konflik dapat disimpan nonaktif untuk peninjauan; jadwal diaktifkan setelah konflik diperbaiki dengan perlindungan permintaan serentak pada tentor/ruang/kelas terkait.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Konflik tentor lintas cabang | Peringatan dan waktu seperlunya ditampilkan tanpa data siswa/keuangan cabang lain; calon jadwal belum aktif sampai ditinjau dan diperbaiki. |
+| Konflik ruang atau kelas | Peringatan ditampilkan dan calon jadwal tetap nonaktif sampai waktu atau penugasan diperbaiki. |
+| Jadwal nonaktif atau periode berbeda | Tidak menghasilkan konflik palsu. |
+| Sunting tanpa perubahan waktu | Tidak berbenturan dengan dirinya sendiri; batas jam bersebelahan diperbolehkan jika tidak ada aturan jeda tambahan. |
+
+**Kriteria penerimaan:** Konflik yang benar memberi peringatan serta menahan aktivasi rancangan, sedangkan jadwal nonaktif, periode berbeda, dan baris sendiri tidak menghasilkan konflik palsu. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-05. Mengelola tarif dan menerbitkan tagihan
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Super Admin untuk tarif/potongan; Admin Cabang untuk tagihan |
+| Tujuan | Menetapkan tarif dan menerbitkan kewajiban siswa per periode. |
+| Prakondisi | Siswa, cabang, sesi, tahun ajaran, jenis biaya, serta periode dapat ditentukan. |
+| Pascakondisi | Tagihan unik menyimpan nilai historis tarif dan potongan berwenang. |
+| Data terkait | `fee_tariffs`, `bills`, `students`, `branches`, `academic_years`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Super Admin menetapkan tarif menurut cabang, sesi, program/jenjang, jenis biaya, siklus, masa berlaku, dan nominal.
+2. Sistem memeriksa tumpang tindih tarif pada kombinasi yang sama; pemilihan harus menghasilkan satu dasar yang jelas.
+3. Admin memilih siswa dan periode; sistem mengambil tarif sah serta menampilkan nilai sebelum dan sesudah penyesuaian.
+4. Potongan dicatat berdasarkan persetujuan berwenang beserta nominal, alasan, cakupan, dan periode; potongan tanpa persetujuan tidak diterapkan.
+5. Admin memeriksa tanggal jatuh tempo siswa lalu menerbitkan tagihan dengan nilai dasar, potongan, periode, dan cabang historis.
+6. Sistem menolak kewajiban ganda; paket semester/tahunan tidak diterbitkan ulang sebagai SPP bulanan.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Tarif tidak ada atau lebih dari satu cocok | Penerbitan ditahan sampai parameter diperbaiki. |
+| Potongan melebihi dasar atau belum disahkan | Penyimpanan ditolak; potongan positif memerlukan alasan dan persetujuan. |
+| Tarif baru berlaku | Tagihan lama tidak dihitung ulang mengikuti tarif baru. |
+| Tanggal jatuh tempo berbeda | Gunakan tanggal pada tagihan, bukan satu tanggal global untuk semua siswa. |
+
+**Kriteria penerimaan:** Tagihan tidak ganda, paket tidak salah berulang, dan perubahan tarif/cabang siswa tidak mengubah nilai atau cabang tagihan lama. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-06. Mencatat penerimaan tunai
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Mencatat uang yang benar-benar diterima dan menerbitkan kuitansi. |
+| Prakondisi | Tagihan belum lunas milik satu siswa/cabang tersedia dan uang telah diterima. |
+| Pascakondisi | Penerimaan recorded, alokasi sah, dan nomor kuitansi unik tersimpan. |
+| Data terkait | `payments`, `payment_allocations`, `bills`, `students`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin memilih siswa dan satu atau beberapa tagihan terbuka pada cabangnya.
+2. Sistem menampilkan sisa masing-masing tagihan dan total; alokasi awal harus melunasi sisa setiap tagihan pilihan.
+3. Admin menerima uang, mencatat tanggal dan nominal, lalu meninjau rincian sebelum menyimpan.
+4. Sistem mengunci tagihan terkait, memeriksa ulang sisa serta kunci permintaan, lalu menyimpan penerimaan recorded dan alokasi dalam satu transaksi.
+5. Sistem menerbitkan satu nomor kuitansi; cetak ulang memakai nomor yang sama.
+6. Sisa dan rekap tunai diperbarui; penyerahan uang ke pusat dilaksanakan terpisah melalui UC-10.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Nominal tidak sesuai alokasi penuh | Proses ditolak atau tagihan pilihan diubah; cicilan belum diaktifkan sebelum kebijakannya disetujui. |
+| Permintaan Simpan diulang | Kembalikan penerimaan yang sama tanpa transaksi/alokasi/kuitansi baru. |
+| Tagihan dilunasi petugas lain | Validasi ulang dan tolak transaksi yang menyebabkan kelebihan bayar. |
+| Perlu koreksi penerimaan sah | Gunakan koreksi berwenang dengan jejak; jangan menimpa riwayat. |
+
+**Kriteria penerimaan:** Penerimaan dihitung sekali, alokasi sama dengan uang diterima, dan cetak ulang tidak menambah pendapatan. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-07. Mengajukan pembayaran transfer
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Menyampaikan bukti transfer agar diperiksa pusat. |
+| Prakondisi | Tagihan terbuka tersedia dan rekening resmi penerima ditetapkan. |
+| Pascakondisi | Pengajuan submitted terlihat pada antrean tanpa melunasi tagihan. |
+| Data terkait | `payments`, `payment_allocations`, `bills`, `students`, `bank_accounts`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin memilih siswa dan tagihan pada cabangnya serta rekening tujuan resmi.
+2. Admin mencatat nominal, tanggal transfer, bukti, serta alokasi pada tagihan pilihan.
+3. Sistem memvalidasi kewenangan, berkas, total alokasi penuh, dan identitas permintaan; bukti disimpan privat.
+4. Sistem menyimpan pengajuan submitted, pengaju, dan waktu; nominal belum menjadi penerimaan terkonfirmasi dan belum mengurangi sisa.
+5. Pengajuan tampil sebagai pemberitahuan pada antrean dasbor Super Admin, tanpa janji pengiriman pesan otomatis.
+6. Untuk memperbaiki pengajuan returned, admin membuat pengajuan baru dengan resubmission_of_id; data dan bukti lama dipertahankan.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Bukti tidak terbaca atau format tidak diterima | Ditolak sebelum penyimpanan atau dikembalikan pada UC-08 dengan alasan. |
+| Pengajuan aktif identik sudah ada | Peringatkan duplikasi; tombol berulang tidak menggandakan pengajuan. |
+| Sisa berubah saat menunggu | Periksa ulang alokasi pada persetujuan dan tolak kelebihan bayar. |
+
+**Kriteria penerimaan:** Pengajuan menunggu terlihat oleh pemeriksa, tidak menghasilkan kuitansi final, dan versi perbaikan merujuk pengajuan lama. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-08. Memeriksa pembayaran transfer
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Super Admin yang berwenang |
+| Tujuan | Membandingkan pengajuan dengan dana masuk dan mengambil keputusan. |
+| Prakondisi | Pengajuan submitted tersedia dan pemeriksa berwenang mengakses rekening serta rujukan mutasi. |
+| Pascakondisi | Status verified dengan pencocokan sah atau returned dengan alasan dan keputusan tersimpan. |
+| Data terkait | `payments`, `payment_reviews`, `payment_allocations`, `bills`, `bank_accounts`, `bank_entries`, `bank_matches`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Pemeriksa membuka antrean dan memeriksa siswa, cabang, rekening, tanggal, bukti, serta alokasi pengajuan.
+2. Pemeriksa memilih atau mencatat dana masuk dari mutasi yang diizinkan lalu membandingkan rekening serta nominal penuh.
+3. Sistem memeriksa mutasi dan sumber belum pernah dicocokkan sesuai UC-11.
+4. Jika sesuai, sistem mengunci pengajuan, tagihan, dan mutasi, lalu memeriksa ulang status serta sisa.
+5. Sistem menyimpan bank_matches, payment_reviews, status verified, pemeriksa, dan kuitansi dalam satu transaksi; kegagalan satu bagian membatalkan keseluruhan persetujuan.
+6. Jika tidak sesuai, pemeriksa memilih Kembalikan dengan alasan; pengajuan menjadi returned dan hanya dapat diperbaiki melalui versi baru.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Dana belum masuk atau bukti berbeda | Kembalikan dengan alasan tanpa pelunasan. |
+| Mutasi sudah dipakai atau total tidak cocok | Tolak persetujuan dan catat pengecualian. |
+| Persetujuan berulang atau serentak | Simpan satu keputusan efektif dan satu pencocokan tanpa alokasi ganda. |
+| Tagihan dilunasi transaksi lain | Tahan persetujuan dan kembalikan pengajuan untuk penyesuaian. |
+
+**Kriteria penerimaan:** Hanya dana terkonfirmasi mengurangi sisa, persetujuan mempunyai mutasi sumber, dan alasan serta versi bukti tetap tersedia. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-09. Membuka tautan pengingat WhatsApp
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang |
+| Tujuan | Membuka pesan penagihan berdasarkan tagihan lewat jatuh tempo. |
+| Prakondisi | Tagihan belum lunas melewati jatuh tempo dan kontak wali tersedia. |
+| Pascakondisi | Tindakan membuka tautan tercatat; pengiriman dilakukan pengguna pada WhatsApp. |
+| Data terkait | `bills`, `payments`, `payment_allocations`, `students`, `reminder_actions`, `users` |
+
+**Alur utama**
+
+1. Admin membuka daftar tagihan lewat jatuh tempo dan memilih siswa.
+2. Sistem menghitung sisa dari penerimaan sah serta menyiapkan nomor wali dan pesan berisi nama, periode, sisa, serta jatuh tempo.
+3. Admin memeriksa pratinjau dan nomor tujuan dalam format internasional yang sesuai.
+4. Admin menekan Buka WhatsApp; sistem menyiapkan tautan dengan pesan dikodekan dan mencatat pelaksana, waktu, nomor, serta salinan pesan.
+5. Peramban atau WhatsApp dibuka; admin memeriksa percakapan lalu menekan Kirim di luar ARTHA.
+6. ARTHA tetap mencatat tindakan membuka tautan tanpa mengeklaim pesan terkirim, diterima, atau dibaca.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Nomor kosong atau tidak valid | Tautan tidak dibuat sampai kontak diperbaiki berdasarkan informasi yang diperiksa. |
+| Tagihan sudah lunas sebelum tindakan | Periksa ulang sisa dan jangan lanjutkan penagihan untuk tagihan lunas. |
+| WhatsApp tidak tersedia atau dibatalkan | Tidak ada status terkirim; admin dapat mencoba perangkat sesuai. |
+
+**Kriteria penerimaan:** Nomor, periode, sisa, dan tanggal sesuai tagihan tanpa penjadwal atau status pengiriman otomatis. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-10. Menyerahkan, menerima, dan menyetor kas cabang
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Admin Cabang untuk penyiapan/penyerahan; Super Admin untuk penerimaan/setoran bank |
+| Tujuan | Menelusuri perpindahan kas yang berasal dari penerimaan tunai. |
+| Prakondisi | Penerimaan recorded tersedia dan belum terikat kelompok kas lain. |
+| Pascakondisi | Kelompok kas merujuk sumber, penyerahan, penerimaan, dan penyetoran tanpa pendapatan ganda. |
+| Data terkait | `cash_batches`, `cash_batch_items`, `payments`, `branches`, `bank_accounts`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Admin memilih penerimaan tunai cabangnya dan melihat total berdasarkan rincian asal.
+2. Sistem menyimpan kelompok draft dengan daftar penerimaan; satu penerimaan tidak boleh terikat pada dua kelompok.
+3. Admin mencocokkan uang fisik dan mengajukan penyerahan dengan status submitted.
+4. Petugas pusat berwenang memeriksa uang dan mencatat penerima serta waktu sehingga status received.
+5. Setelah uang disetor ke bank, pihak berwenang mencatat rekening tujuan, tanggal, nominal, dan bukti sehingga status deposited.
+6. Pencocokan mutasi dilakukan pada UC-11; penerimaan pusat dan setoran bank tidak membuat pembayaran siswa baru.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Uang tidak sesuai rincian | Penerimaan pusat belum disahkan; catat klarifikasi tanpa mengubah penerimaan asal. |
+| Penerimaan masuk kelompok lain | Pemilihan ditolak agar sumber tidak diserahkan dua kali. |
+| Diterima pusat tetapi belum ke bank | Status tetap received, bukan dana bank yang sudah cocok. |
+| Draft perlu diperbaiki | Sesuaikan rincian sebelum submitted dengan jejak; setelah diserahkan, perubahan langsung tidak diperbolehkan. |
+
+**Kriteria penerimaan:** Sumber dapat dibuka, penerimaan pusat dibedakan dari dana bank, dan setoran tidak menambah pendapatan. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-11. Mencocokkan penerimaan dengan mutasi bank
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Super Admin yang berwenang |
+| Tujuan | Menghubungkan dana masuk dengan satu sumber tertelusur. |
+| Prakondisi | Rekening dan mutasi tersedia; sumber adalah transfer submitted atau kelompok kas deposited. |
+| Pascakondisi | Satu mutasi terhubung ke satu sumber penuh, atau pengecualian dicatat tanpa pengesahan. |
+| Data terkait | `bank_accounts`, `bank_entries`, `bank_matches`, `payments`, `payment_reviews`, `cash_batches`, `users`, `activity_logs` |
+
+**Alur utama**
+
+1. Pemeriksa membuka mutasi yang dicatat manual dari dokumen yang diizinkan dan memilih satu dana masuk.
+2. Pemeriksa memilih tepat satu sumber, yaitu transfer siswa atau setoran kas, bukan keduanya.
+3. Sistem membandingkan rekening dan nominal penuh; satu sumber cocok dengan satu mutasi dalam batas prototipe.
+4. Sistem memeriksa sumber dan mutasi belum dipakai serta melindungi pemakaian tunggal dengan kendala unik dan transaksi.
+5. Pencocokan transfer disimpan bersama keputusan UC-08 secara atomik; kelompok kas hanya dicocokkan setelah received dan deposited ke rekening terkait.
+6. Pemeriksa menyimpan rujukan, waktu, dan keterangan; keadaan belum cocok atau pengecualian tetap dapat ditelusuri.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Satu mutasi mencakup banyak sumber atau sebaliknya | Catat pengecualian untuk klarifikasi; jangan diam-diam memecah model satu banding satu. |
+| Nominal atau rekening berbeda | Jangan sahkan pencocokan; catat perbedaan. |
+| Referensi atau sumber dipakai ulang | Tolak dan tampilkan pasangan lama kepada pemeriksa berwenang. |
+| Mutasi bukan dana masuk | Tidak dipakai untuk pelunasan penerimaan dalam lingkup ini. |
+
+**Kriteria penerimaan:** Pencocokan mempunyai satu sumber dan mutasi sah, sedangkan tunggakan tidak dilabeli selisih bank. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-12. Memantau dasbor dan laporan
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Kedua peran sesuai cakupan |
+| Tujuan | Memantau operasional dan menelusuri ringkasan ke sumber. |
+| Prakondisi | Akun sah dan periode laporan dipilih, termasuk keadaan tanpa transaksi. |
+| Pascakondisi | Ringkasan sesuai filter, status, periode, dan cabang historis. |
+| Data terkait | `branches`, `students`, `classes`, `class_enrollments`, `class_schedules`, `mentors`, `bills`, `payments`, `payment_allocations`, `cash_batches`, `bank_entries`, `bank_matches`, `reminder_actions` |
+
+**Alur utama**
+
+1. Admin membuka dasbor cabangnya; Super Admin memilih satu atau seluruh cabang.
+2. Pengguna menetapkan tanggal, tahun ajaran, kanal, dan status; sistem menjelaskan dasar periode laporan.
+3. Sistem memisahkan siswa, kapasitas, jadwal, tunggakan, antrean transfer, penerimaan terkonfirmasi, posisi kas, dan pencocokan.
+4. Pengguna membuka rincian angka ke sumber; submitted dan returned tidak masuk penerimaan terkonfirmasi.
+5. Jam tentor dihitung dari durasi penugasan pada periode terpilih tanpa label beban berlebih yang belum disahkan.
+6. Rekap dapat dicetak sesuai cakupan; data dimuat saat dibuka atau diperbarui setelah tindakan tanpa klaim pembaruan serentak tanpa pemuatan ulang.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Periode tanpa data | Tampilkan keadaan kosong dan nol sesuai objek, bukan hasil transaksi contoh. |
+| Siswa pindah cabang | Laporkan penerimaan historis pada cabang pemilik transaksi asal. |
+| Sebagian dan lewat jatuh tempo | Indikator pelunasan dan keterlambatan dapat bersamaan jika kondisi tersedia dari data sah. |
+| Tanggal pembayaran berbeda dari periode kewajiban | Tampilkan dasar periode dan jangan mencampur pengertiannya. |
+
+**Kriteria penerimaan:** Ringkasan sesuai sumber, setoran tidak menggandakan pendapatan, dan Admin Cabang tidak memperoleh data cabang lain. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+### UC-13. Mengelola data induk dan akun
+
+| Unsur | Rancangan |
+| :--- | :--- |
+| Aktor | Super Admin |
+| Tujuan | Menyiapkan akun, cabang, tahun ajaran, tentor, mata pelajaran, dan rekening. |
+| Prakondisi | Pengelola berwenang dan ketentuan data induk telah diperiksa. |
+| Pascakondisi | Data induk serta akun tersimpan dengan rujukan sejarah tetap. |
+| Data terkait | `academic_years`, `branches`, `users`, `mentors`, `subjects`, `mentor_subjects`, `bank_accounts`, `activity_logs` |
+
+**Alur utama**
+
+1. Pengelola memilih data yang akan ditambah, diperbarui, atau dinonaktifkan.
+2. Untuk akun, pengelola menetapkan peran dan cabang sah; perubahan penugasan tidak mengubah pelaksana transaksi lama.
+3. Untuk tentor, gunakan satu identitas lintas cabang dan kompetensi mata pelajaran bila dipakai pada penjadwalan.
+4. Untuk tahun ajaran, sistem memeriksa tanggal dan satu tahun operasional aktif serta mempertahankan data tahun lalu.
+5. Untuk rekening, pengelola mencatat rekening resmi yang disetujui dan membatasi rincian sesuai kewenangan.
+6. Sistem memvalidasi ketergantungan dan menyimpan pelaksana perubahan; penonaktifan menghentikan pemakaian baru tanpa memutus sejarah.
+
+**Alur alternatif dan pengecualian**
+
+| Kondisi | Tindakan atau keluaran |
+| :--- | :--- |
+| Data dirujuk transaksi lama | Tolak penghapusan fisik; gunakan penonaktifan dan pengganti berwenang. |
+| Peran cabang tanpa penugasan atau email ganda | Tolak dan perbaiki data. |
+| Perubahan merusak jadwal aktif | Tata objek terkait sebelum perubahan diberlakukan. |
+| Templat pesan diubah | Versi awal melalui konfigurasi aplikasi oleh pengembang; editor dasbor tidak dijanjikan. |
+
+**Kriteria penerimaan:** Peran menentukan kewenangan, tentor lintas cabang tidak digandakan, dan perubahan penting dapat ditelusuri. Kriteria ini menjadi dasar kelompok pemeriksaan pada Bagian 5 dan belum dinyatakan lulus.
+
+## 4. Aturan lintas proses dan penyimpanan
+
+Aturan berikut berlaku pada seluruh skenario terkait, termasuk permintaan langsung ke layanan. Pemeriksaan tampilan saja tidak cukup untuk menentukan keabsahan perubahan data.
+
+| Kode | Aturan rancangan |
+| :--- | :--- |
+| AT-01 | Peran dan objek cabang diperiksa peladen; cabang permintaan tidak dipercaya tanpa memeriksa akun |
+| AT-02 | Peserta aktif dihitung dari class_enrollments; status operasional kelas dipisahkan dari indikator keterisian |
+| AT-03 | Penambahan/pengakhiran peserta dan pembaruan kapasitas memakai transaksi serta penguncian kelas yang konsisten |
+| AT-04 | Konflik memeriksa hari, periode, irisan jam, tentor, ruang, dan kelas; baris suntingan dikecualikan dan calon berkonflik tetap nonaktif untuk ditinjau |
+| AT-05 | Nominal menggunakan desimal; total alokasi sama dengan penerimaan dan tidak melampaui sisa sah |
+| AT-06 | Hanya tunai recorded dan transfer verified mengurangi sisa; submitted/returned belum terkonfirmasi |
+| AT-07 | Pelunasan dihitung dari sisa; keterlambatan dari jatuh tempo dan sisa positif |
+| AT-08 | Pengajuan yang telah dikirim tidak ditimpa; versi perbaikan merujuk pengajuan lama |
+| AT-09 | Persetujuan transfer, mutasi, pemeriksaan, dan kuitansi disimpan atomik |
+| AT-10 | Satu penerimaan tunai masuk satu kelompok kas; perpindahan kas tidak menambah pendapatan siswa |
+| AT-11 | Cabang historis tagihan/penerimaan tidak berubah mengikuti profil siswa terbaru |
+| AT-12 | Nilai tarif dan potongan tagihan dipertahankan; tidak ada potongan global tanpa dasar berwenang |
+| AT-13 | Tepat satu sumber per mutasi, yaitu transfer atau kas; nominal dan rekening cocok penuh |
+| AT-14 | Tindakan membuka WhatsApp dicatat tanpa klaim terkirim atau diterima |
+| AT-15 | Bukti privat diakses melalui pemeriksaan kewenangan, bukan tautan publik bebas |
+| AT-16 | Data bersejarah dinonaktifkan atau dikoreksi secara terlacak, bukan dihapus untuk membuka kapasitas |
+
+Templat WhatsApp awal berada pada konfigurasi aplikasi, sedangkan kapasitas dan ambang sisa tempat berada pada data kelas. Potongan aktual berada pada tagihan beserta alasan serta persetujuannya, sehingga rancangan tidak bergantung pada empat tabel konfigurasi yang dihapus.
+
+Pemberitahuan pemeriksaan diperoleh dari antrean pengajuan submitted pada dasbor. Rancangan inti tidak menjanjikan status notifikasi dibaca, surel otomatis, atau pesan WhatsApp otomatis yang membutuhkan mekanisme tambahan.
+
+## 5. Keterlacakan kebutuhan dan pemeriksaan
+
+Matriks menghubungkan kebutuhan, cerita pengguna, kasus penggunaan, data, iterasi, dan kelompok pemeriksaan. PU merupakan kelompok kondisi, sedangkan kasus rinci BB dan lembar tugas UAT dijabarkan dalam dokumen pendamping Bab 3.
+
+| Kebutuhan | Cerita pengguna | Kasus penggunaan | Tabel terkait | Iterasi | Kelompok pemeriksaan |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| KF-01 Akses | US-01 | UC-00 | users, branches, activity_logs | I-01 | PU-01; UAT-01 |
+| KF-02 Siswa | US-02 | UC-01 | students, branches, academic_years, activity_logs | I-01 | PU-02; UAT-02 |
+| KF-03 Kelas dan ruang | US-03 | UC-02 | classes, class_rooms, branches, academic_years, activity_logs | I-01 | PU-03; UAT-03 |
+| KF-04 Keanggotaan | US-04 | UC-03 | class_enrollments, classes, students, class_schedules, class_rooms, activity_logs | I-02 | PU-04; UAT-04 |
+| KF-05 Jadwal | US-05 | UC-04 | class_schedules, classes, class_rooms, mentors, subjects, mentor_subjects, activity_logs | I-02 | PU-05; UAT-05 |
+| KF-06 Tarif dan tagihan | US-06 | UC-05 | fee_tariffs, bills, students, branches, academic_years, users, activity_logs | I-01 | PU-06; UAT-06 |
+| KF-07 Tunai | US-07 | UC-06 | payments, payment_allocations, bills, students, users, activity_logs | I-03 | PU-07; UAT-07 |
+| KF-08 Pengajuan transfer | US-08 | UC-07 | payments, payment_allocations, bills, students, bank_accounts, users, activity_logs | I-03 | PU-08; UAT-08 |
+| KF-09 Pemeriksaan transfer | US-09 | UC-08 | payments, payment_reviews, payment_allocations, bills, bank_accounts, bank_entries, bank_matches, users, activity_logs | I-03 | PU-09; UAT-09 |
+| KF-10 WhatsApp manual | US-10 | UC-09 | reminder_actions, bills, students, payments, payment_allocations, users | I-03 | PU-10; UAT-10 |
+| KF-11 Kas cabang | US-11 | UC-10 | cash_batches, cash_batch_items, payments, branches, bank_accounts, users, activity_logs | I-04 | PU-11; UAT-11 |
+| KF-12 Dasbor dan laporan | US-12 | UC-12 | branches, students, classes, class_enrollments, class_schedules, mentors, bills, payments, payment_allocations, cash_batches, bank_entries, bank_matches, reminder_actions | I-04 | PU-12; UAT-12 |
+| KF-13 Pencocokan | US-13 | UC-11 | bank_accounts, bank_entries, bank_matches, payments, payment_reviews, cash_batches, users, activity_logs | I-04 | PU-13; UAT-13 |
+| KF-14 Data induk dan akun | US-14 | UC-13 | academic_years, branches, users, mentors, subjects, mentor_subjects, bank_accounts, activity_logs | I-01 | PU-14; UAT-14 |
+
+Dependensi pencocokan minimum untuk UC-08 dikerjakan pada iterasi ketiga bersama pemeriksaan transfer. Penyempurnaan pencocokan kas serta tampilan lintas cabang dilanjutkan pada iterasi keempat, sehingga persetujuan transfer tetap mempunyai mutasi sumber sejak pertama diterapkan.
+
+| Kelompok | Kondisi wajib | Status |
+| :--- | :--- | :--- |
+| PU-01 | Masuk/keluar, akun nonaktif, penugasan tidak sah, akses objek cabang lain | Belum dilaksanakan |
+| PU-02 | Data wajib, TK, siswa ganda, penonaktifan, riwayat cabang | Belum dilaksanakan |
+| PU-03 | Kapasitas sah, ambang hampir penuh, ruang terlalu kecil, kelas ditutup | Belum dilaksanakan |
+| PU-04 | Tempat terakhir, kelas penuh, permintaan serentak, siswa keluar, masuk kembali | Belum dilaksanakan |
+| PU-05 | Konflik lintas cabang, ruang/kelas, edit sendiri, nonaktif, jam bersebelahan | Belum dilaksanakan |
+| PU-06 | Tarif cabang/sesi, paket semester/tahun, potongan, anti-duplikasi, nilai historis | Belum dilaksanakan |
+| PU-07 | Beberapa tagihan, nominal tidak sesuai, permintaan berulang, cetak ulang | Belum dilaksanakan |
+| PU-08 | Bukti privat, submitted belum melunasi, pengajuan ganda, versi perbaikan | Belum dilaksanakan |
+| PU-09 | Dana cocok/tidak cocok, alasan returned, persetujuan serentak, kegagalan atomik | Belum dilaksanakan |
+| PU-10 | Nomor, pesan, sisa, jatuh tempo, tagihan lunas, batas catatan membuka tautan | Belum dilaksanakan |
+| PU-11 | Sumber tunggal, penyerahan, penerimaan pusat, setoran bank, pendapatan tidak ganda | Belum dilaksanakan |
+| PU-12 | Filter, keadaan kosong, angka sesuai sumber, cabang historis | Belum dilaksanakan |
+| PU-13 | Satu sumber per mutasi, nominal penuh, referensi berulang, pengecualian penggabungan/pemecahan | Belum dilaksanakan |
+| PU-14 | Peran/cabang, penonaktifan, tahun aktif, rekening resmi, tentor lintas cabang | Belum dilaksanakan |
+
+Seluruh dua puluh tiga tabel rancangan terhubung dengan setidaknya satu kebutuhan pada matriks ini. Cakupan tersebut menunjukkan hubungan dokumentasi, bukan bukti bahwa skema fisik, aplikasi, atau kebijakan bisnis telah lulus pengujian.
+
+## 6. Hubungan dengan rumusan masalah Bab 1
+
+Pemetaan menggunakan tiga rumusan masalah pada Bab 1 yang tersedia. Rumusan masalah ketiga dievaluasi melalui pengujian dan UAT, sehingga tidak memerlukan tabel operasional khusus bernama penelitian.
+
+| Rumusan masalah | Dukungan rancangan | Bukti yang diperlukan |
+| :--- | :--- | :--- |
+| RM-1 Integrasi pendaftaran, pembayaran, dan jadwal multicabang | UC-00 sampai UC-09 dan UC-13 | Transaksi lintas modul serta pemeriksaan akses, kapasitas, jadwal, pembayaran |
+| RM-2 Pemantauan pusat dan pencocokan penerimaan dengan mutasi | UC-08, UC-10, UC-11, UC-12 | Rekap sesuai sumber, keputusan pemeriksaan, pasangan sumber-mutasi |
+| RM-3 Kesesuaian prototipe melalui pengujian dan penerimaan | PU-01 sampai PU-14 dan UAT-01 sampai UAT-14 | Hasil aktual, bukti, catatan peserta, keputusan, dan tindak lanjut |
+
+Bab 1 lama menyebut verifikasi transfer oleh Admin Cabang, sedangkan dokumen ini menggunakan usulan pemeriksaan pusat. Batasan Bab 1 disesuaikan setelah kewenangan rekening dipastikan, bukan dengan menganggap rancangan baru sudah menjadi fakta proses berjalan.
+
+## 7. Peta migrasi rancangan sebelumnya
+
+Kode diperbarui untuk memisahkan tujuan yang sebelumnya bercampur. Peta ini membantu menelusuri gambar dan catatan lama, sehingga nomor terdahulu tidak dipakai bergantian dengan nomor baru tanpa keterangan.
+
+| Kode lama | Rancangan baru | Perubahan |
+| :--- | :--- | :--- |
+| UC-00 | UC-00 | Alur keluar dan pemeriksaan objek dilengkapi |
+| UC-01 | UC-12 | Dasbor sesuai cakupan kedua peran |
+| UC-02, UC-02A, UC-02B | UC-01, UC-05 | Identitas terpisah dari tagihan; potongan tidak global; cetak bukti pendukung bila digunakan |
+| UC-03, UC-03A, UC-03B | UC-02, UC-03, UC-04 | Kelas, keanggotaan, jadwal terpisah; validasi menjadi langkah |
+| UC-03C | Di luar inti | Daftar tunggu/promosi otomatis belum ditetapkan |
+| UC-04, UC-04A, UC-04B | UC-05, UC-06, UC-07, UC-08 | Tagihan, tunai, pengajuan, keputusan, kuitansi dibedakan |
+| UC-04C | UC-09 | Tautan manual menggantikan pengingat otomatis |
+| UC-05, UC-05C | UC-01, UC-03 | Status siswa dan keanggotaan terpisah |
+| UC-05A, UC-05B | UC-12; kartu anggota di luar inti | Rekap pendukung tetap sesuai kebutuhan |
+| UC-06, UC-07 | UC-12 | Filter dan dasar angka disamakan |
+| UC-08, UC-08A | UC-08, UC-10, UC-11 | Verifikasi, kas, dan mutasi terpisah |
+| UC-09, UC-09A | UC-04, UC-12 | Durasi tanpa ambang beban yang belum disahkan |
+| UC-10 | UC-02, UC-13 | Data cabang/ruang tetap; integrasi publik di luar inti |
+| UC-11 | UC-02, UC-05, UC-13 | Pengaturan sesuai penyimpanan tersedia; templat awal melalui konfigurasi |
+| UC-12 | UC-13 | Akun dan penugasan terlacak |
+
+Learning_programs, capacity_rules, discount_rules, dan wa_templates tidak lagi dirujuk sebagai tabel yang tersedia. Program menjadi atribut berkode, kapasitas berada pada kelas, potongan aktual pada tagihan, dan redaksi pesan awal pada konfigurasi aplikasi.
+
+## 8. Klarifikasi mitra dan acuan pemeriksaan
+
+| Topik belum final | Pertanyaan | Dampak |
+| :--- | :--- | :--- |
+| Pemeriksa transfer | Siapa berhak melihat rekening dan mengambil keputusan? | Penetapan pemeriksa dan batasan Bab 1 |
+| Pembayaran sebagian | Apakah cicilan diperbolehkan dan untuk biaya apa? | Aturan alokasi dan kuitansi |
+| Tarif | Faktor cabang, sesi, program, jenjang, dan periode mana yang berlaku? | Pemilihan tarif dan data uji |
+| Potongan | Nominal, pemberi persetujuan, serta sekali atau berulang? | Nilai dan persetujuan pada tagihan |
+| Kapasitas | Berapa batas kelas dan ambang sisa tempat? | Kelayakan ruang dan indikator |
+| Kas | Siapa penyerah/penerima, bagaimana bukti, dan kapan masuk bank? | Pelaksana serta bukti cash_batches |
+| Batas pencocokan | Apakah mutasi sering mencakup beberapa sumber atau sebaliknya? | Kelayakan satu banding satu dan kemungkinan perubahan lingkup |
+| Lintas cabang | Apakah siswa boleh lintas cabang dan siapa memutuskan? | Keanggotaan dan riwayat transaksi |
+
+Dasar pemeriksaan tersedia pada [audit kesesuaian sebelumnya](<C:/Users/ARIEL/OneDrive - MSFT/Documents/ARTHA/DOKUMEN MD/AUDIT_KESESUAIAN_2026-10-25/AUDIT KESESUAIAN USE CASE DAN BASIS DATA TERHADAP BAB 1.md>). Lokator wawancara mengenai tarif, diskon, kapasitas, laporan, bukti, dan jatuh tempo tersedia pada penunjuk bukti audit tersebut.
+
+Penyimpanan mengikuti [rancangan basis data yang diperbarui](<C:/Users/ARIEL/OneDrive - MSFT/Documents/ARTHA/DOKUMEN MD/PERANCANGAN BASIS DATA (SKEMA & ERD).md>). Ringkasan kebutuhan, gambar, dan evaluasi ditempatkan pada [Bab 3](<C:/Users/ARIEL/OneDrive - MSFT/Documents/ARTHA/BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md>), sedangkan skenario ini menjadi dokumen pendamping.

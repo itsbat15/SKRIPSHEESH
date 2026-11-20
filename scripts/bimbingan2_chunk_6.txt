@@ -1,0 +1,500 @@
+[01:02:03 - 01:02:04] pernah menggunakan
+[01:02:04 - 01:02:04] sistem
+[01:02:04 - 01:02:05] dan juga
+[01:02:05 - 01:02:06] proses bisnisnya
+[01:02:06 - 01:02:06] itu udah jelas
+[01:02:06 - 01:02:07] di awal
+[01:02:07 - 01:02:23] dan akhirnya
+[01:02:23 - 01:02:23] saya tebelin
+[01:02:23 - 01:02:24] bahwasannya
+[01:02:24 - 01:02:24] memang
+[01:02:24 - 01:02:25] yang saya buat ini
+[01:02:25 - 01:02:28] yang saya cari
+[01:02:28 - 01:02:29] itu belum ada
+[01:02:29 - 01:02:29] untuk di
+[01:02:29 - 01:02:30] multi cabang
+[01:02:30 - 01:02:31] di siap bimbel
+[01:02:31 - 01:02:32] yang ada
+[01:02:32 - 01:02:33] untuk integrasi
+[01:02:33 - 01:02:33] data
+[01:02:33 - 01:02:57] di siap bimbel
+[01:02:57 - 01:02:58] di siap bimbel
+[01:02:58 - 01:03:04] di siap bimbel
+[01:03:04 - 01:03:05] di siap bimbel
+[01:03:05 - 01:03:15] di siap bimbel
+[01:03:15 - 01:03:16] di siap bimbel
+[01:03:16 - 01:03:17] sama perbandingan
+[01:03:17 - 01:03:17] dari
+[01:03:17 - 01:03:19] metode yang lain
+[01:03:19 - 01:03:28] saya juga
+[01:03:28 - 01:03:29] menanyakan
+[01:03:29 - 01:03:29] ini
+[01:03:29 - 01:03:30] kalau penggunaan ini
+[01:03:30 - 01:03:31] boleh kan
+[01:03:31 - 01:03:33] yang menggunakan titik koma
+[01:03:33 - 01:03:33] ini
+[01:03:33 - 01:03:35] untuk menjelaskan
+[01:03:35 - 01:03:36] kesinambungan
+[01:03:36 - 01:03:37] per kali
+[01:03:37 - 01:03:38] ini
+[01:03:38 - 01:03:40] ada beberapa
+[01:03:40 - 01:03:40] kondisi
+[01:03:40 - 01:04:03] coba
+[01:04:03 - 01:04:05] nanti bisa ditambahkan
+[01:04:05 - 01:04:05] inilah
+[01:04:05 - 01:04:07] kayaknya
+[01:04:07 - 01:04:08] referensinya
+[01:04:08 - 01:04:08] kurang
+[01:04:08 - 01:04:09] disitu
+[01:04:09 - 01:04:10] justifikasi
+[01:04:10 - 01:04:11] dari referensi
+[01:04:11 - 01:04:11] mana
+[01:04:11 - 01:04:13] oke
+[01:04:13 - 01:04:14] citasinya
+[01:04:14 - 01:04:15] ditambahin ya
+[01:04:15 - 01:04:18] dari
+[01:04:18 - 01:04:18] rujukan
+[01:04:18 - 01:04:19] teori
+[01:04:19 - 01:04:20] gitu ya
+[01:04:20 - 01:04:21] kalau buku
+[01:04:21 - 01:04:21] gak apa
+[01:04:21 - 01:04:22] kan di tahun
+[01:04:22 - 01:04:23] 2000-an
+[01:04:23 - 01:04:31] penambahan lagi
+[01:04:31 - 01:04:31] kenapa
+[01:04:31 - 01:04:32] saya menggunakan
+[01:04:32 - 01:04:33] PXP
+[01:04:33 - 01:04:47] PXP
+[01:04:47 - 01:04:48] nanti pelajari
+[01:04:48 - 01:04:49] dari
+[01:04:49 - 01:04:50] pengembang
+[01:04:50 - 01:04:51] metodenya ya
+[01:04:51 - 01:04:52] yang di bab 2
+[01:04:52 - 01:04:54] saya tahu
+[01:04:54 - 01:04:55] itu di
+[01:04:55 - 01:04:56] pengembangan
+[01:04:56 - 01:04:56] PXP
+[01:04:56 - 01:04:59] pertama kali
+[01:04:59 - 01:04:59] itu 2009
+[01:04:59 - 01:05:00] nah itu
+[01:05:00 - 01:05:01] coba nanti cari
+[01:05:01 - 01:05:02] jurnal
+[01:05:02 - 01:05:02] atau buku
+[01:05:02 - 01:05:03] gitu
+[01:05:03 - 01:05:04] jadi nanti
+[01:05:04 - 01:05:05] dari sisi
+[01:05:05 - 01:05:06] tinjauan perusahaan
+[01:05:06 - 01:05:07] untuk metode
+[01:05:07 - 01:05:07] tetap
+[01:05:07 - 01:05:07] rujukan
+[01:05:07 - 01:05:08] utamanya
+[01:05:08 - 01:05:09] dari pengembang
+[01:05:09 - 01:05:09] metode
+[01:05:09 - 01:05:10] nanti
+[01:05:10 - 01:05:11] kalau dari sisi
+[01:05:11 - 01:05:12] implementasi
+[01:05:12 - 01:05:14] penerapan tahapan
+[01:05:14 - 01:05:15] misalkan gitu
+[01:05:15 - 01:05:16] seperti ini ya
+[01:05:16 - 01:05:17] boleh lah
+[01:05:17 - 01:05:18] pakai yang lebih baru
+[01:05:18 - 01:05:25] misalkan seperti
+[01:05:25 - 01:05:26] di mana yang
+[01:05:26 - 01:05:26] terakhir kemarin
+[01:05:26 - 01:05:28] itu saya jadikan
+[01:05:28 - 01:05:30] awalnya lima
+[01:05:30 - 01:05:30] bu
+[01:05:30 - 01:05:31] sebenarnya saya jadikan
+[01:05:31 - 01:05:31] tiga
+[01:05:31 - 01:05:33] untuk
+[01:05:33 - 01:05:35] memandatkan
+[01:05:35 - 01:05:36] rumusan masalah
+[01:05:36 - 01:05:36] yang sebelumnya
+[01:05:36 - 01:05:39] itu dari
+[01:05:39 - 01:05:40] merancang protokat
+[01:05:40 - 01:05:41] untuk sisi
+[01:05:41 - 01:05:42] dari staff
+[01:05:42 - 01:05:43] operasionalnya
+[01:05:43 - 01:05:45] si adminnya
+[01:05:45 - 01:05:46] terus yang keluar
+[01:05:46 - 01:05:46] ini dari
+[01:05:46 - 01:05:47] super admin
+[01:05:47 - 01:05:52] atau sebenarnya
+[01:05:52 - 01:05:53] dari dua
+[01:05:53 - 01:05:54] poin ini
+[01:05:54 - 01:05:55] jadikan satu
+[01:05:55 - 01:05:57] ini dari sudut
+[01:05:57 - 01:05:58] panah aktor
+[01:05:58 - 01:05:58] ya
+[01:05:58 - 01:05:59] ya sudut
+[01:05:59 - 01:06:00] panah aktornya
+[01:06:00 - 01:06:00] sama
+[01:06:00 - 01:06:01] bisa dibilang
+[01:06:01 - 01:06:02] fitur yang
+[01:06:02 - 01:06:02] menanti
+[01:06:02 - 01:06:04] ada
+[01:06:04 - 01:06:05] itu seperti
+[01:06:05 - 01:06:07] soalnya
+[01:06:07 - 01:06:08] kata kerjanya
+[01:06:08 - 01:06:09] disini
+[01:06:09 - 01:06:10] hanya menyebutkan
+[01:06:10 - 01:06:10] merancang
+[01:06:10 - 01:06:11] gitu loh
+[01:06:11 - 01:06:12] saya khawatirnya
+[01:06:12 - 01:06:14] kalau dalam konteks
+[01:06:14 - 01:06:15] SDLC
+[01:06:15 - 01:06:16] merancang itu
+[01:06:16 - 01:06:16] kan gak sampai
+[01:06:16 - 01:06:17] selesai
+[01:06:17 - 01:06:18] ya
+[01:06:18 - 01:06:18] harusnya sampai
+[01:06:18 - 01:06:19] ke kemudian
+[01:06:19 - 01:06:20] gak ada
+[01:06:20 - 01:06:20] proses
+[01:06:20 - 01:06:21] developmentnya
+[01:06:21 - 01:06:21] gitu
+[01:06:21 - 01:06:23] jadi kalau
+[01:06:23 - 01:06:23] misalkan
+[01:06:23 - 01:06:24] kata kerjanya
+[01:06:24 - 01:06:25] hanya merancang
+[01:06:25 - 01:06:25] khawatirnya
+[01:06:25 - 01:06:26] nanti salah
+[01:06:26 - 01:06:27] interpretasi
+[01:06:27 - 01:06:27] gitu
+[01:06:27 - 01:06:28] jadi
+[01:06:28 - 01:06:29] jangan hanya
+[01:06:29 - 01:06:29] merancang
+[01:06:29 - 01:06:30] tapi kan
+[01:06:30 - 01:06:30] lebih ke
+[01:06:30 - 01:06:31] mengembangkan
+[01:06:31 - 01:06:31] prototipenya
+[01:06:31 - 01:06:31] juga
+[01:06:31 - 01:06:32] kan
+[01:06:32 - 01:06:33] mengembangkan
+[01:06:33 - 01:06:33] atau
+[01:06:33 - 01:06:34] membangun
+[01:06:34 - 01:06:39] kemarin saya
+[01:06:39 - 01:06:40] menambahin
+[01:06:40 - 01:06:40] merancang
+[01:06:40 - 01:06:41] dan
+[01:06:41 - 01:06:41] membangun
+[01:06:41 - 01:06:42] mengembangkan
+[01:06:42 - 01:06:44] mengembangkan
+[01:06:44 - 01:06:45] mengembangkan
+[01:06:45 - 01:06:46] mengembangkan
+[01:06:46 - 01:06:47] mengembangkan
+[01:06:47 - 01:06:48] mengembangkan
+[01:06:48 - 01:06:49] mengembangkan
+[01:06:49 - 01:06:51] pxp-nya
+[01:06:51 - 01:06:53] pxp-nya belum ada disebutkan
+[01:06:53 - 01:06:54] tergantung
+[01:06:54 - 01:06:56] tergantung dibentuk
+[01:06:56 - 01:06:57] prototipenya
+[01:06:57 - 01:06:58] tergantung dibentuk
+[01:06:58 - 01:06:59] prototipenya
+[01:06:59 - 01:07:00] ini ya
+[01:07:00 - 01:07:01] PTA-nya
+[01:07:01 - 01:07:02] kalau misalkan
+[01:07:02 - 01:07:03] kalau prototipenya
+[01:07:03 - 01:07:04] sebenarnya harapannya itu
+[01:07:04 - 01:07:05] nanti bisa deployment sampai ke real user
+[01:07:05 - 01:07:06] jadi kalau memang targetnya mau itu
+[01:07:06 - 01:07:07] mengembangkan
+[01:07:07 - 01:07:10] ini merancangnya kan udah
+[01:07:10 - 01:07:11] maksudnya udah include di dalam tahapan
+[01:07:11 - 01:07:13] si pxp-nya sendiri kan sebenarnya
+[01:07:13 - 01:07:44] coba kau tujuan ya sebenarnya
+[01:07:44 - 01:07:51] pxp-nya belum ada disebutkan
+[01:07:51 - 01:07:53] kalau menurut saya sih
+[01:07:53 - 01:07:55] lebih baik tetap disebutkan
+[01:07:55 - 01:07:57] ini judulnya apa sebenarnya?
+[01:07:57 - 01:07:59] rancang bangun
+[01:07:59 - 01:08:00] informasi
+[01:08:00 - 01:08:01] manajemen dashboard
+[01:08:01 - 01:08:03] operasional
+[01:08:03 - 01:08:04] berbasis web
+[01:08:04 - 01:08:05] studi kasus
+[01:08:05 - 01:08:06] harta
+[01:08:06 - 01:08:08] tidak disebutkan metodenya
+[01:08:08 - 01:08:09] oh ada metodenya
+[01:08:09 - 01:08:10] yang akan menggunakan metode
+[01:08:10 - 01:08:11] peralasan
+[01:08:11 - 01:08:13] kalau menurut saya
+[01:08:13 - 01:08:14] kalau untuk
+[01:08:14 - 01:08:15] ini ya
+[01:08:15 - 01:08:16] apa namanya
+[01:08:16 - 01:08:17] teman-teman TAS1
+[01:08:17 - 01:08:18] lebih baik metode itu dimasukkan
+[01:08:18 - 01:08:19] di judul
+[01:08:19 - 01:08:20] nah
+[01:08:20 - 01:08:21] jadi nanti
+[01:08:21 - 01:08:22] di bagian
+[01:08:22 - 01:08:23] tujuan
+[01:08:23 - 01:08:24] rumusan dan tujuan ini
+[01:08:24 - 01:08:27] metode itu disebutkan juga
+[01:08:27 - 01:08:29] per butirnya bu
+[01:08:29 - 01:08:30] atau
+[01:08:30 - 01:08:34] yang berhubungan sama pxp-nya
+[01:08:34 - 01:08:35] kalau ini kan
+[01:08:35 - 01:08:36] di tahapan ini 3
+[01:08:36 - 01:08:39] menggunakan blackbook sama IWT
+[01:08:39 - 01:08:42] karena ini kan fokusnya di pengujian
+[01:08:42 - 01:08:43] kalau di pengembangan
+[01:08:43 - 01:08:47] misalnya yang pxp-nya itu disebutkan di badan pengembangan
+[01:08:47 - 01:08:52] atau sebenarnya bisa di
+[01:08:52 - 01:08:53] apa ya
+[01:08:53 - 01:08:54] mungkin diatur lagi
+[01:08:54 - 01:08:55] cara penyusunan
+[01:08:55 - 01:08:57] rumusan masalah dan tujuannya itu
+[01:08:57 - 01:08:58] dibalik gitu
+[01:08:58 - 01:08:59] misalkan
+[01:08:59 - 01:09:00] poin 1 dan 2 ini kan
+[01:09:00 - 01:09:01] sebenarnya sama
+[01:09:01 - 01:09:02] cuma fokus aktornya aja kan
+[01:09:02 - 01:09:03] ini berbeda gitu
+[01:09:03 - 01:09:04] tapi sama-sama fokus ke
+[01:09:04 - 01:09:06] pengembangan sistemnya
+[01:09:06 - 01:09:11] yang nanti bisa menyelesaikan beberapa poin masalah itu tadi
+[01:09:11 - 01:09:12] tapi
+[01:09:12 - 01:09:13] untuk
+[01:09:13 - 01:09:14] untuk
+[01:09:14 - 01:09:15] untuk
+[01:09:15 - 01:09:16] untuk
+[01:09:16 - 01:09:17] untuk
+[01:09:17 - 01:09:18] untuk
+[01:09:18 - 01:09:20] untuk
+[01:09:20 - 01:09:22] cara menuliskan
+[01:09:22 - 01:09:23] menurut saya
+[01:09:23 - 01:09:24] berarti opsinya
+[01:09:24 - 01:09:25] pilihan itu
+[01:09:25 - 01:09:26] ada
+[01:09:26 - 01:09:27] ada
+[01:09:27 - 01:09:29] karena ini sebenarnya 1 dan 2 ini
+[01:09:29 - 01:09:30] sama-sama fitur kan
+[01:09:30 - 01:09:31] sebenarnya
+[01:09:31 - 01:09:33] fitur dari sisi aktor yang berbeda
+[01:09:33 - 01:09:34] kalau yang bawah itu kan
+[01:09:34 - 01:09:35] ngomongin tingkat kesesuaian
+[01:09:35 - 01:09:36] berbeda lagi
+[01:09:36 - 01:09:40] berarti nggak apa-apa kalau misalkan digabung itu
+[01:09:40 - 01:09:41] iya
+[01:09:41 - 01:09:42] nggak apa-apa sih
+[01:09:42 - 01:09:44] kalau mau digabung
+[01:09:44 - 01:09:45] jadi sebenarnya
+[01:09:45 - 01:09:47] poin 1 itu fokus di pengembangan
+[01:09:47 - 01:09:48] prototipenya
+[01:09:48 - 01:09:50] yang nanti dapat menyelesaikan masalah apa
+[01:09:50 - 01:09:51] gitu kan
+[01:09:51 - 01:09:53] poin kedua
+[01:09:53 - 01:09:54] berarti nanti
+[01:09:54 - 01:09:56] fokus untuk mengevaluasi
+[01:09:56 - 01:09:58] tadi kesesuaian dari hasil
+[01:09:58 - 01:09:59] prototipe
+[01:09:59 - 01:10:02] dengan proses bisnis yang berjalan
+[01:10:02 - 01:10:03] misalkan seperti itu
+[01:10:03 - 01:10:10] tujuannya menyesuaikan
+[01:10:10 - 01:10:11] iya
+[01:10:11 - 01:10:15] jadi kalau misalkan tujuannya
+[01:10:15 - 01:10:16] tadi di rumah masalah-masalah itu
+[01:10:16 - 01:10:17] merancang
+[01:10:17 - 01:10:18] eh sorry
+[01:10:18 - 01:10:19] di mengembangkan
+[01:10:19 - 01:10:20] berarti nomor 1
+[01:10:20 - 01:10:21] mengembangkan juga gitu
+[01:10:21 - 01:10:22] iya
+[01:10:22 - 01:10:25] karena kalau cuma merancang itu kan
+[01:10:25 - 01:10:26] definisinya
+[01:10:26 - 01:10:27] hanya sebatas
+[01:10:27 - 01:10:28] apa ya
+[01:10:28 - 01:10:29] awalnya doang
+[01:10:29 - 01:10:30] iya awalnya aja kan
+[01:10:30 - 01:10:32] mungkin hanya sebatas
+[01:10:32 - 01:10:33] analisis kebutuhannya saja
+[01:10:33 - 01:10:35] kan tetap merancang juga
+[01:10:35 - 01:10:36] gak nyata
+[01:10:36 - 01:10:37] tapi kalau memang sampai jadi
+[01:10:37 - 01:10:38] sistemnya
+[01:10:38 - 01:10:39] dan nanti
+[01:10:39 - 01:10:40] harapannya targetnya juga
+[01:10:40 - 01:10:41] dipeluhi
+[01:10:41 - 01:10:42] itu menurut saya
+[01:10:42 - 01:10:43] pakai kata kerja
+[01:10:43 - 01:10:45] lebih tinggi aja
+[01:10:45 - 01:10:46] karena kan pasti merancang
+[01:10:46 - 01:10:47] ter-cover di dalam situ
+[01:10:47 - 01:10:48] udah bawaan dari
+[01:10:48 - 01:10:49] metodenya gitu
+[01:10:49 - 01:10:50] iya
+[01:10:50 - 01:10:51] oke
+[01:10:51 - 01:10:55] akhirnya ada batasan
+[01:10:55 - 01:10:56] ini saya ada buat lima
+[01:10:56 - 01:10:59] yang pertama dari
+[01:10:59 - 01:11:00] aktornya
+[01:11:00 - 01:11:02] terus
+[01:11:02 - 01:11:03] ini juga
+[01:11:03 - 01:11:04] nomor poin 2 ini
+[01:11:04 - 01:11:05] kayak
+[01:11:05 - 01:11:06] planasi
+[01:11:06 - 01:11:07] genderis
+[01:11:07 - 01:11:08] kalau misalkan
+[01:11:08 - 01:11:09] interpretasi
+[01:11:09 - 01:11:10] dari orang itu
+[01:11:10 - 01:11:11] jangan sampai ke
+[01:11:11 - 01:11:12] dari
+[01:11:12 - 01:11:13] pembelajaran online
+[01:11:13 - 01:11:14] dengan soal
+[01:11:14 - 01:11:15] sama
+[01:11:18 - 01:11:45] poin 5 itu
+[01:11:45 - 01:11:46] kenapa
+[01:11:46 - 01:11:48] dituliskan
+[01:11:48 - 01:11:49] karena
+[01:11:49 - 01:11:50] saya juga
+[01:11:50 - 01:11:51] takutnya
+[01:11:51 - 01:11:52] ada yang
+[01:11:52 - 01:11:53] dari datanya
+[01:11:53 - 01:11:54] sudah ada
+[01:11:54 - 01:11:55] karena udah 18 tahun
+[01:11:55 - 01:11:56] dari
+[01:11:56 - 01:11:57] 1990
+[01:11:57 - 01:11:58] tapi
+[01:11:58 - 01:11:59] saya
+[01:11:59 - 01:12:00] perlu
+[01:12:00 - 01:12:01] nambahin lagi
+[01:12:01 - 01:12:02] ke dalam sistem yang baru
+[01:12:02 - 01:12:03] atau
+[01:12:03 - 01:12:04] gak perlu
+[01:12:04 - 01:12:05] gini
+[01:12:05 - 01:12:06] kalau kita
+[01:12:06 - 01:12:07] ngembangkan sistem
+[01:12:07 - 01:12:08] itu
+[01:12:08 - 01:12:09] masalah deploy
+[01:12:09 - 01:12:10] dengan data
+[01:12:10 - 01:12:11] dengan
+[01:12:11 - 01:12:12] deploy sampai
+[01:12:12 - 01:12:13] environment
+[01:12:13 - 01:12:14] menurut saya
+[01:12:14 - 01:12:15] itu kondisi yang
+[01:12:15 - 01:12:16] berbeda
+[01:12:16 - 01:12:17] kalau misalkan
+[01:12:17 - 01:12:18] ketika ini
+[01:12:18 - 01:12:19] dideploy
+[01:12:19 - 01:12:20] apakah datanya
+[01:12:20 - 01:12:21] harus kita juga yang
+[01:12:21 - 01:12:22] menginputkan
+[01:12:22 - 01:12:23] menurut saya itu
+[01:12:23 - 01:12:24] di luar skop penelitian
+[01:12:24 - 01:12:25] kita kan
+[01:12:25 - 01:12:26] apa namanya
+[01:12:26 - 01:12:28] yang harus dilakukan
+[01:12:28 - 01:12:29] membangun sistem
+[01:12:29 - 01:12:30] yang memang
+[01:12:30 - 01:12:31] kebutuhannya sesuai
+[01:12:31 - 01:12:32] dengan apa yang dibutuhkan
+[01:12:32 - 01:12:33] tadi misalkan
+[01:12:33 - 01:12:34] contoh dari sisi
+[01:12:34 - 01:12:35] kebutuhan data
+[01:12:35 - 01:12:36] kebutuhan data
+[01:12:36 - 01:12:37] yang mereka laporkan
+[01:12:37 - 01:12:38] ini loh atributnya
+[01:12:38 - 01:12:39] terus nanti yang akan kita
+[01:12:39 - 01:12:40] gunakan di database
+[01:12:40 - 01:12:41] kurang lebih sama
+[01:12:41 - 01:12:42] seperti itu
+[01:12:42 - 01:12:43] kewajiban kita itu
+[01:12:43 - 01:12:44] hanya
+[01:12:44 - 01:12:45] meng-transferkan itu
+[01:12:45 - 01:12:46] menurut saya
+[01:12:46 - 01:12:47] tapi bagaimana
+[01:12:47 - 01:12:48] real data itu
+[01:12:49 - 01:12:50] dimigrasikan
+[01:12:50 - 01:12:51] itu menurut saya
+[01:12:51 - 01:12:52] persoalan lain
+[01:12:52 - 01:12:53] dan mungkin
+[01:12:53 - 01:12:54] kalau misalkan
+[01:12:54 - 01:12:55] mau dibantu
+[01:12:55 - 01:12:56] ya itu di luar skop penelitian
+[01:12:56 - 01:12:57] artinya
+[01:12:57 - 01:12:58] sampai itu nanti
+[01:12:58 - 01:12:59] jadi masuk ke dalam
+[01:12:59 - 01:13:00] timeline itu
+[01:13:00 - 01:13:01] karena itu kan
+[01:13:01 - 01:13:02] nggak bisa cepat ya
+[01:13:02 - 01:13:03] kerjakan itu
+[01:13:03 - 01:13:04] dan tentu juga
+[01:13:04 - 01:13:05] mereka juga
+[01:13:05 - 01:13:06] iya
+[01:13:06 - 01:13:07] available
+[01:13:07 - 01:13:08] dan berkenan juga
+[01:13:08 - 01:13:09] untuk dibantu
+[01:13:09 - 01:13:10] misalkan ya
+[01:13:10 - 01:13:11] jadi
+[01:13:11 - 01:13:12] paling tidak
+[01:13:12 - 01:13:13] dari sisi
+[01:13:13 - 01:13:14] apa yang harus
+[01:13:14 - 01:13:15] ter input di sistem
+[01:13:15 - 01:13:16] itu udah sama
+[01:13:16 - 01:13:17] sesuai dengan
+[01:13:17 - 01:13:18] kebutuhan mereka
+[01:13:18 - 01:13:19] masalah nanti
+[01:13:19 - 01:13:20] mereka punya data
+[01:13:20 - 01:13:21] dan itu mau digabungkan
+[01:13:21 - 01:13:22] ya kita
+[01:13:22 - 01:13:23] mengakomodir
+[01:13:23 - 01:13:24] gimana nanti
+[01:13:24 - 01:13:25] kalau misalkan
+[01:13:25 - 01:13:26] memang mereka ada data
+[01:13:26 - 01:13:27] dan mau dimasukkan ke sana
+[01:13:27 - 01:13:28] yang besar gitu
+[01:13:28 - 01:13:29] jangan sampai dia input
+[01:13:29 - 01:13:30] satu-satu kan
+[01:13:30 - 01:13:31] mungkin difasilitasi
+[01:13:31 - 01:13:32] bisa di import
+[01:13:32 - 01:13:33] dengan berbagai
+[01:13:33 - 01:13:34] inilah
+[01:13:34 - 01:13:35] macam-macam
+[01:13:35 - 01:13:36] tipe file
+[01:13:36 - 01:13:37] misalkan
+[01:13:37 - 01:13:38] itu difasilitasi
+[01:13:38 - 01:13:39] dan
+[01:13:39 - 01:13:40] mungkin nanti
+[01:13:40 - 01:13:41] ketika pengujian
+[01:13:41 - 01:13:42] dilakukan
+[01:13:42 - 01:13:43] itu harus
+[01:13:43 - 01:13:45] diajarkan
+[01:13:45 - 01:13:46] barangkali
+[01:13:46 - 01:13:47] gitu ya
+[01:13:47 - 01:13:48] usernya
+[01:13:48 - 01:13:49] gimana caranya
+[01:13:49 - 01:13:50] kalian bisa menurutkan
+[01:13:50 - 01:13:51] jadi sistem itu udah
+[01:13:51 - 01:13:52] siap pakai
+[01:13:52 - 01:13:53] kalau masalah data
+[01:13:53 - 01:13:54] misalnya itu
+[01:13:54 - 01:13:55] jadi tanggung jawab mereka sih
+[01:13:55 - 01:13:56] kalau memang mereka
+[01:13:56 - 01:13:57] mau digabung itu
+[01:13:57 - 01:13:58] ya gak masalah
+[01:13:58 - 01:13:59] tapi dilusuk
+[01:13:59 - 01:14:00] oke
+[01:14:00 - 01:14:01] berarti kalau misalkan
+[01:14:01 - 01:14:02] hanya empat
+[01:14:02 - 01:14:03] gak masalah
+[01:14:03 - 01:14:04] gak masalah
+[01:14:04 - 01:14:05] dan kalaupun nanti
+[01:14:05 - 01:14:06] ketika ini jadi
+[01:14:06 - 01:14:07] terus pakai data dummy
+[01:14:07 - 01:14:08] saja gak masalah juga
+[01:14:08 - 01:14:09] gitu
+[01:14:09 - 01:14:11] gak harus data real juga
+[01:14:11 - 01:14:13] ya asal tadi
+[01:14:13 - 01:14:14] atribut datanya sih
+[01:14:14 - 01:14:15] yang pasti
+[01:14:15 - 01:14:16] yang harus benar
+[01:14:16 - 01:14:23] karena ada beberapa kolom atau data ini
+[01:14:23 - 01:14:24] perlu format data
+[01:14:24 - 01:14:26] yang ada saat ini
+[01:14:26 - 01:14:27] terus nanti
+[01:14:27 - 01:14:28] pada akhirnya
+[01:14:28 - 01:14:29] anda yang saya rekomendasikan
+[01:14:29 - 01:14:30] dan dari mitra
+[01:14:30 - 01:14:31] juga

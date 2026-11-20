@@ -1,0 +1,685 @@
+[00:00 - 00:04] Tidak ada laporan, tidak ngasih berapa saja.
+[00:05 - 00:16] Tidik, langsung menjelaskannya ya Pak?
+[00:16 - 00:19] Ini kamu yang itu ya?
+[00:19 - 00:20] Tidk, apa?
+[00:20 - 00:21] Lapsat, apa sih?
+[00:22 - 00:30] Jadi kemarin sudah ada si Ziru untuk dari laporansi belum diambil juga, kalau pindah dengan kurgensi yang sebenarnya memang.
+[00:31 - 00:36] Tapi pertama-tama saya mau nanya terguna aku kalau mengvalidasi bosannya
+[00:36 - 00:41] Jadi, biasanya merupakan perusahaan berarti untuk yang prototype sama
+[00:43 - 00:48] Kalau beda prototipe dengan proyek itu
+[00:48 - 00:51] Prototipnya sudah harus diuji
+[00:51 - 00:55] Ditesting dengan user asli konsumen
+[00:55 - 00:57] Jadi, sudah di-publish dan diuji
+[00:58 - 00:59] Ada pengujian
+[01:00 - 01:02] Kalau misalkan belum sampai tahap situ
+[01:02 - 01:04] Pengujian yang penting sudah ada sistemnya
+[01:04 - 01:06] Hanya dari internal
+[01:06 - 01:07] Dengan sini dan sana
+[01:07 - 01:08] Itu cukup proyeks
+[01:09 - 01:15] Dapat itu prototep karena kalau dia proyek gak sesuai
+[01:16 - 01:20] Karena website ini sudah publis, sudah menghasilkan
+[01:21 - 01:23] Kalau jadi proyekt, buat apa?
+[01:24 - 01:25] Kan kita mau langsung dipaket
+[01:26 - 01:28] Kalau prototip itu langsung di uji testing berdana
+[01:29 - 01:31] Di uji juga dengan real kasusnya
+[01:32 - 01:33] Nambah berita apakah pencarian itu
+[01:34 - 01:35] Nah itu di prototop
+[01:36 - 01:38] Kalau saya mungkin nanya tampan awal prototope apa
+[01:38 - 01:40] proyek dulu aja
+[01:40 - 01:42] karena gue banyak, lebih besar di prototel
+[01:44 - 01:46] karena nanti diuji langsung pengguna
+[01:48 - 01:50] karena nantinya yang diuji
+[01:50 - 01:52] nah justru nanti lama dia
+[01:52 - 01:54] berita itu sudah berapa ratus
+[01:54 - 01:56] nah dia masukin satu-satu
+[01:56 - 01:59] karena kalo dimigrasi
+[01:59 - 02:01] mikir-mikir susah banget
+[02:01 - 02:03] gambarnya itu di neon
+[02:03 - 02:05] sama aja neon
+[02:05 - 02:07] didalam database cuma link-link
+[02:07 - 02:09] yang gimana kok? otomatis, mau gak mau
+[02:10 - 02:11] ya ambil satu persatu
+[02:13 - 02:16] tapi gak tau kalau dia punya cara yang gampang pake strapping data atau apa
+[02:16 - 02:18] langsung nanti dijalankan strappingnya
+[02:18 - 02:19] langsung dia masuk sendiri
+[02:20 - 02:21] silahkan
+[02:21 - 02:23] cuma resikonya ditanggalnya
+[02:23 - 02:24] gak boleh salah
+[02:25 - 02:27] itu loh sudah kontrak dibayar
+[02:28 - 02:30] misalkan dari layak minta tanggal ini
+[02:30 - 02:32] gak boleh kita mundur kan
+[02:32 - 02:33] masalah kita makin
+[02:34 - 02:35] jadi gak bisa si hati ditanggap
+[02:35 - 02:39] Saya kemarin mundur aja, dicek gak ketemu langsung mereka komplain
+[02:39 - 02:45] Karena ada wartawannya ngedit kan tanggalnya dikembalikan lagi defaultnya
+[02:47 - 02:49] Jadi proyekan
+[02:50 - 02:55] Lupa saya memastikan kembalin
+[02:55 - 02:59] Kemarin sudah menghubungi dari Buayu sebagai pemilik kedua saya
+[03:00 - 03:03] Dan judulnya sebenarnya juga belum ada pembimbingan dengan beliau
+[03:03 - 03:05] untuk judulnya kemarin saya sudah sampaikan
+[03:05 - 03:07] itu rancang bangun sistem informasi
+[03:07 - 03:09] manajemen operasional
+[03:09 - 03:11] dengan belajar berbasis web
+[03:11 - 03:12] menggunakan metode BXP
+[03:12 - 03:14] kalau saya pakai BXB?
+[03:15 - 03:17] karena saya melihat dari fleksibelan
+[03:17 - 03:19] dari bimbal arta yang gimana
+[03:19 - 03:21] itu bisa berubah
+[03:21 - 03:23] sesuai dengan tahap wawancaranya
+[03:23 - 03:25] jadi belum fake ya
+[03:25 - 03:26] fiturnya itu masih
+[03:26 - 03:28] bisa aja di tangan jalan bertambah gitu ya
+[03:28 - 03:31] iya, ada kemungkinan itu bakal bertambahan
+[03:31 - 03:40] terus karena dari 3x wawancara ternyata ada proses bisnis yang sebenarnya dari manajemen itu masih ada beberapa perubahan
+[03:40 - 03:50] karena pelupaan gitu, karena itu udah bertahun-tahun dijalankan tapi ada bebera produk yang bisa berubah di kemudian hari
+[03:50 - 03:52] terutama khususnya tarifnya gitu pak
+[03:52 - 03:56] nanti kamu sampe transaksi juga pembayaran
+[03:56 - 04:06] Oh enggak Pak, cuma pencatatan doang. Yang maksud saya perubahan transaksinya itu ada sisi empati dari si artanya ini
+[04:06 - 04:15] karena misalkan yang datang atau siswa baru datang terus melihat dari kemampuan pembayarannya itu kurang
+[04:15 - 04:18] walaupun memang sudah ada tarif yang sudah ditentukan
+[04:18 - 04:21] Jadi dia masih fleksibel ya?
+[04:21 - 04:25] Masih berdua-berdua untuk inginya menyesuaikan dengan siswa yang mau mendaftar.
+[04:25 - 04:35] Makanya saya menggunakan metode PHP, sebenarnya sudah ada membandingkan juga dengan metode XP sama RAD dan juga prototyping.
+[04:35 - 04:43] Menurut saya yang lebih cocok karena saya melihat keunggulan dari PHP itu di bagian fleksibilitasnya tadi saya bilang lagi awal.
+[04:43 - 04:46] Itu kan nanti di berapa perbandingan metode ya?
+[04:46 - 04:48] Nah itu harus diangkat juga yang kamu bandingkan
+[04:48 - 04:51] Karena kan gak cuma boleh hafalin satu metode
+[04:51 - 04:53] Kalau bilang metodenya lebih cocok
+[04:54 - 04:56] Harus lihat metode yang lain juga
+[04:56 - 04:59] Kalau mau baca satu, barat yang lain udah tau
+[04:59 - 05:01] Pasti kamu bilangnya yang bagus ya
+[05:01 - 05:03] Karena cuma taunya PHP
+[05:05 - 05:07] Itu untuk judulnya saya
+[05:07 - 05:09] Berarti dari Pak Arief aman deh
+[05:09 - 05:11] Amat, kalau judul nya aman
+[05:11 - 05:17] Lalu mungkin yang kedua ini dari ERD yang sudah ada saya buat pak
+[05:17 - 05:18] Oh iya
+[05:18 - 05:20] Saya udah coba buat
+[05:20 - 05:25] Untuk totalnya itu ada 16 table dan semua ini berrelasi satu sama lain
+[05:25 - 05:27] Ini ERD bentuk apa ya namanya ya?
+[05:27 - 05:29] Kan bentuk ERD itu macam mati nih
+[05:29 - 05:31] Kalau yang di situ tanya
+[05:32 - 05:36] Kan ada yang bentuknya ERD tuh anti-task
+[05:37 - 05:39] Ini kan bentuk nya table-table
+[05:39 - 05:41] Yang kayak di My Admin
+[05:42 - 05:46] kamu kalo bilang ERD nih, ERD bentuk apa harus bisa menjelaskan
+[05:46 - 05:48] karena bentuk ERD itu macam-macam
+[05:49 - 05:51] kemudian yang paling DRD itu
+[05:51 - 05:54] yang pertama adalah kumpulan karbinalitasnya
+[05:55 - 05:58] bantuan-wantumen ini belum mengaruhi banget hasilnya
+[05:59 - 06:02] jadi mungkin ini saya jelaskan secara garis besar aja pak
+[06:03 - 06:05] jadi total saya ada buat 3 group gitu
+[06:06 - 06:08] yang pertama dari sisi operasional bisnisnya
+[06:08 - 06:15] sama yang kedua dari sisi kayak table yang udah ga bakal diubah sama sekali
+[06:15 - 06:18] terus yang ketiga itu
+[06:18 - 06:22] tapi ini tuh nanti jalan kan bisa berubah ga?
+[06:22 - 06:24] belum, iya belum
+[06:24 - 06:27] karena kalau proposal itu sebenernya dia belum sampe disini
+[06:27 - 06:30] ini kan sudah sampe implementasi hasilnya
+[06:30 - 06:32] tapi kalo diproposol itu
+[06:32 - 06:35] buat teori
+[06:35 - 06:37] Teori bertiga itu adalah hal-hal yang lain
+[06:37 - 06:39] Nah di langkah-langkah
+[06:39 - 06:41] Alor penegian kan, GKM
+[06:41 - 06:45] GKP itu mungkin cuma menyebutkan terkait
+[06:45 - 06:47] misalkan editasi apa yang terbentuk
+[06:47 - 06:49] Karena kalau sudah jadi
+[06:49 - 06:51] Berarti sudah masuk diglumentasi
+[06:51 - 06:53] Yang ERD
+[06:53 - 06:55] Datapisnya
+[06:55 - 07:00] Kalau ini ERD rancangan
+[07:00 - 07:02] Tapi oke
+[07:02 - 07:04] Ini apa aja yang tergantung?
+[07:04 - 07:06] Yang terganti udah ada 16
+[07:06 - 07:09] karena lebih spesifiknya dari asal wawancara itu
+[07:09 - 07:10] tapi kamu udah dapet dari mana?
+[07:10 - 07:12] dari asl wawoncara semua
+[07:13 - 07:16] maksudnya dengan proses bisnis yang berjalan
+[07:17 - 07:20] tapi sama-sama mas, untuk movie kayak gini ya
+[07:22 - 07:24] kamu juga harus membuat
+[07:26 - 07:28] kalau aku UI UX
+[07:29 - 07:30] karena kan aku buat ngambil UI UX
+[07:31 - 07:32] tapi ada gambaran kasar tablan depan
+[07:33 - 07:34] karena gini
+[07:34 - 07:38] Kayak teks-teks gini kan?
+[07:38 - 07:43] Ibaat kan kamu kok misalnya udah tau isinya semua ini
+[07:43 - 07:47] Ini karena dari Mitra itu ada masih...
+[07:47 - 07:49] Datanya kak?
+[07:49 - 07:54] Oh saya tuh biasanya buat ambilan, oh dari sini saya tahu kan
+[07:54 - 07:56] Dan ini saya butuh data apa aja nih
+[07:56 - 07:59] Berita nih ada judunya, tanggalnya
+[07:59 - 08:02] Kemudian deskripsi pendeknya
+[08:02 - 08:04] Berita panjangnya
+[08:04 - 08:07] Jadi saya tahu ini table berita
+[08:07 - 08:13] Cuma kalau saya sih fokus di proposalnya dulu aja
+[08:13 - 08:17] Karena itu nanti akan bisa berubah
+[08:17 - 08:20] Yang penting kita fokus proposal bisnisnya dulu
+[08:20 - 08:23] Masa nanti apa aja entitas yang terbentuk
+[08:23 - 08:25] Itu sambil jalan aja
+[08:25 - 08:27] Mungkin proposal nya
+[08:27 - 08:29] Kita tau dulu bisnis
+[08:29 - 08:31] Mau dibuat apa dulu
+[08:31 - 08:33] Apa aja fitur-fitur yang dibutuhkan
+[08:33 - 08:36] Baru dipirin nanti untuk rancangan terlebih dahulu
+[08:37 - 08:42] Jadi sebenarnya ini simpel aja untuk dari data yang dibutuhkan
+[08:46 - 08:51] Tapi kan gak cuma kalau, ini kan untuk membangun IRB kita harus baca doku
+[08:52 - 08:56] Misalnya oh ini ada muridnya nih, table siswa misal
+[08:57 - 09:00] Table siswa berarti jadi atribute nya kan nomor nama
+[09:01 - 09:03] Tapi kan ini adalah manualnya mereka
+[09:03 - 09:06] kalau kita bangun sistem, kita harus mikir jangka panjang
+[09:06 - 09:09] gak cuma gini, mungkin aja ada tribut yang kita tambahkan
+[09:09 - 09:11] jadi bukan meng copy paste
+[09:11 - 09:13] kalau bangun system tuh gak bisa
+[09:13 - 09:14] karicong
+[09:14 - 09:15] iya
+[09:15 - 09:16] intinya gini
+[09:16 - 09:19] kalau kita bakun sistem kita mikir di jangga panjang
+[09:19 - 09:21] ini akan membantu kita
+[09:21 - 09:23] oh ada table mahasiswa nih
+[09:23 - 09:24] luar masanya ini
+[09:24 - 09:28] tapi kita harus pikir panjang apakah kita nanti butuh informasi lain
+[09:28 - 09:30] misalkan nih kita butuh gak
+[09:30 - 09:31] emailnya
+[09:31 - 09:33] emailnya, nama orang tuanya
+[09:33 - 09:35] itu kita boleh tambah
+[09:35 - 09:37] bukan berarti kita harus sama presiden ini
+[09:37 - 09:39] walaupun dari mitra
+[09:41 - 09:43] dikasih ngelajah
+[09:43 - 09:45] jadi boleh kosong
+[09:45 - 09:47] ke depan kalau dia butuhkan
+[09:47 - 09:49] kayak marimah sisalnya
+[09:51 - 09:53] tugas besi datu
+[09:53 - 09:55] tugasnya saya minta kalian interview
+[09:55 - 09:57] ke mitra baca dokumen
+[09:57 - 09:59] jadi nanti saya memvalidasi
+[09:59 - 10:09] Apakah kamu bisa menunjukkan dokumen, tapi dokumen itu tidak bisa kalau kamu hanya copy paste
+[10:09 - 10:16] Kalau dokumen yang jelas ini pasti ada, apakah ini sudah cukup?
+[10:16 - 10:18] Nah itu belum tentu
+[10:18 - 10:20] Dia mengisi data barang kemudian saya tanya
+[10:20 - 10:22] Ini gak ada tanggal expirednya
+[10:22 - 10:24] Mereka bilang, mas, saya bilang
+[10:24 - 10:25] Juga dicatat pak
+[10:25 - 10:27] Karena mereka melihatnya dari nomornya
+[10:27 - 10:30] Nomor SPIT yang harus dikemasannya
+[10:30 - 10:31] Saya bilang
+[10:31 - 10:33] Ya kalau itu manual
+[10:33 - 10:35] Dia ngecek satu persatu
+[10:35 - 10:36] Kalau kamu bawa sistem
+[10:36 - 10:38] Data kita barang jualan kita alfamat
+[10:38 - 10:40] Barang kita ada 2 juta
+[10:40 - 10:41] Lebih mungkin bisa lebih
+[10:41 - 10:42] Lantai 1-2
+[10:42 - 10:43] Kemudian kamu gak tau
+[10:43 - 10:44] Barang yang mana yang SPIT
+[10:44 - 10:45] Kamu gak tahu
+[10:45 - 10:47] Bisa rugi ya
+[10:47 - 10:47] Pertama rugi
+[10:47 - 10:48] Orang bisa beli
+[10:48 - 10:50] Beli barang SPIT
+[10:50 - 10:51] Gak mau kembali dong
+[10:51 - 10:53] barang sudah di jual
+[10:53 - 10:57] nah atribut itu yang kita buatkan
+[10:57 - 10:59] tujuan kamu mengundahkan kita
+[10:59 - 11:01] karena dengan adanya
+[11:01 - 11:03] tanggal yang misalnya dibulangi mau expired mana
+[11:05 - 11:07] bahwa tadi ada dokumen-dokumen
+[11:07 - 11:11] kamu masih bisa menambahkan atributs sesuai kebetulan
+[11:13 - 11:15] bukan hanya mengkopi
+[11:15 - 11:17] kalau yang kamu lihat pasti ada
+[11:17 - 11:19] tapi kamu bisa menabahkan
+[11:21 - 11:27] Nanti dari saya, eh sebenernya dari Mitra yang membutuhkan cuma kolom yang dibutuhkan saat ini
+[11:27 - 11:28] Kita harus hypitasi
+[11:28 - 11:28] Kasih tau juga kek
+[11:28 - 11:29] Iya
+[11:29 - 11:30] Kalau saya sudah masih
+[11:30 - 11:32] Kamu gak bisa terima
+[11:32 - 11:34] Jadi kamu harus mau hypitasikan mereka
+[11:34 - 11:36] Kedepan tuh fungsi nya ini loh
+[11:36 - 11:38] Nanti kedepannya ini mengudahkan
+[11:38 - 11:39] Kalau nanti bisa
+[11:39 - 11:40] Kalau makeup ini belum butuhnya
+[11:40 - 11:41] Gak apa-apa
+[11:41 - 11:42] Nanti dibuat kosong
+[11:42 - 11:44] Jadi boleh dikosongkan dulu
+[11:44 - 11:46] Tapi kedepan kalau mau dimasukin datanya
+[11:46 - 11:48] Bisa
+[11:48 - 11:49] Ini data biasanya dibuatan
+[11:49 - 11:50] Olo
+[11:50 - 11:51] Boleh kosong
+[11:51 - 11:53] berarti tetap ada kolomnya pak ya?
+[11:53 - 11:55] ada kolong
+[11:55 - 11:57] tapi gak dimajibkan itu disini dulu
+[11:59 - 12:01] mungkin ini berikutnya pak
+[12:01 - 12:04] tadi IRD, berarti itu sebenarnya untuk di
+[12:05 - 12:07] iya, nanti
+[12:07 - 12:09] kalau saya buat satunya dulu kita makan dulu
+[12:09 - 12:11] karena skauci dalam proposal
+[12:11 - 12:13] jarang kita melihat dari
+[12:13 - 12:15] sampai situ
+[12:15 - 12:17] kita lihat urgensinya
+[12:17 - 12:19] itu rapengu dibuat
+[12:19 - 12:21] Bisa gak ini diselesaikan?
+[12:21 - 12:23] Kita melihatnya dari situ
+[12:23 - 12:25] Pakutnya kamu mungkin sudah sampai jauh
+[12:25 - 12:27] Padahal yang nanti difokuskan
+[12:27 - 12:29] Gak namanya di tanpa hal-hal
+[12:29 - 12:31] Oh, ini kan dulu juga jalan
+[12:31 - 12:33] Setelah baru proposal
+[12:33 - 12:35] Oh, di mana nih? Baru kamu mulai
+[12:35 - 12:37] Ngelementasi
+[12:43 - 12:45] Berarti saya terlalu pecawa
+[12:45 - 12:47] Jauh, kamu udah habis proposal
+[12:47 - 12:49] Itu juga gitu
+[12:51 - 12:54] tapi gak apa kan, ada gil dikit-dikit
+[12:54 - 12:57] ini juga saya buatkan dari use case nya
+[12:57 - 12:59] use case aja ini
+[12:59 - 13:01] ini akan kemarin tuh
+[13:01 - 13:03] ada dua role
+[13:03 - 13:06] yang harus saya buat
+[13:06 - 13:08] use case itu pasti banyak
+[13:08 - 13:10] loginnya dimana lah
+[13:10 - 13:12] loginnya tuh rencana saya
+[13:12 - 13:14] dari si
+[13:16 - 13:18] dari dua role ini
+[13:18 - 13:20] tetep bisa login
+[13:20 - 13:24] Sebelum masuk ke sistem kan dia harus login dulu
+[13:24 - 13:26] Nah nanti tak sedikit ada jurnal bagus yang membuatnya
+[13:26 - 13:28] Sering banget mahasiswa itu
+[13:28 - 13:30] Dia mau bagi situ salah
+[13:30 - 13:32] Tapi saya sering
+[13:32 - 13:34] Setelah itu saya ngasih ini baca jurnalnya
+[13:34 - 13:36] Tapi dia
+[13:36 - 13:38] Jurnal itu fokusnya kesalahan-kesalah
+[13:38 - 13:40] Dalam penyusinan di IMD
+[13:40 - 13:42] Apa? BML
+[13:42 - 13:44] Saya selalu ginian saya
+[13:44 - 13:46] Aku bacain judul baru buat GML
+[13:46 - 13:48] Dan sudah tahu
+[13:51 - 13:55] Berarti yang saya mau tanyakan itu terkait ini Pak, karena tadi yang terlalu kejauhan
+[13:55 - 14:02] dari referensi sendiri itu lebih ada ketentuan terkhusus nggak Pak?
+[14:02 - 14:06] Kayak misalkan minimal 10 tahun, 5 tahun terus untuk buku
+[14:06 - 14:11] Kalau jurnal gini, kalau kamu ngomong-ngomiter kayak
+[14:12 - 14:16] Kalau saya gini bukan sebaiknya memang yang terbaru di mana-mana terakhir
+[14:16 - 14:22] tapi itu jurnal-jurnal yang berkaitan dengan masalah yang diangkat
+[14:22 - 14:26] misalnya kamu mengangkat ini terkait masalah ini ya
+[14:26 - 14:29] nah kamu pasti cari referensi pendukungan
+[14:29 - 14:33] nah itu kamu wajib menambil yang 5 tahun
+[14:33 - 14:38] misalnya di latar belakang bab 1 sebelum masuk
+[14:38 - 14:43] maksimalnya biasanya masyarakat itu atas parga pertama itu menganggap teknologinya
+[14:43 - 14:45] pada saatnya teknologi apain
+[14:45 - 14:49] nah itu harus yang terbaru dong, kalau kamu mengenai teknologi jangan ambilnya 10 tahun
+[14:49 - 14:51] sekarang udah jauh banget
+[14:51 - 14:53] tapi kalau kamu membahas metode
+[14:55 - 14:57] kalau saya gak harus 5 tahun
+[14:57 - 14:59] kamu boleh memakai metode ya
+[14:59 - 15:01] misalnya kamu pake TSP
+[15:01 - 15:03] itu boleh memanggil yang
+[15:03 - 15:05] pencantok
+[15:05 - 15:07] pencat terus metode itu siapa
+[15:07 - 15:09] sebenarnya kalau kamu pakaian metode pohon
+[15:09 - 15:11] kamu tau karena gue
+[15:11 - 15:13] penguji kadang lainnya gitu
+[15:13 - 15:17] kamu pake sesuatu yang gak kenal orangnya
+[15:17 - 15:23] kamu pakai, saya punya mahasiswa ini Pak Puncak kemarin pakai PSD
+[15:23 - 15:25] dia itu aja pakai kok
+[15:25 - 15:29] kamu bukan, yang membuat tuh bukan dia
+[15:29 - 15:33] karena ucap-ucap nggak tahu
+[15:33 - 15:37] berarti aku pake seseatu tapi lu enggak kenal
+[15:37 - 15:45] itu harus menuju ke sebelumnya, walaupun nanti di bab 2 kan diceritakan PSP itu siapa yang membuatnya
+[15:45 - 15:47] tapi kan PSP tuh ada pengembangan-pengembangannya
+[15:47 - 15:53] walaupun bisa ada lagi untuk PSP yang kamu dipernihan ini saya menggunakan dari jurnal nya siapa
+[15:53 - 15:55] makin lebih sesuai gitu
+[15:55 - 15:59] ada kayak menjadi waterfall aja tahapan-tahapannya itu ada yang jadi modifikasi gitu
+[16:00 - 16:02] yang penting yaudah kamu merujuknya punya siapa
+[16:02 - 16:06] tapi harus diciptakan dulu, Waterfall itu sebenarnya siapa yang gue
+[16:06 - 16:08] yang lainnya kan mengembang pak
+[16:08 - 16:10] melanjutkan kayak gitu
+[16:10 - 16:13] karena kalau kemarin saya ada yang nyari beberapa pak
+[16:13 - 16:16] dan memang khususnya untuk yang manajemen
+[16:16 - 16:18] dashboard management di mana belajar itu
+[16:18 - 16:21] kebanyakan gue makan Waterfall pak
+[16:21 - 16:23] jadi untuk pengen PSP sendiri
+[16:23 - 16:25] itu saya baru nombor satu
+[16:25 - 16:27] sejauh ini baru satu
+[16:27 - 16:29] apa?
+[16:29 - 16:32] ini dia gini, kalo kaya gitu kan
+[16:32 - 16:34] kita ngomong metode
+[16:34 - 16:36] yang lainnya waterfall
+[16:36 - 16:38] ya gak bisa dipaksakan waterfall
+[16:38 - 16:40] kita melihat dari permasalahan kita
+[16:40 - 16:42] mitra kita fleksibel
+[16:42 - 16:44] ada perubahan fitur
+[16:44 - 16:46] ya gak bisa paksa ke waterfall
+[16:46 - 16:47] karena representasi nya semua itu
+[16:47 - 16:48] kita harus memastikan masalah
+[16:48 - 16:50] liat dari mitranya dulu
+[16:50 - 16:52] baru pikirin metodenya yang cocok
+[16:52 - 16:54] bukan lihat dari metodenyya dulu
+[16:54 - 16:56] baru nanti mitra dipaksa
+[16:56 - 16:59] biasanya semua nya pas waterfall nih kebanyakan, masal intra mau pake TST
+[16:59 - 17:01] ya engga kita liat dulu nih kebutuhan mitranya
+[17:02 - 17:04] kalo dilihat dari ceritanya mas tadi kan
+[17:04 - 17:07] mitra ini masih ada video-video yang mungkin berjalan
+[17:07 - 17:09] ada penambahan, ada perubahan
+[17:09 - 17:11] itu gak cocok waterfall
+[17:11 - 17:12] waterfall kan lebih
+[17:12 - 17:14] jadi akwal sudah fit
+[17:14 - 17:15] kamu ga menduduk
+[17:15 - 17:16] sebaiknya ga mundur
+[17:16 - 17:17] nah waterfall ya
+[17:17 - 17:19] jadi pertama kebutuan sistem tuh sudah fit
+[17:19 - 17:21] kamu mau buat apa sampe goalnya apa
+[17:21 - 17:23] kalau sudah jalan jangan sampai mundur lagi
+[17:23 - 17:25] Gak cocok dong kalau sudah di
+[17:27 - 17:29] Kecuali kadang, kalau mahasiswaku
+[17:29 - 17:31] Aku tanya kan dari mitranya
+[17:31 - 17:33] Digandong dia
+[17:33 - 17:35] Dirubah-rubah terus mas
+[17:35 - 17:37] Mitra besok bilang A, besoknya minta B
+[17:37 - 17:39] Masa saya bingung, pak saya habis buat sini
+[17:39 - 17:41] Disuruh rubah lagi buat ini
+[17:41 - 17:43] Itu asal membuat aja waterfile
+[17:43 - 17:45] Tentukan dari awal
+[17:45 - 17:47] Biar mereka gak berubah
+[17:47 - 17:49] Kalau waterfine deh fit di awalnya
+[17:49 - 17:51] Kita sudah berjalan segini
+[17:51 - 17:56] tapi kalo mitra nya kayak gini tadi, ya di exp dulu
+[17:56 - 17:59] karena perubahannya mungkin nama fiturnya
+[18:00 - 18:02] ngak yang kaya tadi
+[18:02 - 18:04] kalau masuk kemungkinan digantung
+[18:04 - 18:05] bulat balik
+[18:05 - 18:06] gak fake terus tuh lho
+[18:06 - 18:08] apa yang mau dibuat berubah lagi
+[18:08 - 18:09] bukan menambang
+[18:09 - 18:10] tapi dirubah
+[18:10 - 18:11] bisa jadi
+[18:11 - 18:12] ubah
+[18:12 - 18:13] jadi mintanya
+[18:13 - 18:14] oh berubahan
+[18:14 - 18:15] ini enggak
+[18:15 - 18:16] jadi-jadi
+[18:16 - 18:17] akhirnya saya minta waterfall
+[18:17 - 18:20] Oke.
+[18:20 - 18:22] Tentanya kan ga bisa berubah-ubahan terus
+[18:22 - 18:24] Berarti kalo misalkan
+[18:24 - 18:26] Walaupun saya cerita tadi
+[18:26 - 18:28] Ada kemungkinan perubahan itu lebih ke fitur
+[18:28 - 18:30] Atau kayak sebatas mungkin yang bisa terjadi
+[18:30 - 18:32] Itu hanya
+[18:32 - 18:34] Kolomnya kok?
+[18:34 - 18:36] Ada perubatan kolom
+[18:36 - 18:38] Memang dari mitra ini
+[18:38 - 18:40] Dari buku sampaikan
+[18:40 - 18:42] Kalau kita ga, kalau kolom itu
+[18:42 - 18:43] Kita udah
+[18:44 - 18:46] Misalkan dari kita
+[18:46 - 18:49] misalkan kamu liat dokumen gitu kan, kamu copy
+[18:49 - 18:50] mereka buktinya itu
+[18:50 - 18:52] tapi kamu bisa menambahkan akribut lain
+[18:52 - 18:55] ini sudah dari kita bukan dari mereka
+[18:55 - 18:56] kalau mereka nanti
+[18:56 - 18:59] ini perlu apa lagi ya
+[18:59 - 19:01] nggak kan mereka sudah punya dokumen tadi
+[19:01 - 19:03] kamu tiga nanti prestasikan
+[19:03 - 19:05] ada penambahan kolam bisnisnya tujuannya buat apa
+[19:05 - 19:06] kamu dikubasi
+[19:06 - 19:08] nah penambaran itu mungkin dari bisnis nya
+[19:08 - 19:09] misalnya oh
+[19:09 - 19:11] bisa gak mas kita
+[19:11 - 19:13] sampai ada
+[19:13 - 19:15] dashboard untuk gurunya
+[19:15 - 19:20] misalnya dari awal belum ada, oh ya lu bisa, itu mungkin fitur video itu TSP cocok
+[19:20 - 19:22] karena mungkin setelah kamu buat nanti minta
+[19:22 - 19:26] mas bisa gak saya mau melihatkan tampilan dari mahasiswa ini
+[19:27 - 19:29] yang belum bayar lah misalkan gitu
+[19:29 - 19:32] jadi nanti bisa di filter-filter dashboardnya muncul nih
+[19:33 - 19:36] nah itu TSM ada penambahan gitu fitur kecil gitu
+[19:37 - 19:38] bukan jangan berubah
+[19:39 - 19:40] misalnya sudah jalan terus dirubang romba-romba
+[19:40 - 19:42] itu kesalahan dari mitra
+[19:42 - 19:44] dia belum tau bisnisnya
+[19:44 - 19:48] karena mas siswa saya yang bermasalah
+[19:48 - 19:50] sistem bisnis mereka belum jalan
+[19:50 - 19:52] jadi dirubah-rubah terus
+[19:54 - 19:56] sebab dibatkan, dia lihat punya orang
+[19:56 - 19:58] bisa gini sih
+[19:58 - 20:00] gue berubah lagi
+[20:00 - 20:02] kayak gitu saya minta
+[20:02 - 20:04] kamu waterfall aja
+[20:04 - 20:06] jadi duvikan dari awal
+[20:06 - 20:08] kalau udah fake jangan nambah lagi
+[20:08 - 20:10] nambah-nambah kerjaan lagi
+[20:10 - 20:12] tapi kalo punya kamu sudah biar SD
+[20:12 - 20:14] karena kan bisnisnya sudah jalan
+[20:14 - 20:16] kita udah tau ya
+[20:16 - 20:18] apa gambaran
+[20:18 - 20:20] bisnis utamanya
+[20:20 - 20:22] kamu sudah pegang dimana ada nama fitur
+[20:22 - 20:24] perlantikan
+[20:24 - 20:27] itu mungkin bisa terkelu SD
+[20:27 - 20:29] jadi gak mau dirubat
+[20:29 - 20:31] dari bisnis ini terus dibuat banget
+[20:31 - 20:33] karena sudah jalankan
+[20:33 - 20:45] Terus ini Pak mengenai buku, Pak.
+[20:45 - 20:52] Baris ada rekomendasi atau yang bisa saya baca untuk pembuatan dashboard ini?
+[20:52 - 20:53] Revenchy kan?
+[20:53 - 20:55] Iya.
+[20:55 - 21:04] Kalau cara untuk reference kan lebih bagus di jurnal daripada buku.
+[21:04 - 21:05] Oh gitu?
+[21:05 - 21:11] Kalau negensi itu lebih bagus buku, karena jurnal itu asli pelajian
+[21:12 - 21:15] Kalau buku itu kan cuma kayak buku pembelajaran teori
+[21:17 - 21:20] Kalau saya sih mau duput kamu begini
+[21:22 - 21:26] Kalau saya cuma bisa bantunya misalnya tadi saya nemukan kayak MWNM yang mencoba di siapa
+[21:27 - 21:30] Tapi kalau masalah yang lain-lain dari kamu
+[21:31 - 21:33] Karena yang lebih tahu masalahnya kamu
+[21:33 - 21:36] misalkan saya cacatkan pakai teknologi apa, yang sama-sama saya pakainya
+[21:36 - 21:39] produknya pakai apa. Nah itu saya bisa langsung ke masalah pembedahan
+[21:39 - 21:41] kayak gitu
+[21:41 - 21:43] kalau kamu membeli untuk apa
+[21:43 - 21:46] sebenarnya semuanya itu kan bukan pilihan ya
+[21:46 - 21:47] namanya tools itu pilih
+[21:47 - 21:49] kamu bisa pakai embas apapun
+[21:49 - 21:51] cuma
+[21:51 - 21:53] yang saya akan memberikan maksudannya
+[21:53 - 21:54] selesai pengalaman saya
+[21:54 - 21:56] tadi saya bilang Rezo direct dari SEO
+[21:56 - 21:58] yang dipakai
+[21:58 - 22:00] tapi dari segit cepatan dia cepat
+[22:00 - 22:04] Tapi untuk orang yang membangga depan, lebih enak adalah para Rafael.
+[22:04 - 22:08] Para Rafael itu enaknya dokumen.
+[22:08 - 22:12] Dia kan sudah selamak FVC, menjadi VController.
+[22:12 - 22:16] Jadi model VControllers itu sudah ditatangkan.
+[22:16 - 22:20] Apalagi kalau saya minta front-end dan back-end dipisahkan,
+[22:20 - 22:22] itu kemudian bagi tim saya.
+[22:22 - 22:26] Apalagia nanti saya mengurus sistem saya ini
+[22:26 - 22:31] Saya kan lebih mudah, karena saya tidak akan mencambur aduan dengan darah frontend dan backend
+[22:32 - 22:35] Jadi kalau ada masalah tinggal lihat API Gateway nya
+[22:36 - 22:38] Misalkan frontend saya putus ya, tidak ada datanya
+[22:39 - 22:41] Saya cek apakah dia yang mengirim di dokumen APA dari backend
+[22:42 - 22:44] Kalau dokumennya dikirim berarti ada frontend
+[22:45 - 22:46] Tidak bisa hit APA
+[22:47 - 22:48] Nah itu kenapa saya minta nyatasi?
+[22:49 - 22:50] Karena kebutuhan mitra
+[22:50 - 22:56] Nah, kembali lagi. Mitra nya lebih mudah itu karena sistemnya semua berjalannya sudah pakai teknologi itu
+[22:58 - 23:01] Jadi nggak ada salah misalnya harus pake yang ingat
+[23:02 - 23:03] Pertama, kemudahan mitra
+[23:04 - 23:06] Kalau mau nyamakan mitranya gak ngerti nih
+[23:07 - 23:08] Itu kemudian dari kamu
+[23:09 - 23:10] Misalnya di Indonesia lebih muda pada apa
+[23:11 - 23:13] Kalau mitra request ya mau gak mau
+[23:14 - 23:15] Karena mereka sudah punya ekosistem
+[23:16 - 23:17] Kalau yang mengajarkan ekosistem
+[23:17 - 23:23] Saya bangun susu pasti teknologinya itu dulu, tapi lebih mudah monitornya waktu memisalkan font yang belum backend.
+[23:23 - 23:27] Padahal saya buatnya monolitik, kalau monolitic itu nggak suka ya.
+[23:27 - 23:32] Buat ngecek-cecek kalau error tuh minul, backend font jadi satu di sini.
+[23:34 - 23:38] Kalau ini putus kamu, saya tahu posisi putusnya dimana.
+[23:38 - 23:49] Oke, mungkin selanjutnya pak dari setelah ini saya kan coba untuk nyalakan di latar belama dulu
+[23:49 - 23:51] Di bab 1 khususnya lebih tepatnya
+[23:51 - 23:54] Itu nanti untuk melakukan bimbingan lagi
+[23:54 - 23:58] Untuk mengirimkan grafinya lewat email atau saat bimingannya baru?
+[23:59 - 24:02] Kirim email dulu
+[24:02 - 24:04] Kalau bisa saya komen, saya komen
+[24:04 - 24:09] Kalau misalnya saya butuh kaya kita harus offline di fungsi dulu, seperti yang enak
+[24:09 - 24:10] Butuh kata-kata muka ya
+[24:10 - 24:12] Jadi saya thank you please
+[24:12 - 24:14] Misalkan saya lebih
+[24:14 - 24:16] Kalau misalkan pak
+[24:16 - 24:18] Saya ngajar saya banyak
+[24:18 - 24:21] Jumat itu sebenarnya kita wepah
+[24:21 - 24:24] Gak ada kelas
+[24:24 - 24:25] Kita memulai wajibnya gak ada
+[24:25 - 24:27] Cuma ada berapa yang kerjatan
+[24:27 - 24:29] Bahkan tadi saya kemarin saya banyak kerjakan
+[24:29 - 24:31] Tapi bisa bingungnya di jumat ini
+[24:31 - 24:33] Karena saya pantas lah
+[24:33 - 24:38] Bisa minggu, karena saya tidak apa, absent online bisa
+[24:38 - 24:42] Tapi cuma kita jadwalnya FST itu jumat
+[24:42 - 24:48] Atau itu kemarin kenaikan bahan-bahan perang
+[24:48 - 24:53] Yang konflik perang akhirnya kita sebenarnya satu hari ini dikasih WF
+[24:54 - 24:56] Nah setiap proyek itu beda-beda
+[24:56 - 24:58] Ada yang nambilnya hari Rabu
+[24:58 - 25:00] Kalau kita ini harinya gemantakannya sepijau
+[25:00 - 25:02] Enak jam 1 minit sekarang
+[25:02 - 25:04] Iya, kita ambilnya jam 2 minit cuma rapuh
+[25:06 - 25:09] Cuma kalau saya gitu, saya gak mau kok
+[25:10 - 25:11] Kok jalan-jalan dulu
+[25:12 - 25:13] WA ngepang gak apa-apa
+[25:14 - 25:16] Karena kadang kalau sudah masuk WA
+[25:16 - 25:17] Saya belum bales
+[25:17 - 25:19] Itu berarti karena saya belum bisa memutuskan
+[25:20 - 25:21] Hari ini saya gak bisa memuatkan
+[25:21 - 25:23] Makanya saya selalu bilang
+[25:24 - 25:25] Karena takutnya
+[25:26 - 25:27] Kalau udah 4 hari saya bilang
+[25:27 - 25:31] Jumatnya nanti ada di WA, kalian lupa
+[25:31 - 25:35] Mungkin saya nanti ya jangan ulang lagi
+[25:35 - 25:38] Kalau misalkan sibuk banget
+[25:38 - 25:40] Kalau mau ke Milo Dara 1
+[25:40 - 25:42] Saya punya kantor sendiri
+[25:42 - 25:44] Jadi bisa disangka
+[25:44 - 25:46] Kalau cuma untuk
+[25:46 - 25:48] Misalkan butuh waktu yang lebih dalam
+[25:48 - 25:50] Nadi sudah masuk imun limitasi
+[25:50 - 25:52] Mau bahasnya lebih dalam
+[25:52 - 25:54] Kalau akhirnya cuma nyusun-nyusun
+[25:54 - 25:56] Kayaknya cuma berapa menit aja
+[25:56 - 25:59] kalau kita waktu panjang kan gak bisa disini
+[25:59 - 26:00] soalnya gantian dengan usia yang lain
+[26:00 - 26:02] jadi kaya itu kantor lagi
+[26:06 - 26:07] mungkin intunya sih pak
+[26:07 - 26:09] memang harus dikejar dari
+[26:09 - 26:12] targetnya seharusnya proposal nya sih
+[26:13 - 26:15] iya, pertama ya
+[26:16 - 26:17] udah disunaiin
+[26:18 - 26:20] mending fik dari awal dulu
+[26:21 - 26:22] fokus dulu proposalnya dulu
+[26:23 - 26:24] karena pas proposer lagi
+[26:24 - 26:26] tapi bukan lagi hasilnya, orang gak lihat hasil
+[26:26 - 26:27] tapi
+[26:27 - 26:29] pemahaman kamu terlihat apa masalah
+[26:29 - 26:31] dan solusi kamu
+[26:31 - 26:33] kemudian penyesalannya seperti apa
+[26:33 - 26:35] apakah itu bisa diselesaikan dengan kamu
+[26:35 - 26:37] karena saya sering menguji mahasiswa
+[26:37 - 26:39] saya gak lulusan yang dia
+[26:39 - 26:41] misalnya ketemu
+[26:41 - 26:43] masalah setengah solusi itu gak ternyata
+[26:43 - 26:45] sering saya batalkan
+[26:45 - 26:46] kamu dasar aja
+[26:46 - 26:48] ada kesalahannya di mahasisu
+[26:48 - 26:50] jadi bimbingnya gak masih waktu
+[26:50 - 26:52] maksudnya gak mau bimbi
+[26:52 - 26:55] waktu sudah jadikan propon itu sidang, minta asisi
+[26:55 - 26:56] Pak asis ya saya mau datang
+[26:56 - 26:59] maksudnya penting kalau di sob tondong gitu kan ngapain
+[27:00 - 27:02] kalau kita nolak dan dianggap mempersulit
+[27:02 - 27:03] dia mundur lagi ke swacer depan
+[27:04 - 27:05] asisin dulu
+[27:05 - 27:07] biar nanti waktu sidang dia baru kangen
+[27:08 - 27:10] apalagi yang mengambil data rata
+[27:11 - 27:13] Pak Enok tuh sering banget loh
+[27:14 - 27:16] karena pembimbingnya Pak Enuk perang apa
+[27:17 - 27:19] bintunya Bidangnya
+[27:20 - 27:21] sama sih, sama-sama
+[27:22 - 27:24] karena metodenya pakai apa, datanya apa
+[27:24 - 27:26] gak kemis
+[27:26 - 27:28] kalau main data kan harus tahu dulu
+[27:28 - 27:30] datamu apa baru mikirin metodonya
+[27:30 - 27:32] kalau kamu datanya aja itu gak bisa diolah dengan metode ini
+[27:32 - 27:34] kamu gak bisa paksakan
+[27:34 - 27:37] jadi masih saya
+[27:37 - 27:39] semester kemana aja dua mahasiswa nyapain
+[27:39 - 27:41] gak salah misalnya
+[27:41 - 27:43] dia nunjukkan sama
+[27:45 - 27:47] mau buat
+[27:47 - 27:50] prasilikasi
+[27:50 - 27:55] klasifikasi dari penerima biasiswa atau apa gitu di sekolah
+[27:55 - 27:58] mana datanya? tunjukin datanya dulu
+[27:58 - 28:01] kemudian kamu pake metode apa? pake ini
+[28:01 - 28:04] dari teori aja dia gak maaf, coba baca
+[28:04 - 28:06] teori kamu, klasifkasi
+[28:06 - 28:10] jadi klasi itu bahwa klasifiannya adalah pengelombongan berdasarkan label
+[28:10 - 28:12] teori dia tuh ada disitu bab 2
+[28:12 - 28:14] pengelomongan bebasan label
+[28:14 - 28:15] kemudia saya tanya
+[28:15 - 28:17] pengelompongan data berdasar label
+[28:17 - 28:18] kamu lihat datamu
+[28:18 - 28:21] data kamu mana yang label
+[28:21 - 28:23] dia gak ngerti data label dimana
+[28:23 - 28:25] sekarang kamu mau kelompokkan data apa
+[28:25 - 28:27] misalkan gak ada labelnya kok
+[28:27 - 28:29] terus mau dikelompok kan dari sana
+[28:29 - 28:33] misalnya saya lubuskan kamu
+[28:33 - 28:35] sampai 10 tahun dulu kamu gak akan menghasilkan apapun
+[28:35 - 28:37] kalau kamu masih pakai metode ini dengan data ini
+[28:37 - 28:39] gak ketemu
+[28:39 - 28:41] namanya klasifikasi itu data yang sudah dilabel
+[28:43 - 28:45] kalau klasikulasi berdasarkan label
+[28:45 - 28:52] misalnya ada perangkat, saya punya data mahasiswa ini di labeli
+[28:52 - 28:54] oh misal dia lulus
+[28:54 - 28:58] atau misalkan saya contohkan yang punya saja
+[28:58 - 29:02] saya melabeli bahar Lita itu gisi baik, gisi buruk
+[29:02 - 29:06] berat badan berlebihan dan berat kurang
+[29:08 - 29:10] saya labeli dia
+[29:10 - 29:12] dari hasil mana? waktu dia posyandu
+[29:12 - 29:14] sama dokter juga
+[29:14 - 29:16] Oh ini kelebihan berat badannya ya Bu, udah beli
+[29:16 - 29:18] Oh ini kurang gisi ya Bu
+[29:18 - 29:20] Ini lingkar padanya
+[29:20 - 29:22] Lingkark kepala terlalu besar
+[29:22 - 29:24] Gisi buruk gitu
+[29:24 - 29:26] Dari label itu
+[29:26 - 29:28] Jadi data training
+[29:28 - 29:30] Dia belajar dari situ
+[29:30 - 29:32] Lagi ketika saya punya data baru
+[29:32 - 29:34] Yang dia gak punya label
+[29:34 - 29:36] Dia akan belajara bahwa
+[29:36 - 29:38] Dengan ciri-ciri tingginya segini
+[29:38 - 29:40] Berat badan segininya
+[29:40 - 29:42] Jurnus kaminya perempuan
+[29:42 - 29:46] kamu langsung ikut label yang mana, normal disibuk kenapa
+[29:46 - 29:48] nah itu label namanya klasifikasi
+[29:48 - 29:50] tapi kamu harus punya data label dulu
+[29:50 - 29:52] bagaimana kamu bener belajar kalau kamu gak labeling
+[29:55 - 29:57] saya tanya mana yang label dia gak tau
+[29:59 - 30:01] kamu gak paham
+[30:01 - 30:03] kalau aku aksesi kamu gak akan lulus
+[30:03 - 30:05] saya pasti gak akan lurus
+[30:05 - 30:07] gak akan ketemu
+[30:07 - 30:09] karena ada dengan metode
+[30:09 - 30:11] kecuali kamu ngomongnya clustering
+[30:11 - 30:13] berdasar cluster gak ada labelnya
+[30:13 - 30:17] dia akan mengelompokkan berdasarkan kemiripan kluster-klusternya
+[30:17 - 30:20] oh kluster ini, angkatan yang ini, kluster itu
+[30:20 - 30:23] tapi kalau sudah label, dia harus punya label
+[30:24 - 30:27] nah seperti itu kadang saya minta, pasti Shani sih kan gak tahu
+[30:28 - 30:30] gak dibaca dulu lah, datanya apa
+[30:32 - 30:35] kalau kayak gini ya kamu harus tidur, jangan ngomong implementasi
+[30:36 - 30:38] jadi dulu tahan napa
+[30:39 - 30:41] setidaknya tau kulitnya, oh iya nanti buat apa
+[30:41 - 30:44] ya, itu buat tata
+[30:44 - 30:46] oke, baik pak
+[30:46 - 30:48] karena gak mungkin dikontokkan
+[30:48 - 30:50] belum sampai situ
+[30:52 - 30:54] mungkin itu aja pak dari saya
+[30:54 - 30:59] terima kasih banyak pak

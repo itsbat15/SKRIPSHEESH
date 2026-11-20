@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-25",
+  "scope": "Draft diagrams and UI wireframes; all UI values fictional, not implemented application screenshots",
+  "figures": [
+    "Gambar_3_1_Arsitektur_Prototipe",
+    "Gambar_3_2_Alur_Pembuatan_Prototipe",
+    "Gambar_3_3_Use_Case_Inti",
+    "Gambar_3_4_Model_Data_Konseptual",
+    "Gambar_3_5_Dasbor_Cabang",
+    "Gambar_3_6_Keanggotaan_Kelas",
+    "Gambar_3_7_Pengajuan_Transfer",
+    "Gambar_3_8_Pemeriksaan_Transfer",
+    "Gambar_3_9_Tunggakan_WhatsApp",
+    "Gambar_3_10_Dasbor_Pusat_Pencocokan"
+  ],
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "source_script": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\scripts\\gambar_bab3_struktur_proposal_20261025.py"
+}

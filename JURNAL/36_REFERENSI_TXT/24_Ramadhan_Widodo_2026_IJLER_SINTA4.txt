@@ -1,0 +1,1409 @@
+--- HALAMAN 1 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+1/15 
+ 
+ 
+ 
+ 
+
+
+--- HALAMAN 2 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+2/15 
+ 
+ 
+Table Of Contents 
+Journal Cover ................................................................................................ 1 
+Author[s] Statement ..................................................................................... 3 
+Editorial Team ............................................................................................. 4 
+Article information ....................................................................................... 5 
+Check this article update (crossmark) ..................................................................... 5 
+Check this article impact ..................................................................................... 5 
+Cite this article ................................................................................................... 5 
+Title page ..................................................................................................... 6 
+Article Title ....................................................................................................... 6 
+Author information ............................................................................................. 6 
+Abstract ........................................................................................................... 6 
+Article content ............................................................................................. 7 
+
+
+--- HALAMAN 3 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+3/15 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Originality Statement 
+The author[s] declare that this article is their own work and to the best of their 
+knowledge it contains no materials previously published or written by another person, or 
+substantial proportions of material which have been accepted for the published of any 
+other published materials, except where due acknowledgement is made in the article. 
+Any contribution made to the research by others, with whom author[s] have work, is 
+explicitly acknowledged in the article. 
+ 
+ 
+Conflict of Interest Statement 
+The author[s] declare that this article was conducted in the absence of any commercial 
+or financial relationships that could be construed as a potential conflict of interest. 
+ 
+ 
+Copyright Statement 
+Copyright © Author(s). This article is published under the Creative Commons Attribution 
+(CC BY 4.0) licence. Anyone may reproduce, distribute, translate and create derivative 
+works of this article (for both commercial and non-commercial purposes), subject to full 
+attribution to the original publication and authors. The full terms of this licence may be 
+seen at http://creativecommons.org/licences/by/4.0/legalcode 
+
+
+--- HALAMAN 4 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+4/15 
+ 
+ 
+EDITORIAL TEAM 
+Editor in Chief 
+ 
+Dr. Wisnu Panggah Setiyono, Universitas Muhammadiyah Sidoarjo, Indonesia (Scopus) (Sinta) 
+ 
+Managing Editor 
+Rifqi Ridlo Phahlevy , Universitas Muhammadiyah Sidoarjo, Indonesia (Scopus) (ORCID) 
+ 
+Editors 
+Noor Fatimah Mediawati, Universitas Muhammadiyah Sidoarjo, Indonesia (Sinta 
+ 
+Faizal Kurniawan, Universitas Airlangga, Indonesia (Scopus) 
+ 
+M. Zulfa Aulia, Universitas Jambi, Indonesia (Sinta) 
+ 
+Sri Budi Purwaningsih, Universitas Muhammadiyah Sidoarjo, Indonesia (Sinta) 
+Emy Rosnawati, Universitas Muhammadiyah Sidoarjo, Indonesia (Sinta) 
+Totok Wahyu Abadi, Universitas Muhammadiyah Sidoarjo, Indonesia (Scopus) 
+ 
+ 
+ 
+ 
+ 
+ 
+Complete list of editorial team (link) 
+ 
+Complete list of indexing services for this journal (link) 
+How to submit to this journal (link) 
+
+
+--- HALAMAN 5 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+5/15 
+ 
+ 
+Article information 
+ 
+Check this article update (crossmark) 
+ 
+ 
+ 
+ 
+Check this article impact (*) 
+ 
+ 
+ 
+ 
+ 
+Save this article to Mendeley 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(*) Time for indexing process is various, depends on indexing database platform 
+
+
+--- HALAMAN 6 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+6/15 
+ 
+ 
+ 
+ 
+Accounting Treatment Of Head Office And Branches Based On SAK EP: 
+A Study on UMKM Rams Dimsum: Perlakuan Akuntansi Kantor Pusat 
+dan Cabang berdasarkan SAK EP: Studi pada UMKM Rams Dimsum 
+ 
+Fadhilah Ramadhan, heriwidodo@umsida.ac.id (*) 
+Program Studi Akuntansi, Universitas Muhammadiyah Sidoarjo, Indonesia 
+ 
+Heri Widodo, heriwidodo@umsida.ac.id 
+Program Studi Akuntansi, Universitas Muhammadiyah Sidoarjo, Indonesia 
+ 
+(*) Corresponding author 
+ 
+ 
+Abstract 
+ 
+General Background: Micro, Small, and Medium Enterprises (MSMEs) require structured 
+accounting systems to manage financial information as their business operations expand across 
+multiple branches. Specific Background: Rams Dimsum, a culinary MSME in Sidoarjo, operates 
+through a head office and several branches, but its accounting practices remain largely manual and 
+are not fully aligned with the Private Entity Financial Accounting Standards (SAK EP).Knowledge 
+Gap: Previous studies have mainly examined accounting standards in MSMEs generally, while 
+research specifically addressing head-office and branch accounting under SAK EP remains limited. 
+Aims: This study analyzes the accounting treatment between the head office and branches of Rams 
+Dimsum based on SAK EP. Results: Using an interpretative qualitative approach, the study finds that 
+fixed assets are recorded as expenses, financial reports are combined rather than separated by 
+branch, goods distribution lacks written supporting documents, damaged inventory is not specifically 
+recorded, and liabilities are recorded simply as routine expenditures. Novelty: This study provides a 
+contextual examination of head-office and branch accounting practices in a culinary MSME by 
+comparing actual practices with SAK EP requirements. Implications: More structured accounting 
+records are needed to improve financial information and support business decision-making. 
+ 
+Key Findings Highlights 
+ 
+The accounting system does not yet separate financial reporting for individual branches. 
+ 
+Asset recognition, inventory recording, and liability reporting remain inconsistent with SAK EP 
+requirements. 
+ 
+Centralized financialmanagement supports daily operations but requires stronger documentation and 
+integration. 
+ 
+Keywords : Head Office Accounting, Branch Accounting, SAK EP, Financial Reporting, Micro Small 
+and Medium Enterprises 
+ 
+ 
+
+
+--- HALAMAN 7 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+7/15 
+ 
+ 
+Pendahuluan 
+Ikatan Akuntan Indonesia (IAI) secara resmi memberlakukan Standar Akuntansi Keuangan Entitas Privat (SAK EP) pada 
+tanggal 1 Januari 2025 sebagai pengganti SAK ETAP. SAK EP disusun sebagai bentuk penyempurnaan standar akuntansi 
+bagi entitas privat, termasuk usaha mikro, kecil, dan menengah (UMKM), yang tidak memiliki akuntabilitas publik signifikan 
+[1]. Standar ini memberikan pedoman yang lebih komprehensif terkait pengakuan, pengukuran, penyajian, serta 
+pengungkapan laporan keuangan, sehingga diharapkan mampu meningkatkan kualitas informasi keuangan yang dihasilkan 
+oleh entitas. Melalui penerapan SAK EP, laporan keuangan tidak hanya berfungsi sebagai alat pencatatan transaksi, tetapi 
+juga sebagai media komunikasi informasi ekonomi yang relevan, andal, dan dapat dibandingkan oleh berbagai pihak. 
+Penerapan SAK EP menjadi sangat penting terutama bagi UMKM yang mengalami perkembangan usaha dan mulai memiliki 
+struktur organisasi yang lebih kompleks, seperti adanya kantor pusat dan kantor cabang[2]. Dalam kondisi tersebut, entitas 
+tidak lagi hanya membutuhkan pencatatan sederhana berbasis kas, tetapi juga memerlukan sistem akuntansi yang mampu 
+mencatat transaksi secara terstruktur, termasuk transaksi antar unit usaha. Sehingga dapat mendukung pengambilan 
+keputusan baik oleh pihak internal maupun eksternal, seperti investor, kreditor, dan pemerintah. 
+ 
+SAK EP dalam praktiknya masih menghadapi berbagai kendala, khususnya pada UMKM yang memiliki keterbatasan sumber 
+daya manusia, pemahaman akuntansi, serta sistem informasi yang belum memadai [3]. Di dalam praktiknya, penerapan SAK 
+EP menghadapi berbagai permasalahan nyata. Salah satu kendala utama adalah keterbatasan sumber daya manusia, di 
+mana banyak pelaku UMKM tidak memiliki latar belakang akuntansi dan tidak didukung oleh tenaga profesional di bidang 
+tersebut. Tingkat literasi akuntansi yang rendah menyebabkan banyak pelaku usaha belum memahami konsep dasar dalam 
+standar tersebut, seperti basis akrual, pengakuan aset dan liabilitas, serta penyusunan laporan keuangan yang sistematis. 
+Permasalahan lain adalah penggunaan sistem pencatatan yang masih manual atau sederhana, sebagaimana juga sering 
+ditemukan dalam pembinaan UMKM oleh Kementerian Koperasi dan Usaha Kecil dan Menengah Republik Indonesia, 
+sehingga menyulitkan penerapan standar yang lebih komprehensif seperti SAK EP[4]. Di samping itu, biaya implementasi 
+yang mencakup pelatihan, penggunaan software akuntansi, maupun pendampingan profesional sering dianggap sebagai 
+beban tambahan bagi UMKM. Kurangnya insentif langsung serta belum adanya kewajiban yang bersifat ketat juga membuat 
+banyak pelaku usaha belum menjadikan penerapan SAK EP sebagai prioritas. 
+ 
+Usaha Mikro, Kecil, dan Menengah (UMKM) memiliki peran strategis dalam perekonomian Indonesia, khususnya pada 
+subsektor kuliner yang terus menunjukkan pertumbuhan signifikan [5]. Berdasarkan data Kementerian Koperasi dan UKM 
+Republik Indonesia, jumlah UMKM di Indonesia telah mencapai sekitar 65,5 juta unit usaha, yang berkontribusi lebih dari 
+99% terhadap total unit usaha nasional serta menyerap sekitar 97% tenaga kerja. Selain itu, UMKM juga menyumbang 
+sekitar 60–61% terhadap Produk Domestik Bruto (PDB). Dari sisi pertumbuhan, sektor UMKM menunjukkan tren positif 
+dengan laju pertumbuhan rata-rata sekitar 4–5% per tahun, bahkan subsektor kuliner menjadi salah satu yang paling cepat 
+berkembang seiring meningkatnya konsumsi domestik dan digitalisasi layanan. Perkembangan UMKM tidak hanya 
+ditunjukkan oleh peningkatan jumlah usaha, tetapi juga oleh ekspansi struktur organisasi melalui pembukaan cabang-
+cabang baru. Pertumbuhan jumlah UMKM yang signifikan ini tidak hanya terjadi secara kuantitas, tetapi juga secara 
+struktural, di mana banyak pelaku usaha mulai melakukan ekspansi melalui pembukaan cabang atau diversifikasi lini 
+produk[6]. Kondisi ini menyebabkan kompleksitas operasional meningkat, terutama dalam hal pengelolaan keuangan. Jika 
+pada tahap awal usaha pencatatan keuangan masih bersifat sederhana, maka ketika usaha berkembang menjadi multi-
+cabang. 
+ 
+Kondisi ini menuntut adanya pengelolaan keuangan yang lebih sistematis dan terintegrasi agar kinerja masing-masing unit 
+usaha dapat diukur dan dievaluasi secara akurat [7]. Dengan semakin kompleksnya aktivitas usaha, kebutuhan terhadap 
+sistem akuntansi manajemen menjadi semakin penting, karena sistem ini berfungsi sebagai penyedia informasi internal yang 
+mendukung perencanaan, pengendalian, dan pengambilan keputusan manajerial. Informasi yang dihasilkan mencakup 
+analisis biaya, penyusunan anggaran, estimasi laba, serta evaluasi kinerja tiap unit usaha [8]. Akuntansi manajemen 
+dipandang sebagai alat penting dalam mendukung efektivitas pengelolaan organisasi, khususnya pada entitas yang memiliki 
+lebih dari satu unit usaha atau cabang. Konsep tersebut relevan dengan kondisi UMKM yang memiliki beberapa unit usaha,  
+di mana manajemen memerlukan informasi akuntansi yang terstruktur untuk mengendalikan operasional masing-masing 
+cabang serta menyusun laporan keuangan yang sesuai dengan standar yang berlaku. Hubungan antara perkembangan 
+UMKM dan kebutuhan sistem akuntansi yang lebih kompleks dapat dilihat secara langsung: semakin besar skala usaha dan 
+semakin banyak cabang yang dimiliki, maka semakin tinggi pula kebutuhan akan informasi yang akurat, cepat, dan 
+terintegrasi. 
+ 
+Pencatatan keuangan yang tidak dipisahkan antara kantor pusat dan cabang dapat berdampak signifikan terhadap kualitas 
+laporan keuangan yang dihasilkan [9]. Dalam sistem akuntansi yang baik, setiap unit pusat maupun cabang harus memiliki 
+pencatatan tersendiri agar kinerja keuangan masing-masing dapat diukur secara akurat. Ketika pencatatan dilakukan secara 
+gabungan tanpa pemisahan yang jelas, maka akan muncul berbagai permasalahan, seperti kesulitan dalam mengidentifikasi 
+sumber pendapatan dan biaya, potensi terjadinya duplikasi serta ketidakakuratan dalam peniliaian kinerja unit usaha. Selain 
+itu, tanpa adanya pemisahan pencatatan, proses rekonsiliasi antara pusat dan cabang menjadi sulit dilakukan, sehingga 
+meningkatkan risiko kesalahan pencatatan dan keterbatasan informasi antar unit. Dari perspektif standar akuntansi, 
+penerapan SAK Entitas Privat (SAK EP) menekankan pentingnya penyajian laporan keuangan yang andal, relevan, dan dapat 
+dibandingkan [10]. SAK EP mengatur bahwa setiap entitas harus menyusun laporan keuangan yang mencerminkan kondisi 
+sebenarnya melalui pencatatan transaksi yang sistematis dan konsisten. Dalam konteks entitas yang memiliki cabang, hal ini 
+berarti perlunya sistem akuntansi yang mampu mengintegrasikan data dari setiap unit secara terstruktur, namun tetap 
+menjaga pemisahan informasi agar transparansi dan akuntabilitas tetap terjaga. Tanpa sistem yang terintegrasi dan sesuai 
+standar, laporan keuangan berpotensi tidak memenuhi karakteristik kualitatif yang dipersyaratkan dalam SAK EP. Konsep 
+
+
+--- HALAMAN 8 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+8/15 
+ 
+ 
+akuntansi pusat dan cabang juga menegaskan pentingnya pemisahan pencatatan antara unit usaha [11]. Dalam praktiknya, 
+kantor pusat biasanya berfungsi sebagai pengendali utama, sementara kantor cabang bertindak sebagai unit operasional 
+yang menjalankan aktivitas bisnis sehari-hari. Setiap cabang seharusnya memiliki laporan keuangan tersendiri yang 
+kemudian dikonsolidasikan oleh pusat. Sistem ini memungkinkan manajemen untuk mengevaluasi kinerja masing-masing 
+cabang secara objektif, mengidentifikasi cabang yang menguntungkan maupun yang kurang efisien, serta menyusun strategi 
+yang tepat. 
+ 
+Teori Stewardship menekankan bahwa setiap unit dalam organisasi bertindak sebagai pihak yang dipercaya (steward) untuk 
+mengelola sumber daya secara optimal demi kepentingan organisasi secara keseluruhan. Dalam hubungan antara kantor 
+pusat dan cabang, cabang diharapkan menyajikan laporan keuangan yang jujur dan transparan kepada kantor pusat. 
+Namun, tanpa sistem akuntansi yang terstandarisasi dan terintegrasi, prinsip stewardship sulit diwujudkan karena 
+keterbatasan informasi yang dapat menimbulkan asimetri informasi serta menghambat proses pengendalian dan evaluasi 
+kinerja [12]. [Penelitian terdahulu menunjukkan bahwa penerapan sistem akuntansi yang terstruktur dan terintegrasi antara 
+pusat dan cabang mampu meningkatkan kualitas laporan keuangan serta efektivitas pengendalian internal 13]. Beberapa 
+studi menemukan bahwa UMKM yang telah menerapkan pemisahan pencatatan dan standar akuntansi memiliki laporan 
+keuangan yang lebih akurat, mudah diaudit, serta mendukung pengambilan keputusan yang lebih baik. Sebaliknya, banyak 
+UMKM yang masih menggunakan sistem pencatatan sederhana berbasis kas tanpa pemisahan unit usaha, sehingga 
+mengalami kesulitan dalam menyusun laporan keuangan yang sesuai standar. Jika dibandingkan dengan kondisi penelitian 
+saat ini pada usaha Rams Dimsum, terdapat kesenjangan yang cukup jelas antara praktik yang seharusnya dan kondisi 
+aktual. Rams Dimsum masih menggunakan sistem pencatatan sederhana yang belum memisahkan transaksi antara kantor 
+pusat dan cabang serta belum mengacu pada SAK EP. Hal ini sejalan dengan temuan umum pada UMKM di Indonesia yang 
+masih menghadapi keterbatasan dalam penerapan sistem akuntansi yang memadai. Oleh karena itu, penelitian ini menjadi 
+penting untuk memberikan rekomendasi perbaikan sistem pencatatan yang lebih terstruktur, terintegrasi, dan sesuai 
+dengan standar akuntansi, sehingga dapat meningkatkan kualitas laporan keuangan serta mendukung pengelolaan usaha 
+yang lebih efektif. 
+ 
+Perlakuan kantor pusat dan cabang berdasarkan SAK EP pada UMKM, khususnya pada UMKM Rams Dimsum terletak pada 
+pentingnya penyajian informasi keuangan yang akurat dan terpisah antara entitas pusat dan cabang guna mendukung 
+pengambilan keputusan yang lebih tepat [14]. Dengan penerapan standar akuntansi yang sesuai, pemilik usaha dapat 
+memperoleh gambaran kinerja masing-masing unit secara lebih jelas, sehingga keputusan strategis seperti ekspansi usaha, 
+efisiensi biaya, maupun evaluasi kinerja dapat dilakukan secara objektif dan berbasis data. Temuan ini sejalan dengan 
+berbagai penelitian sebelumnya yang menunjukkan bahwa sebagaian besar UMKM masih menggunakan metode pencatatan 
+tradisional, sehingga laporan keuangan yang dihasilkan belum memiliki tingkat keandalan, relevansi, dan daya saing yang 
+memadai [15]. Padahal, laporan keuangan memiliki peran penting sebagai bentuk transparansi dan akuntabilitas kepada 
+pihak eksternal, seperti investor, lembaga keuangan, dan pemerintah. Dalam perspektif akuntabilitas [16], laporan 
+keuangan merupakan sarana pertanggungjawaban yang memungkinkan pihak eksternal untuk menilai dan mengevaluasi 
+kinerja pengelola usaha. Penerapan standar akuntansi seperti SAK EP menjadi sangat penting untuk meningkatkan kualitas 
+laporan keuangan dan kepercayaan terhadap entitas usaha. Hal ini pada akhirnya memungkinkan UMKM untuk  mengakses 
+sumber pendanaan yang lebih luas serta memperkuat posisi mereka di tengah persaingan usaha yang semakin ketat. 
+ 
+Berbagai penelitian tentang penerapan dan kepatuhan pada UMKM menunjukkan bahwa sebagian besar pelaku usaha 
+masih menghadapi tantangan dalam penyusunan laporan keuangan yang sesuai standar, terutama UMKM yang memiliki 
+cabang seperti UMKM Rose Laundry dinilai siap menerapkan karena sudah melakukan prosedur pencatatan dasar jurnal 
+umum, buku besar, dan neraca saldo serta menyusun laporan keuangan umum, tetapi proses pencatatannya belum 
+sepenuhnya memenuhi standar akibat kurangnya pengetahuan [17]. Penelitian pada Pentol Kabul berhasil menyusun 
+laporan posisi keuangan [18], laba rugi, dan catatan atas laporan keuangan yang sepenuhnya sesuai. UMKM Es Coklat Mas 
+Lino cabang masih menggunakan pencatatan manual yang belum berbasis SAK EMKM [19], dengan pemilik yang langsung 
+menangani pencatatan mendalam aset, liabilitas, ekuitas, pendapatan, dan beban. Garage Coffee.ID belum menerapkan S AK 
+EMKM sama sekali, sehingga penelitian membantu dengan pengumpulan data transaksi harian dan penyusunan laporan 
+keuangan lengkap sesuai standar [20]. 
+ 
+Penelitian yang secara spesifik membahas mengenai penerapan Standar Akuntansi Keuangan Entitas Privat (SAK EP) dalam 
+akuntansi masih tergolong terbatas, khususnya jika dikaitkan dengan perlakuan akuntansi pada kantor pusat dan cabang. 
+Beberapa penelitian yang ada umumnya hanya berfokus pada penerapan SAK EP dalam penyusunan laporan keuangan pada 
+entitas privat seperti koperasi, yayasan, atau perusahaan tertentu, serta dampaknya terhadap kualitas laporan keuangan 
+dan kinerja perusahaan [21]. Selain itu, masih ditemukan bahwa pemahaman dan implementasi SAK EP di kalangan pelaku 
+usaha dan akademisi belum optimal, sehingga kajian terkait standar ini masih terus berkembang [22]. Kebaruan penelitian 
+ini dengan mengintegrasikan analisis perlakuan akuntansi pusat dan cabang berdasarkan SAK EP pada studi kasus nyata 
+UMKM Rams Dimsum, sehingga memberikan kontribusi yang lebih spesifik, konstektual dan relevan terhadap praktik 
+akuntansi UMKM di Indonesia. 
+ 
+UMKM Rams Dimsum dipilih sebagai objek penelitian karena merupakan UMKM sektor kuliner yang telah berkembang dari 
+satu unit usaha menjadi beberapa cabang sehingga memiliki struktur organisasi yang terdiri atas kantor pusat dan kantor 
+cabang. Kondisi tersebut menyebabkan proses pengelolaan keuangan menjadi lebih kompleks dibandingkan UMKM yang 
+hanya memiliki satu lokasi usaha. Berdasarkan hasil observasi awal, sistem pencatatan keuangan yang diterapkan masih 
+dilakukan secara sederhana, laporan keuangan belum dipisahkan antara kantor pusat dan cabang, serta belum sepenuhnya 
+mengacu pada Standar Akuntansi Keuangan Entitas Privat (SAK EP). Karakteristik tersebut menjadikan UMKM Rams 
+Dimsum relevan sebagai objek penelitian untuk menganalisis perlakuan akuntansi kantor pusat dan kantor cabang 
+berdasarkan SAK EP. 
+
+
+--- HALAMAN 9 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+9/15 
+ 
+ 
+Fokus penelitian ini menawarkan pendekatan yang lebih komprehensif dan aplikatif, serta mengisi kesenjangan penelitian 
+sebelumya yang belum membahas integrase perlakuan akuntansi antar unit usaha dalam satu entitas UMKM secara spesifik 
+dan berbasis standar akuntansi yang lebih relevan dengan tujuan untuk mengidentifikasi kesenjangan (gap) antara praktik 
+akuntansi yang berlangsung dengan standar yang seharusnya diterapkan. Di sisi lain, mengenai akuntansi kantor pusat dan 
+cabang lebih banyak menggunakan pendekatan akuntansi konvensional tanpa mengaitkannya dengan SAK EP. Hal ini 
+menunjukkan bahwa integrasi antara SAK EP dengan sistem akuntansi pusat dan cabang masih jarang dibahas dalam 
+literatur, sehingga membuka peluang penelitian lebih lanjut untuk mengisi kesenjangan tersebut. 
+ 
+Metode 
+Jenis Penelitian 
+ 
+Penelitian ini menggunakan pendekatan kualitatif dengan paradigma interpretatif [23]. Pendekatan fenomenologi 
+interpretatif atau InterpretativePhenomenologicalAnalysis(IPA) merupakan salah satu metode dalam penelitian kualitatif 
+yang bertujuan untuk memahami secara mendalam pengalaman subjektif individu terhadap suatu fenomena, sekaligus 
+menafsirkan makna dari pengalaman tersebut. Pendekatan fenomenologi interpretatif berakar pada pemikiran Edmund 
+Husserl yang kemudian dikembangkan oleh Martin Heidegger dengan menambahkan aspek interpretasi (hermeneutics), 
+sehingga tidak hanya berfokus pada deskripsi pengalaman, tetapi juga pada pemaknaan pengalaman tersebut menekankan 
+pentingnya pengalaman sadar (lived experience) sebagai dasar dalam memahami suatu fenomena [24]. Oleh karena itu, 
+dalam fenomenologi interpretatif, peneliti tidak hanya mendeskripsikan pengalaman yang disampaikan oleh informan, tetapi 
+juga menginterpretasikan makna dari pengalaman tersebut sehingga terjadi proses interpretasi antara informan dan 
+peneliti. Tujuan dari penggunaan pendekatan fenomenologi interpretatif dalam penelitian ini adalah untuk memahami dan 
+menafsirkan pengalaman serta pemaknaan pelaku UMKM Rams Dimsum terhadap perlakuan akuntansi kantor pusat dan 
+cabang berdasarkan SAK EP, serta mengungkap berbagai kendala yang di hadapi dalam penerapannya. 
+ 
+Lokasi Penelitian 
+ 
+Penelitian ini dilakukan pada UMKM Rams Dimsum yang berlokasi di Jl. Nangka I No.42, RT 12/RW 03, Kelurahan Geluran, 
+Kecamatan Taman, Kabupaten Sidoarjo, Jawa Timur. Pemilihan lokasi penelitian didasarkan pada pertimbangan bahwa 
+UMKM tersebut memiliki struktur organisasi yang terdiri dari kantor pusat dan kantor cabang serta telah melakukan 
+pencatatan keuangan, meskipun belum sepenuhnya menerapkan ketentuan Standar Akuntansi Keuangan Entitas Privat (SAK 
+EP). 
+ 
+Sumber Data 
+ 
+Data primer diperoleh melalui wawancara dengan pemilik UMKM Rams Dimsum, pengelola keuangan kantor pusat, serta 
+penanggung jawab operasional kantor cabang [25]. Dalam penulisan penelitian ini, identitas informan utama yaitu owner 
+dimsum yang bernama Bima Ramadhan. Data primer digunakan untuk menggambarkan praktik akuntansi yang berlangsung 
+di lapangan serta menilai aspek akuntabilitas dalam pengelolaan keuangan antarunit usaha. Data sekunder diperoleh dari 
+dokumen internal UMKM, seperti laporan penjualan, catatan operasional, dan laporan laba rugi sederhana yang disusun 
+oleh masing-masing unit usaha. Data ini digunakan sebagai bahan pendukung untuk memahami praktik akuntansi yang 
+terjadi serta sebagai dasar dalam proses interpretasi dan analisis. 
+ 
+Teknik Pengumpulan Data 
+ 
+Teknik pengumpulan data yang digunakan adalah wawancara dengan informan kunci yaitu pemilik UMKM Rams Dimsum, 
+pengelola keuangan kantor pusat, serta penanggung jawab kantor cabang. Wawancara dilakukan secara semi-terstruktur 
+agar peneliti tetap memiliki pedoman pertanyaan, namun tetap fleksibel dalam mengeksplorasi jawaban informan secara 
+lebih luas dan mendalam. Melalui wawancara ini, peneliti menggali informasi mengenai praktik pencatatan transaksi, 
+pemisahan laporan keuangan antara pusat dan cabang, pemahaman terhadap SAK EP, serta kendala yang dihadapi dalam 
+penerapannya [26]. Dalam pendekatan ini, data yang dikumpulkan tidak hanya berfokus pada fakta atau kondisi yang 
+tampak, tetapi juga pada makna di balik praktik tersebut, sehingga peneliti berperan sebagai instrumen utama dalam 
+menggali dan menafsirkan informasi yang diperoleh. 
+ 
+Peneliti juga berupaya memahami bagaimana pelaku usaha memaknai pentingnya laporan keuangan dan standar akuntansi 
+dalam mendukung pengelolaan usaha. Sebagai teknik pendukung, penelitian ini juga menggunakan dokumentasi untuk 
+melengkapi dan memverifikasi data hasil wawancara. Dokumen yang dikumpulkan meliputi laporan penjualan, catatan 
+operasional, laporan laba rugi sederhana, serta dokumen terkait pengelolaan produk dan biaya operasional yang dimiliki 
+oleh masing-masing unit usaha. Data dokumentasi ini tidak hanya digunakan sebagai bukti empiris, tetapi juga dianalisis 
+secara interpretatif untuk memahami kesesuaian praktik yang dilakukan dengan ketentuan dalam SAK EP. Dalam rangka 
+meningkatkan keabsahan data, penelitian ini menerapkan teknik triangulasi sumber, yaitu dengan membandingkan 
+informasi yang diperoleh dari berbagai informan serta mencocokkannya dengan data dokumentasi yang tersedia. 
+ 
+Teknik Analisis Data 
+ 
+Teknik analisis data yang digunakan dalam penelitian ini adalah analisis data kualitatif interpretatif dengan mengacu pada 
+model analisis interaktif yang dikemukakan oleh Miles, Huberman, dan Saldana. Proses analisis dilakukan secara manual 
+melalui tiga tahapan, yaitu reduksi data, penyajian data, dan penarikan kesimpulan. Pada tahap reduksi data, peneliti 
+
+
+--- HALAMAN 10 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+10/15 
+ 
+ 
+membaca secara berulang hasil transkrip wawancara dan dokumen yang telah dikumpulkan untuk mengidentifikasi 
+informasi yang relevan dengan fokus penelitian. Selanjutnya, data diseleksi, difokuskan, disederhanakan, dan 
+dikelompokkan berdasarkan ketentuan dalm Standar Akuntansi Keuangan Entitas Privat (SAK EP) yang menjadi acuan 
+penelitian. Tahap berikutnya adalah penyajian data, yaitu menyusun hasil reduksi data secara sistematis dalam bentuk 
+uraian naratif, tabel perbandingan, dan matriks analisis sehingga memudahkan peneliti dalam memahami pola, hubungan 
+antar data, serta proses interpretasi terhadap temuan penelitian [27]. Tabel dan matriks tersebut digunakan untuk 
+membandingkan praktik akuntansi yang diterapkan oleh UMKM Rams Dimsum dengan ketentuan yang diatur dalam 
+Standar Akuntansi Keuangan Entitas Privat (SAK EP) [28]. Untuk memudahkan perbandingan, praktik perlakuan akuntansi 
+yang diterapkan oleh kantor pusat dan kantor cabang UMKM 
+ 
+Rams Dimsum dibandingkan dengan ketentuan Standar Akuntansi Keuangan Entitas Privat (SAK EP) melalui matriks 
+analisis berikut. 
+ 
+Tabel1.Aspek akuntansi terkait kantor pusat, cabang, SAK EP 
+ 
+No 
+Aspek akuntansi 
+1 
+Pengelolaan Asset 
+2 
+Pencatatan Keuangan 
+3 
+Operasional dan Distribusi Barang 
+4 
+Persediaan 
+5 
+Hutang, Piutang, Modal 
+Table 1. 
+Matriks tersebut memungkinkan peneliti untuk mengidentifikasi kesesuaian serta perbedaan perlakuan akuntansi pada 
+aspek pengelolaan aset, pencatatan keuangan, persediaan, hutang piutang dan modal. Serta alokasi biaya operasional dan 
+distribusi barang antara kantor pusat dan cabang. Seerta ketentuan SAK EP, pada tahap penarikan kesimpulan, peneliti 
+melakukan interpretasi terhadap makna yang terkandung dalam pengalaman dan pemaknaan informan mengenai perlakuan 
+akuntansi kantor pusat dan cabang. Interpretasi ini dilakukan dengan berinteraksi antara data empiris, teori stewardship, 
+konsep akuntansi pusat-cabang, serta temuan penelitian terdahulu. Seluruh proses analisis bersifat iteratif, di mana peneliti 
+kembali ke data mentah apabila diperlukan untuk memastikan keabsahan interpretasi. Untuk meningkatkan keabsahan 
+temuan, penelitian ini menerapkan teknik triangulasi sumber dengan membandingkan data hasil wawancara dari berbagai 
+informan (pemilik, pengelola keuangan pusat, penanggung jawab cabang, dan narasumber ahli) serta mencocokkannya 
+dengan data dokumentasi yang tersedia. 
+ 
+Hasil dan Pembahasan 
+Gambaran Umum UMKM Rams Dimsum 
+ 
+Rams Dimsum merupakan salah satu Usaha Mikro, Kecil, dan Menengah (UMKM) kuliner yang berbasis di Sidoarjo, Jawa 
+Timur, khususnya di kawasan Taman-Geluran. Bisnis ini didirikan dan dikelola oleh Bima Ramadhan, seorang pengusaha 
+muda yang meraih penghargaan sebagai Duta UMKM Jawa Timur 2024. Rams Dimsum telah berkembang pesat dengan 
+memiliki beberapa cabang di Sidoarjo (seperti Geluran dan Sukolegok) serta menjangkau area Surabaya, menjadikannya 
+contoh sukses UMKM lokal yang menggabungkan kualitas produk dengan pemasaran digital yang aktif melalui Instagram 
+@ramsdimsumm dan TikTok @rams.dimsum. Produk utama Rams Dimsum adalah berbagai varian dimsum segar dan frozen 
+yang menggunakan bahan berkualitas tinggi, seperti daging ayam pilihan, udang segar, dan sayuran segar. 
+ 
+Menu andalan mencakup dimsum mentai, varian kukus, goreng, hingga dimsum kekinian dengan rasa original hingga spicy. 
+Keunggulan bisnis ini terletak pada rasa premium yang “worth it”, harga yang terjangkau, serta konsistensi kualitas, 
+sehingga cocok untuk camilan sehari-hari, lauk keluarga, maupun dijual kembali sebagai frozen food. Penjualan dilakukan 
+melalui outlet langsung, layanan delivery GrabFood, GoFood, dll, serta penjualan grosir untuk reseller. Sebagai UMKM yang 
+inspiratif, Rams Dimsum mencerminkan perjalanan wirausaha Bima Ramadhan yang dimulai sejak SMA, termasuk 
+pengalaman berjualan soto sebelum beralih ke dimsum. Bisnis ini aktif terlibat dalam kegiatan pengembangan UMKM, 
+seperti menjadi narasumber seminar kewirausahaan di era digital. Dengan lokasi utama di Jl. Nangka I No. 42, Geluran, 
+Taman, Sidoarjo, Rams Dimsum terus berkembang sebagai pilihan dimsum halal-premium yang digemari masyarakat sekitar 
+Sidoarjo-Surabaya. 
+ 
+Perlakuan akuntansi antara kantor pusat dan kantor cabang pada UMKM Rams Dimsum, agar memperoleh pemahaman 
+yang komprehensif dimana penelitian ini melakukan wawancara dengan Bima Ramadhan selaku pemilik sekaligus pendiri 
+UMKM Rams Dimsum. Sebagai pihak yang bertanggung jawab atas pengelolaan usaha, informan memberikan informasi 
+mengenai visi dan strategi pengembangan bisnis, proses ekspansi cabang, serta pentingnya penerapan sistem akuntansi 
+dalam mendukung pertumbuhan usaha. Selain itu, wawancara juga menggali informasi terkait pencatatan dan pelaporan 
+keuangan, pengelolaan persediaan, mekanisme pengiriman barang antara kantor pusat dan kantor cabang, pelaksanaan 
+pencatatan transaksi harian, serta berbagai kendala yang dihadapi dalam kegiatan operasional usaha. Melalui pendekatan 
+fenomenologi interpretatif, peneliti tidak hanya mendeskripsikan praktik yang terjadi di lapangan, tetapi juga berupaya 
+menafsirkan makna di balik pengalaman dan persepsi para informan terhadap sistem akuntansi yang sedang berjalan, 
+sehingga data yang diperoleh dapat menjadi dasar yang kuat dalam mengidentifikasi kesenjangan antara praktik aktual 
+dengan ketentuan standar akuntansi yang berlaku. 
+ 
+Tata Kelola UMKM Rams Dimsum 
+
+
+--- HALAMAN 11 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+11/15 
+ 
+ 
+UMKM Rams Dimsum menerapkan tata kelola usaha yang berpusat pada pemilik sebagai pengambil keputusan utama dalam 
+aspek operasional maupun keuangan. Struktur usaha terdiri atas satu kantor pusat dan beberapa kantor cabang yang 
+memiliki pembagian tugas yang berbeda. Kantor pusat bertanggung jawab terhadap penyediaan produk, pengelolaan 
+administrasi, pencatatan keuangan, serta pengambilan keputusan strategis, sedangkan kantor cabang berperan sebagai 
+pelaksana operasional penjualan kepada konsumen. Dalam pelaksanaan operasional, setiap cabang mengambil produk dari 
+kantor pusat untuk kemudian dipasarkan kepada konsumen. Setelah kegiatan penjualan selesai, hasil penjualan beserta 
+rekap transaksi diserahkan kembali kepada kantor pusat untuk dilakukan pencatatan dan rekapitulasi. Koordinasi antara 
+kantor pusat dan cabang masih dilakukan secara sederhana melalui komunikasi menggunakan aplikasi WhatsApp tanpa 
+didukung dokumen perpindahan barang seperti surat jalan maupun nota transfer. 
+ 
+Pengelolaan keuangan masih dilakukan secara terpusat oleh kantor pusat. Setiap cabang melaporkan hasil penjualan  harian 
+melalui chat dan telepon, sedangkan laporan keuangan yang disusun masih berupa laporan gabungan seluruh cabang. 
+Pengeluaran operasional kecil di masing-masing outlet menggunakan kas yang tersedia di cabang, kemudian direkap setiap 
+hari dan dilaporkan kepada kantor pusat. Hingga penelitian dilakukan, UMKM Rams Dimsum belum menggunakan sistem 
+Point of Sales (POS) maupun sistem informasi akuntansi yang terintegrasi, meskipun pemilik telah merencanakan 
+penggunaan sistem berbasis website untuk mendukung pelaporan keuangan yang lebih efektif. Pada aspek pengendalian 
+persediaan, kantor pusat bertanggung jawab atas penyediaan produk untuk seluruh cabang. Produk yang mengalami 
+kerusakan atau tidak dapat dijual namun masih layak konsumsi tidak dicatat secara khusus sebagai persediaan rusak, 
+melainkan dibawa pulang atau diberikan kepada karyawan. Sementara itu, seluruh pengelolaan kewajiban usaha, termasuk 
+pembayaran pinjaman kepada pihak ketiga, juga dilakukan oleh kantor pusat berdasarkan kemampuan keuangan se telah 
+memperhitungkan biaya operasional usaha. 
+ 
+Berdasarkan tata kelola tersebut, dapat diketahui bahwa UMKM Rams Dimsum telah memiliki pembagian fungsi antara 
+kantor pusat dan kantor cabang sehingga operasional usaha dapat berjalan dengan baik. Namun demikian, sistem tata 
+kelola yang diterapkan masih bersifat sederhana dan belum didukung oleh sistem administrasi serta dokumentasi yang 
+terintegrasi. Kondisi tersebut menunjukkan bahwa pengelolaan usaha masih berorientasi pada kebutuhan operasional sehari-
+hari sehingga masih memerlukan penguatan pada aspek administrasi, dokumentasi, dan sistem informasi akuntansi agar 
+pengelolaan usaha menjadi lebih efektif serta sesuai dengan ketentuan SAK EP. 
+ 
+Data Pendapatan Operasional UMKM Rams Dimsum 
+Tabel 2. Laporan Opersional Rams Dimsum 2025 
+Taman-Sidoarjo Jawa Timur 
+ 
+Bulan 
+Pendapatan Gabungan 1 
+Operasional sewa 
+bahan baku. Dll 
+outlet, Gaji Karyawan 
+Januari 
+Rp 45.000.000 
+Rp 17.000.000 
+Rp 4.500.000 
+Februari 
+Rp 42.500.000 
+Rp 17.000.000 
+Rp 4.500.000 
+Maret 
+Rp 51.032.000 
+Rp 19.000.000 
+Rp 4.500.000 
+April 
+Rp 23.045.000 
+Rp 17.000.000 
+Rp 4.500.000 
+Mei 
+Rp 23.065.000 
+Rp 17.000.000 
+Rp 4.500.000 
+Juni 
+Rp 32.502.333 
+Rp 17.000.000 
+Rp 4.500.000 
+Juli 
+Rp 30.200.000 
+Rp 17.000.000 
+Rp 4.500.000 
+Agustus 
+Rp 22.203.000 
+Rp 17.000.000 
+Rp 4.500.000 
+September 
+Rp 18.234.500 
+Rp 17.000.000 
+Rp 4.500.000 
+Oktober 
+Rp 24.034.000 
+Rp 17.000.000 
+Rp 4.500.000 
+November 
+Rp 25.110.300 
+Rp 17.000.000 
+Rp 4.500.000 
+Desember 
+Rp 21.785.500 
+Rp 17.000.000 
+Rp 4.500.000 
+Table 2. 
+Berdasarkan dokumen internal yang diperoleh dari pemilik UMKM Rams Dimsum, diketahui bahwa usaha telah melakukan 
+pencatatan pendapatan operasional secara bulanan. Data tersebut merupakan pendapatan gabungan yang berasal dari 
+seluruh aktivitas penjualan kantor pusat dan kantor cabang selama tahun 2025. Selain informasi mengenai pendapatan, 
+dokumen tersebut juga memuat biaya operasional yang meliputi sewa outlet, bahan baku, dan biaya operasional lainnya 
+serta gaji karyawan. Dokumen ini digunakan sebagai data pendukung untuk memperkuat hasil wawancara mengenai praktik 
+pencatatan keuangan yang diterapkan oleh UMKM Rams Dimsum. 
+ 
+Berdasarkan data tersebut, pendapatan gabungan UMKM Rams Dimsum mengalami fluktuasi sepanjang tahun 2025. 
+Pendapatan tertinggi terjadi pada bulan Maret sebesar Rp51.032.000, sedangkan pendapatan terendah terjadi pada bulan 
+September sebesar Rp18.234.500. Di sisi lain, biaya operasional relatif stabil sebesar Rp17.000.000 setiap bulan, kecuali 
+bulan Maret yang meningkat menjadi Rp19.000.000. Sementara itu, biaya gaji karyawan tercatat tetap sebesar Rp4.500.000 
+setiap bulan. Kondisi tersebut menunjukkan bahwa UMKM telah memiliki pencatatan pendapatan dan biaya operasional, 
+namun pencatatan tersebut masih bersifat sederhana karena hanya menyajikan data gabungan dan belum memisahkan 
+informasi keuangan berdasarkan masing-masing cabang sesuai dengan prinsip penyajian laporan keuangan yang lebih 
+terstruktur sesuai dengan standar akuntansi keuangan entitas privat (SAK EP). 
+ 
+Hasil Penelitian 
+ 
+Tabel 3.Triangulasi data terkait Kantor Pusat, Cabang, SAK EP 
+
+
+--- HALAMAN 12 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+12/15 
+ 
+ 
+No 
+Aspek Akuntansi 
+Kantor Pusat 
+Kantor Cabang 
+SAK EP 
+1 
+Pengelolaan Asset 
+Belum 
+dilakukanMenggunakan aset dariAset tetap seharusnya 
+perhitungan dipusat 
+pusat, 
+sedangkandiakui  dan  disusutkan 
+pencatatannya 
+dilakukan 
+olehkantor 
+pusat. 
+sesuai masa manfaatnya. 
+2 
+Pencatatan Keuangan  Penjualan   dilaporkanMelaporkan  penjualanPencatatan 
+perlu 
+melalui  chat  danke 
+pusat 
+danterdokumentasi dengan 
+telepon.  Pengeluaranmenggunakan kas outletbaik dan laporan per 
+kecil  direkap  harian.untuk pengeluaran kecil.cabang 
+sebaiknya 
+Laporan 
+keuangan 
+masih digabung. 
+disajikanterpisah. 
+3 
+Operasional 
+danMenyiapkan 
+produkMengambil produk dariPerpindahan barang dan 
+Distribusi Barang 
+untuk  outlet  sertakantor 
+pusat,transaksi 
+antar 
+unit 
+menerima  hasil  danmenjualnya, 
+ 
+laluperlu 
+didukung 
+rekap  penjualan  darimenyerahkan hasil danpencatatan 
+ 
+serta 
+cabang. 
+Belumrekap 
+penjualan 
+kedokumen yang memadai. 
+menggunakan 
+ suratkantor pusat.Menerima 
+jalan 
+atau 
+notainformasi   pengiriman 
+transfer.Informasi 
+melalui 
+WhatsApp 
+pengiriman 
+dilakukantanpadokumen tertulis 
+melalui WhatsApp 
+4 
+Persediaan 
+Stok  yang  rusak  atauCabang melaporkan sisaPersediaan yang rusak, 
+tidak dapat dijual tetapiatau produk yang tidakusang, atau tidak dapat 
+masih layak konsumsiterjual kepada kantordijual 
+seharusnya 
+biasanya dibawa pulangpusat tanpa melakukandicatat 
+ 
+sebagai 
+atau  dibagikan  kepadapencatatan   tersendiripengurang  persediaan 
+karyawan 
+dan 
+tidakatas stok rusak. 
+dicatat secara khusus. 
+dan 
+diakui 
+sebagai 
+beban 
+atau 
+kerugian 
+pada periode terjadinya. 
+5 
+Hutang, Piutang, Modal Pinjaman 
+dicatatTidak 
+mencatatSAK 
+EP 
+mengatur 
+terpisah  dan 
+dibayarpinjaman, 
+ 
+seluruhbahwa 
+utang 
+atau 
+rutin 
+setiap 
+ bulanpengelolaan 
+dilakukankewajiban harus diakui 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 3. 
+setelah 
+biayakantor pusat. 
+operasional 
+diperhitungkan. 
+dan 
+dicatat 
+ secara 
+terpisah 
+dari 
+  biaya 
+operasional  
+   serta 
+disajikan dalam laporan 
+keuangan 
+ 
+sampai 
+kewajiban 
+tersebutdiselesaikan. 
+Berdasarkan hasil wawancara dan observasi yang dilakukan terhadap 1 informan, yaitu pemilik usaha Bima Ramadhan, 
+diperoleh informasi mengenai kegiatan operasional dan distribusi barang yang dilakukan dalam usaha tersebut. Selain itu, 
+penelitian ini juga menemukan bahwa sistem pencatatan keuangan yang diterapkan masih dilakukan secara sederhana, 
+meliputi pencatatan transaksi terkait pengakuan aset dan beban, hutang, piutang, modal, serta persediaan. Hasil penelitian 
+menunjukkan bahwa pengelolaan keuangan usaha belum sepenuhnya menerapkan standar akuntansi yang berlaku, 
+sehingga pencatatan dilakukan berdasarkan kebutuhan dan pemahaman pemilik usaha. 
+ 
+Selain itu, Bima Ramadhan menegaskan bahwa peralatan operasional dan biaya renovasi kecil langsung dicatat sebagai 
+beban pada saat terjadinya pengeluaran tanpa dilakukan pencatatan sebagai aset. 
+ 
+Pengelolaan Asset 
+ 
+‘Peralatan yang dibeli umumnya langsung dicatat sebagai biaya pada saat pembelian. Hal ini karena barang yang 
+dibelitermasukperlengkapanoperasionaldengannilairelatifkecil,sepertisarungtanganplastik,kainlap,dandang 
+besar, 
+capitan, 
+freezer portable, wadah plastik, kompor gas, kuas kue, botol saus, dan panci kecil. Biaya renovasi kecil biasanya langsung 
+dicatat sebagai pengeluaran pada bulan berjalan. Contohnya, pada bulan lalu dilakukan pengecatan ulang booth karena 
+warna cat sudah mulai pudar.’ Hal ini sesuai dengan penyataan Bima Ramadhan (Wawancara, 16 April 2026) 
+ 
+Bima Ramadhan juga menjelaskan bahwa pencatatan dan pelaporan keuangan masih dilakukan secara manual serta belum 
+dipisahkan per cabang. Usaha berencana menerapkan sistem berbasis website untuk mendukung pengelolaan keuangan 
+yang lebih efektif dan terintegrasi. 
+ 
+Pencatatan Keuangan 
+ 
+‘Setiap cabang melaporkan hasil penjualan harian melalui chat dan telepon. Saat ini usaha belum menggunakan aplikasi 
+kasir (POS), namun terdapat rencana untuk menggunakan website agar pelaporan lebih mudah dan terintegrasi. 
+Pengeluaran kecil seperti parkir, kebersihan, dan kebutuhan lainnya diambil langsung dari kas outlet. Selanjutnya, 
+pengeluaran  tersebut  direkap  setiap  malam  menggunakan  sistem  harian.  Laporan  keuangan  yang 
+
+
+--- HALAMAN 13 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+13/15 
+ 
+ 
+digunakanmasihberupalaporangabungandariseluruhoutletdanbelumdipisahkanpercabang.Prosespencatatan 
+keuangansecaramanualcukupmelelahkan,terutamaketikakondisipenjualansedangramai.Dalamsatuhariomzet penjualan dapat 
+mencapai 
+sekitar 
+Rp1.800.000, 
+Saya 
+berharap 
+ke 
+depannya 
+tersedia 
+satu 
+website 
+yang 
+dapat 
+menampilkanlaporankeuangandandatapenjualanseluruhcabangsecaraotomatisagarpengelolaanusahamenjadi lebih praktis 
+dan efisien.’ Hal ini sesuai dengan penyataan Bima Ramadhan (Wawancara, 16 April 2026) 
+ 
+Bima Ramadhan menegaskan bahwa dapat diketahui prosedur distribusi barang dari kantor pusat ke cabang masih 
+dilakukan secara sederhana tanpa didukung dokumen tertulis, melainkan melalui koordinasi menggunakan aplikasi 
+WhatsApp. 
+ 
+Operasional dan Distribusi Barang 
+ 
+‘Prosedurpengirimanbahanbakuatauprodukdimsumdilakukandengancarakaryawanoutletmengambillangsung 
+barang 
+ke 
+pusat pada pukul15.00WIB. Produk yang telah dikirim ke outlet dijual hinggapukul 18.00 WIB. Setelah kegiatan penjualan 
+selesai, hasil penjualan beserta rekapan penjualan langsung dikembalikan ke pusat untuk dilakukan rekapitulasi. Usaha 
+Bima Ramadhan belum menggunakan dokumen tertulis seperti surat jalan maupun nota transfer dalam setiap perpindahan 
+barang dari pusat ke cabang. Proses distribusi barang hanya dilakukan melalui komunikasi menggunakan aplikasi WhatsApp 
+sebagai media informasi dan konfirmasi pengiriman barang.’ Hal ini sesuai dengan penyataan Bima Ramadhan (Wawancara, 
+16 April 2026) 
+ 
+Bima Ramadhan mengungkapkan bahwa produk yang tidak dapat dijual tetapi masih layak konsumsi tidak dicatat secara 
+khusus, melainkan diperlakukan sebagai pengeluaran biasa. 
+ 
+Persediaan 
+ 
+‘Kebanyakan kalau produknya masih layak konsumsi tapi gak bisa dijual (misal warna nya pudar) ya kita bawa pulang buat 
+dimakan sama orang rumah atau dibagikan ke karyawan buat bonus camilan. Jadi nggak di catat apa-apa, dianggap 
+pengeluaran biasa aja.’ Hal ini sesuai dengan penyataan Bima Ramadhan (Wawancara, 16 April 2026) 
+ 
+Lebih lanjut, Bima Ramadhan menambahkan bahwa pembayaran pinjaman atau kewajiban kepada pihak ketiga dilakukan 
+secara bertahap setiap bulan setelah memperhitungkan kebutuhan operasional usaha, dan dicatat sebagai pengeluaran rutin 
+hingga kewajiban tersebut lunas. 
+ 
+Hutang, Piutang dan Modal 
+ 
+‘Kalau ada kerja sama dengan pihak ketiga atau pinjaman bank. Pembayarannya dipisahkan setiap bulan supaya lebih 
+mudah 
+dipantau. 
+Sebelum 
+membayar, 
+saya 
+menghitung 
+dulu 
+biaya 
+operasional 
+seperti 
+sewa 
+stand 
+dan 
+gaji 
+karyawan.Setelahitu,barusisadanadigunakanuntukmembayarkewajibanpinjaman.Misalnya,kalaupembayaranper 
+bulan 
+Rp800.000, maka jumlah itu dicatat sebagai pengeluaran rutin setiap bulan sampai kewajibannya selesai dibayar.’ Hal ini 
+sesuai dengan penyataan Bima Ramadhan (Wawancara, 16 April 2026) 
+ 
+Dengan demikian, dapat disimpulkan bahwa UMKM Rams Dimsum masih menerapkan metode pengelolaan keuangan dan 
+operasional secara manual dengan pendekatan yang disesuaikan dengan kebutuhan usaha. Pencatatan transaksi, 
+pengelolaan aset, persediaan, distribusi barang, serta pelaporan keuangan belum dilakukan secara terintegrasi dan 
+sebagian besar masih menggunakan komunikasi melalui WhatsApp serta rekapitulasi harian. Meskipun metode tersebut 
+mampu mendukung kegiatan operasional usaha, masih terdapat beberapa tantangan, yaitu belum adanya pemisahan  
+laporan keuangan per cabang, belum tersedianya dokumen pendukung dalam proses distribusi barang, serta belum 
+dilakukannya pencatatan khusus terhadap persediaan yang rusak atau tidak dapat dijual. Oleh karena itu, diperlukan 
+pengembangan sistem pencatatan keuangan yang lebih terintegrasi agar pengelolaan usaha menjadi lebih efektif, efisien, 
+dan menghasilkan informasi keuangan yang lebih akurat. 
+ 
+Pembahasan 
+Pengelolaan Asset 
+ 
+Hasil triangulasi menunjukkan bahwa pengelolaan aset pada UMKM Rams Dimsum belum sepenuhnya sesuai dengan SAK 
+EP. Berdasarkan hasil wawancara, kantor pusat mencatat pembelian peralatan operasional dan biaya renovasi kecil secara 
+langsung sebagai beban pada periode terjadinya transaksi. Sementara itu, kantor cabang hanya menggunakan aset yang 
+disediakan oleh kantor pusat tanpa melakukan pencatatan aset secara mandiri. Praktik tersebut menunjukkan bahwa usaha 
+belum melakukan identifikasi aset tetap berdasarkan masa manfaatnya. Dalam SAK EP, aset tetap yang memiliki manfaat 
+ekonomi lebih dari satu periode seharusnya diakui sebagai aset, kemudian diukur dan disusutkan selama umur manfaatnya. 
+Dengan demikian, perlakuan akuntansi aset pada UMKM Rams Dimsum masih bersifat praktis dan berorientasi pada 
+kemudahan pencatatan, sehingga belum memenuhi ketentuan pengakuan aset tetap sesuai SAK EP. 
+ 
+Pencatatan Keuangan 
+ 
+Hasil triangulasi memperlihatkan bahwa pencatatan keuangan belum sepenuhnya sesuai dengan SAK EP. Temuan ini 
+didukung oleh dokumen operasional UMKM Rams Dimsum yang menunjukkan bahwa pendapatan dan biaya masih disajikan 
+dalam bentuk laporan gabungan, sehingga belum tersedia informasi keuangan yang terpisah untuk setiap kantor cabang. 
+
+
+--- HALAMAN 14 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+14/15 
+ 
+ 
+Kantor cabang melaporkan hasil penjualan harian kepada kantor pusat melalui WhatsApp dan telepon, sedangkan seluruh 
+pencatatan keuangan masih dilakukan secara manual oleh kantor pusat dalam bentuk laporan gabungan seluruh cabang. 
+Pengeluaran operasional kecil dari kas outlet juga hanya direkap setiap hari tanpa adanya laporan keuangan tersendiri 
+untuk masing-masing cabang. SAK EP menekankan pentingnya penyajian informasi keuangan yang andal, terdokumentasi, 
+dan dapat dipisahkan sesuai aktivitas entitas. Pada usaha yang memiliki beberapa cabang, pencatatan setiap cabang 
+sebaiknya dilakukan secara terpisah agar memudahkan evaluasi kinerja masing-masing unit. Oleh karena itu, sistem 
+pencatatan yang masih digabung menyebabkan informasi keuangan belum sepenuhnya memenuhi karakteristik relevan dan 
+andal sebagaimana yang diharapkan dalam SAK EP. 
+ 
+Operasional dan Distribusi Barang 
+ 
+Hasil penelitian menunjukkan bahwa proses distribusi barang antara kantor pusat dan kantor cabang belum sepenuhnya 
+sesuai dengan SAK EP. Kantor pusat menyiapkan produk untuk seluruh cabang, sedangkan cabang mengambil barang 
+secara langsung ke pusat dan mengembalikan hasil penjualan beserta rekap penjualan setiap hari. Seluruh proses 
+perpindahan barang hanya didukung komunikasi melalui WhatsApp tanpa adanya surat jalan maupun nota transfer. Dalam 
+perspektif SAK EP, setiap transaksi maupun perpindahan barang antarunit usaha seharusnya memiliki dokumen pendukung 
+sebagai bukti transaksi. Dokumen tersebut penting untuk menjaga keandalan informasi akuntansi, mempermudah proses 
+pengendalian internal, serta meningkatkan akuntabilitas hubungan antara kantor pusat dan kantor cabang. Dengan 
+demikian, mekanisme distribusi pada UMKM Rams Dimsum masih belum memenuhi aspek dokumentasi yang dianjurkan 
+dalam SAK EP. 
+ 
+Persediaan 
+ 
+Berdasarkan hasil triangulasi, pengelolaan persediaan belum sesuai dengan SAK EP. Produk yang mengalami kerusakan 
+ringan atau tidak layak dijual tetapi masih dapat dikonsumsi tidak dicatat sebagai persediaan rusak maupun kerugian 
+persediaan. Produk tersebut hanya dibawa pulang atau dibagikan kepada karyawan tanpa adanya pencatatan khusus. 
+Sementara itu, kantor cabang hanya melaporkan sisa barang kepada kantor pusat tanpa melakukan pencatatan tersendiri 
+atas persediaan yang rusak. Menurut SAK EP, persediaan yang mengalami penurunan nilai, rusak, atau tidak dapat dijual 
+seharusnya diakui sebagai pengurang nilai persediaan dan dicatat sebagai beban atau kerugian pada periode terjadinya. 
+Tidak adanya pencatatan tersebut menyebabkan nilai persediaan yang disajikan berpotensi tidak mencerminkan kondisi 
+yang sebenarnya sehingga laporan keuangan menjadi kurang andal. 
+ 
+Hutang, Piutang, dan Modal 
+ 
+Hasil penelitian menunjukkan bahwa perlakuan terhadap hutang, piutang, dan modal belum sepenuhnya sesuai dengan SAK 
+EP. Kantor pusat telah melakukan pembayaran pinjaman secara rutin setiap bulan setelah memperhitungkan biaya 
+operasional. Akan tetapi, pembayaran tersebut lebih diperlakukan sebagai pengeluaran rutin daripada sebagai pengurangan 
+kewajiban dalam laporan keuangan. Di sisi lain, kantor cabang tidak melakukan pencatatan terhadap hutang maupun 
+kewajiban karena seluruh pengelolaannya dilakukan oleh kantor pusat. Dalam SAK EP, setiap kewajiban harus diakui dan 
+dicatat secara terpisah dari beban operasional hingga kewajiban tersebut diselesaikan. Oleh karena itu, praktik yang 
+dilakukan UMKM Rams Dimsum menunjukkan bahwa pengelolaan kewajiban masih berfokus pada arus kas keluar tanpa 
+memperhatikan penyajian saldo kewajiban dalam laporan keuangan. 
+ 
+Berdasarkan hasil triangulasi antara praktik yang diterapkan oleh kantor pusat, kantor cabang, dan ketentuan dalam SAK 
+EP, dapat disimpulkan bahwa perlakuan akuntansi pada UMKM Rams Dimsum secara keseluruhan belum sepenuhnya sesuai 
+dengan SAK EP. Meskipun telah terdapat pembagian fungsi antara kantor pusat sebagai pengelola administrasi keuangan 
+dan kantor cabang sebagai pelaksana operasional, sistem pencatatan yang digunakan masih bersifat sederhana dan lebih 
+berorientasi pada kebutuhan operasional sehari-hari dibandingkan dengan penerapan standar akuntansi. Ketidaksesuaian 
+tersebut terlihat pada beberapa aspek, yaitu pengakuan aset tetap yang masih dicatat sebagai beban, laporan keuangan 
+yang belum dipisahkan berdasarkan cabang, belum adanya dokumen pendukung dalam distribusi barang antarunit, 
+persediaan rusak yang belum diakui sebagai kerugian, serta pencatatan kewajiban yang belum disajikan sesuai ketentuan  
+SAK EP. Meskipun demikian, hasil penelitian juga menunjukkan bahwa mekanisme pengelolaan yang diterapkan telah 
+mampu mendukung kelancaran operasional usaha sehari-hari. Hal ini menunjukkan bahwa UMKM Rams Dimsum telah 
+memiliki dasar sistem administrasi yang cukup baik, namun masih memerlukan penyempurnaan pada aspek pengakuan, 
+pencatatan, dokumentasi, dan penyajian laporan keuangan agar sesuai dengan ketentuan SAK EP. 
+ 
+Dengan penerapan sistem akuntansi yang lebih terstruktur dan pemisahan pencatatan antara kantor pusat dan kantor 
+cabang, informasi keuangan yang dihasilkan akan menjadi lebih akurat, transparan, dan dapat digunakan sebagai dasar 
+pengambilan keputusan maupun pengembangan usaha di masa mendatang. 
+ 
+Rekomendasi Penerapan Tata Kelola Akuntansi Kantor Pusat dan Kantor Cabang Berdasarkan SAK EP 
+
+
+--- HALAMAN 15 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+15/15 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 1. 
+ 
+Gambar 1. Diagram Alur Tata Kelola 
+ 
+Berdasarkan ketentuan SAK EP, setiap kantor cabang sebaiknya melakukan pencatatan transaksi secara mandiri sebelum 
+laporan tersebut direkapitulasi oleh kantor pusat. Dengan mekanisme tersebut, informasi mengenai pendapatan, biaya, aset, 
+dan persediaan setiap cabang dapat diketahui secara terpisah sehingga memudahkan proses evaluasi kinerja dan  
+penyusunan laporan keuangan gabungan. 
+ 
+Laporan Penjualan Cabang Geluran  
+Tabel 4. Laporan Penjualan Januari 2025 
+Tanggal 
+Uraian 
+Penjualan (Rp) 
+1 Januari 
+Penjualan Dimsum 
+1.800.000 
+2 Januari 
+Penjualan Dimsum 
+1.650.000 
+3 Januari 
+Penjualan Dimsum 
+1.950.000 
+Total Januari 
+ 
+54.000.000 
+ 
+Laporan ini digunakan untuk mengetahui total pendapatan yang diperoleh masing-masing cabang selama satu periode. Dengan adanya 
+laporan per cabang, kantor pusat dapat membandingkan kinerja antar outlet secara objektif. 
+ 
+Biaya Operasional Cabang Geluran 
+Cabang Geluran 
+Tabel 5. Laporan Biaya Operasional Januari 2025 
+Jenis Biaya 
+Nominal (Rp) 
+Listrik 
+500.000 
+Parkir 
+200.000 
+Kebersihan 
+150.000 
+Transportasi 
+250.000 
+Lain-lain 
+400.000 
+Total Biaya 
+1.500.000 
+Biaya operasional dicatat berdasarkan pengeluaran yang benar-benar terjadi di cabang sehingga setiap outlet memiliki informasi biaya 
+yang jelas dan dapat dipertanggungjawabkan. 
+ 
+
+
+--- HALAMAN 16 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+16/15 
+ 
+ 
+ 
+Laporan Laba Cabnag Geluran 
+Cabang Geluran 
+Tabel 6. Laporan Laba Rugi Januari 2025 
+Uraian 
+Nominal (Rp) 
+Pendapatan 
+54.000.000 
+Biaya Operasional 
+(1.500.000) 
+Laba Bersih 
+52.500.000 
+Laporan laba rugi setiap cabang bertujuan mengetahui tingkat keuntungan masing-masing outlet sehingga pemilik usaha dapat mengevaluasi 
+cabang yang memiliki kinerja baik maupun yang memerlukan perbaikan. 
+ 
+Laporan Gabungan kantor Pusat 
+Tabel 7. Laporan Pendapatan Gabungan Januari 2025 
+Cabang 
+Pendapatan 
+Geluran 
+54.000.000 
+Sukolegok 
+45.000.000 
+Surabaya 
+38.000.000 
+Total Pendapatan 
+137.000.000 
+Kemudian seluruh biaya digabung 
+ 
+Jenis Biaya 
+Nominal 
+Opersional seluruh cabang 
+28.000.000 
+Gaji karyawan 
+13.500.000 
+Sehingga diperoleh laporan laba rugi gabungan 
+ 
+Kantor pusat tidak lagi mencatat seluruh transaksi secara langsung, melainkan mengonsolidasikan laporan yang telah disusun oleh masing-masing 
+cabang. Dengan demikian, laporan keuangan menjadi lebih transparan dan memudahkan pengambilan keputusan. 
+ 
+Surat Jalan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SURAT JALAN 
+ 
+No : SJ/001/I/2025 
+ 
+Tanggal : 1 Januari 2025 
+ 
+Cabang Tujuan : Geluran 
+ 
+----------------------------------------
+---------- 
+ 
+Produk                 Jumlah 
+ 
+Dimsum Original         100 pcs 
+ 
+Dimsum Mentai            80 pcs 
+ 
+Dimsum Mozarella         50 pcs 
+ 
+----------------------------------------
+---------- 
+ 
+Diserahkan oleh, 
+ 
+(.................) 
+ 
+
+
+--- HALAMAN 17 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+17/15 
+ 
+ 
+ 
+Gambar 2. Surat Jalan 
+Surat jalan berfungsi sebagai bukti perpindahan barang dari kantor pusat ke kantor cabang sehingga jumlah barang yang dikirim dan diterima 
+dapat diverifikasi. 
+ 
+Rekap Penjualan Harian 
+Tabel 8. Rekap Penjualan Harian 
+Tanggal 
+Tunai 
+QRIS 
+Go Food 
+GrabFood 
+Total 
+1 Januari 
+700.000 
+400.000 
+350.000 
+350.000 
+1.800.000 
+Rekap penjualan harian membantu kantor pusat memperoleh informasi sumber penerimaan kas serta mempermudah proses rekonsiliasi setiap 
+akhir hari. 
+ 
+Bukti Pengeluaran 
+Tabel 9. Bukti Pengeluaran 
+Tanggal 
+Uraian 
+Nominal 
+Bukti 
+1 Januari 
+Parkir 
+20.000 
+Nota 
+1 Januari 
+Kebersihan 
+35.000 
+Nota 
+2 Januari 
+Gas LPG 
+250.000 
+Nota 
+Seluruh pengeluaran operasional sebaiknya didukung dengan bukti transaksi sebagai dasar pencatatan dan pertanggungjawaban keuangan. 
+ 
+Laporan Persediaan 
+Tabel 10. Laporan Persediaan 
+Produk 
+Masuk 
+Keluar 
+Sisa 
+Dimsum Original 
+100 
+90 
+10 
+Dimsum Mentai 
+80 
+70 
+10 
+Dimsum Mozarella 
+50 
+45 
+5 
+ 
+Tabel 11. Jika terdapat produk rusak 
+Produk 
+Jumlah 
+Keterangan 
+Dimsum Original 
+5pcs 
+Kemasan Rusak 
+Persediaan yang rusak sebaiknya dicatat sebagai pengurang persediaan dan diakui sebagai beban atau kerugian agar nilai persediaan yang disajikan 
+sesuai dengan kondisi sebenarnya. 
+ 
+Daftar Asset Tetap 
+Tabel 12. Daftar Asset Tetap 
+Nama Asset 
+Harga Perolehan 
+Tanggal Perolehan 
+Umur Manfaat 
+Freezer 
+8.000.000 
+5 Januari 2025 
+8 Tahun 
+Kompor Gas 
+1.500.000 
+10 Januari 2025 
+4 Tahun 
+Etalase 
+4.500.000 
+15 Januari 2025 
+5 Tahun 
+Selanjutnya aset disusutkan setiap tahun sesuai umur manfaatnya, Pencatatan aset tetap bertujuan agar peralatan yang memiliki masa manfaat 
+lebih dari satu periode tidak langsung diakui sebagai beban, melainkan disajikan sebagai aset dan dialokasikan melalui penyusutan selama umur 
+manfaatnya. 
+Berdasarkan hasil penelitian, diketahui bahwa UMKM Rams Dimsum telah memiliki pembagian fungsi antara kantor pusat dan kantor cabang, 
+namun sistem pencatatan yang diterapkan masih bersifat sederhana dan belum sepenuhnya sesuai dengan SAK EP. Oleh karena itu, peneliti 
+menyusun rekomendasi tata kelola akuntansi yang meliputi pemisahan pencatatan setiap cabang, penyusunan laporan keuangan per cabang, 
+penggunaan dokumen pendukung dalam distribusi barang, pencatatan persediaan, serta pengelolaan aset tetap. Rekomendasi ini diharapkan dapat 
+menjadi acuan bagi UMKM Rams Dimsum dalam meningkatkan kualitas pelaporan keuangan dan mendukung pengambilan keputusan secara lebih 
+efektif. 
+Simpulan  
+Berdasarkan hasil penelitian, dapat disimpulkan bahwa perlakuan akuntansi antara kantor pusat dan kantor cabang pada UMKM Rams 
+Dimsum belum sepenuhnya sesuai dengan ketentuan Standar Akuntansi Keuangan Entitas Privat (SAK EP). Ketidaksesuaian tersebut terlihat pada 
+pencatatan aset tetap yang masih diakui sebagai beban, laporan keuangan yang masih disa,,jikan secara gabungan tanpa pemisahan per cabang, 
+belum adanya dokumen pendukung dalam distribusi barang, pencatatan persediaan yang belum memadai, serta pengelolaan kewajiban yang masih 
+dilakukan secara sederhana. Meskipun demikian, sistem pencatatan yang diterapkan telah mampu mendukung kegiatan operasional usaha sehari-
+hari. Berdasarkan temuan tersebut, penelitian ini tidak hanya mengidentifikasi kesenjangan antara praktik akuntansi yang diterapkan dengan 
+ketentuan SAK EP, tetapi juga menghasilkan rekomendasi tata kelola akuntansi yang meliputi pemisahan pencatatan keuangan antara kantor pusat 
+dan kantor cabang, penyusunan laporan penjualan dan laporan keuangan setiap cabang, penggunaan dokumen pendukung seperti surat jalan dan 
+
+
+--- HALAMAN 18 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+18/15 
+ 
+ 
+bukti pengeluaran, pencatatan persediaan secara lebih tertib, serta pengelolaan aset tetap sesuai dengan ketentuan SAK EP. Rekomendasi tersebut 
+diharapkan dapat menjadi acuan bagi UMKM Rams Dimsum dalam meningkatkan kualitas informasi keuangan, memperkuat pengendalian 
+internal, serta mendukung pengambilan keputusan usaha secara lebih efektif. 
+SARAN 
+Penelitian selanjutnya diharapkan dapat mengembangkan penelitian ini dengan melibatkan lebih banyak informan maupun objek penelitian 
+dari berbagai sektor UMKM serta mengevaluasi implementasi rekomendasi tata kelola akuntansi yang telah disusun sehingga dapat diketahui 
+efektivitas penerapannya dalam meningkatkan kualitas pelaporan keuangan. 
+ 
+Ucapan Terima Kasih 
+Puji syukur kehadirat Allah SWT atas segala rahmat, hidayah, dan karunia-Nya sehingga saya dapat menyelesaikan skripsi yang berjudul 
+"Perlakuan Akuntansi Kantor Pusat dan Cabang berdasarkan SAK EP: Studi pada UMKM Rams Dimsum". Saya menyampaikan rasa terima kasih 
+yang sebesar-besarnya kepada kedua orang tua dan keluarga tercinta atas doa, kasih sayang, dukungan, serta motivasi yang tiada henti. Saya juga 
+mengucapkan terima kasih kepada seluruh dosen Program Studi Akuntansi Fakultas Bisnis, Hukum, dan Ilmu Sosial Universitas Muhammadiyah 
+Sidoarjo atas ilmu, bimbingan, dan pengalaman yang telah diberikan selama masa perkuliahan. Selain itu, saya mengucapkan terima kasih kepada 
+pemilik beserta seluruh pihak UMKM Rams Dimsum yang telah memberikan izin, informasi, serta bantuan selama pelaksanaan penelitian. 
+Terakhir, saya menyampaikan terima kasih kepada sahabat, teman-teman, dan semua pihak yang telah memberikan doa, dukungan, serta semangat 
+sehingga skripsi ini dapat diselesaikan dengan baik. Semoga segala bantuan, kebaikan, dan dukungan yang telah diberikan mendapatkan balasan 
+yang berlipat ganda dari Allah SWT. 
+ 
+Referensi 
+1. 
+Arie, “Arie Pratama, Anggota TISAK IAI.” 
+2. 
+P. Sak Ep Dalam Penyusunan Laporan Keuangan Sederhana Umkm Kuliner Mie Pecal Wak Sar and D. Ramadan, “Penerapan SAK EP dalam 
+Penyusunan Laporan Keuangan Sederhana UMKM Kuliner Mie Pecal Wak Sar.” [Online]. Available: 
+https://journal.cattleyadf.org/index.php/Jasmien/index . 
+3. 
+F. Q. Aini, M. S. Arisyanada, and N. Mas’adah, “Analisis Penerapan Laporan Keuangan dengan Standar Akuntansi Keuangan Entitas Mikro 
+Kecil dan Menengah (SAK EMKM) pada UMKM Martina Rasa Cake dan Bakery.” 
+4. 
+J. Ekonomi Bisnis, M. dan Akuntansi, S. F. Natasha, and P. Ganesha Medan, “Tingkat Pengetahuan Pelaku UMKM Mengenai SAK EMKM 
+dalam Penyusunan Laporan Keuangan.” 
+5. 
+C. Yolanda, U. Hasanah, N. Dhien, and S. E. Pembangunan, “Peran Usaha Mikro, Kecil, dan Menengah (UMKM) dalam Pengembangan 
+Ekonomi Indonesia.” 
+6. 
+S. Hadijah and E. A. Mokodompit, “Strategi Diversifikasi sebagai Mekanisme Ketahanan UMKM: Systematic Literature Review Tahun 
+2020–2025,” RIGGS: Journal of Artificial Intelligence and Digital Business, vol. 4, no. 4, pp. 6451–6458, Dec. 2025, doi: 
+10.31004/riggs.v4i4.4620. 
+7. 
+N. Sani, K. S. Mulya, R. Ameliya, M. Rizkan, and M. Akbar, “Pengaruh Penerapan Sistem Informasi Akuntansi Terintegrasi terhadap Kinerja 
+Keuangan UMKM di Kota Bima,” J-ESA (Jurnal Ekonomi Syariah), vol. 8, no. 2, pp. 234–244, Dec. 2025, doi: 10.52266/jesa.v8i2.6471. 
+8. 
+N. Fadhia and D. A. Ningsih, “Penggunaan Pencatatan Akuntansi pada Usaha Mikro, Kecil, dan Menengah,” Liabilities: Jurnal Pendidikan 
+Akuntansi, vol. 7, no. 1, pp. 1–8, Apr. 2024, doi: 10.30596/liabilities.v7i1.15883. 
+9. 
+L. P. Koloay, J. Morasa, I. Elim, and F. Ekonomi dan Bisnis, “Peranan Sistem Informasi Akuntansi dalam Efektivitas Pelaporan Informasi 
+Akuntansi Pertanggungjawaban pada PT. Pos Indonesia (Persero) Manado,” Jurnal EMBA, vol. 2, no. 2, pp. 1528–1538, 2014. 
+10. P. Laporan et al., “Analisis Implementasi SAK ETAP,” Sustainable: Jurnal Akuntansi, p. 202. [Online]. Available: http://journal.um-
+surabaya.ac.id/index.php/sustainable/index . doi: 10.30651. 
+11. 
+Kantor et al., “Akuntansi untuk Kantor Pusat dan Kantor Cabang.” 
+12. E. Raharjo, “Teori Agensi dan Teori Stewardship dalam Perspektif Akuntansi,” Jurnal, vol. 2, no. 1, pp. 37–46, Jun. 2007. 
+13. N. Anita, C. Putry, I. Kinasih, R. Saragih, and R. D. Widariyanti, “Sistem Akuntansi untuk Struktur Pusat, Agen, dan Cabang: Tinjauan 
+Literatur Sistematis,” Jurnal Mahasiswa Manajemen dan Akuntansi, vol. 5, no. 1, pp. 470–480, 2026, doi: 10.30640/jumma45.v5i1.5697. 
+14. N. P. Pakaya and H. Blongkod, “Pengaruh Penerapan SAK EMKM terhadap Kualitas Informasi Keuangan UMKM,” Jambura Accounting 
+Review, vol. 5, no. 2, pp. 256–268, 2024. 
+15. S. Syamsul, “Investigasi Pencatatan dan Pelaporan Keuangan UMKM: Apakah Disusun Berdasarkan Standar Akuntansi?,” Jurnal Akuntansi 
+dan Ekonomika, vol. 14, no. 1, pp. 52–62, Jul. 2024, doi: 10.37859/jae.v14i1.5765. 
+16. F. D. A. Dariri, “Analisis Akuntabilitas dan Transparansi dalam Pelaporan Keuangan Organisasi Nirlaba,” vol. 9, no. 3, pp. 775–792, Sep. 
+2025, doi: 10.31955/mea.v9i3.6326. 
+17. L. Chairunnisa and A. W. Lubis, “Analisis Kesiapan Usaha Kecil dan Menengah dalam Penyusunan Laporan Keuangan Sesuai SAK EMKM 
+pada Laporan Keuangan UMKM Rose Laundry,” Jurnal Manajemen Terapan dan Keuangan, vol. 12, no. 4, pp. 1235–1245, Dec. 2023, doi: 
+10.22437/jmk.v12i04.33673. 
+
+
+--- HALAMAN 19 ---
+Indonesian Journal of Law and Economics Review 
+Vol. 21 No. 2 (2026): May 
+DOI: 10.21070/ijler.v21i2.1706 
+ISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo 
+Copyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). 
+19/15 
+ 
+ 
+18. N. S. Azahra, N. R. N. Hakiki, C. H. Rahmawati, O. L. Hermanto, T. H. Sutanto, and S. Rahayuningsih, “Penerapan Laporan Keuangan 
+Berdasarkan Standar Akuntansi Keuangan Entitas Mikro Kecil dan Menengah (SAK-EMKM) pada UMKM Pentol Kabul,” Jurnal Mutiara 
+Ilmu Akuntansi, vol. 2, no. 3, pp. 1–10, May 2024, doi: 10.55606/jumia.v2i3.2980. 
+19. K. Isadora, N. F. Syafitri, N. P. Aqila, R. Angraini, S. N. Hikmah, and S. Rodiah, “Analisis Penerapan Standar Akuntansi Keuangan (SAK) 
+pada UMKM Cabang Es Coklat Mas Lino,” vol. 1, no. 3, 2025. 
+20. V. Eviyanti et al., “Penerapan Penyusunan Laporan Keuangan Berdasarkan SAK EMKM pada Garage Coffee.ID,” 2025. 
+21. N. Arista, A. A. Ramadhan, R. Asupa, R. Septina, and C. Carmidah, “Analisis Perlakuan Akuntansi Hubungan Kantor Pusat dan Kantor 
+Cabang pada Usaha Papabendonut Coffee & Eatery,” Jurnal Riset Akuntansi, vol. 2, no. 1, pp. 137–151, Dec. 2023, doi: 10.54066/jura-
+itb.v2i1.1346. 
+22. S. S. A. W. J. M. A. Rosnidah I, “Peningkatan Pemahaman Pelaku Bisnis dan Akademisi terhadap Standar Akuntansi Keuangan Entitas 
+Privat (SAK-EP),” Keuangan Umum dan Akuntansi Terapan, vol. 7, no. 2, p. 126, Nov. 2025, doi: 10.31092/kuat.v7i2.3024. 
+23. E. E. D. I. S. E. Manullang, “Paradigma Interpretif dan Pendekatan Kualitatif dalam Pendidikan Matematika,” Ilmiah Pendidikan Dasar, vol. 
+10, no. 1, pp. 237–248, Mar. 2025, doi: 10.23969/jp.v10i02.26168. 
+24. R. N. Aulia, S. Fajar, R. Raine, and S. Mulyeni, “Strategi Branding Wirausaha Digital Pemula melalui Media Sosial: Pendekatan Kualitatif 
+Interpretatif pada UMKM di Kabupaten Garut,” vol. 1, no. 3, 2025. 
+25. Heryana, “Pengumpulan Data Penelitian Kuantitatif dan Kualitatif,” Jun. 2025, doi: 10.31004/jptam.v9i2.26900. 
+26. R. Yunita, A. Rahmawati, S. H. Insani, S. M. Fatisya, and L. Deandra, “Penerapan Akuntansi Sederhana pada UMKM untuk Meningkatkan 
+Transparansi dan Akurasi Laporan Keuangan,” Jurnal Ilmiah Ekonomi dan Manajemen, vol. 4, no. 1, pp. 755–762, 2026, doi: 
+10.61722/jiem.v4i1.8322. 
+27. N. Nilamsari, “Memahami Studi Dokumen dalam Penelitian Kualitatif,” 2014. [Online]. Available: http://fisip.untirta.ac.id/teguh/?p=16 . 
+28. Q. Qomaruddin and H. Sa’diyah, “Kajian Teoritis tentang Teknik Analisis Data dalam Penelitian Kualitatif: Perspektif Spradley, Miles, dan 
+Huberman,” Journal of Management, Accounting, and Administration, vol. 1, no. 2, pp. 77–84, Dec. 2024, doi: 10.52620/jomaa.v1i2.93. 
+29. Muadin, R. Muslim, A. S. Salabi, N. Sultan, A. Muhammad, and I. Samarinda, “Internalization of Organizational Culture at Sultan Aji 
+Muhammad Idris State Islamic University Samarinda,” Jurnal Pendidikan dan Kependidikan, vol. 6, no. 1, pp. 51–64, 2022, doi: 
+10.47766/idarah.v6i1. 
+30. J. Ekonomi, M. dan Akuntansi, A. N. Azizah, F. Damayanti, I. Lestari, and R. N. Sahara, “Peran UMKM terhadap Perekonomian di 
+Indonesia,” Nov. 2024. doi: 10.31219/mufakat. 
+31. S. Daud, T. P. Yanra, D. N. Shabrina, A. G. Naufal, “Analisis Strategi Pemasaran terhadap Penjualan Produk UMKM Kuliner: Studi Kasus 
+pada Fior Fiore Patisserie Bandar Lampung,” Jurnal Akuntansi dan Ekonomika, vol. 18, no. 1, pp. 925–931, 2024, doi: 10.46306/jbbe.v18i1. 
+32. N. J. Afifah and T. Widyastuti, “Analisis Sistem Informasi Akuntansi dalam Persediaan Barang dan Penjualan pada UMKM Restoran Sop 
+Ikan Batam,” Indonesian Journal of Economics, vol. 1, no. 10, 2024. 
+33. Lumbanraja, F. Khairani, H. Hasibuan, and L. M. Harahap, “Analisis Supply Chain Management dalam Meningkatkan Efisiensi dan Daya 
+Saing UMKM,” 2025. 
+34. D. F. Putri and N. Nurlaila, “Analisis Sistem Pencatatan Manual Laporan Keuangan terhadap Kinerja Akuntan di Perusahaan Umum Daerah 
+Pasar Kota Medan,” SIBATIK Journal: Jurnal Ilmiah Bidang Sosial, Ekonomi, Budaya, Teknologi, dan Pendidikan, vol. 1, no. 6, pp. 763–770, 
+Apr. 2022, doi: 10.54443/sibatik.v1i6.90. 
+ 
+

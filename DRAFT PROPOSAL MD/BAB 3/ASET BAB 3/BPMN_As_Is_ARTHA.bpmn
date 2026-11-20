@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+             xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             id="Definitions_AsIs"
+             targetNamespace="http://www.bizagi.com/definitions/AsIs"
+             exporter="Bizagi Process Modeler"
+             exporterVersion="12.0">
+  <collaboration id="Collaboration_AsIs">
+    <participant id="Participant_AsIs" name="Proses Bisnis Berjalan Operasional Bimbel ARTHA (As-Is)" processRef="Process_AsIs" />
+  </collaboration>
+  <process id="Process_AsIs" isExecutable="false">
+    <laneSet id="LaneSet_AsIs">
+      <lane id="Lane_WaliMurid" name="Wali Murid / Siswa">
+        <flowNodeRef>StartEvent_AsIs</flowNodeRef>
+        <flowNodeRef>Task_Konsultasi</flowNodeRef>
+        <flowNodeRef>Task_IsiFormulir</flowNodeRef>
+        <flowNodeRef>Gateway_MetodeBayar</flowNodeRef>
+        <flowNodeRef>Task_TransferBank</flowNodeRef>
+        <flowNodeRef>EndEvent_AsIs</flowNodeRef>
+      </lane>
+      <lane id="Lane_KakAgian" name="Staf Administrasi Cabang (Kak Agian)">
+        <flowNodeRef>Task_CekJadwal</flowNodeRef>
+        <flowNodeRef>Task_SalinBukuBesar</flowNodeRef>
+        <flowNodeRef>Task_TerimaTunai</flowNodeRef>
+        <flowNodeRef>Task_RekapKertas</flowNodeRef>
+      </lane>
+      <lane id="Lane_IbuEmi" name="Pengelola Keuangan Pusat (Ibu Emi)">
+        <flowNodeRef>Task_CekMBanking</flowNodeRef>
+      </lane>
+    </laneSet>
+
+    <!-- Data Objects & Data Store directly defined in process (NO redundant unshaped dataObjects!) -->
+    <dataObject id="DO_BukuJadwal" name="Buku Jadwal Cabang" />
+    <dataObject id="DO_Formulir" name="Formulir Pendaftaran Fisik (Memo Kecil)" />
+    <dataStoreReference id="DSR_BukuBesar" name="Buku Besar Cabang" />
+    <dataObject id="DO_Kuitansi" name="Kuitansi dan Kartu SPP Bulanan" />
+    <dataObject id="DO_Rekap" name="Selembar Kertas Rekapan Harian" />
+
+    <!-- Flow Nodes -->
+    <startEvent id="StartEvent_AsIs" name="Mulai">
+      <outgoing>Flow_1</outgoing>
+    </startEvent>
+
+    <manualTask id="Task_Konsultasi" name="Konsultasi Program, Jadwal Sesi dan Biaya SPP atau Paket">
+      <incoming>Flow_1</incoming>
+      <outgoing>Flow_2</outgoing>
+    </manualTask>
+
+    <manualTask id="Task_CekJadwal" name="Kak Agian Cek Jadwal pada Buku Jadwal Sesi Cabang">
+      <incoming>Flow_2</incoming>
+      <outgoing>Flow_3</outgoing>
+    </manualTask>
+
+    <manualTask id="Task_IsiFormulir" name="Wali Murid Mengisi Formulir Pendaftaran Fisik (Memo Kecil)">
+      <incoming>Flow_3</incoming>
+      <outgoing>Flow_4</outgoing>
+    </manualTask>
+
+    <manualTask id="Task_SalinBukuBesar" name="Kak Agian Salin ke Buku Besar (No, Nama, Telp, Asal Sekolah)">
+      <incoming>Flow_4</incoming>
+      <outgoing>Flow_5</outgoing>
+    </manualTask>
+
+    <exclusiveGateway id="Gateway_MetodeBayar" name="Pilihan Metode Bayar (Tunai atau Transfer)">
+      <incoming>Flow_5</incoming>
+      <outgoing>Flow_Tunai</outgoing>
+      <outgoing>Flow_Transfer</outgoing>
+    </exclusiveGateway>
+
+    <manualTask id="Task_TerimaTunai" name="Terima Uang, Terbitkan Kuitansi, Catat Buku dan Simpan Kartu SPP">
+      <incoming>Flow_Tunai</incoming>
+      <outgoing>Flow_6</outgoing>
+    </manualTask>
+
+    <manualTask id="Task_RekapKertas" name="Rekap Selembar Kertas (Total Uang dan Siswa) Disetor Tiap Malam">
+      <incoming>Flow_6</incoming>
+      <outgoing>Flow_7</outgoing>
+    </manualTask>
+
+    <userTask id="Task_TransferBank" name="Transfer via m-Banking dan Tunjukkan Bukti ke Kak Agian">
+      <incoming>Flow_Transfer</incoming>
+      <outgoing>Flow_8</outgoing>
+    </userTask>
+
+    <userTask id="Task_CekMBanking" name="Ibu Emi Cek Mutasi Langsung di m-Banking Berdasar Lembar Kertas">
+      <incoming>Flow_7</incoming>
+      <incoming>Flow_8</incoming>
+      <outgoing>Flow_9</outgoing>
+    </userTask>
+
+    <endEvent id="EndEvent_AsIs" name="Siswa Mengikuti KBM">
+      <incoming>Flow_9</incoming>
+    </endEvent>
+
+    <!-- Sequence Flows -->
+    <sequenceFlow id="Flow_1" sourceRef="StartEvent_AsIs" targetRef="Task_Konsultasi" />
+    <sequenceFlow id="Flow_2" sourceRef="Task_Konsultasi" targetRef="Task_CekJadwal" />
+    <sequenceFlow id="Flow_3" sourceRef="Task_CekJadwal" targetRef="Task_IsiFormulir" />
+    <sequenceFlow id="Flow_4" sourceRef="Task_IsiFormulir" targetRef="Task_SalinBukuBesar" />
+    <sequenceFlow id="Flow_5" sourceRef="Task_SalinBukuBesar" targetRef="Gateway_MetodeBayar" />
+    <sequenceFlow id="Flow_Tunai" name="Tunai" sourceRef="Gateway_MetodeBayar" targetRef="Task_TerimaTunai" />
+    <sequenceFlow id="Flow_Transfer" name="Transfer atau QRIS" sourceRef="Gateway_MetodeBayar" targetRef="Task_TransferBank" />
+    <sequenceFlow id="Flow_6" sourceRef="Task_TerimaTunai" targetRef="Task_RekapKertas" />
+    <sequenceFlow id="Flow_7" sourceRef="Task_RekapKertas" targetRef="Task_CekMBanking" />
+    <sequenceFlow id="Flow_8" sourceRef="Task_TransferBank" targetRef="Task_CekMBanking" />
+    <sequenceFlow id="Flow_9" sourceRef="Task_CekMBanking" targetRef="EndEvent_AsIs" />
+
+    <!-- Associations to Data Objects and Data Stores -->
+    <association id="Assoc_BukuJadwal" sourceRef="Task_CekJadwal" targetRef="DO_BukuJadwal" />
+    <association id="Assoc_Formulir" sourceRef="DO_Formulir" targetRef="Task_IsiFormulir" />
+    <association id="Assoc_BukuBesar" sourceRef="Task_SalinBukuBesar" targetRef="DSR_BukuBesar" />
+    <association id="Assoc_Kuitansi" sourceRef="Task_TerimaTunai" targetRef="DO_Kuitansi" />
+    <association id="Assoc_Rekap" sourceRef="Task_RekapKertas" targetRef="DO_Rekap" />
+  </process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_AsIs">
+    <bpmndi:BPMNPlane id="BPMNPlane_AsIs" bpmnElement="Collaboration_AsIs">
+      <!-- Pool -->
+      <bpmndi:BPMNShape id="Participant_AsIs_di" bpmnElement="Participant_AsIs" isHorizontal="true">
+        <dc:Bounds x="100" y="80" width="1650" height="660" />
+      </bpmndi:BPMNShape>
+
+      <!-- Lanes -->
+      <bpmndi:BPMNShape id="Lane_WaliMurid_di" bpmnElement="Lane_WaliMurid" isHorizontal="true">
+        <dc:Bounds x="130" y="80" width="1620" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_KakAgian_di" bpmnElement="Lane_KakAgian" isHorizontal="true">
+        <dc:Bounds x="130" y="300" width="1620" height="220" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_IbuEmi_di" bpmnElement="Lane_IbuEmi" isHorizontal="true">
+        <dc:Bounds x="130" y="520" width="1620" height="220" />
+      </bpmndi:BPMNShape>
+
+      <!-- Flow Nodes (Strict Left-to-Right!) -->
+      <!-- Start Event (x=162, y=172) -->
+      <bpmndi:BPMNShape id="StartEvent_AsIs_di" bpmnElement="StartEvent_AsIs">
+        <dc:Bounds x="162" y="172" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="166" y="215" width="28" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 1: Konsultasi (x=240, y=155) -->
+      <bpmndi:BPMNShape id="Task_Konsultasi_di" bpmnElement="Task_Konsultasi">
+        <dc:Bounds x="240" y="155" width="130" height="70" />
+      </bpmndi:BPMNShape>
+
+      <!-- Task 2: Cek Jadwal (x=400, y=375) -->
+      <bpmndi:BPMNShape id="Task_CekJadwal_di" bpmnElement="Task_CekJadwal">
+        <dc:Bounds x="400" y="375" width="130" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_BukuJadwal_di" bpmnElement="DO_BukuJadwal">
+        <dc:Bounds x="445" y="465" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="420" y="520" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 3: Isi Formulir (x=560, y=155) -->
+      <bpmndi:BPMNShape id="Task_IsiFormulir_di" bpmnElement="Task_IsiFormulir">
+        <dc:Bounds x="560" y="155" width="140" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_Formulir_di" bpmnElement="DO_Formulir">
+        <dc:Bounds x="610" y="95" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="575" y="75" width="110" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Task 4: Salin ke Buku Besar (x=730, y=375) -->
+      <bpmndi:BPMNShape id="Task_SalinBukuBesar_di" bpmnElement="Task_SalinBukuBesar">
+        <dc:Bounds x="730" y="375" width="140" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DSR_BukuBesar_di" bpmnElement="DSR_BukuBesar">
+        <dc:Bounds x="775" y="465" width="50" height="45" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="755" y="515" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Gateway XOR (x=895, y=165) -->
+      <bpmndi:BPMNShape id="Gateway_MetodeBayar_di" bpmnElement="Gateway_MetodeBayar" isMarkerVisible="true">
+        <dc:Bounds x="895" y="165" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="860" y="135" width="120" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Tunai: Task 5 Terima Uang (x=1000, y=375) -->
+      <bpmndi:BPMNShape id="Task_TerimaTunai_di" bpmnElement="Task_TerimaTunai">
+        <dc:Bounds x="1000" y="375" width="150" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_Kuitansi_di" bpmnElement="DO_Kuitansi">
+        <dc:Bounds x="1055" y="465" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1030" y="520" width="90" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Tunai: Task 6 Rekap Kertas (x=1190, y=375) -->
+      <bpmndi:BPMNShape id="Task_RekapKertas_di" bpmnElement="Task_RekapKertas">
+        <dc:Bounds x="1190" y="375" width="150" height="70" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DO_Rekap_di" bpmnElement="DO_Rekap">
+        <dc:Bounds x="1245" y="465" width="40" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1220" y="520" width="90" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Branch Transfer: Task 7 Transfer Bank (x=1000, y=155) -->
+      <bpmndi:BPMNShape id="Task_TransferBank_di" bpmnElement="Task_TransferBank">
+        <dc:Bounds x="1000" y="155" width="150" height="70" />
+      </bpmndi:BPMNShape>
+
+      <!-- Task 8: Ibu Emi Cek Mutasi (x=1380, y=595) -->
+      <bpmndi:BPMNShape id="Task_CekMBanking_di" bpmnElement="Task_CekMBanking">
+        <dc:Bounds x="1380" y="595" width="150" height="70" />
+      </bpmndi:BPMNShape>
+
+      <!-- End Event (x=1632, y=172) -->
+      <bpmndi:BPMNShape id="EndEvent_AsIs_di" bpmnElement="EndEvent_AsIs">
+        <dc:Bounds x="1632" y="172" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1605" y="215" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+
+      <!-- Sequence Flow Edges (Exact Orthogonal Waypoints) -->
+      <!-- Flow 1: Start -> Konsultasi -->
+      <bpmndi:BPMNEdge id="Flow_1_di" bpmnElement="Flow_1">
+        <di:waypoint x="198" y="190" />
+        <di:waypoint x="240" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 2: Konsultasi -> Cek Jadwal -->
+      <bpmndi:BPMNEdge id="Flow_2_di" bpmnElement="Flow_2">
+        <di:waypoint x="370" y="190" />
+        <di:waypoint x="385" y="190" />
+        <di:waypoint x="385" y="410" />
+        <di:waypoint x="400" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 3: Cek Jadwal -> Isi Formulir -->
+      <bpmndi:BPMNEdge id="Flow_3_di" bpmnElement="Flow_3">
+        <di:waypoint x="530" y="410" />
+        <di:waypoint x="545" y="410" />
+        <di:waypoint x="545" y="190" />
+        <di:waypoint x="560" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 4: Isi Formulir -> Salin Buku Besar -->
+      <bpmndi:BPMNEdge id="Flow_4_di" bpmnElement="Flow_4">
+        <di:waypoint x="700" y="190" />
+        <di:waypoint x="715" y="190" />
+        <di:waypoint x="715" y="410" />
+        <di:waypoint x="730" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 5: Salin Buku Besar -> Gateway -->
+      <bpmndi:BPMNEdge id="Flow_5_di" bpmnElement="Flow_5">
+        <di:waypoint x="870" y="410" />
+        <di:waypoint x="885" y="410" />
+        <di:waypoint x="885" y="190" />
+        <di:waypoint x="895" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow Tunai: Gateway -> Terima Uang -->
+      <bpmndi:BPMNEdge id="Flow_Tunai_di" bpmnElement="Flow_Tunai">
+        <di:waypoint x="920" y="215" />
+        <di:waypoint x="920" y="410" />
+        <di:waypoint x="1000" y="410" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="930" y="290" width="30" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow Transfer: Gateway -> Transfer Bank -->
+      <bpmndi:BPMNEdge id="Flow_Transfer_di" bpmnElement="Flow_Transfer">
+        <di:waypoint x="945" y="190" />
+        <di:waypoint x="1000" y="190" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="945" y="170" width="90" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 6: Terima Uang -> Rekap Kertas -->
+      <bpmndi:BPMNEdge id="Flow_6_di" bpmnElement="Flow_6">
+        <di:waypoint x="1150" y="410" />
+        <di:waypoint x="1190" y="410" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 7: Rekap Kertas -> Cek m-Banking -->
+      <bpmndi:BPMNEdge id="Flow_7_di" bpmnElement="Flow_7">
+        <di:waypoint x="1340" y="410" />
+        <di:waypoint x="1360" y="410" />
+        <di:waypoint x="1360" y="615" />
+        <di:waypoint x="1380" y="615" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 8: Transfer Bank -> Cek m-Banking -->
+      <bpmndi:BPMNEdge id="Flow_8_di" bpmnElement="Flow_8">
+        <di:waypoint x="1150" y="190" />
+        <di:waypoint x="1360" y="190" />
+        <di:waypoint x="1360" y="645" />
+        <di:waypoint x="1380" y="645" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Flow 9: Cek m-Banking -> End Event -->
+      <bpmndi:BPMNEdge id="Flow_9_di" bpmnElement="Flow_9">
+        <di:waypoint x="1530" y="630" />
+        <di:waypoint x="1580" y="630" />
+        <di:waypoint x="1580" y="190" />
+        <di:waypoint x="1632" y="190" />
+      </bpmndi:BPMNEdge>
+
+      <!-- Association Edges (Dashed Lines to Data Objects & Store) -->
+      <bpmndi:BPMNEdge id="Assoc_BukuJadwal_di" bpmnElement="Assoc_BukuJadwal">
+        <di:waypoint x="465" y="445" />
+        <di:waypoint x="465" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_Formulir_di" bpmnElement="Assoc_Formulir">
+        <di:waypoint x="630" y="145" />
+        <di:waypoint x="630" y="155" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_BukuBesar_di" bpmnElement="Assoc_BukuBesar">
+        <di:waypoint x="800" y="445" />
+        <di:waypoint x="800" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_Kuitansi_di" bpmnElement="Assoc_Kuitansi">
+        <di:waypoint x="1075" y="445" />
+        <di:waypoint x="1075" y="465" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Assoc_Rekap_di" bpmnElement="Assoc_Rekap">
+        <di:waypoint x="1265" y="445" />
+        <di:waypoint x="1265" y="465" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

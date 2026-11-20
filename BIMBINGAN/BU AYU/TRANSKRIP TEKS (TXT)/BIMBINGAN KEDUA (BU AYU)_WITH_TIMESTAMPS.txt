@@ -1,0 +1,3330 @@
+[00:33 - 00:34] Iya silahkan.
+[00:34 - 01:13] Saya udah nyoba mendalami alasan saya menggunakan metode PxP. PxP sendiri, kenapa saya milih. Sebelumnya saya ada bandingin berapa, itu ada Waterfall, RAD, Scrum, sama XP itu sendiri. Kan kalau kemarin itu dari Boi bilang, jangan memfokuskan ke orang yang bisa mengerjakan sistem tersebut kalau bisa ke faktor lain.
+[01:13 - 01:36] Nah kalau untuk Waterfall sendiri, itu tentu aja dari sistemnya yang kaku, dimana dia nggak bisa balik ke tahapan sebelumnya, kalaupun balik itu perlu melakukan revisi atau perbaikan yang cukup banyak dan juga mahal untuk biaya operasionalnya.
+[01:36 - 01:55] Sedangkan dari lapan cabang ini belum memiliki standarisasi operasional secara teknis dan juga pembagian gaji dari sistempernya yang berbeda-beda, karena itu berdasarkan dari pemban jam kerja sistempernya itu sendiri.
+[01:55 - 02:02] Dan juga rekapitalasi SKP yang berbeda setiap bulannya, karena dari siswa yang masuk dan ada yang keluar juga.
+[02:02 - 02:08] Maksudnya berarti dari sisi proses yang berjalan itu belum sama gitu kan?
+[02:08 - 02:09] Iya, di lapan cabang.
+[02:09 - 02:18] Di lapan cabang ini kemarin juga ada setelah bimbing yang dari Boi ada melakukan wawancara lagi ke staff front desknya, administrasinya.
+[02:18 - 02:40] Bahkan untuk total dari pengajarannya itu juga berbeda di setiap cabangnya, dan juga total siswanya berbeda, serta pemberian rekapitulasi laporan hariannya itu dikasih dengan dari setiap cabang ini,
+[02:40 - 02:53] yang akan ngasih rekap itu ke manajemen pusat dan itu berbeda orang, jadi ada perbedaan di setiap data yang dikasih dari setiap cabang.
+[02:53 - 02:56] Berarti dari sisi formatnya pun belum besar agar ya?
+[02:56 - 02:57] Iya, betul. Seperti itu.
+[02:58 - 03:12] Dan juga di Waterfall pun ini juga masih memiliki visualisasi di awal, jadi prosesnya itu dapat dilihat ketika itu di tahapan terakhir.
+[03:12 - 03:22] Lalu untuk kedua dari RAD, sebenarnya ini ada keunggulan yang sendiri dari RAD, itu tentu saja dari sisi visualisasi,
+[03:22 - 03:30] karena RAD memerlukan visualisasi yang cepat di awal, jadi sebenarnya ini cocok untuk mitra artan ini,
+[03:30 - 03:37] karena pertama kali menerapkan sistem gitu, jadi belum pernah sama sekali,
+[03:37 - 03:42] kalau misalkan saya menerapkan RAD sebenarnya sangat cocok, apalagi ada visualisasi di awal.
+[03:42 - 03:49] Tetapi dengan melihat rentang waktunya itu selesai harus 60-90 hari,
+[03:50 - 03:56] jadi nah, yang dimana dari proses bisnis dari ARTA itu berbeda setiap cabangnya,
+[03:56 - 04:05] dan ini pertama kalinya dari ARTA menggunakan sistem, pasti membutuhkan perubahan-perubahan yang enggak sedikit untuk kedepannya,
+[04:05 - 04:08] karena belum ada sistem yang pasti atau pernah digunakan.
+[04:08 - 04:23] dan juga RAD ini berfokus di visualnya, jadi terutama dibandingkan dengan kualitas kode yang ini dibuat sistem gitu.
+[04:24 - 04:31] Lalu selanjutnya di sini ada scrum, ini scrum ini yang menurut saya susah untuk diterapkan,
+[04:31 - 04:38] karena dasarnya sendiri scrum ini untuk lebih ke manajemen proses dibandingkan dengan kualitas kode yang itu sendiri,
+[04:38 - 04:48] dan juga scrum ini juga ada bagian peran yang sudah pasti dari scrum master, product owner, sama developer.
+[04:48 - 04:53] Dan kalau misalkan hanya digunakan atau diimplementasikan hanya satu orang,
+[04:53 - 04:58] itu akan membuat tiga job desk ini sulit untuk dilakukan gitu.
+[04:58 - 05:04] Terutama di bagian BXP itu, kalau misalkan kita bandingkan dengan BXP,
+[05:04 - 05:12] itu ada unit test, jadi itu ada, kalau misalkan ada perubahan atau requirement dari sistem yang diperlukan,
+[05:12 - 05:22] itu lebih fleksibel dibandingkan dengan scrum yang dimana ada screen interview sama screen goal yang harus terus dilakukan gitu, secara aktif.
+[05:22 - 05:36] Kemarin opsi metodenya apa? PXP? PXP atau XP?
+[05:36 - 05:38] Yang saya gunakan, PXP.
+[05:40 - 05:45] Lalu untuk perbandingan selanjutnya ini ada XP, system programming,
+[05:45 - 05:51] dimana di sini mewajibkan juga seperti hal yang sudah dengan scrum, ini di pair programming.
+[05:51 - 05:55] Jadi kalau misalkan saya menggunakan metode XP ini,
+[05:55 - 06:02] saya harus mengembangkan sistem, di samping saya juga agak harus dari sisi pengelolaannya,
+[06:03 - 06:07] sama juga dari sisi staff administrasinya atau produsenya,
+[06:08 - 06:11] dimana untuk logika bisnisnya, dari mereka yang menjelaskan,
+[06:12 - 06:16] sembari saya juga harus melakukan perbedaan secara langsung gitu.
+[06:16 - 06:19] Oleh karena itu, makanya di nampakkan dengan XP konvensional gitu.
+[06:19 - 06:28] Lalu untuk penerapannya sendiri, ini ada automated testing network untuk dari XP,
+[06:28 - 06:34] yang mana ini menyeluruh dan periodik atau berdasarkan periode,
+[06:34 - 06:42] dan juga ada proses refactoring atau rebaling yang secara kuat untuk mendukung penggunaan metode PXP yang saya jelai gitu.
+[06:43 - 06:49] Terus juga dari XP ini, perlu ada keterlibatan mitra yang seperti saya bilang tadi,
+[06:49 - 06:53] itu membutuhkan keterlibatan mitra yang sangat tinggi,
+[06:53 - 06:58] sedangkan untuk proses operasional dari lapan cabang ini,
+[06:59 - 07:02] itu sulit untuk diperapkan kalau misalkan memakan XP,
+[07:02 - 07:05] karena dari sisi mitra harus melongkar waktunya,
+[07:06 - 07:12] itu untuk bisa membantu saya membuat sistem dari manajemen dashboard.
+[07:12 - 07:18] Mungkin itu, makanya saya tetap memilih dari XP yang dari tahapannya sendiri,
+[07:19 - 07:31] itu faktor utama saya memilih XP karena memang dari keterlibatan mitra yang fleksibilitasnya itu bisa dan sesuai dengan tahapan dari XP.
+[07:32 - 07:36] Jadi bisa dibilang nggak terlalu sendang, nggak terlalu strict gitu,
+[07:36 - 07:38] untuk waktu yang dikasih sama mitra.
+[07:39 - 07:40] Jadi kalau misalkan saya masih membutuhkan,
+[07:41 - 07:43] itu mitra bisa saja menolak dan menerima,
+[07:43 - 07:46] tapi kalaupun itu menolak,
+[07:46 - 07:50] akan direschedule sesuai dengan kesepakatan kita atau operasi yang sudah,
+[07:50 - 07:53] atau yang akan dilakukan di tahapan dari XP.
+[07:53 - 07:54] Oke.
+[07:54 - 07:56] Kalau yang lain, nggak bisa seperti itu?
+[07:57 - 07:58] Nggak bisa fleksibel begitu?
+[07:58 - 08:01] Kalau yang dari saya lihat dan saya baca,
+[08:01 - 08:03] itu di awal aja,
+[08:03 - 08:05] khususnya kalau misalkan contoh di waterfall,
+[08:05 - 08:07] itu lebih mendalamnya di wawancara,
+[08:07 - 08:11] di awal wawancara aja atau wawancara pertama,
+[08:12 - 08:16] itu pun langsung harus membutuhkan data,
+[08:18 - 08:19] fungsi-fungsi apa saja,
+[08:19 - 08:20] atau sistem ini,
+[08:21 - 08:24] yang pasti dari awal sampai akhir tanpa perubahan itu bagaimana.
+[08:26 - 08:29] Mungkin saya menggunakan mitra XP.
+[08:32 - 08:35] Ini ya, apa namanya,
+[08:37 - 08:41] nanti saran saya sebaiknya tetap ada beberapa aspek gitu ya,
+[08:41 - 08:45] yang di bandingkan dari masing-masing.
+[08:45 - 08:46] Tadi kan ada beberapa, lima metode kayaknya.
+[08:47 - 08:51] Iya, lima metode yang dibandingkan,
+[08:51 - 08:53] terus aspek perbandingannya apa saja,
+[08:53 - 08:55] sehingga akhirnya yang terpilih yang mana.
+[08:57 - 08:59] Tapi nanti juga tetap dijelaskan,
+[08:59 - 09:04] kesesuaiannya berdasarkan proyek penelitiannya.
+[09:05 - 09:07] Jadi bukan hanya dari sisi teori,
+[09:07 - 09:11] tapi juga dari sisi kesesuaian dengan objek penelitian.
+[09:11 - 09:13] Tadi misalkan dari pertimbangan mitra,
+[09:13 - 09:14] pertlibatan mitra,
+[09:15 - 09:16] dari sisi waktu,
+[09:16 - 09:19] kemudian dari sisi skoprojek,
+[09:19 - 09:21] dan seterusnya itu dibahas.
+[09:21 - 09:25] Jadi keluarlah yang mana yang paling cocok gitu.
+[09:26 - 09:27] Kayak di dalam penelitian ini.
+[09:31 - 09:32] Kalau untuk,
+[09:33 - 09:34] apa ya,
+[09:35 - 09:37] nanti yang akan terlibat di mitra itu siapa?
+[09:38 - 09:40] Dari manajemennya,
+[09:41 - 09:42] itu ada dua orang.
+[09:42 - 09:44] Yang pertama itu dari ketuanya sendiri,
+[09:44 - 09:45] dari Guru Nana,
+[09:45 - 09:48] itu selaku ketua dari seluruh cabang.
+[09:48 - 09:54] Terus yang kedua itu dari staf operasional,
+[09:54 - 09:57] operasionalnya memegang data Excel atau rekapan terpusatnya gitu.
+[09:58 - 10:00] Yang menerima...
+[10:00 - 10:01] Ini bukan yang dicabang berarti?
+[10:01 - 10:02] Bukan yang dicabang.
+[10:02 - 10:03] Pusat juga dua orang.
+[10:03 - 10:05] Lalu dari staf cabangnya.
+[10:06 - 10:07] Salah satunya gitu.
+[10:08 - 10:11] Kemarin saya salah satunya itu wawancara di cabang yang kelima.
+[10:11 - 10:19] Tapi untuk persetujuan ini kan mau membuat sistem ya.
+[10:19 - 10:23] Berarti yang untuk dari pihak manajemen yang mengetahui siapa?
+[10:23 - 10:24] Gunana itu kan?
+[10:24 - 10:25] Gunana itu secara langsung diri.
+[10:26 - 10:30] Saya kemarin awalnya langsung di video setuju.
+[10:30 - 10:36] Baru saya minta untuk wawancara lagi dengan staf yang memang rekapan datanya.
+[10:37 - 10:41] Lalu saya juga minta kontak sekalian musuh di staf administrasi cabangnya.
+[10:42 - 10:44] Kalau yang rekapan data ini kan terkait apa?
+[10:45 - 10:46] Jumlah pembayaran,
+[10:47 - 10:48] siswa gitu ya?
+[10:49 - 10:50] Tentor tadi ya?
+[10:51 - 10:55] Nah, kalau terkait yang proses bisnis yang berjalan di cabang gimana?
+[10:56 - 10:59] Dari staf administrasi sama kepala cabangnya.
+[10:59 - 11:02] Kepala cabang tadi mewakili salah satu?
+[11:03 - 11:06] Iya, saat ini masih salah satu saja.
+[11:07 - 11:08] Karena, maksudnya gini.
+[11:09 - 11:10] Kalau misalkan nanti,
+[11:11 - 11:13] ini kan ada delapan cabang ya.
+[11:13 - 11:16] Dan tadi kan kalau dari yang Arief sampaikan tadi beberapa kondisi,
+[11:16 - 11:22] kalau dari sisi pelaporan datanya aja itu kan formatnya bisa enggak sama kan?
+[11:22 - 11:22] Ya.
+[11:23 - 11:28] Nah, kalau format yang enggak sama saya rasa kan tidak akan terlalu sulit ya.
+[11:28 - 11:34] Untuk, oh nanti yaudah apa yang dibutuhkan oleh manajemen kan itu yang turun ke bawah.
+[11:34 - 11:42] Nah, tapi kondisi yang enggak sama itu mungkin perlu dicek juga dari sisi proses bisnis yang berjalan juga nanti seperti apa.
+[11:42 - 11:49] Karena kan kalau misalkan sistem jadi yang gunanya ada delapan cabang,
+[11:49 - 11:53] kalau misalkan selama ini probisnya aja di situ berjalannya enggak seragam,
+[11:53 - 11:54] ini kan agak sulit nih.
+[11:55 - 12:00] Berarti kan mau tidak mau nanti dari sisi di level manajemen itu harus clear nih.
+[12:01 - 12:05] Proses bisnis yang mana yang akan nanti akan ditransformasikan ke dalam sistem ini.
+[12:06 - 12:07] Sehingga kan tidak mengganggu.
+[12:07 - 12:12] Apa ya, kalaupun nanti pada akhirnya sistemnya jadi digunakan,
+[12:12 - 12:17] cabang-cabang yang memang secara probis itu mungkin ada sedikit perbedaan gitu ya
+[12:17 - 12:21] dengan yang berjalan di sistem itu kan harusnya nanti perlu menyesuaikan.
+[12:23 - 12:25] Jadi paling enggak untuk ketok palunya,
+[12:26 - 12:32] oh yaudah probis yang seperti ini yang dijalankan itu dari sisi level manajemennya itu ada gitu.
+[12:32 - 12:36] Yang bisa mau, apa namanya, yang menyetujui gitu ya.
+[12:36 - 12:40] Karena kan kalau nanti misalkan mengawancar dengan kepala cabang,
+[12:40 - 12:44] bisa jadi kepala cabang satu dengan yang lain menjelaskan alur itu kan enggak sama gitu.
+[12:44 - 12:50] Jadi paling tidak menurut saya validasi akhir ya harus dengan manajemen.
+[12:50 - 12:54] Jadi yang akan ditransformasi di dalam sistem ini nanti prosesnya yang bagaimana.
+[12:54 - 13:03] Mungkin sedikit tambahan, kemarin dari wawancara dengan staffan administrasi itu juga
+[13:03 - 13:11] ada perbedaan jadwal untuk gimbalnya itu sendiri.
+[13:11 - 13:19] Dan itu rentangnya sudah sederaskan juga di Ibu 1 secara detail itu dari penampuan harganya sendiri
+[13:19 - 13:23] berdasarkan dari jenjang sama juga pemilihan jamnya.
+[13:23 - 13:32] Jadi jadi setiap jenjang sama pemilihan jam kalau misalkan setiap malam itu akan lebih mahal
+[13:32 - 13:36] kalau misalkan dibandingkan dengan pagi dan siang itu, simpelnya seperti itu.
+[13:36 - 13:38] Tapi rentenya sama kah semua cabang?
+[13:38 - 13:39] Rate semuanya sama.
+[13:41 - 13:44] Cuma ada perbedaan harga kalau pagi dan malam gitu ya?
+[13:44 - 13:44] Ya, betul.
+[13:45 - 13:47] Dan juga itu untuk dari keuangannya,
+[13:48 - 13:54] terus kalau untuk dari pembagian kantor dan juga ruangan kelas serta siswanya,
+[13:54 - 14:02] itu di setiap cabang juga berbeda-beda karena bergantung pada besar kecilnya ruangan tersebut.
+[14:02 - 14:10] Jadi kalau misalkan ngambil rata-ratanya itu dari 8 sampai 15 orang per ruangan,
+[14:10 - 14:11] itu balik lagi itu.
+[14:11 - 14:14] Menyai dengan kecil dan masarnya ruangan tersebut.
+[14:15 - 14:20] Maksudnya dalam rules penentuannya itu gimana?
+[14:21 - 14:24] Bergantung-bergantung ya sedikit banyak.
+[14:24 - 14:27] Contohnya di sini di RK5 itu ada 6 ruangan.
+[14:28 - 14:32] Jadi kalau untuk ruangan pertama itu anak SD kelas 4 sampai 6,
+[14:32 - 14:37] itu 10 orang, itu ruangan pertama.
+[14:37 - 14:41] Ruangan kedua, RK sampai SD itu 4 orang.
+[14:41 - 14:44] Dan itu totalnya maksimal di 8 anak.
+[14:45 - 14:49] Di ruangan ketiga, kelas 6 sampai 9 SMP itu 12 anak.
+[14:51 - 14:52] Itu berdasarkan...
+[14:52 - 14:53] Sampai kelas 9?
+[14:54 - 14:54] Iya, bu.
+[14:54 - 14:56] Atau sesinya berbeda.
+[14:56 - 14:58] Sesinya berbeda, tapi di peruntungan yang itu ya?
+[14:58 - 14:58] Ya.
+[14:58 - 15:03] Di ruangan ketiga sampai 6 itu 12 anak.
+[15:03 - 15:06] Ini dari jenjangnya.
+[15:07 - 15:08] Dari SD sampai...
+[15:08 - 15:11] Dari TK, akhir sampai SD ada.
+[15:11 - 15:14] SMP, SD sampai SMP ada.
+[15:15 - 15:17] Dan untuk ruangan terakhir ini SMA,
+[15:17 - 15:21] kelas 10 sampai 12 itu maksimal di 13 anak.
+[15:23 - 15:26] Dan untuk totalnya sendiri di setiap cabang itu berbeda-beda
+[15:26 - 15:29] untuk dari setiap staffnya.
+[15:29 - 15:32] Kalau di Artaian Ultimah Maret itu ada 6 guru.
+[15:33 - 15:36] Termasuk di dalamnya itu ada 1 kepala cabang
+[15:36 - 15:39] plus 1 staff administrasi.
+[15:40 - 15:41] Kepala cabangnya di guru juga?
+[15:41 - 15:42] Iya.
+[15:42 - 15:43] Kepala cabangnya juga di guru.
+[15:44 - 15:45] Berarti 6 itu sama beliau?
+[15:46 - 15:46] Iya.
+[15:47 - 15:50] Dan itu harus setiap hari kasih rekapan
+[15:50 - 15:51] dengan...
+[15:51 - 15:52] Sebenarnya formatnya sudah ada.
+[15:53 - 15:53] Formatnya sudah ada.
+[15:53 - 15:55] Dari manajemen sudah ada yang melakukan.
+[15:55 - 15:57] Cuma yang maksud saya tadi berbeda itu
+[15:57 - 16:03] asumsi saya dari setiap total siswa
+[16:03 - 16:06] dan total mentor itu yang berbeda.
+[16:06 - 16:08] Jadi formatnya sebenarnya sudah ada.
+[16:08 - 16:09] Dari kertas itu sudah ada.
+[16:09 - 16:13] Saya rasa mungkin kalau dari sisi jumlah
+[16:13 - 16:17] banyak sedikitnya itu kan gak masalah ya.
+[16:17 - 16:20] Cuma rulesnya sih mungkin yang nanti akan
+[16:20 - 16:21] berpengaruhkan ke sistem.
+[16:23 - 16:26] Apakah nanti pembagiannya
+[16:26 - 16:31] apakah akan dibantu terotomasi sekian persen oleh sistem
+[16:31 - 16:34] atau nanti karena banyak constraint tadi
+[16:34 - 16:37] banyak constraint dan banyak kontrol yang diperhatikan
+[16:37 - 16:40] mau gak mau ini tetap harus dilakukan secara manual
+[16:40 - 16:43] oleh adminnya gitu ya
+[16:43 - 16:45] untuk membagi tadi gitu.
+[16:45 - 16:49] Itu perlunya perhatikan juga sih.
+[16:49 - 16:52] Dan juga dari kepala camang ini
+[16:52 - 16:55] di setiap harinya itu tutup rekapan
+[16:55 - 16:58] dari setiap administrasinya harus tutup rekapan
+[16:58 - 17:02] di jam 7.20
+[17:02 - 17:07] itu gak boleh anil-anil pendaftaran dan biaya yang masuk.
+[17:07 - 17:08] Malam.
+[17:08 - 17:12] Itu setiap harinya lalu nanti akan diakhiri
+[17:12 - 17:15] di sesi terakhir pembagian belajar di setengah 9 malam
+[17:15 - 17:17] dan di setengah 9 malam itu
+[17:17 - 17:19] dari setiap kepala cabang ini
+[17:19 - 17:22] akan langsung mengirimkan kertas rekapan itu
+[17:22 - 17:25] ke manajemen pusat cabang yang kedua.
+[17:26 - 17:28] Jadi semua lapan cabang yang tersebar di Bukalwan
+[17:28 - 17:32] itu harus ngasih ke cabang yang kedua.
+[17:32 - 17:34] Pusatnya yang di kedua itu?
+[17:34 - 17:35] Iya, pusat yang di kedua itu.
+[17:35 - 17:40] Berarti sudah ditentukan gitu ya cut off waktunya ada gitu ya.
+[17:40 - 17:41] Ya cut off waktunya sudah ada.
+[17:41 - 17:42] Diasanya memang ini kemarin dulu.
+[17:42 - 17:43] Saya udah banyak yang divalidasi.
+[17:46 - 17:51] Saya rasa mungkin nanti perlu kali ya dibuatkan apa ya.
+[17:52 - 17:57] Ini kan nanti skopnya dari pendaftaran kan ya.
+[17:57 - 18:10] Nah kalau menurut saya sebaiknya nanti bisa dibuatkan alur proses bisnisnya kali
+[18:10 - 18:12] untuk memudahkan.
+[18:12 - 18:14] Jadi yang terlibat itu siapa saja
+[18:14 - 18:17] di dalamnya aktivitasnya apa saja
+[18:17 - 18:20] input dokumennya berupa apa saja
+[18:20 - 18:22] paling enggak untuk gambaran sementara ini
+[18:22 - 18:24] untuk diproposal.
+[18:25 - 18:27] Terus nanti pas menjelaskan
+[18:27 - 18:29] proses bisnis.
+[18:29 - 18:30] Tapi proses bisnisnya tadi ya
+[18:30 - 18:35] saran saya sebaiknya tetap divalidasi oleh manajemen nanti gitu ya.
+[18:36 - 18:39] Walaupun kalau secara induk kan ada di yang cabang kedua tadi gitu.
+[18:40 - 18:43] Tapi tetap kalau bisa tetap ada validasi manajemen
+[18:43 - 18:48] bahwa oh seperti ini loh proses yang berjalan di cabang itu seperti ini gitu.
+[18:48 - 18:51] Nah kalau misalkan ada perbedaan
+[18:51 - 18:55] kan berarti jalan tengahnya yang mana yang akan digambarkan
+[18:55 - 18:59] di dalam notasi proses bisnis itu yang mana gitu.
+[18:59 - 19:01] Jadi kan baiknya didiskusikan.
+[19:01 - 19:03] Jadi biar clear dulu nih alur prosesnya seperti apa.
+[19:04 - 19:07] Nah nanti ketika menjelaskan proses itu
+[19:07 - 19:09] menurut saya constraint tadi,
+[19:09 - 19:11] kontrol-kontrol yang tadi disebutkan Aril itu
+[19:11 - 19:13] kalau bisa dijelaskan dulu aja
+[19:13 - 19:15] sedapatnya saat ini gitu.
+[19:16 - 19:18] Apa saja sih kondisi-kondisinya
+[19:18 - 19:20] yang perlu diperhatikan.
+[19:20 - 19:25] karena nanti kan ya kemungkinan kan akan banyak yang masuk ke teknis
+[19:25 - 19:27] di kode program ya.
+[19:27 - 19:28] Ya betul.
+[19:29 - 19:31] Jadi paling nggak kontrol-kontrol itu menurut saya
+[19:31 - 19:34] ceritakan aja sih sekali dengan proses bisnisnya.
+[19:34 - 19:37] Untuk bisa menilai ini seberapa kompleks sih.
+[19:37 - 19:38] Karena kalau misalkan itu nggak dijelaskan
+[19:38 - 19:40] kan orang mikir ya udah daftar-daftar aja kan
+[19:40 - 19:42] tinggal ngisi fog, udah selesai gitu.
+[19:42 - 19:44] Apa yang buat sulit kan gitu.
+[19:44 - 19:47] Nah jadi mungkin untuk menceritakan kompleksitasnya
+[19:47 - 19:49] menurut saya diceritakan aja sih itu.
+[19:49 - 19:54] Di bab 2 deh kayaknya nanti ya, domain penelitian.
+[19:54 - 19:59] Ini pakai prototipe ya.
+[19:59 - 20:00] Yang prototipe.
+[20:00 - 20:02] Itu kan ada pembagiannya di bab 2.
+[20:03 - 20:06] Di bab 2 itu penelitian terdahulu
+[20:06 - 20:07] sama dasar teori.
+[20:07 - 20:09] Kalau domain itu diproyek.
+[20:10 - 20:11] Kalau domain itu diproyek?
+[20:11 - 20:11] Iya.
+[20:20 - 20:21] Proyek domain penelitian.
+[20:21 - 20:27] Ya harusnya kurang-kurangnya seperti ini juga sih.
+[20:27 - 20:29] Di situ dijelaskan juga.
+[20:30 - 20:32] Mungkin nanti bisa masuk ke...
+[20:32 - 20:38] Ya coba lihat ini prototipe tadi.
+[20:38 - 20:41] Apalian bab 3-nya apa?
+[20:41 - 20:43] Apalian bab 3 itu udah kemasuk ke rancangan.
+[20:45 - 20:46] Ini sudah ada yang mencintai masuk.
+[20:46 - 20:47] Di kecil dan konteks ini
+[20:47 - 20:50] subbabnya ditambahkan Aril ya?
+[20:50 - 20:50] Yang mana?
+[20:51 - 20:52] Yang 311 ya?
+[20:52 - 20:53] Saya tambahin.
+[20:54 - 20:56] Kalau untuk penjelasan masalah
+[20:56 - 20:57] dari spoknya itu saya jelaskan
+[20:57 - 20:59] yang 21 sudah terbelakang.
+[20:59 - 21:01] Jadi cut off timenya segalanya macam.
+[21:03 - 21:04] Detail itu di bab 1?
+[21:04 - 21:04] Iya.
+[21:05 - 21:07] Itu terlalu panjang.
+[21:08 - 21:11] Iya bab 1 itu perlu tetap menjelaskan
+[21:12 - 21:13] pro bisnisnya seperti apa.
+[21:14 - 21:15] Terus permasalahannya gimana.
+[21:16 - 21:19] Tapi lebih ke poin inti ya.
+[21:19 - 21:20] Kalau misalkan yang detail banget sih
+[21:20 - 21:22] saya rasa dipindahkan aja.
+[21:23 - 21:24] Kalau misalkan...
+[21:24 - 21:30] Coba ya?
+[21:30 - 21:31] 311 itu apa?
+[21:31 - 21:35] 3112 ruang lingkup penggunaan prototipenya
+[21:35 - 21:44] untuk langsung ke tahapannya.
+[21:44 - 21:46] Objek dan konteks ini apa yang mau dijelaskan?
+[21:46 - 21:48] Objek yang konteks ini lebih menjelaskan
+[21:48 - 21:52] pembuatan dari Arta ini
+[21:52 - 21:55] berdasarkan masalahnya apa secara singkat.
+[21:55 - 21:58] Saya rasa kalau mau ini dikembangkan
+[21:58 - 22:00] mungkin bisa di sini kali itu.
+[22:00 - 22:02] Objek dan konteks itu yang proses bisnisnya.
+[22:03 - 22:06] Untuk detail dari contohnya kayak cut off timenya tadi gitu.
+[22:06 - 22:09] Ya proses bisnisnya dulu dipetakan.
+[22:10 - 22:13] Kalau salah sih lebih mudah kalau ada diagram ya.
+[22:13 - 22:14] Diagram BPM gitu.
+[22:15 - 22:15] Dibuatkan.
+[22:16 - 22:17] Nanti baru dijelaskan secara detail
+[22:17 - 22:18] masing-masing perubahan.
+[22:22 - 22:23] Diagram mana?
+[22:24 - 22:24] BPM.
+[22:25 - 22:25] Oh BPM.
+[22:25 - 22:26] Ah BPM.
+[22:26 - 22:29] Yang SS tuh ya gue?
+[22:30 - 22:31] Iya yang SS.
+[22:31 - 22:36] Karena kan ini kemarin seurancangan prototip kan.
+[22:36 - 22:38] Nanti kalau bab 4 itu kan
+[22:38 - 22:41] udah langsung ke hasil tahapan pengerjaan gitu ya.
+[22:41 - 22:45] Kalau misalkan pakai PXP
+[22:45 - 22:48] berarti tahapan pertama requirement ya?
+[22:49 - 22:53] Requirement terus dari sisi kebutuhan penggunaannya
+[22:53 - 22:58] lalu dari planning, design, iteration,
+[22:59 - 23:00] iteration, analyzation.
+[23:00 - 23:02] Iya tapi kalau requirement pun kan sebenarnya
+[23:02 - 23:05] sudah lebih ke requirement system kan.
+[23:05 - 23:08] Nah masalahnya kita belum menjelaskan
+[23:08 - 23:12] kondisi dari domain masalahnya dulu tuh
+[23:12 - 23:14] yang dari proses bisnisnya gitu masalahnya.
+[23:14 - 23:17] Mungkin lebih baik ditambahkan di 311 itu sih
+[23:17 - 23:18] objek dan konteks yang.
+[23:19 - 23:22] Karena sebenarnya kalau melihat referensi yang disitasi
+[23:22 - 23:25] tahun kemarin tuh beda banget template-nya ya Bu ya?
+[23:25 - 23:26] Kalau misalkan.
+[23:26 - 23:29] Tahun sebelumnya kan ya agak-agak rancu ya.
+[23:30 - 23:31] Jadinya banyak interpretasi gitu.
+[23:32 - 23:35] Jadi tahun sekarang kan disamakan lah.
+[23:35 - 23:37] terutama yang prototipe dan proyek ini.
+[23:37 - 23:39] Karena kurang lebih kan sebenarnya sama.
+[23:41 - 23:43] Selanjutnya sih disini aja gak apa-apa.
+[23:43 - 23:44] Karena ini bab 3 rancangan prototipe kan.
+[23:45 - 23:47] Jadi gimana mau merancang prototipe kan?
+[23:47 - 23:49] Kita mau mengembut prototipe ini
+[23:49 - 23:51] yang merujuk dari proses bisnis yang ada.
+[23:51 - 23:53] Tapi kan bukan serta-merta
+[23:53 - 23:55] hanya mengkonversi gitu ya.
+[23:55 - 23:57] Dari proyek yang ada langsung jadi system kan.
+[23:57 - 24:01] celah-celah yang masih kurang kan
+[24:01 - 24:02] harusnya bisa ditingkatkan kan.
+[24:03 - 24:04] Bisa diimprove.
+[24:04 - 24:06] Berarti kan harusnya udah kondisi 2D lah.
+[24:06 - 24:09] Jadi kita jelaskan disini.
+[24:10 - 24:27] Oh ini prototipe ya.
+[24:27 - 24:29] Kalau proyek itu kan di bagian
+[24:29 - 24:31] ya saya lupa ya.
+[24:32 - 24:33] Bab 1 kayaknya ya.
+[24:33 - 24:34] Ada yang menjelaskan mitra itu.
+[24:35 - 24:39] Kan kontribusi mitra juga
+[24:39 - 24:41] atau keterlibatan mitra seperti apa?
+[24:42 - 24:43] Itu kan dijelaskan kondisi ini di mana?
+[24:43 - 24:46] Di proyek itu
+[24:46 - 24:47] kemarin saya ada buat.
+[24:49 - 24:50] Ini jadinya pakai 2 template?
+[24:50 - 24:51] Buat 2 template?
+[24:52 - 24:52] Iya bu.
+[24:52 - 24:53] Kemarin karena awalnya proyek
+[24:53 - 24:54] terus akhirnya
+[24:54 - 24:56] ya mitra itu ada di sini.
+[24:58 - 24:59] Bab 1 tadi.
+[24:59 - 25:03] Ada yang standar mitra.
+[25:03 - 25:07] Itu lebih ke standar ya.
+[25:09 - 25:17] Ini di proyek ya bu.
+[25:17 - 25:18] Cuman saya kayaknya hapus sekarang.
+[25:19 - 25:19] Kalau misalnya.
+[25:21 - 25:21] Ini nih.
+[25:24 - 25:27] Tapi ini lebih ke standar ya.
+[25:27 - 25:37] Kalau yang menjelaskan peran mitra
+[25:37 - 25:40] di dalam tegas akhir ini
+[25:40 - 25:41] itu di mana?
+[25:43 - 25:45] Saya lupa di bab 3
+[25:45 - 25:46] kalau gak salah.
+[25:46 - 25:49] Bab 3 nya prototipe atau proyek itu ada.
+[25:49 - 25:49] Kalau gak salah.
+[25:51 - 25:53] Itu kan sebenarnya tidak hanya menjelaskan
+[25:53 - 25:54] peran mitra
+[25:54 - 25:57] tapi juga ada juga pendanaan
+[25:57 - 25:58] kalau tidak salah.
+[25:58 - 25:59] Oh itu di proyek
+[25:59 - 26:01] berarti bukul ada pendanaan yang lain.
+[26:13 - 26:14] Sumber daya.
+[26:14 - 26:15] Sumber daya.
+[26:15 - 26:16] Sumber daya, material, bahan, alat, bahan.
+[26:17 - 26:19] Kalau prototipe gak ada ya?
+[26:19 - 26:20] Kalau prototipnya gak ada.
+[26:25 - 26:27] Dia sebatas langsung
+[26:27 - 26:28] di bab 3 nya langsung
+[26:28 - 26:29] ada renganan prototipe
+[26:29 - 26:31] sama konsep
+[26:31 - 26:32] serta jatuan.
+[26:32 - 26:38] Kalau gak ada supep sendiri itu
+[26:38 - 26:39] berarti nanti dijelaskannya
+[26:39 - 26:46] ya ketika menjelaskan tahapan aja
+[26:46 - 26:47] berarti keterlibatan
+[26:47 - 26:48] tadi kan ada banyak tuh
+[26:48 - 26:49] dari manajemen kan
+[26:49 - 26:50] ada 2 orang
+[26:50 - 26:51] kemudian nanti
+[26:51 - 26:52] palacabang
+[26:52 - 26:54] sama admin ya
+[26:54 - 26:54] satu lagi
+[26:54 - 26:55] Sama admin
+[26:55 - 26:57] berarti kan ada 4 orang
+[26:57 - 26:58] yang paling tidak dari mitra
+[26:58 - 26:59] itu akan terlibat dengan
+[26:59 - 27:00] penelitian ini
+[27:00 - 27:03] dan untuk kapasitas apaan
+[27:03 - 27:03] gitu
+[27:03 - 27:05] saya rasa juga nanti
+[27:05 - 27:06] perlu dijelaskan
+[27:06 - 27:07] di dalam mengetahuan
+[27:07 - 27:10] berarti
+[27:10 - 27:12] masuk di sini juga gak buk
+[27:12 - 27:13] 3.1 nya
+[27:13 - 27:15] atau
+[27:15 - 27:20] ini saya buat sebab sendiri sih
+[27:20 - 27:21] untuk menjelaskan
+[27:21 - 27:22] kayak
+[27:22 - 27:23] menceritakan masalahnya
+[27:23 - 27:24] Kalau yang dari template apa?
+[27:25 - 27:26] buk 3 ini isinya apa ya?
+[27:26 - 27:28] 3.1 ini
+[27:28 - 27:29] garis besar
+[27:29 - 27:30] lalu masuk ke
+[27:30 - 27:32] 3.2 itu
+[27:32 - 27:36] konsep prototype
+[27:36 - 27:37] konsep prototype
+[27:37 - 27:39] spesifikasi
+[27:39 - 27:40] sama jadwal pembuatan
+[27:40 - 27:41] prototipan
+[27:41 - 27:45] ini konseptual ya
+[27:45 - 27:46] konseptual prototype
+[27:46 - 27:51] ini dari tahapan
+[27:51 - 27:51] lupar
+[27:51 - 27:53] penggunaan nonton
+[27:53 - 27:54] konseptual
+[27:54 - 27:55] berarti konseptual
+[27:55 - 27:57] spesifikasi sama
+[27:57 - 27:58] jadwalnya
+[27:58 - 28:01] ya bisa juga sih
+[28:01 - 28:02] kalau mau dijelaskan
+[28:02 - 28:03] di 3.1
+[28:03 - 28:04] satu itu
+[28:04 - 28:05] nanti tambahkan aja
+[28:05 - 28:06] satu paragraf
+[28:06 - 28:07] yang menjelaskan
+[28:07 - 28:09] keterlibatan itu
+[28:09 - 28:11] karena kalau
+[28:11 - 28:12] yang proyek kan enak ya
+[28:12 - 28:13] misalnya ada satu
+[28:13 - 28:14] sebabnya sendiri gitu
+[28:14 - 28:16] peran serta mitra itu
+[28:16 - 28:17] di bagian apa saja
+[28:17 - 28:25] oke
+[28:25 - 28:29] tapi tadi ini ya
+[28:29 - 28:29] tadi ya
+[28:29 - 28:31] berarti kan ada cukup banyak
+[28:31 - 28:32] yang terlibat berarti dari mitra
+[28:32 - 28:32] ada 4 kan?
+[28:33 - 28:34] total ada 4
+[28:34 - 28:35] nah
+[28:35 - 28:39] kalau nanti mengarah ke pxp itu
+[28:39 - 28:40] bagaimana sih
+[28:40 - 28:41] keterlibatan dari mitra itu
+[28:41 - 28:42] kalau dari
+[28:42 - 28:44] 4 orang ini
+[28:44 - 28:47] kalau dari saya sendiri
+[28:47 - 28:48] yang sekarang ini
+[28:48 - 28:49] dari 4 orang ini
+[28:49 - 28:50] khususnya dari staff admin
+[28:50 - 28:52] kepala cabang
+[28:52 - 28:53] sama yang satunya dari
+[28:53 - 28:57] staff operasionalnya
+[28:57 - 28:58] yang memegang mereka pendata
+[28:58 - 28:59] itu lebih
+[28:59 - 29:02] ingin mengetahui
+[29:02 - 29:02] bagaimana
+[29:02 - 29:04] proses bisnis
+[29:04 - 29:05] atau operasionalnya
+[29:05 - 29:06] dijalankan secara nyata
+[29:06 - 29:07] gitu
+[29:07 - 29:07] bisnis darinya
+[29:07 - 29:08] karena
+[29:08 - 29:10] kalau untuk dari yang pertama ini
+[29:10 - 29:12] dari gunanya sendiri
+[29:12 - 29:13] itu juga kemarin
+[29:13 - 29:14] saya ada tanyakan
+[29:14 - 29:15] dia sedikit agak lupa
+[29:15 - 29:16] untuk
+[29:16 - 29:18] cara operasionalnya
+[29:18 - 29:18] untuk berjalan
+[29:18 - 29:19] karena beliau kan
+[29:19 - 29:20] di situ ya
+[29:20 - 29:20] ya
+[29:20 - 29:20] saya
+[29:20 - 29:21] langsung di tantor
+[29:21 - 29:22] percabangnya
+[29:22 - 29:22] jadi
+[29:22 - 29:23] saya
+[29:23 - 29:25] manfaatkan tiga orang ini
+[29:25 - 29:26] untuk mendapatkan informasi
+[29:26 - 29:28] realnya
+[29:28 - 29:28] yang terjadi
+[29:28 - 29:29] bagaimana
+[29:29 - 29:30] proses operasional
+[29:30 - 29:30] setiap hari
+[29:30 - 29:31] itu bekerja
+[29:31 - 29:32] lalu
+[29:32 - 29:33] setelah itu
+[29:33 - 29:34] saya ngevalidasi
+[29:34 - 29:35] nanti sama gunanya
+[29:35 - 29:36] apakah itu
+[29:36 - 29:38] sudah sesuai
+[29:38 - 29:38] dengan
+[29:38 - 29:39] proses bisnis
+[29:39 - 29:40] yang dijelaskan
+[29:40 - 29:41] atau
+[29:41 - 29:41] ada
+[29:41 - 29:42] salah gitu
+[29:42 - 29:43] karena pada akhirnya
+[29:43 - 29:44] nanti akan
+[29:44 - 29:45] saya validasi
+[29:45 - 29:46] dan tentunya
+[29:46 - 29:47] narasumber utamanya
+[29:47 - 29:48] untuk membuatkan sistem ini
+[29:48 - 29:48] dari
+[29:48 - 29:49] ibu Nana
+[29:49 - 29:49] yang terjadi
+[29:49 - 29:51] untuk
+[29:51 - 29:53] tahapan konteks
+[29:53 - 29:53] PXP-nya
+[29:53 - 29:54] lebih
+[29:54 - 29:55] fisik
+[29:55 - 29:56] nanti ada
+[29:56 - 29:57] tahap
+[29:57 - 29:58] desain
+[29:58 - 29:59] dan segala macam
+[29:59 - 29:59] itu tetap
+[29:59 - 30:00] butuh validasi
+[30:00 - 30:01] ke ibu Nana
+[30:01 - 30:01] aja
+[30:01 - 30:04] yang ketiga orangnya
+[30:04 - 30:04] ini
+[30:04 - 30:05] untuk
+[30:05 - 30:05] di tahap
+[30:05 - 30:06] pengujian
+[30:06 - 30:08] berarti
+[30:08 - 30:09] pengujian
+[30:09 - 30:10] lebih ke validasi
+[30:10 - 30:12] berarti
+[30:12 - 30:13] keputusan
+[30:13 - 30:14] fiturnya
+[30:14 - 30:15] akan jadi
+[30:15 - 30:15] seperti apa
+[30:15 - 30:16] berarti
+[30:16 - 30:16] hanya dengan
+[30:16 - 30:17] manajemen
+[30:17 - 30:17] saja
+[30:17 - 30:18] produk
+[30:18 - 30:19] orangnya
+[30:19 - 30:19] manajemen
+[30:19 - 30:21] walaupun
+[30:21 - 30:22] masih
+[30:22 - 30:23] dari
+[30:23 - 30:23] gunanya
+[30:23 - 30:24] ada yang
+[30:24 - 30:24] lupa
+[30:24 - 30:25] atau
+[30:25 - 30:26] fiturnya
+[30:26 - 30:26] tapi
+[30:26 - 30:26] dari
+[30:26 - 30:27] tiga orang
+[30:27 - 30:27] ini
+[30:27 - 30:28] ada
+[30:28 - 30:29] menyebutkan
+[30:29 - 30:30] nanti
+[30:30 - 30:30] saya
+[30:30 - 30:34] omongkan
+[30:34 - 30:34] atau
+[30:34 - 30:35] bicarakan
+[30:35 - 30:35] sama gunanya
+[30:35 - 30:36] bahwasannya
+[30:36 - 30:37] dari
+[30:37 - 30:37] tiga orang
+[30:37 - 30:37] ini
+[30:37 - 30:38] menyebutkan
+[30:38 - 30:39] fiturnya
+[30:39 - 30:39] fitur
+[30:39 - 30:40] atau
+[30:40 - 30:40] kolom
+[30:40 - 30:41] tambahan
+[30:41 - 30:43] tapi berarti
+[30:43 - 30:45] beliau yang bertiga ini
+[30:45 - 30:46] ketika sistem
+[30:46 - 30:46] testing itu
+[30:46 - 30:47] akan terlibat
+[30:47 - 30:49] kan periterasi
+[30:49 - 30:49] gitu kan
+[30:49 - 30:51] kan terlibat
+[30:51 - 30:53] dari staff admin
+[30:53 - 30:53] nya disini
+[30:53 - 30:54] karena kan
+[30:54 - 30:55] saya menurut
+[30:55 - 30:56] ada dua orang
+[30:56 - 30:57] dari
+[30:57 - 30:59] kepala cabang
+[30:59 - 31:00] dari
+[31:00 - 31:01] sisi
+[31:01 - 31:02] staff administrasi
+[31:02 - 31:04] yang menggunakan
+[31:04 - 31:04] langsung
+[31:04 - 31:05] setiap hari
+[31:05 - 31:06] jadi untuk
+[31:06 - 31:06] dari
+[31:06 - 31:07] staff operasional
+[31:07 - 31:09] yang ada
+[31:09 - 31:09] rekapan data
+[31:09 - 31:11] selama kepala cabang
+[31:11 - 31:11] itu sebagai
+[31:11 - 31:13] merasakan pertambahan
+[31:13 - 31:15] merasakan pertambahan
+[31:15 - 31:15] untuk
+[31:15 - 31:16] pemiriman ini
+[31:16 - 31:17] akan
+[31:17 - 31:17] dari
+[31:17 - 31:19] manajemen
+[31:19 - 31:19] guna-guna
+[31:19 - 31:19] sendiri
+[31:19 - 31:20] sama
+[31:20 - 31:21] staff
+[31:21 - 31:22] administrasi
+[31:22 - 31:23] berarti
+[31:23 - 31:23] nanti
+[31:23 - 31:24] kalau
+[31:24 - 31:24] sistem ini
+[31:24 - 31:25] ada
+[31:25 - 31:26] berarti
+[31:26 - 31:26] fungsi
+[31:26 - 31:28] yang kepala cabang
+[31:28 - 31:28] dan
+[31:28 - 31:28] tadi
+[31:28 - 31:31] staf operasional
+[31:31 - 31:31] berarti
+[31:31 - 31:32] gak ada
+[31:32 - 31:32] lagi
+[31:32 - 31:33] fungsi
+[31:33 - 31:33] untuk
+[31:33 - 31:34] mereka
+[31:34 - 31:34] itu
+[31:34 - 31:35] tetap
+[31:35 - 31:36] kalau di
+[31:36 - 31:36] sisi
+[31:36 - 31:36] memang
+[31:36 - 31:37] gak ada
+[31:37 - 31:37] sama
+[31:37 - 31:38] tapi
+[31:38 - 31:38] kalau
+[31:38 - 31:39] untuk
+[31:39 - 31:40] realnya
+[31:40 - 31:40] sendiri
+[31:40 - 31:41] pembagian
+[31:41 - 31:42] jadwal
+[31:42 - 31:42] tentor
+[31:42 - 31:43] sama
+[31:43 - 31:44] pembagian
+[31:44 - 31:46] jadwal
+[31:46 - 31:47] tentor
+[31:47 - 31:47] sama
+[31:47 - 31:48] mendiskusikan
+[31:48 - 31:49] dari
+[31:49 - 31:49] pembagian
+[31:49 - 31:50] monori
+[31:50 - 31:50] konor
+[31:50 - 31:51] itu
+[31:51 - 31:51] dari
+[31:51 - 31:51] staff
+[31:51 - 31:52] administrasi
+[31:52 - 31:53] sama
+[31:53 - 31:54] kepala cabang
+[31:54 - 31:55] itu
+[31:55 - 31:56] terus
+[31:56 - 31:56] nanti
+[31:56 - 31:56] gimana
+[31:56 - 31:57] maksudnya
+[31:57 - 31:58] kalau dari
+[31:58 - 31:58] sisi
+[31:58 - 31:59] admin
+[31:59 - 32:00] itu
+[32:00 - 32:00] sebagai
+[32:00 - 32:01] user
+[32:01 - 32:02] yang
+[32:02 - 32:03] meng-input
+[32:03 - 32:04] tapi
+[32:04 - 32:05] ternyata
+[32:05 - 32:05] untuk
+[32:05 - 32:06] pertimbangan
+[32:06 - 32:06] tadi
+[32:06 - 32:07] misalkan
+[32:07 - 32:08] perjadwalan
+[32:08 - 32:10] penghitungan
+[32:10 - 32:10] gaji
+[32:10 - 32:11] itu kan
+[32:11 - 32:11] tetap
+[32:11 - 32:11] kembali
+[32:11 - 32:12] ke kepala
+[32:12 - 32:12] cabang
+[32:12 - 32:14] sementara
+[32:14 - 32:14] dia kan
+[32:14 - 32:15] gak ada
+[32:15 - 32:15] pemerintah
+[32:15 - 32:15] di sistem
+[32:15 - 32:16] nanti
+[32:16 - 32:17] proses itu
+[32:17 - 32:19] dilakukan
+[32:19 - 32:20] di luar
+[32:20 - 32:20] sistem
+[32:20 - 32:20] iya
+[32:20 - 32:21] di luar
+[32:21 - 32:22] sistem
+[32:22 - 32:22] karena
+[32:22 - 32:23] dilakukan
+[32:23 - 32:24] sampai
+[32:24 - 32:24] saat ini
+[32:24 - 32:25] pun
+[32:25 - 32:26] dari
+[32:26 - 32:26] dua
+[32:26 - 32:27] orang
+[32:27 - 32:28] administrasi
+[32:28 - 32:28] sama
+[32:28 - 32:29] kepala
+[32:29 - 32:29] cabang
+[32:29 - 32:29] ini
+[32:29 - 32:30] juga
+[32:30 - 32:30] diskusi
+[32:30 - 32:31] secara
+[32:31 - 32:31] langsung
+[32:31 - 32:32] tetapi
+[32:32 - 32:32] yang
+[32:32 - 32:33] meng-handle
+[32:33 - 32:33] dan
+[32:33 - 32:35] melakukan
+[32:35 - 32:35] pemberkasan
+[32:35 - 32:36] dari
+[32:36 - 32:36] sisi
+[32:36 - 32:37] staff
+[32:37 - 32:37] administrasi
+[32:37 - 32:38] tetap dari
+[32:38 - 32:38] staff
+[32:38 - 32:39] administrasi
+[32:39 - 32:40] terus
+[32:40 - 32:40] gimana
+[32:40 - 32:41] nanti
+[32:41 - 32:42] misalkan
+[32:42 - 32:42] terkaitkan
+[32:42 - 32:43] penjadwalan
+[32:43 - 32:45] sementara
+[32:45 - 32:47] usernya
+[32:47 - 32:47] hanya
+[32:47 - 32:48] admin
+[32:48 - 32:51] kalau
+[32:51 - 32:51] misalkan
+[32:51 - 32:52] penjadwalan
+[32:52 - 32:52] itu kan
+[32:52 - 32:53] kalau
+[32:53 - 32:53] kondisi
+[32:53 - 32:54] real
+[32:54 - 32:54] berarti
+[32:54 - 32:54] hanya
+[32:54 - 32:55] tinggal input
+[32:55 - 32:56] sementara
+[32:56 - 32:56] jadwal itu
+[32:56 - 32:56] sudah
+[32:56 - 32:57] disusun
+[32:57 - 32:57] dulu
+[32:57 - 32:57] oleh
+[32:57 - 32:58] kepala
+[32:58 - 32:59] cabangan
+[32:59 - 33:00] tapi
+[33:00 - 33:00] kalau
+[33:00 - 33:01] misalkan
+[33:01 - 33:02] kemarin
+[33:02 - 33:03] itu
+[33:03 - 33:03] yang
+[33:03 - 33:04] ada
+[33:04 - 33:05] sempat
+[33:05 - 33:05] sampaikan
+[33:05 - 33:07] kondisinya
+[33:07 - 33:08] satu
+[33:08 - 33:10] pengajar
+[33:10 - 33:10] itu kan
+[33:10 - 33:11] ada yang
+[33:11 - 33:11] dia full
+[33:11 - 33:12] sesinya
+[33:12 - 33:13] sehingga
+[33:13 - 33:14] pada akhirnya
+[33:14 - 33:14] mungkin dia
+[33:14 - 33:16] pagi
+[33:16 - 33:16] di sini
+[33:16 - 33:17] siang
+[33:17 - 33:17] di mana
+[33:17 - 33:19] kondisi
+[33:19 - 33:19] seperti itu
+[33:19 - 33:20] nanti
+[33:20 - 33:20] gimana
+[33:20 - 33:21] untuk
+[33:21 - 33:21] intervensi
+[33:21 - 33:22] di sistem
+[33:22 - 33:22] kemarin
+[33:22 - 33:23] sudah saya validasi
+[33:23 - 33:24] itu
+[33:24 - 33:24] gak bisa
+[33:24 - 33:25] terjadi
+[33:25 - 33:27] jadi
+[33:27 - 33:27] cuma
+[33:27 - 33:28] hanya
+[33:28 - 33:28] satu cabang
+[33:28 - 33:29] saja
+[33:29 - 33:29] berarti
+[33:29 - 33:30] gak akan
+[33:30 - 33:30] mungkin
+[33:30 - 33:31] dia lintas cabang
+[33:31 - 33:31] ya
+[33:31 - 33:31] gak akan
+[33:31 - 33:32] mungkin
+[33:32 - 33:32] untuk
+[33:32 - 33:33] lintas cabang
+[33:33 - 33:33] berarti
+[33:33 - 33:34] aman
+[33:34 - 33:34] kalau
+[33:34 - 33:34] itu
+[33:34 - 33:35] kembalian
+[33:35 - 33:36] dari
+[33:36 - 33:37] sisi
+[33:37 - 33:38] atlin
+[33:38 - 33:39] sama
+[33:39 - 33:40] kepala cabang
+[33:40 - 33:41] per cabang
+[33:41 - 33:42] makanya
+[33:42 - 33:42] operasional
+[33:42 - 33:43] setiap cabang
+[33:43 - 33:43] itu
+[33:43 - 33:44] berbeda
+[33:44 - 33:44] kalau
+[33:44 - 33:45] gitu
+[33:45 - 33:45] jauh
+[33:45 - 33:45] lebih aman
+[33:45 - 33:46] karena
+[33:46 - 33:46] kalau
+[33:46 - 33:46] misalkan
+[33:46 - 33:47] lintas cabang
+[33:47 - 33:47] itu
+[33:47 - 33:48] sebet
+[33:48 - 33:48] sekali
+[33:48 - 33:49] harus
+[33:49 - 33:50] menantau
+[33:50 - 33:50] data
+[33:50 - 33:50] semua
+[33:50 - 33:58] nanti
+[33:58 - 33:59] mau gak
+[33:59 - 33:59] mau
+[33:59 - 33:59] kan
+[33:59 - 33:59] nanti
+[33:59 - 34:00] harus
+[34:00 - 34:00] bisa
+[34:00 - 34:01] apa
+[34:01 - 34:01] ya
+[34:01 - 34:01] maksudnya
+[34:01 - 34:02] sistemnya
+[34:02 - 34:02] harus
+[34:02 - 34:03] bisa
+[34:03 - 34:04] memberikan
+[34:04 - 34:05] gambaran
+[34:05 - 34:05] informasi
+[34:05 - 34:06] dari
+[34:06 - 34:07] misalkan
+[34:07 - 34:07] tadi
+[34:07 - 34:07] terkaitkan
+[34:07 - 34:08] jadualan
+[34:08 - 34:08] jadual
+[34:08 - 34:09] sementara
+[34:09 - 34:09] yang sudah
+[34:09 - 34:09] ada
+[34:09 - 34:10] itu
+[34:10 - 34:10] seperti
+[34:10 - 34:10] apa
+[34:10 - 34:11] sehingga
+[34:11 - 34:11] nanti
+[34:11 - 34:12] bisa jadi
+[34:12 - 34:12] input
+[34:12 - 34:13] untuk
+[34:13 - 34:14] kepala cabang
+[34:14 - 34:14] ketika
+[34:14 - 34:15] dia
+[34:15 - 34:15] menunjukkan
+[34:15 - 34:15] jadual
+[34:15 - 34:16] berikutnya
+[34:16 - 34:19] walaupun
+[34:19 - 34:19] secara
+[34:19 - 34:20] real
+[34:20 - 34:20] kan
+[34:20 - 34:20] dia
+[34:20 - 34:20] memang
+[34:20 - 34:20] dia
+[34:20 - 34:21] bukan
+[34:21 - 34:22] pengguna
+[34:22 - 34:22] langsung
+[34:22 - 34:22] di
+[34:22 - 34:23] sistem
+[34:23 - 34:23] ini
+[34:23 - 34:24] tapi
+[34:24 - 34:24] dia
+[34:24 - 34:25] tetap
+[34:25 - 34:25] mendapatkan
+[34:25 - 34:25] input
+[34:25 - 34:26] dari
+[34:26 - 34:26] sistem
+[34:26 - 34:26] tadi
+[34:26 - 34:26] untuk
+[34:26 - 34:27] pertimbangan
+[34:27 - 34:27] misalnya
+[34:27 - 34:32] ada
+[34:32 - 34:33] apa ya
+[34:33 - 34:33] mungkin
+[34:33 - 34:34] semacam
+[34:34 - 34:35] rekapitulasi
+[34:35 - 34:36] menyeluruh
+[34:36 - 34:36] atau seperti
+[34:36 - 34:37] apa
+[34:37 - 34:38] dari jadwal-jadwal
+[34:38 - 34:38] tentor
+[34:38 - 34:39] itu
+[34:39 - 34:39] sehingga
+[34:39 - 34:39] kalau dia
+[34:39 - 34:40] mau
+[34:40 - 34:40] assign
+[34:40 - 34:40] lagi
+[34:40 - 34:41] misalkan
+[34:41 - 34:41] ada
+[34:41 - 34:41] kelas baru
+[34:41 - 34:42] yang dimuka
+[34:42 - 34:42] dia mau
+[34:42 - 34:42] assign
+[34:42 - 34:43] lagi
+[34:43 - 34:43] siapa
+[34:43 - 34:44] yang bisa
+[34:44 - 34:44] tahu
+[34:44 - 34:48] berarti
+[34:48 - 34:48] kalau
+[34:48 - 34:49] misalkan
+[34:49 - 34:50] teman
+[34:50 - 34:51] menggunakan
+[34:51 - 34:51] sistem
+[34:51 - 34:52] dari sisi
+[34:52 - 34:52] front-base
+[34:52 - 34:53] sisi
+[34:53 - 34:54] admin
+[34:54 - 34:55] sama
+[34:55 - 34:55] management
+[34:55 - 34:56] tersebut
+[34:56 - 34:56] tapi
+[34:56 - 34:57] kalau
+[34:57 - 34:57] misalkan
+[34:57 - 34:58] dari kepala
+[34:58 - 34:58] cabang
+[34:58 - 34:59] yang membutuhkan
+[34:59 - 35:03] rencananya
+[35:03 - 35:04] saya
+[35:04 - 35:05] dan
+[35:05 - 35:05] kemarin
+[35:05 - 35:06] ada
+[35:06 - 35:06] diskusi
+[35:06 - 35:06] sama
+[35:06 - 35:08] pengguna
+[35:08 - 35:09] juga
+[35:09 - 35:09] dari
+[35:09 - 35:10] management
+[35:10 - 35:10] juga
+[35:10 - 35:10] bisa
+[35:10 - 35:12] dalam
+[35:12 - 35:14] pdf
+[35:14 - 35:15] itu
+[35:15 - 35:16] bisa langsung
+[35:16 - 35:16] dikirimkan
+[35:16 - 35:16] kepala
+[35:16 - 35:17] cabang
+[35:17 - 35:18] report
+[35:18 - 35:18] gitu
+[35:18 - 35:19] menurut saya
+[35:19 - 35:20] walaupun
+[35:20 - 35:20] dia
+[35:20 - 35:20] enggak
+[35:20 - 35:20] harus
+[35:20 - 35:21] login
+[35:21 - 35:21] ke sistem
+[35:21 - 35:21] paling
+[35:21 - 35:22] enggak
+[35:22 - 35:22] dari
+[35:22 - 35:22] admin
+[35:22 - 35:22] bisa
+[35:22 - 35:23] dapat
+[35:23 - 35:23] report
+[35:23 - 35:23] nanti
+[35:23 - 35:23] kan
+[35:23 - 35:24] diserahkan
+[35:24 - 35:27] jadi
+[35:27 - 35:28] jangan
+[35:28 - 35:28] semuanya
+[35:28 - 35:28] nanti
+[35:28 - 35:29] table
+[35:29 - 35:29] apa
+[35:29 - 35:30] namanya
+[35:30 - 35:30] table
+[35:30 - 35:31] untuk
+[35:31 - 35:32] data
+[35:32 - 35:33] semua
+[35:33 - 35:33] gitu
+[35:33 - 35:33] ya
+[35:33 - 35:34] enggak
+[35:34 - 35:34] ada
+[35:34 - 35:35] report
+[35:35 - 35:35] susah
+[35:35 - 35:35] orang
+[35:35 - 35:36] buat
+[35:36 - 35:36] ngelihat
+[35:36 - 35:37] paling
+[35:37 - 35:37] enggak
+[35:37 - 35:37] nanti
+[35:37 - 35:37] ada
+[35:37 - 35:38] dashboard
+[35:38 - 35:38] juga
+[35:38 - 35:38] yang
+[35:38 - 35:39] bisa
+[35:39 - 35:39] diterima
+[35:39 - 35:52] penyerahan
+[35:52 - 35:52] ke
+[35:58 - 36:00] klutansi fisik
+[36:00 - 36:01] itu yang pertama
+[36:01 - 36:03] untuk paket yang normal
+[36:03 - 36:05] paket yang normal ini
+[36:05 - 36:08] yang enggak ngambil
+[36:08 - 36:11] siswa yang enggak ngambil
+[36:11 - 36:12] satu paket per semester
+[36:12 - 36:13] loh
+[36:13 - 36:15] klutansi yang kedua
+[36:15 - 36:17] itu khusus untuk paket yang
+[36:17 - 36:18] memang
+[36:18 - 36:21] paket yang memang
+[36:21 - 36:22] siswanya ini
+[36:22 - 36:24] mengambil
+[36:24 - 36:24] full
+[36:24 - 36:25] satu semester
+[36:25 - 36:26] yang pertama tadi
+[36:26 - 36:27] per bulan
+[36:27 - 36:28] terus yang ketiga itu
+[36:28 - 36:28] dari
+[36:28 - 36:30] mereka pun
+[36:30 - 36:31] ternyata
+[36:31 - 36:32] juga ada
+[36:32 - 36:33] menambahkan
+[36:33 - 36:35] atau membuat
+[36:35 - 36:36] satu form itu
+[36:36 - 36:37] secara
+[36:37 - 36:38] fisik
+[36:38 - 36:39] untuk menuliskan
+[36:39 - 36:41] dari wali muridnya ini
+[36:41 - 36:42] nama
+[36:42 - 36:42] nomor telepon
+[36:42 - 36:43] dan lain-lain
+[36:43 - 36:43] jadi
+[36:43 - 36:45] setelah dari
+[36:45 - 36:46] formnya itu
+[36:46 - 36:48] dipulis sama wali muridnya
+[36:48 - 36:49] baru akan
+[36:49 - 36:49] dimasukkan
+[36:49 - 36:50] langsung
+[36:50 - 36:51] dimasukkan lagi
+[36:51 - 36:52] sama staff administrasi
+[36:52 - 36:53] ke dalam
+[36:53 - 36:53] buku masalah
+[36:53 - 36:54] dan
+[36:54 - 36:55] penyimpanan
+[36:55 - 36:56] pembisaran itu
+[36:56 - 36:56] ternyata
+[36:56 - 36:57] enggak
+[36:57 - 36:58] disimpan
+[36:58 - 37:00] kemanajemen pusat
+[37:00 - 37:01] atau diberikan
+[37:01 - 37:02] kemanajemen pusat
+[37:02 - 37:03] tapi disimpan
+[37:03 - 37:04] di setiap
+[37:04 - 37:05] camangnya
+[37:05 - 37:05] jadi enggak ada
+[37:05 - 37:06] pemberian
+[37:06 - 37:07] itu data siswa
+[37:07 - 37:08] data siswa yang enggak ada
+[37:08 - 37:09] pemberian kemanajemen pusat
+[37:09 - 37:10] berarti
+[37:10 - 37:13] manajemen pusat itu
+[37:13 - 37:13] ya taunya
+[37:13 - 37:13] cuman
+[37:13 - 37:14] berapa orang
+[37:14 - 37:15] jumlahnya
+[37:15 - 37:16] makanya
+[37:16 - 37:16] untuk
+[37:16 - 37:17] dari akapan excel
+[37:17 - 37:18] juga sebenarnya
+[37:18 - 37:19] itu hanya
+[37:19 - 37:20] angka
+[37:20 - 37:21] dan juga
+[37:21 - 37:22] belum
+[37:22 - 37:23] dipastikan
+[37:23 - 37:24] itu bakal
+[37:24 - 37:25] terus di update
+[37:25 - 37:26] gitu
+[37:26 - 37:28] rekapan excel
+[37:28 - 37:28] yang jumlah
+[37:28 - 37:29] gitu kan
+[37:29 - 37:30] iya rekapan excel
+[37:30 - 37:30] yang jumlah
+[37:30 - 37:31] karena harus
+[37:31 - 37:32] terus kan
+[37:32 - 37:33] pengbayaran
+[37:33 - 37:33] gimana
+[37:33 - 37:35] kalau enggak tahu
+[37:35 - 37:35] ini
+[37:35 - 37:36] kan biasanya
+[37:36 - 37:37] mungkin transfer
+[37:37 - 37:37] gitu ya
+[37:37 - 37:38] ini yang transfer
+[37:38 - 37:38] orang tuanya siapa
+[37:38 - 37:39] gitu
+[37:39 - 37:40] udah didata di sekolah
+[37:40 - 37:41] itu ada data
+[37:41 - 37:42] yang rekapan
+[37:42 - 37:43] gitu
+[37:43 - 37:44] tapi
+[37:44 - 37:44] maksud saya
+[37:44 - 37:45] karena ada
+[37:45 - 37:46] pembatasan
+[37:46 - 37:48] waktunya
+[37:48 - 37:50] jadi terbatas
+[37:50 - 37:50] gitu
+[37:50 - 37:50] karena
+[37:50 - 37:51] dari sisi
+[37:51 - 37:51] staff
+[37:51 - 37:52] personal
+[37:52 - 37:53] selaku
+[37:53 - 37:55] mentor
+[37:55 - 37:56] pengajar
+[37:56 - 37:56] juga
+[37:56 - 37:57] jadi double drop
+[37:57 - 37:57] gitu
+[37:57 - 37:59] sebagai staff
+[37:59 - 37:59] personal
+[37:59 - 38:01] dan untuk
+[38:01 - 38:02] memvalidasi
+[38:02 - 38:03] pembayaran
+[38:03 - 38:04] itu
+[38:04 - 38:05] seperti yang saya
+[38:05 - 38:05] bilangin
+[38:05 - 38:06] dengan sebut
+[38:06 - 38:06] itu
+[38:06 - 38:07] dari sisi
+[38:07 - 38:08] menegang
+[38:08 - 38:09] akan memkomotasi
+[38:09 - 38:10] rekening
+[38:10 - 38:11] dan akan
+[38:11 - 38:11] bayar dari
+[38:11 - 38:12] kertas
+[38:12 - 38:12] rekapan
+[38:12 - 38:14] secara
+[38:14 - 38:15] satu-satu
+[38:15 - 38:19] kalau ini
+[38:19 - 38:21] yang ngerekap
+[38:21 - 38:22] yang ngumpulin
+[38:22 - 38:23] pembayaran
+[38:23 - 38:24] kan di admin
+[38:24 - 38:24] ya
+[38:24 - 38:27] itu ada
+[38:27 - 38:27] sistem
+[38:27 - 38:28] kalau telat
+[38:28 - 38:29] membayar
+[38:29 - 38:29] gitu
+[38:29 - 38:30] kondisinya
+[38:30 - 38:31] apakah akan
+[38:31 - 38:32] diberikan
+[38:32 - 38:33] semacam
+[38:33 - 38:33] SP
+[38:33 - 38:34] atau gimana
+[38:34 - 38:35] kalau
+[38:35 - 38:35] kemarin
+[38:35 - 38:36] ada
+[38:36 - 38:37] kalau
+[38:37 - 38:37] ada
+[38:37 - 38:38] tumbakan
+[38:38 - 38:38] waktu jatuh
+[38:38 - 38:39] tempoh
+[38:39 - 38:40] itu
+[38:40 - 38:40] dari
+[38:40 - 38:43] lebih tepatnya
+[38:43 - 38:43] untuk
+[38:43 - 38:43] remainer
+[38:43 - 38:44] pertama
+[38:44 - 38:45] itu
+[38:45 - 38:45] langsung
+[38:45 - 38:46] ke
+[38:46 - 38:47] wali
+[38:47 - 38:47] muridnya
+[38:47 - 38:48] tapi dari
+[38:48 - 38:48] admin
+[38:48 - 38:49] dari admin
+[38:49 - 38:50] sisi admin
+[38:50 - 38:51] dan itu
+[38:51 - 38:52] dari sisi admin
+[38:52 - 38:55] nge-WA
+[38:55 - 38:56] dari hasil data
+[38:56 - 38:56] yang sudah
+[38:56 - 38:57] di
+[38:57 - 38:58] yang ada
+[38:58 - 38:58] di dalam
+[38:58 - 38:59] berkebesaran
+[38:59 - 38:59] itu
+[38:59 - 39:00] kalau misalkan
+[39:00 - 39:01] tidak ditanggapin
+[39:01 - 39:03] mau gak mau
+[39:03 - 39:04] langsung ke
+[39:04 - 39:04] siswanya
+[39:04 - 39:05] jadi siswanya
+[39:05 - 39:06] sudah menyampaikan
+[39:06 - 39:06] langsung ke
+[39:06 - 39:07] admin
+[39:07 - 39:09] makanya
+[39:09 - 39:09] sistem
+[39:09 - 39:11] yang rencangan
+[39:11 - 39:11] yang saya buat
+[39:11 - 39:12] itu ada
+[39:12 - 39:15] otomat
+[39:15 - 39:15] kalau
+[39:15 - 39:15] atas
+[39:15 - 39:16] jadi
+[39:16 - 39:16] si admin
+[39:16 - 39:17] bakal
+[39:17 - 39:18] bisa langsung
+[39:18 - 39:19] melihat
+[39:19 - 39:19] yang belum
+[39:19 - 39:19] itu
+[39:19 - 39:20] tambahannya
+[39:20 - 39:20] berapa
+[39:20 - 39:21] sebagainya
+[39:21 - 39:23] ya
+[39:23 - 39:23] ke dalam
+[39:23 - 39:23] bukan
+[39:23 - 39:24] harus
+[39:24 - 39:24] di cek
+[39:24 - 39:25] satu persatu
+[39:25 - 39:26] berapa jumlah
+[39:26 - 39:27] siswa
+[39:27 - 39:27] bisa
+[39:27 - 39:28] cabangnya
+[39:28 - 39:29] contohnya
+[39:29 - 39:29] kemarin
+[39:29 - 39:30] saya sudah
+[39:30 - 39:30] pastikan
+[39:30 - 39:31] ada 400
+[39:31 - 39:32] cabang
+[39:32 - 39:33] yang paling banyak
+[39:33 - 39:34] di Arta 6
+[39:34 - 39:35] cabang 6
+[39:35 - 39:36] siswanya
+[39:36 - 39:36] 400
+[39:36 - 39:38] udah
+[39:38 - 39:39] kayak
+[39:39 - 39:39] satu sekolah
+[39:39 - 40:09] kalau yang diproses
+[40:09 - 40:10] bisnis
+[40:10 - 40:11] sepertinya alur
+[40:11 - 40:11] yang penting
+[40:11 - 40:13] kalau yang kontrol
+[40:13 - 40:15] kalau misalkan
+[40:15 - 40:15] memang
+[40:15 - 40:17] perlu validasi
+[40:17 - 40:18] kalau misalkan
+[40:18 - 40:19] sifatnya
+[40:19 - 40:20] kontrol-kontrol
+[40:20 - 40:21] atau constraint
+[40:21 - 40:21] itu
+[40:21 - 40:22] memang
+[40:22 - 40:23] misalkan
+[40:23 - 40:24] hanya
+[40:24 - 40:27] tidak untuk
+[40:27 - 40:27] di expose
+[40:27 - 40:28] keluar
+[40:28 - 40:29] tapi nanti
+[40:29 - 40:30] di sistem
+[40:30 - 40:31] memang perlu
+[40:31 - 40:32] diakomodir
+[40:32 - 40:32] saya rasa
+[40:32 - 40:33] mungkin tidak
+[40:33 - 40:34] perlu dimasukkan
+[40:34 - 40:34] secara
+[40:34 - 40:35] detail
+[40:35 - 40:36] di laporan
+[40:36 - 40:37] karena khawatirnya
+[40:37 - 40:37] nanti
+[40:37 - 40:38] bisa jadikan
+[40:38 - 40:38] itu
+[40:38 - 40:39] rahasia
+[40:39 - 40:39] bisnis
+[40:39 - 40:40] mereka
+[40:40 - 40:41] itu kan
+[40:41 - 40:41] mungkin
+[40:41 - 40:42] kita tidak
+[40:42 - 40:42] tahu
+[40:42 - 40:43] terlalu
+[40:43 - 40:43] detail
+[40:43 - 40:44] juga
+[40:44 - 40:44] disitu
+[40:44 - 40:45] jadi
+[40:45 - 40:46] tetap
+[40:46 - 40:46] ada
+[40:46 - 40:46] pertimbangan
+[40:46 - 40:47] itu
+[40:47 - 40:47] tetap
+[40:47 - 40:48] di
+[40:48 - 40:49] validasi
+[40:49 - 40:49] ulang
+[40:49 - 40:50] dengan
+[40:50 - 40:51] narasumbernya
+[40:51 - 40:51] aja
+[40:51 - 40:52] jadi
+[40:52 - 40:52] kalau yang
+[40:52 - 40:53] secara
+[40:53 - 40:53] flow
+[40:53 - 40:54] menurut saya
+[40:54 - 40:54] kalau
+[40:54 - 40:55] proses
+[40:55 - 40:55] bisnis
+[40:55 - 40:55] kan
+[40:55 - 40:56] mau
+[40:56 - 40:56] gak
+[40:56 - 40:56] mau
+[40:56 - 40:56] perlu
+[40:56 - 40:57] ya
+[40:57 - 40:57] karena
+[40:57 - 40:57] itu
+[40:57 - 40:57] nanti
+[40:57 - 40:58] akan
+[40:58 - 40:58] di
+[40:58 - 40:58] validasi
+[40:58 - 40:58] lagi
+[40:58 - 40:59] di
+[40:59 - 40:59] sistem
+[40:59 - 40:59] bagaimana
+[40:59 - 41:00] eksekusinya
+[41:00 - 41:01] itu
+[41:01 - 41:02] sebaiknya
+[41:02 - 41:03] tapi
+[41:03 - 41:03] kalau
+[41:03 - 41:04] sifatnya
+[41:04 - 41:04] constraint
+[41:04 - 41:05] tadi
+[41:05 - 41:07] kalau
+[41:07 - 41:07] memang
+[41:07 - 41:07] itu
+[41:07 - 41:08] sifatnya
+[41:08 - 41:09] lebih ke
+[41:09 - 41:10] kebijakan
+[41:10 - 41:11] perusahaan
+[41:11 - 41:11] atau
+[41:11 - 41:12] sifatnya
+[41:12 - 41:12] memang
+[41:12 - 41:12] hanya
+[41:12 - 41:14] manajemen
+[41:14 - 41:14] saja
+[41:14 - 41:14] yang
+[41:14 - 41:14] boleh
+[41:14 - 41:15] mengetahui
+[41:15 - 41:16] itu
+[41:16 - 41:16] misalkan
+[41:16 - 41:16] tapi
+[41:16 - 41:17] mau tetap
+[41:17 - 41:18] diakomodit
+[41:18 - 41:18] di sistem
+[41:18 - 41:20] gimana
+[41:20 - 41:20] caranya
+[41:20 - 41:21] gak usah
+[41:21 - 41:21] terlalu
+[41:21 - 41:22] diekspos
+[41:22 - 41:22] selain
+[41:22 - 41:23] penokoran
+[41:23 - 41:23] gitu
+[41:23 - 41:24] saya
+[41:24 - 41:27] terus
+[41:27 - 41:28] juga
+[41:28 - 41:28] ada
+[41:28 - 41:28] saya
+[41:28 - 41:29] berbual
+[41:29 - 41:30] lukesatunya
+[41:30 - 41:30] lukesatunya
+[41:30 - 41:31] lukesatunya
+[41:31 - 41:32] lukesatunya
+[41:32 - 41:33] lukesatunya
+[41:33 - 41:33] coba
+[41:33 - 41:34] untuk
+[41:34 - 41:34] selesaikan
+[41:34 - 41:35] lukesatunya
+[41:35 - 41:36] lukesatunya
+[41:36 - 41:40] lukesatunya
+[41:40 - 41:40] lukesatunya
+[41:40 - 41:40] tapi
+[41:40 - 41:41] sudah
+[41:41 - 41:41] lukesatunya
+[41:41 - 41:42] sudah
+[41:42 - 41:43] gimana
+[41:43 - 41:43] ini
+[41:43 - 41:45] jadi
+[41:45 - 41:46] lukesatunya
+[41:46 - 41:47] lukesatunya
+[41:47 - 41:47] lukesatunya
+[41:47 - 41:48] lukesatunya
+[41:48 - 41:48] lukesatunya
+[41:48 - 41:48] lukesatunya
+[41:48 - 41:50] lukesatunya
+[41:50 - 41:51] lukesatunya
+[41:51 - 41:52] lukesatunya
+[41:52 - 41:53] lukesatunya
+[41:53 - 41:54] lukesatunya
+[41:54 - 41:54] lukesatunya
+[41:54 - 41:55] pembinaan belajar itu
+[41:55 - 41:55] apa
+[41:55 - 41:56] terus
+[41:56 - 41:56] juga
+[41:56 - 41:57] dihitung
+[41:57 - 41:57] dengan
+[41:57 - 41:58] data
+[41:58 - 41:59] yang saya
+[41:59 - 41:59] dapatkan
+[41:59 - 42:00] dari
+[42:00 - 42:01] undang-undang
+[42:01 - 42:01] republik
+[42:01 - 42:01] indonesia
+[42:01 - 42:03] lukesatunya
+[42:03 - 42:03] memang
+[42:03 - 42:05] ada peraturan
+[42:05 - 42:06] tentang
+[42:06 - 42:07] sistem pendidikan
+[42:07 - 42:08] yang mendukung
+[42:08 - 42:08] untuk
+[42:08 - 42:09] pembinaan
+[42:09 - 42:09] informal
+[42:09 - 42:15] saya
+[42:15 - 42:16] lanjut
+[42:16 - 42:31] kenapa
+[42:31 - 42:32] disitu
+[42:32 - 42:32] langsung
+[42:32 - 42:32] bahas
+[42:32 - 42:33] sistem
+[42:33 - 42:34] informasi
+[42:34 - 42:34] manajemen
+[42:34 - 42:34] informasi
+[42:34 - 42:35] web
+[42:35 - 42:37] karena
+[42:37 - 42:39] yang
+[42:39 - 42:39] di
+[42:39 - 42:39] paragraf
+[42:39 - 42:40] mulai
+[42:40 - 42:41] karena
+[42:41 - 42:41] saya
+[42:43 - 42:44] selesai menceritakan
+[42:44 - 42:45] bahwasannya
+[42:45 - 42:46] dari sistem
+[42:46 - 42:47] bimbel
+[42:47 - 42:48] yang saat ini
+[42:48 - 42:49] memang belum ada
+[42:49 - 42:50] sama sekali
+[42:50 - 42:51] sistem yang digunakan
+[42:51 - 42:52] dan langsung
+[42:52 - 42:53] menyebutkan
+[42:53 - 42:55] sistem informasi
+[42:55 - 42:55] itu
+[42:55 - 42:56] apa
+[42:56 - 42:57] dan lingkup
+[42:57 - 42:57] yang mau saya
+[42:57 - 42:59] ambil
+[42:59 - 43:00] di penelitian
+[43:00 - 43:01] itu apa
+[43:01 - 43:44] terima kasih
+[43:44 - 43:45] di penelitian
+[43:45 - 43:48] di penelitian
+[43:48 - 43:49] di penelitian
+[43:49 - 43:52] di penelitian
+[43:52 - 43:53] di penelitian
+[43:53 - 43:54] di penelitian
+[43:54 - 43:55] di penelitian
+[43:55 - 43:56] di penelitian
+[43:56 - 43:57] di penelitian
+[43:57 - 43:59] di penelitian
+[43:59 - 44:00] di penelitian
+[44:00 - 44:04] di penelitian
+[44:04 - 44:22] di penelitian
+[44:22 - 44:22] jangan
+[44:22 - 44:22] hanya
+[44:22 - 44:23] menyebutkan
+[44:23 - 44:23] tentornya
+[44:23 - 44:24] kayaknya
+[44:24 - 44:24] real
+[44:24 - 44:25] tambahkan
+[44:25 - 44:25] coba
+[44:25 - 44:26] estimasi
+[44:26 - 44:27] jumlah
+[44:27 - 44:28] siswa
+[44:28 - 44:29] oh
+[44:29 - 44:29] jumlah
+[44:29 - 44:29] siswa
+[44:29 - 44:30] juga
+[44:30 - 44:57] saya yang
+[44:57 - 44:57] terima kasih
+[44:57 - 44:58] menyebutkan
+[44:58 - 44:59] secara
+[44:59 - 44:59] spesifik
+[44:59 - 45:01] untuk
+[45:01 - 45:03] jatuhannya
+[45:03 - 45:03] sendiri
+[45:03 - 45:16] ini
+[45:16 - 45:17] paragraf ini
+[45:17 - 45:17] mau menceritakan
+[45:17 - 45:18] apa
+[45:18 - 45:20] dari sisi
+[45:20 - 45:21] kompleksitas
+[45:21 - 45:21] jatuhannya
+[45:21 - 45:30] dari sisi
+[45:30 - 45:30] admin
+[45:30 - 45:31] juga perlu
+[45:31 - 45:31] untuk
+[45:31 - 45:32] secara
+[45:32 - 45:33] detail
+[45:33 - 45:35] melihat
+[45:35 - 45:36] satu persatu
+[45:36 - 45:36] nyata
+[45:36 - 45:37] yang ada di
+[45:37 - 45:37] 20%
+[45:37 - 45:39] coba
+[45:39 - 45:40] scroll dulu
+[45:40 - 45:40] ke atas
+[45:40 - 45:41] tadi
+[45:41 - 45:41] paragraf atas
+[45:41 - 45:42] ini kan
+[45:42 - 45:43] menceritakan
+[45:43 - 45:43] mitra ya
+[45:43 - 45:49] kalau
+[45:49 - 45:49] menurut saya
+[45:49 - 45:50] coba
+[45:50 - 45:52] apa ya
+[45:52 - 45:53] coba
+[45:53 - 45:53] mungkin dari
+[45:53 - 45:54] umum ke
+[45:54 - 45:54] khusus dulu
+[45:54 - 45:54] kan
+[45:54 - 45:55] ini kan
+[45:55 - 45:56] nanti
+[45:56 - 45:56] skop
+[45:56 - 45:57] TA-nya
+[45:57 - 45:57] terkait
+[45:57 - 46:00] pendaftaran
+[46:00 - 46:00] itu kan ya
+[46:00 - 46:01] pendaftaran
+[46:01 - 46:03] kemudian
+[46:03 - 46:05] pembayaran
+[46:05 - 46:05] itu kayaknya
+[46:05 - 46:05] di akhir
+[46:05 - 46:06] pendaftaran
+[46:06 - 46:07] penjadwalan
+[46:07 - 46:08] pembayaran
+[46:08 - 46:09] gitu kan
+[46:09 - 46:10] nah
+[46:10 - 46:10] coba
+[46:10 - 46:11] diceritakan
+[46:11 - 46:11] dulu
+[46:11 - 46:12] tiga
+[46:12 - 46:12] proses
+[46:12 - 46:13] itu
+[46:13 - 46:13] kayaknya
+[46:13 - 46:13] secara
+[46:13 - 46:14] umum
+[46:14 - 46:16] kan
+[46:16 - 46:16] yang mau
+[46:16 - 46:18] disedikan
+[46:18 - 46:18] skopnya
+[46:18 - 46:19] adalah
+[46:19 - 46:20] jadi
+[46:20 - 46:20] nanti
+[46:20 - 46:21] dibahas
+[46:21 - 46:21] dulu
+[46:21 - 46:21] itu
+[46:21 - 46:23] walaupun
+[46:23 - 46:24] sebenarnya
+[46:24 - 46:24] secara
+[46:24 - 46:25] keseluruhan
+[46:25 - 46:25] banyak
+[46:25 - 46:26] proses
+[46:26 - 46:26] yang berjalan
+[46:26 - 46:26] juga
+[46:26 - 46:27] kan
+[46:27 - 46:27] tidak hanya
+[46:27 - 46:28] cuma
+[46:28 - 46:29] membayar
+[46:29 - 46:29] terus
+[46:29 - 46:29] dapat
+[46:29 - 46:30] jadwal
+[46:30 - 46:31] apa
+[46:31 - 46:31] namanya
+[46:31 - 46:33] mendaftar
+[46:33 - 46:33] ya
+[46:33 - 46:33] tapi
+[46:33 - 46:33] proses
+[46:33 - 46:34] belajar
+[46:34 - 46:34] pun
+[46:34 - 46:34] kan
+[46:34 - 46:34] harusnya
+[46:34 - 46:35] juga
+[46:35 - 46:35] bisa
+[46:35 - 46:35] gak
+[46:35 - 46:36] ini
+[46:36 - 46:36] masuk
+[46:36 - 46:36] ke
+[46:36 - 46:36] skop
+[46:36 - 46:36] sistem
+[46:36 - 46:37] tapi
+[46:37 - 46:37] kan
+[46:37 - 46:37] dalam
+[46:37 - 46:37] case
+[46:37 - 46:38] ini
+[46:40 - 46:40] jadi
+[46:40 - 46:41] cerita
+[46:41 - 46:43] ceritakan dulu
+[46:43 - 46:43] aja
+[46:43 - 46:43] secara garis
+[46:43 - 46:44] besar
+[46:44 - 46:44] satu
+[46:44 - 46:46] ini
+[46:46 - 46:46] soalnya
+[46:46 - 46:47] ini masih
+[46:47 - 46:47] umum
+[46:47 - 46:47] disini
+[46:47 - 46:47] ya
+[46:47 - 46:48] masih
+[46:48 - 46:48] cerita
+[46:48 - 46:50] mitranya
+[46:50 - 46:50] kemudian
+[46:50 - 46:51] dari sekian
+[46:51 - 46:51] cabang
+[46:51 - 46:53] jumlah
+[46:53 - 46:54] jumlah
+[46:54 - 46:55] bulu sekian
+[46:55 - 46:55] jumlah
+[46:55 - 46:56] siswa sekian
+[46:56 - 46:56] mungkin
+[46:56 - 46:57] nanti
+[46:57 - 46:57] satu
+[46:57 - 46:58] paragraf
+[46:58 - 46:58] itu
+[46:58 - 46:59] menceritakan
+[46:59 - 47:00] proses
+[47:00 - 47:00] bisnis
+[47:00 - 47:00] umumnya
+[47:00 - 47:01] dulu
+[47:01 - 47:01] deh
+[47:01 - 47:03] yang berjalan
+[47:03 - 47:03] yang berjalan
+[47:03 - 47:03] itu
+[47:03 - 47:03] apa
+[47:03 - 47:03] saja
+[47:03 - 47:05] nah
+[47:05 - 47:05] kemudian
+[47:05 - 47:05] nanti
+[47:05 - 47:06] boleh
+[47:06 - 47:07] baru
+[47:07 - 47:07] masuk
+[47:07 - 47:07] ke
+[47:07 - 47:08] ini
+[47:08 - 47:10] proses
+[47:10 - 47:11] bisnis
+[47:11 - 47:11] utama
+[47:11 - 47:12] yang memang
+[47:12 - 47:13] ada kendala
+[47:13 - 47:13] saat ini
+[47:13 - 47:14] yang mau
+[47:14 - 47:14] diselesaikan
+[47:14 - 47:15] di dalam
+[47:15 - 47:15] penelitian
+[47:15 - 47:15] ini
+[47:15 - 47:17] berarti kan
+[47:17 - 47:17] hanya fokus
+[47:17 - 47:18] pada tiga
+[47:18 - 47:18] itu
+[47:18 - 47:20] baru
+[47:20 - 47:20] nanti
+[47:20 - 47:21] berikutnya
+[47:21 - 47:22] ceritakanlah
+[47:22 - 47:24] kendalanya
+[47:24 - 47:24] itu tadi
+[47:24 - 47:25] ya
+[47:25 - 47:25] mungkin
+[47:25 - 47:25] dari sisi
+[47:25 - 47:26] kompleksitas
+[47:26 - 47:26] dari sisi
+[47:26 - 47:27] masalah
+[47:27 - 47:27] yang terjadi
+[47:27 - 47:28] di masing-masing
+[47:28 - 47:29] probis
+[47:29 - 47:29] itu
+[47:29 - 47:30] seperti apa
+[47:30 - 47:31] jadi biar
+[47:31 - 47:32] ada ide besarnya
+[47:32 - 47:33] dulu
+[47:33 - 47:34] jadi nanti
+[47:34 - 47:35] kalau menjelaskan
+[47:35 - 47:35] yang lebih detail
+[47:35 - 47:37] pembacanya
+[47:37 - 47:37] udah nyambung
+[47:37 - 47:39] menjelaskan
+[47:39 - 47:39] apa sih
+[47:39 - 47:42] nanti
+[47:42 - 47:43] kalau setelah
+[47:43 - 47:43] menjelaskan
+[47:43 - 47:44] detail ini
+[47:44 - 47:46] bahwa cukup
+[47:46 - 47:46] banyak kombinasi
+[47:46 - 47:47] jadwal
+[47:47 - 47:48] tapi masalahnya
+[47:48 - 47:49] kan
+[47:49 - 47:51] apa ya
+[47:51 - 47:55] oh ini
+[47:55 - 47:56] udah tergabung
+[47:56 - 47:56] juga
+[47:56 - 47:58] ada jadwal
+[47:58 - 47:58] ada
+[47:58 - 47:59] pembayaran
+[47:59 - 48:00] di dalam
+[48:00 - 48:01] satu paragraf
+[48:01 - 48:03] dibedakan
+[48:03 - 48:07] maksudnya
+[48:07 - 48:08] biar mudah
+[48:08 - 48:08] menangkap
+[48:08 - 48:09] ide-nya
+[48:09 - 48:10] gimana enaknya
+[48:10 - 48:10] kalau tadi
+[48:10 - 48:11] saya mikir
+[48:11 - 48:11] sebaik
+[48:11 - 48:12] dipisahkan
+[48:12 - 48:12] dulu
+[48:12 - 48:13] cerita proses
+[48:13 - 48:13] bisnis
+[48:13 - 48:15] yang berjalan
+[48:15 - 48:15] dulu
+[48:15 - 48:15] secara umum
+[48:15 - 48:16] apa
+[48:16 - 48:17] terus baru
+[48:17 - 48:17] dari kendala
+[48:17 - 48:18] yang berjalan
+[48:18 - 48:18] itu
+[48:18 - 48:19] apa
+[48:19 - 48:19] di proses
+[48:19 - 48:20] bisnis
+[48:20 - 48:20] yang mana
+[48:20 - 48:20] berarti
+[48:20 - 48:21] mau dihalat
+[48:21 - 48:22] yang 30
+[48:22 - 48:22] bisnis
+[48:22 - 48:25] yang intinya
+[48:25 - 48:25] nanti
+[48:25 - 48:26] kalau ini
+[48:26 - 48:27] mau diselesaikan
+[48:27 - 48:29] kita mau
+[48:29 - 48:29] buatkan
+[48:29 - 48:31] fiturnya
+[48:31 - 48:31] di sistem
+[48:31 - 48:32] entah itu
+[48:32 - 48:33] secara menyeluruh
+[48:33 - 48:34] dari keseluruhan
+[48:34 - 48:34] aktivitas
+[48:34 - 48:35] di probisnya
+[48:35 - 48:36] atau ya mungkin
+[48:36 - 48:37] sebagian
+[48:37 - 48:48] jadi kompleksitasnya
+[48:48 - 48:49] itu lebih ke
+[48:49 - 48:49] apaannya
+[48:49 - 48:50] gitu kan
+[48:50 - 48:50] ya
+[48:50 - 48:52] dari 3 probis itu
+[48:52 - 48:54] kendalanya
+[48:54 - 48:54] lebih ke apaannya
+[48:54 - 48:55] mungkin masing-masing
+[48:55 - 48:56] dijelaskan
+[48:56 - 48:56] misalnya
+[48:56 - 48:57] biar lebih runtut
+[48:57 - 48:58] kali ini
+[48:58 - 49:01] jadi kayak
+[49:01 - 49:02] untuk
+[49:02 - 49:03] pembahasan secara
+[49:03 - 49:03] umumnya
+[49:03 - 49:04] masih kurang ya
+[49:04 - 49:05] iya
+[49:05 - 49:06] tambahkan
+[49:06 - 49:07] satu paragraf lagi
+[49:07 - 49:08] sih menurut saya
+[49:08 - 49:09] untuk menjelaskan
+[49:09 - 49:10] proses bisnis
+[49:10 - 49:11] yang berjalan secara umum
+[49:11 - 49:12] nanti baru
+[49:12 - 49:13] spesifik
+[49:13 - 49:15] di proses bisnis
+[49:15 - 49:15] yang memang
+[49:15 - 49:16] dirasa
+[49:16 - 49:18] apa ya
+[49:18 - 49:19] paling banyak
+[49:19 - 49:19] kendalanya
+[49:19 - 49:20] sehingga nanti
+[49:20 - 49:21] kan mau dijadikan
+[49:21 - 49:21] skopulit
+[49:21 - 49:24] dan yang proses
+[49:24 - 49:25] pembelajaran-pembelajaran
+[49:25 - 49:26] juga permintaan
+[49:26 - 49:28] umum aja
+[49:28 - 49:29] sih diseritakan
+[49:29 - 49:30] di proses utama
+[49:30 - 49:30] itu sih
+[49:30 - 49:31] umum
+[49:31 - 49:46] soalnya kan
+[49:46 - 49:47] mungkin
+[49:47 - 49:47] nanti jadinya
+[49:47 - 49:48] timbul pertanyaan
+[49:48 - 49:49] coba yang paragraf
+[49:49 - 49:49] atas
+[49:49 - 49:50] yang ini
+[49:50 - 49:50] kan banyak
+[49:50 - 49:51] kombinasi
+[49:51 - 49:52] ini
+[49:52 - 49:55] apa namanya
+[49:55 - 49:57] siswanya
+[49:57 - 49:58] seperti ini
+[49:58 - 49:58] terus
+[49:58 - 49:59] per
+[49:59 - 50:01] level pendidikan
+[50:01 - 50:02] itu
+[50:02 - 50:04] biaya yang dibayarkan
+[50:04 - 50:05] berbeda
+[50:05 - 50:05] balik lagi
+[50:05 - 50:06] nanti
+[50:06 - 50:07] kalau jadwal yang
+[50:07 - 50:07] dipilih pun
+[50:07 - 50:08] berbeda
+[50:08 - 50:09] biaya yang dibayarkan
+[50:09 - 50:10] pun berbeda
+[50:10 - 50:12] nah sebenarnya
+[50:12 - 50:13] yang mau
+[50:13 - 50:14] apa namanya
+[50:14 - 50:16] ditekankan
+[50:16 - 50:17] dari banyaknya
+[50:17 - 50:18] kombinasi
+[50:18 - 50:20] informasi itu
+[50:20 - 50:21] yang akan menjadi
+[50:21 - 50:21] masalah
+[50:21 - 50:23] karena apanya
+[50:23 - 50:23] sih
+[50:23 - 50:27] ada kan intinya
+[50:27 - 50:27] sebenarnya
+[50:27 - 50:28] semuanya itu
+[50:28 - 50:28] masih dicatat
+[50:28 - 50:29] di dalam buku
+[50:29 - 50:30] belum
+[50:30 - 50:31] tak sistem
+[50:31 - 50:32] jadi kan
+[50:32 - 50:34] gak bisa
+[50:34 - 50:35] dengan mudah
+[50:35 - 50:35] langsung
+[50:35 - 50:35] dilihat
+[50:35 - 50:37] kondisinya
+[50:37 - 50:38] kondisi real
+[50:38 - 50:38] datanya
+[50:38 - 50:40] kalau
+[50:40 - 50:40] butuh
+[50:40 - 50:41] tadi misalkan
+[50:41 - 50:42] yang masalah
+[50:42 - 50:43] yang paling
+[50:43 - 50:44] krusial kan
+[50:44 - 50:44] di ujungan ini
+[50:44 - 50:45] kan pasti
+[50:45 - 50:45] di pembayaran
+[50:45 - 50:49] punya siswa
+[50:49 - 50:49] segini
+[50:49 - 50:50] tapi kok
+[50:50 - 50:50] misalkan real
+[50:50 - 50:51] pembayaran yang diterima
+[50:51 - 50:52] per bulan itu kok
+[50:52 - 50:52] gak sesuai sih
+[50:52 - 50:53] misalkan
+[50:53 - 50:54] padahal
+[50:54 - 50:55] ya tadi
+[50:55 - 50:56] karena kan gak tahu
+[50:56 - 50:57] paket-paket yang dipilih
+[50:57 - 50:58] oleh siswa ini
+[50:58 - 50:59] sebenarnya
+[50:59 - 51:00] apa aja sih
+[51:00 - 51:01] terus yang active existing
+[51:01 - 51:02] itu apa aja
+[51:02 - 51:03] kan sulit dilihat
+[51:03 - 51:03] karena semuanya
+[51:03 - 51:04] masih dalam
+[51:04 - 51:04] untuk buku
+[51:04 - 51:08] jadi menurut saya
+[51:08 - 51:09] lebih ke
+[51:09 - 51:10] apa ya
+[51:10 - 51:11] nanti manajemennya
+[51:11 - 51:11] gitu ya
+[51:11 - 51:12] manajemen
+[51:12 - 51:13] dalam
+[51:13 - 51:14] reporting
+[51:14 - 51:15] itu semua
+[51:15 - 51:16] itu kendala
+[51:16 - 51:16] apa sih
+[51:16 - 51:17] yang dia hadapi
+[51:17 - 51:18] karena tadi
+[51:18 - 51:19] semua cabang ini
+[51:19 - 51:19] masih
+[51:19 - 51:21] masih panung mal
+[51:21 - 51:22] kolek datanya
+[51:22 - 51:23] masih panung mal
+[51:23 - 51:34] jadi
+[51:34 - 51:35] ditambahkan
+[51:35 - 51:36] satu paragraf
+[51:36 - 51:36] setelah ini
+[51:36 - 51:37] ini kan nanti
+[51:37 - 51:39] diperdetail
+[51:39 - 51:39] untuk
+[51:39 - 51:40] totalnya
+[51:40 - 51:41] iya bahas
+[51:41 - 51:42] provisnya dulu
+[51:42 - 51:44] setelah itu
+[51:44 - 51:45] nanti baru
+[51:45 - 51:46] bicara masalah
+[51:46 - 51:47] lebih ke
+[51:47 - 51:48] permasalahan
+[51:48 - 51:48] yang
+[51:48 - 51:54] memang
+[51:54 - 51:55] apa sih
+[51:55 - 52:34] bawahnya ini
+[52:34 - 52:35] apa setelah ini
+[52:35 - 52:36] bawahnya ini
+[52:36 - 52:36] dari
+[52:36 - 52:37] masyarakat wawancaran
+[52:37 - 52:41] isi dari
+[52:41 - 52:42] bukunya
+[52:42 - 52:44] terus bagaimana
+[52:44 - 52:44] cara
+[52:44 - 52:45] setiap cabang ini
+[52:45 - 52:46] mencatat
+[52:46 - 52:47] di buku tersebut
+[52:47 - 52:52] juga putansi
+[52:52 - 52:53] yang tadi saya
+[52:53 - 52:53] sebutkan
+[52:53 - 52:54] tapi Arun
+[52:54 - 52:55] boleh melihat
+[52:55 - 52:56] yang dicatat
+[52:56 - 52:57] di masing-masing
+[52:57 - 52:58] cabang
+[52:58 - 52:58] buku desarnya
+[52:58 - 52:59] boleh melihat
+[52:59 - 52:59] ada
+[52:59 - 53:00] saya dapat
+[53:00 - 53:01] dikasih gambar
+[53:01 - 53:11] kalau itu
+[53:11 - 53:12] gak perlu
+[53:12 - 53:13] dilampirkan
+[53:13 - 53:17] kalau misalkan
+[53:17 - 53:18] dilampirkan
+[53:18 - 53:19] kalau misalkan
+[53:19 - 53:19] seminar
+[53:19 - 53:20] nanti minta
+[53:20 - 53:20] ditunjukkan
+[53:20 - 53:22] kalau misalkan
+[53:22 - 53:23] minta dilampirkan
+[53:23 - 53:25] data aslinya
+[53:25 - 53:26] disambarkan
+[53:26 - 53:41] ini
+[53:41 - 53:42] bahasa
+[53:42 - 53:43] paragraf ini
+[53:43 - 53:46] terkait
+[53:46 - 53:46] dari
+[53:46 - 53:47] multi cabang
+[53:47 - 53:48] bagaimana
+[53:48 - 53:49] menikronkan
+[53:49 - 53:49] dari semua cabang
+[53:49 - 53:50] yang ada
+[53:50 - 53:58] yang kemarin
+[53:58 - 53:59] saya tanyakan
+[53:59 - 54:00] jadi nanti
+[54:00 - 54:01] kalau sistemnya
+[54:01 - 54:01] ada
+[54:01 - 54:02] terkait
+[54:02 - 54:03] mutasi rekeningnya
+[54:03 - 54:04] nanti gimana
+[54:04 - 54:05] apakah nanti
+[54:05 - 54:06] transfernya
+[54:06 - 54:07] akan menjadi
+[54:07 - 54:08] fitur di sistem
+[54:08 - 54:08] atau
+[54:08 - 54:11] kemarin juga
+[54:11 - 54:11] udah ada
+[54:11 - 54:12] saya
+[54:12 - 54:13] tanyakan
+[54:13 - 54:13] ke
+[54:13 - 54:15] gunana
+[54:15 - 54:16] kalau misalkan
+[54:16 - 54:17] untuk saat ini
+[54:17 - 54:19] untuk prosesnya
+[54:19 - 54:20] akan tetap sama
+[54:20 - 54:21] tetap akan
+[54:21 - 54:22] dilakukan
+[54:22 - 54:23] seperti itu
+[54:23 - 54:24] cuman
+[54:24 - 54:25] akan lebih
+[54:25 - 54:26] mudahkan
+[54:26 - 54:27] kalau misalkan
+[54:27 - 54:27] dari
+[54:27 - 54:28] sistem yang
+[54:28 - 54:29] atau dari
+[54:29 - 54:29] super admin
+[54:29 - 54:30] mengakses
+[54:30 - 54:31] secara langsung
+[54:31 - 54:32] bisa mengetahui
+[54:32 - 54:33] review
+[54:33 - 54:34] itu berapa
+[54:34 - 54:34] dan juga
+[54:34 - 54:36] ada data
+[54:36 - 54:37] dan juga
+[54:37 - 54:38] ada bukti
+[54:38 - 54:38] dari
+[54:38 - 54:39] transfer
+[54:39 - 54:40] yang udah
+[54:40 - 54:41] ditransfer oleh
+[54:41 - 54:42] wali murid
+[54:42 - 54:42] karena
+[54:42 - 54:43] dari
+[54:43 - 54:44] artapun
+[54:44 - 54:44] juga udah
+[54:44 - 54:45] menyadari
+[54:45 - 54:45] bahwasannya
+[54:45 - 54:48] bisa terjadi
+[54:48 - 54:49] kemungkinan
+[54:49 - 54:50] pengeditan
+[54:50 - 54:51] bukti transfer
+[54:51 - 54:52] jadi
+[54:52 - 54:52] jadi
+[54:52 - 54:53] untuk prosesnya
+[54:53 - 54:54] sekarang
+[54:54 - 54:54] itu
+[54:54 - 54:54] dari
+[54:54 - 54:55] sisi
+[54:55 - 54:56] staff admin
+[54:56 - 54:56] ini
+[54:56 - 54:56] ketika ada
+[54:56 - 54:57] dari wali murid
+[54:57 - 54:59] yang mengirimkan
+[54:59 - 54:59] bukti transfer
+[54:59 - 55:00] itu
+[55:00 - 55:01] gak akan
+[55:01 - 55:01] langsung
+[55:01 - 55:02] dicatat
+[55:02 - 55:03] dan diterima
+[55:03 - 55:03] tapi
+[55:03 - 55:04] akan meminta
+[55:04 - 55:05] validasi
+[55:05 - 55:05] dari
+[55:05 - 55:06] bu
+[55:06 - 55:06] gunana
+[55:06 - 55:07] terlebih dahulu
+[55:07 - 55:07] apakah sudah
+[55:07 - 55:08] masuk ke rekening
+[55:08 - 55:08] atau enggak
+[55:08 - 55:10] baru akan dicatatat
+[55:10 - 55:12] jadi
+[55:12 - 55:13] gak ada
+[55:13 - 55:16] otomatisasi
+[55:16 - 55:17] dari sisi itunya
+[55:17 - 55:17] karena
+[55:17 - 55:18] dari gunana
+[55:18 - 55:18] sendiri pun
+[55:18 - 55:19] juga
+[55:19 - 55:19] tetap
+[55:19 - 55:21] kegak pengen
+[55:21 - 55:22] dilakukan secara
+[55:22 - 55:23] manual
+[55:23 - 55:23] karena
+[55:23 - 55:24] rekeningnya
+[55:24 - 55:25] itu langsung
+[55:25 - 55:26] ke gunana
+[55:26 - 55:26] itu sendiri
+[55:26 - 55:27] gak ke rekening kantor
+[55:27 - 55:31] soalnya
+[55:31 - 55:32] berarti kan
+[55:32 - 55:34] apa ya
+[55:34 - 55:35] berarti kan
+[55:35 - 55:36] proses pembayaran
+[55:36 - 55:37] yang dilakukan
+[55:37 - 55:37] itu tetap
+[55:37 - 55:38] di luar sistem
+[55:38 - 55:38] berarti kan ya
+[55:38 - 55:40] nanti kan dikirimkan
+[55:40 - 55:41] ke admin
+[55:41 - 55:42] gitu ya
+[55:42 - 55:42] katakanlah
+[55:42 - 55:43] kulitransfer
+[55:43 - 55:44] dikirimkan
+[55:44 - 55:45] berarti admin
+[55:45 - 55:46] ini akan verifikasi
+[55:46 - 55:46] dulu
+[55:46 - 55:47] ini udah masuk
+[55:47 - 55:47] atau belum
+[55:47 - 55:48] tapi kayaknya
+[55:48 - 55:49] verifikasinya
+[55:49 - 55:49] kan tetap
+[55:49 - 55:50] perhari
+[55:50 - 55:50] seperti tadi
+[55:50 - 55:51] kan
+[55:51 - 55:51] verifikasinya
+[55:51 - 55:52] tetap
+[55:52 - 55:52] perhari
+[55:52 - 55:53] seperti
+[55:53 - 55:55] yang per jam
+[55:55 - 55:55] setengah
+[55:55 - 55:56] sembilan
+[55:56 - 55:56] itu
+[55:56 - 55:57] cuman saya
+[55:57 - 55:58] ada terpikirkan
+[55:58 - 55:58] yang disebut
+[55:58 - 55:59] pilihannya itu
+[55:59 - 56:00] kemarin
+[56:00 - 56:00] saya ada
+[56:00 - 56:01] baca-baca
+[56:01 - 56:02] dan cari-cari
+[56:02 - 56:03] kalau misalkan
+[56:03 - 56:04] sebenarnya
+[56:04 - 56:05] bisa menggunakan
+[56:05 - 56:06] otomatisasi
+[56:06 - 56:06] whatsapp
+[56:06 - 56:07] memberituan
+[56:07 - 56:08] notifikasi
+[56:08 - 56:09] sekedar
+[56:09 - 56:09] untuk
+[56:09 - 56:10] memberitahu
+[56:10 - 56:11] bahwasannya
+[56:11 - 56:12] dari staff admin
+[56:12 - 56:13] ini
+[56:13 - 56:13] membutuhkan
+[56:13 - 56:14] validasi
+[56:14 - 56:14] apakah
+[56:14 - 56:15] pembayaran
+[56:15 - 56:15] yang masuk
+[56:15 - 56:16] atau enggak
+[56:16 - 56:17] atau
+[56:17 - 56:18] hanya sekedar
+[56:18 - 56:19] main
+[56:19 - 56:20] return notification
+[56:20 - 56:21] lewat
+[56:21 - 56:21] gmail
+[56:21 - 56:22] untuk
+[56:22 - 56:23] memberitahukan
+[56:23 - 56:24] sama juga
+[56:24 - 56:25] ada perlu
+[56:25 - 56:26] validasi
+[56:26 - 56:27] apakah
+[56:27 - 56:27] apakah
+[56:27 - 56:28] sudah masuk
+[56:28 - 56:29] rekening
+[56:29 - 56:30] atau enggak
+[56:30 - 56:31] transferannya
+[56:31 - 56:33] cuman untuk
+[56:33 - 56:34] saat ini
+[56:34 - 56:36] rancangan
+[56:36 - 56:37] yang
+[56:37 - 56:38] saya buat
+[56:38 - 56:39] itu
+[56:39 - 56:40] dari
+[56:40 - 56:40] manajemen
+[56:40 - 56:41] harus
+[56:41 - 56:42] login
+[56:42 - 56:43] terlebih dahulu
+[56:43 - 56:44] di super admin
+[56:44 - 56:44] dan melihat
+[56:44 - 56:45] dan
+[56:45 - 56:46] verifikasi
+[56:46 - 56:47] secara langsung
+[56:47 - 56:48] melalui
+[56:48 - 56:49] manajemen
+[56:49 - 56:51] kondisinya
+[56:51 - 56:51] berarti
+[56:51 - 56:52] gimana
+[56:52 - 56:53] nanti ketika
+[56:53 - 56:53] ada pembayaran
+[56:53 - 56:54] masuk
+[56:54 - 56:54] berarti
+[56:54 - 56:55] admin itu
+[56:55 - 56:55] akan tetap
+[56:55 - 56:56] mengupload
+[56:56 - 56:57] bukti itu
+[56:57 - 56:57] di masing-masing
+[56:57 - 56:59] mengupload
+[56:59 - 56:59] bukti itu
+[56:59 - 57:00] dari data-data
+[57:00 - 57:01] yang sudah ada
+[57:01 - 57:02] dan dari
+[57:02 - 57:02] si super admin
+[57:02 - 57:03] akan
+[57:03 - 57:03] ngecek
+[57:03 - 57:04] validasi
+[57:04 - 57:05] tapi kan
+[57:05 - 57:06] perbedaannya
+[57:06 - 57:07] kalau misalkan
+[57:07 - 57:08] yang sebelum
+[57:08 - 57:09] adanya sistem
+[57:09 - 57:10] itu harus
+[57:10 - 57:11] tertas
+[57:11 - 57:12] dan juga
+[57:12 - 57:14] mutasi
+[57:14 - 57:15] kalau ini
+[57:15 - 57:15] dari sistem
+[57:15 - 57:17] walaupun
+[57:17 - 57:17] secara
+[57:17 - 57:18] dilihat
+[57:18 - 57:19] itu
+[57:19 - 57:20] tetap
+[57:20 - 57:20] sama
+[57:20 - 57:20] untuk
+[57:20 - 57:21] mengajak
+[57:21 - 57:21] validasi
+[57:21 - 57:21] harus
+[57:21 - 57:22] kesempatan
+[57:22 - 57:23] dari mitra
+[57:23 - 57:25] yang
+[57:25 - 57:25] maunya
+[57:25 - 57:26] seperti itu
+[57:26 - 57:27] soalnya
+[57:27 - 57:32] maksudnya
+[57:32 - 57:33] nanti
+[57:33 - 57:33] berarti
+[57:33 - 57:34] apa ya
+[57:34 - 57:35] kalau
+[57:35 - 57:36] solusinya
+[57:36 - 57:36] mau
+[57:36 - 57:36] tetap
+[57:36 - 57:37] seperti itu
+[57:37 - 57:37] artinya
+[57:37 - 57:37] kan
+[57:37 - 57:38] tidak
+[57:38 - 57:39] di otomasi
+[57:39 - 57:40] di proses itu
+[57:40 - 57:41] cara
+[57:41 - 57:42] menyampaikan
+[57:42 - 57:43] di latar
+[57:43 - 57:43] belakang
+[57:43 - 57:43] ini
+[57:43 - 57:44] jangan sampai
+[57:44 - 57:44] nanti
+[57:44 - 57:45] disini
+[57:45 - 57:46] menyebutkan
+[57:46 - 57:46] bahwa
+[57:46 - 57:47] proses
+[57:47 - 57:48] tadi ya
+[57:48 - 57:49] kitansi fisik
+[57:49 - 57:49] dan buku
+[57:49 - 57:50] itu kan
+[57:50 - 57:52] masih
+[57:52 - 57:52] dilakukan
+[57:52 - 57:53] secara manual
+[57:53 - 57:55] proses rekapitulasinya
+[57:55 - 57:56] sementara
+[57:56 - 57:56] nanti
+[57:56 - 57:57] ketika ada
+[57:57 - 57:57] sistem
+[57:57 - 57:59] proses rekapitulasinya
+[57:59 - 57:59] juga
+[57:59 - 58:00] masih manual
+[58:00 - 58:01] juga
+[58:01 - 58:01] bedanya
+[58:01 - 58:01] cuman
+[58:01 - 58:02] udah langsung
+[58:02 - 58:03] di upload
+[58:03 - 58:03] gitu
+[58:03 - 58:04] ya kan
+[58:04 - 58:06] bukti transfernya
+[58:06 - 58:06] sudah langsung
+[58:06 - 58:07] di upload
+[58:07 - 58:07] tapi kan
+[58:07 - 58:08] proses pengecekannya
+[58:08 - 58:09] tetap masih manual
+[58:09 - 58:10] dilakukan
+[58:10 - 58:14] jadi itu juga
+[58:14 - 58:15] perlu clear
+[58:15 - 58:15] gitu
+[58:20 - 58:21] kalau dari sisi
+[58:21 - 58:23] developer
+[58:23 - 58:24] mungkin bisa aja
+[58:24 - 58:25] kita kasih otomasi
+[58:25 - 58:26] aja
+[58:26 - 58:26] misalkan
+[58:26 - 58:27] tapi kan
+[58:27 - 58:28] masalahnya
+[58:28 - 58:28] ini
+[58:28 - 58:29] keputusan
+[58:29 - 58:30] bukan di developer
+[58:30 - 58:31] tapi lebih ke
+[58:31 - 58:33] pihak manajemen
+[58:33 - 58:34] atau stakeholdernya
+[58:34 - 58:35] maunya yang seperti apa
+[58:35 - 58:36] karena mereka kan
+[58:36 - 58:37] yang melakukan investasi
+[58:37 - 58:38] disitu
+[58:38 - 58:40] dan
+[58:40 - 58:41] pertimbangan
+[58:41 - 58:42] misalkan nanti
+[58:42 - 58:42] kenapa tetap
+[58:42 - 58:43] seperti ini
+[58:43 - 58:45] dari sisi keamanan
+[58:45 - 58:45] kan mungkin
+[58:45 - 58:46] jadinya ada celah
+[58:46 - 58:47] gitu ya
+[58:47 - 58:48] ada celah
+[58:48 - 58:49] dan
+[58:49 - 58:50] bisa jadikan
+[58:50 - 58:50] bukti
+[58:50 - 58:53] waktu yang digunakan
+[58:53 - 58:53] untuk
+[58:53 - 58:54] proses pengecekan
+[58:54 - 58:56] jadi malah double check
+[58:56 - 58:57] jadi lebih lama
+[58:57 - 58:58] kan juga
+[58:58 - 58:59] effort lagi
+[58:59 - 59:00] nah itu juga
+[59:00 - 59:01] sebaiknya
+[59:01 - 59:02] clear juga
+[59:02 - 59:03] kenapa
+[59:03 - 59:04] tetap
+[59:04 - 59:05] solusi yang seperti ini
+[59:05 - 59:05] yang dipakai
+[59:05 - 59:08] itu jelasin
+[59:08 - 59:10] nanti aja
+[59:10 - 59:10] di requirement
+[59:10 - 59:11] menurut saya
+[59:11 - 59:12] nanti kan ya
+[59:12 - 59:16] setidaknya
+[59:16 - 59:17] maksudnya nanti ketika
+[59:17 - 59:18] Ariel ditanya
+[59:18 - 59:19] Ariel bisa
+[59:19 - 59:20] menyampaikan
+[59:20 - 59:21] gitu ya
+[59:21 - 59:22] kenapa kamu gak usulkan
+[59:22 - 59:23] aja itu di otomasi
+[59:23 - 59:24] kan sekarang banyak
+[59:24 - 59:25] teknologinya gitu
+[59:25 - 59:26] dan
+[59:26 - 59:27] ya mungkin gak
+[59:27 - 59:28] semahal itu juga
+[59:28 - 59:29] jauh lebih bisa
+[59:29 - 59:30] mempercepat
+[59:30 - 59:31] tapi kenapa
+[59:31 - 59:31] tetap dilakukan
+[59:31 - 59:32] seperti ini
+[59:32 - 59:33] nah itu
+[59:33 - 59:34] jadi pertimbangan
+[59:34 - 59:34] dari sisi manajemen
+[59:34 - 59:35] itu yang saya
+[59:35 - 59:35] perlu
+[59:35 - 59:38] clear gitu ya
+[59:38 - 59:39] alasannya
+[59:39 - 59:42] ini kemarin juga
+[59:42 - 59:42] ada
+[59:42 - 59:43] nyari-nyari
+[59:43 - 59:44] pilihannya
+[59:44 - 59:44] antara
+[59:44 - 59:45] yang digunakan
+[59:45 - 59:46] apa namanya
+[59:46 - 59:48] otomatisasi
+[59:48 - 59:49] yang seperti
+[59:49 - 59:49] gini
+[59:49 - 59:52] pembayaran
+[59:52 - 59:52] atau
+[59:52 - 59:55] melakukan manual
+[59:55 - 59:55] cuman
+[59:55 - 59:56] dilihat secara manual
+[59:56 - 59:57] pun juga
+[59:57 - 59:58] banyak celahnya
+[59:58 - 59:59] sebenarnya
+[59:59 - 59:59] untuk dilakukan
+[59:59 - 01:00:01] cuman dari
+[01:00:01 - 01:00:01] nuker
+[01:00:01 - 01:00:02] kemarin saya
+[01:00:02 - 01:00:03] coba
+[01:00:03 - 01:00:04] untuk validasi lagi
+[01:00:04 - 01:00:05] inginnya
+[01:00:05 - 01:00:06] seperti itu
+[01:00:06 - 01:00:14] berarti kan
+[01:00:14 - 01:00:14] sebenarnya
+[01:00:14 - 01:00:15] yang terbantu
+[01:00:15 - 01:00:16] itu bukan
+[01:00:16 - 01:00:16] proses
+[01:00:16 - 01:00:18] apa namanya
+[01:00:18 - 01:00:19] bukan proses
+[01:00:19 - 01:00:20] rekapannya
+[01:00:20 - 01:00:20] tapi
+[01:00:20 - 01:00:22] lebih ke
+[01:00:22 - 01:00:23] bagaimana
+[01:00:23 - 01:00:24] mungkin informasinya
+[01:00:24 - 01:00:25] itu ditampilkan
+[01:00:25 - 01:00:26] agar dia bisa langsung
+[01:00:26 - 01:00:26] melihat
+[01:00:26 - 01:00:27] oh ini ada
+[01:00:27 - 01:00:27] ada yang masuk
+[01:00:27 - 01:00:28] loh pembayaran
+[01:00:28 - 01:00:29] dari sini
+[01:00:29 - 01:00:29] cuman kan
+[01:00:29 - 01:00:30] butuh rendasi lagi
+[01:00:30 - 01:00:31] cuman dia kan
+[01:00:31 - 01:00:32] bisa overview
+[01:00:32 - 01:00:32] aja
+[01:00:32 - 01:00:34] dari sekian
+[01:00:34 - 01:00:35] siswa di cabang
+[01:00:35 - 01:00:35] ini untuk
+[01:00:35 - 01:00:36] pembayaran itu
+[01:00:36 - 01:00:36] sudah
+[01:00:36 - 01:00:37] misalkan
+[01:00:37 - 01:00:37] sudah berprogres
+[01:00:37 - 01:00:38] berapa persen
+[01:00:38 - 01:00:48] oh ini per paragrafnya
+[01:00:48 - 01:00:49] per ini ya
+[01:00:49 - 01:00:50] per masalah ya
+[01:00:50 - 01:01:03] ya ini berarti kan
+[01:01:03 - 01:01:04] harus ada dashboard
+[01:01:04 - 01:01:05] dengan solusinya
+[01:01:05 - 01:01:05] kan
+[01:01:05 - 01:01:06] dari sisi artinya
+[01:01:06 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:15] dari sisi artinya
+[01:01:15 - 01:01:15] berikutnya
+[01:01:15 - 01:01:18] dari rujukan jurnal
+[01:01:18 - 01:01:19] yang saya temukan
+[01:01:19 - 01:01:21] dari sistem
+[01:01:21 - 01:01:23] baik dari metode
+[01:01:23 - 01:01:24] yang berbeda
+[01:01:24 - 01:01:26] tapi mengembangkan
+[01:01:26 - 01:01:27] sistem yang sama
+[01:01:27 - 01:01:29] baik itu pada
+[01:01:29 - 01:01:30] bimbel
+[01:01:30 - 01:01:30] ataupun
+[01:01:30 - 01:01:31] non bimbel
+[01:01:31 - 01:01:44] memang kebayangkan
+[01:01:44 - 01:01:45] itu
+[01:01:46 - 01:01:49] menggunakan TXP
+[01:01:49 - 01:01:49] sebenarnya
+[01:01:49 - 01:01:50] lalu banyak
+[01:01:50 - 01:01:51] menggunakan
+[01:01:51 - 01:01:51] waterfall
+[01:01:51 - 01:01:52] dan juga
+[01:01:52 - 01:01:55] XP
+[01:01:55 - 01:01:58] karena dari mereka
+[01:01:58 - 01:01:59] juga kebanyakan
+[01:01:59 - 01:02:00] yang saya baca
+[01:02:00 - 01:02:02] itu dari awal
+[01:02:02 - 01:02:03] sudah
+[01:02:03 - 01:02:04] pernah menggunakan
+[01:02:04 - 01:02:04] sistem
+[01:02:04 - 01:02:05] dan juga
+[01:02:05 - 01:02:06] proses bisnisnya
+[01:02:06 - 01:02:06] itu udah jelas
+[01:02:06 - 01:02:07] di awal
+[01:02:07 - 01:02:23] dan akhirnya
+[01:02:23 - 01:02:23] saya tebelin
+[01:02:23 - 01:02:24] bahwasannya
+[01:02:24 - 01:02:24] memang
+[01:02:24 - 01:02:25] yang saya buat ini
+[01:02:25 - 01:02:28] yang saya cari
+[01:02:28 - 01:02:29] itu belum ada
+[01:02:29 - 01:02:29] untuk di
+[01:02:29 - 01:02:30] multi cabang
+[01:02:30 - 01:02:31] di siap bimbel
+[01:02:31 - 01:02:32] yang ada
+[01:02:32 - 01:02:33] untuk integrasi
+[01:02:33 - 01:02:33] data
+[01:02:33 - 01:02:57] di siap bimbel
+[01:02:57 - 01:02:58] di siap bimbel
+[01:02:58 - 01:03:04] di siap bimbel
+[01:03:04 - 01:03:05] di siap bimbel
+[01:03:05 - 01:03:15] di siap bimbel
+[01:03:15 - 01:03:16] di siap bimbel
+[01:03:16 - 01:03:17] sama perbandingan
+[01:03:17 - 01:03:17] dari
+[01:03:17 - 01:03:19] metode yang lain
+[01:03:19 - 01:03:28] saya juga
+[01:03:28 - 01:03:29] menanyakan
+[01:03:29 - 01:03:29] ini
+[01:03:29 - 01:03:30] kalau penggunaan ini
+[01:03:30 - 01:03:31] boleh kan
+[01:03:31 - 01:03:33] yang menggunakan titik koma
+[01:03:33 - 01:03:33] ini
+[01:03:33 - 01:03:35] untuk menjelaskan
+[01:03:35 - 01:03:36] kesinambungan
+[01:03:36 - 01:03:37] per kali
+[01:03:37 - 01:03:38] ini
+[01:03:38 - 01:03:40] ada beberapa
+[01:03:40 - 01:03:40] kondisi
+[01:03:40 - 01:04:03] coba
+[01:04:03 - 01:04:05] nanti bisa ditambahkan
+[01:04:05 - 01:04:05] inilah
+[01:04:05 - 01:04:07] kayaknya
+[01:04:07 - 01:04:08] referensinya
+[01:04:08 - 01:04:08] kurang
+[01:04:08 - 01:04:09] disitu
+[01:04:09 - 01:04:10] justifikasi
+[01:04:10 - 01:04:11] dari referensi
+[01:04:11 - 01:04:11] mana
+[01:04:11 - 01:04:13] oke
+[01:04:13 - 01:04:14] citasinya
+[01:04:14 - 01:04:15] ditambahin ya
+[01:04:15 - 01:04:18] dari
+[01:04:18 - 01:04:18] rujukan
+[01:04:18 - 01:04:19] teori
+[01:04:19 - 01:04:20] gitu ya
+[01:04:20 - 01:04:21] kalau buku
+[01:04:21 - 01:04:21] gak apa
+[01:04:21 - 01:04:22] kan di tahun
+[01:04:22 - 01:04:23] 2000-an
+[01:04:23 - 01:04:31] penambahan lagi
+[01:04:31 - 01:04:31] kenapa
+[01:04:31 - 01:04:32] saya menggunakan
+[01:04:32 - 01:04:33] PXP
+[01:04:33 - 01:04:47] PXP
+[01:04:47 - 01:04:48] nanti pelajari
+[01:04:48 - 01:04:49] dari
+[01:04:49 - 01:04:50] pengembang
+[01:04:50 - 01:04:51] metodenya ya
+[01:04:51 - 01:04:52] yang di bab 2
+[01:04:52 - 01:04:54] saya tahu
+[01:04:54 - 01:04:55] itu di
+[01:04:55 - 01:04:56] pengembangan
+[01:04:56 - 01:04:56] PXP
+[01:04:56 - 01:04:59] pertama kali
+[01:04:59 - 01:04:59] itu 2009
+[01:04:59 - 01:05:00] nah itu
+[01:05:00 - 01:05:01] coba nanti cari
+[01:05:01 - 01:05:02] jurnal
+[01:05:02 - 01:05:02] atau buku
+[01:05:02 - 01:05:03] gitu
+[01:05:03 - 01:05:04] jadi nanti
+[01:05:04 - 01:05:05] dari sisi
+[01:05:05 - 01:05:06] tinjauan perusahaan
+[01:05:06 - 01:05:07] untuk metode
+[01:05:07 - 01:05:07] tetap
+[01:05:07 - 01:05:07] rujukan
+[01:05:07 - 01:05:08] utamanya
+[01:05:08 - 01:05:09] dari pengembang
+[01:05:09 - 01:05:09] metode
+[01:05:09 - 01:05:10] nanti
+[01:05:10 - 01:05:11] kalau dari sisi
+[01:05:11 - 01:05:12] implementasi
+[01:05:12 - 01:05:14] penerapan tahapan
+[01:05:14 - 01:05:15] misalkan gitu
+[01:05:15 - 01:05:16] seperti ini ya
+[01:05:16 - 01:05:17] boleh lah
+[01:05:17 - 01:05:18] pakai yang lebih baru
+[01:05:18 - 01:05:25] misalkan seperti
+[01:05:25 - 01:05:26] di mana yang
+[01:05:26 - 01:05:26] terakhir kemarin
+[01:05:26 - 01:05:28] itu saya jadikan
+[01:05:28 - 01:05:30] awalnya lima
+[01:05:30 - 01:05:30] bu
+[01:05:30 - 01:05:31] sebenarnya saya jadikan
+[01:05:31 - 01:05:31] tiga
+[01:05:31 - 01:05:33] untuk
+[01:05:33 - 01:05:35] memandatkan
+[01:05:35 - 01:05:36] rumusan masalah
+[01:05:36 - 01:05:36] yang sebelumnya
+[01:05:36 - 01:05:39] itu dari
+[01:05:39 - 01:05:40] merancang protokat
+[01:05:40 - 01:05:41] untuk sisi
+[01:05:41 - 01:05:42] dari staff
+[01:05:42 - 01:05:43] operasionalnya
+[01:05:43 - 01:05:45] si adminnya
+[01:05:45 - 01:05:46] terus yang keluar
+[01:05:46 - 01:05:46] ini dari
+[01:05:46 - 01:05:47] super admin
+[01:05:47 - 01:05:52] atau sebenarnya
+[01:05:52 - 01:05:53] dari dua
+[01:05:53 - 01:05:54] poin ini
+[01:05:54 - 01:05:55] jadikan satu
+[01:05:55 - 01:05:57] ini dari sudut
+[01:05:57 - 01:05:58] panah aktor
+[01:05:58 - 01:05:58] ya
+[01:05:58 - 01:05:59] ya sudut
+[01:05:59 - 01:06:00] panah aktornya
+[01:06:00 - 01:06:00] sama
+[01:06:00 - 01:06:01] bisa dibilang
+[01:06:01 - 01:06:02] fitur yang
+[01:06:02 - 01:06:02] menanti
+[01:06:02 - 01:06:04] ada
+[01:06:04 - 01:06:05] itu seperti
+[01:06:05 - 01:06:07] soalnya
+[01:06:07 - 01:06:08] kata kerjanya
+[01:06:08 - 01:06:09] disini
+[01:06:09 - 01:06:10] hanya menyebutkan
+[01:06:10 - 01:06:10] merancang
+[01:06:10 - 01:06:11] gitu loh
+[01:06:11 - 01:06:12] saya khawatirnya
+[01:06:12 - 01:06:14] kalau dalam konteks
+[01:06:14 - 01:06:15] SDLC
+[01:06:15 - 01:06:16] merancang itu
+[01:06:16 - 01:06:16] kan gak sampai
+[01:06:16 - 01:06:17] selesai
+[01:06:17 - 01:06:18] ya
+[01:06:18 - 01:06:18] harusnya sampai
+[01:06:18 - 01:06:19] ke kemudian
+[01:06:19 - 01:06:20] gak ada
+[01:06:20 - 01:06:20] proses
+[01:06:20 - 01:06:21] developmentnya
+[01:06:21 - 01:06:21] gitu
+[01:06:21 - 01:06:23] jadi kalau
+[01:06:23 - 01:06:23] misalkan
+[01:06:23 - 01:06:24] kata kerjanya
+[01:06:24 - 01:06:25] hanya merancang
+[01:06:25 - 01:06:25] khawatirnya
+[01:06:25 - 01:06:26] nanti salah
+[01:06:26 - 01:06:27] interpretasi
+[01:06:27 - 01:06:27] gitu
+[01:06:27 - 01:06:28] jadi
+[01:06:28 - 01:06:29] jangan hanya
+[01:06:29 - 01:06:29] merancang
+[01:06:29 - 01:06:30] tapi kan
+[01:06:30 - 01:06:30] lebih ke
+[01:06:30 - 01:06:31] mengembangkan
+[01:06:31 - 01:06:31] prototipenya
+[01:06:31 - 01:06:31] juga
+[01:06:31 - 01:06:32] kan
+[01:06:32 - 01:06:33] mengembangkan
+[01:06:33 - 01:06:33] atau
+[01:06:33 - 01:06:34] membangun
+[01:06:34 - 01:06:39] kemarin saya
+[01:06:39 - 01:06:40] menambahin
+[01:06:40 - 01:06:40] merancang
+[01:06:40 - 01:06:41] dan
+[01:06:41 - 01:06:41] membangun
+[01:06:41 - 01:06:42] mengembangkan
+[01:06:42 - 01:06:44] mengembangkan
+[01:06:44 - 01:06:45] mengembangkan
+[01:06:45 - 01:06:46] mengembangkan
+[01:06:46 - 01:06:47] mengembangkan
+[01:06:47 - 01:06:48] mengembangkan
+[01:06:48 - 01:06:49] mengembangkan
+[01:06:49 - 01:06:51] pxp-nya
+[01:06:51 - 01:06:53] pxp-nya belum ada disebutkan
+[01:06:53 - 01:06:54] tergantung
+[01:06:54 - 01:06:56] tergantung dibentuk
+[01:06:56 - 01:06:57] prototipenya
+[01:06:57 - 01:06:58] tergantung dibentuk
+[01:06:58 - 01:06:59] prototipenya
+[01:06:59 - 01:07:00] ini ya
+[01:07:00 - 01:07:01] PTA-nya
+[01:07:01 - 01:07:02] kalau misalkan
+[01:07:02 - 01:07:03] kalau prototipenya
+[01:07:03 - 01:07:04] sebenarnya harapannya itu
+[01:07:04 - 01:07:05] nanti bisa deployment sampai ke real user
+[01:07:05 - 01:07:06] jadi kalau memang targetnya mau itu
+[01:07:06 - 01:07:07] mengembangkan
+[01:07:07 - 01:07:10] ini merancangnya kan udah
+[01:07:10 - 01:07:11] maksudnya udah include di dalam tahapan
+[01:07:11 - 01:07:13] si pxp-nya sendiri kan sebenarnya
+[01:07:13 - 01:07:44] coba kau tujuan ya sebenarnya
+[01:07:44 - 01:07:51] pxp-nya belum ada disebutkan
+[01:07:51 - 01:07:53] kalau menurut saya sih
+[01:07:53 - 01:07:55] lebih baik tetap disebutkan
+[01:07:55 - 01:07:57] ini judulnya apa sebenarnya?
+[01:07:57 - 01:07:59] rancang bangun
+[01:07:59 - 01:08:00] informasi
+[01:08:00 - 01:08:01] manajemen dashboard
+[01:08:01 - 01:08:03] operasional
+[01:08:03 - 01:08:04] berbasis web
+[01:08:04 - 01:08:05] studi kasus
+[01:08:05 - 01:08:06] harta
+[01:08:06 - 01:08:08] tidak disebutkan metodenya
+[01:08:08 - 01:08:09] oh ada metodenya
+[01:08:09 - 01:08:10] yang akan menggunakan metode
+[01:08:10 - 01:08:11] peralasan
+[01:08:11 - 01:08:13] kalau menurut saya
+[01:08:13 - 01:08:14] kalau untuk
+[01:08:14 - 01:08:15] ini ya
+[01:08:15 - 01:08:16] apa namanya
+[01:08:16 - 01:08:17] teman-teman TAS1
+[01:08:17 - 01:08:18] lebih baik metode itu dimasukkan
+[01:08:18 - 01:08:19] di judul
+[01:08:19 - 01:08:20] nah
+[01:08:20 - 01:08:21] jadi nanti
+[01:08:21 - 01:08:22] di bagian
+[01:08:22 - 01:08:23] tujuan
+[01:08:23 - 01:08:24] rumusan dan tujuan ini
+[01:08:24 - 01:08:27] metode itu disebutkan juga
+[01:08:27 - 01:08:29] per butirnya bu
+[01:08:29 - 01:08:30] atau
+[01:08:30 - 01:08:34] yang berhubungan sama pxp-nya
+[01:08:34 - 01:08:35] kalau ini kan
+[01:08:35 - 01:08:36] di tahapan ini 3
+[01:08:36 - 01:08:39] menggunakan blackbook sama IWT
+[01:08:39 - 01:08:42] karena ini kan fokusnya di pengujian
+[01:08:42 - 01:08:43] kalau di pengembangan
+[01:08:43 - 01:08:47] misalnya yang pxp-nya itu disebutkan di badan pengembangan
+[01:08:47 - 01:08:52] atau sebenarnya bisa di
+[01:08:52 - 01:08:53] apa ya
+[01:08:53 - 01:08:54] mungkin diatur lagi
+[01:08:54 - 01:08:55] cara penyusunan
+[01:08:55 - 01:08:57] rumusan masalah dan tujuannya itu
+[01:08:57 - 01:08:58] dibalik gitu
+[01:08:58 - 01:08:59] misalkan
+[01:08:59 - 01:09:00] poin 1 dan 2 ini kan
+[01:09:00 - 01:09:01] sebenarnya sama
+[01:09:01 - 01:09:02] cuma fokus aktornya aja kan
+[01:09:02 - 01:09:03] ini berbeda gitu
+[01:09:03 - 01:09:04] tapi sama-sama fokus ke
+[01:09:04 - 01:09:06] pengembangan sistemnya
+[01:09:06 - 01:09:11] yang nanti bisa menyelesaikan beberapa poin masalah itu tadi
+[01:09:11 - 01:09:12] tapi
+[01:09:12 - 01:09:13] untuk
+[01:09:13 - 01:09:14] untuk
+[01:09:14 - 01:09:15] untuk
+[01:09:15 - 01:09:16] untuk
+[01:09:16 - 01:09:17] untuk
+[01:09:17 - 01:09:18] untuk
+[01:09:18 - 01:09:20] untuk
+[01:09:20 - 01:09:22] cara menuliskan
+[01:09:22 - 01:09:23] menurut saya
+[01:09:23 - 01:09:24] berarti opsinya
+[01:09:24 - 01:09:25] pilihan itu
+[01:09:25 - 01:09:26] ada
+[01:09:26 - 01:09:27] ada
+[01:09:27 - 01:09:29] karena ini sebenarnya 1 dan 2 ini
+[01:09:29 - 01:09:30] sama-sama fitur kan
+[01:09:30 - 01:09:31] sebenarnya
+[01:09:31 - 01:09:33] fitur dari sisi aktor yang berbeda
+[01:09:33 - 01:09:34] kalau yang bawah itu kan
+[01:09:34 - 01:09:35] ngomongin tingkat kesesuaian
+[01:09:35 - 01:09:36] berbeda lagi
+[01:09:36 - 01:09:40] berarti nggak apa-apa kalau misalkan digabung itu
+[01:09:40 - 01:09:41] iya
+[01:09:41 - 01:09:42] nggak apa-apa sih
+[01:09:42 - 01:09:44] kalau mau digabung
+[01:09:44 - 01:09:45] jadi sebenarnya
+[01:09:45 - 01:09:47] poin 1 itu fokus di pengembangan
+[01:09:47 - 01:09:48] prototipenya
+[01:09:48 - 01:09:50] yang nanti dapat menyelesaikan masalah apa
+[01:09:50 - 01:09:51] gitu kan
+[01:09:51 - 01:09:53] poin kedua
+[01:09:53 - 01:09:54] berarti nanti
+[01:09:54 - 01:09:56] fokus untuk mengevaluasi
+[01:09:56 - 01:09:58] tadi kesesuaian dari hasil
+[01:09:58 - 01:09:59] prototipe
+[01:09:59 - 01:10:02] dengan proses bisnis yang berjalan
+[01:10:02 - 01:10:03] misalkan seperti itu
+[01:10:03 - 01:10:10] tujuannya menyesuaikan
+[01:10:10 - 01:10:11] iya
+[01:10:11 - 01:10:15] jadi kalau misalkan tujuannya
+[01:10:15 - 01:10:16] tadi di rumah masalah-masalah itu
+[01:10:16 - 01:10:17] merancang
+[01:10:17 - 01:10:18] eh sorry
+[01:10:18 - 01:10:19] di mengembangkan
+[01:10:19 - 01:10:20] berarti nomor 1
+[01:10:20 - 01:10:21] mengembangkan juga gitu
+[01:10:21 - 01:10:22] iya
+[01:10:22 - 01:10:25] karena kalau cuma merancang itu kan
+[01:10:25 - 01:10:26] definisinya
+[01:10:26 - 01:10:27] hanya sebatas
+[01:10:27 - 01:10:28] apa ya
+[01:10:28 - 01:10:29] awalnya doang
+[01:10:29 - 01:10:30] iya awalnya aja kan
+[01:10:30 - 01:10:32] mungkin hanya sebatas
+[01:10:32 - 01:10:33] analisis kebutuhannya saja
+[01:10:33 - 01:10:35] kan tetap merancang juga
+[01:10:35 - 01:10:36] gak nyata
+[01:10:36 - 01:10:37] tapi kalau memang sampai jadi
+[01:10:37 - 01:10:38] sistemnya
+[01:10:38 - 01:10:39] dan nanti
+[01:10:39 - 01:10:40] harapannya targetnya juga
+[01:10:40 - 01:10:41] dipeluhi
+[01:10:41 - 01:10:42] itu menurut saya
+[01:10:42 - 01:10:43] pakai kata kerja
+[01:10:43 - 01:10:45] lebih tinggi aja
+[01:10:45 - 01:10:46] karena kan pasti merancang
+[01:10:46 - 01:10:47] ter-cover di dalam situ
+[01:10:47 - 01:10:48] udah bawaan dari
+[01:10:48 - 01:10:49] metodenya gitu
+[01:10:49 - 01:10:50] iya
+[01:10:50 - 01:10:51] oke
+[01:10:51 - 01:10:55] akhirnya ada batasan
+[01:10:55 - 01:10:56] ini saya ada buat lima
+[01:10:56 - 01:10:59] yang pertama dari
+[01:10:59 - 01:11:00] aktornya
+[01:11:00 - 01:11:02] terus
+[01:11:02 - 01:11:03] ini juga
+[01:11:03 - 01:11:04] nomor poin 2 ini
+[01:11:04 - 01:11:05] kayak
+[01:11:05 - 01:11:06] planasi
+[01:11:06 - 01:11:07] genderis
+[01:11:07 - 01:11:08] kalau misalkan
+[01:11:08 - 01:11:09] interpretasi
+[01:11:09 - 01:11:10] dari orang itu
+[01:11:10 - 01:11:11] jangan sampai ke
+[01:11:11 - 01:11:12] dari
+[01:11:12 - 01:11:13] pembelajaran online
+[01:11:13 - 01:11:14] dengan soal
+[01:11:14 - 01:11:15] sama
+[01:11:18 - 01:11:45] poin 5 itu
+[01:11:45 - 01:11:46] kenapa
+[01:11:46 - 01:11:48] dituliskan
+[01:11:48 - 01:11:49] karena
+[01:11:49 - 01:11:50] saya juga
+[01:11:50 - 01:11:51] takutnya
+[01:11:51 - 01:11:52] ada yang
+[01:11:52 - 01:11:53] dari datanya
+[01:11:53 - 01:11:54] sudah ada
+[01:11:54 - 01:11:55] karena udah 18 tahun
+[01:11:55 - 01:11:56] dari
+[01:11:56 - 01:11:57] 1990
+[01:11:57 - 01:11:58] tapi
+[01:11:58 - 01:11:59] saya
+[01:11:59 - 01:12:00] perlu
+[01:12:00 - 01:12:01] nambahin lagi
+[01:12:01 - 01:12:02] ke dalam sistem yang baru
+[01:12:02 - 01:12:03] atau
+[01:12:03 - 01:12:04] gak perlu
+[01:12:04 - 01:12:05] gini
+[01:12:05 - 01:12:06] kalau kita
+[01:12:06 - 01:12:07] ngembangkan sistem
+[01:12:07 - 01:12:08] itu
+[01:12:08 - 01:12:09] masalah deploy
+[01:12:09 - 01:12:10] dengan data
+[01:12:10 - 01:12:11] dengan
+[01:12:11 - 01:12:12] deploy sampai
+[01:12:12 - 01:12:13] environment
+[01:12:13 - 01:12:14] menurut saya
+[01:12:14 - 01:12:15] itu kondisi yang
+[01:12:15 - 01:12:16] berbeda
+[01:12:16 - 01:12:17] kalau misalkan
+[01:12:17 - 01:12:18] ketika ini
+[01:12:18 - 01:12:19] dideploy
+[01:12:19 - 01:12:20] apakah datanya
+[01:12:20 - 01:12:21] harus kita juga yang
+[01:12:21 - 01:12:22] menginputkan
+[01:12:22 - 01:12:23] menurut saya itu
+[01:12:23 - 01:12:24] di luar skop penelitian
+[01:12:24 - 01:12:25] kita kan
+[01:12:25 - 01:12:26] apa namanya
+[01:12:26 - 01:12:28] yang harus dilakukan
+[01:12:28 - 01:12:29] membangun sistem
+[01:12:29 - 01:12:30] yang memang
+[01:12:30 - 01:12:31] kebutuhannya sesuai
+[01:12:31 - 01:12:32] dengan apa yang dibutuhkan
+[01:12:32 - 01:12:33] tadi misalkan
+[01:12:33 - 01:12:34] contoh dari sisi
+[01:12:34 - 01:12:35] kebutuhan data
+[01:12:35 - 01:12:36] kebutuhan data
+[01:12:36 - 01:12:37] yang mereka laporkan
+[01:12:37 - 01:12:38] ini loh atributnya
+[01:12:38 - 01:12:39] terus nanti yang akan kita
+[01:12:39 - 01:12:40] gunakan di database
+[01:12:40 - 01:12:41] kurang lebih sama
+[01:12:41 - 01:12:42] seperti itu
+[01:12:42 - 01:12:43] kewajiban kita itu
+[01:12:43 - 01:12:44] hanya
+[01:12:44 - 01:12:45] meng-transferkan itu
+[01:12:45 - 01:12:46] menurut saya
+[01:12:46 - 01:12:47] tapi bagaimana
+[01:12:47 - 01:12:48] real data itu
+[01:12:49 - 01:12:50] dimigrasikan
+[01:12:50 - 01:12:51] itu menurut saya
+[01:12:51 - 01:12:52] persoalan lain
+[01:12:52 - 01:12:53] dan mungkin
+[01:12:53 - 01:12:54] kalau misalkan
+[01:12:54 - 01:12:55] mau dibantu
+[01:12:55 - 01:12:56] ya itu di luar skop penelitian
+[01:12:56 - 01:12:57] artinya
+[01:12:57 - 01:12:58] sampai itu nanti
+[01:12:58 - 01:12:59] jadi masuk ke dalam
+[01:12:59 - 01:13:00] timeline itu
+[01:13:00 - 01:13:01] karena itu kan
+[01:13:01 - 01:13:02] nggak bisa cepat ya
+[01:13:02 - 01:13:03] kerjakan itu
+[01:13:03 - 01:13:04] dan tentu juga
+[01:13:04 - 01:13:05] mereka juga
+[01:13:05 - 01:13:06] iya
+[01:13:06 - 01:13:07] available
+[01:13:07 - 01:13:08] dan berkenan juga
+[01:13:08 - 01:13:09] untuk dibantu
+[01:13:09 - 01:13:10] misalkan ya
+[01:13:10 - 01:13:11] jadi
+[01:13:11 - 01:13:12] paling tidak
+[01:13:12 - 01:13:13] dari sisi
+[01:13:13 - 01:13:14] apa yang harus
+[01:13:14 - 01:13:15] ter input di sistem
+[01:13:15 - 01:13:16] itu udah sama
+[01:13:16 - 01:13:17] sesuai dengan
+[01:13:17 - 01:13:18] kebutuhan mereka
+[01:13:18 - 01:13:19] masalah nanti
+[01:13:19 - 01:13:20] mereka punya data
+[01:13:20 - 01:13:21] dan itu mau digabungkan
+[01:13:21 - 01:13:22] ya kita
+[01:13:22 - 01:13:23] mengakomodir
+[01:13:23 - 01:13:24] gimana nanti
+[01:13:24 - 01:13:25] kalau misalkan
+[01:13:25 - 01:13:26] memang mereka ada data
+[01:13:26 - 01:13:27] dan mau dimasukkan ke sana
+[01:13:27 - 01:13:28] yang besar gitu
+[01:13:28 - 01:13:29] jangan sampai dia input
+[01:13:29 - 01:13:30] satu-satu kan
+[01:13:30 - 01:13:31] mungkin difasilitasi
+[01:13:31 - 01:13:32] bisa di import
+[01:13:32 - 01:13:33] dengan berbagai
+[01:13:33 - 01:13:34] inilah
+[01:13:34 - 01:13:35] macam-macam
+[01:13:35 - 01:13:36] tipe file
+[01:13:36 - 01:13:37] misalkan
+[01:13:37 - 01:13:38] itu difasilitasi
+[01:13:38 - 01:13:39] dan
+[01:13:39 - 01:13:40] mungkin nanti
+[01:13:40 - 01:13:41] ketika pengujian
+[01:13:41 - 01:13:42] dilakukan
+[01:13:42 - 01:13:43] itu harus
+[01:13:43 - 01:13:45] diajarkan
+[01:13:45 - 01:13:46] barangkali
+[01:13:46 - 01:13:47] gitu ya
+[01:13:47 - 01:13:48] usernya
+[01:13:48 - 01:13:49] gimana caranya
+[01:13:49 - 01:13:50] kalian bisa menurutkan
+[01:13:50 - 01:13:51] jadi sistem itu udah
+[01:13:51 - 01:13:52] siap pakai
+[01:13:52 - 01:13:53] kalau masalah data
+[01:13:53 - 01:13:54] misalnya itu
+[01:13:54 - 01:13:55] jadi tanggung jawab mereka sih
+[01:13:55 - 01:13:56] kalau memang mereka
+[01:13:56 - 01:13:57] mau digabung itu
+[01:13:57 - 01:13:58] ya gak masalah
+[01:13:58 - 01:13:59] tapi dilusuk
+[01:13:59 - 01:14:00] oke
+[01:14:00 - 01:14:01] berarti kalau misalkan
+[01:14:01 - 01:14:02] hanya empat
+[01:14:02 - 01:14:03] gak masalah
+[01:14:03 - 01:14:04] gak masalah
+[01:14:04 - 01:14:05] dan kalaupun nanti
+[01:14:05 - 01:14:06] ketika ini jadi
+[01:14:06 - 01:14:07] terus pakai data dummy
+[01:14:07 - 01:14:08] saja gak masalah juga
+[01:14:08 - 01:14:09] gitu
+[01:14:09 - 01:14:11] gak harus data real juga
+[01:14:11 - 01:14:13] ya asal tadi
+[01:14:13 - 01:14:14] atribut datanya sih
+[01:14:14 - 01:14:15] yang pasti
+[01:14:15 - 01:14:16] yang harus benar
+[01:14:16 - 01:14:23] karena ada beberapa kolom atau data ini
+[01:14:23 - 01:14:24] perlu format data
+[01:14:24 - 01:14:26] yang ada saat ini
+[01:14:26 - 01:14:27] terus nanti
+[01:14:27 - 01:14:28] pada akhirnya
+[01:14:28 - 01:14:29] anda yang saya rekomendasikan
+[01:14:29 - 01:14:30] dan dari mitra
+[01:14:30 - 01:14:31] juga
+[01:14:31 - 01:14:33] menerima itu
+[01:14:33 - 01:14:35] saya juga ada menyebutkan
+[01:14:35 - 01:14:37] di dalam sini
+[01:14:37 - 01:14:39] kalau disini ya
+[01:14:39 - 01:14:40] kalau ini kan
+[01:14:40 - 01:14:41] batasan nih
+[01:14:41 - 01:14:42] batasan ini artinya
+[01:14:42 - 01:14:44] membatasi keseluruhan penelitian gitu
+[01:14:44 - 01:14:45] jadi
+[01:14:45 - 01:14:47] kalau hal-hal yang sifatnya teknis sekali
+[01:14:47 - 01:14:49] dan mungkin itu masih bisa berubah
+[01:14:49 - 01:14:51] misalnya jangan dibatasi di sini
+[01:14:51 - 01:14:53] karena kontennya jadi mengikat gitu
+[01:14:53 - 01:14:54] sehingga nanti
+[01:14:54 - 01:14:55] oh ada perubahan
+[01:14:55 - 01:14:56] kita gak bisa mengubah
+[01:14:56 - 01:14:58] kenapa udah kita batasi di sini
+[01:14:58 - 01:15:00] tapi misalkan kayak tadi ya
+[01:15:00 - 01:15:02] misalkan SDLC nya gitu
+[01:15:02 - 01:15:04] dari PXP itu kan
+[01:15:04 - 01:15:06] sebenarnya selesai
+[01:15:06 - 01:15:07] sampai membuat saja
+[01:15:07 - 01:15:08] gak perlu di deploy
+[01:15:08 - 01:15:09] kan selesai juga gitu
+[01:15:09 - 01:15:10] tapi kan nanti
+[01:15:10 - 01:15:11] kalau misalkan ini
+[01:15:11 - 01:15:12] tiangnya sampai prototype
+[01:15:12 - 01:15:13] berarti kan ada proses deployment
+[01:15:13 - 01:15:14] yang dilakukan
+[01:15:14 - 01:15:16] kalau itu tidak dilakukan
+[01:15:16 - 01:15:18] berarti dibatasi
+[01:15:18 - 01:15:19] dibatasnya di mana
+[01:15:19 - 01:15:20] di sini
+[01:15:20 - 01:15:23] atau kalau misalkan ada
+[01:15:23 - 01:15:25] apa ya
+[01:15:25 - 01:15:26] output lain
+[01:15:26 - 01:15:27] yang misalkan
+[01:15:27 - 01:15:28] Arya hasilkan juga
+[01:15:28 - 01:15:29] dari penelitian ini gitu
+[01:15:29 - 01:15:30] yang diminta oleh mitra
+[01:15:30 - 01:15:31] misalkan
+[01:15:31 - 01:15:32] ya bisa ditambahkan juga
+[01:15:32 - 01:15:34] dibatasi
+[01:15:34 - 01:15:38] ya tapi kalau hal yang sifatnya teknis
+[01:15:38 - 01:15:39] menurut saya
+[01:15:39 - 01:15:40] jangan dimasukkan di sini
+[01:15:40 - 01:15:41] karena khawatirnya
+[01:15:41 - 01:15:42] nanti gak bisa
+[01:15:42 - 01:15:43] kan kita gak tahu nih
+[01:15:43 - 01:15:44] apalagi kan pakai gel ya
+[01:15:44 - 01:15:45] ternyata pas
+[01:15:45 - 01:15:46] udah lihat
+[01:15:46 - 01:15:48] oh bagus ya
+[01:15:48 - 01:15:49] gimana kalau minta ditambahin ini
+[01:15:49 - 01:15:50] gitu
+[01:15:50 - 01:15:51] nah gak bisa
+[01:15:51 - 01:15:52] terkunci dibatasan
+[01:15:52 - 01:15:53] kan sulitnya
+[01:15:53 - 01:15:55] itu
+[01:15:55 - 01:15:56] itu perlu diperhatikan
+[01:15:56 - 01:15:57] cuma yang bisa jadi
+[01:15:57 - 01:16:00] dulu itu mungkin
+[01:16:00 - 01:16:01] yang dibagiin ini
+[01:16:01 - 01:16:02] kayaknya
+[01:16:02 - 01:16:03] payment gateway
+[01:16:06 - 01:16:07] kan udah dibatasi
+[01:16:07 - 01:16:08] tapi balik lagi
+[01:16:08 - 01:16:09] bila terbekam
+[01:16:09 - 01:16:13] ya asal ini clear saja
+[01:16:13 - 01:16:14] artinya
+[01:16:14 - 01:16:15] jangan sampai nanti
+[01:16:15 - 01:16:16] tiba-tiba berubah pikiran
+[01:16:16 - 01:16:17] gitu
+[01:16:17 - 01:16:18] khusus saya
+[01:16:18 - 01:16:19] maunya tetap ada
+[01:16:19 - 01:16:20] payment gateway
+[01:16:20 - 01:16:21] misalkan
+[01:16:21 - 01:16:22] ini cerita lagi
+[01:16:22 - 01:16:28] ini gak perlu pakai point
+[01:16:28 - 01:16:29] ya
+[01:16:29 - 01:16:34] sebenarnya bisa pakai point juga
+[01:16:34 - 01:16:35] kalau mau
+[01:16:35 - 01:16:36] ini kan udah dipisah-pisah ya
+[01:16:36 - 01:16:37] ya
+[01:16:37 - 01:16:38] udah bagi fitrah
+[01:16:38 - 01:16:39] bagi
+[01:16:39 - 01:16:41] bagi metra
+[01:16:41 - 01:16:43] ada peneliti
+[01:16:43 - 01:16:48] dibuat point juga gak apa-apa
+[01:16:48 - 01:16:50] tapi kalau mau dikembangkan
+[01:16:50 - 01:16:51] panjang lebar ya paragraph
+[01:16:51 - 01:17:28] ini sebenarnya saya juga baru tahu
+[01:17:28 - 01:17:29] ternyata kalau
+[01:17:29 - 01:17:31] di panduan juga
+[01:17:31 - 01:17:33] saya kurang tahu itu
+[01:17:33 - 01:17:34] gue gak pakai Facebook
+[01:17:34 - 01:17:35] lagi ya
+[01:17:35 - 01:17:36] iya udah diganti ya
+[01:17:36 - 01:17:38] diagram alir keseluruhan
+[01:17:38 - 01:17:40] ini apa
+[01:17:40 - 01:17:41] belanda santai hari
+[01:17:41 - 01:17:44] analisis kebutuhan sistem
+[01:17:44 - 01:17:46] analisis kebutuhan sistem
+[01:17:46 - 01:17:48] lalu ini juga belum
+[01:17:48 - 01:17:50] ini kan harusnya ada iterasi ya
+[01:17:50 - 01:17:51] cuma saya belum tambahkan
+[01:17:51 - 01:17:53] untuk dari sisi
+[01:17:53 - 01:17:54] iterasi
+[01:17:54 - 01:17:55] kalau
+[01:17:55 - 01:17:57] BXP itu tahapan awalnya apa sih
+[01:17:57 - 01:17:59] requirement
+[01:17:59 - 01:18:01] requirement itu masuk kemana
+[01:18:01 - 01:18:02] analisis kebutuhan
+[01:18:02 - 01:18:03] ini seharusnya
+[01:18:03 - 01:18:04] terus
+[01:18:04 - 01:18:05] itu di luar
+[01:18:05 - 01:18:06] ya di luar ini
+[01:18:06 - 01:18:07] tadi keliru kayak
+[01:18:07 - 01:18:08] keliru ini
+[01:18:08 - 01:18:09] masih keliru
+[01:18:09 - 01:18:11] kita belum ada iterasi
+[01:18:11 - 01:18:14] tapi secara umum
+[01:18:14 - 01:18:15] pakai voucher gini ya Bu
+[01:18:15 - 01:18:17] iya pakai voucher aja
+[01:18:17 - 01:18:18] nanti kalau disini kan
+[01:18:18 - 01:18:19] dijelaskan
+[01:18:19 - 01:18:20] gambaran umum
+[01:18:20 - 01:18:21] tahapan aja
+[01:18:21 - 01:18:22] karena nanti yang lebih detail
+[01:18:22 - 01:18:23] kan ada di bab tiga ya
+[01:18:23 - 01:18:24] iya Bu
+[01:18:24 - 01:18:28] BXP nya ini pelajar diulang
+[01:18:28 - 01:18:29] iya Bu
+[01:18:29 - 01:18:31] oke
+[01:18:31 - 01:18:38] itu kurang lebih sudah sih
+[01:18:38 - 01:18:39] coba tapi
+[01:18:39 - 01:18:40] terakhir tadi
+[01:18:40 - 01:18:42] setelah tahapan akhir apa
+[01:18:42 - 01:18:44] evaluasi
+[01:18:47 - 01:18:48] di peluangnya
+[01:18:48 - 01:18:50] jadi berarti di sebelah mana
+[01:18:50 - 01:18:51] kan di luar dari
+[01:18:51 - 01:18:52] BXP
+[01:18:52 - 01:18:53] berarti kan ya
+[01:18:53 - 01:18:54] nah itu perlu diceritakan
+[01:18:54 - 01:18:56] di dalam tahapan ini
+[01:18:57 - 01:19:00] dan mungkin nanti perlu di cross check ulang juga dengan
+[01:19:00 - 01:19:02] konsep BXP ya
+[01:19:02 - 01:19:05] sebenarnya kalau di BXP kan ada sistem testing tuh
+[01:19:05 - 01:19:07] sistem testing ini
+[01:19:07 - 01:19:09] pengujiannya itu sifatnya seperti apa
+[01:19:09 - 01:19:11] apakah
+[01:19:11 - 01:19:13] UAT itu termasuk dalam sistem testing
+[01:19:13 - 01:19:15] atau itu di luar dari sistem testing yang harus kita perhatikan
+[01:19:15 - 01:19:19] sehingga kalau misalkan itu dua hal yang terpisah
+[01:19:19 - 01:19:21] berarti
+[01:19:21 - 01:19:23] berarti ada tahapan lain ya
+[01:19:23 - 01:19:25] yang dilakukan setelah BXP
+[01:19:25 - 01:19:26] tadi termasuk di PON
+[01:19:26 - 01:19:27] UAT
+[01:19:27 - 01:19:29] nah itu coba nanti diperjelasin lagi
+[01:19:29 - 01:19:31] konsep UAT itu sebenarnya apakah
+[01:19:31 - 01:19:33] di dalam fase SDLC pengembangan itu
+[01:19:33 - 01:19:36] atau dia sebenarnya udah selesai jadi sistemnya
+[01:19:36 - 01:19:38] terus dia di luar gitu ya
+[01:19:38 - 01:19:40] ketika sudah mau digunakan
+[01:19:40 - 01:19:41] apa yang seperti itu
+[01:19:41 - 01:19:45] black box dan UAT itu
+[01:19:45 - 01:19:48] nah black box itu dimana mau dipakai
+[01:19:48 - 01:19:50] black box itu setelah dari
+[01:19:50 - 01:19:52] di bagian sini
+[01:19:52 - 01:19:55] bahkan di luar dari tahapan dari BXP
+[01:19:55 - 01:19:57] kalau misalkan sudah selesai
+[01:19:57 - 01:19:58] baru dilakukan
+[01:19:58 - 01:20:00] eh selesai dari tahapan BXP
+[01:20:00 - 01:20:02] baru dilakukan tahapan
+[01:20:02 - 01:20:04] kemudian black box sama dia
+[01:20:04 - 01:20:06] targetnya siapa yang akan melakukan pengujian
+[01:20:06 - 01:20:08] yang akan melakukan pengujian
+[01:20:08 - 01:20:09] di black box sama di UAT
+[01:20:09 - 01:20:12] dari pengguna manajemen
+[01:20:12 - 01:20:13] ya ini beda berarti
+[01:20:13 - 01:20:15] beda pengujian yang berbeda
+[01:20:15 - 01:20:16] black box dan UAT ini
+[01:20:16 - 01:20:17] atau jadi satu
+[01:20:17 - 01:20:18] jadi satu
+[01:20:18 - 01:20:21] jadi satu
+[01:20:21 - 01:20:22] jadi satu
+[01:20:22 - 01:20:24] black box dulu
+[01:20:24 - 01:20:27] lalu dari user acceptance testing
+[01:20:27 - 01:20:30] saran saya coba nanti mungkin dipahami dulu aja deh
+[01:20:30 - 01:20:34] sistem testing yang dikerjakan di dalam BXP
+[01:20:34 - 01:20:37] dalam BXP itu pengujian yang bagaimana sih
+[01:20:37 - 01:20:41] dan teknikalnya secara teknis itu kita melakukan pengujiannya gimana
+[01:20:41 - 01:20:44] karena itu kan sebenarnya tidak hanya developer kan
+[01:20:44 - 01:20:45] ya betul
+[01:20:45 - 01:20:47] pasti harus melibatkan product award
+[01:20:47 - 01:20:49] teknis pengujian di dalam sistem testing itu
+[01:20:49 - 01:20:53] kalau di hubungkan ke dalam metode pengujian gitu ya
+[01:20:53 - 01:20:57] black box, white box, grey box itu masuk kemana sih dia gitu
+[01:20:57 - 01:20:59] nah itu mungkin itu dipiliarkan
+[01:20:59 - 01:21:01] sehingga nanti baru
+[01:21:01 - 01:21:03] apa ya
+[01:21:03 - 01:21:05] kalau memang perlu ada tahapan pengujian
+[01:21:05 - 01:21:07] setelah SDLC nya ini selesai
+[01:21:07 - 01:21:09] PXP nya selesai gitu kan ya
+[01:21:09 - 01:21:11] kalau memang ada pengujian
+[01:21:11 - 01:21:13] nah ini nanti pengujian nya di level apanya
+[01:21:13 - 01:21:18] oh pengujian real user
+[01:21:18 - 01:21:20] nama metode nya apa
+[01:21:20 - 01:21:21] itu dipahami dulu
+[01:21:21 - 01:21:24] nanti gimana cara pengujian nya akan dilakukan
+[01:21:24 - 01:21:26] paling gak itu juga harus jelas juga
+[01:21:26 - 01:21:31] ya paling gak itu di bab 2 dululah
+[01:21:31 - 01:21:34] menurut saya nanti baru kita ke bab 3 gitu ya
+[01:21:34 - 01:21:45] soalnya saya baru detail juga ternyata gak ke sebelahnya gini
+[01:21:45 - 01:21:48] iya diganti soalnya di yang baru kita pake orang-orang
+[01:21:48 - 01:21:53] dan gak perlu kalau misalkan hanya menyebutkan
+[01:21:53 - 01:21:55] poinnya seperti ini aja gak mau
+[01:21:55 - 01:21:58] gak usah menjelaskan jalan identifitas pengujian
+[01:21:58 - 01:22:01] kan juga gak setahapan kan nanti di paragrafi
+[01:22:01 - 01:22:07] itu dulu deh nanti berikutnya kita bahas yang bab 2 ya
+[01:22:07 - 01:22:11] bahas PXP nya dulu deh secara konseptual
+[01:22:11 - 01:22:14] Ariel cari dulu referensi utamanya
+[01:22:14 - 01:22:16] tapi jangan hanya referensi utama ya nanti
+[01:22:16 - 01:22:20] karena referensi utama itu kadang terbatas juga informasinya
+[01:22:20 - 01:22:23] gimana tahapan yang dilakukan itu mungkin ada yang belum clear gitu
+[01:22:23 - 01:22:26] nah itu nanti silahkan dari jurnal dari buku yang lain yang lebih baru
+[01:22:26 - 01:22:29] jadi paling gak ada beberapa opsi
+[01:22:29 - 01:22:31] gimana cara mengerjakannya gitu
+[01:22:31 - 01:22:36] kalau kemarin itu sebenernya saya ada nyari di buku
+[01:22:36 - 01:22:39] apa namanya
+[01:22:39 - 01:22:41] Summerfield di buku
+[01:22:41 - 01:22:43] itu saya baru mencatat dari
+[01:22:43 - 01:22:47] penjelasan umumnya
+[01:22:47 - 01:22:49] nah itu gak ada buku
+[01:22:49 - 01:22:51] jadi penjelasan umumnya
+[01:22:51 - 01:22:53] iya sampe ke
+[01:22:53 - 01:22:55] exp sehingga saya
+[01:22:55 - 01:22:58] iya sampe untuk exp
+[01:22:58 - 01:23:00] penerapan PXP nya baru di tahun 2009
+[01:23:00 - 01:23:02] dan itu saya belum terlalu baca di PEM
+[01:23:02 - 01:23:06] karena itu yang mau dipakai itu di pelajaran dulu ya
+[01:23:06 - 01:23:09] oke
+[01:23:09 - 01:23:11] oh iya
+[01:23:11 - 01:23:13] oh iya
+[01:23:13 - 01:23:15] saya sudah dimasukin citasi bu
+[01:23:15 - 01:23:17] oh iya belum saya cek lagi
+[01:23:17 - 01:23:20] terus
+[01:23:20 - 01:23:22] ini juga ada
+[01:23:22 - 01:23:24] minta saya untuk mau pilih nanya
+[01:23:24 - 01:23:26] turnitin bu
+[01:23:26 - 01:23:28] oh iya
+[01:23:28 - 01:23:30] menginfokan lebih lanjut
+[01:23:30 - 01:23:32] nanti mungkin dari Prodi menginfokan lebih lanjut
+[01:23:32 - 01:23:34] kan korma mata kuliah proposal
+[01:23:34 - 01:23:36] Bu Amal ya
+[01:23:36 - 01:23:39] nanti Bu Amal menginfokan
+[01:23:39 - 01:23:41] karena per berapa bulan ini ya
+[01:23:41 - 01:23:43] ada perubahan dari turnitin
+[01:23:43 - 01:23:45] kalau selama ini kan sebenarnya
+[01:23:45 - 01:23:47] temen-temen cek sendiri gitu
+[01:23:47 - 01:23:49] sekarang ini ada perubahan dari turnitin
+[01:23:49 - 01:23:50] pakai OTP dia
+[01:23:50 - 01:23:52] jadi hanya bisa masuk lewat
+[01:23:52 - 01:23:54] kasih kode OTP dulu
+[01:23:54 - 01:23:56] jadi itu agak
+[01:23:56 - 01:23:57] bingung juga sih
+[01:23:57 - 01:23:59] kita belum deal kan
+[01:23:59 - 01:24:01] ya mungkin nanti saya
+[01:24:01 - 01:24:02] ini dulu sama Bu Amal ya
+[01:24:02 - 01:24:03] gimana baiknya gitu
+[01:24:03 - 01:24:06] karena kalau OTP kan gak mungkin
+[01:24:06 - 01:24:09] kalau kita kasih akses ke temen-temen
+[01:24:09 - 01:24:11] kayaknya nanti bisa jadi keblokir khawatirnya gitu
+[01:24:11 - 01:24:14] karena kan banyak email tiba-tiba mengakseskan saya juga
+[01:24:14 - 01:24:16] karena asumsi dari saya dan temen-temen tuh
+[01:24:16 - 01:24:19] dikira ada yang bisa merubah password
+[01:24:19 - 01:24:20] iya
+[01:24:20 - 01:24:23] iya memang baru ada perubahan dari turnitinnya juga
+[01:24:23 - 01:24:25] makanya pas kemarin ini
+[01:24:25 - 01:24:27] baru pasti sudah sih gak saya
+[01:24:27 - 01:24:28] baru ada yang pakai kan
+[01:24:28 - 01:24:29] baru ada yang melaporkan
+[01:24:29 - 01:24:31] ini kok minta OTP gitu
+[01:24:31 - 01:24:32] nah itu sih
+[01:24:32 - 01:24:33] nanti paling ya
+[01:24:33 - 01:24:36] kita informasikan di citasi
+[01:24:37 - 01:24:39] mungkin itu aja
+[01:24:39 - 01:24:40] makanya di saya
+[01:24:40 - 01:24:41] hari ini
+[01:24:41 - 01:24:43] terimakasih atas wakunya
+[01:24:43 - 01:24:44] iya
+[01:24:44 - 01:24:45] kalau lama
+[01:24:45 - 01:24:46] iya
+[01:24:46 - 01:24:47] iya
+[01:24:47 - 01:24:48] dipelajari lagi lho
+[01:24:48 - 01:24:49] iya
+[01:24:49 - 01:24:50] iya
+[01:24:50 - 01:24:51] berarti ini saya lanjut ke
+[01:24:51 - 01:24:52] bab 2
+[01:24:52 - 01:24:54] dan coba untuk lanjut ke bab 2 ya
+[01:24:54 - 01:24:55] iya
+[01:24:55 - 01:24:56] nanti sambil
+[01:24:56 - 01:24:59] bab 2 nya dicicilkan bisa masuk ke bab 3
+[01:24:59 - 01:25:00] yang penting bab 2 nya udah
+[01:25:00 - 01:25:03] maksudnya secara konsep udah bisa clear gitu
+[01:25:03 - 01:25:04] iya
+[01:25:04 - 01:25:06] terima kasih banyak
+[01:25:06 - 01:25:07] oke
+[01:25:07 - 01:25:08] oke
+[01:25:08 - 01:25:10] oke
+[01:25:10 - 01:25:11] berarti sudah ada yang mau ngecek
+[01:25:11 - 01:25:12] pakai turnitin teman-teman ya
+[01:25:12 - 01:25:13] iya
+[01:25:13 - 01:25:14] sama ada banyak yang
+[01:25:14 - 01:25:15] but nanti sekalian
+[01:25:15 - 01:25:16] selesai ya
+[01:25:16 - 01:25:17] nanti saya diskusi sama gue
+[01:25:17 - 01:25:19] aman dan minggu lalu saya gak pernah bahas
+[01:25:19 - 01:25:20] cuma belum
+[01:25:20 - 01:25:21] tau gimana solusinya
+[01:25:21 - 01:25:22] iya
+[01:25:22 - 01:25:23] iya
+[01:25:23 - 01:25:24] iya
+[01:25:24 - 01:25:25] iya
+[01:25:25 - 01:25:26] iya
+[01:25:26 - 01:25:27] iya
+[01:25:27 - 01:25:28] iya
+[01:25:28 - 01:25:30] iya

@@ -1,0 +1,221 @@
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 119]
+================================================================================
+ 
+ 
+ 
+LAMPIRAN 
+ 
+105 
+KEMENTERIAN PENDIDIKAN, KEBUDAYAAN, 
+RISET, DAN TEKNOLOGI 
+INSTITUT TEKNOLOGI KALIMANTAN 
+FAKULTAS SAINS DAN TEKNOLOGI INFORMASI 
+JURUSAN TEKNIK ELEKTRO INFORMATIKA DAN BISNIS 
+ 
+Kampus ITK Karang Joang, Balikpapan 76127 
+Telp. 0542-8530800 Faksimile. 0542-8530801 
+Surat Elektronik: jteib@itk.ac.id Laman : www.itk.ac.id 
+ 
+Wawancara ke 1 
+Tanggal 28 Juli 2026 
+Tanda Tangan 
+Nama 
+Narasumber 
+Emi Ratnawati, 
+S.E. 
+Pukul 
+10.00 - Selesai 
+ 
+Posisi 
+Ketua Lembaga 
+Lokasi 
+Artha 2 
+Agenda 
+Inisiasi Penelitian, Awal Kebutuhan Sistem, dan 
+Kesepakatan Kemitraan Tugas Akhir 
+Catatan Wawancara 
+●​ Pihak manajemen Bimbingan Belajar ARTHA secara resmi menyetujui pelaksanaan 
+penelitian tugas akhir mahasiswa untuk digitalisasi proses operasional lembaga. 
+●​ Pengelolaan operasional pada delapan kantor cabang di wilayah Balikpapan selama 
+puluhan tahun masih bertumpu penuh pada buku besar kertas fisik dan kuitansi manual 
+tanpa adanya integrasi data terpusat. 
+●​ Mekanisme pendaftaran konvensional mengharuskan calon siswa atau orang tua datang 
+langsung ke kantor cabang, sehingga sering menimbulkan penumpukan antrean fisik 
+dan risiko berkas pendaftaran terselip pada periode tahun ajaran baru. 
+●​ Manajemen membutuhkan web pendaftaran untuk calon siswa memilih kelas, dan 
+jadwal belajar. 
+●​ Pihak mitra berkomitmen mengalokasikan anggaran belanja modal untuk menyediakan 
+perangkat tablet di frontdesk setiap cabang untuk pencatatan. 
+●​ Ruang lingkup pengembangan sistem informasi difokuskan pada dua modul prioritas 
+paling mendesak, yaitu modul pendaftaran siswa baru dan modul pencatatan transaksi 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 120]
+================================================================================
+ 
+ 
+Dokumentasi Wawancara 
+ 
+WAWANCARA MITRA
+ 
+106 
+serta pengingat tagihan SPP bulanan. 
+●​ Budaya kerja lembaga yang berlandaskan asas kekeluargaan menuntut perancangan 
+antarmuka sistem yang sederhana, ramah pengguna, dan mudah diadaptasi oleh staf 
+administrasi cabang tanpa resistensi operasional.  
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 121]
+================================================================================
+ 
+ 
+ 
+Dokumentasi Wawancara 
+ 
+WAWANCARA MITRA
+ 
+107 
+Wawancara ke 2 
+Tanggal 17 Agustus 2026 
+Tanda Tangan 
+Nama 
+Narasumber 
+Anang 
+Pukul 
+15.30 - Selesai 
+ 
+Posisi 
+Kepala Cabang  
+Lokasi 
+Artha 2 
+Agenda 
+Evaluasi Company Profile yang berjalan, dan 
+Perancangan Sistem Informasi Multicabang 
+Catatan Wawancara 
+●​ Web profil lembaga WordPress yang sebelumnya dikembangkan oleh pihak ketiga asal 
+Yogyakarta ditinggalkan karena antarmuka yang rumit, kendala keterbatasan memori 
+alokasi server shared hosting, serta ketiadaan modul transaksi keuangan operasional. 
+●​ Manajemen operasional memutuskan untuk membangun sistem informasi baru secara 
+mandiri dari awal untuk memutus ketergantungan terhadap vendor luar kota dan 
+menyesuaikan fitur dengan alur kerja di delapan cabang. 
+●​ Sistem informasi wajib menerapkan kontrol hak akses dan pengamanan data cabang 
+yang ketat, di mana staf administrasi cabang hanya dapat mengakses data cabangnya 
+sendiri sedangkan Super Admin dapat memantau seluruh cabang secara terpusat. 
+●​ Sistem dituntut mampu mencatat data demografi asal sekolah siswa untuk memetakan 
+sebaran pendaftar per jenjang (SD, SMP, SMA) sebagai penentuan strategi promosi. 
+●​ Evaluasi logistik kas mengonfirmasi bahwa alur perpindahan dana tunai dan buku 
+rekapan fisik antarcabang selama ini sangat mengandalkan sistem titipan antar tentor, 
+sehingga memiliki risiko keamanan tinggi dan keterlambatan pelaporan. 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 122]
+================================================================================
+ 
+ 
+ 
+Dokumentasi Wawancara 
+108 
+Wawancara ke 3 
+Tanggal 7 September 2026 
+Tanda Tangan 
+Nama 
+Narasumber 
+Emi Ratnawati, 
+S.E. 
+Pukul 
+14.15 - Selesai 
+ 
+Posisi 
+Kepala Cabang  
+Lokasi 
+Artha 2 
+Agenda 
+Tata Kelola Keuangan, Paket Belajar, Kendala 
+Buku Besar A4, dan Rekonsiliasi Pembayaran  
+Catatan Wawancara 
+●​ Bimbingan Belajar ARTHA didirikan secara resmi pada tanggal 10 Oktober 1997 dan 
+saat ini telah menaungi delapan cabang di Balikpapan, namun seluruh pencatatan 
+transaksi pendaftaran dan kas harian masih bertumpu pada lembaran Buku Besar fisik 
+A4. 
+●​ Tarif SPP bulanan diklasifikasikan berdasarkan jenjang pendidikan (TK, SD, SMP, 
+SMA), frekuensi pertemuan tiga kali seminggu, paket intensif ujian kelulusan, serta 
+biaya cetak buku modul pelajaran tambahan. 
+●​ Alur transaksi pembayaran terbagi menjadi dua metode, yaitu setoran uang tunai di 
+meja kasir cabang dan pembayaran non-tunai melalui transfer rekening  
+●​ Terjadi kendala rekonsiliasi akibat bukti transfer WhatsApp dari orang tua siswa yang 
+sering tidak memuat nama lengkap siswa dan asal cabang 
+●​ Rekapitulasi keuangan di akhir bulan menyita waktu kerja berhari-hari karena 
+pimpinan harus memeriksa lembar demi lembar buku besar dari delapan cabang, 
+menghitung manual dengan kalkulator, dan mencocokkannya dengan mutasi rekening. 
+●​ Media pencatatan kertas fisik berukuran A4 sangat rentan mengalami kerusakan fisik, 
+karena ditumpuk per satu cabang. 
+●​ Pimpinan sangat membutuhkan rekonsiliasi kas digital yang dilengkapi pencatatan  dan 
+dashboard penerimaan harian untuk memvalidasi dana masuk secara akurat. 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 123]
+================================================================================
+ 
+ 
+WAWANCARA MITRA
+ 
+109 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 124]
+================================================================================
+ 
+ 
+110 
+Wawancara ke 4 
+Tanggal 20 Oktober 2026 
+Tanda Tangan 
+Nama 
+Narasumber 
+Agian 
+Pukul 
+16.00 - Selesai 
+ 
+Posisi 
+Staff Administrasi  
+Lokasi 
+Artha 5 
+Agenda 
+Operasional Harian Staf Administrasi, Tata Kelola 
+Pendaftaran Siswa, Kuitansi Fisik, Kartu SPP, dan 
+Penjadwalan Tentor 
+Catatan Wawancara 
+●​ Staf menjalankan 2 peran yang mencakup pelayanan pendaftaran siswa baru, 
+penerimaan pembayaran SPP tunai, pengarsipan kuitansi, pencatatan absensi siswa, 
+komunikasi dengan wali murid, serta penataan jadwal ruangan belajar. 
+●​ Beban kerja memuncak pada jam-jam sibuk di sore hari menjelang dimulainya sesi 
+kelas bimbingan 
+●​ Setiap pendaftaran siswa baru menghasilkan tiga berkas fisik wajib, yaitu lembar 
+formulir pendaftaran di buku besar A4, kuitansi bukti pembayaran manual rangkap 
+dua, serta kartu SPP fisik dua belas bulan yang disimpan dalam kotak arsip cabang. 
+●​ Staf administrasi mengalami kesulitan memvalidasi diskon karena arsip data yang 
+pernah belajar pada tahun ajaran sebelumnya tertumpuk di masing masing cabang. 
+●​ Pembagian ruangan kelas di cabang menerapkan batas kapasitas maksimal sepuluh 
+hingga lima belas siswa per sesi 
+●​ Mekanisme penyetoran uang kas fisik dan buku besar A4 bulanan ke kantor pusat 
+dilakukan melalui titipan kepada kepala cabang 
+●​ Pengaturan jadwal mengajar tentor disusun secara manual bersama Kepala Cabang 
+berdasarkan jam luang pengajar, dengan agenda rapat koordinasi guru setiap seminggu 
+sekali dan rapat evaluasi staf cabang sebulan sekali bersama manajemen pusat. 
+●​ Staf menyatakan dukungan penuh terhadap pengembangan sistem informasi berbasis 
+web karena akan mempermudah pencarian riwayat siswa, pelunasan SPP, dan 
+mengontrol kapasitas ruangan kelas tanpa perlu membuka buku besar fisik secara 
+berulang. 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 125]
+================================================================================
+ 
+ 
+Dokumentasi Wawancara 
+ 
+WAWANCARA MITRA
+ 
+111 

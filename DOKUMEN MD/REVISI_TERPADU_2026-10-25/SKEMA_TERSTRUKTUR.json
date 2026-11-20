@@ -1,0 +1,2201 @@
+{
+  "date": "2026-10-25",
+  "status": "document_design_only_not_executed_ddl",
+  "dbms": "MySQL with InnoDB; final version pending",
+  "tables": [
+    {
+      "name": "academic_years",
+      "label": "Tahun ajaran",
+      "purpose": "Menyimpan rentang tahun ajaran yang dipakai kelas, tarif, dan tagihan. Arsip tahun sebelumnya tetap tersedia ketika tahun operasional berubah.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Nama tahun ajaran",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "start_date",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal mulai tahun ajaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "end_date",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal akhir tahun ajaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Penanda tahun operasional aktif, awal FALSE",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tanggal akhir tidak mendahului tanggal mulai. Pergantian tahun aktif dilakukan dalam transaksi yang mencegah lebih dari satu tahun aktif.",
+        "Tanggal kalender tahun ajaran berasal dari ketentuan mitra. Aktivasi tahun baru tidak mengubah tingkat kelas pada tagihan historis."
+      ]
+    },
+    {
+      "name": "branches",
+      "label": "Cabang",
+      "purpose": "Menyimpan identitas cabang untuk pemisahan data operasional. Jumlah ruang diperoleh dari data ruang aktif, sehingga tidak ditulis ulang sebagai penghitung bebas.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "code",
+          "type": "VARCHAR(20)",
+          "nullable": false,
+          "description": "Kode cabang",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama cabang",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "address",
+          "type": "TEXT",
+          "nullable": true,
+          "description": "Alamat cabang",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "phone_wa",
+          "type": "VARCHAR(20)",
+          "nullable": true,
+          "description": "Kontak cabang dengan format internasional",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status operasional cabang",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Cabang yang mempunyai transaksi dinonaktifkan, bukan dihapus. Lokasi pada peta publik tidak menjadi kebutuhan inti prototipe."
+      ]
+    },
+    {
+      "name": "users",
+      "label": "Akun pengguna",
+      "purpose": "Menyimpan akun Admin Cabang dan Super Admin. Peran menentukan izin fungsi, sedangkan penugasan cabang membatasi objek yang dapat diakses.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Cabang penugasan Admin Cabang; kosong untuk Super Admin",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama pengguna",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR(190)",
+          "nullable": false,
+          "description": "Identitas masuk yang unik",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "password_hash",
+          "type": "VARCHAR(255)",
+          "nullable": false,
+          "description": "Hasil hash kata sandi, bukan kata sandi terbuka",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "role",
+          "type": "ENUM('branch_admin','super_admin')",
+          "nullable": false,
+          "description": "Peran yang diberikan melalui proses berwenang",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status akun aktif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "last_login_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu masuk terakhir",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Admin Cabang wajib mempunyai branch_id yang sah; Super Admin menggunakan branch_id kosong. Nilai cabang kosong pada akun tidak sah tidak memberikan hak Super Admin.",
+        "Pemeriksaan izin dijalankan pada peladen untuk setiap objek. Mutasi akun tidak mengubah cabang pemilik transaksi lama atau menghapus jejak pelakunya."
+      ]
+    },
+    {
+      "name": "subjects",
+      "label": "Mata pelajaran",
+      "purpose": "Menyediakan nama mata pelajaran yang dipakai pada jadwal. Mata pelajaran dilekatkan pada sesi jadwal agar satu kelompok belajar dapat mengikuti beberapa mata pelajaran.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "code",
+          "type": "VARCHAR(20)",
+          "nullable": false,
+          "description": "Kode mata pelajaran",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama mata pelajaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status penggunaan mata pelajaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Mata pelajaran yang sudah dipakai dinonaktifkan tanpa menghapus riwayat. Daftar mata pelajaran ditetapkan dari layanan yang benar-benar tersedia."
+      ]
+    },
+    {
+      "name": "fee_tariffs",
+      "label": "Tarif berdasarkan cabang dan sesi",
+      "purpose": "Menyimpan tarif yang dapat dikelola Super Admin melalui aplikasi. Pemilihan tarif memperhitungkan cabang, sesi, jenjang, program, jenis biaya, dan periode pembayaran.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang tempat tarif berlaku, tanpa tarif global implisit",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "academic_year_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tahun ajaran tarif",
+          "ref": "academic_years.id",
+          "unique": false
+        },
+        {
+          "name": "session_code",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Kode sesi belajar atau kode all yang dipilih secara eksplisit",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "learning_program",
+          "type": "ENUM('reguler','intensif','paket')",
+          "nullable": false,
+          "description": "Kategori program, bukan penentu otomatis siklus pembayaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "grade_level",
+          "type": "ENUM('TK','SD','SMP','SMA')",
+          "nullable": false,
+          "description": "Jenjang sasaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "class_grade_start",
+          "type": "TINYINT UNSIGNED",
+          "nullable": true,
+          "description": "Tingkat awal; kosong untuk TK",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "class_grade_end",
+          "type": "TINYINT UNSIGNED",
+          "nullable": true,
+          "description": "Tingkat akhir; kosong untuk TK",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "fee_type",
+          "type": "ENUM('tuition','module','registration')",
+          "nullable": false,
+          "description": "Komponen biaya",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "billing_cycle",
+          "type": "ENUM('monthly','semester','annual','once')",
+          "nullable": false,
+          "description": "Siklus kewajiban yang ditetapkan mitra",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nominal tarif dasar yang positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "valid_from",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal mulai berlaku",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "valid_until",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal akhir berlaku",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "description",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Dasar atau nama paket",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status ketersediaan untuk tagihan baru",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tidak boleh ada dua tarif aktif dengan cakupan cabang, sesi, program, jenjang, komponen, siklus, tingkat, dan tanggal yang bertumpang tindih. Pemeriksaan rentang dilakukan pada aplikasi dalam transaksi.",
+        "Tarif tidak dipilih melalui prioritas tersembunyi antara sesi tertentu dan all. Pengguna memilih cakupan yang sah dan sistem menolak kandidat ambigu.",
+        "Perubahan tarif hanya memengaruhi tagihan baru. Tarif yang sudah dirujuk tidak diubah nominal atau cakupannya, melainkan diganti versi baris baru dengan masa berlaku yang tidak bertumpang tindih.",
+        "Nilai yang sudah dikenakan disimpan pada bills bersama periode dan dasar penyesuaiannya. Identitas tarif sumber tetap dapat ditelusuri pada baris terdahulu."
+      ]
+    },
+    {
+      "name": "students",
+      "label": "Siswa dan kontak wali",
+      "purpose": "Menyimpan identitas siswa yang dibutuhkan administrasi. Kontak wali menjadi tujuan pesan, sedangkan potongan biaya tidak dipatok sebagai nilai global pada profil siswa.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang administratif siswa saat ini",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "academic_year_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tahun ajaran pendaftaran pertama",
+          "ref": "academic_years.id",
+          "unique": false
+        },
+        {
+          "name": "registration_no",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Nomor pendaftaran unik",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama lengkap siswa",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "birth_date",
+          "type": "DATE",
+          "nullable": true,
+          "description": "Tanggal lahir jika dibutuhkan formulir",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "parent_name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama wali yang dihubungi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "parent_phone_wa",
+          "type": "VARCHAR(20)",
+          "nullable": false,
+          "description": "Nomor WhatsApp wali tervalidasi formatnya",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "school_origin",
+          "type": "VARCHAR(150)",
+          "nullable": true,
+          "description": "Sekolah asal",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "grade_level",
+          "type": "ENUM('TK','SD','SMP','SMA')",
+          "nullable": false,
+          "description": "Jenjang pendidikan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "class_grade",
+          "type": "TINYINT UNSIGNED",
+          "nullable": true,
+          "description": "Tingkat kelas; kosong untuk TK",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "home_address",
+          "type": "TEXT",
+          "nullable": true,
+          "description": "Alamat atau kelurahan sesuai kebutuhan data",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "learning_program",
+          "type": "ENUM('reguler','intensif','paket')",
+          "nullable": false,
+          "description": "Program administratif saat ini",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "session_code",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Sesi administratif untuk pemilihan tarif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "family_reference",
+          "type": "VARCHAR(50)",
+          "nullable": true,
+          "description": "Kode kelompok saudara setelah diperiksa admin",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "status",
+          "type": "ENUM('active','alumni','inactive')",
+          "nullable": false,
+          "description": "Status administratif siswa",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "registered_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pendaftaran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tingkat TK kosong, SD satu sampai enam, SMP tujuh sampai sembilan, dan SMA sepuluh sampai dua belas. Kelengkapan akhir formulir dikonfirmasi kepada mitra.",
+        "Kode keluarga mendukung lebih dari dua saudara tanpa menentukan diskon otomatis. Nominal, alasan, dan pemberi persetujuan potongan disimpan pada tagihan.",
+        "Perpindahan cabang merupakan tindakan berwenang yang tercatat pada activity_logs dan mengakhiri keanggotaan lama bila diperlukan. Cabang tagihan dan penerimaan yang telah tercatat tidak ikut berubah."
+      ]
+    },
+    {
+      "name": "mentors",
+      "label": "Tentor",
+      "purpose": "Menyimpan satu identitas tentor yang digunakan lintas cabang. Identitas ini memungkinkan pemeriksaan benturan tanpa menggandakan tentor pada setiap cabang.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Cabang pangkalan, boleh kosong bagi tentor lintas cabang",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "full_name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama tentor",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "phone_wa",
+          "type": "VARCHAR(20)",
+          "nullable": true,
+          "description": "Kontak tentor bila diperlukan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status aktif tentor",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tentor tidak memperoleh akun dasbor dalam lingkup inti. Jumlah tentor tidak dipatok sebelum daftar mitra diperiksa."
+      ]
+    },
+    {
+      "name": "mentor_subjects",
+      "label": "Kompetensi mata pelajaran tentor",
+      "purpose": "Menghubungkan tentor dengan mata pelajaran yang dapat diampunya. Hubungan ini dipakai saat penugasan jadwal dan tidak membentuk akun pengguna baru.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "mentor_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tentor",
+          "ref": "mentors.id",
+          "unique": false
+        },
+        {
+          "name": "subject_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Mata pelajaran",
+          "ref": "subjects.id",
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Pasangan mentor_id dan subject_id unik. Penghapusan penugasan kompetensi tidak menghapus jadwal historis."
+      ]
+    },
+    {
+      "name": "class_rooms",
+      "label": "Ruang fisik",
+      "purpose": "Menyimpan ruang dan daya tampung fisik pada suatu cabang. Data ini dibedakan dari kelompok belajar agar pemakaian ruang pada setiap jadwal dapat diperiksa.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang pemilik ruang",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "room_name",
+          "type": "VARCHAR(60)",
+          "nullable": false,
+          "description": "Nama ruang yang unik dalam cabang",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "physical_capacity",
+          "type": "SMALLINT UNSIGNED",
+          "nullable": false,
+          "description": "Daya tampung fisik yang positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status ruang tersedia untuk penjadwalan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Pasangan branch_id dan room_name unik. Penurunan kapasitas ruang diperiksa terhadap seluruh kelas dan jadwal aktif yang masih berlaku sebelum disimpan."
+      ]
+    },
+    {
+      "name": "classes",
+      "label": "Kelompok belajar",
+      "purpose": "Menyimpan identitas dan batas peserta kelompok belajar. Kondisi penuh dihitung dari keanggotaan aktif, sehingga tidak dicampur dengan status kelas ditutup.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang penyelenggara kelas",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "academic_year_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tahun ajaran kelas",
+          "ref": "academic_years.id",
+          "unique": false
+        },
+        {
+          "name": "class_name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama kelompok belajar",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "learning_program",
+          "type": "ENUM('reguler','intensif','paket')",
+          "nullable": false,
+          "description": "Kategori program kelas",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "session_code",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Sesi kelompok belajar",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "grade_level",
+          "type": "ENUM('TK','SD','SMP','SMA')",
+          "nullable": false,
+          "description": "Jenjang kelompok belajar",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "class_grade",
+          "type": "TINYINT UNSIGNED",
+          "nullable": true,
+          "description": "Tingkat kelas; kosong untuk TK",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "max_students",
+          "type": "SMALLINT UNSIGNED",
+          "nullable": false,
+          "description": "Batas peserta aktif yang positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "near_full_remaining",
+          "type": "SMALLINT UNSIGNED",
+          "nullable": false,
+          "description": "Ambang sisa tempat untuk peringatan, ditetapkan sebelum UAT",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "status",
+          "type": "ENUM('active','closed')",
+          "nullable": false,
+          "description": "Status operasional kelompok belajar",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Nama kelas unik dalam cabang dan tahun ajaran. near_full_remaining bernilai paling sedikit satu dan tidak melebihi max_students; nilai aktual ditetapkan bersama mitra.",
+        "current_students dan indikator almost_full atau full merupakan nilai turunan dari keanggotaan aktif, bukan kolom penghitung tersimpan. Kelas penuh tetap dapat berstatus active.",
+        "Penerimaan anggota baru mensyaratkan sedikitnya satu jadwal aktif yang masih berlaku dengan ruang aktif. max_students tidak melebihi kapasitas setiap ruang pada jadwal aktif yang relevan."
+      ]
+    },
+    {
+      "name": "class_schedules",
+      "label": "Jadwal kelas",
+      "purpose": "Menghubungkan kelas, mata pelajaran, tentor, dan ruang pada suatu rentang tanggal. Rentang tersebut mencegah jadwal lama atau nonaktif dianggap benturan yang masih berlaku.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "class_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kelompok belajar",
+          "ref": "classes.id",
+          "unique": false
+        },
+        {
+          "name": "subject_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Mata pelajaran sesi",
+          "ref": "subjects.id",
+          "unique": false
+        },
+        {
+          "name": "mentor_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tentor dengan kompetensi yang sesuai",
+          "ref": "mentors.id",
+          "unique": false
+        },
+        {
+          "name": "room_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Ruang yang berada pada cabang kelas",
+          "ref": "class_rooms.id",
+          "unique": false
+        },
+        {
+          "name": "day_of_week",
+          "type": "TINYINT UNSIGNED",
+          "nullable": false,
+          "description": "Hari satu sampai tujuh, Senin sampai Minggu",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "start_time",
+          "type": "TIME",
+          "nullable": false,
+          "description": "Jam mulai pada zona waktu operasional",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "end_time",
+          "type": "TIME",
+          "nullable": false,
+          "description": "Jam selesai pada hari yang sama",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "valid_from",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal awal jadwal berlaku",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "valid_until",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal akhir jadwal berlaku",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Status jadwal aktif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Jam selesai sesudah jam mulai dan tanggal akhir tidak mendahului tanggal awal. Jadwal wajib berada dalam rentang tahun ajaran kelas.",
+        "Benturan diperiksa jika ada kejadian hari yang sama dalam irisan rentang tanggal dan jamnya beririsan. Pengubahan jadwal mengecualikan id jadwal yang sedang disunting.",
+        "Benturan ditampilkan sebagai peringatan untuk ditinjau, bukan diklaim sebagai larangan mutlak yang telah disepakati mitra. Calon jadwal dapat disimpan nonaktif sampai penetapan ditinjau; aktivasi dengan konflik belum diaktifkan sebelum kebijakan mitra ditetapkan.",
+        "Tentor diperiksa lintas cabang; ruang dan kelompok belajar diperiksa pada identitasnya. Admin Cabang hanya menerima informasi konflik yang diperlukan, tanpa memperoleh daftar lengkap data cabang lain.",
+        "Perubahan ruang, jadwal, kapasitas kelas, dan kapasitas ruang menggunakan pemeriksaan yang saling konsisten. Penugasan tentor harus sesuai pasangan kompetensi mentor_subjects."
+      ]
+    },
+    {
+      "name": "class_enrollments",
+      "label": "Riwayat keanggotaan kelas",
+      "purpose": "Mencatat setiap interval masuk dan keluar siswa pada kelompok belajar. Siswa yang kembali setelah keluar memperoleh baris interval baru agar sejarah sebelumnya tidak ditimpa.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "class_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kelompok belajar",
+          "ref": "classes.id",
+          "unique": false
+        },
+        {
+          "name": "student_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Siswa yang menjadi anggota",
+          "ref": "students.id",
+          "unique": false
+        },
+        {
+          "name": "created_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Pengguna yang menempatkan siswa",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "joined_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu mulai keanggotaan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "ended_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu akhir keanggotaan; kosong ketika aktif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "end_reason",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Alasan keluar atau selesai; wajib jika ended_at terisi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Satu siswa tidak boleh mempunyai dua interval aktif pada kelas yang sama. Baris lama boleh tetap ada untuk keanggotaan yang sudah berakhir.",
+        "Jumlah peserta aktif diperoleh dari ended_at kosong; pengaktifan baru dimulai segera dan tidak dijadwalkan ke masa depan pada lingkup inti. Penempatan siswa pada cabang berbeda tidak diaktifkan sebelum kebijakannya ditetapkan.",
+        "Semua jalur tambah dan keluar anggota mengunci baris kelas dalam transaksi. Indeks unik bersyarat melalui kolom generated yang bernilai NULL untuk interval berakhir dapat digunakan pada MySQL dan harus diuji saat migrasi fisik."
+      ]
+    },
+    {
+      "name": "bills",
+      "label": "Tagihan dan nilai historis",
+      "purpose": "Menyimpan kewajiban yang diterbitkan untuk siswa pada cabang tertentu. Nilai dasar, potongan, periode, dan cabang pemilik merupakan rekaman historis saat penerbitan.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "student_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Siswa yang ditagih",
+          "ref": "students.id",
+          "unique": false
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang pemilik tagihan yang tidak mengikuti mutasi siswa",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "academic_year_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tahun ajaran tagihan",
+          "ref": "academic_years.id",
+          "unique": false
+        },
+        {
+          "name": "fee_tariff_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tarif sumber penerbitan",
+          "ref": "fee_tariffs.id",
+          "unique": false
+        },
+        {
+          "name": "created_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Penerbit tagihan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "fee_type",
+          "type": "ENUM('tuition','module','registration')",
+          "nullable": false,
+          "description": "Salinan jenis kewajiban",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "billing_cycle",
+          "type": "ENUM('monthly','semester','annual','once')",
+          "nullable": false,
+          "description": "Salinan siklus kewajiban",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "period_key",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Kode periode yang baku menurut siklus",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "period_start",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal awal cakupan biaya",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "period_end",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal akhir cakupan biaya",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "base_amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nilai dasar saat diterbitkan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "discount_amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Potongan aktual, awal nol",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "discount_reason",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Dasar potongan; wajib jika ada potongan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "discount_approved_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Pemberi persetujuan potongan berwenang",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "total_amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nilai dasar dikurangi potongan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "due_date",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Jatuh tempo spesifik tagihan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "status",
+          "type": "ENUM('issued','cancelled')",
+          "nullable": false,
+          "description": "Status penerbitan, berbeda dari pelunasan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Kunci bisnis unik adalah student_id, branch_id, academic_year_id, fee_type, billing_cycle, dan period_key. Satu komponen tidak ditagih dua kali untuk periode sama.",
+        "Nilai dasar positif, potongan antara nol dan nilai dasar, serta total_amount sama dengan base_amount dikurangi discount_amount. Potongan positif memerlukan alasan serta pemberi persetujuan.",
+        "Tarif sumber harus berasal dari cabang, tahun ajaran, jenjang, program, dan sesi yang sesuai pada saat penerbitan. Penugasan serta identitas historis tagihan tidak boleh mengikuti perubahan profil siswa secara otomatis.",
+        "Kode bulanan menggunakan YYYY-MM; semester menggunakan kode tahun ajaran dan S1 atau S2; tahunan menggunakan tahun ajaran; sekali menggunakan kode kewajiban yang disepakati. Paket semester tidak diterbitkan setiap bulan.",
+        "Status unpaid, partial, paid, dan penanda lewat jatuh tempo dihitung terpisah dari alokasi pembayaran sah. Pembatalan hanya boleh sebelum terdapat pembayaran sah atau pengajuan aktif yang terkait."
+      ]
+    },
+    {
+      "name": "payments",
+      "label": "Penerimaan atau pengajuan pembayaran",
+      "purpose": "Menyimpan satu pembayaran untuk satu siswa, cabang historis, dan kanal. Satu bukti dapat dialokasikan ke beberapa tagihan melalui payment_allocations tanpa menggandakan penerimaan.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "student_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Siswa pemilik seluruh tagihan alokasi",
+          "ref": "students.id",
+          "unique": false
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang pemilik seluruh tagihan alokasi",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "submitted_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Admin yang mencatat atau mengajukan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "bank_account_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Rekening tujuan; wajib untuk transfer, kosong untuk tunai",
+          "ref": "bank_accounts.id",
+          "unique": false
+        },
+        {
+          "name": "resubmission_of_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Pengajuan returned yang diperbaiki; kosong untuk pengajuan awal",
+          "ref": "payments.id",
+          "unique": true
+        },
+        {
+          "name": "submission_no",
+          "type": "VARCHAR(40)",
+          "nullable": false,
+          "description": "Nomor pencatatan atau pengajuan yang unik",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "idempotency_key",
+          "type": "VARCHAR(80)",
+          "nullable": false,
+          "description": "Kunci permintaan agar kiriman ulang tidak membuat transaksi ganda",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "payment_method",
+          "type": "ENUM('cash','bank_transfer')",
+          "nullable": false,
+          "description": "Kanal inti prototipe",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "status",
+          "type": "ENUM('recorded','submitted','verified','returned')",
+          "nullable": false,
+          "description": "recorded hanya tunai; status lain mengikuti pemeriksaan transfer",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "amount_paid",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nominal penerimaan atau pengajuan positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "payment_date",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu penerimaan tunai atau transfer menurut bukti",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "submitted_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan atau pengajuan disimpan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "proof_storage_key",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Kunci berkas privat, wajib untuk transfer",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "proof_sha256",
+          "type": "CHAR(64)",
+          "nullable": true,
+          "description": "Digest berkas untuk penelusuran, bukan bukti keaslian",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "receipt_no",
+          "type": "VARCHAR(40)",
+          "nullable": true,
+          "description": "Kuitansi resmi setelah recorded atau verified",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "confirmed_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu penerimaan sah; kosong sebelum konfirmasi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "notes",
+          "type": "TEXT",
+          "nullable": true,
+          "description": "Catatan transaksi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Seluruh rincian alokasi harus memiliki student_id dan branch_id yang sama dengan induk. Jumlah alokasi sama persis dengan amount_paid.",
+        "Tunai recorded dan transfer verified dihitung sebagai penerimaan sah. Transfer submitted atau returned tidak mengurangi sisa tagihan dan tidak memperoleh kuitansi resmi.",
+        "Bukti serta rincian pengajuan transfer tidak disunting setelah submitted. Perbaikan membuat baris baru yang merujuk pengajuan returned, sedangkan baris lama dan keputusan lamanya dipertahankan.",
+        "Satu pengajuan returned mempunyai paling banyak satu pengajuan lanjutan langsung. Gunakan UNIQUE(resubmission_of_id), cegah siklus rujukan, dan izinkan rantai perbaikan melalui pengajuan berikutnya.",
+        "Perubahan status dilakukan hanya melalui transaksi prosedur yang sah. Koreksi pembayaran yang sudah terkonfirmasi memerlukan prosedur koreksi berwenang tersendiri dan bukan penghapusan transaksi lama."
+      ]
+    },
+    {
+      "name": "payment_allocations",
+      "label": "Alokasi pembayaran ke tagihan",
+      "purpose": "Mencatat pembagian satu pembayaran ke satu atau beberapa tagihan. Rincian ini membuat jumlah kuitansi dan jumlah penerimaan tetap satu meskipun mencakup beberapa periode.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "payment_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Induk penerimaan atau pengajuan",
+          "ref": "payments.id",
+          "unique": false
+        },
+        {
+          "name": "bill_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tagihan tujuan alokasi",
+          "ref": "bills.id",
+          "unique": false
+        },
+        {
+          "name": "amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nominal alokasi yang positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Pasangan payment_id dan bill_id unik. Tagihan berbeda siswa atau cabang ditolak, serta total alokasi wajib sama dengan nominal induk.",
+        "Alokasi hanya menuju tagihan issued dan tidak boleh melampaui sisa tagihan saat konfirmasi. Pembayaran sebagian secara bawaan tidak diaktifkan sebelum validasi mitra, sehingga setiap alokasi harus melunasi sisa tagihan yang dipilih.",
+        "Pengajuan menunggu pemeriksaan tidak dianggap pelunasan dan tidak menjamin saldo masih tersedia. Saat disetujui, seluruh tagihan dikunci berurutan dan sisa dihitung ulang."
+      ]
+    },
+    {
+      "name": "payment_reviews",
+      "label": "Keputusan pemeriksaan transfer",
+      "purpose": "Menyimpan keputusan pemeriksa atas satu pengajuan transfer. Keputusan lama tidak diganti ketika Admin membuat pengajuan perbaikan baru.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "payment_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Pengajuan yang diputuskan",
+          "ref": "payments.id",
+          "unique": true
+        },
+        {
+          "name": "reviewer_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Super Admin dengan kewenangan yang telah ditetapkan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "decision",
+          "type": "ENUM('verified','returned')",
+          "nullable": false,
+          "description": "Keputusan akhir untuk pengajuan tersebut",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "reason",
+          "type": "TEXT",
+          "nullable": true,
+          "description": "Wajib untuk returned; catatan pemeriksaan untuk verified",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "reviewed_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu keputusan disimpan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Hanya transfer submitted dapat diputuskan. Setiap pengajuan mempunyai paling banyak satu keputusan akhir, sedangkan tindak lanjut perbaikan menjadi pengajuan baru.",
+        "Keputusan verified mensyaratkan bank_matches yang sah dan dibuat atomik bersama pembaruan status, alokasi, serta nomor kuitansi. Pengembalian tidak membuat pencocokan bank."
+      ]
+    },
+    {
+      "name": "cash_batches",
+      "label": "Penyerahan dan setoran kas",
+      "purpose": "Mengelompokkan penerimaan tunai cabang untuk penyerahan kepada pusat dan penyetoran ke rekening. Penyerahan kepada pusat dibedakan dari masuknya uang ke bank.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Cabang asal seluruh pembayaran tunai",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "created_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Penyusun kelompok penerimaan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "submitted_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Penyerah yang mengajukan, kosong sebelum diserahkan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "received_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Penerima pusat, kosong sebelum penerimaan dikonfirmasi",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "deposited_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Petugas pencatat setoran bank, kosong sebelum disetor",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "bank_account_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Rekening tujuan setoran, wajib ketika deposited",
+          "ref": "bank_accounts.id",
+          "unique": false
+        },
+        {
+          "name": "batch_no",
+          "type": "VARCHAR(40)",
+          "nullable": false,
+          "description": "Nomor kelompok kas yang unik",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "status",
+          "type": "ENUM('draft','submitted','received','deposited')",
+          "nullable": false,
+          "description": "Tahap penguasaan kas",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "submitted_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu penyerahan diajukan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "received_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu penerimaan pusat dikonfirmasi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "deposited_at",
+          "type": "DATETIME(6)",
+          "nullable": true,
+          "description": "Waktu kas disetor ke bank",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "handover_proof_key",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Bukti penyerahan privat jika digunakan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "deposit_proof_key",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Bukti setoran bank privat",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "notes",
+          "type": "TEXT",
+          "nullable": true,
+          "description": "Catatan penyerahan atau selisih yang perlu ditindaklanjuti",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Jumlah kelompok berasal dari penjumlahan cash_batch_items, bukan nilai target tagihan. Anggota hanya pembayaran tunai recorded dari cabang yang sama.",
+        "Daftar anggota dapat diperbaiki pada draft; setelah submitted, daftar dikunci. Kolom petugas dan waktu tiap tahap wajib terisi berpasangan sesuai statusnya.",
+        "Prototipe mengasumsikan satu kelompok disetor penuh dalam satu transaksi bank. Pemecahan atau penggabungan setoran lintas kelompok memerlukan perubahan kebutuhan dan alokasi yang belum diaktifkan.",
+        "Penerimaan pusat dan pencocokan setoran tidak menghasilkan pendapatan siswa baru. Kelompok received yang belum deposited menunjukkan kas di pusat, bukan selisih bank otomatis."
+      ]
+    },
+    {
+      "name": "cash_batch_items",
+      "label": "Rincian asal kas",
+      "purpose": "Menghubungkan kelompok kas dengan pembayaran tunai sumbernya. Hubungan ini memungkinkan pusat menelusuri nominal setoran sampai ke kuitansi siswa.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "cash_batch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kelompok penyerahan kas",
+          "ref": "cash_batches.id",
+          "unique": false
+        },
+        {
+          "name": "payment_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Pembayaran tunai sumber",
+          "ref": "payments.id",
+          "unique": true
+        },
+        {
+          "name": "amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Seluruh nominal pembayaran tunai sumber",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Satu pembayaran tunai hanya menjadi anggota satu kelompok kas. Nominal anggota harus sama dengan nominal pembayaran, tanpa pembagian setoran pada lingkup inti.",
+        "Penghapusan anggota hanya diperbolehkan pada draft dan dicatat dalam jejak aktivitas. Anggota kelompok submitted atau sesudahnya tidak dihapus diam-diam."
+      ]
+    },
+    {
+      "name": "bank_accounts",
+      "label": "Rekening resmi",
+      "purpose": "Menyimpan rekening resmi yang boleh menjadi tujuan pembayaran dan setoran. Data rekening dikelola Super Admin tanpa menyimpan kata sandi atau kredensial layanan bank.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "bank_name",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama bank",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "account_number",
+          "type": "VARCHAR(40)",
+          "nullable": false,
+          "description": "Nomor rekening",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "account_holder",
+          "type": "VARCHAR(100)",
+          "nullable": false,
+          "description": "Nama pemilik rekening",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "is_active",
+          "type": "BOOLEAN",
+          "nullable": false,
+          "description": "Boleh digunakan untuk pengajuan baru",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Rekening yang sudah dirujuk tidak dihapus dari sejarah. Kewenangan siapa yang boleh memeriksa mutasi rekening dikonfirmasi sebelum evaluasi mitra."
+      ]
+    },
+    {
+      "name": "bank_entries",
+      "label": "Rujukan dana masuk bank",
+      "purpose": "Mencatat satu dana masuk dari mutasi yang diperiksa manual oleh petugas berwenang. Tabel ini tidak menyatakan adanya koneksi otomatis dengan bank atau penyimpanan seluruh rekening koran.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "bank_account_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Rekening tempat dana diterima",
+          "ref": "bank_accounts.id",
+          "unique": false
+        },
+        {
+          "name": "recorded_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Petugas berwenang yang menyalin rujukan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "entry_reference",
+          "type": "VARCHAR(120)",
+          "nullable": false,
+          "description": "Referensi unik dalam rekening atau kode sumber yang dapat ditelusuri",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "entry_date",
+          "type": "DATE",
+          "nullable": false,
+          "description": "Tanggal dana masuk menurut mutasi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nominal dana masuk positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "description",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Uraian terbatas dari sumber yang diizinkan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "evidence_storage_key",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Potongan bukti privat bila diizinkan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "status",
+          "type": "ENUM('active','void')",
+          "nullable": false,
+          "description": "Keabsahan rujukan untuk pencocokan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "void_reason",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Alasan pembatalan rujukan salah",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "updated_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu perubahan terakhir, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Pasangan bank_account_id dan entry_reference unik. Jika mutasi tidak menyediakan nomor unik, petugas memakai kode sumber yang dapat ditemukan ulang pada dokumen dan memeriksa duplikasi tanggal serta nominal.",
+        "Rujukan active yang sudah dicocokkan tidak disunting atau dibatalkan melalui alur biasa. Koreksi rujukan yang belum dipakai wajib mencatat alasan dan jejak pelaku."
+      ]
+    },
+    {
+      "name": "bank_matches",
+      "label": "Pencocokan penuh sumber dengan dana masuk",
+      "purpose": "Menghubungkan satu rujukan dana masuk dengan satu sumber penerimaan. Sumber tersebut hanya boleh transfer siswa atau setoran satu kelompok kas, bukan keduanya.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "bank_entry_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Dana masuk bank yang dipakai sekali",
+          "ref": "bank_entries.id",
+          "unique": true
+        },
+        {
+          "name": "payment_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Transfer siswa sumber, kosong bila sumber kelompok kas",
+          "ref": "payments.id",
+          "unique": true
+        },
+        {
+          "name": "cash_batch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Kelompok kas sumber, kosong bila sumber transfer",
+          "ref": "cash_batches.id",
+          "unique": true
+        },
+        {
+          "name": "matched_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Pemeriksa pusat yang berwenang",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "matched_amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Nominal cocok penuh yang positif",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "matched_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencocokan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "notes",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "description": "Penjelasan pemeriksaan jika diperlukan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tepat satu dari payment_id dan cash_batch_id wajib terisi. Satu sumber dan satu bank_entry_id hanya dipakai satu kali pada lingkup pencocokan penuh.",
+        "matched_amount sama dengan nominal bank_entries dan seluruh nominal sumber, serta rekening tujuan keduanya sama. Sumber payment harus transfer; sumber kelompok kas harus deposited.",
+        "Pencocokan transfer dibuat dalam transaksi yang sama dengan keputusan verified dan penerbitan kuitansi. Setoran kas yang cocok hanya mengubah informasi penguasaan dana, bukan pendapatan.",
+        "Pencocokan sebagian, satu mutasi untuk beberapa sumber, biaya bank, pengembalian dana, dan pembalikan pencocokan belum menjadi alur inti. Kasus demikian ditandai untuk tindak lanjut tanpa memaksa status cocok."
+      ]
+    },
+    {
+      "name": "reminder_actions",
+      "label": "Tindakan membuka tautan pengingat",
+      "purpose": "Menyimpan konteks ketika Admin meminta tautan WhatsApp untuk tagihan lewat jatuh tempo. Data ini hanya membuktikan tindakan pada aplikasi, bukan pesan terkirim, diterima, atau dibaca.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "bill_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Tagihan sumber pesan",
+          "ref": "bills.id",
+          "unique": false
+        },
+        {
+          "name": "requested_by_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Admin yang meminta tautan",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "recipient_phone",
+          "type": "VARCHAR(20)",
+          "nullable": false,
+          "description": "Salinan nomor wali saat tindakan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "message_content",
+          "type": "TEXT",
+          "nullable": false,
+          "description": "Pratinjau pesan yang disiapkan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "outstanding_amount",
+          "type": "DECIMAL(14,2)",
+          "nullable": false,
+          "description": "Sisa tagihan pada waktu tindakan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "template_version",
+          "type": "VARCHAR(30)",
+          "nullable": false,
+          "description": "Versi templat aplikasi yang dipakai",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "requested_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu permintaan tautan dicatat",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Tagihan harus issued, lewat jatuh tempo, dan masih mempunyai sisa saat tautan dibentuk. Nomor serta isi pesan diperiksa ulang sebelum admin mengirim melalui WhatsApp.",
+        "Tidak ada sent_status, sent_at, atau penjadwal pengiriman otomatis. Templat dasar berada pada berkas aplikasi dan tidak dijanjikan dapat diedit Super Admin melalui dasbor."
+      ]
+    },
+    {
+      "name": "activity_logs",
+      "label": "Jejak tindakan penting",
+      "purpose": "Mencatat pelaku dan perubahan penting untuk penelusuran operasional. Catatan ini membantu pemeriksaan riwayat tanpa mengklaim sebagai bukti keaslian hukum atau sistem audit yang lengkap.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Kunci utama, AUTO_INCREMENT",
+          "ref": null,
+          "unique": true
+        },
+        {
+          "name": "actor_user_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Pelaku terautentikasi",
+          "ref": "users.id",
+          "unique": false
+        },
+        {
+          "name": "branch_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": true,
+          "description": "Konteks cabang bila relevan",
+          "ref": "branches.id",
+          "unique": false
+        },
+        {
+          "name": "action",
+          "type": "VARCHAR(80)",
+          "nullable": false,
+          "description": "Jenis tindakan yang terdaftar",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "entity_type",
+          "type": "VARCHAR(80)",
+          "nullable": false,
+          "description": "Jenis objek dari daftar aplikasi yang dibatasi",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "entity_id",
+          "type": "BIGINT UNSIGNED",
+          "nullable": false,
+          "description": "Identitas objek; rujukan logis polimorfik, bukan FK fisik",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "change_summary",
+          "type": "JSON",
+          "nullable": false,
+          "description": "Ringkasan perubahan yang tidak memuat kata sandi atau bukti penuh",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "request_id",
+          "type": "VARCHAR(80)",
+          "nullable": false,
+          "description": "Penanda permintaan untuk penelusuran",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "occurred_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu tindakan",
+          "ref": null,
+          "unique": false
+        },
+        {
+          "name": "created_at",
+          "type": "DATETIME(6)",
+          "nullable": false,
+          "description": "Waktu pencatatan, disimpan dalam UTC",
+          "ref": null,
+          "unique": false
+        }
+      ],
+      "rules": [
+        "Jejak aktivitas bersifat tambah saja melalui aplikasi. Pelaku tidak dapat mengubah log melalui fungsi administrasi biasa.",
+        "Entity_type dan entity_id tidak digambarkan sebagai FK ke semua tabel. Ketergantungan objek divalidasi oleh aplikasi, sedangkan data rahasia dan kredensial tidak disalin ke log."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,856 @@
+﻿[
+    {
+        "Text":  "3. Post Mortem",
+        "X":  227,
+        "Y":  270,
+        "W":  120,
+        "H":  14
+    },
+    {
+        "Text":  "Exit",
+        "X":  142,
+        "Y":  293,
+        "W":  33,
+        "H":  13
+    },
+    {
+        "Text":  "1. Create a new task \"fix the Production baseline\" as riori",
+        "X":  466,
+        "Y":  226,
+        "W":  437,
+        "H":  14
+    },
+    {
+        "Text":  "MI. Co leteaece tance testin for code in Production baseline.",
+        "X":  391,
+        "Y":  269,
+        "W":  479,
+        "H":  14
+    },
+    {
+        "Text":  "Xl. Tested ro m",
+        "X":  391,
+        "Y":  292,
+        "W":  146,
+        "H":  14
+    },
+    {
+        "Text":  "The code is developed in iterations and is released as versions.",
+        "X":  110,
+        "Y":  334,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "Each iteration starts with iteration planning and updating the",
+        "X":  110,
+        "Y":  355,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "designs. The developer maintains three baselines, namely",
+        "X":  110,
+        "Y":  377,
+        "W":  487,
+        "H":  17
+    },
+    {
+        "Text":  "development, refactor, and production baselines. After initial code",
+        "X":  110,
+        "Y":  398,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "development, the code is maintained by versions in the",
+        "X":  110,
+        "Y":  418,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "development baseline. Upon completion of the iteration, the code",
+        "X":  110,
+        "Y":  440,
+        "W":  487,
+        "H":  17
+    },
+    {
+        "Text":  "is integration tested and is moved to refactor baseline to be",
+        "X":  110,
+        "Y":  460,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "refactored. After refactoring is completed and acceptance tests are",
+        "X":  110,
+        "Y":  481,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "done, the code is moved to the production baseline for release.",
+        "X":  110,
+        "Y":  502,
+        "W":  455,
+        "H":  18
+    },
+    {
+        "Text":  "3. Twelve Core Practices Compared",
+        "X":  644,
+        "Y":  349,
+        "W":  386,
+        "H":  23
+    },
+    {
+        "Text":  "Table 2 shows the one to one mapping between XP [l] and PXP",
+        "X":  645,
+        "Y":  375,
+        "W":  486,
+        "H":  17
+    },
+    {
+        "Text":  "in terms of the twelve core practices followed by XP followers.",
+        "X":  645,
+        "Y":  396,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "Most of the core practices of XP are applicable to a single person",
+        "X":  645,
+        "Y":  416,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "team, while the others can be put into practice with a few",
+        "X":  645,
+        "Y":  438,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "modifications.",
+        "X":  645,
+        "Y":  458,
+        "W":  104,
+        "H":  14
+    },
+    {
+        "Text":  "Table 2: Twelve Core Practices Compared",
+        "X":  455,
+        "Y":  548,
+        "W":  331,
+        "H":  17
+    },
+    {
+        "Text":  "Twelve Core",
+        "X":  143,
+        "Y":  583,
+        "W":  99,
+        "H":  13
+    },
+    {
+        "Text":  "Practices",
+        "X":  157,
+        "Y":  604,
+        "W":  70,
+        "H":  13
+    },
+    {
+        "Text":  "The Planning",
+        "X":  129,
+        "Y":  625,
+        "W":  105,
+        "H":  17
+    },
+    {
+        "Text":  "Game",
+        "X":  129,
+        "Y":  647,
+        "W":  47,
+        "H":  13
+    },
+    {
+        "Text":  "Small Releases",
+        "X":  129,
+        "Y":  773,
+        "W":  115,
+        "H":  13
+    },
+    {
+        "Text":  "Metaphor",
+        "X":  129,
+        "Y":  837,
+        "W":  78,
+        "H":  17
+    },
+    {
+        "Text":  "Simple Design",
+        "X":  129,
+        "Y":  901,
+        "W":  111,
+        "H":  17
+    },
+    {
+        "Text":  "Testing",
+        "X":  129,
+        "Y":  1007,
+        "W":  58,
+        "H":  18
+    },
+    {
+        "Text":  "Refactoring",
+        "X":  129,
+        "Y":  1134,
+        "W":  93,
+        "H":  17
+    },
+    {
+        "Text":  "Pair",
+        "X":  129,
+        "Y":  1239,
+        "W":  34,
+        "H":  14
+    },
+    {
+        "Text":  "Programming",
+        "X":  129,
+        "Y":  1261,
+        "W":  110,
+        "H":  17
+    },
+    {
+        "Text":  "Collective Code",
+        "X":  129,
+        "Y":  1367,
+        "W":  122,
+        "H":  13
+    },
+    {
+        "Text":  "Ownership",
+        "X":  129,
+        "Y":  1388,
+        "W":  86,
+        "H":  17
+    },
+    {
+        "Text":  "Continuous",
+        "X":  129,
+        "Y":  1493,
+        "W":  90,
+        "H":  14
+    },
+    {
+        "Text":  "Int ation",
+        "X":  129,
+        "Y":  1514,
+        "W":  88,
+        "H":  14
+    },
+    {
+        "Text":  "Extreme Programming (XP)",
+        "X":  351,
+        "Y":  583,
+        "W":  221,
+        "H":  16
+    },
+    {
+        "Text":  "The main activity in the planning game is the",
+        "X":  277,
+        "Y":  625,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "writing-estimation-prioritization back and forth",
+        "X":  277,
+        "Y":  646,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "negotiation of stories between programmers and",
+        "X":  277,
+        "Y":  666,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "customers. The customer and development teams",
+        "X":  277,
+        "Y":  688,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "get together to decide on what features of the",
+        "X":  277,
+        "Y":  708,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "required system will be of maximum value to the",
+        "X":  277,
+        "Y":  729,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "business.",
+        "X":  277,
+        "Y":  750,
+        "W":  65,
+        "H":  14
+    },
+    {
+        "Text":  "A simple system containing a useful set of",
+        "X":  277,
+        "Y":  772,
+        "W":  371,
+        "H":  18
+    },
+    {
+        "Text":  "features is put into production early and updated",
+        "X":  277,
+        "Y":  794,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "fre",
+        "X":  277,
+        "Y":  814,
+        "W":  20,
+        "H":  14
+    },
+    {
+        "Text":  "tl in short cles.",
+        "X":  333,
+        "Y":  814,
+        "W":  132,
+        "H":  14
+    },
+    {
+        "Text":  "Each project has a \"system of names\" and",
+        "X":  277,
+        "Y":  836,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "description which helps to guide the development",
+        "X":  277,
+        "Y":  857,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "rocess and communication between all arties.",
+        "X":  286,
+        "Y":  878,
+        "W":  340,
+        "H":  14
+    },
+    {
+        "Text":  "The simplest design is always used to build the",
+        "X":  277,
+        "Y":  901,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "application as long as it meets the current business",
+        "X":  277,
+        "Y":  921,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "requirements. Do not worry about future",
+        "X":  277,
+        "Y":  942,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "requirements as requirements change with time",
+        "X":  277,
+        "Y":  963,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "an a .",
+        "X":  277,
+        "Y":  988,
+        "W":  60,
+        "H":  10
+    },
+    {
+        "Text":  "Test-driven development is one of XP\u0027s main",
+        "X":  277,
+        "Y":  1006,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "strengths. Software developed with XP is",
+        "X":  277,
+        "Y":  1027,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "validated at all times. Before new features are",
+        "X":  277,
+        "Y":  1048,
+        "W":  369,
+        "H":  14
+    },
+    {
+        "Text":  "added tests are written to verify the software. The",
+        "X":  277,
+        "Y":  1069,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "software is then developed to pass these tests.",
+        "X":  277,
+        "Y":  1090,
+        "W":  333,
+        "H":  18
+    },
+    {
+        "Text":  "This is a technique for improving the design of an",
+        "X":  277,
+        "Y":  1133,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "existing codebase. Its essence is applying a series",
+        "X":  277,
+        "Y":  1154,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "of small behavior-preserving transformations that",
+        "X":  277,
+        "Y":  1175,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "improve the structure of the code. Doing them in",
+        "X":  277,
+        "Y":  1196,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "small ste s reduces the risk of introduci errors.",
+        "X":  277,
+        "Y":  1217,
+        "W":  359,
+        "H":  14
+    },
+    {
+        "Text":  "Programmers using XP are paired and write all",
+        "X":  277,
+        "Y":  1239,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "production code using a single machine per pair.",
+        "X":  277,
+        "Y":  1260,
+        "W":  368,
+        "H":  18
+    },
+    {
+        "Text":  "This helps the code to be constantly reviewed",
+        "X":  277,
+        "Y":  1281,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "while being written. Pair Programming has",
+        "X":  277,
+        "Y":  1302,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "proved to produce high quality code with little or",
+        "X":  277,
+        "Y":  1323,
+        "W":  370,
+        "H":  18
+    },
+    {
+        "Text":  "no decrease in productivity.",
+        "X":  277,
+        "Y":  1344,
+        "W":  202,
+        "H":  17
+    },
+    {
+        "Text":  "All the code belongs to every member Of the",
+        "X":  277,
+        "Y":  1366,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "team, no single member of the team owns a piece",
+        "X":  277,
+        "Y":  1387,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "of code and anyone can make changes to the",
+        "X":  277,
+        "Y":  1408,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "codebase at any time. This encourages everyone",
+        "X":  277,
+        "Y":  1429,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "to contribute new ideas to all segments of the",
+        "X":  277,
+        "Y":  1449,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "ro•ect.",
+        "X":  286,
+        "Y":  1471,
+        "W":  45,
+        "H":  14
+    },
+    {
+        "Text":  "The aim of continuous integration is to prevent or",
+        "X":  277,
+        "Y":  1492,
+        "W":  370,
+        "H":  18
+    },
+    {
+        "Text":  "reduce code from s readin from the main",
+        "X":  277,
+        "Y":  1514,
+        "W":  369,
+        "H":  14
+    },
+    {
+        "Text":  "84",
+        "X":  612,
+        "Y":  1608,
+        "W":  17,
+        "H":  12
+    },
+    {
+        "Text":  "Personal Extreme Programming (PXP)",
+        "X":  738,
+        "Y":  583,
+        "W":  305,
+        "H":  16
+    },
+    {
+        "Text":  "If the developer is working for himself or knows enough to",
+        "X":  668,
+        "Y":  624,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "stand in for the customer, then one only needs to switch",
+        "X":  668,
+        "Y":  646,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "roles (role-playing) during planning. It is a good practice to",
+        "X":  668,
+        "Y":  666,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "write stories on cards, estimate, prioritize, and track when",
+        "X":  668,
+        "Y":  688,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "developing alone. Writing and using stories is a good way to",
+        "X":  668,
+        "Y":  708,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "break down a big project into smaller chunks that are easier",
+        "X":  668,
+        "Y":  729,
+        "W":  445,
+        "H":  18
+    },
+    {
+        "Text":  "to deal with and mana e.",
+        "X":  668,
+        "Y":  750,
+        "W":  182,
+        "H":  14
+    },
+    {
+        "Text":  "Early and often releases can be applied as easily with a lone",
+        "X":  668,
+        "Y":  772,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "programmer as with a team of developers.",
+        "X":  668,
+        "Y":  794,
+        "W":  307,
+        "H":  17
+    },
+    {
+        "Text":  "A single person team can use and refine whatever metaphor",
+        "X":  668,
+        "Y":  836,
+        "W":  445,
+        "H":  18
+    },
+    {
+        "Text":  "proves best. Always choose a metaphor that helps you",
+        "X":  668,
+        "Y":  857,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "understand the",
+        "X":  668,
+        "Y":  878,
+        "W":  107,
+        "H":  14
+    },
+    {
+        "Text":  "of thes stem ouareta about.",
+        "X":  819,
+        "Y":  878,
+        "W":  261,
+        "H":  14
+    },
+    {
+        "Text":  "As a lone developer it is easy to maintain a simple design. A",
+        "X":  668,
+        "Y":  901,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "solution would be to use the high level design as a goal to",
+        "X":  668,
+        "Y":  921,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "work towards but develop an alternate design that is simpler",
+        "X":  668,
+        "Y":  942,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "and better but still delivers all the functionality.",
+        "X":  668,
+        "Y":  963,
+        "W":  346,
+        "H":  18
+    },
+    {
+        "Text":  "When writing a new module, programmers should write the",
+        "X":  668,
+        "Y":  1006,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "interface first, then the unit test, and only then go on to",
+        "X":  669,
+        "Y":  1027,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "implement the module. In a single person team test suits can",
+        "X":  669,
+        "Y":  1048,
+        "W":  443,
+        "H":  17
+    },
+    {
+        "Text":  "be easily written and used. The developer should test and",
+        "X":  668,
+        "Y":  1069,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "compile his code before putting it into refactor baseline.",
+        "X":  668,
+        "Y":  1090,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "Until that int the code sta in the develo ment baseline.",
+        "X":  668,
+        "Y":  1111,
+        "W":  431,
+        "H":  14
+    },
+    {
+        "Text":  "As a lone programmer one can and should practice",
+        "X":  668,
+        "Y":  1133,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "refactoring to the hilt except in situations where you don\u0027t",
+        "X":  668,
+        "Y":  1154,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "have permission to change code you don\u0027t own. The",
+        "X":  668,
+        "Y":  1175,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "refactored code should be integrated with the production",
+        "X":  668,
+        "Y":  1196,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "baseline and tested.",
+        "X":  668,
+        "Y":  1217,
+        "W":  141,
+        "H":  14
+    },
+    {
+        "Text":  "When working as a lone programmer, benefits of pair",
+        "X":  669,
+        "Y":  1239,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "programming are lost. You could ask a colleague to give",
+        "X":  668,
+        "Y":  1260,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "you reminders often.",
+        "X":  668,
+        "Y":  1281,
+        "W":  151,
+        "H":  18
+    },
+    {
+        "Text":  "Informal walkthroughs and test first philosophy can be",
+        "X":  668,
+        "Y":  1301,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "applied.",
+        "X":  668,
+        "Y":  1323,
+        "W":  57,
+        "H":  18
+    },
+    {
+        "Text":  "If you are the only developer in the project then there is no",
+        "X":  668,
+        "Y":  1366,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "problem as you own all the source code. However, you will",
+        "X":  668,
+        "Y":  1387,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "not be benefiting from other programmers\u0027 input. The",
+        "X":  668,
+        "Y":  1408,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "developer can maintain versions Of code in a repository and",
+        "X":  668,
+        "Y":  1429,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "version-control techniques can be applied.",
+        "X":  668,
+        "Y":  1450,
+        "W":  308,
+        "H":  17
+    },
+    {
+        "Text":  "If the developer is working alone with no other person",
+        "X":  668,
+        "Y":  1492,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "makin chan es to the main codebase then there is no",
+        "X":  668,
+        "Y":  1514,
+        "W":  444,
+        "H":  14
+    }
+]

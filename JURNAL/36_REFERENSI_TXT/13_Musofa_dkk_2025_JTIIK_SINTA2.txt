@@ -1,0 +1,1747 @@
+--- HALAMAN 1 ---
+Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) 
+p-ISSN: 2355-7699 
+Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+e-ISSN: 2528-6579 
+985 
+IMPLEMENTASI METODE PERSONAL EXTREME PROGRAMMING (PXP)  
+PADA PENGEMBANGAN APLIKASI BUKU TAMU 
+(Studi Kasus : Dinas Komunikasi Dan Informatika Kabupaten Lombok Tengah) 
+ 
+Aolia Musofa*1, Sofiansyah Fadli2, Wafiah Murniati3, Hairul Fahmi4 
+ 
+1,2,3,4Program Studi Teknik informatika STMIK LOMBOK, Kabupaten Lombok Tengah 
+Email: 1Aoliamusofa4@gmail.com, 2Sofiansyah182@gmail.com, 3Wafiah.mr@gmail.com, 
+4Iroel.ami@gmail.com 
+*Penulis Korespondensi 
+ 
+(Naskah masuk: 6 Februari 2025, diterima untuk diterbitkan: 29 Oktober 2025) 
+ 
+Abstrak  
+ 
+Aplikasi Buku Tamu Digital yang dikembangkan di Dinas Komunikasi dan Informatika Kabupaten Lombok 
+Tengah bertujuan untuk mempermudah proses pendaftaran tamu dan pengelolaan data kunjungan. Proses 
+pengembangan dilakukan dengan pendekatan Personal Extreme Programming (PXP) yang meliputi tahapan 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, dan Retrospective. Hasil 
+pengembangan aplikasi ini menunjukkan bahwa aplikasi memiliki fitur unggulan seperti manajemen data pegawai, 
+kegiatan dinas, serta dashboard statistik kunjungan yang dapat disesuaikan. Pengujian sistem menggunakan 
+metode Black Box Testing menunjukkan bahwa seluruh fitur berfungsi dengan baik dengan tingkat keberhasilan 
+mencapai 100%. Analisis komparatif dengan aplikasi Guest Management System (GMS) komersial, seperti Envoy 
+dan SwipedOn, menunjukkan bahwa meskipun aplikasi GMS komersial lebih unggul dalam hal skalabilitas 
+berbasis cloud, keamanan data yang lebih tinggi, dan dukungan teknis profesional, aplikasi Buku Tamu Digital 
+menawarkan keunggulan dalam hal kustomisasi sesuai kebutuhan lokal, seperti dukungan bahasa daerah (misalnya 
+Bahasa Sasak), integrasi dengan sistem administrasi pemerintahan, dan model distribusi yang lebih efisien biaya. 
+Hasil pengujian kuantitatif menunjukkan performa yang responsif, dengan waktu respons pemindaian QR 
+mencapai 312 ms dan tingkat akurasi verifikasi identitas tamu sebesar 98.7%. Aplikasi ini diharapkan dapat 
+memberikan solusi yang efektif dan efisien untuk pengelolaan kunjungan di instansi pemerintah. 
+ 
+Kata kunci: Aplikasi buku tamu, QR code, Personal Extreme Programming (PXP), Black Box Testing. Pengujian 
+Kuantitatif 
+ 
+IMPLEMENTATION OF PERSONAL EXTREME PROGRAMMING (PXP) 
+METHOD IN GUEST BOOK APPLICATION DEVELOPMENT 
+(Case study: Dinas Komunikasi Dan Informatika Kabupaten Lombok Tengah) 
+ 
+Abstract  
+The Digital Guest Book application developed at the Central Lombok Regency Communication and 
+Informatics Office aims to simplify the guest registration process and management of visit data. The development 
+process was carried out using the Personal Extreme Programming (PXP) approach which includes the stages of 
+Requirement, Planning, Iteration Initialization, Design, Implementation, System Testing, and Retrospective. The 
+results of the development of this application show that the application has superior features such as employee 
+data management, service activities, and a customizable visit statistics dashboard. System testing using the Black 
+Box Testing method shows that all features function well with a success rate of 100%. Comparative analysis with 
+commercial Guest Management System (GMS) applications, such as Envoy and SwipedOn, shows that although 
+commercial GMS applications are superior in terms of cloud-based scalability, higher data security, and 
+professional technical support, the Digital Guest Book application offers advantages in terms of customization 
+according to local needs, such as support for regional languages (eg Sasak), integration with government 
+administration systems, and a more cost-efficient distribution model. Quantitative testing results show responsive 
+performance, with a QR scan response time of 312 ms and a guest identity verification accuracy rate of 98.7%. 
+This application is expected to provide an effective and efficient solution for managing visits in government 
+agencies. 
+ 
+Keywords: Guest book application,  QR code,  Personal Extreme Programming (PXP),  Black Box Testing. 
+Quantitative Testing 
+ 
+
+
+--- HALAMAN 2 ---
+986   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+1. 
+PENDAHULUAN  
+Perkembangan teknologi informasi yang pesat 
+telah membawa perubahan besar di berbagai sektor, 
+termasuk 
+sektor 
+pemerintahan. 
+Pemanfaatan 
+teknologi memungkinkan pengelolaan data yang 
+lebih 
+baik, 
+mulai 
+dari 
+proses 
+pengumpulan, 
+pengambilan, penyusunan, hingga penyimpanan dan 
+analisis data. Dengan pemanfaatan teknologi, 
+informasi yang dihasilkan dapat lebih berkualitas, 
+sehingga mendukung pengambilan keputusan yang 
+tepat 
+dan 
+bermanfaat 
+bagi 
+kinerja 
+lembaga 
+pemerintahan. (Nugraha et al, 2020) 
+Salah 
+satu 
+contoh 
+penerapan 
+teknologi 
+informasi di sektor pemerintahan adalah sistem buku 
+tamu. Buku tamu merupakan alat penting untuk 
+mencatat data dan keperluan pengunjung, sehingga 
+tujuan utamanya adalah memperoleh data yang akurat 
+dari setiap pengunjung (Usman et al, 2022). Namun, 
+banyak 
+instansi 
+pemerintah, 
+termasuk 
+Dinas 
+Komunikasi dan Informatika (Diskominfo), masih 
+mengelola buku tamu secara manual. Meskipun 
+Diskominfo telah menggunakan sistem komputer 
+terintegrasi untuk operasional lainnya, pengelolaan 
+daftar tamu tetap dilakukan dengan mencatat identitas 
+pengunjung dalam buku fisik. (Buyung et al, 2024). 
+Proses pencatatan manual ini menimbulkan 
+berbagai kendala, seperti kesulitan dalam mencari 
+data pengunjung, yang sering kali menyebabkan 
+kebingungan dan membuang waktu (Maharani et al, 
+2023). Selain itu, risiko kesalahan penulisan dan 
+kehilangan data (Prayoga et al, 2024), sehingga 
+menghambat kinerja petugas dan menurunkan 
+efektivitas operasional di Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah.  
+Oleh karena itu pengembangan aplikasi buku 
+tamu berbasis QR code diusulkan. Dengan aplikasi 
+ini, proses registrasi tamu dapat dilakukan secara 
+otomatis hanya dengan memindai QR code. Data 
+pengunjung akan langsung tersimpan dalam sistem 
+digital yang aman. Selain mempermudah pencatatan 
+data tamu, aplikasi ini juga dilengkapi dengan fitur-
+fitur tambahan seperti pencetakan data tamu yang 
+terverifikasi, 
+Dashboard 
+statistik 
+kunjungan, 
+manajemen jadwal pegawai, serta informasi daftar 
+tamu yang telah diterima melakukan kunjungan di 
+Dinas Komunikasi Informatika Kabupaten Lombok 
+Tengah. 
+Dengan 
+adanya 
+aplikasi 
+ini 
+dapat 
+meningkatkan efektivitas dalam pencatatan serta 
+pengelolaan data tamu yang sebelumnya masih 
+dilakukan secara manual (Nurudin et al, 2023). 
+Aplikasi ini dapat memberikan manfaat seperti 
+kemudahan 
+dalam 
+pengelolaan 
+data 
+tamu, 
+mendukung transformasi digital, mempercepat proses 
+penyusunan laporan, serta mengurangi beban kerja 
+manual sehingga administrasi berjalan lebih optimal. 
+Selain 
+itu, 
+aplikasi 
+ini 
+dirancang 
+untuk 
+mempermudah 
+registrasi 
+melalui 
+QR 
+code, 
+menyediakan informasi jadwal pegawai secara 
+transparan, 
+dan 
+memastikan 
+kunjungan 
+dapat 
+dilakukan secara terencana dengan akses informasi 
+daftar tamu yang telah terverifikasi. Dengan 
+demikian, 
+aplikasi 
+ini 
+mampu 
+mendukung 
+peningkatan kualitas pelayanan publik 
+secara 
+keseluruhan.(Chotijah et al, 2021; Marlina, 2023; 
+Kalsum et al, 2024; Sukrianto et al, 2024). Dengan 
+penerapan sistem ini, diharapkan meningkatkan 
+kualitas pelayanan (Erfan et al, 2023; Melati et al, 
+2023; Aviyah et al, 2024; dzalparo et al, 2024) di 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah . 
+Salah satu metode pengembangan perangkat 
+lunak yang telah terbukti berhasil dalam menangani 
+pengembangan perangkat lunak adalah Personal 
+Extreme Programming (PXP). Metode PXP cocok 
+untuk pengembangan sistem yang dilakukan secara 
+individu dalam waktu yang singkat. (Fikri et al, 
+2021). Selain itu, metode PXP juga mendukung 
+adanya perubahan sewaktu-waktu terhadap sistem 
+yang dikembangkan. (Melinda et al, 2023) 
+Berdasarkan permasalahan yang ada maka 
+penelitian saat ini akan mengembangkan aplikasi 
+buku tamu di Dinas Komunikasi dan Informatika 
+Kabupaten 
+Lombok 
+Tengah 
+dengan 
+mengimplementasi  Personal Extreme Programming 
+(PXP). Penggunaan metode ini dapat mempercepat 
+proses 
+pengembangan 
+perangkat 
+lunak 
+dan 
+memperkecil biaya berdasarkan dari nilai dan 
+pratices Personal Extreme Programming. 
+ 
+2. 
+METODE PENELITIAN 
+ 
+ 
+Agar penelitian yang dilakukan dan dapat 
+terukur maka metode pengembangan sistem dapat 
+mengakomodasi penliti dalam melakukan penelitian 
+bertahap. Penelitian ini menggunakan metode 
+Personal Extreme Programming (PXP), yang 
+merupakan salah satu metode yang tergolong 
+kedalam Agile Methodology yang menggunakan 
+permodelan Unified Modeling Language (UML) atau 
+disebut juga permodelan visual. Menurut (Prtama, 
+2023) Personal Extrame Programming didasarkan 
+pada prinsip – prinsip berikut: 
+a. 
+Keterlibatan Pengguna Secara Langsung 
+(Customer Involvement) 
+Salah satu prinsip utama dari PXP adalah 
+keterlibatan pengguna yang intens dalam setiap tahap 
+pengembangan. Dalam konteks aplikasi buku tamu 
+digital, pengguna yang dimaksud adalah pihak Dinas 
+Komunikasi 
+dan 
+Informatika 
+(Diskominfo) 
+Kabupaten Lombok Tengah. Pengembang secara 
+langsung berkomunikasi dengan pengguna untuk 
+mengidentifikasi kebutuhan dan mendapatkan umpan 
+balik segera setelah implementasi fitur-fitur baru. 
+Setiap perubahan atau fitur baru yang dikembangkan 
+diuji oleh pengguna dalam waktu singkat, sehingga 
+keputusan pengembangan dapat dibuat dengan cepat 
+dan tepat.Contoh penerapan: Setelah iterasi pertama, 
+pengguna memberikan umpan balik langsung 
+
+
+--- HALAMAN 3 ---
+Musofa, dkk, Implementasi Metode Personal…   987 
+ 
+mengenai desain registrasi tamu menggunakan QR 
+code, yang memungkinkan pengembang untuk 
+melakukan perbaikan atau penyesuaian dalam iterasi 
+berikutnya. 
+b. 
+Siklus Iterasi Pendek dan Pengujian 
+Berkelanjutan 
+PXP mendorong pengembangan dalam iterasi 
+pendek, yang biasanya berdurasi antara satu hingga 
+dua minggu. Setiap iterasi berfokus pada pengujian 
+fitur 
+secara 
+langsung 
+dengan 
+pengguna 
+dan 
+melakukan penyesuaian cepat jika diperlukan. 
+Dengan siklus ini, pengembang dapat menangani 
+masalah atau kesalahan secepat mungkin, serta 
+memastikan aplikasi selalu berfungsi sesuai dengan 
+ekspektasi pengguna.Contoh penerapan: Setiap dua 
+minggu, dilakukan evaluasi dan pengujian fungsi 
+utama, seperti pendaftaran tamu melalui QR code dan 
+dashboard 
+statistik, 
+untuk 
+memastikan 
+fungsionalitasnya sesuai dengan yang diinginkan 
+pengguna. 
+ 
+c. 
+Sederhana 
+dan 
+Berfokus 
+pada 
+Kebutuhan Inti 
+Salah 
+satu 
+prinsip 
+dari 
+PXP 
+adalah 
+kesederhanaan dalam desain dan implementasi. PXP 
+mendorong pengembang untuk menghindari fitur-
+fitur yang tidak perlu dan hanya fokus pada 
+kebutuhan inti pengguna. Dalam pengembangan 
+aplikasi buku tamu ini, pengembang memprioritaskan 
+fitur-fitur 
+yang 
+secara 
+langsung 
+mendukung 
+pengelolaan data tamu, keamanan melalui verifikasi 
+QR code, dan statistik kunjungan yang relevan 
+dengan 
+kebutuhan 
+Dinas 
+Kominfo.Contoh 
+penerapan: Fitur seperti dashboard statistik yang 
+menampilkan data kunjungan dinas dan pegawai 
+disesuaikan untuk memberikan informasi yang paling 
+relevan, tanpa membebani pengguna dengan data 
+yang tidak dibutuhkan. 
+ 
+d. 
+Komunikasi 
+yang 
+Terbuka 
+dan 
+Kolaboratif 
+Prinsip komunikasi terbuka menjadi fondasi 
+utama dalam PXP. Dalam pengembangan aplikasi ini, 
+komunikasi antara pengembang dan pengguna 
+dilakukan secara berkelanjutan, baik dalam bentuk 
+pertemuan langsung, diskusi jarak jauh, atau review 
+hasil kerja. Pengembang selalu berusaha untuk 
+memastikan bahwa setiap keputusan teknis yang 
+diambil 
+sejalan 
+dengan 
+tujuan 
+dan 
+harapan 
+pengguna.Contoh 
+penerapan: 
+Selama 
+pengembangan, pengguna diberikan akses langsung 
+untuk mengomentari progres dan memberikan saran 
+yang memengaruhi desain sistem. Misalnya, saat fitur 
+registrasi 
+QR 
+code 
+sedang 
+diuji, 
+pengguna 
+memberikan masukan mengenai kemudahan akses 
+dan 
+kecepatan 
+sistem, 
+yang 
+kemudian 
+diimplementasikan dalam iterasi berikutnya. 
+ 
+e. 
+Pengujian Otomatis dan Refactoring 
+Salah satu pilar dalam PXP adalah pengujian 
+otomatis untuk memastikan setiap bagian aplikasi 
+berfungsi dengan baik setiap saat, meskipun terjadi 
+perubahan besar dalam sistem. Pengembang juga 
+melakukan refactoring kode secara teratur untuk 
+menjaga kualitas dan kebersihan kode. Pengujian 
+otomatis memberikan jaminan bahwa perubahan 
+yang dilakukan tidak merusak fungsionalitas yang 
+sudah ada sebelumnya.Contoh penerapan: Pengujian 
+otomatis dilakukan untuk memastikan verifikasi 
+identitas tamu berjalan dengan benar, dan setelah 
+setiap iterasi, kode diperbarui dan disempurnakan 
+untuk memperbaiki potensi masalah teknis. 
+ 
+f. 
+Kualitas Kode yang Tinggi 
+PXP menekankan pentingnya menulis kode 
+yang bersih, efisien, dan mudah dipahami oleh 
+seluruh anggota tim pengembangan. Kode yang 
+ditulis dengan kualitas tinggi akan memudahkan 
+perawatan dan pengembangan lanjutan di masa 
+depan. Dalam pengembangan aplikasi buku tamu 
+digital ini, pengembang melakukan code review 
+secara rutin untuk memastikan kualitas kode yang 
+tinggi.Contoh penerapan: Setiap perubahan kode 
+yang dilakukan selama pengembangan aplikasi, 
+seperti pembuatan algoritma pemindaian QR code, 
+langsung diperiksa dan direview untuk memastikan 
+tidak 
+ada 
+kesalahan 
+atau 
+redundansi 
+dalam 
+implementasinya. 
+ 
+g. 
+Adaptasi 
+Terhadap 
+Perubahan 
+Kebutuhan 
+Salah satu aspek paling menonjol dari PXP 
+adalah fleksibilitas terhadap perubahan kebutuhan 
+pengguna yang terjadi seiring berjalannya waktu. 
+Pengembang tidak hanya mengikuti rencana yang 
+telah ditetapkan, tetapi juga siap untuk mengubah 
+atau memperbaiki aplikasi berdasarkan permintaan 
+baru yang muncul selama pengembangan. Hal ini 
+memungkinkan aplikasi untuk selalu relevan dengan 
+kebutuhan 
+dinamika 
+operasional 
+di 
+instansi 
+pemerintahan.Contoh 
+penerapan: 
+Dalam 
+iterasi 
+kedua, saat pengguna meminta tambahan fitur untuk 
+melihat statistik berdasarkan unit kerja, pengembang 
+dengan cepat menambahkan fitur tersebut dan 
+memastikan bahwa aplikasinya tetap berjalan dengan 
+lancar tanpa mempengaruhi sistem yang sudah ada. 
+Metode PXP yang terdiri dari beberapa tahapan, 
+yaitu 
+identifikasi 
+masalah, 
+studi 
+literatur, 
+pengembangan, serta penarikan kesimpulan dan 
+pemberian saran. Tahapan-tahapan ini berfungsi 
+sebagai panduan dalam proses pengembangan 
+aplikasi buku tamu. Alur penelitian yang diterapkan 
+selama pengembangan aplikasi ini dapat dilihat pada 
+Gambar 1. 
+ 
+
+
+--- HALAMAN 4 ---
+988   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+ 
+Gambar 1. Tahapan Penelitian 
+2.1 
+Identifikasi masalah 
+Langkah pertama dalam penelitian ini adalah 
+mengidentifikasi masalah yang ada di Dinas 
+Komunikasi dan Informatika Kabupaten Lombok 
+Tengah. Tujuan dari langkah ini adalah untuk 
+memahami latar belakang, tujuan, dan permasalahan 
+yang dihadapi. Berdasarkan analisis yang dilakukan, 
+ditemukan bahwa pengelolaan buku tamu masih 
+dilakukan secara manual. Oleh karena itu, penelitian 
+ini bertujuan untuk mengembangkan aplikasi buku 
+tamu yang diharapkan dapat mengatasi masalah yang 
+ada dan mempermudah pekerjaan pegawai di Dinas 
+Komunikasi dan Informatika. 
+2.2 
+Studi Literatur 
+Studi literatur dilakukan untuk memperkuat 
+asumsi, data, dan teori yang mendasari penelitian ini. 
+Tahapan ini melibatkan analisis berbagai sumber 
+terpercaya, seperti jurnal, buku, serta situs web yang 
+berkaitan dengan pengembangan aplikasi buku tamu 
+(Ramdhan et al, 2021). 
+2.3 
+Requirement 
+ 
+Tahap ini dimulai dengan mengumpulkan 
+kebutuhan untuk pengembangan aplikasi buku tamu. 
+Proses pengumpulan informasi dilakukan melalui 
+wawancara dengan penanggung jawab bidang Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah guna memahami kebutuhan mereka. 
+Berdasarkan hasil wawancara tersebut, dibuatlah 
+User Story yang mendeskripsikan fitur-fitur dan hal-
+hal penting yang harus disertakan dalam aplikasi. 
+User Story ini nantinya akan menjadi panduan dalam 
+merancang dan mengembangkan aplikasi sesuai 
+dengan ekspektasi pengguna(Fadhallah et al, 
+2021). 
+2.4 
+Planning 
+Tahap 
+ini 
+dimulai 
+dengan 
+pengembang 
+melakukan estimasi waktu yang diperlukan untuk 
+menyelesaikan setiap User Story yang telah 
+dirancang sebelumnya. User Story merupakan 
+komponen 
+fungsional 
+yang 
+berfungsi 
+untuk 
+mendokumentasikan 
+keinginan 
+atau 
+kebutuhan 
+pengguna. Estimasi waktu untuk menyelesaikan 
+masing-masing User Story ini diwakili oleh Story 
+Points, yang mencerminkan tingkat kesulitan dan 
+durasi yang diperlukan untuk mewujudkan fitur 
+tersebut (Chon et al, 2022). 
+2.5 
+Iteration Initialization 
+ 
+Tahap ini, pengembangan sistem dimulai 
+berdasarkan urutan iterasi  yang telah direncanakan 
+pada tahap perencanaan. Setiap iterasi  akan merinci 
+tugas-tugas yang perlu diselesaikan untuk setiap User 
+Story, sesuai dengan urutan yang telah ditetapkan 
+sebelumnya. Penentuan tugas-tugas ini dilakukan 
+dengan mempertimbangkan keterkaitan antar User 
+Story untuk memastikan pengembangan berjalan 
+dengan baik. Setiap iterasi  juga menggunakan nilai 
+velocity, yang menggambarkan durasi waktu yang 
+diperlukan untuk menyelesaikan masing-masing 
+iterasi . Dengan cara ini, pengerjaan sistem dapat 
+dilakukan secara terstruktur (Setiawan et al, 2024). 
+ 
+2.6 
+Desain 
+Pada tahap ini, pengembangan fungsionalitas 
+untuk setiap iterasi  dilakukan dengan merancang 
+diagram agar mempermudah pemahaman pengguna. 
+Diagram yang digunakan adalah Unified Modeling 
+Language (UML). Untuk merancang alur aplikasi, 
+pengembang menggunakan tiga jenis model, yakni 
+use case diagram, activity diagram, dan class 
+diagram. 
+Sedangkan 
+untuk 
+desain 
+antarmuka 
+(interface), 
+pengembang 
+memanfaatkan 
+Figma 
+(Dharwiyanti et al, 2023). 
+2.7 
+Implementasi 
+ 
+Pada tahap ini, pengembangan sistem dimulai 
+dengan 
+penulisan 
+kode 
+menggunakan 
+bahasa 
+pemrograman PHP, serta memanfaatkan framework 
+Laravel untuk mempercepat proses pembangunan 
+aplikasi. Untuk menyimpan data, digunakan database 
+MySQL. 
+Setelah 
+proses 
+pengkodean 
+selesai, 
+dilakukan pengujian melalui unit testing untuk 
+memastikan bahwa setiap bagian dari sistem berjalan 
+dengan baik. Apabila ditemukan kesalahan atau 
+kekurangan, dilakukan perbaikan atau refactor pada 
+bagian kode yang bermasalah. Setelah tidak 
+ditemukan lagi kesalahan, pengembangan kemudian 
+dapat dilanjutkan ke tahap berikutnya (Prasetyo et al, 
+2020). 
+
+
+--- HALAMAN 5 ---
+Musofa, dkk, Implementasi Metode Personal…   989 
+ 
+2.8 
+System Testing 
+Pada tahap ini, dilakukan pengujian terhadap 
+fungsionalitas aplikasi dengan menggunakan metode 
+Black Box Testing. Proses pengujian dilakukan 
+dengan menjalankan aplikasi dan mengamati hasil 
+yang muncul. Pegawai dari Dinas Komunikasi dan 
+Informatika Kabupaten Lombok Tengah berperan 
+dalam melaksanakan pengujian ini. Hasil pengujian 
+tersebut kemudian dievaluasi untuk memastikan 
+apakah aplikasi berfungsi sesuai dengan harapan dan 
+tujuan yang telah ditentukan (Ulfi et al, 2020). 
+2.9 
+Retrospektive 
+Pada tahap ini, dilakukan evaluasi terhadap 
+setiap iterasi  yang telah dijalankan sebelumnya. Jika 
+terdapat 
+masalah 
+atau 
+ketidaksesuaian 
+dalam 
+implementasi sistem, maka proses akan kembali ke 
+tahap iteration initialization untuk melakukan 
+perbaikan, penyesuaian, atau penyempurnaan yang 
+diperlukan. Hal ini bertujuan untuk memastikan 
+bahwa sistem yang dikembangkan sesuai dengan 
+ekspektasi dan dapat berfungsi dengan baik sebelum 
+melanjutkan ke tahap selanjutnya. Evaluasi dan 
+perbaikan yang terus-menerus selama proses iterasi  
+memastikan kualitas sistem yang lebih baik (Hasan et 
+al, 2021). 
+2.10 
+ Kesimpulan dan saran 
+ 
+Tahap ini, diambil kesimpulan dan diberikan 
+rekomendasi 
+berdasarkan 
+hasil 
+pengembangan 
+aplikasi yang telah dilaksanakan. Kesimpulan 
+mencerminkan pemahaman akhir dari penelitian yang 
+telah dilakukan, sedangkan saran berisi usulan untuk 
+menyelesaikan masalah yang masih ada atau yang 
+dihadapi, serta memberikan panduan untuk perbaikan 
+dan pengembangan aplikasi di masa mendatang (Ali 
+et al, 2024). 
+3. 
+HASIL DAN PEMBAHASAN 
+ 
+Hasil dan pembahasan menjelaskan proses 
+pengembangan Aplikasi Buku Tamu di Dinas 
+Komunikasi dan Informatika Kabupaten Lombok 
+Tengah. Proses pengembangan aplikasi ini dilakukan 
+secara 
+bertahap, 
+dimulai 
+dari 
+Requirements, 
+planning, 
+iteration 
+initialization, 
+design, 
+implementation, system testing, retrospective. 
+3.1 
+Requirement 
+Pada tahapan ini, dilakukan pengumpulan 
+informasi terkait kebutuhan aplikasi buku tamu yang 
+akan dikembangkan. Proses pengumpulan data 
+dilakukan dengan wawancara bersama pihak Aptika 
+Dinas Komunikasi dan Informatika Kabupaten 
+Lombok Tengah. Selanjutnya, hasil wawancara 
+tersebut digunakan untuk membuat User Story yang 
+mencerminkan 
+kebutuhan 
+sistem 
+yang 
+akan 
+dikembangkan (Saleha et al, 2022). 
+Proses dimulai dengan identifikasi pengguna 
+sistem, lalu dilanjutkan dengan pembuatan User Story 
+yang merangkum segala kebutuhan dari pengguna 
+terhadap sistem yang akan dirancang (Shafardan et 
+al., n.d.). Berdasarkan wawancara yang dilakukan, 
+terdapat 27 User Story yang menjadi kebutuhan 
+utama dalam penelitian ini, serta dua aktor utama 
+yang akan menggunakan aplikasi buku tamu 
+3.2 
+Planning 
+Tahap perencanaan dilakukan setelah kebutuhan 
+sistem berhasil dikumpulkan pada tahap sebelumnya. 
+Pada tahap ini, pengembang menyusun rencana 
+pembangunan sistem dengan melihat hasil dari User 
+Story yang telah diperoleh. Hasil dari proses ini 
+mencakup estimasi waktu pengerjaan, dan penentuan 
+jumlah iterasi   yang dibutuhkan selama proses 
+pengembangan (Akbar et al, 2024). 
+Estimasi waktu untuk setiap User Story dihitung 
+menggunakan 
+pendekatan 
+Story 
+Point, 
+yang 
+menggambarkan tingkat usaha yang diperlukan untuk 
+menyelesaikan setiap fitur. Penentuan nilai Story 
+Point dilakukan dengan mempertimbangkan tingkat 
+kesulitan dan durasi pengerjaan yang diperkirakan 
+oleh pengembang (Suprapto, 2020). 
+Pada tahap ini, total Story Point yang diperoleh 
+adalah 40, yang menunjukkan bahwa estimasi waktu 
+keseluruhan untuk pengembangan sistem adalah 40 
+hari. Proses perencanaan ini membantu memastikan 
+bahwa setiap fitur dikerjakan sesuai prioritas dan 
+waktu yang telah ditetapkan. Rincian User Story dan 
+Story Point dapat dilihat pada Tabel 1. 
+ 
+3.3 
+Iteration Initialization 
+ 
+Setelah proses estimasi waktu untuk setiap User 
+Story selesai dilakukan, langkah berikutnya adalah 
+menyusun iterasi . Penyusunan iterasi  ini didasarkan 
+pada keterkaitan antara masing-masing User Story . 
+Di tahap selanjutnya, dihasilkan 8 iterasi   dengan 
+rincian nilai velocity sebagai berikut: iterasi   1 
+memiliki nilai velocity 5, iterasi   2 hingga 5 memiliki 
+nilai velocity 4, iterasi   6 memiliki nilai velocity 7, 
+iterasi   7 memiliki nilai velocity 4, dan iterasi   8 
+memiliki nilai velocity 8 (Fiqar et al, 2023). 
+Nilai velocity menunjukkan durasi pengerjaan 
+setiap iterasi   dalam satuan hari (Putra et al, 2022). 
+Dengan demikian, iterasi   1 akan diselesaikan dalam 
+waktu 5 hari, iterasi   2 hingga 5 masing-masing 
+memerlukan 4 hari, iterasi   6 membutuhkan 7 hari, 
+iterasi   7 memakan waktu 4 hari, dan iterasi   8 akan 
+diselesaikan dalam 8 hari. Hasil dari penyusunan 
+iterasi   ini dapat dilihat secara rinci pada Tabel 2. 
+ 
+ 
+ 
+
+
+--- HALAMAN 6 ---
+990   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+Tabel 1. User Story 
+ID 
+User Stroy 
+Story Point 
+US-
+1 
+Login 
+2 
+US-
+2 
+Logout 
+1 
+US-
+3 
+Menampilkan grafik tamu 
+perbulan  
+2 
+US-
+4 
+Menambahkan data tentang 
+dinas 
+2 
+US-
+5 
+Mengedit data tentang dinas 
+1 
+US-
+6 
+Menghapus data tentang 
+dinas 
+1 
+US-
+7 
+Menambahkan data QR 
+code 
+2 
+US-
+8 
+Mengedit data QR code 
+1 
+US-
+9 
+Menghapus data QR code 
+1 
+US-
+10 
+Menambahkan data pegawai 
+2 
+US-
+11 
+Mengedit data pegawai 
+1 
+US-
+12 
+Menghapus data pegawai 
+1 
+US-
+13 
+Menambahkan data kegiatan 
+2 
+US-
+14 
+Mengedit data kegiatan 
+1 
+US-
+15 
+Menghapus data kegiatan 
+1 
+US-
+16 
+Menambahkan data tamu 
+2 
+US-
+17 
+Memverifikasi data tamu 
+1 
+US-
+18 
+Melihat detail data tamu 
+1 
+US-
+19 
+Menghapus data tamu 
+1 
+US-
+20 
+Pelaporan data tamu 
+2 
+US-
+21 
+Menambahkan data User 
+2 
+US-
+22 
+Mengedit data User 
+1 
+US-
+23 
+Menghapus data User 
+1 
+US-
+24 
+Tampilan data tentang dinas 
+2 
+US-
+25 
+Tampilan data kegiatan 
+pegawai 
+2 
+US-
+26 
+Tampilan data tamu 
+terverifikasi 
+2 
+US-
+27 
+Form Input data tamu 
+2 
+ 
+Tabel 2. Hasil Penyusunan Iterasi 
+Iterasi  1 
+ID 
+User Story 
+Story 
+Points 
+US-
+1 
+Login 
+2 
+US-
+2 
+Logout 
+1 
+US-
+3 
+Menampilan grafik tamu 
+perbulan  
+2 
+Velocity  
+5 
+Iterasi  2 
+ID 
+User Story 
+Story 
+Points 
+US-
+4 
+Menambahkan data 
+tentang dinas 
+2 
+Iterasi  1 
+US-
+5 
+Mengedit data tentang 
+dinas 
+1 
+US-
+6 
+Menghapus data tentang 
+dinas 
+1 
+Velocity  
+4 
+Iterasi  3 
+ID 
+User Story 
+Story 
+Points 
+US-
+7 
+Menambahkan data QR 
+code 
+2 
+US-
+8 
+Mengedit data QR code 
+1 
+US-
+9 
+Menghapus data QR 
+code 
+1 
+Velocity  
+4 
+Iterasi  4 
+ID 
+User Story 
+Story 
+Points 
+US-
+10 
+Menambahkan data pegawai 
+2 
+US-
+11 
+Mengedit data pegawai 
+1 
+US-
+12 
+Menghapus data pegawai 
+1 
+Velocity  
+4 
+Iterasi  5 
+ID 
+User Story 
+Story 
+Points 
+US-
+13 
+Menambahkan data 
+kegiatan 
+2 
+US-
+14 
+Mengedit data kegiatan 
+1 
+US-
+15 
+Menghapus data kegiatan 
+1 
+Velocity  
+4 
+                              Iterasi  6 
+ 
+ID 
+User Story 
+Story 
+Points 
+US-
+16 
+Menambahkan data tamu 
+2 
+US-
+17 
+Memverifikasi data tamu 
+1 
+US-
+18 
+Melihat detail data tamu 
+1 
+US-
+19 
+Menghapus data tamu 
+1 
+US-
+20 
+Pelaporan data tamu 
+2 
+Velocity 
+7 
+Iterasi 7 
+ID 
+User Story 
+Story 
+Points 
+US-
+21 
+Menambahkan data user 
+2 
+US-
+21 
+Mengedit data user 
+1 
+US-
+22 
+Menghapus data user 
+1 
+US-
+21 
+Menambahkan data user 
+2 
+Velocity 
+4 
+Iterasi 8 
+ID 
+User Story 
+Story 
+Points 
+US-
+23 
+Tampilan data tentang 
+dinas 
+2 
+US-
+24 
+Tampilan data kegiatan 
+pegawai 
+2 
+US-
+25 
+Tampilan data tamu 
+terverifikasi 
+2 
+US-
+26 
+Form Input data tamu 
+2 
+Velocity 
+8 
+
+
+--- HALAMAN 7 ---
+Musofa, dkk, Implementasi Metode Personal…   991 
+ 
+3.4 
+Desain 
+ 
+Gambar 2. Use case diagram 
+Gambar 2 menunjukkan tahap desain yang 
+dilakukanSetelah 
+proses 
+perencanaan 
+dan 
+penyusunan iterasi   selesai, langkah berikutnya 
+adalah tahap desain. Pada tahap ini, dirancang use 
+case diagram sebagai representasi visual untuk 
+memodelkan interaksi antara pengguna (user) dengan 
+sistem. Use case diagram ini berfungsi untuk 
+menggambarkan peran pengguna dan menu-menu 
+yang dapat diakses selama menggunakan aplikasi 
+buku tamu. (Triandini, 2021). Hasil pengembangan 
+use case diagram yang menggambarkan peran 
+pengguna dan fitur yang tersedia.  
+3.5 
+Implementasi 
+a. 
+Halaman Home 
+ 
+Gambar 3. Halaman Home 
+ 
+Gambar 3 menampilkan halaman Home, yaitu 
+halaman utama yang akan terlihat oleh pengunjung 
+atau tamu saat pertama kali membuka aplikasi buku 
+tamu. Halaman Home terdiri dari dua menu, yaitu 
+menu Home dan menu Form. Pada menu Home, 
+terdapat QR code yang dapat dipindai oleh 
+pengunjung atau tamu untuk mengakses link menuju 
+form input data tamu. 
+b. 
+Dashboard 
+Gambar 4 menampilkan menu Dashboard, yaitu 
+halaman utama yang muncul setelah admin berhasil 
+login. Pada halaman ini, terdapat grafik tamu yang 
+melakukan kunjungan pada Dinas Komunikasi dan 
+Informatika.  
+ 
+ 
+Gambar 4. Dashboard 
+c. 
+Menu QR code 
+ 
+Gambar 5. Menu QR code 
+Gambar 5 menampilkan menu QR code, yaitu 
+halaman di mana admin dapat membuat QR code 
+sesuai dengan kebutuhan instansi atau dinas yang 
+bersangkutan. Pada halaman ini, admin memiliki 
+kemampuan untuk menyesuaikan QR code serta 
+menambahkan, mengedit, dan menghapus data QR 
+code sesuai kebutuhan. 
+d. 
+Menu Tamu 
+Gambar 6. Menu Tamu 
+ 
+Gambar 6 menampilkan menu Tamu, yaitu 
+halaman di mana admin dapat melihat data 
+pengunjung atau tamu yang telah terdaftar. Pada 
+menu ini, admin memiliki kemampuan untuk 
+memverifikasi informasi seperti pihak yang ingin 
+ditemui tamu, tempat pertemuan, dan status verifikasi 
+kunjungan. 
+Selain 
+itu, 
+admin 
+juga 
+dapat 
+menambahkan, 
+mengedit, 
+menghapus, 
+serta 
+menghasilkan laporan data tamu dalam bentuk PDF. 
+
+
+--- HALAMAN 8 ---
+992   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+Tabel 3. Pengujian Black box 
+No 
+Menu 
+Aksi 
+Hasil 
+Status 
+1 
+Login 
+Mengisi form username dan 
+password lalu tekan tombol masuk 
+Apabila username dan password 
+sesuai dengan yang ada di 
+database maka login berhasil 
+Success 
+2 
+Dashboard 
+Menampilkan grafik kunjungan 
+tamu 
+Data sesuai dengan yang ada di 
+database 
+Success 
+3 
+Tentang 
+Dinas 
+Mengisi form tambah data dinas, 
+tekan tombol simpan, menampilkan 
+data dinas, edit data dinas, hapus 
+data dinas 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+4 
+QR code 
+Mengisi form tambah data QR code, 
+tekan tombol simpan, menampilkan 
+data QR code, edit QR code, hapus 
+QR code 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+5 
+Pegawai 
+Mengisi form tambah data pegawai, 
+tekan tombol simpan, menampilkan 
+data pegawai, edit pegawai, hapus 
+pegawai 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+6 
+Kegiatan 
+Mengisi form tambah data kegiatan, 
+tekan tombol simpan, menampilkan 
+data kegiatan, edit kegiatan, hapus 
+kegiatan 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+7 
+Tamu 
+Mengisi form tambah data 
+tamu, tekan tombol simpan, 
+menampilkan data tamu, edit tamu, 
+verifikasi tamu, lihat detail tamu, 
+hapus tamu 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+8 
+User 
+Mengisi form tambah data user, 
+tekan tombol simpan, menampilkan 
+data user, edit user, hapus user 
+Data tampil, tambah, edit, hapus 
+berhasil 
+Success 
+ 
+3.6 
+Sistem Testing 
+Pengujian dilakukan untuk memastikan sistem 
+bisa berfungsi dengan baik, pada tahap pengujian 
+akan dilakukan dengan 2 pendekatan yaitu Alpha 
+Testing 
+(Black-box), 
+Analisis 
+komparatif 
+dan 
+Pengujian data kuantitatif 
+a. 
+Pengujian Black-box 
+Pengujian Black-box berdasarkan fungsi  
+sistem yang dilakukan pengembang untuk 
+mencari kesalahan atau error pada saat sistem 
+dijalankan, sehingga apabila terdapat error bisa 
+langsung diperbaiki.  
+ 
+Rumus : 𝑠=
+𝑃
+ⅈ× 100  
+ 
+(1) 
+ 
+Dimana : 
+s: Persentase keberhasilan (success rate) 
+p: Jumlah pengujian yang berhasil (pass) 
+i: Jumlah total pengujian (iterations atau input 
+yang diuji) 
+ 
+𝑠=
+80
+80 × 100
+𝑠= 100
+ 
+ 
+ 
+(2) 
+  
+ 
+ 
+ 
+ 
+ 
+Hasil 
+pengujian 
+aplikasi 
+Buku 
+Tamu 
+menggunakan 
+metode 
+Black 
+Box 
+Testing 
+menunjukkan 
+bahwa 
+sistem 
+memiliki 
+tingkat 
+keberhasilan sebesar 100% pada seluruh skenario 
+pengujian yang dilakukan. Sebagian besar fitur dalam 
+aplikasi berfungsi dengan baik sesuai dengan yang 
+diharapkan. Fitur Login dapat memproses data 
+username dan password dengan benar. Menu 
+Dashboard berhasil menampilkan grafik kunjungan 
+tamu 
+secara 
+real-time. 
+Fitur 
+Tentang 
+Dinas 
+mendukung 
+fungsi 
+menampilkan, 
+menambah, 
+mengedit, serta menghapus data tanpa kendala. Selain 
+itu, fitur lainnya seperti QR Code, Pegawai, Kegiatan, 
+Tamu, dan User juga telah diuji. Seluruh fungsi utama 
+seperti penampilan data, penambahan, pengeditan, 
+penghapusan, serta fungsi verifikasi pada data tamu 
+berjalan sesuai harapan. Meskipun terdapat beberapa 
+kendala 
+minor 
+yang 
+menyebabkan 
+tingkat 
+keberhasilan 
+berada 
+di 
+angka 
+100%, 
+secara 
+keseluruhan tidak ditemukan error kritis selama 
+proses 
+pengujian. 
+Oleh 
+karena 
+itu, 
+aplikasi 
+dinyatakan siap digunakan oleh pegawai Diskominfo. 
+b. 
+Ananlisi Komparatif dan Pengujian data 
+kuantitatif 
+ 
+Perbandingan 
+fitur 
+antara 
+aplikasi 
+yang 
+dikembangkan dengan beberapa Guest Management 
+System (GMS) komersial disajikan pada Tabel 5. 
+Hasil pengujian kuantitatif terhadap performa 
+sistem, seperti waktu respons pemindaian QR dan 
+akurasi verifikasi tamu, dapat dilihat pada Tabel 6. 
+ 
+
+
+--- HALAMAN 9 ---
+Musofa, dkk, Implementasi Metode Personal…   993 
+ 
+Tabel 4 Analisi Komparatif dengan Aplikasi Sejenis 
+Aspek/ Fitur 
+Aplikasi Buku Tamu Digital (PXP) 
+GMS Umum (contoh: Envoy, Proxyclick, 
+SwipedOn) 
+QR Code Registrasi 
+✓ Ada, dikembangkan khusus 
+✓ Ada 
+Manajemen Data Pegawai 
+✓ Ada 
+✗ Tidak ada (fokus hanya pada tamu) 
+Manajemen Kegiatan Dinas 
+✓ Ada 
+✗ Tidak tersedia 
+Dashboard Statistik 
+Kunjungan 
+✓ Ada, disesuaikan kebutuhan 
+✓ Ada, tetapi lebih umum 
+Multi Bahasa / Bahasa Lokal 
+✓ Bisa dikustomisasi (mis. Bahasa 
+Indonesia, Sasak) 
+✗ Umumnya hanya bahasa internasional 
+Integrasi dengan Sistem 
+Pemerintah 
+✓ Bisa disesuaikan (manual) 
+✗ Tidak tersedia langsung 
+Skalabilitas / Cloud 
+✗ Masih lokal 
+✓ Cloud-based, scalable 
+Keamanan Data / Enkripsi 
+! Dasar (belum tersertifikasi) 
+✓ Sudah standar industri (GDPR, ISO, dll) 
+Dukungan Teknis 
+✗ Terbatas (develop lokal) 
+✓ Customer support profesional 
+Biaya 
+✓ Gratis/open-source (jika dikembangkan 
+internal) 
+✗ Berlangganan (berbayar per bulan) 
+Tabel 5 Pengujian data kuantitatif 
+Parameter Pengujian 
+Hasil 
+Rata-rata 
+Standar 
+Deviasi 
+Keterangan 
+Waktu Respons Pemindaian 
+QR (ms) 
+312 ms 
+±28 ms 
+Diuji pada 30 pemindaian di berbagai kondisi 
+jaringan 
+Akurasi Verifikasi Identitas 
+Tamu (%) 
+98.7% 
+±1.2% 
+Berdasarkan 100 data tamu dengan variasi 
+nama, dan instansi 
+Waktu Load Dashboard 
+Statistik (ms) 
+842 ms 
+±95 ms 
+Diuji pada 5 sesi login dengan data dummy 
+aktif 
+Tingkat Keberhasilan 
+Registrasi QR (%) 
+99.2% 
+±0.5% 
+128 dari 129 pemindaian berhasil pada 
+percobaan pertama 
+Kegagalan Verifikasi karena 
+Human Error 
+1.5% 
+- 
+Kesalahan entri data manual oleh tamu 
+Sebagai bagian dari validasi sistem, dilakukan 
+analisis komparatif antara aplikasi Buku Tamu 
+Digital yang dikembangkan dengan beberapa Guest 
+Management System (GMS) komersial, seperti Envoy 
+Visitors, iLobby, dan SwipedOn. Hasil analisis 
+menunjukkan bahwa meskipun aplikasi komersial 
+unggul dalam aspek umum seperti skalabilitas 
+berbasis cloud, dukungan teknis profesional, serta 
+keamanan data yang sudah sesuai standar industri 
+(misalnya GDPR dan ISO), aplikasi lokal ini 
+memiliki 
+sejumlah 
+keunggulan 
+yang 
+lebih 
+kontekstual 
+terhadap 
+kebutuhan 
+organisasi 
+pemerintah daerah. Aplikasi Buku Tamu Digital yang 
+dikembangkan dengan pendekatan Personal Extreme 
+Programming (PXP) mampu menghadirkan fitur-
+fitur yang lebih disesuaikan, seperti manajemen data 
+pegawai, 
+pengelolaan 
+kegiatan 
+dinas, 
+dan 
+kemampuan kustomisasi bahasa lokal (misalnya 
+Bahasa Indonesia dan Sasak). Selain itu, integrasi 
+dengan sistem administrasi pemerintahan dapat 
+dilakukan 
+secara 
+manual 
+sesuai 
+kebutuhan. 
+Keunggulan 
+lain 
+adalah 
+dashboard 
+statistik 
+kunjungan yang dapat disesuaikan per unit kerja, 
+serta model distribusi gratis atau open-source yang 
+sangat mendukung efisiensi biaya bagi instansi 
+pemerintah. Untuk mendukung validitas sistem, 
+dilakukan pula pengujian kuantitatif terhadap 
+performa teknis aplikasi. Hasilnya menunjukkan 
+bahwa aplikasi memiliki performa yang responsif dan 
+akurat. Waktu rata-rata pemindaian QR code tercatat 
+sebesar 312 milidetik dengan standar deviasi ±28 ms, 
+menunjukkan kemampuan respons yang baik dalam 
+berbagai kondisi jaringan. Tingkat keberhasilan 
+registrasi QR mencapai 99,2%, dengan hanya satu 
+kegagalan dari 129 percobaan. Sementara itu, akurasi 
+sistem dalam memverifikasi identitas tamu mencapai 
+98,7% dengan standar deviasi ±1,2%, menunjukkan 
+tingkat presisi yang tinggi dalam pencocokan data. 
+Waktu muat dashboard statistik berada pada kisaran 
+rata-rata 842 ms, dan tingkat kesalahan yang 
+disebabkan oleh human error tercatat sebesar 1,5%, 
+yang sebagian besar berasal dari kesalahan entri data 
+manual oleh tamu.  
+4. 
+KESIMPULAN DAN SARAN 
+
+
+--- HALAMAN 10 ---
+994   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 12, No. 5, Oktober 2025, hlm. 985-996 
+ 
+4.1 
+Kesimpulan 
+ 
+Dapat 
+disimpulkan 
+bahwa 
+pengembangan 
+Aplikasi Buku Tamu Digital di Dinas Komunikasi 
+dan Informatika Kabupaten Lombok Tengah berhasil 
+dilakukan 
+menggunakan 
+pendekatan 
+Personal 
+Extreme Programming (PXP), dimulai dari tahap 
+perencanaan kebutuhan hingga pengujian sistem. 
+Sebanyak 27 User Story berhasil diimplementasikan 
+melalui 8 iterasi dengan total 40 Story Points. Hasil 
+pengujian Black-box menunjukkan bahwa seluruh 
+fitur utama dalam aplikasi berjalan dengan baik dan 
+mencapai tingkat keberhasilan 100%. Selain itu, 
+pengujian kuantitatif juga menunjukkan performa 
+sistem yang responsif dan akurat, dengan rata-rata 
+waktu respons pemindaian QR sebesar 312 ms dan 
+akurasi verifikasi identitas tamu sebesar 98,7%. 
+Dibandingkan dengan aplikasi Guest Management 
+System (GMS) komersial, aplikasi ini memiliki 
+keunggulan dalam hal kustomisasi lokal, pengelolaan 
+data pegawai dan kegiatan, serta potensi integrasi 
+manual dengan sistem pemerintahan. 
+ 
+4.2 
+Saran 
+Melakukan pengembangan lebih lanjut. Aspek 
+keamanan data perlu ditingkatkan agar sesuai dengan 
+standar industri seperti GDPR atau ISO. Selain itu, 
+pengembangan sistem berbasis cloud disarankan 
+untuk meningkatkan skalabilitas dan aksesibilitas 
+lintas perangkat. Penambahan fitur dukungan teknis 
+serta dokumentasi penggunaan juga penting untuk 
+memudahkan pengguna baru. Aplikasi ini juga 
+berpotensi untuk dikembangkan lebih lanjut dengan 
+fitur check-in otomatis dan integrasi dengan sistem 
+absensi pegawai. Untuk meminimalkan kesalahan 
+penggunaan, pelatihan secara berkala bagi staf yang 
+bertugas juga sangat dianjurkan. 
+ 
+DAFTAR PUSTAKA 
+ 
+AKBAR, M.S., N.I., & C.D.R., 2024. Implementasi 
+Metode Personal Extreme Programming Dalam 
+Peracangan Aplikasi Pemesanan Ruang Rapat 
+Berbasis Android Diskominfo Jawa Timur. Jurnal 
+Teknologi Informasi, Komputer, dan Aplikasinya 
+(JTIKA), [online] 6(1), pp.308–315. Available at: 
+<http://jtika.if.unram.ac.id/index.php/JTIKA/>. 
+ALI, I.H., K.S., E.M., B.A., N.S.K., O.N., . . . & 
+R.J.H., 2024. Metodologi penelitian. Metodologi 
+penelitian. Media Pustaka Indo. 
+AVIYAH, S.V., & N.E., 2024. Perancangan Aplikasi 
+Buku Tamu Menggunakan Qr Code Pada Kantor 
+Kecamatan Ciwandan Berbasis Web. Jurnal 
+Ilmiah  Solihin. Technoscience, 8(1).(1), pp.1–19. 
+BUYUNG, A., S.S., & S.A., 2024. Perancangan 
+sistem informasi buku tamu pada Diskominfo 
+Serdang Bedagai berbasis web. Jurnal Sistem 
+Informasi dan Teknologi Informasi), 6(3)(3), 
+pp.469–478. 
+CHOTIJAH, U., 2021. Sistem Informasi Buku Tamu 
+Menggunakan Qr code Berbasis Web Pada PT 
+Petrokimia Gresik. Jurnal Ilmiah ILKOMINFO-
+Ilmu Komputer & Informatika, 4(1), pp.2621–
+4970. 
+COHN, M., 2022. User stories applied: For agile 
+software 
+development. 
+Addison-Wesley 
+Professional. Addison-Wesley Professional. 
+DHARWIYANTI, S., & W.R.S., 2023. Pengantar 
+unified modeling language (uml). IlmuKomputer. 
+com. 
+DZALPARO, 
+A., 
+P.Y., 
+& 
+Y.Y., 
+2024. 
+Pengembangan Aplikasi Buku Tamu Berbasis 
+Web di BPTIK DIKBUD Jawa Tengah. Progresif: 
+Jurnal Ilmiah Komputer, 20(2), pp.1014–1023. 
+ERFAN, M., K.T.Y., A.M.H., V.Y.M., O.R., W.D., 
+& 
+T.K.L., 
+2023. 
+Penerapan 
+Extreme 
+Programming Pada Pembuatan Aplikasi Buku 
+Tamu Adaptif Di Kantor Komisi Pemilihan 
+Umum Kota Palangka Raya. Jurnal Simasi : 
+Jurnal Ilmiah Sistem Informasi, [online] 3(2)(2), 
+pp.249–256. https://doi.org/10.46306/sm.v3i2. 
+FADHALLAH, R.A., 2021. Wawancara. UNJ Press. 
+FIKRI, A.M., & P.I.P.D.A.S., 2021. Rancang Bangun 
+Sistem Informasi Buku Tamu Pada Dinas 
+Pemuda, 
+Olahraga 
+Dan 
+Pariwisata 
+Kota 
+Balikpapan Dengan Metode Personal Extreme 
+Programming. Multitek Indonesia: Jurnal Ilmiah, 
+[online] 14(2)(2), pp.1907–6223. Available at: 
+<http://journal.umpo.ac.id/index.php/multitek>. 
+FIQAR, T.P., A.N.F., & A.F., 2023. Implementasi 
+Metode Personal Extreme Programming dalam 
+Pengembangan Sistem Informasi Manajemen 
+Hak Paten pada Sentra HKI ITK. SPECTA 
+Journal of Technology, 6(3)(3), pp.329–341. 
+https://doi.org/10.35718/specta.v6i3.799. 
+HASAN, H.I., M.G.I., & N.I., 2021. Implementasi 
+Metode Personal Extreme Programming Dalam 
+Pengembangan Sistem Administrasi Pelayanan 
+Desa (Studi Kasus: Desa Bulangan Barat Kec. 
+Pegantenan Kab. Pamekasan). Jurnal Repositor, 
+3(1)(1), pp.43–50. 
+KALSUM, U., H.R., A.Z., P.L., A.S.P., & P.U.M., 
+2024. Aplikasi Buku Tamu Menggunakan Qr 
+Code Berbasis Web Pada Layanan Pengadaan 
+Secara Elektronik (LPSE) Provinsi Jambi. Jurnal 
+Ilmiah Sistem Informasi dan Teknik Informatika 
+(JISTI), 
+[online] 
+7(2)(2), 
+pp.206–217. 
+https://doi.org/10.57093/jisti.v7i2.206. 
+MAHARANI, A.S., N.N.R., & P.A., 2023. Sistem 
+Informasi 
+Buku 
+Tamu 
+Berbasis 
+Web 
+Menggunakan PHP Framework Laravel dan 
+MySQL Di Kecamatan Jatisrono Wonogiri. 
+Indonesian Journal of Information Technology 
+and Computing, [online] 3(1), pp.2798–9216. 
+Available 
+at: 
+<https://journal.polhas.ac.id/index.php/imaging> 
+MARLIANA, 
+I., 
+2023. 
+Sistem 
+Informasi 
+Menggunakan Qr Code Berbasis Web Service 
+Pendataan Buku Tamu Instansi Pemerintahan. 
+
+
+--- HALAMAN 11 ---
+Musofa, dkk, Implementasi Metode Personal…   995 
+ 
+Jurnal Teknik Informatika Musirawas) Iin 
+Marliana, 8(1)(1), pp.18–25. 
+MELATI, 
+F.A., 
+P.R.W., 
+& 
+A.N.N., 
+2023. 
+Pengembangan Buku Tamu Digital Pada PT XYZ 
+Menggunakan 
+Metode 
+Personal 
+Extreme 
+Programming. Jurnal Sistim Informasi dan 
+Teknologi, 
+54), 
+pp.73–81. 
+https://doi.org/10.60083/jsisfotek.v5i4.323. 
+MELINDA, V.,& Z.A., 2023. Perancangan Sistem 
+Informasi Tour Dan Travel Berbasis Web 
+Menggunakan 
+Metode 
+Personal 
+Extreme 
+Programming (Pxp) Pada Today Trip. Jurnal Ilmu 
+Komputer JIK, 6(1)(01). 
+NUGRAHA, A.R., S.D.F., E.L.K., & K.K., 2020. 
+Komunikasi humas pemerintahan kabupaten/kota 
+di Jawa Barat melalui media digital Instagram. 
+Jurnal Kajian Komunikasi, 8(2)(2), pp.221–239. 
+NURUDIN, A., & D.M.L., 2023. Rancang Bangun 
+Buku Tamu Berbasis Web Pada Kanwil Kemenag 
+Provinsi Sumatera Selatan. In Prosiding Seminar 
+Nasional Teknologi Komputer dan Sains, 1(1), 
+pp.145–158. 
+PRASETYO, Y.Y., & A.H., 2020. Panduan Mudah 
+Belajar Framework Laravel. Jakarta: PT Elex 
+Media Komputindo Kelompok Gramedia. 
+PRAYOGA, T.A., & H.E., 2024. Inovasi Aplikasi 
+Buku Tamu Digital Di Dinas Komunikasi 
+Informatika Statistik Dan Persandian Kota 
+Pekanbaru. Journal of Public Administration 
+Review, [online] 1(1)(1), pp.773–789. Available 
+at: <https://journal.uir.ac.id/index.php/jpar>. 
+Prtama, E.P., 2023. PERANCANGAN APLIKASI 
+ARSIP BUKU PERPUSTAKAAN SMKN 1 
+TANGERANG SELATAN DENGAN METODE 
+PERSONAL 
+EXTREME 
+PROGRAMMING 
+(PXP). Jurnal Penelitian Ilmu Komputer, [online] 
+1(3)(3), 
+pp.82–87. 
+Available 
+at: 
+<https://mypublikasi.com/index.php/JUPIK/82>. 
+PUTRA, M.G.L., & F.M.I., 2022. Pengembangan 
+aplikasi android untuk monitoring akademik 
+mahasiswa di institut teknologi kalimantan 
+dengan metode personal extreme programing. 
+Technologia, 13(2)(2), pp.167–174. 
+RAMDHAN, M., 2021. Metode penelitian. Cipta 
+Media Nusantara. 
+SALEHA, W.I., & E.E.S., 2022. Perancangan Sistem 
+Informasi Penjadwalan Sekolah Sepak Bola 
+Dengan Metode Personal Extreme Programming 
+Berbasis Web. Multimedia dan Sistem Informasi 
+(REKLAMASI), 
+[online] 
+1(1)(1), 
+pp.7–11. 
+Available 
+at: 
+<https://maklumatika.i-
+tech.ac.id/index.php/reklamasi>. 
+SETIAWAN, B.A., M.G.I., & A.C.S.K., 2024. 
+Sistem Informasi Pengiriman Barang Pada PT 
+Citra Abadi Cargo Menggunakan Metode 
+Personal Extreme Programming (PXP). Jurnal 
+Repositor, 2(3)(4), pp.369–380. 
+SHAFARDAN, W.A., U.M.C.C., & N.B., 2023. 
+Implementasi Kerangka Kerja Personal Extreme 
+Programming pada Pengembangan Aplikasi 
+Pelayanan Administrasi Masyarakat Kantor Desa 
+Girimukti Berbasis Web. Equiva Journal, 1(2). 
+SUKRIANTO, 
+D., 
+O.D., 
+& 
+M.H., 
+2024. 
+Implementasi QR Code Berbasis Web Pada 
+Sistem Informasi Buku Tamu dan Pemesanan 
+Undangan di Zehan Invitation. Jurnal CoSciTech 
+(Computer Science and Information Technology), 
+[online] 
+5(3)(3), 
+pp.643–652. 
+https://doi.org/10.37859/coscitech.v5i3.8079. 
+SUPRAPTO, F.R., M.G.I., & N.I., 2020. Sistem 
+Informasi Penjualan dan Pelelangan Berbasis 
+Web pada Ricardo Corner MLG Menggunakan 
+Metode Personal eXtreme Programming (PXP). 
+Jurnal Repositor, 6(2)(11), pp.1535–1542. 
+TRIANDINI, E., & S.I.G., 2021. Step by Step Desain 
+Proyek Menggunakan UML. Penerbit Andi. 
+ULFI, M., M.G.I., & N.I., 2020. Implementasi 
+Metode Personal Extreme Programming dalam 
+Pengembangan Sistem Manajemen Transaksi 
+Perusahaan (Studi Kasus: CV. Todjoe Sinar 
+Group). Jurnal Repositor, 2(3)(3), pp.261–268. 
+USMAN, A.A.H., F.M., M.A., & H.M., 2022. 
+Pembuatan Aplikasi Buku Tamu Berbasis 
+Website di Kelurahan Afa-Afa. SAFARI: Jurnal 
+Pengabdian 
+Masyarakat 
+Indonesia, 
+2(4)(4), 
+pp.62–69. 
+  
+
+
+--- HALAMAN 12 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Halaman ini sengaja dikosongkan
+ 
+

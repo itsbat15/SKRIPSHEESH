@@ -1,0 +1,795 @@
+--- HALAMAN 1 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3362 
+EQUIVALENCE PARTITIONING DAN BOUNDARY VALUE ANALYSIS  
+DALAM BLACK BOX TESTING PADA PLATFORM E-COMMERCE  
+BERBASIS WEB DI LIMA BENUA 
+ 
+Annisa Fadhilasari, Henni Endah Wahanani, Fawwaz Ali Akbar 
+Informatika, Universitas Pembangunan Nasional “Veteran” Jawa Timur  
+Jalan Raya Rungkut Madya No. 1, Gunung Anyar, Surabaya, Indonesia 
+annisafadhila0299@gmail.com 
+ 
+ABSTRAK 
+ 
+Pandemi COVID-19 memberikan dampak pada sektor ekonomi dan bisnis sehingga mengalami goncangan 
+ekonomi. Sementara itu, e-commerce mengalami lonjakan pesat, memberikan peluang bagi pelaku bisnis untuk 
+beralih dari transaksi konvensional ke bisnis online guna memperluas jangkauan pelanggan, termasuk PT Lima 
+Benua Koneksindo. Sebagai penyedia solusi TI, web-commerce perusahaan ini memainkan peran penting dalam 
+mendukung kegiatan perniagaan, yaitu menjadi media promosi dan wadah untuk memberikan kemudahan layanan 
+free ongkir sehingga pelanggan tertarik untuk kembali berbelanja. Untuk menunjang kenaikan kunjungan dan 
+transaksi pelanggan di web-commerce lima benua dibutuhkan pengujian dari sudut pandang pengguna. Teknik 
+Black Box menjadi pilihan tepat untuk menguji sistem ini karena berfokus pada perspektif pengguna akhir. Dengan 
+mengombinasikan Equivalence Partitioning, yang membagi inputan menjadi partisi ekuivalen, dan Boundary 
+Value Analysis, yang memfokuskan pada nilai-nilai batas inputan, diharapkan mampu mendeteksi kesalahan, 
+mengevaluasi fungsionalitas, mengukur efektivitas, serta memberikan rekomendasi perbaikan. Berdasarkan hasil 
+pengujian, efektivitas keseluruhan sistem mencapai 81,02%, menunjukkan kinerja yang sangat efektif meskipun 
+terdapat beberapa kesalahan yang perlu diperbaiki oleh pengembang. 
+ 
+Kata kunci :  black box testing, website, e-commerce, equivalence partitioning,boundary value analysis 
+ 
+1 
+PENDAHULUAN 
+Perkembangan 
+e-commerce 
+di 
+Indonesia 
+menunjukkan tren yang mengagumkan, terutama 
+selama masa pandemi COVID-19. Data menunjukkan 
+peningkatan signifikan dalam aktivitas ekonomi e-
+commerce, dengan pertumbuhan hingga 40,6% di 
+sektor ini. Pada kuartal kedua tahun 2020, Shopee 
+mencatatkan 260 juta transaksi, dengan rata-rata 2,8 
+juta transaksi setiap harinya. Selain itu, penjualan e-
+commerce secara keseluruhan meningkat 26%, dan 
+tercatat peningkatan konsumen baru sebesar 51% 
+selama masa pandemic [1]. Data survei April 2021 dari 
+We Are Social menunjukkan persentase pengguna 
+internet di Indonesia menggunakan layanan e-
+commerce sebesar 88,1%, menjadikannya yang 
+tertinggi dibandingkan dengan negara-negara lain 
+seperti Inggris dan Filipina [2]. 
+Pasar digital yang semakin 
+mendominasi 
+memberikan peluang besar bagi pelaku bisnis untuk 
+beralih dari transaksi konvensional ke e-commerce. Ini 
+bukan hanya sebagai respons terhadap pandemi, tetapi 
+juga sebagai strategi untuk menjaga kelangsungan 
+usaha dengan mengikuti tren yang berkembang di 
+masyarakat 
+[1]. Keberadaan pasar digital ini 
+memberikan manfaat berlipat, tidak hanya bagi 
+pengusaha dalam penghematan biaya operasional dan 
+akses pasar global yang lebih luas, tetapi juga bagi 
+konsumen dalam hal kenyamanan bertransaksi dan 
+layanan yang ditawarkan, seperti kredit online, 
+pengiriman gratis, cashback, dan diskon produk [3]. 
+Salah satu perusahaan yang mengadopsi e-
+commerce untuk memperluas bisnisnya adalah PT. 
+Lima Benua Koneksindo, yang bergerak di bidang 
+teknologi informasi (TI). Dengan membuka toko 
+offline dan toko online melalui marketplace serta web-
+commerce lima benua, perusahaan ini bertujuan untuk 
+memperluas jangkauan pelanggan dan meningkatkan 
+pemahaman mereka terhadap produk dan layanan yang 
+ditawarkan. Oleh karena itu, penelitian ini bertujuan 
+untuk 
+melakukan 
+pengujian 
+terhadap 
+web 
+menggunakan metode black box testing, berfokus pada 
+fungsionalitas dan efektivitas sistem, dengan harapan 
+dapat menemukan kesalahan dan menilai kelayakan 
+aplikasi, sehingga dapat menunjang peningkatan 
+kunjungan calon pelanggan maupun mendorong 
+pelanggan agar kembali berbelanja.  
+Dalam studi kasus ini, kami akan melakukan 
+black 
+box 
+testing 
+dengan 
+kombinasi 
+metode 
+Equivalence Partitioning dan Boundary Value 
+Analysis. Black box dipilih karena memungkinkan 
+pengujian dari sudut pandang pengguna tanpa 
+memerlukan pengetahuan khusus tentang bahasa 
+pemrograman tertentu [4]. Kemudian Equivalence 
+Partitioning 
+akan 
+difokuskan 
+pada 
+pengujian 
+fungsional data, sedangkan Boundary Value Analysis 
+akan digunakan untuk menguji batas atas dan batas 
+bawah dari entri data. 
+Penelitian ini bertujuan untuk memberikan 
+pemahaman yang lebih baik tentang proses black box 
+testing pada web-commerce lima benua menggunakan 
+Equivalence Partitioning dan Boundary Value 
+Analysis, serta mengevaluasi efektivitas pengujian dan 
+memberikan rekomendasi perbaikan yang diperlukan 
+untuk meningkatkan fungsionalitas situs web. 
+ 
+2 
+TINJAUAN PUSTAKA 
+Penelitian terdahulu yang dilakukan oleh [5] 
+melibatkan pengujian black box pada aplikasi 
+
+
+--- HALAMAN 2 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3363 
+perawatan barang milik negara di Politeknik Negeri 
+Cilacap 
+dengan 
+menggunakan 
+pendekatan 
+Equivalence Partitioning. Fokus penelitian ini adalah 
+menjaga 
+mutu 
+aplikasi 
+dan 
+menilai 
+tingkat 
+efektivitasnya, khususnya pada modul fungsional 
+penggantian barang. Hasil pengujian menunjukkan 
+tingkat efektivitas aplikasi sebesar 93,2%. 
+Penelitian [6] juga melakukan pengujian black 
+box, kali ini pada aplikasi inventory barang kedatangan 
+perpustakaan berbasis web. Penelitian ini memusatkan 
+perhatian pada pengujian bagi pemula dengan 
+menggunakan teknik Equivalence Partitioning untuk 
+menemukan kesalahan pada berbagai aspek sistem. 
+Hasilnya menunjukkan ketidaksesuaian output pada 
+salah satu fitur aplikasi, yaitu form edit barang, dengan 
+nilai validitas keseluruhan sebesar 75%. 
+Sebagai tambahan, [7] melakukan penelitian 
+pada aplikasi penjualan PT Global Advindo untuk 
+menguji jumlah digit maksimal dan minimal pada 
+form penambahan barang. Mereka menggunakan 
+metode Boundary Value Analysis dalam black box 
+testing 
+untuk 
+memastikan 
+akurasi 
+data 
+yang 
+dimasukkan ke dalam aplikasi. Hasil pengujian 
+menunjukkan keberhasilan pengujian fungsionalitas 
+form tambah barang sebesar 100%, menunjukkan 
+relevansi metode Boundary Value Analysis dalam 
+aplikasi penjualan tersebut. 
+Penelitian serupa juga dilakukan oleh [8], yang 
+menguji sistem informasi barang Rayyan Medical 
+berbasis web dengan pendekatan Boundary Value 
+Analysis. Mereka melakukan pengujian terhadap 
+beberapa fitur sistem, termasuk form login, dashboard 
+admin, dan dashboard karyawan. Meskipun demikian, 
+tidak ditemukan celah kesalahan atau ketidaksesuaian 
+pada sistem tersebut. 
+Penulis [9] melaksanakan penelitian terhadap 
+aplikasi 
+ukmbantul.com 
+menerapkan 
+metode 
+Boundary 
+Value 
+Analysis 
+dan 
+Equivalence 
+Partitioning. 
+Tujuan 
+penelitian 
+ini 
+adalah 
+mengevaluasi dan meminimalisir kesalahan baik dari 
+sisi pengguna maupun hasil aplikasi pada website 
+tersebut. Pengujian dilakukan pada berbagai fitur, 
+seperti formulir pendaftaran anggota, halaman login, 
+dan 
+halaman 
+dashboard. 
+Hasil 
+penelitian 
+menunjukkan bahwa batasan entri data telah 
+diperhitungkan dengan baik dalam pengembangan 
+situs tersebut. 
+ 
+3 
+METODE PENELITIAN 
+3.1 Black Box Testing 
+Pengujian black box adalah teknik pengujian 
+perangkat lunak yang berfokus pada spesifikasi 
+fungsional. 
+Pengujian 
+ini 
+dilakukan 
+dengan 
+mengabaikan struktur kontrol untuk fokus pada 
+informasi domain [4]. Metode pengujian ini, juga 
+dikenal sebagai pengujian kotak hitam, memiliki 
+kemampuan 
+untuk 
+mendeteksi 
+berbagai 
+jenis 
+kesalahan, termasuk kesalahan fungsional, antarmuka, 
+struktur data, kinerja, deklarasi, dan terminasi [10].   
+Sebagai acuan, [6] mengidentifikasi tujuh teknik 
+pengujian black box yang umum digunakan. Di 
+antaranya adalah equivalence partitioning, boundary 
+value analysis, orthogonal array testing, cause-effect 
+relationship testing, fuzzing testing, all pair testing, 
+dan state transition diagrams testing. Dengan 
+menggunakan berbagai teknik ini, pengujian black box 
+dapat menyediakan cakupan yang luas dan mendalam 
+dalam mengevaluasi fungsionalitas sistem tanpa 
+memerlukan pengetahuan tentanginternal sistem. 
+ 
+ 
+Gambar 1. Tahapan equivalence partitioning dan 
+boundary value analysis [10] 
+ 
+3.2 Equivalence Partitioning 
+Equivalence partitioning adalah salah satu teknik 
+pengujian black box yang membagi ruang masukan 
+menjadi beberapa kelas data yang setara, dengan 
+tujuan 
+untuk 
+menghasilkan 
+kasus 
+uji 
+yang 
+representatif. Pendekatan ini didasarkan pada asumsi 
+bahwa komponen input dan output sistem dapat dibagi 
+menjadi beberapa kelas data yang setara, sehingga 
+pengujian dilakukan terhadap setiap kelas data ini. 
+Ketika melakukan pengujian, kami menerapkan 
+pendekatan partisi ekuivalensi untuk menentukan 
+kasus uji yang akan digunakan, dengan memilih satu 
+
+
+--- HALAMAN 3 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3364 
+representatif dari setiap kelas data. Setiap kasus uji 
+kemudian diuji terhadap sistem, dan data hasil yang 
+dihasilkan akan dikumpulkan dan dianalisis. Nilai 
+validitas dari setiap kasus uji kemudian dihitung untuk 
+mengevaluasi kinerja sistem secara keseluruhan [5]. 
+Dengan menggunakan teknik ini, kami dapat 
+memastikan bahwa pengujian dilakukan secara 
+komprehensif, mencakup berbagai kemungkinan 
+skenario yang mungkin terjadi pada sistem. 
+ 
+3.3 Boundary Value Analysis  
+Boundary value analysis adalah teknik pengujian 
+black box yang berfokus pada pengujian batas atas dan 
+batas bawah dari input [4]. Pendekatan ini bertujuan 
+untuk mengidentifikasi kesalahan yang mungkin 
+terjadi di sekitar batas nilai yang digunakan dalam 
+sistem. Teknik ini sering dianggap sebagai pelengkap 
+dari metode Equivalence Partitioning [11], karena 
+dengan menggunakan kedua teknik ini bersama-sama, 
+pengujian dapat menjadi lebih komprehensif. Ketika 
+menggunakan 
+Boundary 
+Value Analysis, kami 
+menentukan nilai-nilai yang berdekatan dengan batas 
+atas dan batas bawah setiap kelas data yang telah 
+ditetapkan menggunakan Equivalence Partitioning. 
+Dengan demikian, data uji yang dihasilkan menjadi 
+lebih terfokus dan jelas [10], membantu dalam 
+menemukan 
+potensi 
+kesalahan 
+yang 
+mungkin 
+terlewatkan 
+dalam 
+pengujian 
+lainnya. 
+Dengan 
+mengintegrasikan Boundary Value Analysis ke dalam 
+strategi pengujian kami, kami dapat meningkatkan 
+ketepatan dan akurasi pengujian secara keseluruhan, 
+serta meningkatkan keandalan sistem yang diuji. 
+ 
+3.4 Nilai Efektivitas 
+Efektivitas mengacu pada sejauh mana suatu 
+kegiatan atau proses mencapai tujuan atau target yang 
+telah ditetapkan[12]. Dalam konteks operasional, 
+efektivitas merujuk pada kemampuan suatu kegiatan 
+untuk mencapai hasil yang diharapkan atau tujuan 
+akhir yang ditetapkan dalam kebijakan. Sebuah 
+kegiatan operasional dikatakan efektif jika mampu 
+mencapai tujuan dan target yang telah ditetapkan, atau 
+dalam istilah lain, mencapai hasil guna yang 
+diinginkan. Untuk mengukur efektivitas, sering kali 
+digunakan standar atau kriteria yang telah ditetapkan 
+sebelumnya. Salah satu standar yang sering digunakan 
+adalah standar yang sesuai dengan Acuan Litbang 
+Depdagri (1991)[12]. Standar tersebut biasanya terkait 
+dengan parameter atau indikator tertentu yang 
+digunakan untuk mengevaluasi efektivitas suatu 
+kegiatan atau proses. Misalnya, standar tersebut dapat 
+mencakup tingkat pencapaian target, kualitas hasil, 
+efisiensi penggunaan sumber daya, dan sebagainya. 
+Dengan menggunakan standar yang sesuai, nilai 
+efektivitas suatu kegiatan dapat diukur secara objektif 
+dan 
+dapat 
+digunakan 
+sebagai 
+acuan 
+untuk 
+mengevaluasi kinerja atau pencapaian tujuan suatu 
+kegiatan atau program (Acuan Litbang Depdagri 
+(1991)[12]. 
+Tabel 1. Standar ukuran efektivitas[12] 
+Rasio Efektivitas 
+Tingkat Capaian 
+< 40 
+Sangat Tidak Efektif 
+40 - 59,99 
+Tidak Efektif 
+60-79,99 
+Cukup efektif 
+>80 
+Sangat efektif 
+Sumber : Litbang Depdagri (1991)[12] 
+ 
+Hasil pengujian yang dilakukan akan diproses 
+dan dihitung untuk menentukan nilai efektivitasnya. 
+Rumus perhitungannya adalah sebagai berikut: 
+Nilai Efektivitas = (
+  ∑𝐾𝑒𝑠𝑖𝑚𝑝𝑢𝑙𝑎𝑛 𝑠𝑒𝑠𝑢𝑎𝑖
+ ∑𝑆𝑘𝑒𝑛𝑎𝑟𝑖𝑜 𝑝𝑒𝑛𝑔𝑢𝑗𝑖𝑎𝑛) ×  100              (1) 
+ 
+Nilai Efektivitas Sistem= (
+∑𝑇𝑜𝑡𝑎𝑙 𝑛𝑖𝑙𝑎𝑖 𝑒𝑓𝑒𝑘𝑡𝑖𝑣𝑖𝑡𝑎𝑠
+∑𝐽𝑢𝑚𝑙𝑎ℎ 𝑡𝑎𝑏𝑒𝑙
+) × 100 (2) 
+ 
+4 
+HASIL DAN PEMBAHASAN 
+4.1 Use Case Aplikasi 
+Diagram use case adalah alat visual yang vital 
+dalam rekayasa perangkat lunak yang menggambarkan 
+interaksi antara aktor, kasus penggunaan (use case), dan 
+sistem yang sedang dikembangkan. Representasi grafis 
+ini memberikan pemahaman visual kepada para 
+pengembang perangkat lunak tentang bagaimana 
+berbagai entitas dalam sistem berinteraksi satu sama lain 
+dalam 
+konteks 
+penggunaan 
+nyata. 
+Dengan 
+menggunakan diagram use case, pengembang dapat 
+menyajikan skenario-skenario atau situasi-situasi yang 
+mungkin terjadi ketika pengguna menggunakan sistem, 
+serta cara sistem merespons interaksi dari pengguna atau 
+aktor yang terlibat. Melalui diagram ini, pengembang 
+dapat dengan jelas melihat fungsionalitas sistem dan 
+mengidentifikasi kebutuhan pengguna dalam berbagai 
+situasi, yang pada gilirannya membantu dalam 
+perancangan dan pengembangan sistem yang lebih baik 
+sesuai dengan kebutuhan dan harapan pengguna. 
+Dengan demikian, diagram use case menjadi instrumen 
+penting dalam 
+memastikan bahwa 
+solusi 
+yang 
+dikembangkan memenuhi tujuan bisnis dan kebutuhan 
+pengguna dengan tepat. 
+ 
+Gambar 2. Use case web-commerce Lima Benua 
+ 
+Pada Gambar 2 menunjukkan use case web-
+commerce Lima Benua yang terdiri dari dua aktor, 
+
+
+--- HALAMAN 4 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3365 
+pengunjung dan pelanggan. Di samping itu terdapat 
+beberapa use case yang menjadi data uji dalam 
+penelitian ini, yaitu login, registrasi, pencarian produk, 
+detil produk, keranjang belanja, dan checkout. 
+Diantara ketujuh use case, login dan checkout hanya 
+dapat dilakukan oleh pelanggan dan registrasi 
+dilakukan oleh pengunjung.  
+ 
+ 
+Gambar 3. Activity diagram menu keranjang belanja 
+4.2 Tampilan Menu Keranjang Belanja 
+Tampilan dari menu keranjang belanja web-
+commerce Lima Benua adalah sebagai berikut. Pada 
+halman ini menampilkan daftar produk yang dipesan 
+oleh pengguna (pelanggan dan pengunjung) sebelum 
+dilakukan proses checkout. Gambar 4 menunjukkan 
+pelanggan atau pengunjung telah menambahkan 
+produk ke keranjang belanja.  
+ 
+ 
+Gambar 4. Menu keranjang belanja 
+ 
+4.3 Membuat Test Case 
+Test case merupakan daftar skenario yang 
+digunakan sebagai alat dalam menguji sistem web-
+commerce Lima Benua dengan memadukan teknik 
+black box testing, Equivalence Partitioning dan 
+Boundary Value Analysis.  
+ 
+Tabel 5. Test Case halaman keranjang belanja 
+Test case Halaman Keranjang Belanja 
+ID 
+Skenario 
+Metode 
+Kondisi 
+Hasil yang diharapkan 
+F02 Mengisi quantity dengan 
+nilai ‘0’ 
+Boundary value 
+analysis 
+Batas bawah 
+Quantity gagal diperbarui dan 
+muncul error handling 
+F04 Mengisi quantity dengan 
+nilai maksimum interger 
+Boundary value 
+analysis 
+Batas atas 
+Muncul alert “warning: product 
+out of stock” 
+F05 
+Mengosongi quantity 
+Quantity: 
+(NULL) 
+Equivalence 
+Partitioning 
+Valid : 
+Quantity gagal diperbarui dan 
+muncul error handling 
+Invalid : 
+Quantity berhasil diperbarui 
+Quantity gagal diperbarui dan 
+muncul error handling 
+ 
+F06 Mengisi quantity dengan 
+data acak 
+Equivalence 
+Partitioning 
+Valid : 
+muncul alert “warning: 
+masukkan jumlah produk 
+dengan benar”. 
+Invalid : 
+Quantity  berhasil diperbarui 
+Muncul alert “warning: 
+masukkan jumlah produk dengan 
+benar”. 
+ 
+Tabel 5 memperlihatkan 3 dari 12 skenario uji 
+dalam test case yang digunakan untuk menguji tabel 
+keranjang belanja web-commerce Lima Benua. 
+Skenario uji didasarkan oleh data uji yang berfokus 
+pada masukkan kuantitas produk yang dipesan 
+pelanggan atau pengunjung di keranjang belanja.  
+Pada skenario ini, tiga diantaranya menggunakan 
+boundary value analysis disebabkan beberapa field 
+memerlukan masukkan dengan range tertentu yang 
+dikelompokkan ke dalam tiga kondisi: batas bawah (x-
+1), nilai batas (x dan y), dan batas bawah (y+1), 
+sedangkan 
+skenario 
+lainnya 
+menggunakan 
+equivalence partitioning diperuntukkan bagi field 
+dengan kebutuhan sistem yang tidak memerlukan 
+masukkan dengan range tertentu dan digolongkan 
+kedua partisi: valid dan invalid.   
+
+
+--- HALAMAN 5 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3366 
+4.4 Proses Pengujian 
+Pengujian web-commerce lima benua dilakukan 
+menggunakan 
+test 
+case 
+yang 
+telah 
+disajikan 
+sebelumnya bertujuan untuk mengetahui apakah hasil 
+uji sesuai atau tidak sesuai dengan membandingkan 
+kesesuaian antara hasil yang ingin dicapai dan hasil 
+temuan pada proses pengujian.  Hasil uji terdiri dari ID 
+test case, hasil yang diharapkan, hasil uji, dan 
+kesimpulan valid dan invalid. 
+ 
+Tabel 6. Hasil uji halaman keranjang belanja 
+Hasil Uji Halaman Keranjang Belanja 
+ID 
+Test 
+case 
+Hasil yang 
+diharapkan 
+Hasil Uji 
+Kesimpulan 
+F02 
+Quantity gagal 
+diperbarui dan 
+muncul error 
+handling 
+Produk 
+berhasil 
+dihapus dan 
+muncul error 
+handling 
+Invalid/ tidak 
+sesuai 
+F04 
+Muncul alert 
+“warning: 
+product out of 
+stock” 
+Muncul alert 
+“warning: 
+product out 
+of stock” 
+Valid/ sesuai 
+F05 
+Quantity gagal 
+diperbarui dan 
+muncul error 
+handling 
+Produk 
+berhasil 
+dihapus 
+muncul error 
+handling 
+Invalid/ tidak 
+sesuai 
+F06 
+Muncul alert 
+“warning: 
+masukkan jumlah 
+produk dengan 
+benar” 
+Produk 
+terhapus 
+Invalid/ 
+tidak sesuai 
+ 
+ 
+Dari Tabel 6 memperlihatkan hasil uii keranjang 
+belanja dengan ditemukannya 1 kesimpulan uji yang 
+invalid/ tidak sesuai, sedangkan sisa skenario lainnya 
+valid/sesuai. Lalu data tersebut akan dihitung nilai 
+efektivitas tiap tabelnya dan dianalisis guna sebagai 
+dasar memberikan rekomendasi perbaikan bagi 
+pengembang.   
+ 
+4.5 Evaluasi Hasil Pengujian 
+ 
+ 
+Gambar 4. Grafik Nilai Efektivitas Tabel  
+Berdasarkan pengujian terhadap 7 tabel yang 
+diujikan dengan total 121 skenario, hasil menunjukkan 
+terdapat 91 skenario valid/ sesuai dan 30 skenario 
+invalid/ tidak sesuai dengan nilai efektivitas masing-
+masing disajikan pada gambar 4 dan perolehan nilai 
+efektivitas sistem (keseluruhan) sebesar 81,02%. 
+Merujuk pada hasil nilai efektivitas sistem 
+menunjukkan aplikasi ini sangat efektif. Namun 
+terdapat beberapa catatan temuan kelemahan dari 
+sistem yang diuji. Beberapa hasil temuan dan 
+rekomendasi perbaikannya adalah sebagai berikut. 
+ 
+Tabel 7. Rekomendasi Perbaikan Sistem 
+Temuan Kesalahan 
+Rekomendasi 
+Tidak terdapat validasi input 
+data sehingga beberapa form 
+dapat menyimpan data acak 
+Menambahkan validasi 
+input data agar data yang 
+diinputkan sesuai 
+dengan yang diinginkan 
+Dapat menyimpan data nol 
+pada field qty dan sukses 
+menambahkan jumlah 
+produk ke keranjang 
+Membuat fungsi 
+menolak masukkan form 
+yang kosong atau 
+bernilai nol dan sistem 
+gagal menyimpan data 
+Semua transaksi pemesanan 
+produk tidak dapat diproses 
+ke tagihan pembayaran, 
+namun invoice dapat 
+diterima melalui e-mail 
+pelanggan sebagai spam 
+Menambahkan error 
+handling serta alternatif 
+pembayaran, dan invoice 
+tidak perlu dikirimkan 
+jika transaksi gagal 
+ 
+5 
+KESIMPULAN DAN SARAN 
+Merujuk pada hasil penelitian, terbukti bahwa 
+penggunaan metode Equivalence Partitioning dan 
+Boundary Value Analysis secara bersama-sama dalam 
+pengujian black box di platform e-commerce Lima 
+Benua menghasilkan efektivitas yang signifikan. 
+Dengan mencapai persentase keefektifan sebesar 
+89,19%, sistem terbukti mampu beroperasi dengan 
+baik dan memberikan hasil yang dapat diandalkan. 
+Meskipun demikian, dalam proses pengujian, terdapat 
+beberapa temuan yang perlu menjadi perhatian bagi 
+pengembang guna meningkatkan kualitas sistem di 
+masa depan. 
+Untuk penelitian selanjutnya, disarankan untuk 
+melakukan pengujian dengan menggunakan metode 
+dan teknik yang berbeda guna memberikan penilaian 
+yang lebih komprehensif terhadap sistem. Selain fokus 
+pada aspek fungsional, penelitian tersebut dapat 
+mempertimbangkan aspek non-fungsional seperti 
+keamanan, kinerja, dan keandalan sistem. Dengan 
+demikian, akan lebih berpeluang untuk menemukan 
+kesalahan-kesalahan yang mungkin terlewatkan dalam 
+penelitian ini serta untuk memastikan bahwa sistem 
+mampu beroperasi dengan baik dalam berbagai situasi 
+dan kondisi. Hasil pengujian berikutnya diharapkan 
+dapat memberikan kontribusi yang signifikan dalam 
+meningkatkan efisiensi dan kualitas dari aplikasi yang 
+diuji, 
+serta 
+membantu 
+pengembang 
+dalam 
+mengidentifikasi dan memperbaiki potensi masalah 
+yang mungkin timbul. 
+  
+ 
+ 
+100
+80
+80.95 91.67
+54.55
+75
+85
+0
+20
+40
+60
+80
+100
+120
+Nilai Efektivitas (%)
+
+
+--- HALAMAN 6 ---
+JATI (Jurnal Mahasiswa Teknik Informatika) 
+Vol. 8 No. 3, Juni 2024 
+ 
+3367 
+DAFTAR PUSTAKA  
+[1] S. Ayu and A. Lahmi, “Peran e-commerce 
+terhadap 
+perekonomian 
+Indonesia 
+selama 
+pandemi Covid-19,” Jurnal Kajian Manajemen 
+Bisnis, vol. 9, no. 2, pp. 114–123, 2020. 
+[2] A. 
+Lidwina, 
+“Penggunaan 
+E-Commerce 
+Indonesia Tertinggi di Dunia,” databooks. 
+Accessed: Mar. 12, 2023. [Online]. Available: 
+https://databoks.katadata.co.id/datapublish/2021
+/06/04/penggunaan-e-commerce-indonesia-
+tertinggi-di-dunia 
+[3] Sudaryono, E. Rahwanto, and R. Komala, “E-
+COMMERCE DORONG PEREKONOMIAN 
+INDONESIA,SELAMA PANDEMI COVID 19 
+SEBAGAI ENTREPRENEURMODERN DAN 
+PENGARUHNYA 
+TERHADAP 
+BISNIS 
+OFFLINE,” Jurnal Manajemen dan Bisnis 
+(Jumanis), vol. 02, no. 02, pp. 111–124, 2020. 
+[4] T. S. Jaya, “Pengujian Aplikasi dengan Metode 
+Blackbox Testing Boundary Value Analysis 
+(Studi Kasus: Kantor Digital Politeknik Negeri 
+Lampung),” : Jurnal Pengembangan IT, vol. 03, 
+no. 02, pp. 45–48, 2018. 
+[5] N. W. Rahadi and C. Vikasari, “Pengujian 
+Software Aplikasi Perawatan Barang Milik 
+Negara Menggunakan Metode Black Box 
+Testing 
+Equivalence 
+Partitions,” 
+Jurnal 
+Infotekmesin, vol. 11, no. 1, pp. 57–61, 2020. 
+[6] N. Muhammad Arofiq, R. Ferdo Erlangga, A. 
+Irawan, and A. Saifudin, “OKTAL : Jurnal Ilmu 
+Komputer dan Science Pengujian Fungsional 
+Aplikasi Inventory Barang Kedatangan Dengan 
+Metode Black Box Testing Bagi Pemula,” vol. 2, 
+no. 
+5, 
+2023, 
+[Online]. 
+Available: 
+https://journal.mediapublikasi.id/index.php/oktal 
+[7] S. R. Yulistina, T. Nurmala, R. M. A. T. 
+Supriawan, Sandi, H. I. Juni, and A. Saifudin, 
+“Penerapan Teknik Boundary Value Analysis 
+untuk 
+Pengujian 
+Aplikasi 
+Penjualan 
+Menggunakan Metode Black Box Testing,” 
+Jurnal Informatika Universitas Pamulang, vol. 5, 
+no. 2, pp. 129–135, 2020. 
+[8] B. A. Maulana, E. Mawarni, M. Y. Hidayattuloh, 
+V. Suryawijaya, and A. Saifudin, “OKTAL : 
+Jurnal Ilmu Komputer dan Science Pengujian 
+Black Box pada Sistem Informasi Barang 
+Berbasis Web Menggunakan Metode Boundary 
+Value Analysis,” vol. 2, no. 6, 2023. 
+[9] M. Sholeh, I. Gisfas, Cahiman, and M. A. Fauzi, 
+“Black Box Testing on ukmbantul.com Page with 
+Boundary Value Analysis and Equivalence 
+Partitioning Methods,” J Phys Conf Ser, vol. 
+1823, no. 1, pp. 1–8, 2021, doi: 10.1088/1742-
+6596/1823/1/012029. 
+[10] S. Ikhlaashi and H. P. Putro, “Komparasi Dua 
+Teknik 
+Black 
+Box 
+Testing: 
+Equivalence 
+Partitioning dan Boundary Value Analysis (Studi 
+Kasus: Aplikasi Postcrossing),” in Annual 
+Research Seminar (ARS), 2019, pp. 213–220. 
+[11] A. R. Y. Arfani, P. Kasih, and D. P. Pamungkas, 
+“Pengujian Aplikasi Presensi dengan Black box 
+Testing dengan Metode Equivalence Partitioning 
+dan 
+Boundary 
+Value 
+Analysis,” 
+Seminar 
+Nasional Inovasi Teknologi, pp. 1–6, 2021. 
+[12] E. 
+Hartati, 
+“PENGUKURAN 
+TINGKAT 
+EFEKTIVITAS DAN EFISIENSI SISTEM 
+UJIAN NASIONAL COMPUTER BASED 
+TEST,” 2018.
+ 
+ 
+ 
+  
+

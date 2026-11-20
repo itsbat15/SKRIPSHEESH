@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-25",
+  "source": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 1 - PENDAHULUAN (VERSI 11 PARAGRAF).md",
+  "result": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 1 - PENDAHULUAN (REVISI SITASI SAJA - BERANOTASI).md",
+  "source_sha256": "bc6d83c6a5fdbf52aef9f0c6aa01865191139f57c4bbfb89ffbf5ded4ccf7ec3",
+  "result_sha256": "e7b57086d514ca0a6d430fec82e523d1b3727736b57d26d9aacb61c7d6e0eb45",
+  "original_prose_restored_exactly": true,
+  "original_unchanged": true,
+  "citation_replacements": 26,
+  "audited_reference_uses": 27,
+  "removed_unsupported_attributions": 6,
+  "changes": [
+    {
+      "ids": [
+        "A01"
+      ],
+      "original": "(Tiana & Gunanto, 2026)",
+      "replacement": "(Tiana & Gunanto, 2026, hlm. 1631 sampai 1632)[^SIT-A01]",
+      "source_line": 11
+    },
+    {
+      "ids": [
+        "A02"
+      ],
+      "original": "(Pradana, 2024)",
+      "replacement": "[^SIT-A02]",
+      "source_line": 13
+    },
+    {
+      "ids": [
+        "A03"
+      ],
+      "original": "(Fajriansyah dkk., 2026)",
+      "replacement": "(Fajriansyah dkk., 2026, hlm. 116, 124 sampai 125)[^SIT-A03]",
+      "source_line": 13
+    },
+    {
+      "ids": [
+        "A04"
+      ],
+      "original": "(Ahadi dkk., 2025)",
+      "replacement": "(Ahadi dkk., 2025, hlm. 764 sampai 765)[^SIT-A04]",
+      "source_line": 13
+    },
+    {
+      "ids": [
+        "A05"
+      ],
+      "original": "(Hendri dkk., 2025)",
+      "replacement": "(Hendri dkk., 2025, hlm. 124 sampai 125)[^SIT-A05]",
+      "source_line": 21
+    },
+    {
+      "ids": [
+        "A06",
+        "A07"
+      ],
+      "original": "(Ramadhan & Widodo, 2026; Sudirman & Tristianti, 2021)",
+      "replacement": "(Ramadhan & Widodo, 2026, bagian pembahasan dan kesimpulan; Sudirman & Tristianti, 2021, hlm. 126 sampai 127)[^SIT-A06][^SIT-A07]",
+      "source_line": 21
+    },
+    {
+      "ids": [
+        "A08"
+      ],
+      "original": "(Kabisatullah & Noprisson, 2026)",
+      "replacement": "(Kabisatullah & Noprisson, 2026, hlm. 93 sampai 94)[^SIT-A08]",
+      "source_line": 23
+    },
+    {
+      "ids": [
+        "A09"
+      ],
+      "original": "(Khafidhoh dkk., 2026)",
+      "replacement": "(Khafidhoh dkk., 2026, hlm. 15 sampai 16)[^SIT-A09]",
+      "source_line": 23
+    },
+    {
+      "ids": [
+        "A10"
+      ],
+      "original": "Gunawan dkk. (2025)",
+      "replacement": "Gunawan dkk. (2025, hlm. 424, 432)[^SIT-A10]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A11"
+      ],
+      "original": "Fajriansyah dkk. (2026)",
+      "replacement": "Fajriansyah dkk. (2026, hlm. 116, 124 sampai 125)[^SIT-A11]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A12"
+      ],
+      "original": "Barizi dkk. (2023)",
+      "replacement": "Barizi dkk. (2023, hlm. 332, 336 sampai 338)[^SIT-A12]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A13"
+      ],
+      "original": "Thiovanda (2026)",
+      "replacement": "Thiovanda (2026, hlm. 1, 4 sampai 5)[^SIT-A13]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A14"
+      ],
+      "original": "Safitri dkk. (2026)",
+      "replacement": "Safitri dkk. (2026, hlm. 2349 sampai 2350)[^SIT-A14]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A15"
+      ],
+      "original": "Khafidhoh dkk. (2026)",
+      "replacement": "Khafidhoh dkk. (2026, hlm. 15 sampai 16, 19)[^SIT-A15]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A16"
+      ],
+      "original": "Kabisatullah & Noprisson (2026)",
+      "replacement": "Kabisatullah & Noprisson (2026, hlm. 94 sampai 95)[^SIT-A16]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A17"
+      ],
+      "original": "Ahadi dkk. (2025)",
+      "replacement": "Ahadi dkk. (2025, hlm. 764 sampai 765)[^SIT-A17]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A18"
+      ],
+      "original": "Ramadhan & Widodo (2026)",
+      "replacement": "Ramadhan & Widodo (2026, bagian pembahasan dan kesimpulan)[^SIT-A18]",
+      "source_line": 25
+    },
+    {
+      "ids": [
+        "A19"
+      ],
+      "original": "(Schwaber & Sutherland, 2020)",
+      "replacement": "[^SIT-A19]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A20"
+      ],
+      "original": "(Sommerville, 2011)",
+      "replacement": "[^SIT-A20]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A21"
+      ],
+      "original": "(Beck & Andres, 2004)",
+      "replacement": "(Beck & Andres, 2004, Bab 7, bagian Pair Programming)[^SIT-A21]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A22"
+      ],
+      "original": "(Agarwal & Umphress, 2008)",
+      "replacement": "(Agarwal & Umphress, 2008, hlm. 85)[^SIT-A22]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A23"
+      ],
+      "original": "(Mishra & Alzoubi, 2023)",
+      "replacement": "[^SIT-A23]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A24"
+      ],
+      "original": "(Sommerville, 2011)",
+      "replacement": "[^SIT-A24]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A25"
+      ],
+      "original": "(Pressman, 2010)",
+      "replacement": "[^SIT-A25]",
+      "source_line": 29
+    },
+    {
+      "ids": [
+        "A26"
+      ],
+      "original": "(Fikri & Arthawan, 2020)",
+      "replacement": "(Fikri & Arthawan, 2020, hlm. 103 sampai 105)[^SIT-A26]",
+      "source_line": 31
+    },
+    {
+      "ids": [
+        "A27"
+      ],
+      "original": "(Sidiq dkk., 2025)",
+      "replacement": "(Sidiq dkk., 2025, hlm. 37 sampai 38, 45)[^SIT-A27]",
+      "source_line": 31
+    }
+  ]
+}

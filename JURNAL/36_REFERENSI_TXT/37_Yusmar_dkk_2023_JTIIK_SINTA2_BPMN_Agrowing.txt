@@ -1,0 +1,1105 @@
+=== HALAMAN 1 ===
+Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) DOI: 10.25126/jtiik.2023107237 
+Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138  p-ISSN: 2355-7699 
+Akreditasi KEMENRISTEKDIKTI, No. 36/E/KPT/2019   e-ISSN: 2528-6579 
+1129 
+ANALISIS PERBAIKAN DAN PEMODELAN PROSES BISNIS  MENGGUNAKAN 
+BUSINESS PROCESS IMPROVEMENT  PADA SISTEM MANAJEMEN BUDIDAYA 
+BUAH AGROWING 
+ 
+Addini Yusmar*1, Yani Nurhadryani 2, Irman Hermadi3  
+ 
+1,2.3Institut Pertanian Bogor, Bogor  
+Email: 1addiniyusmar@apps.ipb.ac.id, 2yani_nurhadryani@apps.ipb.ac.id, 3irmanhermadi@apps.ipb.ac.id  
+*Penulis Korespondensi 
+ 
+(Naskah masuk: 04 Mei 2023, diterima untuk diterbitkan: 03 Oktober 2023) 
+ 
+Abstrak 
+ 
+Proses penanaman dan pengelolaan lahan pertanian dengan bantuan teknologi berh asil memberikan kemudahan 
+dan meningkatkan hasil penjualan produksi. Penelitian mengenai penerapan teknologi telah dilakukan, namun 
+masih ditemukan ketidaksesuaian antara proses bisnis dengan sistem yang disebabkan oleh kurangnya inte grasi 
+proses bisnis. S elain itu, kompleksitas proses bisnis pertanian yang terus meningkat menuntut untuk dilakukan 
+perbaikan proses bisnis. Tujuan dari penelitian ini adalah melakukan perbaikan proses bisnis dengan 
+menganalisis peningkatan dan pemodelan proses bisnis sistem ma najemen budidaya buah.  Penelitian ini 
+memperbaiki proses bisnis sistem manajemen budidaya buah Agrowing menggunakan Business Process 
+Imporvement (BPI) dan memodelkannya menggunakan Business Process Model and Notation (BPMN). Tahapan 
+penelitian ini terdiri dari identifikasi proses bisnis sistem manajemen budidaya buah, analisis proses bisnis sistem 
+manajemen budidaya buah as-is, analisis proses bisnis sistem manajemen budidaya buah to-be, dan pengujian. 
+Pengujian dilakukan dengan simulasi waktu proses bisnis  menggunakan tools bizagi modeler dan perhitungan 
+metrik kualitas menggunakan Complexity Metric  (CFC) dan Coupling Metric  (CP). Perbaikan proses bisnis 
+budidaya buah menggunakan pendekatan BPI berhasil mengurangi waktu proses. Selain itu, kualitas model ya ng 
+dihasilkan mudah dipahami dan dimodifikasi. Model proses bisnis yang dihasilkan dapat dijadikan sebagai acuan 
+untuk tahapan desain pada pengembangan sistem manajemen budidaya buah Agrowing sehingga mendukung 
+perkembangan teknologi informasi pertanian se cara berkelanjutan dan membantu para petani untuk 
+memproduksi buah berkualitas. 
+ 
+Kata kunci: model proses bisnis, BPI, BPMN, sistem manajemen budidaya buah  
+ 
+BUSINESS PROCESS IMPROVEMENT ANALYSIS AND MODELING IN FRUIT 
+CULTIVATION MANAGEMENT SYSTEMS AGROWING 
+ 
+Abstract  
+ 
+Planting and managing agricultural land with the help of technology has succeeded in providing convenience 
+and increasing production sales. Although research on the application of technology has been conducted, 
+disparities between business pr ocesses and systems still need to be addressed due to a lack of integration of 
+business processes. Furthermore, the ever -increasing complexity of agricultural business processes necessitates 
+business process changes. This study aims to improve business pro cesses by analyzing the improvement and 
+modeling of business processes of fruit cultivation management systems . This study uses Business Process 
+Improvement (BPI) to improve the business processes of the Agrowing fruit cultivation management system, and 
+it models it using the Business Process Model and Notation (BPMN).  This study is divided into four stages: 
+identifying the business processes involved in fruit cultivation, analyzing them as they are currently (as -is), 
+analyzing them as they will be improved  (to-be), and testing.  Testing is performed by simulating business 
+process time using the bizagi modeler tool and computing quality measures with the Complexity Metric (CFC) 
+and Coupling Metric (CP ). Improving fruit cultivation business processes using the  BPI approach has reduced 
+processing time. In addition, the quality of the resulting model is easy to understand and modify. The resulting 
+business process model can be used as a reference for the design stage in the development of the Agrowing fruit 
+cultivation management system so that it supports the development of agricultural information technology 
+sustainably and helps farmers produce quality fruit. 
+ 
+Keywords: business process modelling, BPI, BPMN, fruit cultivation management system 
+ 
+
+=== HALAMAN 2 ===
+1130   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138 
+ 
+1. PENDAHULUAN  
+Pertanian berperan penting dalam pertumbuhan 
+dan stabilitas ekonomi khususnya pada negara -
+negara berkembang (Ibebuogu and Orji, 2021) . 
+Dalam prosesnya sektor pertanian menghadapi 
+berbagai tantangan diantaranya peningkatan 
+populasi, kekurangan sumber daya, dan peruba han 
+iklim. Tantangan ini mengarah pada penerapan 
+teknologi pertanian sebagai solusi untuk 
+meningkatkan produktivitas dan efisiensi dengan 
+dampak lingkungan yang lebih rendah (Dunchev, 
+2019). Menurut (Li, Wang and Li, 2020) , 
+penggunaan teknologi pada proses budidaya berhasil 
+memberikan kemudahan dan meningkatkan hasil 
+penjualan produksi dibandingkan dengan proses 
+budidaya yang dilakukan secara tradisional.  
+Beberapa penelitian mengenai teknologi pada 
+budidaya pertanian telah dilakukan, seperti 
+penelitian oleh  (Aji, 2021)  dan (Meilani, 2022) . 
+Penelitian yang telah dilakukan menghasilkan 
+sebuah sis tem manajemen budidaya buah berupa 
+SOP dan pencatatan harian yang dikelola oleh 
+Agrowing. Namun, dari penelitian yang telah 
+dilakukan masih ditemukan ketidaksesuaian antara 
+kebutuhan di lapangan dengan sistem yang 
+disebabkan oleh kurangnya integrasi antara  sistem 
+dengan proses bisnis sehingga sistem yang telah 
+dibangun belum diimplementasikan sepenuhnya. 
+Selain itu, pada penelitian (Ahoa, Kassahun and 
+Tekinerdogan, 2020)  juga ditemukan 
+ketidakselarasan antara proses bisnis dengan sistem 
+informasi kebun yang telah dibangun.  Menurut 
+(Celestrini et al., 2019) , permasalahan integrasi 
+proses bisnis merupakan masalah pertama yang 
+dihadapi ketika mengimplementasikan teknologi. 
+Proses bisnis merupakan sekumpulan aktivitas 
+yang saling terhubung dan secara bersama -sama 
+menciptakan output yang memberikan nilai kepada 
+pelanggan (Jasiulewicz, Waszkowski and 
+Piechowski, 2018) . Proses bisnis pertanian terdiri 
+dari aktivitas yang mendukung proses produksi 
+hingga proses distribusi.  Dalam pengembangan 
+sistem, pemahaman operasi bisnis perusahaan sangat 
+berpengaruh terhadap keberhasilan perancangan 
+sistem. Pada tahapan requirements engineering  tim 
+analis menyelidiki proses bisnis dan 
+mendokumentasikan apa yang dibutu hkan oleh 
+sistem ke dalam model proses bisnis (Tilley, 2019).  
+Pemodelan proses bisnis merupakan sarana 
+untuk membantu menjelaskan aktivitas perusahaan 
+dengan mewakili setiap aktivitas bisnis, aliran 
+informasi, dan logika keputusan sehingga da pat 
+dipahami oleh stakeholders (Guizani and 
+Ghannouchi, 2021)  (Tilley, 2019) . Pemodelan 
+proses bisnis terdiri dari beberapa teknik yang 
+memiliki kelebihan dan kekurangan. Salah satu 
+teknik pemodelan adalah Business Process 
+Languages yang dikembangkan sebagai upaya untuk 
+mengatasi kompleksitas model formal  (Vergidis, 
+Tiwari and Maieed, 2008) . Teknik pemodelan 
+dengan menggunakan BPL terdiri dari beberapa 
+bahasa pemodelan yang memiliki kekhususan 
+tersendiri.  
+BPMN merupakan salah satu bahasa dari teknik 
+bahasa pemodelan yang dirancang sebagai notasi 
+grafis untuk analisis proses bisnis (Tomaskova et al., 
+2019). Meskipun terdapat beberapa bahasa 
+pemodelan, BPMN telah menjadi standar terdepan 
+dalam pemodelan proses bisnis (Zarour et al., 2020). 
+Menurut (Nizioł et al., 2021) , BPMN adalah notasi 
+terkaya dalam jumlah elemen grafis. Hal ini 
+memudahkan pengguna membuat model yang akurat 
+dengan mencerminkan activity atau event, jenis 
+tugas yang dilakukan,  menandai alur proses, atau 
+menyajikan objek data yang diperlukan.  
+Meningkatnya kompleksitas melalui rantai 
+pasok pertanian yang melibatkan stakeholder, 
+pelaku bisnis, dan interaksi yang kompleks antara 
+keduanya menciptakan kebutuhan baru  
+(Barmpounakis et al., 2015) . Selain itu,  
+meningkatnya globalisasi dan digitalisasi ikut 
+mengubah proses bisnis pertanian (Kumar et al., 
+2021). Perubahan yang terjadi dalam proses bisnis 
+mendorong untuk dilakukannya desain ulang proses 
+bisnis pertanian dari petani ke konsumen (Kassim, 
+2020).  
+Salah satu pendekatan yang digunakan untuk 
+perbaikan proses bisnis adalah Business Process 
+Improvement (BPI). BPI terdiri dari kerangka kerja 
+sistematis yang dibangun untuk menghasilkan 
+kemajuan yang signifikan dalam pelaksanaan proses 
+bisnis (Pamungkas and Fajar, 2022) . Secara umum 
+BPI mirip dengan Business Process Re -engineering 
+(BPR), Namun, BPI melakukan perbaikan proses 
+pada proses bisnis yang telah ada (Immawan, 
+Shafira and Cahyo, 2019) . Selain itu, BPI berfo kus 
+pada perubahan evolusioner sedangkan BPR 
+berfokus pada perubahan proses bisnis dengan skala 
+besar (Bradford and Gerard, 2015).  
+Konsep BPI pertama kali diusulkan oleh 
+Harrington pada tahun 1991 yang terdiri atas 5 
+tahapan. Peningkatan dimulai dengan organizing for 
+improvement dan diakhiri  dengan continous 
+improvement. Selain konsep yang diusulkan 
+Harrington, terdapat konsep BPI yang diusulkan 
+oleh (Page, 2015) . Konsep BPI yang diusulkan 
+mendetailkan tahapan peningkatan proses bisnis 
+yang telah diusulkan sebelumnya sehingga 
+memberikan kemudahan bagi pengguna. 
+Peningkatan dimulai dengan taha pan develop the 
+process inventory  untuk menentukan proses bisnis 
+prioritas dan diakhiri dengan tahapan drive 
+continous improvement.  
+Melihat kompleksitas proses bisnis pertanian 
+dan kendala integrasi antara proses bisnis  dengan 
+sistem, maka perlu dilakukan desain ulang proses 
+bisnis. Penelitian mengenai desain ulang proses 
+bisnis pertanian telah dilakukan oleh (Amalina and 
+
+=== HALAMAN 3 ===
+Yusman, dkk, Analisis Perbaikan dan Pemodelan …   1131 
+Handayati, 2020)  dan (Calvet, Falcão and Thom, 
+2022), namun peningkatan yang dilakukan belum 
+menggunakan pendekatan BPI.  
+Berdasarkan uraian latar belakang di atas dapat 
+ditarik rumusan masalah bagaimana meningkatkan 
+proses bisnis sistem manajemen budidaya buah 
+Agrowing dengan menggunakan metode Business 
+Process Improvement  (BPI) yang diusulkan (Page, 
+2015) dan memodelkan proses bisnis menggunakan 
+BPMN. Tujuan dari penelitian ini adalah melakukan 
+analisis peningkatan dan pemodelan proses bisnis 
+sistem manajemen budidaya buah sehingga 
+mendukung perkembangan teknologi informasi 
+pertanian secara berkelanjutan dan membantu para 
+petani memproduksi buah berkualitas. Model proses 
+yang telah ditingkatkan diuji dengan 
+membandingkan hasil simulasi waktu proses dan 
+kualitas model proses bisnis diuji dengan 
+perhitungan metrik kualitas  Complexity M etric 
+(CFC) dan Coupling Metric  (CP). Kualitas model 
+proses bisnis akan berpengaruh pada kualitas desain 
+pengembangan sistem dan perbaikan proses bisnis 
+yang diharapkan (Oca et al., 2015).  
+2. METODE PENELITIAN  
+Penelitian ini menggunakan metode analisis 
+peningkatan Business Process Improvement  (BPI) 
+yang diusulkan oleh (Page, 2015)  dengan batasan 
+sampai pada tahapan pengujian model. Tahapan 
+peningkatan BPI dapat dilihat pada Gambar 1.  
+ 
+ 
+Gambar 1. Roadmap BPI (Page, 2015) 
+ 
+  Pada penelitian ini tahapan peningkatan proses 
+bisnis BPI dikelompokkan menjadi 4 tahapan yang 
+ditunjukkan pada Gambar 2 . Tahapan peningkatan 
+dimulai dengan mengidentifikasi proses bisnis 
+sistem manajemen budidaya buah Agrowing, 
+menganalisis proses bisnis sistem manajemen 
+budidaya buah saat ini ( as-is), menganalisis proses 
+bisnis sistem manajemen budidaya buah yang telah 
+ditingkatkan (to-be), dan menguji setiap model.  
+ 
+ 
+Gambar 2. Tahapan Penelitian 
+2.1. Identifikasi Proses Bisnis 
+Tahap identifikasi proses bisnis 
+mengumpulkan data proses bisnis budidaya buah  
+yang diperoleh dengan mewawancarai pihak 
+manajer dan founder Agrowing. Data yang 
+dikumpulkan berupa aktivitas -aktivitas budidaya 
+buah Agrowing, informasi mengenai pelaku bisnis 
+budidaya, kendala yang dihadapi, dan penggunaan 
+sistem manajemen budidaya buah yang telah 
+dilakukan pada penelitian (Aji, 2021) dan (Meilani, 
+2022).    
+2.2. Analisis Proses Bisnis As-Is 
+Tahap analisis proses bisnis as-is terdiri dari 4 
+langkah yaitu, develop the process inventory  dengan 
+mengembangkan daftar proses bisnis,  establish the 
+foundation dengan  menyusun scope document , 
+draw the process map  dengan memodelkan proses 
+bisnis sistem manajemen budidaya buah  as-is, dan 
+estimate time dengan mengestimasi waktu proses. 
+2.2.1. Develop the Process Inventory  
+Tahapan ini mengembangkan daftar proses 
+bisnis dengan melakukan pengukuran tingkat 
+kepentingan untuk menentukan proses bisnis 
+prioritas. Parameter pengukuran terdiri dari 4 kriteria 
+yaitu, impact, implementation, current state  dan 
+value. Masing -masing kriteria dikembangkan 
+menjadi parameter yang terdapat pada Tabel 1.  
+ 
+Tabel 1. Parameter tingkat kepentingan proses bisnis 
+Kriteria Parameter 
+Impact 
+1. Number affected  mengacu pada 
+volume dan jumlah  karyawan yang 
+dipengaruhi oleh proses bisnis. 
+2. Production Impact mengacu pada 
+seberapa besar proses bisnis 
+mempengaruhi hasil produksi buah. 
+Implementation 
+1. Time to market mengacu pada 
+perkiraan waktu yang diperlukan 
+untuk mening katkan proses bisnis . 
+Semakin singkat waktu yang 
+diperlukan, maka semakin tinggi 
+skor proses binis tersebut 
+2. Funding mengacu pada anggaran 
+dan ukuran yang diperlukan proses 
+bisnis tersebut. 
+ 
+
+=== HALAMAN 4 ===
+1132   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138 
+Kriteria Parameter 
+Current state 
+1. Client statisfication mengacu pada 
+evaluasi sebera pa baik atau buruk 
+proses bisnis saat ini bekerja dari 
+perspektif client. 
+2. Process exist mengacu pada proses 
+formal yang ada pada suatu proses. 
+Value 
+1. Benefit mengacu pada keuntungan 
+yang diperoleh setelah peningkatan 
+proses baik dari segi kuantitatif 
+maupun kualitatif. 
+ 
+2.2.2. Establish the Foundation  
+Tahapan ini mendeskripsikan proses bisnis 
+prioritas ke dalam scope document . Scope document 
+disebut  sebagai blue print  yang menyediakan 
+informasi dasar dan memandu peningkatan proses 
+bisnis agar tetap sesua i jalur. Setiap proses bi snis 
+didetailkan menjadi beberapa aktivitas atau sub 
+proses bisnis.  
+2.2.3. Draw the Process Map (As-Is) 
+     Tahapan ini memodelkan scope document proses 
+bisnis yang telah disusun ke dalam notasi grafis 
+BPMN dengan menggunakan tools bizagi modeler. 
+2.2.4.  Time Estimate  
+  Tahapan akhir adalah mengidentifikasi estimasi 
+waktu masing -masing proses. Identifikasi waktu 
+dihitung dengan menentukan waktu proses dan 
+waktu siklus yang dapat diketahui dari penelusuran 
+informasi. Pada peneliian ini  waktu proses 
+merupakan wak tu yang dibutuhkan oleh setiap 
+proses bisnis dalam menyelesaikan seluruh sub 
+proses bisnisnya, sedangkan waktu siklus 
+merupakan waktu yang dibutuhkan proses bisnis 
+untuk menyelesaikan seluruh sub proses bisnis 
+dengan menghitung w aktu tunggu ant ar setiap su b 
+proses. Masing-masing komoditas buah memiliki 
+waktu, durasi, dan indikator yang berbeda s ehingga 
+estimasi waktu hanya fokus pada waktu proses yang 
+berhubungan dengan penggunaan sistem manajemen 
+budidaya buah. 
+2.3. Analisis Proses Bisnis To-Be  
+Tahap analisis proses bisnis to-be terdiri dari 4 
+langkah yaitu, apply improvemen techniques , create 
+internal controls , create tools improvement , dan 
+draw the process improvement (to-be).  
+2.3.1. Apply Improvement Techniques 
+      Tahapan implemen tasi teknik peningkatan  
+menggunakan metode  the improvement techniques 
+wheel. Metode ini terdiri dari 6 teknik peningkatan 
+yang terdapat pada Tabel 2.   
+ 
+Tabel 2. Teknik peningkatan proses bisnis 
+Teknik Keterangan 
+Bureaucracy Menghilangkan birokrasi deng an 
+mengevaluasi apakah sub proses  pada 
+proses bisnis diperlukan atau 
+menghambat proses b isnis yang 
+efektif dan efisien. 
+Value added Memeriksa apakah setiap sub proses 
+Teknik Keterangan 
+dalam proses bisnis budidaya buah 
+memberikan kontribusi nilai  pada 
+produksi buah berkualitas 
+Duplication Memeriksa ap akah sub proses  dalam 
+proses bisnis memiliki output serupa.  
+Simplification Menyederhanakan proses dengan 
+mengurangi atau menghilangkan 
+kompleksitas suatu kegiatan dalam 
+proses bisnis budidaya buah sehingga 
+proses budidaya menjadi lebih mudah 
+dipahami dan lebih efisien. 
+Automation Memilih sub proses  yang dapat 
+diotomatisasi untuk menunjang proses 
+budidaya. 
+Cycle time Mengurangi waktu siklus proses agar 
+dapat meningkatkan produktivitas dan 
+membebaskan sumber daya. 
+ 
+2.3.2. Create Internal Controls  
+Setelah melak ukan analisis peningkatan 
+dilakukan penyusunan kontrol internal. Kontrol 
+internal disusun untuk mengatasi kemungkinan 
+kesalahan yang dapat terjadi pada proses bisnis  
+sistem manajemen budidaya buah to-be. 
+2.3.3. Create Tools Improvement  
+     Selanjutnya tools penunjang improvement 
+disusun untuk mengusulkan pengembangan fitur pada 
+sistem manajemen budidaya buah berdasarkan hasil 
+teknik automation 
+2.3.4. Draw the Process Improvement (To-Be) 
+Langkah terakhir dari tahapan ini adalah 
+memodelkan proses bisnis yang telah diting katkan 
+ke dalam notasi grafis BPMN dengan bizagi 
+modeler.  
+2.4. Pengujian 
+Pengujian model proses bisnis bertujuan untuk 
+memastikan proses bisnis yang dimodelkan telah 
+memenuhi kriteria pemodelan. Pada penelitian ini 
+dilakukan pengujian dengan membandingkan waktu 
+model proses bisnis  sistem manajemen budidaya 
+buah as-is dan to-be menggunakan simulasi bizagi 
+modeler. Selain itu, penelitian ini juga melakukan 
+evaluasi kualitas model proses bisnis dengan 
+menghitung metrik kualita s Complexity M etric 
+(CFC) dan Coupling Metrics (CP).  
+Metrik CFC mengukur kualitas model proses 
+bisnis dari sisi kompleksitasnya. Persamaan (1) 
+menunjukkan persamaan CFC yang terdiri dari 
+jumlah konektor XOR-split, OR-split, dan AND-split 
+pada setiap model  proses bisnis . Interpretasi nila i 
+CFC adalah bernilai 1 -10 ke dalam kategori simple, 
+bernilai 11 -20 ke dalam kategori slightly complex , 
+bernilai 21-50 ke dalam kategori complex, dan 
+bernilai > 50 ke dalam kategori untestable (Menzli, 
+Ayouni and Elsadig, 2019).   
+     (1) 
+ 
+ 
+
+=== HALAMAN 5 ===
+Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) DOI: 10.25126/jtiik.2023107237 
+Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138  p-ISSN: 2355-7699 
+Akreditasi KEMENRISTEKDIKTI, No. 36/E/KPT/2019   e-ISSN: 2528-6579 
+1133 
+ 
+Gambar 3. Model proses bisnis mengonsultasikan budidaya as-is 
+ 
+Selanjutnya metrik CP mengukur kualitas model 
+proses bisnis dari sisi interkoneksi antara aktivitas 
+dalam model proses bisnis. Persamaan (2) 
+menunjukkan persamaan CP yang terdi ri dari T 
+sebagai rangkaian aktivitas pada model proses 
+bisnis. Tingkat coupling tergantung pada bagaimana 
+rumitnya koneksi dan jenis koneksi antara aktivitas 
+proses. Nilai metrik CP yang diharapkan mendekati 
+0 karena semakin tinggi nilai CP (mendekati 1) akan 
+semakin sulit untuk m emodifikasi aktivitas proses 
+dan semakin tinggi kemu ngkinan kesalahan dalam 
+proses (Kahloun and Channouchi, 2016).   
+         (2) 
+3. HASIL DAN PEMBAHASAN  
+3.1. Hasil Identifikasi Proses Bisnis 
+Hasil identifikasi proses bisnis sistem 
+manajemen budidaya buah Agrowing terdiri dari 
+proses bisnis utama dan proses bisnis pendukung 
+yang terdapat pada Tabel 3.   
+ 
+Tabel 3. Proses bisnis utama 
+No Proses bisnis Process owner 
+1 Mempersiapkan lahan dan tanaman Petani 
+2 Merawat tanaman belum 
+menghasilkan 
+Petani 
+3 Merawat tanaman menghasilkan Petani 
+4 Memanen tanaman Petani 
+5 Mengelola hasil panen Agrowing 
+6 Membuat akun pengguna Agrowing 
+7 Membuat SOP budidaya Agrowing 
+8 Membuat proyek tanam Manajer Kebum 
+9 Mengonsultasikan budidaya Manajer Kebun 
+10 Mengirim hasil panen Agrowing 
+Setiap proses didetailkan menjadi beberapa aktivitas 
+atau sub proses bisnis. Masing -masing proses bisnis 
+memiliki penanggung jawab proses atau disebut 
+sebagai process owner. 
+3.2. Hasil Analisis Proses Bisnis As-Is  
+3.2.1. Hasil Develop the Process Inventory  
+Setiap proses diukur dengan parameter tingkat 
+kepentingan. Skala pengukuran yang digunakan 
+adalah skala 1 -3, namun untuk paramater process 
+exist digunakan skala no minal 1 dan 0. Hasil 
+perhitungan par amater terdapat pada Tabel 4. Dari 
+hasil perhitungan, proses bisnis mempersiapkan 
+lahan dan tanaman, merawat  tanaman belum 
+menghasilkan, merawat tanaman menghasilkan, 
+memanen tanaman, menangani hasil panen, 
+membuat SOP b udidaya, mengonsultasikan 
+budidaya, dan membuat akun pengguna 
+diprioritaskan untuk ditingkatkan.  
+ 
+3.2.2. Hasil Establish the Foundation 
+Selanjutnya proses bisnis yang memiliki nilai 
+tertinggi dideskripsikan ke dalam format scope 
+document. Scope document  yang telah disusun 
+menjadi panduan untuk  memodelkan proses bisnis 
+sistem manajemen budidaya buah as-is.  
+ 
+3.2.3.  Hasil Draw the Process Map (As-Is) 
+Model proses bisnis  budidaya buah Agrowing 
+terdiri atas proses dan sub proses bisnis. Proses 
+bisnis yang telah didesk ripsikan ke dalam  scope 
+document dipetakan menggunakan notasi BPMN 
+dan tools bizagi modeler . Model proses ini disebut 
+dengan model proses bisnis as-is yang akan 
+dijadikan sebagai acuan untuk peningkatan proses 
+bisnis to-be.  
+Gambar 3  adalah model proses bi snis 
+mengonsultasikan budidaya as-is.  
+
+=== HALAMAN 6 ===
+1134   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138 
+Tabel 4. Hasil perhitungan parameter proses bisnis 
+No Proses Bisnis 
+Kriteria impact Kriteria 
+implementation 
+Kriteria current 
+state 
+Kriteria 
+value 
+Jumlah Number 
+affected 
+Produc
+tion 
+Time 
+to market 
+Fundi
+ng 
+Client 
+statisfi
+cation 
+Proces
+s exist Benefit 
+1 Mempersiapkan lahan dan 
+tanaman 2 3 2 3 2 1 3 16 
+2 Merawat tanaman belum 
+menghasilkan   2 3 2 3 2 1 3 16 
+3 Merawat tanaman menghasilkan  2 3 2 3 2 1 3 16 
+4 Memanen tanaman  1 3 2 3 2 1 3 15 
+5 Mengelola hasil panen  1 2 3 3 2 1 3 15 
+6 Membuat akun pengguna  3 1 3 3 1 0 3 14 
+7 Membuat sop budidaya 3 2 2 3 2 0 3 15 
+8 Membuat proyek tanam  3 1 2 3 1 0 3 13 
+9 Mengonsultasikan budidaya  1 2 2 3 3 1 3 15 
+10 Mengirim hasil panen  1 1 3 3 1 1 2 12 
+Model proses bisisnis as-is mengonsultasikan 
+budidaya terdiri atas 4 activity dengan jenis activity 
+manual task yang menandakan proses bisnis masih 
+dilakukan secara manual. Selain itu, pad a model 
+proses juga terdapat notasi exclusive gateaway dan 
+elemen time start event . Notasi exclusive gateaway  
+merupakan percabangan untuk menentukan dengan 
+siapa konsultasi ingin dilakukan. Notasi time start 
+event menandakan untuk mendapatkan solusi,  
+manajer kebun harus menunggu selama 120 menit. 
+ 
+3.2.4. Hasil Time Estimate 
+Tahap akhir analisis proses bisnis as-is adalah 
+menghitung estimiasi waktu proses binis dengan 
+melihat waktu yang dibutuhkan oleh penanggung 
+jawab proses dalam menggunakan sistem 
+manajemen budidaya buah. Waktu proses dan waktu 
+siklus dihitung dari mas ing-masing aktivitas yang 
+berkaitan dengan sistem manajemen budidaya buah. 
+Akumulasi waktu proses bisnis budidaya buah 
+terdapat pada Tabel 5. 
+ 
+Tabel 5. Estimasi waktu proses budidaya buah Agrowing 
+Sub proses bisnis Low end 
+(menit) 
+High 
+end 
+(menit) 
+Cycle 
+time 
+(menit) 
+Mempersiapkan lahan dan 
+tanaman 45 70 270 
+Merawat tanaman belum 
+menghasilkan 45 70 270 
+Merawat tanaman 
+menghasilkan 85 130 510 
+Memanen tanaman 35 55 210 
+Menangani hasil panen 25 40 150 
+Membuat SOP budidaya 15 30 120 
+Mengonsultasikan 
+budidaya 180 360 1260 
+Membuat akun pengguna 26 49 210 
+Jumlah 456 804 3000 
+3.3. Hasil Analisis Proses Bisnis To-Be 
+3.3.1. Hasil Apply Improvement Techniques 
+Peningkatan poses bisnis menggunakan metode 
+improvement techn iques wheel. Hasil implementasi 
+setiap teknik adalah sebagai berikut: 
+1. Teknik eliminate bureaucracy , teknik ini 
+menghilangkan sub proses  yang menghambat 
+efektivitas dan efisiensi proses bisnis budidaya 
+buah. Hasil teknik eliminate bureaucracy  
+terdapat pada Tabel 6.  
+Tabel 6. Hasil teknik eliminate bureaucracy 
+Sub proses bisnis Keterangan 
+Memilih lahan 
+Jika lahan sudah pernah digunakan  
+maka petani tidak perlu melakukan 
+pemilihan lahan karna dapat 
+melanjutkan lahan sebelumnya.  
+Memvalidasi SOP 
+budidaya buah 
+oleh Agrowing 
+SOP budidaya yang telah di susun 
+oleh pakar buah tidak perlu divalidasi 
+lagi oleh Agrowing karena pakar buah 
+merupakan orang yang memiliki 
+pengetahuan yang mumpuni seputar 
+budidaya buah. 
+Menginput SOP 
+budidaya ke 
+sistem SOP 
+budidaya 
+SOP budidaya yang telah disusun 
+pakar buah dapat langsung di input 
+oleh pakar buah ke sistem. Hal ini 
+akan memberikan kemudahan dan 
+menghemat pekerjaan admin / 
+Agrowing. 
+Mendaftarkan 
+akun pengguna 
+oleh Agrowing 
+Agrowing atau admin  tidak perlu 
+mendaftarkan pengguna ke sistem 
+karna pengguna dapat mengakses dan 
+mendaftar ke sistem secara langsung. 
+ 
+Hasil analisis menunjukkan terdapat 4 sub proses 
+dari 3 proses bisnis yang dapat dieliminasi. Sub 
+proses yang dieliminasi berhubungan den gan 
+perizinan dan administrasi dalam sistem manajemen 
+budidaya buah. 
+2. Teknik value adde d, teknik ini me nghilangkan 
+sub proses yang tidak memberikan  client value 
+dan atau business value  pada proses bisnis 
+budidaya buah. Hasil analisis value added  
+terdapat pada Tabel 7.  
+Tabel 7. Hasil teknik value added 
+Proses bisnis Client 
+value 
+Business 
+value 
+Non 
+value 
+Mempersiapkan lahan 
+dan tanaman 
+  - 
+Merawat tanaman belum 
+menghasilkan 
+  - 
+Merawat tanaman 
+menghasilkan 
+  - 
+Memanen tanaman   - 
+Menangani hasil panen   - 
+Membuat SOP budidaya    
+Mengonsultasikan 
+budidaya 
+  - 
+Membuat akun 
+pengguna 
+ -  
+
+=== HALAMAN 7 ===
+Yusman, dkk, Analisis Perbaikan dan Pemodelan …   1135 
+Hasil analisis menunjukkan akivitas -aktivitas pada 
+proses bisnis sebagian besar memiliki nilai, baik dari 
+segi customer ataupun bisnis. Proses bisnis yang 
+memiliki aktivitas non value  adalah proses bisnis 
+membuat SOP budidaya dan membuat  akun 
+pengguna.  
+3. Teknik duplication, teknik ini menghilangkan 
+aktivitas proses yang memiliki output sama.. 
+Hasil analisis duplication terdapat pada Tabel 8. 
+ 
+Tabel 8. Hasil teknik duplication 
+Sub proses bisnis Keterangan 
+1. Mendaftar pada 
+halaman registrasi 
+ 
+Menghasilkan output 
+yang serupa, yaitu akun 
+pengguna. 
+2. Mendaftarkan akun 
+pengguna 
+ 
+1. Menjawab pertanyaan 
+budidaya 
+ 
+Menghasilkan output 
+serupa, yaitu solusi dari 
+konsultasi budidaya 
+yang dibutuhkan 
+manajer kebun. 
+2. Menjawab pertanyaan 
+budidaya 
+ 
+Hasil a nalisis menunjukkan bahwa aktivitas pada 
+proses bisnis membuat akun pengguna dan proses 
+bisnis mengonsultasikan budidaya memiliki output 
+serupa. Pada proses bisnis membuat  akun pengguna  
+aktivitas yang menghasilkan output sama adalah 
+aktivitas mendaftar pa da halaman registrasi dan 
+mendaftarkan akun pengguna. Pada bisnis 
+mengonsultasikan budidaya aktivitas yang  
+menghasilkan output sama adalah aktivitas 
+menjawab pertanyaan oleh Agrowing dan menjawab 
+pertanyaan oleh pakar buah.  
+4. Teknik simplification, teknik ini 
+menyederhanakan beberapa sub proses  menjadi 
+satu sub proses bisnis. Penyederhanaan ini 
+dilakukan karna terdapat beber apa aktivitas 
+yang bisa diker jakan dalam satu wak tu p roses. 
+Hasil analisis simplification terdapat pada Tabel 
+9. 
+Tabel 9. Hasil teknik simplification 
+Sub proses bisnis Penyederhanaan 
+a. Memilih lahan  
+Merancang bangun lahan b. Mengukur luas lahan  
+c. Merancang bangun 
+lahan  
+a. Membuat drainase 
+Membenah tanah b. Menambah bahan 
+pembenah tanah 
+a. Memangkas bentuk 
+Memangkas tanaman. b. Memangkas 
+pemeliharaan 
+c. Memangkas produksi 
+a. Menandai kegiatan 
+pemangkasan bentuk 
+Menandai kegiatan 
+pemangkasan tanaman 
+b. Menandai kegiatan 
+pemangkasan 
+pemeliharaan 
+c. Menandai kegiatan 
+pemangkasan produksi 
+a. Membungkus buah 
+Membungkus buah b. Memberi tanda pada 
+plastik 
+a. Menandai kegiatan 
+pembungkusan buah Menandai kegiatan 
+pembungkusan buah b. Menandai kegiatan 
+Sub proses bisnis Penyederhanaan 
+penandaan bungkus 
+buah 
+a. Memilih buah yang 
+akan dipanen  Memetik buah 
+b. Memetik buah 
+a. Menjawab pertanyaan 
+budidaya Menjawab pertanyaan 
+budidaya b. Menjawab pertanyaan 
+budidaya 
+a. Mendaftar pada 
+halaman registrasi Mendaftar pada halaman 
+registrasi b. Mendaftarkan akun 
+pengguna 
+ 
+Hasil analisis menunjukkan simplification dilakukan 
+dengan menggabungkan dua atau tiga aktivitas 
+menjadi satu aktivitas atau sub proses bisnis. Pros es 
+bisnis yang telah disederhanakan dapat diberikan 
+nama sub proses bisnis baru yang mencakup 
+keseluruhan aktivitas. 
+5. Teknik automation, teknik ini meningkatkan 
+proses bisnis dengan mengusulkan penerapan 
+teknologi informasi pada  sistem manajemen 
+budidaya bu ah. Hasil analisis menunjukkan  
+terdapat beberapa aktivitas tambahan yang 
+diperlukan untuk membantu manajemen 
+budidaya buah Agrowing. Selain menambahkan 
+beberapa aktivitas, teknik ini juga mengusulkan 
+fitur tambahan pada sistem manajemen 
+budidaya buah seper ti SPK hara tanah dan 
+informasi mengenai pengendalian hama. 
+6. Teknik reduce cycle time, teknik ini 
+menyederhanakan waktu si klus dengan 
+melakukan improvement technique whee l. Hasil 
+analisis reduce cyle time terdapat pada Tabel 10. 
+ 
+Tabel 10. Hasil teknik reduce cyle time 
+Sub proses bisnis Cycle time 
+as-is 
+(menit) 
+Cycle time 
+to-be 
+(menit) 
+Merawat tanaman 
+menghasilkan 
+510 390 
+Memanen tanaman 210 150 
+Mengonsultasikan 
+budidaya 
+1260 840 
+Membuat akun pengguna 210 180 
+ 
+Implementasi teknik peningkatan proses bisn is 
+memiliki keterkaitan satu dengan yang lain, 
+sehingga teknik reduce cycle time  akan dipengaruhi 
+oleh teknik-teknik yang telah dilakukan sebelumnya. 
+Hasil analisis menunjukkan terdapat penurunan nilai 
+cycle time 4 proses bisnis to-be yaitu, proses bisnis 
+merawat tanaman menghasilkan, memanen tanaman, 
+mengonsultasikan budidaya, dan membuat akun 
+pengguna.  
+3.3.2. Hasil Create Internal Controls 
+Setelah melakukan peningkatan proses bisnis, 
+dilakukan penyusunan pengendalian internal. 
+Masing-masing aktivitas dalam pro ses bisnis 
+dianalisis untuk melihat kemungkinan risiko. Hasil 
+pengendalian internal menunjukkan kemungkinan 
+
+=== HALAMAN 8 ===
+1136   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138 
+risiko prose s bis nis dapat terjadi karena kesalahan 
+input data dan akurasi pada hasil analisis unsur hara 
+tanah. 
+3.3.3. Hasil Create Tools Improvement 
+Hasil analisis pada teknik automation 
+dikembangkan menjadi usulan teknologi untuk 
+peningkatan sistem manajemen budidaya bua h.  
+Usulan teknologi pendukung budidaya buah 
+Agrowing terdiri atas pengembangan database SOP 
+budidaya dengan menambahkan atribut pendukun g, 
+menambahkan fitur analisis hara tanah dengan 
+mengembangkan SPK analisis pada sistem, 
+mengintegrasikan menu pengelola lan h asil panen 
+dengan pencatatan harian budidaya, dan 
+menambahkan fitur konsultasi budidaya pada sistem. 
+3.3.4. Hasil Draw the Process Improvem ent (To -
+Be) 
+Hasil akhir tahapan analisis proses to-be adalah 
+model proses bisnis sistem manajemen budidaya 
+buah yang t elah ditingkatkan. Gambar 4 adalah 
+adalah model proses bisnis mengonsultasikan 
+budidaya to-be.  
+ 
+Gambar 4. Model proses bisnis mengonsultasikan budidaya to-be 
+ 
+Model proses bisnis to-be dilengkapi dengan 
+kontrol internal dan tools pendukung peningkatan 
+yang telah disusun. Model proses terdiri atas  3 user 
+task, 1 data object , 2 data store  dan 1 time start 
+event. User task  menandakan aktivi tas yang 
+dilakukan telah menggunakan sistem. Selain itu, 
+data object  merupakan file yang dihasilkan ketika 
+menjalankan user task sedangkan data store  
+merupakan data yang disimpan ke database sistem 
+ketika menjalankan user task . M odel proses to-be 
+juga dilengkapi dengan waning symbol  yang 
+menandakan kemungkinan risiko yang dapat terjadi 
+pada aktivitas atau sub proses bisnis. 
+ 
+3.4. Pengujian  
+Pengujian simulasi dilakukan dengan 
+membandingkan simulasi waktu proses 
+menggunakan tools bizagi modeler  dan pengukuran 
+model menggunakan metrik kualitas. Hasil simulasi 
+waktu proses terdapat pada Tabel 11 dan hasil 
+pengujian metrik kualitas terdapat pada tabel 12.  
+Tabel 11. Hasil simulasi waktu proses bisnis 
+Waktu Proses bisnis  
+as is 
+Proses bisnis   
+to be 
+Min Time 11jam 48menit 8jam 33menit 
+Max Time 12jam  41menit 9jam 6menit 
+Avg Time 12jam 22menit 9jam 6menit 
+ 
+Hasil pengujian simulasi  waktu menunjukan waktu 
+proses to be  mengalami penurunan minimum time , 
+maximal time, dan average time dibandingkan waktu 
+proses bisnis as is.   
+ 
+Tabel 12. Hasil simulasi waktu proses bisnis 
+Waktu Proses bisnis  
+as is 
+Proses bisnis   
+to be 
+Min Time 11jam 48menit 8jam 33menit 
+Max Time 12jam  41menit 9jam 6menit 
+Avg Time 12jam 22menit 9jam 6menit 
+ 
+Hasil pengujian metrik kualitas menunjukkan metrik 
+kualitas CFC pada model proses bisnis yang telah 
+ditingkatkan masuk ke dalam kategori simple (1 -10) 
+yang mena ndakan tingkat kompleksitas model 
+proses bisnis rendah. Sedangkan pada pengujian 
+metrik kualitas CP menghasilkan nilai mendekati 0 
+yang men andakan model proses bisnis memiliki 
+interkoneksi rendah.  
+4. KESIMPULAN 
+Kompleksitas proses bisnis dan kendala 
+integrasi pro ses bisnis pada sistem manajemen 
+budidaya buah Agrowing berhasil didesain ulang 
+dengan menggunakan teknik peningkatan BPI yang 
+diusulkan oleh Susan Page dan pemodelan 
+menggunakan BPMN.  
+Hasil perbaikan proses bisnis sistem manajemen 
+budidaya buah yang  telah dilakukan berhasil 
+mengurangi waktu proses. Hal ini dapat dilihat dari 
+penurunan nilai simulasi waktu antara proses bisnis 
+sebelum d itingkatkan dengan sesudah ditingkatkan. 
+Selain nilai simulasi, nilai kualitas metrik CFC dan 
+CP menunjukkan model pr oses bisnis yang telah 
+ditingkatkan menghasilkan model yang berkualitas 
+baik karena masuk ke kategori mudah dipahami, 
+memiliki komplesitas rendah, dan mudah untuk 
+dimodifikasi. Selanjutnya model proses bisnis sistem 
+manajemen budidaya buah yang telah diper baiki 
+dapat dijadikan sebagai acuan untuk tahapan desain 
+pada pengembangan sistem manajemen budidaya 
+buah Agrowing sehingga dapat mendukung  
+perkembangan teknologi informasi pertanian dan 
+membantu para petani memproduksi buah 
+berkualitas. 
+
+=== HALAMAN 9 ===
+Yusman, dkk, Analisis Perbaikan dan Pemodelan …   1137 
+Penelitian selanjutnya dapat mengembangkan 
+teknik peningkatan proses dalam metode Business 
+Process Improvement  yang dapat 
+mempertimbangkan estimasi waktu dan  biaya setiap 
+aktivitas. Selain itu, diharapkan untuk penelitian 
+selanjutnya dapat mengeksplorasi metrik pengujian 
+kualitas model proses bisnis lainnya.  
+DAFTAR PUSTAKA 
+AHOA, E., K ASSAHUN, A. and 
+TEKINERDOGAN, B., 2020. Business 
+processes and information systems in the 
+Ghana cocoa supply chain: A survey study. 
+NJAS - Wageningen J ournal of Life Sciences , 
+[online] 92, p.100323. 
+https://doi.org/10.1016/j.njas.2020.100323. 
+AJI, L.S., 2021. Pengembangan Back -End 
+Knowladge Management System (KMS) 
+Budidaya Tanaman Buah Modul Pembuatan 
+SOP dan Pencatatan Harian . Institut Pertanian 
+Bogor. 
+AMALINA, F. and H ANDAYATI, Y., 2020. 
+Business Process Analysis and Improvement in 
+Selling Process Using Business Process 
+Modelling Notation (BPMN) at Locarvest. KnE 
+Social Sciences , 2020, pp.459 –477. 
+https://doi.org/10.18502/kss.v4i6.6619. 
+BARMPOUNAKIS, S. , K ALOXYLOS, A., 
+GROUMAS, A., KATSIKAS, L., SARRIS, V., 
+Dimtsa, K., Fournier, F., Antoniou, E., 
+Alonistioti, N. and Wolfert, S., 2015 . 
+Management and control applications in 
+Agriculture domain via a Future Internet 
+Business-to-Business platform. Information 
+Processing in Agriculture , [online] 2(1), 
+pp.51–63. 
+https://doi.org/10.1016/j.inpa.2015.04.002. 
+BRADFORD, M. AND GERARD, G.J ., 2015 . 
+Using Process Mapping to Reveal Process 
+Redesign Opportunities during ERP Planning. 
+Journal of Emerging Technologies  in 
+Accounting, 12(1), pp.169 –188. 
+https://doi.org/10.2308/jeta-51253. 
+CALVET, E., FALCÃO, R . and THOM, L ., 2022. 
+Business Process Model f or Interoperability 
+Improvement in the Agricultural Domain 
+Using Digital Twins. In: Pacific Asia 
+Conference on Informa tion Systems 2022 . 
+pp.1–17. 
+CELESTRINI, J.R., SANTOS, C.A.S., ROCHA, 
+R.N., PEREIRA FILHO, J.G.,  SALEME, E.B. 
+and ANDREÃO, R. V., 2019. An architecture 
+and its tools for integrating IoT and BPMN in 
+agriculture scenarios. Proceedings of the ACM 
+Symposium on Applied Computing, Part F1477, 
+pp.824–831. 
+https://doi.org/10.1145/3297280.3297361. 
+DUNCHEV, D., 2019. Innovation Technologies in 
+Soft Fru it Production. Trakia Journal of 
+Sciences, 17(Suppl.1), pp.215 –220. 
+https://doi.org/10.15547/tjs.2019.s.01.036. 
+GUIZANI, K. and GHANNOUCHI, S.A., 2021. An 
+approach for selecting a business process 
+modeling language that best meets the 
+requirements of a modeler. Procedia Computer 
+Science, [online] 181(2019), pp.843 –851. 
+https://doi.org/10.1016/j.procs.2021.01.238. 
+IBEBUOGU, C .C. and  ORJI, B.A., 2021. 
+Sustainable Agricultural Development in 
+Nigeria using Information and Communication 
+Technology. International Journal of 
+Computer Science and Mathematical Theory , 
+7(1), pp.1–6. 
+IMMAWAN, T., SHAFIRA, N.P. and C AHYO, 
+W.N., 2019. Business Process Re -engineering 
+in a Sugar Mill Manufacture: The Preliminary 
+Study for Designing a Portable Machine. In: 
+IOP Conference Se ries: Materials Science and 
+Engineering. Medan, Indonesia: IOP. 
+https://doi.org/10.1088/1757-
+899X/505/1/012137. 
+JASIULEWICZ, M., WASZKOWSKI, R. and 
+PIECHOWSKI, M., 2018. Implementing 
+BPMN in maintenance process modeling. In: 
+International Conference on Inf ormation 
+Systems Architecture and Technology . pp.300–
+309. https://doi.org/10.1007/978 -3-319-67229-
+8. 
+KAHLOUN, F.  and CHANNOUCHI, S.A., 2016. 
+Quality Criteria and Metrics for Business 
+Process Models in Higher Education Domain: 
+Case of a Tracking of Curricul um Offers 
+Process. Procedia Computer Science , 100, 
+pp.1016–1023. 
+https://doi.org/10.1016/j.procs.2016.09.274. 
+KASSIM, M.R.M., 2020. IoT Applications in Smart 
+Agriculture: Issues and Challenges. In: 2020 
+IEEE Conference on Open Systems, ICOS 
+2020. IEEE. pp. 19–24. 
+https://doi.org/10.1109/ICOS50156.2020.9293
+672. 
+KUMAR, S., RAUT, R.D., NAYAL,  K., KRAUS, 
+S., YADAV, V.S.  and Na rkhede, B.E., 2021. 
+To identify industry 4.0 and circular economy 
+adoption barriers in the agriculture supply 
+chain by using ISM -ANP. Journal of Cleaner 
+Production, [online] 293, p.126023. 
+https://doi.org/10.1016/j.jclepro.2021.126023. 
+LI, X., WANG, D.  and LI, M., 2020. Convenience 
+analysis of sustainable E -agriculture based on 
+blockchain technology. Journal of Cleaner 
+Production, [online] 2 71, p.122503. 
+https://doi.org/10.1016/j.jclepro.2020.122503. 
+MEILANI, F ., 2022. Pengembangan Frontend 
+Modul Pembuatan SOP d an Pencatatan 
+Harian Knowladge Management Sistem 
+Budidaya Tanaman Buah . Institut Pertanian 
+Bogor. 
+MENZLI, L.J., AYOUNI, S . and ELSADIG, M., 
+2019. Quality Assessment of Business Process 
+
+=== HALAMAN 10 ===
+1138   Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), Vol. 10, No. 5, Oktober 2023, hlm. 1129-1138 
+Models: Case of Accreditation Process in 
+Higher Education . International Journal of 
+Civil Engineering and Technology (IJCIET) , 
+[online] 10(5), pp.874 –884. Available at: 
+<http://www.iaeme.com/IJCIET/index.asp874h
+ttp://www.iaeme.com/ijciet/issues.asp?JType=I
+JCIET&VType=10&IType=5http://www.iaem
+e.com/IJCIET/issues.asp?JType=IJCIET&VTy
+pe=10&IType=5http://www.iaeme.com/IJCIET
+/index.asp875>. 
+NIZIOŁ, M., WIŚNIEWSKI, P., KLUZA, K.  and 
+LIGĘZA, A., 2021. Characteri stic and 
+comparison of UML, BPMN and EPC based on 
+process models of a training company. In: 
+Position and Communication Papers of the 
+16th Conference on Computer Science and 
+Intelligence Systems. FedCSIS. pp.193 –200. 
+https://doi.org/10.15439/2021f139. 
+OCA, I.M.-M. DE, SNOECK, M., REIJERS, H.A.  
+and RODRÍGUEZ-MORFF, A., 2015. A 
+systematic literature review of studies on 
+business process modeling quality. Information 
+and Software Technology, [online] 58, pp.187–
+205. 
+https://doi.org/10.1016/j.infsof.2014.07.011. 
+PAGE, S., 2015. The Power of Business Process 
+Improvement. Service Science . New York: 
+AMACOM. 
+PAMUNGKAS, Y .C. and FAJAR, A.N., 2022. 
+Business Process Improvement Using Bpi 
+Method in the  Implementation of 
+Communication Network Device to Support 
+Online Bank Branch Office and ATMs. 
+Journal of Information Systems and 
+Informatics, 4(3), pp.607 –635. 
+https://doi.org/10.51519/journalisi.v4i3.293. 
+TILLEY, S .R., 2019. Systems Analysis and Design . 
+12th ed. Boston: Cengage Learning. 
+TOMASKOVA, H., MARESOVA, P., 
+PENHAKER, M. , AUGUSTYNEK, M., 
+KLIMOVA, B., FADEYI,  O. and KUCA, K.,  
+2019. The Business Process Model and 
+Notation of Open Innovation: The Process of 
+Developing Medical Instrument. Journal of 
+Open Innovation: Technology, Market, and 
+Complexity, 5(4). 
+https://doi.org/10.3390/joitmc5040101. 
+VERGIDIS, K., TIWARI, A.  and MAIEED, B.,  
+2008. Business Process Analysis and 
+Optimization: Beyond Reengineering. IEEE 
+Transactions on Systems, Man and Cybernetics 
+Part C: Applications and Reviews , 38(1), 
+pp.69–82. 
+https://doi.org/10.1109/TSMCC.2007.905812. 
+ZAROUR, K., BENMERZOUG, D., 
+GUERMOUCHE, N., DRIRA, K., ZAROUR, 
+K., BENMERZOUG, D., GUERMOUCHE, 
+N., DRIRA, K., ZAROUR, K., 
+BENMERZOUG, D., GUERMOUCHE, N. 
+and DRIRA, K., 2020. A systematic literature 
+review on BPMN extensions To cite this 
+version : HAL Id : hal -02419886 A Systematic 
+Literature Review on BPMN Extensions. 
+Business Process Management Journal , 26(6). 
+https://doi.org/10.1108/BPMJ-01-2019-0040. 
+4.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

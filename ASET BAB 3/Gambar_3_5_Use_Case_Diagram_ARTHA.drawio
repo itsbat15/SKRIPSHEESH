@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="diagram_uc" name="Use Case Diagram ARTHA">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- System Boundary Box -->
+        <mxCell id="sys_box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;&amp;laquo;subsystem&amp;raquo;&lt;br&gt;Sistem Informasi ARTHA&lt;/b&gt;" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=20;spacingTop=15;fillColor=#FAFAFA;strokeColor=#000000;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="700" height="850" as="geometry" />
+        </mxCell>
+
+        <!-- Actor: Staf Cabang (Left) -->
+        <mxCell id="act_staf" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Staf Administrasi&lt;br&gt;Cabang&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="45" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Actor: Super Admin (Right) -->
+        <mxCell id="act_admin" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Super Admin&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;(Pemilik Lembaga)&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1035" y="460" width="45" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Use Cases (Ovals) -->
+        <!-- UC-01: Autentikasi -->
+        <mxCell id="uc_01" value="Melakukan Autentikasi Masuk" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="85" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-02: Mendaftarkan Siswa Baru -->
+        <mxCell id="uc_02" value="Mendaftarkan Siswa Baru" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="175" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-03: Memvalidasi Kuota Rombel -->
+        <mxCell id="uc_03" value="Memvalidasi Kuota Rombel" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="175" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-04: Mencatat Pembayaran Kasir Cabang -->
+        <mxCell id="uc_04" value="Mencatat Pembayaran&lt;br&gt;Kasir Cabang" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="285" width="180" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- UC-05: Mengunggah Bukti Transfer Bank -->
+        <mxCell id="uc_05" value="Mengunggah Bukti Transfer Bank" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="285" width="185" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-06: Mencetak Kuitansi Pembayaran (PDF) -->
+        <mxCell id="uc_06" value="Mencetak Kuitansi&lt;br&gt;Pembayaran (PDF)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="395" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-07: Melakukan Rekonsiliasi Kas Harian -->
+        <mxCell id="uc_07" value="Melakukan Rekonsiliasi&lt;br&gt;Kas Harian" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="510" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-08: Mengelola Pengguna dan Cabang -->
+        <mxCell id="uc_08" value="Mengelola Pengguna&lt;br&gt;dan Cabang" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="470" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-09: Mengelola Master Rombel -->
+        <mxCell id="uc_09" value="Mengelola Master Rombel" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="560" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-10: Memvalidasi Pembayaran Transfer Bank -->
+        <mxCell id="uc_10" value="Memvalidasi Pembayaran&lt;br&gt;Transfer Bank" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="650" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-11: Memantau Tunggakan dan Jatuh Tempo SPP -->
+        <mxCell id="uc_11" value="Memantau Tunggakan &amp;amp;&lt;br&gt;Jatuh Tempo SPP" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="740" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- UC-12: Melihat Dasbor Konsolidasi Keuangan -->
+        <mxCell id="uc_12" value="Melihat Dasbor&lt;br&gt;Konsolidasi Keuangan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="825" width="180" height="55" as="geometry" />
+        </mxCell>
+
+        <!-- Associations (Solid Lines) -->
+        <!-- Staf to UC-01 -->
+        <mxCell id="edge_s1" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_staf" target="uc_01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Staf to UC-02 -->
+        <mxCell id="edge_s2" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_staf" target="uc_02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Staf to UC-04 -->
+        <mxCell id="edge_s4" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_staf" target="uc_04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Staf to UC-07 -->
+        <mxCell id="edge_s7" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_staf" target="uc_07">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Admin to UC-01 -->
+        <mxCell id="edge_a1" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Admin to UC-08 -->
+        <mxCell id="edge_a8" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_08">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Admin to UC-09 -->
+        <mxCell id="edge_a9" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_09">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Admin to UC-10 -->
+        <mxCell id="edge_a10" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Admin to UC-11 -->
+        <mxCell id="edge_a11" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Admin to UC-12 -->
+        <mxCell id="edge_a12" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act_admin" target="uc_12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Include & Extend Relationships (Dashed Arrows) -->
+        <!-- UC-02 <<include>> UC-03 -->
+        <mxCell id="rel_inc1" value="&amp;laquo;include&amp;raquo;" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uc_02" target="uc_03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- UC-05 <<extend>> UC-04 (points from extension to base) -->
+        <mxCell id="rel_ext1" value="&amp;laquo;extend&amp;raquo;" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uc_05" target="uc_04">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- UC-04 <<include>> UC-06 -->
+        <mxCell id="rel_inc2" value="&amp;laquo;include&amp;raquo;" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.8;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="uc_04" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- UC-10 <<include>> UC-06 -->
+        <mxCell id="rel_inc3" value="&amp;laquo;include&amp;raquo;" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="uc_10" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

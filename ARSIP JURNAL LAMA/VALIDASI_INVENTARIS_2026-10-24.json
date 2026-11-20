@@ -1,0 +1,841 @@
+﻿[
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\A Spiral Model of Software Development and Enhancement - Prototyping - Boehm - 1988.pdf",
+        "extension":  ".pdf",
+        "bytes":  233162,
+        "kind":  "source",
+        "pages":  25,
+        "sha256":  "25057da01555fc10e70312f4a703e0a74958a3f11b4090360f1bd7b812d78e58",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "A Spiral Model of Software Development and \nEnhancement \nBarry W. Boehm, TRW Defense Systems Group \n \n \n“Stop the life cycle—I want to get off!” \n“Life-cycle Concept Considered Harmful.” \n“ The waterfall model is dead.” \n“No, it isn’t, but it should be.” \n \nThese statements exemplify the current debate about software life-cycle process \nmodels. The topic has recently received a great deal of atten"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Adoption and Suitability of Software Development Methods - Empirical Study - Kuhrmann dkk - 2021.pdf",
+        "extension":  ".pdf",
+        "bytes":  200133,
+        "kind":  "source",
+        "pages":  5,
+        "sha256":  "a391f27d9c2aebe43a9814167a56475ae1de02efb18ab2bf2fc62979c515870e",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Full citation : Licorish, S. A., Holvitie, J., Hyrynsalmi, S., Leppänen, V., Spínola, R. O., Mendes , T. S., \nMacDonell, S. G. and Buchan, J. 2016. Adoption and Suitability of Software Development Methods \nand Practices, in Proceedings of the 23rd Asia-Pacific Software Engineering Conference (APSEC2016). \nHamilton, New Zealand, IEEE, pp.369-372.  doi:10.1109/APSEC.2016.062\nAdoption and Suitability"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Extreme programming for a single person team.pdf",
+        "extension":  ".pdf",
+        "bytes":  3984438,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "beba18faab6aadcfa67cfb6b4eb1c63a2dfab52cda484174a08efa6d673deee1",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "\n\n\n\n\n"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Lean Software Development - An Agile Toolkit - Poppendieck - 2003.pdf",
+        "extension":  ".pdf",
+        "bytes":  635287,
+        "kind":  "source",
+        "pages":  60,
+        "sha256":  "706fcc8707c4d9f9b4ec637198335836f9a329f1c5e385c76306c9ee93d586ce",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "\nLean Software \nDevelopment\nA\ngile software development centers on four values, which are identified in the \nAgile Alliance’s Manifesto:  \n 1. Individuals and interactions over processes and tools\n 2. Working software over comprehensive documentation\n 3. Customer collaboration over contract negotiation\n 4. Responding to change over following a plan\nThe development of Agile software requires innova"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Managing the Development of Large Software Systems - Waterfall - WESCON - Royce - 1970.pdf",
+        "extension":  ".pdf",
+        "bytes":  443950,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "9f7db065bd1c911a8d17590eec548478f944c8b05c408f101911cde57d815a78",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "MANAGING THE DEVELOPMENT OF LARGE SOFTWARE SYSTEMS \nDr. Winston W. Rovce \nINTRODUCTION \nl am going to describe my pe,-.~onal views about managing large software developments. I have had \nvarious assignments during the past nit,.: years, mostly concerned with the development of software packages \nfor spacecraft mission planning, commanding and post-flight analysis. In these assignments I have exper"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Penerapan Metode RAD - Infotek - Pratama dkk - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  464863,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "c2a5cd0b98381f5c2984e4c7f10010e316e457c744e70416310c57e0320122f1",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Infotek : Jurnal Informatika dan Teknologi \nVol. 6 No. 1, Januari 2023 \nHal. 49-59 \n \n e-ISSN 2614-8773 \nDOI : 10.29408/jit.v6i1.7313 Link : https://dx.doi.org/10.29408/jit.v6i1.7313 \n \nInfotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 49 \nPenerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi \nInventaris Aset Desa Rempoah \n \n \nEva Argarini Prat"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan Heavy \u0026 Lightweight Methodology - Khan dkk - 2011.pdf",
+        "extension":  ".pdf",
+        "bytes":  575654,
+        "kind":  "source",
+        "pages":  10,
+        "sha256":  "4a86b5c6387d2c65371952aca72084b8c763ba07d742ae522bac796abd4f107c",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "A Comprehensive Study of Commonly Practiced Heavy \u0026 \nLight Weight Software Methodologies \n1Asif Irshad Khan, 2Rizwan Jameel Qurashi and 3Usman Ali Khan \n \n1 Department of Computer Science \nSinghania University, Jhunjhunu, Rajasthan, India \n \n2 Department of Information Technology \nKing Abdul Aziz University, Jeddah, Saudi Arabia \n \n3 Department of Information System \nKing Abdul Aziz University, Je"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan Waterfall dan Prototyping - UNIKOM - Susanto \u0026 Andriana - 2016.pdf",
+        "extension":  ".pdf",
+        "bytes":  319461,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "da5b67a1e08b72e7f7ef3e70eb43c417f5aec510a3ba57dfbe8ae51ec51b7504",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Majalah Ilmiah UNIKOM   Vol.14  No. 1 \n41 H  a  l  a  m a  n \n \n \n \nPERBANDINGAN MODEL WATERFALL DAN PROTOTYPING  \nUNTUK PENGEMBANGAN SISTEM INFORMASI \n \nRANI SUSANTO, ANNA DARA ANDRIANA  \nProgram Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer \n Universitas Komputer Indonesia \n \n \nSystem Development Life Cycle  atau yang lebih dikenal dengan istilah SDLC \nadalah metodologi umum yang d"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan XP vs PxP pada Implementasi Software - Fahrijal \u0026 Hartawan - 2024.pdf",
+        "extension":  ".pdf",
+        "bytes":  1824942,
+        "kind":  "source",
+        "pages":  16,
+        "sha256":  "d5b8023dd155591e320d6cc5a201be79626005c919a773c32530e557090d89e7",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \nJurnal Manajemen Informatika Jayakarta \nVolume 4, Nomor 4, September: halaman 367-382                                                                                             \nP-ISSN: 2746-5985 \ne-ISSN: 2797-0930 \nDOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  \n \nThis work is licensed under a Creative Commons Attribution 4.0 INTErnational License. \nhttp://journal.stmikjayakarta.ac.id/i"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.pdf",
+        "extension":  ".pdf",
+        "bytes":  280823,
+        "kind":  "source",
+        "pages":  8,
+        "sha256":  "e2a3a064a5d0bcc388707c863541a2528603bb303afadfd2fcfe048cc54b6531",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Personal Extreme Programming – An Agile Process \nfor Autonomous Developers\nYani Dzhurov, Iva Krasteva, and Sylvia Ilieva\n \nFaculty of Mathematics and Informatics, Sofia University, \n5 James Bourchier Blvd, Sofia 1165, Bulgaria\nyani.dzhurov@gmail.com, iva.krasteva@rila.bg, sylvia@acad.bg\nAbstract. Despite the tendency of growing the size and complexity of the \ndeveloped software, significant part o"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming Exploring Developers Adoption - AMCIS - Iyawa - 2020.pdf",
+        "extension":  ".pdf",
+        "bytes":  247678,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "1d7d36876419d2328e7977b72dc00aacc7fc333aa6c93a79849b28b237b0a242",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Personal Extreme Programming: Exploring Developers\u0027 \nAdoption\nIYAWA, Gloria Ejehiohen\nAvailable from Sheffield Hallam University Research Archive (SHURA) at:\nhttps://shura.shu.ac.uk/27536/\nThis document is the Accepted Version [AM]\nCitation:\nIYAWA, Gloria Ejehiohen (2020). Personal Extreme Programming: Exploring \nDevelopers\u0027 Adoption. In: AMCIS 2020 Proceedings. bepress. [Book Section] \nCopyright "
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\PxP vs Waterfall - Job Training App - ICST 2018 - Asri dkk - 2018.pdf",
+        "extension":  ".pdf",
+        "bytes":  2619670,
+        "kind":  "source",
+        "pages":  3,
+        "sha256":  "b6b3aa1b2aafb1f2501d885048181db1a6238df6765257a4d8c7e44a7f6fa874",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Comparing Traditional and Agile Software \nDevelopment Approaches: Case of Personal Extreme \nProgramming \n \nSri Andriati Asri1, I Gusti Made Agung Sunaya2, Putu \nManik Prihatini3 \nDepartment of Electrical Engineering  \nPoliteknik Negeri Bali \nBali, Indonesia \n1sriandriati@pnb.ac.id, 2a_sunaya@pnb.ac.id, \n3manikprihatini@pnb.ac.id  \nWidyadi Setiawan4 \nDepartment of Electrical Engineering  \n Udayana "
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\SCRUM Development Process - OOPSLA - Schwaber - 1995.pdf",
+        "extension":  ".pdf",
+        "bytes":  171830,
+        "kind":  "source",
+        "pages":  23,
+        "sha256":  "508785a74346f270767c4b74873d20e58e471e04b4f53a76b1d270fd2afdcc46",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "1\n SCRUM Development Process\nKen Schwaber\n   Advanced Development Methods\n131 Middlesex Turnpike    Burlington, MA 01803\nemail virman@aol.com  Fax: (617) 272-0555\n_______________________________________________________________________\nABSTRACT. The stated, accepted philosophy for systems development is that the\ndevelopment process is a well understood approach that can be planned, estimated, and\ns"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Scrum Guide 2020 - Schwaber \u0026 Sutherland - Official.pdf",
+        "extension":  ".pdf",
+        "bytes":  254353,
+        "kind":  "source",
+        "pages":  14,
+        "sha256":  "ed83eb2378459c9e5da5e695844a24c3770fba33687cafaf0a0683ad5070b3ec",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \n \nKen Schwaber \u0026 Jeff Sutherland \n \n \n \n \n \n \n \n \n \n \nThe Scrum Guide \n \nThe Definitive Guide to Scrum: The Rules of the Game \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nNovember 2020 \n  \n \n1 \nPurpose of the Scrum Guide \nWe developed Scrum in the early 1990s. We wrote the first version of the Scrum Guide in 2010 to help \npeople worldwide understand Scrum.  We have evolved the Guide since then through small"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Scrum2Kanban - Integrating Kanban and Scrum in Capstone Course - IEEE - Mahnic - 2018.pdf",
+        "extension":  ".pdf",
+        "bytes":  663424,
+        "kind":  "source",
+        "pages":  8,
+        "sha256":  "d347e9d370b65c806e48169f2ffe5397ee15646cd0635619e3e2444aecd394e6",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Scrum2Kanban: Integrating Kanban and Scrum in a University\nSoftware Engineering Capstone Course\nChristoph Matthies\nHasso Plattner Institute, University of Potsdam\nPotsdam, Germany\nchristoph.matthies@hpi.de\nABSTRACT\nUsing university capstone courses to teach agile software develop-\nment methodologies has become commonplace, as agile methods\nhave gained support in professional software development. "
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Strengthening the Case for Pair Programming - IEEE Software - Williams dkk - 2000.pdf",
+        "extension":  ".pdf",
+        "bytes":  54004,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "2d78a761ef8ec32294509fb0e4642d6ea9a3f7ca82b272198dd7df1ad1a1bbef",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Strengthening the Case for Pair -Programming  \n \nLaurie Williams Robert R. Kessler Ward Cunningham Ron Jeffries \nNorth Carolina State \nUniversity \nUniversity of Utah Cunningham \u0026 \nCunningham, Inc \n \nwilliam@csc.ncsu.edu  kessler@cs.utah.edu ward@c2.com ronjeffries@acm.org \n \nAbstract \nPair programming – two programmers working side-by-side at one computer collaborating on the \nsame design, algorit"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Structured vs Agile Development Comparative Analysis - Mishra \u0026 Alzoubi - Springer - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  829214,
+        "kind":  "source",
+        "pages":  19,
+        "sha256":  "32e1425c830ef2fc561cabf123be04eb0880e79e775f97df0ef0c7a396c7fb62",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Vol:.(1234567890)\nInt J  Syst  Assur  Eng  Manag (August 2023) 14(4):1504–1522\nhttps://doi.org/10.1007/s13198-023-01958-5\n1 3\nORIGINAL ARTICLE\nStructured software development versus agile software \ndevelopment: a comparative analysis\nAlok Mishra1  · Yehia Ibrahim Alzoubi2 \nReceived: 2 January 2023 / Revised: 28 April 2023 / Accepted: 24 May 2023 / Published online: 12 June 2023 \n© The Author(s) 20"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\The Kanban Guide - Panduan Resmi Kanban - Coleman \u0026 Vacanti - 2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  121399,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "28f6dc5cba52b697a1ee23e474c6000b9a87d366b566d898ed717b08dfa5144b",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "THE\nKANBAN\nGUIDE\nEdition 2025.5 ꞏ 2025-05-01\nAuthors\nJohn Coleman ꞏ Daniel Vacanti\nContributors\nColleen Johnson, Prateek Singh, Julia Wester, Christian Neverdal, Magdalena Firlit, T om Gilb, Steve T endon\nThe Kanban Guide Edition 2025.5\nPreface\nMay 2025\nThis document aims to be a unifying reference for the community by offering the minimal guidance for\nKanban. Depending on the context, various app"
+    },
+    {
+        "path":  "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Views on Balancing Agility and Discipline - Boehm \u0026 Turner - 2004.pdf",
+        "extension":  ".pdf",
+        "bytes":  806811,
+        "kind":  "source",
+        "pages":  17,
+        "sha256":  "b2913daa5330927689a7834595fa569041832c727fde1e6b5a984dbbae3de316",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "SEI Agile Research Forum \nTwitter #SEIAgile \n© 2012 Carnegie Mellon University \nViews on Balancing Agility and Discipline \n \nJames Over \nSenior Technical Staff \n \nJames Over has led the transition of the TSP into government and industry \norganizations throughout the world. He co-authored the book Leadership, \nTeamwork, \u0026 Trust (with the late Watts Humphrey) and several SEI \npublications on softwar"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Aplikasi Administrasi Sekolah Musik ABC - Pembayaran \u0026 Penjadwalan - Barizi dkk - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  501202,
+        "kind":  "source",
+        "pages":  7,
+        "sha256":  "759997c81190eca479ac2c7a3c6184f2e5433762f3418b05aa636de7c497aa1f",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) \nVol 04 No 02 Tahun 2023  e-ISSN : 2715-8756 \n332 \n \n PERANCANGAN APLIKASI SISTEM ADMINISTRASI SEKOLAH \nMUSIK PADA SEKOLAH MUSIK ABC BERBASIS JAVA \n \nAhmad Barizi1, Nico Bustanul Anshary2, Ria Asep Sumarni3 \nProgram Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer \nUniversitas Indraprasta PGRI \nJalan Raya Tengah No 80, Kelurahan Ge"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Peran TI Manajemen Pendidikan - JRPP - Pradana - 2024.pdf",
+        "extension":  ".pdf",
+        "bytes":  681207,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "ad03623a30b0d8c3c1a0c004b3bdb44feb12e24a392fac380db2787e50e390af",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Review Pendidikan dan Pengajaran, Volume 7 Nomor 3, 2024 | 6855 \n \nJurnal Review Pendidikan dan Pengajaran (JRPP) \n \n \n \n \n \n \nAbstrak \nPerkembangan teknologi informasi telah memberikan dampak yang signifikan dalam dunia \npendidikan, termasuk dalam manajem en pendidikan di sekolah. Penelitian ini bertujuan untuk \nmengkaji peran teknologi informasi dalam meningkatkan efektivitas manajemen pe"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel - Web Mobile - Waterfall - Tiana \u0026 Gunanto - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  760015,
+        "kind":  "source",
+        "pages":  8,
+        "sha256":  "44bcc1146eb4ef49d3e4c90efc4a45cf724880e1452b032819fdab4482ed46c8",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "p-ISSN: 2962-3022 | e-ISSN: 2963-7104 \nVolume 4 No 3 Februari 2026 \nHal: 1631-1638 \nhttp://ejurnal.lkpkaryaprima.id/index.php/juktisi \nDOI: https://doi.org/10.62712/juktisi.v4i3.675 \n \nCopyright © 2026 Author(s), Page 1631  \nThis Journal is licensed under a Creative Commons Attribution 4.0 International License. \nPerancangan dan Implementasi Sistem Informasi Bimbingan Belajar \nBerbasis Web Mobile "
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  2718851,
+        "kind":  "source",
+        "pages":  12,
+        "sha256":  "359ca40ddbbc58532945ca586f55b89eb40a0b6fdd29f7c0d5bc94c19872bd25",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \nJURNAL REKAYASA INFORMASI \nSWADHARMA (JRIS) \n    VOLUME 06 NO 02 JULI  2026 \n   ISSN 2774 – 5759 | eISSN 2774-5732 \n \n \n115 \n \n \nPENGEMBANGAN SISTEM INFORMASI BIMBINGAN BELAJAR \nBERBASIS WEB UNTUK EFISIENSI OPERASIONAL BEE HIVE \n \nSatria Nur Fajriansyah1), Muhammad Subaktiar Wijaya2), Daffa Arifta Eryana3), \nAlaudin Safa4), Harsya Rafif Pramadhan5), Arya Wicaksono6), Muhammad Ilham \nBaehaqi7), F"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  485214,
+        "kind":  "source",
+        "pages":  12,
+        "sha256":  "d65231f042ca09f3959c729486fba4c0f32c33393dbb6e9913d5325ffc4ebe04",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \n Lisensi  \n Lisensi Internasional Creative Commons Attribution-ShareAlike 4.0. \n \n424 \n \n \nTerbit online pada laman web jurnal: https://rjti.upp.ac.id/index.php/rjmldm \n \n \nVol. 4 No. 3 (2025) 424 – 435 | ISSN : 2829-2529 (Media Online)   \nSistem Informasi Bimbingan Belajar RSDC Berbasis Website Dengan \nMenggunakan Metode Waterfall Untuk Meningkatkan Efisiensi \nAdministrasi \n \nStefanus Christian"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Manajemen Bimbel Ilman Nafi - Notifikasi - Waterfall - Safitri dkk - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  617756,
+        "kind":  "source",
+        "pages":  8,
+        "sha256":  "61e3d962ae457699422ecea0d449b0931aa1c5e338e958f3489ead87084b9e22",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 \n \n2345 \nPERANCANGAN SISTEM INFORMASI MANAJEMEN BIMBINGAN \nBELAJAR BERBASIS WEB UNTUK EFISIENSI ADMINISTRASI DAN \nKOMUNIKASI DENGAN FITUR NOTIFIKASI OTOMATIS \n(STUDI KASUS : BIMBEL ILMAN NAFI’) \n \nEka Cinta Ayu Safitri, Tri Listyorini, Endang Supriyati \nTeknik Informatika, Universitas Muria Kudus \nJl. Lkr. Utara, Kayuapu Kulon, G"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Manajemen Kursus INET Komputer - Laravel Agile - JATI - Kismantoro \u0026 Ibadi - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  589361,
+        "kind":  "source",
+        "pages":  9,
+        "sha256":  "cc2ffe600ac1862a9632e280547dc0e45e6a448e54f3b0394d85ce977100b2ff",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 \n \n3195 \nPENERAPAN METODE AGILE DALAM PENGEMBANGAN WEBSITE  \nSISTEM MANAJEMEN KURSUS BERBASIS LARAVEL  \n(STUDI KASUS INET KOMPUTER) \n \nKismantoro, Taqrim Ibadi \nTeknik Informatika, Universitas Bina Darma \nJl. Jenderal Ahmad Yani No.3, 9/10 Ulu Palembang, Indonesia \ntorokisman500@gmail.com \n \nABSTRAK \n \nPerkembangan teknologi info"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Monitoring Belajar Bimbel AHE - WhatsApp Gateway - Waterfall - JATI - Amelia dkk - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  310594,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "91e620922e1dbe4d121d6ff9a32f946a631ce8041282407047943c30c408c2ea",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 \n5314 \nINTEGRASI WHATSAPP GATEWAY PADA SISTEM MONITORING \nPERKEMBANGAN BELAJAR ANAK AHE BERBASIS WEB  \n(STUDI KASUS: BIMBEL AHE MEGALUH JOMBANG) \n \nWilujeng Amelia, Nur Khafidhoh, M. Anshori Aris Widya  \nInformatika, Universitas KH.A Wahab Hasbullah \nJl. Garuda No. 9, Tambakberas, Tambakrejo, Kec. Jombang, Kabupaten Jombang, Jawa "
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Pembayaran SPP dan Penggajian Guru Bimbel - Web - JTEKSIS - Abadi dkk - 2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  1103902,
+        "kind":  "source",
+        "pages":  10,
+        "sha256":  "dd622db245f33c70e0b63ddbe5931c7ba9e445eee4ad59c010c1042a41d5ae1f",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Teknologi Dan Sistem Informasi Bisnis  \nVol. 7 No. 1 Januari 2025 Hal. 216-225 \nhttp://jurnal.unidha.ac.id/index.php/jteksis \n \n \n \nE-ISSN : 2655-8238 \nP-ISSN : 2964-2132 \n \n \n \n \n    \n \n   \nJurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      216 \nPerancangan  Aplikasi Pe mbayaran SPP dan Pengga"
+    },
+    {
+        "path":  "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Penjadwalan \u0026 Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf",
+        "extension":  ".pdf",
+        "bytes":  429308,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "89c356da90494ba0610b38660a462348ca3f4ef44bcfe5f027b75939ea23c4d2",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Ilmu Komputer dan Sistem Informasi \n1 \n \nPERANCANGAN SISTEM INFORMASI PENCA T A T AN \nPENJADW ALAN DAN PEMBA Y ARAN LES BERBASIS WEB \nVeren Thiovanda 1)  \n \n1)  Sistem Informasi Universitas Tarumanagara \nJl.Letjen S.Parman No. 1, Jakarta, 11440, Indonesia \nemail : veren.825220067@stu.untar.ac.id  \n \n \n \nABSTRAK \nPenelitian ini bertujuan untuk merancang dan \nmengembangkan aplikasi berbasis w"
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri \u0026 Prabowo (ITK) - 2020.pdf",
+        "extension":  ".pdf",
+        "bytes":  458418,
+        "kind":  "source",
+        "pages":  10,
+        "sha256":  "a614301e32c53b12031cf68687242c1912ceb50101e8c33715eb7936299d7bb7",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \nMultitek Indonesia: Jurnal Ilmiah \nVolume: 14 No. 2, Desember 2020, Hal.  101 - 100 \nISSN: 1907-6223 (print) \nISSN: 2579-3497 (Online)  \nhttp://journal.umpo.ac.id/index.php/multitek  \n \nAhmad Maulana Fikri1, I Putu Deny Arthawan S. P.   Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan \nPariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming \n \n101 \nRANCANG "
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Laboratorium Infokom - PxP - REPOSITOR - Priatmaja dkk - 2022.pdf",
+        "extension":  ".pdf",
+        "bytes":  396189,
+        "kind":  "source",
+        "pages":  10,
+        "sha256":  "7b4d1b899877810ea6735aededf2395f2b6f231ae217588555b09af49a92e058",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "REPOSITOR, Vol. 4, No. 4, November 2022, Pp. 429-439 \nISSN : 2714-7975 \nE-ISSN : 2716-1382 \n \n    \n   \n429 \nImplementasi Model PXP Pada Sistem Informasi Laboratorium \nInfokom Universitas Muhammadiyah Malang \n \n \nBenny Indriawan Priatmaja*1, Ilyas Nuryasin2, Wildan Suharso3 \n1,2,3Universitas Muhammadiyah Malang \nbenny.indriawanp@gmail.com*1, ilyas@umm.ac.id2, wsuharso.umm.ac.id3 \n \n \nAbstrak \n Labo"
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Siswa SMP - Extreme Programming (XP) - Suputra dkk - 2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  471927,
+        "kind":  "source",
+        "pages":  7,
+        "sha256":  "28b284146817d2464c5f8de37663af34628f35248c6f498f725cd591f2caf46c",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 \n \n2138 \nRANCANG BANGUN SISTEM INFORMASI SISWA  \nMENGGUNAKAN METODE EXTREME PROGRAMMING  \n(STUDI KASUS SMP NEGERI 4 TEGALLALANG) \n \nNgakan Putu Herry Suputra, I Nyoman Yudi Anggara Wijaya, Anak Agung Gede Adi Mega Putra \nTeknik Informatikan Universitas Primakara \nJl. Tukad Badung No.135 Denpasar Selatan Bali \nngakanherry2504@gmai"
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  929144,
+        "kind":  "source",
+        "pages":  12,
+        "sha256":  "997615c1bb02cd907414cc4cdb6933215bed19bc1557e3931210936c275ec100",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Jaring SainTek  \nVol.7, No.1, April 2025, pp. 35 - 46 \ne-ISSN : 2656-9485 \n  \n \nAvailable Online at : http://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek  35 \n \nImplementasi Metode Personal Extreme Programming Pada Pengembangan \nSistem Informasi Surat Menyurat \n(Studi Kasus: Dinas Pendidikan Pemuda Dan Olahraga Kabupaten Tambrauw) \n \nAlfin Lutfi Sidiq1*, Gita Indah Marthasari2, Aminudi"
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website Company Profile - Extreme Programming (XP) - Astiti - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  1709426,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "931f8eb754b0b4ddf39b3957fd51195f430357d9a65760444a90b09da2a548fc",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "RESOLUSI : Rekayasa Teknik Informatika dan Informasi \nISSN 2745-7966 (Media Online) \nVol 3, No 3, Januari 2023 \nHal 114-124 \nhttps://djournals.com/resolusi \nSarah Astiti, RESOLUSI, Page 114 \nPenerapan Metode Extreme Programming Pada Rancang Bangun Website \nCompany Profile \nSarah Astiti \nFakultas Informatika, Sistem Informasi, Institut Teknologi Telkom Purwokerto, Purwokerto, Indonesia \nEmail: sara"
+    },
+    {
+        "path":  "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website E-Kavling - PxP \u0026 UAT - JATI - Apriyanti dkk - 2024.pdf",
+        "extension":  ".pdf",
+        "bytes":  373530,
+        "kind":  "source",
+        "pages":  9,
+        "sha256":  "1b1581c23ea0a6b33b53abc4c23918db8702e1f2504dac8df3509135a47e9007",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "JATI (Jurnal Mahasiswa Teknik Informatika) Vol. 8 No. 3, Juni 2024 \n \n3678 \nPEMANFAATAN METODOLOGI PXP DAN PENGUJIAN USER ACCEPTANCE \nTESTING (UAT) DALAM PENGEMBANGAN WEBSITE E-KAVLING \n \nNarti Apriyanti, Seftin Fitri Ana Wati, Abdul Rezha Efrat Najaf \nSistem Informasi, UPN “Veteran” Jawa Timur \nJl. Rungkut Madya No. 1, Gn. Anyar, Surabaya, Jawa Timur \nnartiapriyanti@gmail.com \n \nABSTRAK \n \nDi era"
+    },
+    {
+        "path":  "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\Pemodelan SCRUM Klinik Ar-Rokhim - JOINS - Kurniawan \u0026 Sani - 2019.pdf",
+        "extension":  ".pdf",
+        "bytes":  353697,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "461a1df439a8e96761fc26a0e9f32e0ff94499e32631fca5b43383973b3446a8",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "76 \n  \nJournal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 \np-ISSN : 2528-0228 \ne-ISSN : 2528-0236 \nPemodelan SCRUM dalam Pengembangan Sistem \nInformasi Kesehatan pada Klinik Ar-Rokhim Sragen \nKabupaten Sragen \nSCRUM Model on Development of Health Information System at Ar-Rokhim Clinic in \nSragen Regency   \n \nIkhwansyah Kurniawan1, Ramadhan Rakhmat Sani 2 \n1,2Fakultas Ilmu Komputer, "
+    },
+    {
+        "path":  "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Absensi - Web - Prototyping - Putra - 2022.pdf",
+        "extension":  ".pdf",
+        "bytes":  485987,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "b0cf2d4154ded0b359c973f6c14395447acc5671c3f7102f879d88837b6dc991",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Journal of Information System Research (JOSH)  \nVolume 3, No. 4, Juli 2022, pp 431−436 \nISSN 2686-228X (media online) \nhttps://ejurnal.seminar-id.com/index.php/josh/ \nDOI 10.47065/josh.v3i4.1835 \nFitra Kasma Putra | Jurnal JOSH | Page 431 \nPenerapan Metode Prototyping Dalam Rancangan Sistem Informasi \nAbsensi Berbasis Website  \nFitra Kasma Putra \nFakultas Ekonomi Dan Bisnis Islam, Manajemen Inform"
+    },
+    {
+        "path":  "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Inventaris Aset Desa - RAD - Pratama dkk - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  464863,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "c2a5cd0b98381f5c2984e4c7f10010e316e457c744e70416310c57e0320122f1",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Infotek : Jurnal Informatika dan Teknologi \nVol. 6 No. 1, Januari 2023 \nHal. 49-59 \n \n e-ISSN 2614-8773 \nDOI : 10.29408/jit.v6i1.7313 Link : https://dx.doi.org/10.29408/jit.v6i1.7313 \n \nInfotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 49 \nPenerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi \nInventaris Aset Desa Rempoah \n \n \nEva Argarini Prat"
+    },
+    {
+        "path":  "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Pembayaran Kursus LOOP Coding BSD - PHP MySQL - JTIK - Karpina dkk - 2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  528238,
+        "kind":  "source",
+        "pages":  7,
+        "sha256":  "da18db9adb7e0387ebe34e4e69f65540c7bf749de6cd08c16ee72455df9cfd44",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "1217 \n \n \n  \n \n \n \n \n \n \n  \n  \nPengembangan Sistem Pembayaran pada Website Bimbingan \nBelajar Non-Formal Berbasis PHP MySQL di LOOP Coding \nBSD, Tangerang, Banten \nArika Karpina 1*, Yuma Akbar 2, Widya Ayu Lestari  3, Fitriani Noer Jamilah  4 \n1*,2,3,4 Program Studi Teknik Informatika, Fakultas Teknik, Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Kota Jakarta Timur, Daerah \nKhusus Ibukota"
+    },
+    {
+        "path":  "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Pembayaran SPP - Notifikasi WhatsApp \u0026 Payment Gateway Midtrans - JTI - Sari dkk - 2023.pdf",
+        "extension":  ".pdf",
+        "bytes":  371072,
+        "kind":  "source",
+        "pages":  11,
+        "sha256":  "d1e1d6eca4e59f3b07b6bf2008f20fc7a2d2ddacda5a1441b9eb60f8ce47569d",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \n \n \n \n \n \n90 \nhttps://doi.org/10.47111/JTI \nAvailable online at https://e-journal.upr.ac.id/index.php/JTI \n[E-ISSN 2656-0321] \n[Vol 17 No 1] \n[Januari 2023] \nPENERAPAN SISTEM NOTIFIKASI CHAT DAN PAYMENT \nGATEWAY PADA SISTEM INFORMASI PEMBAYARAN SPP \nBERBASIS WEBSITE  \nNova Noor Kamala Sari a,1,*, Septian Geges b,2, Noor Hasanah c,3 \na,b,c Jurusan Teknik Informatika, Fakultas Teknik, Universitas "
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\01_Multicabang_Hotel_Laravel_Djtechno_Ahadi_2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  1842842,
+        "kind":  "source",
+        "pages":  16,
+        "sha256":  "019768594f222f6b2b8ee6d8c668ab153a864429e98dd47c4a65c567f37b1eb0",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "758 \nDjtechno : Jurnal Teknologi Informasi \nVol. 6, No. 2, Agustus 2025  \nE-ISSN:  2745-3758,  P-ISSN : 2776-8546 DOI: 10.46576/djtechno \nPENGEMBANGAN SISTEM INFORMASI MANAJEMEN \nHOTEL MULTI-CABANG BERBASIS WEB DENGAN \nFRAMEWORK LARAVEL \n \nAhmad Husna Ahadi1, Pariyadi2, Teuku Djauhari3 \n1, 3) Teknologi Informasi, Fakultas Ilmu Komputer, Universitas Nurdin Hamzah, Indonesia \n2) Teknik Informatika, "
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\02_Keuangan_Pusat_Cabang_Rams_Dimsum_IJLER_Ramadhan_2026.html",
+        "extension":  ".html",
+        "bytes":  213336
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\02_Keuangan_Pusat_Cabang_Rams_Dimsum_IJLER_Ramadhan_2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  917017,
+        "kind":  "source",
+        "pages":  19,
+        "sha256":  "57b13811cdef3f6591a9a5c8fbd6ab67b33a616a4c7cc01978063001baea7ea7",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Indonesian Journal of Law and Economics Review \nVol. 21 No. 2 (2026): May  \nDOI: 10.21070/ijler.v21i2.1706  \nISSN 2598-9928 (online), https://ijler.umsida.ac.id, published by Universitas Muhammadiyah Sidoarjo \nCopyright © Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). \n1/15 \n \n \n \n \n\nIndonesian Journal of Law and Economics"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\03_Penjadwalan_Bimbel_AHE_JTI_Khafidhoh_2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  448550,
+        "kind":  "source",
+        "pages":  6,
+        "sha256":  "f42f95a5725ba661e67e6c8960bf8fd4971910f62cf5089109c7adfeb9a6fc97",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "[E-ISSN 2656-0321] \n[Vol 20 No 2] \n[Januari 2026] \nhttps://doi.org/10.47111/JTI \nAvailable online at https://e-journal.upr.ac.id/index.php/JTI \n \n \n \n \n15 \n \n \nSistem Penjadwalan Menggunakan Algoritma Genetika Berbasis \nWeb \n \nNur Khafidhoh a,1,*, Arfia Rahmi Febrianti b,2, Sujono c,3 \na,b,c Universitas KH.A. Wahab Hasbullah, Jl. Garuda No. 9, Tambakberas, Jombang, Jawa Timur, 61419 \n1 nurkhafidho"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\04_Kapasitas_Ruang_RapaTrack_JUSIBI_Kabisatullah_2026.pdf",
+        "extension":  ".pdf",
+        "bytes":  703428,
+        "kind":  "source",
+        "pages":  8,
+        "sha256":  "92fab76e802b0a736b431a82cc3aa0d921c95e63ca24c52eb32f6bfadffd4346",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  " \np-ISSN : 2655-7541 \nJUSIBI (JURNAL SISTEM INFORMASI DAN E-BISNIS) \nVolume 8, Nomor , June 2026 \ne-ISSN : 2745-5823 Hal : 89~96 \n \nhttps://jurnal.ikhafi.or.id/index.php/jusibi 89 \n \nPengembangan Aplikasi RapaTrack Untuk Manajemen Ruang Rapat \nMenggunakan Constraint Satisfaction Problem Berbasis Android \n \nFebrianto Kabisatullah*1, Handrie Noprison2 \nUniversitas Dian Nusantara, Jakarta, Indonesia "
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\05_Penerimaan Kas.pdf",
+        "extension":  ".pdf",
+        "bytes":  386391,
+        "kind":  "source",
+        "pages":  12,
+        "sha256":  "c6d402bfc0bac2e7de1a2b97d84f8fa75c51a905488e64d3287c8b0641c0f9a7",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "124 \nJUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              \nVol. 6, No. 2, September 2025, pp. 124~135 \nISSN: 2721-7523 \n \n \nhttp://jurnal.bsi.ac.id/index.php/justian \n \nAnalisis Sistem Informasi Akuntansi Penerimaan Kas (SPP) \npada Yayasan Semesta Khatulistiwa \n \nHendri1, Muhammad Alghifary2, Herlina Yani Putri3, Mutia Rahayu4, Nur"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\06_Rekonsiliasi_Kas_Bank_MEANS_Sudirman_2021.pdf",
+        "extension":  ".pdf",
+        "bytes":  476640,
+        "kind":  "source",
+        "pages":  4,
+        "sha256":  "beeb584afbb8b22f42f1c523f830b972223196001a6d74c6cdc82217b50ff821",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Volume 6 No. 2, Desember 2021 MEANS (Media Informasi Analisa dan Sistem)  \nhttp://ejournal.ust.ac.id/index.php/Jurnal_Means/  p-ISSN: 2548-6985, e-ISSN:2599-3089 \n \n \n Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis \nClient-Server. Oleh : Bagus Sudirman, Mawada Tristianti \n \n126 \nSistem Informasi Pengendalian Kas Bank dengan Metode \nRekonsiliasi pad"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\BUKTI_AKREDITASI\\BUKTI_SK_2025_I.pdf",
+        "extension":  ".pdf",
+        "bytes":  2512702,
+        "kind":  "accreditation",
+        "pages":  545,
+        "sha256":  "836527fa2deb8afd9150fd48ad704dfba2dc5a6f2c211b81cc841fdb292f63df",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "KEMENTERIAN PENDIDIKAN TINGGI, SAINS, \nDAN TEKNOLOGI \n DIREKTORAT JENDERAL RISET DAN PENGEMBANGAN \nJalan Jenderal Sudirman, Senayan, Jakarta 10270 \nTelepon (021) 57946104, Pusat Panggilan ULT DIKTI 126 \nLaman https://kemdiktisaintek.go.id \n \nNomor : 0173/C3/DT.05.00/2025 21 Maret 2025 \nLampiran : 1 (satu) berkas \nHal : Pemberitahuan Hasil Akreditasi Jurnal Ilmiah Periode I Tahun 2025 \n \nYth. \n1. P"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\BUKTI_AKREDITASI\\BUKTI_SK_MEANS_2019.pdf",
+        "extension":  ".pdf",
+        "bytes":  4426269,
+        "kind":  "accreditation",
+        "pages":  46,
+        "sha256":  "b896b2bf3af6ef3287a62fef88817b900fafa770f94f4ef49ca1254a7ecf84c2",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "4/15/2020\nMET\nANA\nhttps://ejournal.undip.ac.id/index.php/metana/index\n1\n/\n5\n[\nA\nr\nt\ni\nc\nl\ne\ns\n]\n \nP\ne\nm\nb\nu\na\nt\na\nn\n \nd\na\nn\n \nK\na\nr\na\nk\nt\ne\nr\ni\ns\na\ns\ni\n \nK\no\nm\np\no\ns\ni\nt\n \nd\na\nr\ni\n \nS\nt\ny\nr\no\nf\no\na\nm\n \nB\ne\nk\na\ns\n \nd\na\nn\n \nS\ne\nr\na\nt\n \nI\nj\nu\nk\n \nA\nR\nE\nCE\nN\nT\n \nA\nR\nT\nI\nCLE\n(\nh\nt\nt\np\ns\n:\n/\n/\nd\nr\ni\nv\ne\n.\ng\no\no\ng\nl\ne\n.\nc\no\nm\n/\n\u0000\nl\ne\n/\nd\n/\n1\nF\na\ns\n6\nC\nD\nl\nF\nc\ni\nM\nb\n8\nJ\nR\nT\nR\nb\nL\nZ\nQ\n2\nw\nJ\nK\nB\nU\n_\nZ\nS\nQ\nG"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\BUKTI_AKREDITASI\\Kutipan_SK_JTI_IJLER_JUSIBI_2025.pdf",
+        "extension":  ".pdf",
+        "bytes":  47109,
+        "kind":  "accreditation",
+        "pages":  3,
+        "sha256":  "17135da204d89cec68968fcf1d3bfcceaf7b8616ad7df113b224907dfd276557",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "-269- \n \nNo Nama Jurnal EISSN Penerbit Peringkat \nsampai Volume 14 \nNomor 2 Tahun \n2026 \n805 \nAl-Khidmah: Jurnal \nPengabdian Kepada \nMasyarakat \n27760901 \nUniversitas \nIslam Zainul \nHasan \nGenggong \nAkreditasi Baru \nPeringkat 4 mulai \nVolume 4 Nomor 1 \nTahun 2022 \nsampai Volume 8 \nNomor 2 Tahun \n2026 \n806 \nInternational Journal of \nTheory and Application \nin Elementary and \nSecondary School \nEduca"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\BUKTI_AKREDITASI\\Kutipan_SK_MEANS_S5_2019.pdf",
+        "extension":  ".pdf",
+        "bytes":  270341,
+        "kind":  "accreditation",
+        "pages":  3,
+        "sha256":  "174ab81252906b3025dfdba7d995b30bb4660639c2822267c48c4ece62000fc6",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "-2- \n \n7. Peraturan Menteri Riset, Teknologi dan Pendidikan Tinggi \nNomor 15 Tahun 2015 tentang Organisasi dan Tata Kerja \nKementerian Riset, Teknologi dan Pendidikan Tinggi \nsebagaimana telah diubah dengan Peraturan Menteri Riset, \nTeknologi dan Pendidikan Ti nggi Nomor 23 Tahun 2019 \ntentang Perubahan Atas Peraturan Menteri Riset, Teknologi \ndan Pendidikan Tinggi Nomor 15 Tahun 2015 (Berita Nega"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\DAFTAR_REFERENSI_TERVERIFIKASI.md",
+        "extension":  ".md",
+        "bytes":  15627,
+        "text_excerpt":  "# Referensi tambahan ARTHA dengan verifikasi periode SINTA\n\nPemeriksaan dilakukan pada 24 Oktober 2026 untuk kebutuhan referensi proposal prototipe sistem informasi manajemen operasional Bimbel ARTHA. Enam artikel dipilih untuk melengkapi pengelolaan multicabang, pencatatan dan rekonsiliasi keuangan, serta kapasitas ruang dan konflik jadwal; draf Bab 1 dan Bab 2 tidak diubah.\n\nLabel SINTA pada daf"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\METADATA_DAN_VERIFIKASI.json",
+        "extension":  ".json",
+        "bytes":  14010,
+        "text_excerpt":  "{\n  \"checked_on\": \"2026-10-24\",\n  \"scope\": \"Referensi pendukung proposal ARTHA; bukan systematic review; tidak mengubah Bab 1 atau Bab 2\",\n  \"references\": [\n    {\n      \"id\": 1,\n      \"authors\": [\n        \"Ahadi, Ahmad Husna\",\n        \"Pariyadi\",\n        \"Djauhari, Teuku\"\n      ],\n      \"year\": 2025,\n      \"title\": \"Pengembangan Sistem Informasi Manajemen Hotel Multi-Cabang Berbasis Web dengan Fra"
+    },
+    {
+        "path":  "JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\REFERENSI_ARTHA_TERVERIFIKASI.ris",
+        "extension":  ".ris",
+        "bytes":  4330,
+        "text_excerpt":  "TY  - JOUR\nAU  - Ahadi, Ahmad Husna\nAU  - Pariyadi\nAU  - Djauhari, Teuku\nPY  - 2025\nTI  - Pengembangan Sistem Informasi Manajemen Hotel Multi-Cabang Berbasis Web dengan Framework Laravel\nJO  - Djtechno: Jurnal Teknologi Informasi\nVL  - 6\nIS  - 2\nSP  - 758\nEP  - 773\nDO  - 10.46576/djtechno.v6i2.7139\nSN  - 2745-3758\nUR  - https://jurnal.dharmawangsa.ac.id/index.php/djtechno/article/view/7139\nY2  - 2"
+    },
+    {
+        "path":  "JURNAL\\BUKU\\ebook-pressman-sw-engineering.pdf",
+        "extension":  ".pdf",
+        "bytes":  21319802,
+        "kind":  "book",
+        "pages":  930,
+        "sha256":  "df0f2b723bd3a9b5bdf526500dd5eacffbb8638686196d2fbecf87070c5784e0",
+        "read_scope":  "first_8_pages",
+        "text_excerpt":  "Praise for earlier editions of\nSoftware Engineering: A Practitioner’s Approach\n“Roger Pressman has written a solid comprehensive guidebook for the /f_i  eld of software \nengineering for both students of the discipline and software developers and managers \npracticing it—or needing to practice it.” IEEE Software\n“This is a classic modern textbook, clear and authoritative, with lots of pictures, exam"
+    },
+    {
+        "path":  "JURNAL\\BUKU\\Extreme-Programming-Explained-2nd-Edition-Kent-Beck.pdf",
+        "extension":  ".pdf",
+        "bytes":  1850530,
+        "kind":  "book",
+        "pages":  294,
+        "sha256":  "c236a45762c55e74534cb0211ed9bedae78aab0d10dee861210c91627d1ff8f7",
+        "read_scope":  "first_8_pages",
+        "text_excerpt":  "•Table of\nContents\nExtreme Programming Explained: Embrace\nChange, Second Edition\nBy Kent Beck, Cynthia Andres\nPublisher: Addison Wesley Professional\nPub Date: November 16, 2004\nISBN: 0-321-27865-8\nPages: 224\n \nWhether you have a small team that is already\nclosely aligned with your customers or a large team\nin a gigantic or multinational organization, you will\nfind in these pages a wealth of ideas "
+    },
+    {
+        "path":  "JURNAL\\BUKU\\Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf",
+        "extension":  ".pdf",
+        "bytes":  5397464,
+        "kind":  "book",
+        "pages":  790,
+        "sha256":  "1c454dd4b7bbfe02f5392708d01e5802977353a217a5a17848f82e777152a24e",
+        "read_scope":  "first_8_pages",
+        "text_excerpt":  "\nSOFTWARE ENGINEERING\nNinth Edition\nIan Sommerville\nAddison-Wesley\nBoston Columbus Indianapolis New York San Francisco Uppe r Saddle River\nAmsterdam Cape Town Dubai London Madrid Milan Munich Paris Montreal Toronto\nDelhi Mexico City São Paulo Sydney Hong Kong Seoul Singapore Taipei Tokyo\nEditorial Director: Marcia Horton\nEditor in Chief: Michael Hirsch\nAcquisitions Editor: Matt Goldstein\nEditorial"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\A Spiral Model of Software Development and Enhancement - Prototyping - Boehm - 1988.txt",
+        "extension":  ".txt",
+        "bytes":  57835,
+        "text_excerpt":  "=== HALAMAN 1 ===\nA Spiral Model of Software Development and \nEnhancement \nBarry W. Boehm, TRW Defense Systems Group \n \n \n“Stop the life cycle—I want to get off!” \n“Life-cycle Concept Considered Harmful.” \n“ The waterfall model is dead.” \n“No, it isn’t, but it should be.” \n \nThese statements exemplify the current debate about software life-cycle process \nmodels. The topic has recently received a g"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Adoption and Suitability of Software Development Methods - Empirical Study - Kuhrmann dkk - 2021.txt",
+        "extension":  ".txt",
+        "bytes":  23951,
+        "text_excerpt":  "=== HALAMAN 1 ===\nFull citation : Licorish, S. A., Holvitie, J., Hyrynsalmi, S., Leppänen, V., Spínola, R. O., Mendes , T. S., \nMacDonell, S. G. and Buchan, J. 2016. Adoption and Suitability of Software Development Methods \nand Practices, in Proceedings of the 23rd Asia-Pacific Software Engineering Conference (APSEC2016). \nHamilton, New Zealand, IEEE, pp.369-372.  doi:10.1109/APSEC.2016.062\nAdopti"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Aplikasi Administrasi Sekolah Musik ABC - Pembayaran \u0026 Penjadwalan - Barizi dkk - 2023.txt",
+        "extension":  ".txt",
+        "bytes":  13861,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nJurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI) \nVol 04 No 02 Tahun 2023 \n \ne-ISSN : 2715-8756 \n332 \n \n PERANCANGAN APLIKASI SISTEM ADMINISTRASI SEKOLAH \nMUSIK PADA SEKOLAH MUSIK ABC BERBASIS JAVA \n \nAhmad Barizi1, Nico Bustanul Anshary2, Ria Asep Sumarni3 \nProgram Studi Tekni"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Extreme programming for a single person team - Agarwal \u0026 Umphress - 2008.txt",
+        "extension":  ".txt",
+        "bytes":  22890,
+        "text_excerpt":  "--- [Halaman 1 / Hal. 82] ---\nExtreme Programming for a Single Person Team\nRavikant Agarwal, David Umphress\nComputer Science \u0026 Software Engineering, 107 Dunstan Hall, Auburn University, AL 36849\nagarwra@auburn.edu, umphrda@auburn.edu\nACM-SE \u002708, March 28-29, 2008, Auburn, AL, USA.\nDOI: 10.1145/1593105.1593127\n\nABSTRACT\nThe purpose of this paper is to examine the features of Extreme Programming (XP"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\HASIL EKSTRAK BUKU\\ebook-pressman-sw-engineering.txt",
+        "extension":  ".txt",
+        "bytes":  2610241,
+        "text_excerpt":  "=== HALAMAN 1 ===\nSoftware Engineering\nA Practitioner’s Approach\nSeventh Edition\nRoger S. Pressman\n\n=== HALAMAN 2 ===\nSoftware Engineering\nA\nP R A C T I T I O N E R ’ S\nA P P R O A C H\n\n=== HALAMAN 3 ===\n[Halaman Kosong atau Berisi Gambar/Diagram]\n\n=== HALAMAN 4 ===\nSoftware Engineering\nA\nP R A C T I T I O N E R ’ S\nA P P R O A C H\nSEVENTH EDITION\nRoger S. Pressman, Ph.D.\n\n=== HALAMAN 5 ===\nSOFTWA"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\HASIL EKSTRAK BUKU\\Extreme-Programming-Explained-2nd-Edition-Kent-Beck.txt",
+        "extension":  ".txt",
+        "bytes":  314582,
+        "text_excerpt":  "=== HALAMAN 1 ===\n• Table of\nContents\nExtreme Programming Explained: Embrace\nChange, Second Edition\nBy Kent Beck, Cynthia Andres\nPublisher : Addison Wesley Professional\nPub Date : November 16, 2004\nISBN : 0-321-27865-8\nPages : 224\n\nWhether you have a small team that is already\nclosely aligned with your customers or a large team\nin a gigantic or multinational organization, you will\nfind in these pa"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\HASIL EKSTRAK BUKU\\Software-Engineering-9th-Edition-by-Ian-Sommerville.txt",
+        "extension":  ".txt",
+        "bytes":  2026023,
+        "text_excerpt":  "=== HALAMAN 1 ===\n[Halaman Kosong atau Berisi Gambar/Diagram]\n\n=== HALAMAN 2 ===\nSOFTWARE ENGINEERING\nNinth Edition\nIan Sommerville\nAddison-Wesley\nBoston\nColumbus\nIndianapolis\nNew York\nSan Francisco\nUpper Saddle River\nAmsterdam\nCape Town\nDubai\nLondon\nMadrid\nMilan\nMunich\nParis\nMontreal\nToronto\nDelhi\nMexico City\nSão Paulo\nSydney\nHong Kong\nSeoul\nSingapore\nTaipei\nTokyo\n\n=== HALAMAN 3 ===\nEditorial Dir"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Lean Software Development - An Agile Toolkit - Poppendieck - 2003.txt",
+        "extension":  ".txt",
+        "bytes":  122251,
+        "text_excerpt":  "=== HALAMAN 1 ===\n\n\n=== HALAMAN 2 ===\nLean Software \nDevelopment\n\n=== HALAMAN 3 ===\nA\ngile software development centers on four values, which are identified in the \nAgile Alliance’s Manifesto:  \n 1. Individuals and interactions over processes and tools\n 2. Working software over comprehensive documentation\n 3. Customer collaboration over contract negotiation\n 4. Responding to change over following "
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Managing the Development of Large Software Systems - Waterfall - WESCON - Royce - 1970.txt",
+        "extension":  ".txt",
+        "bytes":  20363,
+        "text_excerpt":  "--- [Halaman 1] ---\nMANAGING THE DEVELOPMENT OF LARGE SOFTWARE SYSTEMS \nDr. Winston W. Rovce \nINTRODUCTION \nl am going to describe my pe,-.~onal views about managing large software developments. I have had \nvarious assignments during the past nit,.: years, mostly concerned with the development of software packages \nfor spacecraft mission planning, commanding and post-flight analysis. In these assi"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Pemodelan SCRUM Klinik Ar-Rokhim - JOINS - Kurniawan \u0026 Sani - 2019.txt",
+        "extension":  ".txt",
+        "bytes":  33931,
+        "text_excerpt":  "--- [Halaman 1] ---\n76 \n  \nJournal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86 \np-ISSN : 2528-0228 \ne-ISSN : 2528-0236 \nPemodelan SCRUM dalam Pengembangan Sistem \nInformasi Kesehatan pada Klinik Ar-Rokhim Sragen \nKabupaten Sragen \nSCRUM Model on Development of Health Information System at Ar-Rokhim Clinic in \nSragen Regency   \n \nIkhwansyah Kurniawan1, Ramadhan Rakhmat Sani 2 \n1,2Faku"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Peran TI Manajemen Pendidikan - JRPP - Pradana - 2024.txt",
+        "extension":  ".txt",
+        "bytes":  3621,
+        "text_excerpt":  "==================================================\n[HALAMAN 1 - METADATA ARTIKEL]\n==================================================\n\nJudul      : PERAN TEKNOLOGI INFORMASI DALAM MENINGKATKAN EFEKTIVITAS MANAJEMEN PENDIDIKAN DI SEKOLAH\nPenulis    : Muhammad Rafieq Adi Pradana\nInstitusi  : Universitas Sang Bumi Ruwa Jurai\nJurnal     : Jurnal Review Pendidikan dan Pengajaran (JRPP)\nVolume     : 7\nNo"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Perbandingan Heavy \u0026 Lightweight Methodology - Khan dkk - 2011.txt",
+        "extension":  ".txt",
+        "bytes":  31824,
+        "text_excerpt":  "--- [Halaman 1] ---\nA Comprehensive Study of Commonly Practiced Heavy \u0026 \nLight Weight Software Methodologies \n1Asif Irshad Khan, 2Rizwan Jameel Qurashi and 3Usman Ali Khan \n \n1 Department of Computer Science \nSinghania University, Jhunjhunu, Rajasthan, India \n \n2 Department of Information Technology \nKing Abdul Aziz University, Jeddah, Saudi Arabia \n \n3 Department of Information System \nKing Abdul"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Perbandingan Waterfall dan Prototyping - UNIKOM - Susanto \u0026 Andriana - 2016.txt",
+        "extension":  ".txt",
+        "bytes":  14369,
+        "text_excerpt":  "--- [Halaman 1] ---\nMajalah Ilmiah UNIKOM   Vol.14  No. 1 \n41 H  a  l  a  m a  n \n \n \n \nPERBANDINGAN MODEL WATERFALL DAN PROTOTYPING  \nUNTUK PENGEMBANGAN SISTEM INFORMASI \n \nRANI SUSANTO, ANNA DARA ANDRIANA  \nProgram Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer \n Universitas Komputer Indonesia \n \n \nSystem Development Life Cycle  atau yang lebih dikenal dengan istilah SDLC \nadalah me"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Perbandingan XP vs PxP pada Implementasi Software - Fahrijal \u0026 Hartawan - 2024.txt",
+        "extension":  ".txt",
+        "bytes":  34685,
+        "text_excerpt":  "\n=== HALAMAN 1 ===\n \nJurnal Manajemen Informatika Jayakarta \nVolume 4, Nomor 4, September: halaman 367-382 \n                            \nP-ISSN: 2746-5985 \ne-ISSN: 2797-0930 \nDOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534  \n \nThis work is licensed under a Creative Commons Attribution 4.0 INTErnational License. \nhttp://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta \n \n367 \n \n \nPERANCANGA"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.txt",
+        "extension":  ".txt",
+        "bytes":  21948,
+        "text_excerpt":  "--- [Halaman 1] ---\nPersonal Extreme Programming – An Agile Process \nfor Autonomous Developers\nYani Dzhurov, Iva Krasteva, and Sylvia Ilieva\n \nFaculty of Mathematics and Informatics, Sofia University, \n5 James Bourchier Blvd, Sofia 1165, Bulgaria\nyani.dzhurov@gmail.com, iva.krasteva@rila.bg, sylvia@acad.bg\nAbstract. Despite the tendency of growing the size and complexity of the \ndeveloped software"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Personal Extreme Programming Exploring Developers Adoption - AMCIS - Iyawa - 2020.txt",
+        "extension":  ".txt",
+        "bytes":  38430,
+        "text_excerpt":  "--- [Halaman 1] ---\nPersonal Extreme Programming: Exploring Developers\u0027 \nAdoption\nIYAWA, Gloria Ejehiohen\nAvailable from Sheffield Hallam University Research Archive (SHURA) at:\nhttps://shura.shu.ac.uk/27536/\nThis document is the Accepted Version [AM]\nCitation:\nIYAWA, Gloria Ejehiohen (2020). Personal Extreme Programming: Exploring \nDevelopers\u0027 Adoption. In: AMCIS 2020 Proceedings. bepress. [Book "
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\PxP vs Waterfall - Job Training App - ICST 2018 - Asri dkk - 2018.txt",
+        "extension":  ".txt",
+        "bytes":  14699,
+        "text_excerpt":  "--- [Halaman 1] ---\nComparing Traditional and Agile Software \nDevelopment Approaches: Case of Personal Extreme \nProgramming \n \nSri Andriati Asri1, I Gusti Made Agung Sunaya2, Putu \nManik Prihatini3 \nDepartment of Electrical Engineering  \nPoliteknik Negeri Bali \nBali, Indonesia \n1sriandriati@pnb.ac.id, 2a_sunaya@pnb.ac.id, \n3manikprihatini@pnb.ac.id  \nWidyadi Setiawan4 \nDepartment of Electrical Eng"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SCRUM Development Process - OOPSLA - Schwaber - 1995.txt",
+        "extension":  ".txt",
+        "bytes":  43543,
+        "text_excerpt":  "--- HALAMAN 1 ---\n1\n SCRUM Development Process\nKen Schwaber\n   Advanced Development Methods\n131 Middlesex Turnpike    Burlington, MA 01803\nemail virman@aol.com  Fax: (617) 272-0555\n_______________________________________________________________________\nABSTRACT. The stated, accepted philosophy for systems development is that the\ndevelopment process is a well understood approach that can be planned"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Scrum Guide 2020 - Schwaber \u0026 Sutherland - Official.txt",
+        "extension":  ".txt",
+        "bytes":  31056,
+        "text_excerpt":  "--- [Halaman 1] ---\n \n \nKen Schwaber \u0026 Jeff Sutherland \n \n \n \n \n \n \n \n \n \n \nThe Scrum Guide \n \nThe Definitive Guide to Scrum: The Rules of the Game \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nNovember 2020 \n  \n\n--- [Halaman 2] ---\n \n1 \nPurpose of the Scrum Guide \nWe developed Scrum in the early 1990s. We wrote the first version of the Scrum Guide in 2010 to help \npeople worldwide understand Scrum.  We have e"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Scrum2Kanban - Integrating Kanban and Scrum in Capstone Course - IEEE - Mahnic - 2018.txt",
+        "extension":  ".txt",
+        "bytes":  45599,
+        "text_excerpt":  "=== HALAMAN 1 ===\nScrum2Kanban: Integrating Kanban and Scrum in a University\nSoftware Engineering Capstone Course\nChristoph Matthies\nHasso Plattner Institute, University of Potsdam\nPotsdam, Germany\nchristoph.matthies@hpi.de\nABSTRACT\nUsing university capstone courses to teach agile software develop-\nment methodologies has become commonplace, as agile methods\nhave gained support in professional soft"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Absensi - Web - Prototyping - Putra - 2022.txt",
+        "extension":  ".txt",
+        "bytes":  18822,
+        "text_excerpt":  "Journal of Information System Research (JOSH)  \nVolume 3, No. 4, Juli 2022, pp 431−436 \nISSN 2686-228X (media online) \nhttps://ejurnal.seminar-id.com/index.php/josh/ \nDOI 10.47065/josh.v3i4.1835 \nFitra Kasma Putra | Jurnal JOSH | Page 431 \nPenerapan Metode Prototyping Dalam Rancangan Sistem Informasi \nAbsensi Berbasis Website  \nFitra Kasma Putra \nFakultas Ekonomi Dan Bisnis Islam, Manajemen Inform"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Bimbel - Web Mobile - Waterfall - Tiana \u0026 Gunanto - 2026 [DUPLIKAT].txt",
+        "extension":  ".txt",
+        "bytes":  27176,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\np-ISSN: 2962-3022 | e-ISSN: 2963-7104 \nVolume 4 No 3 Februari 2026 \nHal: 1631-1638 \nhttp://ejurnal.lkpkaryaprima.id/index.php/juktisi \nDOI: https://doi.org/10.62712/juktisi.v4i3.675 \n \nCopyright © 2026 Author(s), Page 1631  \nThis Journal is licensed under a Creative Commons Attributio"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Bimbel - Web Mobile - Waterfall - Tiana \u0026 Gunanto - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  27176,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\np-ISSN: 2962-3022 | e-ISSN: 2963-7104 \nVolume 4 No 3 Februari 2026 \nHal: 1631-1638 \nhttp://ejurnal.lkpkaryaprima.id/index.php/juktisi \nDOI: https://doi.org/10.62712/juktisi.v4i3.675 \n \nCopyright © 2026 Author(s), Page 1631  \nThis Journal is licensed under a Creative Commons Attributio"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  36442,
+        "text_excerpt":  "--- [Halaman 1] ---\n \nJURNAL REKAYASA INFORMASI \nSWADHARMA (JRIS) \n    VOLUME 06 NO 02 JULI  2026 \n   ISSN 2774 – 5759 | eISSN 2774-5732 \n \n \n115 \n \n \nPENGEMBANGAN SISTEM INFORMASI BIMBINGAN BELAJAR \nBERBASIS WEB UNTUK EFISIENSI OPERASIONAL BEE HIVE \n \nSatria Nur Fajriansyah1), Muhammad Subaktiar Wijaya2), Daffa Arifta Eryana3), \nAlaudin Safa4), Harsya Rafif Pramadhan5), Arya Wicaksono6), Muhammad"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.txt",
+        "extension":  ".txt",
+        "bytes":  39163,
+        "text_excerpt":  "--- [Halaman 1] ---\n \n Lisensi  \n Lisensi Internasional Creative Commons Attribution-ShareAlike 4.0. \n \n424 \n \n \nTerbit online pada laman web jurnal: https://rjti.upp.ac.id/index.php/rjmldm \n \n \nVol. 4 No. 3 (2025) 424 – 435 | ISSN : 2829-2529 (Media Online)   \nSistem Informasi Bimbingan Belajar RSDC Berbasis Website Dengan \nMenggunakan Metode Waterfall Untuk Meningkatkan Efisiensi \nAdministrasi \n"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri \u0026 Prabowo (ITK) - 2020.txt",
+        "extension":  ".txt",
+        "bytes":  31218,
+        "text_excerpt":  " \nMultitek Indonesia: Jurnal Ilmiah \nVolume: 14 No. 2, Desember 2020, Hal.  101 - 100 \nISSN: 1907-6223 (print) \nISSN: 2579-3497 (Online)  \nhttp://journal.umpo.ac.id/index.php/multitek  \n \nAhmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan \nPariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming \n \n101\nRANCANG BA"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Inventaris Aset Desa - RAD - Pratama dkk - 2023.txt",
+        "extension":  ".txt",
+        "bytes":  29487,
+        "text_excerpt":  "Infotek : Jurnal Informatika dan Teknologi \nVol. 6 No. 1, Januari 2023 \nHal. 49-59 \n \n \ne-ISSN 2614-8773 \nDOI : 10.29408/jit.v6i1.7313 \nLink : https://dx.doi.org/10.29408/jit.v6i1.7313 \n \nInfotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023 \n49 \nPenerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi \nInventaris Aset Desa Rempoah \n \n \nEva Argarini P"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Laboratorium Infokom - PxP - REPOSITOR - Priatmaja dkk - 2022.txt",
+        "extension":  ".txt",
+        "bytes":  36275,
+        "text_excerpt":  "--- [Halaman 1] ---\nREPOSITOR, Vol. 4, No. 4, November 2022, Pp. 429-439 \nISSN : 2714-7975 \nE-ISSN : 2716-1382 \n \n    \n   \n429 \nImplementasi Model PXP Pada Sistem Informasi Laboratorium \nInfokom Universitas Muhammadiyah Malang \n \n \nBenny Indriawan Priatmaja*1, Ilyas Nuryasin2, Wildan Suharso3 \n1,2,3Universitas Muhammadiyah Malang \nbenny.indriawanp@gmail.com*1, ilyas@umm.ac.id2, wsuharso.umm.ac.id3"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Manajemen Bimbel Ilman Nafi - Notifikasi - Waterfall - Safitri dkk - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  32879,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nJATI (Jurnal Mahasiswa Teknik Informatika) \nVol. 10 No. 2, April 2026 \n \n2345 \nPERANCANGAN SISTEM INFORMASI MANAJEMEN BIMBINGAN \nBELAJAR BERBASIS WEB UNTUK EFISIENSI ADMINISTRASI DAN \nKOMUNIKASI DENGAN FITUR NOTIFIKASI OTOMATIS \n(STUDI KASUS : BIMBEL ILMAN NAFI’) \n \nEka Cinta Ayu Safi"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Manajemen Kursus INET Komputer - Laravel Agile - JATI - Kismantoro \u0026 Ibadi - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  36115,
+        "text_excerpt":  "--- [Halaman 1] ---\nJATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 2, April 2026 \n \n3195 \nPENERAPAN METODE AGILE DALAM PENGEMBANGAN WEBSITE  \nSISTEM MANAJEMEN KURSUS BERBASIS LARAVEL  \n(STUDI KASUS INET KOMPUTER) \n \nKismantoro, Taqrim Ibadi \nTeknik Informatika, Universitas Bina Darma \nJl. Jenderal Ahmad Yani No.3, 9/10 Ulu Palembang, Indonesia \ntorokisman500@gmail.com \n \nABSTRAK \n \nPerkemb"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Monitoring Belajar Bimbel AHE - WhatsApp Gateway - Waterfall - JATI - Amelia dkk - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  26068,
+        "text_excerpt":  "--- [Halaman 1] ---\nJATI (Jurnal Mahasiswa Teknik Informatika) Vol. 10 No. 3, Juni 2026 \n5314 \nINTEGRASI WHATSAPP GATEWAY PADA SISTEM MONITORING \nPERKEMBANGAN BELAJAR ANAK AHE BERBASIS WEB  \n(STUDI KASUS: BIMBEL AHE MEGALUH JOMBANG) \n \nWilujeng Amelia, Nur Khafidhoh, M. Anshori Aris Widya  \nInformatika, Universitas KH.A Wahab Hasbullah \nJl. Garuda No. 9, Tambakberas, Tambakrejo, Kec. Jombang, Kabu"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Pembayaran Kursus LOOP Coding BSD - PHP MySQL - JTIK - Karpina dkk - 2025.txt",
+        "extension":  ".txt",
+        "bytes":  23917,
+        "text_excerpt":  "--- [Halaman 1] ---\n1217 \n \n \n  \n \n \n \n \n \n \n  \n  \nPengembangan Sistem Pembayaran pada Website Bimbingan \nBelajar Non-Formal Berbasis PHP MySQL di LOOP Coding \nBSD, Tangerang, Banten \nArika Karpina 1*, Yuma Akbar 2, Widya Ayu Lestari  3, Fitriani Noer Jamilah  4 \n1*,2,3,4 Program Studi Teknik Informatika, Fakultas Teknik, Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Kota Jakarta Timur, Da"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Pembayaran SPP - Notifikasi WhatsApp \u0026 Payment Gateway Midtrans - JTI - Sari dkk - 2023.txt",
+        "extension":  ".txt",
+        "bytes":  19431,
+        "text_excerpt":  "--- [Halaman 1] ---\n \n \n \n \n \n \n90 \nhttps://doi.org/10.47111/JTI \nAvailable online at https://e-journal.upr.ac.id/index.php/JTI \n[E-ISSN 2656-0321] \n[Vol 17 No 1] \n[Januari 2023] \nPENERAPAN SISTEM NOTIFIKASI CHAT DAN PAYMENT \nGATEWAY PADA SISTEM INFORMASI PEMBAYARAN SPP \nBERBASIS WEBSITE  \nNova Noor Kamala Sari a,1,*, Septian Geges b,2, Noor Hasanah c,3 \na,b,c Jurusan Teknik Informatika, Fakultas "
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Pembayaran SPP dan Penggajian Guru Bimbel - Web - JTEKSIS - Abadi dkk - 2025.txt",
+        "extension":  ".txt",
+        "bytes":  44477,
+        "text_excerpt":  "=== HALAMAN 1 ===\nJurnal Teknologi Dan Sistem Informasi Bisnis  \nVol. 7 No. 1 Januari 2025 Hal. 216-225 \nhttp://jurnal.unidha.ac.id/index.php/jteksis \n \n \n \nE-ISSN : 2655-8238 \nP-ISSN : 2964-2132 \n \n \n \n \n    \n \n   \nJurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      216 \nPerancangan  Aplikasi Pe mbaya"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Penjadwalan \u0026 Pembayaran Les Jia Jia Education - Web - Thiovanda.txt",
+        "extension":  ".txt",
+        "bytes":  18111,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nJurnal Ilmu Komputer dan Sistem Informasi \n1 \n \nPERANCANGAN SISTEM INFORMASI PENCATATAN \nPENJADWALAN DAN PEMBAYARAN LES BERBASIS WEB \nVeren Thiovanda 1)  \n \n1)  Sistem Informasi Universitas Tarumanagara \nJl.Letjen S.Parman No. 1, Jakarta, 11440, Indonesia \nemail : veren.825220067@stu."
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Penjadwalan KBM Bimbel Ganesha Operation - Web - Jurnal - 2017.txt",
+        "extension":  ".txt",
+        "bytes":  49938,
+        "text_excerpt":  "=== HALAMAN 1 ===\n\u0001\u0002\u0003\u0004\n\u0001\n\u0001\u0002\u0003\u0002\u0004\u0002\u0001\u0002\u0003\u0005\u0006\u0007\b\t\b\n\u0005\u0005\n\u0001\u0002\u0003\u000b\u0004\u000b\u0005\u0007\b\f\n\f\b\n\u0005\u000e\u0002\u0003\u000f\n\u000e\n\b\b\u0003\u0005\u0001\b\u0003\u000b\u0006\n\b\u0005\n\u0005\u0006\u0007\b\t\n\u000b\u0004\f\b\n\u0006\u000e\u0006\u000b\u0004\n\u0004\n\u000f\u0010\n\u0011\u0007\b\u0012\n\u0006\u0004\u0004\n\u0005\u000e\b\u0013\b\u0011\u0004 \n\u0014\u0010\b\u0015\b\u0006\u0004 \u0006\u0010\b\u0016\b\u000e\u0004 \u0017\b\u0007\u0016\u0013\n\u0004 \u0010\b\u0015\u0006\u0004 \n\u0014\u0018\n\b\u0004 \u0018\n\n\u0013\u0006\u0018\u0019\u0004 \u0018\u0014\u0007\n\u001a\b\u0012\b\u000b\u0004 \n\b\u0007\b\u000b\b\u0004\n\u0012\u001b\u0018\n\u000b\u0006\u0012\b\n\u0006\u0004 \b\u000b\u0011\b\u0007\b\u0004 \u000e\b\u0018\u0010\b\u0004 \u0016\u0014\u000b\u0015\b\u000b\u0004 \u000f\u0013\u0013\b\u000e\u0004 \n\u0014\u0010\b\u0015\b\u0006\u0004 \u0005\b\u000b\u0015\u0004 \u001c\u0014\u000b\u001d\u0006\u001a\u0011\b\u001e\u0004 \u001f\u0006\u0004 \u0016\b\u0013\b\u0018\u0004\n\u0012\u001b\u0018\n\u000b\u0006\u0012\b\n\u0006\u0004 \u0006\u000b\u0006\u0004 \u000e\b\u0007\n\n\u0004 \u0011\u0014\u0007\t\b\u0013\u0006\u000b\u0004 \u0012\u0014\n\u0014\u0006\u0018\u0010\b\u000b\u0015\b\u000b\u0004 \b\u000b\u0011\b\u0007\b\u0004  \b\u000e\u0006\u0007\u0004 \u0016\b\u000b\u0004 \u0010\b\u0011\u000e\u0006\u000b\u0004 \u0016\u0014\u000b\u0015\b\u000b\u0004\n\u0018\u0014\u0018\b\u0016\n\u0012\b\u000b\u0004 \u0012\u0014\u0016\n\b\u000b!\b\u0004 \n\u0014\u000e\u0006\u000b\u0015\u0015\b\u0004 \u0017\u001b\u001d\n\n\u0004 \n\u000e\b\u0013\b\u0011\u0004 !\b\u000b\u0015\u0004 \u0016"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Siswa SMP - Extreme Programming (XP) - Suputra dkk - 2026.txt",
+        "extension":  ".txt",
+        "bytes":  29266,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nJATI (Jurnal Mahasiswa Teknik Informatika) \nVol. 10 No. 2, April 2026 \n \n2138 \nRANCANG BANGUN SISTEM INFORMASI SISWA  \nMENGGUNAKAN METODE EXTREME PROGRAMMING  \n(STUDI KASUS SMP NEGERI 4 TEGALLALANG) \n \nNgakan Putu Herry Suputra, I Nyoman Yudi Anggara Wijaya, Anak Agung Gede Adi Mega P"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.txt",
+        "extension":  ".txt",
+        "bytes":  44821,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nJurnal Jaring SainTek  \nVol.7, No.1, April 2025, pp. 35 - 46 \ne-ISSN : 2656-9485 \n \n \n \nAvailable Online at : http://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek  \n35 \n \nImplementasi Metode Personal Extreme Programming Pada Pengembangan \nSistem Informasi Surat Menyurat \n(Studi Ka"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Strengthening the Case for Pair Programming - IEEE Software - Williams dkk - 2000.txt",
+        "extension":  ".txt",
+        "bytes":  38334,
+        "text_excerpt":  "=== HALAMAN 1 ===\nStrengthening the Case for Pair -Programming  \n \nLaurie Williams Robert R. Kessler Ward Cunningham Ron Jeffries \nNorth Carolina State \nUniversity \nUniversity of Utah Cunningham \u0026 \nCunningham, Inc \n \nwilliam@csc.ncsu.edu  kessler@cs.utah.edu ward@c2.com ronjeffries@acm.org \n \nAbstract \nPair programming – two programmers working side-by-side at one computer collaborating on the \nsa"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Structured vs Agile Development Comparative Analysis - Mishra \u0026 Alzoubi - Springer - 2023.txt",
+        "extension":  ".txt",
+        "bytes":  89353,
+        "text_excerpt":  "--- [Halaman 1] ---\nVol:.(1234567890)\nInt J  Syst  Assur  Eng  Manag (August 2023) 14(4):1504–1522\nhttps://doi.org/10.1007/s13198-023-01958-5\n1 3\nORIGINAL ARTICLE\nStructured software development versus agile software \ndevelopment: a comparative analysis\nAlok Mishra1  · Yehia Ibrahim Alzoubi2 \nReceived: 2 January 2023 / Revised: 28 April 2023 / Accepted: 24 May 2023 / Published online: 12 June 2023"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\The Kanban Guide - Panduan Resmi Kanban - Coleman \u0026 Vacanti - 2025.txt",
+        "extension":  ".txt",
+        "bytes":  13412,
+        "text_excerpt":  "=== HALAMAN 1 ===\nTHE\nKANBAN\nGUIDE\nEdition 2025.5 ꞏ 2025-05-01\nAuthors\nJohn Coleman ꞏ Daniel Vacanti\nContributors\nColleen Johnson, Prateek Singh, Julia Wester, Christian Neverdal, Magdalena Firlit, T om Gilb, Steve T endon\n\n=== HALAMAN 2 ===\nThe Kanban Guide Edition 2025.5\nPreface\nMay 2025\nThis document aims to be a unifying reference for the community by offering the minimal guidance for\nKanban. "
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Views on Balancing Agility and Discipline - Boehm \u0026 Turner - 2004.txt",
+        "extension":  ".txt",
+        "bytes":  8581,
+        "text_excerpt":  "=== HALAMAN 1 ===\nSEI Agile Research Forum \nTwitter #SEIAgile \n© 2012 Carnegie Mellon University \nViews on Balancing Agility and Discipline \n \nJames Over \nSenior Technical Staff \n \nJames Over has led the transition of the TSP into government and industry \norganizations throughout the world. He co-authored the book Leadership, \nTeamwork, \u0026 Trust (with the late Watts Humphrey) and several SEI \npubli"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Website Company Profile - Extreme Programming (XP) - Astiti - 2023.txt",
+        "extension":  ".txt",
+        "bytes":  30237,
+        "text_excerpt":  "==================================================\n[HALAMAN 1]\n==================================================\n\nRESOLUSI : Rekayasa Teknik Informatika dan Informasi \nISSN 2745-7966 (Media Online) \nVol 3, No 3, Januari 2023 \nHal 114-124 \nhttps://djournals.com/resolusi \nSarah Astiti, RESOLUSI, Page 114 \nPenerapan Metode Extreme Programming Pada Rancang Bangun Website \nCompany Profile \nSarah Astit"
+    },
+    {
+        "path":  "JURNAL\\HASIL EKSTRAK JURNAL\\Website E-Kavling - PxP \u0026 UAT - JATI - Apriyanti dkk - 2024.txt",
+        "extension":  ".txt",
+        "bytes":  2757,
+        "text_excerpt":  "==================================================\n[HALAMAN 1 - METADATA ARTIKEL]\n==================================================\n\nJudul      : Pemanfaatan Metodologi PXP dan Pengujian User Acceptance Testing (UAT)\n             dalam Pengembangan Website E-Kavling\nPenulis    : Narti Apriyanti; Seftin Fitri Ana Wati; Abdul Rezha Efrat Najaf\nInstitusi  : (tidak tercantum secara eksplisit pada met"
+    },
+    {
+        "path":  "JURNAL\\JURNAL PENDUKUNG\\yusrian,+610-1857-1-CE+(1).pdf",
+        "extension":  ".pdf",
+        "bytes":  349090,
+        "kind":  "source",
+        "pages":  10,
+        "sha256":  "a3effeb4684048b125a79b750160f5dff59b8aa39aaf5fb373bcc433befcd152",
+        "read_scope":  "full_text_extraction",
+        "text_excerpt":  "Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK) DOI: 10.25126/jtiik.201851610 \nVol. 5, No. 1, Maret 2018, hlm. 77-86  p-ISSN: 2355-7699 \nAkreditasi KEMENRISTEKDIKTI, No. 51/E/KPT/2017   e-ISSN: 2528-6579 \n77 \nPEMODELAN USE CASE (UML): EVALUASI TERHADAP BEBERAPA \nKESALAHAN DALAM PRAKTIK \n \nTri A. Kurniawan \n \nSoftware Engineering Research Grup (SERG), Fakultas Ilmu Komputer, Universitas Brawij"
+    },
+    {
+        "path":  "JURNAL\\PEMERIKSAAN_SINTA_2026-10-24.json",
+        "extension":  ".json",
+        "bytes":  25135,
+        "text_excerpt":  "[\n  {\n    \"id\": 1,\n    \"file\": \"JURNAL\\\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\\\A Spiral Model of Software Development and Enhancement - Prototyping - Boehm - 1988.pdf\",\n    \"title\": \"A Spiral Model of Software Development and Enhancement\",\n    \"venue\": \"Computer (IEEE), 1988\",\n    \"rank\": \"Tidak berlaku\",\n    \"note\": \"Jurnal internasional; tidak diberi peringkat SINTA nasional.\",\n    \"source\": \"\",\n "
+    },
+    {
+        "path":  "JURNAL\\PEMERIKSAAN_SINTA_2026-10-24.md",
+        "extension":  ".md",
+        "bytes":  31597,
+        "text_excerpt":  "# Pemeriksaan peringkat SINTA seluruh PDF folder JURNAL\n\nTanggal pemeriksaan: 24 Oktober 2026 (WIB). Seluruh 48 PDF di dalam folder JURNAL dan subfoldernya didata; berkas TXT hasil ekstraksi tidak dihitung sebagai PDF tambahan.\n\nPemeriksaan ini mengidentifikasi wadah publikasi dari bagian awal PDF, kemudian mencocokkan nama jurnal, penerbit, dan ISSN dengan portal SINTA atau situs resmi jurnal. PD"
+    }
+]

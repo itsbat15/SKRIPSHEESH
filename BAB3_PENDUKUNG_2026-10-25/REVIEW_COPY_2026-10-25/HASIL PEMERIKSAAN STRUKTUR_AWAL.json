@@ -1,0 +1,108 @@
+{
+  "scope": "Read-only document and local source checks, not full Word layout, implementation testing, or plagiarism-database matching",
+  "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (REVISI TEMPLATE TERBARU) copy.md",
+  "sha256": "ba6809678d6e4184bd4f5f6330c7d32889a93ab04e8150818c72043487046836",
+  "prose_paragraphs": 128,
+  "words": 12361,
+  "tables": 20,
+  "figures": 10,
+  "single_sentence_paragraphs": [],
+  "sentences_over_40_words": [
+    {
+      "section": "### 3.4.1 Gambaran Proses Bisnis Berjalan dan Usulan",
+      "paragraph": 4,
+      "line": 281,
+      "words": 43,
+      "sentence": "Super Admin memverifikasi kesesuaian data transfer terhadap mutasi rekening koran bank; transaksi yang valid akan disetujui sehingga memotong piutang siswa, sedangkan pengajuan yang tidak sesuai akan ditolak disertai alasan koreksi untuk kemudian diajukan ulang melalui transaksi baru yang tetap tertaut pada riwayat sebelumnya."
+    }
+  ],
+  "numeric_sentence_start": [],
+  "first_person_prose": [],
+  "unmentioned_artifacts": [],
+  "broken_image_links": [],
+  "table_column_errors": [],
+  "long_dash_prose": false,
+  "known_literature_sources": [
+    {
+      "id": "J01",
+      "author": "Dzhurov dkk. (2009)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.pdf",
+      "year": 2009
+    },
+    {
+      "id": "J02",
+      "author": "Fikri dan Arthawan Sugih Prabowo (2021)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri & Prabowo (ITK) - 2020.pdf",
+      "year": 2021
+    },
+    {
+      "id": "J03",
+      "author": "Sidiq dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf",
+      "year": 2025
+    },
+    {
+      "id": "J04",
+      "author": "Apriyanti dkk. (2024)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website E-Kavling - PxP & UAT - JATI - Apriyanti dkk - 2024.pdf",
+      "year": 2024
+    },
+    {
+      "id": "J05",
+      "author": "Ahadi dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\01_Multicabang_Hotel_Laravel_Djtechno_Ahadi_2025.pdf",
+      "year": 2025
+    },
+    {
+      "id": "J06",
+      "author": "Thiovanda (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Penjadwalan & Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf",
+      "year": 2026
+    },
+    {
+      "id": "J07",
+      "author": "Hendri dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\05_Penerimaan Kas.pdf",
+      "year": 2025
+    },
+    {
+      "id": "J08",
+      "author": "Sudirman dan Tristianti (2021)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\06_Rekonsiliasi_Kas_Bank_MEANS_Sudirman_2021.pdf",
+      "year": 2021
+    },
+    {
+      "id": "J09",
+      "author": "Ramadhan dan Widodo (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\02_Keuangan_Pusat_Cabang_Rams_Dimsum_IJLER_Ramadhan_2026.pdf",
+      "year": 2026
+    },
+    {
+      "id": "J10",
+      "author": "Khafidhoh dkk. (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\03_Penjadwalan_Bimbel_AHE_JTI_Khafidhoh_2026.pdf",
+      "year": 2026
+    },
+    {
+      "id": "J11",
+      "author": "Kabisatullah dan Noprisson (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\04_Kapasitas_Ruang_RapaTrack_JUSIBI_Kabisatullah_2026.pdf",
+      "year": 2026
+    },
+    {
+      "id": "J12",
+      "author": "Fajriansyah dkk. (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf",
+      "year": 2026
+    },
+    {
+      "id": "J13",
+      "author": "Gunawan dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf",
+      "year": 2025
+    }
+  ],
+  "literature_since_2016": 12,
+  "known_literature_total": 13,
+  "literature_recency_percent": 92.31
+}

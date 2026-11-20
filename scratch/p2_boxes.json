@@ -1,0 +1,520 @@
+﻿[
+    {
+        "Text":  "Table I shows the process script for the Personal Extreme",
+        "X":  110,
+        "Y":  225,
+        "W":  486,
+        "H":  17
+    },
+    {
+        "Text":  "Programming (PXP). User stories are written on cards. The card",
+        "X":  110,
+        "Y":  245,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "does not contain all the information that makes up the",
+        "X":  110,
+        "Y":  267,
+        "W":  486,
+        "H":  17
+    },
+    {
+        "Text":  "requirement. Instead, the card has just enough text to identify the",
+        "X":  110,
+        "Y":  288,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "requirement, and to remind everyone what the story is. The card is",
+        "X":  110,
+        "Y":  308,
+        "W":  487,
+        "H":  18
+    },
+    {
+        "Text":  "a token representing the requirement. It\u0027s used in planning. Notes",
+        "X":  645,
+        "Y":  225,
+        "W":  486,
+        "H":  17
+    },
+    {
+        "Text":  "are written on it, reflecting priority and cost. It\u0027s always handed to",
+        "X":  645,
+        "Y":  245,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "the programmers when the story is scheduled to be implemented,",
+        "X":  645,
+        "Y":  267,
+        "W":  486,
+        "H":  17
+    },
+    {
+        "Text":  "and given back to the customer when the story is complete.",
+        "X":  645,
+        "Y":  288,
+        "W":  486,
+        "H":  18
+    },
+    {
+        "Text":  "Table 1: Personal Extreme Programming (PXP) Process Script",
+        "X":  390,
+        "Y":  355,
+        "W":  491,
+        "H":  17
+    },
+    {
+        "Text":  "El.",
+        "X":  391,
+        "Y":  388,
+        "W":  24,
+        "H":  14
+    },
+    {
+        "Text":  "Pl.",
+        "X":  391,
+        "Y":  410,
+        "W":  23,
+        "H":  13
+    },
+    {
+        "Text":  "Tasks",
+        "X":  142,
+        "Y":  411,
+        "W":  45,
+        "H":  13
+    },
+    {
+        "Text":  "1. Planmng",
+        "X":  228,
+        "Y":  531,
+        "W":  91,
+        "H":  17
+    },
+    {
+        "Text":  "2.",
+        "X":  227,
+        "Y":  675,
+        "W":  13,
+        "H":  13
+    },
+    {
+        "Text":  "Development",
+        "X":  249,
+        "Y":  675,
+        "W":  103,
+        "H":  17
+    },
+    {
+        "Text":  "Codin standard is available.",
+        "X":  425,
+        "Y":  388,
+        "W":  211,
+        "H":  14
+    },
+    {
+        "Text":  "Produce or obtain a uirements statement.",
+        "X":  424,
+        "Y":  410,
+        "W":  320,
+        "H":  13
+    },
+    {
+        "Text":  "A. Write S em Meta hor.",
+        "X":  432,
+        "Y":  432,
+        "W":  201,
+        "H":  14
+    },
+    {
+        "Text":  "B. Write User Stories",
+        "X":  432,
+        "Y":  453,
+        "W":  157,
+        "H":  14
+    },
+    {
+        "Text":  "P2. FOR all User Stories",
+        "X":  391,
+        "Y":  476,
+        "W":  216,
+        "H":  14
+    },
+    {
+        "Text":  "A. Pick a User St and break it into features.",
+        "X":  432,
+        "Y":  498,
+        "W":  340,
+        "H":  14
+    },
+    {
+        "Text":  "END",
+        "X":  418,
+        "Y":  520,
+        "W":  38,
+        "H":  13
+    },
+    {
+        "Text":  "P3. Create domain-driven desi to reflect the domain model in",
+        "X":  391,
+        "Y":  542,
+        "W":  465,
+        "H":  14
+    },
+    {
+        "Text":  "P4. Gro features into meanin",
+        "X":  391,
+        "Y":  564,
+        "W":  228,
+        "H":  14
+    },
+    {
+        "Text":  "u s FeatureSets .1",
+        "X":  678,
+        "Y":  564,
+        "W":  139,
+        "H":  14
+    },
+    {
+        "Text":  "PS. Write acce tance tests for FeatureSets",
+        "X":  391,
+        "Y":  586,
+        "W":  307,
+        "H":  14
+    },
+    {
+        "Text":  "P5. Estimate FeatureSet size and uired develo ent time usi",
+        "X":  391,
+        "Y":  608,
+        "W":  465,
+        "H":  14
+    },
+    {
+        "Text":  "our desi",
+        "X":  870,
+        "Y":  542,
+        "W":  57,
+        "H":  14
+    },
+    {
+        "Text":  "ideal da s.",
+        "X":  880,
+        "Y":  608,
+        "W":  77,
+        "H":  14
+    },
+    {
+        "Text":  "P7. Sort FeatureSet according to riori to create FeatureSetPriori List.",
+        "X":  391,
+        "Y":  629,
+        "W":  533,
+        "H":  18
+    },
+    {
+        "Text":  "PS. Establish Iteration schedule.",
+        "X":  391,
+        "Y":  652,
+        "W":  233,
+        "H":  14
+    },
+    {
+        "Text":  "DI. FOR all FeatureSets in the FeatureSetPriori List",
+        "X":  391,
+        "Y":  674,
+        "W":  392,
+        "H":  14
+    },
+    {
+        "Text":  "A. Pick a FeatureSet to im lement from to of the FeatureSetPriori List.",
+        "X":  414,
+        "Y":  696,
+        "W":  536,
+        "H":  13
+    },
+    {
+        "Text":  "B. IF chan e introduced in this FeatureSet = YES",
+        "X":  414,
+        "Y":  718,
+        "W":  378,
+        "H":  14
+    },
+    {
+        "Text":  "l. U date the FeatureSet.",
+        "X":  466,
+        "Y":  740,
+        "W":  182,
+        "H":  13
+    },
+    {
+        "Text":  "2. Re-sort the FeatureSetPriori List.",
+        "X":  464,
+        "Y":  762,
+        "W":  269,
+        "H":  13
+    },
+    {
+        "Text":  "C. ELSE",
+        "X":  414,
+        "Y":  784,
+        "W":  64,
+        "H":  14
+    },
+    {
+        "Text":  "l. U date desi and create an iteration Ian for the current FeatureSet.",
+        "X":  466,
+        "Y":  805,
+        "W":  518,
+        "H":  14
+    },
+    {
+        "Text":  "2. FOR all Features in the FeatureSet",
+        "X":  464,
+        "Y":  828,
+        "W":  271,
+        "H":  14
+    },
+    {
+        "Text":  "a. Pick a feature from the FeatureSet and break it into tasks.",
+        "X":  491,
+        "Y":  849,
+        "W":  436,
+        "H":  14
+    },
+    {
+        "Text":  "b. Sort tasks accordin to their riori to create a TaskPriori List.",
+        "X":  491,
+        "Y":  871,
+        "W":  490,
+        "H":  14
+    },
+    {
+        "Text":  "c. FOR all task in the TaskPriori List",
+        "X":  491,
+        "Y":  894,
+        "W":  280,
+        "H":  14
+    },
+    {
+        "Text":  "cl. Pick a task from the to of the TaskPriori List.",
+        "X":  523,
+        "Y":  915,
+        "W":  375,
+        "H":  14
+    },
+    {
+        "Text":  "c2. Write unit tests for the task.",
+        "X":  523,
+        "Y":  938,
+        "W":  228,
+        "H":  14
+    },
+    {
+        "Text":  "c3. Write/Modi the code to lement the task.",
+        "X":  523,
+        "Y":  959,
+        "W":  360,
+        "H":  14
+    },
+    {
+        "Text":  "c4. DO eode walkthrou",
+        "X":  523,
+        "Y":  981,
+        "W":  166,
+        "H":  14
+    },
+    {
+        "Text":  "c5. U ate the Develo ment baseline and maintain versions in",
+        "X":  523,
+        "Y":  1004,
+        "W":  457,
+        "H":  14
+    },
+    {
+        "Text":  "e6. Com ile and unit test the develo ed code.",
+        "X":  523,
+        "Y":  1026,
+        "W":  332,
+        "H":  13
+    },
+    {
+        "Text":  "c7.",
+        "X":  523,
+        "Y":  1048,
+        "W":  21,
+        "H":  13
+    },
+    {
+        "Text":  "IF (Unit test = Success) then",
+        "X":  554,
+        "Y":  1048,
+        "W":  219,
+        "H":  16
+    },
+    {
+        "Text":  "i. Perform acce tance testin for code.",
+        "X":  569,
+        "Y":  1069,
+        "W":  280,
+        "H":  14
+    },
+    {
+        "Text":  "ii. IF acce tanee test = Success then",
+        "X":  569,
+        "Y":  1092,
+        "W":  285,
+        "H":  13
+    },
+    {
+        "Text":  "a. Inte te into the Refactor baseline",
+        "X":  619,
+        "Y":  1114,
+        "W":  274,
+        "H":  14
+    },
+    {
+        "Text":  "osito",
+        "X":  1022,
+        "Y":  1004,
+        "W":  35,
+        "H":  14
+    },
+    {
+        "Text":  "iii. ELSE",
+        "X":  569,
+        "Y":  1135,
+        "W":  72,
+        "H":  14
+    },
+    {
+        "Text":  "Create anew task (\"fix code\" as",
+        "X":  614,
+        "Y":  1157,
+        "W":  245,
+        "H":  17
+    },
+    {
+        "Text":  "cs. ELSE",
+        "X":  519,
+        "Y":  1180,
+        "W":  69,
+        "H":  13
+    },
+    {
+        "Text":  "Create anew task \"fix code \")as riori",
+        "X":  564,
+        "Y":  1201,
+        "W":  290,
+        "H":  17
+    },
+    {
+        "Text":  "END",
+        "X":  505,
+        "Y":  1224,
+        "W":  37,
+        "H":  14
+    },
+    {
+        "Text":  "D. Perform in ation test on the Refactor baseline",
+        "X":  414,
+        "Y":  1267,
+        "W":  377,
+        "H":  14
+    },
+    {
+        "Text":  "E. IF Inte tion test • Success then",
+        "X":  414,
+        "Y":  1289,
+        "W":  286,
+        "H":  14
+    },
+    {
+        "Text":  "l. Refactor the code in the Refactor baseline.",
+        "X":  466,
+        "Y":  1311,
+        "W":  326,
+        "H":  14
+    },
+    {
+        "Text":  "2. Inte te into the Production baseline.",
+        "X":  464,
+        "Y":  1334,
+        "W":  295,
+        "H":  13
+    },
+    {
+        "Text":  "F. ELSE",
+        "X":  414,
+        "Y":  1356,
+        "W":  62,
+        "H":  13
+    },
+    {
+        "Text":  "riori",
+        "X":  873,
+        "Y":  1157,
+        "W":  30,
+        "H":  14
+    },
+    {
+        "Text":  "l. Create a new task \"fix the Refactor baseline\") as riori",
+        "X":  466,
+        "Y":  1377,
+        "W":  421,
+        "H":  17
+    },
+    {
+        "Text":  "H. Perform acc tance testin for code in Production baseline.",
+        "X":  414,
+        "Y":  1399,
+        "W":  456,
+        "H":  14
+    },
+    {
+        "Text":  ". IF acc tance test = Success then",
+        "X":  421,
+        "Y":  1422,
+        "W":  279,
+        "H":  13
+    },
+    {
+        "Text":  "l. Iteration release",
+        "X":  466,
+        "Y":  1444,
+        "W":  133,
+        "H":  13
+    },
+    {
+        "Text":  "2. IF ew FeatureSet introduced Yes then",
+        "X":  464,
+        "Y":  1465,
+        "W":  350,
+        "H":  14
+    },
+    {
+        "Text":  "a. U date FeatureSetPriori List.",
+        "X":  500,
+        "Y":  1487,
+        "W":  241,
+        "H":  14
+    },
+    {
+        "Text":  "J. ELSE",
+        "X":  414,
+        "Y":  1510,
+        "W":  64,
+        "H":  13
+    },
+    {
+        "Text":  "83",
+        "X":  612,
+        "Y":  1608,
+        "W":  17,
+        "H":  12
+    }
+]

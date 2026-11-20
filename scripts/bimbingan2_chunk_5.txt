@@ -1,0 +1,500 @@
+[53:11 - 53:12] gak perlu
+[53:12 - 53:13] dilampirkan
+[53:13 - 53:17] kalau misalkan
+[53:17 - 53:18] dilampirkan
+[53:18 - 53:19] kalau misalkan
+[53:19 - 53:19] seminar
+[53:19 - 53:20] nanti minta
+[53:20 - 53:20] ditunjukkan
+[53:20 - 53:22] kalau misalkan
+[53:22 - 53:23] minta dilampirkan
+[53:23 - 53:25] data aslinya
+[53:25 - 53:26] disambarkan
+[53:26 - 53:41] ini
+[53:41 - 53:42] bahasa
+[53:42 - 53:43] paragraf ini
+[53:43 - 53:46] terkait
+[53:46 - 53:46] dari
+[53:46 - 53:47] multi cabang
+[53:47 - 53:48] bagaimana
+[53:48 - 53:49] menikronkan
+[53:49 - 53:49] dari semua cabang
+[53:49 - 53:50] yang ada
+[53:50 - 53:58] yang kemarin
+[53:58 - 53:59] saya tanyakan
+[53:59 - 54:00] jadi nanti
+[54:00 - 54:01] kalau sistemnya
+[54:01 - 54:01] ada
+[54:01 - 54:02] terkait
+[54:02 - 54:03] mutasi rekeningnya
+[54:03 - 54:04] nanti gimana
+[54:04 - 54:05] apakah nanti
+[54:05 - 54:06] transfernya
+[54:06 - 54:07] akan menjadi
+[54:07 - 54:08] fitur di sistem
+[54:08 - 54:08] atau
+[54:08 - 54:11] kemarin juga
+[54:11 - 54:11] udah ada
+[54:11 - 54:12] saya
+[54:12 - 54:13] tanyakan
+[54:13 - 54:13] ke
+[54:13 - 54:15] gunana
+[54:15 - 54:16] kalau misalkan
+[54:16 - 54:17] untuk saat ini
+[54:17 - 54:19] untuk prosesnya
+[54:19 - 54:20] akan tetap sama
+[54:20 - 54:21] tetap akan
+[54:21 - 54:22] dilakukan
+[54:22 - 54:23] seperti itu
+[54:23 - 54:24] cuman
+[54:24 - 54:25] akan lebih
+[54:25 - 54:26] mudahkan
+[54:26 - 54:27] kalau misalkan
+[54:27 - 54:27] dari
+[54:27 - 54:28] sistem yang
+[54:28 - 54:29] atau dari
+[54:29 - 54:29] super admin
+[54:29 - 54:30] mengakses
+[54:30 - 54:31] secara langsung
+[54:31 - 54:32] bisa mengetahui
+[54:32 - 54:33] review
+[54:33 - 54:34] itu berapa
+[54:34 - 54:34] dan juga
+[54:34 - 54:36] ada data
+[54:36 - 54:37] dan juga
+[54:37 - 54:38] ada bukti
+[54:38 - 54:38] dari
+[54:38 - 54:39] transfer
+[54:39 - 54:40] yang udah
+[54:40 - 54:41] ditransfer oleh
+[54:41 - 54:42] wali murid
+[54:42 - 54:42] karena
+[54:42 - 54:43] dari
+[54:43 - 54:44] artapun
+[54:44 - 54:44] juga udah
+[54:44 - 54:45] menyadari
+[54:45 - 54:45] bahwasannya
+[54:45 - 54:48] bisa terjadi
+[54:48 - 54:49] kemungkinan
+[54:49 - 54:50] pengeditan
+[54:50 - 54:51] bukti transfer
+[54:51 - 54:52] jadi
+[54:52 - 54:52] jadi
+[54:52 - 54:53] untuk prosesnya
+[54:53 - 54:54] sekarang
+[54:54 - 54:54] itu
+[54:54 - 54:54] dari
+[54:54 - 54:55] sisi
+[54:55 - 54:56] staff admin
+[54:56 - 54:56] ini
+[54:56 - 54:56] ketika ada
+[54:56 - 54:57] dari wali murid
+[54:57 - 54:59] yang mengirimkan
+[54:59 - 54:59] bukti transfer
+[54:59 - 55:00] itu
+[55:00 - 55:01] gak akan
+[55:01 - 55:01] langsung
+[55:01 - 55:02] dicatat
+[55:02 - 55:03] dan diterima
+[55:03 - 55:03] tapi
+[55:03 - 55:04] akan meminta
+[55:04 - 55:05] validasi
+[55:05 - 55:05] dari
+[55:05 - 55:06] bu
+[55:06 - 55:06] gunana
+[55:06 - 55:07] terlebih dahulu
+[55:07 - 55:07] apakah sudah
+[55:07 - 55:08] masuk ke rekening
+[55:08 - 55:08] atau enggak
+[55:08 - 55:10] baru akan dicatatat
+[55:10 - 55:12] jadi
+[55:12 - 55:13] gak ada
+[55:13 - 55:16] otomatisasi
+[55:16 - 55:17] dari sisi itunya
+[55:17 - 55:17] karena
+[55:17 - 55:18] dari gunana
+[55:18 - 55:18] sendiri pun
+[55:18 - 55:19] juga
+[55:19 - 55:19] tetap
+[55:19 - 55:21] kegak pengen
+[55:21 - 55:22] dilakukan secara
+[55:22 - 55:23] manual
+[55:23 - 55:23] karena
+[55:23 - 55:24] rekeningnya
+[55:24 - 55:25] itu langsung
+[55:25 - 55:26] ke gunana
+[55:26 - 55:26] itu sendiri
+[55:26 - 55:27] gak ke rekening kantor
+[55:27 - 55:31] soalnya
+[55:31 - 55:32] berarti kan
+[55:32 - 55:34] apa ya
+[55:34 - 55:35] berarti kan
+[55:35 - 55:36] proses pembayaran
+[55:36 - 55:37] yang dilakukan
+[55:37 - 55:37] itu tetap
+[55:37 - 55:38] di luar sistem
+[55:38 - 55:38] berarti kan ya
+[55:38 - 55:40] nanti kan dikirimkan
+[55:40 - 55:41] ke admin
+[55:41 - 55:42] gitu ya
+[55:42 - 55:42] katakanlah
+[55:42 - 55:43] kulitransfer
+[55:43 - 55:44] dikirimkan
+[55:44 - 55:45] berarti admin
+[55:45 - 55:46] ini akan verifikasi
+[55:46 - 55:46] dulu
+[55:46 - 55:47] ini udah masuk
+[55:47 - 55:47] atau belum
+[55:47 - 55:48] tapi kayaknya
+[55:48 - 55:49] verifikasinya
+[55:49 - 55:49] kan tetap
+[55:49 - 55:50] perhari
+[55:50 - 55:50] seperti tadi
+[55:50 - 55:51] kan
+[55:51 - 55:51] verifikasinya
+[55:51 - 55:52] tetap
+[55:52 - 55:52] perhari
+[55:52 - 55:53] seperti
+[55:53 - 55:55] yang per jam
+[55:55 - 55:55] setengah
+[55:55 - 55:56] sembilan
+[55:56 - 55:56] itu
+[55:56 - 55:57] cuman saya
+[55:57 - 55:58] ada terpikirkan
+[55:58 - 55:58] yang disebut
+[55:58 - 55:59] pilihannya itu
+[55:59 - 56:00] kemarin
+[56:00 - 56:00] saya ada
+[56:00 - 56:01] baca-baca
+[56:01 - 56:02] dan cari-cari
+[56:02 - 56:03] kalau misalkan
+[56:03 - 56:04] sebenarnya
+[56:04 - 56:05] bisa menggunakan
+[56:05 - 56:06] otomatisasi
+[56:06 - 56:06] whatsapp
+[56:06 - 56:07] memberituan
+[56:07 - 56:08] notifikasi
+[56:08 - 56:09] sekedar
+[56:09 - 56:09] untuk
+[56:09 - 56:10] memberitahu
+[56:10 - 56:11] bahwasannya
+[56:11 - 56:12] dari staff admin
+[56:12 - 56:13] ini
+[56:13 - 56:13] membutuhkan
+[56:13 - 56:14] validasi
+[56:14 - 56:14] apakah
+[56:14 - 56:15] pembayaran
+[56:15 - 56:15] yang masuk
+[56:15 - 56:16] atau enggak
+[56:16 - 56:17] atau
+[56:17 - 56:18] hanya sekedar
+[56:18 - 56:19] main
+[56:19 - 56:20] return notification
+[56:20 - 56:21] lewat
+[56:21 - 56:21] gmail
+[56:21 - 56:22] untuk
+[56:22 - 56:23] memberitahukan
+[56:23 - 56:24] sama juga
+[56:24 - 56:25] ada perlu
+[56:25 - 56:26] validasi
+[56:26 - 56:27] apakah
+[56:27 - 56:27] apakah
+[56:27 - 56:28] sudah masuk
+[56:28 - 56:29] rekening
+[56:29 - 56:30] atau enggak
+[56:30 - 56:31] transferannya
+[56:31 - 56:33] cuman untuk
+[56:33 - 56:34] saat ini
+[56:34 - 56:36] rancangan
+[56:36 - 56:37] yang
+[56:37 - 56:38] saya buat
+[56:38 - 56:39] itu
+[56:39 - 56:40] dari
+[56:40 - 56:40] manajemen
+[56:40 - 56:41] harus
+[56:41 - 56:42] login
+[56:42 - 56:43] terlebih dahulu
+[56:43 - 56:44] di super admin
+[56:44 - 56:44] dan melihat
+[56:44 - 56:45] dan
+[56:45 - 56:46] verifikasi
+[56:46 - 56:47] secara langsung
+[56:47 - 56:48] melalui
+[56:48 - 56:49] manajemen
+[56:49 - 56:51] kondisinya
+[56:51 - 56:51] berarti
+[56:51 - 56:52] gimana
+[56:52 - 56:53] nanti ketika
+[56:53 - 56:53] ada pembayaran
+[56:53 - 56:54] masuk
+[56:54 - 56:54] berarti
+[56:54 - 56:55] admin itu
+[56:55 - 56:55] akan tetap
+[56:55 - 56:56] mengupload
+[56:56 - 56:57] bukti itu
+[56:57 - 56:57] di masing-masing
+[56:57 - 56:59] mengupload
+[56:59 - 56:59] bukti itu
+[56:59 - 57:00] dari data-data
+[57:00 - 57:01] yang sudah ada
+[57:01 - 57:02] dan dari
+[57:02 - 57:02] si super admin
+[57:02 - 57:03] akan
+[57:03 - 57:03] ngecek
+[57:03 - 57:04] validasi
+[57:04 - 57:05] tapi kan
+[57:05 - 57:06] perbedaannya
+[57:06 - 57:07] kalau misalkan
+[57:07 - 57:08] yang sebelum
+[57:08 - 57:09] adanya sistem
+[57:09 - 57:10] itu harus
+[57:10 - 57:11] tertas
+[57:11 - 57:12] dan juga
+[57:12 - 57:14] mutasi
+[57:14 - 57:15] kalau ini
+[57:15 - 57:15] dari sistem
+[57:15 - 57:17] walaupun
+[57:17 - 57:17] secara
+[57:17 - 57:18] dilihat
+[57:18 - 57:19] itu
+[57:19 - 57:20] tetap
+[57:20 - 57:20] sama
+[57:20 - 57:20] untuk
+[57:20 - 57:21] mengajak
+[57:21 - 57:21] validasi
+[57:21 - 57:21] harus
+[57:21 - 57:22] kesempatan
+[57:22 - 57:23] dari mitra
+[57:23 - 57:25] yang
+[57:25 - 57:25] maunya
+[57:25 - 57:26] seperti itu
+[57:26 - 57:27] soalnya
+[57:27 - 57:32] maksudnya
+[57:32 - 57:33] nanti
+[57:33 - 57:33] berarti
+[57:33 - 57:34] apa ya
+[57:34 - 57:35] kalau
+[57:35 - 57:36] solusinya
+[57:36 - 57:36] mau
+[57:36 - 57:36] tetap
+[57:36 - 57:37] seperti itu
+[57:37 - 57:37] artinya
+[57:37 - 57:37] kan
+[57:37 - 57:38] tidak
+[57:38 - 57:39] di otomasi
+[57:39 - 57:40] di proses itu
+[57:40 - 57:41] cara
+[57:41 - 57:42] menyampaikan
+[57:42 - 57:43] di latar
+[57:43 - 57:43] belakang
+[57:43 - 57:43] ini
+[57:43 - 57:44] jangan sampai
+[57:44 - 57:44] nanti
+[57:44 - 57:45] disini
+[57:45 - 57:46] menyebutkan
+[57:46 - 57:46] bahwa
+[57:46 - 57:47] proses
+[57:47 - 57:48] tadi ya
+[57:48 - 57:49] kitansi fisik
+[57:49 - 57:49] dan buku
+[57:49 - 57:50] itu kan
+[57:50 - 57:52] masih
+[57:52 - 57:52] dilakukan
+[57:52 - 57:53] secara manual
+[57:53 - 57:55] proses rekapitulasinya
+[57:55 - 57:56] sementara
+[57:56 - 57:56] nanti
+[57:56 - 57:57] ketika ada
+[57:57 - 57:57] sistem
+[57:57 - 57:59] proses rekapitulasinya
+[57:59 - 57:59] juga
+[57:59 - 58:00] masih manual
+[58:00 - 58:01] juga
+[58:01 - 58:01] bedanya
+[58:01 - 58:01] cuman
+[58:01 - 58:02] udah langsung
+[58:02 - 58:03] di upload
+[58:03 - 58:03] gitu
+[58:03 - 58:04] ya kan
+[58:04 - 58:06] bukti transfernya
+[58:06 - 58:06] sudah langsung
+[58:06 - 58:07] di upload
+[58:07 - 58:07] tapi kan
+[58:07 - 58:08] proses pengecekannya
+[58:08 - 58:09] tetap masih manual
+[58:09 - 58:10] dilakukan
+[58:10 - 58:14] jadi itu juga
+[58:14 - 58:15] perlu clear
+[58:15 - 58:15] gitu
+[58:20 - 58:21] kalau dari sisi
+[58:21 - 58:23] developer
+[58:23 - 58:24] mungkin bisa aja
+[58:24 - 58:25] kita kasih otomasi
+[58:25 - 58:26] aja
+[58:26 - 58:26] misalkan
+[58:26 - 58:27] tapi kan
+[58:27 - 58:28] masalahnya
+[58:28 - 58:28] ini
+[58:28 - 58:29] keputusan
+[58:29 - 58:30] bukan di developer
+[58:30 - 58:31] tapi lebih ke
+[58:31 - 58:33] pihak manajemen
+[58:33 - 58:34] atau stakeholdernya
+[58:34 - 58:35] maunya yang seperti apa
+[58:35 - 58:36] karena mereka kan
+[58:36 - 58:37] yang melakukan investasi
+[58:37 - 58:38] disitu
+[58:38 - 58:40] dan
+[58:40 - 58:41] pertimbangan
+[58:41 - 58:42] misalkan nanti
+[58:42 - 58:42] kenapa tetap
+[58:42 - 58:43] seperti ini
+[58:43 - 58:45] dari sisi keamanan
+[58:45 - 58:45] kan mungkin
+[58:45 - 58:46] jadinya ada celah
+[58:46 - 58:47] gitu ya
+[58:47 - 58:48] ada celah
+[58:48 - 58:49] dan
+[58:49 - 58:50] bisa jadikan
+[58:50 - 58:50] bukti
+[58:50 - 58:53] waktu yang digunakan
+[58:53 - 58:53] untuk
+[58:53 - 58:54] proses pengecekan
+[58:54 - 58:56] jadi malah double check
+[58:56 - 58:57] jadi lebih lama
+[58:57 - 58:58] kan juga
+[58:58 - 58:59] effort lagi
+[58:59 - 59:00] nah itu juga
+[59:00 - 59:01] sebaiknya
+[59:01 - 59:02] clear juga
+[59:02 - 59:03] kenapa
+[59:03 - 59:04] tetap
+[59:04 - 59:05] solusi yang seperti ini
+[59:05 - 59:05] yang dipakai
+[59:05 - 59:08] itu jelasin
+[59:08 - 59:10] nanti aja
+[59:10 - 59:10] di requirement
+[59:10 - 59:11] menurut saya
+[59:11 - 59:12] nanti kan ya
+[59:12 - 59:16] setidaknya
+[59:16 - 59:17] maksudnya nanti ketika
+[59:17 - 59:18] Ariel ditanya
+[59:18 - 59:19] Ariel bisa
+[59:19 - 59:20] menyampaikan
+[59:20 - 59:21] gitu ya
+[59:21 - 59:22] kenapa kamu gak usulkan
+[59:22 - 59:23] aja itu di otomasi
+[59:23 - 59:24] kan sekarang banyak
+[59:24 - 59:25] teknologinya gitu
+[59:25 - 59:26] dan
+[59:26 - 59:27] ya mungkin gak
+[59:27 - 59:28] semahal itu juga
+[59:28 - 59:29] jauh lebih bisa
+[59:29 - 59:30] mempercepat
+[59:30 - 59:31] tapi kenapa
+[59:31 - 59:31] tetap dilakukan
+[59:31 - 59:32] seperti ini
+[59:32 - 59:33] nah itu
+[59:33 - 59:34] jadi pertimbangan
+[59:34 - 59:34] dari sisi manajemen
+[59:34 - 59:35] itu yang saya
+[59:35 - 59:35] perlu
+[59:35 - 59:38] clear gitu ya
+[59:38 - 59:39] alasannya
+[59:39 - 59:42] ini kemarin juga
+[59:42 - 59:42] ada
+[59:42 - 59:43] nyari-nyari
+[59:43 - 59:44] pilihannya
+[59:44 - 59:44] antara
+[59:44 - 59:45] yang digunakan
+[59:45 - 59:46] apa namanya
+[59:46 - 59:48] otomatisasi
+[59:48 - 59:49] yang seperti
+[59:49 - 59:49] gini
+[59:49 - 59:52] pembayaran
+[59:52 - 59:52] atau
+[59:52 - 59:55] melakukan manual
+[59:55 - 59:55] cuman
+[59:55 - 59:56] dilihat secara manual
+[59:56 - 59:57] pun juga
+[59:57 - 59:58] banyak celahnya
+[59:58 - 59:59] sebenarnya
+[59:59 - 59:59] untuk dilakukan
+[59:59 - 01:00:01] cuman dari
+[01:00:01 - 01:00:01] nuker
+[01:00:01 - 01:00:02] kemarin saya
+[01:00:02 - 01:00:03] coba
+[01:00:03 - 01:00:04] untuk validasi lagi
+[01:00:04 - 01:00:05] inginnya
+[01:00:05 - 01:00:06] seperti itu
+[01:00:06 - 01:00:14] berarti kan
+[01:00:14 - 01:00:14] sebenarnya
+[01:00:14 - 01:00:15] yang terbantu
+[01:00:15 - 01:00:16] itu bukan
+[01:00:16 - 01:00:16] proses
+[01:00:16 - 01:00:18] apa namanya
+[01:00:18 - 01:00:19] bukan proses
+[01:00:19 - 01:00:20] rekapannya
+[01:00:20 - 01:00:20] tapi
+[01:00:20 - 01:00:22] lebih ke
+[01:00:22 - 01:00:23] bagaimana
+[01:00:23 - 01:00:24] mungkin informasinya
+[01:00:24 - 01:00:25] itu ditampilkan
+[01:00:25 - 01:00:26] agar dia bisa langsung
+[01:00:26 - 01:00:26] melihat
+[01:00:26 - 01:00:27] oh ini ada
+[01:00:27 - 01:00:27] ada yang masuk
+[01:00:27 - 01:00:28] loh pembayaran
+[01:00:28 - 01:00:29] dari sini
+[01:00:29 - 01:00:29] cuman kan
+[01:00:29 - 01:00:30] butuh rendasi lagi
+[01:00:30 - 01:00:31] cuman dia kan
+[01:00:31 - 01:00:32] bisa overview
+[01:00:32 - 01:00:32] aja
+[01:00:32 - 01:00:34] dari sekian
+[01:00:34 - 01:00:35] siswa di cabang
+[01:00:35 - 01:00:35] ini untuk
+[01:00:35 - 01:00:36] pembayaran itu
+[01:00:36 - 01:00:36] sudah
+[01:00:36 - 01:00:37] misalkan
+[01:00:37 - 01:00:37] sudah berprogres
+[01:00:37 - 01:00:38] berapa persen
+[01:00:38 - 01:00:48] oh ini per paragrafnya
+[01:00:48 - 01:00:49] per ini ya
+[01:00:49 - 01:00:50] per masalah ya
+[01:00:50 - 01:01:03] ya ini berarti kan
+[01:01:03 - 01:01:04] harus ada dashboard
+[01:01:04 - 01:01:05] dengan solusinya
+[01:01:05 - 01:01:05] kan
+[01:01:05 - 01:01:06] dari sisi artinya
+[01:01:06 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:07] dari sisi artinya
+[01:01:07 - 01:01:15] dari sisi artinya
+[01:01:15 - 01:01:15] berikutnya
+[01:01:15 - 01:01:18] dari rujukan jurnal
+[01:01:18 - 01:01:19] yang saya temukan
+[01:01:19 - 01:01:21] dari sistem
+[01:01:21 - 01:01:23] baik dari metode
+[01:01:23 - 01:01:24] yang berbeda
+[01:01:24 - 01:01:26] tapi mengembangkan
+[01:01:26 - 01:01:27] sistem yang sama
+[01:01:27 - 01:01:29] baik itu pada
+[01:01:29 - 01:01:30] bimbel
+[01:01:30 - 01:01:30] ataupun
+[01:01:30 - 01:01:31] non bimbel
+[01:01:31 - 01:01:44] memang kebayangkan
+[01:01:44 - 01:01:45] itu
+[01:01:46 - 01:01:49] menggunakan TXP
+[01:01:49 - 01:01:49] sebenarnya
+[01:01:49 - 01:01:50] lalu banyak
+[01:01:50 - 01:01:51] menggunakan
+[01:01:51 - 01:01:51] waterfall
+[01:01:51 - 01:01:52] dan juga
+[01:01:52 - 01:01:55] XP
+[01:01:55 - 01:01:58] karena dari mereka
+[01:01:58 - 01:01:59] juga kebanyakan
+[01:01:59 - 01:02:00] yang saya baca
+[01:02:00 - 01:02:02] itu dari awal
+[01:02:02 - 01:02:03] sudah

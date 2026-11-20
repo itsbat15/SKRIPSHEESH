@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "Restructuring, source and diagram integrity, references, and cross-document consistency. No application tests, executed DDL, partner acceptance or final Word/PDF layout claimed.",
+  "chapter": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md",
+  "sha256": "a57dd4726f73ac4e87c80569342a941194c0f39f531fc71eb1b7f53b600a9d68",
+  "main_sections": [
+    [
+      "3.1",
+      "Konsep Desain"
+    ],
+    [
+      "3.2",
+      "Spesifikasi Teknis"
+    ],
+    [
+      "3.3",
+      "Tahapan Pembuatan Prototipe"
+    ],
+    [
+      "3.4",
+      "Metode Implementasi"
+    ],
+    [
+      "3.5",
+      "Jadwal Pembuatan Prototipe"
+    ]
+  ],
+  "numbered_sections": 15,
+  "tables": 21,
+  "figures": 10,
+  "checks": {
+    "chapter_checker_passed": true,
+    "integrated_checker_passed": true,
+    "five_main_titles_match_supplied_proposal": true,
+    "chapter_title_desain_dan_implementasi": true,
+    "three_research_subsections": true,
+    "eleven_procedure_parts_a_to_k": true,
+    "pxp_initialization_and_retrospective_retained": true,
+    "blackbox_and_uat_retained": true,
+    "no_adoption_of_sus_or_mobile_stack": true,
+    "no_fourth_level_numbered_heading": true,
+    "all_explicit_section_references_resolve": true,
+    "section_ledger_matches_current_headings": true,
+    "structural_reference_unchanged": true,
+    "unchanged_usecase": true,
+    "unchanged_schema": true,
+    "previous_chapter_copy_matches_original_hash": true,
+    "chapter_matches_transformation_manifest": true,
+    "kf_table_rows_preserved": true,
+    "us_table_rows_preserved": true,
+    "trace_table_rows_preserved": true,
+    "uat_table_rows_preserved": true,
+    "existing_parenthetical_citations_preserved": true,
+    "flow_has_current_procedure_labels": true,
+    "flow_has_no_stale_subsection_labels": true,
+    "image_filename_numbers_match_captions": true,
+    "current_figures_use_separate_folder": true,
+    "all_twenty_previous_tables_retained": true,
+    "implementation_responsibility_table_added": true,
+    "all_ten_previous_figures_retained": true,
+    "five_section_source_index_present": true
+  },
+  "passed": 30,
+  "total": 30,
+  "issues": {},
+  "upstream_results": {
+    "chapter": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB3_PENDUKUNG_2026-10-25\\HASIL PEMERIKSAAN DRAF.json",
+    "integrated": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\REVISI_TERPADU_2026-10-25\\HASIL VALIDASI TERPADU.json"
+  },
+  "open_items": [
+    "Kewenangan mitra dan rekening",
+    "Tarif, potongan serta kapasitas aktual",
+    "Peserta UAT dan kalender",
+    "Versi layanan dan inventaris perangkat",
+    "Tata letak akhir Word/PDF"
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "date": "2026-10-25",
+  "manuscript": "BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md",
+  "source_status_scope": "Content and page mapping checked now; SINTA coverage follows prior official-record audit except metadata corrections noted; not a fresh all-journal accreditation audit",
+  "sources": [
+    {
+      "id": "J01",
+      "author": "Dzhurov dkk. (2009)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.pdf",
+      "sha256": "e2a3a064a5d0bcc388707c863541a2528603bb303afadfd2fcfe048cc54b6531",
+      "locations": [
+        {
+          "pdf_page": 2,
+          "printed": "253"
+        },
+        {
+          "pdf_page": 3,
+          "printed": "254"
+        },
+        {
+          "pdf_page": 4,
+          "printed": "255"
+        },
+        {
+          "pdf_page": 5,
+          "printed": "256"
+        }
+      ],
+      "use": "Prinsip, tahapan, estimasi tugas, pengujian unit, dan evaluasi iterasi PxP.",
+      "limit": "Prosiding sumber asli, bukan jurnal SINTA. Tidak menetapkan Fibonacci sebagai kewajiban dan tidak memberikan jadwal kalender ARTHA.",
+      "bibliography": "Dzhurov, Y., Krasteva, I. dan Ilieva, S. (2009) 'Personal Extreme Programming: An Agile Process for Autonomous Developers', dalam International Conference on Software, Services & Semantic Technologies (S3T), Sofia, hlm. 252 sampai 259.",
+      "publisher": "https://dse.fmi.uni-sofia.bg/personalPage-Ilieva.htm",
+      "rank": "Tidak berlaku",
+      "rank_note": "Makalah konferensi Dzhurov, Krasteva, dan Ilieva.",
+      "rank_scope": "tidak dinilai dengan SINTA"
+    },
+    {
+      "id": "J02",
+      "author": "Fikri dan Arthawan Sugih Prabowo (2021)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri & Prabowo (ITK) - 2020.pdf",
+      "sha256": "a614301e32c53b12031cf68687242c1912ceb50101e8c33715eb7936299d7bb7",
+      "locations": [
+        {
+          "pdf_page": 3,
+          "printed": "103"
+        },
+        {
+          "pdf_page": 4,
+          "printed": "104"
+        },
+        {
+          "pdf_page": 5,
+          "printed": "105"
+        }
+      ],
+      "use": "Contoh penerapan PxP, user story, rencana rilis, rancangan data, dan antarmuka.",
+      "limit": "PDF berlabel edisi Desember 2020, tetapi metadata penerbit bertanggal 4 Januari 2021. Nama lengkap penulis kedua adalah I Putu Deny Arthawan Sugih Prabowo, sehingga S. P. pada PDF bukan bukti bahwa Prabowo orang berbeda. Cakupan SK untuk edisi perlu dipastikan terpisah.",
+      "bibliography": "Fikri, A.M. dan Arthawan Sugih Prabowo, I.P.D. (2021) 'Rancang Bangun Sistem Informasi Buku Tamu pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan dengan Metode Personal Extreme Programming', Multitek Indonesia: Jurnal Ilmiah, 14(2), hlm. 101 sampai 110. https://doi.org/10.24269/mtkind.v14i2.2568",
+      "publisher": "https://journal.umpo.ac.id/index.php/multitek/article/view/2568",
+      "rank": "SINTA 4",
+      "rank_note": "S4 pada halaman SINTA yang berhasil dibuka. Hasil pencarian lama masih menampilkan S3; status edisi 2020 harus dibaca dari SK periode tersebut. Penulis kedua pada PDF I Putu Deny Arthawan S. P., bukan Prabowo.",
+      "rank_scope": "peringkat jurnal; cakupan edisi perlu pemeriksaan SK"
+    },
+    {
+      "id": "J03",
+      "author": "Sidiq dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf",
+      "sha256": "997615c1bb02cd907414cc4cdb6933215bed19bc1557e3931210936c275ec100",
+      "locations": [
+        {
+          "pdf_page": 3,
+          "printed": "37"
+        },
+        {
+          "pdf_page": 4,
+          "printed": "38"
+        },
+        {
+          "pdf_page": 11,
+          "printed": "45"
+        }
+      ],
+      "use": "Penggalian kebutuhan dan pencatatan perubahan serta durasi pelaksanaan PxP.",
+      "limit": "Bukan bukti seluruh proyek selalu lebih cepat. Total pengembangan 50 hari dan implementasi 37 hari berbeda; cakupan SK SINTA untuk edisi 2025 masih belum dipastikan dari arsip yang tersedia.",
+      "bibliography": "Sidiq, A.L., Marthasari, G.I. dan Aminudin (2025) 'Implementasi Metode Personal Extreme Programming pada Pengembangan Sistem Informasi Surat Menyurat (Studi Kasus: Dinas Pendidikan Pemuda dan Olahraga Kabupaten Tambrauw)', Jurnal Jaring SainTek, 7(1), hlm. 35 sampai 46. https://doi.org/10.31599/zsbj5v55",
+      "publisher": "https://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek/article/view/744",
+      "rank": "SINTA 5",
+      "rank_note": "Profil jurnal menampilkan S5, tetapi entri artikel persis ini masih berlabel Accred: Unknown. Riwayat pada profil yang dibuka berhenti pada 2024; cakupan edisi 2025 perlu SK lanjutan.",
+      "rank_scope": "peringkat jurnal; cakupan edisi perlu pemeriksaan SK"
+    },
+    {
+      "id": "J04",
+      "author": "Apriyanti dkk. (2024)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website E-Kavling - PxP & UAT - JATI - Apriyanti dkk - 2024.pdf",
+      "sha256": "1b1581c23ea0a6b33b53abc4c23918db8702e1f2504dac8df3509135a47e9007",
+      "locations": [
+        {
+          "pdf_page": 2,
+          "printed": "3679"
+        },
+        {
+          "pdf_page": 3,
+          "printed": "3680"
+        },
+        {
+          "pdf_page": 6,
+          "printed": "3683"
+        },
+        {
+          "pdf_page": 7,
+          "printed": "3684"
+        },
+        {
+          "pdf_page": 8,
+          "printed": "3685"
+        }
+      ],
+      "use": "Contoh pengembangan PxP, pengujian kotak hitam, dan keterlibatan pengguna dalam UAT.",
+      "limit": "Objek e-kavling dan UAT berupa kuesioner. Tidak menjadi sumber langsung seluruh tugas UAT ARTHA; jumlah peserta tidak konsisten pada beberapa bagian artikel sehingga tidak disalin.",
+      "bibliography": "Apriyanti, N., Wati, S.F.A. dan Najaf, A.R.E. (2024) 'Pemanfaatan Metodologi PXP dan Pengujian User Acceptance Testing (UAT) dalam Pengembangan Website E-Kavling', JATI (Jurnal Mahasiswa Teknik Informatika), 8(3), hlm. 3678 sampai 3686. https://doi.org/10.36040/jati.v8i3.9766",
+      "publisher": "https://mail.ejournal.itn.ac.id/jati/article/view/9766",
+      "rank": "SINTA 4",
+      "rank_note": "Jurnal yang sama dengan nomor 28.",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J05",
+      "author": "Ahadi dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\01_Multicabang_Hotel_Laravel_Djtechno_Ahadi_2025.pdf",
+      "sha256": "019768594f222f6b2b8ee6d8c668ab153a864429e98dd47c4a65c567f37b1eb0",
+      "locations": [
+        {
+          "pdf_page": 7,
+          "printed": "764"
+        },
+        {
+          "pdf_page": 8,
+          "printed": "765"
+        }
+      ],
+      "use": "Pemisahan kewenangan cabang dan pemantauan pusat; contoh kebutuhan serta pemodelan sistem.",
+      "limit": "Objek hotel dengan empat aktor, bukan bukti bahwa ARTHA harus mempunyai tepat dua peran atau sudah diuji pada delapan cabang.",
+      "bibliography": "Ahadi, A.H., Pariyadi dan Djauhari, T. (2025) 'Pengembangan Sistem Informasi Manajemen Hotel Multi-Cabang Berbasis Web dengan Framework Laravel', Djtechno: Jurnal Teknologi Informasi, 6(2), hlm. 758 sampai 773. https://doi.org/10.46576/djtechno.v6i2.7139",
+      "publisher": "https://jurnal.dharmawangsa.ac.id/index.php/djtechno/article/view/7139",
+      "rank": "SINTA 4",
+      "rank_note": "Vol. 2 No. 1 (2021) sampai Vol. 6 No. 2 (2025)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J06",
+      "author": "Thiovanda (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Penjadwalan & Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf",
+      "sha256": "89c356da90494ba0610b38660a462348ca3f4ef44bcfe5f027b75939ea23c4d2",
+      "locations": [
+        {
+          "pdf_page": 1,
+          "printed": "1"
+        },
+        {
+          "pdf_page": 4,
+          "printed": "4"
+        },
+        {
+          "pdf_page": 5,
+          "printed": "5"
+        }
+      ],
+      "use": "Pembanding dekat sistem les: data cabang, head admin, admin cabang, guru, jadwal, dan pembayaran.",
+      "limit": "Sudah mempunyai manajemen cabang. Tahun berasal dari verifikasi penerbit pada audit; volume dan nomor belum dicantumkan karena tidak jelas pada PDF dan laman tidak dapat diakses ulang saat penyusunan ini.",
+      "bibliography": "Thiovanda, V. (2026) 'Perancangan Sistem Informasi Pencatatan Penjadwalan dan Pembayaran Les Berbasis Web', Jurnal Ilmu Komputer dan Sistem Informasi, hlm. 1 sampai 6. https://doi.org/10.24912/yctfww47",
+      "publisher": "https://journal.untar.ac.id/index.php/jiksi/article/view/36675",
+      "rank": "SINTA 5",
+      "rank_note": "Nama penulis Veren Thiovanda. Tahun/volume tidak tercantum pada bagian awal PDF yang terbaca, sehingga belum dipastikan dari PDF; peringkat jurnal cocok dengan identitas penerbit.",
+      "rank_scope": "peringkat jurnal; cakupan edisi perlu pemeriksaan SK"
+    },
+    {
+      "id": "J07",
+      "author": "Hendri dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\05_Penerimaan Kas.pdf",
+      "sha256": "c6d402bfc0bac2e7de1a2b97d84f8fa75c51a905488e64d3287c8b0641c0f9a7",
+      "locations": [
+        {
+          "pdf_page": 1,
+          "printed": "124"
+        },
+        {
+          "pdf_page": 2,
+          "printed": "125"
+        }
+      ],
+      "use": "Kebutuhan pencatatan penerimaan SPP dan penelusuran perbedaan catatan pembayaran.",
+      "limit": "Analisis dan rancangan Figma; bukan bukti implementasi aplikasi bank atau fakta ARTHA. PDF memiliki variasi ejaan Alghifary/Alghifari; identitas rinci mengikuti metadata sumber dan perlu konsistensi saat impor.",
+      "bibliography": "Hendri, Alghifari, M., Putri, H.Y., Rahayu, M. dan Nurmalasari (2025) 'Analisis Sistem Informasi Akuntansi Penerimaan Kas (SPP) pada Yayasan Semesta Khatulistiwa', JUSTIAN: Jurnal Sistem Informasi Akuntansi, 6(2), hlm. 124 sampai 135. https://doi.org/10.31294/justian.v6i2.9114",
+      "publisher": "https://doi.org/10.31294/justian.v6i2.9114",
+      "rank": "SINTA 3",
+      "rank_note": "Vol. 5 No. 2 (2024) sampai Vol. 10 No. 1 (2029)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J08",
+      "author": "Sudirman dan Tristianti (2021)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\06_Rekonsiliasi_Kas_Bank_MEANS_Sudirman_2021.pdf",
+      "sha256": "beeb584afbb8b22f42f1c523f830b972223196001a6d74c6cdc82217b50ff821",
+      "locations": [
+        {
+          "pdf_page": 1,
+          "printed": "126"
+        },
+        {
+          "pdf_page": 2,
+          "printed": "127"
+        }
+      ],
+      "use": "Konsep perbedaan pencatatan internal dan rekening koran serta dasar pencocokan bank.",
+      "limit": "Objek perusahaan, bukan bimbel. Tidak otomatis membenarkan klaim sistem menyusun seluruh rekonsiliasi saldo dan laporan akuntansi.",
+      "bibliography": "Sudirman, B. dan Tristianti, M. (2021) 'Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis Client-Server', MEANS (Media Informasi Analisa dan Sistem), 6(2), hlm. 126 sampai 129. https://doi.org/10.54367/means.v6i2.1450",
+      "publisher": "https://doi.org/10.54367/means.v6i2.1450",
+      "rank": "SINTA 5",
+      "rank_note": "S5 mulai Vol. 3 No. 2 (2018), berlaku lima tahun; kenaikan S4 baru mulai Vol. 7 No. 1 (2022)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J09",
+      "author": "Ramadhan dan Widodo (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\02_Keuangan_Pusat_Cabang_Rams_Dimsum_IJLER_Ramadhan_2026.pdf",
+      "sha256": "57b13811cdef3f6591a9a5c8fbd6ab67b33a616a4c7cc01978063001baea7ea7",
+      "locations": [
+        {
+          "pdf_page": 15,
+          "printed": null
+        },
+        {
+          "pdf_page": 17,
+          "printed": null
+        }
+      ],
+      "use": "Pencatatan cabang, rekap pusat, dan rekap penerimaan harian per kanal.",
+      "limit": "Studi akuntansi dan rekomendasi format, bukan implementasi aplikasi. Gunakan urutan PDF karena footer 15/15 dan 17/15 tidak konsisten; bukan nomor halaman jurnal.",
+      "bibliography": "Ramadhan, F. dan Widodo, H. (2026) 'Accounting Treatment of Head Office and Branches Based on SAK EP: A Study on UMKM Rams Dimsum', Indonesian Journal of Law and Economics Review, 21(2). https://doi.org/10.21070/ijler.v21i2.1706",
+      "publisher": "https://ijler.umsida.ac.id/index.php/ijler/article/view/1706",
+      "rank": "SINTA 4",
+      "rank_note": "Vol. 18 No. 4 (2023) sampai Vol. 23 No. 3 (2028)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J10",
+      "author": "Khafidhoh dkk. (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\03_Penjadwalan_Bimbel_AHE_JTI_Khafidhoh_2026.pdf",
+      "sha256": "f42f95a5725ba661e67e6c8960bf8fd4971910f62cf5089109c7adfeb9a6fc97",
+      "locations": [
+        {
+          "pdf_page": 1,
+          "printed": "15"
+        },
+        {
+          "pdf_page": 2,
+          "printed": "16"
+        },
+        {
+          "pdf_page": 5,
+          "printed": "19"
+        }
+      ],
+      "use": "Kebutuhan jadwal tentor bimbel dan pertimbangan konflik penugasan.",
+      "limit": "Penelitian memakai algoritma genetika untuk menyusun jadwal otomatis. ARTHA hanya mengadaptasi kebutuhan pemeriksaan konflik, bukan algoritma atau hasilnya.",
+      "bibliography": "Khafidhoh, N., Febrianti, A.R. dan Sujono (2026) 'Sistem Penjadwalan Menggunakan Algoritma Genetika Berbasis Web', Jurnal Teknologi Informasi: Jurnal Keilmuan dan Aplikasi Bidang Teknik Informatika, 20(2), hlm. 15 sampai 20. https://doi.org/10.47111/jti.v20i2.24540",
+      "publisher": "https://e-journal.upr.ac.id/index.php/JTI/article/view/24540",
+      "rank": "SINTA 4",
+      "rank_note": "Vol. 16 No. 2 (2022) sampai Vol. 21 No. 1 (2027)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J11",
+      "author": "Kabisatullah dan Noprisson (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\05_REFERENSI_TAMBAHAN_TERVERIFIKASI_SINTA\\04_Kapasitas_Ruang_RapaTrack_JUSIBI_Kabisatullah_2026.pdf",
+      "sha256": "92fab76e802b0a736b431a82cc3aa0d921c95e63ca24c52eb32f6bfadffd4346",
+      "locations": [
+        {
+          "pdf_page": 5,
+          "printed": "93"
+        },
+        {
+          "pdf_page": 6,
+          "printed": "94"
+        },
+        {
+          "pdf_page": 7,
+          "printed": "95"
+        }
+      ],
+      "use": "Validasi kapasitas dan irisan waktu pada peladen, termasuk pencegahan permintaan serentak yang tidak sah.",
+      "limit": "Objek ruang rapat dengan CSP dan Android. Batas kapasitas ARTHA berasal dari mitra; tidak mengklaim mengimplementasikan seluruh CSP. PDF menulis Noprison, metadata penerbit menggunakan Noprisson.",
+      "bibliography": "Kabisatullah, F. dan Noprisson, H. (2026) 'Pengembangan Aplikasi RapaTrack untuk Manajemen Ruang Rapat Menggunakan Constraint Satisfaction Problem Berbasis Android', JUSIBI (Jurnal Sistem Informasi dan E-Bisnis), 8(2), hlm. 89 sampai 96. https://doi.org/10.54650/jusibi.v8i2.678",
+      "publisher": "https://doi.org/10.54650/jusibi.v8i2.678",
+      "rank": "SINTA 5",
+      "rank_note": "Vol. 4 No. 1 (2022) sampai Vol. 8 No. 2 (2026)",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J12",
+      "author": "Fajriansyah dkk. (2026)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf",
+      "sha256": "359ca40ddbbc58532945ca586f55b89eb40a0b6fdd29f7c0d5bc94c19872bd25",
+      "locations": [
+        {
+          "pdf_page": 2,
+          "printed": "116"
+        },
+        {
+          "pdf_page": 10,
+          "printed": "124"
+        },
+        {
+          "pdf_page": 11,
+          "printed": "125"
+        }
+      ],
+      "use": "Pembanding integrasi siswa, jadwal, dan pembayaran pada bimbel.",
+      "limit": "Hasil efisiensi Bee Hive tidak dipindahkan sebagai hasil atau jaminan untuk ARTHA.",
+      "bibliography": "Fajriansyah, S.N., Wijaya, M.S., Eryana, D.A., Safa, A., Pramadhan, H.R., Wicaksono, A., Baehaqi, M.I., Deivivi, F., Nurfajriansyah, D. dan Apandi, S. (2026) 'Pengembangan Sistem Informasi Bimbingan Belajar Berbasis Web untuk Efisiensi Operasional Bee Hive', Jurnal Rekayasa Informasi Swadharma, 6(2), hlm. 115 sampai 126. https://doi.org/10.56486/jris.vol6no2.1346",
+      "publisher": "https://doi.org/10.56486/jris.vol6no2.1346",
+      "rank": "SINTA 3",
+      "rank_note": "S3 mulai Vol. 5 No. 2 (Juli 2025) sampai Vol. 10 No. 1 (Januari 2030); edisi artikel tercakup.",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    },
+    {
+      "id": "J13",
+      "author": "Gunawan dkk. (2025)",
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf",
+      "sha256": "d65231f042ca09f3959c729486fba4c0f32c33393dbb6e9913d5325ffc4ebe04",
+      "locations": [
+        {
+          "pdf_page": 1,
+          "printed": "424"
+        },
+        {
+          "pdf_page": 9,
+          "printed": "432"
+        }
+      ],
+      "use": "Pembanding integrasi modul administrasi bimbel dan pemeriksaan berbasis peran.",
+      "limit": "Memakai Waterfall dan susunan pengguna berbeda. Tidak menjadi pembuktian bahwa sistem ARTHA lebih efisien atau lebih unggul.",
+      "bibliography": "Gunawan, S.C., Nurwegiono, M. dan Setiawan, R. (2025) 'Sistem Informasi Bimbingan Belajar RSDC Berbasis Website dengan Menggunakan Metode Waterfall untuk Meningkatkan Efisiensi Administrasi', Riau Jurnal Teknik Informatika, 4(3), hlm. 424 sampai 435. https://doi.org/10.52158/rjti.v4i3.3655",
+      "publisher": "https://doi.org/10.52158/rjti.v4i3.3655",
+      "rank": "SINTA 5",
+      "rank_note": "S5 mulai Vol. 2 No. 1 (2023) sampai Vol. 6 No. 2 (2027); edisi artikel tercakup.",
+      "rank_scope": "edisi tercakup berdasarkan pemeriksaan 24 Oktober 2026"
+    }
+  ],
+  "sections": [
+    {
+      "section": "3.1",
+      "sources": [
+        "J05",
+        "J06",
+        "J12",
+        "J13"
+      ],
+      "boundary": "Gambaran produk menggunakan pembanding domain; seluruh fakta ARTHA berasal dari wawancara."
+    },
+    {
+      "section": "3.1.1",
+      "sources": [
+        "J12",
+        "J13"
+      ],
+      "boundary": "Integrasi modul bimbel; identitas, cabang, serta masalah aktual memerlukan sumber primer mitra."
+    },
+    {
+      "section": "3.1.2",
+      "sources": [
+        "J05",
+        "J06"
+      ],
+      "boundary": "Pemisahan cabang dan akses pusat; dua peran serta pilihan WhatsApp/kapasitas merupakan kebutuhan ARTHA."
+    },
+    {
+      "section": "3.1.3",
+      "sources": [
+        "J01",
+        "J02"
+      ],
+      "boundary": "Tahapan asli PxP dan contoh penerapan individual."
+    },
+    {
+      "section": "3.1.4",
+      "sources": [],
+      "boundary": "Luaran, TKT 5, dan HKI berasal dari panduan ITK 2026, bukan kewajiban yang ditetapkan jurnal."
+    },
+    {
+      "section": "3.2",
+      "sources": [
+        "J01",
+        "J04"
+      ],
+      "boundary": "Diagram adaptasi PxP dan penambahan evaluasi pengguna; bukan diagram asli yang disalin tanpa perubahan."
+    },
+    {
+      "section": "3.3",
+      "sources": [
+        "J01",
+        "J02",
+        "J04"
+      ],
+      "boundary": "Prosedur pengembangan serta evaluasi; detail pelaksanaan dirancang untuk ARTHA."
+    },
+    {
+      "section": "3.3.1",
+      "sources": [
+        "J02",
+        "J03"
+      ],
+      "boundary": "Contoh wawancara dan user story; jumlah informan dan cakupan cabang harus dilengkapi."
+    },
+    {
+      "section": "3.3.2",
+      "sources": [
+        "J01",
+        "J02"
+      ],
+      "boundary": "Estimasi tugas dan rencana iterasi; empat iterasi dua minggu merupakan usulan, bukan angka dari jurnal."
+    },
+    {
+      "section": "3.3.3",
+      "sources": [
+        "J01"
+      ],
+      "boundary": "Pemilihan tugas iterasi dan disiplin pencatatan; data uji disusun sendiri."
+    },
+    {
+      "section": "3.3.4",
+      "sources": [
+        "J01",
+        "J02"
+      ],
+      "boundary": "Desain sederhana, data, dan antarmuka; rancangan aktual disesuaikan kebutuhan."
+    },
+    {
+      "section": "3.3.5",
+      "sources": [
+        "J01"
+      ],
+      "boundary": "Urutan tes, kode, dan refaktorisasi; bukti TDD harus dikumpulkan saat implementasi."
+    },
+    {
+      "section": "3.3.6",
+      "sources": [
+        "J04",
+        "J11"
+      ],
+      "boundary": "Pengujian fungsi dan pembanding validasi batas; semua kasus uji ARTHA merupakan rancangan baru."
+    },
+    {
+      "section": "3.3.7",
+      "sources": [
+        "J01",
+        "J03"
+      ],
+      "boundary": "Catatan waktu, perubahan, galat, dan evaluasi; tidak menyalin klaim proyek lebih cepat."
+    },
+    {
+      "section": "3.3.8",
+      "sources": [
+        "J04"
+      ],
+      "boundary": "Keterlibatan pengguna dan UAT; lembar tugas ARTHA merupakan adaptasi yang perlu validasi isi."
+    },
+    {
+      "section": "3.4",
+      "sources": [
+        "J05",
+        "J06",
+        "J07"
+      ],
+      "boundary": "Pembanding konsep; seluruh artefak merupakan rancangan penelitian ini."
+    },
+    {
+      "section": "3.4.1",
+      "sources": [
+        "J07",
+        "J08",
+        "J09"
+      ],
+      "boundary": "SPP, pencatatan cabang, dan pencocokan bank; tidak membuktikan alur mitra sudah disetujui."
+    },
+    {
+      "section": "3.4.2",
+      "sources": [
+        "J05",
+        "J10",
+        "J11"
+      ],
+      "boundary": "Pembanding kebutuhan, konflik jadwal, kapasitas; mekanisme tautan memakai dokumentasi WhatsApp."
+    },
+    {
+      "section": "3.4.3",
+      "sources": [
+        "J05",
+        "J06"
+      ],
+      "boundary": "Peran serta kewenangan cabang/pusat; keputusan dua peran berasal dari ruang lingkup ARTHA."
+    },
+    {
+      "section": "3.4.4",
+      "sources": [
+        "J02"
+      ],
+      "boundary": "Bentuk user story dan acceptance criteria; isi tabel dirancang sendiri."
+    },
+    {
+      "section": "3.4.5",
+      "sources": [
+        "J05",
+        "J02"
+      ],
+      "boundary": "Contoh penggunaan use case; diagram dan skenario ARTHA disusun sendiri."
+    },
+    {
+      "section": "3.4.6",
+      "sources": [
+        "J02",
+        "J05",
+        "J11"
+      ],
+      "boundary": "Skema revisi 23 tabel dan hubungan alokasi/pemeriksaan/setoran/pencocokan; belum DDL yang dieksekusi."
+    },
+    {
+      "section": "3.4.7",
+      "sources": [
+        "J02",
+        "J07"
+      ],
+      "boundary": "Enam wireframe dengan data simulasi; bukan bukti implementasi atau penerimaan mitra."
+    },
+    {
+      "section": "3.5",
+      "sources": [
+        "J05",
+        "J11"
+      ],
+      "boundary": "Pembanding penerapan Laravel; spesifikasi aktual tidak boleh diisi hanya berdasarkan jurnal."
+    },
+    {
+      "section": "3.5.1",
+      "sources": [
+        "J05",
+        "J11"
+      ],
+      "boundary": "Arsitektur rancangan; antrean pending diturunkan dari submitted. Notifikasi dengan status baca adalah perluasan opsional yang belum dimodelkan."
+    },
+    {
+      "section": "3.5.2",
+      "sources": [],
+      "boundary": "Tidak membutuhkan jurnal untuk mengarang perangkat. Diperlukan inventaris perangkat aktual."
+    },
+    {
+      "section": "3.5.3",
+      "sources": [
+        "J04",
+        "J05"
+      ],
+      "boundary": "Contoh Laravel; nomor versi final dan kompatibilitas harus mengikuti lingkungan serta dokumentasi resmi."
+    },
+    {
+      "section": "3.5.4",
+      "sources": [
+        "J04",
+        "J11"
+      ],
+      "boundary": "Pembanding pengujian pada perangkat dan peladen; izin, data uji, dan konfigurasi menjadi keputusan penelitian."
+    },
+    {
+      "section": "3.6",
+      "sources": [
+        "J01"
+      ],
+      "boundary": "Rentang iterasi dapat dirujuk; jadwal dua belas minggu adalah usulan yang harus disepakati."
+    }
+  ],
+  "technical_and_guideline_sources": [
+    [
+      "Institut Teknologi Kalimantan",
+      "2025a",
+      "Panduan Kepenulisan Tugas Akhir ITK",
+      "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\PANDUAN TA\\[2025] B PANDUAN KEPENULISAN TUGAS AKHIR ITK.pdf"
+    ],
+    [
+      "Institut Teknologi Kalimantan",
+      "2025b",
+      "Template Laporan TA 2025 Prototipe SI",
+      "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\TEMPLATE TA\\Copy of Template Laporan TA 2025 PROTOTIPE SI.docx.pdf"
+    ],
+    [
+      "Institut Teknologi Kalimantan",
+      "2026",
+      "Panduan TA dan SITASI: Sistem Informasi ITK 2026",
+      "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\PANDUAN TA\\Panduan TA dan SITASI - Sistem Informasi ITK 2026.pdf"
+    ],
+    [
+      "Laravel",
+      "t.t.-a",
+      "Laravel Sanctum: SPA Authentication",
+      "https://laravel.com/framework/docs/12.x/sanctum"
+    ],
+    [
+      "Laravel",
+      "t.t.-b",
+      "Notifications: Database Notifications",
+      "https://laravel.com/framework/docs/12.x/notifications"
+    ],
+    [
+      "Laravel",
+      "t.t.-c",
+      "Release Notes and Support Policy",
+      "https://laravel.com/framework/docs/releases"
+    ],
+    [
+      "Vercel",
+      "t.t.",
+      "Next.js Documentation: Installation",
+      "https://nextjs.org/docs/app/getting-started/installation"
+    ],
+    [
+      "WhatsApp",
+      "t.t.",
+      "How to Use Click to Chat",
+      "https://faq.whatsapp.com/5913398998672934"
+    ]
+  ],
+  "revision": "2026-10-25 integrated UC/schema/chapter revision; sources unchanged"
+}

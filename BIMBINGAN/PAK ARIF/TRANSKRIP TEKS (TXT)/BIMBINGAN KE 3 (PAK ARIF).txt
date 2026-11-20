@@ -1,0 +1,480 @@
+Bimbel Artha
+Nah, cuma dari saya itu menawarkan ke Mitra
+Itu yang saya sampaikan ke bapak di bingguan kedua sebelumnya
+Yang mana ada lima roll
+Terus juga fungsinya itu di setiap roll berbeda-beda
+Dan itu memang rencang bangun full
+Jadi bisa aksesnya disatu pintu lewat landing page mereka
+berbedakan di posisi role nya
+misalnya usang passwordnya aja
+cuman setelah kemarin
+ya kemaren itu wawancara terakhir
+dari Mitra itu mengatakan
+kalau misalkan
+itu terjadi dengan 5 role nya
+kemungkinan akan di implementasikan
+itu sangat susah
+karena dari SDM nya sendiri
+dan Mitra ini gak yakin
+kalau pengajar sama admin nya
+bisa ngikutin step by step
+setiap dari sistem yang dibuat
+ditambah
+dari mitra itu memang diwawancara pertama kali
+dengan mereka
+meminta untuk fokus
+di bagian pendaftaran
+sama penentuan
+pengelombokan kelasnya pak
+jadi menurut mereka yang lebih
+membantu mereka itu di bagien pendafteran
+karena untuk penjadwal
+dari mereka itu bisa dibilang
+sedikit kompleks pak
+yang dimana itu menyebabkan beberapa masalah
+yang saat ini tuh 18 tahun ini udah terjadi sering terjadi
+jadi dari mitra itu mengatakan ke saya kalau bisa fokuskan ke bagian pendaftarannya aja
+di awal tuh sebelumnya ngomong seenggaknya bisa diimplementasikan langsung sama mitra tuh sistemnya seperti apa
+dan mulai dari situ latar belakang sama masalahnya juga apa sih
+terus udah tau pak, dimana
+rencananya itu ada
+4 termusan masalah yang pengen
+saya bawa. Yang pertama
+cara digitalisasi pendaftaran
+terus yang kedua
+digitalisisi pembayaran
+karena sampai saat ini untuk pembAYARAN dilakukan secara
+manual dan itu bisa terjadi
+kesalahan data
+kayak misalkan lupa untuk menagihnya
+kalau misalkannya gak manual
+maksudnya apa?
+jadi mereka ngecek dulu di bukunya
+ini sudah bayar di bulan ini atau belum
+baru baik-baik apa gitu
+kalau pendaftaran itu juga sama
+mereka harus orang datang
+baru mencatatkan dan yang dimaksud
+dengan pemiliknya tadi itu
+jadi mereka tuh belum
+sebenarnya ada untuk daftar harganya
+yang mereka punya pak sebagai pegangan
+tetapi karena
+mitranya ini kalau misalkan ada
+orang tua wali murid yang sekiranya
+kurang mampu
+gitu pak, jadi mereka akan menurunkan
+jadi untuk input harga sendiri itu
+dilakukan secara manual
+begitu juga nanti di sistemnya dari mitra
+kalau bisa dari admin ini
+yang melakukan pendaftaran
+juga input harganya secara
+manual
+terus yang ketiga itu mengatur
+pelatingan guru dan juga ruangan
+karena total ada 8 cabang
+kurang lebih itu ada 1 cabang
+yang bisa
+sampai 450 siswa
+itu jadi membutuhkan
+penjatualan dan juga
+pemplotingan siswa sama
+mentornya ini juga sedikit umit
+gitu pak, jadi
+dari si mitra ini
+ingin dari sistem itu bisa
+memplotingkan sesuai dengan
+jadwalannya dari mentor
+masing-masing karena ada kesalahan
+bukan karena salah, ada satu kejadian
+dimana dari
+si mentornya ini pernah terjadi
+kayak senioritas gitu pak
+Jadi dari mereka yang seniornya ini minta untuk dibanyakan muridnya
+Biar mendapatkan gaji yang lebih banyak
+Dibandingkan dengan mentor yang lain
+Sehingga itu pernah kejadian jadi gak adil gitu
+Dan itu pernah diadukan juga dan sempat menjadi masalah
+Jadi bagaimana caranya dari pelotingan guru sama ruangan ini
+Biar setara semua gitu
+Memang disesuaikan dengan porsinya masing-masing
+Terus, itu untuk sisi dari adminnya
+terus kalau untuk sisi dari super adminnya
+atau si manajemen dari artan itu sendiri
+itu tentu aja
+mereka mau monitoring hasil revenue
+karena kenapa sih
+revenue pendapatannya pak
+karena selama ini
+dari 8 cabang yang ada
+per periode 1 bulan sekali
+itu dari
+mereka mengumpulkan cabang 1, cabang 2
+sampai cabang 8
+itu ngasih ke manajeman buku besar gitu pak
+buku besar itu baru direkap
+dan cara validasi nya itu
+sekedar dari
+rekapan yang percabang ini
+di validasinya hanya melalui rekening aja pak
+jadi harus ngeliat satu-satu gitu pak
+untuk
+apakah uangnya ini masuk atau enggak
+nah, untuk itu saya mengangkat
+dibagian monitoring hasilnya yang ada
+dan juga
+ya betul
+dan karena tadi yang rekapannya itu
+dari baik kertas juga
+jadi dari 8 cabang ini
+menyampaikannya hanya
+melalai kertas tanpa ada
+soft file nya pede, jadi Rship nya juga tidak tersusun dengan baik
+mungkin itu sih pak
+jadi saya ingin tanya sekiranya
+dengan urgensi yang menurut saya ini cukup untuk dibawa ke TA
+itu cukup gak pak ya?
+dari awalnya 5 role
+terus dijadikan hanya 2 role
+di bagian admin dan super admin
+oh itu nggak apa di kompleksnya
+Kalau yang tadi kan ada masalah terkait jumlah yang berbeda-beda ya
+Dari setiap keceburuan ya
+Itu kan sebenarnya bisa dibuat dashboard yang bisa menunjukkan setiapan mentor
+Jadi, di deskdud visual graphicnya dia dapat beberapa kelas kan bisa terlihat.
+Di SC itu saya bisa lihat dosen ini mending berapa jumlah dari ini kita bisa
+Oh ini trambuannya apa banyak nih?
+Itu bisa dibuat kayak gitu sebenarnya.
+Oke, berarti untuk dari sisi mentornya sendiri pak ya?
+Benar
+Bisa itu khawatir dari urgensinya ini.
+Yang penting tadi diangkat jawabnya bisa kalau yang mau dicelaskan.
+Yang pendaftaran, walaupun dengan rol nya hanya dua gitu Pak?
+Misalnya ga berol itu bukan sebagai acuan urgensi.
+Dengan pesan misal yang tadi kumah sampaikan itu kan masalah mereka.
+Itu yang bisa dianggat.
+Jadi kamu bisa menjawab itu.
+yang masalah itu bisa diselesaikan
+poin-poin yang tadi
+dari pendaftaran, pembayaran
+kemudian bisa melihat
+dari pembayaan pendapatannya
+pengeluaranya
+berapa pendapatnya berapa
+jadi mudah kan kita tahu
+untung berapa
+jadi saya angkat ya pak
+untuk organisasi khususnya di antardekat
+semprot dan nanti
+cuma nanti kita menginis di latar belakangnya
+2 role, kemarin itu 5 ya?
+awalnya tuh 5 pak dari sisi mentornya juga ada
+kalau ini di dalam lo sama aja
+dari admin si front base nya sama si management nya
+dari boss nya gitu pak
+kalau misalkan tadi sarannya Pak Harip berarti ada tambahan untuk si mentor nya
+kalau misal mau di akses
+Nah sekarang di Bimbul itu dia cuma, sebentar sama tau.
+Di Bimbel itu mentor itu kalau dikasih orang dia fungsinya bisa apa?
+Kalau yang kemarin itu bisa melihat jadwalnya dia,
+seperti Pak Ruf tadi sampaikan,
+sama juga bisa menambahkan bang soal.
+Nah kemarIN saya ada sampaikannya mengenai bang soalnya ini,
+apakah bisa diimplementasikan,
+jadi rencananya saya tuh dari si mentor ini ngisi soal sendiri,
+terus nanti dari siswanya.
+Nah tapi kata dari Mitra itu akan berubah probis secara keseluruhan dari Bimbel
+Yang dimana sampai sekarang ini bisa misalkan di minggu-minggu ini kelas 5 sama 6 tuh ujian tengah semester
+Nah itu baru bisa dibuat soalnya di hamin 1 jam atau di hari itu juga
+Atau bahkan hamin satu sebelum mereka diuji secara langsung
+Dan sistemnya juga memang sampai saat ini kertas
+Sistem kamu ini selain itu apa juga berarti kayak model e-learning gitu sih?
+Awalnya itu pak, model e learning gitu.
+Tapi karena dari Mitra minta saya untuk fokuskan memang yang urgentnya banget di bagian pendaftaran
+Dan kalau ada bangsoal
+Bangsoal maksudnya e-Learning ya?
+Iya
+Katanya gak bisa diangkat kalo misalkan mau di..
+Jadi gak perlu dimasukkan
+Itu rencana awal terus saya sampaikan ke Mitra
+itu akan mengubah pro bis secara sekurang karena
+yang saya dibilang di awal dari SDM ini takut belum bisa memadai
+Saat ini mereka gak pake error nya berarti?
+Sama sekali pak
+Ya udah gak bisa, karena kalo kamu nabahi itu kan berarti
+diluar dari bisnis mereka
+Iya betul pak
+Mending yang bisnis itu, masalah anti-errornya tuh topik lain
+Karena kalo kamu buat kayak Error ini juga itu kompleks juga, kamu fokus dimana
+Errornya itu mikirin hak akses, di kelasnya, masukin siswanya, materinya, bayar video
+Jadi komplek
+Saya buat kayak gitu cuma kompleksi
+Apalagi kamu masih ada yang buat manajemen ini
+Jadi malah gak fokus juga kamu
+kepecah sih pak ya?
+kepecah itu udah
+semuanya mau selesaikan
+yang penting dari sini aja
+kalau kamu bisa kembangkan
+itu udah bagus
+kayak memudahkan dashboard-dashboard tadi
+buatkan grafiknya
+misalkan
+dengan
+manajemen jadwalnya
+mentor ini nanti dapat beberapa kelas
+jadi story nya kesimpan
+Otomatis nanti kita bisa lihat itu, mentor ini first mentor apa dapatnya berapa
+Jadi tidak ada rasa kecebuluan
+Jadi dia bisa lihat piratif nya
+Kayak di exit juga gitu
+Yang di SIM TA nya kita
+Dosen yang bisa di rank
+Dashcode nya bisa dipilih
+Berapa mahasiswa bimbingannya
+Berapa yang sudah uji
+Lepas yang sudah diluluskan
+Otomatik kelihatan tuh oh dosen ini paling banyak menuluskan mahasisa
+oh ini beban nya paling banyak nih, masih banyak masyarakat belum lulus
+otomatis tahun depan semestinya depan jangan dibebani lebih banyak
+biar nanti porsi nya setara gitu bebannya
+kamu harus bisa buat begitu
+sekarang dengan memerim visual seperti apa yang mau ditampilkan disajikan orang bisa lihat
+ini loh imam maksunya jadi gak perlu tanya
+oh sam ngajarnya berapa sih kok sana bisa youtube
+Dia bisa lihat nih, oh ternyata saya paling banyak
+Oh ternya setara semua nih kurang lebih hampir sama
+Bebannya juga hampiri sama
+Berarti kalau begitu
+Bisa ditambahkan satu role lagi untuk mentor pak
+Kalau misalnya untuk melihat tadi
+Transparansi mungkin yang tadi gue kasih tau
+Kamu gak harus login juga kan
+Kalo cuma untuk mendapat informasi itu
+Kalo cuman untuk lihat visual
+kalau kamu kasih dia login buat apa?
+yang tadi belum sampaikan maksudnya gimana?
+yang bisa melihat si mentor ini
+berarti kan, bisa melihat untuk membagian
+yang menambahkan akhmin
+aku nabah nih jadwalin kamu
+dengan ada data kamu sudah bisa mensual
+mentor ini dapat berapa
+nah mentor untuk mendapatkan informasi itu kan gak harus login
+karena kamu bisa buat tiap abu
+untuk informasi
+Kalau kamu ngasih dia login, tujuannya buat apa?
+Masa mau dia edit nambah?
+Ketua dia nambahan informasi lainnya
+Untuk cuma untuk visual tadi itu gak perlu dibuat login
+Kayak tanamin itu kan kalau kamu nggak login juga bisa lihat grafik-grafik kita
+Nanam nya dimana
+Tapi kalau kamu mau donasi baru kamu login
+Jadi gak harus soalnya dikasihin ruang
+Tergantung informasi apa yang mau dibuat publik, apakah dashboard tadi dibuati publik bisa melihat atau itu disembunyikan
+Jadi harus login baru bisa lihat. Nah itu kembali ke kebutuhan salanya
+Tapi kalau menurut saya cuma buat publik nggak masalah kan itu kan memang informasi yang bisa dilihat gitu
+Atau itu cuma dashboard admin yang harus login, nggak dibuat pabrik. Orang lain nggak bisa lihat cuma jadi dibuatin akun
+Buat akun hanya untuk karena memang web admin kan nggak perlu semua orang bisa akses
+Karena kayaknya kamu bikin web admin yang nggak buat ORL ini kan dia publish di sana
+kalau ini kan cuma untuk kebutuhan mereka, manajemen mereka kan
+jadi dibuat secara
+kembali nanti apakah mau di
+kalau itu
+apakah
+kalau mentor bisa login tujuannya buat apa?
+kalau kamu kasih DHAC buat apa
+apakah dia bisa cuma lihat itu tadi kayaknya kurang
+gak bermanfaat kalau cuma
+login gitu
+mending kalau begitu ya buat cetak PDF aja
+nanti bisa dikasihkan
+Kecuali di situ mentor itu bisa melakukan sesuatu
+Atau mungkin buat public itu aja ya?
+Cuma kalau buat public, ya itu kan berarti konsumsi publik
+Jadi pikirkan lagi apakah itu
+Kalau yang di TA itu kayaknya nggak dibuat public
+Kalau saya login fiturnya yang dapat itu bisa dilihat
+Tapi kalau kalian cuma mahasiswa nggak dilih
+Nggak bisa lihat dashboard-nya dosen ngajarnya
+Bimu juga bisa lihat, setahu saya ya.
+Itu kembali ke bisnisnya gimana?
+Apakah informasi itu bisa diakses oleh orang lain
+atau kalau nggak boleh, boleh
+untuk mentor bisa akses seperti apa
+Untuk dapat informasi gitu
+Kalau dia perlu login
+untuk bisa dapat informasinya
+Ya boleh cuma kalau login
+Masa cuma bisa, cuma udah support aja
+Atau dia kembali sih mas, kebalik ke bisnisnya.
+Kebutuhannya mereka ya?
+Kalau dia sudah dikasih akses apa yang bisa dilakukan?
+Akses nya apa?
+Pakai chatbot atau dari admin ini langsung klik link ke WA gitu pak ya?
+Pembayaran bulanan ya?
+Reminder lah kalau misalkan mereka belum bayar tagihan sendiri
+Tapi kalau dia misalkan dapat oransi, tagihannya dia bayarnya kemana?
+transfer aja atau...
+Jadi ga ada payment gate rencana sih.
+Itu pihak ketiga.
+Kalau paham ketiga uang itu belum cair.
+Kalau pakai doku yang tanami itu belum bercaya.
+Kalo sudah berapa baru bisa tarik.
+Lebih enak langsung informasinya trakar ke bank ini gitu.
+Langsung ke bank pusatnya kan.
+Biar nanti informasinya pilih untuk apa
+Itu nanti diatur, cuma kalau reminder itu bisa email
+Bisa leang
+Karena kalau email saya rasa saluran saya sih dua
+Atau kalau milih satu mending ke kontak
+Karena kalau e-mail gak semua orang itu gak baca e-mails
+Apalagi orang-orang itu bukan bidang IT semua
+orang-orang yang menyeleskan anaknya e-mail itu kan gak teman-teman
+tapi kalau WA waktu berdaftaran kan mereka tidak masukin nomor WA
+ya pasti itu aktif gitu loh
+masih lebih gampang informasi itu
+kita kan sebutuh lebih ke informasi cepetnya
+kalau email, saya kadang email masuk masuk
+karena mau nunggu banyak
+ada juga email notifikasinya telat
+kalau whatsapp kan pasti masuk
+lebih enak whatsapp kalau e-mail
+itu terkait dari, oh ya satu lagi untuk sesistem pak
+kemarin tuh dari Mitra juga ada landing page nya pak sebenernya
+tapi udah punya gitu
+mereka sudah punya untuk landing page
+tapi saya ingin mengkorelasikan dengan cakupan saya yang membantu manajemen
+tapi kamu nanti buat web company profile nya gak kayak depannya
+Atau web admin, karena kalau kamu bilang ini tadi, ini management lebih ke dashboard admin.
+Iya betul pak.
+Apakah kamu buatkan bepannya?
+Kalau yang diminta sama itra itu sebenarnya kalau bisa dibuatkan juga pak jadi untuk diupdate gitu
+Karena sekarang tuh masih pakai memenangkan WordPress pak dan belum
+Kemarin saya udah dapat aksesnya di wordpress nya itu
+Dan belum menggunakan PHP sama sekali gitu
+Jadi untuk keamanan juga masih sangat rentan
+Bahkan kemarin saya bisa sempat scraping data dari webnya mereka
+Jadi itu bisa diangkat juga, bisa disambungan dengan manajemen admin
+Nanti lebih ini digeterkan karena ini yang lebih originasi
+Kalau cuman omit profile kan gak tahu
+Itu sebagai tambahan gitu Pak ya untuk dari ganteng page
+dan untuk selanjutnya pak terkait dengan metode rencana itu sebenarnya belum terlalu detail untuk saya membacanya
+jujur aja pak, untuk jurnal segala macem
+cuman secara gambaran besar tuh saya rencannya pakai PXP pak
+untuk...
+PX?
+untuk rancang membangun ini
+PXp itu kan dia yang spring-spring
+iya pak
+yang dia...
+bener spring
+eh...
+agile
+agile pak
+bisa sih
+karena kan itu
+Coba nanti dibaca lagi ya, kenapa harus ada alasannya ya.
+Menurut saya cocok sih.
+Kita belum tahu ke depan nya kayak apa.
+Jadi fleksibel kan, ada perubahan-perubahan fleksible.
+Mungkin cocok dengan melihat kondisinya
+Kita belum tau mitra juga kan,
+kita butuh dapat masukkan mitra terus gitu lho
+Nah itu lebih enak segera
+Berarti dari penyampaian informasi yang dibimbingan kali ini saya bisa untuk menyusun bab 1 ya pak
+Bisa, itu bisa dapet
+Kamu pernah cerita if you buat yang
+Yang web bimbel
+Sekarang jadi capstan ya pak
+Nanti modelnya kan kayak
+Ini dashboard kamu di profile nya
+iya pak
+nanti tinggal kamu login
+ketika dia login langsung larinya ke dashboard aku
+atau kalau mau buat misalkan
+webnya tanamin
+misalkanku
+ini kan
+akses
+webnya
+berita terkini hilang
+kiri kemarin ada yang gak
+apakan sama
+Bukan, misalkan penyatuan, ya gue tau
+Pernyataun kita
+Media masa
+Kenapa disini?
+Itu digangin dia
+Dia berate sama
+Tawar tawa nya
+Oke
+Nah misalnya kamu mau akses admin
+Slash admin
+Nah ini dashboard adminnya
+Nanti kamu bisa lihat visual-visual
+Grafiknya
+Kalau sudah database nya jalan
+Sudah enak
+Oh bisa ada dashboard nya nanti kan
+Iya
+Disini nanti mentornya berapa
+Kemudian mentornya itu
+Grafik mentornya
+Yang aja
+Jadi kita sebelum menjadul akan
+Kita bisa lihat oh
+Mentor ini lagi jalan 5
+Yang ini 4
+Ini 5 ya
+Oh berarti 4 dulu
+Biar
+Biar
+Dengan dengan dashboard aja
+Udah enggak
+Jadi gak
+Mbak membantu banget sih
+Biar pejak palanya
+Scope nya dibagi landing page
+Sama di mana
+Dan mungkin terakhir Pak, untuk dari dosen pemerintah ke 2 apakah Bapak ada menyarankan atau dari saya pribadi?
+Karena rencana saya itu untuk dibajikan dokumen antara Bu Ayu, Bu Amal atau Bu Yun kayaknya udah full deh.
+Kalau antara itu yang saya coba buah dokumen yang nabekan, soalnya ini sistem
+Bukan dokumen banyak. Kalau bukan normal dokumen SOP
+Ini kan gak dokumennya cukup banyak bisa
+Tapi santai-santai dulu berbanyak ya
+Kalau nggak balik bufika bisa lah
+Mungkin juga bidangnya basis data itu
+Berarti dari saya
+Antara buah itu bufikan gitu
+Nanti angka gini kamu harus buat database nya bener dulu
+Nanti kalau dari database sudah benar, kita mau visual kan tadi ada sekutat bis itu enak
+Itu udah bener dulu
+Misalkan jadwal kelas itu berarti mengambil data dari mentor dengan kelas misalkan
+Disini ada jadwal
+Kalau mau filternya kok
+Misalka saya mau lihat filter berdasarkan ID mentornya
+yang keliatan tuh dia aktif lagi berapa
+yang penting kamu sudah buat bisnisnya
+bisnis prosesnya yang kamu dapatkan harus
+ke data-bisnisnya bener
+mungkin untuk PR Bimbingan berikutnya
+enaknya saya ngebuat
+database-nya dulu
+tapi sembari
+untuk menyampaikan
+ke mitra yang biar enak mereka dilihat
+juga sembari
+visual kasarnya gitu Pak ya
+UA nya, UA nya kan publikasi ke tanam mereka lebih paham UA daripada
+dari barif ada yang mau disampaikan lagi
+UA kan konsumasinya dengan mitra
+tapi bisa terus saya dulu sih
+kalau kamu buat UA terus kamu jelaksan saya bisnisnya apaan
+saya biar bisa lihat dari UA nya
+kalau sudah pikir baru masuk ke mitra
+mitranya nanti tinggal ngesiapan lagi
+Oh ya, nanti berarti mungkin Max baik jatah aja Pak ya.
+Saya kirimnya Pak ini.
+Terima kasih banyak Pak Arief untuk waktu nyilai kesempatannya.

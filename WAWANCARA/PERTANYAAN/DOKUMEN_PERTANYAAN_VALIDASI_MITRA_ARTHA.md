@@ -135,14 +135,23 @@ Pembayaran pendaftaran dan SPP dilakukan melalui tunai di frontdesk cabang atau 
 8. **Prosedur Penagihan Tunggakan SPP**:
    * *Pertanyaan*: Kapan tanggal jatuh tempo pembayaran SPP setiap bulannya? Bagaimana alur penagihan tunggakan saat ini: apakah murid ditegur langsung saat masuk kelas, atau staf frontdesk mencari nomor telepon di buku A4 lalu mengirim pesan WhatsApp satu per satu?
    * *Catatan Lapangan*: `[ ............................................................ ]`
+9. **Opsi Investasi Sistem Pembayaran Otomatis (*Payment Gateway*)**:
+   * *Pertanyaan*: Mengingat skala operasional delapan cabang dengan ribuan transaksi bulanan yang melelahkan jika divalidasi secara manual melalui mutasi rekening, apakah pihak manajemen Bimbel Artha bersedia mempertimbangkan integrasi sistem pembayaran otomatis (*Payment Gateway* seperti Midtrans atau Xendit) yang mengenakan biaya per transaksi (berkisar Rp2.000 hingga Rp4.000) atau biaya langganan bulanan, guna menutup risiko pemalsuan bukti transfer dan mengotomatiskan rekonsiliasi kas?
+   * *Catatan Lapangan*: `[ ............................................................ ]`
+10. **Wewenang Koreksi Salah Input dan Pembatalan Transaksi (*Void / Refund Rules*)**:
+   * *Pertanyaan*: Apabila staf frontdesk di cabang melakukan kesalahan ketik nominal atau salah memilih nama siswa saat mencatat pembayaran tunai, bagaimana aturan koreksinya: apakah staf frontdesk boleh langsung mengedit atau membatalkan transaksi tersebut secara mandiri di sistem, ataukah wajib melalui mekanisme pengajuan pembatalan (*void request*) yang disetujui oleh manajemen pusat guna mencegah kebocoran kas?
+   * *Catatan Lapangan*: `[ ............................................................ ]`
+11. **Estimasi Nominal Kerugian Finansial Akibat Kesalahan Manual**:
+   * *Pertanyaan*: Berdasarkan pengalaman operasional selama ini, berapa taksiran kisaran total nominal rupiah yang pernah terlewat ditagih, hilang, atau menjadi selisih pembukuan antara catatan buku fisik cabang dengan rekening bank dalam kurun waktu satu semester atau satu tahun ajaran?
+   * *Catatan Lapangan*: `[ ............................................................ ]`
 
 ---
 
 ## 🔹 MODUL 5: KESIAPAN PERANGKAT KOMPUTASI DAN KOMITMEN PENGUJIAN LAPANGAN (*PROTOTIPE VS PROYEK*)
-*Fokus: Mengukur kesiapan perangkat keras di cabang, jaringan internet, serta kesediaan mitra untuk terlibat dalam pengujian prototipe operasional.*
+*Fokus: Mengukur kesiapan perangkat keras di cabang, jaringan internet, alokasi infrastruktur peladen, serta kesediaan mitra untuk terlibat dalam siklus evaluasi iteratif PxP.*
 
 ### 5.1 Observasi dan Pernyataan Kondisi Berjalan (*As-Is*)
-Ariel awalnya mengusulkan Tugas Akhir berbentuk Proyek, namun Bu Ayu menyarankan untuk menaikkan level penelitian menjadi Prototipe jika mitra bersedia melakukan pengujian dengan pengguna riil (*real user*). Kesiapan ini bergantung pada fasilitas komputer di meja frontdesk cabang serta komitmen waktu manajemen dalam mendampingi uji coba.
+Ariel awalnya mengusulkan Tugas Akhir berbentuk Proyek, namun Bu Ayu menyarankan untuk menaikkan level penelitian menjadi Prototipe jika mitra bersedia melakukan pengujian dengan pengguna riil (*real user*). Kesiapan ini bergantung pada fasilitas komputer di meja frontdesk cabang serta komitmen waktu manajemen dalam mendampingi uji coba dan evaluasi berkala.
 
 ### 5.2 Daftar Pertanyaan Validasi Lapangan
 1. **Ketersediaan Perangkat Keras di Meja Frontdesk**:
@@ -156,6 +165,12 @@ Ariel awalnya mengusulkan Tugas Akhir berbentuk Proyek, namun Bu Ayu menyarankan
    * *Catatan Lapangan*: `[ ............................................................ ]`
 4. **Komitmen Waktu Pengujian Pengguna Riil (*User Acceptance Testing*)**:
    * *Pertanyaan*: Apakah staf frontdesk dari perwakilan cabang dan staf manajemen bersedia meluangkan waktu untuk mengikuti sesi pelatihan penggunaan serta simulasi pengujian sistem (*UAT*) bersama peneliti sebelum naskah skripsi diujikan pada sidang sarjana?
+   * *Catatan Lapangan*: `[ ............................................................ ]`
+5. **Komitmen Waktu Evaluasi Berkala per Siklus Iterasi PxP**:
+   * *Pertanyaan*: Karena penelitian ini mengadopsi metodologi Personal Extreme Programming (PxP) yang mengembangkan dan merilis modul secara bertahap setiap dua hingga tiga pekan sekali, apakah ada perwakilan pimpinan atau staf manajemen (seperti Mas Radit atau Om Tok) yang bersedia meluangkan waktu sekitar 30 hingga 45 menit secara berkala di akhir setiap iterasi guna mengevaluasi modul yang baru selesai dibangun?
+   * *Catatan Lapangan*: `[ ............................................................ ]`
+6. **Infrastruktur dan Alokasi Biaya Notifikasi WhatsApp Gateway**:
+   * *Pertanyaan*: Terkait rencana pengiriman pengingat jatuh tempo SPP dan notifikasi presensi otomatis kepada orang tua murid, apakah Bimbel Artha saat ini memiliki nomor WhatsApp Business resmi terpusat yayasan, ataukah selama ini menggunakan nomor telepon seluler pribadi staf cabang? Selain itu, apakah pihak manajemen bersedia mengalokasikan anggaran langganan layanan pihak ketiga (*WhatsApp Gateway API*) untuk pengiriman pesan otomatis tersebut?
    * *Catatan Lapangan*: `[ ............................................................ ]`
 
 ---

@@ -1,0 +1,58 @@
+[
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\OMG_UML_2.5.1_2017.pdf",
+    "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 18069510,
+    "sha256": "416b57e1933780eb48bd60fe513e031da220c28a521bdd334a366bebc78a463e"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\OMG_BPMN_2.0.2_2013.pdf",
+    "url": "https://www.omg.org/spec/BPMN/2.0.2/PDF",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 7296515,
+    "sha256": "d3d9258a70bf808c11ac52becea4ce645540a8b881117535f60a56fbf13e22f2"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\Fielding_2000_Disertasi_REST.pdf",
+    "url": "https://ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 1346194,
+    "sha256": "871b31586549bd32f41c3961ef97acd933270ce7f971efa7991f2490862d17f1"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\Chen_1976_ER_Model_CUPLIKAN_5_HALAMAN.pdf",
+    "url": "https://www.csc.lsu.edu/~chen/pdf/erd-5-pages.pdf",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 362644,
+    "sha256": "26044f919861cbbe3b7cb77cce5ede09a5200c17fd158a120cfc5417f14fe74b"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\Cohn_2004_User_Stories_Applied_BAB_CONTOH_RESMI.pdf",
+    "url": "https://cdn.sanity.io/files/qe2cvmjb/production/f5cca0d23709325c8f6c720152230cbaad532bdb.pdf",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 592639,
+    "sha256": "20cb2ffcba34de47824cf7a2648e71132c8ddd3adda928bab71d434f5dcedcaa"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\ISTQB_CTFL_v4.0.1_2024.pdf",
+    "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 1061189,
+    "sha256": "3b072f81db5c7671aadacc42553e726faa93913a969cc7a89e9dc28c2318d1f1"
+  },
+  {
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\ISTQB_Acceptance_Testing_v1.0_2019.pdf",
+    "url": "https://istqb.org/wp-content/uploads/2024/11/ISTQB-CT-AcT_Syllabus_v1.0_2019.pdf",
+    "accessed": "2026-10-27",
+    "status": "downloaded",
+    "bytes": 678080,
+    "sha256": "e53aec28a8e846f78b4a2a574f4e7006941eda96cd2ade13773fcbdf313adca6"
+  }
+]

@@ -1,0 +1,440 @@
+[
+  {
+    "kf": "KF-01",
+    "us": "US-01",
+    "uc": "UC-00",
+    "test_group": "PU-01",
+    "uat": "UAT-01",
+    "iteration": "I-01",
+    "name": "Autentikasi dan kewenangan",
+    "acceptance": "Akses berdasarkan peran serta cabang; sesi dapat diakhiri",
+    "sources": [
+      "S-02",
+      "S-05"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "users",
+      "branches",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-01",
+      "BB-30"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-02",
+    "us": "US-02",
+    "uc": "UC-01",
+    "test_group": "PU-02",
+    "uat": "UAT-02",
+    "iteration": "I-01",
+    "name": "Pengelolaan siswa",
+    "acceptance": "Identitas, kontak wali, jenjang termasuk TK, dan status tercatat",
+    "sources": [
+      "S-01",
+      "S-04"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "students",
+      "branches",
+      "academic_years",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-02"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-03",
+    "us": "US-03",
+    "uc": "UC-02",
+    "test_group": "PU-03",
+    "uat": "UAT-03",
+    "iteration": "I-01",
+    "name": "Pengelolaan kelas dan ruang",
+    "acceptance": "Kapasitas kelompok, kapasitas ruang, serta ambang hampir penuh tersedia",
+    "sources": [
+      "S-04",
+      "S-06"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "classes",
+      "class_rooms",
+      "branches",
+      "academic_years",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-03",
+      "BB-26"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-04",
+    "us": "US-04",
+    "uc": "UC-03",
+    "test_group": "PU-04",
+    "uat": "UAT-04",
+    "iteration": "I-02",
+    "name": "Keanggotaan dan kapasitas",
+    "acceptance": "Peserta aktif dihitung, kelas penuh ditolak, dan keluar membuka tempat",
+    "sources": [
+      "S-06"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "class_enrollments",
+      "students",
+      "classes",
+      "class_schedules",
+      "class_rooms",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-04",
+      "BB-05",
+      "BB-06",
+      "BB-07",
+      "BB-26"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-05",
+    "us": "US-05",
+    "uc": "UC-04",
+    "test_group": "PU-05",
+    "uat": "UAT-05",
+    "iteration": "I-02",
+    "name": "Pengelolaan jadwal",
+    "acceptance": "Irisan tentor dan ruang diperiksa menurut masa berlaku",
+    "sources": [
+      "S-02",
+      "S-04",
+      "S-05"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "class_schedules",
+      "mentors",
+      "mentor_subjects",
+      "subjects",
+      "classes",
+      "class_rooms",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-08",
+      "BB-09",
+      "BB-29",
+      "BB-31"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-06",
+    "us": "US-06",
+    "uc": "UC-05",
+    "test_group": "PU-06",
+    "uat": "UAT-06",
+    "iteration": "I-01",
+    "name": "Tarif dan tagihan",
+    "acceptance": "Variasi cabang, sesi, siklus, potongan berwenang, dan periode tersimpan",
+    "sources": [
+      "S-01",
+      "S-03",
+      "S-04"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "fee_tariffs",
+      "bills",
+      "students",
+      "users",
+      "academic_years",
+      "branches",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-10",
+      "BB-11",
+      "BB-27"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-07",
+    "us": "US-07",
+    "uc": "UC-06",
+    "test_group": "PU-07",
+    "uat": "UAT-07",
+    "iteration": "I-03",
+    "name": "Penerimaan tunai",
+    "acceptance": "Penerimaan, alokasi tagihan, dan kuitansi dicatat satu kali",
+    "sources": [
+      "S-03",
+      "S-04"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "payments",
+      "payment_allocations",
+      "bills",
+      "users",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-12"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-08",
+    "us": "US-08",
+    "uc": "UC-07",
+    "test_group": "PU-08",
+    "uat": "UAT-08",
+    "iteration": "I-03",
+    "name": "Pengajuan transfer",
+    "acceptance": "Bukti dan alokasi diajukan tanpa langsung melunasi tagihan",
+    "sources": [
+      "S-03",
+      "S-06",
+      "S-07"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "payments",
+      "payment_allocations",
+      "bills",
+      "bank_accounts",
+      "users",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-13",
+      "BB-14",
+      "BB-25"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-09",
+    "us": "US-09",
+    "uc": "UC-08",
+    "test_group": "PU-09",
+    "uat": "UAT-09",
+    "iteration": "I-03",
+    "name": "Pemeriksaan transfer",
+    "acceptance": "Persetujuan atau pengembalian beserta riwayat keputusan tersimpan",
+    "sources": [
+      "S-03",
+      "S-06",
+      "S-07"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "payment_reviews",
+      "payments",
+      "payment_allocations",
+      "bills",
+      "bank_entries",
+      "bank_matches",
+      "bank_accounts",
+      "users",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-14",
+      "BB-15",
+      "BB-16",
+      "BB-24",
+      "BB-25",
+      "BB-32"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-10",
+    "us": "US-10",
+    "uc": "UC-09",
+    "test_group": "PU-10",
+    "uat": "UAT-10",
+    "iteration": "I-03",
+    "name": "Tautan WhatsApp",
+    "acceptance": "Nomor dan pesan tunggakan disiapkan untuk dikirim oleh admin",
+    "sources": [
+      "S-04",
+      "S-06"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "reminder_actions",
+      "bills",
+      "payment_allocations",
+      "payments",
+      "students",
+      "users"
+    ],
+    "bb": [
+      "BB-17",
+      "BB-18"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-11",
+    "us": "US-11",
+    "uc": "UC-10",
+    "test_group": "PU-11",
+    "uat": "UAT-11",
+    "iteration": "I-04",
+    "name": "Setoran tunai",
+    "acceptance": "Penyerahan ke pusat dibedakan dari penyetoran ke rekening",
+    "sources": [
+      "S-03",
+      "S-04",
+      "S-07"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "cash_batches",
+      "cash_batch_items",
+      "payments",
+      "bank_accounts",
+      "users",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-19",
+      "BB-20"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-12",
+    "us": "US-12",
+    "uc": "UC-12",
+    "test_group": "PU-12",
+    "uat": "UAT-12",
+    "iteration": "I-04",
+    "name": "Dasbor dan laporan",
+    "acceptance": "Data cabang serta antrean pemeriksaan ditelusuri ke transaksi sumber",
+    "sources": [
+      "S-02",
+      "S-03"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "branches",
+      "students",
+      "classes",
+      "class_enrollments",
+      "class_schedules",
+      "mentors",
+      "subjects",
+      "bills",
+      "payments",
+      "payment_allocations",
+      "payment_reviews",
+      "cash_batches",
+      "cash_batch_items",
+      "bank_entries",
+      "bank_matches",
+      "reminder_actions"
+    ],
+    "bb": [
+      "BB-21",
+      "BB-33"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-13",
+    "us": "US-13",
+    "uc": "UC-11",
+    "test_group": "PU-13",
+    "uat": "UAT-13",
+    "iteration": "I-04",
+    "name": "Pencocokan penerimaan",
+    "acceptance": "Transfer atau setoran dihubungkan ke referensi bank secara manual",
+    "sources": [
+      "S-03",
+      "S-07"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "bank_entries",
+      "bank_matches",
+      "payments",
+      "cash_batches",
+      "cash_batch_items",
+      "bank_accounts",
+      "users",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-15",
+      "BB-20",
+      "BB-22",
+      "BB-24",
+      "BB-32",
+      "BB-33"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  },
+  {
+    "kf": "KF-14",
+    "us": "US-14",
+    "uc": "UC-13",
+    "test_group": "PU-14",
+    "uat": "UAT-14",
+    "iteration": "I-01",
+    "name": "Data induk dan akun",
+    "acceptance": "Tahun ajaran, cabang, akun, tentor, mapel, dan rekening diatur berwenang",
+    "sources": [
+      "S-02",
+      "S-05",
+      "S-07"
+    ],
+    "priority": "Inti",
+    "tables": [
+      "academic_years",
+      "branches",
+      "users",
+      "subjects",
+      "mentors",
+      "mentor_subjects",
+      "bank_accounts",
+      "activity_logs"
+    ],
+    "bb": [
+      "BB-23",
+      "BB-24",
+      "BB-28",
+      "BB-30"
+    ],
+    "implementation_status": "Belum diuji",
+    "partner_validation": "Keputusan WhatsApp dan penuh dari pengguna; kebijakan mitra terkait perlu validasi"
+  }
+]

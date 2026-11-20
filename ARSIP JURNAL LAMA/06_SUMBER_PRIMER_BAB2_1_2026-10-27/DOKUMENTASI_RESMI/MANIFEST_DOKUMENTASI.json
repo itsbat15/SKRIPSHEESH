@@ -1,0 +1,231 @@
+[
+  {
+    "name": "Nextjs_Dokumentasi",
+    "url": "https://nextjs.org/docs",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Nextjs_Dokumentasi.html",
+    "resolved_url": "https://nextjs.org/docs",
+    "status": "downloaded",
+    "bytes": 436717,
+    "sha256": "850d4be04e34b39f9f5e1fcc8aa97bf987748d1604532abf9df74c99a7c1bb6c",
+    "title": "Next.js Docs",
+    "h1": [
+      "Next.js Docs"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Nextjs_Layouts_Pages",
+    "url": "https://nextjs.org/docs/app/getting-started/layouts-and-pages",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Nextjs_Layouts_Pages.html",
+    "resolved_url": "https://nextjs.org/docs/app/getting-started/layouts-and-pages",
+    "status": "downloaded",
+    "bytes": 786179,
+    "sha256": "bfc5d1b278052aa55ca82769b47810ca23e9032c3e634c3536f9877c36eba0e4",
+    "title": "Layouts and Pages",
+    "h1": [
+      "Layouts and Pages"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "React_Managing_State",
+    "url": "https://react.dev/learn/managing-state",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\React_Managing_State.html",
+    "resolved_url": "https://react.dev/learn/managing-state",
+    "status": "downloaded",
+    "bytes": 308875,
+    "sha256": "80c9b621488196006501f71651b834b8038debf5090d3de3915edee15dfa3ca4",
+    "title": "Managing State – React",
+    "h1": [
+      "Managing State"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Tailwind_Utility_Classes",
+    "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Tailwind_Utility_Classes.html",
+    "resolved_url": "https://tailwindcss.com/docs/styling-with-utility-classes",
+    "status": "downloaded",
+    "bytes": 746796,
+    "sha256": "ab9daa5f351bd20f146d25ba065087f4d36a864631d30282ea7e38a460f21fc1",
+    "title": "Styling with utility classes - Core concepts - Tailwind CSS",
+    "h1": [
+      "Styling with utility classes"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Tailwind_Responsive_Design",
+    "url": "https://tailwindcss.com/docs/responsive-design",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Tailwind_Responsive_Design.html",
+    "resolved_url": "https://tailwindcss.com/docs/responsive-design",
+    "status": "downloaded",
+    "bytes": 467575,
+    "sha256": "58f434f800a671f9ff5a36b5c167538d6e789661a055cfc24a620131f23f8a66",
+    "title": "Responsive design - Core concepts - Tailwind CSS",
+    "h1": [
+      "Responsive design"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Laravel_12_Sanctum",
+    "url": "https://laravel.com/docs/12.x/sanctum",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Laravel_12_Sanctum.html",
+    "resolved_url": "https://laravel.com/framework/docs/12.x/sanctum",
+    "status": "downloaded",
+    "bytes": 348830,
+    "sha256": "2a4cc71fd067f1e69e16967a316a1556cf7ef4f27d191e0996d92365382d089b",
+    "title": "Laravel Sanctum | Laravel 12.x - The clean stack for Artisans and agents",
+    "h1": [
+      "Laravel Sanctum"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Laravel_12_Authorization",
+    "url": "https://laravel.com/docs/12.x/authorization",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Laravel_12_Authorization.html",
+    "resolved_url": "https://laravel.com/framework/docs/12.x/authorization",
+    "status": "downloaded",
+    "bytes": 559207,
+    "sha256": "a6a1dc032a474abbcaa768ef17041ca0fe31f7542327159496c9c0f603ebdb27",
+    "title": "Authorization | Laravel 12.x - The clean stack for Artisans and agents",
+    "h1": [
+      "Authorization"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Laravel_12_Validation",
+    "url": "https://laravel.com/docs/12.x/validation",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Laravel_12_Validation.html",
+    "resolved_url": "https://laravel.com/framework/docs/12.x/validation",
+    "status": "downloaded",
+    "bytes": 1363941,
+    "sha256": "a6d7eb130be61fe329959b89b619c97dff504dbcaa7ab7ee360a301259859fe3",
+    "title": "Validation | Laravel 12.x - The clean stack for Artisans and agents",
+    "h1": [
+      "Validation"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Laravel_12_Database",
+    "url": "https://laravel.com/docs/12.x/database",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Laravel_12_Database.html",
+    "resolved_url": "https://laravel.com/framework/docs/12.x/database",
+    "status": "downloaded",
+    "bytes": 332522,
+    "sha256": "e981b6e7f7dc0d2f9e246086fde22f7520c0c1541666a8ab839f84173074fbf3",
+    "title": "Database: Getting Started | Laravel 12.x - The clean stack for Artisans and agents",
+    "h1": [
+      "Database: Getting Started"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Laravel_12_Eloquent",
+    "url": "https://laravel.com/docs/12.x/eloquent",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Laravel_12_Eloquent.html",
+    "resolved_url": "https://laravel.com/framework/docs/12.x/eloquent",
+    "status": "downloaded",
+    "bytes": 1110201,
+    "sha256": "4c76b2a2e27a9fe439e7d37aa9de2731f5a533fedc458f97b08507756f5de545",
+    "title": "Eloquent: Getting Started | Laravel 12.x - The clean stack for Artisans and agents",
+    "h1": [
+      "Eloquent: Getting Started"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "MySQL_84_Introduction",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/introduction.html",
+    "accessed": "2026-10-27",
+    "status": "link_only",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "MySQL_84_Transaction_Model",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/innodb-transaction-model.html",
+    "accessed": "2026-10-27",
+    "status": "link_only",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "MySQL_84_Foreign_Keys",
+    "url": "https://dev.mysql.com/doc/refman/8.4/en/create-table-foreign-keys.html",
+    "accessed": "2026-10-27",
+    "status": "link_only",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "HTTP_Semantics_RFC9110_2022",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\HTTP_Semantics_RFC9110_2022.html",
+    "resolved_url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+    "status": "downloaded",
+    "bytes": 1187554,
+    "sha256": "d431760660ea44e130f6e919dab216df2d0b3a490567a98089267523368fe1e5",
+    "title": "RFC 9110: HTTP Semantics",
+    "h1": [
+      "RFC 9110",
+      "HTTP Semantics"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Mermaid_ERD_Notation",
+    "url": "https://mermaid.js.org/syntax/entityRelationshipDiagram",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Mermaid_ERD_Notation.html",
+    "resolved_url": "https://mermaid.js.org/syntax/entityRelationshipDiagram",
+    "status": "downloaded",
+    "bytes": 136391,
+    "sha256": "bc863f7d652f66dd901df7e57880adb6761f796aed521ec9c1e3f8af744e647e",
+    "title": "Entity Relationship Diagrams | Mermaid",
+    "h1": [
+      "Entity Relationship Diagrams ​"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Cohn_Three_Part_Template",
+    "url": "https://www.mountaingoatsoftware.com/agile/why-the-three-part-user-story-template-works-so-well",
+    "accessed": "2026-10-27",
+    "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\JURNAL\\06_SUMBER_PRIMER_BAB2_1_2026-10-27\\DOKUMENTASI_RESMI\\Cohn_Three_Part_Template.html",
+    "resolved_url": "https://www.mountaingoatsoftware.com/agile/why-the-three-part-user-story-template-works-so-well",
+    "status": "downloaded",
+    "bytes": 119442,
+    "sha256": "7d4296a7dd2d63e7c39daf6521e003f31da9bfa589e1c8efd2594cf6e64cc9d5",
+    "title": "User Story Template: What It Is and Why It Works So Well - Mountain Goat Software",
+    "h1": [
+      "User Story Template: What It Is and Why It Works So Well"
+    ],
+    "looks_like_challenge": false
+  },
+  {
+    "name": "Sullivan_Artino_2013_Likert_OPSIONAL",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3886444/",
+    "accessed": "2026-10-27",
+    "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3886444/",
+    "status": "link_only_browser_challenge",
+    "bytes": 21424,
+    "sha256": "4abd8d4863ae34afceb0d5e018d327e45212a0591a55dbcb5d64a665330c6751",
+    "title": "Checking your browser - reCAPTCHA",
+    "h1": [],
+    "looks_like_challenge": true
+  }
+]

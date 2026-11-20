@@ -1,0 +1,500 @@
+[35:06 - 35:08] pengguna
+[35:08 - 35:09] juga
+[35:09 - 35:09] dari
+[35:09 - 35:10] management
+[35:10 - 35:10] juga
+[35:10 - 35:10] bisa
+[35:10 - 35:12] dalam
+[35:12 - 35:14] pdf
+[35:14 - 35:15] itu
+[35:15 - 35:16] bisa langsung
+[35:16 - 35:16] dikirimkan
+[35:16 - 35:16] kepala
+[35:16 - 35:17] cabang
+[35:17 - 35:18] report
+[35:18 - 35:18] gitu
+[35:18 - 35:19] menurut saya
+[35:19 - 35:20] walaupun
+[35:20 - 35:20] dia
+[35:20 - 35:20] enggak
+[35:20 - 35:20] harus
+[35:20 - 35:21] login
+[35:21 - 35:21] ke sistem
+[35:21 - 35:21] paling
+[35:21 - 35:22] enggak
+[35:22 - 35:22] dari
+[35:22 - 35:22] admin
+[35:22 - 35:22] bisa
+[35:22 - 35:23] dapat
+[35:23 - 35:23] report
+[35:23 - 35:23] nanti
+[35:23 - 35:23] kan
+[35:23 - 35:24] diserahkan
+[35:24 - 35:27] jadi
+[35:27 - 35:28] jangan
+[35:28 - 35:28] semuanya
+[35:28 - 35:28] nanti
+[35:28 - 35:29] table
+[35:29 - 35:29] apa
+[35:29 - 35:30] namanya
+[35:30 - 35:30] table
+[35:30 - 35:31] untuk
+[35:31 - 35:32] data
+[35:32 - 35:33] semua
+[35:33 - 35:33] gitu
+[35:33 - 35:33] ya
+[35:33 - 35:34] enggak
+[35:34 - 35:34] ada
+[35:34 - 35:35] report
+[35:35 - 35:35] susah
+[35:35 - 35:35] orang
+[35:35 - 35:36] buat
+[35:36 - 35:36] ngelihat
+[35:36 - 35:37] paling
+[35:37 - 35:37] enggak
+[35:37 - 35:37] nanti
+[35:37 - 35:37] ada
+[35:37 - 35:38] dashboard
+[35:38 - 35:38] juga
+[35:38 - 35:38] yang
+[35:38 - 35:39] bisa
+[35:39 - 35:39] diterima
+[35:39 - 35:52] penyerahan
+[35:52 - 35:52] ke
+[35:58 - 36:00] klutansi fisik
+[36:00 - 36:01] itu yang pertama
+[36:01 - 36:03] untuk paket yang normal
+[36:03 - 36:05] paket yang normal ini
+[36:05 - 36:08] yang enggak ngambil
+[36:08 - 36:11] siswa yang enggak ngambil
+[36:11 - 36:12] satu paket per semester
+[36:12 - 36:13] loh
+[36:13 - 36:15] klutansi yang kedua
+[36:15 - 36:17] itu khusus untuk paket yang
+[36:17 - 36:18] memang
+[36:18 - 36:21] paket yang memang
+[36:21 - 36:22] siswanya ini
+[36:22 - 36:24] mengambil
+[36:24 - 36:24] full
+[36:24 - 36:25] satu semester
+[36:25 - 36:26] yang pertama tadi
+[36:26 - 36:27] per bulan
+[36:27 - 36:28] terus yang ketiga itu
+[36:28 - 36:28] dari
+[36:28 - 36:30] mereka pun
+[36:30 - 36:31] ternyata
+[36:31 - 36:32] juga ada
+[36:32 - 36:33] menambahkan
+[36:33 - 36:35] atau membuat
+[36:35 - 36:36] satu form itu
+[36:36 - 36:37] secara
+[36:37 - 36:38] fisik
+[36:38 - 36:39] untuk menuliskan
+[36:39 - 36:41] dari wali muridnya ini
+[36:41 - 36:42] nama
+[36:42 - 36:42] nomor telepon
+[36:42 - 36:43] dan lain-lain
+[36:43 - 36:43] jadi
+[36:43 - 36:45] setelah dari
+[36:45 - 36:46] formnya itu
+[36:46 - 36:48] dipulis sama wali muridnya
+[36:48 - 36:49] baru akan
+[36:49 - 36:49] dimasukkan
+[36:49 - 36:50] langsung
+[36:50 - 36:51] dimasukkan lagi
+[36:51 - 36:52] sama staff administrasi
+[36:52 - 36:53] ke dalam
+[36:53 - 36:53] buku masalah
+[36:53 - 36:54] dan
+[36:54 - 36:55] penyimpanan
+[36:55 - 36:56] pembisaran itu
+[36:56 - 36:56] ternyata
+[36:56 - 36:57] enggak
+[36:57 - 36:58] disimpan
+[36:58 - 37:00] kemanajemen pusat
+[37:00 - 37:01] atau diberikan
+[37:01 - 37:02] kemanajemen pusat
+[37:02 - 37:03] tapi disimpan
+[37:03 - 37:04] di setiap
+[37:04 - 37:05] camangnya
+[37:05 - 37:05] jadi enggak ada
+[37:05 - 37:06] pemberian
+[37:06 - 37:07] itu data siswa
+[37:07 - 37:08] data siswa yang enggak ada
+[37:08 - 37:09] pemberian kemanajemen pusat
+[37:09 - 37:10] berarti
+[37:10 - 37:13] manajemen pusat itu
+[37:13 - 37:13] ya taunya
+[37:13 - 37:13] cuman
+[37:13 - 37:14] berapa orang
+[37:14 - 37:15] jumlahnya
+[37:15 - 37:16] makanya
+[37:16 - 37:16] untuk
+[37:16 - 37:17] dari akapan excel
+[37:17 - 37:18] juga sebenarnya
+[37:18 - 37:19] itu hanya
+[37:19 - 37:20] angka
+[37:20 - 37:21] dan juga
+[37:21 - 37:22] belum
+[37:22 - 37:23] dipastikan
+[37:23 - 37:24] itu bakal
+[37:24 - 37:25] terus di update
+[37:25 - 37:26] gitu
+[37:26 - 37:28] rekapan excel
+[37:28 - 37:28] yang jumlah
+[37:28 - 37:29] gitu kan
+[37:29 - 37:30] iya rekapan excel
+[37:30 - 37:30] yang jumlah
+[37:30 - 37:31] karena harus
+[37:31 - 37:32] terus kan
+[37:32 - 37:33] pengbayaran
+[37:33 - 37:33] gimana
+[37:33 - 37:35] kalau enggak tahu
+[37:35 - 37:35] ini
+[37:35 - 37:36] kan biasanya
+[37:36 - 37:37] mungkin transfer
+[37:37 - 37:37] gitu ya
+[37:37 - 37:38] ini yang transfer
+[37:38 - 37:38] orang tuanya siapa
+[37:38 - 37:39] gitu
+[37:39 - 37:40] udah didata di sekolah
+[37:40 - 37:41] itu ada data
+[37:41 - 37:42] yang rekapan
+[37:42 - 37:43] gitu
+[37:43 - 37:44] tapi
+[37:44 - 37:44] maksud saya
+[37:44 - 37:45] karena ada
+[37:45 - 37:46] pembatasan
+[37:46 - 37:48] waktunya
+[37:48 - 37:50] jadi terbatas
+[37:50 - 37:50] gitu
+[37:50 - 37:50] karena
+[37:50 - 37:51] dari sisi
+[37:51 - 37:51] staff
+[37:51 - 37:52] personal
+[37:52 - 37:53] selaku
+[37:53 - 37:55] mentor
+[37:55 - 37:56] pengajar
+[37:56 - 37:56] juga
+[37:56 - 37:57] jadi double drop
+[37:57 - 37:57] gitu
+[37:57 - 37:59] sebagai staff
+[37:59 - 37:59] personal
+[37:59 - 38:01] dan untuk
+[38:01 - 38:02] memvalidasi
+[38:02 - 38:03] pembayaran
+[38:03 - 38:04] itu
+[38:04 - 38:05] seperti yang saya
+[38:05 - 38:05] bilangin
+[38:05 - 38:06] dengan sebut
+[38:06 - 38:06] itu
+[38:06 - 38:07] dari sisi
+[38:07 - 38:08] menegang
+[38:08 - 38:09] akan memkomotasi
+[38:09 - 38:10] rekening
+[38:10 - 38:11] dan akan
+[38:11 - 38:11] bayar dari
+[38:11 - 38:12] kertas
+[38:12 - 38:12] rekapan
+[38:12 - 38:14] secara
+[38:14 - 38:15] satu-satu
+[38:15 - 38:19] kalau ini
+[38:19 - 38:21] yang ngerekap
+[38:21 - 38:22] yang ngumpulin
+[38:22 - 38:23] pembayaran
+[38:23 - 38:24] kan di admin
+[38:24 - 38:24] ya
+[38:24 - 38:27] itu ada
+[38:27 - 38:27] sistem
+[38:27 - 38:28] kalau telat
+[38:28 - 38:29] membayar
+[38:29 - 38:29] gitu
+[38:29 - 38:30] kondisinya
+[38:30 - 38:31] apakah akan
+[38:31 - 38:32] diberikan
+[38:32 - 38:33] semacam
+[38:33 - 38:33] SP
+[38:33 - 38:34] atau gimana
+[38:34 - 38:35] kalau
+[38:35 - 38:35] kemarin
+[38:35 - 38:36] ada
+[38:36 - 38:37] kalau
+[38:37 - 38:37] ada
+[38:37 - 38:38] tumbakan
+[38:38 - 38:38] waktu jatuh
+[38:38 - 38:39] tempoh
+[38:39 - 38:40] itu
+[38:40 - 38:40] dari
+[38:40 - 38:43] lebih tepatnya
+[38:43 - 38:43] untuk
+[38:43 - 38:43] remainer
+[38:43 - 38:44] pertama
+[38:44 - 38:45] itu
+[38:45 - 38:45] langsung
+[38:45 - 38:46] ke
+[38:46 - 38:47] wali
+[38:47 - 38:47] muridnya
+[38:47 - 38:48] tapi dari
+[38:48 - 38:48] admin
+[38:48 - 38:49] dari admin
+[38:49 - 38:50] sisi admin
+[38:50 - 38:51] dan itu
+[38:51 - 38:52] dari sisi admin
+[38:52 - 38:55] nge-WA
+[38:55 - 38:56] dari hasil data
+[38:56 - 38:56] yang sudah
+[38:56 - 38:57] di
+[38:57 - 38:58] yang ada
+[38:58 - 38:58] di dalam
+[38:58 - 38:59] berkebesaran
+[38:59 - 38:59] itu
+[38:59 - 39:00] kalau misalkan
+[39:00 - 39:01] tidak ditanggapin
+[39:01 - 39:03] mau gak mau
+[39:03 - 39:04] langsung ke
+[39:04 - 39:04] siswanya
+[39:04 - 39:05] jadi siswanya
+[39:05 - 39:06] sudah menyampaikan
+[39:06 - 39:06] langsung ke
+[39:06 - 39:07] admin
+[39:07 - 39:09] makanya
+[39:09 - 39:09] sistem
+[39:09 - 39:11] yang rencangan
+[39:11 - 39:11] yang saya buat
+[39:11 - 39:12] itu ada
+[39:12 - 39:15] otomat
+[39:15 - 39:15] kalau
+[39:15 - 39:15] atas
+[39:15 - 39:16] jadi
+[39:16 - 39:16] si admin
+[39:16 - 39:17] bakal
+[39:17 - 39:18] bisa langsung
+[39:18 - 39:19] melihat
+[39:19 - 39:19] yang belum
+[39:19 - 39:19] itu
+[39:19 - 39:20] tambahannya
+[39:20 - 39:20] berapa
+[39:20 - 39:21] sebagainya
+[39:21 - 39:23] ya
+[39:23 - 39:23] ke dalam
+[39:23 - 39:23] bukan
+[39:23 - 39:24] harus
+[39:24 - 39:24] di cek
+[39:24 - 39:25] satu persatu
+[39:25 - 39:26] berapa jumlah
+[39:26 - 39:27] siswa
+[39:27 - 39:27] bisa
+[39:27 - 39:28] cabangnya
+[39:28 - 39:29] contohnya
+[39:29 - 39:29] kemarin
+[39:29 - 39:30] saya sudah
+[39:30 - 39:30] pastikan
+[39:30 - 39:31] ada 400
+[39:31 - 39:32] cabang
+[39:32 - 39:33] yang paling banyak
+[39:33 - 39:34] di Arta 6
+[39:34 - 39:35] cabang 6
+[39:35 - 39:36] siswanya
+[39:36 - 39:36] 400
+[39:36 - 39:38] udah
+[39:38 - 39:39] kayak
+[39:39 - 39:39] satu sekolah
+[39:39 - 40:09] kalau yang diproses
+[40:09 - 40:10] bisnis
+[40:10 - 40:11] sepertinya alur
+[40:11 - 40:11] yang penting
+[40:11 - 40:13] kalau yang kontrol
+[40:13 - 40:15] kalau misalkan
+[40:15 - 40:15] memang
+[40:15 - 40:17] perlu validasi
+[40:17 - 40:18] kalau misalkan
+[40:18 - 40:19] sifatnya
+[40:19 - 40:20] kontrol-kontrol
+[40:20 - 40:21] atau constraint
+[40:21 - 40:21] itu
+[40:21 - 40:22] memang
+[40:22 - 40:23] misalkan
+[40:23 - 40:24] hanya
+[40:24 - 40:27] tidak untuk
+[40:27 - 40:27] di expose
+[40:27 - 40:28] keluar
+[40:28 - 40:29] tapi nanti
+[40:29 - 40:30] di sistem
+[40:30 - 40:31] memang perlu
+[40:31 - 40:32] diakomodir
+[40:32 - 40:32] saya rasa
+[40:32 - 40:33] mungkin tidak
+[40:33 - 40:34] perlu dimasukkan
+[40:34 - 40:34] secara
+[40:34 - 40:35] detail
+[40:35 - 40:36] di laporan
+[40:36 - 40:37] karena khawatirnya
+[40:37 - 40:37] nanti
+[40:37 - 40:38] bisa jadikan
+[40:38 - 40:38] itu
+[40:38 - 40:39] rahasia
+[40:39 - 40:39] bisnis
+[40:39 - 40:40] mereka
+[40:40 - 40:41] itu kan
+[40:41 - 40:41] mungkin
+[40:41 - 40:42] kita tidak
+[40:42 - 40:42] tahu
+[40:42 - 40:43] terlalu
+[40:43 - 40:43] detail
+[40:43 - 40:44] juga
+[40:44 - 40:44] disitu
+[40:44 - 40:45] jadi
+[40:45 - 40:46] tetap
+[40:46 - 40:46] ada
+[40:46 - 40:46] pertimbangan
+[40:46 - 40:47] itu
+[40:47 - 40:47] tetap
+[40:47 - 40:48] di
+[40:48 - 40:49] validasi
+[40:49 - 40:49] ulang
+[40:49 - 40:50] dengan
+[40:50 - 40:51] narasumbernya
+[40:51 - 40:51] aja
+[40:51 - 40:52] jadi
+[40:52 - 40:52] kalau yang
+[40:52 - 40:53] secara
+[40:53 - 40:53] flow
+[40:53 - 40:54] menurut saya
+[40:54 - 40:54] kalau
+[40:54 - 40:55] proses
+[40:55 - 40:55] bisnis
+[40:55 - 40:55] kan
+[40:55 - 40:56] mau
+[40:56 - 40:56] gak
+[40:56 - 40:56] mau
+[40:56 - 40:56] perlu
+[40:56 - 40:57] ya
+[40:57 - 40:57] karena
+[40:57 - 40:57] itu
+[40:57 - 40:57] nanti
+[40:57 - 40:58] akan
+[40:58 - 40:58] di
+[40:58 - 40:58] validasi
+[40:58 - 40:58] lagi
+[40:58 - 40:59] di
+[40:59 - 40:59] sistem
+[40:59 - 40:59] bagaimana
+[40:59 - 41:00] eksekusinya
+[41:00 - 41:01] itu
+[41:01 - 41:02] sebaiknya
+[41:02 - 41:03] tapi
+[41:03 - 41:03] kalau
+[41:03 - 41:04] sifatnya
+[41:04 - 41:04] constraint
+[41:04 - 41:05] tadi
+[41:05 - 41:07] kalau
+[41:07 - 41:07] memang
+[41:07 - 41:07] itu
+[41:07 - 41:08] sifatnya
+[41:08 - 41:09] lebih ke
+[41:09 - 41:10] kebijakan
+[41:10 - 41:11] perusahaan
+[41:11 - 41:11] atau
+[41:11 - 41:12] sifatnya
+[41:12 - 41:12] memang
+[41:12 - 41:12] hanya
+[41:12 - 41:14] manajemen
+[41:14 - 41:14] saja
+[41:14 - 41:14] yang
+[41:14 - 41:14] boleh
+[41:14 - 41:15] mengetahui
+[41:15 - 41:16] itu
+[41:16 - 41:16] misalkan
+[41:16 - 41:16] tapi
+[41:16 - 41:17] mau tetap
+[41:17 - 41:18] diakomodit
+[41:18 - 41:18] di sistem
+[41:18 - 41:20] gimana
+[41:20 - 41:20] caranya
+[41:20 - 41:21] gak usah
+[41:21 - 41:21] terlalu
+[41:21 - 41:22] diekspos
+[41:22 - 41:22] selain
+[41:22 - 41:23] penokoran
+[41:23 - 41:23] gitu
+[41:23 - 41:24] saya
+[41:24 - 41:27] terus
+[41:27 - 41:28] juga
+[41:28 - 41:28] ada
+[41:28 - 41:28] saya
+[41:28 - 41:29] berbual
+[41:29 - 41:30] lukesatunya
+[41:30 - 41:30] lukesatunya
+[41:30 - 41:31] lukesatunya
+[41:31 - 41:32] lukesatunya
+[41:32 - 41:33] lukesatunya
+[41:33 - 41:33] coba
+[41:33 - 41:34] untuk
+[41:34 - 41:34] selesaikan
+[41:34 - 41:35] lukesatunya
+[41:35 - 41:36] lukesatunya
+[41:36 - 41:40] lukesatunya
+[41:40 - 41:40] lukesatunya
+[41:40 - 41:40] tapi
+[41:40 - 41:41] sudah
+[41:41 - 41:41] lukesatunya
+[41:41 - 41:42] sudah
+[41:42 - 41:43] gimana
+[41:43 - 41:43] ini
+[41:43 - 41:45] jadi
+[41:45 - 41:46] lukesatunya
+[41:46 - 41:47] lukesatunya
+[41:47 - 41:47] lukesatunya
+[41:47 - 41:48] lukesatunya
+[41:48 - 41:48] lukesatunya
+[41:48 - 41:48] lukesatunya
+[41:48 - 41:50] lukesatunya
+[41:50 - 41:51] lukesatunya
+[41:51 - 41:52] lukesatunya
+[41:52 - 41:53] lukesatunya
+[41:53 - 41:54] lukesatunya
+[41:54 - 41:54] lukesatunya
+[41:54 - 41:55] pembinaan belajar itu
+[41:55 - 41:55] apa
+[41:55 - 41:56] terus
+[41:56 - 41:56] juga
+[41:56 - 41:57] dihitung
+[41:57 - 41:57] dengan
+[41:57 - 41:58] data
+[41:58 - 41:59] yang saya
+[41:59 - 41:59] dapatkan
+[41:59 - 42:00] dari
+[42:00 - 42:01] undang-undang
+[42:01 - 42:01] republik
+[42:01 - 42:01] indonesia
+[42:01 - 42:03] lukesatunya
+[42:03 - 42:03] memang
+[42:03 - 42:05] ada peraturan
+[42:05 - 42:06] tentang
+[42:06 - 42:07] sistem pendidikan
+[42:07 - 42:08] yang mendukung
+[42:08 - 42:08] untuk
+[42:08 - 42:09] pembinaan
+[42:09 - 42:09] informal
+[42:09 - 42:15] saya
+[42:15 - 42:16] lanjut
+[42:16 - 42:31] kenapa
+[42:31 - 42:32] disitu
+[42:32 - 42:32] langsung
+[42:32 - 42:32] bahas
+[42:32 - 42:33] sistem
+[42:33 - 42:34] informasi
+[42:34 - 42:34] manajemen
+[42:34 - 42:34] informasi
+[42:34 - 42:35] web
+[42:35 - 42:37] karena
+[42:37 - 42:39] yang
+[42:39 - 42:39] di
+[42:39 - 42:39] paragraf
+[42:39 - 42:40] mulai
+[42:40 - 42:41] karena
+[42:41 - 42:41] saya
+[42:43 - 42:44] selesai menceritakan
+[42:44 - 42:45] bahwasannya
+[42:45 - 42:46] dari sistem
+[42:46 - 42:47] bimbel

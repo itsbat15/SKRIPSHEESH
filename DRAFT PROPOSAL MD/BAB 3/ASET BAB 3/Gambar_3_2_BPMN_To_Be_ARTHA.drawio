@@ -1,0 +1,267 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="diagram_bpmn_tobe_v2" name="BPMN To-Be ARTHA (2 End Events)">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="780" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title Box -->
+        <mxCell id="title_box" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Gambar 3.2 Proses Bisnis Usulan (To-Be) Operasional Terintegrasi Bimbel ARTHA (Sesuai Dumas et al., 2018)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EBFBEE;strokeColor=#2B8A3E;strokeWidth=1.5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Pool: Bimbel ARTHA Usulan -->
+        <mxCell id="pool_tobe" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Bimbingan Belajar ARTHA Balikpapan (Proses Usulan / To-Be)&lt;/b&gt;" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;horizontal=0;horizontalStack=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="1800" height="660" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 1: Wali Murid / Siswa -->
+        <mxCell id="lane_wali" value="&lt;b&gt;Wali Murid / Siswa&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#F1F3F5;strokeColor=#495057;strokeWidth=1.2;" vertex="1" parent="pool_tobe">
+          <mxGeometry x="30" y="0" width="1770" height="210" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 2: Staf Administrasi Cabang -->
+        <mxCell id="lane_staf" value="&lt;b&gt;Staf Administrasi Cabang&lt;br&gt;(Kak Agian)&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#FFFFFF;strokeColor=#495057;strokeWidth=1.2;" vertex="1" parent="pool_tobe">
+          <mxGeometry x="30" y="210" width="1770" height="230" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 3: Pengelola Keuangan Pusat -->
+        <mxCell id="lane_pemilik" value="&lt;b&gt;Pengelola Keuangan Pusat&lt;br&gt;(Ibu Emi / Pemilik)&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#F8F9FA;strokeColor=#495057;strokeWidth=1.2;" vertex="1" parent="pool_tobe">
+          <mxGeometry x="30" y="440" width="1770" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LANE 1: WALI MURID ==================== -->
+        <!-- Start Event -->
+        <mxCell id="start_tb" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EBFBEE;strokeColor=#2B8A3E;strokeWidth=2;" vertex="1" parent="lane_wali">
+          <mxGeometry x="40" y="85" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_start" value="Mulai" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#2B8A3E;fontStyle=1;" vertex="1" parent="lane_wali">
+          <mxGeometry x="35" y="125" width="46" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Task 1: Mengisi Formulir -->
+        <mxCell id="task_1" value="Mengisi Lembar Formulir&lt;br&gt;Pendaftaran di Meja Cabang" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_wali">
+          <mxGeometry x="110" y="75" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Data Object: Formulir Fisik -->
+        <mxCell id="do_form" value="Formulir Fisik&lt;br&gt;Pendaftaran" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.2;size=14;fontSize=9;align=center;" vertex="1" parent="lane_wali">
+          <mxGeometry x="145" y="12" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Task 4b: Transfer via m-Banking -->
+        <mxCell id="task_4b" value="Mentransfer Biaya via&lt;br&gt;m-Banking &amp;amp; Kirim Bukti" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_wali">
+          <mxGeometry x="690" y="75" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Data Object: Bukti Transfer -->
+        <mxCell id="do_bukti" value="Bukti Transfer&lt;br&gt;/ QRIS" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.2;size=14;fontSize=9;align=center;" vertex="1" parent="lane_wali">
+          <mxGeometry x="725" y="12" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- End Event 1: Siswa Terdaftar -->
+        <mxCell id="end_siswa" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFF5F5;strokeColor=#C92A2A;strokeWidth=4.5;" vertex="1" parent="lane_wali">
+          <mxGeometry x="1690" y="85" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_end_siswa" value="&lt;b&gt;Siswa Resmi Terdaftar &amp;amp;&lt;br&gt;Siap Mengikuti KBM&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#C92A2A;" vertex="1" parent="lane_wali">
+          <mxGeometry x="1635" y="127" width="146" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LANE 2: STAF ADMINISTRASI ==================== -->
+        <!-- Task 2: Input Web ARTHA -->
+        <mxCell id="task_2" value="Memasukkan Data Siswa ke&lt;br&gt;Aplikasi Web ARTHA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="270" y="80" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Data Store: Basis Data MySQL Cloud -->
+        <mxCell id="ds_mysql" value="Basis Data Terpusat&lt;br&gt;MySQL Cloud" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#E7F5FF;strokeColor=#1971C2;strokeWidth=1.5;fontSize=9;align=center;" vertex="1" parent="lane_staf">
+          <mxGeometry x="300" y="150" width="90" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Task 3: Memeriksa Kuota Sesi -->
+        <mxCell id="task_3" value="Memeriksa Ketersediaan&lt;br&gt;Kuota Sesi secara Digital" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="445" y="80" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- XOR SPLIT: METODE PEMBAYARAN -->
+        <mxCell id="gw_split_metode" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_staf">
+          <mxGeometry x="615" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gw_metode" value="Metode&lt;br&gt;Pembayaran?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#D9480F;fontStyle=1;" vertex="1" parent="lane_staf">
+          <mxGeometry x="595" y="52" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Task 4a: Terima Uang Tunai -->
+        <mxCell id="task_4a" value="Menerima Uang Tunai &amp;amp;&lt;br&gt;Konfirmasi Lunas di Web" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="690" y="145" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Task 4c: Mengunggah Bukti Pembayaran -->
+        <mxCell id="task_4c" value="Mengunggah Bukti Transfer&lt;br&gt;ke Dasbor Cabang Web" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="875" y="80" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Task 5 Rejection Notice -->
+        <mxCell id="task_5_rej" value="Menolak Bukti &amp;amp; Meminta&lt;br&gt;Koreksi Bukti Bayar" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFF5F5;strokeColor=#E03131;strokeWidth=1.5;fontSize=10;fontColor=#C92A2A;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1055" y="150" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- XOR JOIN: PEMBAYARAN SAH -->
+        <mxCell id="gw_join_pay" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1225" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- PARALLEL GATEWAY (AND-SPLIT +) -->
+        <mxCell id="gw_and_split" value="+" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1295" y="88" width="40" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Task 6: Cetak Kuitansi PDF -->
+        <mxCell id="task_6" value="Mencetak Kuitansi Resmi&lt;br&gt;Format PDF Digital" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1365" y="80" width="145" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Data Object: Kuitansi PDF -->
+        <mxCell id="do_pdf" value="Kuitansi Resmi&lt;br&gt;PDF Digital" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.2;size=14;fontSize=9;align=center;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1400" y="152" width="75" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Task 7: Menyerahkan Kuitansi & Tempatkan Siswa -->
+        <mxCell id="task_7" value="Menyerahkan Kuitansi &amp;amp;&lt;br&gt;Menempatkan Siswa ke Rombel" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_staf">
+          <mxGeometry x="1535" y="80" width="155" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LANE 3: MANAJEMEN PUSAT ==================== -->
+        <!-- Task 5: Validasi Bukti Transfer -->
+        <mxCell id="task_5" value="Memvalidasi Bukti Transfer&lt;br&gt;via Dasbor Pusat (Web)" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="875" y="70" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- XOR SPLIT: BUKTI VALID? -->
+        <mxCell id="gw_split_valid" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="1055" y="78" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_gw_valid" value="Bukti Bayar&lt;br&gt;Valid?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#D9480F;fontStyle=1;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="1035" y="42" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Task 8: Monitoring Rekapitulasi Kas Cabang -->
+        <mxCell id="task_8" value="Memantau Rekapitulasi Kas&lt;br&gt;8 Cabang via Dasbor Pusat" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="1365" y="70" width="150" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- End Event 2: Rekapitulasi Kas Terkonsolidasi -->
+        <mxCell id="end_kas" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFF5F5;strokeColor=#C92A2A;strokeWidth=4.5;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="1575" y="80" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_end_kas" value="&lt;b&gt;Penerimaan Kas 8 Cabang&lt;br&gt;Terkonsolidasi Real-Time&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#C92A2A;" vertex="1" parent="lane_pemilik">
+          <mxGeometry x="1515" y="122" width="156" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== FLOWS / EDGES ==================== -->
+        <!-- Sequence Flows Lane 1 -> Lane 2 -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="start_tb" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_1" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_3" target="gw_split_metode">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Method Branch 1: Tunai -->
+        <mxCell id="e_tunai" value="Tunai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=0.5;exitY=1;fontSize=10;fontColor=#1C7ED6;" edge="1" parent="1" source="gw_split_metode" target="task_4a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tunai_join" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=1;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_4a" target="gw_join_pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Method Branch 2: Transfer -->
+        <mxCell id="e_trans" value="Transfer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=0.5;exitY=0;fontSize=10;fontColor=#D9480F;" edge="1" parent="1" source="gw_split_metode" target="task_4b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=0;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_4b" target="task_4c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="task_4c" target="task_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_5" target="gw_split_valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Valid Split: Tidak Valid -->
+        <mxCell id="e_tidak_valid" value="[Tidak Valid]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=1;exitX=0.5;exitY=1;fontSize=9;fontColor=#C92A2A;" edge="1" parent="1" source="gw_split_valid" target="task_5_rej">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_loop_rej" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=1;entryY=0.5;exitX=0;exitY=0.5;" edge="1" parent="1" source="task_5_rej" target="task_4c">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="440" />
+              <mxPoint x="1040" y="318" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Valid Split: Valid -> Join -->
+        <mxCell id="e_valid_join" value="[Valid]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;fontSize=10;fontColor=#2B8A3E;" edge="1" parent="1" source="gw_split_valid" target="gw_join_pay">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1170" y="535" />
+              <mxPoint x="1170" y="318" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Join -> AND Split (+) -->
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.8;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="gw_join_pay" target="gw_and_split">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- AND Split (+) Stream 1: Siswa Operasional -->
+        <mxCell id="e_stream1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.8;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="gw_and_split" target="task_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_6" target="task_7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_7" target="end_siswa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- AND Split (+) Stream 2: Monitoring Kas Pusat -->
+        <mxCell id="e_stream2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.8;entryX=0;entryY=0.5;exitX=0.5;exitY=1;" edge="1" parent="1" source="gw_and_split" target="task_8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1345" y="370" />
+              <mxPoint x="1345" y="543" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_8" target="end_kas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Data Associations (Dotted) -->
+        <mxCell id="da1" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="do_form" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="da2" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="task_2" target="ds_mysql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="da3" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="do_bukti" target="task_4b">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="da4" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="task_6" target="do_pdf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

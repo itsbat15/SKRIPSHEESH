@@ -1,0 +1,812 @@
+
+==================== 01_FONDASI_DAN_KOMPARASI_METODOLOGI ====================
+
+[1] FILE: A Spiral Model of Software Development and Enhancement - Prototyping - Boehm - 1988.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    A Spiral Model of Software Development and
+    Enhancement
+    Barry W. Boehm, TRW Defense Systems Group
+    “Stop the life cycle—I want to get off!”
+    “Life-cycle Concept Considered Harmful.”
+    “ The waterfall model is dead.”
+    “No, it isn’t, but it should be.”
+    These statements exemplify the current debate about software life-cycle process
+    models. The topic has recently received a great deal of attention.
+    The Defense Science Board Task Force Report on Military Software1 issued in
+    1987 highlighted the concern that traditional software process models were discouraging
+    more effective approaches to software development such as prototyping and software
+
+[2] FILE: Adoption and Suitability of Software Development Methods - Empirical Study - Kuhrmann dkk - 2021.pdf
+  DOIs: ['10.1109/APSEC.2016.062']
+  URLs: ['http://agileconsortium.blogspot.co.nz/2007/12/nokia-test.html', 'http://www.allaboutagile.com/how-agile-are-you-take-this-42-point-test/', 'https://www.google.com/forms']
+  HEADER SNIPPET:
+    Full citation: Licorish, S. A., Holvitie, J., Hyrynsalmi, S., Leppänen, V., Spínola, R. O., Mendes, T. S.,
+    MacDonell, S. G. and Buchan, J. 2016. Adoption and Suitability of Software Development Methods
+    and Practices, in Proceedings of the 23rd Asia-Pacific Software Engineering Conference (APSEC2016).
+    Hamilton, New Zealand, IEEE, pp.369-372.  doi:10.1109/APSEC.2016.062
+    Adoption and Suitability of Software
+    Development Methods and Practices
+    Sherlock A. Licorish
+    Department of Information Science
+    University of Otago
+    PO Box 56, Dunedin 9054, New Zealand
+    sherlock.licorish@otago.ac.nz
+    Rodrigo O. Spínola & Thiago S. Mendes
+
+[3] FILE: Extreme programming for a single person team.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+
+[4] FILE: Lean Software Development - An Agile Toolkit - Poppendieck - 2003.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Lean Software
+    Development
+    A
+    gile software development centers on four values, which are identified in the
+    Agile Alliance’s Manifesto:
+    1. Individuals and interactions over processes and tools
+    2. Working software over comprehensive documentation
+    3. Customer collaboration over contract negotiation
+    4. Responding to change over following a plan
+    The development of Agile software requires innovation and responsiveness, based
+    on generating and sharing knowledge within a development team and with the
+    customer. Agile software developers draw on the strengths of customers, users,
+
+[5] FILE: Managing the Development of Large Software Systems - Waterfall - WESCON - Royce - 1970.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    MANAGING THE DEVELOPMENT OF LARGE SOFTWARE SYSTEMS
+    Dr. Winston W. Rovce
+    INTRODUCTION
+    l am going to describe my pe,-.~onal views about managing large software developments. I have had
+    various assignments during the past nit,.: years, mostly concerned with the development of software packages
+    for spacecraft mission planning, commanding and post-flight analysis. In these assignments I have experienced
+    different degrees of successwith respect to arriving at an operational state, on-time, and within costs. I have
+    become prejudiced by my experiences and I am going to relate some of these prejudices in this presentation.
+    COMPUTER PROGRAM DEVELOPMENT FUNCTIONS
+    There are two essential steps common to all computer program developments, regardless of size or
+    complexity. There is first an analysis step, followed second by a coding step as depicted in Figure 1. This sort
+    of very simple implementation concept is in fact all that is required if the effort is sufficiently small and if the
+
+[6] FILE: Penerapan Metode RAD - Infotek - Pratama dkk - 2023.pdf
+  DOIs: ['10.29408/jit.v6i1.7313']
+  URLs: ['https://dx.doi.org/10.29408/jit.v6i1.7313']
+  HEADER SNIPPET:
+    Infotek : Jurnal Informatika dan Teknologi
+    Vol. 6 No. 1, Januari 2023
+    Hal. 49-59
+    e-ISSN 2614-8773
+    DOI : 10.29408/jit.v6i1.7313
+    Link : https://dx.doi.org/10.29408/jit.v6i1.7313
+    Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023
+    49
+    Penerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi
+    Inventaris Aset Desa Rempoah
+    Eva Argarini Pratama1 *, Sinta Krisgianti2, Hanny Mitya Paramita3
+    1,2,3Program Studi Sistem Informasi, Universitas Bina Sarana Informatika
+
+[7] FILE: Perbandingan Heavy & Lightweight Methodology - Khan dkk - 2011.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    A Comprehensive Study of Commonly Practiced Heavy &
+    Light Weight Software Methodologies
+    1Asif Irshad Khan, 2Rizwan Jameel Qurashi and 3Usman Ali Khan
+    1 Department of Computer Science
+    Singhania University, Jhunjhunu, Rajasthan, India
+    2 Department of Information Technology
+    King Abdul Aziz University, Jeddah, Saudi Arabia
+    3 Department of Information System
+    King Abdul Aziz University, Jeddah, Saudi Arabia
+    Abstract
+    Software has been playing a key role in the
+    development of modern society. Software industry
+
+[8] FILE: Perbandingan Waterfall dan Prototyping - UNIKOM - Susanto & Andriana - 2016.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Majalah Ilmiah UNIKOM   Vol.14  No. 1
+    41
+    H  a  l  a  m a  n
+    PERBANDINGAN MODEL WATERFALL DAN PROTOTYPING
+    UNTUK PENGEMBANGAN SISTEM INFORMASI
+    RANI SUSANTO, ANNA DARA ANDRIANA
+    Program Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer
+    Universitas Komputer Indonesia
+    System Development Life Cycle atau yang lebih dikenal dengan istilah SDLC
+    adalah metodologi umum yang digunakan untuk mengembangkan sistem
+    informasi. SDLC terdiri dari beberapa fase yang dimulai dari fase perencanaan,
+    analisis, perancangan, implementasi hingga pemeliharaan sistem. Konsep SDLC
+
+[9] FILE: Perbandingan XP vs PxP pada Implementasi Software - Fahrijal & Hartawan - 2024.pdf
+  DOIs: ['10.52362/jmijayakarta.v4i4.1534']
+  URLs: ['https://doi.org/10.52362/jmijayakarta.v4i4.1534', 'http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta']
+  HEADER SNIPPET:
+    Jurnal Manajemen Informatika Jayakarta
+    Volume 4, Nomor 4, September: halaman 367-382
+    P-ISSN: 2746-5985
+    e-ISSN: 2797-0930
+    DOI: https://doi.org/10.52362/jmijayakarta.v4i4.1534
+    This work is licensed under a Creative Commons Attribution 4.0 INTErnational License.
+    http://journal.stmikjayakarta.ac.id/index.php/JMIJayakarta
+    367
+    PERANCANGAN APLIKASI WEB PENGAWASAN
+    PERANGKAT NTE OLEH TEKNISI DI UNIT
+    WAREHOUSE  PT. TELKOM AKSES
+    JAKARTA PUSAT
+
+[10] FILE: Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Personal Extreme Programming – An Agile Process
+    for Autonomous Developers
+    Yani Dzhurov, Iva Krasteva, and Sylvia Ilieva
+    Faculty of Mathematics and Informatics, Sofia University,
+    5 James Bourchier Blvd, Sofia 1165, Bulgaria
+    yani.dzhurov@gmail.com, iva.krasteva@rila.bg, sylvia@acad.bg
+    Abstract. Despite the tendency of growing the size and complexity of the
+    developed software, significant part of it is still developed by autonomous
+    developers. The current research study proposes a modification of PSP
+    which aims at lightening the software development process and making
+    it easier to follow, while keeping the PSP basic principles. The new
+    methodology is extended with proven efficient development practices
+
+[11] FILE: Personal Extreme Programming Exploring Developers Adoption - AMCIS - Iyawa - 2020.pdf
+  DOIs: []
+  URLs: ['https://shura.shu.ac.uk/27536/', 'http://shura.shu.ac.uk/information.html', 'http://shura.shu.ac.uk']
+  HEADER SNIPPET:
+    Personal Extreme Programming: Exploring Developers'
+    Adoption
+    IYAWA, Gloria Ejehiohen
+    Available from Sheffield Hallam University Research Archive (SHURA) at:
+    https://shura.shu.ac.uk/27536/
+    This document is the Accepted Version [AM]
+    Citation:
+    IYAWA, Gloria Ejehiohen (2020). Personal Extreme Programming: Exploring
+    Developers' Adoption. In: AMCIS 2020 Proceedings. bepress. [Book Section]
+    Copyright and re-use policy
+    See http://shura.shu.ac.uk/information.html
+    Sheffield Hallam University Research Archive
+
+[12] FILE: PxP vs Waterfall - Job Training App - ICST 2018 - Asri dkk - 2018.pdf
+  DOIs: []
+  URLs: ['http://creativecommons.org/licenses/by-nc/4.0/']
+  HEADER SNIPPET:
+    Comparing Traditional and Agile Software
+    Development Approaches: Case of Personal Extreme
+    Programming
+    Sri Andriati Asri1, I Gusti Made Agung Sunaya2, Putu
+    Manik Prihatini3
+    Department of Electrical Engineering
+    Politeknik Negeri Bali
+    Bali, Indonesia
+    1sriandriati@pnb.ac.id, 2a_sunaya@pnb.ac.id,
+    3manikprihatini@pnb.ac.id
+    Widyadi Setiawan4
+    Department of Electrical Engineering
+
+[13] FILE: SCRUM Development Process - OOPSLA - Schwaber - 1995.pdf
+  DOIs: []
+  URLs: ['http://www.tiac.net/users/jsuth/scrum/index.html', 'http://vail.al.arizona.edu/rugby/rad/rookie_primer.html']
+  HEADER SNIPPET:
+    1
+    SCRUM Development Process
+    Ken Schwaber
+    Advanced Development Methods
+    131 Middlesex Turnpike    Burlington, MA 01803
+    email virman@aol.com  Fax: (617) 272-0555
+    _______________________________________________________________________
+    ABSTRACT. The stated, accepted philosophy for systems development is that the
+    development process is a well understood approach that can be planned, estimated, and
+    successfully completed.  This has proven incorrect in practice.  SCRUM assumes that the
+    systems development process is an unpredictable, complicated process that can only be
+    roughly described as an overall progression. SCRUM defines the systems development
+
+[14] FILE: Scrum Guide 2020 - Schwaber & Sutherland - Official.pdf
+  DOIs: []
+  URLs: ['https://creativecommons.org/licenses/by-sa/4.0/legalcode', 'https://creativecommons.org/licenses/by-sa/4.0/']
+  HEADER SNIPPET:
+    Ken Schwaber & Jeff Sutherland
+    The Scrum Guide
+    The Definitive Guide to Scrum: The Rules of the Game
+    November 2020
+    1
+    Purpose of the Scrum Guide
+    We developed Scrum in the early 1990s. We wrote the first version of the Scrum Guide in 2010 to help
+    people worldwide understand Scrum.  We have evolved the Guide since then through small, functional
+    updates. Together, we stand behind it.
+    The Scrum Guide contains the definition of Scrum. Each element of the framework serves a specific
+    purpose that is essential to the overall value and results realized with Scrum. Changing the core design
+    or ideas of Scrum, leaving out elements, or not following the rules of Scrum, covers up problems and
+
+[15] FILE: Scrum2Kanban - Integrating Kanban and Scrum in Capstone Course - IEEE - Mahnic - 2018.pdf
+  DOIs: ['10.1145/3194779.3194784']
+  URLs: ['https://doi.org/10.1145/3194779.3194784', 'https://github.com/', 'https://hpi.de/plattner/teaching/winter-term-201718/softwaretechnik-ii.html']
+  HEADER SNIPPET:
+    Scrum2Kanban: Integrating Kanban and Scrum in a University
+    Software Engineering Capstone Course
+    Christoph Matthies
+    Hasso Plattner Institute, University of Potsdam
+    Potsdam, Germany
+    christoph.matthies@hpi.de
+    ABSTRACT
+    Using university capstone courses to teach agile software develop-
+    ment methodologies has become commonplace, as agile methods
+    have gained support in professional software development. This
+    usually means students are introduced to and work with the cur-
+    rently most popular agile methodology: Scrum. However, as the
+
+[16] FILE: Strengthening the Case for Pair Programming - IEEE Software - Williams dkk - 2000.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Strengthening the Case for Pair-Programming
+    Laurie Williams
+    Robert R. Kessler
+    Ward Cunningham
+    Ron Jeffries
+    North Carolina State
+    University
+    University of Utah
+    Cunningham &
+    Cunningham, Inc
+    william@csc.ncsu.edu
+    kessler@cs.utah.edu
+
+[17] FILE: Structured vs Agile Development Comparative Analysis - Mishra & Alzoubi - Springer - 2023.pdf
+  DOIs: ['10.1007/s13198-023-01958-5']
+  URLs: ['https://doi.org/10.1007/s13198-023-01958-5']
+  HEADER SNIPPET:
+    Vol:.(1234567890)
+    Int J  Syst  Assur  Eng  Manag (August 2023) 14(4):1504–1522
+    https://doi.org/10.1007/s13198-023-01958-5
+    1 3
+    ORIGINAL ARTICLE
+    Structured software development versus agile software
+    development: a comparative analysis
+    Alok Mishra1   · Yehia Ibrahim Alzoubi2
+    Received: 2 January 2023 / Revised: 28 April 2023 / Accepted: 24 May 2023 / Published online: 12 June 2023
+    © The Author(s) 2023
+    Abstract  The use of agile methodology has become wide-
+    spread in organizations that previously relied on traditional
+
+[18] FILE: The Kanban Guide - Panduan Resmi Kanban - Coleman & Vacanti - 2025.pdf
+  DOIs: []
+  URLs: ['http://creativecommons.org/licenses/by-sa/4.0/legalcode', 'http://creativecommons.org/licenses/by-sa/4.0/']
+  HEADER SNIPPET:
+    THE
+    KANBAN
+    GUIDE
+    Edition 2025.5 ꞏ2025-05-01
+    Authors
+    John Coleman ꞏDaniel Vacanti
+    Contributors
+    Colleen Johnson, Prateek Singh, Julia Wester, Christian Neverdal, Magdalena Firlit, Tom Gilb, Steve Tendon
+    The Kanban Guide
+    Edition 2025.5
+    Preface
+    May 2025
+
+[19] FILE: Views on Balancing Agility and Discipline - Boehm & Turner - 2004.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    SEI Agile Research Forum
+    Twitter #SEIAgile
+    © 2012 Carnegie Mellon University
+    Views on Balancing Agility and Discipline
+    James Over
+    Senior Technical Staff
+    James Over has led the transition of the TSP into government and industry
+    organizations throughout the world. He co-authored the book Leadership,
+    Teamwork, & Trust (with the late Watts Humphrey) and several SEI
+    publications on software process definition and improvement.
+    See his full bio at:
+    www.sei.cmu.edu/go/agile-research-forum/
+
+==================== 02_STUDI_KASUS_BIMBEL_DAN_KURSUS ====================
+
+[1] FILE: Aplikasi Administrasi Sekolah Musik ABC - Pembayaran & Penjadwalan - Barizi dkk - 2023.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI)
+    Vol 04 No 02 Tahun 2023
+    e-ISSN : 2715-8756
+    332
+    PERANCANGAN APLIKASI SISTEM ADMINISTRASI SEKOLAH
+    MUSIK PADA SEKOLAH MUSIK ABC BERBASIS JAVA
+    Ahmad Barizi1, Nico Bustanul Anshary2, Ria Asep Sumarni3
+    Program Studi Teknik Informatika, Fakultas Teknik dan Ilmu Komputer
+    Universitas Indraprasta PGRI
+    Jalan Raya Tengah No 80, Kelurahan Gedong, Pasar Rebo, Jakarta Timur
+    barizir@gmail.com1,nico.anshary@gmail.com 2,riaasepsumarni@gmail.com3
+    Abstrak
+
+[2] FILE: Peran TI Manajemen Pendidikan - JRPP - Pradana - 2024.pdf
+  DOIs: []
+  URLs: ['http://journal.universitaspahlawan.ac.id/index.php/jrpp']
+  HEADER SNIPPET:
+    Jurnal Review Pendidikan dan Pengajaran, Volume 7 Nomor 3, 2024 | 6855
+    Jurnal Review Pendidikan dan Pengajaran (JRPP)
+    Abstrak
+    Perkembangan teknologi informasi telah memberikan dampak yang signifikan dalam dunia
+    pendidikan, termasuk dalam manajemen pendidikan di sekolah. Penelitian ini bertujuan untuk
+    mengkaji peran teknologi informasi dalam meningkatkan efektivitas manajemen pendidikan di
+    sekolah. Metode studi literatur digunakan untuk mengumpulkan, menganalisis, dan mensintesis
+    literatur yang relevan tentang topik ini. Hasil penelitian menunjukkan bahwa teknologi
+    informasi memiliki peran penting dalam meningkatkan efisiensi administrasi sekolah melalui
+    otomatisasi tugas-tugas administratif dan pengelolaan data yang lebih efisien. Selain itu,
+    teknologi informasi juga memperluas aksesibilitas pembelajaran dengan adanya platform e-
+    learning dan aplikasi pendidikan berbasis teknologi. Hal ini memberikan kesempatan bagi siswa
+
+[3] FILE: SI Administrasi Multi Cabang Terpusat - Web - Jurnal Infra - Lavicius dkk - 2017.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Sistem Informasi Administrasi Multi Cabang pada
+    PT. HC
+    Lavicius1, Lily Puspa Dewi2, Adi Wibowo3
+    1,2,3 Program Studi Teknik Informatika Fakultas Teknologi Industri Universitas Kristen Petra
+    Jl. Siwalankerto 121 – 131 Surabaya 60236
+    Telp. (031) – 2983455, Fax. (031) – 8417658
+    E-Mail: lavicius.work@gmail.com1, lily@petra.ac.id2, adiw@petra.ac.id3
+    ABSTRAK
+    Saat ini PT. HC menggunakan pencatatan dalam bentuk Microsoft
+    Excel dan dokumen fisik untuk proses bisnis yang dijalankan. PT.
+    HC memiliki beberapa cabang yang tersebar di beberapa daerah di
+    Indonesia, dengan proses bisnis penjualan produk, pemesanan
+
+[4] FILE: SI Bimbel - Web Mobile - Waterfall - Tiana & Gunanto - 2026.pdf
+  DOIs: ['10.62712/juktisi.v4i3.675']
+  URLs: ['http://ejurnal.lkpkaryaprima.id/index.php/juktisi', 'https://doi.org/10.62712/juktisi.v4i3.675']
+  HEADER SNIPPET:
+    p-ISSN: 2962-3022 | e-ISSN: 2963-7104
+    Volume 4 No 3 Februari 2026
+    Hal: 1631-1638
+    http://ejurnal.lkpkaryaprima.id/index.php/juktisi
+    DOI: https://doi.org/10.62712/juktisi.v4i3.675
+    Copyright © 2026 Author(s), Page 1631
+    This Journal is licensed under a Creative Commons Attribution 4.0 International License.
+    Perancangan dan Implementasi Sistem Informasi Bimbingan Belajar
+    Berbasis Web Mobile Menggunakan Metode Waterfall
+    Irma Tiana1*, Sigit Gunanto2
+    1,2 Fakultas Teknik dan Ilmu Komputer, Sistem dan Teknologi Informasi, Universitas Muhammadiyah Kotabumi,
+    Lampung, Indonesia
+
+[5] FILE: SI Bimbel BNF - Web - Waterfall - Maliki dkk - 2024.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Jurnal Informatika & Komputasi
+    Vol. 18 - Nomor 2 - Oktober 2024
+    ISSN: 1412-0232
+    Imam Maliki, Karel Jaya, Gita Cahyani Lestari, Debi Irawan, Asep Wasid
+    Prodi Sistem Informasi, Universitas Inaba, Jakarta
+    72
+    PERANCANGAN SISTEM INFORMASI BERBASIS WEB
+    PADA BIMBINGAN BELAJAR (BIMBEL) “BNF”
+    Imam Maliki1, Karel Jaya2 , Gita Cahyani Lestari3, Debi Irawan4, Asep Wasid5
+    1,2,3 Sistem Informasi, Universitas Indonesia Membangun
+    4,5 Sistem Komputer, Universitas Indonesia Membangun
+    E-mail: imam.maliki@inaba.ac.id1, karelw68@gmail.com2
+
+[6] FILE: SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JURNAL REKAYASA INFORMASI
+    SWADHARMA (JRIS)
+    VOLUME 06 NO 02 JULI  2026
+    ISSN 2774 – 5759 | eISSN 2774-5732
+    115
+    PENGEMBANGAN SISTEM INFORMASI BIMBINGAN BELAJAR
+    BERBASIS WEB UNTUK EFISIENSI OPERASIONAL BEE HIVE
+    Satria Nur Fajriansyah1), Muhammad Subaktiar Wijaya2), Daffa Arifta Eryana3),
+    Alaudin Safa4), Harsya Rafif Pramadhan5), Arya Wicaksono6), Muhammad Ilham
+    Baehaqi7), Filius Deivivi8),  Dandy Nurfajriansyah9), Sopiyan Apandi10)
+    Prodi Teknik Informatika, Fakultas Ilmu Komputer, Universitas Pamulang
+    Correspondence author: S Apandi, dosen02601@unpam.ac.id, Tangerang Selatan, Indonesia
+
+[7] FILE: SI Bimbel Indo Prestasi - Pembayaran & Data Siswa - Ramadhan - 2021.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK) 2021
+    Jakarta, 14 Januari 2021
+    P-ISSN:2527-5321
+    E-ISSN:2527-5941
+    1424 | Sistem Informasi Bimbingan Belajar Indo Prestasi dan English For Communication
+    SISTEM INFORMASI BIMBINGAN BELAJAR INDO PRESTASI
+    DAN ENGLISH FOR COMMUNICATION
+    Muhammad Ramadhan1, Nur Alam Arifin, M. Kom2
+    1,2Universitas Indraprasta PGRI
+    Jalan Raya Tengah No 80, Kelurahan Gedong, Pasar Rebo, Jakarta Timur
+    1murama1997@gmail.com, 2alamarifin@gmail.com
+    ABSTRAK
+
+[8] FILE: SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf
+  DOIs: ['10.52158/rjti.v4i3.3655']
+  URLs: ['https://rjti.upp.ac.id/index.php/rjmldm', 'https://doi.org/10.52158/rjti.v4i3.3655']
+  HEADER SNIPPET:
+    Lisensi
+    Lisensi Internasional Creative Commons Attribution-ShareAlike 4.0.
+    424
+    Terbit online pada laman web jurnal: https://rjti.upp.ac.id/index.php/rjmldm
+    Vol. 4 No. 3 (2025) 424 – 435 | ISSN : 2829-2529 (Media Online)
+    Sistem Informasi Bimbingan Belajar RSDC Berbasis Website Dengan
+    Menggunakan Metode Waterfall Untuk Meningkatkan Efisiensi
+    Administrasi
+    Stefanus Christian Gunawan1, Muhammad Nurwegiono2, Rudy Setiawan3
+    1,2,3Sistem Informasi, Fakultas Teknologi dan Desain, Universitas Ma Chung
+    322110009@student.machung.ac.id1,  muhammad.nurwegiono@machung.ac.id2, rudy.setiawan@machung.ac.id3
+    Abstract
+
+[9] FILE: SI Manajemen Bimbel Ilman Nafi - Notifikasi - Waterfall - Safitri dkk - 2026.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JATI (Jurnal Mahasiswa Teknik Informatika)
+    Vol. 10 No. 2, April 2026
+    2345
+    PERANCANGAN SISTEM INFORMASI MANAJEMEN BIMBINGAN
+    BELAJAR BERBASIS WEB UNTUK EFISIENSI ADMINISTRASI DAN
+    KOMUNIKASI DENGAN FITUR NOTIFIKASI OTOMATIS
+    (STUDI KASUS : BIMBEL ILMAN NAFI’)
+    Eka Cinta Ayu Safitri, Tri Listyorini, Endang Supriyati
+    Teknik Informatika, Universitas Muria Kudus
+    Jl. Lkr. Utara, Kayuapu Kulon, Gondangmanis, Kec. Bae, Kabupaten Kudus, Jawa Tengah
+    safitrie315@gmail.com
+    ABSTRAK
+
+[10] FILE: SI Manajemen Kursus INET Komputer - Laravel Agile - JATI - Kismantoro & Ibadi - 2026.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JATI (Jurnal Mahasiswa Teknik Informatika)
+    Vol. 10 No. 2, April 2026
+    3195
+    PENERAPAN METODE AGILE DALAM PENGEMBANGAN WEBSITE
+    SISTEM MANAJEMEN KURSUS BERBASIS LARAVEL
+    (STUDI KASUS INET KOMPUTER)
+    Kismantoro, Taqrim Ibadi
+    Teknik Informatika, Universitas Bina Darma
+    Jl. Jenderal Ahmad Yani No.3, 9/10 Ulu Palembang, Indonesia
+    torokisman500@gmail.com
+    ABSTRAK
+    Perkembangan teknologi informasi mendorong transformasi digital di berbagai sektor, termasuk pendidikan.
+
+[11] FILE: SI Monitoring Belajar Bimbel AHE - WhatsApp Gateway - Waterfall - JATI - Amelia dkk - 2026.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JATI (Jurnal Mahasiswa Teknik Informatika)
+    Vol. 10 No. 3, Juni 2026
+    5314
+    INTEGRASI WHATSAPP GATEWAY PADA SISTEM MONITORING
+    PERKEMBANGAN BELAJAR ANAK AHE BERBASIS WEB
+    (STUDI KASUS: BIMBEL AHE MEGALUH JOMBANG)
+    Wilujeng Amelia, Nur Khafidhoh, M. Anshori Aris Widya
+    Informatika, Universitas KH.A Wahab Hasbullah
+    Jl. Garuda No. 9, Tambakberas, Tambakrejo, Kec. Jombang, Kabupaten Jombang, Jawa Timur
+    Wilujengamalia9512@gmail.com
+    ABSTRAK
+    Perkembangan teknologi informasi mendorong lembaga pendidikan untuk memanfaatkan sistem digital
+
+[12] FILE: SI Pembayaran SPP dan Penggajian Guru Bimbel - Web - JTEKSIS - Abadi dkk - 2025.pdf
+  DOIs: ['10.47233/jteksis.v7i1.1666']
+  URLs: ['http://jurnal.unidha.ac.id/index.php/jteksis', 'https://doi.org/10.47233/jteksis.v7i1.1666']
+  HEADER SNIPPET:
+    Jurnal Teknologi Dan Sistem Informasi Bisnis
+    Vol. 7 No. 1 Januari 2025 Hal. 216-225
+    http://jurnal.unidha.ac.id/index.php/jteksis
+    E-ISSN : 2655-8238
+    P-ISSN : 2964-2132
+    Jurnal Teknologi Dan Sistem Informasi Bisnis – JTEKSIS Vol.07 No.1 Januari 2025                                                                      216
+    Perancangan Aplikasi Pembayaran SPP dan Penggajian Guru Berbasis
+    Web Pada Bimbingan Belajar
+    Reagent Abadi1), Wasino2) ,Lina3)
+    1,2)Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Tarumanagara Jakarta
+    3)Program Studi Teknik Informasi, Fakultas Teknologi Informasi, Universitas Tarumanagara Jakarta
+    Email: reagent.825210001@stu.untar.ac.id1, wasino@fti.untar.ac.id2 , lina@fti.untar.ac.id3
+
+[13] FILE: SI Penjadwalan & Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Jurnal Ilmu Komputer dan Sistem Informasi
+    1
+    PERANCANGAN SISTEM INFORMASI PENCATATAN
+    PENJADWALAN DAN PEMBAYARAN LES BERBASIS WEB
+    Veren Thiovanda 1)
+    1)  Sistem Informasi Universitas Tarumanagara
+    Jl.Letjen S.Parman No. 1, Jakarta, 11440, Indonesia
+    email : veren.825220067@stu.untar.ac.id
+    ABSTRAK
+    Penelitian
+    ini
+    bertujuan
+
+==================== 03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU ====================
+
+[1] FILE: SI Buku Tamu DPOP Balikpapan - PxP - Fikri & Prabowo (ITK) - 2020.pdf
+  DOIs: []
+  URLs: ['http://journal.umpo.ac.id/index.php/multitek']
+  HEADER SNIPPET:
+    Multitek Indonesia: Jurnal Ilmiah
+    Volume: 14 No. 2, Desember 2020, Hal.  101 - 100
+    ISSN: 1907-6223 (print)
+    ISSN: 2579-3497 (Online)
+    http://journal.umpo.ac.id/index.php/multitek
+    Ahmad Maulana Fikri1, I Putu Deny Arthawan S. P.  Rancang Bangun Sistem Informasi Buku Tamu Pada Dinas Pemuda, Olahraga Dan
+    Pariwisata Kota Balikpapan Dengan Metode Personal Extreme Programming
+    101
+    RANCANG BANGUN SISTEM INFORMASI BUKU TAMU PADA DINAS
+    PEMUDA, OLAHRAGA DAN PARIWISATA KOTA BALIKPAPAN
+    DENGAN METODE PERSONAL EXTREME PROGRAMMING
+    Ahmad Maulana Fikri1), I Putu Deny Arthawan S. P.2)
+
+[2] FILE: SI Keanggotaan & Jadwal - PxP - Ramadhan - 2026.pdf
+  DOIs: []
+  URLs: ['https://journal.jci.co.id/jisbt']
+  HEADER SNIPPET:
+    PT Jurnal Cendekia Indonesia
+    Journal of Information Systems and Business Technology
+    Homepage: https://journal.jci.co.id/jisbt
+    Vol. 02 No. 04 (2026) Page: 1180-1187
+    E-ISSN: 3109-8886
+    Diterima Redaksi: 22-08-2026 | Selesai Revisi: 30-08-2026 | Diterbitkan Online: 31-08-2026
+    1180
+    Implementasi Personal Extreme Programming Dalam Perancangan Sistem
+    Informasi Manajemen Keanggotaan Dan Pengaturan Jadwal Untuk
+    Meningkatkan Efisiensi Operasional (Studi Kasus : Sanggar Senam Kurnia)
+    Fazry Ramadhan1*
+    1Program Studi Sistem Informasi, Fakultas Ilmu Komputer, Universitas Pamulang, Kota Tangerang Selatan, Banten,
+
+[3] FILE: SI Laboratorium Infokom - PxP - REPOSITOR - Priatmaja dkk - 2022.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    REPOSITOR, Vol. 4, No. 4, November 2022, Pp. 429-439
+    ISSN
+    : 2714-7975
+    E-ISSN
+    : 2716-1382
+    429
+    Implementasi Model PXP Pada Sistem Informasi Laboratorium
+    Infokom Universitas Muhammadiyah Malang
+    Benny Indriawan Priatmaja*1, Ilyas Nuryasin2, Wildan Suharso3
+    1,2,3Universitas Muhammadiyah Malang
+    benny.indriawanp@gmail.com*1, ilyas@umm.ac.id2, wsuharso.umm.ac.id3
+    Abstrak
+
+[4] FILE: SI Siswa SMP - Extreme Programming (XP) - Suputra dkk - 2026.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JATI (Jurnal Mahasiswa Teknik Informatika)
+    Vol. 10 No. 2, April 2026
+    2138
+    RANCANG BANGUN SISTEM INFORMASI SISWA
+    MENGGUNAKAN METODE EXTREME PROGRAMMING
+    (STUDI KASUS SMP NEGERI 4 TEGALLALANG)
+    Ngakan Putu Herry Suputra, I Nyoman Yudi Anggara Wijaya, Anak Agung Gede Adi Mega Putra
+    Teknik Informatikan Universitas Primakara
+    Jl. Tukad Badung No.135 Denpasar Selatan Bali
+    ngakanherry2504@gmail.com
+    ABSTRAK
+    Perkembangan teknologi informasi mendorong institusi pendidikan untuk beralih dari sistem manual ke
+
+[5] FILE: SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf
+  DOIs: []
+  URLs: ['http://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek']
+  HEADER SNIPPET:
+    Jurnal Jaring SainTek
+    Vol.7, No.1, April 2025, pp. 35 - 46
+    e-ISSN : 2656-9485
+    Available Online at : http://ejurnal.ubharajaya.ac.id/index.php/jaring-saintek
+    35
+    Implementasi Metode Personal Extreme Programming Pada Pengembangan
+    Sistem Informasi Surat Menyurat
+    (Studi Kasus: Dinas Pendidikan Pemuda Dan Olahraga Kabupaten Tambrauw)
+    Alfin Lutfi Sidiq1*, Gita Indah Marthasari2, Aminudin3
+    1,2,3Teknik Informatika, Fakultas Teknik, Universitas Muhammadiyah Malang, Malang, Indonesia
+    e-mail: *1alfinlutfizaza@gmail.com, 2gita@umm.ac.id, 3aminudin2008@umm.ac.id
+    Abstract
+
+[6] FILE: Website Company Profile - Extreme Programming (XP) - Astiti - 2023.pdf
+  DOIs: []
+  URLs: ['https://djournals.com/resolusi']
+  HEADER SNIPPET:
+    RESOLUSI : Rekayasa Teknik Informatika dan Informasi
+    ISSN 2745-7966 (Media Online)
+    Vol 3, No 3, Januari 2023
+    Hal 114-124
+    https://djournals.com/resolusi
+    Sarah Astiti, RESOLUSI, Page 114
+    Penerapan Metode Extreme Programming Pada Rancang Bangun Website
+    Company Profile
+    Sarah Astiti
+    Fakultas Informatika, Sistem Informasi, Institut Teknologi Telkom Purwokerto, Purwokerto, Indonesia
+    Email: sarah@ittelkom-pwt.ac.id
+    Email Penulis Korespondensi: sarah@ittelkom-pwt.ac.id
+
+[7] FILE: Website E-Kavling - PxP & UAT - JATI - Apriyanti dkk - 2024.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    JATI (Jurnal Mahasiswa Teknik Informatika)
+    Vol. 8 No. 3, Juni 2024
+    3678
+    PEMANFAATAN METODOLOGI PXP DAN PENGUJIAN USER ACCEPTANCE
+    TESTING (UAT) DALAM PENGEMBANGAN WEBSITE E-KAVLING
+    Narti Apriyanti, Seftin Fitri Ana Wati, Abdul Rezha Efrat Najaf
+    Sistem Informasi, UPN “Veteran” Jawa Timur
+    Jl. Rungkut Madya No. 1, Gn. Anyar, Surabaya, Jawa Timur
+    nartiapriyanti@gmail.com
+    ABSTRAK
+    Di era kemajuan teknologi, transformasi digital telah menjadi suatu keharusan, terutama dalam dunia bisnis.
+    Penyebaran internet yang semakin menjangkau sebagian besar masyarakat indonesia telah mengubah dunia
+
+==================== 04_FITUR_DAN_TEKNOLOGI_PENDUKUNG ====================
+
+[1] FILE: Pemodelan SCRUM Klinik Ar-Rokhim - JOINS - Kurniawan & Sani - 2019.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    76
+    Journal of Information System Vol. 4, No. 1, Mei 2019, hlm. 76-86
+    p-ISSN : 2528-0228
+    e-ISSN : 2528-0236
+    Pemodelan SCRUM dalam Pengembangan Sistem
+    Informasi Kesehatan pada Klinik Ar-Rokhim Sragen
+    Kabupaten Sragen
+    SCRUM Model on Development of Health Information System at Ar-Rokhim Clinic in
+    Sragen Regency
+    Ikhwansyah Kurniawan1, Ramadhan Rakhmat Sani 2
+    1,2Fakultas Ilmu Komputer, Universitas Dian Nuswantoro Semarang
+    e-mail: 1kurniawan.ikhwansyah@gmail.com, 2ramadhan_rs@dsn.dinus.ac.id
+
+[2] FILE: SI Absensi - Web - Prototyping - Putra - 2022.pdf
+  DOIs: ['10.47065/josh.v3i4.1835']
+  URLs: ['https://ejurnal.seminar-id.com/index.php/josh/']
+  HEADER SNIPPET:
+    Journal of Information System Research (JOSH)
+    Volume 3, No. 4, Juli 2022, pp 431−436
+    ISSN 2686-228X (media online)
+    https://ejurnal.seminar-id.com/index.php/josh/
+    DOI 10.47065/josh.v3i4.1835
+    Fitra Kasma Putra | Jurnal JOSH | Page 431
+    Penerapan Metode Prototyping Dalam Rancangan Sistem Informasi
+    Absensi Berbasis Website
+    Fitra Kasma Putra
+    Fakultas Ekonomi Dan Bisnis Islam, Manajemen Informatika, UIN Mahmud Yunus Batusangkar, Tanah Datar
+    Jl. Jenderal Sudirman No.137, Limo Kaum, Kec. Lima Kaum, Kabupaten Tanah Datar, Sumatera Barat, Indonesia
+    Email: fitra.kp@iainbatusangkar.ac.id,
+
+[3] FILE: SI Inventaris Aset Desa - RAD - Pratama dkk - 2023.pdf
+  DOIs: ['10.29408/jit.v6i1.7313']
+  URLs: ['https://dx.doi.org/10.29408/jit.v6i1.7313']
+  HEADER SNIPPET:
+    Infotek : Jurnal Informatika dan Teknologi
+    Vol. 6 No. 1, Januari 2023
+    Hal. 49-59
+    e-ISSN 2614-8773
+    DOI : 10.29408/jit.v6i1.7313
+    Link : https://dx.doi.org/10.29408/jit.v6i1.7313
+    Infotek : Jurnal Informatika dan Teknologi – Vol.6 No. 1 Januari 2023
+    49
+    Penerapan Metode Rapid Aplication Development (RAD) pada Pengembangan  Sistem Informasi
+    Inventaris Aset Desa Rempoah
+    Eva Argarini Pratama1 *, Sinta Krisgianti2, Hanny Mitya Paramita3
+    1,2,3Program Studi Sistem Informasi, Universitas Bina Sarana Informatika
+
+[4] FILE: SI Pembayaran Kursus LOOP Coding BSD - PHP MySQL - JTIK - Karpina dkk - 2025.pdf
+  DOIs: ['10.35870/jtik.v9i4.3846']
+  URLs: ['https://doi.org/10.35870/jtik.v9i4.3846']
+  HEADER SNIPPET:
+    1217
+    Pengembangan Sistem Pembayaran pada Website Bimbingan
+    Belajar Non-Formal Berbasis PHP MySQL di LOOP Coding
+    BSD, Tangerang, Banten
+    Arika Karpina 1*, Yuma Akbar 2, Widya Ayu Lestari 3, Fitriani Noer Jamilah 4
+    1*,2,3,4 Program Studi Teknik Informatika, Fakultas Teknik, Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika, Kota Jakarta Timur, Daerah
+    Khusus Ibukota Jakarta, Indonesia.
+    a r t i c l e  i n f o
+    Article history:
+    Received 21 February 2025
+    Received in revised form
+    20 March 2025
+
+[5] FILE: SI Pembayaran SPP - Notifikasi WhatsApp & Payment Gateway Midtrans - JTI - Sari dkk - 2023.pdf
+  DOIs: ['10.47111/JTI']
+  URLs: ['https://doi.org/10.47111/JTI', 'https://e-journal.upr.ac.id/index.php/JTI']
+  HEADER SNIPPET:
+    90
+    https://doi.org/10.47111/JTI
+    Available online at https://e-journal.upr.ac.id/index.php/JTI
+    [E-ISSN 2656-0321]
+    [Vol 17 No 1]
+    [Januari 2023]
+    PENERAPAN SISTEM NOTIFIKASI CHAT DAN PAYMENT
+    GATEWAY PADA SISTEM INFORMASI PEMBAYARAN SPP
+    BERBASIS WEBSITE
+    Nova Noor Kamala Sari a,1,*, Septian Geges b,2, Noor Hasanah c,3
+    a,b,c Jurusan Teknik Informatika, Fakultas Teknik, Universitas Palangka Raya, Kampus UPR Tunjung Nyaho Jl. Yos
+    Sudarso,
+
+==================== JURNAL PENDUKUNG ====================
+
+[1] FILE: yusrian,+610-1857-1-CE+(1).pdf
+  DOIs: ['10.25126/jtiik.201851610']
+  URLs: ['http://www.omg.org', 'http://www.omg.org/spec/UML/2.5.1', 'http://staruml.io/']
+  HEADER SNIPPET:
+    Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK)
+    DOI: 10.25126/jtiik.201851610
+    Vol. 5, No. 1, Maret 2018, hlm. 77-86
+    p-ISSN: 2355-7699
+    Akreditasi KEMENRISTEKDIKTI, No. 51/E/KPT/2017
+    e-ISSN: 2528-6579
+    77
+    PEMODELAN USE CASE (UML): EVALUASI TERHADAP BEBERAPA
+    KESALAHAN DALAM PRAKTIK
+    Tri A. Kurniawan
+    Software Engineering Research Grup (SERG), Fakultas Ilmu Komputer, Universitas Brawijaya
+    Email: triak@ub.ac.id
+
+==================== BUKU ====================
+
+[1] FILE: Extreme-Programming-Explained-2nd-Edition-Kent-Beck.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    • Table of
+    Contents
+    Extreme Programming Explained: Embrace
+    Change, Second Edition
+    By Kent Beck, Cynthia Andres
+    Publisher : Addison Wesley Professional
+    Pub Date : November 16, 2004
+    ISBN : 0-321-27865-8
+    Pages : 224
+    Whether you have a small team that is already
+    closely aligned with your customers or a large team
+    in a gigantic or multinational organization, you will
+
+[2] FILE: Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    SOFTWARE ENGINEERING
+    Ninth Edition
+    Ian Sommerville
+    Addison-Wesley
+    Boston
+    Columbus
+    Indianapolis
+    New York
+    San Francisco
+    Upper Saddle River
+    Amsterdam
+    Cape Town
+
+[3] FILE: ebook-pressman-sw-engineering.pdf
+  DOIs: []
+  URLs: []
+  HEADER SNIPPET:
+    Software Engineering
+    A Practitioner’s Approach
+    Seventh Edition
+    Roger S. Pressman
+    Software Engineering
+    A
+    P R A C T I T I O N E R ’ S
+    A P P R O A C H

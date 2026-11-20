@@ -1,0 +1,170 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="diagram_bpmn_dumas" name="Gambar 2.3 Contoh Kolaborasi BPMN Dumas 2018">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="680" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title Box -->
+        <mxCell id="title_box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Gambar 2.3 Contoh Alur Proses Bisnis Kolaboratif Antarorganisasi Berstandar BPMN (Dumas dkk., 2018)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#495057;strokeWidth=1.5;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1120" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- Pool 1: Pelanggan (Black-Box Pool) -->
+        <mxCell id="pool_customer" value="&lt;b&gt;Entitas Eksternal: Pelanggan / Pemohon Layanan&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#E9ECEF;strokeColor=#495057;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="75" width="1120" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Pool 2: Organisasi Penyedia Layanan (White-Box Pool) -->
+        <mxCell id="pool_org" value="&lt;b&gt;Organisasi Penyedia Layanan (Unit Pengelola)&lt;/b&gt;" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=28;horizontal=0;horizontalStack=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="1120" height="420" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 1: Divisi Pelayanan & Administrasi -->
+        <mxCell id="lane_admin" value="&lt;b&gt;Divisi Pelayanan &amp; Administrasi&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#F8F9FA;strokeColor=#6C757D;strokeWidth=1.2;" vertex="1" parent="pool_org">
+          <mxGeometry x="28" y="0" width="1092" height="210" as="geometry" />
+        </mxCell>
+
+        <!-- Lane 2: Divisi Keuangan & Verifikasi -->
+        <mxCell id="lane_finance" value="&lt;b&gt;Divisi Keuangan &amp; Verifikasi&lt;/b&gt;" style="swimlane;html=1;startSize=26;horizontal=0;fillColor=#F8F9FA;strokeColor=#6C757D;strokeWidth=1.2;" vertex="1" parent="pool_org">
+          <mxGeometry x="28" y="210" width="1092" height="210" as="geometry" />
+        </mxCell>
+
+        <!-- START EVENT -->
+        <mxCell id="start_evt" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#EBFBEE;strokeColor=#2B8A3E;strokeWidth=2;" vertex="1" parent="lane_admin">
+          <mxGeometry x="40" y="80" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_start" value="Permintaan&lt;br&gt;Diterima" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#2B8A3E;fontStyle=1;" vertex="1" parent="lane_admin">
+          <mxGeometry x="20" y="122" width="76" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- TASK 1: Memverifikasi Dokumen -->
+        <mxCell id="task_1" value="Memverifikasi&lt;br&gt;Kelayakan Dokumen" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_admin">
+          <mxGeometry x="120" y="70" width="130" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- DATA OBJECT: Formulir Permintaan -->
+        <mxCell id="do_form" value="Formulir&lt;br&gt;Permintaan" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.2;size=14;fontSize=9;align=center;" vertex="1" parent="lane_admin">
+          <mxGeometry x="155" y="10" width="60" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- XOR SPLIT -->
+        <mxCell id="gw_split" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_admin">
+          <mxGeometry x="290" y="78" width="40" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- TASK 1B: Meminta Perbaikan (Reject/Revise branch) -->
+        <mxCell id="task_revisi" value="Mengirimkan Notifikasi&lt;br&gt;Perbaikan Berkas" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_admin">
+          <mxGeometry x="370" y="15" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- INTERMEDIATE EVENT: Menunggu Berkas -->
+        <mxCell id="evt_inter" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.5;" vertex="1" parent="lane_admin">
+          <mxGeometry x="550" y="24" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="evt_inter_inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFF9DB;strokeColor=#F59F00;strokeWidth=1.5;" vertex="1" parent="lane_admin">
+          <mxGeometry x="554" y="28" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_inter" value="Berkas Revisi&lt;br&gt;Diterima" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#D9480F;fontStyle=1;" vertex="1" parent="lane_admin">
+          <mxGeometry x="526" y="58" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- TASK 2 (LANE 2): Menghitung Biaya & Tagihan -->
+        <mxCell id="task_2" value="Menghitung Biaya&lt;br&gt;&amp;amp; Validasi Tagihan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_finance">
+          <mxGeometry x="440" y="75" width="130" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- DATA STORE: Basis Data Finansial -->
+        <mxCell id="ds_db" value="Pangkalan Data&lt;br&gt;Finansial" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#E7F5FF;strokeColor=#1971C2;strokeWidth=1.5;fontSize=9;align=center;" vertex="1" parent="lane_finance">
+          <mxGeometry x="465" y="145" width="80" height="46" as="geometry" />
+        </mxCell>
+
+        <!-- TASK 3 (LANE 2): Mencatat Jurnal Pembayaran -->
+        <mxCell id="task_3" value="Membukukan Transaksi&lt;br&gt;ke Buku Rekening" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_finance">
+          <mxGeometry x="615" y="75" width="135" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- XOR JOIN -->
+        <mxCell id="gw_join" value="X" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9DB;strokeColor=#E67700;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#D9480F;" vertex="1" parent="lane_admin">
+          <mxGeometry x="790" y="78" width="40" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- TASK 4: Menerbitkan Bukti Layanan -->
+        <mxCell id="task_4" value="Menerbitkan Kuitansi&lt;br&gt;&amp;amp; Dokumen Bukti" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fillColor=#FFFFFF;strokeColor=#1C7ED6;strokeWidth=1.8;fontSize=11;fontColor=#000000;" vertex="1" parent="lane_admin">
+          <mxGeometry x="870" y="70" width="135" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- END EVENT -->
+        <mxCell id="end_evt" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFF5F5;strokeColor=#C92A2A;strokeWidth=4.5;" vertex="1" parent="lane_admin">
+          <mxGeometry x="1040" y="80" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_end" value="Layanan Resmi&lt;br&gt;Telah Aktif" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#C92A2A;fontStyle=1;" vertex="1" parent="lane_admin">
+          <mxGeometry x="1015" y="122" width="86" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== FLOWS ==================== -->
+        <!-- Sequence Flows Lane 1 -->
+        <mxCell id="sf1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="start_evt" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_1" target="gw_split">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Branch: Tidak Lengkap -->
+        <mxCell id="sf_revisi" value="[Tidak Lengkap]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=0.5;exitY=0;fontSize=10;fontColor=#C92A2A;" edge="1" parent="1" source="gw_split" target="task_revisi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_rev_inter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_revisi" target="evt_inter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_loop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=0;exitX=1;exitY=0.5;" edge="1" parent="1" source="evt_inter" target="task_1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="249" />
+              <mxPoint x="640" y="270" />
+              <mxPoint x="213" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Branch: Lengkap -> Lane 2 -->
+        <mxCell id="sf_lengkap" value="[Dokumen Lengkap]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=0.5;exitY=1;fontSize=10;fontColor=#2B8A3E;" edge="1" parent="1" source="gw_split" target="task_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_2" target="task_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0.5;entryY=1;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_3" target="gw_join">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="gw_join" target="task_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.5;entryX=0;entryY=0.5;exitX=1;exitY=0.5;" edge="1" parent="1" source="task_4" target="end_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Data Associations (Dotted) -->
+        <mxCell id="da1" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="do_form" target="task_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="da2" style="edgeStyle=none;rounded=0;html=1;dashed=1;strokeColor=#868E96;strokeWidth=1.2;entryX=0.5;entryY=0;exitX=0.5;exitY=1;" edge="1" parent="1" source="task_2" target="ds_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Message Flows between Customer and Org (Dashed with open circle start and open arrowhead) -->
+        <mxCell id="mf1" value="Kirim Berkas Permintaan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=5 5;strokeColor=#495057;strokeWidth=1.5;startArrow=oval;startFill=0;endArrow=open;entryX=0.5;entryY=0;exitX=0.15;exitY=1;fontSize=10;fontColor=#495057;" edge="1" parent="1" source="pool_customer" target="start_evt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf2" value="Kirim Notifikasi Revisi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=5 5;strokeColor=#495057;strokeWidth=1.5;startArrow=oval;startFill=0;endArrow=open;entryX=0.45;entryY=1;exitX=0.5;exitY=0;fontSize=10;fontColor=#495057;" edge="1" parent="1" source="task_revisi" target="pool_customer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf3" value="Kirim Bukti Kuitansi &amp; Layanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=5 5;strokeColor=#495057;strokeWidth=1.5;startArrow=oval;startFill=0;endArrow=open;entryX=0.88;entryY=1;exitX=0.5;exitY=0;fontSize=10;fontColor=#495057;" edge="1" parent="1" source="task_4" target="pool_customer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

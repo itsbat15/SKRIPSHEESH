@@ -1,0 +1,1328 @@
+Ini menyambungkan dari pendaftaran ke permasalahan pembayarannya. Di sisi pendafaran kalau misalkan itu ada dari siswa atau wali murid yang ingin membayar lewat transfer dan juga wali-murid yang mau membayarnya melalui sisa ratma ini.
+Coba oke, disol dulu ke bawah DR
+Berarti ini masih tiga
+Tiga paragraf tadi
+Masa cerita masalah ya
+Kemudian paragraf keempat itu
+Tadi paragraf yang kedua
+Pendaftaran ya
+Paragraf yang ketiga ini
+Masalah perekapan
+Pembayaran atau bagaimana
+Dari pendaftaraan
+PembAYARAN lalu di bagian
+Paragraph untuk permasalahan yang terakhirnya
+Dari sisi penjadwalan
+dan juga
+lebih ke arah penjadwalan
+dari sisi jatah siswa yang sudah ada
+yang sudah terdaftar
+untuk paragraf yang terakhir
+mengenai permasalahan ini
+lalu di bawahnya itu penjelasan
+dari atau kesimpulan
+apa yang bisa dilakukan
+dan menyambungkan ke metodologi
+yang saya gunakan
+nah gimana mengerucutkannya
+di paragrafan bawah ini
+dari beberapa
+proses-proses bisnis utama tadi
+itu berarti kan ada banyak permasalahan yang ditemukan ya. Terus disini disolusi
+apa? Disolusi kan bahwasannya karena dari permasalan operasional yang ada, dari 28
+cabang tersebut itu membutuhkan perekapan yang dilakukan setiap hari jadi
+dibutuhkannya sistem informasi manajemen dashboard untuk membantu efisiensi
+dari sisi operasional yang ada di RK 1 ini.
+Terus saya juga menyebutkan informasi itu definisinya apa,
+terus juga inputin banyak pendidikan bahwa Semi Minimu dari Ding-Bling
+juga pernah diangkat menjadi topik dari beberapa penelitihan sebelumnya
+dan dibawahnya disini saya juga langsung menyebukan
+dan menjelaskan dari beberama pendidik terdahulu
+dengan skop bimbingan belajar.
+Tadi ini kan secara konseptual ya terkait adanya sistem informasi manajemen ya
+Ini berarti arahnya sudah dihubungkan ke solusi-solusi yang sekiranya nanti akan ada
+di sistemnya ya iya benar pencapaian pembayaran berarti kan ini sebenarnya fokus langsung di
+permasalahan yang dibahas di paragraf sebelumnya Oke coba sekali ke bawah nih penelitian terdahulu
+oke ini skopnya dari bimbingan belajar sendiri saya ngambilnya kok memang yang membahas
+sama-sama bikin sistem begitu iya betul ada beberapa yang membuat sistem juga ada
+beberapa Yang udah ada sistemnya tapi masih belum dioptimalisasi khususnya untuk dari
+isi pendaftaran gitu cuman kebanyakan memang buat persisten dan rata-rata itu registrasi
+ada yang web dan juga ada yang mobile makanya saya percana juga membuat dari penggunaan
+CS itu bisa lebih versibel untuk digunakan di mobile, karena yang diminginkan oleh mitra itu akan membuat budget tersendiri untuk membeli dari tablet.
+Oke, coba di-scroll dulu ke bawah. Ini kan beberapa penelitian, ada berapa sih? Dari berapa jurnal ini?
+ini adalah 10 bu
+yang dimana ini juga dimasukkan ke dalam
+yang dimasukan ke
+perbandingan
+penilikan terdahulu di bab 2
+jadi saya
+menjelaskan paragrafnya disini
+coba diseklal dulu
+penutupnya gimana? apa yang disampaikan
+di penutupsi
+dikaitkan dengan
+sebelumnya
+yang tadi di
+penelitian terdahul
+Dari sepuluh referensi itu ke penelitian yang dilakukan ini apa yang dikerucutkan?
+Yang dikerujukkan dan perbedaan antara dari sepupu pendidikan terhadap ini,
+saya kerujukan di bagian sistematis komunikasi antar cabang.
+dimana kalau dari 10 referensi ini
+yaitu hanya
+di satu cabang saja atau
+hanya di satu demikian belajar saja
+sedangkan saya kerusutkan untuk keterkaitan dan perbedaan
+dengan arta saat ini
+memang memiliki 8 cabang
+jadi komunikasi data
+dan juga sistem itu
+perbedaannya atau justifikasinya disitu
+mungkin diperjelas
+kalimatnya barangkali ya
+kalau disini kan langsung disebutkan
+yang dari kalimat akan tetapi
+ini kan di sebelumnya akan disebutkan seluruh penelitian ini menjadi acuan fungsional bagi
+modul yang akan dikembangkan tapi yang sebelum yaitu soalnya apa nih hanya meneliti operasional
+satu cabang tunggal berarti perbedaannya lebih disitu iya untuk proses dibagian situ
+hanya di
+8 cabang itu
+oke, oke
+ya maksud saya
+apa namanya
+kan ini dari penelitian terdahulu
+cukup banyak yang dibahas
+ada 10 gitu, jadi paling tidak jangan sampai
+nanti hilang arah gitu ya pembaca
+dari 10
+ini terus mau diapain
+oh sudah ada
+statement di bawah bahwa
+dari
+penelitan tersebut akan menjadi referensi
+fitur, tapi di bab 2 ada ini enggak?
+Di bab 2 mungkin
+ada semacam mapping begitu
+dari penelitian perdahulu ini
+terkait fitur yang ada di masing-masing
+peneliti itu.
+Sudah ada Bu, saya buat
+seminggu.
+Saya juga kemarin menanyakan
+untuk penelitan terdahulu kepada Pak Arief
+karena kalau disesai dengan
+tempat itu kan hanya dari
+format itu nomor 10-10 tahun
+bermasalah gitu
+semasa penelan. Kalau saya ada menayakkan
+kalau misalkan saya tambahkan
+keterkaitan antara
+dengan apa yang ingin
+saya bawakan, apakah diperbolehkan
+dari parit
+mengatakan diperkolehkan
+apakah boleh
+tapi ini konteks
+keterkaian yang dibahas disini
+apa saja?
+keterkayaan ini lebih
+sifatnya itu
+lebih spesifik
+seperti contohnya
+Ini dia yang pertama, di sini itu dari sisi di Hive Tutoring ini menggunakan SQL Live
+dan bukan MySQL yang sebenarnya saya gunakan gitu.
+Terus juga keterkaitan secara umumnya dari 10 penelitian ini
+itu lebih merujuk persamaannya di bagian pendaftaran
+dan juga penjatahualan dari Tentor.
+Cuman dari keterkaitan di sini juga saya menjelaskan perbedaan
+dari masing-masing 10 penelitian
+terdahulu dengan
+fitur atau modul yang ingin saya
+ini 10-10 nya
+itu memang membangun
+sama-sama bangun sistem di objek
+di kasus
+enggak bu, ada juga
+yang memang dia itu hotel
+dan itu dia
+memiliki cabang
+yang banyak
+dan ini spoknya
+iya bu
+di 10 ini
+saya rasa gini
+kalau penelitian terdahulu
+yang di bab dua, ini sebaiknya
+lebih yang relevan
+dengan peneliti
+secara
+domain penelidikan
+itu berdekatan
+dengan apa yang akan dikerjakan
+jadi sebenarnya
+apakah wajib 10?
+sebenarnya tidak ada patokan
+tapi mungkin kebiasaan teman-teman
+rata-rata diminta 10
+karena kan gak mungkin ya
+penelitian yang terkait apa yang perlu dikerjakan
+gak pernah dilakukan oleh orang lain
+jadi rata-rata diminta
+sebenarnya gak harus
+tapi kalau untuk di bab 2
+menurut saya, kalau peneliti yang terdahulu
+baik yang domainnya relevan
+nah kemudian
+di tabel ini
+yang terkat keterkaitan itu
+sebenarnya tidak
+memaksakan harus
+membahas fitur gitu ya
+Keterkaitan ini bisa sifatnya lebih luas gitu. Jadi misalkan apa sih yang dipelajari dari penelitian tersebut
+yang sekiranya relevan di peneliti ini? Nah itu boleh, karena bisa jadi dari beberapa penelitan yang dibahas
+di penulitan terdahulu ini mungkin yang dippelajari bukan terkait bagaimana sistemnya
+tapi lebih ke bagaimana mendokumentasikannya
+misalnya, nah itu bisa
+gak masalah juga
+jadi dari sisi keterkaitan ini
+tidak melulu harus
+yang spesifik arahnya begitu
+nah biasanya
+kalau
+untuk memudahkan
+informasinya ditemukan
+menurut saya lebih baik nanti
+bisa dikeluarkan saja
+jadi misalkan dari 10 penelitian
+ini yang benar-benar
+membangun sistem
+gitu di
+katakanlah objek yang sama
+sama-sama bimbel
+bimbingan belajar
+ada berapa
+penelitian
+kemudian baru dimapping lagi
+fitur-fitur yang mereka miliki
+itu apa sih langsung di dalam tabel
+jadi fiturnya apa saja
+sehingga nanti
+Ariel bisa memberikan
+statement
+untuk digunakan
+di dalam sistem yang akan dibangun
+jadi atau bisa jadi
+jadi landasan atau acuan minimal
+yang harus ada dalam sistem
+yang akan dipanggung
+sifatnya lebih ke
+rekomendasi
+dari hasil studi literatur kita
+lebih mudah
+melihatnya gitu
+karena kalau dipenuhkan terdahulu ini kan bebas
+bebas aja ya
+maksudnya tidak harus
+spesifik karena kadang ada
+penelitian yang
+sulit untuk cari referensinya
+bisa sampai sekian, sehingga
+apa yang kita bahas disini
+gak harus yang sama persis
+begitu, ya bisa juga
+kalau memang terbatas referensinnya
+bisa beberapa jurnal yang
+dipelajari untuk diadopsi
+di dalam peneliti
+sebenarnya gak masalah
+jadi maksud saya
+keterkaitannya ini gak spesifik
+harus mengarah
+yang akan dipakai semua
+kita tidak juga, tapi mungkin dari sisi
+kemiripan
+domain masalah
+atau kemirapan solusi yang diberikan
+atau hal-hal lainnya
+yang sekiranya
+kemudian diadopsi dalam penelitian
+ARIL itu gak masalah
+oke baik
+jadi kalau misalkan
+saya mau
+menghapus
+dari beberapa penduduk terdahulu
+dan skop itu
+bukan membahas tentang bimbingan
+belajar tuh gak apa-apa ya.
+Berarti enggak,
+tapi ada yang dipelajari
+enggak dari situ?
+Sebenarnya ada
+di bagian
+dari komunikasi
+antar cabang ini
+karena kalau
+yang di manajemen hotel
+disini itu
+lebih dari
+arsitektur
+informasinya
+yang dimana
+dari hotelnya
+memiliki beberapa
+cabang gitu
+mulai dari
+konsolidasi
+dan rekapan
+pencatatan pelaporan
+dan juga
+hak akses
+atau rol
+dari beberapa
+peran gitu
+Iya bisa saja dipakai
+Tapi akhirnya kan untuk di poin keterkaitannya
+Ini kan sebenarnya luas
+Saya enggak mengerucut
+Spesifik ke satu poin aja
+Yang kita lihat gitu enggak
+Jadi bisa, enggak masalah
+Tapi tadi justifikasi di atas ya
+Ini kan tabel
+Tabelnya tetap dijelaskan
+Jadi nanti disampaikan dulu
+Tabel penelitian terdahulu
+Ini akan menjelaskankan
+Pertama yang akan
+diapakan sih di dalam penelitian kita
+itu disebutkan
+disitu kan research gap ya
+kalau research
+gap itu biasanya lebih ke domain
+yang sesuai
+domain yang mirip
+baru bisa ada research gapnya
+kalau misalkan memang ditambahkan
+diluar dari domain
+yang sama, tapi mungkin secara
+tadi proses
+ada yang bisa kita pelajari
+itu mungkin aruhnya
+sepertinya
+yang menurut saya kurang
+kepat kayaknya pakai research gap
+lebih ke apa
+yang kita pelajari lah intinya
+untuk kita pertimbangkan
+di dalam penelitian ini
+kalau research gap
+biasanya kita menjabarkannya
+itu di
+latar belakang ya dan itu
+bener-bener sedapat mungkin memang
+yang satu domain tadi, satu domain masalah
+dengan apa yang kita terdapat
+terakhir kemarin tuh ke metode kan ya
+iya bu, terakhiri itu di metode
+dan ini saya sudah
+jadi untuk
+dibat dua ini
+saya merancangnya
+dari
+teknologi dan metode yang terkait
+saya menjelaskan
+secara umum
+apa saja yang ingin
+yang saya buat di Baktiga nantinya, disini ada saya menggabutkan
+dari Sourish Odis, Discus diagram, RTMN,
+Kaspi Abram dan juga IRG.
+Dan sudah teknologi-teknologi yang akan saya gunakan
+di BAK3 nantikan, atau pengimunitas ini.
+Untuk subat ini pertama, disitu ada sisa informasi manajemen
+di sini saya membawaskan
+sistem informasi manajemen itu
+seperti apa dan bagaimana
+cara
+dan bagagaimana
+cara pengembangannya
+oh ini konsepnya
+lebih ke sistem informsi
+manajeman
+iya benar
+coba scroll dulu
+lalu disini juga
+langsung
+mengurusut ke bagian
+kode yang saya ingatkan
+disini berdasarkan PSP
+dan juga mengampirkan dari
+mengambilkan dari
+gambar sumber asli
+dari awal mula
+PSP itu ada
+ini di gambar sendiri kah
+atau di ambil
+dari ngambil
+digambar ulang aja ya
+gambar-gambar
+apa namanya
+gambar yang dirujuk dari
+jurnal gitu ya
+kalau masih bisa digambar ulang-gambar
+ulang aja jangan dikrot
+karena nanti misalkan
+kalau dicek plagiasi
+kayaknya bisa ke detect gitu ya
+jadi sebaiknya digambarkan
+tercuali kalau memang gambarnya sangat kompleks
+susah digambaran ulang
+mungkin ya boleh
+tapi sejauh ini sih rata-rata
+yang saya lihat ya semuanya itu
+digabar ulangi
+oke, ini dari
+di Zourof ya?
+iya, dari Zourov
+oke
+nah apa yang sudah dipelajari
+dari tahapan ini
+dari tahap ini
+yang saya pelajari itu
+pertama dari requirement ini
+dari sisi analisis kebutuhan
+sebenarnya sudah
+saya lakukan
+beberapa kali dengan kita
+dan juga saya udah jelaskan
+yaitu di bertiga bahwasannya
+di requirement ini perlu
+ada penbuatan
+atau prioritas kebutuhan
+apa saja berdasarkan
+dari asli yang secara
+atau singkatnya
+benar-benar
+penumpulan informasi
+dari asla masyarakat
+dan ini dari kita itu
+harus menemuskan
+prioritas
+apa yang akan diperjakan pada
+tahapan berikutnya
+saya potong
+boleh
+Oke di bagian bawah gambar ini ada dijelaskan enggak tempatnya
+Hai adanya tapi sisi aras banget ini kebutuhannya dia yang disampaikan sama
+nah ini rujukannya dari mana dari Zoroz tak penjelasan dari Zorof judul ibu oke satu paragraf
+saja penjelasan untuk misalkan tangkan requirement ya tadi yang disampakan
+tadi kalau requirement ngapain identifikasi kebutuhan kemudian apa yang dilakukan terus
+merumuskan ke kebutuan pengguna dibuatkan kedalam user stories gitu dan menumpulkan
+atau merugiskan dari sesuai identitas kayaknya sesuatu kebutuhannya ditutupan oleh user story
+Sudah, sampai di situ saja berarti
+Tahapan iklan ini
+Iya
+Oke
+Sebentar
+Kemudian yang tahapan yang kedua
+Masuk ke perencanaan ini
+Ini dari
+Planning
+Untuk penentuan prioritas
+Yang juga
+Penentuan siklus operasi
+Yang dimana itu biasakan
+Story point berdasarkan
+Dari Fibonacci
+di mana ada 3, 5, 8 dan seterusnya
+untuk mengukur dari
+pengembang yang
+melakukan
+pendevelopan sendiri
+itu berapa
+berapa kesesuaian
+berdasarkan step-step
+yang sudah dijelaskan di story point
+jadi menentukan prioritas dulu
+disini
+kalau yang tadi yang pertama
+itu mengidentifikasi kebutuhan
+terus yang kedua disini
+baru menentukan prioritas
+apa saja
+tas-tas atau kebutuhan yang
+harus dikerjakan
+dengan situ situasi yang sudah ada di dalam metode
+GSP ini
+oke, ini ada referensi tambahan
+disini ya
+sebentar
+ini kan
+disini disebutkan
+teknik estimasi
+story point
+memang kalau
+dari referensinya dari suraf
+Atau menyebutkan langsung to the point seperti itu?
+Kalau ini dari referensi tambahan Anda.
+Sebenarnya kalau untuk yang gambar ini memang dari Zurok Bu,
+cuman kalau yang saya menjelaskan di kebutuhan sampai ke tahapan-tahapan disini tuh
+menggambungkan dari beberapa referensinya yang saya baca sih.
+Tapi yang dari Zorok saya udah dibaca ya?
+Yang dari Zorok saya ngebaca dari gambar itu juga tahapan dan definisi
+enggak sebegitu
+banyak
+cara saya
+karena Zurov itu kan
+yang mengembangkan metode BXP-nya
+jadi
+sebaiknya untuk di babua
+nanti tetap dibaca dulu
+tahapan
+yang
+deskripsi atau penjelasan
+masing-masing tahapan
+BXB
+yang ada di referensinya
+dari Zurove itu seperti apa
+itu sebaiknya dibaca dulu
+kalau misalkan nanti setelah dipelajari
+ada informasi yang sifatnya
+masih cukup umum
+begitu
+masih ada yang mungkin kurang jelas
+istilah-istilah tertentu
+yang belum bisa dipahami
+nah, nanti saran saya boleh
+silakan berikutnya dikembangkan
+dari jurnal yang lain
+tapi
+sebagai validasi utama
+tetap mengacu ke
+pengembang bedanya
+nanti ketika
+membuat
+penjelasan yang juga dua ini
+baru dijelaskan ya, kalau misalkan
+memang
+apa
+sebagai referensi utama itu dari
+tapi kemudian di beberapa
+tahapan atau ketika menjelaskannya
+tahapan ini
+karena adanya mungkin tadi
+informasi yang masih kurang jelas
+sehingga membutuhkan referensis tambahan
+baru kemudian merujuk ke
+sumber lainnya. Tapi itu
+dijustifikasikan, disebutkan gitu ya
+karena kan
+kalau dari sisi pengembang metode
+kan zurot
+sementara kan untuk mengetelkan ini
+sebenarnya bisa jadi ada
+macam-macam cara yang dilakukan
+apakah memang mesti selalu bikin
+apa nih
+kalau di tahapan yang awal tadi
+apakah membuat yusuf story
+itu disebut kan spesifik
+enggak?
+enggak ada situasinya
+nah itu maksud saya
+bagaimana kemudian disini diinterpretasikan
+bahwa oh ditahapkan
+requirement itu harus membuat
+user story karena sebenarnya
+kebutuhan itu tidak perlu harus dalam
+user story
+jadi itu setidaknya
+ada
+landasannya
+kenapa pada akhirnya yang
+dituliskan disini dibagua
+ini adalah user story
+Karena ini kan nanti akan jadi acuan nih, jadi acuang juga tiga ya untuk metodologi.
+Jadi paling tidak secara konsep dulu dipahami sebenarnya apa saja sih yang dilakukan oleh peneliti itu
+yang dalam konteks ini kan menurut yaitu.
+Dilakukan itu sebenarnya best practice-nya seperti apa?
+Soalnya untuk mendefinisikan kebutuhan nih, oh sebenarnya macam-macam caranya
+dan Zurof pun kan gak mendefinifikkan
+harus pakai cara yang mana, berarti bebas
+setelah itu dari sisi
+pengembang, oh dia bisa menentukan
+cara yang lebih mudah atau
+yang lebih relevan untuk dia pakai
+tapi kan ada pertimbangan lagi
+saran saya sebaiknya gitu ya
+sama sih
+yang ke bawah juga kurang lebih seperti itu
+misal contoh yang tahapan ketiga
+itu kebelakatan ketiga
+itu kan ada
+dari mana itu?
+ini dari
+referensi yang
+menjelaskan untuk
+kalau misalkan di setiap
+setiab
+siklus iterasi
+itu diperlukan untuk pencatatan log
+untuk kapasitas
+dari program ini
+bisa mengerjakan satu
+sikus iterasinya
+tapi seingat saya disuruh
+Nggak bilang seperti itu
+Sepertinya ya
+Iya kan
+Coba nanti dibaca
+Setidaknya kalau memang ada
+Hal detail terutama di hal teknis
+Yang kita tambahkan
+Itu sesuatu yang
+Kita kembangkan dari
+Metode itu
+Karena sebaiknya rujukan awal
+Kalau memang ada hal
+Yang dia menyebutkan masih abu-abu
+Dan kita masih ragu
+Ini bisa dikerjakan cara apa saja
+baru kita cari referensi yang lain
+mungkin oke
+salah satu bentuknya disini
+untuk tahapan ketiga akhirnya ada
+time recording log
+bisa jadi penelitian orang lain dia gak pake ini
+tapi pake cara yang lain
+jadi sebaiknya jangan
+dikunci di bab dua ini menurut saya
+kalau memang ada beberapa opsi
+sebenarnya bisa dilakukan, sebutkan aja
+ada opsi apa saja
+jadi nanti yang di bab tiga
+baru Aril kunci apa yang akan
+Aril kerjakan
+misalkan, oh iya
+berarti dari apa yang sudah saya pelajari yaudah sebaiknya
+nanti di penelitian ini
+saya buat time recording log aja deh
+nah itu disebutkan di bab tiga
+sebenarnya ada macam-macam cara gitu ya
+yang bisa dilakukan
+contoh di yang nomor 4
+ini nih
+ini kan ada disebut
+diagram standar rekayasa perangkat lunak
+seperti BPM
+use case class diagram
+IR di BPM itu
+bukan diagram standarnya KSA perangkat lunak
+kursus bisnis
+itu diluar dari
+diagram standar loh itu sebenernya
+tidak semua orang yang
+bikin sistem harus bikin
+BPM dulu
+tapi di peneritian ini kan Aril diminta ya
+iya gak sih
+jadi jangan dikunci disini
+masih ikan saja
+ya tadi di diagram
+memang berhubungan dengan arsitektur
+rangat lunak seperti apa
+boleh disebutkan yang biasa dipakai
+boleh-boleh saja, tapi nanti
+di bab tiga sih menu saya
+dan saya rasa BPM itu
+sepertinya tidak keluar
+di tahapan keempat ini
+harusnya hanya di awal
+karena itu kan jadi rujukan
+untuk user story
+dan seterusnya
+jadi keluarnya bukan
+di tahapan design ini, karena
+tahapan desain ini kan sebenarnya kalau meruncuk
+ke SDLC-nya
+itu adalah tahapan dari
+siklus pengembangan sistemnya
+sementara kalau BPN itu kan kita
+memahami proses bisnisnya dulu
+itu diluar dari sistem
+jadi harus paham itu dulu baru bisa
+memaham desain kebutuhan sistem
+kayak bisa dibedakan ya?
+iya bu
+oke
+nah itu jadi jangan dikunci dari sini
+nah ini juga
+sama sih yang saya bilang
+jadi TDD
+karena tidak semua orang PXP
+pakai TDD loh ya
+gitu
+jadi nanti coba dibaca lagi
+saran saya untuk tahapan ini
+apa namanya
+sifatnya karena ini lebih kebab dua
+tinjauan bustakal
+konseptualnya dulu lah
+yang kita pelajari
+oke oke terus ini setelah dari tahapan ini saya menjelaskan yang tadi
+ini masuk ke bab apa di bab2 nya
+kalau di ini oh di metodologi kan
+Hai ibu kajian teknologi atau metode terkait Oke coba berarti outlinenya selain dari tadi
+PXB kemudian ada user story yang dijelaskan diagram-diagram yang dipakai juga ya Bu disini
+setelah dari misal story sedih memiliki informasi seperti apa lalu contoh ya Iya gitu
+lalu ada use case diagramnya, disini isinya tabu untuk simbol-simbolnya.
+Lalu ada activity diagram untuk aktivitas dari setiap user-nya
+serta komunikasi antara sistem dan user
+kalau ada class diagram
+Nah yang class diagram ini sebenarnya saya juga ingin bertanya
+kan kalau untuk dari proses bisnis saya membuatnya di TNN itu juga cuman kemarin itu dari Pak Arief
+tuh memastikan kesalahan apakah BPNN ini bisa ada diagram lain yang sama persis menjelaskan
+proses Bisnis dan pribadi. Dan saya rasa itu ada di bagian aktivitas di tmn itu sebenarnya hampir
+mirip untuk penjelasan prosesnya tetapi kalau diaktiviti diagram ini lebih cara komunikasi antara user dan juga sistemi
+jika di PTM itu lebih secara umumnya gitu menjelaskannya
+tapi pada akhirnya yang saya rencanakan itu ingin menggunakan dtm dan juga aktivitas diagam
+dengan mulanya dari PTM ini untuk menjelaskan secara Umum
+dan untuk aktivitas diagram ini menjelesaikan secara detail antara users dan juga sistem
+dan kedua di sini ada dari kelas diagram dan juga yang saya buat itu juga ada IRD
+cuman dari yang saya tangkap untuk kelas Diagram dan IRD ini hampir sama
+tapi mungkin yang besar untuk keas biografi akan saya hapus dan itu didamakan dengan
+berarti juga di table dan juga gue ini juga enggak ada belum ada BPM untuk hinjak kesukannya
+yang tadi berarti untuk BPN, diagram BPN dan aktifiti akan dipakai, berarti kan ya?
+Iya Bu.
+Kalau tadi pertanyaan Pak Arief terkait apa sih sehingga akhirnya Arief menambahkan kutipi jalan-jalan itu?
+Kemarin tuh saya mengelaskan setelah dari gindingan buaya itu,
+buaya menyarankan untuk menggunakan BPNM ini.
+Terus dari Pak Arif mintaikan kalau dari diagram OML ada beberapa yang hampir sama dengan apa yang dijelaskan di TNN, itu tolong dipelajari lagi gitu.
+Bilangnya seperti itu sedih.
+Dan pada akhirnya saya menyukiskan kalau menggunakan kedua-duanya gitu.
+Karena menurut saya, dari yang saya baca dulu penjelasannya di pilihan ini
+Itu lebih menjelaskan proses bisnis secara umum
+Dan untuk aktiviti diagram ini
+Proses bisnes plus sistem yang menggambarkan
+Cara berkomunikasi mental asisten
+Yang juga user yang menggunakan sistem peserta
+Oke, terus ada apa diagram?
+Apa lagi yang mau dibuat ya?
+Tadi use case juga ya
+kemudian kelas yang mungkin saya kasih pertimbangan gini
+ini nanti kalau sudah selesai
+ini ada yang akan mengelolanya enggak?
+akan ada yang mau maintenance system ini enggak
+untuk saat ini, itu dari tentornya sendiri
+tapi untuk tentor sendiri yang saat ini memang lagi ngelola website
+dari kompronya RTL itu sendiri
+memang orang IT kan beliau enggak Bu memang sensornya juga berarti nggak akan paham kalau
+misalkan ada brok di sistem harus perbaiki kode program gitu enggak bisa ya Iya sepertinya tidak
+mungkin pertimbangan saya gini Ariel ini kan sebenarnya fokus temennya mau cepat jadi kan
+ya iya karena kan targetnya juga ini prototype kemudian ingin segera bisa
+implementasikan untuk menyelesaikan masalah
+seperti saya gini
+terus ini kan pakai metode aja
+pertanyaan saya pertama
+apakah memang semua diagram yang ada di sini
+perlu untuk dibuat
+itu pertanyaannya pertama
+kemudian yang kedua
+karena begini
+kalau misalkan, ini kan cukup banyak
+diagramnya ya, ada dari use case
+ada kelas, ada activity
+kalau IRD
+ya wajib lah, karena itu kan
+memetakan
+hubungan antara entitas yang ada
+di dalam sistemnya
+kan memang perlu ada
+dan itu kan
+diluar dari UML
+tadi yang UML
+ini cukup banyak
+apakah semuanya perlu adakah
+di dalam pengembangan ini
+karena nanti Ariel juga harus
+pertimbangkan, berarti akan ada waktu
+yang digunakan untuk menyusun diagram-diagram
+ini
+bertanyaan saya berikutnya
+ini kapan akan disusun
+apakah nanti seiring
+berjalan PHP disusuna
+atau diagram-diagram ini
+akan disusan di akhir sebagai
+dokumentasi keseluruhan
+karena poinnya
+nanti bisa jadi berbeda
+kemudian
+mungkin dipikirkan lagi
+karena ini kan mitranya
+juga bukan dinas
+kecuali ini
+kalau misalkan dinas
+saya rasa walaupun teman-teman
+pakai EJEL, teman teman
+buat dokumen oleh dinas
+karena mereka gak bisa hanya
+menurut sistem jadi tanpa ada dokumentasi
+terus mungkin kita lihat juga
+dari
+apa namanya
+dari mitranya
+apakah dari mitra juga mewajibkan
+atau dari mita
+apakah nanti akan mengembangkan lebih lanjut
+misalkan, atau akan ada pengelolaan
+dan segala macam yang berhubungan
+dengan sistem sehingga
+memang mereka memerlukan
+dokumentasi yang cukup banyak
+nah itu juga perlu dipertimbang
+kalau misalkannya sebenarnya tidak ada
+permintaan begitu ya
+atau tidak ada pengharusan untuk
+ada dokumentasi
+yang cukuk detail begitu
+saran saya pilih aja
+kalau memang perlu diagram
+pilih aja yang diagram yang minimal ada
+jadi tidak semuanya harus ada
+karena kalau misalkan semuannya dibuat
+itu kan tentu pertama waktu
+itu juga perlu dipertimbangkan
+terus dari sisi
+kemiripan
+apakah ada diagram yang mirip
+fungsinya bisa saling menggantikan
+misal contoh
+diagram
+ada use case diagram
+Kemudian juga ada user story
+Nah itu fungsinya saling melengkapi
+Atau bisa saling menggantikan enggak
+Misalkan ya
+Coba nanti dilihat kembali
+Sehingga maksud saya disini
+Saya ingin Ariel mempertimbangkan
+Apakah memang perlu sebanyak
+Itu diagram yang perlu dibuat
+Karena penekanannya tadi kan
+Lebih pada prototip
+Yang ingin segera
+Bisa diimplementasikan
+Coba mungkin nanti
+Boleh
+Dipelajari kembali saja
+Urgensi dari masing-masing diagram ini
+Atau apakah memang perlu
+Wajib ada di setiap pengembangan
+Kalau misalkan yang memang perlu wajib
+Ada minimal yang mana sih
+Sarun saya bisa pakai itu
+Dan nanti bisa memberikan justifikasi
+Demikian
+Di dua nya
+Semuanya kita gunakan
+jadi pertimbangan
+seperti itu, misalkan tadi
+masalah kelas diagram dan
+IRD itu mirip
+tapi itu berbeda
+mungkin itu bisa ditahu dulu ya
+jadi bukan berarti karena dia
+mirip, kelas diagram bisa menggantikan
+IRD
+nah itu coba nanti dipelajari dulu
+karena secara konseptual itu berbeza
+kalau untuk dari sisi misalkan tadi tuh saya ragu di bagian pertimbangan antara BPMN dan juga
+terus juga tadi kesampaikan itu keluarga juga pertimbangannya
+yang saya rasanya sepertinya untuk dari mitra sendiri itu akan nggak bisa
+mengenai dari diagram BPM dibandingkan dengan aktif diagram, karena disitu juga agak sistem
+yang memiliki. Ya karena fungsinya kan berbeda ya kalau BPM itu kan lebih untuk
+memetakan dulu proses bisnis yang ada dan bisa jadikan sebelum membangun sistem kita kan tidak
+langsung apa ya langsung gitu aja ya Oh yaudah prosesnya gini kita langsung menjadikan fitur
+aja di sistem bukan tidak seperti itu karena didalam IPM sendiri kan sebenarnya ada proses
+kita untuk menganalisis juga atau aktivitas yang akan diproses kalau memang bisa diefektifkan
+atau dieliminasi, misalkan gitu ya
+diefisienkan
+sebenarnya bisa
+jadi nanti apa yang masuk ke sistem itu
+sudah merujuk ke proses
+yang lebih baik
+daripada yang berjalan es
+sementara kalau aktiviti
+kan tidak menjelaskan itu
+aktiviti yang menjelaskan
+berarti kondisi saat ini
+di sistem
+terimplementasi
+mungkin saya
+bagian yang paling saya pahami adalah
+apakah dari UML-UML ini
+harus semua atau sebenarnya
+ada beberapa yang harus dikenalkan
+itu sebetulnya
+nanti coba baca lagi
+dari jurnal-jurnal
+informasi sistem
+mereka pakai
+diagram kalau UML minimal
+apa saja sih yang harus ada
+atau bisa juga nanti
+baca dari referensi terkait
+UML-nya itu sendiri
+urgensi dari masing-masing
+diagram itu kan berbeda
+dan juga untuk
+fungsi yang berbedaan
+paling tidak kan tadi
+kalau saran saya memang harus ada
+diagram ya, diagram minimal aja
+karena kan enggak dituntut, ada dokumentasi
+kecuali kalau memang
+dari
+mitranya
+meminta ada dokumentansi lengkap
+segala macam
+Oke, sisanya ini berarti teknis
+Teknis teknologi
+Dan juga
+Resipi PIA
+Ini juga dimasukkan
+Mungkin nanti bisa disebutkan
+Kalau untuk yang
+Teknis-teknis tadi
+Itu akan dipakai di bagian mana
+di dalam penelitian dijelaskan di bab 2 ini eh ya nggak papa di paragrafnya
+terus juga disini dari 22 yang tadi sini penduduknya ini ada yang perlu dijelas
+saya masih sama seperti yang
+saya jelaskan sebelumnya
+ya, saran saya
+seperti yang tadi itu aja untuk penonton
+nanti dilihat kembali
+kalau memang sebenarnya
+domain masalahnya itu beragam
+menurut saya
+jangan disebutkan
+keterkaitannya hal terbatas
+fitur gitu ya, berarti memang
+secara umum apa yang dipelajari
+untuk diadopsi dalam pengetahuan ini
+dan dulu
+di sini bertugas saya sudah menyesuaikan dari penjelasan ini.
+Bertulah sendiri, saya menyusunnya dari yang pertamanya ketika penyelit pandu
+seperti apa, disini saya menjelaskan secara umum
+dan dari sisi jars besar korekat-korekat ini
+menjelaskan
+kalau misalkan pada
+ujungnya itu harus membutuhkan apa
+untuk mengecahkan
+kemasalahannya terjadi
+oke ini
+umum kan ya
+sebentar
+tapi ini digabung
+begitu ya, coba liat
+sempatnya saja kan
+garis besar prototek
+coba
+kalau di struktur penulisannya
+3.1 ini 3.2 bahasa
+3.1 itu membahas
+3.2 itu garis besar protek
+yang bagian ini memberikan
+gambar singkat tentang apa yang akan dilakukan
+dan hasil yang disapai
+dari protek yang dikerjakan
+saya sering
+seperti ini
+ada tiga bagian
+kalau gitu
+saya rasa
+coba masih ada
+3.4 atau tidak
+konsepnya
+Hai cuma terakhir ini jadwal ketiga titik saya kalau menangkap dari sini kan sebenarnya itu lebih
+ke informasi singkat aja sih Oke beritahu panjangnya iya menurut saya terlalu banyak tadi penjelasannya
+karena hanya diminta garis besar prototep ya jadi intinya menjelaskan apa yang dibuat saja dalam
+ini tidak perlu diulang lagi permasalahannya jadi apa dikerucutkan saja disini gitu ya karena kita
+udah ngomongin solusi Hai minggu masih panjang sekali ada metodenya juga saya rasa nanti fokus
+di bawah saja ini juga disini dari sistemnya untuk jadi setiap player yang ada ini bukan
+di bab inikah dimasukkan tiga titik empat bukan
+yang punya saya gue bukan tembakan
+sebenarnya rancangan awal tuh bisa arsitektur atau kalau misalkan ini
+bisa apa namanya termasuk user story
+sudah lumayan detail ya kalau yang tiga titik empatnya apa yang harus jelaskan
+disini saya menjelaskannya dari SS nya sama kudu berdasarkan
+berdasarkan proses
+bisnisnya saat ini terjadi
+disini juga ada melakukan
+DPMN-nya
+tapi ini sudah divalidasi
+sudah bu, sudah saya melakukan
+wawancara kembali dengan Mitra
+yang TUBI juga sudah ditujukan
+dan sudah divalidasi
+iya bu, itu kalau untuk TUB
+memang sudah saya ada
+beritahu di manajemen
+itu
+di awal wawancara sama kemarin juga
+dilakukan validasi kembali
+dengan mitra
+dan mereka sudah setuju
+iya, karena saya sebelumnya
+udah membuat wireframe-nya
+dari rancangan
+visualisasi untuk dashboard
+jadi kemaran saya ada
+merancang wireframe terlebih dahulu
+lalu, eh sebelum ini
+saya jelaskan dulu proses bisnisnya
+apakah sudah sesuai, baru apa yang saya
+mekerjakan dan juga visualisisi dari wireframe
+Saya rasa itu
+Masuk ke konsep ini aja deh
+Konsep intik bahkan
+Sumpah-sumpah 3.4 ini
+Yang masih tektur tadi
+Maksudnya kesini aja
+Nanti dibuat kalau mau dipisahkan
+Berdasarkan subsub
+Jadi
+Mungkin nanti diurut saja dari apa dulu
+Yang dikerjakan gitu apakah lebih
+Proses bisnisnya dulu atau memang
+merancang arsitektur
+sistem secara keseluruhan
+jadi itu nanti diurutkan
+termasuk tadi
+kalau memang ada wireframe
+yang
+apa
+ya didiskusikan begitu ya dengan mitra
+ya dimasukkan saja disini
+menurut saya
+untuk wireframe
+itu saya taruh
+di bagian
+dari sisi
+terus ini
+Sebelumnya saya meletakkan kebutuhan fungsionalnya terlebih dahulu dari sistem yang dibutuhkan,
+dan juga dari fungsian lain.
+Untuk QRFrame itu malah saya taruh di paling bawah sih.
+Karena sebelumnya sudah membuat pada use case dengan diagram lainnya.
+Oke, saya rasa ini terlalu banyak
+nanti untuk dimasukkan di proposal
+yang mungkin dipilih dulu saja
+karena sebagian besar
+diagram kan sebenarnya luaran
+dari tahapan desain dan kalau merupakan
+experience
+Jadi
+untuk gambaran konseptual
+prototeks, saya rasa pilih
+apa namanya
+arsitektur
+boleh dimasukan
+kemudian
+Sistem ini akan dibangun dari proses bisnis
+Mungkin gambaran proses-proses yang akan diterjakan
+Yang lain-lain ini menurut saya nanti di cut aja
+Disimpan dulu aja
+Ini diagram-diagram UML yang banyak
+Walaupun saya sudah tentukan apa yang mau saya gunakan
+yang kedua untuk batasan di konsep prototip misalnya nggak usah semua karena kan ini ada
+yang luaran dari tahapan PXT nya itu jadi udah masuk ke bahasa bakempat kalau misalkan memang
+dipakai tapi ini adalah apa namanya hasil dari tahap 4 saya rasa nanti simpan dulu saja
+kalau misalkan seminar ditanyakan
+boleh ditunjukkan, tapi kalau nggak ditanya
+udah disimpan dulu aja
+sampai yang tadi dulu aja menurut saya
+wireframe itu nggak paham
+sudah cukup banyak
+ada gambaran di konsep protokol
+berarti kalau
+yang bisa saya tangkap
+kalaupun nanti pada akhirnya
+saya menggunakan
+contohnya misalnya disini ada
+arti cukup diagram
+saya ada sebuah jam untuk
+jalan tiga
+kalau misalkan nanti mungkin satu aja gitu loh pada akhirnya untuk diproposkan yang
+berikutnya untuk di proposal saya enggak usah dulu karena kan udah masuk ke tangapan desain
+karena harusnya kali nggak di konsep prototip ini tuh requirement ya
+jadi kalau terlalu banyak saya khawatirnya juga terlalui banyak ya apa namanya nanti
+juga akan banyak yang dipinggalkan kebanyakan jadi lebih baik dipisahkan dulu kalau memang
+sifatnya terlulu detail atau udah membahas hasil 4 ini oke berarti mau ngomong-ngomong
+kalau misalkan user story kan juga termasuk dari
+jadi kalau user story yang seperti ini
+udah benar ya Bu
+dari user story
+untuk requirement-nya
+kalau seperti ini
+aman ya
+maksudnya aman gimana
+bisa dimasukkan ke
+web 3 gitu
+user story sementara gak apa-apa
+dimasukan nanti
+user story, wire to friend
+dan juga di TNN
+Oke dikelirkan dulu yang tadi lah
+Yang saya minta
+Sehingga nanti justifikasinya
+Lebih jelas
+Jadi batasan
+Di bab tiba yang mau dituruskan pun
+Menjadi jelas juga
+Karena kalau misalkan di bab duanya
+Belum clear
+Informasinya gitu ya
+Apa
+Ini diperoleh dari beberapa referensi
+atau misalkan memang kalau perlu
+merujuk ke referensi utamanya dulu, ya dibaca
+dulu referensinya utama. Kalau nanti
+mau dikembangkan dengan
+referensikan tambahan, ya disebutkan
+sehingga apakah
+yang dipakai
+pada akhirnya di penelitian ini adalah
+yang pengesuaian dari referensik tambahan
+seperti itu. Jadi itu perlu dikliarkan
+di bab 2
+jadi nanti pas
+ngecek bab 3 itu lebih
+mudah ya. Bab 3 itu kan
+validasinya di bab dua
+karena kalau bab duanya
+masih ada hal-hal yang
+belum clear ya
+agak sulit akhirnya mengecek
+ini referensi nya mana
+oke baik
+mungkin itu dulu deh
+nanti kita bahas lagi ya
+setelah adil coba
+sedikit literatur
+mungkin pertanyaan terakhir
+untuk duduk
+saya
+bisa mengajukan ya
+maksimal 12 kata
+nanti cek di panduan
+saya lupa berapa kata
+tapi biasanya ada
+ketemuannya
+jadi panduan aja
+kalau nanti kepanjanganku
+sehingga waktu seminar juga mungkin akan direvisi juga gitu
+Oh iya saya memastikan Bu, untuk besok itu berarti ada batas terakhir ya Bu?
+Untuk projekturnya itu nggak?
+Itu kan yang direkomendasikan maksud saya teman-teman
+Mungkin nanti silahkan konfirmasi aja ke dosen ini
+Kalau rekomendasi saya seperti itu
+Maksudnya takutnya enggak apa ya beliau-beliau ini kan kesibukannya juga banyak kalau misalkan
+mepet-mepet ternyata hasil cek plagiasinya tinggi kalian harus perbaiki ya kemarin yang
+saya rekomendasikan tapi mau nanti ditanyakan lagi aja ya baik itu mungkin itu aja yang saya
+berikutnya akan saya pas kembali untuk pembacaan literaturnya
+sesuatu dengan istri untuk penggunaan
+Oke oke
+silahkan
+kalau mau les nggak apa-apa
+Kemarin
+Memastikan
+Kembali metodenya
+Oke
+Tapi sudah bimbingan lagi
+Sama Bu Yuyun
+Baru besok
+Bisa
+Gimana
+Saya belajar
+Jadi untuk
+yang saya cari tahu
+kemarin kan saya carai tahu terkait
+masing-masing metode dari POM sendiri
+dan EWCS sendiri
+untuk
+masing penilaiannya itu
+yang pertama untuk kami sendiri
+adalah penilaan terkakit
+kemudahan sistem dan juga pemanfaatan sistem
+sedangkan kalau misalnya
+EWKS itu lebih fokus
+kepada
+tampilan atau kepada sistem
+kepada
+penggunaannya itu
+bagaimana penggunaannya
+terhadap sistem
+jadi mulai dari operasinya
+formatnya
+kemudahannya
+dan manfaatnya
+seperti itu
+untuk UCS
+lebih fokus kepada sistemnya
+lalu kalau untuk di atamnya
+lebih fokus ke persegi
+dari penggunanya
+dari yang selesai bandingkan
+dengan metode lain
+seperti UU TAUT
+dan juga
+TPD, saya sudah melakukan
+perbandingan metode
+ini kan fokusnya
+kepada penerimaan sistem
+penerima pengguna terhadap
+sistem dan juga kekuasaan dari penggunat
+terhadapi sistem. Jadi kalau untuk
+hasil perbandungan metoda
+terutama kemarin
+dengan metode
+utaud itu sendiri
+jadi kalau utaud setelah
+saya contoh itu dia
+fokus-nya kepada faktor-faktor
+yang mempengaruhi niatnya
+dari pengguna untuk menggunakan teknologi
+tersebut, sedangkan kalau
+saya dikenalikan saya ini kan
+penerimaan pengguma
+terhadap sistem medik, kalau misalnya
+dinilai dari
+metode
+yang digunakan itu
+lebih masuknya
+di TAM dan juga
+di EUCS
+karena DITAM-nya sendiri
+itu menilai
+dua tadi yang terkait
+penerimaan
+kemanfaatan dan kemudahan dari
+sistemnya itu sendiri
+seperti itu
+kalau yang EWCS
+lebih ke apa?
+EWCs itu lebih ke
+penggunaan sistemnya, jadi informasi
+yang ada di dalam sistem mulai dari fitur
+yang ada terus juga
+informasi yang ditampilkan
+kemudian dalam misalnya
+kayak upload dokumen
+ini
+XIA ini apa?
+kalau yang saya cari tahu
+jadi ini
+yang dinilai dari sistem list tersebut
+nanti
+user satisfaction itu
+hasilnya yang
+ingin didapatkan
+coba lihat
+yang tambah
+X dan Y
+kalau misalnya untuk metode
+integrasi saya sendiri
+Saya ada
+Modulnya itu kan
+Itu pengaruh
+Dari
+Variable dari
+Variable yang
+PU dan
+PEOU
+Mulai dari variable
+Yang ada di UCS
+Selalu dikaitkan atau
+Pengaruhnya terhadap
+Etitut power fixing baru nanti
+Menilai dari etitut
+Power fixing itu ke user satisfaction
+ini yang kemarin saya tanyakan
+ada referensinya
+atau belum
+kalau untuk referensi
+untuk model ini
+untuk jurnal yang internasional
+saya belum ada menemukan
+tapi kalau untuk
+dari jurnalnya
+yang saya cari
+itu ada beberapa yang menggunakan
+gabungan seperti ini
+ya gabungannya
+ini yang pertama jadi ada di sini untuk pengaruh-pengaruh yang dinilai juga sama
+mulai dari ini variabel dari tamnya lalu ini ada dari LCS dan pengharunya terhadap
+Ini kayaknya belum ganti
+Screen nya masih sama
+Ada di dalam bentuk perbandingan metode
+Untuk penelitian yang
+Saya jadikan referensi untuk modenya
+ini akreditasi berapa jurnalnya
+Sinta 3
+yang lain
+yang juga menggunakan
+modul seperti ini
+ini juga
+Sinta 4
+sama juga
+modulnya
+objeknya apa
+Ini objeknya
+Sistem dapodik
+Sekolah dasar
+Sebelumnya itu e-learning
+Lalu kemarin
+Ibu ada mempertanyakan terkait
+Dimensi dari EWCS
+Yang kemudahan dan juga
+Persepsi kemudian pembunuhan
+Dari TAM itu sendiri
+Nah itu saya sudah tahu juga
+Kalau misalnya perbedaan pengukuran
+itu kalau di
+EUCS ini lebih kepada
+kemudahan dalam misalnya
+upload dokumen lalu juga
+meng-inputkan data
+kayak gitu-gitu
+ini lebih fokus
+ke dalam sistem
+kalau misalnya
+EUCS
+itu
+lebih fokus
+seperti kemudahan teknologi
+yang ditunakan
+jadi skopnya berbeda
+berbeda
+tapi ada beberapa jurnal ini
+yang membahas model yang sama
+ada
+ada
+3 buku
+mungkin boleh dibuka
+salah satunya
+dari
+yang referensi tadi yang dipakai
+coba mungkin
+dilihat
+pengolahan datanya seperti apa?
+kalau pengolahan datanya
+itu saya mencari tahu
+yang menggunakan
+metode SMPLS
+yang ada
+tiga-tiganya sama
+pakai SMPL
+dan tiga referensinya
+Terima kasih.

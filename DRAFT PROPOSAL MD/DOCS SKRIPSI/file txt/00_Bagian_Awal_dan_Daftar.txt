@@ -1,0 +1,408 @@
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 1]
+================================================================================
+ 
+ 
+ 
+ 
+ 
+PROPOSAL 
+TUGAS AKHIR PROTOTIPE 
+ 
+ 
+RANCANG BANGUN SISTEM INFORMASI 
+MANAJEMEN OPERASIONAL BIMBINGAN 
+BELAJAR BERBASIS WEB MENGGUNAKAN 
+METODE PERSONAL EXTREME PROGRAMMING 
+(STUDI KASUS: BIMBEL ARTHA BALIKPAPAN) 
+ 
+ARIEL ITSBAT NURHAQ 
+NIM 10231018 
+ 
+ 
+ 
+Program Studi Sistem Informasi 
+Jurusan Teknik Elektro Informatika dan Bisnis  
+Fakultas Sains dan Teknologi Informasi 
+Institut Teknologi Kalimantan 
+Balikpapan, 2026
+ 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 2]
+================================================================================
+ 
+ 
+ 
+ 
+ 
+ 
+PROPOSAL 
+TUGAS AKHIR PROTOTIPE 
+ 
+RANCANG BANGUN SISTEM INFORMASI 
+MANAJEMEN OPERASIONAL BIMBINGAN 
+BELAJAR BERBASIS WEB MENGGUNAKAN 
+METODE PERSONAL EXTREME PROGRAMMING 
+(STUDI KASUS: BIMBEL ARTHA BALIKPAPAN) 
+Disusun untuk memenuhi salah satu syarat kelulusan​
+memperoleh Gelar Sarjana Komputer 
+ARIEL ITSBAT NURHAQ​
+NIM 10231018 
+Dosen Pembimbing 
+Arif Wicaksono Septyanto, M.Kom.​
+Sri Rahayu Natasia, S.Kom., M.Si., M.Sc. 
+ 
+Program Studi Sistem Informasi 
+Jurusan Teknik Elektro Informatika dan Bisnis  
+Fakultas Sains dan Teknologi Informasi 
+Institut Teknologi Kalimantan 
+Balikpapan, 2026 
+2 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 3]
+================================================================================
+ 
+LEMBAR PERSETUJUAN 
+ 
+ 
+Proposal Tugas Akhir dengan judul : 
+ 
+RANCANG BANGUN SISTEM INFORMASI MANAJEMEN 
+OPERASIONAL BIMBINGAN BELAJAR BERBASIS WEB 
+MENGGUNAKAN METODE PERSONAL EXTREME 
+PROGRAMMING (STUDI KASUS: BIMBEL ARTHA 
+BALIKPAPAN)  
+ 
+Yang disusun oleh : 
+ 
+ 
+Ariel Itsbat Nurhaq 
+NIM. 10231018 
+ 
+Telah diperiksa dan disetujui oleh dosen pembimbing: 
+ 
+ 
+3 
+Dosen Pembimbing Utama 
+Dosen Pembimbing Pendamping 
+[tanda tangan] 
+[tanda tangan] 
+Arif Wicaksono Septyanto, M.Kom. 
+Sri Rahayu Natasia, S.Kom., M.Si., M.Sc. 
+NIP. 199209182022031009 
+NIP. 199001082020122003 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 4]
+================================================================================
+ 
+KATA PENGANTAR 
+ 
+Puji dan syukur senantiasa penulis panjatkan ke hadirat Tuhan Yang Maha 
+Esa atas berkat, rahmat, serta karunia-Nya, sehingga proposal Tugas Akhir yang 
+berjudul "Rancang Bangun Sistem Informasi Manajemen Operasional Bimbingan 
+Belajar Berbasis Web Menggunakan Metode Personal Extreme Programming 
+(Studi Kasus: Bimbel ARTHA Balikpapan)" ini dapat diselesaikan dengan baik. 
+Penyusunan proposal Tugas Akhir ini ditujukan untuk memenuhi salah satu syarat 
+kelulusan dalam meraih gelar Sarjana Komputer (S.Kom.) pada Program Studi 
+Sistem Informasi, Jurusan Teknik Elektro, Informatika dan Bisnis, Fakultas Sains 
+dan Teknologi Informasi, Institut Teknologi Kalimantan. 
+Dalam proses perencanaan dan penyusunan proposal ini, penulis 
+memperoleh banyak bimbingan, arahan, saran, serta dukungan moril dari berbagai 
+pihak. Oleh karena itu, pada kesempatan ini penulis menyampaikan rasa hormat 
+dan terima kasih yang setulus-tulusnya kepada: 
+1.​ Bapak Arif Wicaksono Septyanto, M.Kom., selaku Dosen Pembimbing 
+Utama, yang senantiasa meluangkan waktu untuk memberikan arahan 
+konseptual, petunjuk teknis, serta motivasi yang sangat berharga dalam 
+penyempurnaan rancangan penelitian ini. 
+2.​ Ibu Sri Rahayu Natasia, S.Kom., M.Si., M.Sc., selaku Dosen Pembimbing 
+Pendamping, yang senantiasa memberikan bimbingan, masukan kritis, dan 
+ketelitian akademis sehingga naskah proposal ini tersusun secara 
+terstruktur. 
+3.​ Seluruh dosen dan tenaga kependidikan di lingkungan Program Studi 
+Sistem Informasi Institut Teknologi Kalimantan yang telah membekali 
+penulis dengan berbagai ilmu pengetahuan yang bermanfaat selama masa 
+studi. 
+4.​ Ibu Emi Ratnawati, S.E. selaku Pimpinan Bimbingan Belajar ARTHA 
+Balikpapan, beserta seluruh staf administrasi cabang yang telah bersedia 
+4 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 5]
+================================================================================
+ 
+menjadi mitra penelitian, memberikan izin observasi, serta membantu 
+penyediaan data lapangan secara terbuka. 
+5.​ Orang tua dan keluarga tercinta yang senantiasa memanjatkan doa, 
+memberikan dukungan, kasih sayang, serta pengorbanan yang tidak 
+terhingga bagi keberhasilan penulis. 
+6.​ Rekan-rekan mahasiswa Program Studi Sistem Informasi angkatan 2023 
+yang senantiasa saling memberikan semangat, bertukar gagasan, dan 
+berjuang bersama selama masa perkuliahan. 
+Penulis menyadari bahwa penyusunan proposal ini masih memiliki 
+keterbatasan dan ruang untuk penyempurnaan. Oleh karena itu, segala kritik serta 
+saran yang membangun sangat diharapkan demi kesempurnaan penelitian dan 
+pengembangan prototipe sistem pada tahap berikutnya. Akhir kata, penulis 
+berharap semoga proposal tugas akhir ini dapat memberikan manfaat nyata bagi 
+mitra penelitian serta memperkaya keilmuan sistem informasi di Indonesia. 
+ 
+5 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 6]
+================================================================================
+ 
+RANCANG BANGUN SISTEM INFORMASI MANAJEMEN 
+OPERASIONAL BIMBINGAN BELAJAR BERBASIS WEB 
+MENGGUNAKAN METODE PERSONAL EXTREME 
+PROGRAMMING (STUDI KASUS: BIMBEL ARTHA 
+BALIKPAPAN) 
+ 
+Nama Mahasiswa                         : 
+Ariel Itsbat Nurhaq 
+NIM                                              : 
+10231018 
+Dosen Pembimbing Utama          : 
+Arif Wicaksono Septyanto, M.Kom. 
+Dosen Pembimbing Pendamping : 
+Sri Rahayu Natasia, S.Kom., M.Si., M.Sc. 
+ 
+ABSTRAK 
+ 
+Bimbingan Belajar Artha Balikpapan merupakan lembaga pendidikan 
+nonformal yang mengelola delapan cabang aktif dengan 60 tentor dan sekitar 
+2.400 siswa/i di Kota Balikpapan. Pengelolaan operasional lembaga saat ini masih 
+mengandalkan proses manual melalui formulir kertas, buku besar fisik, serta 
+penagihan SPP melalui WhatsApp dengan penelusuran nomor kontak satu per 
+satu. Kondisi tersebut memicu tingginya beban kerja staf administrasi, risiko 
+selisih perhitungan kas harian, lambatnya identifikasi tunggakan siswa, serta 
+ketiadaan konsolidasi laporan keuangan terpusat bagi pemilik lembaga. Penelitian 
+ini bertujuan merancang dan membangun prototipe sistem informasi manajemen 
+operasional bimbingan belajar multicabang berbasis web untuk mendigitalisasi 
+empat fungsi krusial, yaitu pendaftaran siswa baru, pencatatan transaksi, verifikasi 
+bukti transfer, dan rekonsiliasi kas harian. Perancangan sistem dimodelkan 
+menggunakan Business Process Model and Notation (BPMN), Use Case 
+Diagram, Activity Diagram, dan Entity Relationship Diagram (ERD). 
+Pengembangan perangkat lunak menerapkan metode Personal Extreme 
+Programming (PXP) yang adaptif bagi pengembang mandiri melalui perulangan 
+iteratif. Fitur utama yang dikembangkan mencakup kewenangan hak akses data, 
+batas jatuh tempo tagihan disertai pesan pengingat WhatsApp, validasi bukti 
+transfer bank, serta konsolidasi kas antarcabang secara real-time. Evaluasi 
+kelayakan sistem dirancang melalui Unit Testing, Black Box Testing untuk 
+memverifikasi fungsionalitas logika, serta User Acceptance Testing (UAT) 
+bersama pihak pemilik lembaga dan staf administrasi cabang. Implementasi 
+prototipe ini diharapkan mampu meningkatkan efisiensi kerja administrasi serta 
+6 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 7]
+================================================================================
+ 
+menyajikan rekapitulasi data keuangan multicabang yang transparan, akurat, dan 
+terpusat.    
+ 
+Kata kunci: Bimbingan Belajar, Sistem Informasi Manajemen, Personal 
+Extreme Programming, Rekonsiliasi Kas. 
+ 
+7 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 8]
+================================================================================
+ 
+DESIGN AND DEVELOPMENT OF A WEB-BASED 
+OPERATIONAL MANAGEMENT INFORMATION SYSTEM FOR 
+A TUTORING CENTER USING THE PERSONAL EXTREME 
+PROGRAMMING METHOD (CASE STUDY: BIMBEL ARTHA 
+BALIKPAPAN) 
+ 
+ 
+By                                   : 
+Ariel Itsbat Nurhaq 
+Studen Identity Number :  
+10231018 
+Supervisor                      : 
+Arif Wicaksono Septyanto, M.Kom. 
+Co- Supervisor               : 
+Sri Rahayu Natasia, S.Kom., M.Si., M.Sc. 
+ 
+ABSTRACT 
+ 
+Bimbingan Belajar Artha Balikpapan is a non-formal educational 
+institution managing eight active branches with 60 tutors and approximately 
+2,400 students in Balikpapan City. The institution's operational management 
+currently relies on manual processes involving paper forms, physical ledgers, and 
+tuition fee collection via WhatsApp through manual individual contact searches. 
+These conditions cause a heavy administrative workload, risks of daily cash 
+calculation discrepancies, delayed identification of overdue tuition payments, and 
+the lack of centralized financial reporting for the institution's owner. This study 
+aims to design and develop a web-based multi-branch operational management 
+information system prototype to digitalize four crucial functions: new student 
+registration, transaction recording, payment transfer proof verification, and daily 
+cash reconciliation. System design is modeled using Business Process Model and 
+Notation (BPMN), Use Case Diagrams, Activity Diagrams, and Entity 
+Relationship Diagrams (ERD). Software development applies the Personal 
+Extreme Programming (PXP) methodology, which is adaptive for solo developers 
+through iterative cycles. Key features developed include role-based data access 
+control, payment due date determination with structured WhatsApp reminder 
+messages, bank transfer proof validation, and real-time inter-branch cash 
+consolidation. System evaluation is designed through Unit Testing, Black Box 
+Testing to verify functional logic, and User Acceptance Testing (UAT) conducted 
+with the institution owner and branch administrative staff. The implementation of 
+8 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 9]
+================================================================================
+ 
+this prototype is expected to improve administrative efficiency and deliver 
+transparent, accurate, and centralized multi-branch financial summaries.  
+ 
+Keywords: Tutoring Institution, Management Information System, 
+Personal Extreme Programming, Cash Reconciliation.  
+ 
+ 
+ 
+9 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 10]
+================================================================================
+ 
+DAFTAR ISI 
+ 
+ 
+LEMBAR PERSETUJUAN..................................................................................... i 
+KATA PENGANTAR.............................................................................................. ii 
+ABSTRAK..............................................................................................................iv 
+ABSTRACT..............................................................................................................vi 
+DAFTAR ISI.........................................................................................................viii 
+DAFTAR GAMBAR.............................................................................................. ix 
+DAFTAR TABEL.....................................................................................................x 
+BAB 1​
+PENDAHULUAN....................................................................................................1 
+1.1. Latar Belakang............................................................................................ 1 
+1.2. Rumusan Masalah....................................................................................... 9 
+1.3. Tujuan..........................................................................................................9 
+1.4. Batasan Rancangan................................................................................... 10 
+1.5. Manfaat..................................................................................................... 10 
+1.6. Potensi Dampak Fungsional/Komersial....................................................11 
+1.7. Kerangka Tugas Akhir.............................................................................. 12 
+BAB 2​
+TINJAUAN PUSTAKA.........................................................................................16 
+2.1. Kajian Teknologi atau Metode Terkait......................................................16 
+2.1.1. Sistem Informasi Manajemen.......................................................... 16 
+2.1.2. Personal Extreme Programming......................................................17 
+2.1.3. Business Process Model and Notation (BPMN)..............................21 
+2.1.4. User Stories......................................................................................24 
+2.1.5. Use Case Diagram........................................................................... 25 
+2.1.6. Activity Diagram.............................................................................. 28 
+10 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 11]
+================================================================================
+ 
+2.1.7. Entity Relationship Diagram............................................................30 
+2.1.8. Arsitektur Tiga Lapis (Three-Tier Architecture).............................. 33 
+2.1.9. Next.js.............................................................................................. 33 
+2.1.10. Tailwind CSS................................................................................. 34 
+2.1.11. Laravel............................................................................................35 
+2.1.12. REST API.......................................................................................35 
+2.1.13. MySQL...........................................................................................36 
+2.1.14. Black Box Testing...........................................................................37 
+2.1.15. User Acceptance Testing................................................................ 37 
+2.2. Penelitian Terdahulu..................................................................................39 
+BAB 3​
+RANCANGAN PROTOTIPE................................................................................50 
+3.1. Garis Besar Prototipe................................................................................ 50 
+3.2. Tahapan Pembuatan Prototipe...................................................................51 
+3.3. Prosedur.....................................................................................................53 
+3.3.1. Requirements....................................................................................53 
+3.3.2. Planning........................................................................................... 53 
+3.3.3. Iteration Initialization...................................................................... 54 
+3.3.4. Design.............................................................................................. 54 
+3.3.5. Implementation.................................................................................54 
+3.3.6. System Testing.................................................................................. 54 
+3.3.7. Retrospective.................................................................................... 55 
+3.3.8. User Acceptance Testing.................................................................. 55 
+3.3.9. Deployment...................................................................................... 55 
+3.4. Konsep Prototipe.......................................................................................56 
+3.4.1. Perancangan Arsitektur Sistem........................................................ 56 
+3.4.2. Analisis Proses Bisnis As-Is.............................................................58 
+3.4.3. Perancangan Proses Bisnis To-Be.................................................... 63 
+11 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 12]
+================================================================================
+ 
+3.4.4. Analisis Kebutuhan Fungsional dan Non-Fungsional......................67 
+3.4.5. Identifikasi Peran Pengguna dan User Stories.................................72 
+3.4.6. Pemodelan Interaksi Sistem............................................................. 78 
+3.4.7. Perancangan Entity Relationship Diagram......................................90 
+3.5. Spesifikasi Teknis......................................................................................93 
+3.5.1. Hardware..........................................................................................93 
+3.5.2. Software............................................................................................94 
+3.6. Jadwal Pembuatan Prototipe..................................................................... 97 
+DAFTAR PUSTAKA.............................................................................................99 
+LAMPIRAN.........................................................................................................104 
+ 
+ 
+ 
+12 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 13]
+================================================================================
+ 
+DAFTAR GAMBAR 
+ 
+Gambar 1.1 Diagram Alir Kerangka Pengerjaan Tugas Akhir.............................. 12 
+Gambar 2.1 Tahapan Personal Extreme Programming..........................................17 
+Gambar 3.1 Tahapan Pembuatan Prototipe............................................................51 
+Gambar 3.2 Konsep Arsitektur Sistem Multicabang ARTHA...............................56 
+Gambar 3.3 Proses As-Is Operasional Bimbel ARTHA........................................ 58 
+Gambar 3.4 Proses Bisnis To-Be Operasional Bimbel ARTHA............................62 
+Gambar 3.5 Use Case Diagram Sistem Informasi ARTHA...................................77 
+Gambar 3.6 Activity Diagram Alur Pendaftaran Siswa dan Transaksi Pembayaran.
+84 
+Gambar 3.7 Activity Diagram Alur Validasi Bukti Transfer................................. 86 
+Gambar 3.8 Activity Diagram Rekonsiliasi Kas Harian Antarcabang dan 
+Pemantauan Tunggakan SPP..................................................................................88 
+Gambar 3.9 Entity Relationship Diagram (ERD) Sistem Informasi ARTHA....... 90 
+ 
+ 
+ 
+13 
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 14]
+================================================================================
+ 
+DAFTAR TABEL 
+ 
+Tabel 2.1 Unsur dan Notasi Business Process Model and Notation...................... 21 
+Tabel 2.2 Contoh Format Penulisan User Story.....................................................24 
+Tabel 2.3 Simbol Use Case Diagram..................................................................... 26 
+Tabel 2.4 Simbol Activity Diagram....................................................................... 28 
+Tabel 2.5 Unsur dan Notasi Entity Relationship Diagram.....................................30 
+Tabel 2.6 Penelitian Terdahulu...............................................................................38 
+Tabel 3.1 Identifikasi Masalah Proses Bisnis As-Is...............................................61 
+Tabel 3.2 Perbandingan Proses Bisnis As-Is dan Proses Bisnis To-Be..................65 
+Tabel 3.3 Daftar Kebutuhan Fungsional Sistem.....................................................67 
+Tabel 3.4 Daftar Kebutuhan Non-Fungsional Sistem............................................ 70 
+Tabel 3.5 Role-Based Access Control....................................................................72 
+Tabel 3.6 User Stories Prototipe Sistem Informasi ARTHA..................................73 
+Tabel 3.7 Skenario Use Case Pendaftaran Siswa Baru dan Pembayaran...............79 
+Tabel 3.8 Skenario Use Case Verifikasi dan Validasi Pembayaran Transfer......... 80 
+Tabel 3.9 Skenario Use Case Rekonsiliasi Kas Harian dan Pemantauan SPP.......82 
+Tabel 3.10 Spesifikasi Kebutuhan Perangkat Keras Sistem...................................92 
+Tabel 3.11 Spesifikasi Kebutuhan Perangkat Lunak Sistem..................................94 
+Tabel 3.12 Rencana Kegiatan Proposal..................................................................96 
+ 
+ 
+14 

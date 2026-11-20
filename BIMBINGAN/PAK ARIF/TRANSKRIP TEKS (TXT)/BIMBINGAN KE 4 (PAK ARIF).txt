@@ -1,0 +1,685 @@
+Tidak ada laporan, tidak ngasih berapa saja.
+Tidik, langsung menjelaskannya ya Pak?
+Ini kamu yang itu ya?
+Tidk, apa?
+Lapsat, apa sih?
+Jadi kemarin sudah ada si Ziru untuk dari laporansi belum diambil juga, kalau pindah dengan kurgensi yang sebenarnya memang.
+Tapi pertama-tama saya mau nanya terguna aku kalau mengvalidasi bosannya
+Jadi, biasanya merupakan perusahaan berarti untuk yang prototype sama
+Kalau beda prototipe dengan proyek itu
+Prototipnya sudah harus diuji
+Ditesting dengan user asli konsumen
+Jadi, sudah di-publish dan diuji
+Ada pengujian
+Kalau misalkan belum sampai tahap situ
+Pengujian yang penting sudah ada sistemnya
+Hanya dari internal
+Dengan sini dan sana
+Itu cukup proyeks
+Dapat itu prototep karena kalau dia proyek gak sesuai
+Karena website ini sudah publis, sudah menghasilkan
+Kalau jadi proyekt, buat apa?
+Kan kita mau langsung dipaket
+Kalau prototip itu langsung di uji testing berdana
+Di uji juga dengan real kasusnya
+Nambah berita apakah pencarian itu
+Nah itu di prototop
+Kalau saya mungkin nanya tampan awal prototope apa
+proyek dulu aja
+karena gue banyak, lebih besar di prototel
+karena nanti diuji langsung pengguna
+karena nantinya yang diuji
+nah justru nanti lama dia
+berita itu sudah berapa ratus
+nah dia masukin satu-satu
+karena kalo dimigrasi
+mikir-mikir susah banget
+gambarnya itu di neon
+sama aja neon
+didalam database cuma link-link
+yang gimana kok? otomatis, mau gak mau
+ya ambil satu persatu
+tapi gak tau kalau dia punya cara yang gampang pake strapping data atau apa
+langsung nanti dijalankan strappingnya
+langsung dia masuk sendiri
+silahkan
+cuma resikonya ditanggalnya
+gak boleh salah
+itu loh sudah kontrak dibayar
+misalkan dari layak minta tanggal ini
+gak boleh kita mundur kan
+masalah kita makin
+jadi gak bisa si hati ditanggap
+Saya kemarin mundur aja, dicek gak ketemu langsung mereka komplain
+Karena ada wartawannya ngedit kan tanggalnya dikembalikan lagi defaultnya
+Jadi proyekan
+Lupa saya memastikan kembalin
+Kemarin sudah menghubungi dari Buayu sebagai pemilik kedua saya
+Dan judulnya sebenarnya juga belum ada pembimbingan dengan beliau
+untuk judulnya kemarin saya sudah sampaikan
+itu rancang bangun sistem informasi
+manajemen operasional
+dengan belajar berbasis web
+menggunakan metode BXP
+kalau saya pakai BXB?
+karena saya melihat dari fleksibelan
+dari bimbal arta yang gimana
+itu bisa berubah
+sesuai dengan tahap wawancaranya
+jadi belum fake ya
+fiturnya itu masih
+bisa aja di tangan jalan bertambah gitu ya
+iya, ada kemungkinan itu bakal bertambahan
+terus karena dari 3x wawancara ternyata ada proses bisnis yang sebenarnya dari manajemen itu masih ada beberapa perubahan
+karena pelupaan gitu, karena itu udah bertahun-tahun dijalankan tapi ada bebera produk yang bisa berubah di kemudian hari
+terutama khususnya tarifnya gitu pak
+nanti kamu sampe transaksi juga pembayaran
+Oh enggak Pak, cuma pencatatan doang. Yang maksud saya perubahan transaksinya itu ada sisi empati dari si artanya ini
+karena misalkan yang datang atau siswa baru datang terus melihat dari kemampuan pembayarannya itu kurang
+walaupun memang sudah ada tarif yang sudah ditentukan
+Jadi dia masih fleksibel ya?
+Masih berdua-berdua untuk inginya menyesuaikan dengan siswa yang mau mendaftar.
+Makanya saya menggunakan metode PHP, sebenarnya sudah ada membandingkan juga dengan metode XP sama RAD dan juga prototyping.
+Menurut saya yang lebih cocok karena saya melihat keunggulan dari PHP itu di bagian fleksibilitasnya tadi saya bilang lagi awal.
+Itu kan nanti di berapa perbandingan metode ya?
+Nah itu harus diangkat juga yang kamu bandingkan
+Karena kan gak cuma boleh hafalin satu metode
+Kalau bilang metodenya lebih cocok
+Harus lihat metode yang lain juga
+Kalau mau baca satu, barat yang lain udah tau
+Pasti kamu bilangnya yang bagus ya
+Karena cuma taunya PHP
+Itu untuk judulnya saya
+Berarti dari Pak Arief aman deh
+Amat, kalau judul nya aman
+Lalu mungkin yang kedua ini dari ERD yang sudah ada saya buat pak
+Oh iya
+Saya udah coba buat
+Untuk totalnya itu ada 16 table dan semua ini berrelasi satu sama lain
+Ini ERD bentuk apa ya namanya ya?
+Kan bentuk ERD itu macam mati nih
+Kalau yang di situ tanya
+Kan ada yang bentuknya ERD tuh anti-task
+Ini kan bentuk nya table-table
+Yang kayak di My Admin
+kamu kalo bilang ERD nih, ERD bentuk apa harus bisa menjelaskan
+karena bentuk ERD itu macam-macam
+kemudian yang paling DRD itu
+yang pertama adalah kumpulan karbinalitasnya
+bantuan-wantumen ini belum mengaruhi banget hasilnya
+jadi mungkin ini saya jelaskan secara garis besar aja pak
+jadi total saya ada buat 3 group gitu
+yang pertama dari sisi operasional bisnisnya
+sama yang kedua dari sisi kayak table yang udah ga bakal diubah sama sekali
+terus yang ketiga itu
+tapi ini tuh nanti jalan kan bisa berubah ga?
+belum, iya belum
+karena kalau proposal itu sebenernya dia belum sampe disini
+ini kan sudah sampe implementasi hasilnya
+tapi kalo diproposol itu
+buat teori
+Teori bertiga itu adalah hal-hal yang lain
+Nah di langkah-langkah
+Alor penegian kan, GKM
+GKP itu mungkin cuma menyebutkan terkait
+misalkan editasi apa yang terbentuk
+Karena kalau sudah jadi
+Berarti sudah masuk diglumentasi
+Yang ERD
+Datapisnya
+Kalau ini ERD rancangan
+Tapi oke
+Ini apa aja yang tergantung?
+Yang terganti udah ada 16
+karena lebih spesifiknya dari asal wawancara itu
+tapi kamu udah dapet dari mana?
+dari asl wawoncara semua
+maksudnya dengan proses bisnis yang berjalan
+tapi sama-sama mas, untuk movie kayak gini ya
+kamu juga harus membuat
+kalau aku UI UX
+karena kan aku buat ngambil UI UX
+tapi ada gambaran kasar tablan depan
+karena gini
+Kayak teks-teks gini kan?
+Ibaat kan kamu kok misalnya udah tau isinya semua ini
+Ini karena dari Mitra itu ada masih...
+Datanya kak?
+Oh saya tuh biasanya buat ambilan, oh dari sini saya tahu kan
+Dan ini saya butuh data apa aja nih
+Berita nih ada judunya, tanggalnya
+Kemudian deskripsi pendeknya
+Berita panjangnya
+Jadi saya tahu ini table berita
+Cuma kalau saya sih fokus di proposalnya dulu aja
+Karena itu nanti akan bisa berubah
+Yang penting kita fokus proposal bisnisnya dulu
+Masa nanti apa aja entitas yang terbentuk
+Itu sambil jalan aja
+Mungkin proposal nya
+Kita tau dulu bisnis
+Mau dibuat apa dulu
+Apa aja fitur-fitur yang dibutuhkan
+Baru dipirin nanti untuk rancangan terlebih dahulu
+Jadi sebenarnya ini simpel aja untuk dari data yang dibutuhkan
+Tapi kan gak cuma kalau, ini kan untuk membangun IRB kita harus baca doku
+Misalnya oh ini ada muridnya nih, table siswa misal
+Table siswa berarti jadi atribute nya kan nomor nama
+Tapi kan ini adalah manualnya mereka
+kalau kita bangun sistem, kita harus mikir jangka panjang
+gak cuma gini, mungkin aja ada tribut yang kita tambahkan
+jadi bukan meng copy paste
+kalau bangun system tuh gak bisa
+karicong
+iya
+intinya gini
+kalau kita bakun sistem kita mikir di jangga panjang
+ini akan membantu kita
+oh ada table mahasiswa nih
+luar masanya ini
+tapi kita harus pikir panjang apakah kita nanti butuh informasi lain
+misalkan nih kita butuh gak
+emailnya
+emailnya, nama orang tuanya
+itu kita boleh tambah
+bukan berarti kita harus sama presiden ini
+walaupun dari mitra
+dikasih ngelajah
+jadi boleh kosong
+ke depan kalau dia butuhkan
+kayak marimah sisalnya
+tugas besi datu
+tugasnya saya minta kalian interview
+ke mitra baca dokumen
+jadi nanti saya memvalidasi
+Apakah kamu bisa menunjukkan dokumen, tapi dokumen itu tidak bisa kalau kamu hanya copy paste
+Kalau dokumen yang jelas ini pasti ada, apakah ini sudah cukup?
+Nah itu belum tentu
+Dia mengisi data barang kemudian saya tanya
+Ini gak ada tanggal expirednya
+Mereka bilang, mas, saya bilang
+Juga dicatat pak
+Karena mereka melihatnya dari nomornya
+Nomor SPIT yang harus dikemasannya
+Saya bilang
+Ya kalau itu manual
+Dia ngecek satu persatu
+Kalau kamu bawa sistem
+Data kita barang jualan kita alfamat
+Barang kita ada 2 juta
+Lebih mungkin bisa lebih
+Lantai 1-2
+Kemudian kamu gak tau
+Barang yang mana yang SPIT
+Kamu gak tahu
+Bisa rugi ya
+Pertama rugi
+Orang bisa beli
+Beli barang SPIT
+Gak mau kembali dong
+barang sudah di jual
+nah atribut itu yang kita buatkan
+tujuan kamu mengundahkan kita
+karena dengan adanya
+tanggal yang misalnya dibulangi mau expired mana
+bahwa tadi ada dokumen-dokumen
+kamu masih bisa menambahkan atributs sesuai kebetulan
+bukan hanya mengkopi
+kalau yang kamu lihat pasti ada
+tapi kamu bisa menabahkan
+Nanti dari saya, eh sebenernya dari Mitra yang membutuhkan cuma kolom yang dibutuhkan saat ini
+Kita harus hypitasi
+Kasih tau juga kek
+Iya
+Kalau saya sudah masih
+Kamu gak bisa terima
+Jadi kamu harus mau hypitasikan mereka
+Kedepan tuh fungsi nya ini loh
+Nanti kedepannya ini mengudahkan
+Kalau nanti bisa
+Kalau makeup ini belum butuhnya
+Gak apa-apa
+Nanti dibuat kosong
+Jadi boleh dikosongkan dulu
+Tapi kedepan kalau mau dimasukin datanya
+Bisa
+Ini data biasanya dibuatan
+Olo
+Boleh kosong
+berarti tetap ada kolomnya pak ya?
+ada kolong
+tapi gak dimajibkan itu disini dulu
+mungkin ini berikutnya pak
+tadi IRD, berarti itu sebenarnya untuk di
+iya, nanti
+kalau saya buat satunya dulu kita makan dulu
+karena skauci dalam proposal
+jarang kita melihat dari
+sampai situ
+kita lihat urgensinya
+itu rapengu dibuat
+Bisa gak ini diselesaikan?
+Kita melihatnya dari situ
+Pakutnya kamu mungkin sudah sampai jauh
+Padahal yang nanti difokuskan
+Gak namanya di tanpa hal-hal
+Oh, ini kan dulu juga jalan
+Setelah baru proposal
+Oh, di mana nih? Baru kamu mulai
+Ngelementasi
+Berarti saya terlalu pecawa
+Jauh, kamu udah habis proposal
+Itu juga gitu
+tapi gak apa kan, ada gil dikit-dikit
+ini juga saya buatkan dari use case nya
+use case aja ini
+ini akan kemarin tuh
+ada dua role
+yang harus saya buat
+use case itu pasti banyak
+loginnya dimana lah
+loginnya tuh rencana saya
+dari si
+dari dua role ini
+tetep bisa login
+Sebelum masuk ke sistem kan dia harus login dulu
+Nah nanti tak sedikit ada jurnal bagus yang membuatnya
+Sering banget mahasiswa itu
+Dia mau bagi situ salah
+Tapi saya sering
+Setelah itu saya ngasih ini baca jurnalnya
+Tapi dia
+Jurnal itu fokusnya kesalahan-kesalah
+Dalam penyusinan di IMD
+Apa? BML
+Saya selalu ginian saya
+Aku bacain judul baru buat GML
+Dan sudah tahu
+Berarti yang saya mau tanyakan itu terkait ini Pak, karena tadi yang terlalu kejauhan
+dari referensi sendiri itu lebih ada ketentuan terkhusus nggak Pak?
+Kayak misalkan minimal 10 tahun, 5 tahun terus untuk buku
+Kalau jurnal gini, kalau kamu ngomong-ngomiter kayak
+Kalau saya gini bukan sebaiknya memang yang terbaru di mana-mana terakhir
+tapi itu jurnal-jurnal yang berkaitan dengan masalah yang diangkat
+misalnya kamu mengangkat ini terkait masalah ini ya
+nah kamu pasti cari referensi pendukungan
+nah itu kamu wajib menambil yang 5 tahun
+misalnya di latar belakang bab 1 sebelum masuk
+maksimalnya biasanya masyarakat itu atas parga pertama itu menganggap teknologinya
+pada saatnya teknologi apain
+nah itu harus yang terbaru dong, kalau kamu mengenai teknologi jangan ambilnya 10 tahun
+sekarang udah jauh banget
+tapi kalau kamu membahas metode
+kalau saya gak harus 5 tahun
+kamu boleh memakai metode ya
+misalnya kamu pake TSP
+itu boleh memanggil yang
+pencantok
+pencat terus metode itu siapa
+sebenarnya kalau kamu pakaian metode pohon
+kamu tau karena gue
+penguji kadang lainnya gitu
+kamu pake sesuatu yang gak kenal orangnya
+kamu pakai, saya punya mahasiswa ini Pak Puncak kemarin pakai PSD
+dia itu aja pakai kok
+kamu bukan, yang membuat tuh bukan dia
+karena ucap-ucap nggak tahu
+berarti aku pake seseatu tapi lu enggak kenal
+itu harus menuju ke sebelumnya, walaupun nanti di bab 2 kan diceritakan PSP itu siapa yang membuatnya
+tapi kan PSP tuh ada pengembangan-pengembangannya
+walaupun bisa ada lagi untuk PSP yang kamu dipernihan ini saya menggunakan dari jurnal nya siapa
+makin lebih sesuai gitu
+ada kayak menjadi waterfall aja tahapan-tahapannya itu ada yang jadi modifikasi gitu
+yang penting yaudah kamu merujuknya punya siapa
+tapi harus diciptakan dulu, Waterfall itu sebenarnya siapa yang gue
+yang lainnya kan mengembang pak
+melanjutkan kayak gitu
+karena kalau kemarin saya ada yang nyari beberapa pak
+dan memang khususnya untuk yang manajemen
+dashboard management di mana belajar itu
+kebanyakan gue makan Waterfall pak
+jadi untuk pengen PSP sendiri
+itu saya baru nombor satu
+sejauh ini baru satu
+apa?
+ini dia gini, kalo kaya gitu kan
+kita ngomong metode
+yang lainnya waterfall
+ya gak bisa dipaksakan waterfall
+kita melihat dari permasalahan kita
+mitra kita fleksibel
+ada perubahan fitur
+ya gak bisa paksa ke waterfall
+karena representasi nya semua itu
+kita harus memastikan masalah
+liat dari mitranya dulu
+baru pikirin metodenya yang cocok
+bukan lihat dari metodenyya dulu
+baru nanti mitra dipaksa
+biasanya semua nya pas waterfall nih kebanyakan, masal intra mau pake TST
+ya engga kita liat dulu nih kebutuhan mitranya
+kalo dilihat dari ceritanya mas tadi kan
+mitra ini masih ada video-video yang mungkin berjalan
+ada penambahan, ada perubahan
+itu gak cocok waterfall
+waterfall kan lebih
+jadi akwal sudah fit
+kamu ga menduduk
+sebaiknya ga mundur
+nah waterfall ya
+jadi pertama kebutuan sistem tuh sudah fit
+kamu mau buat apa sampe goalnya apa
+kalau sudah jalan jangan sampai mundur lagi
+Gak cocok dong kalau sudah di
+Kecuali kadang, kalau mahasiswaku
+Aku tanya kan dari mitranya
+Digandong dia
+Dirubah-rubah terus mas
+Mitra besok bilang A, besoknya minta B
+Masa saya bingung, pak saya habis buat sini
+Disuruh rubah lagi buat ini
+Itu asal membuat aja waterfile
+Tentukan dari awal
+Biar mereka gak berubah
+Kalau waterfine deh fit di awalnya
+Kita sudah berjalan segini
+tapi kalo mitra nya kayak gini tadi, ya di exp dulu
+karena perubahannya mungkin nama fiturnya
+ngak yang kaya tadi
+kalau masuk kemungkinan digantung
+bulat balik
+gak fake terus tuh lho
+apa yang mau dibuat berubah lagi
+bukan menambang
+tapi dirubah
+bisa jadi
+ubah
+jadi mintanya
+oh berubahan
+ini enggak
+jadi-jadi
+akhirnya saya minta waterfall
+Oke.
+Tentanya kan ga bisa berubah-ubahan terus
+Berarti kalo misalkan
+Walaupun saya cerita tadi
+Ada kemungkinan perubahan itu lebih ke fitur
+Atau kayak sebatas mungkin yang bisa terjadi
+Itu hanya
+Kolomnya kok?
+Ada perubatan kolom
+Memang dari mitra ini
+Dari buku sampaikan
+Kalau kita ga, kalau kolom itu
+Kita udah
+Misalkan dari kita
+misalkan kamu liat dokumen gitu kan, kamu copy
+mereka buktinya itu
+tapi kamu bisa menambahkan akribut lain
+ini sudah dari kita bukan dari mereka
+kalau mereka nanti
+ini perlu apa lagi ya
+nggak kan mereka sudah punya dokumen tadi
+kamu tiga nanti prestasikan
+ada penambahan kolam bisnisnya tujuannya buat apa
+kamu dikubasi
+nah penambaran itu mungkin dari bisnis nya
+misalnya oh
+bisa gak mas kita
+sampai ada
+dashboard untuk gurunya
+misalnya dari awal belum ada, oh ya lu bisa, itu mungkin fitur video itu TSP cocok
+karena mungkin setelah kamu buat nanti minta
+mas bisa gak saya mau melihatkan tampilan dari mahasiswa ini
+yang belum bayar lah misalkan gitu
+jadi nanti bisa di filter-filter dashboardnya muncul nih
+nah itu TSM ada penambahan gitu fitur kecil gitu
+bukan jangan berubah
+misalnya sudah jalan terus dirubang romba-romba
+itu kesalahan dari mitra
+dia belum tau bisnisnya
+karena mas siswa saya yang bermasalah
+sistem bisnis mereka belum jalan
+jadi dirubah-rubah terus
+sebab dibatkan, dia lihat punya orang
+bisa gini sih
+gue berubah lagi
+kayak gitu saya minta
+kamu waterfall aja
+jadi duvikan dari awal
+kalau udah fake jangan nambah lagi
+nambah-nambah kerjaan lagi
+tapi kalo punya kamu sudah biar SD
+karena kan bisnisnya sudah jalan
+kita udah tau ya
+apa gambaran
+bisnis utamanya
+kamu sudah pegang dimana ada nama fitur
+perlantikan
+itu mungkin bisa terkelu SD
+jadi gak mau dirubat
+dari bisnis ini terus dibuat banget
+karena sudah jalankan
+Terus ini Pak mengenai buku, Pak.
+Baris ada rekomendasi atau yang bisa saya baca untuk pembuatan dashboard ini?
+Revenchy kan?
+Iya.
+Kalau cara untuk reference kan lebih bagus di jurnal daripada buku.
+Oh gitu?
+Kalau negensi itu lebih bagus buku, karena jurnal itu asli pelajian
+Kalau buku itu kan cuma kayak buku pembelajaran teori
+Kalau saya sih mau duput kamu begini
+Kalau saya cuma bisa bantunya misalnya tadi saya nemukan kayak MWNM yang mencoba di siapa
+Tapi kalau masalah yang lain-lain dari kamu
+Karena yang lebih tahu masalahnya kamu
+misalkan saya cacatkan pakai teknologi apa, yang sama-sama saya pakainya
+produknya pakai apa. Nah itu saya bisa langsung ke masalah pembedahan
+kayak gitu
+kalau kamu membeli untuk apa
+sebenarnya semuanya itu kan bukan pilihan ya
+namanya tools itu pilih
+kamu bisa pakai embas apapun
+cuma
+yang saya akan memberikan maksudannya
+selesai pengalaman saya
+tadi saya bilang Rezo direct dari SEO
+yang dipakai
+tapi dari segit cepatan dia cepat
+Tapi untuk orang yang membangga depan, lebih enak adalah para Rafael.
+Para Rafael itu enaknya dokumen.
+Dia kan sudah selamak FVC, menjadi VController.
+Jadi model VControllers itu sudah ditatangkan.
+Apalagi kalau saya minta front-end dan back-end dipisahkan,
+itu kemudian bagi tim saya.
+Apalagia nanti saya mengurus sistem saya ini
+Saya kan lebih mudah, karena saya tidak akan mencambur aduan dengan darah frontend dan backend
+Jadi kalau ada masalah tinggal lihat API Gateway nya
+Misalkan frontend saya putus ya, tidak ada datanya
+Saya cek apakah dia yang mengirim di dokumen APA dari backend
+Kalau dokumennya dikirim berarti ada frontend
+Tidak bisa hit APA
+Nah itu kenapa saya minta nyatasi?
+Karena kebutuhan mitra
+Nah, kembali lagi. Mitra nya lebih mudah itu karena sistemnya semua berjalannya sudah pakai teknologi itu
+Jadi nggak ada salah misalnya harus pake yang ingat
+Pertama, kemudahan mitra
+Kalau mau nyamakan mitranya gak ngerti nih
+Itu kemudian dari kamu
+Misalnya di Indonesia lebih muda pada apa
+Kalau mitra request ya mau gak mau
+Karena mereka sudah punya ekosistem
+Kalau yang mengajarkan ekosistem
+Saya bangun susu pasti teknologinya itu dulu, tapi lebih mudah monitornya waktu memisalkan font yang belum backend.
+Padahal saya buatnya monolitik, kalau monolitic itu nggak suka ya.
+Buat ngecek-cecek kalau error tuh minul, backend font jadi satu di sini.
+Kalau ini putus kamu, saya tahu posisi putusnya dimana.
+Oke, mungkin selanjutnya pak dari setelah ini saya kan coba untuk nyalakan di latar belama dulu
+Di bab 1 khususnya lebih tepatnya
+Itu nanti untuk melakukan bimbingan lagi
+Untuk mengirimkan grafinya lewat email atau saat bimingannya baru?
+Kirim email dulu
+Kalau bisa saya komen, saya komen
+Kalau misalnya saya butuh kaya kita harus offline di fungsi dulu, seperti yang enak
+Butuh kata-kata muka ya
+Jadi saya thank you please
+Misalkan saya lebih
+Kalau misalkan pak
+Saya ngajar saya banyak
+Jumat itu sebenarnya kita wepah
+Gak ada kelas
+Kita memulai wajibnya gak ada
+Cuma ada berapa yang kerjatan
+Bahkan tadi saya kemarin saya banyak kerjakan
+Tapi bisa bingungnya di jumat ini
+Karena saya pantas lah
+Bisa minggu, karena saya tidak apa, absent online bisa
+Tapi cuma kita jadwalnya FST itu jumat
+Atau itu kemarin kenaikan bahan-bahan perang
+Yang konflik perang akhirnya kita sebenarnya satu hari ini dikasih WF
+Nah setiap proyek itu beda-beda
+Ada yang nambilnya hari Rabu
+Kalau kita ini harinya gemantakannya sepijau
+Enak jam 1 minit sekarang
+Iya, kita ambilnya jam 2 minit cuma rapuh
+Cuma kalau saya gitu, saya gak mau kok
+Kok jalan-jalan dulu
+WA ngepang gak apa-apa
+Karena kadang kalau sudah masuk WA
+Saya belum bales
+Itu berarti karena saya belum bisa memutuskan
+Hari ini saya gak bisa memuatkan
+Makanya saya selalu bilang
+Karena takutnya
+Kalau udah 4 hari saya bilang
+Jumatnya nanti ada di WA, kalian lupa
+Mungkin saya nanti ya jangan ulang lagi
+Kalau misalkan sibuk banget
+Kalau mau ke Milo Dara 1
+Saya punya kantor sendiri
+Jadi bisa disangka
+Kalau cuma untuk
+Misalkan butuh waktu yang lebih dalam
+Nadi sudah masuk imun limitasi
+Mau bahasnya lebih dalam
+Kalau akhirnya cuma nyusun-nyusun
+Kayaknya cuma berapa menit aja
+kalau kita waktu panjang kan gak bisa disini
+soalnya gantian dengan usia yang lain
+jadi kaya itu kantor lagi
+mungkin intunya sih pak
+memang harus dikejar dari
+targetnya seharusnya proposal nya sih
+iya, pertama ya
+udah disunaiin
+mending fik dari awal dulu
+fokus dulu proposalnya dulu
+karena pas proposer lagi
+tapi bukan lagi hasilnya, orang gak lihat hasil
+tapi
+pemahaman kamu terlihat apa masalah
+dan solusi kamu
+kemudian penyesalannya seperti apa
+apakah itu bisa diselesaikan dengan kamu
+karena saya sering menguji mahasiswa
+saya gak lulusan yang dia
+misalnya ketemu
+masalah setengah solusi itu gak ternyata
+sering saya batalkan
+kamu dasar aja
+ada kesalahannya di mahasisu
+jadi bimbingnya gak masih waktu
+maksudnya gak mau bimbi
+waktu sudah jadikan propon itu sidang, minta asisi
+Pak asis ya saya mau datang
+maksudnya penting kalau di sob tondong gitu kan ngapain
+kalau kita nolak dan dianggap mempersulit
+dia mundur lagi ke swacer depan
+asisin dulu
+biar nanti waktu sidang dia baru kangen
+apalagi yang mengambil data rata
+Pak Enok tuh sering banget loh
+karena pembimbingnya Pak Enuk perang apa
+bintunya Bidangnya
+sama sih, sama-sama
+karena metodenya pakai apa, datanya apa
+gak kemis
+kalau main data kan harus tahu dulu
+datamu apa baru mikirin metodonya
+kalau kamu datanya aja itu gak bisa diolah dengan metode ini
+kamu gak bisa paksakan
+jadi masih saya
+semester kemana aja dua mahasiswa nyapain
+gak salah misalnya
+dia nunjukkan sama
+mau buat
+prasilikasi
+klasifikasi dari penerima biasiswa atau apa gitu di sekolah
+mana datanya? tunjukin datanya dulu
+kemudian kamu pake metode apa? pake ini
+dari teori aja dia gak maaf, coba baca
+teori kamu, klasifkasi
+jadi klasi itu bahwa klasifiannya adalah pengelombongan berdasarkan label
+teori dia tuh ada disitu bab 2
+pengelomongan bebasan label
+kemudia saya tanya
+pengelompongan data berdasar label
+kamu lihat datamu
+data kamu mana yang label
+dia gak ngerti data label dimana
+sekarang kamu mau kelompokkan data apa
+misalkan gak ada labelnya kok
+terus mau dikelompok kan dari sana
+misalnya saya lubuskan kamu
+sampai 10 tahun dulu kamu gak akan menghasilkan apapun
+kalau kamu masih pakai metode ini dengan data ini
+gak ketemu
+namanya klasifikasi itu data yang sudah dilabel
+kalau klasikulasi berdasarkan label
+misalnya ada perangkat, saya punya data mahasiswa ini di labeli
+oh misal dia lulus
+atau misalkan saya contohkan yang punya saja
+saya melabeli bahar Lita itu gisi baik, gisi buruk
+berat badan berlebihan dan berat kurang
+saya labeli dia
+dari hasil mana? waktu dia posyandu
+sama dokter juga
+Oh ini kelebihan berat badannya ya Bu, udah beli
+Oh ini kurang gisi ya Bu
+Ini lingkar padanya
+Lingkark kepala terlalu besar
+Gisi buruk gitu
+Dari label itu
+Jadi data training
+Dia belajar dari situ
+Lagi ketika saya punya data baru
+Yang dia gak punya label
+Dia akan belajara bahwa
+Dengan ciri-ciri tingginya segini
+Berat badan segininya
+Jurnus kaminya perempuan
+kamu langsung ikut label yang mana, normal disibuk kenapa
+nah itu label namanya klasifikasi
+tapi kamu harus punya data label dulu
+bagaimana kamu bener belajar kalau kamu gak labeling
+saya tanya mana yang label dia gak tau
+kamu gak paham
+kalau aku aksesi kamu gak akan lulus
+saya pasti gak akan lurus
+gak akan ketemu
+karena ada dengan metode
+kecuali kamu ngomongnya clustering
+berdasar cluster gak ada labelnya
+dia akan mengelompokkan berdasarkan kemiripan kluster-klusternya
+oh kluster ini, angkatan yang ini, kluster itu
+tapi kalau sudah label, dia harus punya label
+nah seperti itu kadang saya minta, pasti Shani sih kan gak tahu
+gak dibaca dulu lah, datanya apa
+kalau kayak gini ya kamu harus tidur, jangan ngomong implementasi
+jadi dulu tahan napa
+setidaknya tau kulitnya, oh iya nanti buat apa
+ya, itu buat tata
+oke, baik pak
+karena gak mungkin dikontokkan
+belum sampai situ
+mungkin itu aja pak dari saya
+terima kasih banyak pak

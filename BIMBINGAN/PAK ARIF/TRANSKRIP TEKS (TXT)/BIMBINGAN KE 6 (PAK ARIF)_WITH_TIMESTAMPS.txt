@@ -1,0 +1,2019 @@
+[00:00 - 00:06] Ini saya udah ngebuat sesuai dengan yang spesifikasi yang kemarin disampaikan juga khususnya dari umum gua spesifik
+[00:06 - 00:11] Disini saya menceritakan dari bimbel itu seperti apa
+[00:11 - 00:12] Gambaran umumnya
+[00:12 - 00:19] Terus saya juga tambahin dari undang-undang Republik Indonesia untuk bahwasannya
+[00:19 - 00:24] Terkait bahwasannya bimbel yang belajar ini merupakan salah satu pendukung untuk pendidikan non formal
+[00:24 - 00:31] Lalu yang kedua langsung saya ketatak kewala operasional dari jumlah arti itu sendiri
+[00:31 - 00:33] Atau pendidikan mitra itu sendiri
+[00:33 - 00:41] Lalu disini saya juga masih membutuhkan data dari mitra
+[00:41 - 00:48] Karena total jumlah siswa sama tentornya itu masih belum fix dari mereka
+[00:48 - 00:53] Karena tiap harinya ada pergantian gitu baik itu dari tentor sama siswanya
+[00:53 - 00:59] Lalu selanjutnya disini ada penjelasan dari masalah dan operasional secara umum terlebih dahulu
+[00:59 - 01:04] Karena kemarin dari guling mengatakan kalau misalnya dari mitranya itu udah ada penjelasan mitranya
+[01:04 - 01:08] Lalu penjelasan proses bisnis secara umum seperti apa
+[01:08 - 01:12] Lalu dispesifikan ke permasalahannya
+[01:12 - 01:27] Lalu berikutnya disini karena ada permasalahan itu dari kebatatan jadwal dari sisi jadwal yang banyak
+[01:27 - 01:29] Apa namanya
+[01:29 - 01:31] Banyak opsinya
+[01:31 - 01:35] Terus juga menyediakan dari TK sampai SMA
+[01:35 - 01:41] Jadi kemarin dari wawancara pun juga dari beliau menyatakan bahwasannya
+[01:41 - 01:45] Perlu adanya apa namanya
+[01:45 - 01:51] Pembagian jadwal dari tentor dan juga pembagian kelas di setiap tentornya pak
+[01:51 - 01:55] Jadi karena banyak yang disediakan oleh ARTA dari TK sampai SMA akhirnya
+[01:55 - 01:57] Dari mitra
+[01:57 - 02:03] Mencoba untuk meminta saya membuatkan sistem untuk membantu pengelolaan jadwal
+[02:03 - 02:07] Karena untuk pengelolaan jadwal sendiri saat ini masih dari tahap
+[02:07 - 02:12] Staff administrasi atau meja depan atau rondes dan juga dari kepala cabangnya
+[02:12 - 02:15] Dan dari semua kepala cabang itu totalnya 8 kepala cabang
+[02:15 - 02:21] Yang mana dari setiap kepala cabang yang tersebut di setiap harinya akan memberikan rekapan
+[02:21 - 02:29] Dari total pendapatan di hari itu dan juga dari total siswa di hari itu
+[02:29 - 02:35] Yang dimana setiap harinya akan diberikan ke kantor pusat di cabang yang kedua
+[02:35 - 02:40] Yang dimana itu kalau misalkan dari ARTA 8 sampai ke 7 itu sangat jauh sekali jadwal
+[02:40 - 02:42] Dan itu harus setiap hari dilakukan
+[02:43 - 02:46] Maksudnya nanti penjatual itu di sistem kamu juga?
+[02:46 - 02:48] Iya ada penjatual itu di sistem
+[02:48 - 02:52] Tapi ga sampe tutor, masih siswanya ga?
+[02:52 - 02:54] Sampai gimana pak?
+[02:54 - 02:58] Misalkan kamu buat create kelasnya, tutornya masuk, siswanya masuk
+[02:58 - 03:00] Siswanya juga masuk untuk penjatualan
+[03:00 - 03:04] Karena pembagian honornya dari tentor ini
+[03:04 - 03:08] Berdasarkan dari si tentor ini menghandle berapa siswa gitu pak
+[03:08 - 03:11] Karena buat kelasnya dulu
+[03:11 - 03:13] Masukin orangnya
+[03:13 - 03:15] Masukin siswanya dan ini
+[03:15 - 03:17] Itu kayak sistemnya dibuat
+[03:17 - 03:19] Aku buat sistem lagi itu
+[03:19 - 03:21] Jadi buat kelasnya dulu, buat tutornya
+[03:21 - 03:23] Nanti tutornya, siswanya baru dimasukin
+[03:25 - 03:27] Yang akhir itu ya pak?
+[03:27 - 03:29] Beda nanti, saya punya sendiri
+[03:29 - 03:31] Kayak saya mau buat, saya pernah buat kayak UD
+[03:31 - 03:33] Ada, saya buat persisnya gitu
+[03:33 - 03:35] Masukin video, masukin kuis
+[03:35 - 03:37] Oh oke
+[03:37 - 03:39] Create-nya, create
+[03:39 - 03:41] Jampalnya, create cuman
+[03:41 - 03:43] Kalo sampe itu, saya ada masukan di batas aja pak
+[03:43 - 03:45] Kalo misalkan memang ga masukin yang bangsoal
+[03:45 - 03:47] Atau video materi gitu
+[03:47 - 03:49] Cuma lumayan
+[03:49 - 03:51] Tapi ngelapa
+[03:51 - 03:53] Itu berarti cuma kelasnya aja kan
+[03:53 - 03:55] Belum sampe mingguan-mingguan ga ada kan
+[03:55 - 03:56] Materi gitu
+[03:56 - 03:57] Materinya ga ada pak
+[03:57 - 03:58] Berarti cuma kelasnya aja
+[03:58 - 03:59] Cuma untuk pendataan aja
+[03:59 - 04:00] Pendataannya doang
+[04:00 - 04:01] Ga terlalu susah
+[04:01 - 04:03] Susah itu kalo udah masuk ke materi
+[04:03 - 04:07] Bukan menjadikan kayak LMS itu engga pak
+[04:07 - 04:09] Kalo punya satu LMS
+[04:09 - 04:13] Lalu juga di setiap pencatatan itu dilakukan secara manual
+[04:13 - 04:15] Masih menggunakan antar
+[04:15 - 04:17] Lalu juga pembayaran
+[04:17 - 04:18] Saat ini juga yang mau ditanyakan adalah
+[04:18 - 04:20] Saat ini pembayaran itu
+[04:20 - 04:23] Dari sisi staff administrasi
+[04:23 - 04:24] Atau staff frontesnya itu
+[04:24 - 04:27] Ketika ada wali murid atau siswa yang mendaftar
+[04:27 - 04:28] Dan melakukan pembayaran
+[04:28 - 04:31] Itu harus ngevalidasi terlebih dahulu
+[04:31 - 04:33] Sebelum dicatat di buku besarnya
+[04:33 - 04:35] Ke manajemen pak
+[04:35 - 04:36] Pembayaran
+[04:36 - 04:38] Untuk ngevalidasinya
+[04:38 - 04:40] Sampai pembayaran mas sistem kamu nanti
+[04:40 - 04:41] Nah ini juga pak
+[04:41 - 04:44] Yang jadi pertimbangan yang ingin saya tanyakan adalah
+[04:44 - 04:46] Untuk saya saat ini
+[04:46 - 04:48] Dan juga di minta mitra sebenernya
+[04:48 - 04:49] Untuk pembayaran sendiri
+[04:49 - 04:51] Dari staff administrasi
+[04:51 - 04:52] Itu hanya
+[04:52 - 04:54] Menginput atau submit
+[04:54 - 04:56] Bukti transaksi
+[04:56 - 04:58] Lalu akan di
+[04:58 - 05:00] Cek oleh
+[05:00 - 05:01] Ya gini
+[05:01 - 05:02] Untuk
+[05:02 - 05:03] Klien itu
+[05:03 - 05:04] Siswa itu
+[05:04 - 05:06] Transaksinya lewatnya apa?
+[05:06 - 05:07] Transfer pak
+[05:07 - 05:08] Transfer
+[05:08 - 05:09] Atm langsung?
+[05:09 - 05:10] Iya
+[05:10 - 05:11] Langsung rekening manajemen bosnya
+[05:11 - 05:13] Terus nanti dia nge-share buktinya kan?
+[05:13 - 05:15] Dia nge-share buktinya
+[05:15 - 05:16] Lalu dari
+[05:16 - 05:18] Bosnya akan ngeliat mutasi rekeningnya
+[05:18 - 05:19] Secara manual
+[05:19 - 05:20] Secara manual
+[05:20 - 05:21] Gak susah itu
+[05:21 - 05:26] Tinggal validasi
+[05:26 - 05:27] Kalau tidak sesuai
+[05:27 - 05:28] Tolak
+[05:28 - 05:30] Yang sederhana
+[05:30 - 05:31] Kayak gitu saya punya
+[05:31 - 05:32] Yang rumit pakai
+[05:32 - 05:33] Ya ketiga
+[05:33 - 05:34] Doku
+[05:34 - 05:35] Punya
+[05:35 - 05:36] Jadi gak susah
+[05:36 - 05:37] Itu
+[05:37 - 05:39] Doku itu untuk payment gateway nya pak?
+[05:39 - 05:40] Payment gateway
+[05:40 - 05:41] Tapi kan kamu
+[05:41 - 05:42] Kalau
+[05:42 - 05:43] Sistem yang tanami itu kan
+[05:43 - 05:44] Ada dua genre
+[05:44 - 05:45] Kalau B2B
+[05:45 - 05:46] Dengan perusahaan itu gak boleh lewat
+[05:46 - 05:47] Payment gateway
+[05:47 - 05:48] Kayak misal lewat doku
+[05:48 - 05:49] Itu gak boleh
+[05:49 - 05:50] Karena
+[05:50 - 05:52] Perusahaan itu harus punya bukti transfernya kemana
+[05:52 - 05:54] Karena dia pelaporan juga
+[05:54 - 05:55] Kalau dia misalnya ke Shopee
+[05:55 - 05:56] Gak bisa
+[05:56 - 05:57] Bisnis saya dengan saya nih
+[05:57 - 05:59] Jadi dia harus langsung ke
+[05:59 - 06:00] Payment gateway nya saya
+[06:00 - 06:01] Gitu
+[06:01 - 06:02] Kalau
+[06:02 - 06:03] Lewat payment gateway kan
+[06:03 - 06:04] Dia ke doku dulu
+[06:04 - 06:05] Dari doku
+[06:05 - 06:06] Saya ambil cair kan
+[06:06 - 06:07] Cairnya juga lama ya pak?
+[06:07 - 06:08] Lama
+[06:08 - 06:09] Harus menunggu berapa puluh juta dulu
+[06:09 - 06:11] Nah itu yang lama
+[06:11 - 06:12] Jadi saya
+[06:12 - 06:13] Karena
+[06:13 - 06:15] Aturan perusahaan itu harus dengan
+[06:15 - 06:16] Bisnis dengan bisnis
+[06:16 - 06:17] Maka
+[06:17 - 06:18] Yang di bagian B2B itu
+[06:18 - 06:19] Transfernya manual
+[06:19 - 06:20] Cuma
+[06:20 - 06:21] Faidasi nya dari sistem
+[06:21 - 06:22] Oke
+[06:22 - 06:25] Faidasi nya kayak gini
+[06:25 - 06:26] Eh
+[06:26 - 06:27] Gimana ya
+[06:27 - 06:28] Pesanan CXR
+[06:28 - 06:29] Nah ini
+[06:29 - 06:30] Ini aku
+[06:30 - 06:31] Buter lagi bukanya
+[06:31 - 06:32] Tapi
+[06:32 - 06:33] Bisa aku cek gak ya
+[06:33 - 06:34] Lagi pakai apa ya
+[06:34 - 06:35] Nah ini
+[06:35 - 06:36] Yang sudah bayar
+[06:36 - 06:37] Selesai
+[06:37 - 06:39] Masih running
+[06:39 - 06:42] Nah ini
+[06:42 - 06:43] Faidasi sudah kan
+[06:43 - 06:44] Nanti saya tinggal cek disini
+[06:44 - 06:45] Karena ini sudah selesai
+[06:45 - 06:46] Ya
+[06:46 - 06:47] Saya preview ini
+[06:47 - 06:48] Ini perjanjiannya
+[06:48 - 06:49] Contoh perjanjiannya
+[06:49 - 06:50] Ya
+[06:50 - 06:51] Ya
+[06:51 - 06:52] Ya
+[06:52 - 06:53] Ini contohnya
+[06:53 - 06:54] Saya kemarin mutas kan
+[06:54 - 06:55] Nanti kalau sudah terima
+[06:55 - 06:56] Oke saya selesaikan
+[06:56 - 06:57] Saya berhasil
+[06:57 - 06:58] Nanti disana
+[06:58 - 06:59] Diterima
+[06:59 - 07:00] Di dashboardnya
+[07:00 - 07:01] Siswanya
+[07:01 - 07:02] Tapi kalau saya tolak
+[07:02 - 07:03] Nanti ada komen disini
+[07:03 - 07:04] Saya tolak
+[07:04 - 07:06] Karena misalnya buktinya tidak sesuai
+[07:06 - 07:08] Atau nominalnya tidak sesuai
+[07:08 - 07:09] Nanti ditolak
+[07:09 - 07:11] Kembali ke sisi dia lagi
+[07:11 - 07:14] Dia ulangi lagi uploadnya
+[07:14 - 07:16] Berarti akan tetap manualan pak
+[07:16 - 07:17] Untuk validasi nya pak
+[07:17 - 07:18] Manual
+[07:18 - 07:20] Kita harus melihat dari
+[07:20 - 07:21] Mutasi rekening
+[07:21 - 07:22] Terus dari dashboard ini juga
+[07:22 - 07:23] Ya dong
+[07:23 - 07:24] Mutasinya dia cek dulu kan
+[07:24 - 07:25] Uang udah masuk
+[07:25 - 07:26] Buktinya kan
+[07:26 - 07:27] Gak bisa dong
+[07:27 - 07:28] Cuma lihat bukti
+[07:28 - 07:29] Buktinya bisa di edit edit
+[07:29 - 07:30] Bukti dia cek
+[07:30 - 07:31] Oh udah
+[07:31 - 07:32] Lihat konfirmasi
+[07:32 - 07:33] Nanti di perusahaannya
+[07:33 - 07:34] Dapat informasinya
+[07:34 - 07:35] Sudah selesai
+[07:35 - 07:36] Kalau ditolak
+[07:36 - 07:37] Juga ada informasinya
+[07:37 - 07:38] Ditolak karena
+[07:38 - 07:39] Apa
+[07:48 - 07:50] Bukan pemiliknya
+[07:50 - 07:51] Jadi kan
+[07:51 - 07:52] Dia harus
+[07:52 - 07:53] Cek bener-beneran
+[07:53 - 07:54] Soalnya kalau itu
+[07:54 - 07:55] Punya saya kan aman aja
+[07:55 - 07:56] Ini kan orang lain
+[07:56 - 07:57] Jadi dia harus
+[07:57 - 07:58] Cek dulu dari
+[07:58 - 07:59] Ide nya
+[07:59 - 08:00] Bener gak
+[08:00 - 08:01] Lihat lagi dengan
+[08:01 - 08:02] Mutasi
+[08:02 - 08:03] Ada gak
+[08:03 - 08:04] Memasukkan
+[08:04 - 08:05] Kalau udah
+[08:05 - 08:06] Oh udah sama nih
+[08:06 - 08:07] Validasi
+[08:07 - 08:08] Berarti kalau
+[08:08 - 08:09] Untuk scope nya sendiri
+[08:09 - 08:10] Karena saya taruh
+[08:10 - 08:11] Di batasnya juga
+[08:11 - 08:12] Gak sampai ke payment gitu ya pak
+[08:12 - 08:13] Cukup
+[08:13 - 08:14] Gak apa pak
+[08:14 - 08:15] Kan
+[08:15 - 08:16] Langsung ke ATM dia
+[08:16 - 08:17] Iya langsung ATM
+[08:17 - 08:18] Yang transfernya kayak
+[08:18 - 08:19] Kamu kayak di Shopee
+[08:19 - 08:20] Nah itu
+[08:20 - 08:21] Shopee punya sendiri
+[08:21 - 08:22] Ya
+[08:22 - 08:23] Punya saya juga ada
+[08:23 - 08:24] Patent gateway
+[08:24 - 08:25] Tapi untuk yang
+[08:25 - 08:26] Donasi umum
+[08:26 - 08:27] Yang gak harus
+[08:27 - 08:28] Ada bukti
+[08:28 - 08:29] Buktinya
+[08:29 - 08:30] Gitu
+[08:30 - 08:31] Karena kalau perusahaan
+[08:31 - 08:32] Kita harus punya bukti semua
+[08:32 - 08:33] Perusahaan juga butuh
+[08:33 - 08:34] Butuh
+[08:34 - 08:35] Invoice nya
+[08:35 - 08:36] Invoice nya misalnya
+[08:36 - 08:37] Dia transfernya ke
+[08:37 - 08:38] Patent gateway
+[08:38 - 08:39] Bukan punya saya
+[08:39 - 08:40] PT nya
+[08:40 - 08:41] Patent gateway
+[08:41 - 08:42] Doku apa gitu
+[08:42 - 08:43] Jadi dia transfer
+[08:43 - 08:44] Nanti dia bisa
+[08:44 - 08:45] Miss kan
+[08:45 - 08:46] Karena kemarin itu
+[08:46 - 08:48] Untuk payment gateway
+[08:48 - 08:49] Karena kayaknya
+[08:49 - 08:50] Kalo misalkan
+[08:50 - 08:51] Scope nya itu
+[08:51 - 08:52] Agak
+[08:52 - 08:53] Cair
+[08:53 - 08:54] Cairnya gak cepet
+[08:54 - 08:55] Mereka uangnya
+[08:55 - 08:56] 2 smuter
+[08:56 - 08:58] Untuk pencatatan rekapan transaksi
+[08:58 - 08:59] Itu harus dilakukan
+[08:59 - 09:00] Real time
+[09:00 - 09:01] Sesuai kan dengan mereka
+[09:01 - 09:02] Kalo kamu patent gateway
+[09:02 - 09:03] Itu kalo mereka sudah patent gateway
+[09:03 - 09:04] Selama ini ya
+[09:04 - 09:05] Jadi tinggal dibangunkan sistemnya
+[09:05 - 09:06] Gitu
+[09:06 - 09:07] Tapi kalo mereka selama ini
+[09:07 - 09:08] Masih manual
+[09:08 - 09:09] Ya itu yang bisa
+[09:09 - 09:10] Oke kan
+[09:10 - 09:11] Pertanya juga mintain
+[09:11 - 09:12] Seperti itu
+[09:12 - 09:13] Pak
+[09:13 - 09:14] Lebih cepet kan
+[09:14 - 09:15] Gak ada potongan
+[09:15 - 09:16] Potongan
+[09:16 - 09:17] Gitu
+[09:17 - 09:18] Potongan
+[09:18 - 09:19] Itu terkait
+[09:19 - 09:20] Pembayaran
+[09:20 - 09:21] Di top 1
+[09:21 - 09:22] Cuma berarti
+[09:22 - 09:23] Akses nya ada
+[09:23 - 09:24] Kemarin kamu kayak
+[09:24 - 09:25] Membatasi yang di siswa ya
+[09:25 - 09:26] Pak Akses
+[09:26 - 09:27] Yang mana itu pak
+[09:27 - 09:28] Kamu kemarin bilang
+[09:28 - 09:29] Pak Akses nya ini cuma tutor
+[09:29 - 09:30] Sama itu
+[09:30 - 09:31] Iya
+[09:31 - 09:32] Dan siswa
+[09:32 - 09:33] Siswa kan gak ada pak
+[09:33 - 09:35] Kalo bukti transfer gimana
+[09:35 - 09:37] Bukti transfer dari staff administrasi aja
+[09:37 - 09:39] Dari staff administrasi yang
+[09:39 - 09:41] Pendaftar
+[09:41 - 09:42] Kalo siswa misalkan
+[09:42 - 09:43] Aku transfer nih
+[09:43 - 09:44] Bayar
+[09:44 - 09:45] Buktinya aku share
+[09:45 - 09:46] Pilihan mana
+[09:46 - 09:48] Dari sisi siswa
+[09:48 - 09:49] Langsung di foto
+[09:49 - 09:51] Sama si staff administrasi pak
+[09:51 - 09:52] Karena dari
+[09:52 - 09:53] Oh udah dirumah
+[09:53 - 09:55] Dikirim WA gitu
+[09:55 - 09:56] Iya dikirim WA
+[09:56 - 09:57] Kalau misalkan secara online
+[09:57 - 09:58] Oh berarti manual
+[09:58 - 09:59] Ini berarti
+[09:59 - 10:00] Kamu masukin nya manual
+[10:00 - 10:01] Iya masuknya manual
+[10:01 - 10:02] Dari staff administrasi
+[10:02 - 10:03] Oh berarti gak ada perolakan
+[10:03 - 10:04] Kayak punya saya
+[10:04 - 10:05] Punya saya tuh 2 jalur mas
+[10:05 - 10:06] Gimana itu pak
+[10:06 - 10:09] Punya saya tuh kayak punya
+[10:09 - 10:10] Ada 2
+[10:10 - 10:11] Saya udah penjepatan gitu
+[10:11 - 10:12] Iya
+[10:12 - 10:14] Apunya saya gini nih
+[10:14 - 10:15] Kan ini ada
+[10:15 - 10:16] Dashboard admin
+[10:16 - 10:17] Dashboard admin
+[10:17 - 10:18] Iya kan
+[10:18 - 10:19] Ini disini ada
+[10:19 - 10:20] Dashboard user
+[10:20 - 10:21] Nah
+[10:21 - 10:22] Kan aku masih penawaran dulu nih
+[10:22 - 10:23] Penawaran
+[10:23 - 10:24] Iya kan penawaran
+[10:24 - 10:25] Iya kan
+[10:25 - 10:26] Penawaran campaign
+[10:26 - 10:27] Dia setuju nih
+[10:27 - 10:28] Ada perusahaan nih
+[10:28 - 10:29] Dia lihat semuanya banyak perusahaan ngambil
+[10:29 - 10:30] Oh oke nih
+[10:30 - 10:31] Dia ambil
+[10:31 - 10:32] Nanti ada kontraknya
+[10:32 - 10:33] Habis kontrak dia lanjut ke tahapan pembayarannya
+[10:33 - 10:34] Iya kan
+[10:34 - 10:37] Kemudian pembayaran dia kirim tuh bukti pembayarannya
+[10:37 - 10:39] Nah bukti pembayaran
+[10:39 - 10:40] Bukti pembayaran
+[10:40 - 10:41] Bukti pembayaran dikirim
+[10:41 - 10:43] Nah nanti admin saya tuh ngecek
+[10:43 - 10:46] Apakah uang itu masuk
+[10:46 - 10:47] Dari itu kan
+[10:47 - 10:48] Invoice apa
+[10:48 - 10:49] Rekeningnya itu
+[10:49 - 10:50] Oh udah masuk
+[10:50 - 10:51] Dia cek lagi dengan buktinya
+[10:51 - 10:52] Sama gak
+[10:52 - 10:53] Dia transfernya berapain
+[10:53 - 10:54] Dengan
+[10:54 - 10:55] Nah kalau sudah sesuai
+[10:55 - 10:56] Sesuai saya validasi
+[10:56 - 10:57] Oke validasi
+[10:57 - 10:58] Disini masuk
+[10:58 - 11:00] Berarti penawarannya langsung masuk ke tahapan selanjutnya
+[11:00 - 11:01] Bukan lagi masuk penawaran
+[11:01 - 11:02] Tapi ke program
+[11:02 - 11:04] Program berjalan
+[11:04 - 11:05] Belum selesai
+[11:05 - 11:06] Nah ini
+[11:07 - 11:08] Tapi
+[11:08 - 11:09] Saya juga ngasih
+[11:09 - 11:10] Jalur
+[11:10 - 11:11] Yang
+[11:11 - 11:12] Ini kan dashboardnya
+[11:12 - 11:13] Perusahaannya
+[11:13 - 11:14] Iya
+[11:14 - 11:15] Tapi saya punya dua mekanisme
+[11:15 - 11:16] Ketika
+[11:16 - 11:18] Karena kan kalau dia kayak gini kan
+[11:18 - 11:19] Berarti setelah dia bayar
+[11:19 - 11:20] Dia kirim sendiri kan
+[11:20 - 11:21] Dia kirim buktinya kan
+[11:21 - 11:22] Iya
+[11:22 - 11:23] Bukti nanti ngecek disini validasi
+[11:23 - 11:24] Iya
+[11:24 - 11:25] Tapi saya ngasih dua jalur
+[11:25 - 11:26] Karena apa
+[11:26 - 11:27] Gak semua perusahaan
+[11:27 - 11:28] Dia itu
+[11:28 - 11:29] Mau
+[11:29 - 11:30] Membuka sistemnya
+[11:30 - 11:31] Untuk ngambil penawaran
+[11:31 - 11:32] Iya
+[11:32 - 11:33] Baik
+[11:33 - 11:34] Aku malas nih
+[11:34 - 11:35] Aku
+[11:35 - 11:36] Gua admin
+[11:36 - 11:37] Aku punya perusahaan besar
+[11:37 - 11:38] Aku
+[11:38 - 11:39] Aku gak mau lihat sistem mas
+[11:39 - 11:40] Aku
+[11:40 - 11:41] Oke lah
+[11:41 - 11:42] Kamu mau buat program dimana
+[11:42 - 11:43] Butuhnya berapa
+[11:43 - 11:44] Atau
+[11:44 - 11:45] Bisa aja dia datang mas
+[11:45 - 11:46] Aku punya uang 50 juta
+[11:46 - 11:47] Baikkan aku program 60 juta
+[11:47 - 11:48] Dia gak mau buat sistem
+[11:48 - 11:49] Kan perusahaan
+[11:49 - 11:50] Kita harus nyebatin itu
+[11:50 - 11:51] Sedangkan saya membuat sistem disini
+[11:51 - 11:52] Lewat penawaran
+[11:52 - 11:53] Dia harus mencet sendiri
+[11:53 - 11:54] Iya
+[11:54 - 11:55] Tapi kan ada juga perusahaan yang malas
+[11:55 - 11:56] Iya
+[11:56 - 11:57] Saya mau ngasih uang aja
+[11:57 - 11:58] Tapi
+[11:58 - 11:59] Makanya ketika dia mau jadi
+[11:59 - 12:00] Disini ada tombol
+[12:00 - 12:01] Create
+[12:01 - 12:02] Create
+[12:02 - 12:03] Proyek
+[12:03 - 12:04] Create
+[12:04 - 12:05] Proyek ya
+[12:05 - 12:06] Proyek otomatis
+[12:06 - 12:07] Tetep aja nanti
+[12:07 - 12:08] Dia
+[12:08 - 12:09] Nah
+[12:09 - 12:10] Aku contohkan lagi nih
+[12:10 - 12:16] Karena sebenernya kalo untuk online tuh
+[12:16 - 12:18] Jarang banget pak
+[12:18 - 12:19] Untuk penawa
+[12:19 - 12:20] Apa
+[12:20 - 12:21] Pembayaran secara online
+[12:21 - 12:23] Dan kebanyakan tuh rata-rata
+[12:23 - 12:24] Hampir 95%
+[12:24 - 12:26] Dari wali murid dan siswa itu
+[12:26 - 12:27] Yang datang langsung ke
+[12:27 - 12:29] Cabangnya gitu
+[12:29 - 12:30] Oke
+[12:30 - 12:31] Saya juga mau buat sistem
+[12:31 - 12:32] Kenapa saya buat kayak
+[12:32 - 12:33] Kayak punya kawan-kawan
+[12:33 - 12:34] Karena saya akan
+[12:34 - 12:35] Mengalami orang itu datang
+[12:35 - 12:36] Enggak lihat sistem
+[12:36 - 12:38] Makanya saya bang
+[12:38 - 12:39] Mikirkan
+[12:39 - 12:40] Ya gimana kalo
+[12:40 - 12:41] Tapi saya butuh
+[12:41 - 12:42] Apa
+[12:42 - 12:43] Saya harus punya merekapannya semua
+[12:43 - 12:45] Bahwapun dia lewat penawaran
+[12:45 - 12:46] Lewat dari luar
+[12:46 - 12:47] Tetep harus punya data
+[12:47 - 12:48] Jadi saya tau nih
+[12:48 - 12:49] Omset saya berapa
+[12:49 - 12:50] Paham gak
+[12:50 - 12:51] Oh
+[12:51 - 12:52] Contohnya
+[12:52 - 12:53] Ini
+[12:53 - 12:54] Pesanan CSR
+[12:54 - 12:56] Ini pesanan-pesanan yang
+[12:56 - 12:57] Beberapa
+[12:57 - 12:58] Dia lewat sistem
+[12:58 - 12:59] Ini gak batalkan
+[12:59 - 13:00] Aku contoh
+[13:00 - 13:01] Contoh
+[13:01 - 13:02] Karena dia
+[13:02 - 13:03] Gak sesu
+[13:03 - 13:04] Datanya
+[13:04 - 13:06] Ini menunggu pembayaran
+[13:06 - 13:07] Jadi aku lihat nih
+[13:07 - 13:08] Dia sudah ngambil penawaran
+[13:08 - 13:09] Pembayaran
+[13:09 - 13:10] Tapi dia belum bayar
+[13:10 - 13:11] Kalo di review belum ada
+[13:11 - 13:12] Data pembayarannya
+[13:12 - 13:13] Makanya masih sampai sini kan
+[13:13 - 13:14] Gitu
+[13:14 - 13:15] Jadi saya punya mekanisme
+[13:15 - 13:16] Nah
+[13:16 - 13:17] Tapi
+[13:17 - 13:18] Kalo ini kan lihat penawaran
+[13:18 - 13:19] Dia klik
+[13:19 - 13:20] Ini masuk secara otomatis
+[13:20 - 13:21] Mas
+[13:21 - 13:22] Masuk kesini
+[13:22 - 13:23] Dari dashboardnya
+[13:23 - 13:24] Perusahaan
+[13:24 - 13:25] Tapi kalo
+[13:25 - 13:26] Bisa aja nih
+[13:27 - 13:28] Saya
+[13:28 - 13:29] Bisa aja gini
+[13:29 - 13:30] Nah ini
+[13:30 - 13:31] Saya punya
+[13:31 - 13:32] Misalnya perusahaan datang mas
+[13:32 - 13:33] Saya mau buat kegiatan ngobrol juta
+[13:33 - 13:34] Tapi saya mau liatnya gak sini
+[13:34 - 13:35] Maka saya buatkan dari sini
+[13:36 - 13:37] Jadi mitraan saya pilih
+[13:37 - 13:38] Oh mitra saya ini
+[13:38 - 13:39] Dia mau buat paket apa nih
+[13:39 - 13:40] Ambil paket yang ini kan
+[13:40 - 13:42] Nanti campaign-nya sudah saya buat
+[13:42 - 13:43] Yang ini
+[13:43 - 13:44] Nah otomatis masuk kan
+[13:44 - 13:45] Saya simpan
+[13:45 - 13:47] Ketika saya simpan
+[13:47 - 13:50] Aduh
+[13:50 - 13:53] Belum saya jalan kan
+[13:53 - 13:54] Tapi ada penggunaan tersebut
+[13:54 - 13:58] Berarti harus ada tampilan untuk user kan pak
+[13:58 - 13:59] Dari sisi
+[13:59 - 14:00] Penggunanya kan pak
+[14:00 - 14:01] Maksudnya dari
+[14:01 - 14:02] Kalo saya disini gak
+[14:02 - 14:04] Cuma tujuannya saya gini
+[14:04 - 14:08] Kalo online tuh gimana pak
+[14:08 - 14:09] Berarti kalo misalkan
+[14:09 - 14:11] Kan kalo case-nya yang tadi saya bilang
+[14:11 - 14:12] 95% itu
+[14:12 - 14:13] Dari
+[14:13 - 14:14] Wali Murat
+[14:14 - 14:15] Iya mereka gak online
+[14:15 - 14:16] Iya
+[14:16 - 14:17] Kebanyakan mereka gak online
+[14:17 - 14:18] Jadi
+[14:19 - 14:20] Walaupun gak online
+[14:20 - 14:21] Kamu tetep harus punya arsip kan
+[14:21 - 14:22] Ya betul
+[14:22 - 14:24] Nah makanya bedanya disini mas
+[14:24 - 14:25] Saya kasih contoh ya
+[14:25 - 14:26] Kalo yang tadi
+[14:26 - 14:27] Semuanya tampilannya sama
+[14:27 - 14:28] Persis seperti ini
+[14:28 - 14:29] Tampilan nanti
+[14:29 - 14:30] Saya punya datanya
+[14:30 - 14:32] Oh mana pembayarannya gitu ya
+[14:32 - 14:33] Iya
+[14:33 - 14:34] Cuma bedanya
+[14:34 - 14:35] Kalo dia lewat statusnya
+[14:35 - 14:36] Barusan
+[14:36 - 14:37] Yang masukkan admin
+[14:37 - 14:38] Jadi
+[14:38 - 14:39] Pesanan itu bukan dari
+[14:39 - 14:40] Perusahaan
+[14:40 - 14:41] Tapi
+[14:41 - 14:42] Langsung admin saya yang masukin
+[14:42 - 14:43] Karena perusahaan tuh gak mau
+[14:43 - 14:44] Lihat sistem
+[14:44 - 14:45] Dia
+[14:45 - 14:48] Tapi kan saya juga harus menyimpan arsip-arsipnya ya
+[14:48 - 14:49] Urusan juga masih punya
+[14:49 - 14:50] Dia juga bisa lihat
+[14:50 - 14:51] Arsipnya dia
+[14:51 - 14:52] Walaupun dia gak mau login
+[14:52 - 14:53] Apapun
+[14:53 - 14:54] Saya harus punya pegangan nih
+[14:54 - 14:55] Kalo nanti ada komplain
+[14:55 - 14:56] Ini buktinya ada kok
+[14:56 - 14:57] Ini buktinya ada kok
+[14:57 - 14:58] Ya gitu
+[14:58 - 14:59] Tetap walaupun dia gak lihat sistem
+[14:59 - 15:00] Saya harus arsipkan
+[15:00 - 15:01] Nah nanti
+[15:01 - 15:02] Saya punya satu contoh ini
+[15:02 - 15:03] Contoh
+[15:05 - 15:06] Nah
+[15:06 - 15:07] Disini bedanya gini
+[15:07 - 15:08] Di bagian sini kan
+[15:08 - 15:09] Dia berarti gak ngelewati
+[15:10 - 15:11] Dia gak ngelewati
+[15:11 - 15:12] Uploadnya
+[15:12 - 15:18] Nah
+[15:18 - 15:19] Jadi
+[15:19 - 15:20] Di saya itu
+[15:20 - 15:21] Ada upload disini
+[15:21 - 15:22] Upload bukti
+[15:23 - 15:24] Perjanjian
+[15:24 - 15:25] Sama upload bukti pembayaran
+[15:25 - 15:26] Jadi
+[15:26 - 15:27] Yang harusnya
+[15:27 - 15:28] Di upload oleh
+[15:28 - 15:29] Perusahaan
+[15:29 - 15:30] Lewat tadi
+[15:30 - 15:31] Ini yang lewat admin
+[15:31 - 15:32] Karena
+[15:32 - 15:33] Dia tau bahwa
+[15:33 - 15:34] Create apa
+[15:34 - 15:35] Untuk penawaran ini
+[15:35 - 15:36] Dibuatkan oleh admin saya
+[15:36 - 15:38] Maka disini ada
+[15:38 - 15:39] Ada button untuk
+[15:39 - 15:40] Upload buktinya
+[15:40 - 15:41] Sama upload perjanjiannya
+[15:41 - 15:43] Jadi manual
+[15:43 - 15:44] Oleh yang buat admin
+[15:44 - 15:45] Tapi ketika saya simpan
+[15:45 - 15:47] Bentuknya jadi sama semua
+[15:47 - 15:49] Dokumennya ada lengkap semua
+[15:49 - 15:50] Semua program itu
+[15:50 - 15:51] Punya
+[15:51 - 15:53] Intinya pengarsipannya sama
+[15:53 - 15:54] Oke
+[15:54 - 15:55] Walaupun dari dua jalur yang
+[15:55 - 15:56] Dua jalur yang berbeda
+[15:56 - 15:57] Dua jalur yang berbeda
+[15:57 - 15:58] Pengarsipannya sama
+[15:58 - 15:59] Jadi kalo yang tadi
+[15:59 - 16:00] Perusahaan
+[16:00 - 16:01] Satunya lewat admin
+[16:01 - 16:02] Tapi ujungnya
+[16:02 - 16:03] Dashboardnya sama
+[16:03 - 16:04] Yang disini dia upload
+[16:04 - 16:05] Buktinya manual
+[16:05 - 16:06] Oleh perusahaan
+[16:06 - 16:07] Yang ini upload
+[16:07 - 16:08] Oleh admin saya
+[16:08 - 16:09] Jadi tetep saya gini
+[16:09 - 16:10] Karena saya nanti yang ngecek
+[16:10 - 16:11] Berjanjiannya mana
+[16:11 - 16:12] Bukti bayarnya mana
+[16:12 - 16:13] Oke
+[16:13 - 16:14] Kalo dia enggak
+[16:14 - 16:15] Nanti soalnya
+[16:15 - 16:16] Walaupun ini jadi gini ya
+[16:16 - 16:17] Mas
+[16:17 - 16:18] Di dashboard perusahaan itu
+[16:18 - 16:19] Nanti akan terbukti disini
+[16:19 - 16:20] Di dashboard perusahaan itu
+[16:20 - 16:21] Akan ada muncul
+[16:21 - 16:24] Informasinya sama
+[16:24 - 16:25] Walaupun
+[16:25 - 16:26] Walaupun
+[16:26 - 16:27] Dia enggak
+[16:27 - 16:28] Nah
+[16:28 - 16:29] Reportnya
+[16:29 - 16:30] Itu sama
+[16:30 - 16:31] Makasih
+[16:31 - 16:33] Nah ini LPG nya
+[16:33 - 16:34] Laporan Pertanggung jawabannya
+[16:34 - 16:35] Ini monitoring nya
+[16:35 - 16:36] Ini LPG nya
+[16:36 - 16:37] Nah LPG nya sudah
+[16:37 - 16:38] Yang lainnya sudah belum disiapkan
+[16:38 - 16:39] Nanti
+[16:39 - 16:40] Disini ada
+[16:40 - 16:42] Bukti LPG nya
+[16:42 - 16:43] Atau
+[16:43 - 16:44] Perjanjian nya
+[16:44 - 16:45] Laporan Pertanggung jawabannya
+[16:45 - 16:46] Dananya itu ada disini
+[16:46 - 16:47] Bahkan disini
+[16:47 - 16:48] Semuanya ada
+[16:48 - 16:49] Undur dokumen terkait
+[16:49 - 16:50] Aku lupanya
+[16:50 - 16:51] Undur dokumen
+[16:51 - 16:52] Ini itunya
+[16:52 - 16:53] Kerjasama
+[16:53 - 16:54] Jadi walaupun
+[16:54 - 16:55] Dia enggak lewat sistem
+[16:55 - 16:56] Di dashboard dia itu
+[16:56 - 16:57] Secara otomatis
+[16:57 - 16:58] Update
+[16:58 - 16:59] Yang update admin saya
+[16:59 - 17:00] Jadi dia mau
+[17:00 - 17:01] Login atau enggak login
+[17:01 - 17:02] Yang penting kita sudah
+[17:02 - 17:03] Siapkan
+[17:03 - 17:04] Jadi kalo ada komplain
+[17:04 - 17:05] Ada pak datanya
+[17:05 - 17:07] Berarti kalo misalkan
+[17:07 - 17:09] Dari sisi admin nya nanti
+[17:09 - 17:11] Yang nge-input sendiri
+[17:11 - 17:12] Ya berarti kamu siapkan
+[17:12 - 17:13] Upload
+[17:13 - 17:14] Nah
+[17:14 - 17:16] Tadi kan yang ditanyakan pak Arif adalah
+[17:16 - 17:17] Apa namanya
+[17:17 - 17:18] Bagaimana cara mendapatkan
+[17:18 - 17:19] Bukti
+[17:19 - 17:20] Transaksinya itu
+[17:20 - 17:21] Untuk di-upload
+[17:21 - 17:22] Sama admin nya
+[17:22 - 17:23] Berarti kalo
+[17:23 - 17:24] RENCANANYA saya
+[17:24 - 17:26] Itu dari sisi admin
+[17:26 - 17:27] Kalo misalkan itu secara online
+[17:27 - 17:28] Dia akan
+[17:28 - 17:29] Tetep akan dari WA
+[17:29 - 17:30] Terus download gambarnya
+[17:30 - 17:31] Baru input sendiri
+[17:31 - 17:33] Atau misalkan
+[17:33 - 17:35] Foto secara langsung
+[17:35 - 17:36] Karena dari
+[17:36 - 17:37] Mitra itu
+[17:37 - 17:38] Udah menyediakan budget
+[17:38 - 17:39] Untuk membuat
+[17:39 - 17:40] Di siap cabangnya
+[17:40 - 17:41] Pengadaan untuk
+[17:41 - 17:42] Tablet
+[17:42 - 17:43] Untuk pendaftaran
+[17:43 - 17:45] Sistem yang ingin saya buat
+[17:45 - 17:47] Tapi kan tetep yang upload
+[17:47 - 17:48] Admin kan
+[17:48 - 17:49] Tablet yang upload tetep admin
+[17:49 - 17:50] Tapi caranya seperti itu
+[17:50 - 17:51] Enggak apa
+[17:51 - 17:52] Enggak apa
+[17:52 - 17:53] Upload manual kan
+[17:53 - 17:54] Enggak apa
+[17:54 - 17:55] Upload manual itu penting
+[17:55 - 17:56] Itu harus ada
+[17:56 - 17:57] Apalagi pembayarannya
+[17:57 - 17:58] Ya betul
+[17:58 - 17:59] Jadi nanti filternya
+[17:59 - 18:00] Enak banget
+[18:00 - 18:01] Kamu
+[18:01 - 18:02] Kegiatannya mana
+[18:02 - 18:03] Saya gampang
+[18:03 - 18:04] Kegiatannya apa namanya
+[18:04 - 18:05] Klik
+[18:05 - 18:06] Mengutil semua itu
+[18:06 - 18:07] Perjanjianya mana
+[18:07 - 18:08] Kemudian bupinya mana
+[18:08 - 18:09] Sama dengan punya kamu
+[18:09 - 18:10] Kamu harus membayangkan
+[18:10 - 18:11] Bagaimana ketika nanti
+[18:11 - 18:12] Ditanya
+[18:12 - 18:13] Nama
+[18:13 - 18:14] Berdasarkan apa
+[18:14 - 18:15] Kamu nyimpan asibnya itu
+[18:15 - 18:17] Apakah nama siswanya
+[18:17 - 18:19] Nanti kan kamu masukin itu
+[18:19 - 18:21] Tanggal kapan di uploadnya
+[18:21 - 18:22] Pembayarnya apa
+[18:22 - 18:23] Lalu mati
+[18:23 - 18:24] Tontak
+[18:24 - 18:25] Pencarian datanya
+[18:25 - 18:26] Kalau kamu
+[18:26 - 18:27] Langsung cari pencarian
+[18:27 - 18:28] Oh
+[18:28 - 18:29] Enggak akan ada
+[18:29 - 18:30] Kesalahan
+[18:30 - 18:31] Berarti kalau misalkan
+[18:31 - 18:32] Yang tadi saya lihat
+[18:32 - 18:33] Jadi saya kepikirkan gini pak
+[18:33 - 18:34] Kalau misalkan
+[18:34 - 18:35] Yang awalnya itu
+[18:35 - 18:36] Dari sisi adminnya
+[18:36 - 18:37] Nginput
+[18:37 - 18:38] Buti transfer
+[18:38 - 18:39] Yang dari bank itu
+[18:39 - 18:40] Berarti saya juga harus
+[18:40 - 18:41] Perlu ngebuat template
+[18:41 - 18:42] Tersendiri
+[18:42 - 18:44] Untuk laporan
+[18:44 - 18:45] Apa
+[18:45 - 18:46] Laporan
+[18:46 - 18:48] Pelaporan ke manajemen
+[18:48 - 18:50] Mengenai
+[18:50 - 18:51] Bukti transfernya
+[18:51 - 18:52] Kan awalnya kan
+[18:52 - 18:53] Dari bukti transfernya
+[18:53 - 18:54] Dari bank itu
+[18:54 - 18:55] Sekarang syutan bank itu
+[18:55 - 18:56] Apakah saya perlu
+[18:56 - 18:57] Membuat template
+[18:57 - 18:58] Tersendiri
+[18:58 - 18:59] Atau engga pak
+[18:59 - 19:00] Buat atau engga
+[19:00 - 19:01] Itu tergantung dari
+[19:01 - 19:02] Kebutuhan mitra ini
+[19:02 - 19:03] Selama ini pelaporan
+[19:03 - 19:04] Seperti apa
+[19:04 - 19:05] Apakah hanya butuh
+[19:05 - 19:06] Dari bukti transaksi
+[19:06 - 19:07] Apakah
+[19:07 - 19:08] Dia harus
+[19:08 - 19:09] Sudah jadi template
+[19:09 - 19:10] Kalau jadi template
+[19:10 - 19:11] Enak
+[19:11 - 19:12] Buatkan
+[19:12 - 19:13] Oke
+[19:13 - 19:14] Tergantung template
+[19:14 - 19:15] Saya punya template mas
+[19:15 - 19:16] Tadi perjanjian
+[19:16 - 19:17] Itu templatenya dari sini
+[19:17 - 19:18] Jadi
+[19:18 - 19:19] Semuanya
+[19:19 - 19:20] Template itu
+[19:20 - 19:21] Tergantung
+[19:21 - 19:22] Paketnya juga sama mas
+[19:22 - 19:23] Jadi
+[19:23 - 19:24] Dia dinamis
+[19:24 - 19:25] Oke
+[19:25 - 19:26] Saya kasih contoh
+[19:26 - 19:27] Yang disini
+[19:27 - 19:28] Jadi itu otomatis
+[19:28 - 19:29] Ngebaca angkanya pak
+[19:29 - 19:30] Terus di
+[19:30 - 19:31] Dia ngambil angkanya
+[19:31 - 19:32] Jadi template itu kayak
+[19:32 - 19:33] Template umumnya kan
+[19:33 - 19:34] Angkanya diambil dari datanya
+[19:34 - 19:35] Oh
+[19:35 - 19:36] Datanya bukan dari
+[19:36 - 19:37] Bukti transfer gambarnya
+[19:37 - 19:38] Ini
+[19:38 - 19:39] Ya
+[19:39 - 19:40] Tempet
+[19:40 - 19:41] Saya taruh dimana ya
+[19:41 - 19:42] Tempet
+[19:42 - 19:43] Selama CSR
+[19:43 - 19:44] Paket CSR
+[19:44 - 19:45] Tempet
+[19:45 - 19:46] Yang mana aku habis buat ya
+[19:46 - 19:47] Tempet perjanjian kerja kan
+[19:47 - 19:48] Jadi
+[19:48 - 19:49] Nah ini perjanjian
+[19:49 - 19:50] Saya bisa
+[19:50 - 19:51] Yang lagi aktif ini
+[19:51 - 19:52] Nanti kalau saya buat
+[19:52 - 19:53] Baru lagi
+[19:53 - 19:54] Saya tinggal upload
+[19:54 - 19:55] Perjanjiannya kan
+[19:55 - 19:56] Nanti
+[19:56 - 19:57] Setelah dia isi datanya
+[19:57 - 19:58] Saya langsung langsung
+[19:58 - 19:59] Perjanjiannya
+[19:59 - 20:00] Saya bisa buat ganti-ganti
+[20:00 - 20:01] Yang
+[20:01 - 20:02] Dia ngambil datanya
+[20:02 - 20:03] Atau mau
+[20:03 - 20:04] Buat kayak
+[20:04 - 20:05] Ada juga
+[20:05 - 20:06] Yang paket
+[20:06 - 20:07] Sistem paket
+[20:07 - 20:09] Paket CSR juga dinamis
+[20:09 - 20:10] Dia langsung ngitung
+[20:10 - 20:11] Ini yang template
+[20:11 - 20:12] Kalau paket itu yang diantas
+[20:12 - 20:13] Paket
+[20:13 - 20:15] Paket perusahaan
+[20:15 - 20:16] Ini pun template
+[20:16 - 20:18] Nah contohnya
+[20:18 - 20:19] Ini yang lagi aktif
+[20:19 - 20:20] Yang tadi yang paket starter
+[20:20 - 20:21] Ini kan
+[20:21 - 20:22] Ini datanya gini
+[20:22 - 20:23] Jadi saya sudah atur
+[20:23 - 20:24] Semuanya
+[20:24 - 20:25] Nanti dia jadi
+[20:25 - 20:26] Pelaporannya sudah
+[20:26 - 20:27] Ngikutin
+[20:27 - 20:28] Tinggal yang mana yang udah pilih
+[20:28 - 20:29] Jadi semuanya dibuat tinggal
+[20:29 - 20:31] Tapi balik lagi
+[20:31 - 20:32] Tergantung sama meternya
+[20:32 - 20:33] Kalau misalnya
+[20:33 - 20:34] Kalau
+[20:34 - 20:35] Kamu lihat dulu
+[20:35 - 20:36] Cara melap
+[20:36 - 20:37] Pelaporan mereka gimana
+[20:37 - 20:38] Kalau selama ini
+[20:38 - 20:39] Yang kemarin saya
+[20:39 - 20:40] Konfirmasi
+[20:40 - 20:41] Memang
+[20:41 - 20:42] Lewat transaksi
+[20:42 - 20:43] Screenshot
+[20:43 - 20:44] Bukti transfer itu
+[20:44 - 20:45] Belum ada
+[20:45 - 20:46] Kamu bisa buat
+[20:46 - 20:47] Kalau yang punya saya
+[20:47 - 20:49] Di atas itu
+[20:49 - 20:52] Satunya
+[20:54 - 20:55] Di atasnya itu
+[20:55 - 20:56] Saya masih
+[20:56 - 20:57] Gata
+[20:59 - 21:00] Nah di atasnya itu
+[21:00 - 21:02] Ada yang mana ya
+[21:02 - 21:03] Yang saya buat ya kemarin
+[21:03 - 21:06] Lupa saya
+[21:06 - 21:07] Nah ini bisa nih
+[21:07 - 21:08] Kalau kamu mau contoh
+[21:08 - 21:09] Itu bisa pakai ini
+[21:09 - 21:10] Cuma ini
+[21:10 - 21:11] Nanti
+[21:11 - 21:12] Gak bisa langsung di
+[21:12 - 21:13] Invoice
+[21:13 - 21:15] Saya buat invoice
+[21:15 - 21:16] Untuk sistem saya mas
+[21:16 - 21:18] Yang saya kan bangun
+[21:18 - 21:19] Dan temen saya perusahaan
+[21:19 - 21:20] Nah ini invoice
+[21:20 - 21:21] Nah daripada saya mikirnya
+[21:21 - 21:23] Daripada saya selalu disuruh buat
+[21:23 - 21:24] Buat apa
+[21:24 - 21:25] Mas invoice
+[21:25 - 21:27] Invoice
+[21:27 - 21:28] Langsung kak buatkan aja
+[21:28 - 21:29] Sistem kan
+[21:29 - 21:30] Ini
+[21:30 - 21:31] Formnya udah disesuaikan nih
+[21:31 - 21:32] Nanti nama perusahaannya
+[21:32 - 21:33] Nanti nama perusahaannya
+[21:33 - 21:34] Nama perusahaannya
+[21:34 - 21:35] Logonya
+[21:35 - 21:36] Jadi invoice-nya ini dinamis
+[21:36 - 21:38] Bisa di
+[21:38 - 21:39] Nah ini kan
+[21:39 - 21:40] Nanti
+[21:40 - 21:41] Ke siapa pembayarnya
+[21:41 - 21:42] Ini contohnya kemarin
+[21:42 - 21:43] Ubu Santi nih
+[21:43 - 21:44] Udah masuk ke Bu Santi
+[21:44 - 21:45] Nanti alamat lengkapnya
+[21:45 - 21:46] Invoice detailnya apa
+[21:46 - 21:47] Ya kan
+[21:47 - 21:48] Detailnya apa
+[21:48 - 21:49] Ini tanggal invoice-nya
+[21:49 - 21:50] Kita bisa atur semuanya
+[21:50 - 21:51] Ini dinamis
+[21:51 - 21:52] Kamu pakai template yang mana
+[21:52 - 21:53] Ini atau yang ini ya
+[21:53 - 21:54] Templatenya
+[21:54 - 21:55] Apa ya
+[21:55 - 21:56] Kok sama ya
+[21:56 - 21:57] Kok beda kok posisinya
+[21:57 - 21:58] Logonya
+[21:58 - 21:59] Total ataknya ya
+[21:59 - 22:00] Kemudian itemnya
+[22:00 - 22:02] Kamu bisa tambah-tambah itemnya
+[22:02 - 22:03] Misalkan apa lagi
+[22:03 - 22:04] Tambah lagi item lagi
+[22:04 - 22:05] Nah ini kan dia masuk
+[22:05 - 22:06] Nanti tergantung kamu
+[22:06 - 22:07] Mau buatnya invoice-nya apa
+[22:07 - 22:09] Kemudian nanti
+[22:09 - 22:10] Infonya
+[22:10 - 22:11] Ini nama bank-banknya
+[22:11 - 22:12] Ya kan
+[22:12 - 22:13] Tanda tangannya
+[22:13 - 22:14] Ini validasi di sini
+[22:14 - 22:15] Ya kan
+[22:15 - 22:16] Kemudian nanti di bawahnya
+[22:16 - 22:17] Kamu bisa
+[22:17 - 22:18] Ambil data
+[22:18 - 22:19] Dari invoice-nya yang dia
+[22:19 - 22:20] Di pembayaran
+[22:20 - 22:21] Jadi ketika dicetak
+[22:21 - 22:23] Sudah ada kayak deskripsinya
+[22:23 - 22:25] Kemudian di bawahnya buktinya
+[22:25 - 22:26] Nah kamu tergantung
+[22:26 - 22:27] Atasnya kamu buat susun
+[22:27 - 22:28] Eh apa
+[22:28 - 22:29] Apakah
+[22:29 - 22:30] Templatenya apa kan
+[22:30 - 22:32] Namanya diambil dari datanya
+[22:32 - 22:33] Misalnya namanya siapa
+[22:33 - 22:34] Pembayaran tanggalnya berapa
+[22:34 - 22:35] Dia ambil tanggalnya
+[22:35 - 22:36] Kemudian buktinya
+[22:36 - 22:38] Tek nanti ketika dikasih ke
+[22:38 - 22:39] Pembeli satu
+[22:39 - 22:40] Ini pak
+[22:40 - 22:41] Pembayarannya ada invoice-nya
+[22:41 - 22:42] Kan gak mungkin juga kamu
+[22:42 - 22:43] Ngasih invoice pak
+[22:43 - 22:44] Gimana gitu
+[22:44 - 22:45] Kan kamu harus data dulu
+[22:45 - 22:46] Dari invoice-nya
+[22:46 - 22:47] Siapa yang bayar
+[22:47 - 22:48] Tanggal berapa
+[22:48 - 22:49] Siswa apa
+[22:49 - 22:50] Untuk apa ya kan
+[22:50 - 22:51] Lalu nanti dicetak
+[22:51 - 22:52] Sekalian invoice-nya di bawahnya
+[22:52 - 22:53] Buktinya
+[22:53 - 22:54] Ini lho
+[22:54 - 22:55] Lampiran
+[22:55 - 22:56] Oke
+[22:56 - 22:57] Oke
+[22:57 - 23:05] Dari proses bisnis
+[23:05 - 23:06] Dari
+[23:06 - 23:07] Artai Bimbel ini
+[23:07 - 23:08] Sendiri memang
+[23:08 - 23:09] Itu masih secara
+[23:09 - 23:11] Kemarin saya udah bicarakan juga
+[23:11 - 23:12] Mitra
+[23:12 - 23:13] Sistem yang akan saya buat
+[23:13 - 23:14] Dan Mitra juga minta
+[23:14 - 23:15] Kalau misalkan dari hasil
+[23:15 - 23:16] Bukti transfer tersebut
+[23:16 - 23:18] Kalau misalkan sistem ini
+[23:18 - 23:19] Sudah selesai
+[23:19 - 23:20] Sudah jadi
+[23:20 - 23:21] Tetap akan dilakukan
+[23:21 - 23:22] Proses verifikasi
+[23:22 - 23:23] Yang sama
+[23:23 - 23:24] Dari dashboard
+[23:24 - 23:25] Yang sudah saya buat
+[23:25 - 23:27] Dan dari Mitra akan tetap ngecek
+[23:27 - 23:29] Bukti transfernya di mutasi rekening
+[23:29 - 23:30] Ya
+[23:30 - 23:31] Pasti
+[23:31 - 23:33] Jadi kayak tadi aja
+[23:33 - 23:35] Di upload manual kan
+[23:35 - 23:36] Tapi kalau untuk
+[23:36 - 23:37] Cetak
+[23:37 - 23:38] Cetak apa
+[23:38 - 23:39] Kamu ngasih nama apa
+[23:39 - 23:40] Cetak bukti
+[23:40 - 23:41] Pembayaran atau apa
+[23:41 - 23:42] Ya buat kayak template gitu
+[23:42 - 23:43] Jadi gak cuma invoice-nya jelek
+[23:43 - 23:44] Kalau cuma
+[23:44 - 23:45] Invoice dikasih ke pemilihan
+[23:45 - 23:46] Paling pemilihan
+[23:46 - 23:47] Eh apa ini mas
+[23:47 - 23:48] Iya betul
+[23:48 - 23:49] Harus baca lagi
+[23:49 - 23:51] Kalau kamu buat kayak gitu
+[23:51 - 23:52] Itu terkait dari pembayaran
+[23:52 - 23:53] Pak
+[23:53 - 23:54] Tapi kamu harus dibatasi dong
+[23:54 - 23:55] Iya
+[23:55 - 23:56] Bangun sistemnya harus dibatasi
+[23:56 - 23:57] Nanti kalau kamu
+[23:57 - 23:58] Fitur apa-apa kamu tambah-tambah
+[23:58 - 23:59] Kan gak selesai
+[23:59 - 24:00] Karena banyak
+[24:00 - 24:01] Kalau mau ngembangkan sistem itu
+[24:01 - 24:02] Gak ada batasnya
+[24:02 - 24:04] Terus ini 21
+[24:04 - 24:05] Permasalahan tadi pendaftaran
+[24:05 - 24:06] Poinnya itu
+[24:06 - 24:07] Pendaftaran
+[24:07 - 24:09] Penjadwalan dari tentor
+[24:09 - 24:11] Dan juga dari pembayaran
+[24:11 - 24:12] Eh Bu Ayu udah oke ya
+[24:12 - 24:13] Iya
+[24:13 - 24:15] Kemarin juga sedikit menambahkan
+[24:15 - 24:16] Di paragraf
+[24:16 - 24:18] Kalau bisa ada paragraf yang tadi saya bilang
+[24:18 - 24:19] Umum dulu
+[24:19 - 24:20] Untuk penjelasan
+[24:20 - 24:21] Proses bisnis secara umum
+[24:21 - 24:22] Baru masuk ke
+[24:22 - 24:23] Permasalahan
+[24:23 - 24:24] Permasalahan
+[24:24 - 24:25] Lalu saya juga disini
+[24:25 - 24:26] Bapak satu
+[24:26 - 24:27] Menyebutkan beberapa
+[24:27 - 24:29] Penelitian yang sudah
+[24:29 - 24:31] Kebanyakan itu memang
+[24:31 - 24:32] Menggunakan waterfall pak
+[24:32 - 24:33] Waterfall
+[24:33 - 24:34] Karena itu memang
+[24:34 - 24:36] Udah ada punya proses bisnis
+[24:36 - 24:37] Yang saya baca
+[24:37 - 24:38] Udah punya
+[24:38 - 24:39] Template atau proses bisnis
+[24:39 - 24:40] Yang memang sudah
+[24:40 - 24:41] Tetap dan
+[24:41 - 24:42] Sudah pernah menggunakan
+[24:42 - 24:43] Sistem sebelumnya
+[24:43 - 24:44] Jadi mereka udah terlatih itu
+[24:44 - 24:45] Karena sudah
+[24:45 - 24:46] Ya berarti saya sudah tahu lah
+[24:46 - 24:47] Apa yang dibuat kan
+[24:47 - 24:48] Ya betul
+[24:48 - 24:49] Tapi kalau ini
+[24:49 - 24:50] Kalau yang
+[24:50 - 24:51] Apa pak
+[24:51 - 24:52] Kalau kamu pakenya
+[24:52 - 24:53] Pakai saya PXP pak
+[24:53 - 24:54] PXP
+[24:54 - 24:55] Tapi alasannya sudah tahu
+[24:55 - 24:56] Alasannya sudah tahu pak
+[24:56 - 24:57] Sebenarnya
+[24:57 - 24:58] Oh di
+[24:58 - 24:59] Sebentar
+[24:59 - 25:00] Di latar belakang ini
+[25:00 - 25:01] Kamu masukin beberapa penelitian
+[25:01 - 25:02] Tapi bukan
+[25:03 - 25:05] Jurnal yang PXP nya ada gak metodenya
+[25:05 - 25:06] Jurnal yang PXP nya ada pak
+[25:06 - 25:07] Di bagian
+[25:07 - 25:08] Ada juga yang waterfall tapi
+[25:08 - 25:10] Yang di waterfall perbandingan ya pak
+[25:10 - 25:11] Ada
+[25:14 - 25:15] Alas
+[25:15 - 25:17] Kamu ambil misalkan yang pakai waterfall
+[25:17 - 25:18] Untuk apa
+[25:18 - 25:20] Waterfall untuk perbandingan dari sisi
+[25:21 - 25:22] Membedakan antara
+[25:23 - 25:24] Yang sudah pernah dilakukan
+[25:24 - 25:26] Sistem yang sudah pernah
+[25:26 - 25:27] Dibuat sebelumnya
+[25:27 - 25:29] Oleh penelitian yang menggunakan waterfall
+[25:29 - 25:31] Dan juga bahwasannya
+[25:31 - 25:33] Membedakan antara proses bisnis yang
+[25:33 - 25:34] Memang sudah tetap
+[25:34 - 25:36] Tapi ada hasil kesimpulannya kan
+[25:36 - 25:37] Hasil kesimpulan
+[25:37 - 25:40] Kesimpulan antara yang metode waterfall dengan yang tadi
+[25:40 - 25:41] Karena gini
+[25:41 - 25:43] Kamu pakenya PXP nih ya kan
+[25:43 - 25:44] PXP
+[25:44 - 25:45] Ada jurnalis itu waterfall
+[25:45 - 25:46] Tapi tujuannya buat apa
+[25:46 - 25:48] Karena kan kamu gak akan pakai waterfall
+[25:48 - 25:49] Ya kan
+[25:49 - 25:50] Kalau di latar belakangnya
+[25:50 - 25:51] Yang bapak sampaikan ya
+[25:51 - 25:52] Kan pakenya PXP
+[25:52 - 25:53] Berarti kamu harus mencari
+[25:53 - 25:54] Kenapa harus pakai PXP
+[25:54 - 25:55] Nah
+[25:55 - 25:56] Bukan
+[25:56 - 25:57] Mengapa harus ada jur
+[25:57 - 25:58] Waterfall
+[25:58 - 25:59] Nah
+[25:59 - 26:00] Tapi yang saya tanya adalah
+[26:00 - 26:01] Waterfall disitu
+[26:01 - 26:02] Fungsinya buat apa
+[26:02 - 26:03] Oh
+[26:03 - 26:05] Sistemnya
+[26:05 - 26:06] Sistemnya itu sama pak
+[26:06 - 26:07] Bimbel
+[26:07 - 26:08] Untuk bimbingan belajar
+[26:08 - 26:09] Oke
+[26:09 - 26:11] Tetapi dengan menggunakan metode yang berbeda
+[26:11 - 26:12] Yaitu waterfall
+[26:12 - 26:13] Nah
+[26:13 - 26:14] Dia pakai waterfall
+[26:14 - 26:15] Konteksnya di Bimbel itu pak
+[26:15 - 26:16] Ya konteksnya di Bimbel
+[26:16 - 26:17] Dia pakai waterfall
+[26:17 - 26:18] Ya
+[26:18 - 26:19] Tujuannya buat kamu apa
+[26:19 - 26:20] Karena dia
+[26:20 - 26:21] Bimbel sama nih
+[26:21 - 26:22] Tapi dia pakai waterfall
+[26:22 - 26:23] Oh
+[26:23 - 26:24] Sedang kamu pakai PXP
+[26:24 - 26:25] Tujuannya buat apa
+[26:25 - 26:26] Ada waterfall disitu
+[26:26 - 26:27] Kalau dia gak mempengaruhi apapun
+[26:27 - 26:28] Gak usah
+[26:28 - 26:29] Oke
+[26:29 - 26:30] Kecuali kamu bisa ngasih tau bahwa
+[26:30 - 26:31] Misalkan nih
+[26:31 - 26:32] Jurnal sebelumnya menggunakan waterfall
+[26:32 - 26:34] Tapi hasilnya waterfall itu tidak sesuai
+[26:34 - 26:35] Hasil kesembulannya
+[26:35 - 26:37] Tapi dari jurnal yang lain
+[26:37 - 26:38] PXP oke
+[26:38 - 26:39] Makanya saya pakai ST
+[26:39 - 26:40] Karena
+[26:40 - 26:41] Kalau kamu gak ada
+[26:41 - 26:42] Di latar ini kan latar belakangnya ya
+[26:42 - 26:43] Bukan membandingkan ya
+[26:43 - 26:44] Membandingkan ada sendiri kan
+[26:44 - 26:45] Iya betul
+[26:45 - 26:47] Ini kan di latar belakang itu
+[26:47 - 26:48] Bagaimana latar belakangnya
+[26:48 - 26:50] Yang melatar belakangi
+[26:50 - 26:52] Masalahnya itu apa
+[26:52 - 26:54] Kemudian solusi kamu apa
+[26:54 - 26:55] Ya latar belakangnya apa nih
+[26:55 - 26:56] Masalah solusi
+[26:56 - 26:57] Nah
+[26:57 - 26:59] Karena kamu gak ngambilnya PSP
+[26:59 - 27:01] Kan kamu harus cari jurnal yang menguatkan kamu
+[27:01 - 27:03] Bahwa PSP ini cocok buat masalah kamu
+[27:03 - 27:06] Nah sedangkan kamu disini ada jurnal waterfall
+[27:06 - 27:08] Nah sedangkan kamu
+[27:08 - 27:09] Kamu bilang
+[27:09 - 27:10] Masalahnya sama
+[27:10 - 27:11] Ya masalahnya sama
+[27:11 - 27:12] Dia sama-sama konteksnya di
+[27:12 - 27:13] Gimbelnya
+[27:13 - 27:14] Tapi solusi dia itu waterfall
+[27:14 - 27:15] Bukan PSP
+[27:15 - 27:17] Terus kamu ngomong PSP lebih bagus gitu
+[27:17 - 27:19] Tapi waterfallnya kan
+[27:19 - 27:20] Konteks itu
+[27:20 - 27:21] Gak ada gitu
+[27:21 - 27:22] Maksud saya itu
+[27:22 - 27:24] Nanti pasti
+[27:24 - 27:25] Jadi pun saya bisa tanya
+[27:25 - 27:26] Kenapa ada waterfall
+[27:26 - 27:27] Kalau gak dipakai
+[27:27 - 27:28] Kenapa harus ada waterfall
+[27:28 - 27:29] Oke
+[27:29 - 27:30] Kesoalannya ada hubungannya nih
+[27:30 - 27:31] Misalkan kamu harus tahu
+[27:31 - 27:32] Waterfall itu disini
+[27:32 - 27:33] Kurangnya apa ya
+[27:33 - 27:35] Maka dilengkapi oleh PSP
+[27:35 - 27:36] Yang ada di jurnal ini
+[27:36 - 27:37] Nah itu oke
+[27:37 - 27:38] Saya terima
+[27:40 - 27:41] Kalau yang disini
+[27:41 - 27:43] Konteksnya lebih sama
+[27:43 - 27:44] Permasalahannya
+[27:44 - 27:45] Nah kalau masalahnya sama
+[27:45 - 27:46] Nanti menjadi masalah
+[27:46 - 27:47] Karena masalah yang sama
+[27:47 - 27:48] Solusinya berbeda
+[27:48 - 27:49] Tapi kamu pakai PSP
+[27:49 - 27:50] Alasannya apa ada waterfall
+[27:50 - 27:51] Iya betul
+[27:51 - 27:52] Oke
+[27:56 - 27:57] Jadi saya
+[27:57 - 27:58] Tapi kalau untuk nanti
+[27:58 - 27:59] Ya sebentar ya
+[27:59 - 28:00] Tapi kalau yang diperbandingan
+[28:00 - 28:01] Oke
+[28:01 - 28:02] Di selanjutnya
+[28:02 - 28:03] Oh yang diperbandingan oke
+[28:03 - 28:04] Oke
+[28:04 - 28:05] Perbandingan memang kamu
+[28:05 - 28:06] Kan menggali nih
+[28:06 - 28:07] Dari banyak metode pengembangan
+[28:07 - 28:08] Ada PSP ada waterfall
+[28:08 - 28:09] Iya
+[28:09 - 28:10] Kamu bisa menggali
+[28:10 - 28:11] Oh saya lebih cocok PSP
+[28:11 - 28:12] Iya
+[28:12 - 28:13] Karena pembandingannya gini
+[28:13 - 28:14] Nah kalau di belah pelatah bangga
+[28:14 - 28:15] Menguatkan kamu aja
+[28:15 - 28:16] Kalau membandingkan
+[28:16 - 28:17] Oke
+[28:17 - 28:18] Kalau misalkan
+[28:18 - 28:19] Yang tadi
+[28:19 - 28:20] Konteksnya
+[28:20 - 28:21] Eee
+[28:21 - 28:22] Pembandingan
+[28:22 - 28:23] Antara
+[28:23 - 28:24] Metode yang
+[28:24 - 28:25] Setipe
+[28:25 - 28:26] Seperti
+[28:26 - 28:27] PXP
+[28:27 - 28:28] XP Scrum
+[28:28 - 28:29] Dan lain
+[28:29 - 28:30] RAD
+[28:30 - 28:31] Itu akan dimasukkan ya pak
+[28:31 - 28:32] Di latar belakang
+[28:32 - 28:33] Di perbandingan iya
+[28:33 - 28:34] Kalau di latar belakang juga perlu gak pak
+[28:34 - 28:35] Seperti ini tuh
+[28:35 - 28:36] Saya menyebutkan
+[28:36 - 28:37] Eee
+[28:37 - 28:38] Pengembangan sistem
+[28:38 - 28:39] Selama kamu bisa mengangkat
+[28:39 - 28:40] Kenapa harus pakai PSP
+[28:40 - 28:41] Oke
+[28:41 - 28:42] Karena kan disini ada objeknya
+[28:42 - 28:43] Masalah yang sama
+[28:43 - 28:44] Kamu ngangkat bilang
+[28:44 - 28:45] Kenapa ada waterfall pak
+[28:45 - 28:46] Karena objeknya sama
+[28:46 - 28:48] Sama-sama
+[28:48 - 28:49] Kamu harus kasih garis
+[28:49 - 28:50] Apa
+[28:50 - 28:51] Penghubungnya
+[28:51 - 28:52] Jadi jangan perlu mau
+[28:52 - 28:53] Bahas ini
+[28:53 - 28:54] Terus ngapain
+[28:54 - 28:55] Sering mahasiswa tuh
+[28:55 - 28:56] Ada satu target sendiri
+[28:56 - 28:57] Objeknya sama
+[28:57 - 28:58] Tapi dia gak ngasih
+[28:58 - 28:59] Simpulan apapun
+[28:59 - 29:00] Hubungannya apa dengan kamu
+[29:00 - 29:01] Kamu atas
+[29:01 - 29:02] Wah dia pakai metode yang lain
+[29:02 - 29:03] Kok
+[29:03 - 29:04] Kecuali kamu ada hubungannya
+[29:04 - 29:05] Kecuali kok misalkan nih
+[29:05 - 29:07] Dari sini akurasinya 60 nih
+[29:07 - 29:08] Kalau yang PSP
+[29:08 - 29:09] Misalkan ya
+[29:09 - 29:10] Kalau data
+[29:10 - 29:11] Main data
+[29:11 - 29:12] Kalau kamu baca jurnal data
+[29:12 - 29:13] Pasti banyak
+[29:13 - 29:14] Metode yang dimasukin
+[29:14 - 29:15] 80
+[29:15 - 29:16] Maka dia simpulkan
+[29:16 - 29:17] Karena 80
+[29:17 - 29:18] Dengan objek yang sama
+[29:18 - 29:19] Masalah yang hampir sama ya
+[29:19 - 29:20] Akurasinya 80%
+[29:20 - 29:21] Lebih bagus
+[29:21 - 29:22] Makanya saya menggunakan PSP
+[29:22 - 29:23] Misalkan
+[29:23 - 29:24] Karena akurasinya bagus
+[29:24 - 29:25] Yang lainnya kurang
+[29:25 - 29:26] Oke karena
+[29:26 - 29:27] Dia ngasih garis
+[29:27 - 29:28] Benangnya
+[29:28 - 29:29] Ada penghubungnya
+[29:29 - 29:30] Tapi kalau kamu ngomong ini sendiri
+[29:30 - 29:31] Ini sendiri buat apa
+[29:31 - 29:32] Hmm
+[29:32 - 29:33] Oke
+[29:33 - 29:34] Kecuali kamu ngangkat
+[29:34 - 29:35] Oh waterfallnya kurangnya dimana
+[29:35 - 29:36] Oke
+[29:36 - 29:37] Dilengkapi oleh PSP
+[29:37 - 29:38] Nah itu oke
+[29:38 - 29:39] Oke
+[29:39 - 29:40] Kalau cuma
+[29:40 - 29:41] Hasilnya
+[29:41 - 29:42] Membahasan masing-masing
+[29:42 - 29:43] Membahasan masing-masing
+[29:43 - 29:44] Membahasan masing-masing
+[29:44 - 29:45] Oke
+[29:45 - 29:47] Ya ada penghubungnya
+[29:47 - 29:48] Gitu sih pak
+[29:48 - 29:49] Untuk di latar belakangnya
+[29:49 - 29:51] Terus di rumusan masalah ini
+[29:51 - 29:52] Awalnya kemarin kan 5
+[29:52 - 29:53] Cuma saya jadikan
+[29:53 - 29:54] Kemarin saya sudah dimulai semuanya
+[29:54 - 29:55] Jadinya 2
+[29:55 - 29:56] Iya kebanyakan kemarin
+[29:56 - 29:57] Iya
+[29:57 - 29:58] Jadi ini dari
+[29:58 - 29:59] Kayak dibatasi
+[29:59 - 30:00] Oke
+[30:00 - 30:01] Ini
+[30:01 - 30:02] Dibatasi
+[30:02 - 30:03] Ini
+[30:03 - 30:04] Dibatasi
+[30:04 - 30:05] Dibatasi
+[30:05 - 30:06] Oke
+[30:06 - 30:07] Lalu untuk tujuannya
+[30:07 - 30:08] Eh
+[30:08 - 30:10] Tujuan kan menjawab
+[30:10 - 30:11] Eh
+[30:11 - 30:12] Tujuan menjawab dari rumah sama-sama
+[30:12 - 30:13] Masalah
+[30:13 - 30:14] Masalah
+[30:14 - 30:15] Masalah
+[30:15 - 30:16] Batasan rancangan ini
+[30:16 - 30:17] Ada yang 4
+[30:17 - 30:19] Kalau misalkan tuh
+[30:19 - 30:20] Berfokusnya pada dashboard management
+[30:20 - 30:22] Terus yang kedua
+[30:22 - 30:23] Itu gak ada LMS
+[30:23 - 30:24] Yang ketiga
+[30:24 - 30:26] Itu gak menggunakan payment gateway
+[30:26 - 30:27] Dan juga untuk notifikasi ini
+[30:27 - 30:32] Lebih dari sisi admin yang akan secara manual mengklik tombol WhatsApp
+[30:32 - 30:33] Eh
+[30:33 - 30:34] Sebentar notifikasi ini gimana nih
+[30:34 - 30:35] Notifikasi di web ya
+[30:35 - 30:36] Bukan
+[30:36 - 30:39] Jadi dari admin akan menambahkan
+[30:39 - 30:41] Dari saya akan menambahkan tombol untuk
+[30:41 - 30:42] Yang ngelink ke WhatsApp
+[30:42 - 30:44] Dan udah ada template chatnya pak
+[30:44 - 30:45] Untuk penagian
+[30:45 - 30:46] Oh
+[30:46 - 30:47] Jadi gak secara otomatis gitu
+[30:47 - 30:49] Bele-bele aja
+[30:49 - 30:51] Itu bisa pakai
+[30:51 - 30:52] Penyiasat ya
+[30:52 - 30:53] Ya
+[30:53 - 30:54] Jadi saya buat
+[30:54 - 30:55] Pemberitahuan
+[30:55 - 30:57] Saya bisa pilih pengguna atau kemana
+[30:57 - 30:58] Nanti dia set ke semuanya
+[30:58 - 30:59] Misalnya set
+[30:59 - 31:00] Saya pinginnya ke mitra
+[31:00 - 31:01] Kemitra semua
+[31:01 - 31:02] Nanti ada informasi
+[31:02 - 31:03] Misalnya monitoring ada campaign baru
+[31:03 - 31:04] Terserah sih kamu
+[31:04 - 31:05] Oke
+[31:05 - 31:07] Kalau rencana saya tuh
+[31:07 - 31:08] Untuk
+[31:08 - 31:09] Ini kan lebih ke penagian pak
+[31:09 - 31:10] Jadi
+[31:10 - 31:11] Rancangan
+[31:11 - 31:12] Berdasarkan apa?
+[31:12 - 31:14] Berdasarkan persiswanya
+[31:14 - 31:15] Persiswa
+[31:15 - 31:16] Wali muridnya
+[31:16 - 31:17] Nah
+[31:17 - 31:18] Siswa kan masih ada
+[31:18 - 31:19] Terhubung ya
+[31:19 - 31:20] Apa yang terhubung?
+[31:20 - 31:21] HP kan?
+[31:21 - 31:23] Nah itu juga yang mau ditanyakan pak
+[31:23 - 31:24] Apakah
+[31:24 - 31:25] Saya
+[31:25 - 31:26] Buatkan
+[31:26 - 31:27] Email untuk notifikasi
+[31:27 - 31:28] Atau
+[31:28 - 31:29] Cukup di whatsapp aja
+[31:29 - 31:30] Karena kebanyakan
+[31:30 - 31:31] Balik lagi
+[31:31 - 31:32] Sesuai dengan mitra
+[31:32 - 31:33] Cuma kalau
+[31:33 - 31:34] Pake email
+[31:34 - 31:35] Karena kamu disini
+[31:35 - 31:36] Dia gak
+[31:36 - 31:37] Dapur juga
+[31:37 - 31:38] Ya betul
+[31:38 - 31:39] Jadi kamu harus data email
+[31:39 - 31:41] Nomor HP pasti punya
+[31:41 - 31:42] Ya nomor HP
+[31:42 - 31:43] Nah itu penting banget disitu
+[31:43 - 31:44] Kalau punya saya
+[31:44 - 31:45] Karena dia login
+[31:45 - 31:46] Pake email
+[31:46 - 31:47] Ya itu gampang banget
+[31:47 - 31:48] Saya kasih informasi
+[31:48 - 31:49] Karena pasti
+[31:49 - 31:50] Yang punya akun punya email
+[31:50 - 31:51] Ya betul pak
+[31:51 - 31:52] Nah kalau kamu kan
+[31:52 - 31:53] Dia gak harus login
+[31:53 - 31:54] Gak pake email
+[31:54 - 31:55] Nah itu gampang-gampang
+[31:55 - 31:56] Datanya memang wajib
+[31:56 - 31:57] Nomor HP sih pak
+[31:57 - 31:58] Untuk peneftaran
+[31:58 - 31:59] Kalau itu
+[31:59 - 32:00] Ini gak pake nomor HP
+[32:00 - 32:01] Bisa broadcast ke
+[32:01 - 32:02] Iya betul
+[32:02 - 32:03] Cuma itu
+[32:03 - 32:04] Kalau misalkan broadcast
+[32:04 - 32:05] Itu mungkin
+[32:05 - 32:06] Di
+[32:06 - 32:08] Belum ada
+[32:08 - 32:10] Diperlukan sama mitra pak
+[32:10 - 32:11] Cuma
+[32:11 - 32:12] Rencana
+[32:12 - 32:13] Rencana yang saya buat itu
+[32:13 - 32:14] Satu baris data
+[32:14 - 32:16] Tapi nah pesan pebayaran
+[32:16 - 32:17] Nanya untuk satu orang
+[32:17 - 32:18] Ya bukan informasi
+[32:18 - 32:19] Ke semua orang ya
+[32:19 - 32:20] Iya per orangnya
+[32:20 - 32:21] Per orang
+[32:21 - 32:22] Iya betul
+[32:22 - 32:23] Berarti dia harus punya
+[32:23 - 32:24] Pilihan itu
+[32:24 - 32:25] Gak bisa di share
+[32:25 - 32:26] Bisa sih
+[32:26 - 32:28] Saya rencana
+[32:28 - 32:29] Per satu baris data
+[32:29 - 32:30] Itu udah langsung
+[32:30 - 32:31] Nomor HP
+[32:31 - 32:32] Action untuk
+[32:32 - 32:33] Kesapannya
+[32:33 - 32:34] Iya
+[32:34 - 32:35] Kesapannya
+[32:35 - 32:36] Bisa semua
+[32:36 - 32:37] Kalau misalnya informasi ada
+[32:37 - 32:38] Jadwal apa
+[32:38 - 32:39] Misalnya ada jadwal
+[32:39 - 32:40] Kita punya kegiatan
+[32:40 - 32:41] Apa nih
+[32:41 - 32:42] Biasanya
+[32:42 - 32:43] Gimbel-gimbel punya kegiatan
+[32:43 - 32:44] Ada lomba
+[32:44 - 32:45] Informasi bisa di informasi
+[32:45 - 32:46] Ke orang tuanya
+[32:46 - 32:47] Misalnya atau libur
+[32:47 - 32:48] Ada tanggal apa
+[32:48 - 32:49] Libur
+[32:49 - 32:50] Selanggap semuanya
+[32:50 - 32:51] Tinggal pesannya apa
+[32:51 - 32:52] Kirip
+[32:52 - 32:53] Otomatis semuanya
+[32:53 - 32:54] Dapat
+[32:54 - 32:56] Sebagai rekomendasi saya
+[32:56 - 32:57] Untuk ke Mitra
+[32:57 - 32:58] Kalau kamu buat notifikasi
+[32:58 - 32:59] Sekalian gitu
+[32:59 - 33:00] Milih satu-satu
+[33:00 - 33:01] Kan bisa enak
+[33:01 - 33:02] Gampang aja
+[33:02 - 33:03] Kalau sama satu bisa
+[33:03 - 33:04] Tinggal milih semua aku
+[33:04 - 33:05] Semua akunya
+[33:05 - 33:06] Atau cuma satu
+[33:06 - 33:07] Oke
+[33:07 - 33:08] Oke
+[33:08 - 33:09] Tentuk
+[33:09 - 33:11] Batasannya
+[33:11 - 33:13] Lalu ini manfaatnya
+[33:13 - 33:14] Saya bagi
+[33:14 - 33:15] Menjadi tiga
+[33:15 - 33:16] Bagi Mitra
+[33:16 - 33:17] Bagi Mitra
+[33:17 - 33:18] Bagi Mitra
+[33:18 - 33:19] Langsung sama
+[33:19 - 33:21] Lalu dampaknya ini
+[33:21 - 33:22] Dari fungsional
+[33:22 - 33:23] Dan juga komersional
+[33:23 - 33:24] Ini maksudnya
+[33:24 - 33:25] Prototep ya
+[33:25 - 33:26] Eh
+[33:26 - 33:27] Nama apa Prototep?
+[33:27 - 33:28] Prototep
+[33:28 - 33:29] Prototep
+[33:29 - 33:30] Karena kemarin
+[33:30 - 33:31] Yang bimbingan
+[33:31 - 33:32] Sama Pak Arif
+[33:32 - 33:33] Yang ketiga
+[33:33 - 33:34] Karena ini juga
+[33:34 - 33:35] Dari Mitra
+[33:35 - 33:36] Juga mau
+[33:36 - 33:37] Di implementasikan
+[33:37 - 33:38] Oh iya
+[33:38 - 33:41] Lalu ini untuk
+[33:41 - 33:42] Rangka
+[33:42 - 33:44] Tugas Airnya
+[33:44 - 33:46] Ini udah harus
+[33:46 - 33:47] Ngikuti jurnalnya
+[33:47 - 33:48] Bab 2
+[33:48 - 33:49] Iya
+[33:49 - 33:51] Ini dari yang
+[33:51 - 33:52] Jurnal
+[33:52 - 33:53] Awal
+[33:53 - 33:54] Banget Pak
+[33:54 - 33:55] Yang dari
+[33:55 - 33:56] 2019
+[33:56 - 33:57] Ini dia gang alert
+[33:57 - 33:58] Atau Tijuan Pustaka
+[33:58 - 33:59] Saya kenal template yang baru
+[33:59 - 34:00] Saya kurang tau
+[34:00 - 34:01] Ini dari
+[34:01 - 34:02] Perangka tugas air penyertian
+[34:02 - 34:03] Perangka penyertian
+[34:03 - 34:04] Dari awal
+[34:04 - 34:05] Dan di luar
+[34:05 - 34:06] Ditambah
+[34:06 - 34:07] Dengan
+[34:07 - 34:08] Metode PXP
+[34:08 - 34:09] Oke
+[34:09 - 34:10] Kalau PXP nya sendiri
+[34:10 - 34:11] Dimana?
+[34:11 - 34:12] PXP nya ini Pak
+[34:12 - 34:13] Saya tambahkan juga
+[34:13 - 34:14] Di dalam sini
+[34:14 - 34:15] Saya agak lupa
+[34:15 - 34:16] Kalau template nya
+[34:16 - 34:17] Kalau dulu kan
+[34:17 - 34:18] Yang template sebelumnya
+[34:18 - 34:19] Itu kan
+[34:19 - 34:20] Tijuan Pustaka sendiri
+[34:20 - 34:21] Kemudian
+[34:21 - 34:23] Metologi Penelitian sendiri
+[34:23 - 34:24] Iya
+[34:24 - 34:25] Nanti disini ada
+[34:25 - 34:26] Teori nya
+[34:26 - 34:27] Disini implementasi
+[34:27 - 34:28] Itu di bab 2
+[34:28 - 34:29] Apa?
+[34:29 - 34:30] Nah disini ada
+[34:30 - 34:31] Yang PXP
+[34:31 - 34:32] Metode nya aja
+[34:32 - 34:33] Kayak Tijuan Pustaka ada?
+[34:33 - 34:34] Oh itu di bab 2 nya nih Pak
+[34:34 - 34:35] Tijuan Pustaka Pak
+[34:35 - 34:36] Di bagian
+[34:36 - 34:37] Oh
+[34:37 - 34:38] Di gam alir itu malah
+[34:38 - 34:39] Di atas ya?
+[34:39 - 34:40] Iya
+[34:40 - 34:42] Terangka tugas air di sini Pak
+[34:42 - 34:43] Di bus 1
+[34:43 - 34:44] Bab 3 isinya apa?
+[34:44 - 34:46] Bab 3 itu udah rancangan prototype
+[34:46 - 34:49] Ini karena udah prototype sih
+[34:49 - 34:50] Jadi
+[34:50 - 34:51] Tidak template nya
+[34:51 - 34:52] Oke saya ikutin aja
+[34:52 - 34:53] Yang penting informasi di dalamnya
+[34:53 - 34:54] Di dalamnya
+[34:54 - 34:55] Di dalamnya
+[34:55 - 34:56] Di dalam alir ya?
+[34:56 - 34:57] Di dalam alir Pak
+[34:57 - 34:58] Oh sorry
+[34:58 - 34:59] Di dalam alir
+[35:01 - 35:03] Jadi saya mulai dari identifikasi masalah
+[35:03 - 35:04] PXP nya udah harus
+[35:04 - 35:05] Sesuai dengan yang
+[35:05 - 35:06] Acuan di Jari Pustaka kan?
+[35:06 - 35:07] Iya
+[35:07 - 35:09] Saya ngambil dari sumbernya
+[35:09 - 35:10] Kalau misalnya dari
+[35:10 - 35:11] Menemukan sumber awalnya
+[35:11 - 35:12] Itu di tahun 2004
+[35:12 - 35:13] Enggak kan Pak?
+[35:13 - 35:14] Sumber kenapa munculnya dari PXP?
+[35:14 - 35:15] Gak apa
+[35:15 - 35:16] Gak apa
+[35:16 - 35:17] Kalau PXP nya
+[35:17 - 35:18] Gak apa
+[35:18 - 35:19] Kalau misalnya
+[35:19 - 35:20] Biar tau kan sejarahnya PXP
+[35:20 - 35:21] Iya
+[35:21 - 35:22] Tapi sama
+[35:22 - 35:23] Tahapannya masih sama?
+[35:23 - 35:24] Tahapannya masih sama Pak
+[35:24 - 35:25] Kalau
+[35:25 - 35:26] Saya ngambilnya
+[35:26 - 35:27] Masih oke sih
+[35:27 - 35:28] Sama gak
+[35:28 - 35:29] Kalau misalkan mau cari yang baru
+[35:29 - 35:30] Gak apa
+[35:30 - 35:31] Tapi tetap yang lama
+[35:31 - 35:32] Harus tahu
+[35:32 - 35:33] Siapa sumber utama
+[35:33 - 35:35] Siapa yang ngembangkan PXP
+[35:35 - 35:37] Kalau ini PXP nya sendiri
+[35:37 - 35:39] Karena ini kerangkat tugas penilian akhir
+[35:39 - 35:40] Jadi saya tambahkan
+[35:40 - 35:42] Kan UAT beda dari PXP itu sendiri Pak
+[35:42 - 35:43] Jadi
+[35:43 - 35:45] Saya tambahkan UAT sama deployment
+[35:45 - 35:46] Oke
+[35:46 - 35:48] Lalu
+[35:48 - 35:49] Di bab 2
+[35:49 - 35:50] Ini juga emang saya
+[35:50 - 35:52] Saya siap sebagai pemimpin berapa sih?
+[35:52 - 35:53] Pertama Pak
+[35:53 - 35:54] Oh pertama ya
+[35:54 - 35:59] Lalu
+[35:59 - 36:00] Disini
+[36:00 - 36:01] Tinjuan Pustaka
+[36:01 - 36:03] Dari metodologi terkait
+[36:03 - 36:04] Ini saya udah ngebahas
+[36:04 - 36:06] Total ada 14 subab
+[36:06 - 36:09] Dari sisi informasi manajemen dan pengembangannya
+[36:09 - 36:10] Karena kan saya juga ada pengen
+[36:10 - 36:11] Saya
+[36:11 - 36:12] Pugas ayat saya ini
+[36:12 - 36:14] Ngebuat manajemen dashboard
+[36:14 - 36:15] Jadi juga ada perlu
+[36:15 - 36:18] Sisi pemahaman dari proses bisnisnya itu seperti apa
+[36:18 - 36:20] Dan sisi informasi itu seperti apa
+[36:21 - 36:22] Lalu yang kedua dari
+[36:22 - 36:23] XP nya itu sendiri
+[36:23 - 36:25] Nanti yang bahasa asing dicetak miring ya Mas ya
+[36:25 - 36:26] Iya
+[36:26 - 36:27] PXP
+[36:27 - 36:28] Oke terus
+[36:28 - 36:30] Dan ini yang terlalu saya bilang
+[36:30 - 36:31] Oke
+[36:31 - 36:32] Tapan yang tadi
+[36:32 - 36:35] Dari
+[36:35 - 36:36] Dari
+[36:36 - 36:37] Illustrator
+[36:37 - 36:42] Dari
+[36:42 - 36:43] Use Case Diagram
+[36:43 - 36:44] Use Case Diagram ini berarti UMN ya?
+[36:44 - 36:45] Iya
+[36:45 - 36:46] UML Pak
+[36:46 - 36:47] Saya ambil referensi dari
+[36:47 - 36:49] Pak Arief yang kasih Pak
+[36:49 - 36:51] Ini juga
+[36:51 - 36:52] Ini juga
+[36:52 - 36:54] Dari BPMN
+[36:54 - 36:59] Ini rekomendasi dari Bu Ayu Pak
+[36:59 - 37:00] Jadi Bu Ayu
+[37:00 - 37:02] Rekomendasikan saya
+[37:02 - 37:06] Coba dibuatkan secara garis besar dari proses bisnisnya itu sendiri
+[37:06 - 37:08] Dengan BPMN
+[37:08 - 37:09] Kalau menurut Pak Arief gimana Pak?
+[37:09 - 37:10] Pak Arief
+[37:10 - 37:12] Pak Arief juga tetap perlu memasukkan ini
+[37:12 - 37:13] Atau cukup dari
+[37:13 - 37:14] Aktiviti Diagram
+[37:14 - 37:15] IRD
+[37:15 - 37:16] Sama
+[37:16 - 37:17] Kelas Diagram
+[37:17 - 37:18] Saya pernah tahu nih
+[37:18 - 37:19] Bisnis proses model
+[37:19 - 37:20] Untuk menggambarkan makasih
+[37:20 - 37:21] Dari
+[37:21 - 37:22] Seperti ini Pak
+[37:22 - 37:23] Cantu
+[37:23 - 37:31] Ini ya Pak?
+[37:31 - 37:32] Seperti ini Pak
+[37:32 - 37:33] Oh ini flow nya Pak?
+[37:33 - 37:34] Flow
+[37:34 - 37:35] Iya betul
+[37:35 - 37:36] Dari
+[37:36 - 37:37] Dari awal sampai akhir Pak
+[37:37 - 37:38] Oh boleh boleh boleh
+[37:38 - 37:39] Seperti ini Pak
+[37:39 - 37:41] Dan ini berdasarkan dari
+[37:41 - 37:42] Apa namanya
+[37:42 - 37:44] Fitur yang mau di
+[37:44 - 37:46] Tapi coba nanti
+[37:46 - 37:47] Cari informasi dulu ya
+[37:47 - 37:48] Kalau udah pakai BW
+[37:48 - 37:49] Apa namanya?
+[37:49 - 37:51] BPMN
+[37:51 - 37:52] BPMN
+[37:52 - 37:53] Apakah masih pakai
+[37:53 - 37:54] Pass Diagram
+[37:54 - 37:55] Atau Diagram
+[37:55 - 37:56] Oh ya
+[37:56 - 37:57] Takutnya ini
+[37:57 - 37:58] Apa ya?
+[37:58 - 37:59] Kayak
+[37:59 - 38:01] Menggambarkan hal yang sama
+[38:01 - 38:02] Tapi dia pakai
+[38:02 - 38:03] Versinya ini sama
+[38:03 - 38:04] Ini penggantinya dari
+[38:04 - 38:05] Activity Diagram Pak
+[38:05 - 38:06] Activity Diagram?
+[38:06 - 38:07] Iya
+[38:07 - 38:08] Penggantinya Activity Diagram
+[38:08 - 38:10] Kalau Activity Diagram itu hampir sama
+[38:10 - 38:11] Kayak
+[38:11 - 38:12] Dependin Diagram
+[38:12 - 38:18] Karena kalau udah
+[38:18 - 38:19] Udah pakai UML
+[38:19 - 38:20] Ada
+[38:20 - 38:21] Awalnya kan
+[38:21 - 38:22] Use case dulu
+[38:22 - 38:23] Abis use case nanti
+[38:23 - 38:24] Tahapan
+[38:24 - 38:25] UML kan banyak ya
+[38:25 - 38:26] Ada Activity Diagram
+[38:26 - 38:27] Ada
+[38:27 - 38:28] Pass Diagram
+[38:28 - 38:29] Ada
+[38:29 - 38:31] Spensial Diagram
+[38:31 - 38:32] Itu produknya UML
+[38:32 - 38:33] Iya betul
+[38:33 - 38:34] Saya takutnya
+[38:34 - 38:35] Udah pakai UML
+[38:35 - 38:36] Kenapa masih pakai yang lain
+[38:36 - 38:37] Nah coba nanti
+[38:37 - 38:38] Digali lagi
+[38:38 - 38:39] Perbedaannya
+[38:39 - 38:40] Perbedaannya
+[38:40 - 38:41] Apa
+[38:41 - 38:42] Intinya harus tahu
+[38:42 - 38:43] Digunakan itu
+[38:43 - 38:44] Untuk menjelaskan apa
+[38:44 - 38:45] Jangan sampai
+[38:45 - 38:46] Sudah dijelasin
+[38:46 - 38:47] Di diagram
+[38:47 - 38:48] Diulangi lagi
+[38:48 - 38:49] Oke
+[38:49 - 38:50] Paham
+[38:50 - 38:52] Lalu berikutnya
+[38:52 - 38:54] Berikutnya
+[38:54 - 38:55] Berikutnya dari
+[38:55 - 38:56] Class Diagram
+[38:56 - 38:57] Ini bagian UML
+[38:57 - 38:58] Bagian UML
+[38:58 - 39:00] Lalu
+[39:00 - 39:02] Dari
+[39:02 - 39:03] URD juga
+[39:03 - 39:04] Saya ada buat
+[39:04 - 39:05] Terus berikutnya
+[39:05 - 39:06] Kening banget URD itu
+[39:06 - 39:07] Iya pak
+[39:07 - 39:08] Dari
+[39:08 - 39:09] Max.js nya
+[39:09 - 39:10] Ini tools tools
+[39:10 - 39:11] Tools nya
+[39:11 - 39:12] Lalu
+[39:12 - 39:13] Dari
+[39:13 - 39:15] Resepinya buat apa
+[39:15 - 39:16] Untuk
+[39:16 - 39:17] Pengiriman ini pak
+[39:17 - 39:18] Informasinya
+[39:18 - 39:19] Betul
+[39:19 - 39:20] Dari
+[39:20 - 39:21] Dari
+[39:21 - 39:22] Satu
+[39:22 - 39:23] Admin
+[39:23 - 39:24] Ke super admin
+[39:24 - 39:26] Kan di dalamnya juga ada
+[39:26 - 39:27] Apa namanya
+[39:27 - 39:29] Pengiriman data
+[39:29 - 39:33] SAPA dengan
+[39:33 - 39:34] APJP bedanya apa ya
+[39:34 - 39:38] Nah coba itu mas
+[39:38 - 39:39] Karena gini mas
+[39:39 - 39:40] Aku lihat dari kamu ya
+[39:40 - 39:41] Iya
+[39:41 - 39:42] Saya takutnya kamu itu
+[39:42 - 39:43] Bangun situnya monolitik
+[39:43 - 39:45] Oke
+[39:45 - 39:47] Monolitik itu
+[39:47 - 39:48] Gak pakai PA
+[39:48 - 39:49] Langsung
+[39:49 - 39:50] Walaupun
+[39:50 - 39:51] Dalamnya
+[39:51 - 39:53] Datanya itu banyak pak
+[39:53 - 39:56] Tapi kamu tadi ngebutkan nya
+[39:56 - 39:57] Next.js yang
+[39:57 - 39:58] Iya
+[39:58 - 39:59] Sampai
+[39:59 - 40:00] Sampai
+[40:00 - 40:01] Saya jadi agak
+[40:01 - 40:02] Lupa
+[40:02 - 40:03] Saya pakenya PGT
+[40:03 - 40:04] Bisa kandang kalau
+[40:04 - 40:05] SET
+[40:05 - 40:06] Bedanya
+[40:06 - 40:07] Lupa saya
+[40:07 - 40:33] Up
+[40:33 - 40:48] .
+[40:48 - 40:49] Oke
+[40:49 - 40:50] Oke
+[40:50 - 40:51] Ya
+[40:51 - 40:52] Enggak
+[40:52 - 40:53] Yang dibangun
+[40:53 - 40:54] Menggunakan
+[40:54 - 40:55] Metodata
+[40:55 - 40:59] kalo saya tuh pake IP Gateway, saya kadang lupa membedakan
+[40:59 - 41:01] Bestway IP itu ya bisa itu, ini monolitik
+[41:01 - 41:07] kalo IP Gateway itu front and backnya dipisah
+[41:07 - 41:08] tapi kamu pake NXJS ya?
+[41:08 - 41:09] dipisah juga pak?
+[41:10 - 41:11] nah, oke
+[41:11 - 41:12] oh iya
+[41:14 - 41:17] kalo dipisahkan dia harus pake IP Gateway
+[41:18 - 41:22] kalo ini bener, di dalamnya tetep, ini masih tetep dipake sih
+[41:22 - 41:24] karena kan gatepost itu menangkap ya, dilanya
+[41:24 - 41:27] tapi sebelum ngangkepkan dia di pakai IP Gateway
+[41:27 - 41:28] penghubung
+[41:28 - 41:32] karena kan kamu buat nanti backend datanya, dokumenya sendiri
+[41:32 - 41:33] dengan itu pindah
+[41:33 - 41:39] berarti tetep dimasukkan atau gak perlu pak?
+[41:39 - 41:40] kayaknya gak terlalu penting sih
+[41:40 - 41:44] karena memang udah ada NXJSnya pak?
+[41:44 - 41:46] iya gak terlalu penting
+[41:46 - 41:50] karena tools, kalo tools sebenernya gak bisa dimasukin ke itu
+[41:50 - 41:54] karena kan kalo tools gini, kamu sudah menentukan NXJS
+[41:54 - 41:58] kadang kamu tau-tau di jalan, kayaknya pakenya react aja
+[41:58 - 42:02] kamu sudah tulis kan, karena cuma tools kan cuma pilihannya
+[42:02 - 42:03] iya
+[42:03 - 42:05] nah kalo IP Gateway tuh kayak gini nih
+[42:05 - 42:08] jadi yang menghubungkan data saya dengan itu tuh ini bentuknya
+[42:08 - 42:09] public
+[42:09 - 42:11] nah ini IP Gateway semua kan
+[42:11 - 42:13] datanya dikirim kayak gini nih
+[42:13 - 42:15] nah ditangkap
+[42:15 - 42:17] nangkapnya pake apa?
+[42:17 - 42:18] res API tadi
+[42:18 - 42:19] gate
+[42:19 - 42:20] oh nangkapnya
+[42:20 - 42:21] makanya gak perlu
+[42:21 - 42:22] gak dimasukkan
+[42:22 - 42:23] jadi itu get
+[42:23 - 42:24] get nangkapnya
+[42:24 - 42:25] dia nangkapnya disini
+[42:25 - 42:26] nah res API
+[42:26 - 42:27] kalo ini IP Gateway
+[42:27 - 42:31] res API itu yang gatepost tadi kan
+[42:31 - 42:32] dan kalo yang ini
+[42:32 - 42:34] itu yang nangkap nilainya ini
+[42:34 - 42:35] domain alamatnya
+[42:35 - 42:36] ditangkep
+[42:36 - 42:37] API-nya
+[42:37 - 42:38] berarti
+[42:38 - 42:39] saya gak perlu dimasukkan ini
+[42:39 - 42:40] karena sudah masuk
+[42:40 - 42:41] udah include
+[42:41 - 42:43] keseluruhan sistem itu pak ya?
+[42:43 - 42:44] gak apa
+[42:44 - 42:45] karena itu pasti ada
+[42:45 - 42:47] SPP itu
+[42:47 - 42:48] oh jadi masukin aja pak?
+[42:48 - 42:49] gak apa
+[42:49 - 42:51] data lanjut
+[42:51 - 42:52] mesi L
+[42:52 - 42:53] belum ada SQL
+[42:53 - 42:54] oh datanya mesi L?
+[42:54 - 42:55] iya pak
+[42:55 - 42:56] datanya mesi L
+[42:56 - 42:58] dikita ada black box testing
+[42:58 - 42:59] sama UAT
+[42:59 - 43:02] ini ada penelitian terdahulunya
+[43:02 - 43:03] ini udah ngikutin template
+[43:03 - 43:04] penelitian dahulunya?
+[43:04 - 43:05] oh belum pak
+[43:05 - 43:05] nanti di cek lagi gak?
+[43:05 - 43:06] iya
+[43:06 - 43:07] penelitian dahulu itu
+[43:07 - 43:08] gak cuma
+[43:08 - 43:09] kalau saya sih pingnya kayak
+[43:09 - 43:10] kamu bisa menyimbolkan dari situ gitu kan?
+[43:10 - 43:11] iya
+[43:11 - 43:13] ini kemarin ikutin yang
+[43:13 - 43:14] bapak rekomendasikan
+[43:14 - 43:15] kalo misalkan
+[43:15 - 43:16] kalo ditemplate kan
+[43:16 - 43:17] hanya dari
+[43:17 - 43:18] nomor
+[43:18 - 43:18] nama tahun
+[43:18 - 43:19] peneliti sama
+[43:19 - 43:21] hasil pak
+[43:21 - 43:22] kalo misalkan ditambah
+[43:22 - 43:23] dengan perbedaan
+[43:23 - 43:25] pembedaannya
+[43:25 - 43:27] dengan pembedingnya
+[43:27 - 43:28] yaitu saya punya saya sendiri pak
+[43:28 - 43:32] sistemnya saya sendiri gimana pak?
+[43:32 - 43:33] boleh sih
+[43:33 - 43:34] lebih dalam akhirnya
+[43:34 - 43:35] lebih dalam iya
+[43:35 - 43:36] karena kan
+[43:36 - 43:37] kamu gak coba baca
+[43:37 - 43:38] tapi kamu bisa membandingkan
+[43:38 - 43:39] kenapa
+[43:39 - 43:40] akhirnya kan kita tahu
+[43:40 - 43:41] kenapa kamu pakenya
+[43:41 - 43:42] iya
+[43:42 - 43:42] kenapa sih?
+[43:42 - 43:43] iya
+[43:43 - 43:44] kalau saya itu gak apa
+[43:44 - 43:45] karena itu gak ngurangnya
+[43:45 - 43:46] ini tujuannya saya untuk
+[43:46 - 43:48] apa
+[43:48 - 43:49] yang pasti ditanya
+[43:49 - 43:50] pxp-nya
+[43:50 - 43:50] iya
+[43:50 - 43:51] pasti kamu ditanya perbandingan
+[43:51 - 43:52] metode itu pasti
+[43:52 - 43:53] nanya
+[43:53 - 43:54] nama pake pxp
+[43:54 - 43:55] apalagi
+[43:55 - 43:57] ada di atas tadi kamu
+[43:57 - 43:58] objek-objeknya
+[43:58 - 43:59] objek yang sama
+[43:59 - 44:00] pake waterfall
+[44:00 - 44:01] iya
+[44:01 - 44:01] pasti kan ditanya
+[44:01 - 44:03] yang itu pake waterfall
+[44:03 - 44:04] kok kamu pake pxp
+[44:04 - 44:05] iya
+[44:05 - 44:06] nah kamu harus bisa menyiapkan
+[44:06 - 44:08] cara enaknya ya
+[44:08 - 44:09] dimasukkan di perbandingan
+[44:09 - 44:11] akhirnya kan kamu sudah
+[44:11 - 44:11] membaca dulu
+[44:11 - 44:11] iya
+[44:11 - 44:12] membaca duluan gitu pak
+[44:12 - 44:14] karena kalau di template
+[44:14 - 44:15] kan itu cuma sebatas
+[44:15 - 44:16] dari hasilnya
+[44:16 - 44:17] hasilnya
+[44:17 - 44:17] gak apa-apa berarti pak
+[44:17 - 44:18] kalau ditambahkan
+[44:18 - 44:20] itu lebih dalam
+[44:20 - 44:22] kalau itu mau nambah
+[44:22 - 44:25] value gak apa-apa
+[44:25 - 44:27] mungkin itu aja pak
+[44:27 - 44:28] telfon dari muka
+[44:28 - 44:29] sikir
+[44:29 - 44:29] muka sikir
+[44:29 - 44:29] muka sikir
+[44:29 - 44:29] ya
+[44:29 - 44:30] muka

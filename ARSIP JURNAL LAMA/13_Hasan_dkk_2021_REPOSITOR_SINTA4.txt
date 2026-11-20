@@ -1,0 +1,592 @@
+--- HALAMAN 1 ---
+REPOSITOR, Vol. 3, No. 1, Januari 2021, Pp. 43-50 
+ISSN 
+: 2714-7975 
+E-ISSN 
+: 2716-1382 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+43
+Implementasi Metode Personal Extreme Programming Dalam 
+Pengembangan Sistem Administrasi Pelayanan Desa  
+(Studi Kasus: Desa Bulangan Barat Kec. Pegantenan Kab. 
+Pamekasan) 
+ 
+ 
+Harizal Iqmal Hasan*1, Gita Indah Marthasari 2, Ilyas Nuryasin3 
+1,2,3Universitas Muhammadiyah Malang 
+harizaliqmal@webmail.umm.ac.id*1, gita@umm.ac.id2, ilyas@umm.ac.id3 
+ 
+ 
+Abstrak 
+Desa Bulangan Barat adalah sebuah desa di Kab. Pamekasan. Ada beberapa masalah 
+yang terjadi dalam proses manajemen desa dikarenakan dalam proses manajemen desa masih 
+menggunakan cara yang menual. Sehingga, dibutuhkan sistem yang dapat mengelola proses 
+pelayanan administrasi desa yang efektif dan efisein dengan menggunakan metode Personal 
+Extreme Programming. Tujuan dari penelitian ini adalah untuk mengembangkan sistem PXP 
+pada pengelola desa. Adapun dalam metoode pengembangan ini menggunakan Personal 
+extreme programming (PXP). Personal extreme programming merupakan pengembangan dari 
+extreme programming yang bisa digunakan oleh pengembang tunggal. Sistem yang akan 
+dibangun  dalam penelitian ini merupakan sistem  pelayanan sistem terpadu desa. Hasil 
+penelitian selama rancang bangun sistem pelayan terpadu desa di Desa Bulangan Barat Kab. 
+Pamekasan. Kesimpulannya metode PXP ini bisa diimplementasikan pada studi kasus ini. 
+Adapun dalam prosesnya dimulai dengan melakukan pengumpulan kebutuhan, diskusi dengan 
+klien, kemudian kebutuhan klien tersebut dipresentasikan menjadi user stories. User storiesnya 
+berjumlah 26 user stories. Setelah mendapatkan kebutuhan sistem, maka melakukan 
+pengembangan, perencanaan terdiri dari estimasi waktu, prioritas, dan penentuan user stories 
+disetiap iterasi. Kemampuan, pengalaman, dan pemahaman pengembang dapat mempengaruhi 
+kesesuaian estimasi waktu pengerjaan sistem PXP. Estimasi waktu pengembangan sistem 
+selama 106 hari. Akan tetapi dalam  praktiknya, keseluruhan waktu pengembangan sistem lebih 
+cepat 42 hari sehingga waktu pengerjaan menjadi 64 hari dikarenakan metode PXP lebih cepat 
+dalam proses pengerjaan karena meminimalisir dokumentasi pengerjaan sistem seperti usecase 
+dsb. 
+. 
+Kata Kunci: Agile Software Development, XP, PXP, Sistem Pelayanan Terpadu Desa 
+ 
+Abstract 
+The village of the western bulangan is a village in Pamekasan regency. There are some 
+problems that occur in the village management process because the village management process 
+still uses an appropriate method. Thus, a system that can manage the effective village 
+administration process of efisein using personal methods extreme programming. The purpose of 
+this research is to develop a PXP system on village management. As for this development method 
+using personal extreme programming. Personal extreme programming is an improvement of 
+extreme programming that can be used by a single developer. The system that will be built into 
+this study is the integrated system of village service. The result of research during the design of 
+the village's integrated servant system in the village of the western bulangan Pamekasan regency. 
+The result is that the PXP method can be implemented on the case studies. As for the process 
+starts with collection of needs, discussion with clients, then presenting the needs to be user 
+stories. There are 26 user stories. After obtaining the needs of the system, development, planning 
+consists of our estimated time, priorities, and signing user stories on every iteration. Developers' 
+abilities, experiences, and insights can influence estimated estimates of PXP system work. 
+System development estimates for 106 days. However, in practice the total time of system 
+development was 42 days faster, so the working time of it would be 64 because the PXP method 
+was faster in the process because it minimized the documentation of the system such as case 
+case etc. 
+  
+Keywords: Agile software development, XP, PXP, Village Integrated Service Systems 
+
+
+--- HALAMAN 2 ---
+ISSN: 2714-7975; E-ISSN: 2716-1382 
+REPOSITOR, Vol. 3, No. 1, Januari 2021: 43-50 
+ 
+ 
+          
+  
+        
+ 
+44 
+ 1. Pendahuluan 
+Teknologi informasi dewasa ini mengalami kemajuan yang sangat pesat, sehingga 
+memiliki dampak di berbagai sektor kehidupan, ekonomi, politik, sosial, dan budaya. Tidak 
+terkecuali dalam mengelola administrasi pemerintahan baik pemerintah kota dan desa. 
+Penggunaan teknologi informasi dalam setiap pengelolaan utamanya di desa sangat diperlukan 
+untuk demi terciptanya pekerjaan secara efektif dan efisien. 
+Desa Bulangan Barat adalah sebuah desa yang terletak di Kec. Pegantenan Kab. 
+Pamekasan Jawa Timur. Pemerintah Desa Bulangan Barat mengutamakan informasi yang tepat 
+untuk desa dan kualitas pelayanan yang cepat guna menciptakan kepuasan dan kesejahteraan 
+setiap warganya. Dengan penggunaan sistem informasi diharapkan untuk mempermudah akses 
+informasi yang dibutuhkan baik dari pemerintah desa, pemerintah terkait, dan semua warga desa. 
+Pemerintah Desa Bulangan Barat dalam menjalankan proses pelayanan administrasi desa 
+mengalami beberapa masalah karena dalam pengelolaan masih secara manual, untuk 
+mengetahui jumlah keluarga, untuk penduduk berdasarkan jenis kelamin per-desa serta per-
+dusun, untuk melihat profil keluarga atau penduduk harus diperiksa secara manual menggunakan 
+Buku Induk Penduduk (BIP). Begitu pula dengan pembuatan surat keluar penomorannya 
+dilakukan secara manual, berikut dengan pengisian form identitas pemohon surat juga dilakukan 
+dengan cara manual. Tidak ada pencatatan dan arsip surat masuk pada desa. Tidak adanya 
+pencatatan dan dokumentasi Inventaris Sarana dan Prasarana sehingga menyulitkan dalam hal 
+pelaporan. Dan pelaporan realisasi program atau kegiatan desa masih dengan cara dicetak dan 
+membutuhkan waktu yang lama. sehingga pengawas/pemerintah terkait tidak bisa melihat 
+progres kegiatan atau program desa yang sedang dilaksanakan dan tidak terkoordinasi dengan 
+baik, pengawas/pemerintah terkait berkeinginan melihat realisasi program secara langsung. 
+Dengan permasalahan di atas pemerintah Desa Bulangan Barat membutuhkan sistem 
+informasi yang tepat dan cepat. Oleh karena itu penulis bermaksud mengembangkan sebuah 
+sistem SIMPELTERSA (Sistem Pelayanan Terpadu Desa). Dalam mengembangkan sistem 
+SIMPELTERSA ini penulis menggunakan bagian dari metode agile software development karena 
+waktu yang cukup singkat dan Kepala Desa Bulangan Barat belum memiliki gambaran tentang 
+aplikasi yang ingin dibangun[1]. Metode tersebut dalam pengembangan sistem tergolong cepat, 
+metode agile juga memprioritaskan hubungan dengan pengembang dan klien berkomunikasi 
+yang baik, hingga fleksibel dalam menangani perubahan kebutuhan-kebutuhan dari sistem yang 
+sedang di bangun. 
+Dalam penelitian terdahulu, peneliti menerapkan metode extreme programming[2] konsep 
+dari metode ini dapat mengerjakan perubahan dari kebutuhan-kebutuhan sistem yang dibuat 
+pada proses pembangunan sistem[3]. Penelitian lain[4], metode extreme programming 
+digunakan pada pembangunan sistem POS (point of sales). Dalam implementasinya, Extreme 
+Programming digunakan dalam pengerjaannya dengan sebuah tim yang tidak besar, dimana 
+dalam proses pengembangan sistemnya dengan cara berpasangan secara kolektif [5]. Dengan 
+hal tersebut, Extreme Programming tidak bisa di implementasikan pengembang hanya terdiri dari 
+satu orang saja. Tetapi, terdapat metode pengembangan dari Extreme Programming agar bisa 
+dikerjakan oleh satu orang saja yaitu Personal Extreme Programming [6]. Penelitian [7], Personal 
+Extreme Programming (PXP) di implementasikan pada pengembangan yang berbasis android 
+pada Mobile learning interaktif. Pada penelitian [8] mengimplementasikan PXP karena metode 
+tersebut dapat menyelesaikan perubahan-perubahan kebutuhan tidak haruss mengulangi 
+keseluruhan proses pembangunan. Pada penelitian [9] Muhammad Ulfi (2019) menerapkan 
+metode PXP dalam pembuatan sistem manajemen transaksi perusahaan. Pada penelitian [10] 
+Ahamad Hidayat (2019) menggunakan pendekatan PXP dalam rancang bangun sistem informasi 
+pembukuan menggunakan arsitektur HMVC. Pada penelitian [11] Abudllah Faqih (2019) 
+mengembangkan sistem informasi program keluarga harapan (PKH) dengan metode PXP 
+dengan metode prioritas ranking. 
+Berdasarkan permasalahan tersebut, dibutuhkan sebuah sistem yang mengelola semua 
+proses administrasi desa bulangan barat melalui menggunakan metode Personal Extreme 
+Programming. Dengan harapan dapat memberikan solusi cepat dan tepat dalam proses 
+pelayanan administrasi desa. 
+ 
+ 
+ 
+ 
+
+
+--- HALAMAN 3 ---
+REPOSITOR                  ISSN: 2714-7975; E-ISSN: 2716-1382 
+ 
+ 
+Implementasi Metode Personal Extreme Programming dalam… 
+Harizal Iqmal Hasan, Gita Indah Marthasari, Ilyas Nuryasin 
+45 
+2. Metode Penelitian 
+2.1 Studi Literatur 
+Pada bagian ini, seorang peneliti akan melakukan pengumpulan semua informasi yang 
+akan mendukung terhadap penelitian yang berupa literatur yang relevan seperti buku, jurnal, 
+serta penelitian terdahulu.  
+ 
+2.2 Pengembangan Sistem 
+Subbab ini akan menjelaskan uraian gambar 1 di mana akan menjelaskan proses 
+penelitian yang dilakukan oleh peneliti. Pembangunan Sistem Informasi Desa diciptakan melalui 
+framework laravel menggunakan bahasa pemrograman PHP serta MySQL database. 
+Kebutuhan yang bersifat fungsional atau nonfungsional dilakukan pengumpulan pada tahap 
+requirements. Kemudian perencanaan yang dilakukan pada proses iterasi berdasarkan pada 
+kebutuhan yang diperoleh di planning. Berdasarkan hasil perencanaan, maka akan memperoleh 
+jumlah waktu yang dibutuhkan setiap melakukan pekerjaan yang dibutuhkan. Tahap awal iterasi 
+adalah tahap iteration iniziation. adapun pada tahap design seorang pengembang melakukan 
+modeling terhadap modul yang akan dilakukan selama proses iterasi. Bagian ini peneliti akan 
+menjabarkan beberapa tahapan dalam penelitian saat peneliti melaksanakan proses penelitian. 
+Adapun tahapan penelitian dapat dilihat pada skema di bawah ini. 
+ 
+ 
+Gambar 1. Proses Penelitian [12] 
+ 
+2.2.1 Requirements 
+Pada bagian requirements ini, seorang pengembang melakukan pengumpulan terhadap 
+semua kebutuhan. Dalam proses pengumpulan kebutuhan tersebut melalui proses wawancara, 
+observasi, serta diskusi dengan aparatur desa khususnya Kepala Desa Bulangan Barat. 
+Permasalahan yang dialami oleh klien di antaranya karena proses pelayanan administrasi masih 
+dijalankan secara manual seperti sudah di jelaskan pada bab 1. Berdasarkan permasalahan 
+tersebut klien bisa mengetahui kebutuhan yang dibutuhkan. 
+ 
+2.2.2 Planning 
+Pada bagian ini seorang pengembang akan mengumpulkan rangkaian modul yang akan 
+dikerjakan di setiap iterasi dengan mengacu pada user story yang diperoleh pada saat 
+requerenment. Dalam melakukan penyusunan modul tersebut pengembang memakai practice 
+planning game 
+
+
+--- HALAMAN 4 ---
+ISSN: 2714-7975; E-ISSN: 2716-1382 
+REPOSITOR, Vol. 3, No. 1, Januari 2021: 43-50 
+ 
+ 
+          
+  
+        
+ 
+46 
+Dalam proses melakukan planning game user menciptakan yang namanya user stories 
+dengan berdasarkan pada keinganan klien terhadap semua yang dikerjakan oleh sistem. 
+kemudian, ketika user stories selesai dan didapatkan, maka pengembang akan menghitung 
+waktu yang akan dibutuhkan. Penghitungan kebutuhan waktu tersebut akan dibahas melalui story 
+poins. 
+ 
+2.2.3 Iteration Initiations 
+Iteration Inialization menunjukkan dimulainya pengerjaan user stories dari setiap iterasi 
+yang akan di laksanakan. Daftar user stories yang akan dikerjakan tersebut didapatkan dari hasil 
+perencanaan pada tahap planning. 
+Iterstion initiations yang akan memberikan petunjuk terhadap dimulainya proses kerja user 
+stories disetiap iterasi yang akan dikerjakan. adapun semua user yang akan dikerjakan didapat 
+dari proses perencanaan di bagian planning. 
+ 
+2.2.4 Desaign 
+Untuk bagian desain ini, seorang pengembang melakukan modeling modul sistem yang 
+akan dikerjakan pada saat iterasi. adapun desain yang akan diciptakan oleh seorang 
+pengembang adalah  spike solution prototype dimana hal tersebut merupakan sebuah skema 
+desain contoh yang berdasarkan pada CRC cards pada iterasi yang dikerjakan. 
+ 
+2.2.5 Implementation 
+Pada bagian ini kode pemrograman akan dibuat oleh pengembang. Seorang pengembang 
+akan melaksanakan berbagi objek yang ada di fase desain. adapun pada bagian ini dibagi 
+menjadi tiga tahap, pertama, unit testing kedua, code generation, ketiga, code refactoring. 
+ 
+2.2.6 Syistem Testing 
+Pada bagian system testing ini dilakukan pengujian terhadap semua fitur yang telah 
+dikerjakan selam proses iterasi. Pada proses pengujian hal ini dilakukan oleh user, kemudian 
+pada hasil pengujian tersebut disajikan dalam sebuah bentuk user acceptance test. Dalam proses 
+pengujian, seorang penembang mengirimkan sebuah dokumen dari user acceptance test 
+terhadap user sehingga bisa melakukan proses validasi. kemudian pengembang akan 
+menghubungkan user menggunakan remote sistem. Dengan menggunkan sistem remote ini 
+akan memberi kemudahan terhadap pengembang dalam mengontrol pada proses iterasi. Seteh 
+itu, user akan memverivikasi tentang kesesuaian fungsi yang dilakukan tersebut. 
+ 
+2.2.7 Retrospective 
+Fase ini adalah bagian terakhir pada proses iterasi. Seorang pengembang akan melakukan 
+analisis proses semua bagian modul yang dilakukan, apakah sesuai dengan waktu yang 
+ditentukan, kemuadian problem yang menyebabkan terlambat saat proses pekerjaan serta 
+menjadikan hal tersebut sebagai evaluasi. 
+ 
+3. Hasil Penelitian dan Pembahasan 
+3.1 Requirements 
+Adapun dalam menulis kebutuhan tersebut ditulis dalam bentuk user stories, formatnya 
+“menjadi [jenis pengguna], aku akan [melakukan aktivitas tertentu] sehigga [memperoleh respon 
+dari tindakan]”. Kemudian setelah melakukan proses requirements, seorang pengembang akan 
+memperoleh 14 user stories.  seperti pada Tabel 1 dibawah ini. 
+ 
+Tabel 1. Daftar User stories 
+Kode 
+Stories 
+User Stories 
+Story-01 
+Sebagai Operator, saya ingin sistem dapat mengelola user Perangkat 
+desa dan user pemerintah terkait sehingga mudah memberi akses kepada 
+masing masing user. 
+Story-02 
+Sebagai Operator, saya ingin sistem mencatat dan mengelola (membuat, 
+mengedit, dan menghapus) profil diantaranya data dusun, desa, 
+kecamatan, kabupaten, sehingga data tsb tersimpan pada sistem dan saya 
+dapat memeriksa data tersebut jika dibutuhkan. 
+
+
+--- HALAMAN 5 ---
+REPOSITOR                  ISSN: 2714-7975; E-ISSN: 2716-1382 
+ 
+ 
+Implementasi Metode Personal Extreme Programming dalam… 
+Harizal Iqmal Hasan, Gita Indah Marthasari, Ilyas Nuryasin 
+47 
+Story-03 
+Saya Sebagaii Operator, saya ingin sistem menampilkan jumlah 
+penduduk, dan keluarga setiap dusun, dan desa. Berdasarkan kategori 
+jenis kelamin sehingga dengan mudah memperoleh informasi tentang 
+jumlah penduduk ketika suatu waktu dibutuhkan. 
+Story-04 
+Sebagai Operator, saya ingin sistem mengelola dan mencatat data 
+Keluarga sehingga dapat ditampilkan jika dibutuhkan dan dapat mencari 
+dengan mudah data keluarga. 
+Story-05 
+Sebagai Operator, saya ingin sistem mengelola dan mencatat data 
+Penduduk sehingga dapat ditampilkan jika dibutukan dan dapat mencari 
+dengan mudah data Penduduk. Serta sistem dapat menampilkan semua 
+data penduduk. 
+Story-06 
+Sebagai Operator, saya ingin sistem dapat mengelola dan mencatat  serta 
+bisa upload gambar dokumen penduduk, dokumen paspor, kitas, akta 
+nikah, akta lahir dan kartu bpjs sehingga dapat dengan mudah mencari 
+data tsb. Jika sewaktu waktu dibutuhkan. 
+Story-07 
+Sebagai Operator, saya ingin sistem dapat mengelola dan mencatat detail 
+pendidikan penduduk sehingga dapat dengan mudah mencari data tsb. 
+Jika sewaktu waktu dibutuhkan. 
+Story-08 
+Sebagai Operator, saya ingin sistem dapat mengelola dan mencatat surat 
+masuk pada desa, serta bisa upload gambar surat tsb, sehingga menjadi 
+arsip dan dengan mudah ditemukan mencari arsip tsb. jika dibutuhkan. 
+Story-09 
+Sebagai Operator, saya ingin sistem dapat membuat mencatat surat 
+keluar dari desa yang diajukan oleh masyarakat, dengan otomastis nomer 
+surat dan data diri pengaju terisi serta mencetak surat oleh sistem, 
+sehingga proses perbuatan surat tidak membutuhkan waktu lama, dengan 
+harus mengisi data diri penduduk dengan cara manual. Serta surat yang 
+sudah dibuat dibutuhkan kembali sistem dapat mencetak kembali. 
+Story-10 
+Sebagai Operator, saya ingin sistem dapat mencatat dan mengelola data 
+inventaris desa serta dapat memasukkan gambar inventaris sehingga 
+mengetahui inventaris apa saja yang ada pada desa. Dan dengan mudah 
+mencari data inventaris yang sudah tersimpan. 
+Story-11 
+Sebagai Operator, saya ingin sistem dapat mencatat dan mengelola 
+laporan realisasi kegiatan desa per-periode (tahun) seta sistem dapat 
+nyimpan dokumentasi dari setiap kegiatan sehingga pemerintah terkait 
+dengan mudah melihat realisari program desa dengan cepat. 
+Story-12 
+Sebagai Perangkat Desa, saya ingin sistem bisa memberikan akses untuk 
+mengupload gambar kegiatan desa, sehingga proses laporan dilakukan 
+dengan cepat san tidak harus operator yang menangani proses upload 
+gambar kegiatan. 
+Story-13 
+Sebagai Perangkat Desa, saya ingin sistem memberikan akses untuk 
+melihat penduduk dan membuat surat keluar, serta mengelola surat 
+masuk. Sehingga tidak berlu operator saja yang menangani proses tsb. 
+Story-14 
+Sebagai Perangkat Desa, saya ingin sistem memberikan akses hanya 
+melihat data profil desa, data keluarga, data penduduk, inventaris desa, 
+serta dokumen penduduk. Sehingga mempermudah memperoleh data 
+tidak perlu operator. 
+Story-15 
+Sebagai Pemerintah Terkait, saya ingin sistem memberikan akses untuk 
+melihat laporan realisasi program desa, sehingga mudah untuk memantau 
+dan terkoordinasi dengan baik setia program yang di kerjakan oleh desa. 
+ 
+3.2 Planning 
+Setelah dilakukan tahap estimasi waktu pengerjaan dan penentuan prioritas dari masing-
+masing user stories, tahap planning dilanjutkan dengan perencanaan iterasi. Dalam proses 
+pengembangannya, PXP dilakukan secara pengulangan atau iterasi. Dalam iterasi tersebut, 
+terdapat user stories yang akan dikerjakan selama proses tersebut berlangsung. Penentuan user 
+stories yang dikerjakan dalam iterasi ditentukan dengan berdiskusi dengan client dan 
+berdasarkan prioritas dari user stories tersebut. 
+
+
+--- HALAMAN 6 ---
+ISSN: 2714-7975; E-ISSN: 2716-1382 
+REPOSITOR, Vol. 3, No. 1, Januari 2021: 43-50 
+ 
+ 
+          
+  
+        
+ 
+48 
+Pada Story-1, tidak memiliki keterkaitan dengan story yang lain karena hanya untuk hak 
+akses user untuk masuk pada sistem. Story-2, data profil dari desa tersimpan pada story ini yang 
+berkaitan dengan Story-4 sebagai penentuan alamat dari Kartu Keluarga (KK). Story-4 untuk 
+menyimpan informasi data Kartu Keluarga yang berkaitan dengan Story-5 yaitu menyimpan data 
+penduduk. Story-5 mengambil data KK untuk pengelompokan keluarga dan pengalamatan dari 
+penduduk. Story-6, menyimpan data dokumen penduduk dan Story-7, menyimpan detail 
+pendidikan penduduk, Story-6 dan 7 berkaitan dengan story-5. Stroy-3 memberikan informasi 
+jumlah dari Story-4 dan Story-5. Story-8, tidak memiliki kaitan dengan story yang lain, story ini 
+hanya menyimpan data surat masuk. Story-9, untuk membuat surat keluar yang diajukan oleh 
+penduduk, dengan itu story ini memiliki kaitan dengan story-4 dan 5 untuk mengambil data 
+penduduk dan KK. Story-10, tidak memiliki kaitan dengan story yang lain story ini hanya 
+menyimpan data inventaris desa. Story-11, story ini khusus untuk menyimpan data laporan 
+pendaan pada desa per tahunnya dan story ini tidak memiliki keterkaitan dengan story yang lain. 
+Penjelan story diatas untuk akses user Super Admin atau Operator Desa. 
+Untuk akses user Pemerintah Desa. Story-12, hanya menampilkan data dari Story-11 dan 
+membantu aktivitas dari story-11 memasukkan data foto saja. Story-13 hanya melakukan aktivitas 
+dari story-8 dan story-9. Sedangkan user Story-14, untuk hanya untuk melihat data dari Story-4 
+dan 5 dan melakukan pengelolaan story-10.  
+Pada akses user Pemerintah Terkait, memiliki story-15 yang hanya melihat data-data dari 
+story-11. Hasil perencanaan iterasi dapat dilihat pada Tabel 2. 
+ 
+Tabel 2. Hasil Penyusunan Daftar Iterasi 
+Iterasi 1 
+User Stories 
+Prioritas 
+Hari 
+Value 
+Risk 
+Story Points 
+Story-1 
+Critical 
+(1) Low 
+1 
+2 
+Story-2 
+Critical 
+(1) Low 
+1 
+2 
+Story-10 
+Critical 
+(2) Medium 
+2 
+4 
+Story-8 
+Critical 
+(2) Medium 
+2 
+4 
+Story-4 
+Critical 
+(3) Medium 
+3 
+6 
+Story-5 
+Critical 
+(3) Medium 
+3 
+6 
+Story-6 
+Critical 
+(2) Medium 
+2 
+4 
+Story-7 
+Critical 
+(1) Low 
+1 
+2 
+Story-9 
+Critical 
+(4) Medium 
+3 
+6 
+Story-14 
+Critical 
+(3) Medium 
+3 
+6 
+Story-13 
+Critical 
+(3) Medium 
+6 
+12 
+Story-3 
+Critical 
+(2) Medium 
+1 
+2 
+Story-11 
+Critical 
+(4) Medium 
+1 
+2 
+Story-12 
+Critical 
+(4) Medium 
+4 
+8 
+Story-15 
+Critical 
+(3) Medium 
+3 
+6 
+Jumlah hari pengerjaan 
+78 
+ 
+Rencana pengerjaan sistem selama 78 hari. Selama proses pengembangan sistem, klien 
+dapat mengusulkan perubahan ataupun penambahan user stories baru. Pengembang kemudian 
+akan mengestimasi dan menentukan prioritas dari user stories tersebut, lalu menambahkannya 
+ke dalam proses iterasi yang sedang berjalan ataupun iterasi berikutnya. 
+ 
+3.3 Design 
+Untuk bagian desain ini, seorang pengembang melakukan modeling modul sistem yang 
+akan dikerjakan pada saat iterasi. adapun desain yang akan diciptakan oleh seorang 
+pengembang adalah  spike solution prototype di mana hal tersebut merupakan sebuah skema 
+desain contoh yang berdasarkan pada CRC cards pada iterasi yang dikerjakan. 
+ 
+3.4 Pengembangan Sistem dan Pengujian 
+Tahap selanjutnya adalah tahap system testing atau pengujian terhadap keseluruhan hasil 
+implementasi user stories pada iterasi ke-1. Pengujian dilakukan oleh user dan hasil pengujian 
+akan disajikan dalam bentuk User Acceptance Test. Hasil pengujian dapat dilihat pada Tabel 3. 
+ 
+
+
+--- HALAMAN 7 ---
+REPOSITOR                  ISSN: 2714-7975; E-ISSN: 2716-1382 
+ 
+ 
+Implementasi Metode Personal Extreme Programming dalam… 
+Harizal Iqmal Hasan, Gita Indah Marthasari, Ilyas Nuryasin 
+49 
+Tabel 3. User Acceptance Test Story-1 
+User Story 
+Unit Modul 
+Hasil Uji 
+Story-1 
+Tampilan halam login 
+Diterima 
+Melihat daftar user super admin/operator desa 
+Diterima 
+Menambah user operator desa 
+Diterima 
+Menghapus user operator desa 
+Diterima 
+Merubah password login operator desa 
+Diterima 
+Melihat daftar user pemerintah desa 
+Diterima 
+Menambah user pemerintah desa 
+Diterima 
+Menghapus user pemerintah desa 
+Diterima 
+Merubah password login pemerintah desa 
+Diterima 
+ 
+3.4 Hasil Evaluasi 
+Evaluasi  dari proses pengembangan sistem selama 2 iterasi yang telah dilakukan berupa 
+pengerjaan  user stories yang lebih cepat pengerjaaanya dari waktu yang direncanakan.  Pada  
+proses  pengembangan  sistem, terdapat  user stories  yang pengerjaannya melebihi waktu 
+estimasi yang ditentukan. Kurangnya pengalaman pengembang dalam mengerjakan  modul 
+sejenis membuat pengembang tidak dapat mengestimasi waktu pengerjaan secara akurat. Selain 
+itu, penambahan user stories  oleh  klien  menyebabkan perubahan perencanaan iterasi yang 
+dikerjakan pada iterasi ke-1 serta penambahan iterasi ke-2. Waktu perencanaan 78 hari iterasi 
+ke-1 iterasi ke-2 perencanaan 28 hari. Waktu pengerjaan pada iterasi ke-1 44 hari. Kemudian 
+waktu pengerjaan iterasi ke-2 20 hari. Total keseluruhan pengerjaan 64. Dengan demikian waktu 
+pengerjaan lebih cepat dari yang direncanakan sebelumnya. 
+ 
+4. Kesimpulan 
+ Berdasarkan hasil penelitian selama rancang bangun sistem pelayan terpadu desa di 
+Desa Bulangan Barat Kab. Pamekasan dapat disimpulkan bahwa metode PXP (personal extreme 
+programming) bisa digunakan pada studi kasus ini.  Adapun dalam prosesnya dimulai dengan 
+melakukan pengumpulan kebutuhan, diskusi dengan klien, kemudian kebutuhan klien tersebut 
+dipresentasikan menjadi user stories. User storiesnya berjumlah 26 user stories. Setelah 
+mendapatkan kebutuhan sistem, maka melakukan pengembangan, perencanaan terdiri dari 
+estimasi waktu, prioritas, dan penentuan user stories disetiap iterasi. Kemampuan, pengalaman, 
+dan pemahaman pengembang dapat mempengaruhi kesesuaian estimasi waktu pengerjaan 
+sistem PXP. Estimasi waktu pengembangan sistem selama 106 hari. Akan tetapi dalam  
+praktiknya, keseluruhan waktu pengembangan sistem lebih cepat 42 hari sehingga waktu 
+pengerjaan menjadi 64 hari dikarenakan metode PXP (personal extreme programming) lebih 
+cepat dalam proses pengerjaan karena meminimalisir dokumentasi pengerjaan sistem seperti 
+use case dsb. 
+ 
+Referensi 
+[1] R. Hoda, N. Salleh, J. Grundy, and H. M. Tee, “Systematic literature reviews in agile software 
+development: A tertiary study,” Inf. Softw. Technol., vol. 85, pp. 60–70, 2017. 
+[2] R. Fojtik, “Extreme programming in development of specific software,” Procedia Comput. 
+Sci., vol. 3, pp. 1464–1468, 2011. 
+[3] R. Rahmi, R. Sari, and R. Suhatman, “Pendekatan Metodologi Extreme Programming pada 
+Aplikasi E-Commerce (Studi Kasus Sistem Informasi Penjualan Alat-alat Telekomunikasi),” 
+J. Komput. Terap., vol. 2, no. 2, pp. 83–92, 2016. 
+[4] Hasan, “Perancangan Aplikasi Point of Sale pada Mini Market Bintang Mitra Pontianak,” 
+Semin. Nas. Inform., pp. 719–725, 2015. 
+[5] R. Agarwa and D. Umphress, “Extreme programming for a single person team,” Proc. 46th 
+Annu. Southeast Reg. Conf. XX, ACM-SE 46, no. January 2008, pp. 82–87, 2008. 
+[6] Y. Dzhurov, I. Krasteva, and S. Ilieva, “Personal Extreme Programming–An Agile Process 
+for Autonomous Developers,” Int. Conf. software, Serv. Semant. Technol., no. August 2016, 
+pp. 252–259, 2009. 
+[7] H. Rizal, A. Satrio, and P. W. Wirawan, “Mobile Learning Interaktif Berbasis Android Dengan 
+Metode,” pp. 1–7, 2013. 
+ 
+
+
+--- HALAMAN 8 ---
+ISSN: 2714-7975; E-ISSN: 2716-1382 
+REPOSITOR, Vol. 3, No. 1, Januari 2021: 43-50 
+ 
+ 
+          
+  
+        
+ 
+50 
+[8] N. D. H. Novizar D. H. and S. Adhy, “Repository Jurnal dan Tugas Akhir Mahasiswa dengan 
+Metode Personal Extrem Programming (Studi Kasus: Jurusan Ilmu Komputer/ Informatika 
+UNDIP),” 2016. 
+[9] M. Ulfi et al., “Implementasi Metode Personal Extreme Programming dalam Pengembangan 
+Sistem Manajemen Transaksi Perusahaan ( Studi Kasus : CV . Todjoe Sinar Group ),” pp. 
+1–8, 2019. 
+[10] A. Hidayat, “Rancang Bangun Sistem Informasi Pembukuan Keuangan Menggunakan 
+Arsitektur Hierarchical Model View Controller dengan Pendekatan PXP (Studi Kasus : CV. 
+Anugerah Mandiri),” Univeristas Muhammadiyah Malang, 2019. 
+[11] A. Faqih, “Sistem Informasi Program Keluarga Harapan (PKH) Menggunakan Metode 
+Personal Extreme Programming Dengan Metode Prioritas Ranking,” Universitah 
+Muhammadiyah Malang, 2019. 
+[12] Y. Dzhurov, I. Krasteva, and S. Ilieva, “Personal Extreme Programming–An Agile Process 
+for Autonomous Developers,” 2009. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

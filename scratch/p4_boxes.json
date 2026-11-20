@@ -1,0 +1,744 @@
+﻿[
+    {
+        "Text":  "40-Hour Week",
+        "X":  129,
+        "Y":  395,
+        "W":  116,
+        "H":  14
+    },
+    {
+        "Text":  "On-site",
+        "X":  129,
+        "Y":  480,
+        "W":  57,
+        "H":  13
+    },
+    {
+        "Text":  "Customer",
+        "X":  129,
+        "Y":  501,
+        "W":  78,
+        "H":  14
+    },
+    {
+        "Text":  "Coding",
+        "X":  129,
+        "Y":  649,
+        "W":  57,
+        "H":  17
+    },
+    {
+        "Text":  "Standards",
+        "X":  129,
+        "Y":  670,
+        "W":  80,
+        "H":  13
+    },
+    {
+        "Text":  "codebase; the more frequently code is integrated",
+        "X":  277,
+        "Y":  226,
+        "W":  369,
+        "H":  17
+    },
+    {
+        "Text":  "into the main codebase the less chances that there",
+        "X":  277,
+        "Y":  246,
+        "W":  369,
+        "H":  14
+    },
+    {
+        "Text":  "will be diversion. Software systems are built and",
+        "X":  277,
+        "Y":  267,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "integrated several times a day; at the very least all",
+        "X":  277,
+        "Y":  289,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "changes are integrated into the main codebase at",
+        "X":  277,
+        "Y":  309,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "least once a day. Each build is tested using the",
+        "X":  278,
+        "Y":  331,
+        "W":  368,
+        "H":  17
+    },
+    {
+        "Text":  "prepared test cases.",
+        "X":  276,
+        "Y":  351,
+        "W":  142,
+        "H":  18
+    },
+    {
+        "Text":  "Programmers in an XP project normally adhere to",
+        "X":  277,
+        "Y":  394,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "a 40 hour working week in order to maintain",
+        "X":  277,
+        "Y":  415,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "productivity and avoid burn out.",
+        "X":  277,
+        "Y":  437,
+        "W":  234,
+        "H":  18
+    },
+    {
+        "Text":  "One or more customers who will use the system",
+        "X":  277,
+        "Y":  479,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "being built are allocated to the development team.",
+        "X":  277,
+        "Y":  500,
+        "W":  368,
+        "H":  18
+    },
+    {
+        "Text":  "The customer helps to guide the development and",
+        "X":  277,
+        "Y":  521,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "is empowered to prioritize and state requirements",
+        "X":  277,
+        "Y":  542,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "or answer any questions the developers may have.",
+        "X":  277,
+        "Y":  563,
+        "W":  368,
+        "H":  18
+    },
+    {
+        "Text":  "This ensures that there is effective communication",
+        "X":  277,
+        "Y":  585,
+        "W":  369,
+        "H":  13
+    },
+    {
+        "Text":  "with the customer and as a result less",
+        "X":  277,
+        "Y":  605,
+        "W":  369,
+        "H":  14
+    },
+    {
+        "Text":  "documentation will be uired.",
+        "X":  277,
+        "Y":  626,
+        "W":  232,
+        "H":  14
+    },
+    {
+        "Text":  "Everyone uses the same coding standards which",
+        "X":  277,
+        "Y":  648,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "make it easy to work in pairs and share ownership",
+        "X":  277,
+        "Y":  669,
+        "W":  369,
+        "H":  18
+    },
+    {
+        "Text":  "Of all code. One should not be able to tell who",
+        "X":  277,
+        "Y":  690,
+        "W":  369,
+        "H":  14
+    },
+    {
+        "Text":  "worked on what code in an XP ro•ect.",
+        "X":  277,
+        "Y":  711,
+        "W":  284,
+        "H":  14
+    },
+    {
+        "Text":  "problem as the codebase serves as the linear record of one\u0027s",
+        "X":  668,
+        "Y":  226,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "work. Integration will not cause any conflicts and is trouble",
+        "X":  668,
+        "Y":  246,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "free but it is still quite easy to diverge from the main",
+        "X":  669,
+        "Y":  267,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "codebase the longer you work without integrating.",
+        "X":  668,
+        "Y":  289,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "Therefore continuous integration is still needed. The best",
+        "X":  668,
+        "Y":  309,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "way to dewelop is to work on a task, integrate and then move",
+        "X":  668,
+        "Y":  331,
+        "W":  444,
+        "H":  17
+    },
+    {
+        "Text":  "to the next task. This way divergence is kept to the",
+        "X":  668,
+        "Y":  351,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "rnmimum.",
+        "X":  668,
+        "Y":  372,
+        "W":  75,
+        "H":  14
+    },
+    {
+        "Text":  "All that is required to do this is to adhere to a 40-hour week",
+        "X":  668,
+        "Y":  394,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "and stop working for the day when you need to. This means",
+        "X":  668,
+        "Y":  415,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "stop working when no longer productive, are stressed or",
+        "X":  668,
+        "Y":  437,
+        "W":  445,
+        "H":  17
+    },
+    {
+        "Text":  "tired to reduce fati e and kee ou in excellent condition.",
+        "X":  668,
+        "Y":  457,
+        "W":  429,
+        "H":  14
+    },
+    {
+        "Text":  "If you are your own customer (at least initially) then",
+        "X":  669,
+        "Y":  479,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "mumbling to ones self is reasonable. If you have other",
+        "X":  668,
+        "Y":  500,
+        "W":  445,
+        "H":  18
+    },
+    {
+        "Text":  "customers then communication via email or phone will",
+        "X":  668,
+        "Y":  521,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "probably moderate this problem as long as the customers are",
+        "X":  668,
+        "Y":  542,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "open to communication.",
+        "X":  668,
+        "Y":  563,
+        "W":  176,
+        "H":  18
+    },
+    {
+        "Text":  "As a single person team, how you choose to code is your",
+        "X":  668,
+        "Y":  648,
+        "W":  445,
+        "H":  18
+    },
+    {
+        "Text":  "coding standard. But some coding standard must be",
+        "X":  668,
+        "Y":  669,
+        "W":  444,
+        "H":  18
+    },
+    {
+        "Text":  "followed to maintain the consistency throughout the",
+        "X":  669,
+        "Y":  690,
+        "W":  443,
+        "H":  18
+    },
+    {
+        "Text":  "devel ment.",
+        "X":  668,
+        "Y":  711,
+        "W":  98,
+        "H":  14
+    },
+    {
+        "Text":  "4. PXP at Work",
+        "X":  110,
+        "Y":  769,
+        "W":  177,
+        "H":  17
+    },
+    {
+        "Text":  "The PXP has not yet been applied to a large audience, but has",
+        "X":  110,
+        "Y":  794,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "been applied and tested to develop a tool that is capable Of",
+        "X":  110,
+        "Y":  815,
+        "W":  476,
+        "H":  18
+    },
+    {
+        "Text":  "guiding a developer to develop a software project using PXP.",
+        "X":  110,
+        "Y":  836,
+        "W":  473,
+        "H":  17
+    },
+    {
+        "Text":  "The process script was followed by a single person team and the",
+        "X":  110,
+        "Y":  857,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "results showed considerable ease and efficiency in completing",
+        "X":  110,
+        "Y":  878,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "the project in estimated time.",
+        "X":  110,
+        "Y":  899,
+        "W":  211,
+        "H":  18
+    },
+    {
+        "Text":  "Initially, the system metaphor was created, followed by writing",
+        "X":  110,
+        "Y":  932,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "the user stories needed for this tool. The user stories are shown",
+        "X":  110,
+        "Y":  953,
+        "W":  475,
+        "H":  14
+    },
+    {
+        "Text":  "in Figure 1. Then all the user stories were broken down into",
+        "X":  110,
+        "Y":  974,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "features. The features needed for this process tool are shown in",
+        "X":  110,
+        "Y":  995,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "Figure 2.",
+        "X":  110,
+        "Y":  1016,
+        "W":  65,
+        "H":  18
+    },
+    {
+        "Text":  "Upon creating features needed, domain-driven design to reflect",
+        "X":  109,
+        "Y":  1049,
+        "W":  475,
+        "H":  17
+    },
+    {
+        "Text":  "the domain model of the project was created and the features",
+        "X":  110,
+        "Y":  1070,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "were grouped into meaningful sets and were sorted by",
+        "X":  110,
+        "Y":  1091,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "implementation priority to create a FeatureSetPriorityList",
+        "X":  110,
+        "Y":  1112,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "(shown in Figure 3).",
+        "X":  110,
+        "Y":  1133,
+        "W":  148,
+        "H":  18
+    },
+    {
+        "Text":  "Iterative development cycle was used as recommended by the",
+        "X":  110,
+        "Y":  1166,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "PXP process script and the FeatureSet with the highest priority",
+        "X":  110,
+        "Y":  1187,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "was picked and iteration plan was created for the set. The",
+        "X":  109,
+        "Y":  1208,
+        "W":  475,
+        "H":  18
+    },
+    {
+        "Text":  "FeatureSet was then broken down into tasks needed to",
+        "X":  110,
+        "Y":  1229,
+        "W":  474,
+        "H":  14
+    },
+    {
+        "Text":  "implement the FeatureSet, and a TaskPriorityList was created",
+        "X":  110,
+        "Y":  1250,
+        "W":  474,
+        "H":  18
+    },
+    {
+        "Text":  "(e.g. Figure 4), along with the unit test for each task.",
+        "X":  110,
+        "Y":  1271,
+        "W":  382,
+        "H":  18
+    },
+    {
+        "Text":  "85",
+        "X":  612,
+        "Y":  1608,
+        "W":  17,
+        "H":  12
+    },
+    {
+        "Text":  "2.",
+        "X":  672,
+        "Y":  810,
+        "W":  13,
+        "H":  13
+    },
+    {
+        "Text":  "3.",
+        "X":  673,
+        "Y":  831,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "4.",
+        "X":  672,
+        "Y":  852,
+        "W":  13,
+        "H":  13
+    },
+    {
+        "Text":  "5.",
+        "X":  673,
+        "Y":  914,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "6.",
+        "X":  673,
+        "Y":  956,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "7.",
+        "X":  673,
+        "Y":  999,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "8.",
+        "X":  673,
+        "Y":  1019,
+        "W":  12,
+        "H":  14
+    },
+    {
+        "Text":  "9.",
+        "X":  673,
+        "Y":  1041,
+        "W":  12,
+        "H":  13
+    },
+    {
+        "Text":  "IO.",
+        "X":  674,
+        "Y":  1061,
+        "W":  20,
+        "H":  14
+    },
+    {
+        "Text":  "11.",
+        "X":  675,
+        "Y":  1083,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "12.",
+        "X":  675,
+        "Y":  1103,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "13.",
+        "X":  675,
+        "Y":  1146,
+        "W":  19,
+        "H":  13
+    },
+    {
+        "Text":  "14.",
+        "X":  675,
+        "Y":  1188,
+        "W":  19,
+        "H":  14
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  709,
+        "Y":  788,
+        "W":  316,
+        "H":  18
+    },
+    {
+        "Text":  "Get the requirement statement from the customer.",
+        "X":  709,
+        "Y":  809,
+        "W":  363,
+        "H":  18
+    },
+    {
+        "Text":  "Create domain-driven design.",
+        "X":  709,
+        "Y":  831,
+        "W":  216,
+        "H":  17
+    },
+    {
+        "Text":  "Break user stories into features and group them into",
+        "X":  709,
+        "Y":  851,
+        "W":  378,
+        "H":  18
+    },
+    {
+        "Text":  "meaningful groups to create FeatureSets. Sort",
+        "X":  709,
+        "Y":  872,
+        "W":  334,
+        "H":  18
+    },
+    {
+        "Text":  "FeatureSets to create a FeatureSetPriorityList.",
+        "X":  709,
+        "Y":  893,
+        "W":  335,
+        "H":  18
+    },
+    {
+        "Text":  "Check for any changes requested by the customer",
+        "X":  709,
+        "Y":  914,
+        "W":  363,
+        "H":  18
+    },
+    {
+        "Text":  "and update the lists.",
+        "X":  709,
+        "Y":  935,
+        "W":  144,
+        "H":  18
+    },
+    {
+        "Text":  "Iteratively break the highest priority FeatureSet into",
+        "X":  709,
+        "Y":  956,
+        "W":  379,
+        "H":  18
+    },
+    {
+        "Text":  "tasks and create unit tests for tasks.",
+        "X":  709,
+        "Y":  978,
+        "W":  256,
+        "H":  13
+    },
+    {
+        "Text":  "Develop FeatureSets by writing code for each task.",
+        "X":  709,
+        "Y":  998,
+        "W":  372,
+        "H":  18
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  709,
+        "Y":  1019,
+        "W":  199,
+        "H":  18
+    },
+    {
+        "Text":  "Perform unit testing.",
+        "X":  709,
+        "Y":  1040,
+        "W":  150,
+        "H":  18
+    },
+    {
+        "Text":  "Perform integration testing.",
+        "X":  709,
+        "Y":  1061,
+        "W":  200,
+        "H":  18
+    },
+    {
+        "Text":  "Refactor the code and perform acceptance testing.",
+        "X":  709,
+        "Y":  1082,
+        "W":  365,
+        "H":  18
+    },
+    {
+        "Text":  "Trace from user stories to features, from features to",
+        "X":  709,
+        "Y":  1103,
+        "W":  376,
+        "H":  16
+    },
+    {
+        "Text":  "FeatureSets, and from FeatureSets to tasks.",
+        "X":  709,
+        "Y":  1124,
+        "W":  314,
+        "H":  16
+    },
+    {
+        "Text":  "Maintain the three baselines (Development,",
+        "X":  709,
+        "Y":  1145,
+        "W":  318,
+        "H":  18
+    },
+    {
+        "Text":  "Refactor, and Production).",
+        "X":  709,
+        "Y":  1166,
+        "W":  193,
+        "H":  17
+    },
+    {
+        "Text":  "Create new tasks as needed.",
+        "X":  709,
+        "Y":  1188,
+        "W":  203,
+        "H":  14
+    },
+    {
+        "Text":  "Figure 1: User Stories",
+        "X":  672,
+        "Y":  1249,
+        "W":  170,
+        "H":  18
+    }
+]

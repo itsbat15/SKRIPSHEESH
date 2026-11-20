@@ -1,0 +1,917 @@
+{
+  "source": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (REVISI TEMPLATE TERBARU).md",
+  "before_sha256": "f735d1f10f8ff3a97a277adfefa897109c58f9b7ac9af4c1f226cdcfd4053808",
+  "newline": "CRLF",
+  "backup": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB3_PENDUKUNG_2026-10-25\\HARMONISASI_BAHASA_2026-10-25\\SEBELUM HARMONISASI - BAB 3 - RANCANGAN PROTOTIPE (REVISI TEMPLATE TERBARU).md",
+  "paragraphs": [
+    {
+      "id": "P001",
+      "part_index": 1,
+      "section": "pembuka",
+      "text": "Bab ini menguraikan rancangan prototipe sistem informasi manajemen operasional berbasis web untuk Bimbingan Belajar Artha Balikpapan. Pembahasan mencakup garis besar prototipe, tahapan pembuatan, prosedur pengembangan, konsep sistem, spesifikasi teknis, dan rencana jadwal pelaksanaan. Susunan subbab mengikuti template tugas akhir jalur prototipe (Institut Teknologi Kalimantan, 2025b).",
+      "words": 45
+    },
+    {
+      "id": "P002",
+      "part_index": 3,
+      "section": "3.1",
+      "text": "Prototipe ARTHA berupa sistem informasi manajemen operasional berbasis web untuk Bimbel Artha Balikpapan. Sistem menghubungkan administrasi siswa, kelas, jadwal, tagihan, dan penerimaan pada delapan cabang melalui kewenangan Admin Cabang serta Super Admin.",
+      "words": 32
+    },
+    {
+      "id": "P003",
+      "part_index": 5,
+      "section": "3.1.1",
+      "text": "Kebutuhan pengembangan bersumber dari dokumentasi wawancara pengelola dan staf administrasi Artha. Penelitian sistem bimbel digunakan sebagai pembanding integrasi data siswa, jadwal, dan pembayaran (Fajriansyah dkk., 2026, hlm. 116, 124 sampai 125; Gunawan dkk., 2025, hlm. 424).",
+      "words": 36
+    },
+    {
+      "id": "P004",
+      "part_index": 7,
+      "section": "3.1.2",
+      "text": "Admin Cabang mengelola kegiatan pada cabang penugasannya, sedangkan Super Admin memantau lintas cabang dan menjalankan pengendalian berwenang. Pemisahan akses cabang dan pemantauan pusat mempunyai pembanding pada Ahadi dkk. (2025, hlm. 764 sampai 765) serta Thiovanda (2026, hlm. 4).",
+      "words": 38
+    },
+    {
+      "id": "P005",
+      "part_index": 8,
+      "section": "3.1.2",
+      "text": "Pengingat tunggakan menggunakan tombol WhatsApp dengan nomor dan pesan yang disiapkan sistem, kemudian dikirim oleh admin. Pengelolaan kelas menyediakan peringatan hampir penuh dan menolak penambahan ketika penuh, sementara tempat kembali tersedia setelah keanggotaan siswa diakhiri.",
+      "words": 35
+    },
+    {
+      "id": "P006",
+      "part_index": 9,
+      "section": "3.1.2",
+      "text": "Pembayaran transfer dirancang melalui pengajuan Admin Cabang dan pemeriksaan Super Admin, dengan kewenangan rekening yang akan divalidasi bersama mitra. Lingkup inti mencakup administrasi internal dan pencocokan penerimaan manual, sedangkan pengiriman WhatsApp otomatis, integrasi bank otomatis, serta pembelajaran daring berada di luar lingkup tersebut.",
+      "words": 43
+    },
+    {
+      "id": "P007",
+      "part_index": 11,
+      "section": "3.1.3",
+      "text": "Pengembangan individual menggunakan metode *Personal Extreme Programming* (PxP), yang meliputi penggalian kebutuhan, perencanaan, inisialisasi iterasi, perancangan, implementasi, pengujian sistem, dan evaluasi iterasi (Dzhurov dkk., 2009, hlm. 253 sampai 256). Penelitian Fikri dan Arthawan Sugih Prabowo (2021, hlm. 103 sampai 105) menjadi pembanding penerapannya pada pengembangan sistem informasi.",
+      "words": 47
+    },
+    {
+      "id": "P008",
+      "part_index": 13,
+      "section": "3.1.4",
+      "text": "Luaran yang ditargetkan meliputi perangkat lunak prototipe, dokumentasi pengembangan, dan bukti evaluasi bersama calon pengguna. Pengembangan diarahkan pada TKT 5 sesuai panduan tugas akhir prototipe, dengan bukti pencapaian yang akan diperiksa berdasarkan pelaksanaan (Institut Teknologi Kalimantan, 2026, hlm. 4).",
+      "words": 39
+    },
+    {
+      "id": "P009",
+      "part_index": 14,
+      "section": "3.1.4",
+      "text": "Dokumentasi disiapkan untuk laporan, artikel ilmiah, dan bahan pengajuan HKI. Hasil pengujian dan penerimaan mitra akan dilaporkan setelah kegiatan dilaksanakan.",
+      "words": 20
+    },
+    {
+      "id": "P010",
+      "part_index": 16,
+      "section": "3.2",
+      "text": "Tahapan pembuatan disusun sebagai alur kerja dari penggalian kebutuhan sampai penyiapan luaran. Gambar 3.1 menyajikan urutan tersebut beserta perulangan evaluasi dan perbaikan yang direncanakan.",
+      "words": 24
+    },
+    {
+      "id": "P011",
+      "part_index": 20,
+      "section": "3.2",
+      "text": "Penggalian kebutuhan dan perencanaan menjadi dasar pemilihan pekerjaan setiap iterasi. Setelah implementasi, fungsi yang selesai diperiksa melalui pengujian sistem, kemudian waktu kerja, galat, dan usulan perbaikan ditelaah pada evaluasi iterasi.",
+      "words": 30
+    },
+    {
+      "id": "P012",
+      "part_index": 21,
+      "section": "3.2",
+      "text": "Hasil pengujian yang belum memenuhi kriteria dikembalikan ke implementasi untuk diperbaiki dan diuji ulang sebelum iterasi ditutup. Setelah evaluasi iterasi, pekerjaan tersisa diarahkan ke inisialisasi berikutnya, sedangkan fungsi yang siap diarahkan ke UAT.",
+      "words": 33
+    },
+    {
+      "id": "P013",
+      "part_index": 22,
+      "section": "3.2",
+      "text": "Masukan UAT yang mengubah kebutuhan dikembalikan ke penggalian kebutuhan serta perencanaan. Masukan yang hanya memerlukan koreksi fungsi dikembalikan ke pekerjaan perbaikan, kemudian diuji ulang sebelum keputusan penerimaan dan penyiapan luaran.",
+      "words": 30
+    },
+    {
+      "id": "P014",
+      "part_index": 23,
+      "section": "3.2",
+      "text": "Evaluasi penerimaan pengguna dilakukan pada modul yang telah memenuhi pemeriksaan awal. Penggabungan pengembangan PxP dengan pengujian sistem dan evaluasi pengguna mempunyai contoh penerapan pada Apriyanti dkk. (2024, hlm. 3680, 3683 sampai 3685), tetapi instrumen penelitian ini disesuaikan dengan tugas operasional ARTHA.",
+      "words": 41
+    },
+    {
+      "id": "P015",
+      "part_index": 24,
+      "section": "3.2",
+      "text": "Tabel 3.1 merangkum kegiatan dan luaran setiap tahap pada Gambar 3.1. Rincian pelaksanaannya dijelaskan pada Subbab 3.3 agar hubungan antara diagram dan prosedur dapat diperiksa.",
+      "words": 25
+    },
+    {
+      "id": "P016",
+      "part_index": 28,
+      "section": "3.3",
+      "text": "Prosedur menjelaskan pelaksanaan setiap kegiatan pada diagram alir. Instrumen, sumber data, pemeriksaan hasil, dan bentuk dokumentasi ditetapkan agar pengembangan dapat ditelusuri dari kebutuhan sampai evaluasi.",
+      "words": 25
+    },
+    {
+      "id": "P017",
+      "part_index": 30,
+      "section": "3.3.1",
+      "text": "Penggalian kebutuhan diawali dengan penelaahan transkrip wawancara pengelola dan staf administrasi yang telah tersedia. Setiap informasi dipetakan menurut topik, yaitu pendaftaran, tarif, pembayaran, pengelolaan kelas, jadwal tentor, dan pelaporan cabang.",
+      "words": 30
+    },
+    {
+      "id": "P018",
+      "part_index": 31,
+      "section": "3.3.1",
+      "text": "Informan klarifikasi dipilih berdasarkan tanggung jawab serta pengetahuan terhadap proses yang diperiksa. Pengelola pusat digunakan sebagai sumber kebutuhan pemantauan dan kewenangan, sedangkan staf administrasi digunakan sebagai sumber pelaksanaan pencatatan pada cabang.",
+      "words": 31
+    },
+    {
+      "id": "P019",
+      "part_index": 32,
+      "section": "3.3.1",
+      "text": "Jumlah informan, identitas atau kode, cabang yang diwakili, tanggal, serta alasan pemilihannya akan dicatat dalam dokumentasi penelitian. Keterangan satu cabang tidak diberlakukan sebagai ketentuan seluruh cabang sebelum cakupannya dipastikan kepada pengelola.",
+      "words": 31
+    },
+    {
+      "id": "P020",
+      "part_index": 33,
+      "section": "3.3.1",
+      "text": "Tabel 3.2 membedakan dokumen yang telah tersedia dari klarifikasi yang masih direncanakan. Tanggal pelaksanaan akan dicocokkan dengan bukti asli karena penulisan tanggal pada notulensi belum seluruhnya tervalidasi.",
+      "words": 27
+    },
+    {
+      "id": "P021",
+      "part_index": 36,
+      "section": "3.3.1",
+      "text": "Indeks berkas, penanda waktu, dan batas penafsiran disimpan pada lampiran sumber kebutuhan. Catatan tarif atau peristiwa pada satu cabang digunakan sesuai konteksnya sampai pengelola menetapkan cakupan yang lebih luas.",
+      "words": 29
+    },
+    {
+      "id": "P022",
+      "part_index": 37,
+      "section": "3.3.1",
+      "text": "Wawancara lanjutan dilakukan secara semiterstruktur dengan panduan topik yang tetap memungkinkan pertanyaan klarifikasi. Topik instrumen disajikan pada Tabel 3.3, sedangkan pertanyaan rinci dan catatan pelaksanaan akan ditempatkan pada lampiran.",
+      "words": 29
+    },
+    {
+      "id": "P023",
+      "part_index": 40,
+      "section": "3.3.1",
+      "text": "Dokumen yang dapat ditelaah meliputi contoh kuitansi, daftar siswa, jadwal, rekap pembayaran, serta contoh bukti transfer yang penggunaannya diizinkan mitra. Apabila pengamatan langsung dilakukan, waktu, objek, dan hasilnya dicatat secara terpisah dari keterangan wawancara.",
+      "words": 34
+    },
+    {
+      "id": "P024",
+      "part_index": 41,
+      "section": "3.3.1",
+      "text": "Analisis kebutuhan dilakukan dengan mengelompokkan informasi, menandai pernyataan yang berbeda, dan mengubah kebutuhan yang telah diklarifikasi menjadi fungsi sistem. Pencatatan kebutuhan dalam bentuk *user story* mempunyai contoh pada Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105) serta Sidiq dkk. (2025, hlm. 37).",
+      "words": 42
+    },
+    {
+      "id": "P025",
+      "part_index": 42,
+      "section": "3.3.1",
+      "text": "Setiap kebutuhan diberi kode, sumber, cakupan cabang, dan status validasi. Pernyataan faktual, potensi risiko, dan usulan fitur dibedakan agar kebutuhan preventif tidak ditulis sebagai kejadian yang sudah berulang.",
+      "words": 28
+    },
+    {
+      "id": "P026",
+      "part_index": 43,
+      "section": "3.3.1",
+      "text": "Validasi dilakukan dengan meminta perwakilan mitra meninjau ringkasan proses dan kebutuhan yang berkaitan dengan kewenangannya. Perubahan setelah peninjauan disimpan dalam riwayat revisi, kemudian digunakan sebagai dasar perencanaan iterasi.",
+      "words": 28
+    },
+    {
+      "id": "P027",
+      "part_index": 45,
+      "section": "3.3.2",
+      "text": "Perencanaan dilakukan dengan memecah kebutuhan menjadi tugas analisis, perancangan, pengodean, pengujian, dan perbaikan. Estimasi awal menggunakan rincian pekerjaan, kemudian diperbarui berdasarkan durasi aktual pada tugas sejenis (Dzhurov dkk., 2009, hlm. 254 sampai 255).",
+      "words": 33
+    },
+    {
+      "id": "P028",
+      "part_index": 46,
+      "section": "3.3.2",
+      "text": "Empat iterasi diusulkan berdasarkan ketergantungan data dan proses pada Tabel 3.4. Akun, cabang, siswa, kelas, dan tarif menjadi prasyarat penempatan, penjadwalan, transaksi, serta rekap pusat.",
+      "words": 25
+    },
+    {
+      "id": "P029",
+      "part_index": 49,
+      "section": "3.3.2",
+      "text": "Pencocokan transfer pada I-03 memakai komponen dasar rekening dan referensi bank yang diperlukan untuk persetujuan. Pada I-04, komponen tersebut diperluas untuk pencocokan setoran tunai dan rekap lintas proses.",
+      "words": 28
+    },
+    {
+      "id": "P030",
+      "part_index": 50,
+      "section": "3.3.2",
+      "text": "Setiap iterasi dialokasikan dua minggu sebagai rencana awal dalam rentang iterasi PxP satu sampai tiga minggu (Dzhurov dkk., 2009, hlm. 255). Rincian jam per tugas belum ditetapkan dan akan diisi sebelum iterasi dimulai, sedangkan kalender dua belas minggu pada Subbab 3.6 masih bersifat relatif.",
+      "words": 44
+    },
+    {
+      "id": "P031",
+      "part_index": 51,
+      "section": "3.3.2",
+      "text": "Permintaan perubahan dicatat bersama sumber, kebutuhan terdampak, ketergantungan, serta pengaruhnya terhadap waktu dan pengujian. Formulir estimasi dan perubahan ditempatkan pada lampiran pelaksanaan agar penambahan pekerjaan tetap dapat ditelusuri.",
+      "words": 28
+    },
+    {
+      "id": "P032",
+      "part_index": 53,
+      "section": "3.3.3",
+      "text": "Pada awal iterasi, daftar tugas dipilih dari rencana yang telah diperiksa. Setiap tugas dilengkapi kode kebutuhan, penanggung jawab pengembangan, estimasi waktu, data uji, dan kriteria selesai.",
+      "words": 26
+    },
+    {
+      "id": "P033",
+      "part_index": 54,
+      "section": "3.3.3",
+      "text": "Data uji disiapkan untuk mewakili cabang yang berbeda dan kondisi normal maupun tidak sah. Identitas siswa dan bukti pembayaran menggunakan data buatan atau data tersamarkan sesuai izin mitra.",
+      "words": 28
+    },
+    {
+      "id": "P034",
+      "part_index": 55,
+      "section": "3.3.3",
+      "text": "Perubahan perangkat lunak disimpan dalam repositori kode dengan penanda versi. Pencatatan waktu dilakukan per tugas agar durasi analisis, perancangan, pengodean, pengujian, serta perbaikan dapat dibedakan.",
+      "words": 25
+    },
+    {
+      "id": "P035",
+      "part_index": 56,
+      "section": "3.3.3",
+      "text": "Tugas dinyatakan selesai secara teknis apabila kriteria penerimaannya terpenuhi dan tidak terdapat galat kritis yang belum ditangani. Penerimaan oleh mitra dicatat tersendiri, sehingga selesainya pengodean tidak disamakan dengan persetujuan pengguna.",
+      "words": 30
+    },
+    {
+      "id": "P036",
+      "part_index": 58,
+      "section": "3.3.4",
+      "text": "Perancangan dilakukan untuk modul yang akan dikerjakan pada iterasi berjalan. Model yang disusun meliputi kewenangan pengguna, alur tugas, hubungan data, dan susunan antarmuka.",
+      "words": 23
+    },
+    {
+      "id": "P037",
+      "part_index": 59,
+      "section": "3.3.4",
+      "text": "Pemilihan artefak disesuaikan dengan kebutuhan implementasi, sebagaimana anjuran penggunaan alat desain sederhana pada Dzhurov dkk. (2009, hlm. 255). Fikri dan Arthawan Sugih Prabowo (2021, hlm. 104) juga menggunakan rancangan basis data dan antarmuka sebagai bagian pengembangan sistem.",
+      "words": 37
+    },
+    {
+      "id": "P038",
+      "part_index": 60,
+      "section": "3.3.4",
+      "text": "Rancangan proses memisahkan penerimaan pembayaran siswa, pemeriksaan transfer, dan penyerahan kas cabang. Pemisahan ini diperlukan agar pencatatan penerimaan tidak dihitung kembali sebagai pendapatan baru ketika dana disetorkan ke pusat.",
+      "words": 29
+    },
+    {
+      "id": "P039",
+      "part_index": 61,
+      "section": "3.3.4",
+      "text": "Rancangan kelas memisahkan ruang fisik, kelompok belajar, dan keanggotaan siswa. Kapasitas diperiksa berdasarkan peserta aktif pada kelompok yang dipilih, sedangkan riwayat siswa keluar tetap disimpan untuk penelusuran data.",
+      "words": 28
+    },
+    {
+      "id": "P040",
+      "part_index": 62,
+      "section": "3.3.4",
+      "text": "Rancangan modul kemudian diperiksa terhadap kebutuhan dan kasus uji yang terkait. Apabila ditemukan aturan yang belum jelas, pertanyaan klarifikasi dicatat sebelum aturan tersebut diterapkan pada kode.",
+      "words": 26
+    },
+    {
+      "id": "P041",
+      "part_index": 64,
+      "section": "3.3.5",
+      "text": "Implementasi dilakukan melalui pengujian unit, pengodean fungsi, dan refaktorisasi. Urutan pengujian sebelum kode dan perbaikan struktur mengikuti praktik implementasi PxP yang dijelaskan oleh Dzhurov dkk. (2009, hlm. 255).",
+      "words": 28
+    },
+    {
+      "id": "P042",
+      "part_index": 65,
+      "section": "3.3.5",
+      "text": "Penerapan *Test-Driven Development* (TDD) diprioritaskan pada aturan bisnis yang dapat diuji secara otomatis. Aturan tersebut meliputi penghitungan sisa tagihan, penolakan penambahan kelas penuh, dan pemeriksaan irisan waktu penugasan tentor.",
+      "words": 29
+    },
+    {
+      "id": "P043",
+      "part_index": 66,
+      "section": "3.3.5",
+      "text": "Untuk setiap aturan, pengujian disusun sebelum fungsi dilengkapi, kemudian kode dikembangkan sampai keluaran yang diharapkan terpenuhi. Bukti pengujian gagal, pengujian lulus, dan perubahan terkait disimpan agar penerapan TDD dapat diperiksa.",
+      "words": 30
+    },
+    {
+      "id": "P044",
+      "part_index": 67,
+      "section": "3.3.5",
+      "text": "Kode yang telah memenuhi pengujian ditinjau untuk mengurangi pengulangan dan memperjelas pembagian tanggung jawab. Setelah refaktorisasi, pengujian dijalankan kembali untuk memastikan fungsi sebelumnya tetap bekerja sesuai kriteria.",
+      "words": 27
+    },
+    {
+      "id": "P045",
+      "part_index": 68,
+      "section": "3.3.5",
+      "text": "Integrasi antarmuka dan layanan data dilakukan secara bertahap. Pemeriksaan akses diterapkan pada peladen, sehingga perubahan alamat halaman atau identitas objek oleh pengguna tidak memberikan akses ke data cabang lain.",
+      "words": 29
+    },
+    {
+      "id": "P046",
+      "part_index": 70,
+      "section": "3.3.6",
+      "text": "Pengujian sistem menggunakan pendekatan kotak hitam atau *Black Box Testing* untuk memeriksa keluaran terhadap kebutuhan. Penerapannya bersama PxP mempunyai pembanding pada Apriyanti dkk. (2024, hlm. 3679, 3683), sedangkan kasus ARTHA disusun dari aturan akses, kelas, dan transaksi.",
+      "words": 37
+    },
+    {
+      "id": "P047",
+      "part_index": 71,
+      "section": "3.3.6",
+      "text": "Pengembang melaksanakan pemeriksaan pada lingkungan uji terpisah dengan data buatan atau tersamarkan. Identitas versi, perangkat, zona waktu, dan data awal dicatat sebelum kasus dijalankan agar hasil dapat diperiksa ulang.",
+      "words": 29
+    },
+    {
+      "id": "P048",
+      "part_index": 72,
+      "section": "3.3.6",
+      "text": "Tabel 3.5 menampilkan contoh kasus berisiko, sedangkan seluruh kasus BB-01 sampai BB-33 disimpan pada lampiran pengujian. Kelompok pemeriksaan PU-01 sampai PU-14 menghubungkan kasus tersebut dengan kebutuhan fungsional pada Tabel 3.13.",
+      "words": 30
+    },
+    {
+      "id": "P049",
+      "part_index": 75,
+      "section": "3.3.6",
+      "text": "Setiap kasus merekam prasyarat, langkah, masukan, keluaran yang diharapkan, hasil aktual, serta bukti pelaksanaan. Galat kritis meliputi akses cabang tanpa kewenangan, penghitungan pembayaran ganda, dan pelampauan kapasitas kelas.",
+      "words": 28
+    },
+    {
+      "id": "P050",
+      "part_index": 76,
+      "section": "3.3.6",
+      "text": "Perbaikan diperiksa melalui pengulangan kasus gagal beserta kasus terkait. Hasil sebelum perbaikan tetap disimpan dan dihubungkan dengan versi yang diperiksa ulang.",
+      "words": 21
+    },
+    {
+      "id": "P051",
+      "part_index": 78,
+      "section": "3.3.7",
+      "text": "Evaluasi iterasi dilakukan dengan membandingkan rencana pekerjaan dan data pelaksanaan. Waktu aktual, perubahan kebutuhan, galat, serta pekerjaan yang belum selesai ditelaah untuk menentukan perbaikan iterasi berikutnya.",
+      "words": 26
+    },
+    {
+      "id": "P052",
+      "part_index": 79,
+      "section": "3.3.7",
+      "text": "Pemanfaatan data proyek dalam evaluasi merupakan bagian proses PxP pada Dzhurov dkk. (2009, hlm. 256). Sidiq dkk. (2025, hlm. 45) juga melaporkan perubahan kebutuhan dan perbedaan durasi, sehingga waktu implementasi perlu dibedakan dari keseluruhan waktu pengembangan.",
+      "words": 36
+    },
+    {
+      "id": "P053",
+      "part_index": 80,
+      "section": "3.3.7",
+      "text": "Tabel 3.6 menyajikan unsur pencatatan proses yang direncanakan. Formulir diisi selama pelaksanaan, bukan direkonstruksi sebagai angka perkiraan setelah proyek selesai.",
+      "words": 20
+    },
+    {
+      "id": "P054",
+      "part_index": 83,
+      "section": "3.3.7",
+      "text": "Selisih durasi dihitung dengan mengurangkan estimasi dari waktu aktual pada tugas yang sama. Nilai tersebut ditafsirkan bersama penyebabnya, sehingga keterlambatan karena perubahan kebutuhan tidak disamakan dengan kesalahan pengodean.",
+      "words": 28
+    },
+    {
+      "id": "P055",
+      "part_index": 84,
+      "section": "3.3.7",
+      "text": "Hasil evaluasi digunakan untuk memperbaiki estimasi, pembagian tugas, atau pengujian berikutnya. Formulir lengkap catatan waktu, galat, perubahan, dan evaluasi ditempatkan pada lampiran pelaksanaan.",
+      "words": 23
+    },
+    {
+      "id": "P056",
+      "part_index": 86,
+      "section": "3.3.8",
+      "text": "Pengujian penerimaan pengguna atau *User Acceptance Testing* (UAT) dilakukan bersama petugas yang menjalankan administrasi cabang dan pengawasan pusat. Pemilihan peserta dilakukan secara bertujuan menurut kewenangan, pengalaman tugas, kesediaan, dan cakupan proses yang diuji.",
+      "words": 33
+    },
+    {
+      "id": "P057",
+      "part_index": 87,
+      "section": "3.3.8",
+      "text": "Rencana peserta mencakup sekurang-kurangnya perwakilan kedua peran, sedangkan nama, jumlah akhir, cabang, serta waktu pertemuan ditetapkan bersama mitra. Petugas yang sama dapat menilai beberapa tugas sesuai kewenangannya, tetapi penerimaan satu cabang tidak digeneralisasi sebagai pendapat seluruh delapan cabang.",
+      "words": 38
+    },
+    {
+      "id": "P058",
+      "part_index": 88,
+      "section": "3.3.8",
+      "text": "Sebelum UAT, pengembang menyiapkan versi uji, cadangan awal, akun terpisah, data simulasi, dan panduan singkat. Pemeriksaan awal memastikan fungsi inti dapat dijalankan serta peserta hanya memperoleh hak yang diperlukan untuk tugasnya.",
+      "words": 31
+    },
+    {
+      "id": "P059",
+      "part_index": 89,
+      "section": "3.3.8",
+      "text": "Pelaksanaan diawali pengarahan tujuan, penjelasan data uji, dan persetujuan pencatatan bukti. Peserta kemudian menjalankan tugas tanpa perubahan langkah yang tidak terdokumentasi, sedangkan pengembang mengamati, mencatat bantuan yang diberikan, dan menyimpan hasil sesuai kode tugas.",
+      "words": 34
+    },
+    {
+      "id": "P060",
+      "part_index": 90,
+      "section": "3.3.8",
+      "text": "Tabel 3.7 merangkum tugas penerimaan dengan A sebagai Admin Cabang dan S sebagai Super Admin. Lembar rinci memuat identitas peserta atau kode, versi aplikasi, langkah, hasil aktual, bantuan, keputusan, alasan, serta penunjuk bukti.",
+      "words": 33
+    },
+    {
+      "id": "P061",
+      "part_index": 93,
+      "section": "3.3.8",
+      "text": "Instrumen diperiksa keterbacaan dan kesesuaian isinya oleh pembimbing serta perwakilan mitra sebelum pelaksanaan. Penggunaan evaluasi bersama pengguna mempunyai pembanding pada Apriyanti dkk. (2024, hlm. 3683 sampai 3685), sedangkan instrumen ARTHA berbentuk tugas operasional.",
+      "words": 33
+    },
+    {
+      "id": "P062",
+      "part_index": 94,
+      "section": "3.3.8",
+      "text": "Setiap pelaksanaan tugas diberi keputusan diterima, memerlukan perbaikan, atau belum dapat dievaluasi, disertai alasan. Kegagalan akibat data yang belum tersedia dibedakan dari galat aplikasi, kemudian tugas yang diperbaiki diuji ulang pada versi yang dicatat.",
+      "words": 34
+    },
+    {
+      "id": "P063",
+      "part_index": 95,
+      "section": "3.3.8",
+      "text": "Analisis pengujian sistem menyajikan jumlah kasus direncanakan, dijalankan, lulus, gagal, dan belum dijalankan. Persentase kelulusan dihitung terhadap kasus yang dijalankan, sedangkan cakupan pelaksanaan dihitung terhadap kasus yang direncanakan.",
+      "words": 28
+    },
+    {
+      "id": "P064",
+      "part_index": 96,
+      "section": "3.3.8",
+      "text": "Analisis UAT menggunakan satuan pelaksanaan tugas per peserta dan per versi yang dinyatakan jelas. Penerimaan dihitung dari pelaksanaan tugas yang diterima dibagi pelaksanaan tugas yang telah dievaluasi, sedangkan tugas belum dievaluasi serta hasil uji ulang tetap dilaporkan terpisah.",
+      "words": 38
+    },
+    {
+      "id": "P065",
+      "part_index": 97,
+      "section": "3.3.8",
+      "text": "Penerimaan menyeluruh memerlukan selesainya tugas penting dan tidak adanya galat kritis yang terbuka. Hasil dibahas menurut integrasi fungsi, pemantauan penerimaan, dan kesesuaian kebutuhan, tanpa menyatakan penghematan waktu apabila pengukuran pembanding tidak dilakukan.",
+      "words": 32
+    },
+    {
+      "id": "P066",
+      "part_index": 98,
+      "section": "3.3.8",
+      "text": "Setelah tindak lanjut, pengembang menyiapkan versi serah uji, panduan penggunaan, daftar keterbatasan, prosedur pencadangan, dan berita acara evaluasi. Penyerahan untuk pemakaian operasional dilakukan sesuai persetujuan mitra, sehingga akses uji tidak otomatis diperlakukan sebagai penerapan produksi.",
+      "words": 35
+    },
+    {
+      "id": "P067",
+      "part_index": 100,
+      "section": "3.4",
+      "text": "Konsep prototipe disusun sebagai rancangan awal yang akan diperiksa bersama mitra. Kebutuhan yang berasal dari penjelasan operasional, pilihan teknis, dan usulan pengendalian dibedakan dalam matriks keterlacakan agar dasar setiap keputusan tetap jelas.",
+      "words": 32
+    },
+    {
+      "id": "P068",
+      "part_index": 102,
+      "section": "3.4.1",
+      "text": "Proses usulan menghubungkan pencatatan cabang dengan pengawasan pusat melalui transaksi yang dapat ditelusuri. Kajian penerimaan SPP pada Hendri dkk. (2025, hlm. 124 sampai 125) digunakan sebagai pembanding pencatatan serta penelusuran bukti.",
+      "words": 31
+    },
+    {
+      "id": "P069",
+      "part_index": 103,
+      "section": "3.4.1",
+      "text": "Tabel 3.8 merangkum perubahan proses yang dirancang. Rincian kebijakan pembayaran dan petugas pemeriksa akan divalidasi kepada pihak yang mempunyai kewenangan rekening.",
+      "words": 21
+    },
+    {
+      "id": "P070",
+      "part_index": 106,
+      "section": "3.4.1",
+      "text": "Satu pembayaran dirancang untuk satu siswa dan satu cabang transaksi, dengan alokasi ke satu atau beberapa tagihan. Jumlah alokasi harus sama dengan nominal pembayaran, sedangkan tagihan yang dipilih harus berasal dari siswa serta cabang yang sama.",
+      "words": 36
+    },
+    {
+      "id": "P071",
+      "part_index": 107,
+      "section": "3.4.1",
+      "text": "Transfer diajukan dengan status menunggu verifikasi dan belum mengurangi sisa tagihan. Persetujuan dilakukan setelah pemeriksa berwenang mencocokkan dana masuk; pengembalian menyimpan alasan, sedangkan perbaikan diajukan sebagai transaksi baru yang tertaut pada pengajuan sebelumnya.",
+      "words": 33
+    },
+    {
+      "id": "P072",
+      "part_index": 108,
+      "section": "3.4.1",
+      "text": "Pembayaran tunai dihitung sebagai penerimaan setelah uang diterima dan pencatatan diselesaikan. Pada rancangan awal, setiap tagihan yang dipilih dilunasi sebesar sisa kewajibannya; fasilitas cicilan baru diaktifkan jika kebijakannya telah divalidasi.",
+      "words": 30
+    },
+    {
+      "id": "P073",
+      "part_index": 109,
+      "section": "3.4.1",
+      "text": "Penyerahan kas ke pusat memuat pembayaran asal, penyerah, penerima, dan waktu penerimaan. Penyetoran ke bank merupakan tahap berikutnya yang mempunyai rekening, bukti, serta waktu sendiri, sehingga keduanya tidak menghasilkan pendapatan siswa yang baru.",
+      "words": 33
+    },
+    {
+      "id": "P074",
+      "part_index": 110,
+      "section": "3.4.1",
+      "text": "Pencocokan prototipe dibatasi pada satu dana masuk bank untuk satu transfer siswa atau satu setoran kas dengan nominal penuh yang sama. Dana gabungan beberapa sumber, selisih biaya, serta pencocokan sebagian ditandai untuk tindak lanjut di luar cakupan pencocokan prototipe.",
+      "words": 39
+    },
+    {
+      "id": "P075",
+      "part_index": 111,
+      "section": "3.4.1",
+      "text": "Pemisahan pencatatan pusat dan cabang mempunyai pembanding pada Ramadhan dan Widodo (2026, bagian pembahasan). Sudirman dan Tristianti (2021, hlm. 126 sampai 127) menjadi acuan pembahasan pencocokan catatan internal dengan bank, sedangkan sisa tagihan siswa disajikan terpisah dari selisih pencocokan.",
+      "words": 39
+    },
+    {
+      "id": "P076",
+      "part_index": 113,
+      "section": "3.4.2",
+      "text": "Kebutuhan fungsional disusun dari proses operasional dan tujuan pengembangan. Tabel 3.9 menyajikan kebutuhan awal beserta hasil yang diharapkan agar dapat diturunkan menjadi kasus pengujian.",
+      "words": 24
+    },
+    {
+      "id": "P077",
+      "part_index": 116,
+      "section": "3.4.2",
+      "text": "Penjadwalan pada ARTHA membantu pemeriksaan konflik pada jadwal yang disusun pengelola. Calon jadwal berkonflik dapat disimpan nonaktif untuk ditinjau, sedangkan pengaktifan pengecualian belum diberlakukan sebelum kebijakannya ditetapkan bersama mitra. Khafidhoh dkk. (2026, hlm. 15 sampai 16, 19) digunakan sebagai pembanding kebutuhan penjadwalan bimbel, sedangkan algoritma genetika pada penelitian tersebut tidak diadopsi sebagai fitur penyusunan jadwal otomatis.",
+      "words": 56
+    },
+    {
+      "id": "P078",
+      "part_index": 117,
+      "section": "3.4.2",
+      "text": "Kapasitas diperiksa dengan membandingkan jumlah keanggotaan aktif terhadap batas kelas. Kabisatullah dan Noprisson (2026, hlm. 94) memberikan pembanding validasi batas kapasitas dan irisan waktu, tetapi nilai kapasitas serta kebijakan penambahan siswa ditetapkan dari kebutuhan ARTHA.",
+      "words": 35
+    },
+    {
+      "id": "P079",
+      "part_index": 118,
+      "section": "3.4.2",
+      "text": "Ambang hampir penuh dinyatakan sebagai parameter sisa tempat yang dapat ditetapkan pengelola. Ambang sisa tempat bernilai satu sampai kapasitas kelas, sedangkan kondisi penuh dihitung dari jumlah peserta aktif dan tidak menggantikan status operasional kelas.",
+      "words": 34
+    },
+    {
+      "id": "P080",
+      "part_index": 119,
+      "section": "3.4.2",
+      "text": "Pemeriksaan dilakukan kembali pada peladen saat penyimpanan, termasuk ketika dua petugas mengajukan penempatan secara bersamaan. Penghitungan tidak hanya bergantung pada angka yang telah ditampilkan di layar karena data tersebut dapat berubah setelah dibuka pengguna lain.",
+      "words": 35
+    },
+    {
+      "id": "P081",
+      "part_index": 120,
+      "section": "3.4.2",
+      "text": "Pesan WhatsApp memuat identitas siswa yang diperlukan, periode, sisa tagihan, dan tanggal jatuh tempo. Tautan menggunakan nomor internasional dan pesan yang dikodekan sesuai mekanisme *click to chat* pada dokumentasi WhatsApp (WhatsApp, t.t.).",
+      "words": 32
+    },
+    {
+      "id": "P082",
+      "part_index": 121,
+      "section": "3.4.2",
+      "text": "Permintaan pembukaan tautan dicatat sebagai tindakan admin. Catatan tersebut tidak diberi makna pesan terkirim, diterima, atau dibaca karena pengiriman berlangsung di luar sistem prototipe.",
+      "words": 24
+    },
+    {
+      "id": "P083",
+      "part_index": 122,
+      "section": "3.4.2",
+      "text": "Tabel 3.10 menyajikan kebutuhan nonfungsional yang menyertai fungsi utama. Kriteria pengujiannya dirumuskan sebagai perilaku yang dapat diperiksa, sedangkan batas kuantitatif kinerja akan ditetapkan sebelum pengukuran dilaksanakan.",
+      "words": 26
+    },
+    {
+      "id": "P084",
+      "part_index": 126,
+      "section": "3.4.3",
+      "text": "Hak akses ditetapkan berdasarkan peran dan hubungan pengguna dengan cabang. Pemisahan cakupan data pada artikel Ahadi dkk. (2025, hlm. 764 sampai 765) dan Thiovanda (2026, hlm. 4) menjadi pembanding, sedangkan susunan dua peran pada prototipe mengikuti ruang lingkup ARTHA.",
+      "words": 39
+    },
+    {
+      "id": "P085",
+      "part_index": 127,
+      "section": "3.4.3",
+      "text": "Tabel 3.11 menyajikan matriks kewenangan awal. Kewenangan keuangan yang belum disepakati akan diperiksa sebelum rancangan pembayaran diterapkan pada lingkungan mitra.",
+      "words": 20
+    },
+    {
+      "id": "P086",
+      "part_index": 130,
+      "section": "3.4.3",
+      "text": "Nilai identitas cabang yang kosong tidak digunakan sebagai satu-satunya dasar pemberian hak Super Admin. Setiap permintaan tetap diperiksa berdasarkan peran yang sah dan kewenangan terhadap objek data yang diakses.",
+      "words": 29
+    },
+    {
+      "id": "P087",
+      "part_index": 131,
+      "section": "3.4.3",
+      "text": "Tentor dan wali murid tidak diberi akun dasbor dalam rancangan inti. Data tentor digunakan untuk penjadwalan, sedangkan nomor wali digunakan sebagai tujuan komunikasi yang dijalankan admin.",
+      "words": 26
+    },
+    {
+      "id": "P088",
+      "part_index": 133,
+      "section": "3.4.4",
+      "text": "Cerita pengguna disusun dengan peran, tindakan, manfaat, serta kriteria penerimaan yang dapat diamati. Penyusunannya mempunyai pembanding pada Fikri dan Arthawan Sugih Prabowo (2021, hlm. 105), sedangkan isi Tabel 3.12 berasal dari kebutuhan ARTHA.",
+      "words": 33
+    },
+    {
+      "id": "P089",
+      "part_index": 136,
+      "section": "3.4.4",
+      "text": "Tabel 3.13 menghubungkan setiap kebutuhan dengan sumber, cerita pengguna, use case, iterasi, dan kelompok pemeriksaan. Prioritas seluruh kebutuhan adalah inti, sedangkan urutan pengerjaannya mengikuti ketergantungan pada Tabel 3.4.",
+      "words": 28
+    },
+    {
+      "id": "P090",
+      "part_index": 139,
+      "section": "3.4.4",
+      "text": "Kelompok PU mencakup kasus normal, pengecualian, dan batas yang relevan, bukan satu hasil uji tunggal. Matriks rinci menghubungkan kelompok tersebut dengan kasus BB, tabel sumber, bukti, dan status validasi pada lampiran keterlacakan.",
+      "words": 32
+    },
+    {
+      "id": "P091",
+      "part_index": 141,
+      "section": "3.4.5",
+      "text": "Pemodelan kasus penggunaan atau *use case* menggambarkan tujuan pengguna di dalam batas sistem. Penggunaan model ini mempunyai pembanding pada Ahadi dkk. (2025, hlm. 765), sedangkan Gambar 3.2 memakai katalog yang telah diselaraskan dengan rancangan data ARTHA.",
+      "words": 36
+    },
+    {
+      "id": "P092",
+      "part_index": 145,
+      "section": "3.4.5",
+      "text": "Katalog memuat empat belas tujuan UC-00 sampai UC-13 dengan dua aktor pengguna. Tabel 3.14 merangkum contoh proses lintas peran, sedangkan seluruh skenario dan peta perubahan kode lama disimpan pada dokumen use case pendamping.",
+      "words": 33
+    },
+    {
+      "id": "P093",
+      "part_index": 148,
+      "section": "3.4.5",
+      "text": "Pembatasan akses berlaku pada setiap tindakan dan objek yang diproses. Diagram tidak memisahkan setiap validasi formulir menjadi tujuan pengguna tersendiri, sedangkan skenario menjelaskan kondisi normal serta pengecualiannya.",
+      "words": 27
+    },
+    {
+      "id": "P094",
+      "part_index": 150,
+      "section": "3.4.6",
+      "text": "Basis data terpusat dirancang menjadi dua puluh tiga tabel yang memisahkan identitas, keanggotaan, kewajiban, penerimaan, dan perpindahan dana. Gambar 3.3 menampilkan hubungan transaksi utama, sedangkan ERD lengkap serta kamus data tersedia pada dokumen basis data pendamping.",
+      "words": 36
+    },
+    {
+      "id": "P095",
+      "part_index": 154,
+      "section": "3.4.6",
+      "text": "Tabel 3.15 merangkum pengelompokan tabel beserta fungsinya. Hubungan pembayaran dan tagihan memakai rincian alokasi agar satu penerimaan dapat digunakan untuk beberapa tagihan siswa yang sama.",
+      "words": 25
+    },
+    {
+      "id": "P096",
+      "part_index": 157,
+      "section": "3.4.6",
+      "text": "Tabel 3.16 menjelaskan atribut dan kendala yang paling memengaruhi ketepatan prototipe. Penghitungan peserta aktif, sisa tagihan, kondisi terlambat, dan ringkasan penerimaan diturunkan dari data sumber, bukan angka yang dapat diubah secara terpisah.",
+      "words": 32
+    },
+    {
+      "id": "P097",
+      "part_index": 160,
+      "section": "3.4.6",
+      "text": "Penempatan peserta memerlukan kelas aktif dengan jadwal dan ruang yang memenuhi kapasitas kelompok. Perubahan ruang atau batas kelas diperiksa kembali terhadap peserta aktif, sedangkan hitungan serta penyimpanannya dilindungi oleh transaksi yang sama.",
+      "words": 32
+    },
+    {
+      "id": "P098",
+      "part_index": 161,
+      "section": "3.4.6",
+      "text": "Laporan menggunakan cabang yang tersimpan pada transaksi agar perpindahan siswa tidak memindahkan riwayat penerimaan. Sisa tagihan dihitung dari nilai kewajiban dikurangi alokasi pembayaran sah, sedangkan penanda lewat jatuh tempo dihitung terpisah dari tingkat pelunasannya.",
+      "words": 34
+    },
+    {
+      "id": "P099",
+      "part_index": 162,
+      "section": "3.4.6",
+      "text": "Skema fisik ditargetkan pada MySQL dengan mesin transaksi InnoDB. Rancangan kunci, indeks, penguncian, dan aturan nilai akan diperiksa melalui migrasi serta pengujian implementasi sebelum dinyatakan berjalan.",
+      "words": 26
+    },
+    {
+      "id": "P100",
+      "part_index": 164,
+      "section": "3.4.7",
+      "text": "Antarmuka disusun menurut urutan kerja dan kewenangan pengguna. Gambar 3.4 sampai Gambar 3.9 memperlihatkan enam rancangan layar inti, sedangkan Tabel 3.17 menghubungkan layar dengan tugas pengguna.",
+      "words": 26
+    },
+    {
+      "id": "P101",
+      "part_index": 167,
+      "section": "3.4.7",
+      "text": "Angka, nama, serta transaksi pada rancangan layar merupakan data simulasi dan tidak menunjukkan kondisi keuangan mitra. Penanda warna disertai teks, sedangkan istilah status mengikuti skenario serta kamus data yang sama.",
+      "words": 30
+    },
+    {
+      "id": "P102",
+      "part_index": 168,
+      "section": "3.4.7",
+      "text": "Gambar 3.4 memperlihatkan rancangan dasbor admin cabang. Dasbor cabang menampilkan tunggakan, pengajuan transfer menunggu pemeriksaan, dan keterisian kelas sesuai cabang pengguna. Daftar tindak lanjut menghubungkan ringkasan dengan transaksi sumber untuk mendukung US-08, US-10, dan US-12.",
+      "words": 35
+    },
+    {
+      "id": "P103",
+      "part_index": 172,
+      "section": "3.4.7",
+      "text": "Gambar 3.5 memperlihatkan rancangan penempatan dan keanggotaan kelas. Halaman keanggotaan menampilkan kapasitas, peserta aktif, sisa tempat, serta peringatan hampir penuh untuk US-03 dan US-04. Tombol penambahan dinonaktifkan ketika penuh, sedangkan tindakan mengakhiri keanggotaan menyimpan tanggal serta alasan tanpa menghapus siswa.",
+      "words": 40
+    },
+    {
+      "id": "P104",
+      "part_index": 176,
+      "section": "3.4.7",
+      "text": "Gambar 3.6 memperlihatkan rancangan pengajuan transfer oleh admin cabang. Formulir pengajuan menampilkan siswa, cabang, tagihan yang dipilih, jumlah alokasi, rekening tujuan, serta bukti transfer untuk US-08. Pengiriman menghasilkan status menunggu verifikasi, sedangkan perbaikan dari pengajuan yang dikembalikan tetap memperlihatkan hubungan dengan pengajuan sebelumnya.",
+      "words": 43
+    },
+    {
+      "id": "P105",
+      "part_index": 180,
+      "section": "3.4.7",
+      "text": "Gambar 3.7 memperlihatkan rancangan pemeriksaan transfer oleh super admin. Layar pemeriksaan menyandingkan pengajuan dengan rincian dana masuk yang dimasukkan petugas berwenang untuk US-09. Persetujuan memerlukan nominal dan referensi yang sesuai, sedangkan pengembalian mewajibkan alasan yang dapat ditindaklanjuti admin.",
+      "words": 38
+    },
+    {
+      "id": "P106",
+      "part_index": 184,
+      "section": "3.4.7",
+      "text": "Gambar 3.8 memperlihatkan rancangan tunggakan dan pratinjau pesan whatsapp. Halaman tunggakan menampilkan periode, sisa tagihan, jatuh tempo, nomor wali, dan pratinjau pesan untuk US-10. Tombol membuka WhatsApp dengan pesan terisi, sementara pengiriman tetap dilakukan admin dan catatan tindakan tidak menunjukkan status pesan terkirim.",
+      "words": 43
+    },
+    {
+      "id": "P107",
+      "part_index": 188,
+      "section": "3.4.7",
+      "text": "Gambar 3.9 memperlihatkan rancangan dasbor pusat dan pencocokan penerimaan. Dasbor pusat membedakan tunggakan, penerimaan sah, pengajuan tertunda, dan dana yang telah dicocokkan untuk US-12 serta US-13. Petugas dapat membuka sumber transfer atau setoran, memeriksa referensi bank, dan menelusuri nominal tanpa menghitung setoran sebagai pendapatan siswa yang baru.",
+      "words": 47
+    },
+    {
+      "id": "P108",
+      "part_index": 193,
+      "section": "3.5",
+      "text": "Spesifikasi teknis disusun sebagai kebutuhan awal implementasi prototipe. Versi perangkat lunak, kapasitas perangkat, dan konfigurasi pengujian akan dibekukan serta dicatat sebelum hasil pengujian digunakan untuk penarikan simpulan.",
+      "words": 27
+    },
+    {
+      "id": "P109",
+      "part_index": 195,
+      "section": "3.5.1",
+      "text": "Arsitektur dirancang dengan pemisahan antarmuka web dan layanan pengolahan data. Next.js digunakan pada antarmuka, Laravel digunakan untuk aturan bisnis dan layanan data, sedangkan MySQL digunakan sebagai penyimpanan terpusat.",
+      "words": 28
+    },
+    {
+      "id": "P110",
+      "part_index": 196,
+      "section": "3.5.1",
+      "text": "Gambar 3.10 menyajikan hubungan pengguna, antarmuka, layanan, penyimpanan, dan proses eksternal. Pemilihan arsitektur merupakan keputusan teknis penelitian, sehingga tidak digunakan sebagai bukti otomatis bahwa prototipe lebih cepat atau lebih aman daripada arsitektur lain.",
+      "words": 33
+    },
+    {
+      "id": "P111",
+      "part_index": 200,
+      "section": "3.5.1",
+      "text": "Autentikasi direncanakan menggunakan fasilitas Laravel Sanctum dengan sesi berbasis kuki untuk antarmuka milik aplikasi sendiri. Konfigurasi domain, perlindungan permintaan, serta masa sesi disesuaikan dengan lingkungan penerapan dan diperiksa sebelum pengujian pengguna (Laravel, t.t.-a).",
+      "words": 33
+    },
+    {
+      "id": "P112",
+      "part_index": 201,
+      "section": "3.5.1",
+      "text": "Antrean pengajuan menunggu pemeriksaan ditampilkan dari status transaksi pada dasbor Super Admin. Apabila mitra memerlukan status notifikasi dibaca, fasilitas notifikasi tersimpan Laravel dapat ditambahkan sebagai perluasan setelah kebutuhannya disepakati (Laravel, t.t.-b).",
+      "words": 31
+    },
+    {
+      "id": "P113",
+      "part_index": 202,
+      "section": "3.5.1",
+      "text": "Data dasbor dimuat dari layanan terpusat saat halaman dibuka atau diperbarui setelah tindakan pengguna. Istilah waktu nyata pada rancangan ini dibatasi pada informasi tersimpan terbaru yang dimuat melalui layanan, bukan jaminan pembaruan serentak tanpa pemuatan ulang pada seluruh perangkat.",
+      "words": 39
+    },
+    {
+      "id": "P114",
+      "part_index": 203,
+      "section": "3.5.1",
+      "text": "Kebutuhan pembaruan berkala dan batas waktu tanggapan akan diperiksa bersama mitra sebelum ditetapkan sebagai kriteria penerimaan. Mekanisme yang akhirnya digunakan serta hasil pengukurannya dicatat pada bab hasil agar tidak terjadi perbedaan antara istilah dan pelaksanaan.",
+      "words": 35
+    },
+    {
+      "id": "P115",
+      "part_index": 205,
+      "section": "3.5.2",
+      "text": "Perangkat pengembangan perlu menjalankan penyunting kode, antarmuka web, layanan aplikasi, dan basis data lokal. Tabel 3.18 membedakan informasi yang telah diketahui dari rincian perangkat yang masih perlu dicatat sebelum pengujian.",
+      "words": 30
+    },
+    {
+      "id": "P116",
+      "part_index": 208,
+      "section": "3.5.2",
+      "text": "Kapasitas perangkat tidak ditetapkan dari spesifikasi artikel terdahulu. Inventaris aktual dan kondisi jaringan dicatat bersama hasil agar konteks pelaksanaan dapat diperiksa.",
+      "words": 21
+    },
+    {
+      "id": "P117",
+      "part_index": 210,
+      "section": "3.5.3",
+      "text": "Ruang kerja telah mempunyai proyek antarmuka `website-artha` dengan berkas penguncian dependensi. Versi pada Tabel 3.19 diperiksa dari berkas tersebut pada 25 Oktober 2026 dan belum menunjukkan bahwa layanan administrasi serta basis data telah selesai diimplementasikan.",
+      "words": 35
+    },
+    {
+      "id": "P118",
+      "part_index": 213,
+      "section": "3.5.3",
+      "text": "Kebutuhan lingkungan antarmuka diperiksa terhadap dokumentasi resmi Next.js sesuai versi yang akhirnya digunakan (Vercel, t.t.). Pasangan PHP dan Laravel dipilih menurut kompatibilitas serta kebijakan dukungan yang berlaku, kemudian dicatat bersama lingkungan evaluasi (Laravel, t.t.-c).",
+      "words": 34
+    },
+    {
+      "id": "P119",
+      "part_index": 214,
+      "section": "3.5.3",
+      "text": "Keberadaan dependensi lokal digunakan sebagai bukti pilihan teknologi yang tersedia, bukan hasil pengujian prototipe. Versi layanan, konfigurasi koneksi, dan hasil migrasi akan dilengkapi sebelum pengujian terintegrasi.",
+      "words": 26
+    },
+    {
+      "id": "P120",
+      "part_index": 216,
+      "section": "3.5.4",
+      "text": "Lingkungan pengembangan dipisahkan dari lingkungan evaluasi mitra. Data buatan atau tersamarkan digunakan untuk pengujian awal, sedangkan penggunaan data nyata dibatasi sesuai izin dan kebutuhan tugas yang diperiksa.",
+      "words": 27
+    },
+    {
+      "id": "P121",
+      "part_index": 217,
+      "section": "3.5.4",
+      "text": "Berkas bukti pembayaran disimpan pada lokasi yang memerlukan pemeriksaan kewenangan. Kata sandi, pengaturan koneksi, dan kredensial rekening tidak dimasukkan ke laporan, repositori terbuka, atau gambar hasil pengujian.",
+      "words": 27
+    },
+    {
+      "id": "P122",
+      "part_index": 218,
+      "section": "3.5.4",
+      "text": "Waktu kejadian disimpan dalam UTC dan ditampilkan dalam zona waktu Asia/Makassar untuk operasional Balikpapan. Tanggal kewajiban dan jatuh tempo menggunakan kalender operasional tersebut, dengan tanggal yang ditetapkan pada setiap tagihan.",
+      "words": 30
+    },
+    {
+      "id": "P123",
+      "part_index": 219,
+      "section": "3.5.4",
+      "text": "Pengujian bersama mitra menggunakan akun simulasi minimal dua cabang dan satu akun pusat agar pembatasan data dapat diperiksa. Jumlah data uji, kondisi jaringan, versi, dan perangkat dicatat; cakupan tersebut merupakan rencana pengujian, bukan jumlah peserta yang sudah hadir.",
+      "words": 38
+    },
+    {
+      "id": "P124",
+      "part_index": 220,
+      "section": "3.5.4",
+      "text": "Data awal memuat kelas tersedia, hampir penuh, penuh, jadwal beririsan, beberapa siklus tagihan, transfer dikembalikan, serta setoran tunai. Pemeriksaan awal dilakukan setelah pemuatan data dan pencadangan, kemudian keadaan awal dipulihkan bila diperlukan untuk mengulang kasus.",
+      "words": 35
+    },
+    {
+      "id": "P125",
+      "part_index": 221,
+      "section": "3.5.4",
+      "text": "Pencadangan mencakup basis data dan berkas pendukung yang saling berkaitan. Pemulihan diperiksa pada lingkungan uji sebelum dinyatakan sebagai kemampuan prototipe.",
+      "words": 20
+    },
+    {
+      "id": "P126",
+      "part_index": 223,
+      "section": "3.6",
+      "text": "Rencana pengembangan disusun selama dua belas minggu relatif dengan empat iterasi dua mingguan. Penelaahan wawancara dan penyusunan rancangan telah memiliki artefak per 25 Oktober 2026, sedangkan tanggal mulai implementasi serta evaluasi belum disepakati.",
+      "words": 33
+    },
+    {
+      "id": "P127",
+      "part_index": 224,
+      "section": "3.6",
+      "text": "Tabel 3.20 menunjukkan alokasi pelaksanaan berikutnya dan tidak digunakan untuk mengklaim bahwa kegiatan yang telah terdokumentasi harus diulang seluruhnya. Minggu pertama dimulai pada tanggal yang akan ditetapkan bersama pembimbing dan mitra.",
+      "words": 31
+    },
+    {
+      "id": "P128",
+      "part_index": 227,
+      "section": "3.6",
+      "text": "Pengujian unit, pengujian sistem, dan evaluasi iterasi berlangsung di dalam setiap alokasi iterasi. Rincian jam tugas dan tanggal kalender dilengkapi sebelum pelaksanaan, kemudian disesuaikan apabila terdapat perubahan kebutuhan atau ketersediaan mitra.",
+      "words": 31
+    },
+    {
+      "id": "P129",
+      "part_index": 228,
+      "section": "3.6",
+      "text": "Penyusunan laporan mengikuti panduan kepenulisan ITK, sedangkan luaran prototipe dilaporkan sesuai ketentuan program studi (Institut Teknologi Kalimantan, 2025a; Institut Teknologi Kalimantan, 2026). Jadwal akhir dicatat bersama versi rencana agar perubahan dari usulan awal dapat diperiksa.\n",
+      "words": 35
+    }
+  ],
+  "preserved_files": {
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAFT 1).md": "8b0ac0f84e59241264149941c08e45871c910e9d8e5400d5f3769b52eee0066c",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md": "a57dd4726f73ac4e87c80569342a941194c0f39f531fc71eb1b7f53b600a9d68",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN USE CASE & SKENARIO.md": "f86ea7b9d4dbb39db8622329f833f739a83a0344af08a3ea0c071dddc6d4a5ed",
+    "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN BASIS DATA (SKEMA & ERD).md": "fb6fe06228b9763d4976928b291782bbb92881f21fdd0bf9f153252feeaf8eae"
+  }
+}

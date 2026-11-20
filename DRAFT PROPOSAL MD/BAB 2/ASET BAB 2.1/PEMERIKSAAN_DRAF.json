@@ -1,0 +1,70 @@
+{
+  "subbab": [
+    [
+      "2.1.1",
+      "Sistem Informasi Manajemen dan Pengembangannya"
+    ],
+    [
+      "2.1.2",
+      "Personal Extreme Programming"
+    ],
+    [
+      "2.1.3",
+      "User Stories"
+    ],
+    [
+      "2.1.4",
+      "Use Case Diagram"
+    ],
+    [
+      "2.1.5",
+      "Business Process Model and Notation"
+    ],
+    [
+      "2.1.6",
+      "Class Diagram"
+    ],
+    [
+      "2.1.7",
+      "Entity Relationship Diagram"
+    ],
+    [
+      "2.1.8",
+      "Next.js"
+    ],
+    [
+      "2.1.9",
+      "Tailwind CSS"
+    ],
+    [
+      "2.1.10",
+      "Laravel"
+    ],
+    [
+      "2.1.11",
+      "REST API"
+    ],
+    [
+      "2.1.12",
+      "MySQL"
+    ],
+    [
+      "2.1.13",
+      "Black Box Testing"
+    ],
+    [
+      "2.1.14",
+      "User Acceptance Testing"
+    ]
+  ],
+  "jumlah_subbab": 14,
+  "urutan_benar": true,
+  "jumlah_tabel": 6,
+  "jumlah_rujukan": 29,
+  "jumlah_kata_naskah": 4831,
+  "paragraf_perlu_tinjau": [],
+  "dash_panjang": 0,
+  "citra_tersedia": true,
+  "sitasi_priatmaja_atau_sidiq": false,
+  "placeholder_naskah": false
+}

@@ -1,0 +1,500 @@
+[00:33 - 00:34] Iya silahkan.
+[00:34 - 01:13] Saya udah nyoba mendalami alasan saya menggunakan metode PxP. PxP sendiri, kenapa saya milih. Sebelumnya saya ada bandingin berapa, itu ada Waterfall, RAD, Scrum, sama XP itu sendiri. Kan kalau kemarin itu dari Boi bilang, jangan memfokuskan ke orang yang bisa mengerjakan sistem tersebut kalau bisa ke faktor lain.
+[01:13 - 01:36] Nah kalau untuk Waterfall sendiri, itu tentu aja dari sistemnya yang kaku, dimana dia nggak bisa balik ke tahapan sebelumnya, kalaupun balik itu perlu melakukan revisi atau perbaikan yang cukup banyak dan juga mahal untuk biaya operasionalnya.
+[01:36 - 01:55] Sedangkan dari lapan cabang ini belum memiliki standarisasi operasional secara teknis dan juga pembagian gaji dari sistempernya yang berbeda-beda, karena itu berdasarkan dari pemban jam kerja sistempernya itu sendiri.
+[01:55 - 02:02] Dan juga rekapitalasi SKP yang berbeda setiap bulannya, karena dari siswa yang masuk dan ada yang keluar juga.
+[02:02 - 02:08] Maksudnya berarti dari sisi proses yang berjalan itu belum sama gitu kan?
+[02:08 - 02:09] Iya, di lapan cabang.
+[02:09 - 02:18] Di lapan cabang ini kemarin juga ada setelah bimbing yang dari Boi ada melakukan wawancara lagi ke staff front desknya, administrasinya.
+[02:18 - 02:40] Bahkan untuk total dari pengajarannya itu juga berbeda di setiap cabangnya, dan juga total siswanya berbeda, serta pemberian rekapitulasi laporan hariannya itu dikasih dengan dari setiap cabang ini,
+[02:40 - 02:53] yang akan ngasih rekap itu ke manajemen pusat dan itu berbeda orang, jadi ada perbedaan di setiap data yang dikasih dari setiap cabang.
+[02:53 - 02:56] Berarti dari sisi formatnya pun belum besar agar ya?
+[02:56 - 02:57] Iya, betul. Seperti itu.
+[02:58 - 03:12] Dan juga di Waterfall pun ini juga masih memiliki visualisasi di awal, jadi prosesnya itu dapat dilihat ketika itu di tahapan terakhir.
+[03:12 - 03:22] Lalu untuk kedua dari RAD, sebenarnya ini ada keunggulan yang sendiri dari RAD, itu tentu saja dari sisi visualisasi,
+[03:22 - 03:30] karena RAD memerlukan visualisasi yang cepat di awal, jadi sebenarnya ini cocok untuk mitra artan ini,
+[03:30 - 03:37] karena pertama kali menerapkan sistem gitu, jadi belum pernah sama sekali,
+[03:37 - 03:42] kalau misalkan saya menerapkan RAD sebenarnya sangat cocok, apalagi ada visualisasi di awal.
+[03:42 - 03:49] Tetapi dengan melihat rentang waktunya itu selesai harus 60-90 hari,
+[03:50 - 03:56] jadi nah, yang dimana dari proses bisnis dari ARTA itu berbeda setiap cabangnya,
+[03:56 - 04:05] dan ini pertama kalinya dari ARTA menggunakan sistem, pasti membutuhkan perubahan-perubahan yang enggak sedikit untuk kedepannya,
+[04:05 - 04:08] karena belum ada sistem yang pasti atau pernah digunakan.
+[04:08 - 04:23] dan juga RAD ini berfokus di visualnya, jadi terutama dibandingkan dengan kualitas kode yang ini dibuat sistem gitu.
+[04:24 - 04:31] Lalu selanjutnya di sini ada scrum, ini scrum ini yang menurut saya susah untuk diterapkan,
+[04:31 - 04:38] karena dasarnya sendiri scrum ini untuk lebih ke manajemen proses dibandingkan dengan kualitas kode yang itu sendiri,
+[04:38 - 04:48] dan juga scrum ini juga ada bagian peran yang sudah pasti dari scrum master, product owner, sama developer.
+[04:48 - 04:53] Dan kalau misalkan hanya digunakan atau diimplementasikan hanya satu orang,
+[04:53 - 04:58] itu akan membuat tiga job desk ini sulit untuk dilakukan gitu.
+[04:58 - 05:04] Terutama di bagian BXP itu, kalau misalkan kita bandingkan dengan BXP,
+[05:04 - 05:12] itu ada unit test, jadi itu ada, kalau misalkan ada perubahan atau requirement dari sistem yang diperlukan,
+[05:12 - 05:22] itu lebih fleksibel dibandingkan dengan scrum yang dimana ada screen interview sama screen goal yang harus terus dilakukan gitu, secara aktif.
+[05:22 - 05:36] Kemarin opsi metodenya apa? PXP? PXP atau XP?
+[05:36 - 05:38] Yang saya gunakan, PXP.
+[05:40 - 05:45] Lalu untuk perbandingan selanjutnya ini ada XP, system programming,
+[05:45 - 05:51] dimana di sini mewajibkan juga seperti hal yang sudah dengan scrum, ini di pair programming.
+[05:51 - 05:55] Jadi kalau misalkan saya menggunakan metode XP ini,
+[05:55 - 06:02] saya harus mengembangkan sistem, di samping saya juga agak harus dari sisi pengelolaannya,
+[06:03 - 06:07] sama juga dari sisi staff administrasinya atau produsenya,
+[06:08 - 06:11] dimana untuk logika bisnisnya, dari mereka yang menjelaskan,
+[06:12 - 06:16] sembari saya juga harus melakukan perbedaan secara langsung gitu.
+[06:16 - 06:19] Oleh karena itu, makanya di nampakkan dengan XP konvensional gitu.
+[06:19 - 06:28] Lalu untuk penerapannya sendiri, ini ada automated testing network untuk dari XP,
+[06:28 - 06:34] yang mana ini menyeluruh dan periodik atau berdasarkan periode,
+[06:34 - 06:42] dan juga ada proses refactoring atau rebaling yang secara kuat untuk mendukung penggunaan metode PXP yang saya jelai gitu.
+[06:43 - 06:49] Terus juga dari XP ini, perlu ada keterlibatan mitra yang seperti saya bilang tadi,
+[06:49 - 06:53] itu membutuhkan keterlibatan mitra yang sangat tinggi,
+[06:53 - 06:58] sedangkan untuk proses operasional dari lapan cabang ini,
+[06:59 - 07:02] itu sulit untuk diperapkan kalau misalkan memakan XP,
+[07:02 - 07:05] karena dari sisi mitra harus melongkar waktunya,
+[07:06 - 07:12] itu untuk bisa membantu saya membuat sistem dari manajemen dashboard.
+[07:12 - 07:18] Mungkin itu, makanya saya tetap memilih dari XP yang dari tahapannya sendiri,
+[07:19 - 07:31] itu faktor utama saya memilih XP karena memang dari keterlibatan mitra yang fleksibilitasnya itu bisa dan sesuai dengan tahapan dari XP.
+[07:32 - 07:36] Jadi bisa dibilang nggak terlalu sendang, nggak terlalu strict gitu,
+[07:36 - 07:38] untuk waktu yang dikasih sama mitra.
+[07:39 - 07:40] Jadi kalau misalkan saya masih membutuhkan,
+[07:41 - 07:43] itu mitra bisa saja menolak dan menerima,
+[07:43 - 07:46] tapi kalaupun itu menolak,
+[07:46 - 07:50] akan direschedule sesuai dengan kesepakatan kita atau operasi yang sudah,
+[07:50 - 07:53] atau yang akan dilakukan di tahapan dari XP.
+[07:53 - 07:54] Oke.
+[07:54 - 07:56] Kalau yang lain, nggak bisa seperti itu?
+[07:57 - 07:58] Nggak bisa fleksibel begitu?
+[07:58 - 08:01] Kalau yang dari saya lihat dan saya baca,
+[08:01 - 08:03] itu di awal aja,
+[08:03 - 08:05] khususnya kalau misalkan contoh di waterfall,
+[08:05 - 08:07] itu lebih mendalamnya di wawancara,
+[08:07 - 08:11] di awal wawancara aja atau wawancara pertama,
+[08:12 - 08:16] itu pun langsung harus membutuhkan data,
+[08:18 - 08:19] fungsi-fungsi apa saja,
+[08:19 - 08:20] atau sistem ini,
+[08:21 - 08:24] yang pasti dari awal sampai akhir tanpa perubahan itu bagaimana.
+[08:26 - 08:29] Mungkin saya menggunakan mitra XP.
+[08:32 - 08:35] Ini ya, apa namanya,
+[08:37 - 08:41] nanti saran saya sebaiknya tetap ada beberapa aspek gitu ya,
+[08:41 - 08:45] yang di bandingkan dari masing-masing.
+[08:45 - 08:46] Tadi kan ada beberapa, lima metode kayaknya.
+[08:47 - 08:51] Iya, lima metode yang dibandingkan,
+[08:51 - 08:53] terus aspek perbandingannya apa saja,
+[08:53 - 08:55] sehingga akhirnya yang terpilih yang mana.
+[08:57 - 08:59] Tapi nanti juga tetap dijelaskan,
+[08:59 - 09:04] kesesuaiannya berdasarkan proyek penelitiannya.
+[09:05 - 09:07] Jadi bukan hanya dari sisi teori,
+[09:07 - 09:11] tapi juga dari sisi kesesuaian dengan objek penelitian.
+[09:11 - 09:13] Tadi misalkan dari pertimbangan mitra,
+[09:13 - 09:14] pertlibatan mitra,
+[09:15 - 09:16] dari sisi waktu,
+[09:16 - 09:19] kemudian dari sisi skoprojek,
+[09:19 - 09:21] dan seterusnya itu dibahas.
+[09:21 - 09:25] Jadi keluarlah yang mana yang paling cocok gitu.
+[09:26 - 09:27] Kayak di dalam penelitian ini.
+[09:31 - 09:32] Kalau untuk,
+[09:33 - 09:34] apa ya,
+[09:35 - 09:37] nanti yang akan terlibat di mitra itu siapa?
+[09:38 - 09:40] Dari manajemennya,
+[09:41 - 09:42] itu ada dua orang.
+[09:42 - 09:44] Yang pertama itu dari ketuanya sendiri,
+[09:44 - 09:45] dari Guru Nana,
+[09:45 - 09:48] itu selaku ketua dari seluruh cabang.
+[09:48 - 09:54] Terus yang kedua itu dari staf operasional,
+[09:54 - 09:57] operasionalnya memegang data Excel atau rekapan terpusatnya gitu.
+[09:58 - 10:00] Yang menerima...
+[10:00 - 10:01] Ini bukan yang dicabang berarti?
+[10:01 - 10:02] Bukan yang dicabang.
+[10:02 - 10:03] Pusat juga dua orang.
+[10:03 - 10:05] Lalu dari staf cabangnya.
+[10:06 - 10:07] Salah satunya gitu.
+[10:08 - 10:11] Kemarin saya salah satunya itu wawancara di cabang yang kelima.
+[10:11 - 10:19] Tapi untuk persetujuan ini kan mau membuat sistem ya.
+[10:19 - 10:23] Berarti yang untuk dari pihak manajemen yang mengetahui siapa?
+[10:23 - 10:24] Gunana itu kan?
+[10:24 - 10:25] Gunana itu secara langsung diri.
+[10:26 - 10:30] Saya kemarin awalnya langsung di video setuju.
+[10:30 - 10:36] Baru saya minta untuk wawancara lagi dengan staf yang memang rekapan datanya.
+[10:37 - 10:41] Lalu saya juga minta kontak sekalian musuh di staf administrasi cabangnya.
+[10:42 - 10:44] Kalau yang rekapan data ini kan terkait apa?
+[10:45 - 10:46] Jumlah pembayaran,
+[10:47 - 10:48] siswa gitu ya?
+[10:49 - 10:50] Tentor tadi ya?
+[10:51 - 10:55] Nah, kalau terkait yang proses bisnis yang berjalan di cabang gimana?
+[10:56 - 10:59] Dari staf administrasi sama kepala cabangnya.
+[10:59 - 11:02] Kepala cabang tadi mewakili salah satu?
+[11:03 - 11:06] Iya, saat ini masih salah satu saja.
+[11:07 - 11:08] Karena, maksudnya gini.
+[11:09 - 11:10] Kalau misalkan nanti,
+[11:11 - 11:13] ini kan ada delapan cabang ya.
+[11:13 - 11:16] Dan tadi kan kalau dari yang Arief sampaikan tadi beberapa kondisi,
+[11:16 - 11:22] kalau dari sisi pelaporan datanya aja itu kan formatnya bisa enggak sama kan?
+[11:22 - 11:22] Ya.
+[11:23 - 11:28] Nah, kalau format yang enggak sama saya rasa kan tidak akan terlalu sulit ya.
+[11:28 - 11:34] Untuk, oh nanti yaudah apa yang dibutuhkan oleh manajemen kan itu yang turun ke bawah.
+[11:34 - 11:42] Nah, tapi kondisi yang enggak sama itu mungkin perlu dicek juga dari sisi proses bisnis yang berjalan juga nanti seperti apa.
+[11:42 - 11:49] Karena kan kalau misalkan sistem jadi yang gunanya ada delapan cabang,
+[11:49 - 11:53] kalau misalkan selama ini probisnya aja di situ berjalannya enggak seragam,
+[11:53 - 11:54] ini kan agak sulit nih.
+[11:55 - 12:00] Berarti kan mau tidak mau nanti dari sisi di level manajemen itu harus clear nih.
+[12:01 - 12:05] Proses bisnis yang mana yang akan nanti akan ditransformasikan ke dalam sistem ini.
+[12:06 - 12:07] Sehingga kan tidak mengganggu.
+[12:07 - 12:12] Apa ya, kalaupun nanti pada akhirnya sistemnya jadi digunakan,
+[12:12 - 12:17] cabang-cabang yang memang secara probis itu mungkin ada sedikit perbedaan gitu ya
+[12:17 - 12:21] dengan yang berjalan di sistem itu kan harusnya nanti perlu menyesuaikan.
+[12:23 - 12:25] Jadi paling enggak untuk ketok palunya,
+[12:26 - 12:32] oh yaudah probis yang seperti ini yang dijalankan itu dari sisi level manajemennya itu ada gitu.
+[12:32 - 12:36] Yang bisa mau, apa namanya, yang menyetujui gitu ya.
+[12:36 - 12:40] Karena kan kalau nanti misalkan mengawancar dengan kepala cabang,
+[12:40 - 12:44] bisa jadi kepala cabang satu dengan yang lain menjelaskan alur itu kan enggak sama gitu.
+[12:44 - 12:50] Jadi paling tidak menurut saya validasi akhir ya harus dengan manajemen.
+[12:50 - 12:54] Jadi yang akan ditransformasi di dalam sistem ini nanti prosesnya yang bagaimana.
+[12:54 - 13:03] Mungkin sedikit tambahan, kemarin dari wawancara dengan staffan administrasi itu juga
+[13:03 - 13:11] ada perbedaan jadwal untuk gimbalnya itu sendiri.
+[13:11 - 13:19] Dan itu rentangnya sudah sederaskan juga di Ibu 1 secara detail itu dari penampuan harganya sendiri
+[13:19 - 13:23] berdasarkan dari jenjang sama juga pemilihan jamnya.
+[13:23 - 13:32] Jadi jadi setiap jenjang sama pemilihan jam kalau misalkan setiap malam itu akan lebih mahal
+[13:32 - 13:36] kalau misalkan dibandingkan dengan pagi dan siang itu, simpelnya seperti itu.
+[13:36 - 13:38] Tapi rentenya sama kah semua cabang?
+[13:38 - 13:39] Rate semuanya sama.
+[13:41 - 13:44] Cuma ada perbedaan harga kalau pagi dan malam gitu ya?
+[13:44 - 13:44] Ya, betul.
+[13:45 - 13:47] Dan juga itu untuk dari keuangannya,
+[13:48 - 13:54] terus kalau untuk dari pembagian kantor dan juga ruangan kelas serta siswanya,
+[13:54 - 14:02] itu di setiap cabang juga berbeda-beda karena bergantung pada besar kecilnya ruangan tersebut.
+[14:02 - 14:10] Jadi kalau misalkan ngambil rata-ratanya itu dari 8 sampai 15 orang per ruangan,
+[14:10 - 14:11] itu balik lagi itu.
+[14:11 - 14:14] Menyai dengan kecil dan masarnya ruangan tersebut.
+[14:15 - 14:20] Maksudnya dalam rules penentuannya itu gimana?
+[14:21 - 14:24] Bergantung-bergantung ya sedikit banyak.
+[14:24 - 14:27] Contohnya di sini di RK5 itu ada 6 ruangan.
+[14:28 - 14:32] Jadi kalau untuk ruangan pertama itu anak SD kelas 4 sampai 6,
+[14:32 - 14:37] itu 10 orang, itu ruangan pertama.
+[14:37 - 14:41] Ruangan kedua, RK sampai SD itu 4 orang.
+[14:41 - 14:44] Dan itu totalnya maksimal di 8 anak.
+[14:45 - 14:49] Di ruangan ketiga, kelas 6 sampai 9 SMP itu 12 anak.
+[14:51 - 14:52] Itu berdasarkan...
+[14:52 - 14:53] Sampai kelas 9?
+[14:54 - 14:54] Iya, bu.
+[14:54 - 14:56] Atau sesinya berbeda.
+[14:56 - 14:58] Sesinya berbeda, tapi di peruntungan yang itu ya?
+[14:58 - 14:58] Ya.
+[14:58 - 15:03] Di ruangan ketiga sampai 6 itu 12 anak.
+[15:03 - 15:06] Ini dari jenjangnya.
+[15:07 - 15:08] Dari SD sampai...
+[15:08 - 15:11] Dari TK, akhir sampai SD ada.
+[15:11 - 15:14] SMP, SD sampai SMP ada.
+[15:15 - 15:17] Dan untuk ruangan terakhir ini SMA,
+[15:17 - 15:21] kelas 10 sampai 12 itu maksimal di 13 anak.
+[15:23 - 15:26] Dan untuk totalnya sendiri di setiap cabang itu berbeda-beda
+[15:26 - 15:29] untuk dari setiap staffnya.
+[15:29 - 15:32] Kalau di Artaian Ultimah Maret itu ada 6 guru.
+[15:33 - 15:36] Termasuk di dalamnya itu ada 1 kepala cabang
+[15:36 - 15:39] plus 1 staff administrasi.
+[15:40 - 15:41] Kepala cabangnya di guru juga?
+[15:41 - 15:42] Iya.
+[15:42 - 15:43] Kepala cabangnya juga di guru.
+[15:44 - 15:45] Berarti 6 itu sama beliau?
+[15:46 - 15:46] Iya.
+[15:47 - 15:50] Dan itu harus setiap hari kasih rekapan
+[15:50 - 15:51] dengan...
+[15:51 - 15:52] Sebenarnya formatnya sudah ada.
+[15:53 - 15:53] Formatnya sudah ada.
+[15:53 - 15:55] Dari manajemen sudah ada yang melakukan.
+[15:55 - 15:57] Cuma yang maksud saya tadi berbeda itu
+[15:57 - 16:03] asumsi saya dari setiap total siswa
+[16:03 - 16:06] dan total mentor itu yang berbeda.
+[16:06 - 16:08] Jadi formatnya sebenarnya sudah ada.
+[16:08 - 16:09] Dari kertas itu sudah ada.
+[16:09 - 16:13] Saya rasa mungkin kalau dari sisi jumlah
+[16:13 - 16:17] banyak sedikitnya itu kan gak masalah ya.
+[16:17 - 16:20] Cuma rulesnya sih mungkin yang nanti akan
+[16:20 - 16:21] berpengaruhkan ke sistem.
+[16:23 - 16:26] Apakah nanti pembagiannya
+[16:26 - 16:31] apakah akan dibantu terotomasi sekian persen oleh sistem
+[16:31 - 16:34] atau nanti karena banyak constraint tadi
+[16:34 - 16:37] banyak constraint dan banyak kontrol yang diperhatikan
+[16:37 - 16:40] mau gak mau ini tetap harus dilakukan secara manual
+[16:40 - 16:43] oleh adminnya gitu ya
+[16:43 - 16:45] untuk membagi tadi gitu.
+[16:45 - 16:49] Itu perlunya perhatikan juga sih.
+[16:49 - 16:52] Dan juga dari kepala camang ini
+[16:52 - 16:55] di setiap harinya itu tutup rekapan
+[16:55 - 16:58] dari setiap administrasinya harus tutup rekapan
+[16:58 - 17:02] di jam 7.20
+[17:02 - 17:07] itu gak boleh anil-anil pendaftaran dan biaya yang masuk.
+[17:07 - 17:08] Malam.
+[17:08 - 17:12] Itu setiap harinya lalu nanti akan diakhiri
+[17:12 - 17:15] di sesi terakhir pembagian belajar di setengah 9 malam
+[17:15 - 17:17] dan di setengah 9 malam itu
+[17:17 - 17:19] dari setiap kepala cabang ini
+[17:19 - 17:22] akan langsung mengirimkan kertas rekapan itu
+[17:22 - 17:25] ke manajemen pusat cabang yang kedua.
+[17:26 - 17:28] Jadi semua lapan cabang yang tersebar di Bukalwan
+[17:28 - 17:32] itu harus ngasih ke cabang yang kedua.
+[17:32 - 17:34] Pusatnya yang di kedua itu?
+[17:34 - 17:35] Iya, pusat yang di kedua itu.
+[17:35 - 17:40] Berarti sudah ditentukan gitu ya cut off waktunya ada gitu ya.
+[17:40 - 17:41] Ya cut off waktunya sudah ada.
+[17:41 - 17:42] Diasanya memang ini kemarin dulu.
+[17:42 - 17:43] Saya udah banyak yang divalidasi.
+[17:46 - 17:51] Saya rasa mungkin nanti perlu kali ya dibuatkan apa ya.
+[17:52 - 17:57] Ini kan nanti skopnya dari pendaftaran kan ya.
+[17:57 - 18:10] Nah kalau menurut saya sebaiknya nanti bisa dibuatkan alur proses bisnisnya kali
+[18:10 - 18:12] untuk memudahkan.
+[18:12 - 18:14] Jadi yang terlibat itu siapa saja
+[18:14 - 18:17] di dalamnya aktivitasnya apa saja
+[18:17 - 18:20] input dokumennya berupa apa saja
+[18:20 - 18:22] paling enggak untuk gambaran sementara ini
+[18:22 - 18:24] untuk diproposal.
+[18:25 - 18:27] Terus nanti pas menjelaskan
+[18:27 - 18:29] proses bisnis.
+[18:29 - 18:30] Tapi proses bisnisnya tadi ya
+[18:30 - 18:35] saran saya sebaiknya tetap divalidasi oleh manajemen nanti gitu ya.
+[18:36 - 18:39] Walaupun kalau secara induk kan ada di yang cabang kedua tadi gitu.
+[18:40 - 18:43] Tapi tetap kalau bisa tetap ada validasi manajemen
+[18:43 - 18:48] bahwa oh seperti ini loh proses yang berjalan di cabang itu seperti ini gitu.
+[18:48 - 18:51] Nah kalau misalkan ada perbedaan
+[18:51 - 18:55] kan berarti jalan tengahnya yang mana yang akan digambarkan
+[18:55 - 18:59] di dalam notasi proses bisnis itu yang mana gitu.
+[18:59 - 19:01] Jadi kan baiknya didiskusikan.
+[19:01 - 19:03] Jadi biar clear dulu nih alur prosesnya seperti apa.
+[19:04 - 19:07] Nah nanti ketika menjelaskan proses itu
+[19:07 - 19:09] menurut saya constraint tadi,
+[19:09 - 19:11] kontrol-kontrol yang tadi disebutkan Aril itu
+[19:11 - 19:13] kalau bisa dijelaskan dulu aja
+[19:13 - 19:15] sedapatnya saat ini gitu.
+[19:16 - 19:18] Apa saja sih kondisi-kondisinya
+[19:18 - 19:20] yang perlu diperhatikan.
+[19:20 - 19:25] karena nanti kan ya kemungkinan kan akan banyak yang masuk ke teknis
+[19:25 - 19:27] di kode program ya.
+[19:27 - 19:28] Ya betul.
+[19:29 - 19:31] Jadi paling nggak kontrol-kontrol itu menurut saya
+[19:31 - 19:34] ceritakan aja sih sekali dengan proses bisnisnya.
+[19:34 - 19:37] Untuk bisa menilai ini seberapa kompleks sih.
+[19:37 - 19:38] Karena kalau misalkan itu nggak dijelaskan
+[19:38 - 19:40] kan orang mikir ya udah daftar-daftar aja kan
+[19:40 - 19:42] tinggal ngisi fog, udah selesai gitu.
+[19:42 - 19:44] Apa yang buat sulit kan gitu.
+[19:44 - 19:47] Nah jadi mungkin untuk menceritakan kompleksitasnya
+[19:47 - 19:49] menurut saya diceritakan aja sih itu.
+[19:49 - 19:54] Di bab 2 deh kayaknya nanti ya, domain penelitian.
+[19:54 - 19:59] Ini pakai prototipe ya.
+[19:59 - 20:00] Yang prototipe.
+[20:00 - 20:02] Itu kan ada pembagiannya di bab 2.
+[20:03 - 20:06] Di bab 2 itu penelitian terdahulu
+[20:06 - 20:07] sama dasar teori.
+[20:07 - 20:09] Kalau domain itu diproyek.
+[20:10 - 20:11] Kalau domain itu diproyek?
+[20:11 - 20:11] Iya.
+[20:20 - 20:21] Proyek domain penelitian.
+[20:21 - 20:27] Ya harusnya kurang-kurangnya seperti ini juga sih.
+[20:27 - 20:29] Di situ dijelaskan juga.
+[20:30 - 20:32] Mungkin nanti bisa masuk ke...
+[20:32 - 20:38] Ya coba lihat ini prototipe tadi.
+[20:38 - 20:41] Apalian bab 3-nya apa?
+[20:41 - 20:43] Apalian bab 3 itu udah kemasuk ke rancangan.
+[20:45 - 20:46] Ini sudah ada yang mencintai masuk.
+[20:46 - 20:47] Di kecil dan konteks ini
+[20:47 - 20:50] subbabnya ditambahkan Aril ya?
+[20:50 - 20:50] Yang mana?
+[20:51 - 20:52] Yang 311 ya?
+[20:52 - 20:53] Saya tambahin.
+[20:54 - 20:56] Kalau untuk penjelasan masalah
+[20:56 - 20:57] dari spoknya itu saya jelaskan
+[20:57 - 20:59] yang 21 sudah terbelakang.
+[20:59 - 21:01] Jadi cut off timenya segalanya macam.
+[21:03 - 21:04] Detail itu di bab 1?
+[21:04 - 21:04] Iya.
+[21:05 - 21:07] Itu terlalu panjang.
+[21:08 - 21:11] Iya bab 1 itu perlu tetap menjelaskan
+[21:12 - 21:13] pro bisnisnya seperti apa.
+[21:14 - 21:15] Terus permasalahannya gimana.
+[21:16 - 21:19] Tapi lebih ke poin inti ya.
+[21:19 - 21:20] Kalau misalkan yang detail banget sih
+[21:20 - 21:22] saya rasa dipindahkan aja.
+[21:23 - 21:24] Kalau misalkan...
+[21:24 - 21:30] Coba ya?
+[21:30 - 21:31] 311 itu apa?
+[21:31 - 21:35] 3112 ruang lingkup penggunaan prototipenya
+[21:35 - 21:44] untuk langsung ke tahapannya.
+[21:44 - 21:46] Objek dan konteks ini apa yang mau dijelaskan?
+[21:46 - 21:48] Objek yang konteks ini lebih menjelaskan
+[21:48 - 21:52] pembuatan dari Arta ini
+[21:52 - 21:55] berdasarkan masalahnya apa secara singkat.
+[21:55 - 21:58] Saya rasa kalau mau ini dikembangkan
+[21:58 - 22:00] mungkin bisa di sini kali itu.
+[22:00 - 22:02] Objek dan konteks itu yang proses bisnisnya.
+[22:03 - 22:06] Untuk detail dari contohnya kayak cut off timenya tadi gitu.
+[22:06 - 22:09] Ya proses bisnisnya dulu dipetakan.
+[22:10 - 22:13] Kalau salah sih lebih mudah kalau ada diagram ya.
+[22:13 - 22:14] Diagram BPM gitu.
+[22:15 - 22:15] Dibuatkan.
+[22:16 - 22:17] Nanti baru dijelaskan secara detail
+[22:17 - 22:18] masing-masing perubahan.
+[22:22 - 22:23] Diagram mana?
+[22:24 - 22:24] BPM.
+[22:25 - 22:25] Oh BPM.
+[22:25 - 22:26] Ah BPM.
+[22:26 - 22:29] Yang SS tuh ya gue?
+[22:30 - 22:31] Iya yang SS.
+[22:31 - 22:36] Karena kan ini kemarin seurancangan prototip kan.
+[22:36 - 22:38] Nanti kalau bab 4 itu kan
+[22:38 - 22:41] udah langsung ke hasil tahapan pengerjaan gitu ya.
+[22:41 - 22:45] Kalau misalkan pakai PXP
+[22:45 - 22:48] berarti tahapan pertama requirement ya?
+[22:49 - 22:53] Requirement terus dari sisi kebutuhan penggunaannya
+[22:53 - 22:58] lalu dari planning, design, iteration,
+[22:59 - 23:00] iteration, analyzation.
+[23:00 - 23:02] Iya tapi kalau requirement pun kan sebenarnya
+[23:02 - 23:05] sudah lebih ke requirement system kan.
+[23:05 - 23:08] Nah masalahnya kita belum menjelaskan
+[23:08 - 23:12] kondisi dari domain masalahnya dulu tuh
+[23:12 - 23:14] yang dari proses bisnisnya gitu masalahnya.
+[23:14 - 23:17] Mungkin lebih baik ditambahkan di 311 itu sih
+[23:17 - 23:18] objek dan konteks yang.
+[23:19 - 23:22] Karena sebenarnya kalau melihat referensi yang disitasi
+[23:22 - 23:25] tahun kemarin tuh beda banget template-nya ya Bu ya?
+[23:25 - 23:26] Kalau misalkan.
+[23:26 - 23:29] Tahun sebelumnya kan ya agak-agak rancu ya.
+[23:30 - 23:31] Jadinya banyak interpretasi gitu.
+[23:32 - 23:35] Jadi tahun sekarang kan disamakan lah.
+[23:35 - 23:37] terutama yang prototipe dan proyek ini.
+[23:37 - 23:39] Karena kurang lebih kan sebenarnya sama.
+[23:41 - 23:43] Selanjutnya sih disini aja gak apa-apa.
+[23:43 - 23:44] Karena ini bab 3 rancangan prototipe kan.
+[23:45 - 23:47] Jadi gimana mau merancang prototipe kan?
+[23:47 - 23:49] Kita mau mengembut prototipe ini
+[23:49 - 23:51] yang merujuk dari proses bisnis yang ada.
+[23:51 - 23:53] Tapi kan bukan serta-merta
+[23:53 - 23:55] hanya mengkonversi gitu ya.
+[23:55 - 23:57] Dari proyek yang ada langsung jadi system kan.
+[23:57 - 24:01] celah-celah yang masih kurang kan
+[24:01 - 24:02] harusnya bisa ditingkatkan kan.
+[24:03 - 24:04] Bisa diimprove.
+[24:04 - 24:06] Berarti kan harusnya udah kondisi 2D lah.
+[24:06 - 24:09] Jadi kita jelaskan disini.
+[24:10 - 24:27] Oh ini prototipe ya.
+[24:27 - 24:29] Kalau proyek itu kan di bagian
+[24:29 - 24:31] ya saya lupa ya.
+[24:32 - 24:33] Bab 1 kayaknya ya.
+[24:33 - 24:34] Ada yang menjelaskan mitra itu.
+[24:35 - 24:39] Kan kontribusi mitra juga
+[24:39 - 24:41] atau keterlibatan mitra seperti apa?
+[24:42 - 24:43] Itu kan dijelaskan kondisi ini di mana?
+[24:43 - 24:46] Di proyek itu
+[24:46 - 24:47] kemarin saya ada buat.
+[24:49 - 24:50] Ini jadinya pakai 2 template?
+[24:50 - 24:51] Buat 2 template?
+[24:52 - 24:52] Iya bu.
+[24:52 - 24:53] Kemarin karena awalnya proyek
+[24:53 - 24:54] terus akhirnya
+[24:54 - 24:56] ya mitra itu ada di sini.
+[24:58 - 24:59] Bab 1 tadi.
+[24:59 - 25:03] Ada yang standar mitra.
+[25:03 - 25:07] Itu lebih ke standar ya.
+[25:09 - 25:17] Ini di proyek ya bu.
+[25:17 - 25:18] Cuman saya kayaknya hapus sekarang.
+[25:19 - 25:19] Kalau misalnya.
+[25:21 - 25:21] Ini nih.
+[25:24 - 25:27] Tapi ini lebih ke standar ya.
+[25:27 - 25:37] Kalau yang menjelaskan peran mitra
+[25:37 - 25:40] di dalam tegas akhir ini
+[25:40 - 25:41] itu di mana?
+[25:43 - 25:45] Saya lupa di bab 3
+[25:45 - 25:46] kalau gak salah.
+[25:46 - 25:49] Bab 3 nya prototipe atau proyek itu ada.
+[25:49 - 25:49] Kalau gak salah.
+[25:51 - 25:53] Itu kan sebenarnya tidak hanya menjelaskan
+[25:53 - 25:54] peran mitra
+[25:54 - 25:57] tapi juga ada juga pendanaan
+[25:57 - 25:58] kalau tidak salah.
+[25:58 - 25:59] Oh itu di proyek
+[25:59 - 26:01] berarti bukul ada pendanaan yang lain.
+[26:13 - 26:14] Sumber daya.
+[26:14 - 26:15] Sumber daya.
+[26:15 - 26:16] Sumber daya, material, bahan, alat, bahan.
+[26:17 - 26:19] Kalau prototipe gak ada ya?
+[26:19 - 26:20] Kalau prototipnya gak ada.
+[26:25 - 26:27] Dia sebatas langsung
+[26:27 - 26:28] di bab 3 nya langsung
+[26:28 - 26:29] ada renganan prototipe
+[26:29 - 26:31] sama konsep
+[26:31 - 26:32] serta jatuan.
+[26:32 - 26:38] Kalau gak ada supep sendiri itu
+[26:38 - 26:39] berarti nanti dijelaskannya
+[26:39 - 26:46] ya ketika menjelaskan tahapan aja
+[26:46 - 26:47] berarti keterlibatan
+[26:47 - 26:48] tadi kan ada banyak tuh
+[26:48 - 26:49] dari manajemen kan
+[26:49 - 26:50] ada 2 orang
+[26:50 - 26:51] kemudian nanti
+[26:51 - 26:52] palacabang
+[26:52 - 26:54] sama admin ya
+[26:54 - 26:54] satu lagi
+[26:54 - 26:55] Sama admin
+[26:55 - 26:57] berarti kan ada 4 orang
+[26:57 - 26:58] yang paling tidak dari mitra
+[26:58 - 26:59] itu akan terlibat dengan
+[26:59 - 27:00] penelitian ini
+[27:00 - 27:03] dan untuk kapasitas apaan
+[27:03 - 27:03] gitu
+[27:03 - 27:05] saya rasa juga nanti
+[27:05 - 27:06] perlu dijelaskan
+[27:06 - 27:07] di dalam mengetahuan
+[27:07 - 27:10] berarti
+[27:10 - 27:12] masuk di sini juga gak buk
+[27:12 - 27:13] 3.1 nya
+[27:13 - 27:15] atau
+[27:15 - 27:20] ini saya buat sebab sendiri sih
+[27:20 - 27:21] untuk menjelaskan
+[27:21 - 27:22] kayak
+[27:22 - 27:23] menceritakan masalahnya
+[27:23 - 27:24] Kalau yang dari template apa?
+[27:25 - 27:26] buk 3 ini isinya apa ya?
+[27:26 - 27:28] 3.1 ini
+[27:28 - 27:29] garis besar
+[27:29 - 27:30] lalu masuk ke
+[27:30 - 27:32] 3.2 itu
+[27:32 - 27:36] konsep prototype
+[27:36 - 27:37] konsep prototype
+[27:37 - 27:39] spesifikasi
+[27:39 - 27:40] sama jadwal pembuatan
+[27:40 - 27:41] prototipan
+[27:41 - 27:45] ini konseptual ya
+[27:45 - 27:46] konseptual prototype
+[27:46 - 27:51] ini dari tahapan
+[27:51 - 27:51] lupar
+[27:51 - 27:53] penggunaan nonton
+[27:53 - 27:54] konseptual
+[27:54 - 27:55] berarti konseptual
+[27:55 - 27:57] spesifikasi sama
+[27:57 - 27:58] jadwalnya
+[27:58 - 28:01] ya bisa juga sih
+[28:01 - 28:02] kalau mau dijelaskan
+[28:02 - 28:03] di 3.1
+[28:03 - 28:04] satu itu
+[28:04 - 28:05] nanti tambahkan aja
+[28:05 - 28:06] satu paragraf
+[28:06 - 28:07] yang menjelaskan
+[28:07 - 28:09] keterlibatan itu
+[28:09 - 28:11] karena kalau
+[28:11 - 28:12] yang proyek kan enak ya
+[28:12 - 28:13] misalnya ada satu
+[28:13 - 28:14] sebabnya sendiri gitu
+[28:14 - 28:16] peran serta mitra itu
+[28:16 - 28:17] di bagian apa saja
+[28:17 - 28:25] oke
+[28:25 - 28:29] tapi tadi ini ya
+[28:29 - 28:29] tadi ya
+[28:29 - 28:31] berarti kan ada cukup banyak
+[28:31 - 28:32] yang terlibat berarti dari mitra
+[28:32 - 28:32] ada 4 kan?
+[28:33 - 28:34] total ada 4
+[28:34 - 28:35] nah
+[28:35 - 28:39] kalau nanti mengarah ke pxp itu
+[28:39 - 28:40] bagaimana sih
+[28:40 - 28:41] keterlibatan dari mitra itu
+[28:41 - 28:42] kalau dari
+[28:42 - 28:44] 4 orang ini
+[28:44 - 28:47] kalau dari saya sendiri
+[28:47 - 28:48] yang sekarang ini
+[28:48 - 28:49] dari 4 orang ini
+[28:49 - 28:50] khususnya dari staff admin
+[28:50 - 28:52] kepala cabang
+[28:52 - 28:53] sama yang satunya dari

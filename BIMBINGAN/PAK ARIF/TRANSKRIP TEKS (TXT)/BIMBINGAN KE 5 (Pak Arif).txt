@@ -1,0 +1,749 @@
+Dia, perlalu, aku bilang, gak berani kalau kamu, eh, dia ke proyek, gak berani aku ke prototipe karena, pertama, dari sananya juga belum berani implementasi, mitranya belum, karena awalnya dia integrasi dengan MPA, ternyata kan dia disuruh buat table sendiri, dari sini saya bilang, oh berarti kalau dia buat table, dia belum berani implementasi ke satu pintunya, mereka sistem kan satu pintu kalau nggak, nah itu berarti belum bisa, otomatis kamu hanya sebagai proyek saja, karena nanti mereka akan,
+lihat dulu, kalau oke baru diadopsi, belum langsung diimplementasikan, nah itu, makanya dia ke proyek, kalau kamu memang, dari mitranya sudah harus implementasi, dan langsung dipakai, yaudah, sekalian prototipe, berdasarkan itu, ya kebutuhan mitra,
+ya, dari mitra juga, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaud
+yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, ya
+kita bisa akses, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah
+Nanti sambil coba disesuaikan lagi ya, saya dilaporan dulu ya, kayak punya si adit dia tadi sudah lumayan, jadi yang biasanya ditulis mahasiswa itu pertama itu mereka gambaran umum dulu, udah masuk ke poinnya kan, kayak ini kan, masih ngomongin gambaran umum terhadap bimbelnya, nanti selesaikan kalian gambaran umum terhadap media itu apa, sesuai dengan penyamu mas juga yaudah masuk ke dua itu misalnya sedikit membahas profilnya, profilnya
+Mitra itu kayak apa sih profilnya, yaudah, yaudah, yaudah bidang apa, baru nanti masuk ke bab tiga, bab empat itu bisa ngomong tentang permasalahan
+Permasalahan yang dihadapi itu apa sih, permasalahan itu pasti harus jadi solusi kamu nanti, yang diselesaikan kan, permasalahan
+Nah, kelima, itu berarti dari permasalahan muncullah solusi, nah solusi berarti kamu bisa menceritakan dengan misalnya penelitian-penelitian terdahulu dulu
+Penelitian terdahulu
+Nah, misalkan nih, ada masalah, kamu baca kan, terus kamu baca nih referensinya
+Oh, yang paling mendekati dengan permasalahan kamu
+Nah, nanti permasalahan itu, solusi itu
+Penelitian terdahulu yang paling dekat dengan permasalahan dan menggunakan metode yang kamu mau angkat
+Itu lebih bagus, karena nanti dari situ menguatkan metode yang kamu angkat, metode pengembangannya
+Kayak punya si Aditya tadi kan dia mengangkat terkait bangun sistem transportasi menggunakan RAD
+Nah, dia dapat tuh dua jurnal yang permasalahan buat website juga terkait transportasi dan menggunakan RAD
+Hujanya buat apa? Buat penguat dia bahwa misalkan metode yang dia gunakan itu sudah pernah ada orang yang menggunakan dengan masalah yang hampir sama
+Menguatkan gitu, karena kalau...
+Dan kamu juga harus bisa menjelaskan...
+Nanti...
+Kalau bisa, kamu bisa menyimbolkan kayak gini
+Atau bisa di latar belakang, atau di perbandingan metode kan ada tuh
+Perbandingan metode ya
+Karena gini, kayak punya Aditya tadi, saya tanya juga
+Kalau pakai RAD, RAD kan dia fleksibel gitu
+Dia bilang fleksibel Pak
+Sedangkan...
+PXP, XP itu juga fleksibel
+Nah, sekarang bisa nggak saya selesaikan menggunakan ini atau ini?
+Kalau misalkan bisa, kenapa kamu pakai RAD?
+Pertanyaan secara itu kan
+Apa yang memilih kamu menuju...
+Oh, saya sesuai dengan RAD
+Apa yang membuat kamu merasa RAD ini lebih cocok?
+Nah, itu cari dan ada referensinya
+Jangan kamu bilang, oh saya suka RAD Pak, karena nggak bisa suka-suka nam
+Yang kita tanya itu adalah
+Kenapa pakai RAD? Masalahnya dimitra kayak apa?
+Kenapa harus lebih oke RAD?
+Lebih cocok RAD?
+Nah, itu harus ada penguatnya
+Jangan sampai kamu bilang, oh menurut saya karena saya belajarnya RAD, nggak bisa
+Apalagi kalau kamu membandingkan metode
+Itu sedangnya kamu harus tahu kan berapa metode
+Kalau kamu pakainya cuma RAD-nya
+Kamu bilang bagus RAD, karena kamu cuma tahunya RAD
+Tapi kalau kamu mendalui RAD, PSP, ESP
+Dari situ kamu bisa menyimpulkan
+Oh saya pakai RAD lebih cocok, karena lebih sering berkomunikasi dengan mitra-nya
+Nah, dasar itu dari mana?
+Refresinya ini Pak
+RAD itu ada tahapan yang nanti saya akan sering berkomunikasi dengan mitra
+Jadi, harus ada penguatnya
+Jadi, ada alasan jangan sampai menjawab dengan
+Oh, karena dulu belajarnya RAD, oh nggak bisa
+Kalau belajar RAD kamu berarti belum sentuh sesuka ya
+Karena kalau membandingkan metode, berarti harus tahu semua metode baru kamu menyimpulkan kan
+Nanti cek lagi perbandingan metode di bab dua itu ya
+Tabelnya harus benar
+Kalau punya aditya-aditya, salah
+Harusnya di sini tuh ada kayak penelitianya siapa ya kan
+Coba nanti cek ya, saya tahu yang salah judulnya apa
+Judulnya hasil, nggak cuma hasil
+Kalau punya aditya itu cuma hasil
+Nah, ini namanya perbandingan hasil, kemudian keterangannya apa?
+Keterangan dari perbandingan ini apa?
+Kenapa sudah tahu judulnya ini, hasilnya ini
+Tapi kenapa kamu masih pakai RAD?
+Alasannya apa?
+Oh, berarti ini kak yang benar adalah dari nama ini benar
+Terus ada pembedanya gitu, Pak
+Ini kan nama
+Ini apa? Teknologi apa?
+Ini dari template ya, Pak
+Oh, kalau ada template-nya kayak gini?
+Iya, sebentar
+Ini hasil
+Oke sih, kalau template-nya gini ikuti ini
+Cuma kamu harus bisa, jangan cuma dari sini hasilnya
+Ini hasilnya
+Iya lah, kalau kamu cuma hasilnya buat apa?
+Ditulis di perbandingan
+Cuma tahu hasilnya terus sama
+Terus kamu baca itu apa, Pak?
+Tujuannya kamu tahu dari situ, kamu langsung bilang
+Oh, saya lebih cocok RAD
+Ini dia menggunakan tahapan ini, dan itu gak saya gak pakai
+Kalau RAD dia lebih detail, Pak
+Nah, itu yang dicari
+Perbandingan metode
+Bukan cuma membahas punya dia hasilnya
+Terus buat apa? Kalau kamu sudah tahu punya hasilnya itu apa?
+Apa yang kamu dapatkan?
+Untuk perbandingannya sendiri, Pak? Ada minimal gak, Pak?
+Kita harus mengambil berapa metode gitu?
+Kalau saya, saya gak ada minimum yang penting
+Gitu
+Ya semakin banyak pasti semakin bagus
+Kalau saya gitu, misalnya kamu ngomongin
+Metode yang fleksibel ya
+Ya kamu bandingkan metode yang fleksibel
+Yang sama, jangan RAD terus pakai waterfall
+Ya jauh banget
+Waterfall dia sudah dari awal
+Sudah ditentukan, dia gak fleksibel gitu
+Sedangkan kamu sudah bilang punya saya ini yang fleksibel
+Kalau kamu bandingkan waterfall, bagi saya itu gak
+Kayak apa? Kayak kurang kerjaan
+Kalau bagi saya, karena kamu sudah jelas
+Waterfall gak cocok dengan kamu, makanya masih pakai butterfly banget
+Mending yang dengan
+Se-level dengan kamu, jadi lebih kritis kita, Mas
+Lebih detail juga tadi
+Karena kalau kamu dengan waterfall, pasti orang bilang
+Kan kalau waterfall, okelah jauh
+Tapi kalau misalnya RAD dengan PSP, PSP dengan SP ya
+Kamu akan lebih kritis disitu
+Karena kamu kuyih metode nya hampir sama nih
+Poin mana yang kamu membedakan
+Kalau kamu tidak waterfall, jauh banget
+Kamu gak usah bandingkan, udah tau
+Udah, gambarnya udah, udah tau
+Saya lebih suka yang lebih
+Dibandingkan itu, bukan karena ikuti template nya
+Ket bandingan, tapi biar kamu tau
+Kenapa saya harus pakai metode ini
+Jadi, dalam metode yang hampir sama itu banyak
+Yang sebanding gitu
+Tapi, saya pakai RAD, harus punya alasan
+Banyak kok mahasiswa saya yang
+Cuma hal itu gak lulus
+Cuma gara-gara gak bisa membedakan
+Entar metode nya gitu pak
+Entar metode, paling utama itu metode
+Karena proposal itu metode adalah
+Angka-angka kamu mencapai solusi
+Kalau metode kamu salah, kamu gak paham
+Udah disitu, kita gak
+Kalau cuma masalah kamu belum
+Masih belum paham, cara, frame atau belum itu
+Kita masih terima
+Atau kalau udah metode, udah
+Akal yang bisa mengulang ramah ujian
+Makanya kan salah objek itu sedi metode
+Kalau cuma penulisan itu masih bisa diperbaiki
+Masih selesai, tapi
+Kalau sudah mis di metode itu gak bisa diperbaiki
+Karena dia sudah proposal
+Metode kalau salah harus diganti
+Dan salah berarti harus ulang ujian ulang
+Tapi kalau cuma penulisan, kamu masih
+Oh nanti pas revisi, itu bisa
+Kalau metode gak bisa
+Sebenarnya udah ada nyari pak
+Untuk beli metode yang ada
+Saya menggunakan PXP pak
+PXP
+Kemarin walaupun ditanyakan dengan Bu Ayu
+Karena banyak banget
+Masih selesai menggunakan
+Jadi yang saya tangkap dari argumenti Bu Ayu itu
+Kalau bisa mencoba
+Metode yang lain
+Terus saya ada tanyakan kembali
+Kalau misalkan saya tetep ketah dengan
+Argumen saya tetep menggunakan PXP dengan data yang ada
+Apakah bisa?
+Kalau saya lebih cocok bukan banyak yang pakai
+Kalau saya
+Saya lebih cenderung
+Permasalahan itu lebih cocok
+Solusinya pakai metode itu
+Kalau memang lebih cocok itu
+Gak bisa dipaksa
+Oh saya harus
+Haruskan di metode karena itu banyak pakai gak bisa
+Ya ini masalah saya sendiri
+Gak ada hubungan dengan masalah lain
+Yang lain punya masalah sendiri-sendiri
+Solusinya sendiri
+Kalau saya lebih kesikir
+Cuma
+Kau punya alasan
+Kalau kau bilang
+Oh saya lebih cocok mempertahankan PXP
+Mungkin buahnya PIGGAMI itu kan ada PXP
+Ada yang hampir sama
+Namanya masih pakai PXP gitu
+Mungkin masih lain ada
+Nah kamu harus tahu
+Kau bedanya di sini apa
+Poin mana yang nanti pekerjaan itu
+Yang di tempat lain gak bisa
+Hanya di sini tahapan apa
+Yang lebih cocok dengan saya
+Ya
+Sama ini juga Pak
+Kalau misalkan terdapat
+Saya dapat jurnal itu
+Sebenarnya sama masalahnya
+Tentang bimbel
+Itu juga
+Dan ingin membuat manajemen dashboard
+Tapi metode nya itu beda
+Itu juga bisa dijadikan referensi
+Atau tadi kan saran dari Bapak
+Kalau bisa mencari jurnal yang
+Memang masalahnya yang sama
+Dan metode nya yang sama
+Contohnya kayak adit tadi
+Jadi gini
+Kalau kamu mau angkat di latar belakang
+Ya
+Gunakan
+Jangan membuat dari permasalahnya
+Tapi metode nya
+Karena kamu mau menunjukkan
+Bahwa metode ini cocok buat kamu
+Bukan masalahnya yang cocok
+Masalahnya gak
+Selesai dengan masalah kamu
+Jadi metode nya
+Kenapa sih harus kamu pakai PXP
+Kenapa harus pakai PXP
+Maka kamu harus cari jurnal terdahulu
+Untuk di latar belakang yang menggunakannya PXP
+Nah kalau perbandingan metode
+Kamu boleh pakai masalahnya yang sama
+Tapi dia pakai metode ini
+Apa itu boleh
+Ya mas saya untuk pembandingan
+Pembandingan boleh
+Karena kalau di latar belakang
+Menggunakan yang sama-sama
+Alasan metode
+Karena kalau kamu masukin metode yang beda
+Apa yang masukin di latar belakang
+Apa yang memperkuat apa gitu
+Masalah solusi jahit beda
+Masalahnya sama pak
+Tapi solusinya beda
+Apa yang memperkuat
+Agumen kamu disitu gak ada
+Lu mungkin dari ini pak
+Disitasi berarti saya bisa ngisi untuk judulnya
+Udah di ACC Cak
+Oke
+Lu Ayu
+Oke
+Terus mungkin terakhir
+Bagi bagi bagian lain
+Dari landing page itu
+Nanti pada akhirnya
+Menurut Pak Ryo sendiri
+Linknya sama
+Atau page nya sama
+Atau
+Memang
+Dari
+Landing page yang dari artanya gitu
+Baiknya
+Landing page ya
+Kalau saya gini
+Pertama itu
+Itu penting dong
+Kamu harus
+Pelancaran dulu
+Pelancaran
+Karena kan itu kebutuhan kembangan sistem
+Pertama
+Tentukan dulu
+Mereka itu
+Biasa warnanya apa
+Karena kamu gak bisa
+Masih
+Masih
+Masih
+Masih
+Masih
+Mereka
+Tidak ada sih sebenarnya Pak
+Nah itu
+Standar-standar warnanya
+Fontnya
+Itu harus seragam
+Masalah nanti tampilan
+Kamu bisa
+Jangan sampai
+Orang tau
+Misalnya
+Mengenal
+Bisisnya ini
+Ketika lihat puncak kamu
+Dia harus tau ini
+Ini gitu
+Misalnya punya yang
+Yang
+Buat ahi warnanya
+Ungu
+Kenapa
+Ya semua orang tau
+Kalau ahi itu ungu gitu
+Warnanya biru
+Jadi primagama
+Nah gitu Mas
+Jadi landing spec nya sesuaikan
+Masalah nanti fitur kamu
+Indesain dengan lain
+Maksud saya ini sih Pak
+Lebih kearah
+Apakah nanti si user yang ini
+Kan rencana 2 user nya
+Memang dari internalnya apa
+Itu apakah dari mereka
+Baiknya aksesnya lewat landing page
+Yang
+Notabene itu memang bisa digunakan oleh
+Semua orang
+Atau
+Khusus link
+Yang di
+Dikasih ke mereka aja gitu
+Dan itu gak disebarkan secara umum
+Maksud kamu waktu dia
+Dashboard admin itu
+Ya
+Iya
+Itu
+Tergantung kamu sih Mas
+Tak tunjukin punya aku aja ya
+Ya boleh
+Mitra lagi Pak
+Sorry guys
+Yang ngomong tanya apa tadi
+Yang ngomong tanya apa tadi
+Yang ngomong tanya apa tadi
+Yang ngomong tanya apa tadi
+Yang ngomong tanya apa tadi
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ngomong tanya apa
+Yang ditampilkan sebelumnya
+Itu memang buat umum
+Bisa Pak
+Yang tampilkan depan bisa
+Yang tampilkan depan bisa
+Depan ini
+Cuma disini bisa
+Semua orang bisa sini
+Cuma bedanya
+Dia kalo support admin
+Dia punya dashboardnya sini
+Kalo user dia
+Punya juga dashboard
+Cuma dashboardnya user ya
+Disini ketutup
+Yang disini
+Master-master ketutup
+Contohnya misalnya nih
+Aku login pake akunnya perusahaan
+Jadi kamu gak terlalu banyak tampilan
+Itu berarti tergantung dari mitra ya Pak
+Kalo misalkan
+Kan sebenernya
+Dari artanya sudah ada landing page nya Pak
+Ya kan
+Dan
+Sebenernya saya juga bisa tambahkan
+Dari sisi yang sama
+Seperti
+Karena mengini aksesnya
+Dari landing page
+Kalo misalkan
+Nanti mitra nya meminta
+Untuk
+Di landing page
+Jadikan satu
+Atau
+Dari mitra ini
+Memintanya
+Kursus dashboard
+Admin aja
+Itu berarti
+Terserah dari mereka
+Jadi gini dulu
+Kalo kamu
+Pertama kamu
+Tentu kontrolnya
+Setiap kontrol itu
+Bisa apa
+Jadi
+Ketika kamu
+Oh
+Kalo dia sebagai
+Umum nih
+Yang
+Apa
+Yang user itu apa
+Kalo umumnya itu yang
+Males gitu ya
+Kalo umumnya ini
+Lebih tepatnya
+Semua orang bisa menganggir sih Pak
+Kaya cuman
+Kaya kompro gitu sih Pak
+Kalo untuk yang sekarang
+Keknya profile aja kan
+Cuma
+Beda
+Dia
+Sekarang saya tanya gini
+Kalo dia login
+Dia bisa apa
+Apakah sistem itu
+Hanya untuk menambilkan aja
+Kalo dia perlu sesuatu
+Tindakan yang butuh
+Ya harus
+Kayak misalnya mas
+Kalo kamu
+Buka shopee
+Kamu gak harus login
+Tapi kalo kamu mau belanja
+Kamu harus login
+Kayak gitu
+Jadi
+Kami profile bisa diakses
+Tapi kalo dia login
+Berarti ada sesuatu yang bisa dilakukan
+Apakah
+Kika dia mendaftar
+Maka nanti dia punya dashboard sendiri
+Atau
+Atau
+Dia bisa comment atau apa
+Dia harus mendaftar
+Makanya gitu mas
+Jadi kamu harus tentukan dulu
+Cakupannya setiap pro itu
+Ngapain aja
+Baru nanti kamu bisa tentukan
+Itunya kalo kayak
+Yang bisnisnya kamu
+Itu bisa diakses publik
+Cuma kalo dia login
+Tujuannya buat apa dulu
+Kamu ngasih misalnya
+Oh
+Ada login nih
+Apakah login itu dia bisa registrasi
+Atau
+Misalkan login itu hanya untuk admin
+Berarti kalo
+Maksudnya gini
+Kalo hanya umum
+Gak melakukan tidak kenapa ngamun
+Login itu dia gak berfungsi
+Dia gak bisa registrasi
+Gak ada tombol registrasi
+Maka dia login bingung juga
+Kalo dia gak punya akun
+Fungsinya buat apa gitu
+Itu
+Fungsinya untuk yang tadi
+Login itu untuk
+Misalkan admin
+Nanti dia punya dashboardnya
+Tapi kalo misalkan
+Nah itu tadi
+Kamu tentukan dulu
+Batasannya
+Rolenya masing-masing
+Itu gak
+Jadi aku akan enak
+Mendelsirkannya
+Oh
+Kalo user nanti
+Oh user itu
+Apa
+Fiturnya disitu apa aja
+Apakah nanti
+User itu ketika
+Mendaftar
+Nanti dia punya dashboard sendiri
+Bisa melihat
+Transaksi dia
+Kan monitoring perkembangan
+Last lesson ya
+Setiap minggunya dia
+Kayak apa
+Reportnya dari
+Mentornya gitu ya
+Maka kamu buatnya dashboard dia
+Untuk login
+Tapi pak
+Dua role yang saya maksudnya
+Yang kemarin
+Dibiskusikan juga
+Itu memang dari sisi internalnya pak
+Jadi um itu
+Gak bisa mengakses
+Ya berarti
+Isi login
+Dan itu berarti
+Taruh di landing page
+Atau gak usah
+Ada dua cara
+Kalo misalkan
+Kamu ingin
+Itu hanya untuk internal
+Misalkan hanya internal
+Kamu gak perlu buat disini
+Kayak ini tadi
+Karena kalo kamu
+Buat kayak gini
+Orang jadi mikirnya
+Ada cara
+Ada fungsi lain
+Ada fungsi lain
+Sedangkan gak punya akun
+Kalo kamu kayak gitu
+Buat kayak yang punya Nusantara
+Menyapa
+Berita gak ada loginnya disini
+Tapi kalo dia mau login
+Caranya
+Slash
+Admin
+Oke gitu aja pak
+Tujuannya emang disembunyikan
+Karena gak ada
+Umum gak bisa mengakses
+Orang umum nanti
+Kecap-pecap
+Kamu daftar
+Tapi kalo disitu
+Makanya tadi
+Tentukan dulu
+Rolenya
+Kalo kamu
+Usernya
+Bisa login pak
+Ya taruh depan aja
+Biar jadi satu loginnya
+Selama dia misal
+Rolenya user
+Biar login
+Ya nanti dia tampilannya
+Bisa
+Kalo jadi admin
+Jadi tetep loginnya tetep sama
+Gimana nanti membedakan
+Rolenya
+Oke
+Tapi kalo kamu bisa tutupin
+Umum
+Ketadi
+Kok gak
+Bisa diliat oleh umum
+Ya berit aja
+Slash aja
+Jadi orang
+Tau kalo mau login
+Masih ini
+Orang gak mikir sampai situ juga
+Kepain juga
+Kalau dia
+Slash apain
+Berarti dia sudah bikin login
+Itu aja
+Oke
+Setelah dia gak punya akun
+Gak bisa dah
+Oke
+Mungkin itu aja
+Sampai dari saya pak
+Sampai
+Sampai
+Untuk laporan
+Udah ada gambaran ya
+Yang tadi pampennya
+Oh iya pak
+Oh iya pak
+Kalo saya mau nanya
+Kalo tadi bagian laporan
+Bagian satu
+Gambaran umum kan pak
+Ya
+Nah kalo dari bu Iwun
+Gambaran umumnya itu
+Termasuk
+Sejarah dari CEO
+Oh keren saya ngambil
+Kemarin CEO itu
+Ini diawal dia minta
+Gambarkan sejarah CEO dari awal
+Yang gak akhir
+Lebih dahulu
+Karena kamu mengangkatnya
+SEO
+Jadi yang berbedakan sih
+Jadi bener
+Gambaran umumnya itu
+Orang ingin tahu dulu
+SEO itu
+SEO itu buat apa sih fungsinya
+Karena kamu mengangkat topik itu
+Jadi kejaran SEO nya
+Baru nanti
+Ngambang permasalahannya
+Boleh gambaran umumnya dari SEO
+Oh ini kan dia
+Gambaran umumnya dari
+Bebelnya sendiri
+Judulnya kemarin itu udah?
+Judulnya sudah diselesaikan lagi sama Bu Iwun pak
+Nah jadinya
+Yang kemarin kan dari bapaknya
+Ngasih
+Opsi judul itu
+Optimasi CEO
+Integrasi Open Cloud
+Untuk otomasi pengelolaan berita
+Melalui telegram
+Pada website nusantara menyapa.com
+Nah diselesaikan sama Bu Iwun
+Menjadi optimasi CEO
+Dan otomasi pengelolaan berita
+Dengan integrasi Open Cloud
+Pada website nusantara menyapa
+Jadi melalui telegramnya ini
+Di
+Dihilangkan
+Karena kamu bisa
+Itu kan cuma pilihan ya
+Bisa telegram
+Bisa WhatsApp
+Nah dilangan aja
+Karena kita belum tahu
+Apakah nanti telegram
+Belum bagus gitu loh
+Jadi dilangan
+Karena juga tadi
+Di awal kan ada optimasi CEO
+Dan otomasi pengelolaan berita itu kan pak
+Nah jadi dia
+Iwun ini
+Kayak
+Nyangkanya itu
+Optimasi CEO ini juga dilakukan
+Di melalui telegram
+Jadi di hilang
+Kayak
+Nyambung-nyambung itu di hilangkan
+Bicinya
+Bicinya Bu Iwun itu
+Yang melengkapi saya
+Jadi
+Berarti untuk judul tadi
+Saya sudah fix pakai yang
+Dari
+Dari

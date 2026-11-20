@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="diagram_pxp" name="Gambar 2.1 Tahapan PxP Dzhurov 2009">
+    <mxGraphModel dx="1200" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="950" pageHeight="1050" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Header Label PXP -->
+        <mxCell id="lbl_pxp" value="&lt;b style=&quot;font-size: 26px; letter-spacing: 2px;&quot;&gt;PXP&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#0F172A;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="720" y="45" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 1: Requirements -->
+        <mxCell id="box_req" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Requirements&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="45" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Req -> Plan -->
+        <mxCell id="edge_req_plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_req" target="box_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 2: Planning -->
+        <mxCell id="box_plan" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Planning&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="145" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Outer Iteration Container -->
+        <mxCell id="container_iter" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#64748B;strokeWidth=1.8;arcSize=8;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="235" width="530" height="615" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Plan -> Iteration Init -->
+        <mxCell id="edge_plan_init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_plan" target="box_init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 3: Iteration Initialization -->
+        <mxCell id="box_init" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Iteration Initialization&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="267" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Init -> Design -->
+        <mxCell id="edge_init_des" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_init" target="box_des">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 4: Design -->
+        <mxCell id="box_des" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Design&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="367" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Design -> Implementation -->
+        <mxCell id="edge_des_impl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_des" target="box_impl_outer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 5: Implementation Compound Box -->
+        <mxCell id="box_impl_outer" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Implementation&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;verticalAlign=top;spacingTop=10;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="150" y="467" width="440" height="135" as="geometry" />
+        </mxCell>
+
+        <!-- Sub-step 5a: Unit Testing -->
+        <mxCell id="box_ut" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Unit&lt;br&gt;Testing&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=1.5;fontColor=#0F172A;fontFamily=Helvetica;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="175" y="510" width="110" height="68" as="geometry" />
+        </mxCell>
+
+        <!-- Sub-step 5b: Code -->
+        <mxCell id="box_code" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Code&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=1.5;fontColor=#0F172A;fontFamily=Helvetica;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="330" y="510" width="95" height="68" as="geometry" />
+        </mxCell>
+
+        <!-- Sub-step 5c: Refactor -->
+        <mxCell id="box_refactor" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Refactor&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#475569;strokeWidth=1.5;fontColor=#0F172A;fontFamily=Helvetica;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="470" y="510" width="95" height="68" as="geometry" />
+        </mxCell>
+
+        <!-- Inner Arrows inside Implementation -->
+        <mxCell id="edge_ut_code" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_ut" target="box_code">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_code_ref" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#334155;strokeWidth=1.8;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_code" target="box_refactor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: Implementation -> System Testing -->
+        <mxCell id="edge_impl_st" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_impl_outer" target="box_st">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 6: System Testing -->
+        <mxCell id="box_st" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;System Testing&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="640" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: System Testing -> Retrospective -->
+        <mxCell id="edge_st_retro" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1E293B;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_st" target="box_retro">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Phase 7: Retrospective -->
+        <mxCell id="box_retro" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Retrospective&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="200" y="730" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- Iteration Loopback Arrow (Dashed) -->
+        <mxCell id="edge_retro_loop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=2;dashed=1;dashPattern=6 5;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_retro" target="box_init">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="135" y="756" />
+              <mxPoint x="135" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- LOGS Cylinder (Data Store) -->
+        <mxCell id="cyl_logs" value="&lt;b style=&quot;font-size: 18px; letter-spacing: 2px;&quot;&gt;LOGS&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=18;fillColor=#F1F5F9;strokeColor=#334155;strokeWidth=2;fontColor=#0F172A;fontFamily=Helvetica;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="695" y="425" width="130" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Dashed Connectors to LOGS -->
+        <!-- 1. Planning -> LOGS -->
+        <mxCell id="edge_plan_logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.8;dashed=1;dashPattern=5 5;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_plan" target="cyl_logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="171" />
+              <mxPoint x="710" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2. Implementation -> LOGS -->
+        <mxCell id="edge_impl_logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.8;dashed=1;dashPattern=5 5;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_impl_outer" target="cyl_logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3. System Testing -> LOGS -->
+        <mxCell id="edge_st_logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.8;dashed=1;dashPattern=5 5;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_st" target="cyl_logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="666" />
+              <mxPoint x="695" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 4. Retrospective -> LOGS -->
+        <mxCell id="edge_retro_logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#64748B;strokeWidth=1.8;dashed=1;dashPattern=5 5;endArrow=classic;endFill=1;" edge="1" parent="1" source="box_retro" target="cyl_logs">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="756" />
+              <mxPoint x="715" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Bottom Caption -->
+        <mxCell id="lbl_caption" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Fig. 1. PXP process phases.&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size: 13px; color: #64748B;&quot;&gt;Sumber: Diadaptasi dan digambar ulang dari Dzhurov, Krasteva, dan Ilieva (2009)&lt;/i&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#0F172A;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="130" y="880" width="450" height="40" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

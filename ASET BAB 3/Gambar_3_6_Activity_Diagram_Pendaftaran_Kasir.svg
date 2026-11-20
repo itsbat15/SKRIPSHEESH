@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1060" width="1000" height="1060">
+  <defs>
+    <style>
+      .main-title { font-family: 'Arial', sans-serif; font-size: 15px; font-weight: bold; fill: #000; text-anchor: middle; }
+      .lane-title { font-family: 'Arial', sans-serif; font-size: 13.5px; font-weight: bold; fill: #111; text-anchor: middle; }
+      .act-text { font-family: 'Arial', sans-serif; font-size: 11.5px; fill: #000; text-anchor: middle; line-height: 1.25; font-weight: 500; }
+      .branch-text { font-family: 'Arial', sans-serif; font-size: 11px; fill: #111; font-weight: bold; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1060" fill="#ffffff" />
+
+  <!-- Outer Frame -->
+  <rect x="35" y="25" width="930" height="1010" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+
+  <!-- Title Box -->
+  <rect x="35" y="25" width="930" height="42" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+  <text x="500.0" y="51" class="main-title">Activity Diagram Pendaftaran Siswa dan Transaksi Kasir Cabang</text>
+
+  <!-- Swimlane Header Row -->
+  <rect x="35" y="67" width="930" height="38" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+  
+  <!-- Column 1 Header -->
+  <text x="190.0" y="91" class="lane-title">Staf Administrasi Cabang</text>
+  <!-- Column 2 Header -->
+  <text x="500.0" y="91" class="lane-title">Antarmuka Web ARTHA</text>
+  <!-- Column 3 Header -->
+  <text x="810.0" y="91" class="lane-title">Basis Data & Server ARTHA</text>
+
+  <!-- Vertical Swimlane Divider Lines -->
+  <line x1="345" y1="67" x2="345" y2="1035" stroke="#000000" stroke-width="1.5" />
+  <line x1="655" y1="67" x2="655" y2="1035" stroke="#000000" stroke-width="1.5" />
+
+  <!-- Dynamic Content -->
+  
+  <!-- Initial State (Lane 1: Staf Cabang) -->
+  <circle cx="190" cy="145" r="14" fill="#000000" />
+  <line x1="190" y1="159" x2="190" y2="190" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 1 (Lane 1): Membuka Formulir Pendaftaran -->
+  <rect x="85" y="190" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="190" y="210" class="act-text">Membuka Formulir</text>
+  <text x="190" y="225" class="act-text">Pendaftaran Siswa Baru</text>
+
+  <!-- Arrow Action 1 -> Action 2 (Lane 2) -->
+  <line x1="295" y1="214" x2="395" y2="214" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 2 (Lane 2): Menampilkan Formulir & Kuota Rombel -->
+  <rect x="395" y="190" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="500" y="210" class="act-text">Menampilkan Formulir &amp;</text>
+  <text x="500" y="225" class="act-text">Daftar Rombel Aktif</text>
+
+  <!-- Arrow Action 2 -> Action 3 (Lane 1) -->
+  <path d="M 500 238 L 500 270 L 190 270 L 190 295" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 3 (Lane 1): Mengisi Biodata & Memilih Rombel -->
+  <rect x="85" y="295" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="190" y="315" class="act-text">Mengisi Biodata Siswa &amp;</text>
+  <text x="190" y="330" class="act-text">Memilih Rombel Belajar</text>
+
+  <!-- Arrow Action 3 -> Action 4 (Lane 3) -->
+  <path d="M 295 319 L 705 319" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 4 (Lane 3): Memvalidasi Sisa Kuota Rombel -->
+  <rect x="705" y="295" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="810" y="315" class="act-text">Memvalidasi Sisa Kuota</text>
+  <text x="810" y="330" class="act-text">Rombel Belajar</text>
+
+  <!-- Arrow Action 4 -> Decision 1 (Lane 2) -->
+  <path d="M 810 343 L 810 375 L 500 375 L 500 400" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Decision Node 1 (Lane 2): Kuota Tersedia? -->
+  <polygon points="500,400 522,422 500,444 478,422" fill="#fff" stroke="#000" stroke-width="1.5" />
+
+  <!-- Decision Branch 1: [Penuh / Nol] -> Arrow left to Action 5 (Lane 1) -->
+  <line x1="478" y1="422" x2="295" y2="422" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="350" y="415" class="branch-text">[Penuh / Nol]</text>
+
+  <!-- Action 5 (Lane 1): Pesan Penuh & Pilih Alternatif -->
+  <rect x="85" y="398" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="190" y="418" class="act-text">Peringatan Kuota Penuh &amp;</text>
+  <text x="190" y="433" class="act-text">Pilih Rombel Alternatif</text>
+
+  <!-- Loop back from Action 5 to Action 3 -->
+  <path d="M 190 398 L 190 375 L 130 375 L 130 343" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Decision Branch 2: [Tersedia] -> Down to Action 6 (Lane 2) -->
+  <line x1="500" y1="444" x2="500" y2="480" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+  <text x="506" y="465" class="branch-text">[Tersedia]</text>
+
+  <!-- Action 6 (Lane 2): Hitung Total Biaya & Kunci 1 Kursi -->
+  <rect x="390" y="480" width="220" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="500" y="500" class="act-text">Kunci Kursi Rombel &amp;</text>
+  <text x="500" y="515" class="act-text">Hitung Rincian Tagihan</text>
+
+  <!-- Arrow Action 6 -> Action 7 (Lane 1) -->
+  <path d="M 390 504 L 295 504 L 295 560 L 190 560 L 190 580" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 7 (Lane 1): Pilih Pembayaran Tunai & Input Uang Fisik -->
+  <rect x="85" y="580" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="190" y="600" class="act-text">Pilih Kasir Tunai &amp;</text>
+  <text x="190" y="615" class="act-text">Input Nominal Uang Diterima</text>
+
+  <!-- Arrow Action 7 -> Action 8 (Lane 2) -->
+  <line x1="295" y1="604" x2="395" y2="604" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 8 (Lane 2): Hitung Uang Kembalian -->
+  <rect x="395" y="580" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="500" y="600" class="act-text">Menghitung Nominal</text>
+  <text x="500" y="615" class="act-text">Uang Kembalian</text>
+
+  <!-- Arrow Action 8 -> Fork Bar (Lane 3) -->
+  <path d="M 605 604 L 810 604 L 810 660" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Fork Bar (Lane 3) -->
+  <line x1="700" y1="660" x2="920" y2="660" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Arrows from Fork to Parallel Actions -->
+  <path d="M 755 663 L 755 700" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 865 663 L 865 700" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Parallel Action 9a (Lane 3 left): Simpan Data & Kas Masuk -->
+  <rect x="700" y="700" width="105" height="58" rx="8" ry="8" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="752" y="720" class="act-text">Simpan Data &amp;</text>
+  <text x="752" y="735" class="act-text">Mutasi Kas Masuk</text>
+  <text x="752" y="750" class="act-text">Cabang</text>
+
+  <!-- Parallel Action 9b (Lane 3 right): Kunci Jatuh Tempo SPP -->
+  <rect x="815" y="700" width="105" height="58" rx="8" ry="8" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="867" y="720" class="act-text">Kunci Tanggal</text>
+  <text x="867" y="735" class="act-text">Jatuh Tempo SPP</text>
+  <text x="867" y="750" class="act-text">Bulan Depan</text>
+
+  <!-- Arrows from Parallel Actions to Join Bar -->
+  <line x1="755" y1="758" x2="755" y2="795" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="865" y1="758" x2="865" y2="795" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Join Bar (Lane 3) -->
+  <line x1="700" y1="795" x2="920" y2="795" stroke="#000000" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Arrow from Join Bar -> Action 10 (Lane 2) -->
+  <path d="M 810 798 L 810 840 L 500 840 L 500 870" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 10 (Lane 2): Cetak Kuitansi PDF -->
+  <rect x="395" y="870" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="500" y="890" class="act-text">Mencetak Kuitansi Resmi</text>
+  <text x="500" y="905" class="act-text">Berformat PDF</text>
+
+  <!-- Arrow Action 10 -> Action 11 (Lane 1) -->
+  <line x1="395" y1="894" x2="295" y2="894" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Action 11 (Lane 1): Serahkan Kuitansi Fisik ke Orang Tua -->
+  <rect x="85" y="870" width="210" height="48" rx="10" ry="10" fill="#fff" stroke="#000" stroke-width="1.5" />
+  <text x="190" y="890" class="act-text">Menyerahkan Kuitansi</text>
+  <text x="190" y="905" class="act-text">Fisik ke Orang Tua Siswa</text>
+
+  <!-- Arrow Action 11 -> Final State (Lane 1) -->
+  <line x1="190" y1="918" x2="190" y2="975" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Final State (Lane 1) -->
+  <circle cx="190" cy="990" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+  <circle cx="190" cy="990" r="9" fill="#000000" />
+
+</svg>

@@ -1,0 +1,749 @@
+[00:00 - 00:29] Dia, perlalu, aku bilang, gak berani kalau kamu, eh, dia ke proyek, gak berani aku ke prototipe karena, pertama, dari sananya juga belum berani implementasi, mitranya belum, karena awalnya dia integrasi dengan MPA, ternyata kan dia disuruh buat table sendiri, dari sini saya bilang, oh berarti kalau dia buat table, dia belum berani implementasi ke satu pintunya, mereka sistem kan satu pintu kalau nggak, nah itu berarti belum bisa, otomatis kamu hanya sebagai proyek saja, karena nanti mereka akan,
+[00:30 - 00:49] lihat dulu, kalau oke baru diadopsi, belum langsung diimplementasikan, nah itu, makanya dia ke proyek, kalau kamu memang, dari mitranya sudah harus implementasi, dan langsung dipakai, yaudah, sekalian prototipe, berdasarkan itu, ya kebutuhan mitra,
+[00:49 - 01:19] ya, dari mitra juga, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaud
+[01:19 - 01:49] yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, ya
+[01:49 - 02:19] kita bisa akses, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah, yaudah
+[02:19 - 02:48] Nanti sambil coba disesuaikan lagi ya, saya dilaporan dulu ya, kayak punya si adit dia tadi sudah lumayan, jadi yang biasanya ditulis mahasiswa itu pertama itu mereka gambaran umum dulu, udah masuk ke poinnya kan, kayak ini kan, masih ngomongin gambaran umum terhadap bimbelnya, nanti selesaikan kalian gambaran umum terhadap media itu apa, sesuai dengan penyamu mas juga yaudah masuk ke dua itu misalnya sedikit membahas profilnya, profilnya
+[02:49 - 02:57] Mitra itu kayak apa sih profilnya, yaudah, yaudah, yaudah bidang apa, baru nanti masuk ke bab tiga, bab empat itu bisa ngomong tentang permasalahan
+[02:57 - 03:05] Permasalahan yang dihadapi itu apa sih, permasalahan itu pasti harus jadi solusi kamu nanti, yang diselesaikan kan, permasalahan
+[03:05 - 03:18] Nah, kelima, itu berarti dari permasalahan muncullah solusi, nah solusi berarti kamu bisa menceritakan dengan misalnya penelitian-penelitian terdahulu dulu
+[03:18 - 03:21] Penelitian terdahulu
+[03:21 - 03:28] Nah, misalkan nih, ada masalah, kamu baca kan, terus kamu baca nih referensinya
+[03:28 - 03:31] Oh, yang paling mendekati dengan permasalahan kamu
+[03:31 - 03:34] Nah, nanti permasalahan itu, solusi itu
+[03:34 - 03:41] Penelitian terdahulu yang paling dekat dengan permasalahan dan menggunakan metode yang kamu mau angkat
+[03:41 - 03:47] Itu lebih bagus, karena nanti dari situ menguatkan metode yang kamu angkat, metode pengembangannya
+[03:47 - 03:53] Kayak punya si Aditya tadi kan dia mengangkat terkait bangun sistem transportasi menggunakan RAD
+[03:53 - 04:01] Nah, dia dapat tuh dua jurnal yang permasalahan buat website juga terkait transportasi dan menggunakan RAD
+[04:01 - 04:10] Hujanya buat apa? Buat penguat dia bahwa misalkan metode yang dia gunakan itu sudah pernah ada orang yang menggunakan dengan masalah yang hampir sama
+[04:10 - 04:13] Menguatkan gitu, karena kalau...
+[04:13 - 04:15] Dan kamu juga harus bisa menjelaskan...
+[04:15 - 04:19] Nanti...
+[04:19 - 04:24] Kalau bisa, kamu bisa menyimbolkan kayak gini
+[04:24 - 04:27] Atau bisa di latar belakang, atau di perbandingan metode kan ada tuh
+[04:27 - 04:28] Perbandingan metode ya
+[04:28 - 04:30] Karena gini, kayak punya Aditya tadi, saya tanya juga
+[04:30 - 04:33] Kalau pakai RAD, RAD kan dia fleksibel gitu
+[04:33 - 04:35] Dia bilang fleksibel Pak
+[04:35 - 04:36] Sedangkan...
+[04:36 - 04:39] PXP, XP itu juga fleksibel
+[04:39 - 04:43] Nah, sekarang bisa nggak saya selesaikan menggunakan ini atau ini?
+[04:43 - 04:46] Kalau misalkan bisa, kenapa kamu pakai RAD?
+[04:46 - 04:48] Pertanyaan secara itu kan
+[04:48 - 04:50] Apa yang memilih kamu menuju...
+[04:50 - 04:52] Oh, saya sesuai dengan RAD
+[04:52 - 04:54] Apa yang membuat kamu merasa RAD ini lebih cocok?
+[04:54 - 04:57] Nah, itu cari dan ada referensinya
+[04:57 - 05:00] Jangan kamu bilang, oh saya suka RAD Pak, karena nggak bisa suka-suka nam
+[05:00 - 05:02] Yang kita tanya itu adalah
+[05:02 - 05:05] Kenapa pakai RAD? Masalahnya dimitra kayak apa?
+[05:05 - 05:08] Kenapa harus lebih oke RAD?
+[05:08 - 05:10] Lebih cocok RAD?
+[05:10 - 05:12] Nah, itu harus ada penguatnya
+[05:12 - 05:15] Jangan sampai kamu bilang, oh menurut saya karena saya belajarnya RAD, nggak bisa
+[05:15 - 05:19] Apalagi kalau kamu membandingkan metode
+[05:19 - 05:22] Itu sedangnya kamu harus tahu kan berapa metode
+[05:22 - 05:24] Kalau kamu pakainya cuma RAD-nya
+[05:24 - 05:27] Kamu bilang bagus RAD, karena kamu cuma tahunya RAD
+[05:27 - 05:31] Tapi kalau kamu mendalui RAD, PSP, ESP
+[05:31 - 05:32] Dari situ kamu bisa menyimpulkan
+[05:32 - 05:36] Oh saya pakai RAD lebih cocok, karena lebih sering berkomunikasi dengan mitra-nya
+[05:36 - 05:37] Nah, dasar itu dari mana?
+[05:37 - 05:38] Refresinya ini Pak
+[05:38 - 05:43] RAD itu ada tahapan yang nanti saya akan sering berkomunikasi dengan mitra
+[05:43 - 05:46] Jadi, harus ada penguatnya
+[05:46 - 05:48] Jadi, ada alasan jangan sampai menjawab dengan
+[05:48 - 05:51] Oh, karena dulu belajarnya RAD, oh nggak bisa
+[05:51 - 05:55] Kalau belajar RAD kamu berarti belum sentuh sesuka ya
+[05:55 - 06:00] Karena kalau membandingkan metode, berarti harus tahu semua metode baru kamu menyimpulkan kan
+[06:00 - 06:04] Nanti cek lagi perbandingan metode di bab dua itu ya
+[06:04 - 06:06] Tabelnya harus benar
+[06:06 - 06:07] Kalau punya aditya-aditya, salah
+[06:07 - 06:11] Harusnya di sini tuh ada kayak penelitianya siapa ya kan
+[06:11 - 06:13] Coba nanti cek ya, saya tahu yang salah judulnya apa
+[06:13 - 06:15] Judulnya hasil, nggak cuma hasil
+[06:15 - 06:17] Kalau punya aditya itu cuma hasil
+[06:17 - 06:20] Nah, ini namanya perbandingan hasil, kemudian keterangannya apa?
+[06:20 - 06:22] Keterangan dari perbandingan ini apa?
+[06:22 - 06:25] Kenapa sudah tahu judulnya ini, hasilnya ini
+[06:25 - 06:27] Tapi kenapa kamu masih pakai RAD?
+[06:27 - 06:29] Alasannya apa?
+[06:29 - 06:33] Oh, berarti ini kak yang benar adalah dari nama ini benar
+[06:33 - 06:35] Terus ada pembedanya gitu, Pak
+[06:35 - 06:37] Ini kan nama
+[06:37 - 06:39] Ini apa? Teknologi apa?
+[06:39 - 06:41] Ini dari template ya, Pak
+[06:41 - 06:43] Oh, kalau ada template-nya kayak gini?
+[06:43 - 06:45] Iya, sebentar
+[06:45 - 06:47] Ini hasil
+[06:49 - 06:51] Oke sih, kalau template-nya gini ikuti ini
+[06:51 - 06:53] Cuma kamu harus bisa, jangan cuma dari sini hasilnya
+[06:53 - 06:55] Ini hasilnya
+[06:55 - 06:57] Iya lah, kalau kamu cuma hasilnya buat apa?
+[06:57 - 06:59] Ditulis di perbandingan
+[06:59 - 07:01] Cuma tahu hasilnya terus sama
+[07:01 - 07:03] Terus kamu baca itu apa, Pak?
+[07:03 - 07:05] Tujuannya kamu tahu dari situ, kamu langsung bilang
+[07:05 - 07:07] Oh, saya lebih cocok RAD
+[07:07 - 07:09] Ini dia menggunakan tahapan ini, dan itu gak saya gak pakai
+[07:09 - 07:11] Kalau RAD dia lebih detail, Pak
+[07:11 - 07:13] Nah, itu yang dicari
+[07:13 - 07:15] Perbandingan metode
+[07:15 - 07:17] Bukan cuma membahas punya dia hasilnya
+[07:17 - 07:19] Terus buat apa? Kalau kamu sudah tahu punya hasilnya itu apa?
+[07:19 - 07:21] Apa yang kamu dapatkan?
+[07:21 - 07:23] Untuk perbandingannya sendiri, Pak? Ada minimal gak, Pak?
+[07:23 - 07:25] Kita harus mengambil berapa metode gitu?
+[07:25 - 07:27] Kalau saya, saya gak ada minimum yang penting
+[07:27 - 07:29] Gitu
+[07:29 - 07:31] Ya semakin banyak pasti semakin bagus
+[07:31 - 07:33] Kalau saya gitu, misalnya kamu ngomongin
+[07:33 - 07:35] Metode yang fleksibel ya
+[07:35 - 07:37] Ya kamu bandingkan metode yang fleksibel
+[07:37 - 07:39] Yang sama, jangan RAD terus pakai waterfall
+[07:39 - 07:41] Ya jauh banget
+[07:41 - 07:43] Waterfall dia sudah dari awal
+[07:43 - 07:45] Sudah ditentukan, dia gak fleksibel gitu
+[07:45 - 07:47] Sedangkan kamu sudah bilang punya saya ini yang fleksibel
+[07:47 - 07:49] Kalau kamu bandingkan waterfall, bagi saya itu gak
+[07:49 - 07:51] Kayak apa? Kayak kurang kerjaan
+[07:51 - 07:53] Kalau bagi saya, karena kamu sudah jelas
+[07:53 - 07:55] Waterfall gak cocok dengan kamu, makanya masih pakai butterfly banget
+[07:55 - 07:57] Mending yang dengan
+[07:57 - 08:00] Se-level dengan kamu, jadi lebih kritis kita, Mas
+[08:00 - 08:02] Lebih detail juga tadi
+[08:02 - 08:04] Karena kalau kamu dengan waterfall, pasti orang bilang
+[08:04 - 08:06] Kan kalau waterfall, okelah jauh
+[08:06 - 08:09] Tapi kalau misalnya RAD dengan PSP, PSP dengan SP ya
+[08:09 - 08:11] Kamu akan lebih kritis disitu
+[08:11 - 08:13] Karena kamu kuyih metode nya hampir sama nih
+[08:13 - 08:15] Poin mana yang kamu membedakan
+[08:15 - 08:17] Kalau kamu tidak waterfall, jauh banget
+[08:17 - 08:19] Kamu gak usah bandingkan, udah tau
+[08:19 - 08:21] Udah, gambarnya udah, udah tau
+[08:21 - 08:23] Saya lebih suka yang lebih
+[08:23 - 08:27] Dibandingkan itu, bukan karena ikuti template nya
+[08:27 - 08:29] Ket bandingan, tapi biar kamu tau
+[08:29 - 08:31] Kenapa saya harus pakai metode ini
+[08:31 - 08:35] Jadi, dalam metode yang hampir sama itu banyak
+[08:35 - 08:37] Yang sebanding gitu
+[08:37 - 08:39] Tapi, saya pakai RAD, harus punya alasan
+[08:39 - 08:43] Banyak kok mahasiswa saya yang
+[08:43 - 08:45] Cuma hal itu gak lulus
+[08:45 - 08:47] Cuma gara-gara gak bisa membedakan
+[08:47 - 08:49] Entar metode nya gitu pak
+[08:49 - 08:51] Entar metode, paling utama itu metode
+[08:51 - 08:53] Karena proposal itu metode adalah
+[08:53 - 08:55] Angka-angka kamu mencapai solusi
+[08:55 - 08:57] Kalau metode kamu salah, kamu gak paham
+[08:57 - 08:59] Udah disitu, kita gak
+[08:59 - 09:01] Kalau cuma masalah kamu belum
+[09:01 - 09:03] Masih belum paham, cara, frame atau belum itu
+[09:03 - 09:05] Kita masih terima
+[09:05 - 09:07] Atau kalau udah metode, udah
+[09:07 - 09:09] Akal yang bisa mengulang ramah ujian
+[09:09 - 09:13] Makanya kan salah objek itu sedi metode
+[09:13 - 09:15] Kalau cuma penulisan itu masih bisa diperbaiki
+[09:15 - 09:17] Masih selesai, tapi
+[09:17 - 09:19] Kalau sudah mis di metode itu gak bisa diperbaiki
+[09:19 - 09:21] Karena dia sudah proposal
+[09:21 - 09:23] Metode kalau salah harus diganti
+[09:23 - 09:25] Dan salah berarti harus ulang ujian ulang
+[09:25 - 09:27] Tapi kalau cuma penulisan, kamu masih
+[09:27 - 09:29] Oh nanti pas revisi, itu bisa
+[09:29 - 09:31] Kalau metode gak bisa
+[09:31 - 09:33] Sebenarnya udah ada nyari pak
+[09:33 - 09:35] Untuk beli metode yang ada
+[09:35 - 09:37] Saya menggunakan PXP pak
+[09:37 - 09:39] PXP
+[09:39 - 09:41] Kemarin walaupun ditanyakan dengan Bu Ayu
+[09:41 - 09:43] Karena banyak banget
+[09:43 - 09:45] Masih selesai menggunakan
+[09:45 - 09:47] Jadi yang saya tangkap dari argumenti Bu Ayu itu
+[09:47 - 09:49] Kalau bisa mencoba
+[09:49 - 09:51] Metode yang lain
+[09:51 - 09:53] Terus saya ada tanyakan kembali
+[09:53 - 09:55] Kalau misalkan saya tetep ketah dengan
+[09:55 - 09:57] Argumen saya tetep menggunakan PXP dengan data yang ada
+[09:57 - 09:59] Apakah bisa?
+[09:59 - 10:01] Kalau saya lebih cocok bukan banyak yang pakai
+[10:01 - 10:02] Kalau saya
+[10:02 - 10:03] Saya lebih cenderung
+[10:03 - 10:05] Permasalahan itu lebih cocok
+[10:05 - 10:06] Solusinya pakai metode itu
+[10:06 - 10:07] Kalau memang lebih cocok itu
+[10:07 - 10:08] Gak bisa dipaksa
+[10:08 - 10:09] Oh saya harus
+[10:09 - 10:11] Haruskan di metode karena itu banyak pakai gak bisa
+[10:11 - 10:12] Ya ini masalah saya sendiri
+[10:12 - 10:14] Gak ada hubungan dengan masalah lain
+[10:14 - 10:15] Yang lain punya masalah sendiri-sendiri
+[10:15 - 10:16] Solusinya sendiri
+[10:16 - 10:18] Kalau saya lebih kesikir
+[10:18 - 10:19] Cuma
+[10:19 - 10:20] Kau punya alasan
+[10:20 - 10:21] Kalau kau bilang
+[10:21 - 10:22] Oh saya lebih cocok mempertahankan PXP
+[10:22 - 10:24] Mungkin buahnya PIGGAMI itu kan ada PXP
+[10:24 - 10:25] Ada yang hampir sama
+[10:25 - 10:27] Namanya masih pakai PXP gitu
+[10:27 - 10:29] Mungkin masih lain ada
+[10:29 - 10:30] Nah kamu harus tahu
+[10:30 - 10:31] Kau bedanya di sini apa
+[10:31 - 10:33] Poin mana yang nanti pekerjaan itu
+[10:33 - 10:36] Yang di tempat lain gak bisa
+[10:36 - 10:38] Hanya di sini tahapan apa
+[10:38 - 10:40] Yang lebih cocok dengan saya
+[10:40 - 10:41] Ya
+[10:41 - 10:42] Sama ini juga Pak
+[10:42 - 10:44] Kalau misalkan terdapat
+[10:44 - 10:46] Saya dapat jurnal itu
+[10:46 - 10:47] Sebenarnya sama masalahnya
+[10:47 - 10:48] Tentang bimbel
+[10:48 - 10:49] Itu juga
+[10:49 - 10:51] Dan ingin membuat manajemen dashboard
+[10:51 - 10:52] Tapi metode nya itu beda
+[10:52 - 10:54] Itu juga bisa dijadikan referensi
+[10:54 - 10:56] Atau tadi kan saran dari Bapak
+[10:56 - 10:58] Kalau bisa mencari jurnal yang
+[10:58 - 10:59] Memang masalahnya yang sama
+[10:59 - 11:00] Dan metode nya yang sama
+[11:00 - 11:01] Contohnya kayak adit tadi
+[11:01 - 11:03] Jadi gini
+[11:03 - 11:05] Kalau kamu mau angkat di latar belakang
+[11:05 - 11:06] Ya
+[11:06 - 11:07] Gunakan
+[11:07 - 11:09] Jangan membuat dari permasalahnya
+[11:09 - 11:11] Tapi metode nya
+[11:11 - 11:13] Karena kamu mau menunjukkan
+[11:13 - 11:15] Bahwa metode ini cocok buat kamu
+[11:15 - 11:17] Bukan masalahnya yang cocok
+[11:17 - 11:19] Masalahnya gak
+[11:19 - 11:21] Selesai dengan masalah kamu
+[11:21 - 11:22] Jadi metode nya
+[11:22 - 11:24] Kenapa sih harus kamu pakai PXP
+[11:24 - 11:26] Kenapa harus pakai PXP
+[11:26 - 11:28] Maka kamu harus cari jurnal terdahulu
+[11:28 - 11:30] Untuk di latar belakang yang menggunakannya PXP
+[11:32 - 11:34] Nah kalau perbandingan metode
+[11:34 - 11:36] Kamu boleh pakai masalahnya yang sama
+[11:36 - 11:37] Tapi dia pakai metode ini
+[11:37 - 11:38] Apa itu boleh
+[11:38 - 11:40] Ya mas saya untuk pembandingan
+[11:40 - 11:41] Pembandingan boleh
+[11:41 - 11:42] Karena kalau di latar belakang
+[11:42 - 11:43] Menggunakan yang sama-sama
+[11:43 - 11:44] Alasan metode
+[11:44 - 11:46] Karena kalau kamu masukin metode yang beda
+[11:46 - 11:48] Apa yang masukin di latar belakang
+[11:48 - 11:51] Apa yang memperkuat apa gitu
+[11:51 - 11:53] Masalah solusi jahit beda
+[11:53 - 11:55] Masalahnya sama pak
+[11:55 - 11:57] Tapi solusinya beda
+[11:57 - 11:59] Apa yang memperkuat
+[11:59 - 12:01] Agumen kamu disitu gak ada
+[12:01 - 12:05] Lu mungkin dari ini pak
+[12:05 - 12:09] Disitasi berarti saya bisa ngisi untuk judulnya
+[12:09 - 12:11] Udah di ACC Cak
+[12:11 - 12:13] Oke
+[12:13 - 12:15] Lu Ayu
+[12:15 - 12:17] Oke
+[12:17 - 12:19] Terus mungkin terakhir
+[12:19 - 12:21] Bagi bagi bagian lain
+[12:21 - 12:23] Dari landing page itu
+[12:23 - 12:24] Nanti pada akhirnya
+[12:24 - 12:25] Menurut Pak Ryo sendiri
+[12:25 - 12:27] Linknya sama
+[12:27 - 12:28] Atau page nya sama
+[12:28 - 12:29] Atau
+[12:29 - 12:30] Memang
+[12:30 - 12:31] Dari
+[12:31 - 12:33] Landing page yang dari artanya gitu
+[12:33 - 12:34] Baiknya
+[12:34 - 12:35] Landing page ya
+[12:35 - 12:36] Kalau saya gini
+[12:36 - 12:37] Pertama itu
+[12:37 - 12:38] Itu penting dong
+[12:38 - 12:39] Kamu harus
+[12:39 - 12:40] Pelancaran dulu
+[12:40 - 12:41] Pelancaran
+[12:41 - 12:43] Karena kan itu kebutuhan kembangan sistem
+[12:43 - 12:45] Pertama
+[12:45 - 12:46] Tentukan dulu
+[12:46 - 12:47] Mereka itu
+[12:47 - 12:48] Biasa warnanya apa
+[12:48 - 12:49] Karena kamu gak bisa
+[12:49 - 12:50] Masih
+[12:50 - 12:51] Masih
+[12:51 - 12:52] Masih
+[12:52 - 12:53] Masih
+[12:53 - 12:54] Masih
+[12:54 - 12:55] Mereka
+[12:55 - 12:56] Tidak ada sih sebenarnya Pak
+[12:56 - 12:57] Nah itu
+[12:57 - 12:58] Standar-standar warnanya
+[12:58 - 12:59] Fontnya
+[12:59 - 13:00] Itu harus seragam
+[13:00 - 13:02] Masalah nanti tampilan
+[13:02 - 13:03] Kamu bisa
+[13:03 - 13:04] Jangan sampai
+[13:04 - 13:05] Orang tau
+[13:05 - 13:06] Misalnya
+[13:06 - 13:07] Mengenal
+[13:07 - 13:08] Bisisnya ini
+[13:08 - 13:09] Ketika lihat puncak kamu
+[13:09 - 13:10] Dia harus tau ini
+[13:10 - 13:11] Ini gitu
+[13:11 - 13:12] Misalnya punya yang
+[13:12 - 13:13] Yang
+[13:13 - 13:14] Buat ahi warnanya
+[13:14 - 13:15] Ungu
+[13:15 - 13:16] Kenapa
+[13:16 - 13:17] Ya semua orang tau
+[13:17 - 13:18] Kalau ahi itu ungu gitu
+[13:18 - 13:19] Warnanya biru
+[13:19 - 13:20] Jadi primagama
+[13:20 - 13:22] Nah gitu Mas
+[13:22 - 13:24] Jadi landing spec nya sesuaikan
+[13:24 - 13:26] Masalah nanti fitur kamu
+[13:26 - 13:27] Indesain dengan lain
+[13:27 - 13:28] Maksud saya ini sih Pak
+[13:28 - 13:29] Lebih kearah
+[13:29 - 13:31] Apakah nanti si user yang ini
+[13:31 - 13:32] Kan rencana 2 user nya
+[13:32 - 13:33] Memang dari internalnya apa
+[13:33 - 13:35] Itu apakah dari mereka
+[13:35 - 13:37] Baiknya aksesnya lewat landing page
+[13:37 - 13:38] Yang
+[13:38 - 13:40] Notabene itu memang bisa digunakan oleh
+[13:40 - 13:41] Semua orang
+[13:41 - 13:42] Atau
+[13:42 - 13:43] Khusus link
+[13:43 - 13:44] Yang di
+[13:44 - 13:46] Dikasih ke mereka aja gitu
+[13:46 - 13:47] Dan itu gak disebarkan secara umum
+[13:49 - 13:50] Maksud kamu waktu dia
+[13:50 - 13:51] Dashboard admin itu
+[13:51 - 13:52] Ya
+[13:52 - 13:53] Iya
+[13:53 - 13:54] Itu
+[13:54 - 13:55] Tergantung kamu sih Mas
+[13:55 - 13:57] Tak tunjukin punya aku aja ya
+[13:57 - 13:58] Ya boleh
+[13:58 - 13:59] Mitra lagi Pak
+[13:59 - 14:00] Sorry guys
+[14:00 - 14:01] Yang ngomong tanya apa tadi
+[14:01 - 14:02] Yang ngomong tanya apa tadi
+[14:02 - 14:03] Yang ngomong tanya apa tadi
+[14:03 - 14:04] Yang ngomong tanya apa tadi
+[14:04 - 14:05] Yang ngomong tanya apa tadi
+[14:05 - 14:06] Yang ngomong tanya apa
+[14:06 - 14:08] Yang ngomong tanya apa
+[14:08 - 14:09] Yang ngomong tanya apa
+[14:09 - 14:10] Yang ngomong tanya apa
+[14:10 - 14:11] Yang ngomong tanya apa
+[14:11 - 14:12] Yang ngomong tanya apa
+[14:12 - 14:13] Yang ngomong tanya apa
+[14:13 - 14:14] Yang ngomong tanya apa
+[14:14 - 14:15] Yang ngomong tanya apa
+[14:15 - 14:16] Yang ngomong tanya apa
+[14:16 - 14:17] Yang ngomong tanya apa
+[14:17 - 14:18] Yang ngomong tanya apa
+[14:18 - 14:19] Yang ngomong tanya apa
+[14:19 - 14:20] Yang ngomong tanya apa
+[14:20 - 14:21] Yang ngomong tanya apa
+[14:21 - 14:22] Yang ngomong tanya apa
+[14:22 - 14:23] Yang ngomong tanya apa
+[14:23 - 14:24] Yang ngomong tanya apa
+[14:24 - 14:25] Yang ngomong tanya apa
+[14:25 - 14:26] Yang ngomong tanya apa
+[14:26 - 14:27] Yang ngomong tanya apa
+[14:27 - 14:28] Yang ngomong tanya apa
+[14:28 - 14:29] Yang ngomong tanya apa
+[14:29 - 14:30] Yang ngomong tanya apa
+[14:30 - 14:31] Yang ngomong tanya apa
+[14:31 - 14:32] Yang ngomong tanya apa
+[14:32 - 14:33] Yang ngomong tanya apa
+[14:33 - 14:34] Yang ngomong tanya apa
+[14:34 - 14:35] Yang ngomong tanya apa
+[14:35 - 14:36] Yang ngomong tanya apa
+[14:36 - 14:37] Yang ngomong tanya apa
+[14:37 - 14:38] Yang ngomong tanya apa
+[14:38 - 14:39] Yang ngomong tanya apa
+[14:39 - 14:40] Yang ngomong tanya apa
+[14:40 - 14:41] Yang ngomong tanya apa
+[14:41 - 14:42] Yang ngomong tanya apa
+[14:42 - 14:43] Yang ngomong tanya apa
+[14:43 - 14:44] Yang ngomong tanya apa
+[14:44 - 14:45] Yang ngomong tanya apa
+[14:45 - 14:46] Yang ngomong tanya apa
+[14:46 - 14:47] Yang ngomong tanya apa
+[14:47 - 14:48] Yang ngomong tanya apa
+[14:48 - 14:49] Yang ngomong tanya apa
+[14:49 - 14:50] Yang ngomong tanya apa
+[14:50 - 14:51] Yang ngomong tanya apa
+[14:51 - 14:52] Yang ngomong tanya apa
+[14:52 - 14:53] Yang ngomong tanya apa
+[14:53 - 14:54] Yang ngomong tanya apa
+[14:54 - 14:55] Yang ngomong tanya apa
+[14:55 - 14:56] Yang ngomong tanya apa
+[14:56 - 14:57] Yang ngomong tanya apa
+[14:57 - 14:58] Yang ngomong tanya apa
+[14:58 - 14:59] Yang ngomong tanya apa
+[14:59 - 15:00] Yang ngomong tanya apa
+[15:00 - 15:01] Yang ngomong tanya apa
+[15:01 - 15:02] Yang ngomong tanya apa
+[15:02 - 15:03] Yang ngomong tanya apa
+[15:03 - 15:04] Yang ngomong tanya apa
+[15:04 - 15:05] Yang ngomong tanya apa
+[15:05 - 15:06] Yang ngomong tanya apa
+[15:06 - 15:07] Yang ngomong tanya apa
+[15:07 - 15:08] Yang ngomong tanya apa
+[15:08 - 15:09] Yang ngomong tanya apa
+[15:09 - 15:10] Yang ngomong tanya apa
+[15:10 - 15:11] Yang ngomong tanya apa
+[15:11 - 15:12] Yang ngomong tanya apa
+[15:12 - 15:13] Yang ngomong tanya apa
+[15:13 - 15:14] Yang ngomong tanya apa
+[15:14 - 15:15] Yang ngomong tanya apa
+[15:15 - 15:16] Yang ngomong tanya apa
+[15:16 - 15:17] Yang ngomong tanya apa
+[15:17 - 15:18] Yang ngomong tanya apa
+[15:18 - 15:19] Yang ngomong tanya apa
+[15:19 - 15:20] Yang ngomong tanya apa
+[15:20 - 15:21] Yang ngomong tanya apa
+[15:21 - 15:22] Yang ngomong tanya apa
+[15:22 - 15:23] Yang ngomong tanya apa
+[15:23 - 15:24] Yang ngomong tanya apa
+[15:24 - 15:25] Yang ngomong tanya apa
+[15:25 - 15:26] Yang ngomong tanya apa
+[15:26 - 15:27] Yang ngomong tanya apa
+[15:27 - 15:28] Yang ngomong tanya apa
+[15:28 - 15:29] Yang ngomong tanya apa
+[15:29 - 15:30] Yang ngomong tanya apa
+[15:30 - 15:31] Yang ngomong tanya apa
+[15:31 - 15:32] Yang ngomong tanya apa
+[15:32 - 15:33] Yang ngomong tanya apa
+[15:33 - 15:34] Yang ngomong tanya apa
+[15:34 - 15:35] Yang ngomong tanya apa
+[15:35 - 15:36] Yang ditampilkan sebelumnya
+[15:36 - 15:37] Itu memang buat umum
+[15:37 - 15:38] Bisa Pak
+[15:38 - 15:39] Yang tampilkan depan bisa
+[15:39 - 15:40] Yang tampilkan depan bisa
+[15:40 - 15:41] Depan ini
+[15:41 - 15:42] Cuma disini bisa
+[15:42 - 15:43] Semua orang bisa sini
+[15:43 - 15:44] Cuma bedanya
+[15:44 - 15:45] Dia kalo support admin
+[15:45 - 15:46] Dia punya dashboardnya sini
+[15:46 - 15:47] Kalo user dia
+[15:47 - 15:48] Punya juga dashboard
+[15:48 - 15:49] Cuma dashboardnya user ya
+[15:49 - 15:50] Disini ketutup
+[15:50 - 15:52] Yang disini
+[15:52 - 15:53] Master-master ketutup
+[15:53 - 15:55] Contohnya misalnya nih
+[15:55 - 16:00] Aku login pake akunnya perusahaan
+[16:02 - 16:04] Jadi kamu gak terlalu banyak tampilan
+[16:04 - 16:07] Itu berarti tergantung dari mitra ya Pak
+[16:07 - 16:08] Kalo misalkan
+[16:08 - 16:09] Kan sebenernya
+[16:09 - 16:11] Dari artanya sudah ada landing page nya Pak
+[16:11 - 16:12] Ya kan
+[16:12 - 16:13] Dan
+[16:13 - 16:15] Sebenernya saya juga bisa tambahkan
+[16:15 - 16:16] Dari sisi yang sama
+[16:16 - 16:17] Seperti
+[16:17 - 16:18] Karena mengini aksesnya
+[16:18 - 16:19] Dari landing page
+[16:19 - 16:21] Kalo misalkan
+[16:21 - 16:22] Nanti mitra nya meminta
+[16:22 - 16:23] Untuk
+[16:23 - 16:24] Di landing page
+[16:24 - 16:25] Jadikan satu
+[16:25 - 16:26] Atau
+[16:26 - 16:28] Dari mitra ini
+[16:28 - 16:29] Memintanya
+[16:29 - 16:30] Kursus dashboard
+[16:30 - 16:31] Admin aja
+[16:31 - 16:32] Itu berarti
+[16:32 - 16:33] Terserah dari mereka
+[16:33 - 16:34] Jadi gini dulu
+[16:34 - 16:35] Kalo kamu
+[16:35 - 16:36] Pertama kamu
+[16:36 - 16:37] Tentu kontrolnya
+[16:37 - 16:38] Setiap kontrol itu
+[16:38 - 16:39] Bisa apa
+[16:39 - 16:40] Jadi
+[16:40 - 16:41] Ketika kamu
+[16:41 - 16:42] Oh
+[16:42 - 16:43] Kalo dia sebagai
+[16:43 - 16:45] Umum nih
+[16:45 - 16:46] Yang
+[16:46 - 16:47] Apa
+[16:47 - 16:48] Yang user itu apa
+[16:48 - 16:49] Kalo umumnya itu yang
+[16:49 - 16:50] Males gitu ya
+[16:50 - 16:51] Kalo umumnya ini
+[16:51 - 16:52] Lebih tepatnya
+[16:52 - 16:53] Semua orang bisa menganggir sih Pak
+[16:53 - 16:54] Kaya cuman
+[16:54 - 16:55] Kaya kompro gitu sih Pak
+[16:55 - 16:56] Kalo untuk yang sekarang
+[16:56 - 16:57] Keknya profile aja kan
+[16:57 - 16:58] Cuma
+[16:58 - 16:59] Beda
+[16:59 - 17:00] Dia
+[17:00 - 17:02] Sekarang saya tanya gini
+[17:02 - 17:03] Kalo dia login
+[17:03 - 17:04] Dia bisa apa
+[17:04 - 17:06] Apakah sistem itu
+[17:06 - 17:07] Hanya untuk menambilkan aja
+[17:07 - 17:09] Kalo dia perlu sesuatu
+[17:09 - 17:10] Tindakan yang butuh
+[17:10 - 17:11] Ya harus
+[17:11 - 17:12] Kayak misalnya mas
+[17:12 - 17:13] Kalo kamu
+[17:13 - 17:14] Buka shopee
+[17:14 - 17:15] Kamu gak harus login
+[17:15 - 17:16] Tapi kalo kamu mau belanja
+[17:16 - 17:17] Kamu harus login
+[17:17 - 17:18] Kayak gitu
+[17:18 - 17:19] Jadi
+[17:19 - 17:20] Kami profile bisa diakses
+[17:20 - 17:21] Tapi kalo dia login
+[17:21 - 17:23] Berarti ada sesuatu yang bisa dilakukan
+[17:23 - 17:24] Apakah
+[17:24 - 17:25] Kika dia mendaftar
+[17:25 - 17:27] Maka nanti dia punya dashboard sendiri
+[17:27 - 17:28] Atau
+[17:28 - 17:29] Atau
+[17:29 - 17:30] Dia bisa comment atau apa
+[17:30 - 17:31] Dia harus mendaftar
+[17:31 - 17:32] Makanya gitu mas
+[17:32 - 17:33] Jadi kamu harus tentukan dulu
+[17:33 - 17:35] Cakupannya setiap pro itu
+[17:35 - 17:36] Ngapain aja
+[17:36 - 17:37] Baru nanti kamu bisa tentukan
+[17:37 - 17:39] Itunya kalo kayak
+[17:39 - 17:40] Yang bisnisnya kamu
+[17:40 - 17:42] Itu bisa diakses publik
+[17:42 - 17:43] Cuma kalo dia login
+[17:43 - 17:44] Tujuannya buat apa dulu
+[17:44 - 17:46] Kamu ngasih misalnya
+[17:46 - 17:47] Oh
+[17:47 - 17:48] Ada login nih
+[17:50 - 17:53] Apakah login itu dia bisa registrasi
+[17:53 - 17:54] Atau
+[17:54 - 17:56] Misalkan login itu hanya untuk admin
+[17:56 - 17:57] Berarti kalo
+[17:57 - 17:59] Maksudnya gini
+[17:59 - 18:00] Kalo hanya umum
+[18:00 - 18:02] Gak melakukan tidak kenapa ngamun
+[18:02 - 18:04] Login itu dia gak berfungsi
+[18:04 - 18:05] Dia gak bisa registrasi
+[18:05 - 18:06] Gak ada tombol registrasi
+[18:06 - 18:08] Maka dia login bingung juga
+[18:08 - 18:09] Kalo dia gak punya akun
+[18:09 - 18:10] Fungsinya buat apa gitu
+[18:10 - 18:11] Itu
+[18:11 - 18:12] Fungsinya untuk yang tadi
+[18:12 - 18:13] Login itu untuk
+[18:13 - 18:14] Misalkan admin
+[18:14 - 18:15] Nanti dia punya dashboardnya
+[18:15 - 18:16] Tapi kalo misalkan
+[18:16 - 18:18] Nah itu tadi
+[18:18 - 18:19] Kamu tentukan dulu
+[18:19 - 18:20] Batasannya
+[18:20 - 18:21] Rolenya masing-masing
+[18:21 - 18:22] Itu gak
+[18:22 - 18:23] Jadi aku akan enak
+[18:23 - 18:24] Mendelsirkannya
+[18:24 - 18:25] Oh
+[18:25 - 18:26] Kalo user nanti
+[18:26 - 18:27] Oh user itu
+[18:27 - 18:28] Apa
+[18:28 - 18:29] Fiturnya disitu apa aja
+[18:29 - 18:30] Apakah nanti
+[18:30 - 18:31] User itu ketika
+[18:31 - 18:33] Mendaftar
+[18:33 - 18:34] Nanti dia punya dashboard sendiri
+[18:34 - 18:35] Bisa melihat
+[18:35 - 18:36] Transaksi dia
+[18:36 - 18:37] Kan monitoring perkembangan
+[18:37 - 18:38] Last lesson ya
+[18:38 - 18:40] Setiap minggunya dia
+[18:40 - 18:41] Kayak apa
+[18:41 - 18:42] Reportnya dari
+[18:42 - 18:44] Mentornya gitu ya
+[18:44 - 18:46] Maka kamu buatnya dashboard dia
+[18:46 - 18:47] Untuk login
+[18:47 - 18:48] Tapi pak
+[18:48 - 18:49] Dua role yang saya maksudnya
+[18:49 - 18:50] Yang kemarin
+[18:50 - 18:51] Dibiskusikan juga
+[18:51 - 18:53] Itu memang dari sisi internalnya pak
+[18:53 - 18:54] Jadi um itu
+[18:54 - 18:55] Gak bisa mengakses
+[18:55 - 18:56] Ya berarti
+[18:56 - 18:57] Isi login
+[18:57 - 18:59] Dan itu berarti
+[18:59 - 19:01] Taruh di landing page
+[19:01 - 19:03] Atau gak usah
+[19:03 - 19:04] Ada dua cara
+[19:04 - 19:06] Kalo misalkan
+[19:06 - 19:07] Kamu ingin
+[19:07 - 19:09] Itu hanya untuk internal
+[19:09 - 19:11] Misalkan hanya internal
+[19:11 - 19:13] Kamu gak perlu buat disini
+[19:13 - 19:14] Kayak ini tadi
+[19:14 - 19:15] Karena kalo kamu
+[19:15 - 19:16] Buat kayak gini
+[19:16 - 19:17] Orang jadi mikirnya
+[19:17 - 19:18] Ada cara
+[19:18 - 19:19] Ada fungsi lain
+[19:19 - 19:20] Ada fungsi lain
+[19:20 - 19:21] Sedangkan gak punya akun
+[19:21 - 19:22] Kalo kamu kayak gitu
+[19:22 - 19:24] Buat kayak yang punya Nusantara
+[19:24 - 19:25] Menyapa
+[19:25 - 19:26] Berita gak ada loginnya disini
+[19:26 - 19:28] Tapi kalo dia mau login
+[19:28 - 19:29] Caranya
+[19:29 - 19:30] Slash
+[19:30 - 19:32] Admin
+[19:34 - 19:35] Oke gitu aja pak
+[19:35 - 19:40] Tujuannya emang disembunyikan
+[19:40 - 19:41] Karena gak ada
+[19:41 - 19:42] Umum gak bisa mengakses
+[19:42 - 19:43] Orang umum nanti
+[19:43 - 19:44] Kecap-pecap
+[19:44 - 19:45] Kamu daftar
+[19:45 - 19:46] Tapi kalo disitu
+[19:46 - 19:47] Makanya tadi
+[19:47 - 19:48] Tentukan dulu
+[19:48 - 19:49] Rolenya
+[19:49 - 19:50] Kalo kamu
+[19:50 - 19:51] Usernya
+[19:51 - 19:52] Bisa login pak
+[19:52 - 19:53] Ya taruh depan aja
+[19:53 - 19:55] Biar jadi satu loginnya
+[19:55 - 19:56] Selama dia misal
+[19:56 - 19:57] Rolenya user
+[19:57 - 19:58] Biar login
+[19:58 - 19:59] Ya nanti dia tampilannya
+[19:59 - 20:00] Bisa
+[20:00 - 20:01] Kalo jadi admin
+[20:01 - 20:02] Jadi tetep loginnya tetep sama
+[20:02 - 20:03] Gimana nanti membedakan
+[20:03 - 20:04] Rolenya
+[20:04 - 20:05] Oke
+[20:05 - 20:06] Tapi kalo kamu bisa tutupin
+[20:06 - 20:07] Umum
+[20:07 - 20:08] Ketadi
+[20:08 - 20:09] Kok gak
+[20:09 - 20:10] Bisa diliat oleh umum
+[20:10 - 20:11] Ya berit aja
+[20:11 - 20:12] Slash aja
+[20:12 - 20:13] Jadi orang
+[20:13 - 20:14] Tau kalo mau login
+[20:14 - 20:15] Masih ini
+[20:15 - 20:16] Orang gak mikir sampai situ juga
+[20:16 - 20:17] Kepain juga
+[20:17 - 20:18] Kalau dia
+[20:18 - 20:19] Slash apain
+[20:19 - 20:20] Berarti dia sudah bikin login
+[20:20 - 20:21] Itu aja
+[20:21 - 20:22] Oke
+[20:22 - 20:23] Setelah dia gak punya akun
+[20:23 - 20:24] Gak bisa dah
+[20:24 - 20:25] Oke
+[20:25 - 20:26] Mungkin itu aja
+[20:26 - 20:27] Sampai dari saya pak
+[20:27 - 20:28] Sampai
+[20:28 - 20:29] Sampai
+[20:29 - 20:31] Untuk laporan
+[20:31 - 20:33] Udah ada gambaran ya
+[20:33 - 20:34] Yang tadi pampennya
+[20:34 - 20:35] Oh iya pak
+[20:35 - 20:36] Oh iya pak
+[20:36 - 20:37] Kalo saya mau nanya
+[20:37 - 20:38] Kalo tadi bagian laporan
+[20:38 - 20:39] Bagian satu
+[20:39 - 20:40] Gambaran umum kan pak
+[20:40 - 20:41] Ya
+[20:41 - 20:42] Nah kalo dari bu Iwun
+[20:42 - 20:43] Gambaran umumnya itu
+[20:43 - 20:44] Termasuk
+[20:44 - 20:46] Sejarah dari CEO
+[20:46 - 20:47] Oh keren saya ngambil
+[20:47 - 20:48] Kemarin CEO itu
+[20:48 - 20:49] Ini diawal dia minta
+[20:49 - 20:52] Gambarkan sejarah CEO dari awal
+[20:52 - 20:53] Yang gak akhir
+[20:53 - 20:54] Lebih dahulu
+[20:54 - 20:56] Karena kamu mengangkatnya
+[20:56 - 20:57] SEO
+[20:57 - 20:58] Jadi yang berbedakan sih
+[20:58 - 20:59] Jadi bener
+[20:59 - 21:00] Gambaran umumnya itu
+[21:00 - 21:02] Orang ingin tahu dulu
+[21:02 - 21:03] SEO itu
+[21:03 - 21:04] SEO itu buat apa sih fungsinya
+[21:04 - 21:06] Karena kamu mengangkat topik itu
+[21:06 - 21:08] Jadi kejaran SEO nya
+[21:08 - 21:09] Baru nanti
+[21:09 - 21:10] Ngambang permasalahannya
+[21:10 - 21:11] Boleh gambaran umumnya dari SEO
+[21:11 - 21:13] Oh ini kan dia
+[21:13 - 21:15] Gambaran umumnya dari
+[21:15 - 21:18] Bebelnya sendiri
+[21:18 - 21:23] Judulnya kemarin itu udah?
+[21:23 - 21:25] Judulnya sudah diselesaikan lagi sama Bu Iwun pak
+[21:25 - 21:27] Nah jadinya
+[21:27 - 21:29] Yang kemarin kan dari bapaknya
+[21:29 - 21:30] Ngasih
+[21:30 - 21:31] Opsi judul itu
+[21:31 - 21:32] Optimasi CEO
+[21:32 - 21:33] Integrasi Open Cloud
+[21:33 - 21:34] Untuk otomasi pengelolaan berita
+[21:34 - 21:35] Melalui telegram
+[21:35 - 21:37] Pada website nusantara menyapa.com
+[21:37 - 21:39] Nah diselesaikan sama Bu Iwun
+[21:39 - 21:40] Menjadi optimasi CEO
+[21:40 - 21:42] Dan otomasi pengelolaan berita
+[21:42 - 21:43] Dengan integrasi Open Cloud
+[21:43 - 21:45] Pada website nusantara menyapa
+[21:45 - 21:47] Jadi melalui telegramnya ini
+[21:47 - 21:48] Di
+[21:48 - 21:49] Dihilangkan
+[21:49 - 21:50] Karena kamu bisa
+[21:50 - 21:51] Itu kan cuma pilihan ya
+[21:51 - 21:52] Bisa telegram
+[21:52 - 21:53] Bisa WhatsApp
+[21:53 - 21:54] Nah dilangan aja
+[21:54 - 21:55] Karena kita belum tahu
+[21:55 - 21:57] Apakah nanti telegram
+[21:57 - 21:58] Belum bagus gitu loh
+[21:58 - 21:59] Jadi dilangan
+[21:59 - 22:00] Karena juga tadi
+[22:00 - 22:01] Di awal kan ada optimasi CEO
+[22:01 - 22:03] Dan otomasi pengelolaan berita itu kan pak
+[22:03 - 22:04] Nah jadi dia
+[22:04 - 22:05] Iwun ini
+[22:05 - 22:06] Kayak
+[22:06 - 22:07] Nyangkanya itu
+[22:07 - 22:08] Optimasi CEO ini juga dilakukan
+[22:08 - 22:09] Di melalui telegram
+[22:09 - 22:11] Jadi di hilang
+[22:11 - 22:12] Kayak
+[22:12 - 22:13] Nyambung-nyambung itu di hilangkan
+[22:13 - 22:14] Bicinya
+[22:14 - 22:15] Bicinya Bu Iwun itu
+[22:15 - 22:16] Yang melengkapi saya
+[22:16 - 22:17] Jadi
+[22:17 - 22:18] Berarti untuk judul tadi
+[22:18 - 22:19] Saya sudah fix pakai yang
+[22:19 - 22:20] Dari
+[22:20 - 22:21] Dari

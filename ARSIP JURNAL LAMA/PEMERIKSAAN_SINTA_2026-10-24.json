@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\A Spiral Model of Software Development and Enhancement - Prototyping - Boehm - 1988.pdf",
+    "title": "A Spiral Model of Software Development and Enhancement",
+    "venue": "Computer (IEEE), 1988",
+    "rank": "Tidak berlaku",
+    "note": "Jurnal internasional; tidak diberi peringkat SINTA nasional.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 2,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Adoption and Suitability of Software Development Methods - Empirical Study - Kuhrmann dkk - 2021.pdf",
+    "title": "Adoption and Suitability of Software Development Methods and Practices",
+    "venue": "Prosiding APSEC 2016 (IEEE)",
+    "rank": "Tidak berlaku",
+    "note": "Isi PDF: Licorish dkk., 2016; nama file Kuhrmann dkk., 2021 tidak sesuai.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 3,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Extreme programming for a single person team.pdf",
+    "title": "Extreme Programming for a Single Person Team",
+    "venue": "Prosiding ACM-SE 2008",
+    "rank": "Tidak berlaku",
+    "note": "PDF pindai diperiksa secara visual; Agarwal dan Umphress, 2008.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 4,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Lean Software Development - An Agile Toolkit - Poppendieck - 2003.pdf",
+    "title": "Lean Software Development: An Agile Toolkit",
+    "venue": "Buku, Poppendieck dan Poppendieck, 2003",
+    "rank": "Tidak berlaku",
+    "note": "Buku, bukan artikel jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 5,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Managing the Development of Large Software Systems - Waterfall - WESCON - Royce - 1970.pdf",
+    "title": "Managing the Development of Large Software Systems",
+    "venue": "Makalah WESCON, Royce, 1970",
+    "rank": "Tidak berlaku",
+    "note": "Makalah konferensi, bukan jurnal nasional terakreditasi SINTA.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 6,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Penerapan Metode RAD - Infotek - Pratama dkk - 2023.pdf",
+    "title": "Penerapan Metode Rapid Aplication Development (RAD) pada Pengembangan Sistem Informasi Inventaris Aset Desa Rempoah",
+    "venue": "Infotek: Jurnal Informatika dan Teknologi, 6(1), 2023",
+    "rank": "SINTA 4",
+    "note": "S4 mulai Vol. 5 No. 2 (2022); edisi artikel tercakup. Identik dengan PDF nomor 42.",
+    "source": "https://e-journal.hamzanwadi.ac.id/index.php/infotek",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 7,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan Heavy & Lightweight Methodology - Khan dkk - 2011.pdf",
+    "title": "A Comprehensive Study of Commonly Practiced Heavy & Light Weight Software Methodologies",
+    "venue": "IJCSI International Journal of Computer Science Issues, 8(4), 2011",
+    "rank": "Tidak berlaku",
+    "note": "Jurnal internasional; SINTA tidak berlaku.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 8,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan Waterfall dan Prototyping - UNIKOM - Susanto & Andriana - 2016.pdf",
+    "title": "Perbandingan Model Waterfall dan Prototyping untuk Pengembangan Sistem Informasi",
+    "venue": "Majalah Ilmiah UNIKOM, 14(1), 2016",
+    "rank": "SINTA 5",
+    "note": "Peringkat jurnal yang ditemukan. Cakupan akreditasi untuk edisi 2016 belum terverifikasi; jangan otomatis melabeli artikel 2016 sebagai artikel S5.",
+    "source": "https://ojs.unikom.ac.id/index.php/jurnal-unikom/sinta",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 9,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Perbandingan XP vs PxP pada Implementasi Software - Fahrijal & Hartawan - 2024.pdf",
+    "title": "Perancangan Aplikasi Web Pengawasan Perangkat NTE oleh Teknisi di Unit Warehouse PT. Telkom Akses Jakarta Pusat",
+    "venue": "Jurnal Manajemen Informatika Jayakarta, 4(4), 2024",
+    "rank": "SINTA 5",
+    "note": "Nama file tentang perbandingan XP/PxP tidak sesuai. Artikel sebenarnya menggunakan prototype; S5 mencakup Vol. 1 No. 1 (2021) sampai Vol. 5 No. 2 (2025).",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/11047",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 10,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming - Agile for Autonomous Developer - S3T 2009 - Dzhurov dkk - 2009.pdf",
+    "title": "Personal Extreme Programming: An Agile Process for Autonomous Developers",
+    "venue": "Makalah konferensi S3T 2009",
+    "rank": "Tidak berlaku",
+    "note": "Makalah konferensi Dzhurov, Krasteva, dan Ilieva.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 11,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Personal Extreme Programming Exploring Developers Adoption - AMCIS - Iyawa - 2020.pdf",
+    "title": "Personal Extreme Programming: Exploring Developers' Adoption",
+    "venue": "Prosiding AMCIS 2020",
+    "rank": "Tidak berlaku",
+    "note": "Versi accepted manuscript makalah konferensi.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 12,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\PxP vs Waterfall - Job Training App - ICST 2018 - Asri dkk - 2018.pdf",
+    "title": "Comparing Traditional and Agile Software Development Approaches: Case of Personal Extreme Programming",
+    "venue": "Prosiding ICST 2018",
+    "rank": "Tidak berlaku",
+    "note": "Prosiding; afiliasi penulis Indonesia tidak menjadikannya jurnal SINTA.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 13,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\SCRUM Development Process - OOPSLA - Schwaber - 1995.pdf",
+    "title": "SCRUM Development Process",
+    "venue": "Makalah/workshop OOPSLA, Schwaber",
+    "rank": "Tidak berlaku",
+    "note": "Makalah konferensi, bukan jurnal nasional.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 14,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Scrum Guide 2020 - Schwaber & Sutherland - Official.pdf",
+    "title": "The Scrum Guide",
+    "venue": "Panduan resmi, Schwaber dan Sutherland, November 2020",
+    "rank": "Tidak berlaku",
+    "note": "Panduan, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 15,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Scrum2Kanban - Integrating Kanban and Scrum in Capstone Course - IEEE - Mahnic - 2018.pdf",
+    "title": "Scrum2Kanban: Integrating Kanban and Scrum in a University Software Engineering Capstone Course",
+    "venue": "Prosiding SEEM 2018 (IEEE/ACM)",
+    "rank": "Tidak berlaku",
+    "note": "Penulis pada PDF adalah Christoph Matthies, bukan Mahnic seperti nama file.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 16,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Strengthening the Case for Pair Programming - IEEE Software - Williams dkk - 2000.pdf",
+    "title": "Strengthening the Case for Pair-Programming",
+    "venue": "IEEE Software, Williams dkk., 2000",
+    "rank": "Tidak berlaku",
+    "note": "Jurnal internasional; SINTA nasional tidak berlaku.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 17,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Structured vs Agile Development Comparative Analysis - Mishra & Alzoubi - Springer - 2023.pdf",
+    "title": "Structured Software Development versus Agile Software Development: A Comparative Analysis",
+    "venue": "International Journal of System Assurance Engineering and Management, 14(4), 2023",
+    "rank": "Tidak berlaku",
+    "note": "Jurnal internasional Springer; SINTA nasional tidak berlaku.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 18,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\The Kanban Guide - Panduan Resmi Kanban - Coleman & Vacanti - 2025.pdf",
+    "title": "The Kanban Guide",
+    "venue": "Panduan resmi, Coleman dan Vacanti, edisi 2025.5",
+    "rank": "Tidak berlaku",
+    "note": "Panduan, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 19,
+    "file": "JURNAL\\01_FONDASI_DAN_KOMPARASI_METODOLOGI\\Views on Balancing Agility and Discipline - Boehm & Turner - 2004.pdf",
+    "title": "Views on Balancing Agility and Discipline",
+    "venue": "Materi SEI Agile Research Forum, James Over, 2012",
+    "rank": "Tidak berlaku",
+    "note": "PDF adalah materi forum/presentasi James Over tahun 2012; nama file Boehm dan Turner, 2004 tidak sesuai.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 20,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Aplikasi Administrasi Sekolah Musik ABC - Pembayaran & Penjadwalan - Barizi dkk - 2023.pdf",
+    "title": "Perancangan Aplikasi Sistem Administrasi Sekolah Musik pada Sekolah Musik ABC Berbasis Java",
+    "venue": "Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI), 4(2), 2023",
+    "rank": "SINTA 3",
+    "note": "Untuk artikel 2023 gunakan SINTA 4. Kenaikan menjadi S3 baru berlaku mulai Vol. 6 No. 2 (2025).",
+    "source": "https://newjournal.unindra.ac.id/index.php/jrami/history",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 21,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\Peran TI Manajemen Pendidikan - JRPP - Pradana - 2024.pdf",
+    "title": "Peran Teknologi Informasi dalam Manajemen Pendidikan (label file)",
+    "venue": "Jurnal Review Pendidikan dan Pengajaran (JRPP), 7(3), 2024",
+    "rank": "SINTA 5",
+    "note": "Profil menampilkan S5; riwayat yang terlihat mencakup 2021 sampai 2025.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/11348",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 22,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Administrasi Multi Cabang Terpusat - Web - Jurnal Infra - Lavicius dkk - 2017.pdf",
+    "title": "Sistem Informasi Administrasi Multi Cabang pada PT. HC",
+    "venue": "Jurnal Infra, Universitas Kristen Petra, 2017",
+    "rank": "Belum terverifikasi",
+    "note": "Belum ditemukan bukti peringkat jurnal yang cocok. Jangan disamakan dengan Jurnal Informatika milik Petra; muncul di profil penulis SINTA bukan bukti akreditasi jurnal.",
+    "source": "https://publication.petra.ac.id/index.php/teknik-informatika",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 23,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel - Web Mobile - Waterfall - Tiana & Gunanto - 2026.pdf",
+    "title": "Perancangan dan Implementasi Sistem Informasi Bimbingan Belajar Berbasis Web Mobile Menggunakan Metode Waterfall",
+    "venue": "Jurnal Komputer Teknologi Informasi Sistem Komputer (JUKTISI), 4(3), 2026",
+    "rank": "SINTA 4",
+    "note": "Situs pengindeksan resmi jurnal menyatakan S4; ISSN 2963-7104 cocok.",
+    "source": "https://ejurnal.lkpkaryaprima.id/index.php/juktisi/indexingandabstract",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 24,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Bee Hive - Efisiensi Operasional - JRIS - Fajriansyah dkk - 2026.pdf",
+    "title": "Pengembangan Sistem Informasi Bimbingan Belajar Berbasis Web untuk Efisiensi Operasional Bee Hive",
+    "venue": "Jurnal Rekayasa Informasi Swadharma (JRIS), 6(2), Juli 2026",
+    "rank": "SINTA 3",
+    "note": "S3 mulai Vol. 5 No. 2 (Juli 2025) sampai Vol. 10 No. 1 (Januari 2030); edisi artikel tercakup.",
+    "source": "https://ejurnal.swadharma.ac.id/index.php/jris",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 25,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel BNF - Web - Waterfall - Maliki dkk - 2024.pdf",
+    "title": "Perancangan Sistem Informasi Berbasis Web pada Bimbingan Belajar (Bimbel) BNF",
+    "venue": "Jurnal Informatika dan Komputasi: Media Bahasan, Analisa dan Aplikasi, 18(2), 2024",
+    "rank": "Belum terverifikasi",
+    "note": "ISSN 1412-0232; penerbit Universitas Indonesia Membangun. Belum ditemukan bukti peringkat yang cocok; jangan disamakan dengan Jurnal Ilmiah Komputasi.",
+    "source": "https://journals.inaba.ac.id/index.php/jiki",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 26,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel Indo Prestasi - Pembayaran & Data Siswa - Ramadhan - 2021.pdf",
+    "title": "Sistem Informasi Bimbingan Belajar Indo Prestasi dan English for Communication",
+    "venue": "Prosiding Seminar Nasional Riset dan Inovasi Teknologi (SEMNAS RISTEK), 2021",
+    "rank": "Tidak berlaku",
+    "note": "Prosiding seminar, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 27,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Bimbel RSDC - Web - Waterfall - RJTI - Gunawan dkk - 2025.pdf",
+    "title": "Sistem Informasi Bimbingan Belajar RSDC Berbasis Website dengan Menggunakan Metode Waterfall untuk Meningkatkan Efisiensi Administrasi",
+    "venue": "Riau Jurnal Teknik Informatika (RJTI), 4(3), 2025",
+    "rank": "SINTA 5",
+    "note": "S5 mulai Vol. 2 No. 1 (2023) sampai Vol. 6 No. 2 (2027); edisi artikel tercakup.",
+    "source": "https://journal.upp.ac.id/index.php/rjti/aai",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 28,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Manajemen Bimbel Ilman Nafi - Notifikasi - Waterfall - Safitri dkk - 2026.pdf",
+    "title": "Perancangan Sistem Informasi Manajemen Bimbingan Belajar Berbasis Web untuk Efisiensi Administrasi dan Komunikasi dengan Fitur Notifikasi Otomatis",
+    "venue": "JATI (Jurnal Mahasiswa Teknik Informatika), 10(2), 2026",
+    "rank": "SINTA 4",
+    "note": "Penerbit Institut Teknologi Nasional Malang; bukan JATI UNIKOM.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8346",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 29,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Manajemen Kursus INET Komputer - Laravel Agile - JATI - Kismantoro & Ibadi - 2026.pdf",
+    "title": "Penerapan Metode Agile dalam Pengembangan Website Sistem Manajemen Kursus Berbasis Laravel (Studi Kasus INET Komputer)",
+    "venue": "JATI (Jurnal Mahasiswa Teknik Informatika), 10(2), 2026",
+    "rank": "SINTA 4",
+    "note": "Jurnal yang sama dengan nomor 28.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8346",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 30,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Monitoring Belajar Bimbel AHE - WhatsApp Gateway - Waterfall - JATI - Amelia dkk - 2026.pdf",
+    "title": "Integrasi WhatsApp Gateway pada Sistem Monitoring Perkembangan Belajar Anak AHE Berbasis Web",
+    "venue": "JATI (Jurnal Mahasiswa Teknik Informatika), 10(3), 2026",
+    "rank": "SINTA 4",
+    "note": "Jurnal yang sama dengan nomor 28.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8346",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 31,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Pembayaran SPP dan Penggajian Guru Bimbel - Web - JTEKSIS - Abadi dkk - 2025.pdf",
+    "title": "Perancangan Aplikasi Pembayaran SPP dan Penggajian Guru Berbasis Web pada Bimbingan Belajar",
+    "venue": "Jurnal Teknologi dan Sistem Informasi Bisnis (JTEKSIS), 7(1), 2025",
+    "rank": "SINTA 5",
+    "note": "Turun dari S4 menjadi S5 mulai Vol. 7 No. 1 (2025); artikel ini masuk periode S5.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/10331",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 32,
+    "file": "JURNAL\\02_STUDI_KASUS_BIMBEL_DAN_KURSUS\\SI Penjadwalan & Pembayaran Les Jia Jia Education - Web - Thiovanda.pdf",
+    "title": "Perancangan Sistem Informasi Pencatatan Penjadwalan dan Pembayaran Les Berbasis Web",
+    "venue": "JIKSI (Jurnal Ilmu Komputer dan Sistem Informasi), Universitas Tarumanagara",
+    "rank": "SINTA 5",
+    "note": "Nama penulis Veren Thiovanda. Tahun/volume tidak tercantum pada bagian awal PDF yang terbaca, sehingga belum dipastikan dari PDF; peringkat jurnal cocok dengan identitas penerbit.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/15276",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 33,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Buku Tamu DPOP Balikpapan - PxP - Fikri & Prabowo (ITK) - 2020.pdf",
+    "title": "Rancang Bangun Sistem Informasi Buku Tamu pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan dengan Metode Personal Extreme Programming",
+    "venue": "Multitek Indonesia: Jurnal Ilmiah, 14(2), 2020",
+    "rank": "SINTA 4",
+    "note": "S4 pada halaman SINTA yang berhasil dibuka. Hasil pencarian lama masih menampilkan S3; status edisi 2020 harus dibaca dari SK periode tersebut. Penulis kedua pada PDF I Putu Deny Arthawan S. P., bukan Prabowo.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/google/3417",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 34,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Keanggotaan & Jadwal - PxP - Ramadhan - 2026.pdf",
+    "title": "Implementasi Personal Extreme Programming dalam Perancangan Sistem Informasi Manajemen Keanggotaan dan Pengaturan Jadwal untuk Meningkatkan Efisiensi Operasional",
+    "venue": "Journal of Information Systems and Business Technology (JISBT), 2(4), 2026",
+    "rank": "Non-SINTA",
+    "note": "Penerbit secara eksplisit menandai JISBT e-ISSN 3109-8886 sebagai NON SINTA / SCOPUS.",
+    "source": "https://www.jci.co.id/",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 35,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Laboratorium Infokom - PxP - REPOSITOR - Priatmaja dkk - 2022.pdf",
+    "title": "Implementasi Model PXP pada Sistem Informasi Laboratorium Infokom Universitas Muhammadiyah Malang",
+    "venue": "Jurnal Repositor, 4(4), 2022",
+    "rank": "SINTA 4",
+    "note": "Direktori SINTA kini menampilkan S4 dengan ISSN yang cocok. Cakupan akreditasi artikel 2022 belum dapat dipastikan dari sumber primer yang diperoleh; jangan otomatis melabeli PDF 2022 sebagai artikel S4.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/index?page=1068",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 36,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Siswa SMP - Extreme Programming (XP) - Suputra dkk - 2026.pdf",
+    "title": "Rancang Bangun Sistem Informasi Siswa Menggunakan Metode Extreme Programming (Studi Kasus SMP Negeri 4 Tegallalang)",
+    "venue": "JATI (Jurnal Mahasiswa Teknik Informatika), 10(2), 2026",
+    "rank": "SINTA 4",
+    "note": "Jurnal yang sama dengan nomor 28.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8346",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 37,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\SI Surat Menyurat - Personal Extreme Programming (PxP) - Sidiq dkk - 2025.pdf",
+    "title": "Implementasi Metode Personal Extreme Programming pada Pengembangan Sistem Informasi Surat Menyurat",
+    "venue": "Jurnal Jaring SainTek, 7(1), 2025",
+    "rank": "SINTA 5",
+    "note": "Profil jurnal menampilkan S5, tetapi entri artikel persis ini masih berlabel Accred: Unknown. Riwayat pada profil yang dibuka berhenti pada 2024; cakupan edisi 2025 perlu SK lanjutan.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/9505",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 38,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website Company Profile - Extreme Programming (XP) - Astiti - 2023.pdf",
+    "title": "Penerapan Metode Extreme Programming pada Rancang Bangun Website Company Profile",
+    "venue": "Resolusi: Rekayasa Teknik Informatika dan Informasi, 3(3), 2023",
+    "rank": "SINTA 5",
+    "note": "S5 berdasarkan SK 225/E/KPT/2022; periode awal mencakup Vol. 1 No. 1 (2020) sampai Vol. 5 No. 2 (2024), sehingga artikel 2023 tercakup.",
+    "source": "https://djournals.com/resolusi/about",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 39,
+    "file": "JURNAL\\03_IMPLEMENTASI_PXP_DAN_XP_TERDAHULU\\Website E-Kavling - PxP & UAT - JATI - Apriyanti dkk - 2024.pdf",
+    "title": "Pemanfaatan Metodologi PXP dan Pengujian User Acceptance Testing (UAT) dalam Pengembangan Website E-Kavling",
+    "venue": "JATI (Jurnal Mahasiswa Teknik Informatika), 8(3), 2024",
+    "rank": "SINTA 4",
+    "note": "Jurnal yang sama dengan nomor 28.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8346",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 40,
+    "file": "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\Pemodelan SCRUM Klinik Ar-Rokhim - JOINS - Kurniawan & Sani - 2019.pdf",
+    "title": "Pemodelan SCRUM dalam Pengembangan Sistem Informasi Kesehatan pada Klinik Ar-Rokhim Sragen Kabupaten Sragen",
+    "venue": "JOINS (Journal of Information System), 4(1), 2019",
+    "rank": "SINTA 4",
+    "note": "Pengumuman resmi menyatakan S4 pada 2019 dan kembali S4 pada 2026. Cakupan volume harus mengikuti SK terkait.",
+    "source": "https://publikasi.dinus.ac.id/joins/announcement",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 41,
+    "file": "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Absensi - Web - Prototyping - Putra - 2022.pdf",
+    "title": "Penerapan Metode Prototyping dalam Rancangan Sistem Informasi Absensi Berbasis Website",
+    "venue": "Journal of Information System Research (JOSH), 3(4), 2022",
+    "rank": "SINTA 4",
+    "note": "S4 pada profil SINTA; SK awal 164/E/KPT/2021 mencakup Vol. 1 No. 1 (2019) sampai Vol. 5 No. 2 (2023), sehingga edisi artikel tercakup.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8355",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 42,
+    "file": "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Inventaris Aset Desa - RAD - Pratama dkk - 2023.pdf",
+    "title": "Penerapan Metode Rapid Aplication Development (RAD) pada Pengembangan Sistem Informasi Inventaris Aset Desa Rempoah",
+    "venue": "Infotek: Jurnal Informatika dan Teknologi, 6(1), 2023",
+    "rank": "SINTA 4",
+    "note": "PDF identik secara SHA-256 dengan nomor 6; satu artikel disimpan di dua folder.",
+    "source": "https://e-journal.hamzanwadi.ac.id/index.php/infotek",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 43,
+    "file": "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Pembayaran Kursus LOOP Coding BSD - PHP MySQL - JTIK - Karpina dkk - 2025.pdf",
+    "title": "Pengembangan Sistem Pembayaran pada Website Bimbingan Belajar Non-Formal Berbasis PHP MySQL di LOOP Coding BSD, Tangerang, Banten",
+    "venue": "Jurnal JTIK (Jurnal Teknologi Informasi dan Komunikasi), 9(4), 2025",
+    "rank": "SINTA 4",
+    "note": "e-ISSN 2580-1643 cocok; situs resmi menyatakan S4 dan masa akreditasi sampai 2027.",
+    "source": "https://journal.lembagakita.com/jtik/about",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 44,
+    "file": "JURNAL\\04_FITUR_DAN_TEKNOLOGI_PENDUKUNG\\SI Pembayaran SPP - Notifikasi WhatsApp & Payment Gateway Midtrans - JTI - Sari dkk - 2023.pdf",
+    "title": "Penerapan Sistem Notifikasi Chat dan Payment Gateway pada Sistem Informasi Pembayaran SPP Berbasis Website",
+    "venue": "Jurnal Teknologi Informasi: Jurnal Keilmuan dan Aplikasi Bidang Teknik Informatika, 17(1), 2023",
+    "rank": "SINTA 4",
+    "note": "Penerbit Universitas Palangka Raya, e-ISSN 2656-0321. SK 2025 menaikkan S5 ke S4 mulai Vol. 16 No. 2 (2022) sampai Vol. 21 No. 1 (2027); edisi artikel tercakup.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/8063",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 45,
+    "file": "JURNAL\\BUKU\\ebook-pressman-sw-engineering.pdf",
+    "title": "Software Engineering: A Practitioner's Approach",
+    "venue": "Buku, Roger S. Pressman",
+    "rank": "Tidak berlaku",
+    "note": "Buku, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 46,
+    "file": "JURNAL\\BUKU\\Extreme-Programming-Explained-2nd-Edition-Kent-Beck.pdf",
+    "title": "Extreme Programming Explained: Embrace Change, Second Edition",
+    "venue": "Buku, Kent Beck dan Cynthia Andres",
+    "rank": "Tidak berlaku",
+    "note": "Buku, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 47,
+    "file": "JURNAL\\BUKU\\Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf",
+    "title": "Software Engineering, Ninth Edition",
+    "venue": "Buku, Ian Sommerville",
+    "rank": "Tidak berlaku",
+    "note": "Buku, bukan jurnal.",
+    "source": "",
+    "checked_on": "2026-10-24"
+  },
+  {
+    "id": 48,
+    "file": "JURNAL\\JURNAL PENDUKUNG\\yusrian,+610-1857-1-CE+(1).pdf",
+    "title": "Pemodelan Use Case (UML): Evaluasi terhadap Beberapa Kesalahan dalam Praktik",
+    "venue": "Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), 5(1), 2018",
+    "rank": "SINTA 2",
+    "note": "Penulis Tri A. Kurniawan. Header PDF mencantumkan SK 51/E/KPT/2017; profil jurnal saat pemeriksaan S2.",
+    "source": "https://sinta.kemdiktisaintek.go.id/journals/profile/1093",
+    "checked_on": "2026-10-24"
+  }
+]

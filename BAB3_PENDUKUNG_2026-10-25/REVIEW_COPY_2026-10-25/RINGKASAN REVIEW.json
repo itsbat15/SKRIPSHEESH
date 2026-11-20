@@ -1,0 +1,21 @@
+{
+  "report": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\CATATAN PEMBIMBING BAB 3 COPY - 2026-10-25.md",
+  "source_not_overwritten_by_reviewer": true,
+  "current_original_matches_snapshot": true,
+  "score": 72,
+  "category": "Perlu Revisi Mayor Terarah",
+  "findings": 37,
+  "priorities": {
+    "Penting": 26,
+    "Penyempurnaan": 4,
+    "Sangat Penting": 7
+  },
+  "categories": {
+    "Bahasa": 6,
+    "Sitasi": 5,
+    "Substansi": 14,
+    "Tabel-Gambar": 1,
+    "Metodologi": 11
+  },
+  "source_sha256": "75d717693dbbca3125243e646a1bd32af928eca76dd96682760acfd3726e702a"
+}

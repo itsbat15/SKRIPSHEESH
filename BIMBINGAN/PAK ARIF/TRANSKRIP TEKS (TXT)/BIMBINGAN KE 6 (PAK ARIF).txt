@@ -1,0 +1,2019 @@
+Ini saya udah ngebuat sesuai dengan yang spesifikasi yang kemarin disampaikan juga khususnya dari umum gua spesifik
+Disini saya menceritakan dari bimbel itu seperti apa
+Gambaran umumnya
+Terus saya juga tambahin dari undang-undang Republik Indonesia untuk bahwasannya
+Terkait bahwasannya bimbel yang belajar ini merupakan salah satu pendukung untuk pendidikan non formal
+Lalu yang kedua langsung saya ketatak kewala operasional dari jumlah arti itu sendiri
+Atau pendidikan mitra itu sendiri
+Lalu disini saya juga masih membutuhkan data dari mitra
+Karena total jumlah siswa sama tentornya itu masih belum fix dari mereka
+Karena tiap harinya ada pergantian gitu baik itu dari tentor sama siswanya
+Lalu selanjutnya disini ada penjelasan dari masalah dan operasional secara umum terlebih dahulu
+Karena kemarin dari guling mengatakan kalau misalnya dari mitranya itu udah ada penjelasan mitranya
+Lalu penjelasan proses bisnis secara umum seperti apa
+Lalu dispesifikan ke permasalahannya
+Lalu berikutnya disini karena ada permasalahan itu dari kebatatan jadwal dari sisi jadwal yang banyak
+Apa namanya
+Banyak opsinya
+Terus juga menyediakan dari TK sampai SMA
+Jadi kemarin dari wawancara pun juga dari beliau menyatakan bahwasannya
+Perlu adanya apa namanya
+Pembagian jadwal dari tentor dan juga pembagian kelas di setiap tentornya pak
+Jadi karena banyak yang disediakan oleh ARTA dari TK sampai SMA akhirnya
+Dari mitra
+Mencoba untuk meminta saya membuatkan sistem untuk membantu pengelolaan jadwal
+Karena untuk pengelolaan jadwal sendiri saat ini masih dari tahap
+Staff administrasi atau meja depan atau rondes dan juga dari kepala cabangnya
+Dan dari semua kepala cabang itu totalnya 8 kepala cabang
+Yang mana dari setiap kepala cabang yang tersebut di setiap harinya akan memberikan rekapan
+Dari total pendapatan di hari itu dan juga dari total siswa di hari itu
+Yang dimana setiap harinya akan diberikan ke kantor pusat di cabang yang kedua
+Yang dimana itu kalau misalkan dari ARTA 8 sampai ke 7 itu sangat jauh sekali jadwal
+Dan itu harus setiap hari dilakukan
+Maksudnya nanti penjatual itu di sistem kamu juga?
+Iya ada penjatual itu di sistem
+Tapi ga sampe tutor, masih siswanya ga?
+Sampai gimana pak?
+Misalkan kamu buat create kelasnya, tutornya masuk, siswanya masuk
+Siswanya juga masuk untuk penjatualan
+Karena pembagian honornya dari tentor ini
+Berdasarkan dari si tentor ini menghandle berapa siswa gitu pak
+Karena buat kelasnya dulu
+Masukin orangnya
+Masukin siswanya dan ini
+Itu kayak sistemnya dibuat
+Aku buat sistem lagi itu
+Jadi buat kelasnya dulu, buat tutornya
+Nanti tutornya, siswanya baru dimasukin
+Yang akhir itu ya pak?
+Beda nanti, saya punya sendiri
+Kayak saya mau buat, saya pernah buat kayak UD
+Ada, saya buat persisnya gitu
+Masukin video, masukin kuis
+Oh oke
+Create-nya, create
+Jampalnya, create cuman
+Kalo sampe itu, saya ada masukan di batas aja pak
+Kalo misalkan memang ga masukin yang bangsoal
+Atau video materi gitu
+Cuma lumayan
+Tapi ngelapa
+Itu berarti cuma kelasnya aja kan
+Belum sampe mingguan-mingguan ga ada kan
+Materi gitu
+Materinya ga ada pak
+Berarti cuma kelasnya aja
+Cuma untuk pendataan aja
+Pendataannya doang
+Ga terlalu susah
+Susah itu kalo udah masuk ke materi
+Bukan menjadikan kayak LMS itu engga pak
+Kalo punya satu LMS
+Lalu juga di setiap pencatatan itu dilakukan secara manual
+Masih menggunakan antar
+Lalu juga pembayaran
+Saat ini juga yang mau ditanyakan adalah
+Saat ini pembayaran itu
+Dari sisi staff administrasi
+Atau staff frontesnya itu
+Ketika ada wali murid atau siswa yang mendaftar
+Dan melakukan pembayaran
+Itu harus ngevalidasi terlebih dahulu
+Sebelum dicatat di buku besarnya
+Ke manajemen pak
+Pembayaran
+Untuk ngevalidasinya
+Sampai pembayaran mas sistem kamu nanti
+Nah ini juga pak
+Yang jadi pertimbangan yang ingin saya tanyakan adalah
+Untuk saya saat ini
+Dan juga di minta mitra sebenernya
+Untuk pembayaran sendiri
+Dari staff administrasi
+Itu hanya
+Menginput atau submit
+Bukti transaksi
+Lalu akan di
+Cek oleh
+Ya gini
+Untuk
+Klien itu
+Siswa itu
+Transaksinya lewatnya apa?
+Transfer pak
+Transfer
+Atm langsung?
+Iya
+Langsung rekening manajemen bosnya
+Terus nanti dia nge-share buktinya kan?
+Dia nge-share buktinya
+Lalu dari
+Bosnya akan ngeliat mutasi rekeningnya
+Secara manual
+Secara manual
+Gak susah itu
+Tinggal validasi
+Kalau tidak sesuai
+Tolak
+Yang sederhana
+Kayak gitu saya punya
+Yang rumit pakai
+Ya ketiga
+Doku
+Punya
+Jadi gak susah
+Itu
+Doku itu untuk payment gateway nya pak?
+Payment gateway
+Tapi kan kamu
+Kalau
+Sistem yang tanami itu kan
+Ada dua genre
+Kalau B2B
+Dengan perusahaan itu gak boleh lewat
+Payment gateway
+Kayak misal lewat doku
+Itu gak boleh
+Karena
+Perusahaan itu harus punya bukti transfernya kemana
+Karena dia pelaporan juga
+Kalau dia misalnya ke Shopee
+Gak bisa
+Bisnis saya dengan saya nih
+Jadi dia harus langsung ke
+Payment gateway nya saya
+Gitu
+Kalau
+Lewat payment gateway kan
+Dia ke doku dulu
+Dari doku
+Saya ambil cair kan
+Cairnya juga lama ya pak?
+Lama
+Harus menunggu berapa puluh juta dulu
+Nah itu yang lama
+Jadi saya
+Karena
+Aturan perusahaan itu harus dengan
+Bisnis dengan bisnis
+Maka
+Yang di bagian B2B itu
+Transfernya manual
+Cuma
+Faidasi nya dari sistem
+Oke
+Faidasi nya kayak gini
+Eh
+Gimana ya
+Pesanan CXR
+Nah ini
+Ini aku
+Buter lagi bukanya
+Tapi
+Bisa aku cek gak ya
+Lagi pakai apa ya
+Nah ini
+Yang sudah bayar
+Selesai
+Masih running
+Nah ini
+Faidasi sudah kan
+Nanti saya tinggal cek disini
+Karena ini sudah selesai
+Ya
+Saya preview ini
+Ini perjanjiannya
+Contoh perjanjiannya
+Ya
+Ya
+Ya
+Ini contohnya
+Saya kemarin mutas kan
+Nanti kalau sudah terima
+Oke saya selesaikan
+Saya berhasil
+Nanti disana
+Diterima
+Di dashboardnya
+Siswanya
+Tapi kalau saya tolak
+Nanti ada komen disini
+Saya tolak
+Karena misalnya buktinya tidak sesuai
+Atau nominalnya tidak sesuai
+Nanti ditolak
+Kembali ke sisi dia lagi
+Dia ulangi lagi uploadnya
+Berarti akan tetap manualan pak
+Untuk validasi nya pak
+Manual
+Kita harus melihat dari
+Mutasi rekening
+Terus dari dashboard ini juga
+Ya dong
+Mutasinya dia cek dulu kan
+Uang udah masuk
+Buktinya kan
+Gak bisa dong
+Cuma lihat bukti
+Buktinya bisa di edit edit
+Bukti dia cek
+Oh udah
+Lihat konfirmasi
+Nanti di perusahaannya
+Dapat informasinya
+Sudah selesai
+Kalau ditolak
+Juga ada informasinya
+Ditolak karena
+Apa
+Bukan pemiliknya
+Jadi kan
+Dia harus
+Cek bener-beneran
+Soalnya kalau itu
+Punya saya kan aman aja
+Ini kan orang lain
+Jadi dia harus
+Cek dulu dari
+Ide nya
+Bener gak
+Lihat lagi dengan
+Mutasi
+Ada gak
+Memasukkan
+Kalau udah
+Oh udah sama nih
+Validasi
+Berarti kalau
+Untuk scope nya sendiri
+Karena saya taruh
+Di batasnya juga
+Gak sampai ke payment gitu ya pak
+Cukup
+Gak apa pak
+Kan
+Langsung ke ATM dia
+Iya langsung ATM
+Yang transfernya kayak
+Kamu kayak di Shopee
+Nah itu
+Shopee punya sendiri
+Ya
+Punya saya juga ada
+Patent gateway
+Tapi untuk yang
+Donasi umum
+Yang gak harus
+Ada bukti
+Buktinya
+Gitu
+Karena kalau perusahaan
+Kita harus punya bukti semua
+Perusahaan juga butuh
+Butuh
+Invoice nya
+Invoice nya misalnya
+Dia transfernya ke
+Patent gateway
+Bukan punya saya
+PT nya
+Patent gateway
+Doku apa gitu
+Jadi dia transfer
+Nanti dia bisa
+Miss kan
+Karena kemarin itu
+Untuk payment gateway
+Karena kayaknya
+Kalo misalkan
+Scope nya itu
+Agak
+Cair
+Cairnya gak cepet
+Mereka uangnya
+2 smuter
+Untuk pencatatan rekapan transaksi
+Itu harus dilakukan
+Real time
+Sesuai kan dengan mereka
+Kalo kamu patent gateway
+Itu kalo mereka sudah patent gateway
+Selama ini ya
+Jadi tinggal dibangunkan sistemnya
+Gitu
+Tapi kalo mereka selama ini
+Masih manual
+Ya itu yang bisa
+Oke kan
+Pertanya juga mintain
+Seperti itu
+Pak
+Lebih cepet kan
+Gak ada potongan
+Potongan
+Gitu
+Potongan
+Itu terkait
+Pembayaran
+Di top 1
+Cuma berarti
+Akses nya ada
+Kemarin kamu kayak
+Membatasi yang di siswa ya
+Pak Akses
+Yang mana itu pak
+Kamu kemarin bilang
+Pak Akses nya ini cuma tutor
+Sama itu
+Iya
+Dan siswa
+Siswa kan gak ada pak
+Kalo bukti transfer gimana
+Bukti transfer dari staff administrasi aja
+Dari staff administrasi yang
+Pendaftar
+Kalo siswa misalkan
+Aku transfer nih
+Bayar
+Buktinya aku share
+Pilihan mana
+Dari sisi siswa
+Langsung di foto
+Sama si staff administrasi pak
+Karena dari
+Oh udah dirumah
+Dikirim WA gitu
+Iya dikirim WA
+Kalau misalkan secara online
+Oh berarti manual
+Ini berarti
+Kamu masukin nya manual
+Iya masuknya manual
+Dari staff administrasi
+Oh berarti gak ada perolakan
+Kayak punya saya
+Punya saya tuh 2 jalur mas
+Gimana itu pak
+Punya saya tuh kayak punya
+Ada 2
+Saya udah penjepatan gitu
+Iya
+Apunya saya gini nih
+Kan ini ada
+Dashboard admin
+Dashboard admin
+Iya kan
+Ini disini ada
+Dashboard user
+Nah
+Kan aku masih penawaran dulu nih
+Penawaran
+Iya kan penawaran
+Iya kan
+Penawaran campaign
+Dia setuju nih
+Ada perusahaan nih
+Dia lihat semuanya banyak perusahaan ngambil
+Oh oke nih
+Dia ambil
+Nanti ada kontraknya
+Habis kontrak dia lanjut ke tahapan pembayarannya
+Iya kan
+Kemudian pembayaran dia kirim tuh bukti pembayarannya
+Nah bukti pembayaran
+Bukti pembayaran
+Bukti pembayaran dikirim
+Nah nanti admin saya tuh ngecek
+Apakah uang itu masuk
+Dari itu kan
+Invoice apa
+Rekeningnya itu
+Oh udah masuk
+Dia cek lagi dengan buktinya
+Sama gak
+Dia transfernya berapain
+Dengan
+Nah kalau sudah sesuai
+Sesuai saya validasi
+Oke validasi
+Disini masuk
+Berarti penawarannya langsung masuk ke tahapan selanjutnya
+Bukan lagi masuk penawaran
+Tapi ke program
+Program berjalan
+Belum selesai
+Nah ini
+Tapi
+Saya juga ngasih
+Jalur
+Yang
+Ini kan dashboardnya
+Perusahaannya
+Iya
+Tapi saya punya dua mekanisme
+Ketika
+Karena kan kalau dia kayak gini kan
+Berarti setelah dia bayar
+Dia kirim sendiri kan
+Dia kirim buktinya kan
+Iya
+Bukti nanti ngecek disini validasi
+Iya
+Tapi saya ngasih dua jalur
+Karena apa
+Gak semua perusahaan
+Dia itu
+Mau
+Membuka sistemnya
+Untuk ngambil penawaran
+Iya
+Baik
+Aku malas nih
+Aku
+Gua admin
+Aku punya perusahaan besar
+Aku
+Aku gak mau lihat sistem mas
+Aku
+Oke lah
+Kamu mau buat program dimana
+Butuhnya berapa
+Atau
+Bisa aja dia datang mas
+Aku punya uang 50 juta
+Baikkan aku program 60 juta
+Dia gak mau buat sistem
+Kan perusahaan
+Kita harus nyebatin itu
+Sedangkan saya membuat sistem disini
+Lewat penawaran
+Dia harus mencet sendiri
+Iya
+Tapi kan ada juga perusahaan yang malas
+Iya
+Saya mau ngasih uang aja
+Tapi
+Makanya ketika dia mau jadi
+Disini ada tombol
+Create
+Create
+Proyek
+Create
+Proyek ya
+Proyek otomatis
+Tetep aja nanti
+Dia
+Nah
+Aku contohkan lagi nih
+Karena sebenernya kalo untuk online tuh
+Jarang banget pak
+Untuk penawa
+Apa
+Pembayaran secara online
+Dan kebanyakan tuh rata-rata
+Hampir 95%
+Dari wali murid dan siswa itu
+Yang datang langsung ke
+Cabangnya gitu
+Oke
+Saya juga mau buat sistem
+Kenapa saya buat kayak
+Kayak punya kawan-kawan
+Karena saya akan
+Mengalami orang itu datang
+Enggak lihat sistem
+Makanya saya bang
+Mikirkan
+Ya gimana kalo
+Tapi saya butuh
+Apa
+Saya harus punya merekapannya semua
+Bahwapun dia lewat penawaran
+Lewat dari luar
+Tetep harus punya data
+Jadi saya tau nih
+Omset saya berapa
+Paham gak
+Oh
+Contohnya
+Ini
+Pesanan CSR
+Ini pesanan-pesanan yang
+Beberapa
+Dia lewat sistem
+Ini gak batalkan
+Aku contoh
+Contoh
+Karena dia
+Gak sesu
+Datanya
+Ini menunggu pembayaran
+Jadi aku lihat nih
+Dia sudah ngambil penawaran
+Pembayaran
+Tapi dia belum bayar
+Kalo di review belum ada
+Data pembayarannya
+Makanya masih sampai sini kan
+Gitu
+Jadi saya punya mekanisme
+Nah
+Tapi
+Kalo ini kan lihat penawaran
+Dia klik
+Ini masuk secara otomatis
+Mas
+Masuk kesini
+Dari dashboardnya
+Perusahaan
+Tapi kalo
+Bisa aja nih
+Saya
+Bisa aja gini
+Nah ini
+Saya punya
+Misalnya perusahaan datang mas
+Saya mau buat kegiatan ngobrol juta
+Tapi saya mau liatnya gak sini
+Maka saya buatkan dari sini
+Jadi mitraan saya pilih
+Oh mitra saya ini
+Dia mau buat paket apa nih
+Ambil paket yang ini kan
+Nanti campaign-nya sudah saya buat
+Yang ini
+Nah otomatis masuk kan
+Saya simpan
+Ketika saya simpan
+Aduh
+Belum saya jalan kan
+Tapi ada penggunaan tersebut
+Berarti harus ada tampilan untuk user kan pak
+Dari sisi
+Penggunanya kan pak
+Maksudnya dari
+Kalo saya disini gak
+Cuma tujuannya saya gini
+Kalo online tuh gimana pak
+Berarti kalo misalkan
+Kan kalo case-nya yang tadi saya bilang
+95% itu
+Dari
+Wali Murat
+Iya mereka gak online
+Iya
+Kebanyakan mereka gak online
+Jadi
+Walaupun gak online
+Kamu tetep harus punya arsip kan
+Ya betul
+Nah makanya bedanya disini mas
+Saya kasih contoh ya
+Kalo yang tadi
+Semuanya tampilannya sama
+Persis seperti ini
+Tampilan nanti
+Saya punya datanya
+Oh mana pembayarannya gitu ya
+Iya
+Cuma bedanya
+Kalo dia lewat statusnya
+Barusan
+Yang masukkan admin
+Jadi
+Pesanan itu bukan dari
+Perusahaan
+Tapi
+Langsung admin saya yang masukin
+Karena perusahaan tuh gak mau
+Lihat sistem
+Dia
+Tapi kan saya juga harus menyimpan arsip-arsipnya ya
+Urusan juga masih punya
+Dia juga bisa lihat
+Arsipnya dia
+Walaupun dia gak mau login
+Apapun
+Saya harus punya pegangan nih
+Kalo nanti ada komplain
+Ini buktinya ada kok
+Ini buktinya ada kok
+Ya gitu
+Tetap walaupun dia gak lihat sistem
+Saya harus arsipkan
+Nah nanti
+Saya punya satu contoh ini
+Contoh
+Nah
+Disini bedanya gini
+Di bagian sini kan
+Dia berarti gak ngelewati
+Dia gak ngelewati
+Uploadnya
+Nah
+Jadi
+Di saya itu
+Ada upload disini
+Upload bukti
+Perjanjian
+Sama upload bukti pembayaran
+Jadi
+Yang harusnya
+Di upload oleh
+Perusahaan
+Lewat tadi
+Ini yang lewat admin
+Karena
+Dia tau bahwa
+Create apa
+Untuk penawaran ini
+Dibuatkan oleh admin saya
+Maka disini ada
+Ada button untuk
+Upload buktinya
+Sama upload perjanjiannya
+Jadi manual
+Oleh yang buat admin
+Tapi ketika saya simpan
+Bentuknya jadi sama semua
+Dokumennya ada lengkap semua
+Semua program itu
+Punya
+Intinya pengarsipannya sama
+Oke
+Walaupun dari dua jalur yang
+Dua jalur yang berbeda
+Dua jalur yang berbeda
+Pengarsipannya sama
+Jadi kalo yang tadi
+Perusahaan
+Satunya lewat admin
+Tapi ujungnya
+Dashboardnya sama
+Yang disini dia upload
+Buktinya manual
+Oleh perusahaan
+Yang ini upload
+Oleh admin saya
+Jadi tetep saya gini
+Karena saya nanti yang ngecek
+Berjanjiannya mana
+Bukti bayarnya mana
+Oke
+Kalo dia enggak
+Nanti soalnya
+Walaupun ini jadi gini ya
+Mas
+Di dashboard perusahaan itu
+Nanti akan terbukti disini
+Di dashboard perusahaan itu
+Akan ada muncul
+Informasinya sama
+Walaupun
+Walaupun
+Dia enggak
+Nah
+Reportnya
+Itu sama
+Makasih
+Nah ini LPG nya
+Laporan Pertanggung jawabannya
+Ini monitoring nya
+Ini LPG nya
+Nah LPG nya sudah
+Yang lainnya sudah belum disiapkan
+Nanti
+Disini ada
+Bukti LPG nya
+Atau
+Perjanjian nya
+Laporan Pertanggung jawabannya
+Dananya itu ada disini
+Bahkan disini
+Semuanya ada
+Undur dokumen terkait
+Aku lupanya
+Undur dokumen
+Ini itunya
+Kerjasama
+Jadi walaupun
+Dia enggak lewat sistem
+Di dashboard dia itu
+Secara otomatis
+Update
+Yang update admin saya
+Jadi dia mau
+Login atau enggak login
+Yang penting kita sudah
+Siapkan
+Jadi kalo ada komplain
+Ada pak datanya
+Berarti kalo misalkan
+Dari sisi admin nya nanti
+Yang nge-input sendiri
+Ya berarti kamu siapkan
+Upload
+Nah
+Tadi kan yang ditanyakan pak Arif adalah
+Apa namanya
+Bagaimana cara mendapatkan
+Bukti
+Transaksinya itu
+Untuk di-upload
+Sama admin nya
+Berarti kalo
+RENCANANYA saya
+Itu dari sisi admin
+Kalo misalkan itu secara online
+Dia akan
+Tetep akan dari WA
+Terus download gambarnya
+Baru input sendiri
+Atau misalkan
+Foto secara langsung
+Karena dari
+Mitra itu
+Udah menyediakan budget
+Untuk membuat
+Di siap cabangnya
+Pengadaan untuk
+Tablet
+Untuk pendaftaran
+Sistem yang ingin saya buat
+Tapi kan tetep yang upload
+Admin kan
+Tablet yang upload tetep admin
+Tapi caranya seperti itu
+Enggak apa
+Enggak apa
+Upload manual kan
+Enggak apa
+Upload manual itu penting
+Itu harus ada
+Apalagi pembayarannya
+Ya betul
+Jadi nanti filternya
+Enak banget
+Kamu
+Kegiatannya mana
+Saya gampang
+Kegiatannya apa namanya
+Klik
+Mengutil semua itu
+Perjanjianya mana
+Kemudian bupinya mana
+Sama dengan punya kamu
+Kamu harus membayangkan
+Bagaimana ketika nanti
+Ditanya
+Nama
+Berdasarkan apa
+Kamu nyimpan asibnya itu
+Apakah nama siswanya
+Nanti kan kamu masukin itu
+Tanggal kapan di uploadnya
+Pembayarnya apa
+Lalu mati
+Tontak
+Pencarian datanya
+Kalau kamu
+Langsung cari pencarian
+Oh
+Enggak akan ada
+Kesalahan
+Berarti kalau misalkan
+Yang tadi saya lihat
+Jadi saya kepikirkan gini pak
+Kalau misalkan
+Yang awalnya itu
+Dari sisi adminnya
+Nginput
+Buti transfer
+Yang dari bank itu
+Berarti saya juga harus
+Perlu ngebuat template
+Tersendiri
+Untuk laporan
+Apa
+Laporan
+Pelaporan ke manajemen
+Mengenai
+Bukti transfernya
+Kan awalnya kan
+Dari bukti transfernya
+Dari bank itu
+Sekarang syutan bank itu
+Apakah saya perlu
+Membuat template
+Tersendiri
+Atau engga pak
+Buat atau engga
+Itu tergantung dari
+Kebutuhan mitra ini
+Selama ini pelaporan
+Seperti apa
+Apakah hanya butuh
+Dari bukti transaksi
+Apakah
+Dia harus
+Sudah jadi template
+Kalau jadi template
+Enak
+Buatkan
+Oke
+Tergantung template
+Saya punya template mas
+Tadi perjanjian
+Itu templatenya dari sini
+Jadi
+Semuanya
+Template itu
+Tergantung
+Paketnya juga sama mas
+Jadi
+Dia dinamis
+Oke
+Saya kasih contoh
+Yang disini
+Jadi itu otomatis
+Ngebaca angkanya pak
+Terus di
+Dia ngambil angkanya
+Jadi template itu kayak
+Template umumnya kan
+Angkanya diambil dari datanya
+Oh
+Datanya bukan dari
+Bukti transfer gambarnya
+Ini
+Ya
+Tempet
+Saya taruh dimana ya
+Tempet
+Selama CSR
+Paket CSR
+Tempet
+Yang mana aku habis buat ya
+Tempet perjanjian kerja kan
+Jadi
+Nah ini perjanjian
+Saya bisa
+Yang lagi aktif ini
+Nanti kalau saya buat
+Baru lagi
+Saya tinggal upload
+Perjanjiannya kan
+Nanti
+Setelah dia isi datanya
+Saya langsung langsung
+Perjanjiannya
+Saya bisa buat ganti-ganti
+Yang
+Dia ngambil datanya
+Atau mau
+Buat kayak
+Ada juga
+Yang paket
+Sistem paket
+Paket CSR juga dinamis
+Dia langsung ngitung
+Ini yang template
+Kalau paket itu yang diantas
+Paket
+Paket perusahaan
+Ini pun template
+Nah contohnya
+Ini yang lagi aktif
+Yang tadi yang paket starter
+Ini kan
+Ini datanya gini
+Jadi saya sudah atur
+Semuanya
+Nanti dia jadi
+Pelaporannya sudah
+Ngikutin
+Tinggal yang mana yang udah pilih
+Jadi semuanya dibuat tinggal
+Tapi balik lagi
+Tergantung sama meternya
+Kalau misalnya
+Kalau
+Kamu lihat dulu
+Cara melap
+Pelaporan mereka gimana
+Kalau selama ini
+Yang kemarin saya
+Konfirmasi
+Memang
+Lewat transaksi
+Screenshot
+Bukti transfer itu
+Belum ada
+Kamu bisa buat
+Kalau yang punya saya
+Di atas itu
+Satunya
+Di atasnya itu
+Saya masih
+Gata
+Nah di atasnya itu
+Ada yang mana ya
+Yang saya buat ya kemarin
+Lupa saya
+Nah ini bisa nih
+Kalau kamu mau contoh
+Itu bisa pakai ini
+Cuma ini
+Nanti
+Gak bisa langsung di
+Invoice
+Saya buat invoice
+Untuk sistem saya mas
+Yang saya kan bangun
+Dan temen saya perusahaan
+Nah ini invoice
+Nah daripada saya mikirnya
+Daripada saya selalu disuruh buat
+Buat apa
+Mas invoice
+Invoice
+Langsung kak buatkan aja
+Sistem kan
+Ini
+Formnya udah disesuaikan nih
+Nanti nama perusahaannya
+Nanti nama perusahaannya
+Nama perusahaannya
+Logonya
+Jadi invoice-nya ini dinamis
+Bisa di
+Nah ini kan
+Nanti
+Ke siapa pembayarnya
+Ini contohnya kemarin
+Ubu Santi nih
+Udah masuk ke Bu Santi
+Nanti alamat lengkapnya
+Invoice detailnya apa
+Ya kan
+Detailnya apa
+Ini tanggal invoice-nya
+Kita bisa atur semuanya
+Ini dinamis
+Kamu pakai template yang mana
+Ini atau yang ini ya
+Templatenya
+Apa ya
+Kok sama ya
+Kok beda kok posisinya
+Logonya
+Total ataknya ya
+Kemudian itemnya
+Kamu bisa tambah-tambah itemnya
+Misalkan apa lagi
+Tambah lagi item lagi
+Nah ini kan dia masuk
+Nanti tergantung kamu
+Mau buatnya invoice-nya apa
+Kemudian nanti
+Infonya
+Ini nama bank-banknya
+Ya kan
+Tanda tangannya
+Ini validasi di sini
+Ya kan
+Kemudian nanti di bawahnya
+Kamu bisa
+Ambil data
+Dari invoice-nya yang dia
+Di pembayaran
+Jadi ketika dicetak
+Sudah ada kayak deskripsinya
+Kemudian di bawahnya buktinya
+Nah kamu tergantung
+Atasnya kamu buat susun
+Eh apa
+Apakah
+Templatenya apa kan
+Namanya diambil dari datanya
+Misalnya namanya siapa
+Pembayaran tanggalnya berapa
+Dia ambil tanggalnya
+Kemudian buktinya
+Tek nanti ketika dikasih ke
+Pembeli satu
+Ini pak
+Pembayarannya ada invoice-nya
+Kan gak mungkin juga kamu
+Ngasih invoice pak
+Gimana gitu
+Kan kamu harus data dulu
+Dari invoice-nya
+Siapa yang bayar
+Tanggal berapa
+Siswa apa
+Untuk apa ya kan
+Lalu nanti dicetak
+Sekalian invoice-nya di bawahnya
+Buktinya
+Ini lho
+Lampiran
+Oke
+Oke
+Dari proses bisnis
+Dari
+Artai Bimbel ini
+Sendiri memang
+Itu masih secara
+Kemarin saya udah bicarakan juga
+Mitra
+Sistem yang akan saya buat
+Dan Mitra juga minta
+Kalau misalkan dari hasil
+Bukti transfer tersebut
+Kalau misalkan sistem ini
+Sudah selesai
+Sudah jadi
+Tetap akan dilakukan
+Proses verifikasi
+Yang sama
+Dari dashboard
+Yang sudah saya buat
+Dan dari Mitra akan tetap ngecek
+Bukti transfernya di mutasi rekening
+Ya
+Pasti
+Jadi kayak tadi aja
+Di upload manual kan
+Tapi kalau untuk
+Cetak
+Cetak apa
+Kamu ngasih nama apa
+Cetak bukti
+Pembayaran atau apa
+Ya buat kayak template gitu
+Jadi gak cuma invoice-nya jelek
+Kalau cuma
+Invoice dikasih ke pemilihan
+Paling pemilihan
+Eh apa ini mas
+Iya betul
+Harus baca lagi
+Kalau kamu buat kayak gitu
+Itu terkait dari pembayaran
+Pak
+Tapi kamu harus dibatasi dong
+Iya
+Bangun sistemnya harus dibatasi
+Nanti kalau kamu
+Fitur apa-apa kamu tambah-tambah
+Kan gak selesai
+Karena banyak
+Kalau mau ngembangkan sistem itu
+Gak ada batasnya
+Terus ini 21
+Permasalahan tadi pendaftaran
+Poinnya itu
+Pendaftaran
+Penjadwalan dari tentor
+Dan juga dari pembayaran
+Eh Bu Ayu udah oke ya
+Iya
+Kemarin juga sedikit menambahkan
+Di paragraf
+Kalau bisa ada paragraf yang tadi saya bilang
+Umum dulu
+Untuk penjelasan
+Proses bisnis secara umum
+Baru masuk ke
+Permasalahan
+Permasalahan
+Lalu saya juga disini
+Bapak satu
+Menyebutkan beberapa
+Penelitian yang sudah
+Kebanyakan itu memang
+Menggunakan waterfall pak
+Waterfall
+Karena itu memang
+Udah ada punya proses bisnis
+Yang saya baca
+Udah punya
+Template atau proses bisnis
+Yang memang sudah
+Tetap dan
+Sudah pernah menggunakan
+Sistem sebelumnya
+Jadi mereka udah terlatih itu
+Karena sudah
+Ya berarti saya sudah tahu lah
+Apa yang dibuat kan
+Ya betul
+Tapi kalau ini
+Kalau yang
+Apa pak
+Kalau kamu pakenya
+Pakai saya PXP pak
+PXP
+Tapi alasannya sudah tahu
+Alasannya sudah tahu pak
+Sebenarnya
+Oh di
+Sebentar
+Di latar belakang ini
+Kamu masukin beberapa penelitian
+Tapi bukan
+Jurnal yang PXP nya ada gak metodenya
+Jurnal yang PXP nya ada pak
+Di bagian
+Ada juga yang waterfall tapi
+Yang di waterfall perbandingan ya pak
+Ada
+Alas
+Kamu ambil misalkan yang pakai waterfall
+Untuk apa
+Waterfall untuk perbandingan dari sisi
+Membedakan antara
+Yang sudah pernah dilakukan
+Sistem yang sudah pernah
+Dibuat sebelumnya
+Oleh penelitian yang menggunakan waterfall
+Dan juga bahwasannya
+Membedakan antara proses bisnis yang
+Memang sudah tetap
+Tapi ada hasil kesimpulannya kan
+Hasil kesimpulan
+Kesimpulan antara yang metode waterfall dengan yang tadi
+Karena gini
+Kamu pakenya PXP nih ya kan
+PXP
+Ada jurnalis itu waterfall
+Tapi tujuannya buat apa
+Karena kan kamu gak akan pakai waterfall
+Ya kan
+Kalau di latar belakangnya
+Yang bapak sampaikan ya
+Kan pakenya PXP
+Berarti kamu harus mencari
+Kenapa harus pakai PXP
+Nah
+Bukan
+Mengapa harus ada jur
+Waterfall
+Nah
+Tapi yang saya tanya adalah
+Waterfall disitu
+Fungsinya buat apa
+Oh
+Sistemnya
+Sistemnya itu sama pak
+Bimbel
+Untuk bimbingan belajar
+Oke
+Tetapi dengan menggunakan metode yang berbeda
+Yaitu waterfall
+Nah
+Dia pakai waterfall
+Konteksnya di Bimbel itu pak
+Ya konteksnya di Bimbel
+Dia pakai waterfall
+Ya
+Tujuannya buat kamu apa
+Karena dia
+Bimbel sama nih
+Tapi dia pakai waterfall
+Oh
+Sedang kamu pakai PXP
+Tujuannya buat apa
+Ada waterfall disitu
+Kalau dia gak mempengaruhi apapun
+Gak usah
+Oke
+Kecuali kamu bisa ngasih tau bahwa
+Misalkan nih
+Jurnal sebelumnya menggunakan waterfall
+Tapi hasilnya waterfall itu tidak sesuai
+Hasil kesembulannya
+Tapi dari jurnal yang lain
+PXP oke
+Makanya saya pakai ST
+Karena
+Kalau kamu gak ada
+Di latar ini kan latar belakangnya ya
+Bukan membandingkan ya
+Membandingkan ada sendiri kan
+Iya betul
+Ini kan di latar belakang itu
+Bagaimana latar belakangnya
+Yang melatar belakangi
+Masalahnya itu apa
+Kemudian solusi kamu apa
+Ya latar belakangnya apa nih
+Masalah solusi
+Nah
+Karena kamu gak ngambilnya PSP
+Kan kamu harus cari jurnal yang menguatkan kamu
+Bahwa PSP ini cocok buat masalah kamu
+Nah sedangkan kamu disini ada jurnal waterfall
+Nah sedangkan kamu
+Kamu bilang
+Masalahnya sama
+Ya masalahnya sama
+Dia sama-sama konteksnya di
+Gimbelnya
+Tapi solusi dia itu waterfall
+Bukan PSP
+Terus kamu ngomong PSP lebih bagus gitu
+Tapi waterfallnya kan
+Konteks itu
+Gak ada gitu
+Maksud saya itu
+Nanti pasti
+Jadi pun saya bisa tanya
+Kenapa ada waterfall
+Kalau gak dipakai
+Kenapa harus ada waterfall
+Oke
+Kesoalannya ada hubungannya nih
+Misalkan kamu harus tahu
+Waterfall itu disini
+Kurangnya apa ya
+Maka dilengkapi oleh PSP
+Yang ada di jurnal ini
+Nah itu oke
+Saya terima
+Kalau yang disini
+Konteksnya lebih sama
+Permasalahannya
+Nah kalau masalahnya sama
+Nanti menjadi masalah
+Karena masalah yang sama
+Solusinya berbeda
+Tapi kamu pakai PSP
+Alasannya apa ada waterfall
+Iya betul
+Oke
+Jadi saya
+Tapi kalau untuk nanti
+Ya sebentar ya
+Tapi kalau yang diperbandingan
+Oke
+Di selanjutnya
+Oh yang diperbandingan oke
+Oke
+Perbandingan memang kamu
+Kan menggali nih
+Dari banyak metode pengembangan
+Ada PSP ada waterfall
+Iya
+Kamu bisa menggali
+Oh saya lebih cocok PSP
+Iya
+Karena pembandingannya gini
+Nah kalau di belah pelatah bangga
+Menguatkan kamu aja
+Kalau membandingkan
+Oke
+Kalau misalkan
+Yang tadi
+Konteksnya
+Eee
+Pembandingan
+Antara
+Metode yang
+Setipe
+Seperti
+PXP
+XP Scrum
+Dan lain
+RAD
+Itu akan dimasukkan ya pak
+Di latar belakang
+Di perbandingan iya
+Kalau di latar belakang juga perlu gak pak
+Seperti ini tuh
+Saya menyebutkan
+Eee
+Pengembangan sistem
+Selama kamu bisa mengangkat
+Kenapa harus pakai PSP
+Oke
+Karena kan disini ada objeknya
+Masalah yang sama
+Kamu ngangkat bilang
+Kenapa ada waterfall pak
+Karena objeknya sama
+Sama-sama
+Kamu harus kasih garis
+Apa
+Penghubungnya
+Jadi jangan perlu mau
+Bahas ini
+Terus ngapain
+Sering mahasiswa tuh
+Ada satu target sendiri
+Objeknya sama
+Tapi dia gak ngasih
+Simpulan apapun
+Hubungannya apa dengan kamu
+Kamu atas
+Wah dia pakai metode yang lain
+Kok
+Kecuali kamu ada hubungannya
+Kecuali kok misalkan nih
+Dari sini akurasinya 60 nih
+Kalau yang PSP
+Misalkan ya
+Kalau data
+Main data
+Kalau kamu baca jurnal data
+Pasti banyak
+Metode yang dimasukin
+80
+Maka dia simpulkan
+Karena 80
+Dengan objek yang sama
+Masalah yang hampir sama ya
+Akurasinya 80%
+Lebih bagus
+Makanya saya menggunakan PSP
+Misalkan
+Karena akurasinya bagus
+Yang lainnya kurang
+Oke karena
+Dia ngasih garis
+Benangnya
+Ada penghubungnya
+Tapi kalau kamu ngomong ini sendiri
+Ini sendiri buat apa
+Hmm
+Oke
+Kecuali kamu ngangkat
+Oh waterfallnya kurangnya dimana
+Oke
+Dilengkapi oleh PSP
+Nah itu oke
+Oke
+Kalau cuma
+Hasilnya
+Membahasan masing-masing
+Membahasan masing-masing
+Membahasan masing-masing
+Oke
+Ya ada penghubungnya
+Gitu sih pak
+Untuk di latar belakangnya
+Terus di rumusan masalah ini
+Awalnya kemarin kan 5
+Cuma saya jadikan
+Kemarin saya sudah dimulai semuanya
+Jadinya 2
+Iya kebanyakan kemarin
+Iya
+Jadi ini dari
+Kayak dibatasi
+Oke
+Ini
+Dibatasi
+Ini
+Dibatasi
+Dibatasi
+Oke
+Lalu untuk tujuannya
+Eh
+Tujuan kan menjawab
+Eh
+Tujuan menjawab dari rumah sama-sama
+Masalah
+Masalah
+Masalah
+Batasan rancangan ini
+Ada yang 4
+Kalau misalkan tuh
+Berfokusnya pada dashboard management
+Terus yang kedua
+Itu gak ada LMS
+Yang ketiga
+Itu gak menggunakan payment gateway
+Dan juga untuk notifikasi ini
+Lebih dari sisi admin yang akan secara manual mengklik tombol WhatsApp
+Eh
+Sebentar notifikasi ini gimana nih
+Notifikasi di web ya
+Bukan
+Jadi dari admin akan menambahkan
+Dari saya akan menambahkan tombol untuk
+Yang ngelink ke WhatsApp
+Dan udah ada template chatnya pak
+Untuk penagian
+Oh
+Jadi gak secara otomatis gitu
+Bele-bele aja
+Itu bisa pakai
+Penyiasat ya
+Ya
+Jadi saya buat
+Pemberitahuan
+Saya bisa pilih pengguna atau kemana
+Nanti dia set ke semuanya
+Misalnya set
+Saya pinginnya ke mitra
+Kemitra semua
+Nanti ada informasi
+Misalnya monitoring ada campaign baru
+Terserah sih kamu
+Oke
+Kalau rencana saya tuh
+Untuk
+Ini kan lebih ke penagian pak
+Jadi
+Rancangan
+Berdasarkan apa?
+Berdasarkan persiswanya
+Persiswa
+Wali muridnya
+Nah
+Siswa kan masih ada
+Terhubung ya
+Apa yang terhubung?
+HP kan?
+Nah itu juga yang mau ditanyakan pak
+Apakah
+Saya
+Buatkan
+Email untuk notifikasi
+Atau
+Cukup di whatsapp aja
+Karena kebanyakan
+Balik lagi
+Sesuai dengan mitra
+Cuma kalau
+Pake email
+Karena kamu disini
+Dia gak
+Dapur juga
+Ya betul
+Jadi kamu harus data email
+Nomor HP pasti punya
+Ya nomor HP
+Nah itu penting banget disitu
+Kalau punya saya
+Karena dia login
+Pake email
+Ya itu gampang banget
+Saya kasih informasi
+Karena pasti
+Yang punya akun punya email
+Ya betul pak
+Nah kalau kamu kan
+Dia gak harus login
+Gak pake email
+Nah itu gampang-gampang
+Datanya memang wajib
+Nomor HP sih pak
+Untuk peneftaran
+Kalau itu
+Ini gak pake nomor HP
+Bisa broadcast ke
+Iya betul
+Cuma itu
+Kalau misalkan broadcast
+Itu mungkin
+Di
+Belum ada
+Diperlukan sama mitra pak
+Cuma
+Rencana
+Rencana yang saya buat itu
+Satu baris data
+Tapi nah pesan pebayaran
+Nanya untuk satu orang
+Ya bukan informasi
+Ke semua orang ya
+Iya per orangnya
+Per orang
+Iya betul
+Berarti dia harus punya
+Pilihan itu
+Gak bisa di share
+Bisa sih
+Saya rencana
+Per satu baris data
+Itu udah langsung
+Nomor HP
+Action untuk
+Kesapannya
+Iya
+Kesapannya
+Bisa semua
+Kalau misalnya informasi ada
+Jadwal apa
+Misalnya ada jadwal
+Kita punya kegiatan
+Apa nih
+Biasanya
+Gimbel-gimbel punya kegiatan
+Ada lomba
+Informasi bisa di informasi
+Ke orang tuanya
+Misalnya atau libur
+Ada tanggal apa
+Libur
+Selanggap semuanya
+Tinggal pesannya apa
+Kirip
+Otomatis semuanya
+Dapat
+Sebagai rekomendasi saya
+Untuk ke Mitra
+Kalau kamu buat notifikasi
+Sekalian gitu
+Milih satu-satu
+Kan bisa enak
+Gampang aja
+Kalau sama satu bisa
+Tinggal milih semua aku
+Semua akunya
+Atau cuma satu
+Oke
+Oke
+Tentuk
+Batasannya
+Lalu ini manfaatnya
+Saya bagi
+Menjadi tiga
+Bagi Mitra
+Bagi Mitra
+Bagi Mitra
+Langsung sama
+Lalu dampaknya ini
+Dari fungsional
+Dan juga komersional
+Ini maksudnya
+Prototep ya
+Eh
+Nama apa Prototep?
+Prototep
+Prototep
+Karena kemarin
+Yang bimbingan
+Sama Pak Arif
+Yang ketiga
+Karena ini juga
+Dari Mitra
+Juga mau
+Di implementasikan
+Oh iya
+Lalu ini untuk
+Rangka
+Tugas Airnya
+Ini udah harus
+Ngikuti jurnalnya
+Bab 2
+Iya
+Ini dari yang
+Jurnal
+Awal
+Banget Pak
+Yang dari
+2019
+Ini dia gang alert
+Atau Tijuan Pustaka
+Saya kenal template yang baru
+Saya kurang tau
+Ini dari
+Perangka tugas air penyertian
+Perangka penyertian
+Dari awal
+Dan di luar
+Ditambah
+Dengan
+Metode PXP
+Oke
+Kalau PXP nya sendiri
+Dimana?
+PXP nya ini Pak
+Saya tambahkan juga
+Di dalam sini
+Saya agak lupa
+Kalau template nya
+Kalau dulu kan
+Yang template sebelumnya
+Itu kan
+Tijuan Pustaka sendiri
+Kemudian
+Metologi Penelitian sendiri
+Iya
+Nanti disini ada
+Teori nya
+Disini implementasi
+Itu di bab 2
+Apa?
+Nah disini ada
+Yang PXP
+Metode nya aja
+Kayak Tijuan Pustaka ada?
+Oh itu di bab 2 nya nih Pak
+Tijuan Pustaka Pak
+Di bagian
+Oh
+Di gam alir itu malah
+Di atas ya?
+Iya
+Terangka tugas air di sini Pak
+Di bus 1
+Bab 3 isinya apa?
+Bab 3 itu udah rancangan prototype
+Ini karena udah prototype sih
+Jadi
+Tidak template nya
+Oke saya ikutin aja
+Yang penting informasi di dalamnya
+Di dalamnya
+Di dalamnya
+Di dalam alir ya?
+Di dalam alir Pak
+Oh sorry
+Di dalam alir
+Jadi saya mulai dari identifikasi masalah
+PXP nya udah harus
+Sesuai dengan yang
+Acuan di Jari Pustaka kan?
+Iya
+Saya ngambil dari sumbernya
+Kalau misalnya dari
+Menemukan sumber awalnya
+Itu di tahun 2004
+Enggak kan Pak?
+Sumber kenapa munculnya dari PXP?
+Gak apa
+Gak apa
+Kalau PXP nya
+Gak apa
+Kalau misalnya
+Biar tau kan sejarahnya PXP
+Iya
+Tapi sama
+Tahapannya masih sama?
+Tahapannya masih sama Pak
+Kalau
+Saya ngambilnya
+Masih oke sih
+Sama gak
+Kalau misalkan mau cari yang baru
+Gak apa
+Tapi tetap yang lama
+Harus tahu
+Siapa sumber utama
+Siapa yang ngembangkan PXP
+Kalau ini PXP nya sendiri
+Karena ini kerangkat tugas penilian akhir
+Jadi saya tambahkan
+Kan UAT beda dari PXP itu sendiri Pak
+Jadi
+Saya tambahkan UAT sama deployment
+Oke
+Lalu
+Di bab 2
+Ini juga emang saya
+Saya siap sebagai pemimpin berapa sih?
+Pertama Pak
+Oh pertama ya
+Lalu
+Disini
+Tinjuan Pustaka
+Dari metodologi terkait
+Ini saya udah ngebahas
+Total ada 14 subab
+Dari sisi informasi manajemen dan pengembangannya
+Karena kan saya juga ada pengen
+Saya
+Pugas ayat saya ini
+Ngebuat manajemen dashboard
+Jadi juga ada perlu
+Sisi pemahaman dari proses bisnisnya itu seperti apa
+Dan sisi informasi itu seperti apa
+Lalu yang kedua dari
+XP nya itu sendiri
+Nanti yang bahasa asing dicetak miring ya Mas ya
+Iya
+PXP
+Oke terus
+Dan ini yang terlalu saya bilang
+Oke
+Tapan yang tadi
+Dari
+Dari
+Illustrator
+Dari
+Use Case Diagram
+Use Case Diagram ini berarti UMN ya?
+Iya
+UML Pak
+Saya ambil referensi dari
+Pak Arief yang kasih Pak
+Ini juga
+Ini juga
+Dari BPMN
+Ini rekomendasi dari Bu Ayu Pak
+Jadi Bu Ayu
+Rekomendasikan saya
+Coba dibuatkan secara garis besar dari proses bisnisnya itu sendiri
+Dengan BPMN
+Kalau menurut Pak Arief gimana Pak?
+Pak Arief
+Pak Arief juga tetap perlu memasukkan ini
+Atau cukup dari
+Aktiviti Diagram
+IRD
+Sama
+Kelas Diagram
+Saya pernah tahu nih
+Bisnis proses model
+Untuk menggambarkan makasih
+Dari
+Seperti ini Pak
+Cantu
+Ini ya Pak?
+Seperti ini Pak
+Oh ini flow nya Pak?
+Flow
+Iya betul
+Dari
+Dari awal sampai akhir Pak
+Oh boleh boleh boleh
+Seperti ini Pak
+Dan ini berdasarkan dari
+Apa namanya
+Fitur yang mau di
+Tapi coba nanti
+Cari informasi dulu ya
+Kalau udah pakai BW
+Apa namanya?
+BPMN
+BPMN
+Apakah masih pakai
+Pass Diagram
+Atau Diagram
+Oh ya
+Takutnya ini
+Apa ya?
+Kayak
+Menggambarkan hal yang sama
+Tapi dia pakai
+Versinya ini sama
+Ini penggantinya dari
+Activity Diagram Pak
+Activity Diagram?
+Iya
+Penggantinya Activity Diagram
+Kalau Activity Diagram itu hampir sama
+Kayak
+Dependin Diagram
+Karena kalau udah
+Udah pakai UML
+Ada
+Awalnya kan
+Use case dulu
+Abis use case nanti
+Tahapan
+UML kan banyak ya
+Ada Activity Diagram
+Ada
+Pass Diagram
+Ada
+Spensial Diagram
+Itu produknya UML
+Iya betul
+Saya takutnya
+Udah pakai UML
+Kenapa masih pakai yang lain
+Nah coba nanti
+Digali lagi
+Perbedaannya
+Perbedaannya
+Apa
+Intinya harus tahu
+Digunakan itu
+Untuk menjelaskan apa
+Jangan sampai
+Sudah dijelasin
+Di diagram
+Diulangi lagi
+Oke
+Paham
+Lalu berikutnya
+Berikutnya
+Berikutnya dari
+Class Diagram
+Ini bagian UML
+Bagian UML
+Lalu
+Dari
+URD juga
+Saya ada buat
+Terus berikutnya
+Kening banget URD itu
+Iya pak
+Dari
+Max.js nya
+Ini tools tools
+Tools nya
+Lalu
+Dari
+Resepinya buat apa
+Untuk
+Pengiriman ini pak
+Informasinya
+Betul
+Dari
+Dari
+Satu
+Admin
+Ke super admin
+Kan di dalamnya juga ada
+Apa namanya
+Pengiriman data
+SAPA dengan
+APJP bedanya apa ya
+Nah coba itu mas
+Karena gini mas
+Aku lihat dari kamu ya
+Iya
+Saya takutnya kamu itu
+Bangun situnya monolitik
+Oke
+Monolitik itu
+Gak pakai PA
+Langsung
+Walaupun
+Dalamnya
+Datanya itu banyak pak
+Tapi kamu tadi ngebutkan nya
+Next.js yang
+Iya
+Sampai
+Sampai
+Saya jadi agak
+Lupa
+Saya pakenya PGT
+Bisa kandang kalau
+SET
+Bedanya
+Lupa saya
+Up
+.
+Oke
+Oke
+Ya
+Enggak
+Yang dibangun
+Menggunakan
+Metodata
+kalo saya tuh pake IP Gateway, saya kadang lupa membedakan
+Bestway IP itu ya bisa itu, ini monolitik
+kalo IP Gateway itu front and backnya dipisah
+tapi kamu pake NXJS ya?
+dipisah juga pak?
+nah, oke
+oh iya
+kalo dipisahkan dia harus pake IP Gateway
+kalo ini bener, di dalamnya tetep, ini masih tetep dipake sih
+karena kan gatepost itu menangkap ya, dilanya
+tapi sebelum ngangkepkan dia di pakai IP Gateway
+penghubung
+karena kan kamu buat nanti backend datanya, dokumenya sendiri
+dengan itu pindah
+berarti tetep dimasukkan atau gak perlu pak?
+kayaknya gak terlalu penting sih
+karena memang udah ada NXJSnya pak?
+iya gak terlalu penting
+karena tools, kalo tools sebenernya gak bisa dimasukin ke itu
+karena kan kalo tools gini, kamu sudah menentukan NXJS
+kadang kamu tau-tau di jalan, kayaknya pakenya react aja
+kamu sudah tulis kan, karena cuma tools kan cuma pilihannya
+iya
+nah kalo IP Gateway tuh kayak gini nih
+jadi yang menghubungkan data saya dengan itu tuh ini bentuknya
+public
+nah ini IP Gateway semua kan
+datanya dikirim kayak gini nih
+nah ditangkap
+nangkapnya pake apa?
+res API tadi
+gate
+oh nangkapnya
+makanya gak perlu
+gak dimasukkan
+jadi itu get
+get nangkapnya
+dia nangkapnya disini
+nah res API
+kalo ini IP Gateway
+res API itu yang gatepost tadi kan
+dan kalo yang ini
+itu yang nangkap nilainya ini
+domain alamatnya
+ditangkep
+API-nya
+berarti
+saya gak perlu dimasukkan ini
+karena sudah masuk
+udah include
+keseluruhan sistem itu pak ya?
+gak apa
+karena itu pasti ada
+SPP itu
+oh jadi masukin aja pak?
+gak apa
+data lanjut
+mesi L
+belum ada SQL
+oh datanya mesi L?
+iya pak
+datanya mesi L
+dikita ada black box testing
+sama UAT
+ini ada penelitian terdahulunya
+ini udah ngikutin template
+penelitian dahulunya?
+oh belum pak
+nanti di cek lagi gak?
+iya
+penelitian dahulu itu
+gak cuma
+kalau saya sih pingnya kayak
+kamu bisa menyimbolkan dari situ gitu kan?
+iya
+ini kemarin ikutin yang
+bapak rekomendasikan
+kalo misalkan
+kalo ditemplate kan
+hanya dari
+nomor
+nama tahun
+peneliti sama
+hasil pak
+kalo misalkan ditambah
+dengan perbedaan
+pembedaannya
+dengan pembedingnya
+yaitu saya punya saya sendiri pak
+sistemnya saya sendiri gimana pak?
+boleh sih
+lebih dalam akhirnya
+lebih dalam iya
+karena kan
+kamu gak coba baca
+tapi kamu bisa membandingkan
+kenapa
+akhirnya kan kita tahu
+kenapa kamu pakenya
+iya
+kenapa sih?
+iya
+kalau saya itu gak apa
+karena itu gak ngurangnya
+ini tujuannya saya untuk
+apa
+yang pasti ditanya
+pxp-nya
+iya
+pasti kamu ditanya perbandingan
+metode itu pasti
+nanya
+nama pake pxp
+apalagi
+ada di atas tadi kamu
+objek-objeknya
+objek yang sama
+pake waterfall
+iya
+pasti kan ditanya
+yang itu pake waterfall
+kok kamu pake pxp
+iya
+nah kamu harus bisa menyiapkan
+cara enaknya ya
+dimasukkan di perbandingan
+akhirnya kan kamu sudah
+membaca dulu
+iya
+membaca duluan gitu pak
+karena kalau di template
+kan itu cuma sebatas
+dari hasilnya
+hasilnya
+gak apa-apa berarti pak
+kalau ditambahkan
+itu lebih dalam
+kalau itu mau nambah
+value gak apa-apa
+mungkin itu aja pak
+telfon dari muka
+sikir
+muka sikir
+muka sikir
+ya
+muka

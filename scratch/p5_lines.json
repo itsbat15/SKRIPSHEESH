@@ -1,0 +1,947 @@
+﻿[
+    {
+        "Text":  "2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "3.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "IO.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "11.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "12.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "13.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "14.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "15.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "16.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "17.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "18.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "19.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "0.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "3.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "4.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "5.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Get the requirement statement from the customer",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create domain-driven design",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pick a User Story and break it into features",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Group features into FeatureSets",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Sort FeatureSets by priority to create a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSetPriorityList",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Check for any changes in user stories and features.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Update the FeatureSet and re-sort the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSetPriorityList.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Break FeatureSet into Tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create unit tests for tasks",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Update design and create an iteration plan for the current",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSet.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Sort tasks by their priority to create TaskPriorityList.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pick a task from the top of the TaskPriorityList and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "write/modify the code to implement the task",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Compile and unit test the developed code.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform integration test.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Refactor code in the Refactor baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform acceptance testing for Refactored code",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Trace from user stories to features.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Trace from features to FeatureSets.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Trace from FeatureSets to tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Development baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Refactor baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Production baseline",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create a new task",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Write System Metaphor",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Write User Stories",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pick all user stories and break them into features",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Figure 2: Features for the user stories",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Figure 4: TaskPriorityList",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The task with highest priority for development was then coded",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and unit tested, and saved in development baseline. The next",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "task in the TaskPriorityList was picked for development.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The code was maintained by versions in development baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Upon completion of a FeatureSet (i.e. an iteration), the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development baseline was refactored and integration tested and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "moved to the refactor baseline. Acceptance testing was then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "performed on the code in the refactor baseline and was moved to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the production baseline upon successful test and was stored as a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "release version.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "5. Conclusions",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Personal Extreme Programming (PXP) is a software",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development process for a single person team. It is based on the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "values of Extreme Programming (XP) i.e. simplicity,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "communication, feedback, and courage. It works by keeping the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "important aspects of XP and refining the values so that they can",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "fit in a lone programmer situation.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "PXP can still be refined and improved. It is in the tradition of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "XP practitioners to vary XP to encompass whatever works. We",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "hope that PXP inherits these pragmatic roots, as well. Giving up",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "XP tenets like pair programming is not necessarily a tragedy.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "We still believe that following XP strictly is a more effective",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "way to pursue multi-person projects. But we are also convinced",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "that many of the XP practices and methods can be applied to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "individual work.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The PXP approach tries to balance between the \"too heavy\" and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the \"too light\" methodologies. PXP will inject the right amount",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "of rigor for the situation without overburdening the team with",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "unnecessary bureaucracy.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "3.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "4.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "5.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "6.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "7.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "8.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "9.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Get the requirement statement from the customer.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pick a User Story and break it into features.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Group features into FeatureSets.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Sort FeatureSets by priority to create a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSetPriorityList.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Break FeatureSet into Tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create unit tests for tasks..",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Update design and create an iteration plan for the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "current FeatureSet.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Sort tasks by their priority to create TaskPriorityList.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Pick a task from the top of the TaskPriorityList and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "write/modify the code to implement the task.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Compile and unit test the developed code.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Development baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Refactor baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integrate code into the Production baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform integration test.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Refactor code in the Refactor baseline.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform acceptance testing for Refactored code.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create domain-driven design.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Figure 3: FeatureSetPriorityList",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "6.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[11",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[21",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[3]",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[41",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[5]",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "[6]",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "86",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "References",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Akpata E., and Riha K. , (2004), \"Can Extreme",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programming be used by a Lone Programmer?\", Systems",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Integration 2004 .",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Beck K., (2000), \"eXtreme Programming eXplained:",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Embrace Change\". Addison Wesley.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Brewer J., Design J. , (2001) \"Extreme Programming",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FAQ\", http://www.jera.com/techinfo/xpfaq.html",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Cockburn A. , (2004), \"Crystal Clear: A Human-Powered",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Methodology for Small Teams (The Agile Software",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Development Series)\" , Addison-Wesley Professional.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Fowler, M. , (2003), \"The new methodology\",",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "http://wvvvv.martinfowler.com/articles/newMethodology.ht",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ml",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Humphrey W., (1996), \"Introduction to the Personal",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Software Process\". Addison Wesley Longman.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    }
+]

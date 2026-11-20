@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 940" width="1200" height="940">
+  <defs>
+    <style>
+      .title { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #000; }
+      .sub-title { font-family: 'Arial', sans-serif; font-size: 13px; font-style: italic; fill: #333; }
+      .actor-label { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #000; text-anchor: middle; }
+      .actor-sub { font-family: 'Arial', sans-serif; font-size: 12px; fill: #444; text-anchor: middle; }
+      .uc-text { font-family: 'Arial', sans-serif; font-size: 12.5px; fill: #000; text-anchor: middle; font-weight: 500; }
+      .rel-label { font-family: 'Arial', sans-serif; font-size: 11.5px; fill: #111; font-style: italic; text-anchor: middle; font-weight: 600; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9" fill="none" stroke="#000" stroke-width="1.5" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="940" fill="#ffffff" />
+
+  <!-- System Boundary Box -->
+  <rect x="240" y="40" width="720" height="850" rx="4" ry="4" fill="#fafafa" stroke="#000000" stroke-width="1.8" />
+  <text x="260" y="70" class="sub-title">&lt;&lt;subsystem&gt;&gt;</text>
+  <text x="260" y="92" class="title">Sistem Informasi ARTHA</text>
+
+  <!-- ================= ACTORS ================= -->
+  <!-- Left Actor: Staf Administrasi Cabang -->
+  <g id="actor-staf" transform="translate(120, 390)">
+    <!-- Stick Figure -->
+    <circle cx="0" cy="0" r="18" fill="#fff" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="18" x2="0" y2="70" stroke="#000" stroke-width="2" />
+    <line x1="-35" y1="35" x2="35" y2="35" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="70" x2="-25" y2="120" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="70" x2="25" y2="120" stroke="#000" stroke-width="2" />
+    <!-- Label -->
+    <text x="0" y="145" class="actor-label">Staf Administrasi</text>
+    <text x="0" y="165" class="actor-label">Cabang</text>
+  </g>
+
+  <!-- Right Actor: Super Admin -->
+  <g id="actor-admin" transform="translate(1080, 480)">
+    <!-- Stick Figure -->
+    <circle cx="0" cy="0" r="18" fill="#fff" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="18" x2="0" y2="70" stroke="#000" stroke-width="2" />
+    <line x1="-35" y1="35" x2="35" y2="35" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="70" x2="-25" y2="120" stroke="#000" stroke-width="2" />
+    <line x1="0" y1="70" x2="25" y2="120" stroke="#000" stroke-width="2" />
+    <!-- Label -->
+    <text x="0" y="145" class="actor-label">Super Admin</text>
+    <text x="0" y="165" class="actor-sub">(Pemilik Lembaga)</text>
+  </g>
+
+  <!-- ================= USE CASES (OVALS) ================= -->
+  <!-- UC-01: Autentikasi (Top Middle, shared) -->
+  <g id="uc-01">
+    <ellipse cx="600" cy="115" rx="125" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="600" y="120" class="uc-text">Melakukan Autentikasi Masuk</text>
+  </g>
+
+  <!-- UC-02: Mendaftarkan Siswa Baru (Left Column) -->
+  <g id="uc-02">
+    <ellipse cx="400" cy="205" rx="120" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="400" y="210" class="uc-text">Mendaftarkan Siswa Baru</text>
+  </g>
+
+  <!-- UC-03: Memvalidasi Kuota Rombel (Center-Right from UC-02) -->
+  <g id="uc-03">
+    <ellipse cx="780" cy="205" rx="120" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="210" class="uc-text">Memvalidasi Kuota Rombel</text>
+  </g>
+
+  <!-- UC-04: Mencatat Pembayaran Kasir Cabang (Left Column) -->
+  <g id="uc-04">
+    <ellipse cx="400" cy="315" rx="130" ry="28" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="400" y="313" class="uc-text">Mencatat Pembayaran</text>
+    <text x="400" y="328" class="uc-text">Kasir Cabang</text>
+  </g>
+
+  <!-- UC-05: Mengunggah Bukti Transfer Bank (Center-Right from UC-04) -->
+  <g id="uc-05">
+    <ellipse cx="780" cy="315" rx="125" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="320" class="uc-text">Mengunggah Bukti Transfer Bank</text>
+  </g>
+
+  <!-- UC-06: Mencetak Kuitansi Pembayaran (PDF) (Center Column) -->
+  <g id="uc-06">
+    <ellipse cx="590" cy="425" rx="130" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="590" y="430" class="uc-text">Mencetak Kuitansi Pembayaran (PDF)</text>
+  </g>
+
+  <!-- UC-07: Melakukan Rekonsiliasi Kas Harian (Left Column) -->
+  <g id="uc-07">
+    <ellipse cx="400" cy="540" rx="130" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="400" y="545" class="uc-text">Melakukan Rekonsiliasi Kas Harian</text>
+  </g>
+
+  <!-- UC-08: Mengelola Pengguna dan Cabang (Right Column - Super Admin) -->
+  <g id="uc-08">
+    <ellipse cx="780" cy="500" rx="125" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="505" class="uc-text">Mengelola Pengguna dan Cabang</text>
+  </g>
+
+  <!-- UC-09: Mengelola Master Rombel (Right Column - Super Admin) -->
+  <g id="uc-09">
+    <ellipse cx="780" cy="590" rx="130" ry="26" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="595" class="uc-text">Mengelola Master Rombel</text>
+  </g>
+
+  <!-- UC-10: Memvalidasi Pembayaran Transfer Bank (Right Column - Super Admin) -->
+  <g id="uc-10">
+    <ellipse cx="780" cy="680" rx="135" ry="28" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="678" class="uc-text">Memvalidasi Pembayaran</text>
+    <text x="780" y="693" class="uc-text">Transfer Bank</text>
+  </g>
+
+  <!-- UC-11: Memantau Tunggakan dan Jatuh Tempo SPP (Right Column - Super Admin) -->
+  <g id="uc-11">
+    <ellipse cx="780" cy="770" rx="135" ry="28" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="768" class="uc-text">Memantau Tunggakan &amp;</text>
+    <text x="780" y="783" class="uc-text">Jatuh Tempo SPP</text>
+  </g>
+
+  <!-- UC-12: Melihat Dasbor Konsolidasi Keuangan (Right Column - Super Admin, directly below UC-11!) -->
+  <g id="uc-12">
+    <ellipse cx="780" cy="855" rx="135" ry="28" fill="#ffffff" stroke="#000" stroke-width="1.6" />
+    <text x="780" y="853" class="uc-text">Melihat Dasbor</text>
+    <text x="780" y="868" class="uc-text">Konsolidasi Keuangan</text>
+  </g>
+
+  <!-- ================= ASSOCIATIONS (SOLID LINES) ================= -->
+  <!-- From Staf (center: 120, 425) -->
+  <line x1="155" y1="410" x2="475" y2="120" stroke="#000" stroke-width="1.5" />
+  <line x1="155" y1="420" x2="280" y2="205" stroke="#000" stroke-width="1.5" />
+  <line x1="155" y1="425" x2="270" y2="315" stroke="#000" stroke-width="1.5" />
+  <line x1="155" y1="440" x2="270" y2="540" stroke="#000" stroke-width="1.5" />
+
+  <!-- From Super Admin (center: 1080, 515) -->
+  <line x1="1045" y1="500" x2="725" y2="120" stroke="#000" stroke-width="1.5" />
+  <line x1="1045" y1="510" x2="905" y2="500" stroke="#000" stroke-width="1.5" />
+  <line x1="1045" y1="515" x2="910" y2="590" stroke="#000" stroke-width="1.5" />
+  <line x1="1045" y1="520" x2="915" y2="680" stroke="#000" stroke-width="1.5" />
+  <line x1="1045" y1="530" x2="915" y2="770" stroke="#000" stroke-width="1.5" />
+  <line x1="1045" y1="540" x2="915" y2="855" stroke="#000" stroke-width="1.5" />
+
+  <!-- ================= INCLUDE & EXTEND (DASHED ARROWS) ================= -->
+  <!-- 1. UC-02 <<include>> UC-03 -->
+  <line x1="520" y1="205" x2="655" y2="205" stroke="#000" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+  <rect x="555" y="190" width="70" height="16" fill="#ffffff" />
+  <text x="590" y="202" class="rel-label">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- 2. UC-05 <<extend>> UC-04 -->
+  <line x1="655" y1="315" x2="535" y2="315" stroke="#000" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+  <rect x="560" y="302" width="70" height="16" fill="#ffffff" />
+  <text x="595" y="314" class="rel-label">&lt;&lt;extend&gt;&gt;</text>
+
+  <!-- 3. UC-04 <<include>> UC-06 -->
+  <path d="M 480 340 Q 520 385 540 405" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+  <rect x="475" y="375" width="70" height="16" fill="#ffffff" />
+  <text x="510" y="387" class="rel-label">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- 4. UC-10 <<include>> UC-06 -->
+  <path d="M 685 660 Q 620 540 600 455" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrow)" />
+  <rect x="615" y="545" width="70" height="16" fill="#ffffff" />
+  <text x="650" y="557" class="rel-label">&lt;&lt;include&gt;&gt;</text>
+</svg>

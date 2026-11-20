@@ -1,0 +1,744 @@
+﻿[
+    {
+        "Text":  "40-Hour Week",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "On-site",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Customer",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Coding",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Standards",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "codebase; the more frequently code is integrated",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "into the main codebase the less chances that there",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "will be diversion. Software systems are built and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "integrated several times a day; at the very least all",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "changes are integrated into the main codebase at",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "least once a day. Each build is tested using the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "prepared test cases.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programmers in an XP project normally adhere to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "a 40 hour working week in order to maintain",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "productivity and avoid burn out.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "One or more customers who will use the system",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "being built are allocated to the development team.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The customer helps to guide the development and",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "is empowered to prioritize and state requirements",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "or answer any questions the developers may have.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "This ensures that there is effective communication",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "with the customer and as a result less",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "documentation will be uired.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Everyone uses the same coding standards which",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "make it easy to work in pairs and share ownership",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Of all code. One should not be able to tell who",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "worked on what code in an XP ro•ect.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "problem as the codebase serves as the linear record of one\u0027s",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "work. Integration will not cause any conflicts and is trouble",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "free but it is still quite easy to diverge from the main",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "codebase the longer you work without integrating.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Therefore continuous integration is still needed. The best",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "way to dewelop is to work on a task, integrate and then move",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "to the next task. This way divergence is kept to the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "rnmimum.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "All that is required to do this is to adhere to a 40-hour week",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and stop working for the day when you need to. This means",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "stop working when no longer productive, are stressed or",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "tired to reduce fati e and kee ou in excellent condition.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "If you are your own customer (at least initially) then",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "mumbling to ones self is reasonable. If you have other",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "customers then communication via email or phone will",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "probably moderate this problem as long as the customers are",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "open to communication.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "As a single person team, how you choose to code is your",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "coding standard. But some coding standard must be",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "followed to maintain the consistency throughout the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "devel ment.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "4. PXP at Work",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The PXP has not yet been applied to a large audience, but has",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "been applied and tested to develop a tool that is capable Of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "guiding a developer to develop a software project using PXP.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The process script was followed by a single person team and the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "results showed considerable ease and efficiency in completing",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the project in estimated time.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Initially, the system metaphor was created, followed by writing",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the user stories needed for this tool. The user stories are shown",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "in Figure 1. Then all the user stories were broken down into",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "features. The features needed for this process tool are shown in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Figure 2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Upon creating features needed, domain-driven design to reflect",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the domain model of the project was created and the features",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "were grouped into meaningful sets and were sorted by",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "implementation priority to create a FeatureSetPriorityList",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(shown in Figure 3).",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Iterative development cycle was used as recommended by the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "PXP process script and the FeatureSet with the highest priority",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "was picked and iteration plan was created for the set. The",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSet was then broken down into tasks needed to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "implement the FeatureSet, and a TaskPriorityList was created",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(e.g. Figure 4), along with the unit test for each task.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "85",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "3.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "4.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "5.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "6.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "7.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "8.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "9.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "IO.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "11.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "12.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "13.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "14.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Aid the developer to follow the PXP script.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Get the requirement statement from the customer.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create domain-driven design.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Break user stories into features and group them into",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "meaningful groups to create FeatureSets. Sort",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSets to create a FeatureSetPriorityList.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Check for any changes requested by the customer",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and update the lists.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Iteratively break the highest priority FeatureSet into",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "tasks and create unit tests for tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Develop FeatureSets by writing code for each task.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform code walkthrough.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform unit testing.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Perform integration testing.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Refactor the code and perform acceptance testing.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Trace from user stories to features, from features to",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "FeatureSets, and from FeatureSets to tasks.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Maintain the three baselines (Development,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Refactor, and Production).",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Create new tasks as needed.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Figure 1: User Stories",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    }
+]

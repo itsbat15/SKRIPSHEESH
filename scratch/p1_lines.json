@@ -1,0 +1,730 @@
+﻿[
+    {
+        "Text":  "Extreme Programming for a Single Person Team",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Ravikant Agarwal",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Computer Science \u0026 Software Engineering",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "107 Dunstan Hall",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Auburn University, AL 36849",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(334) 559-3545",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "agarwra@auburn.edu",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ABSTRACT",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The purpose of this paper is to examine the features of Extreme",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Programming (XP) and determine how it can be applied to a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "single person team (i.e. a programmer who works mainly on",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "his/her own as opposed to a programmer who works as a part Of a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "well-integrated team).",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A software development process for a single person team,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Personal Extreme Programming (PXP) is created. Process script",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "for PXP is explained and the core practices Of XP are compared",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "with those of PXP.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Keywords",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Software Process, Extreme Programming, Personal Software",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Process, Personal Extreme Programming, Process Script",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "1. Introduction",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Software development approaches have changed significantly",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "throughout the last decade. There are several well-documented",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "drawbacks of traditional \"heavyweight\" methodologies and as a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "response to that, a new group Of methodologies have appeared in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "the last few years [51. These are known as \"lightweight\" or",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "\"agile\" methodologies.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "The agile methodologies involve less documentation and are more",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "code-oriented. They are more adaptive as compared to the Other",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "\"heavyweight\" methodologies. Several methodologies now march",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "under the agile banner. They all share similar characteristics but",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "also have significant differences. There are lots of Agile methods",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "in use now days including Extreme Programming otherwise",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "known as XP[2], Cockburn\u0027s Crystal family[4],",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Feature Driven Development[8] and Dynamic Systems",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Development Method[9].",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Extreme Programming (XP) is the most popular of the various",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "types of \"agile\" software methodologies. XP preaches the values",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Of community, simplicity, feedback and courage. It is a set Of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "values, principles and practices for rapidly developing high-",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "quality software that aim to provide the highest value for the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "customer in the fastest way possible. XP is extreme in the sense",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "that it takes many well-known software development \"best",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Permission to make digital or hard copies Of all or part of this work for",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "personal or classroom use is granted without fee provided that copies are",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "not made or distributed for profit or commercial advantage and that",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "copies bear this notice and the full citation on the first page. To copy",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "otherwise, or republish, to post on servers or to redistribute to lists,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requires prior specific permission and/or a fee.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "ACM-SE \u002708, March 28-29, 2008, Auburn, AL, USA.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Copyright 2008 ACM ISBN 978-1-60558-105-7/08/03...S5.oo.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "David Umphress",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Computer Science \u0026 Software Engineering",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "107 Dunstan Hall",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Auburn University, AL 36849",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(334) 844-6335",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "umphrda@auburn.edu",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "practices\" to their logical extreme [3]. Extreme Programming",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(XP) was created in response to problem domains where",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requirements change frequently [l l]. XP will be more effective",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "than \"heavyweight\" methodologies in situations where customers",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "are not sure about functions they want or are likely to change their",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "mind every few months. XP is ideal for developing new types of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "software products and as such is a challenge for the developers. It",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "is also suitable for projects where a system has to be developed",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "within a strict time constraint.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Personal Software Process is a well-known software development",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "approach and was designed with an aim to improve the quality",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "and productivity of the personal work of individual software",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "engineers Personal metrics such as lines Of code produced per",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "hour, errors per thousand lines of code, percent of time spent in",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "each phase of the life cycle, etc. can be determined using PSP.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "Our approach is based on combination of Extreme Programming",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(XP) and Personal Software Process (PSP) [6]. The PSP helps",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "people to understand and improve their personal performance. It",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "educates them to estimate and plan their work and to do this",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "before committing to start doing the job. PSP, similarly to XP,",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "focuses on building quality products and tracking quality from the",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "initial development phase, instead of cheeking it right before",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "delivery.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "A complementary feature of PSP to XP is that PSP provides",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "scripts that support each engineering activity and facilitate its",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "correct completion. Another PSP feature that pairs the XP",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "objectives is that it assists the software engineers in improving",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "their performance.",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "2. Personal Extreme Programming (PXP):",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "XP For A Single Person Team",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "XP focuses on situations involving small teams, where",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "development is done in pairs. Many of XP practices require",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "teamwork, e.g. having someone else reviewing your code. XP",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "requires that all production code be written by two programmers",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "who pair up and constantly review each others work [7].",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "There are cases where pair programming is unattainable: where a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "single programmer is working on a project. As an independent",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "consultant, you might not have a coding partner to pair with. For",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "small or experimental projects, incurring the overhead Of",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "arranging pairing to carry out a task may be undesirable. To",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "address these issues, we scale XP to produce a methodology that",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "uses its practices, but in a form that an individual within a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "traditional project framework can use. The practices of XP are",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "modified so that they can fit in a lone programmer situation and a",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "software development process is created. We call our method PXP",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "(Personal Extreme Programming).",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    },
+    {
+        "Text":  "82",
+        "X":  0,
+        "Y":  0,
+        "W":  0,
+        "H":  0
+    }
+]

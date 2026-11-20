@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-25",
+  "scope": "Read-only semantic and structural review of both full design documents; not an executed SQL/application validation",
+  "inputs": [
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN USE CASE & SKENARIO.md",
+      "sha256": "d65a73781dc9c3f594e9f840408ad11ac6673cc483b06106a9295ba4206cf124"
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\DOKUMEN MD\\PERANCANGAN BASIS DATA (SKEMA & ERD).md",
+      "sha256": "a4ce87662410a59f0f850566a1b6b7b7bec362606f6a3ae002aea0e7f05c4faf"
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 1 - PENDAHULUAN (VERSI 11 PARAGRAF).md",
+      "sha256": "bc6d83c6a5fdbf52aef9f0c6aa01865191139f57c4bbfb89ffbf5ded4ccf7ec3"
+    },
+    {
+      "file": "C:\\Users\\ARIEL\\OneDrive - MSFT\\Documents\\ARTHA\\BAB 3 - RANCANGAN PROTOTIPE (DRAF 2026-10-25).md",
+      "sha256": "468858d34159f32b0fb85694ca1f87db041b6321ec9df3073240591ac4fbb220"
+    }
+  ],
+  "findings_count": 29,
+  "main_use_cases": 13,
+  "sub_use_cases": 13,
+  "sub_use_case_ids": [
+    "UC-02A",
+    "UC-02B",
+    "UC-03A",
+    "UC-03B",
+    "UC-03C",
+    "UC-04A",
+    "UC-04B",
+    "UC-04C",
+    "UC-05A",
+    "UC-05B",
+    "UC-05C",
+    "UC-08A",
+    "UC-09A"
+  ],
+  "erd_tables": 16,
+  "table_names": [
+    "academic_years",
+    "branches",
+    "users",
+    "subjects",
+    "fee_tariffs",
+    "students",
+    "mentors",
+    "mentor_subjects",
+    "class_rooms",
+    "classes",
+    "class_schedules",
+    "class_enrollments",
+    "bills",
+    "payments",
+    "wa_logs",
+    "revenue_validations"
+  ],
+  "erd_relationship_lines": 24,
+  "use_case_matrix_table_names": [
+    "academic_years",
+    "bills",
+    "branches",
+    "capacity_rules",
+    "class_enrollments",
+    "class_rooms",
+    "class_schedules",
+    "classes",
+    "discount_rules",
+    "fee_tariffs",
+    "learning_programs",
+    "mentor_subjects",
+    "mentors",
+    "payments",
+    "revenue_validations",
+    "students",
+    "subjects",
+    "users",
+    "wa_logs",
+    "wa_templates"
+  ],
+  "missing_tables": [
+    "capacity_rules",
+    "discount_rules",
+    "learning_programs",
+    "wa_templates"
+  ],
+  "erd_tables_not_in_matrix": [],
+  "chapter_1_rumusan_masalah_count": 3,
+  "all_original_design_files_preserved": true,
+  "all_local_links_resolve": true
+}

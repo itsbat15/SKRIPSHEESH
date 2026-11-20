@@ -1,0 +1,476 @@
+--- HALAMAN 1 ---
+124 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+Analisis Sistem Informasi Akuntansi Penerimaan Kas (SPP) 
+pada Yayasan Semesta Khatulistiwa 
+ 
+Hendri1, Muhammad Alghifary2, Herlina Yani Putri3, Mutia Rahayu4, Nurmalasari5 
+ 
+Info Artikel 
+ 
+ABSTRACT 
+ 
+Diterima Juli 19, 2025 
+Revisi Juli 25, 2025 
+Terbit September 30, 2025 
+ 
+This study aims to analyze the accounting information system for 
+cash receipts, specifically for the Sumbangan Pembinaan Pendidikan 
+(SPP) payments at Yayasan Semesta Khatulistiwa. The current 
+manual system used by the foundation often leads to inefficiencies in 
+data recording and financial reporting. Through observation, 
+interviews, and literature study, the researchers identified the need 
+for a more structured and digital approach. The research employed 
+the waterfall method in designing a prototype system using Figma, 
+supported by UML modeling tools such as use case, activity, and 
+sequence diagrams. The proposed system provides a user-friendly 
+interface for recording, managing, and monitoring student payments. 
+With the implementation of this system, the foundation is expected to 
+improve the accuracy, timeliness, and transparency of financial data, 
+while enhancing internal controls and decision-making processes. 
+Keywords: 
+Accounting Information 
+System  
+Cash Receipts  
+SPP                             
+Figma  
+Financial 
+Management 
+Education 
+ 
+Identitas Penulis: 
+Hendri 1, Muhammad Alghifari2, Herlina Yani Putri3, Mutia Rahayu4, Nurmalasari5 
+Universitas Bina Sarana Informatika, Sistem Informasi Akuntansi Kampus Kota Pontianak 1,2,3,4 
+Universitas Bina Sarana Informatika, Sistem Informasi Kampus Kota Pontianak5 
+Jl. Abdurrahman Shaleh no.18A 
+Email: 63230283@bsi.ac.id1, 63230937@bsi.ac.id2, 63230468@bsi.ac.id3, 
+63230360@bsi.ac.id4,nurmalasari.nrr@bsi.ac.id5 
+1. 
+PENDAHULUAN 
+Dalam era digital saat ini, penggunaan teknologi informasi dalam pengelolaan keuangan dan akuntansi 
+menjadi kebutuhan yang sangat penting, terutama dalam meningkatkan efisiensi, akurasi, dan transparansi 
+suatu lembaga. Yayasan Semesta Khatulistiwa, sebagai lembaga pendidikan swasta, menghadapi tantangan 
+dalam mengelola penerimaan kas, khususnya pembayaran Sumbangan Pembinaan Pendidikan (SPP) dari 
+peserta didik, secara efektif dan efisien. 
+Yayasan Semesta Khatulistiwa adalah sebuah yayasan yang menaungi beberapa jenjang pendidikan, 
+yang beralamat di Jl. Wan Sagaf No. 18, Kota Pontianak, Kalimantan Barat. Yayasan ini telah berdiri sejak 
+tahun 2008, dan memiliki visi untuk menjadi lembaga pendidikan unggulan yang berlandaskan nilai-nilai 
+keislaman dan teknologi. Seiring dengan berkembangnya jumlah siswa dan meningkatnya aktivitas 
+administrasi keuangan, yayasan ini perlu memiliki sistem informasi akuntansi yang dapat menunjang 
+kegiatan pencatatan transaksi penerimaan kas secara optimal. 
+Saat ini, sistem pencatatan penerimaan SPP di Yayasan Semesta Khatulistiwa masih dilakukan secara 
+manual, menggunakan buku catatan yang disimpan secara terpisah antara siswa dan pihak bendahara. Siswa 
+mencatat pembayaran mereka pada buku khusus yang disediakan, sementara bendahara mencatat transaksi 
+penerimaan dalam buku administrasi keuangan tersendiri. Sistem pencatatan seperti ini memiliki banyak 
+keterbatasan, antara lain rentan terhadap kesalahan pencatatan, duplikasi data, kehilangan data, serta 
+menyulitkan proses pencocokan (rekonsiliasi) antara catatan siswa dan catatan bendahara. 
+
+
+--- HALAMAN 2 ---
+125 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+Berdasarkan permasalahan tersebut, maka diperlukan sebuah rancangan antarmuka sistem informasi 
+akuntansi penerimaan kas (SPP) yang terkomputerisasi, guna meningkatkan efektivitas proses administrasi, 
+mengurangi risiko kesalahan pencatatan, serta dapat mendukung penyajian laporan penerimaan kas secara 
+tepat waktu dan akurat. Dengan adanya rancangan sistem informasi ini, diharapkan pengelolaan keuangan di 
+Yayasan Semesta Khatulistiwa dapat berjalan lebih tertib, sistematis, dan mendukung proses pengambilan 
+keputusan oleh pengurus yayasan. 
+Penelitian ini bertujuan untuk menganalisis kondisi sistem informasi akuntansi penerimaan kas (SPP) 
+yang berjalan saat ini di Yayasan Semesta Khatulistiwa, serta merancang usulan sistem informasi yang lebih 
+terintegrasi dan efisien. Rancangan sistem ini ditujukan untuk penggunaan internal yayasan, khususnya oleh 
+bagian administrasi dan bendahara, dalam rangka mempermudah proses pencatatan, pelaporan, dan 
+pemantauan transaksi penerimaan SPP dari siswa secara berkala. 
+Menurut Sutabri “Suatu sistem terdiri dari objek-objek atau sejumlah elemen yang saling berkaitan satu 
+sama lain  sehingga membentuk suatu kesatuan proses atau pengolahan tertentu” [1]. 
+Menurut Manurung bahwa, sesuatu dikatakan sistem terdiri dari kesatuan yang utuh dari beberapa bagian 
+yang saling berhubungan dan saling bernteraksi sehingga mencapai suatu tujuan tertentu [2]. 
+Menurut Jogiyanto Sistem informasi merupakan suatu sistem didalam suatu organisasi yang 
+mempertemukan kebutuhan pengolahan transaksi harian, mendukung operasi, bersifat manajerial dan 
+kegiatan strategi dari suatu organisasi dan menyediakan pihak luar tertentu dengan laporan-laporan yang 
+diperlukan [1]. 
+Sistem informasi didefinisikan sebagai sekumpulan komponen terintegrasi untuk tujuan mengumpulkan, 
+menyimpan, dan memproses data. Pemrosesan data ini menciptakan produk digital dan memberikan 
+informasi kepada perusahaan dan organisasi bisnis [2]. 
+Sistem informasi akuntansi merupakan sebuah sistem yang mengolah suatu informasi keuangan yang 
+didapat dari pengumpulan dan pengolah data transaksi keuangan sebuah instansi [3]. 
+Sistem informasi akuntansi berperan sebagai sarana bagi perusahaan dalam mengelola dan mengawasi 
+aktivitas keuangannya. Melalui sistem ini, komunikasi keuangan di dalam perusahaan menjadi lebih 
+terstruktur, sehingga mendukung kelancaran aliran dana. Dengan penerapan sistem informasi akuntansi, 
+setiap bagian dalam perusahaan dapat menjalankan fungsinya secara terkoordinasi dan tertib [4]. 
+Menurut Saragih Penerimaan kas merupakan masuknya kas ke dalam perusahaan, baik dalam bentuk 
+uang tunai maupun surat berharga yang dapat segera dicairkan. Penerimaan ini dapat berasal dari berbagai 
+aktivitas perusahaan seperti transaksi penjualan tunai, pelunasan piutang, atau kegiatan lain yang 
+berkontribusi menambah saldo kas Perusahaan [5]. 
+Penerimaan kas adalah bagian penting dari sumber daya yang dibutuhkan untuk mendukung pelaksanaan 
+program-program pembangunan yang telah dirancang oleh pemerintah. Penerimaan kas terjadi ketika terjadi 
+penambahan saldo kas atau rekening bank milik suatu entitas, baik yang berasal dari pembayaran piutang, 
+setoran tunai, transfer antar bank, pinjaman, maupun jenis pendapatan lainnya. Karena transaksi penerimaan 
+kas rentan terhadap penyimpangan atau tindakan penggelapan, maka diperlukan sistem informasi akuntansi 
+yang andal. Oleh karena itu, dibutuhkan sistem yang memadai untuk memantau dan mengendalikan setiap 
+transaksi penerimaan kas [6]. 
+Sumbangan Pembinaan Pendidikan (SPP) merupakan bentuk kontribusi finansial yang diberikan untuk 
+mendukung kelancaran proses pembelajaran di sekolah. Pembayaran SPP ini berfungsi sebagai salah satu 
+sumber dana guna menunjang operasional dan pengelolaan kegiatan pendidikan [3]. 
+Menurut Syaifulloh & Irawan, Sumbangan Pembinaan Pendidikan (SPP) adalah kontribusi finansial 
+rutin dari peserta didik sebagai imbalan atas layanan pendidikan yang diberikan. SPP mencerminkan 
+hubungan timbal balik antara siswa, pengajar, dan institusi pendidikan, serta menjadi wujud dukungan 
+terhadap keberlangsungan proses belajar mengajar, termasuk penghargaan bagi tenaga pendidik dan 
+pengelola lembaga [1]. 
+Figma adalah aplikasi desain berbasis cloud dan alat prototyping untuk proyek digital [7]. Figma adalah 
+platform desain berbasis web yang mendukung kolaborasi secara real-time, sehingga memudahkan proses 
+perancangan, prototyping, serta pembuatan desain yang interaktif dan responsif [8]. 
+ 
+2. 
+METODE 
+Penelitian ini dilaksanakan di Yayasan Semesta Khatulistiwa dengan berfokus pada analisis sistem 
+informasi akuntansi penerimaan kas (SPP) yang diterapkan. Untuk memastikan sistem yang diusulkan dapat 
+
+
+--- HALAMAN 3 ---
+126 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+memenuhi kebutuhan internal yayasan, diperlukan proses pengumpulan data. Adapun teknik pengumpulan 
+data yang digunakan dalam penelitian ini meliputi: 
+a. 
+Observasi 
+Riset dengan metode observasi dilakukan pada Yayasan Semesta Khatulistiwa yang beralamat di Jl. Wan 
+Sagaf No. 18, Kota Pontianak. Observasi ini bertujuan untuk memahami alur dan prosedur penerimaan 
+kas dari pembayaran Sumbangan Pembinaan Pendidikan (SPP) yang dilakukan oleh siswa atau wali 
+murid. Penulis mengamati secara langsung proses pembayaran yang diterima oleh petugas keuangan, 
+pencatatan transaksi yang dilakukan oleh bagian tata usaha, serta pembuatan laporan keuangan yang 
+dilakukan secara berkala oleh pihak yayasan. Observasi ini menjadi dasar dalam perancangan sistem 
+informasi akuntansi yang sesuai dengan kebutuhan operasional yayasan. 
+b. Wawancara 
+Wawancara dilakukan oleh penulis dengan Ibu Ummul Mardhiyah.S.Pd. selaku Bendahara di Yayasan 
+Semesta Khatulistiwa. Dari hasil wawancara, diperoleh informasi bahwa sistem pencatatan pembayaran 
+SPP masih dilakukan secara manual dan belum terkomputerisasi. Hal ini sering menimbulkan kendala 
+seperti kesalahan pencatatan dan keterlambatan laporan. Kedua narasumber menyatakan perlunya 
+penerapan sistem informasi akuntansi berbasis digital agar proses penerimaan kas dapat lebih efektif dan 
+efisien. 
+c. 
+Studi Pustaka 
+Teknik lainnya yakni dengan cara menjadikan buku dan jurnal penelitian yang tentunya memiliki kaitan 
+dengan permasalahan yang dibahas. 
+ 
+Selain metode diatas, proses pengembangan sistem menggunakan metode waterfall juga dilakukan agar 
+memberikan kerangka kerja yang terstruktur dan sistematis [9]. Tahapan yang diterapkan berdasarkan model 
+waterfall, diuraikan sebagai berikut: 
+a. 
+Analisa kebutuhan 
+Tahapan ini bertujuan untuk mendapatkan informasi yang diperlukan dalam merancang antarmuka 
+sistem. Analisis kebutuhan dilakukan untuk mengidentifikasi permasalahan dalam proses penerimaan kas 
+(SPP), mengevaluasi alur kerja yang ada, serta menyusun kebutuhan desain UI yang dapat 
+menggambarkan proses pencatatan dan pelaporan secara lebih efektif dan efisien di lingkungan Yayasan 
+Semesta Khatulistiwa. 
+b. Desain 
+Desain merupakan tahapan yang menggambarkan, merencanakan, dan membuat rancangan visual 
+berdasarkan hasil analisis kebutuhan sistem. Pada penelitian ini, peneliti memfokuskan pada 
+perancangan antarmuka pengguna (UI) sistem informasi akuntansi penerimaan kas (SPP) yang sesuai 
+dengan kebutuhan Yayasan Semesta Khatulistiwa. Perancangan visual ini dilakukan menggunakan 
+prototipe desain dengan bantuan tools seperti Figma. Untuk mendukung perancangan UI tersebut, 
+digunakan juga pendekatan Unified Modelling Language (UML) yang meliputi use case, activity, dan 
+sequence. 
+ 
+3. 
+HASIL 
+3.1. Use Case Diagram 
+Untuk memodelkan fungsi atau layanan yang tersedia pada sistem serta menggambarkan sebuah 
+interaksi antara pengguna dan sistem serta, penelitian ini menggunakan use case diagram untuk 
+menggambarkan interaksi antara actor dan pengguna. Berikut adalah rancangan use case diagram sistem 
+informasi akuntansi penerimaan kas (SPP) pada Yayasan Semesta Khatulistiwa. 
+ 
+
+
+--- HALAMAN 4 ---
+127 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+ 
+Gambar 1. Rancangan Use Case Diagram Sistem informasi akuntansi penerimaan 
+kas (SPP) pada Yayasan Semesta Khatulistiwa 
+ 
+3.2. Activity diagram 
+ 
+Setiap prosedur atau tahapan yang terjadi dalam proses penerimaan kas (SPP) pada Yayasan Semesta 
+Khatulistiwa akan dimodelkan ke dalam bentuk activity diagram. Activity diagram digunakan sebagai alat 
+bantu pemodelan sistem yang menggambarkan alur aktivitas dari awal hingga akhir dalam proses penerimaan 
+kas, mulai dari siswa melakukan pembayaran, pencatatan oleh bagian administrasi, hingga pelaporan oleh 
+bendahara. Dengan pemodelan ini, diharapkan proses bisnis yang berjalan dapat divisualisasikan secara 
+sistematis dan menjadi acuan dalam perancangan antarmuka pengguna (UI) yang efektif dan efisien. 
+ 
+
+
+--- HALAMAN 5 ---
+128 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+ 
+Gambar 2. Rancangan Activity Diagram Sistem informasi akuntansi penerimaan 
+kas (SPP) pada Yayasan Semesta Khatulistiw
+
+
+--- HALAMAN 6 ---
+129 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+3.3. Sequence diagram 
+ 
+Sequence diagram digunakan untuk menggambarkan urutan interaksi antar aktor dan sistem berdasarkan 
+waktu. Diagram ini menunjukkan bagaimana masing-masing aktor (siswa, petugas administrasi, dan sistem) 
+saling berkomunikasi dalam proses penerimaan kas SPP. Sequence diagram membantu dalam 
+memvisualisasikan alur proses secara kronologis, sehingga dapat digunakan sebagai dasar dalam merancang 
+antarmuka pengguna (UI) yang tepat. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+ 
+Gambar 3. Rancangan Sequence diagram Sistem informasi akuntansi penerimaan 
+kas (SPP) pada Yayasan Semesta Khatulistiwa 
+ 
+3.4. Rancangan Antarmuka 
+Berikut adalah desain tampilan sistem informasi penerimaan kas (SPP) pada Yayasan Semesta 
+Khatulistiwa yang dirancang oleh penulis pada penelitian ini. 
+1. Tampilan Halaman Awal 
+Halaman awal merupakan tampilan utama yang menyambut pengguna sebelum login ke sistem. Terdapat 
+logo resmi Yayasan Semesta Khatulistiwa di bagian atas, diikuti oleh dua pilihan peran pengguna, yaitu 
+Admin dan Siswa. Pengguna dapat memilih sesuai dengan peran masing-masing untuk melanjutkan ke 
+proses login. 
+
+
+--- HALAMAN 7 ---
+130 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 4. Antarmuka Halaman Awal 
+2. Tampilan Login Admin 
+Halaman login adalah tempat dimana validasi pengguna dilakukan. Admin harus mengisi Nip dan 
+password untuk dapat mengakses web. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 5. Antarmuka Login Admin
+
+
+--- HALAMAN 8 ---
+131 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+3. Tampilan Dashboard Admin 
+Halaman Dashboard merupakan halaman utama yang menampilkan ringkasan informasi penting seperti 
+total kelas, total siswa, total guru, dan tahun ajaran. Admin juga dapat melihat status pembayaran siswa 
+dalam bentuk grafik dan tabel untuk memantau transaksi SPP setiap bulan. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 6. Antarmuka Dashboard Admin 
+ 
+4. Tampilan Manajemen Pembayaran SPP 
+Halaman Manajemen Pembayaran SPP digunakan untuk mengelola data tagihan pembayaran setiap bulan. 
+Admin dapat menambahkan data baru seperti bulan pembayaran, kelas, tarif, dan metode pembayaran. 
+Setelah data berhasil disimpan, sistem akan menampilkan notifikasi konfirmasi bahwa data berhasil dibuat. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 7. Antarmuka Manajemen Pembayaran SPP
+
+
+--- HALAMAN 9 ---
+132 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+5. Tampilan Laporan 
+Halaman ini menyajikan rekap pembayaran SPP siswa dalam bentuk tabel bulanan. Admin juga 
+bisa mencetak laporan setiap tahunnya dalam format PDF atau Excel. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 8. Antarmuka Riwayat Pembayaran Siswa 
+ 
+6. Tampilan Login Siswa 
+Halaman login adalah tempat dimana validasi pengguna dilakukan. Siswa  harus mengisi Nis dan 
+password untuk dapat mengakses web. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 9. Antarmuka Login
+
+
+--- HALAMAN 10 ---
+133 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+7. Tampilan Dashboard Siswa 
+Halaman ini menampilkan informasi identitas siswa secara lengkap seperti nama, kelas, NIS, NISN, nama 
+wali siswa dan nomor HP wali siswa, serta tahun ajaran yang sedang berjalan. Siswa juga dapat melihat 
+kalender kegiatan dan informasi akademik terbaru dari halaman ini. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 10. Antarmuka Dashboard Siswa 
+ 
+8. Tampilan Pembayaran Siswa 
+Halaman ini digunakan oleh siswa untuk melihat dan mengelola tagihan pembayaran bulanan. Di bagian 
+atas, ditampilkan data identitas siswa seperti nama, kelas, NIS, NISN, nama wali, dan nomor HP wali. Di 
+bawahnya, terdapat tabel tagihan yang menampilkan bulan, jumlah tagihan, status pembayaran, serta tombol 
+untuk membayar atau mencetak bukti pembayaran. Saat pengguna memilih tombol "Bayar", akan muncul 
+jendela popup berisi pilihan metode pembayaran digital seperti OVO, GoPay, Dana, BCA, BNI, dan QRIS. 
+Setelah metode dipilih, sistem akan menampilkan kode QR yang dapat dipindai untuk menyelesaikan 
+pembayaran. Tampilan QR ini juga menampilkan rincian transaksi seperti nomor invoice, nominal 
+pembayaran, dan tujuan transfer. 
+ 
+ 
+ 
+
+
+--- HALAMAN 11 ---
+134 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 11. Antarmuka Pembayaran Siswa 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 12. Antarmuka Pembayaran Siswa 
+ 
+9. Tampilan Riwayat Pembayaran Siswa 
+Halaman ini menampilkan daftar riwayat pembayaran yang telah dilakukan oleh siswa. Informasi yang 
+ditampilkan meliputi nomor bukti pembayaran, bulan pembayaran, tanggal transaksi, metode pembayaran, 
+serta total yang dibayarkan. Terdapat fitur pencarian untuk memudahkan pencarian bukti pembayaran 
+tertentu, serta tombol untuk mencetak ulang bukti pembayaran. Tampilan ini membantu siswa memantau 
+dan mendokumentasikan transaksi secara mandiri. 
+ 
+ 
+ 
+Sumber: hasil penelitian(2025) 
+Gambar 13. Antarmuka Riwayat Pembayaran Siswa 
+
+
+--- HALAMAN 12 ---
+135 
+JUSTIAN, Jurnal Sistem Informasi Akuntansi                                                                              
+Vol. 6, No. 2, September 2025, pp. 124~135 
+ISSN: 2721-7523 
+ 
+ 
+http://jurnal.bsi.ac.id/index.php/justian 
+ 
+4.  KESIMPULAN 
+Berdasarkan hasil analisis dan perancangan yang dilakukan, dapat disimpulkan bahwa sistem 
+pencatatan penerimaan kas (SPP) di Yayasan Semesta Khatulistiwa masih dilakukan secara manual dan 
+belum efisien dalam mendukung pengelolaan keuangan. Melalui penelitian ini, telah dirancang sebuah 
+prototype sistem informasi akuntansi penerimaan kas berbasis digital yang diharapkan mampu meningkatkan 
+efisiensi, akurasi, dan ketepatan waktu dalam proses pencatatan dan pelaporan. Sistem yang dirancang 
+menggunakan Figma sebagai alat bantu desain antarmuka, dengan pendekatan waterfall dan pemodelan UML 
+untuk menggambarkan alur kerja secara sistematis. Penerapan sistem ini diharapkan dapat membantu pihak 
+yayasan dalam mengelola transaksi keuangan secara lebih tertib dan mendukung pengambilan keputusan 
+yang lebih baik. 
+ 
+REFERENSI 
+[1] 
+A. A. Vetdri, H. Mulyono, and S. Junaidi, “Perancangan Sistem Informasi Pembayaran SPP  Berbasis Desktop pada 
+SMK Muhammadiyah 1 Padang”. 
+[2] 
+Maulidia, Ardiyansyah, and Nurmalasari, “Perancangan Sistem Informasi Penjualan Pada CV. Kitchen Set 
+Pontianak,” 2025. [Online]. Available: http://jurnal.bsi.ac.id/index.php/justian 
+[3] 
+R. R. Rosalina, R. S. Kusumadiarti, and D. Z. Suhaeri, “PERANCANGAN SISTEM INFORMASI AKUNTANSI 
+BERBASIS WEBSITE DALAM PENGELOLAAN KEUANGAN PENERIMAAN SPP DI YAYASAN 
+FATHIMAH AZZAHRA SUMEDANG,” Jurnal Informatika dan Teknik Elektro Terapan, vol. 13, no. 1, Jan. 2025, 
+doi: 10.23960/jitet.v13i1.5509. 
+[4] 
+N. Safitri, M. Zaky, and S. Tinggi Ilmu Ekonomi PGRI Sukabumi, “Analisis Sistem Informasi Akuntansi 
+Penerimaan Kas pada Rumah Makan Pawon Sunda Sukabumi,” 2020. 
+[5] 
+N. P. Samuri and J. J. Tinangon, “EVALUATION OF IMPLEMENTATION OF CASH RECEIPT ACCOUNTING 
+SYSTEMS AND PROCEDURES AT THE TOURISM SERVICE OF NORTH SULAWESI PROVINCE BASED 
+ON PERMENDAGRI NO 77 YEAR 2020,” J. Pusung 893 Jurnal EMBA, vol. 11, no. 1, 2023. 
+[6] 
+A. Putri Rahmadhani and P. Satria Putra, “Analisis Sistem Informasi Akuntansi Penerimaan Kas di Dinas 
+Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kabupaten Ogan Komering Ilir.” 
+[7] 
+R. Pramudita, R. W. Arifin, A. Nurul Alfian, and N. Safitri, “PENGGUNAAN APLIKASI FIGMA DALAM 
+MEMBANGUN UI/UX YANG INTERAKTIF PADA PROGRAM STUDI TEKNIK INFORMATIKA STMIK 
+TASIKMALAYA,” Shilka Dina Anwariya, vol. 3, no. 1, 2021, [Online]. Available: www.youtube.com, 
+[8] 
+A. P. Heryanti et al., “Pengenalan dan Pelatihan Figma untuk Pelajar SMA Al-Fityan Tangerang pada Kegiatan 
+Gerakan Nasional Revolusi Mental,” Prosiding Seminar Nasional Pemberdayaan Masyarakat (SENDAMAS), vol. 3, 
+no. 1, p. 22, Feb. 2024, doi: 10.36722/psn.v3i1.2466. 
+[9] 
+W. Steven Dharmawan, “SISTEM INFORMASI AKUNTANSI KAS KECIL PADA BIRO PEMERINTAHAN 
+SEKRETARIAT DAERAH PROVINSI KALIMANTAN BARAT,” 2024. 
+ 
+

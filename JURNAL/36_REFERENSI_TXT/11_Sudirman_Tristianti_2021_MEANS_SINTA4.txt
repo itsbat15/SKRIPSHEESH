@@ -1,0 +1,617 @@
+--- HALAMAN 1 ---
+Volume 6 No. 2, Desember 2021 
+MEANS (Media Informasi Analisa dan Sistem)  
+http://ejournal.ust.ac.id/index.php/Jurnal_Means/ 
+ 
+p-ISSN: 2548-6985, e-ISSN:2599-3089 
+ 
+ 
+ Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis 
+Client-Server. Oleh : Bagus Sudirman, Mawada Tristianti 
+ 
+126 
+Sistem Informasi Pengendalian Kas Bank dengan Metode 
+Rekonsiliasi pada CV. Lisa Pratama Berbasis Client-Server 
+ 
+Bagus Sudirman1 
+Universitas STEKOM,  jl.Majapahit 605 Semarang, Jawa Tengah, Indonesia  
+E-Mail: bagus@stekom.ac.id  
+ 
+Mawada Tristianti2 
+Universitas STEKOM,  jl.Majapahit 605 Semarang, Jawa Tengah, Indonesia  
+E-Mail: mawada605@gmail.com 
+ 
+ABSTRACT 
+Bank reconciliation is one of the ways that companies do as a form of internal company 
+control. CV Lisa Pratama in the company's internal control has not carried out a bank 
+reconciliation. The methods used in this research are interviews, observation and 
+literature, while the bank reconciliation method is used as a method of solving existing 
+problems, the research method uses the research and development method of R&D 
+(Research and Development) and the system development method uses the SDLC 
+(System Development Life Cycle) method. . For internal control, the company uses bank 
+reconciliation. Based on the evaluation, it can be concluded that the CV. Lisa Pratama 
+has not conducted bank reconciliation every month. Bank reconciliation aims to match 
+company balances with bank checking accounts so that the company knows the causes 
+of differences in balances such as bank interest income transactions and bank 
+administration fees which are only known to the bank which is not yet known by the 
+company and vice versa. The benefit of reconciliation for the company is as an internal 
+control for bank cash receipts and payments. 
+ 
+Keyword: Bank Cash Control, Bank Reconciliation, Client-Server 
+PENDAHULUAN 
+CV. Lisa Pratama adalah perusahaan yang 
+bergerak di bidang perdagangan barang dan jasa 
+sejak tahun 2012. CV. Lisa Pratama menjadi salah 
+satu relasi Dinas Kesehatan Kabupaten Kendal 
+yang 
+bertugas 
+sebagai 
+pemenuh 
+beberapa 
+pengadaan setiap tahunnya. Pengadaan paket 
+pekerjaan harus melalui tahap yang panjang dan 
+membutuhkan waktu yang cukup lama mulai dari 
+surat minat perusahaan terhadap paket pekerjaan 
+yang ada sampai dikirimnya surat perintah kerja 
+dari Dinas Kesehatan kepada perusahaan.  
+Setelah kontrak disepakati dan buku 
+kontrak 
+selesai, 
+maka 
+Dinas 
+Kesehatan 
+Kabupaten Kendal akan mentransfer sejumlah 
+uang pada rekening Bank BPD/Jateng perusahaan 
+sesuai jumlah dalam surat kontrak yang ada 
+setelah dipotong pajak sehingga perusahaan juga 
+menerima 
+bukti 
+potong 
+pajak 
+dari 
+Dinas 
+Kesehatan Kabupaten Kendal. Uang yang sudah 
+ditransfer pada rekening perusahaan sebagian 
+uang 
+digunakan 
+untuk 
+membayar 
+hutang 
+perusahaan 
+kepada 
+supplier 
+dan 
+sebagian 
+ditransfer pada rekening Bank BRI perusahaan. 
+Penerimaan kas maupun pengeluaran kas 
+atas pengadaan paket pekerjaan harus segera 
+dicatat pada buku kas perusahaan. CV. Lisa 
+Pratama belum melakukan pengendalian atas 
+penerimaan kas dan pengeluaran kas bank yang 
+menyebabkan 
+kerugian 
+sampai 
+dengan 
+Rp. 
+30.000.000,- pada paket pekerjaan tahun 2014. 
+Perusahaan memeberikan wewenang penuh pada 
+satu 
+karyawan 
+untuk 
+mengurus 
+dokumen 
+pengadaan, penerimaan uang dan pencatatan 
+data keuangan sehingga saat karyawan tersebut 
+keluar perusahaan kehilangan data pengadaan 
+akan mempersulit perusahaan untuk membuat 
+laporan 
+keuangan 
+tahunan, 
+sehingga 
+mengharuskan perusahaan meminta pada kantor 
+pajak untuk melacak berapa banyak paket 
+pekerjaan yang telah dikerjakan perusahaan. Hal 
+ini tidak cukup membantu karena kantor pajak 
+hanya bisa melacak tanggal pembayaran pajak 
+dan nominal PPN – PPh bukan data relasi, nama 
+paket pekerjaan dan nilai kontrak.  
+Perusahaan terkadang lupa melakukan 
+pencatatan atas penerimaan kas bank dan 
+pengeluaran kas bank dan tidak meminta rekening 
+koran bank untuk melakukan pencocokan saldo 
+akhir sebagai pengendalian intern. 
+Banyaknya pengadaan paket pekerjaan 
+pada CV. Lisa Pratama dengan nominal yang 
+cukup besar, tanpa adanya pengendalian kas bank 
+bisa terjadi lagi kerugiaan yang sama seperti tahun 
+sebelumnya. 
+Pengendalian 
+kas 
+bank 
+dapat 
+dilakukan 
+dengan 
+metode 
+rekonsiliasi 
+untuk 
+mengetahui penerimaan kas dan pengeluaran kas 
+yang sudah terjadi dibank.  
+Rekonsiliasi bertujuan untuk mencocokkan 
+kesamaan 
+saldo 
+akhir 
+menurut 
+catatan 
+perusahaan dengan rekening koran bank. Cara 
+melakukan rekonsiliasi 
+membutuhkan 
+catatan 
+
+
+--- HALAMAN 2 ---
+Volume 6 No. 2, Desember 2021 
+MEANS (Media Informasi Analisa dan Sistem)  
+http://ejournal.ust.ac.id/index.php/Jurnal_Means/ 
+ 
+p-ISSN: 2548-6985, e-ISSN:2599-3089 
+ 
+ 
+ Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis 
+Client-Server. Oleh : Bagus Sudirman, Mawada Tristianti 
+ 
+127 
+buku kas perusahaan dan rekening koran bank 
+sehingga dapat dibandingkan antara keduanya 
+untuk mengetahui perbedaan-perbedaan yang 
+ada. [1] 
+Penyebab terjadinya perbedaan saldo 
+setelah direkonsiliasi biasanya adalah setoran 
+dalam perjalanan, cek yang masih beredar, biaya 
+bank, cek kosong, pelunasan dari pelanggan 
+melalui bank, jasa giro bank, dan salah catat. 
+Penerimaan kas bank meliputi pembayaran dari 
+relasi atas pengadaan paket pekerjaan dan 
+pendapatan bunga bank.  
+Sedangkan pengeluaran kas bank meliputi 
+penarikan 
+tunai 
+dari 
+pihak 
+perusahaan, 
+pembayaran hutang pada supplier, simpanan ke 
+bank lain, prive direktur, biaya gaji, biaya telepon, 
+biaya lain-lain, biaya administrasi bank, biaya cash 
+transfer dan pajak atas bunga. 
+ 
+BAHAN PENELITIAN 
+Pengendalian Internal Control adalah seluruh 
+rencana organisasi, metode dan pengukuran yang 
+dipilih oleh suatu kegiatan usaha untuk menjamin 
+keamanan harta kekayaan,mengecek ke akuratan 
+dan kendala pada data akuntansi usaha tersebut, 
+meningkatkan 
+efisiensi 
+operasional, 
+dan 
+mendukung dipatuhinya kebijakan manajerial yang 
+telah ditetapkan . [2] 
+Pengendalian intern adalah suatu proses 
+yang dilaksanakan oleh direktur, manajemen dan 
+personal lain dalam suatu kesatuan bisnis, 
+didesain untuk memberikan kepercayaan terkait 
+dengan 
+usaha 
+pencapaian 
+tujuan.[3]  
+Pengendalian Internal adalah perubahan dasar 
+dalam standar audit yang tak terpisahkan dari 
+basis audit resiko.[4] 
+Rekonsiliasi adalah proses mencocokkan 
+antara pencatatan di perusahaan dan pencatatan 
+kas yang dilakukan oleh bank yang mengelola 
+uang perusahaan. Rekonsiliasi dapat mengurangi 
+resiko 
+potensi 
+kesalahan 
+pencatatan 
+dan 
+hilangnya uang perusahaan. Rekonsiliasi bank 
+sangatlah penting sebagai pengendalian intern 
+perusahaan 
+dalam 
+penerimaan 
+kas 
+dan 
+pengeluaran kas melalui bank untuk membantu 
+perusahaan 
+mengantisipasi 
+kehilangan 
+dan 
+penyelewengan kas bank, mengungkap kesalahan 
+dan ketidakwajaran yang ada antara catatan 
+perusahaan 
+dan 
+bank, 
+mengecek 
+ketelitian 
+pencatatan perusahaan dengan catatan bank, dan 
+memberi 
+kepastian 
+semua 
+transaksi 
+telah 
+dibukukan 
+dengan 
+benar 
+serta 
+membantu 
+penyusunan laporan keuangan tahunan dengan 
+lebih cepat. 
+Tagihan piutang wesel oleh bank akan 
+diketahui perusahaan pada awal bulan berikutnya, 
+saat perusahaan menerima rekening koran. 
+Perusahaan 
+baru 
+akan 
+mengetahui 
+pendapatan bunga atas saldo rekening yang 
+mengendap selama satu bulan berjalan pada 
+bulan berikutnya, setelah mendapat rekening 
+koran bank. 
+Biaya 
+yang 
+dibebankan 
+ke 
+rekening 
+nasabah atas pemanfaatan fasilitas atau jasa yang 
+diberikan bank, meliputi biaya administrasi, biaya 
+kliring, biaya penagihan piutang lewat bank, biaya 
+cetak buku dan lain sebagainya. 
+Kesalahan pencatatan bisa dilakukan bank 
+maupun perusahaan. Perusahaan akan membuat 
+jurnal koreksi dalam pembukuan, jika terjadi 
+kesalahan dari pihak perusahaan. Selisih saldo 
+dalam catatan bank seharusnya ditambah atau 
+dikurangkan saldo kas bank dalam catatan bank, 
+tanpa membuat jurnal koreksi dalam pembukuan 
+perusahaan.[5] 
+Penyusunan rekonsiliasi empat kolom, 
+dibuat kolom-kolom terpisah yang akan dijelaskan 
+sebagai, Membuat kolom secara terpisah untuk 
+rekening 
+awal, 
+penerimaan 
+atau 
+setoran, 
+penarikan atau pengeluaran, dan rekonsiliasi akhir, 
+Membuat 
+jurnal 
+koreksi 
+atas 
+kesalahan 
+perusahaan 
+dalam 
+catatan 
+pembukuan 
+perusahaan. 
+Visual 
+Basic 
+merupakan 
+bahasa 
+pemrograman yang mudah digunakan untuk 
+pengembangan 
+aplikasi, 
+baik 
+aplikasi 
+kecil 
+maupun 
+aplikasi besar.[6] 
+Basis 
+data 
+atau 
+database 
+dapat 
+di 
+artikan 
+sebagai 
+suatu 
+pengorganisasian data utama dengan bantuan 
+computer yang memungkinkan dapat diakses 
+dengan cepat dan mudah.[7] MySql adalah sebuah 
+imlementasi dari sistem manajemen basis data 
+relasional 
+yang 
+didistribusikan 
+secara 
+gratis 
+dibawah lisensi GPL.[8] 
+Cristal Report merupakan salah satu 
+program 
+aplikasi 
+yang 
+diprogramkan 
+untuk 
+menampilkan 
+laporan 
+dari data 
+yang 
+telah 
+tersimpan 
+dalam 
+database. 
+Crystal 
+Report 
+memudahkan pengguna dalam membuat laporan 
+melalui desain visual.[9]  
+ 
+METODE PENELITIAN 
+Dalam penelitian ini penulis menggunakan model 
+penelitian dan pengembangan R&D (Research 
+And Development), R&D adalah metode penelitian 
+yang digunakan untuk menghasilkan produk untuk 
+menguji keefektifanya produk tersebut untuk di 
+gunakan di masyarakat .[10] 
+Proses R&D dijelaskan Sugiyono Penelitian dan 
+pengembangan dirangkum sebagai berikut : 
+ 
+Gambar 1 :Proses R&D 
+ 
+Potensi dan 
+Masalah 
+Pengumpulan 
+Data 
+Desain 
+Produk
+Revisi 
+Produk
+Validasi 
+Uji Coba 
+Pemakaian 
+Validasi 
+Desain 
+Revisi 
+Desain
+Revisi 
+Produk 
+Produksi 
+Massal 
+
+
+--- HALAMAN 3 ---
+Volume 6 No. 2, Desember 2021 
+MEANS (Media Informasi Analisa dan Sistem)  
+http://ejournal.ust.ac.id/index.php/Jurnal_Means/ 
+ 
+p-ISSN: 2548-6985, e-ISSN:2599-3089 
+ 
+ 
+ Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis 
+Client-Server. Oleh : Bagus Sudirman, Mawada Tristianti 
+ 
+128 
+Dengan tahap pengembangan sistem 
+menggunakan model prototype. Tahapan proses 
+pengembangan 
+sistem 
+dengan 
+metode 
+Prototyping untuk  menghasilkan sebuah produk 
+dalam bentuk Prototype. Sebuah Prototype akan  
+memberikan gambaran tentang cara  sistem akan 
+berfungsi dalam bentuk lengkapnya. 
+  
+ 
+Gambar 2: Proses Prototyping 
+ 
+HASIL DAN PEMBAHASAN  
+Tujuan penelitian Sistem Informasi Pengendalian 
+Kas Bank dengan Metode Rekonsiliasi pada CV. 
+Lisa 
+Pratama 
+adalah 
+untuk 
+melakukan 
+pengendalian intern pada kas bank perusahaan 
+sehingga mengetahui penyebab perbedaan saldo. 
+Apabila terdapat kekurangan maka analis dapat 
+memperbaiki sistem lama dengan sistem baru 
+yang diharapkan memperbaiki sistem yang ada. 
+Dengan pendukung ini dari hasil dua 
+ujicoba validasi yaitu internal dan external untuk 
+mendapatkan hasil produk yang dinilai valid dan 
+efektif. Sistem Informasi Pengendalian Kas Bank 
+pada CV. Lisa Pratama yang sedang berjalan saat 
+ini adalah sebagai berikut: 
+Perusahaan belum pernah melakukan 
+rekonsiliasi sebagai bentuk pengendalian intern 
+kas bank serta Staff Administrasi Perusahaan tidak 
+dapat menilai keakuratan dan memastikan bahwa 
+data 
+pencatatan 
+perusahaan 
+sama 
+dengan 
+rekening koran bank. 
+Untuk mengatasi permasalahan yang ada 
+pada 
+perusahaan 
+maka 
+diperlukan 
+sistem 
+pengelolaan pengendalian intern atas kas bank 
+yang 
+memudahkan 
+perusahaan 
+melakukan 
+rekonsiliasi bank dari hasil rekening koran bank. 
+Form Input Data Transaksi Penerimaan Kas 
+ 
+ 
+Gambar 3: Form Penerimaan Kas 
+ 
+Form Pengeluaran Kas 
+ 
+Gambar 4: Form Pengeluaran Kas 
+ 
+Form Jurnal Koreksi 
+ 
+ 
+Gambar 5: Form Jurnal Koreksi 
+ 
+Hasil Keluaran Sistem 
+  
+ 
+Pengumpul
+an 
+Kebutuhan 
+Perancang
+an 
+Prototype 
+Pembentu
+kan 
+Prototype 
+Evaluasi 
+Prototype 
+Sesuai 
+kebutuhan? 
+Produk 
+rekayasa 
+Y
+a
+Tidak 
+
+
+--- HALAMAN 4 ---
+Volume 6 No. 2, Desember 2021 
+MEANS (Media Informasi Analisa dan Sistem)  
+http://ejournal.ust.ac.id/index.php/Jurnal_Means/ 
+ 
+p-ISSN: 2548-6985, e-ISSN:2599-3089 
+ 
+ 
+ Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama Berbasis 
+Client-Server. Oleh : Bagus Sudirman, Mawada Tristianti 
+ 
+129 
+ 
+Gambar 6: Keluaran Sistem 
+ 
+ 
+KESIMPULAN  
+Kesimpulan dari skripsi yang berjudul “Sistem 
+Informasi Pengendalian Kas Bank dengan Metode 
+Rekonsiliasi pada CV. Lisa Pratama Berbasis 
+Client-Server” adalah sebagai berikut :  
+1. 
+Dihasilkan produk pengembangan sistem 
+informasi pengendalian kas bank berbasis 
+client server yang memiliki batasan akses 
+pengguna, 
+sehingga 
+pengguna 
+bisa 
+mengakses informasi sesuai hak akses yang 
+ditentukan.  
+2. 
+Produk 
+pengembangan 
+sistem 
+informasi 
+pengendalian 
+kas 
+dapat 
+mempermudah 
+kinerja staff administrasi CV. Lisa Pratama 
+dalam mengolah data keuangan perusahaan, 
+khususnya 
+dalam 
+pembuatan 
+laporan 
+penerimaan kas, laporan pengeluaran kas 
+serta laporan jurnal koreksi. 
+ 
+DAFTAR PUSTAKA  
+ 
+[1] 
+M. Nutfa and D. S. Fakultas, “Membangun 
+Kembali Perdamaian: Rekonsiliasi Konflik 
+Komunal Berbasis Trust Sakaria Anwar.” 
+[2] 
+P. Internal, T. K. Sukadwilinda, and R. A. 
+Ratnawati, “JURNAL ASET (AKUNTANSI 
+RISET),” 2013. 
+[3] 
+“Rusda 
+, 
+Ardhila, 
+2017. 
+Analisis 
+Pelaksanaan Pengendalian Internal Pada 
+Prosedur Penerimaan Dan Pengeluaran 
+Barang Di Pt.Unesim Batam.” 
+[4] 
+A. Klesia Kalendesang et al., “Analisis 
+Efektivitas Sistem Pengendalian Internal 
+Persediaan 
+Barang 
+Dagang 
+Pada 
+Supermarket Paragon Mart Tahuna,” 2017. 
+[5] 
+“Ridzal,. 
+Analisa 
+Penerapan 
+Metode 
+Pancatatan 
+Dan 
+Penilaian 
+Persediaan 
+Barang Dagangan Ditoko Liwanda. Volume 
+2, Nomor 2, 2019” 
+[6] 
+I. Kanedi and A. Wulandari, “Tata Kelola 
+Perpustakaan 
+Menggunakan 
+Bahasa 
+Pemrograman Visual Basic 6.0 (Studi 
+Kasus Pada Sekolah Menengah Pertama 
+Negeri 3 Seluma),” J. Media Infotama, vol. 
+9, no. 1. 
+[7] 
+A. D. Hardiansyah, D. C. Nugrahaeni, P. 
+Dewi, and M. Kom, Perancangan Basis 
+Data Sistem Informasi Perwira Tugas 
+Belajar 
+(Sipatubel) 
+Pada 
+Kementerian 
+Pertahanan. 2020. 
+[8] 
+P. Aplikasi Kasir Tiket Nonton Bola Bareng 
+Ninuk Wiliani, N. Wiliani, and S. Zambi, 
+“Rancang Bangun Aplikasi Kasir Tiket 
+Nonton Bola Bareng Pada X Kasir Di Suatu 
+Lokasi X Dengan Visual Basic 2010 Dan 
+Mysql,” J. Rekayasa Inf., vol. 6, no. 2, 
+2017. 
+[9] 
+P. Jawab, K. Sekolah Tinggi Elektronika, P. 
+Penelitian -Sekolah Tinggi Elektronika, and 
+K. 
+Jl, 
+“EBISNIS 
+JURNAL 
+ILMIAH 
+EKONOMI DAN BISNIS.” 
+[10] 
+M. 
+Sidik, 
+“Perancangan 
+dan 
+Pengembangan 
+E-commerce 
+dengan 
+Metode Research and Development,” 2019. 
+ 
+ 
+

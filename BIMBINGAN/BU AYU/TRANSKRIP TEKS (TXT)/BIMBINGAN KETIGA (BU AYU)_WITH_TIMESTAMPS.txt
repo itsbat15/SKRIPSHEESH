@@ -1,0 +1,1328 @@
+[00:03 - 00:30] Ini menyambungkan dari pendaftaran ke permasalahan pembayarannya. Di sisi pendafaran kalau misalkan itu ada dari siswa atau wali murid yang ingin membayar lewat transfer dan juga wali-murid yang mau membayarnya melalui sisa ratma ini.
+[00:30 - 00:47] Coba oke, disol dulu ke bawah DR
+[00:47 - 00:50] Berarti ini masih tiga
+[00:50 - 00:52] Tiga paragraf tadi
+[00:52 - 00:53] Masa cerita masalah ya
+[00:53 - 00:55] Kemudian paragraf keempat itu
+[00:55 - 00:59] Tadi paragraf yang kedua
+[00:59 - 01:00] Pendaftaran ya
+[01:00 - 01:02] Paragraf yang ketiga ini
+[01:02 - 01:04] Masalah perekapan
+[01:04 - 01:05] Pembayaran atau bagaimana
+[01:05 - 01:07] Dari pendaftaraan
+[01:07 - 01:09] PembAYARAN lalu di bagian
+[01:09 - 01:11] Paragraph untuk permasalahan yang terakhirnya
+[01:11 - 01:13] Dari sisi penjadwalan
+[01:13 - 01:14] dan juga
+[01:14 - 01:16] lebih ke arah penjadwalan
+[01:16 - 01:19] dari sisi jatah siswa yang sudah ada
+[01:19 - 01:23] yang sudah terdaftar
+[01:23 - 01:25] untuk paragraf yang terakhir
+[01:25 - 01:26] mengenai permasalahan ini
+[01:26 - 01:28] lalu di bawahnya itu penjelasan
+[01:28 - 01:30] dari atau kesimpulan
+[01:30 - 01:31] apa yang bisa dilakukan
+[01:31 - 01:33] dan menyambungkan ke metodologi
+[01:33 - 01:35] yang saya gunakan
+[01:35 - 01:40] nah gimana mengerucutkannya
+[01:40 - 01:41] di paragrafan bawah ini
+[01:41 - 01:42] dari beberapa
+[01:42 - 01:46] proses-proses bisnis utama tadi
+[01:46 - 01:51] itu berarti kan ada banyak permasalahan yang ditemukan ya. Terus disini disolusi
+[01:51 - 01:58] apa? Disolusi kan bahwasannya karena dari permasalan operasional yang ada, dari 28
+[01:58 - 02:04] cabang tersebut itu membutuhkan perekapan yang dilakukan setiap hari jadi
+[02:04 - 02:11] dibutuhkannya sistem informasi manajemen dashboard untuk membantu efisiensi
+[02:11 - 02:14] dari sisi operasional yang ada di RK 1 ini.
+[02:14 - 02:18] Terus saya juga menyebutkan informasi itu definisinya apa,
+[02:18 - 02:22] terus juga inputin banyak pendidikan bahwa Semi Minimu dari Ding-Bling
+[02:22 - 02:29] juga pernah diangkat menjadi topik dari beberapa penelitihan sebelumnya
+[02:29 - 02:34] dan dibawahnya disini saya juga langsung menyebukan
+[02:34 - 02:36] dan menjelaskan dari beberama pendidik terdahulu
+[02:36 - 02:39] dengan skop bimbingan belajar.
+[02:39 - 02:50] Tadi ini kan secara konseptual ya terkait adanya sistem informasi manajemen ya
+[02:50 - 03:20] Ini berarti arahnya sudah dihubungkan ke solusi-solusi yang sekiranya nanti akan ada
+[03:20 - 03:31] di sistemnya ya iya benar pencapaian pembayaran berarti kan ini sebenarnya fokus langsung di
+[03:31 - 03:42] permasalahan yang dibahas di paragraf sebelumnya Oke coba sekali ke bawah nih penelitian terdahulu
+[03:42 - 03:49] oke ini skopnya dari bimbingan belajar sendiri saya ngambilnya kok memang yang membahas
+[03:49 - 03:57] sama-sama bikin sistem begitu iya betul ada beberapa yang membuat sistem juga ada
+[03:57 - 04:05] beberapa Yang udah ada sistemnya tapi masih belum dioptimalisasi khususnya untuk dari
+[04:05 - 04:12] isi pendaftaran gitu cuman kebanyakan memang buat persisten dan rata-rata itu registrasi
+[04:12 - 04:28] ada yang web dan juga ada yang mobile makanya saya percana juga membuat dari penggunaan
+[04:28 - 04:43] CS itu bisa lebih versibel untuk digunakan di mobile, karena yang diminginkan oleh mitra itu akan membuat budget tersendiri untuk membeli dari tablet.
+[04:43 - 05:03] Oke, coba di-scroll dulu ke bawah. Ini kan beberapa penelitian, ada berapa sih? Dari berapa jurnal ini?
+[05:03 - 05:04] ini adalah 10 bu
+[05:04 - 05:06] yang dimana ini juga dimasukkan ke dalam
+[05:06 - 05:09] yang dimasukan ke
+[05:09 - 05:11] perbandingan
+[05:11 - 05:13] penilikan terdahulu di bab 2
+[05:13 - 05:16] jadi saya
+[05:16 - 05:18] menjelaskan paragrafnya disini
+[05:18 - 05:20] coba diseklal dulu
+[05:20 - 05:23] penutupnya gimana? apa yang disampaikan
+[05:23 - 05:23] di penutupsi
+[05:23 - 05:27] dikaitkan dengan
+[05:27 - 05:29] sebelumnya
+[05:29 - 05:31] yang tadi di
+[05:31 - 05:33] penelitian terdahul
+[05:33 - 05:50] Dari sepuluh referensi itu ke penelitian yang dilakukan ini apa yang dikerucutkan?
+[05:50 - 05:54] Yang dikerujukkan dan perbedaan antara dari sepupu pendidikan terhadap ini,
+[05:55 - 06:00] saya kerujukan di bagian sistematis komunikasi antar cabang.
+[06:00 - 06:03] dimana kalau dari 10 referensi ini
+[06:03 - 06:04] yaitu hanya
+[06:04 - 06:06] di satu cabang saja atau
+[06:06 - 06:07] hanya di satu demikian belajar saja
+[06:07 - 06:10] sedangkan saya kerusutkan untuk keterkaitan dan perbedaan
+[06:10 - 06:12] dengan arta saat ini
+[06:12 - 06:14] memang memiliki 8 cabang
+[06:14 - 06:16] jadi komunikasi data
+[06:16 - 06:17] dan juga sistem itu
+[06:17 - 06:19] perbedaannya atau justifikasinya disitu
+[06:19 - 06:24] mungkin diperjelas
+[06:24 - 06:26] kalimatnya barangkali ya
+[06:26 - 06:28] kalau disini kan langsung disebutkan
+[06:28 - 06:30] yang dari kalimat akan tetapi
+[06:30 - 06:38] ini kan di sebelumnya akan disebutkan seluruh penelitian ini menjadi acuan fungsional bagi
+[06:38 - 06:48] modul yang akan dikembangkan tapi yang sebelum yaitu soalnya apa nih hanya meneliti operasional
+[06:48 - 06:57] satu cabang tunggal berarti perbedaannya lebih disitu iya untuk proses dibagian situ
+[06:57 - 06:59] hanya di
+[06:59 - 07:01] 8 cabang itu
+[07:01 - 07:10] oke, oke
+[07:10 - 07:12] ya maksud saya
+[07:12 - 07:14] apa namanya
+[07:14 - 07:16] kan ini dari penelitian terdahulu
+[07:16 - 07:17] cukup banyak yang dibahas
+[07:17 - 07:20] ada 10 gitu, jadi paling tidak jangan sampai
+[07:20 - 07:22] nanti hilang arah gitu ya pembaca
+[07:22 - 07:24] dari 10
+[07:24 - 07:25] ini terus mau diapain
+[07:25 - 07:27] oh sudah ada
+[07:27 - 07:30] statement di bawah bahwa
+[07:30 - 07:32] dari
+[07:32 - 07:34] penelitan tersebut akan menjadi referensi
+[07:34 - 07:36] fitur, tapi di bab 2 ada ini enggak?
+[07:37 - 07:38] Di bab 2 mungkin
+[07:38 - 07:39] ada semacam mapping begitu
+[07:39 - 07:41] dari penelitian perdahulu ini
+[07:41 - 07:44] terkait fitur yang ada di masing-masing
+[07:44 - 07:45] peneliti itu.
+[07:46 - 07:47] Sudah ada Bu, saya buat
+[07:47 - 07:50] seminggu.
+[07:51 - 07:53] Saya juga kemarin menanyakan
+[07:53 - 07:55] untuk penelitan terdahulu kepada Pak Arief
+[07:55 - 07:57] karena kalau disesai dengan
+[07:57 - 07:59] tempat itu kan hanya dari
+[07:59 - 08:01] format itu nomor 10-10 tahun
+[08:01 - 08:02] bermasalah gitu
+[08:02 - 08:05] semasa penelan. Kalau saya ada menayakkan
+[08:05 - 08:07] kalau misalkan saya tambahkan
+[08:07 - 08:09] keterkaitan antara
+[08:09 - 08:11] dengan apa yang ingin
+[08:11 - 08:13] saya bawakan, apakah diperbolehkan
+[08:13 - 08:15] dari parit
+[08:15 - 08:16] mengatakan diperkolehkan
+[08:16 - 08:18] apakah boleh
+[08:18 - 08:21] tapi ini konteks
+[08:21 - 08:22] keterkaian yang dibahas disini
+[08:22 - 08:23] apa saja?
+[08:25 - 08:26] keterkayaan ini lebih
+[08:26 - 08:32] sifatnya itu
+[08:32 - 08:33] lebih spesifik
+[08:33 - 08:34] seperti contohnya
+[08:34 - 08:41] Ini dia yang pertama, di sini itu dari sisi di Hive Tutoring ini menggunakan SQL Live
+[08:41 - 08:44] dan bukan MySQL yang sebenarnya saya gunakan gitu.
+[08:44 - 08:48] Terus juga keterkaitan secara umumnya dari 10 penelitian ini
+[08:48 - 08:52] itu lebih merujuk persamaannya di bagian pendaftaran
+[08:52 - 08:54] dan juga penjatahualan dari Tentor.
+[08:54 - 08:57] Cuman dari keterkaitan di sini juga saya menjelaskan perbedaan
+[08:57 - 09:00] dari masing-masing 10 penelitian
+[09:00 - 09:01] terdahulu dengan
+[09:01 - 09:03] fitur atau modul yang ingin saya
+[09:03 - 09:07] ini 10-10 nya
+[09:07 - 09:09] itu memang membangun
+[09:09 - 09:10] sama-sama bangun sistem di objek
+[09:10 - 09:11] di kasus
+[09:11 - 09:16] enggak bu, ada juga
+[09:16 - 09:18] yang memang dia itu hotel
+[09:18 - 09:19] dan itu dia
+[09:19 - 09:22] memiliki cabang
+[09:22 - 09:22] yang banyak
+[09:22 - 09:24] dan ini spoknya
+[09:24 - 09:25] iya bu
+[09:25 - 09:29] di 10 ini
+[09:30 - 09:35] saya rasa gini
+[09:35 - 09:37] kalau penelitian terdahulu
+[09:37 - 09:39] yang di bab dua, ini sebaiknya
+[09:39 - 09:40] lebih yang relevan
+[09:40 - 09:42] dengan peneliti
+[09:42 - 09:43] secara
+[09:43 - 09:48] domain penelidikan
+[09:48 - 09:48] itu berdekatan
+[09:48 - 09:51] dengan apa yang akan dikerjakan
+[09:51 - 09:52] jadi sebenarnya
+[09:52 - 09:54] apakah wajib 10?
+[09:54 - 09:55] sebenarnya tidak ada patokan
+[09:55 - 10:00] tapi mungkin kebiasaan teman-teman
+[10:00 - 10:01] rata-rata diminta 10
+[10:01 - 10:03] karena kan gak mungkin ya
+[10:03 - 10:05] penelitian yang terkait apa yang perlu dikerjakan
+[10:05 - 10:07] gak pernah dilakukan oleh orang lain
+[10:07 - 10:10] jadi rata-rata diminta
+[10:10 - 10:11] sebenarnya gak harus
+[10:11 - 10:13] tapi kalau untuk di bab 2
+[10:13 - 10:15] menurut saya, kalau peneliti yang terdahulu
+[10:15 - 10:17] baik yang domainnya relevan
+[10:17 - 10:19] nah kemudian
+[10:19 - 10:21] di tabel ini
+[10:21 - 10:23] yang terkat keterkaitan itu
+[10:23 - 10:25] sebenarnya tidak
+[10:25 - 10:27] memaksakan harus
+[10:27 - 10:29] membahas fitur gitu ya
+[10:29 - 10:39] Keterkaitan ini bisa sifatnya lebih luas gitu. Jadi misalkan apa sih yang dipelajari dari penelitian tersebut
+[10:39 - 10:48] yang sekiranya relevan di peneliti ini? Nah itu boleh, karena bisa jadi dari beberapa penelitan yang dibahas
+[10:48 - 10:54] di penulitan terdahulu ini mungkin yang dippelajari bukan terkait bagaimana sistemnya
+[10:54 - 10:57] tapi lebih ke bagaimana mendokumentasikannya
+[10:57 - 10:58] misalnya, nah itu bisa
+[10:58 - 10:59] gak masalah juga
+[10:59 - 11:02] jadi dari sisi keterkaitan ini
+[11:02 - 11:03] tidak melulu harus
+[11:03 - 11:06] yang spesifik arahnya begitu
+[11:06 - 11:08] nah biasanya
+[11:08 - 11:08] kalau
+[11:08 - 11:11] untuk memudahkan
+[11:11 - 11:14] informasinya ditemukan
+[11:14 - 11:16] menurut saya lebih baik nanti
+[11:16 - 11:18] bisa dikeluarkan saja
+[11:18 - 11:20] jadi misalkan dari 10 penelitian
+[11:20 - 11:22] ini yang benar-benar
+[11:22 - 11:25] membangun sistem
+[11:25 - 11:26] gitu di
+[11:26 - 11:28] katakanlah objek yang sama
+[11:28 - 11:30] sama-sama bimbel
+[11:30 - 11:32] bimbingan belajar
+[11:32 - 11:33] ada berapa
+[11:33 - 11:36] penelitian
+[11:36 - 11:38] kemudian baru dimapping lagi
+[11:38 - 11:40] fitur-fitur yang mereka miliki
+[11:40 - 11:42] itu apa sih langsung di dalam tabel
+[11:42 - 11:45] jadi fiturnya apa saja
+[11:45 - 11:46] sehingga nanti
+[11:46 - 11:48] Ariel bisa memberikan
+[11:48 - 11:49] statement
+[11:52 - 11:54] untuk digunakan
+[11:54 - 11:57] di dalam sistem yang akan dibangun
+[11:57 - 11:58] jadi atau bisa jadi
+[11:58 - 12:01] jadi landasan atau acuan minimal
+[12:01 - 12:02] yang harus ada dalam sistem
+[12:02 - 12:03] yang akan dipanggung
+[12:03 - 12:06] sifatnya lebih ke
+[12:06 - 12:09] rekomendasi
+[12:09 - 12:11] dari hasil studi literatur kita
+[12:11 - 12:14] lebih mudah
+[12:14 - 12:14] melihatnya gitu
+[12:14 - 12:17] karena kalau dipenuhkan terdahulu ini kan bebas
+[12:17 - 12:18] bebas aja ya
+[12:18 - 12:21] maksudnya tidak harus
+[12:21 - 12:23] spesifik karena kadang ada
+[12:23 - 12:25] penelitian yang
+[12:25 - 12:27] sulit untuk cari referensinya
+[12:27 - 12:29] bisa sampai sekian, sehingga
+[12:29 - 12:30] apa yang kita bahas disini
+[12:30 - 12:33] gak harus yang sama persis
+[12:33 - 12:35] begitu, ya bisa juga
+[12:35 - 12:37] kalau memang terbatas referensinnya
+[12:37 - 12:39] bisa beberapa jurnal yang
+[12:39 - 12:41] dipelajari untuk diadopsi
+[12:41 - 12:42] di dalam peneliti
+[12:42 - 12:43] sebenarnya gak masalah
+[12:43 - 12:46] jadi maksud saya
+[12:46 - 12:48] keterkaitannya ini gak spesifik
+[12:48 - 12:50] harus mengarah
+[12:50 - 12:51] yang akan dipakai semua
+[12:51 - 12:53] kita tidak juga, tapi mungkin dari sisi
+[12:53 - 12:54] kemiripan
+[12:54 - 12:56] domain masalah
+[12:56 - 12:59] atau kemirapan solusi yang diberikan
+[12:59 - 13:01] atau hal-hal lainnya
+[13:01 - 13:02] yang sekiranya
+[13:02 - 13:04] kemudian diadopsi dalam penelitian
+[13:04 - 13:06] ARIL itu gak masalah
+[13:06 - 13:09] oke baik
+[13:09 - 13:12] jadi kalau misalkan
+[13:12 - 13:13] saya mau
+[13:13 - 13:16] menghapus
+[13:16 - 13:18] dari beberapa penduduk terdahulu
+[13:18 - 13:20] dan skop itu
+[13:20 - 13:22] bukan membahas tentang bimbingan
+[13:22 - 13:23] belajar tuh gak apa-apa ya.
+[13:24 - 13:24] Berarti enggak,
+[13:24 - 13:25] tapi ada yang dipelajari
+[13:25 - 13:26] enggak dari situ?
+[13:27 - 13:28] Sebenarnya ada
+[13:28 - 13:30] di bagian
+[13:30 - 13:32] dari komunikasi
+[13:32 - 13:33] antar cabang ini
+[13:33 - 13:34] karena kalau
+[13:34 - 13:36] yang di manajemen hotel
+[13:36 - 13:36] disini itu
+[13:36 - 13:37] lebih dari
+[13:37 - 13:38] arsitektur
+[13:38 - 13:39] informasinya
+[13:39 - 13:40] yang dimana
+[13:40 - 13:41] dari hotelnya
+[13:41 - 13:42] memiliki beberapa
+[13:42 - 13:42] cabang gitu
+[13:42 - 13:45] mulai dari
+[13:45 - 13:46] konsolidasi
+[13:46 - 13:46] dan rekapan
+[13:46 - 13:49] pencatatan pelaporan
+[13:49 - 13:49] dan juga
+[13:49 - 13:50] hak akses
+[13:50 - 13:50] atau rol
+[13:50 - 13:52] dari beberapa
+[13:52 - 13:52] peran gitu
+[13:52 - 13:58] Iya bisa saja dipakai
+[13:58 - 14:00] Tapi akhirnya kan untuk di poin keterkaitannya
+[14:00 - 14:01] Ini kan sebenarnya luas
+[14:01 - 14:03] Saya enggak mengerucut
+[14:03 - 14:06] Spesifik ke satu poin aja
+[14:06 - 14:07] Yang kita lihat gitu enggak
+[14:07 - 14:09] Jadi bisa, enggak masalah
+[14:09 - 14:12] Tapi tadi justifikasi di atas ya
+[14:12 - 14:13] Ini kan tabel
+[14:13 - 14:16] Tabelnya tetap dijelaskan
+[14:16 - 14:18] Jadi nanti disampaikan dulu
+[14:18 - 14:20] Tabel penelitian terdahulu
+[14:20 - 14:21] Ini akan menjelaskankan
+[14:21 - 14:24] Pertama yang akan
+[14:24 - 14:26] diapakan sih di dalam penelitian kita
+[14:26 - 14:33] itu disebutkan
+[14:33 - 14:35] disitu kan research gap ya
+[14:35 - 14:37] kalau research
+[14:37 - 14:39] gap itu biasanya lebih ke domain
+[14:39 - 14:40] yang sesuai
+[14:40 - 14:43] domain yang mirip
+[14:43 - 14:46] baru bisa ada research gapnya
+[14:46 - 14:48] kalau misalkan memang ditambahkan
+[14:48 - 14:50] diluar dari domain
+[14:50 - 14:52] yang sama, tapi mungkin secara
+[14:52 - 14:53] tadi proses
+[14:53 - 14:56] ada yang bisa kita pelajari
+[14:56 - 14:58] itu mungkin aruhnya
+[14:58 - 14:59] sepertinya
+[14:59 - 15:00] yang menurut saya kurang
+[15:00 - 15:02] kepat kayaknya pakai research gap
+[15:02 - 15:06] lebih ke apa
+[15:06 - 15:07] yang kita pelajari lah intinya
+[15:07 - 15:09] untuk kita pertimbangkan
+[15:09 - 15:11] di dalam penelitian ini
+[15:11 - 15:14] kalau research gap
+[15:14 - 15:16] biasanya kita menjabarkannya
+[15:16 - 15:16] itu di
+[15:16 - 15:19] latar belakang ya dan itu
+[15:19 - 15:21] bener-bener sedapat mungkin memang
+[15:21 - 15:24] yang satu domain tadi, satu domain masalah
+[15:24 - 15:25] dengan apa yang kita terdapat
+[15:30 - 15:38] terakhir kemarin tuh ke metode kan ya
+[15:38 - 15:41] iya bu, terakhiri itu di metode
+[15:41 - 15:42] dan ini saya sudah
+[15:42 - 15:45] jadi untuk
+[15:45 - 15:47] dibat dua ini
+[15:47 - 15:49] saya merancangnya
+[15:49 - 15:50] dari
+[15:50 - 15:54] teknologi dan metode yang terkait
+[15:54 - 15:55] saya menjelaskan
+[15:55 - 15:57] secara umum
+[15:57 - 15:59] apa saja yang ingin
+[15:59 - 16:05] yang saya buat di Baktiga nantinya, disini ada saya menggabutkan
+[16:05 - 16:09] dari Sourish Odis, Discus diagram, RTMN,
+[16:09 - 16:12] Kaspi Abram dan juga IRG.
+[16:12 - 16:16] Dan sudah teknologi-teknologi yang akan saya gunakan
+[16:16 - 16:20] di BAK3 nantikan, atau pengimunitas ini.
+[16:20 - 16:26] Untuk subat ini pertama, disitu ada sisa informasi manajemen
+[16:26 - 16:28] di sini saya membawaskan
+[16:28 - 16:31] sistem informasi manajemen itu
+[16:31 - 16:32] seperti apa dan bagaimana
+[16:32 - 16:32] cara
+[16:32 - 16:34] dan bagagaimana
+[16:34 - 16:36] cara pengembangannya
+[16:36 - 16:41] oh ini konsepnya
+[16:41 - 16:43] lebih ke sistem informsi
+[16:43 - 16:43] manajeman
+[16:43 - 16:45] iya benar
+[16:45 - 16:48] coba scroll dulu
+[16:48 - 16:52] lalu disini juga
+[16:52 - 16:54] langsung
+[16:54 - 16:55] mengurusut ke bagian
+[16:55 - 16:57] kode yang saya ingatkan
+[16:57 - 16:59] disini berdasarkan PSP
+[16:59 - 17:01] dan juga mengampirkan dari
+[17:01 - 17:03] mengambilkan dari
+[17:03 - 17:05] gambar sumber asli
+[17:05 - 17:07] dari awal mula
+[17:07 - 17:09] PSP itu ada
+[17:09 - 17:12] ini di gambar sendiri kah
+[17:12 - 17:13] atau di ambil
+[17:13 - 17:15] dari ngambil
+[17:15 - 17:18] digambar ulang aja ya
+[17:18 - 17:20] gambar-gambar
+[17:20 - 17:21] apa namanya
+[17:21 - 17:23] gambar yang dirujuk dari
+[17:23 - 17:25] jurnal gitu ya
+[17:25 - 17:27] kalau masih bisa digambar ulang-gambar
+[17:27 - 17:29] ulang aja jangan dikrot
+[17:29 - 17:32] karena nanti misalkan
+[17:32 - 17:33] kalau dicek plagiasi
+[17:33 - 17:35] kayaknya bisa ke detect gitu ya
+[17:35 - 17:39] jadi sebaiknya digambarkan
+[17:39 - 17:42] tercuali kalau memang gambarnya sangat kompleks
+[17:42 - 17:43] susah digambaran ulang
+[17:43 - 17:45] mungkin ya boleh
+[17:45 - 17:47] tapi sejauh ini sih rata-rata
+[17:47 - 17:49] yang saya lihat ya semuanya itu
+[17:49 - 17:50] digabar ulangi
+[17:50 - 17:55] oke, ini dari
+[17:55 - 17:56] di Zourof ya?
+[17:56 - 17:57] iya, dari Zourov
+[17:57 - 17:58] oke
+[17:58 - 18:01] nah apa yang sudah dipelajari
+[18:01 - 18:02] dari tahapan ini
+[18:02 - 18:04] dari tahap ini
+[18:04 - 18:06] yang saya pelajari itu
+[18:06 - 18:08] pertama dari requirement ini
+[18:08 - 18:10] dari sisi analisis kebutuhan
+[18:10 - 18:12] sebenarnya sudah
+[18:12 - 18:13] saya lakukan
+[18:13 - 18:16] beberapa kali dengan kita
+[18:16 - 18:19] dan juga saya udah jelaskan
+[18:19 - 18:20] yaitu di bertiga bahwasannya
+[18:20 - 18:22] di requirement ini perlu
+[18:22 - 18:23] ada penbuatan
+[18:23 - 18:26] atau prioritas kebutuhan
+[18:26 - 18:27] apa saja berdasarkan
+[18:27 - 18:29] dari asli yang secara
+[18:29 - 18:31] atau singkatnya
+[18:31 - 18:33] benar-benar
+[18:33 - 18:36] penumpulan informasi
+[18:36 - 18:37] dari asla masyarakat
+[18:37 - 18:38] dan ini dari kita itu
+[18:38 - 18:40] harus menemuskan
+[18:40 - 18:42] prioritas
+[18:42 - 18:44] apa yang akan diperjakan pada
+[18:44 - 18:45] tahapan berikutnya
+[18:45 - 18:49] saya potong
+[18:49 - 18:50] boleh
+[18:50 - 18:54] Oke di bagian bawah gambar ini ada dijelaskan enggak tempatnya
+[18:55 - 19:03] Hai adanya tapi sisi aras banget ini kebutuhannya dia yang disampaikan sama
+[19:03 - 19:21] nah ini rujukannya dari mana dari Zoroz tak penjelasan dari Zorof judul ibu oke satu paragraf
+[19:21 - 19:27] saja penjelasan untuk misalkan tangkan requirement ya tadi yang disampakan
+[19:27 - 19:33] tadi kalau requirement ngapain identifikasi kebutuhan kemudian apa yang dilakukan terus
+[19:33 - 19:39] merumuskan ke kebutuan pengguna dibuatkan kedalam user stories gitu dan menumpulkan
+[19:39 - 19:50] atau merugiskan dari sesuai identitas kayaknya sesuatu kebutuhannya ditutupan oleh user story
+[19:50 - 19:53] Sudah, sampai di situ saja berarti
+[19:53 - 19:54] Tahapan iklan ini
+[19:54 - 19:55] Iya
+[19:55 - 19:59] Oke
+[19:59 - 20:02] Sebentar
+[20:02 - 20:07] Kemudian yang tahapan yang kedua
+[20:07 - 20:09] Masuk ke perencanaan ini
+[20:09 - 20:12] Ini dari
+[20:12 - 20:13] Planning
+[20:13 - 20:16] Untuk penentuan prioritas
+[20:16 - 20:17] Yang juga
+[20:17 - 20:21] Penentuan siklus operasi
+[20:21 - 20:22] Yang dimana itu biasakan
+[20:22 - 20:24] Story point berdasarkan
+[20:24 - 20:25] Dari Fibonacci
+[20:25 - 20:28] di mana ada 3, 5, 8 dan seterusnya
+[20:28 - 20:29] untuk mengukur dari
+[20:29 - 20:32] pengembang yang
+[20:32 - 20:32] melakukan
+[20:32 - 20:35] pendevelopan sendiri
+[20:35 - 20:37] itu berapa
+[20:37 - 20:40] berapa kesesuaian
+[20:40 - 20:41] berdasarkan step-step
+[20:41 - 20:43] yang sudah dijelaskan di story point
+[20:43 - 20:48] jadi menentukan prioritas dulu
+[20:48 - 20:49] disini
+[20:49 - 20:52] kalau yang tadi yang pertama
+[20:52 - 20:54] itu mengidentifikasi kebutuhan
+[20:54 - 20:55] terus yang kedua disini
+[20:55 - 20:58] baru menentukan prioritas
+[20:58 - 20:59] apa saja
+[20:59 - 21:01] tas-tas atau kebutuhan yang
+[21:01 - 21:03] harus dikerjakan
+[21:03 - 21:05] dengan situ situasi yang sudah ada di dalam metode
+[21:05 - 21:07] GSP ini
+[21:07 - 21:11] oke, ini ada referensi tambahan
+[21:11 - 21:11] disini ya
+[21:11 - 21:15] sebentar
+[21:15 - 21:17] ini kan
+[21:17 - 21:18] disini disebutkan
+[21:18 - 21:21] teknik estimasi
+[21:21 - 21:22] story point
+[21:22 - 21:25] memang kalau
+[21:25 - 21:26] dari referensinya dari suraf
+[21:26 - 21:28] Atau menyebutkan langsung to the point seperti itu?
+[21:32 - 21:34] Kalau ini dari referensi tambahan Anda.
+[21:35 - 21:39] Sebenarnya kalau untuk yang gambar ini memang dari Zurok Bu,
+[21:39 - 21:43] cuman kalau yang saya menjelaskan di kebutuhan sampai ke tahapan-tahapan disini tuh
+[21:43 - 21:46] menggambungkan dari beberapa referensinya yang saya baca sih.
+[21:48 - 21:51] Tapi yang dari Zorok saya udah dibaca ya?
+[21:52 - 21:57] Yang dari Zorok saya ngebaca dari gambar itu juga tahapan dan definisi
+[21:57 - 21:59] enggak sebegitu
+[21:59 - 22:00] banyak
+[22:00 - 22:03] cara saya
+[22:03 - 22:05] karena Zurov itu kan
+[22:05 - 22:07] yang mengembangkan metode BXP-nya
+[22:07 - 22:08] jadi
+[22:08 - 22:10] sebaiknya untuk di babua
+[22:10 - 22:12] nanti tetap dibaca dulu
+[22:12 - 22:14] tahapan
+[22:14 - 22:14] yang
+[22:14 - 22:19] deskripsi atau penjelasan
+[22:19 - 22:21] masing-masing tahapan
+[22:21 - 22:22] BXB
+[22:22 - 22:25] yang ada di referensinya
+[22:25 - 22:26] dari Zurove itu seperti apa
+[22:26 - 22:29] itu sebaiknya dibaca dulu
+[22:29 - 22:33] kalau misalkan nanti setelah dipelajari
+[22:33 - 22:35] ada informasi yang sifatnya
+[22:35 - 22:37] masih cukup umum
+[22:37 - 22:37] begitu
+[22:37 - 22:41] masih ada yang mungkin kurang jelas
+[22:41 - 22:42] istilah-istilah tertentu
+[22:42 - 22:44] yang belum bisa dipahami
+[22:44 - 22:46] nah, nanti saran saya boleh
+[22:46 - 22:48] silakan berikutnya dikembangkan
+[22:48 - 22:50] dari jurnal yang lain
+[22:50 - 22:52] tapi
+[22:52 - 22:55] sebagai validasi utama
+[22:55 - 22:56] tetap mengacu ke
+[22:56 - 22:57] pengembang bedanya
+[22:57 - 23:00] nanti ketika
+[23:00 - 23:03] membuat
+[23:03 - 23:05] penjelasan yang juga dua ini
+[23:05 - 23:06] baru dijelaskan ya, kalau misalkan
+[23:06 - 23:07] memang
+[23:07 - 23:10] apa
+[23:10 - 23:12] sebagai referensi utama itu dari
+[23:12 - 23:14] tapi kemudian di beberapa
+[23:14 - 23:16] tahapan atau ketika menjelaskannya
+[23:16 - 23:17] tahapan ini
+[23:17 - 23:19] karena adanya mungkin tadi
+[23:19 - 23:21] informasi yang masih kurang jelas
+[23:21 - 23:24] sehingga membutuhkan referensis tambahan
+[23:24 - 23:25] baru kemudian merujuk ke
+[23:25 - 23:27] sumber lainnya. Tapi itu
+[23:27 - 23:30] dijustifikasikan, disebutkan gitu ya
+[23:30 - 23:31] karena kan
+[23:31 - 23:33] kalau dari sisi pengembang metode
+[23:33 - 23:34] kan zurot
+[23:34 - 23:38] sementara kan untuk mengetelkan ini
+[23:38 - 23:39] sebenarnya bisa jadi ada
+[23:39 - 23:41] macam-macam cara yang dilakukan
+[23:41 - 23:43] apakah memang mesti selalu bikin
+[23:43 - 23:46] apa nih
+[23:46 - 23:47] kalau di tahapan yang awal tadi
+[23:47 - 23:49] apakah membuat yusuf story
+[23:49 - 23:52] itu disebut kan spesifik
+[23:52 - 23:52] enggak?
+[23:52 - 23:54] enggak ada situasinya
+[23:54 - 23:58] nah itu maksud saya
+[23:58 - 24:01] bagaimana kemudian disini diinterpretasikan
+[24:01 - 24:02] bahwa oh ditahapkan
+[24:02 - 24:04] requirement itu harus membuat
+[24:04 - 24:05] user story karena sebenarnya
+[24:05 - 24:07] kebutuhan itu tidak perlu harus dalam
+[24:07 - 24:08] user story
+[24:08 - 24:12] jadi itu setidaknya
+[24:12 - 24:12] ada
+[24:12 - 24:15] landasannya
+[24:15 - 24:17] kenapa pada akhirnya yang
+[24:17 - 24:19] dituliskan disini dibagua
+[24:19 - 24:20] ini adalah user story
+[24:20 - 24:26] Karena ini kan nanti akan jadi acuan nih, jadi acuang juga tiga ya untuk metodologi.
+[24:26 - 24:34] Jadi paling tidak secara konsep dulu dipahami sebenarnya apa saja sih yang dilakukan oleh peneliti itu
+[24:34 - 24:36] yang dalam konteks ini kan menurut yaitu.
+[24:38 - 24:41] Dilakukan itu sebenarnya best practice-nya seperti apa?
+[24:42 - 24:48] Soalnya untuk mendefinisikan kebutuhan nih, oh sebenarnya macam-macam caranya
+[24:48 - 24:49] dan Zurof pun kan gak mendefinifikkan
+[24:49 - 24:51] harus pakai cara yang mana, berarti bebas
+[24:51 - 24:53] setelah itu dari sisi
+[24:53 - 24:55] pengembang, oh dia bisa menentukan
+[24:55 - 24:57] cara yang lebih mudah atau
+[24:57 - 24:59] yang lebih relevan untuk dia pakai
+[24:59 - 25:01] tapi kan ada pertimbangan lagi
+[25:01 - 25:06] saran saya sebaiknya gitu ya
+[25:06 - 25:15] sama sih
+[25:15 - 25:17] yang ke bawah juga kurang lebih seperti itu
+[25:17 - 25:19] misal contoh yang tahapan ketiga
+[25:19 - 25:21] itu kebelakatan ketiga
+[25:21 - 25:22] itu kan ada
+[25:22 - 25:25] dari mana itu?
+[25:26 - 25:26] ini dari
+[25:26 - 25:28] referensi yang
+[25:28 - 25:30] menjelaskan untuk
+[25:30 - 25:33] kalau misalkan di setiap
+[25:33 - 25:35] setiab
+[25:35 - 25:37] siklus iterasi
+[25:37 - 25:39] itu diperlukan untuk pencatatan log
+[25:39 - 25:41] untuk kapasitas
+[25:41 - 25:42] dari program ini
+[25:42 - 25:44] bisa mengerjakan satu
+[25:44 - 25:45] sikus iterasinya
+[25:45 - 25:48] tapi seingat saya disuruh
+[25:48 - 25:49] Nggak bilang seperti itu
+[25:49 - 25:52] Sepertinya ya
+[25:52 - 25:53] Iya kan
+[25:53 - 25:55] Coba nanti dibaca
+[25:55 - 25:58] Setidaknya kalau memang ada
+[25:58 - 26:00] Hal detail terutama di hal teknis
+[26:00 - 26:02] Yang kita tambahkan
+[26:02 - 26:04] Itu sesuatu yang
+[26:04 - 26:05] Kita kembangkan dari
+[26:05 - 26:07] Metode itu
+[26:07 - 26:09] Karena sebaiknya rujukan awal
+[26:09 - 26:11] Kalau memang ada hal
+[26:11 - 26:13] Yang dia menyebutkan masih abu-abu
+[26:13 - 26:14] Dan kita masih ragu
+[26:14 - 26:16] Ini bisa dikerjakan cara apa saja
+[26:16 - 26:19] baru kita cari referensi yang lain
+[26:19 - 26:21] mungkin oke
+[26:21 - 26:22] salah satu bentuknya disini
+[26:22 - 26:24] untuk tahapan ketiga akhirnya ada
+[26:24 - 26:26] time recording log
+[26:26 - 26:29] bisa jadi penelitian orang lain dia gak pake ini
+[26:29 - 26:30] tapi pake cara yang lain
+[26:30 - 26:33] jadi sebaiknya jangan
+[26:33 - 26:35] dikunci di bab dua ini menurut saya
+[26:35 - 26:38] kalau memang ada beberapa opsi
+[26:38 - 26:40] sebenarnya bisa dilakukan, sebutkan aja
+[26:40 - 26:41] ada opsi apa saja
+[26:41 - 26:45] jadi nanti yang di bab tiga
+[26:45 - 26:48] baru Aril kunci apa yang akan
+[26:48 - 26:49] Aril kerjakan
+[26:49 - 26:51] misalkan, oh iya
+[26:51 - 26:53] berarti dari apa yang sudah saya pelajari yaudah sebaiknya
+[26:53 - 26:55] nanti di penelitian ini
+[26:55 - 26:57] saya buat time recording log aja deh
+[26:57 - 26:58] nah itu disebutkan di bab tiga
+[26:58 - 27:04] sebenarnya ada macam-macam cara gitu ya
+[27:04 - 27:05] yang bisa dilakukan
+[27:05 - 27:11] contoh di yang nomor 4
+[27:11 - 27:12] ini nih
+[27:12 - 27:14] ini kan ada disebut
+[27:14 - 27:17] diagram standar rekayasa perangkat lunak
+[27:17 - 27:19] seperti BPM
+[27:19 - 27:20] use case class diagram
+[27:20 - 27:22] IR di BPM itu
+[27:22 - 27:25] bukan diagram standarnya KSA perangkat lunak
+[27:25 - 27:29] kursus bisnis
+[27:29 - 27:32] itu diluar dari
+[27:32 - 27:34] diagram standar loh itu sebenernya
+[27:34 - 27:36] tidak semua orang yang
+[27:36 - 27:37] bikin sistem harus bikin
+[27:37 - 27:38] BPM dulu
+[27:38 - 27:41] tapi di peneritian ini kan Aril diminta ya
+[27:41 - 27:42] iya gak sih
+[27:42 - 27:45] jadi jangan dikunci disini
+[27:45 - 27:47] masih ikan saja
+[27:47 - 27:53] ya tadi di diagram
+[27:53 - 27:55] memang berhubungan dengan arsitektur
+[27:55 - 27:56] rangat lunak seperti apa
+[27:56 - 27:59] boleh disebutkan yang biasa dipakai
+[27:59 - 28:00] boleh-boleh saja, tapi nanti
+[28:00 - 28:02] di bab tiga sih menu saya
+[28:02 - 28:05] dan saya rasa BPM itu
+[28:05 - 28:07] sepertinya tidak keluar
+[28:07 - 28:08] di tahapan keempat ini
+[28:08 - 28:11] harusnya hanya di awal
+[28:11 - 28:12] karena itu kan jadi rujukan
+[28:12 - 28:14] untuk user story
+[28:14 - 28:15] dan seterusnya
+[28:15 - 28:18] jadi keluarnya bukan
+[28:18 - 28:19] di tahapan design ini, karena
+[28:19 - 28:22] tahapan desain ini kan sebenarnya kalau meruncuk
+[28:22 - 28:24] ke SDLC-nya
+[28:24 - 28:25] itu adalah tahapan dari
+[28:25 - 28:27] siklus pengembangan sistemnya
+[28:27 - 28:29] sementara kalau BPN itu kan kita
+[28:29 - 28:31] memahami proses bisnisnya dulu
+[28:31 - 28:32] itu diluar dari sistem
+[28:32 - 28:34] jadi harus paham itu dulu baru bisa
+[28:34 - 28:36] memaham desain kebutuhan sistem
+[28:36 - 28:41] kayak bisa dibedakan ya?
+[28:42 - 28:42] iya bu
+[28:42 - 28:45] oke
+[28:45 - 28:47] nah itu jadi jangan dikunci dari sini
+[28:47 - 28:53] nah ini juga
+[28:53 - 28:55] sama sih yang saya bilang
+[28:55 - 28:56] jadi TDD
+[28:56 - 28:59] karena tidak semua orang PXP
+[28:59 - 29:00] pakai TDD loh ya
+[29:00 - 29:01] gitu
+[29:01 - 29:05] jadi nanti coba dibaca lagi
+[29:05 - 29:07] saran saya untuk tahapan ini
+[29:07 - 29:11] apa namanya
+[29:11 - 29:13] sifatnya karena ini lebih kebab dua
+[29:13 - 29:14] tinjauan bustakal
+[29:14 - 29:17] konseptualnya dulu lah
+[29:17 - 29:18] yang kita pelajari
+[29:18 - 29:30] oke oke terus ini setelah dari tahapan ini saya menjelaskan yang tadi
+[29:30 - 29:37] ini masuk ke bab apa di bab2 nya
+[29:37 - 29:49] kalau di ini oh di metodologi kan
+[29:49 - 29:55] Hai ibu kajian teknologi atau metode terkait Oke coba berarti outlinenya selain dari tadi
+[29:55 - 30:02] PXB kemudian ada user story yang dijelaskan diagram-diagram yang dipakai juga ya Bu disini
+[30:02 - 30:10] setelah dari misal story sedih memiliki informasi seperti apa lalu contoh ya Iya gitu
+[30:10 - 30:19] lalu ada use case diagramnya, disini isinya tabu untuk simbol-simbolnya.
+[30:21 - 30:27] Lalu ada activity diagram untuk aktivitas dari setiap user-nya
+[30:28 - 30:31] serta komunikasi antara sistem dan user
+[30:32 - 30:33] kalau ada class diagram
+[30:34 - 30:38] Nah yang class diagram ini sebenarnya saya juga ingin bertanya
+[30:38 - 30:47] kan kalau untuk dari proses bisnis saya membuatnya di TNN itu juga cuman kemarin itu dari Pak Arief
+[30:47 - 30:56] tuh memastikan kesalahan apakah BPNN ini bisa ada diagram lain yang sama persis menjelaskan
+[30:56 - 31:06] proses Bisnis dan pribadi. Dan saya rasa itu ada di bagian aktivitas di tmn itu sebenarnya hampir
+[31:06 - 31:14] mirip untuk penjelasan prosesnya tetapi kalau diaktiviti diagram ini lebih cara komunikasi antara user dan juga sistemi
+[31:14 - 31:18] jika di PTM itu lebih secara umumnya gitu menjelaskannya
+[31:18 - 31:24] tapi pada akhirnya yang saya rencanakan itu ingin menggunakan dtm dan juga aktivitas diagam
+[31:24 - 31:28] dengan mulanya dari PTM ini untuk menjelaskan secara Umum
+[31:28 - 31:33] dan untuk aktivitas diagram ini menjelesaikan secara detail antara users dan juga sistem
+[31:33 - 31:40] dan kedua di sini ada dari kelas diagram dan juga yang saya buat itu juga ada IRD
+[31:40 - 31:49] cuman dari yang saya tangkap untuk kelas Diagram dan IRD ini hampir sama
+[31:49 - 31:55] tapi mungkin yang besar untuk keas biografi akan saya hapus dan itu didamakan dengan
+[31:55 - 32:03] berarti juga di table dan juga gue ini juga enggak ada belum ada BPM untuk hinjak kesukannya
+[32:03 - 32:13] yang tadi berarti untuk BPN, diagram BPN dan aktifiti akan dipakai, berarti kan ya?
+[32:14 - 32:14] Iya Bu.
+[32:16 - 32:22] Kalau tadi pertanyaan Pak Arief terkait apa sih sehingga akhirnya Arief menambahkan kutipi jalan-jalan itu?
+[32:24 - 32:29] Kemarin tuh saya mengelaskan setelah dari gindingan buaya itu,
+[32:29 - 32:31] buaya menyarankan untuk menggunakan BPNM ini.
+[32:31 - 32:46] Terus dari Pak Arif mintaikan kalau dari diagram OML ada beberapa yang hampir sama dengan apa yang dijelaskan di TNN, itu tolong dipelajari lagi gitu.
+[32:46 - 32:48] Bilangnya seperti itu sedih.
+[32:48 - 32:52] Dan pada akhirnya saya menyukiskan kalau menggunakan kedua-duanya gitu.
+[32:52 - 32:57] Karena menurut saya, dari yang saya baca dulu penjelasannya di pilihan ini
+[32:57 - 33:01] Itu lebih menjelaskan proses bisnis secara umum
+[33:01 - 33:03] Dan untuk aktiviti diagram ini
+[33:03 - 33:09] Proses bisnes plus sistem yang menggambarkan
+[33:09 - 33:11] Cara berkomunikasi mental asisten
+[33:11 - 33:13] Yang juga user yang menggunakan sistem peserta
+[33:13 - 33:19] Oke, terus ada apa diagram?
+[33:19 - 33:20] Apa lagi yang mau dibuat ya?
+[33:20 - 33:21] Tadi use case juga ya
+[33:22 - 33:29] kemudian kelas yang mungkin saya kasih pertimbangan gini
+[33:29 - 33:34] ini nanti kalau sudah selesai
+[33:34 - 33:38] ini ada yang akan mengelolanya enggak?
+[33:39 - 33:41] akan ada yang mau maintenance system ini enggak
+[33:41 - 33:45] untuk saat ini, itu dari tentornya sendiri
+[33:45 - 33:48] tapi untuk tentor sendiri yang saat ini memang lagi ngelola website
+[33:48 - 33:51] dari kompronya RTL itu sendiri
+[33:51 - 33:59] memang orang IT kan beliau enggak Bu memang sensornya juga berarti nggak akan paham kalau
+[33:59 - 34:05] misalkan ada brok di sistem harus perbaiki kode program gitu enggak bisa ya Iya sepertinya tidak
+[34:05 - 34:12] mungkin pertimbangan saya gini Ariel ini kan sebenarnya fokus temennya mau cepat jadi kan
+[34:12 - 34:19] ya iya karena kan targetnya juga ini prototype kemudian ingin segera bisa
+[34:19 - 34:21] implementasikan untuk menyelesaikan masalah
+[34:21 - 34:23] seperti saya gini
+[34:23 - 34:25] terus ini kan pakai metode aja
+[34:25 - 34:27] pertanyaan saya pertama
+[34:27 - 34:29] apakah memang semua diagram yang ada di sini
+[34:29 - 34:31] perlu untuk dibuat
+[34:31 - 34:33] itu pertanyaannya pertama
+[34:33 - 34:35] kemudian yang kedua
+[34:35 - 34:37] karena begini
+[34:37 - 34:39] kalau misalkan, ini kan cukup banyak
+[34:39 - 34:41] diagramnya ya, ada dari use case
+[34:41 - 34:43] ada kelas, ada activity
+[34:43 - 34:45] kalau IRD
+[34:45 - 34:46] ya wajib lah, karena itu kan
+[34:46 - 34:48] memetakan
+[34:48 - 34:51] hubungan antara entitas yang ada
+[34:51 - 34:53] di dalam sistemnya
+[34:53 - 34:56] kan memang perlu ada
+[34:56 - 34:58] dan itu kan
+[34:58 - 34:59] diluar dari UML
+[34:59 - 35:02] tadi yang UML
+[35:02 - 35:04] ini cukup banyak
+[35:04 - 35:06] apakah semuanya perlu adakah
+[35:06 - 35:08] di dalam pengembangan ini
+[35:08 - 35:10] karena nanti Ariel juga harus
+[35:10 - 35:12] pertimbangkan, berarti akan ada waktu
+[35:12 - 35:14] yang digunakan untuk menyusun diagram-diagram
+[35:14 - 35:15] ini
+[35:15 - 35:19] bertanyaan saya berikutnya
+[35:19 - 35:21] ini kapan akan disusun
+[35:21 - 35:23] apakah nanti seiring
+[35:23 - 35:24] berjalan PHP disusuna
+[35:24 - 35:26] atau diagram-diagram ini
+[35:26 - 35:28] akan disusan di akhir sebagai
+[35:28 - 35:30] dokumentasi keseluruhan
+[35:30 - 35:33] karena poinnya
+[35:33 - 35:34] nanti bisa jadi berbeda
+[35:34 - 35:36] kemudian
+[35:36 - 35:39] mungkin dipikirkan lagi
+[35:39 - 35:40] karena ini kan mitranya
+[35:40 - 35:42] juga bukan dinas
+[35:42 - 35:45] kecuali ini
+[35:45 - 35:47] kalau misalkan dinas
+[35:47 - 35:49] saya rasa walaupun teman-teman
+[35:49 - 35:50] pakai EJEL, teman teman
+[35:50 - 35:53] buat dokumen oleh dinas
+[35:53 - 35:55] karena mereka gak bisa hanya
+[35:55 - 35:57] menurut sistem jadi tanpa ada dokumentasi
+[35:57 - 36:02] terus mungkin kita lihat juga
+[36:02 - 36:02] dari
+[36:02 - 36:04] apa namanya
+[36:04 - 36:06] dari mitranya
+[36:06 - 36:08] apakah dari mitra juga mewajibkan
+[36:08 - 36:10] atau dari mita
+[36:10 - 36:12] apakah nanti akan mengembangkan lebih lanjut
+[36:12 - 36:14] misalkan, atau akan ada pengelolaan
+[36:14 - 36:16] dan segala macam yang berhubungan
+[36:16 - 36:17] dengan sistem sehingga
+[36:17 - 36:19] memang mereka memerlukan
+[36:19 - 36:21] dokumentasi yang cukup banyak
+[36:21 - 36:25] nah itu juga perlu dipertimbang
+[36:25 - 36:28] kalau misalkannya sebenarnya tidak ada
+[36:28 - 36:29] permintaan begitu ya
+[36:29 - 36:31] atau tidak ada pengharusan untuk
+[36:31 - 36:33] ada dokumentasi
+[36:33 - 36:35] yang cukuk detail begitu
+[36:35 - 36:36] saran saya pilih aja
+[36:36 - 36:37] kalau memang perlu diagram
+[36:37 - 36:40] pilih aja yang diagram yang minimal ada
+[36:40 - 36:43] jadi tidak semuanya harus ada
+[36:43 - 36:45] karena kalau misalkan semuannya dibuat
+[36:45 - 36:46] itu kan tentu pertama waktu
+[36:46 - 36:51] itu juga perlu dipertimbangkan
+[36:51 - 36:53] terus dari sisi
+[36:53 - 36:54] kemiripan
+[36:54 - 36:57] apakah ada diagram yang mirip
+[36:57 - 36:59] fungsinya bisa saling menggantikan
+[36:59 - 37:00] misal contoh
+[37:00 - 37:03] diagram
+[37:03 - 37:04] ada use case diagram
+[37:04 - 37:08] Kemudian juga ada user story
+[37:08 - 37:12] Nah itu fungsinya saling melengkapi
+[37:12 - 37:14] Atau bisa saling menggantikan enggak
+[37:14 - 37:16] Misalkan ya
+[37:16 - 37:19] Coba nanti dilihat kembali
+[37:19 - 37:21] Sehingga maksud saya disini
+[37:21 - 37:24] Saya ingin Ariel mempertimbangkan
+[37:24 - 37:27] Apakah memang perlu sebanyak
+[37:27 - 37:28] Itu diagram yang perlu dibuat
+[37:28 - 37:30] Karena penekanannya tadi kan
+[37:30 - 37:32] Lebih pada prototip
+[37:32 - 37:33] Yang ingin segera
+[37:33 - 37:35] Bisa diimplementasikan
+[37:35 - 37:40] Coba mungkin nanti
+[37:40 - 37:40] Boleh
+[37:40 - 37:43] Dipelajari kembali saja
+[37:43 - 37:46] Urgensi dari masing-masing diagram ini
+[37:46 - 37:47] Atau apakah memang perlu
+[37:47 - 37:49] Wajib ada di setiap pengembangan
+[37:49 - 37:51] Kalau misalkan yang memang perlu wajib
+[37:51 - 37:52] Ada minimal yang mana sih
+[37:52 - 37:54] Sarun saya bisa pakai itu
+[37:54 - 37:57] Dan nanti bisa memberikan justifikasi
+[37:57 - 37:58] Demikian
+[37:58 - 37:59] Di dua nya
+[37:59 - 38:02] Semuanya kita gunakan
+[38:02 - 38:06] jadi pertimbangan
+[38:06 - 38:08] seperti itu, misalkan tadi
+[38:08 - 38:10] masalah kelas diagram dan
+[38:10 - 38:11] IRD itu mirip
+[38:11 - 38:13] tapi itu berbeda
+[38:13 - 38:15] mungkin itu bisa ditahu dulu ya
+[38:15 - 38:18] jadi bukan berarti karena dia
+[38:18 - 38:20] mirip, kelas diagram bisa menggantikan
+[38:20 - 38:21] IRD
+[38:21 - 38:23] nah itu coba nanti dipelajari dulu
+[38:23 - 38:25] karena secara konseptual itu berbeza
+[38:25 - 38:54] kalau untuk dari sisi misalkan tadi tuh saya ragu di bagian pertimbangan antara BPMN dan juga
+[38:54 - 39:00] terus juga tadi kesampaikan itu keluarga juga pertimbangannya
+[39:00 - 39:12] yang saya rasanya sepertinya untuk dari mitra sendiri itu akan nggak bisa
+[39:12 - 39:19] mengenai dari diagram BPM dibandingkan dengan aktif diagram, karena disitu juga agak sistem
+[39:19 - 39:25] yang memiliki. Ya karena fungsinya kan berbeda ya kalau BPM itu kan lebih untuk
+[39:25 - 39:31] memetakan dulu proses bisnis yang ada dan bisa jadikan sebelum membangun sistem kita kan tidak
+[39:31 - 39:39] langsung apa ya langsung gitu aja ya Oh yaudah prosesnya gini kita langsung menjadikan fitur
+[39:39 - 39:43] aja di sistem bukan tidak seperti itu karena didalam IPM sendiri kan sebenarnya ada proses
+[39:43 - 39:50] kita untuk menganalisis juga atau aktivitas yang akan diproses kalau memang bisa diefektifkan
+[39:50 - 39:53] atau dieliminasi, misalkan gitu ya
+[39:53 - 39:54] diefisienkan
+[39:54 - 39:55] sebenarnya bisa
+[39:55 - 39:57] jadi nanti apa yang masuk ke sistem itu
+[39:57 - 40:00] sudah merujuk ke proses
+[40:00 - 40:00] yang lebih baik
+[40:00 - 40:03] daripada yang berjalan es
+[40:03 - 40:06] sementara kalau aktiviti
+[40:06 - 40:08] kan tidak menjelaskan itu
+[40:08 - 40:10] aktiviti yang menjelaskan
+[40:10 - 40:12] berarti kondisi saat ini
+[40:12 - 40:12] di sistem
+[40:12 - 40:14] terimplementasi
+[40:14 - 40:19] mungkin saya
+[40:19 - 40:21] bagian yang paling saya pahami adalah
+[40:21 - 40:23] apakah dari UML-UML ini
+[40:23 - 40:25] harus semua atau sebenarnya
+[40:25 - 40:27] ada beberapa yang harus dikenalkan
+[40:27 - 40:28] itu sebetulnya
+[40:28 - 40:33] nanti coba baca lagi
+[40:33 - 40:34] dari jurnal-jurnal
+[40:34 - 40:37] informasi sistem
+[40:37 - 40:38] mereka pakai
+[40:38 - 40:41] diagram kalau UML minimal
+[40:41 - 40:43] apa saja sih yang harus ada
+[40:43 - 40:45] atau bisa juga nanti
+[40:45 - 40:46] baca dari referensi terkait
+[40:46 - 40:48] UML-nya itu sendiri
+[40:48 - 40:50] urgensi dari masing-masing
+[40:50 - 40:52] diagram itu kan berbeda
+[40:52 - 40:54] dan juga untuk
+[40:54 - 40:55] fungsi yang berbedaan
+[40:55 - 40:58] paling tidak kan tadi
+[40:58 - 41:00] kalau saran saya memang harus ada
+[41:00 - 41:02] diagram ya, diagram minimal aja
+[41:02 - 41:04] karena kan enggak dituntut, ada dokumentasi
+[41:04 - 41:05] kecuali kalau memang
+[41:05 - 41:07] dari
+[41:07 - 41:10] mitranya
+[41:10 - 41:12] meminta ada dokumentansi lengkap
+[41:12 - 41:12] segala macam
+[41:12 - 41:23] Oke, sisanya ini berarti teknis
+[41:23 - 41:25] Teknis teknologi
+[41:25 - 41:29] Dan juga
+[41:29 - 41:32] Resipi PIA
+[41:32 - 41:33] Ini juga dimasukkan
+[41:33 - 41:39] Mungkin nanti bisa disebutkan
+[41:39 - 41:41] Kalau untuk yang
+[41:41 - 41:42] Teknis-teknis tadi
+[41:42 - 41:45] Itu akan dipakai di bagian mana
+[41:45 - 41:53] di dalam penelitian dijelaskan di bab 2 ini eh ya nggak papa di paragrafnya
+[41:53 - 42:24] terus juga disini dari 22 yang tadi sini penduduknya ini ada yang perlu dijelas
+[42:24 - 42:27] saya masih sama seperti yang
+[42:27 - 42:28] saya jelaskan sebelumnya
+[42:28 - 42:33] ya, saran saya
+[42:33 - 42:35] seperti yang tadi itu aja untuk penonton
+[42:35 - 42:36] nanti dilihat kembali
+[42:36 - 42:38] kalau memang sebenarnya
+[42:38 - 42:41] domain masalahnya itu beragam
+[42:41 - 42:43] menurut saya
+[42:43 - 42:44] jangan disebutkan
+[42:44 - 42:47] keterkaitannya hal terbatas
+[42:47 - 42:48] fitur gitu ya, berarti memang
+[42:48 - 42:50] secara umum apa yang dipelajari
+[42:50 - 42:53] untuk diadopsi dalam pengetahuan ini
+[42:53 - 42:59] dan dulu
+[42:59 - 43:04] di sini bertugas saya sudah menyesuaikan dari penjelasan ini.
+[43:04 - 43:11] Bertulah sendiri, saya menyusunnya dari yang pertamanya ketika penyelit pandu
+[43:11 - 43:20] seperti apa, disini saya menjelaskan secara umum
+[43:20 - 43:25] dan dari sisi jars besar korekat-korekat ini
+[43:25 - 43:26] menjelaskan
+[43:26 - 43:28] kalau misalkan pada
+[43:28 - 43:30] ujungnya itu harus membutuhkan apa
+[43:30 - 43:32] untuk mengecahkan
+[43:32 - 43:34] kemasalahannya terjadi
+[43:34 - 43:41] oke ini
+[43:41 - 43:43] umum kan ya
+[43:43 - 43:47] sebentar
+[43:47 - 43:50] tapi ini digabung
+[43:50 - 43:51] begitu ya, coba liat
+[43:51 - 43:52] sempatnya saja kan
+[43:52 - 43:55] garis besar prototek
+[43:55 - 43:58] coba
+[43:58 - 43:59] kalau di struktur penulisannya
+[43:59 - 44:02] 3.1 ini 3.2 bahasa
+[44:02 - 44:06] 3.1 itu membahas
+[44:06 - 44:11] 3.2 itu garis besar protek
+[44:11 - 44:12] yang bagian ini memberikan
+[44:12 - 44:14] gambar singkat tentang apa yang akan dilakukan
+[44:14 - 44:16] dan hasil yang disapai
+[44:16 - 44:18] dari protek yang dikerjakan
+[44:18 - 44:21] saya sering
+[44:21 - 44:30] seperti ini
+[44:30 - 44:32] ada tiga bagian
+[44:32 - 44:33] kalau gitu
+[44:33 - 44:37] saya rasa
+[44:37 - 44:39] coba masih ada
+[44:39 - 44:40] 3.4 atau tidak
+[44:40 - 44:43] konsepnya
+[44:43 - 45:00] Hai cuma terakhir ini jadwal ketiga titik saya kalau menangkap dari sini kan sebenarnya itu lebih
+[45:00 - 45:10] ke informasi singkat aja sih Oke beritahu panjangnya iya menurut saya terlalu banyak tadi penjelasannya
+[45:10 - 45:17] karena hanya diminta garis besar prototep ya jadi intinya menjelaskan apa yang dibuat saja dalam
+[45:17 - 45:24] ini tidak perlu diulang lagi permasalahannya jadi apa dikerucutkan saja disini gitu ya karena kita
+[45:24 - 45:47] udah ngomongin solusi Hai minggu masih panjang sekali ada metodenya juga saya rasa nanti fokus
+[45:47 - 46:01] di bawah saja ini juga disini dari sistemnya untuk jadi setiap player yang ada ini bukan
+[46:01 - 46:04] di bab inikah dimasukkan tiga titik empat bukan
+[46:04 - 46:14] yang punya saya gue bukan tembakan
+[46:14 - 46:48] sebenarnya rancangan awal tuh bisa arsitektur atau kalau misalkan ini
+[46:48 - 46:51] bisa apa namanya termasuk user story
+[46:51 - 47:05] sudah lumayan detail ya kalau yang tiga titik empatnya apa yang harus jelaskan
+[47:05 - 47:17] disini saya menjelaskannya dari SS nya sama kudu berdasarkan
+[47:17 - 47:22] berdasarkan proses
+[47:22 - 47:24] bisnisnya saat ini terjadi
+[47:24 - 47:26] disini juga ada melakukan
+[47:26 - 47:29] DPMN-nya
+[47:29 - 47:31] tapi ini sudah divalidasi
+[47:31 - 47:35] sudah bu, sudah saya melakukan
+[47:35 - 47:37] wawancara kembali dengan Mitra
+[47:37 - 47:42] yang TUBI juga sudah ditujukan
+[47:42 - 47:43] dan sudah divalidasi
+[47:43 - 47:46] iya bu, itu kalau untuk TUB
+[47:46 - 47:47] memang sudah saya ada
+[47:47 - 47:50] beritahu di manajemen
+[47:50 - 47:50] itu
+[47:50 - 47:53] di awal wawancara sama kemarin juga
+[47:53 - 47:54] dilakukan validasi kembali
+[47:54 - 47:55] dengan mitra
+[47:55 - 47:58] dan mereka sudah setuju
+[47:58 - 48:01] iya, karena saya sebelumnya
+[48:01 - 48:03] udah membuat wireframe-nya
+[48:03 - 48:05] dari rancangan
+[48:05 - 48:07] visualisasi untuk dashboard
+[48:07 - 48:08] jadi kemaran saya ada
+[48:08 - 48:10] merancang wireframe terlebih dahulu
+[48:10 - 48:13] lalu, eh sebelum ini
+[48:13 - 48:14] saya jelaskan dulu proses bisnisnya
+[48:14 - 48:16] apakah sudah sesuai, baru apa yang saya
+[48:16 - 48:19] mekerjakan dan juga visualisisi dari wireframe
+[48:19 - 48:23] Saya rasa itu
+[48:23 - 48:25] Masuk ke konsep ini aja deh
+[48:25 - 48:26] Konsep intik bahkan
+[48:26 - 48:28] Sumpah-sumpah 3.4 ini
+[48:28 - 48:31] Yang masih tektur tadi
+[48:31 - 48:34] Maksudnya kesini aja
+[48:34 - 48:37] Nanti dibuat kalau mau dipisahkan
+[48:37 - 48:38] Berdasarkan subsub
+[48:38 - 48:40] Jadi
+[48:40 - 48:46] Mungkin nanti diurut saja dari apa dulu
+[48:46 - 48:47] Yang dikerjakan gitu apakah lebih
+[48:47 - 48:50] Proses bisnisnya dulu atau memang
+[48:50 - 48:52] merancang arsitektur
+[48:52 - 48:53] sistem secara keseluruhan
+[48:53 - 48:55] jadi itu nanti diurutkan
+[48:55 - 48:57] termasuk tadi
+[48:57 - 48:59] kalau memang ada wireframe
+[48:59 - 49:00] yang
+[49:00 - 49:01] apa
+[49:01 - 49:05] ya didiskusikan begitu ya dengan mitra
+[49:05 - 49:07] ya dimasukkan saja disini
+[49:07 - 49:07] menurut saya
+[49:07 - 49:10] untuk wireframe
+[49:10 - 49:12] itu saya taruh
+[49:12 - 49:13] di bagian
+[49:13 - 49:14] dari sisi
+[49:14 - 49:28] terus ini
+[49:28 - 49:36] Sebelumnya saya meletakkan kebutuhan fungsionalnya terlebih dahulu dari sistem yang dibutuhkan,
+[49:36 - 49:38] dan juga dari fungsian lain.
+[49:40 - 49:44] Untuk QRFrame itu malah saya taruh di paling bawah sih.
+[49:45 - 49:52] Karena sebelumnya sudah membuat pada use case dengan diagram lainnya.
+[49:52 - 49:58] Oke, saya rasa ini terlalu banyak
+[49:58 - 50:00] nanti untuk dimasukkan di proposal
+[50:00 - 50:02] yang mungkin dipilih dulu saja
+[50:02 - 50:04] karena sebagian besar
+[50:04 - 50:06] diagram kan sebenarnya luaran
+[50:06 - 50:08] dari tahapan desain dan kalau merupakan
+[50:08 - 50:08] experience
+[50:08 - 50:11] Jadi
+[50:11 - 50:14] untuk gambaran konseptual
+[50:14 - 50:16] prototeks, saya rasa pilih
+[50:16 - 50:18] apa namanya
+[50:18 - 50:20] arsitektur
+[50:20 - 50:21] boleh dimasukan
+[50:21 - 50:22] kemudian
+[50:22 - 50:30] Sistem ini akan dibangun dari proses bisnis
+[50:30 - 50:34] Mungkin gambaran proses-proses yang akan diterjakan
+[50:34 - 50:40] Yang lain-lain ini menurut saya nanti di cut aja
+[50:40 - 50:41] Disimpan dulu aja
+[50:41 - 50:45] Ini diagram-diagram UML yang banyak
+[50:45 - 50:50] Walaupun saya sudah tentukan apa yang mau saya gunakan
+[50:50 - 51:04] yang kedua untuk batasan di konsep prototip misalnya nggak usah semua karena kan ini ada
+[51:04 - 51:12] yang luaran dari tahapan PXT nya itu jadi udah masuk ke bahasa bakempat kalau misalkan memang
+[51:12 - 51:19] dipakai tapi ini adalah apa namanya hasil dari tahap 4 saya rasa nanti simpan dulu saja
+[51:19 - 51:21] kalau misalkan seminar ditanyakan
+[51:21 - 51:23] boleh ditunjukkan, tapi kalau nggak ditanya
+[51:23 - 51:24] udah disimpan dulu aja
+[51:24 - 51:27] sampai yang tadi dulu aja menurut saya
+[51:27 - 51:28] wireframe itu nggak paham
+[51:28 - 51:30] sudah cukup banyak
+[51:30 - 51:33] ada gambaran di konsep protokol
+[51:33 - 51:36] berarti kalau
+[51:36 - 51:37] yang bisa saya tangkap
+[51:37 - 51:39] kalaupun nanti pada akhirnya
+[51:39 - 51:41] saya menggunakan
+[51:41 - 51:43] contohnya misalnya disini ada
+[51:43 - 51:44] arti cukup diagram
+[51:44 - 51:45] saya ada sebuah jam untuk
+[51:45 - 51:47] jalan tiga
+[51:47 - 51:54] kalau misalkan nanti mungkin satu aja gitu loh pada akhirnya untuk diproposkan yang
+[51:54 - 52:03] berikutnya untuk di proposal saya enggak usah dulu karena kan udah masuk ke tangapan desain
+[52:03 - 52:12] karena harusnya kali nggak di konsep prototip ini tuh requirement ya
+[52:12 - 52:21] jadi kalau terlalu banyak saya khawatirnya juga terlalui banyak ya apa namanya nanti
+[52:21 - 52:27] juga akan banyak yang dipinggalkan kebanyakan jadi lebih baik dipisahkan dulu kalau memang
+[52:27 - 52:35] sifatnya terlulu detail atau udah membahas hasil 4 ini oke berarti mau ngomong-ngomong
+[52:35 - 52:38] kalau misalkan user story kan juga termasuk dari
+[52:38 - 52:41] jadi kalau user story yang seperti ini
+[52:41 - 52:41] udah benar ya Bu
+[52:41 - 52:46] dari user story
+[52:46 - 52:47] untuk requirement-nya
+[52:47 - 52:50] kalau seperti ini
+[52:50 - 52:51] aman ya
+[52:51 - 52:54] maksudnya aman gimana
+[52:54 - 52:57] bisa dimasukkan ke
+[52:57 - 52:58] web 3 gitu
+[52:58 - 53:01] user story sementara gak apa-apa
+[53:01 - 53:02] dimasukan nanti
+[53:02 - 53:05] user story, wire to friend
+[53:05 - 53:08] dan juga di TNN
+[53:08 - 53:18] Oke dikelirkan dulu yang tadi lah
+[53:18 - 53:18] Yang saya minta
+[53:18 - 53:22] Sehingga nanti justifikasinya
+[53:22 - 53:23] Lebih jelas
+[53:23 - 53:24] Jadi batasan
+[53:24 - 53:27] Di bab tiba yang mau dituruskan pun
+[53:27 - 53:27] Menjadi jelas juga
+[53:27 - 53:30] Karena kalau misalkan di bab duanya
+[53:30 - 53:32] Belum clear
+[53:32 - 53:34] Informasinya gitu ya
+[53:34 - 53:38] Apa
+[53:38 - 53:41] Ini diperoleh dari beberapa referensi
+[53:41 - 53:43] atau misalkan memang kalau perlu
+[53:43 - 53:45] merujuk ke referensi utamanya dulu, ya dibaca
+[53:45 - 53:47] dulu referensinya utama. Kalau nanti
+[53:47 - 53:49] mau dikembangkan dengan
+[53:49 - 53:51] referensikan tambahan, ya disebutkan
+[53:51 - 53:53] sehingga apakah
+[53:53 - 53:55] yang dipakai
+[53:55 - 53:57] pada akhirnya di penelitian ini adalah
+[53:57 - 53:59] yang pengesuaian dari referensik tambahan
+[53:59 - 54:01] seperti itu. Jadi itu perlu dikliarkan
+[54:01 - 54:01] di bab 2
+[54:01 - 54:07] jadi nanti pas
+[54:07 - 54:08] ngecek bab 3 itu lebih
+[54:08 - 54:11] mudah ya. Bab 3 itu kan
+[54:11 - 54:13] validasinya di bab dua
+[54:13 - 54:14] karena kalau bab duanya
+[54:14 - 54:17] masih ada hal-hal yang
+[54:17 - 54:19] belum clear ya
+[54:19 - 54:21] agak sulit akhirnya mengecek
+[54:21 - 54:23] ini referensi nya mana
+[54:23 - 54:27] oke baik
+[54:27 - 54:31] mungkin itu dulu deh
+[54:31 - 54:33] nanti kita bahas lagi ya
+[54:33 - 54:34] setelah adil coba
+[54:34 - 54:36] sedikit literatur
+[54:36 - 54:43] mungkin pertanyaan terakhir
+[54:43 - 54:44] untuk duduk
+[54:44 - 54:45] saya
+[54:45 - 54:48] bisa mengajukan ya
+[54:48 - 54:55] maksimal 12 kata
+[54:55 - 55:02] nanti cek di panduan
+[55:02 - 55:04] saya lupa berapa kata
+[55:04 - 55:05] tapi biasanya ada
+[55:05 - 55:06] ketemuannya
+[55:06 - 55:11] jadi panduan aja
+[55:11 - 55:17] kalau nanti kepanjanganku
+[55:17 - 55:21] sehingga waktu seminar juga mungkin akan direvisi juga gitu
+[55:21 - 55:27] Oh iya saya memastikan Bu, untuk besok itu berarti ada batas terakhir ya Bu?
+[55:27 - 55:29] Untuk projekturnya itu nggak?
+[55:32 - 55:36] Itu kan yang direkomendasikan maksud saya teman-teman
+[55:36 - 55:39] Mungkin nanti silahkan konfirmasi aja ke dosen ini
+[55:40 - 55:43] Kalau rekomendasi saya seperti itu
+[55:43 - 55:50] Maksudnya takutnya enggak apa ya beliau-beliau ini kan kesibukannya juga banyak kalau misalkan
+[55:50 - 55:57] mepet-mepet ternyata hasil cek plagiasinya tinggi kalian harus perbaiki ya kemarin yang
+[55:57 - 56:05] saya rekomendasikan tapi mau nanti ditanyakan lagi aja ya baik itu mungkin itu aja yang saya
+[56:05 - 56:11] berikutnya akan saya pas kembali untuk pembacaan literaturnya
+[56:11 - 56:13] sesuatu dengan istri untuk penggunaan
+[56:13 - 56:17] Oke oke
+[56:17 - 56:24] silahkan
+[56:24 - 56:33] kalau mau les nggak apa-apa
+[56:33 - 56:59] Kemarin
+[56:59 - 57:03] Memastikan
+[57:03 - 57:04] Kembali metodenya
+[57:04 - 57:07] Oke
+[57:07 - 57:09] Tapi sudah bimbingan lagi
+[57:09 - 57:10] Sama Bu Yuyun
+[57:10 - 57:13] Baru besok
+[57:13 - 57:13] Bisa
+[57:13 - 57:20] Gimana
+[57:20 - 57:21] Saya belajar
+[57:21 - 57:23] Jadi untuk
+[57:23 - 57:25] yang saya cari tahu
+[57:25 - 57:26] kemarin kan saya carai tahu terkait
+[57:26 - 57:29] masing-masing metode dari POM sendiri
+[57:29 - 57:30] dan EWCS sendiri
+[57:30 - 57:31] untuk
+[57:31 - 57:35] masing penilaiannya itu
+[57:35 - 57:36] yang pertama untuk kami sendiri
+[57:36 - 57:38] adalah penilaan terkakit
+[57:38 - 57:41] kemudahan sistem dan juga pemanfaatan sistem
+[57:41 - 57:42] sedangkan kalau misalnya
+[57:42 - 57:44] EWKS itu lebih fokus
+[57:44 - 57:45] kepada
+[57:45 - 57:48] tampilan atau kepada sistem
+[57:48 - 57:49] kepada
+[57:49 - 57:50] penggunaannya itu
+[57:50 - 57:53] bagaimana penggunaannya
+[57:53 - 57:53] terhadap sistem
+[57:53 - 57:56] jadi mulai dari operasinya
+[57:56 - 57:57] formatnya
+[57:57 - 58:00] kemudahannya
+[58:00 - 58:03] dan manfaatnya
+[58:03 - 58:04] seperti itu
+[58:04 - 58:05] untuk UCS
+[58:05 - 58:07] lebih fokus kepada sistemnya
+[58:07 - 58:10] lalu kalau untuk di atamnya
+[58:10 - 58:11] lebih fokus ke persegi
+[58:11 - 58:12] dari penggunanya
+[58:12 - 58:15] dari yang selesai bandingkan
+[58:15 - 58:16] dengan metode lain
+[58:16 - 58:19] seperti UU TAUT
+[58:19 - 58:20] dan juga
+[58:20 - 58:22] TPD, saya sudah melakukan
+[58:22 - 58:24] perbandingan metode
+[58:24 - 58:28] ini kan fokusnya
+[58:28 - 58:30] kepada penerimaan sistem
+[58:30 - 58:32] penerima pengguna terhadap
+[58:32 - 58:34] sistem dan juga kekuasaan dari penggunat
+[58:34 - 58:35] terhadapi sistem. Jadi kalau untuk
+[58:35 - 58:37] hasil perbandungan metoda
+[58:37 - 58:39] terutama kemarin
+[58:39 - 58:42] dengan metode
+[58:42 - 58:43] utaud itu sendiri
+[58:43 - 58:45] jadi kalau utaud setelah
+[58:45 - 58:46] saya contoh itu dia
+[58:46 - 58:49] fokus-nya kepada faktor-faktor
+[58:49 - 58:51] yang mempengaruhi niatnya
+[58:51 - 58:53] dari pengguna untuk menggunakan teknologi
+[58:53 - 58:54] tersebut, sedangkan kalau
+[58:54 - 58:56] saya dikenalikan saya ini kan
+[58:56 - 58:59] penerimaan pengguma
+[58:59 - 59:00] terhadap sistem medik, kalau misalnya
+[59:00 - 59:02] dinilai dari
+[59:02 - 59:05] metode
+[59:05 - 59:06] yang digunakan itu
+[59:06 - 59:08] lebih masuknya
+[59:08 - 59:10] di TAM dan juga
+[59:10 - 59:12] di EUCS
+[59:12 - 59:14] karena DITAM-nya sendiri
+[59:14 - 59:15] itu menilai
+[59:15 - 59:17] dua tadi yang terkait
+[59:17 - 59:18] penerimaan
+[59:18 - 59:21] kemanfaatan dan kemudahan dari
+[59:21 - 59:25] sistemnya itu sendiri
+[59:25 - 59:26] seperti itu
+[59:26 - 59:34] kalau yang EWCS
+[59:34 - 59:34] lebih ke apa?
+[59:35 - 59:37] EWCs itu lebih ke
+[59:37 - 59:39] penggunaan sistemnya, jadi informasi
+[59:39 - 59:41] yang ada di dalam sistem mulai dari fitur
+[59:41 - 59:42] yang ada terus juga
+[59:42 - 59:45] informasi yang ditampilkan
+[59:45 - 59:47] kemudian dalam misalnya
+[59:47 - 59:48] kayak upload dokumen
+[59:48 - 59:51] ini
+[59:51 - 59:53] XIA ini apa?
+[59:53 - 59:59] kalau yang saya cari tahu
+[59:59 - 01:00:01] jadi ini
+[01:00:01 - 01:00:03] yang dinilai dari sistem list tersebut
+[01:00:03 - 01:00:03] nanti
+[01:00:03 - 01:00:06] user satisfaction itu
+[01:00:06 - 01:00:08] hasilnya yang
+[01:00:08 - 01:00:10] ingin didapatkan
+[01:00:10 - 01:00:14] coba lihat
+[01:00:14 - 01:00:15] yang tambah
+[01:00:15 - 01:00:17] X dan Y
+[01:00:17 - 01:00:22] kalau misalnya untuk metode
+[01:00:22 - 01:00:24] integrasi saya sendiri
+[01:00:24 - 01:00:26] Saya ada
+[01:00:26 - 01:00:28] Modulnya itu kan
+[01:00:28 - 01:00:30] Itu pengaruh
+[01:00:30 - 01:00:31] Dari
+[01:00:31 - 01:00:35] Variable dari
+[01:00:35 - 01:00:35] Variable yang
+[01:00:35 - 01:00:36] PU dan
+[01:00:36 - 01:00:38] PEOU
+[01:00:38 - 01:00:41] Mulai dari variable
+[01:00:41 - 01:00:43] Yang ada di UCS
+[01:00:43 - 01:00:45] Selalu dikaitkan atau
+[01:00:45 - 01:00:47] Pengaruhnya terhadap
+[01:00:47 - 01:00:48] Etitut power fixing baru nanti
+[01:00:48 - 01:00:50] Menilai dari etitut
+[01:00:50 - 01:00:52] Power fixing itu ke user satisfaction
+[01:00:52 - 01:00:56] ini yang kemarin saya tanyakan
+[01:00:56 - 01:00:58] ada referensinya
+[01:00:58 - 01:00:59] atau belum
+[01:00:59 - 01:01:02] kalau untuk referensi
+[01:01:02 - 01:01:03] untuk model ini
+[01:01:03 - 01:01:06] untuk jurnal yang internasional
+[01:01:06 - 01:01:07] saya belum ada menemukan
+[01:01:07 - 01:01:08] tapi kalau untuk
+[01:01:08 - 01:01:11] dari jurnalnya
+[01:01:11 - 01:01:14] yang saya cari
+[01:01:14 - 01:01:15] itu ada beberapa yang menggunakan
+[01:01:15 - 01:01:17] gabungan seperti ini
+[01:01:17 - 01:01:18] ya gabungannya
+[01:01:18 - 01:01:32] ini yang pertama jadi ada di sini untuk pengaruh-pengaruh yang dinilai juga sama
+[01:01:32 - 01:01:36] mulai dari ini variabel dari tamnya lalu ini ada dari LCS dan pengharunya terhadap
+[01:01:36 - 01:01:46] Ini kayaknya belum ganti
+[01:01:46 - 01:01:48] Screen nya masih sama
+[01:01:48 - 01:01:54] Ada di dalam bentuk perbandingan metode
+[01:01:54 - 01:02:20] Untuk penelitian yang
+[01:02:20 - 01:02:25] Saya jadikan referensi untuk modenya
+[01:02:25 - 01:02:44] ini akreditasi berapa jurnalnya
+[01:02:44 - 01:02:46] Sinta 3
+[01:02:46 - 01:02:50] yang lain
+[01:02:50 - 01:02:51] yang juga menggunakan
+[01:02:51 - 01:02:54] modul seperti ini
+[01:02:54 - 01:03:00] ini juga
+[01:03:00 - 01:03:01] Sinta 4
+[01:03:01 - 01:03:04] sama juga
+[01:03:04 - 01:03:04] modulnya
+[01:03:04 - 01:03:19] objeknya apa
+[01:03:19 - 01:03:22] Ini objeknya
+[01:03:22 - 01:03:24] Sistem dapodik
+[01:03:24 - 01:03:25] Sekolah dasar
+[01:03:25 - 01:03:26] Sebelumnya itu e-learning
+[01:03:26 - 01:04:03] Lalu kemarin
+[01:04:03 - 01:04:06] Ibu ada mempertanyakan terkait
+[01:04:06 - 01:04:08] Dimensi dari EWCS
+[01:04:08 - 01:04:09] Yang kemudahan dan juga
+[01:04:09 - 01:04:11] Persepsi kemudian pembunuhan
+[01:04:11 - 01:04:12] Dari TAM itu sendiri
+[01:04:12 - 01:04:14] Nah itu saya sudah tahu juga
+[01:04:14 - 01:04:16] Kalau misalnya perbedaan pengukuran
+[01:04:16 - 01:04:18] itu kalau di
+[01:04:18 - 01:04:20] EUCS ini lebih kepada
+[01:04:20 - 01:04:22] kemudahan dalam misalnya
+[01:04:22 - 01:04:25] upload dokumen lalu juga
+[01:04:25 - 01:04:27] meng-inputkan data
+[01:04:27 - 01:04:28] kayak gitu-gitu
+[01:04:28 - 01:04:30] ini lebih fokus
+[01:04:30 - 01:04:31] ke dalam sistem
+[01:04:31 - 01:04:34] kalau misalnya
+[01:04:34 - 01:04:34] EUCS
+[01:04:34 - 01:04:35] itu
+[01:04:35 - 01:04:37] lebih fokus
+[01:04:37 - 01:04:42] seperti kemudahan teknologi
+[01:04:42 - 01:04:43] yang ditunakan
+[01:04:43 - 01:04:46] jadi skopnya berbeda
+[01:04:46 - 01:04:48] berbeda
+[01:04:48 - 01:04:52] tapi ada beberapa jurnal ini
+[01:04:52 - 01:04:55] yang membahas model yang sama
+[01:04:55 - 01:04:56] ada
+[01:04:56 - 01:04:59] ada
+[01:04:59 - 01:05:00] 3 buku
+[01:05:00 - 01:05:35] mungkin boleh dibuka
+[01:05:35 - 01:05:37] salah satunya
+[01:05:37 - 01:05:42] dari
+[01:05:42 - 01:05:43] yang referensi tadi yang dipakai
+[01:05:43 - 01:05:46] coba mungkin
+[01:05:46 - 01:05:47] dilihat
+[01:05:47 - 01:05:50] pengolahan datanya seperti apa?
+[01:05:52 - 01:05:53] kalau pengolahan datanya
+[01:05:53 - 01:05:55] itu saya mencari tahu
+[01:05:55 - 01:05:57] yang menggunakan
+[01:05:57 - 01:05:58] metode SMPLS
+[01:05:58 - 01:06:00] yang ada
+[01:06:00 - 01:06:05] tiga-tiganya sama
+[01:06:05 - 01:06:06] pakai SMPL
+[01:06:06 - 01:06:09] dan tiga referensinya
+[01:06:26 - 01:06:56] Terima kasih.
