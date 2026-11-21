@@ -1,4 +1,3 @@
-import ElegantNavbar from "@/components/landing-elegant/Navbar";
 import ElegantFooter from "@/components/landing-elegant/Footer";
 
 export default function ElegantLayout({ children }) {
@@ -13,7 +12,6 @@ export default function ElegantLayout({ children }) {
         }}
       />
       <div className="relative z-10 flex flex-col min-h-screen">
-        <ElegantNavbar />
         <main className="flex-1">{children}</main>
         <ElegantFooter />
       </div>

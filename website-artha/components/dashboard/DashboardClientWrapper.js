@@ -1,5 +1,6 @@
 "use client";
 import { ThemeProvider, useTheme } from "./ThemeProvider";
+import { FrontdeskDataProvider } from "./FrontdeskDataProvider";
 
 function ThemedWrapper({ children }) {
   const { theme } = useTheme();
@@ -18,7 +19,9 @@ function ThemedWrapper({ children }) {
 export default function DashboardClientWrapper({ children }) {
   return (
     <ThemeProvider>
-      <ThemedWrapper>{children}</ThemedWrapper>
+      <FrontdeskDataProvider>
+        <ThemedWrapper>{children}</ThemedWrapper>
+      </FrontdeskDataProvider>
     </ThemeProvider>
   );
 }

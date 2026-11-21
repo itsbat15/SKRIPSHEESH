@@ -20,15 +20,11 @@ import {
   BookOpen
 } from "lucide-react";
 import {
-  students,
-  bills,
-  payments,
-  classes,
-  classEnrollments,
   learningPrograms,
   cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -38,6 +34,7 @@ const formatRp = (n) =>
 
 export default function SiswaPage() {
   const { theme } = useTheme();
+  const { students, bills, payments, classes, classEnrollments } = useFrontdeskData();
   const isDark = theme === "dark";
 
   const [search, setSearch] = useState("");
@@ -62,7 +59,9 @@ export default function SiswaPage() {
   // Enriched Student Data
   const enrichedStudents = useMemo(() => {
     return students.map((s) => {
-      const studentBill = bills.find((b) => b.student_id === s.id);
+      const studentBill = bills.find(
+        (b) => b.student_id === s.id && b.bill_type === "spp_monthly"
+      );
       const studentPayment = studentBill ? payments.find((p) => p.bill_id === studentBill.id) : null;
       const sibling = s.sibling_student_id ? students.find((other) => other.id === s.sibling_student_id) : null;
       const prog = learningPrograms.find((lp) => lp.id === s.learning_program_id);
@@ -86,7 +85,7 @@ export default function SiswaPage() {
         enrolledClasses,
       };
     });
-  }, []);
+  }, [students, bills, payments, classes, classEnrollments]);
 
   // Filtered Students
   const filtered = useMemo(() => {

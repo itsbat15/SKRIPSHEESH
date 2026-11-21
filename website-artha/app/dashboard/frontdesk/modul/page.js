@@ -6,15 +6,21 @@ const B = "#111118";
 const S = "4px 4px 0 0 #111118";
 
 const modulData = [
-  { id: "M001", nama: "Modul Matematika SD Kelas 4-6", program: "SD", stokAwal: 50, terpakai: 38, sisa: 12, status: "Aman" },
-  { id: "M002", nama: "Modul IPA SMP Semester 1", program: "SMP", stokAwal: 30, terpakai: 27, sisa: 3, status: "Segera Pesan" },
-  { id: "M003", nama: "Modul Matematika SMP", program: "SMP", stokAwal: 35, terpakai: 22, sisa: 13, status: "Aman" },
-  { id: "M004", nama: "Modul Fisika SMA", program: "SMA", stokAwal: 25, terpakai: 20, sisa: 5, status: "Segera Pesan" },
-  { id: "M005", nama: "Modul Kimia SMA", program: "SMA", stokAwal: 20, terpakai: 12, sisa: 8, status: "Aman" },
-  { id: "M006", nama: "Modul Grammar B.Inggris", program: "B.Inggris", stokAwal: 40, terpakai: 35, sisa: 5, status: "Segera Pesan" },
-  { id: "M007", nama: "Buku Latihan Calistung", program: "Calistung", stokAwal: 60, terpakai: 44, sisa: 16, status: "Aman" },
-  { id: "M008", nama: "Soal Try Out UTBK", program: "SMA", stokAwal: 30, terpakai: 28, sisa: 2, status: "Habis" },
+  { id: "M001", nama: "Modul Matematika SD Kelas 4-6", program: "SD", stokAwal: 50, terpakai: 38, sisa: 12 },
+  { id: "M002", nama: "Modul IPA SMP Semester 1", program: "SMP", stokAwal: 30, terpakai: 27, sisa: 3 },
+  { id: "M003", nama: "Modul Matematika SMP", program: "SMP", stokAwal: 35, terpakai: 22, sisa: 13 },
+  { id: "M004", nama: "Modul Fisika SMA", program: "SMA", stokAwal: 25, terpakai: 20, sisa: 5 },
+  { id: "M005", nama: "Modul Kimia SMA", program: "SMA", stokAwal: 20, terpakai: 12, sisa: 8 },
+  { id: "M006", nama: "Modul Grammar B.Inggris", program: "B.Inggris", stokAwal: 40, terpakai: 35, sisa: 5 },
+  { id: "M007", nama: "Buku Latihan Calistung", program: "Calistung", stokAwal: 60, terpakai: 44, sisa: 16 },
+  { id: "M008", nama: "Soal Try Out UTBK", program: "SMA", stokAwal: 30, terpakai: 28, sisa: 2 },
 ];
+
+const getStatus = (sisa) => {
+  if (sisa === 0) return "Habis";
+  if (sisa <= 5) return "Segera Pesan";
+  return "Aman";
+};
 
 const statusStyle = (s) => {
   if (s === "Aman") return { bg: "#1EAB55", fg: "#fff" };
@@ -40,9 +46,9 @@ export default function ModulPage() {
 
   const kpis = [
     { label: "Total Jenis Modul", value: modulData.length, bg: "#2727E6", fg: "#fff" },
-    { label: "Stok Aman", value: modulData.filter(m => m.status === "Aman").length, bg: "#1EAB55", fg: "#fff" },
-    { label: "Segera Pesan", value: modulData.filter(m => m.status === "Segera Pesan").length, bg: "#FF6600", fg: "#fff" },
-    { label: "Stok Habis", value: modulData.filter(m => m.status === "Habis").length, bg: "#E11D48", fg: "#fff" },
+    { label: "Stok Aman", value: modulData.filter(m => getStatus(m.sisa) === "Aman").length, bg: "#1EAB55", fg: "#fff" },
+    { label: "Segera Pesan", value: modulData.filter(m => getStatus(m.sisa) === "Segera Pesan").length, bg: "#FF6600", fg: "#fff" },
+    { label: "Stok Habis", value: modulData.filter(m => getStatus(m.sisa) === "Habis").length, bg: "#E11D48", fg: "#fff" },
   ];
 
   return (
@@ -69,9 +75,10 @@ export default function ModulPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {modulData.map((m, i) => {
           const pc = programColor(m.program);
-          const ss = statusStyle(m.status);
+          const status = getStatus(m.sisa);
+          const ss = statusStyle(status);
           const pct = Math.round((m.terpakai / m.stokAwal) * 100);
-          const barColor = m.status === "Habis" ? "#E11D48" : m.status === "Segera Pesan" ? "#FF6600" : "#1EAB55";
+          const barColor = status === "Habis" ? "#E11D48" : status === "Segera Pesan" ? "#FF6600" : "#1EAB55";
           return (
             <div key={m.id} style={{ backgroundColor: isDark ? "#1e293b" : cardBgs[i % cardBgs.length], border: `2px solid ${B}`, boxShadow: S }}
               className="rounded-xl p-4 transition-all hover:-translate-y-0.5 hover:shadow-[6px_6px_0_0_#111118]">
@@ -79,7 +86,7 @@ export default function ModulPage() {
                 <span style={{ backgroundColor: pc + "22", color: pc, border: `1.5px solid ${pc}55` }}
                   className="text-[10px] font-black px-2 py-0.5 rounded-md">{m.program}</span>
                 <span style={{ backgroundColor: ss.bg, color: ss.fg, border: `1.5px solid ${B}` }}
-                  className="text-[9px] font-black px-2 py-0.5 rounded-full">{m.status}</span>
+                  className="text-[9px] font-black px-2 py-0.5 rounded-full">{status}</span>
               </div>
               <p className="text-sm font-black leading-tight mb-3" style={{ color: isDark ? db.text : B }}>{m.nama}</p>
               {/* Stock bar */}
@@ -111,7 +118,8 @@ export default function ModulPage() {
             </thead>
             <tbody>
               {modulData.map((m, i) => {
-                const ss = statusStyle(m.status);
+                const status = getStatus(m.sisa);
+                const ss = statusStyle(status);
                 const pc = programColor(m.program);
                 return (
                   <tr key={m.id} style={{ backgroundColor: i % 2 === 0 ? (isDark ? db.row1 : "rgba(255,255,255,0.55)") : (isDark ? db.row2 : "rgba(255,255,255,0.25)"), borderTop: i > 0 ? "1px solid rgba(0,0,0,0.07)" : "none" }}>
@@ -128,7 +136,7 @@ export default function ModulPage() {
                     </td>
                     <td className="px-4 py-3 text-center font-black" style={{ color: isDark ? db.text : B }}>{m.sisa}</td>
                     <td className="px-4 py-3">
-                      <span style={{ backgroundColor: ss.bg, color: ss.fg, border: `1.5px solid ${B}` }} className="text-[10px] font-black px-2.5 py-1 rounded-full">{m.status}</span>
+                      <span style={{ backgroundColor: ss.bg, color: ss.fg, border: `1.5px solid ${B}` }} className="text-[10px] font-black px-2.5 py-1 rounded-full">{status}</span>
                     </td>
                   </tr>
                 );

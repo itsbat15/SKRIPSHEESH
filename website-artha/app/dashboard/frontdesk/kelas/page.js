@@ -18,17 +18,15 @@ import {
   X
 } from "lucide-react";
 import {
-  classes,
   classSchedules,
   classRooms,
   mentors,
   subjects,
-  classEnrollments,
-  students,
   capacityRules,
   cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const border = "#111118";
 const shadow = "4px 4px 0 0 #111118";
@@ -50,28 +48,29 @@ const dayMap = {
 
 export default function KelasPage() {
   const { theme } = useTheme();
+  const { classes, classEnrollments, students, enrollStudent } = useFrontdeskData();
   const isDark = theme === "dark";
 
   const [filterJenjang, setFilterJenjang] = useState("all");
   const [filterSubject, setFilterSubject] = useState("all");
-  const [selectedClassDetail, setSelectedClassDetail] = useState(null);
+  const [selectedClassId, setSelectedClassId] = useState(null);
   const [showPlottingModal, setShowPlottingModal] = useState(false);
-  const [targetClassForPlotting, setTargetClassForPlotting] = useState(null);
+  const [targetClassId, setTargetClassId] = useState(null);
   const [studentToPlot, setStudentToPlot] = useState("");
 
   // Close modals on Escape key press
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
-        setSelectedClassDetail(null);
+        setSelectedClassId(null);
         setShowPlottingModal(false);
       }
     };
-    if (selectedClassDetail || showPlottingModal) {
+    if (selectedClassId || showPlottingModal) {
       window.addEventListener("keydown", handleKeyDown);
       return () => window.removeEventListener("keydown", handleKeyDown);
     }
-  }, [selectedClassDetail, showPlottingModal]);
+  }, [selectedClassId, showPlottingModal]);
 
   // Map Classes with relational entities
   const enrichedClasses = useMemo(() => {
@@ -120,7 +119,10 @@ export default function KelasPage() {
         waitingStudents: waitingEnrolls.map((we) => students.find((s) => s.id === we.student_id)).filter(Boolean),
       };
     });
-  }, []);
+  }, [classes, classEnrollments, students]);
+
+  const selectedClassDetail = enrichedClasses.find((kelas) => kelas.id === selectedClassId);
+  const targetClassForPlotting = enrichedClasses.find((kelas) => kelas.id === targetClassId);
 
   // Filtered classes
   const filteredClasses = useMemo(() => {
@@ -138,18 +140,23 @@ export default function KelasPage() {
   const totalEnrolled = enrichedClasses.reduce((acc, c) => acc + c.current_students, 0);
 
   const handleOpenPlotting = (cls) => {
-    setTargetClassForPlotting(cls);
+    setTargetClassId(cls.id);
     setShowPlottingModal(true);
   };
 
   const handlePlotStudent = (e) => {
     e.preventDefault();
-    if (!studentToPlot) return;
-    const st = students.find((s) => s.id === parseInt(studentToPlot));
-    alert(
-      `Berhasil menambahkan siswa ${st?.full_name} ke kelas ${targetClassForPlotting?.class_name}!`
-    );
+    if (!studentToPlot || !targetClassForPlotting) return;
+    const result = enrollStudent(targetClassForPlotting.id, studentToPlot);
+    if (!result.ok) {
+      alert(result.reason);
+      return;
+    }
+
+    const student = students.find((s) => s.id === Number(studentToPlot));
+    alert(`Berhasil menambahkan siswa ${student?.full_name} ke kelas ${targetClassForPlotting.class_name}!`);
     setShowPlottingModal(false);
+    setTargetClassId(null);
     setStudentToPlot("");
   };
 
@@ -412,7 +419,7 @@ export default function KelasPage() {
               {/* Action Buttons */}
               <div className="pt-2 border-t border-black/10 dark:border-white/10 flex items-center gap-2">
                 <button
-                  onClick={() => setSelectedClassDetail(kelas)}
+                  onClick={() => setSelectedClassId(kelas.id)}
                   style={{ border: `1.5px solid ${border}` }}
                   className="flex-1 py-1.5 px-2 rounded-lg text-xs font-bold bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 hover:bg-slate-100 transition-all text-center"
                 >
@@ -458,7 +465,7 @@ export default function KelasPage() {
                 </h3>
               </div>
               <button
-                onClick={() => setSelectedClassDetail(null)}
+                onClick={() => setSelectedClassId(null)}
                 className="p-1.5 rounded-lg border-2 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"
               >
                 <X size={16} />
@@ -517,7 +524,7 @@ export default function KelasPage() {
 
             <div className="pt-2 text-right">
               <button
-                onClick={() => setSelectedClassDetail(null)}
+                onClick={() => setSelectedClassId(null)}
                 style={{ border: `2px solid ${border}` }}
                 className="px-4 py-2 rounded-lg text-xs font-black uppercase tracking-wide bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-200"
               >
@@ -545,7 +552,10 @@ export default function KelasPage() {
                 Plotting Siswa ke {targetClassForPlotting.class_name}
               </h3>
               <button
-                onClick={() => setShowPlottingModal(false)}
+                onClick={() => {
+                  setShowPlottingModal(false);
+                  setTargetClassId(null);
+                }}
                 className="p-1 rounded-lg border border-slate-300 dark:border-slate-700"
               >
                 <X size={16} />
@@ -574,7 +584,16 @@ export default function KelasPage() {
                 >
                   <option value="">-- Pilih Siswa yang Terdaftar --</option>
                   {students
-                    .filter((s) => s.grade_level === targetClassForPlotting.grade_level)
+                    .filter(
+                      (s) =>
+                        s.grade_level === targetClassForPlotting.grade_level &&
+                        !classEnrollments.some(
+                          (enrollment) =>
+                            enrollment.class_id === targetClassForPlotting.id &&
+                            enrollment.student_id === s.id &&
+                            enrollment.enrollment_status === "active"
+                        )
+                    )
                     .map((s) => (
                       <option key={s.id} value={s.id}>
                         {s.full_name} ({s.registration_no} • Kelas {s.class_grade} {s.grade_level})
@@ -586,7 +605,10 @@ export default function KelasPage() {
               <div className="flex justify-end gap-2 pt-2">
                 <button
                   type="button"
-                  onClick={() => setShowPlottingModal(false)}
+                  onClick={() => {
+                    setShowPlottingModal(false);
+                    setTargetClassId(null);
+                  }}
                   className="px-3 py-2 rounded-lg font-bold border border-slate-300 dark:border-slate-700"
                 >
                   Batal

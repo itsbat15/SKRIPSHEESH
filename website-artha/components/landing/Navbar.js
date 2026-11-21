@@ -121,6 +121,7 @@ export default function Navbar({ onOpenRegistration }) {
                   src="/images/bimbelarthalogo-1.png"
                   alt="Logo Bimbel Artha"
                   fill
+                  sizes="(min-width: 640px) 112px, 96px"
                   className="object-contain"
                   priority
                 />

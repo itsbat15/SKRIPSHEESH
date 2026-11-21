@@ -17,13 +17,10 @@ import {
   Check
 } from "lucide-react";
 import {
-  bills,
-  payments,
-  students,
-  cabangInfo,
-  feeTariffs
+  cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -31,12 +28,15 @@ const S = "4px 4px 0 0 #111118";
 const formatRp = (n) =>
   new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", minimumFractionDigits: 0 }).format(n || 0);
 
+const billDescription = (bill) =>
+  bill?.bill_type === "module_semester"
+    ? "Biaya Modul Semester"
+    : `SPP Bulan ${bill?.monthName}`;
+
 export default function SPPPage() {
   const { theme } = useTheme();
+  const { bills: activeBills, payments: activePayments, students, recordPayment } = useFrontdeskData();
   const isDark = theme === "dark";
-
-  const [activeBills, setActiveBills] = useState(bills);
-  const [activePayments, setActivePayments] = useState(payments);
 
   const [filterStatus, setFilterStatus] = useState("all");
   const [filterJenjang, setFilterJenjang] = useState("all");
@@ -82,7 +82,7 @@ export default function SPPPage() {
         monthName: monthNames[b.bill_period] || b.bill_period,
       };
     });
-  }, [activeBills, activePayments]);
+  }, [activeBills, activePayments, students]);
 
   // Filtered bills
   const filtered = useMemo(() => {
@@ -115,25 +115,11 @@ export default function SPPPage() {
     e.preventDefault();
     if (!payingBill) return;
 
-    const newReceiptNo = `KW-2607-${String(activePayments.length + 1).padStart(3, "0")}`;
-    const newPayment = {
-      id: activePayments.length + 1,
-      bill_id: payingBill.id,
-      verified_by_user_id: 1, // Admin Frontdesk
-      receipt_no: newReceiptNo,
-      amount_paid: payingBill.total_amount,
-      payment_method: paymentMethod,
-      proof_image_url: null,
-      payment_date: new Date().toISOString().split("T")[0],
-      verified_at: new Date().toISOString().split("T")[0],
-      notes: paymentNotes || (payingBill.discount_amount > 0 ? "Termasuk diskon saudara Rp 200.000" : null),
-    };
-
-    // Update state
-    setActivePayments([newPayment, ...activePayments]);
-    setActiveBills((prev) =>
-      prev.map((b) => (b.id === payingBill.id ? { ...b, payment_status: "paid" } : b))
-    );
+    const newPayment = recordPayment(payingBill.id, {
+      method: paymentMethod,
+      notes: paymentNotes,
+    });
+    if (!newPayment) return;
 
     // Open receipt modal immediately
     const fullReceipt = {
@@ -153,10 +139,10 @@ export default function SPPPage() {
             <span className="p-2 rounded-xl bg-[#1EAB55] text-white border-2 border-[#111118] shadow-[2px_2px_0_0_#111118]">
               <CreditCard size={20} />
             </span>
-            Kasir SPP &amp; Pembayaran
+            Kasir SPP &amp; Modul
           </h2>
           <p className="text-xs sm:text-sm mt-1" style={{ color: isDark ? "#94a3b8" : "#64748b" }}>
-            Pencatatan pembayaran SPP siswa • Pembuatan kuitansi digital &amp; notifikasi WhatsApp otomatis
+            Pencatatan pembayaran SPP dan modul siswa • Pembuatan kuitansi digital &amp; notifikasi WhatsApp otomatis
           </p>
         </div>
 
@@ -176,7 +162,7 @@ export default function SPPPage() {
           <p className="text-xs font-bold uppercase tracking-wider mb-1 text-emerald-100">Total Terbayar (Lunas)</p>
           <p className="font-heading font-black text-2xl sm:text-3xl my-1">{formatRp(totalLunasAmount)}</p>
           <p className="text-xs text-emerald-100 font-semibold">
-            {enrichedBills.filter((b) => b.payment_status === "paid").length} siswa telah membayar
+            {enrichedBills.filter((b) => b.payment_status === "paid").length} tagihan telah dibayar
           </p>
         </div>
 
@@ -187,7 +173,7 @@ export default function SPPPage() {
           <p className="text-xs font-bold uppercase tracking-wider mb-1 text-rose-100">Total Tertunggak</p>
           <p className="font-heading font-black text-2xl sm:text-3xl my-1">{formatRp(totalTunggakanAmount)}</p>
           <p className="text-xs text-rose-100 font-semibold">
-            {enrichedBills.filter((b) => b.payment_status !== "paid").length} siswa belum bayar / jatuh tempo
+            {enrichedBills.filter((b) => b.payment_status !== "paid").length} tagihan belum bayar / jatuh tempo
           </p>
         </div>
 
@@ -195,7 +181,7 @@ export default function SPPPage() {
           style={{ backgroundColor: isDark ? "#1e293b" : "#2727E6", border: `2.5px solid ${B}`, boxShadow: S }}
           className="rounded-xl p-5 text-white transition-all"
         >
-          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-blue-100">Target Penerimaan SPP</p>
+          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-blue-100">Target Penerimaan Semua Tagihan</p>
           <p className="font-heading font-black text-2xl sm:text-3xl my-1">{formatRp(totalTargetAmount)}</p>
           <p className="text-xs text-blue-100 font-semibold">
             Total {enrichedBills.length} tagihan terbit bulan Juli 2026
@@ -207,7 +193,7 @@ export default function SPPPage() {
       <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-950/40 border-2 border-amber-300 dark:border-amber-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
         <div className="space-y-0.5">
           <span className="font-black uppercase tracking-wide text-amber-900 dark:text-amber-200 block">
-            Rekening Resmi Pembayaran SPP Bimbel Artha
+            Rekening Resmi Pembayaran Bimbel Artha
           </span>
           <p className="text-slate-600 dark:text-slate-300">
             Bank BCA: <strong className="font-mono text-slate-900 dark:text-white">024-9988-771</strong> a/n Bimbel Artha Mandiri
@@ -279,7 +265,7 @@ export default function SPPPage() {
       >
         <div className="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
           <h3 className="font-heading font-black text-base text-slate-900 dark:text-slate-100">
-            Daftar Tagihan SPP Siswa ({filtered.length} data)
+            Daftar Tagihan Siswa ({filtered.length} data)
           </h3>
           <span className="text-xs text-slate-500 font-bold">Periode: Juli 2026</span>
         </div>
@@ -303,7 +289,7 @@ export default function SPPPage() {
               {filtered.length === 0 ? (
                 <tr>
                   <td colSpan={9} className="px-4 py-8 text-center text-slate-600 dark:text-slate-300 font-semibold">
-                    Tidak ada data tagihan SPP yang sesuai dengan filter atau kata kunci pencarian.
+                    Tidak ada data tagihan yang sesuai dengan filter atau kata kunci pencarian.
                   </td>
                 </tr>
               ) : (
@@ -338,7 +324,10 @@ export default function SPPPage() {
                       </td>
 
                       <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">
-                        {item.monthName}
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-black uppercase bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 border border-blue-300 dark:border-blue-800">
+                          {item.bill_type === "module_semester" ? "Modul" : "SPP"}
+                        </span>
+                        <span className="block mt-1">{item.monthName}</span>
                       </td>
 
                       <td className="px-4 py-3 font-medium text-slate-700 dark:text-slate-300">
@@ -398,7 +387,7 @@ export default function SPPPage() {
                             <button
                               onClick={() => {
                                 const msg = encodeURIComponent(
-                                  `Halo Bapak/Ibu ${item.student?.parent_name}, mengingatkan tagihan SPP ${item.monthName} ananda ${item.student?.full_name} sebesar ${formatRp(item.total_amount)} jatuh tempo tanggal ${item.due_date}. Pembayaran dapat melalui transfer BCA: 024-9988-771 a/n Bimbel Artha Mandiri. Terima kasih.`
+                                  `Halo Bapak/Ibu ${item.student?.parent_name}, mengingatkan tagihan ${billDescription(item)} ananda ${item.student?.full_name} sebesar ${formatRp(item.total_amount)} jatuh tempo tanggal ${item.due_date}. Pembayaran dapat melalui transfer BCA: 024-9988-771 a/n Bimbel Artha Mandiri. Terima kasih.`
                                 );
                                 window.open(
                                   `https://wa.me/${item.student?.parent_phone_wa?.replace(/[^0-9]/g, "")}?text=${msg}`,
@@ -447,7 +436,7 @@ export default function SPPPage() {
             <div className="flex items-center justify-between border-b pb-3 border-slate-200 dark:border-slate-800">
               <h3 className="font-heading font-black text-lg text-slate-900 dark:text-white flex items-center gap-2">
                 <CreditCard size={18} className="text-[#1EAB55]" />
-                Input Pembayaran SPP
+                {payingBill.bill_type === "module_semester" ? "Input Pembayaran Modul" : "Input Pembayaran SPP"}
               </h3>
               <button
                 onClick={() => setPayingBill(null)}
@@ -464,7 +453,7 @@ export default function SPPPage() {
                   <strong className="text-slate-900 dark:text-white">{payingBill.student?.full_name}</strong>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-500">Bulan Periode:</span>
+                  <span className="text-slate-500">Periode Tagihan:</span>
                   <span className="font-semibold">{payingBill.monthName}</span>
                 </div>
                 <div className="flex justify-between">
@@ -547,7 +536,7 @@ export default function SPPPage() {
             <div className="flex items-center justify-between border-b-2 border-dashed border-slate-300 dark:border-slate-700 pb-4">
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
-                  Kuitansi Resmi SPP
+                  {viewingReceipt.bill_type === "module_semester" ? "Kuitansi Resmi Modul" : "Kuitansi Resmi SPP"}
                 </span>
                 <h3 className="font-heading font-black text-xl text-slate-900 dark:text-white mt-1">
                   Bimbel Artha {cabangInfo.branch_name}
@@ -577,7 +566,9 @@ export default function SPPPage() {
               <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-800">
                 <span className="text-slate-500">Untuk Pembayaran:</span>
                 <span className="font-bold">
-                  SPP Bulan {viewingReceipt.monthName} ({viewingReceipt.student?.grade_level} Kelas {viewingReceipt.student?.class_grade})
+                  {viewingReceipt.bill_type === "module_semester"
+                    ? "Biaya Modul Semester"
+                    : `SPP Bulan ${viewingReceipt.monthName} (${viewingReceipt.student?.grade_level} Kelas ${viewingReceipt.student?.class_grade})`}
                 </span>
               </div>
               <div className="flex justify-between py-1 border-b border-slate-100 dark:border-slate-800">
@@ -616,7 +607,7 @@ export default function SPPPage() {
                 <button
                   onClick={() => {
                     const msg = encodeURIComponent(
-                      `Kuitansi Pembayaran SPP Bimbel Artha:\nNo: ${viewingReceipt.payment?.receipt_no}\nSiswa: ${viewingReceipt.student?.full_name}\nBulan: ${viewingReceipt.monthName}\nJumlah: ${formatRp(viewingReceipt.total_amount)}\nStatus: LUNAS\nTerima kasih atas pembayarannya!`
+                      `Kuitansi Pembayaran ${billDescription(viewingReceipt)} Bimbel Artha:\nNo: ${viewingReceipt.payment?.receipt_no}\nSiswa: ${viewingReceipt.student?.full_name}\nPeriode: ${viewingReceipt.monthName}\nJumlah: ${formatRp(viewingReceipt.total_amount)}\nStatus: LUNAS\nTerima kasih atas pembayarannya!`
                     );
                     window.open(
                       `https://wa.me/${viewingReceipt.student?.parent_phone_wa?.replace(/[^0-9]/g, "")}?text=${msg}`,
