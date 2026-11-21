@@ -63,6 +63,7 @@ class OperationsTest extends TestCase
     public function test_authentication_role_and_branch_isolation(): void
     {
         $this->getJson('/api/artha/workspace')->assertUnauthorized();
+        $this->get('/api/artha/workspace')->assertUnauthorized();
         $this->postJson('/api/artha/login', ['email' => 'cabang1@artha.example', 'password' => 'salah'])->assertUnauthorized();
         $branch = $this->login('cabang1');
         $center = $this->login('pusat');
