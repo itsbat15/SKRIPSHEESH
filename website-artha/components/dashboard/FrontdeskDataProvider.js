@@ -31,14 +31,24 @@ export function FrontdeskDataProvider({ children }) {
 
   const classes = useMemo(
     () =>
-      classRecords.map((kelas) => ({
-        ...kelas,
-        current_students: classEnrollments.filter(
+      classRecords.map((kelas) => {
+        const currentStudents = classEnrollments.filter(
           (enrollment) =>
             enrollment.class_id === kelas.id &&
             enrollment.enrollment_status === "active"
-        ).length,
-      })),
+        ).length;
+
+        return {
+          ...kelas,
+          current_students: currentStudents,
+          status:
+            currentStudents >= kelas.max_students
+              ? "full"
+              : currentStudents >= Math.ceil(kelas.max_students * 0.8)
+                ? "almost_full"
+                : "open",
+        };
+      }),
     [classRecords, classEnrollments]
   );
 
