@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\DB;
 
 class OperationalWrites
 {
+    public function __construct(private BillSchedule $schedule) {}
+
     private function branchWrite(User $user, Closure $write): mixed
     {
         return DB::transaction(function () use ($user, $write) {
@@ -178,12 +180,21 @@ class OperationalWrites
             if ($status !== 'inactive' && ($group->id !== $enrollment->group_id || $enrollment->status === 'inactive')) {
                 abort_unless($group->active && $group->occupied < $group->capacity, 409, 'Kelompok belajar tidak aktif atau penuh.');
             }
+            $changes = ['group_id' => $group->id, 'status' => $status];
             if ($status === 'active' && $enrollment->status === 'inactive') {
                 $bill = OperationalQueries::bills()->where('t.enrollment_id', $enrollment->id)->where('t.kind', 'registration')->first();
                 abort_unless($bill && $bill->paid >= $bill->amount, 422, 'Lunasi biaya pendaftaran sebelum mengaktifkan siswa.');
+                $changes['billing_resumes_on'] = BillSchedule::today();
+            } elseif ($status === 'inactive' && $enrollment->status === 'active') {
+                $period = substr(BillSchedule::today(), 0, 7);
+                $this->schedule->issueForBranch($branch, $period, $enrollment->id);
+                DB::table('tuition_bills')->where(['enrollment_id' => $enrollment->id, 'kind' => 'tuition'])
+                    ->where('period', '>', $period)->whereNotExists(
+                        DB::table('payments')->selectRaw('1')->whereColumn('bill_id', 'tuition_bills.id')
+                    )->delete();
             }
             DB::table('students')->where('id', $id)->update($bio);
-            DB::table('enrollments')->where('id', $enrollment->id)->update(['group_id' => $group->id, 'status' => $status]);
+            DB::table('enrollments')->where('id', $enrollment->id)->update($changes);
         });
     }
 

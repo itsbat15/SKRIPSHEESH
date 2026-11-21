@@ -107,6 +107,27 @@ class OperationsTest extends TestCase
         $this->api($branch, 'POST', 'enrollments', $this->registration(['name' => 'Siswa Penuh']))->assertConflict();
     }
 
+    public function test_reactivation_skips_inactive_months_and_keeps_previous_bills(): void
+    {
+        $branch = $this->login('cabang1');
+        $workspace = $this->api($branch, 'GET', 'workspace')->assertOk();
+        $student = $workspace->json('students.0');
+        $id = $student['id'];
+        $enrollment = $student['enrollment_id'];
+        $bio = array_intersect_key($student, array_flip(['name', 'birth_date', 'school', 'level', 'guardian', 'phone', 'address', 'group_id']));
+        $periods = fn () => DB::table('tuition_bills')->where(['enrollment_id' => $enrollment, 'kind' => 'tuition'])
+            ->orderBy('period')->pluck('period')->all();
+        $this->assertSame(['2026-01', '2026-02'], $periods());
+        $this->api($branch, 'PATCH', "students/{$id}", $bio + ['active' => false])->assertOk();
+        $this->travelTo(CarbonImmutable::parse('2026-04-01 12:00', 'Asia/Makassar'));
+        $branch = $this->login('cabang1');
+        $this->api($branch, 'GET', 'workspace')->assertOk();
+        $this->assertSame(['2026-01'], $periods());
+        $this->api($branch, 'PATCH', "students/{$id}", $bio + ['active' => true])->assertOk();
+        $this->api($branch, 'GET', 'workspace')->assertOk();
+        $this->assertSame(['2026-01', '2026-04', '2026-05'], $periods());
+    }
+
     public function test_transfer_review_rejection_retry_and_proof_permissions(): void
     {
         $branch = $this->login('cabang1');
