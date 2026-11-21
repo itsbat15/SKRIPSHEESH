@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import ElegantNavbar from "@/components/landing-elegant/Navbar";
 import HeroSection from "@/components/landing-elegant/HeroSection";
 import ServicesSection from "@/components/landing-elegant/ServicesSection";
 import AboutSection from "@/components/landing-elegant/AboutSection";
@@ -17,6 +18,7 @@ export default function ElegantHome() {
 
   return (
     <>
+      <ElegantNavbar onOpenRegistration={() => setIsRegistrationOpen(true)} />
       <HeroSection onOpenRegistration={() => setIsRegistrationOpen(true)} />
       <ServicesSection />
       <AboutSection />

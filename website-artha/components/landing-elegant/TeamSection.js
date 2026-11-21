@@ -56,6 +56,7 @@ export default function TeamSection() {
                     src={teacher.image}
                     alt={teacher.name}
                     fill
+                    sizes="(min-width: 640px) 270px, 230px"
                     className="object-cover object-top group-hover:scale-105 transition-all duration-500 ease-out"
                   />
                 </div>

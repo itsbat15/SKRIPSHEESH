@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Receipt, Plus, X } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { pengeluaranData } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -23,12 +23,33 @@ const kategoriColor = (k) => {
 
 export default function PengeluaranPage() {
   const { theme } = useTheme();
+  const { pengeluaran, addPengeluaran } = useFrontdeskData();
   const isDark = theme === "dark";
   const [showForm, setShowForm] = useState(false);
   const [form, setForm] = useState({ kategori: "", keterangan: "", nominal: "", tanggal: "" });
+  const [formError, setFormError] = useState("");
 
-  const totalDisetujui = pengeluaranData.filter(p => p.status === "Disetujui").reduce((s, p) => s + p.nominal, 0);
-  const totalMenunggu = pengeluaranData.filter(p => p.status === "Menunggu").reduce((s, p) => s + p.nominal, 0);
+  const totalDisetujui = pengeluaran.filter(p => p.status === "Disetujui").reduce((s, p) => s + p.nominal, 0);
+  const totalMenunggu = pengeluaran.filter(p => p.status === "Menunggu").reduce((s, p) => s + p.nominal, 0);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (
+      !form.kategori ||
+      !form.keterangan.trim() ||
+      !Number.isFinite(Number(form.nominal)) ||
+      Number(form.nominal) <= 0 ||
+      !form.tanggal
+    ) {
+      setFormError("Lengkapi semua data dan pastikan nominal lebih dari Rp 0.");
+      return;
+    }
+
+    addPengeluaran(form);
+    setShowForm(false);
+    setForm({ kategori: "", keterangan: "", nominal: "", tanggal: "" });
+    setFormError("");
+  };
 
   const db = isDark
     ? { text: "#f1f5f9", muted: "#94a3b8", row1: "#1e293b", row2: "#263148", formBg: "#0f172a", inputBg: "#1e293b", inputBorder: "#334155" }
@@ -60,7 +81,7 @@ export default function PengeluaranPage() {
             <DialogHeader>
               <DialogTitle className="font-heading font-black" style={{ color: db.text }}>Klaim Pengeluaran Baru</DialogTitle>
             </DialogHeader>
-            <form className="space-y-4 mt-2" onSubmit={(e) => { e.preventDefault(); setShowForm(false); }}>
+            <form className="space-y-4 mt-2" onSubmit={handleSubmit}>
               {[
                 { label: "Kategori", field: "kategori", type: "select", opts: ["Listrik","ATK","Kebersihan","AC Service","Internet","Fotokopi","Lainnya"] },
                 { label: "Keterangan", field: "keterangan", type: "text", placeholder: "Deskripsi pengeluaran" },
@@ -70,7 +91,13 @@ export default function PengeluaranPage() {
                 <div key={f.field}>
                   <label className="text-xs font-black uppercase tracking-wider mb-1.5 block" style={{ color: db.muted }}>{f.label}</label>
                   {f.type === "select" ? (
-                    <Select onValueChange={(v) => setForm(p => ({ ...p, [f.field]: v }))}>
+                    <Select
+                      value={form[f.field]}
+                      onValueChange={(v) => {
+                        setForm((p) => ({ ...p, [f.field]: v }));
+                        setFormError("");
+                      }}
+                    >
                       <SelectTrigger style={{ backgroundColor: db.inputBg, border: `2px solid ${db.inputBorder}`, color: db.text, fontWeight: 600, fontSize: 13 }}>
                         <SelectValue placeholder="Pilih kategori" />
                       </SelectTrigger>
@@ -81,10 +108,15 @@ export default function PengeluaranPage() {
                   ) : (
                     <input type={f.type} placeholder={f.placeholder}
                       style={{ backgroundColor: db.inputBg, border: `2px solid ${db.inputBorder}`, color: db.text, borderRadius: 8, padding: "8px 12px", fontSize: 13, width: "100%", outline: "none" }}
-                      onChange={(e) => setForm(p => ({ ...p, [f.field]: e.target.value }))} />
+                      value={form[f.field]}
+                      onChange={(e) => {
+                        setForm((p) => ({ ...p, [f.field]: e.target.value }));
+                        setFormError("");
+                      }} />
                   )}
                 </div>
               ))}
+              {formError && <p role="alert" className="text-xs font-semibold text-rose-600">{formError}</p>}
               <div style={{ borderTop: `2px solid ${B}`, marginTop: 8, paddingTop: 12 }}>
                 <button type="submit" style={{ backgroundColor: "#2727E6", color: "#fff", border: `2px solid ${B}`, boxShadow: S, width: "100%", borderRadius: 8, padding: "10px", fontWeight: 900, fontSize: 13, letterSpacing: "0.05em" }}
                   className="uppercase hover:translate-y-px hover:shadow-none transition-all">Simpan Klaim</button>
@@ -108,7 +140,7 @@ export default function PengeluaranPage() {
       {/* Table */}
       <div style={{ backgroundColor: isDark ? "#1e293b" : "#B8F0D8", border: `2px solid ${B}`, boxShadow: S }} className="rounded-xl p-5">
         <h3 className="font-heading font-black text-base mb-4" style={{ color: isDark ? db.text : B }}>
-          Riwayat Pengeluaran ({pengeluaranData.length} klaim)
+          Riwayat Pengeluaran ({pengeluaran.length} klaim)
         </h3>
         <div style={{ border: `2px solid ${B}`, borderRadius: 10, overflow: "hidden" }}>
           <table className="w-full text-xs">
@@ -120,7 +152,7 @@ export default function PengeluaranPage() {
               </tr>
             </thead>
             <tbody>
-              {pengeluaranData.map((p, i) => {
+              {pengeluaran.map((p, i) => {
                 const ss = statusStyle(p.status);
                 const kc = kategoriColor(p.kategori);
                 return (

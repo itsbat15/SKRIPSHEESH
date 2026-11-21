@@ -67,6 +67,13 @@ export default function GallerySection() {
                   src={item.src}
                   alt={item.title}
                   fill
+                  sizes={
+                    item.aspect === "aspect-[16/10]"
+                      ? "(min-width: 640px) 416px, 320px"
+                      : item.aspect === "aspect-[4/3]"
+                        ? "(min-width: 640px) 347px, 267px"
+                        : "(min-width: 640px) 195px, 150px"
+                  }
                   className="object-cover group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">
@@ -89,6 +96,13 @@ export default function GallerySection() {
                   src={item.src}
                   alt={item.title}
                   fill
+                  sizes={
+                    item.aspect === "aspect-[16/10]"
+                      ? "(min-width: 640px) 416px, 320px"
+                      : item.aspect === "aspect-[4/3]"
+                        ? "(min-width: 640px) 347px, 267px"
+                        : "(min-width: 640px) 195px, 150px"
+                  }
                   className="object-cover group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex items-end">

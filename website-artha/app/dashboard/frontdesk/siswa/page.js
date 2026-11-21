@@ -20,15 +20,11 @@ import {
   BookOpen
 } from "lucide-react";
 import {
-  students,
-  bills,
-  payments,
-  classes,
-  classEnrollments,
   learningPrograms,
   cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -38,6 +34,7 @@ const formatRp = (n) =>
 
 export default function SiswaPage() {
   const { theme } = useTheme();
+  const { students, bills, payments, classes, classEnrollments } = useFrontdeskData();
   const isDark = theme === "dark";
 
   const [search, setSearch] = useState("");
@@ -86,7 +83,7 @@ export default function SiswaPage() {
         enrolledClasses,
       };
     });
-  }, []);
+  }, [students, bills, payments, classes, classEnrollments]);
 
   // Filtered Students
   const filtered = useMemo(() => {

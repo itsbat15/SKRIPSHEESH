@@ -5,8 +5,14 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid } from "recharts";
 import Link from "next/link";
 import { useState } from "react";
-import { dashboardStats, siswaData, chartPendaftaran, tagihanSPP } from "@/data/mockFrontdeskData";
+import {
+  dashboardStats,
+  chartPendaftaran,
+  buildSiswaData,
+  buildTagihanSPP,
+} from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const jadwalHariIni = [
   { jam: "07.30", kelas: "Matematika 9A", tentor: "Pak Budi", ruang: "R.01", status: "Berlangsung" },
@@ -51,7 +57,17 @@ const programColor = (prog) => {
 
 export default function FrontdeskOverview() {
   const { theme } = useTheme();
+  const { students, classes, bills, payments } = useFrontdeskData();
   const isDark = theme === "dark";
+  const siswaData = buildSiswaData(students, bills);
+  const tagihanSPP = buildTagihanSPP(bills, students, payments);
+  const currentStats = {
+    ...dashboardStats,
+    siswaAktif: students.filter((student) => student.status === "active").length,
+    tunggakanSPP: bills.filter((bill) => bill.payment_status !== "paid").length,
+    kelasAktif: classes.filter((kelas) => kelas.status !== "full").length,
+    totalKelas: classes.length,
+  };
   const recentStudents = siswaData.slice(0, 5);
   const overduePayments = tagihanSPP.filter((t) => t.status !== "Lunas");
   const [todos, setTodos] = useState(initialTodos);
@@ -90,7 +106,7 @@ export default function FrontdeskOverview() {
           <div key={i} style={{ backgroundColor: k.bg, border: `2.5px solid ${sectionBorder}`, boxShadow: sectionShadow }}
             className="rounded-xl p-5 transition-all hover:-translate-y-0.5">
             <p style={{ color: k.fg, opacity: 0.75 }} className="text-xs font-bold uppercase tracking-wider mb-1">{k.label}</p>
-            <p style={{ color: k.fg }} className="font-heading font-black text-4xl my-1">{k.getValue(dashboardStats)}</p>
+            <p style={{ color: k.fg }} className="font-heading font-black text-4xl my-1">{k.getValue(currentStats)}</p>
             <p style={{ color: k.trendFg }} className="text-xs flex items-center gap-1 font-semibold mt-2">
               {k.trendUp ? <TrendingUp size={12} /> : <TrendingDown size={12} />}{k.trend}
             </p>

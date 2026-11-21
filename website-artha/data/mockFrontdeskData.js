@@ -232,133 +232,157 @@ export const dashboardStats = {
 // --- ENRICHED VIEWS & ADAPTERS (Selaras dengan 20 Tabel DB) ---
 
 // 1. siswaData (Siswa lengkap dengan info program & tagihan)
-export const siswaData = students.map((s) => {
-  const prog = learningPrograms.find((p) => p.id === s.learning_program_id);
-  const studentBill = bills.find((b) => b.student_id === s.id);
-  let statusSPP = "Lunas";
-  let tunggakan = 0;
-  if (studentBill) {
-    if (studentBill.payment_status === "paid") statusSPP = "Lunas";
-    else if (studentBill.payment_status === "overdue") {
-      statusSPP = "Jatuh Tempo";
-      tunggakan = studentBill.total_amount;
-    } else {
-      statusSPP = "Belum Bayar";
-      tunggakan = studentBill.total_amount;
+export function buildSiswaData(studentList, billList, programList = learningPrograms) {
+  return studentList.map((s) => {
+    const prog = programList.find((p) => p.id === s.learning_program_id);
+    const studentBill = billList.find((b) => b.student_id === s.id);
+    let statusSPP = "Lunas";
+    let tunggakan = 0;
+    if (studentBill) {
+      if (studentBill.payment_status === "paid") statusSPP = "Lunas";
+      else if (studentBill.payment_status === "overdue") {
+        statusSPP = "Jatuh Tempo";
+        tunggakan = studentBill.total_amount;
+      } else {
+        statusSPP = "Belum Bayar";
+        tunggakan = studentBill.total_amount;
+      }
     }
-  }
-  const sibling = s.sibling_student_id ? students.find(other => other.id === s.sibling_student_id) : null;
+    const sibling = s.sibling_student_id
+      ? studentList.find((other) => other.id === s.sibling_student_id)
+      : null;
 
-  return {
-    id: s.id,
-    registration_no: s.registration_no,
-    nama: s.full_name,
-    full_name: s.full_name,
-    birth_place: s.birth_place,
-    birth_date: s.birth_date,
-    tanggalLahir: s.birth_date,
-    gender: s.gender,
-    sekolah: s.school_origin,
-    school_origin: s.school_origin,
-    grade_level: s.grade_level,
-    class_grade: s.class_grade,
-    kelas: s.grade_level === "TK" ? "TK" : `${s.class_grade} ${s.grade_level}`,
-    alamat: s.home_address,
-    home_address: s.home_address,
-    parent_name: s.parent_name,
-    noHP: s.parent_phone_wa,
-    parent_phone_wa: s.parent_phone_wa,
-    program: s.grade_level === "TK" ? "Calistung" : s.grade_level,
-    learning_program_id: s.learning_program_id,
-    program_name: prog ? prog.program_name : "Reguler",
-    status: s.status === "active" ? "Aktif" : s.status === "alumni" ? "Alumni" : "Nonaktif",
-    statusSPP,
-    tunggakan,
-    sibling_student_id: s.sibling_student_id,
-    sibling_name: sibling ? sibling.full_name : null,
-    discount_amount: s.discount_amount,
-    registered_at: s.registered_at,
-  };
-});
+    return {
+      id: s.id,
+      registration_no: s.registration_no,
+      nama: s.full_name,
+      full_name: s.full_name,
+      birth_place: s.birth_place,
+      birth_date: s.birth_date,
+      tanggalLahir: s.birth_date,
+      gender: s.gender,
+      sekolah: s.school_origin,
+      school_origin: s.school_origin,
+      grade_level: s.grade_level,
+      class_grade: s.class_grade,
+      kelas: s.grade_level === "TK" ? "TK" : `${s.class_grade} ${s.grade_level}`,
+      alamat: s.home_address,
+      home_address: s.home_address,
+      parent_name: s.parent_name,
+      noHP: s.parent_phone_wa,
+      parent_phone_wa: s.parent_phone_wa,
+      program: s.grade_level === "TK" ? "Calistung" : s.grade_level,
+      learning_program_id: s.learning_program_id,
+      program_name: prog ? prog.program_name : "Reguler",
+      status: s.status === "active" ? "Aktif" : s.status === "alumni" ? "Alumni" : "Nonaktif",
+      statusSPP,
+      tunggakan,
+      sibling_student_id: s.sibling_student_id,
+      sibling_name: sibling ? sibling.full_name : null,
+      discount_amount: s.discount_amount,
+      registered_at: s.registered_at,
+    };
+  });
+}
+
+export const siswaData = buildSiswaData(students, bills);
 
 // 2. kelasData (Kelas lengkap dengan jadwal, tentor, ruang, kapasitas)
-export const kelasData = classes.map((c) => {
-  const schedList = classSchedules.filter((cs) => cs.class_id === c.id);
-  const firstSched = schedList[0];
-  const mentor = firstSched ? mentors.find((m) => m.id === firstSched.mentor_id) : null;
-  const room = firstSched ? classRooms.find((r) => r.id === firstSched.room_id) : null;
-  const subject = subjects.find((sb) => sb.id === c.subject_id);
+export function buildKelasData(
+  classList,
+  scheduleList = classSchedules,
+  mentorList = mentors,
+  roomList = classRooms,
+  subjectList = subjects,
+  enrollmentList = classEnrollments
+) {
+  return classList.map((c) => {
+    const schedList = scheduleList.filter((cs) => cs.class_id === c.id);
+    const firstSched = schedList[0];
+    const mentor = firstSched ? mentorList.find((m) => m.id === firstSched.mentor_id) : null;
+    const room = firstSched ? roomList.find((r) => r.id === firstSched.room_id) : null;
+    const subject = subjectList.find((sb) => sb.id === c.subject_id);
+    const currentStudents = enrollmentList.filter(
+      (enrollment) =>
+        enrollment.class_id === c.id && enrollment.enrollment_status === "active"
+    ).length;
 
-  const dayMap = { monday: "Senin", tuesday: "Selasa", wednesday: "Rabu", thursday: "Kamis", friday: "Jumat", saturday: "Sabtu", sunday: "Minggu" };
-  const daysFormatted = schedList.map((cs) => dayMap[cs.day_of_week] || cs.day_of_week).join(", ");
-  const timeFormatted = firstSched ? `${firstSched.start_time} - ${firstSched.end_time}` : "-";
+    const dayMap = { monday: "Senin", tuesday: "Selasa", wednesday: "Rabu", thursday: "Kamis", friday: "Jumat", saturday: "Sabtu", sunday: "Minggu" };
+    const daysFormatted = schedList.map((cs) => dayMap[cs.day_of_week] || cs.day_of_week).join(", ");
+    const timeFormatted = firstSched ? `${firstSched.start_time} - ${firstSched.end_time}` : "-";
 
-  let statusLabel = "Tersedia";
-  if (c.current_students >= c.max_students) statusLabel = "Penuh";
-  else if (c.current_students >= c.max_students * 0.8) statusLabel = "Hampir Penuh";
+    let statusLabel = "Tersedia";
+    if (currentStudents >= c.max_students) statusLabel = "Penuh";
+    else if (currentStudents >= c.max_students * 0.8) statusLabel = "Hampir Penuh";
 
-  return {
-    id: c.id,
-    namaKelas: c.class_name,
-    class_name: c.class_name,
-    subject_id: c.subject_id,
-    subject_name: subject ? subject.subject_name : "-",
-    grade_level: c.grade_level,
-    class_grade: c.class_grade,
-    jenjang: c.grade_level,
-    ruang: room ? room.room_name : `Ruang ${c.id}`,
-    room_id: room ? room.id : 1,
-    tentor: mentor ? mentor.full_name : "TBA",
-    mentor_id: mentor ? mentor.id : 1,
-    jadwal: firstSched ? `${daysFormatted} (${timeFormatted})` : "Belum Dijadwalkan",
-    schedules: schedList,
-    kapasitasMax: c.max_students,
-    max_students: c.max_students,
-    terisi: c.current_students,
-    current_students: c.current_students,
-    status: statusLabel,
-    db_status: c.status,
-  };
-});
+    return {
+      id: c.id,
+      namaKelas: c.class_name,
+      class_name: c.class_name,
+      subject_id: c.subject_id,
+      subject_name: subject ? subject.subject_name : "-",
+      grade_level: c.grade_level,
+      class_grade: c.class_grade,
+      jenjang: c.grade_level,
+      ruang: room ? room.room_name : `Ruang ${c.id}`,
+      room_id: room ? room.id : 1,
+      tentor: mentor ? mentor.full_name : "TBA",
+      mentor_id: mentor ? mentor.id : 1,
+      jadwal: firstSched ? `${daysFormatted} (${timeFormatted})` : "Belum Dijadwalkan",
+      schedules: schedList,
+      kapasitasMax: c.max_students,
+      max_students: c.max_students,
+      terisi: currentStudents,
+      current_students: currentStudents,
+      status: statusLabel,
+      db_status: c.status,
+    };
+  });
+}
+
+export const kelasData = buildKelasData(classes);
 
 // 3. tagihanSPP (Tagihan lengkap dengan pembayaran, status, siswa)
-export const tagihanSPP = bills.map((b) => {
-  const student = students.find((s) => s.id === b.student_id);
-  const payment = payments.find((p) => p.bill_id === b.id);
+export function buildTagihanSPP(billList, studentList, paymentList) {
+  return billList.map((b) => {
+    const student = studentList.find((s) => s.id === b.student_id);
+    const payment = paymentList.find((p) => p.bill_id === b.id);
 
-  let statusLabel = "Lunas";
-  if (b.payment_status === "overdue") statusLabel = "Jatuh Tempo";
-  else if (b.payment_status === "unpaid") statusLabel = "Belum Bayar";
+    let statusLabel = "Lunas";
+    if (b.payment_status === "overdue") statusLabel = "Jatuh Tempo";
+    else if (b.payment_status === "unpaid") statusLabel = "Belum Bayar";
 
-  const monthNames = {
-    "2026-07": "Juli 2026",
-    "2026-08": "Agustus 2026",
-    "2026-09": "September 2026",
-    "2026-10": "Oktober 2026",
-  };
+    const monthNames = {
+      "2026-07": "Juli 2026",
+      "2026-08": "Agustus 2026",
+      "2026-09": "September 2026",
+      "2026-10": "Oktober 2026",
+    };
 
-  return {
-    id: b.id,
-    bill_id: b.id,
-    student_id: b.student_id,
-    namaSiswa: student ? student.full_name : `Siswa #${b.student_id}`,
-    grade_level: student ? student.grade_level : "SD",
-    class_grade: student ? student.class_grade : 1,
-    kelas: student ? (student.grade_level === "TK" ? "TK" : `${student.class_grade} ${student.grade_level}`) : "-",
-    program: student ? (student.grade_level === "TK" ? "Calistung" : student.grade_level) : "SD",
-    bulan: monthNames[b.bill_period] || b.bill_period,
-    bill_period: b.bill_period,
-    nominal: b.total_amount,
-    base_amount: b.base_amount,
-    discount_amount: b.discount_amount,
-    status: statusLabel,
-    payment_status: b.payment_status,
-    noHP: student ? student.parent_phone_wa : "-",
-    jatuhTempo: b.due_date,
-    metode: payment ? (payment.payment_method === "cash" ? "Tunai" : payment.payment_method === "bank_transfer" ? "Transfer Bank" : "QRIS") : "-",
-    payment_id: payment ? payment.id : null,
-    receipt_no: payment ? payment.receipt_no : null,
-    paid_at: payment ? payment.payment_date : null,
-  };
-});
+    return {
+      id: b.id,
+      bill_id: b.id,
+      student_id: b.student_id,
+      namaSiswa: student ? student.full_name : `Siswa #${b.student_id}`,
+      grade_level: student ? student.grade_level : "SD",
+      class_grade: student ? student.class_grade : 1,
+      kelas: student ? (student.grade_level === "TK" ? "TK" : `${student.class_grade} ${student.grade_level}`) : "-",
+      program: student ? (student.grade_level === "TK" ? "Calistung" : student.grade_level) : "SD",
+      bulan: monthNames[b.bill_period] || b.bill_period,
+      bill_period: b.bill_period,
+      nominal: b.total_amount,
+      base_amount: b.base_amount,
+      discount_amount: b.discount_amount,
+      status: statusLabel,
+      payment_status: b.payment_status,
+      noHP: student ? student.parent_phone_wa : "-",
+      jatuhTempo: b.due_date,
+      metode: payment ? (payment.payment_method === "cash" ? "Tunai" : payment.payment_method === "bank_transfer" ? "Transfer Bank" : "QRIS") : "-",
+      payment_id: payment ? payment.id : null,
+      receipt_no: payment ? payment.receipt_no : null,
+      paid_at: payment ? payment.payment_date : null,
+    };
+  });
+}
 
+export const tagihanSPP = buildTagihanSPP(bills, students, payments);

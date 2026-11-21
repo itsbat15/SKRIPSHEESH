@@ -23,9 +23,9 @@ import {
   learningPrograms,
   feeTariffs,
   discountRules,
-  students,
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -60,6 +60,7 @@ const formatRp = (num) =>
 
 export default function PendaftaranPage() {
   const { theme } = useTheme();
+  const { students, addStudent } = useFrontdeskData();
   const isDark = theme === "dark";
 
   const [currentStep, setCurrentStep] = useState(0);
@@ -112,7 +113,7 @@ export default function PendaftaranPage() {
   const selectedSibling = useMemo(() => {
     if (!formData.hasSibling || !formData.siblingStudentId) return null;
     return students.find((s) => s.id === parseInt(formData.siblingStudentId));
-  }, [formData.hasSibling, formData.siblingStudentId]);
+  }, [formData.hasSibling, formData.siblingStudentId, students]);
 
   // Dynamic Fee Calculation from feeTariffs table
   const feeCalculation = useMemo(() => {
@@ -161,8 +162,35 @@ export default function PendaftaranPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newRegNo = `ARH1-2026-${String(students.length + 1).padStart(3, "0")}`;
-    setGeneratedRegNo(newRegNo);
+    if (currentStep < 2) {
+      setCurrentStep((step) => step + 1);
+      return;
+    }
+
+    const student = addStudent(
+      {
+        full_name: formData.fullName,
+        birth_place: formData.birthPlace,
+        birth_date: formData.birthDate,
+        gender: formData.gender,
+        grade_level: formData.gradeLevel,
+        class_grade: Number(formData.classGrade),
+        school_origin: formData.schoolOrigin,
+        home_address: formData.homeAddress,
+        parent_name: formData.parentName,
+        parent_phone_wa: formData.parentPhoneWa,
+        learning_program_id: Number(formData.learningProgramId),
+        academic_year_id: Number(formData.academicYearId),
+        sibling_student_id: selectedSibling?.id || null,
+        discount_amount: feeCalculation.siblingDiscount,
+      },
+      {
+        sppAmount: feeCalculation.sppAmount,
+        siblingDiscount: feeCalculation.siblingDiscount,
+        paymentMethod: formData.paymentMethod,
+      }
+    );
+    setGeneratedRegNo(student.registration_no);
     setSubmitted(true);
   };
 
@@ -262,7 +290,9 @@ export default function PendaftaranPage() {
             <div className="border-2 border-[#111118] rounded-xl overflow-hidden divide-y divide-slate-200 dark:divide-slate-800 text-xs">
               <div className="flex justify-between items-center p-3 bg-white dark:bg-slate-800">
                 <div>
-                  <div className="font-bold">SPP Bulan Pertama (Juli 2026)</div>
+                  <div className="font-bold">
+                    SPP Bulan Pertama ({new Intl.DateTimeFormat("id-ID", { month: "long", year: "numeric" }).format(new Date())})
+                  </div>
                   <div className="text-[11px] text-slate-400">Tarif otomatis jenjang {formData.gradeLevel}</div>
                 </div>
                 <div className="font-bold">{formatRp(feeCalculation.sppAmount)}</div>
@@ -298,7 +328,7 @@ export default function PendaftaranPage() {
           <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 text-xs text-blue-800 dark:text-blue-300 flex items-start gap-2 mb-6">
             <CheckCircle size={16} className="shrink-0 mt-0.5 text-blue-600 dark:text-blue-400" />
             <div>
-              <strong>Status:</strong> Terdaftar resmi. Tagihan SPP otomatis terbuat untuk bulan Juli 2026. Data siswa langsung dapat diplotkan ke kelas pada menu <strong>Plotting Kelas</strong>.
+              <strong>Status:</strong> Terdaftar resmi. Tagihan SPP otomatis terbuat untuk bulan ini. Data siswa langsung dapat diplotkan ke kelas pada menu <strong>Plotting Kelas</strong>.
             </div>
           </div>
 
@@ -800,18 +830,8 @@ export default function PendaftaranPage() {
 
             {currentStep < 2 ? (
               <button
-                type="button"
-                onClick={() => {
-                  if (currentStep === 0 && !formData.fullName) {
-                    alert("Mohon isi Nama Lengkap Siswa terlebih dahulu.");
-                    return;
-                  }
-                  if (currentStep === 1 && !formData.parentName) {
-                    alert("Mohon isi Nama Orang Tua/Wali terlebih dahulu.");
-                    return;
-                  }
-                  setCurrentStep((prev) => Math.min(2, prev + 1));
-                }}
+                key="next-step"
+                type="submit"
                 style={{
                   backgroundColor: stepColors[currentStep],
                   color: "#fff",
@@ -824,6 +844,7 @@ export default function PendaftaranPage() {
               </button>
             ) : (
               <button
+                key="submit-registration"
                 type="submit"
                 style={{
                   backgroundColor: "#1EAB55",

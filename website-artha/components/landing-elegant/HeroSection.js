@@ -89,6 +89,7 @@ export default function HeroSection({ onOpenRegistration }) {
                 src="/images/bimbelarthalogo-1.png"
                 alt="Logo Bimbel Artha"
                 fill
+                sizes="(min-width: 1024px) 680px, (min-width: 768px) 600px, (min-width: 640px) 480px, 320px"
                 className="object-contain"
                 priority
               />

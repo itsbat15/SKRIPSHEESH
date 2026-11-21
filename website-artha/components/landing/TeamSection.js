@@ -51,6 +51,7 @@ export default function TeamSection() {
                     src={teacher.image}
                     alt={teacher.name}
                     fill
+                    sizes="(min-width: 640px) 300px, 280px"
                     className="object-cover object-top"
                   />
                   {/* Yellow Sticker */}

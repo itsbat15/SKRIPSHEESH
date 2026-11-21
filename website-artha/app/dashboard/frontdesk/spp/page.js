@@ -17,13 +17,10 @@ import {
   Check
 } from "lucide-react";
 import {
-  bills,
-  payments,
-  students,
-  cabangInfo,
-  feeTariffs
+  cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -33,10 +30,8 @@ const formatRp = (n) =>
 
 export default function SPPPage() {
   const { theme } = useTheme();
+  const { bills: activeBills, payments: activePayments, students, recordPayment } = useFrontdeskData();
   const isDark = theme === "dark";
-
-  const [activeBills, setActiveBills] = useState(bills);
-  const [activePayments, setActivePayments] = useState(payments);
 
   const [filterStatus, setFilterStatus] = useState("all");
   const [filterJenjang, setFilterJenjang] = useState("all");
@@ -82,7 +77,7 @@ export default function SPPPage() {
         monthName: monthNames[b.bill_period] || b.bill_period,
       };
     });
-  }, [activeBills, activePayments]);
+  }, [activeBills, activePayments, students]);
 
   // Filtered bills
   const filtered = useMemo(() => {
@@ -115,25 +110,11 @@ export default function SPPPage() {
     e.preventDefault();
     if (!payingBill) return;
 
-    const newReceiptNo = `KW-2607-${String(activePayments.length + 1).padStart(3, "0")}`;
-    const newPayment = {
-      id: activePayments.length + 1,
-      bill_id: payingBill.id,
-      verified_by_user_id: 1, // Admin Frontdesk
-      receipt_no: newReceiptNo,
-      amount_paid: payingBill.total_amount,
-      payment_method: paymentMethod,
-      proof_image_url: null,
-      payment_date: new Date().toISOString().split("T")[0],
-      verified_at: new Date().toISOString().split("T")[0],
-      notes: paymentNotes || (payingBill.discount_amount > 0 ? "Termasuk diskon saudara Rp 200.000" : null),
-    };
-
-    // Update state
-    setActivePayments([newPayment, ...activePayments]);
-    setActiveBills((prev) =>
-      prev.map((b) => (b.id === payingBill.id ? { ...b, payment_status: "paid" } : b))
-    );
+    const newPayment = recordPayment(payingBill.id, {
+      method: paymentMethod,
+      notes: paymentNotes,
+    });
+    if (!newPayment) return;
 
     // Open receipt modal immediately
     const fullReceipt = {

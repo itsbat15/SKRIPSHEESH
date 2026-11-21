@@ -83,6 +83,7 @@ export default function ArticlesSection() {
                       src={imageSrc}
                       alt={article.title}
                       fill
+                      sizes="(min-width: 1280px) 286px, (min-width: 768px) 45vw, 90vw"
                       className="object-cover group-hover:scale-105 transition-all duration-500"
                     />
                   </div>

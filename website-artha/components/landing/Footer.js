@@ -140,6 +140,7 @@ export default function Footer() {
                   src="/images/bimbelarthalogo-1.png"
                   alt="Logo Bimbel Artha"
                   fill
+                  sizes="144px"
                   className="object-contain"
                 />
               </div>

@@ -16,14 +16,10 @@ import {
   BarChart3
 } from "lucide-react";
 import {
-  bills,
-  payments,
-  students,
-  classes,
-  cabangInfo,
-  pengeluaranData
+  cabangInfo
 } from "@/data/mockFrontdeskData";
 import { useTheme } from "@/components/dashboard/ThemeProvider";
+import { useFrontdeskData } from "@/components/dashboard/FrontdeskDataProvider";
 
 const B = "#111118";
 const S = "4px 4px 0 0 #111118";
@@ -33,24 +29,43 @@ const formatRp = (n) =>
 
 export default function LaporanCabangPage() {
   const { theme } = useTheme();
+  const { bills, payments, students, classes, pengeluaran } = useFrontdeskData();
   const isDark = theme === "dark";
 
   const [selectedDate, setSelectedDate] = useState("2026-07-05");
+  const selectedPeriod = selectedDate.slice(0, 7);
+  const periodLabel = selectedPeriod
+    ? new Intl.DateTimeFormat("id-ID", { month: "long", year: "numeric" }).format(
+        new Date(`${selectedPeriod}-01T00:00:00`)
+      )
+    : "Belum dipilih";
+  const periodPayments = payments.filter(
+    (payment) => (payment.payment_date || "").slice(0, 7) === selectedPeriod
+  );
 
   // Summary Data
   const summary = useMemo(() => {
+    const selectedPeriod = selectedDate.slice(0, 7);
+    const periodBills = bills.filter((bill) => bill.bill_period === selectedPeriod);
+    const filteredPayments = payments.filter(
+      (payment) => (payment.payment_date || "").slice(0, 7) === selectedPeriod
+    );
+    const periodPengeluaran = pengeluaran.filter(
+      (item) => (item.tanggal || "").slice(0, 7) === selectedPeriod
+    );
     const totalSiswa = students.length;
     const siswaSD = students.filter((s) => s.grade_level === "SD").length;
     const siswaSMP = students.filter((s) => s.grade_level === "SMP").length;
     const siswaSMA = students.filter((s) => s.grade_level === "SMA").length;
     const siswaTK = students.filter((s) => s.grade_level === "TK").length;
 
-    const totalBills = bills.reduce((sum, b) => sum + b.total_amount, 0);
-    const paidBills = bills.filter((b) => b.payment_status === "paid");
-    const totalPenerimaan = paidBills.reduce((sum, b) => sum + b.total_amount, 0);
-    const totalTunggakan = bills.filter((b) => b.payment_status !== "paid").reduce((sum, b) => sum + b.total_amount, 0);
+    const totalBills = periodBills.reduce((sum, bill) => sum + bill.total_amount, 0);
+    const paidBills = periodBills.filter((bill) => bill.payment_status === "paid");
+    const unpaidBills = periodBills.filter((bill) => bill.payment_status !== "paid");
+    const totalPenerimaan = filteredPayments.reduce((sum, payment) => sum + payment.amount_paid, 0);
+    const totalTunggakan = unpaidBills.reduce((sum, bill) => sum + bill.total_amount, 0);
 
-    const totalPengeluaran = pengeluaranData.reduce((sum, p) => sum + p.nominal, 0);
+    const totalPengeluaran = periodPengeluaran.reduce((sum, item) => sum + item.nominal, 0);
     const labaBersih = totalPenerimaan - totalPengeluaran;
 
     // Capacity stats
@@ -72,9 +87,12 @@ export default function LaporanCabangPage() {
       totalMaxKapasitas,
       totalTerisi,
       utilisasiPersen,
-      persenLunas: Math.round((paidBills.length / bills.length) * 100),
+      persenLunas: periodBills.length
+        ? Math.round((paidBills.length / periodBills.length) * 100)
+        : 0,
+      tagihanBelumBayar: unpaidBills.length,
     };
-  }, []);
+  }, [selectedDate, students, bills, payments, pengeluaran, classes]);
 
   return (
     <div className="space-y-6">
@@ -88,11 +106,14 @@ export default function LaporanCabangPage() {
             Laporan Operasional Cabang
           </h2>
           <p className="text-xs sm:text-sm mt-1" style={{ color: isDark ? "#94a3b8" : "#64748b" }}>
-            Rekapitulasi keuangan harian, pembayaran SPP, dan utilisasi kelas cabang {cabangInfo.branch_name}
+            Rekapitulasi keuangan, pembayaran SPP, dan utilisasi kelas cabang {cabangInfo.branch_name}
           </p>
         </div>
 
         <div className="flex items-center gap-2">
+          <span className="text-xs font-bold text-slate-600 dark:text-slate-300">
+            Periode: {periodLabel}
+          </span>
           <input
             type="date"
             value={selectedDate}
@@ -115,7 +136,7 @@ export default function LaporanCabangPage() {
           style={{ backgroundColor: isDark ? "#1e293b" : "#1EAB55", border: `2.5px solid ${B}`, boxShadow: S }}
           className="rounded-xl p-4 text-white"
         >
-          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-emerald-100">Penerimaan SPP (Bulan Ini)</p>
+          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-emerald-100">Penerimaan SPP (Periode)</p>
           <p className="font-heading font-black text-2xl sm:text-3xl">{formatRp(summary.totalPenerimaan)}</p>
           <p className="text-[11px] text-emerald-100 mt-1">{summary.persenLunas}% tagihan telah lunas</p>
         </div>
@@ -126,7 +147,7 @@ export default function LaporanCabangPage() {
         >
           <p className="text-xs font-bold uppercase tracking-wider mb-1 text-rose-100">Total Piutang / Tunggakan</p>
           <p className="font-heading font-black text-2xl sm:text-3xl">{formatRp(summary.totalTunggakan)}</p>
-          <p className="text-[11px] text-rose-100 mt-1">{bills.filter((b) => b.payment_status !== "paid").length} siswa belum bayar</p>
+          <p className="text-[11px] text-rose-100 mt-1">{summary.tagihanBelumBayar} tagihan belum bayar</p>
         </div>
 
         <div
@@ -241,12 +262,16 @@ export default function LaporanCabangPage() {
               Riwayat Pembayaran Kasir Terbaru
             </h3>
             <span className="text-xs font-bold text-slate-500">
-              {payments.length} Transaksi Tercatat
+              {periodPayments.length} Transaksi Tercatat
             </span>
           </div>
 
           <div className="divide-y divide-slate-100 dark:divide-slate-800 text-xs overflow-hidden">
-            {payments.slice(0, 6).map((p) => {
+            {periodPayments.length === 0 ? (
+              <p className="py-4 text-center text-xs font-semibold text-slate-500">
+                Tidak ada transaksi pada periode ini.
+              </p>
+            ) : periodPayments.slice(0, 6).map((p) => {
               const matchedBill = bills.find((b) => b.id === p.bill_id);
               const matchedStudent = matchedBill ? students.find((s) => s.id === matchedBill.student_id) : null;
 
