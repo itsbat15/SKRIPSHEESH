@@ -148,7 +148,7 @@ export default function SPPPage() {
 
         <div className="flex items-center gap-2">
           <span className="text-xs font-bold px-3 py-1.5 rounded-lg bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 border border-blue-300 dark:border-blue-800 flex items-center gap-1.5">
-            <Building2 size={13} /> {cabangInfo.branch_name} • Semua Periode
+            <Building2 size={13} /> {cabangInfo.branch_name} • Periode Juli 2026
           </span>
         </div>
       </div>
@@ -184,7 +184,7 @@ export default function SPPPage() {
           <p className="text-xs font-bold uppercase tracking-wider mb-1 text-blue-100">Target Penerimaan Semua Tagihan</p>
           <p className="font-heading font-black text-2xl sm:text-3xl my-1">{formatRp(totalTargetAmount)}</p>
           <p className="text-xs text-blue-100 font-semibold">
-            Total {enrichedBills.length} tagihan dalam daftar
+            Total {enrichedBills.length} tagihan terbit bulan Juli 2026
           </p>
         </div>
       </div>
@@ -267,7 +267,7 @@ export default function SPPPage() {
           <h3 className="font-heading font-black text-base text-slate-900 dark:text-slate-100">
             Daftar Tagihan Siswa ({filtered.length} data)
           </h3>
-          <span className="text-xs text-slate-500 font-bold">Semua Periode</span>
+          <span className="text-xs text-slate-500 font-bold">Periode: Juli 2026</span>
         </div>
 
         <div className="overflow-x-auto">
