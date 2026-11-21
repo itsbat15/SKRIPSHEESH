@@ -199,6 +199,7 @@ export default function PendaftaranPage() {
       },
       {
         sppAmount: feeCalculation.sppAmount,
+        modulAmount: feeCalculation.modulAmount,
         siblingDiscount: feeCalculation.siblingDiscount,
         paymentMethod: formData.paymentMethod,
       }

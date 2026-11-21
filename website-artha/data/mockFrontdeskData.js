@@ -233,9 +233,11 @@ export const dashboardStats = {
 
 // 1. siswaData (Siswa lengkap dengan info program & tagihan)
 export function buildSiswaData(studentList, billList, programList = learningPrograms) {
+  const sppBills = billList.filter((bill) => bill.bill_type === "spp_monthly");
+
   return studentList.map((s) => {
     const prog = programList.find((p) => p.id === s.learning_program_id);
-    const studentBill = billList.find((b) => b.student_id === s.id);
+    const studentBill = sppBills.find((b) => b.student_id === s.id);
     let statusSPP = "Lunas";
     let tunggakan = 0;
     if (studentBill) {
@@ -344,7 +346,7 @@ export const kelasData = buildKelasData(classes);
 
 // 3. tagihanSPP (Tagihan lengkap dengan pembayaran, status, siswa)
 export function buildTagihanSPP(billList, studentList, paymentList) {
-  return billList.map((b) => {
+  return billList.filter((bill) => bill.bill_type === "spp_monthly").map((b) => {
     const student = studentList.find((s) => s.id === b.student_id);
     const payment = paymentList.find((p) => p.bill_id === b.id);
 

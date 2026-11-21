@@ -59,7 +59,9 @@ export default function SiswaPage() {
   // Enriched Student Data
   const enrichedStudents = useMemo(() => {
     return students.map((s) => {
-      const studentBill = bills.find((b) => b.student_id === s.id);
+      const studentBill = bills.find(
+        (b) => b.student_id === s.id && b.bill_type === "spp_monthly"
+      );
       const studentPayment = studentBill ? payments.find((p) => p.bill_id === studentBill.id) : null;
       const sibling = s.sibling_student_id ? students.find((other) => other.id === s.sibling_student_id) : null;
       const prog = learningPrograms.find((lp) => lp.id === s.learning_program_id);

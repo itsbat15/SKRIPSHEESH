@@ -64,7 +64,9 @@ export default function FrontdeskOverview() {
   const currentStats = {
     ...dashboardStats,
     siswaAktif: students.filter((student) => student.status === "active").length,
-    tunggakanSPP: bills.filter((bill) => bill.payment_status !== "paid").length,
+    tunggakanSPP: bills.filter(
+      (bill) => bill.bill_type === "spp_monthly" && bill.payment_status !== "paid"
+    ).length,
     kelasAktif: classes.filter((kelas) => kelas.status !== "full").length,
     totalKelas: classes.length,
   };

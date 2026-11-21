@@ -106,7 +106,7 @@ export default function LaporanCabangPage() {
             Laporan Operasional Cabang
           </h2>
           <p className="text-xs sm:text-sm mt-1" style={{ color: isDark ? "#94a3b8" : "#64748b" }}>
-            Rekapitulasi keuangan, pembayaran SPP, dan utilisasi kelas cabang {cabangInfo.branch_name}
+            Rekapitulasi keuangan, pembayaran, dan utilisasi kelas cabang {cabangInfo.branch_name}
           </p>
         </div>
 
@@ -136,7 +136,7 @@ export default function LaporanCabangPage() {
           style={{ backgroundColor: isDark ? "#1e293b" : "#1EAB55", border: `2.5px solid ${B}`, boxShadow: S }}
           className="rounded-xl p-4 text-white"
         >
-          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-emerald-100">Penerimaan SPP (Periode)</p>
+          <p className="text-xs font-bold uppercase tracking-wider mb-1 text-emerald-100">Penerimaan Pembayaran (Periode)</p>
           <p className="font-heading font-black text-2xl sm:text-3xl">{formatRp(summary.totalPenerimaan)}</p>
           <p className="text-[11px] text-emerald-100 mt-1">{summary.persenLunas}% tagihan telah lunas</p>
         </div>

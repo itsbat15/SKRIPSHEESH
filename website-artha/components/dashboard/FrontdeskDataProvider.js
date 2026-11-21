@@ -52,13 +52,14 @@ export function FrontdeskDataProvider({ children }) {
     [classRecords, classEnrollments]
   );
 
-  const recordPaymentForBill = (bill, { method, notes } = {}) => {
+  const recordPaymentForBill = (bill, { method, notes, paymentId } = {}) => {
     const paymentDate = today();
+    const id = paymentId ?? nextId(payments);
     const payment = {
-      id: nextId(payments),
+      id,
       bill_id: bill.id,
       verified_by_user_id: 1,
-      receipt_no: `KW-2607-${String(nextId(payments)).padStart(3, "0")}`,
+      receipt_no: `KW-2607-${String(id).padStart(3, "0")}`,
       amount_paid: bill.total_amount,
       payment_method: method,
       proof_image_url: null,
@@ -77,7 +78,10 @@ export function FrontdeskDataProvider({ children }) {
     return payment;
   };
 
-  const addStudent = (studentFields, { sppAmount, siblingDiscount, paymentMethod }) => {
+  const addStudent = (
+    studentFields,
+    { sppAmount, siblingDiscount, paymentMethod, modulAmount = 0 }
+  ) => {
     const studentId = nextId(students);
     const registrationDate = today();
     const student = {
@@ -88,24 +92,50 @@ export function FrontdeskDataProvider({ children }) {
       status: "active",
       registered_at: registrationDate,
     };
+    const billId = nextId(bills);
+    const billPeriod = registrationDate.slice(0, 7);
+    const dueDate = `${billPeriod}-10`;
+    const paymentStatus = paymentMethod === "cash" || paymentMethod === "qris" ? "paid" : "unpaid";
     const bill = {
-      id: nextId(bills),
+      id: billId,
       student_id: student.id,
       academic_year_id: student.academic_year_id,
       bill_type: "spp_monthly",
-      bill_period: registrationDate.slice(0, 7),
+      bill_period: billPeriod,
       base_amount: sppAmount,
       discount_amount: siblingDiscount,
       total_amount: Math.max(0, sppAmount - siblingDiscount),
-      due_date: `${registrationDate.slice(0, 7)}-10`,
-      payment_status: paymentMethod === "cash" || paymentMethod === "qris" ? "paid" : "unpaid",
+      due_date: dueDate,
+      payment_status: paymentStatus,
     };
+    const moduleBill = modulAmount > 0
+      ? {
+          id: billId + 1,
+          student_id: student.id,
+          academic_year_id: student.academic_year_id,
+          bill_type: "module_semester",
+          bill_period: billPeriod,
+          base_amount: modulAmount,
+          discount_amount: 0,
+          total_amount: modulAmount,
+          due_date: dueDate,
+          payment_status: paymentStatus,
+        }
+      : null;
 
     setStudents((current) => [...current, student]);
-    setBills((current) => [...current, bill]);
+    setBills((current) => [...current, bill, ...(moduleBill ? [moduleBill] : [])]);
 
     if (bill.payment_status === "paid") {
-      recordPaymentForBill(bill, { method: paymentMethod });
+      const paymentId = nextId(payments);
+      recordPaymentForBill(bill, { method: paymentMethod, paymentId });
+      if (moduleBill) {
+        recordPaymentForBill(moduleBill, {
+          method: paymentMethod,
+          notes: "Biaya modul semester",
+          paymentId: paymentId + 1,
+        });
+      }
     }
 
     return student;

@@ -59,7 +59,7 @@ export default function SPPPage() {
 
   // Map enriched bills
   const enrichedBills = useMemo(() => {
-    return activeBills.map((b) => {
+    return activeBills.filter((bill) => bill.bill_type === "spp_monthly").map((b) => {
       const student = students.find((s) => s.id === b.student_id);
       const payment = activePayments.find((p) => p.bill_id === b.id);
 
