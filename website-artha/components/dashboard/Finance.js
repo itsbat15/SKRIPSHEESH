@@ -174,7 +174,7 @@ export function Revenue({data,report,overview=false}) {
       {!overview && <form key={query.toString()} onSubmit={apply} className="mb-4 grid items-end gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <Field label="Dari tanggal" name="from" type="date" defaultValue={from} />
         <Field label="Sampai tanggal" name="to" type="date" defaultValue={to} />
-        <Field label="Cabang" name="branch" defaultValue={branch} options={[["","Semua cabang"],...data.branches.map((row)=>[row.id,row.name])]} />
+        <Field label="Cabang" name="branch" required={false} defaultValue={branch} options={[["","Semua cabang"],...data.branches.map((row)=>[row.id,row.name])]} />
         <Submit>Terapkan Filter</Submit>
       </form>}
       <Feedback error={error} />
