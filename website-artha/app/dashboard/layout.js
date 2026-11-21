@@ -1,5 +1,4 @@
 import DashboardClientWrapper from "@/components/dashboard/DashboardClientWrapper";
-import DashboardShell from "@/components/dashboard/DashboardShell";
 
 export const metadata = {
   title: "Dashboard Bimbel Artha",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function DashboardLayout({ children }) {
   return (
     <DashboardClientWrapper>
-      <DashboardShell>{children}</DashboardShell>
+      {children}
     </DashboardClientWrapper>
   );
 }

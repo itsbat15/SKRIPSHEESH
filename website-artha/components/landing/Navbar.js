@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence, animate } from "framer-motion";
 import { navLinks } from "@/data/siteData";
@@ -148,6 +149,8 @@ export default function Navbar({ onOpenRegistration }) {
           <div className="flex items-center gap-3">
             
             <TypewriterSearch />
+
+            <Link href="/login" className="shrink-0 text-xs font-bold text-[#2727E6] underline underline-offset-4">Masuk staf</Link>
 
             {/* CTA Daftar (desktop) */}
             <button

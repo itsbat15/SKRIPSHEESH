@@ -1,0 +1,10 @@
+/.env
+/.env.testing
+/.phpunit.result.cache
+/bootstrap/cache/*.php
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/logs/*
+/vendor
