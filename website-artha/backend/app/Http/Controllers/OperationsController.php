@@ -44,7 +44,7 @@ class OperationsController
         $transfer = $request->validate([
             'sender' => 'required|string|max:200',
             'transfer_on' => ['required', 'date_format:Y-m-d', 'before_or_equal:'.BillSchedule::today()],
-            'proof' => 'required|file|mimetypes:image/jpeg,image/png,application/pdf',
+            'proof' => 'required|file|max:5120|mimetypes:image/jpeg,image/png,application/pdf',
         ]);
         return $payment + [
             'sender' => $transfer['sender'], 'transfer_on' => $transfer['transfer_on'],

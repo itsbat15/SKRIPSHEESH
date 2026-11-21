@@ -125,6 +125,16 @@ class OperationsTest extends TestCase
         $this->api($branch, 'GET', "payments/{$retry}/receipt")->assertOk();
     }
 
+    public function test_transfer_proof_over_five_mib_is_rejected(): void
+    {
+        $branch = $this->login('cabang1');
+        $transfer = $this->transfer();
+        $transfer['proof']->size(5121);
+        $this->api($branch, 'POST', 'enrollments', $this->registration($transfer), true)
+            ->assertUnprocessable()->assertJsonValidationErrors('proof');
+        $this->assertDatabaseMissing('students', ['name' => 'Siswa Baru']);
+    }
+
     public function test_cash_close_discrepancy_approval_overdue_and_report_formats(): void
     {
         $branch = $this->login('cabang1');

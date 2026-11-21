@@ -54,6 +54,8 @@ Secara bawaan Next.js meneruskan permintaan `/api/artha/*` ke `ARTHA_API_URL` (s
 
 Untuk basis data non-demo yang kosong, gunakan `APP_ENV=production`, `APP_DEBUG=false`, `ARTHA_DEMO=false`, `ARTHA_ADMIN_EMAIL`, dan `ARTHA_ADMIN_PASSWORD` (minimal 12 karakter), lalu jalankan `php artisan migrate --seed --force`. Jangan gunakan basis data demo untuk data operasional. Layani Laravel melalui direktori `backend/public` pada server web dengan PHP, lalu jalankan `npm run build` dan `npm run start` untuk frontend.
 
+Atur `post_max_size=8M` dan `upload_max_filesize=6M` pada konfigurasi PHP yang melayani Laravel, lalu muat ulang proses PHP. Laravel membatasi ukuran setiap bukti transfer menjadi 5120 KiB, sedangkan batas PHP mencakup seluruh badan permintaan multipart.
+
 ## Pemeriksaan
 
 Jalankan `composer test` dari `website-artha/backend` untuk memeriksa autentikasi, isolasi cabang, pendaftaran, pembayaran, validasi transfer, penutupan kas, dan ekspor. PHPUnit menyegarkan skema basis data `artha_test`, jadi gunakan basis data uji yang terpisah dari data operasional. Jalankan `npm run build` dari `website-artha` untuk memeriksa build Next.js. Pengujian ini tidak menggantikan UAT bersama staf atau pengukuran kinerja di delapan cabang.
