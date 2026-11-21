@@ -12,7 +12,13 @@ import {
 
 const FrontdeskDataContext = createContext(null);
 
-const today = () => new Date().toISOString().slice(0, 10);
+const today = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+};
 const nextId = (items) => Math.max(0, ...items.map((item) => Number(item.id) || 0)) + 1;
 
 export function FrontdeskDataProvider({ children }) {
