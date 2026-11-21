@@ -77,6 +77,18 @@ class OperationsTest extends TestCase
         $this->api($branch, 'GET', 'workspace')->assertUnauthorized();
     }
 
+    public function test_login_limit_is_scoped_to_normalized_email_and_ip(): void
+    {
+        $wrong = ['email' => 'missing@artha.example', 'password' => 'salah'];
+        for ($attempt = 0; $attempt < 5; $attempt++) {
+            $this->postJson('/api/artha/login', $wrong)->assertUnauthorized();
+        }
+        $this->postJson('/api/artha/login', ['email' => ' MISSING@artha.example ', 'password' => 'salah'])->assertTooManyRequests();
+        $this->login('cabang1');
+        $this->withServerVariables(['REMOTE_ADDR' => '192.0.2.1'])
+            ->postJson('/api/artha/login', $wrong)->assertUnauthorized();
+    }
+
     public function test_registration_capacity_cash_receipt_and_clamped_due_date(): void
     {
         $branch = $this->login('cabang1');

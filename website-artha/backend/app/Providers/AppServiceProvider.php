@@ -11,6 +11,11 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        RateLimiter::for('artha-login', fn (Request $request) => Limit::perMinute(60)->by($request->ip()));
+        RateLimiter::for('artha-login', function (Request $request) {
+            $email = $request->input('email');
+            $identity = is_string($email) ? strtolower(trim($email)) : '';
+
+            return Limit::perMinutes(10, 5)->by($identity.'|'.$request->ip());
+        });
     }
 }
