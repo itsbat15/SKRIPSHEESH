@@ -167,6 +167,19 @@ export default function PendaftaranPage() {
       return;
     }
 
+    const firstMissingField = [
+      { value: formData.fullName, step: 0 },
+      { value: formData.birthDate, step: 0 },
+      { value: formData.parentName, step: 1 },
+      { value: formData.parentPhoneWa, step: 1 },
+    ].find(({ value }) => !value.trim());
+
+    if (firstMissingField) {
+      alert("Lengkapi semua data wajib sebelum menyimpan pendaftaran.");
+      setCurrentStep(firstMissingField.step);
+      return;
+    }
+
     const student = addStudent(
       {
         full_name: formData.fullName,
@@ -402,7 +415,8 @@ export default function PendaftaranPage() {
           <div key={i} className="flex items-center gap-2 flex-1">
             <button
               type="button"
-              onClick={() => setCurrentStep(i)}
+              onClick={() => i < currentStep && setCurrentStep(i)}
+              disabled={i > currentStep}
               className="flex items-center gap-2 text-left group"
             >
               <div
