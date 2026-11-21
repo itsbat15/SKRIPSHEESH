@@ -1,0 +1,40 @@
+{
+  "name": "artha/simba-api",
+  "description": "REST API untuk sistem manajemen operasional Bimbel Artha.",
+  "type": "project",
+  "require": {
+    "php": "^8.3",
+    "ext-pdo_mysql": "*",
+    "dompdf/dompdf": "^3.1",
+    "laravel/framework": "^12.0",
+    "laravel/sanctum": "^4.0",
+    "phpoffice/phpspreadsheet": "^5.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {"Tests\\": "tests/"}
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "test": "@php vendor/bin/phpunit"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

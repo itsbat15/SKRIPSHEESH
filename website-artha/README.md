@@ -4,14 +4,27 @@ SIMBA membantu staf cabang mencatat pendaftaran, pembayaran, dan tutup kas. Mana
 
 ## Menjalankan demo
 
-Gunakan Node.js 24 LTS dan npm. Dari direktori `website-artha`, jalankan:
+Gunakan Node.js 24 LTS, npm, PHP 8.3, Composer 2, dan MySQL 8. Buat basis data lokal `artha` dan `artha_test`, lalu beri akun MySQL lokal akses ke keduanya. Aktifkan ekstensi PHP PDO MySQL, mbstring, XML, cURL, ZIP, dan GD.
+
+Dari `website-artha/backend`, siapkan dan jalankan Laravel:
+
+```sh
+composer install
+cp .env.example .env
+php artisan key:generate
+# Isi DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, dan DB_PASSWORD di .env.
+ARTHA_DEMO=true php artisan migrate --seed
+php -d post_max_size=8M -d upload_max_filesize=6M -S 127.0.0.1:8000 -t public public/index.php
+```
+
+Di terminal lain, jalankan frontend dari `website-artha`:
 
 ```sh
 npm ci
-npm run dev
+ARTHA_API_URL=http://127.0.0.1:8000 npm run dev
 ```
 
-Buka [http://localhost:3000/login](http://localhost:3000/login) atau pilih **Masuk staf** dari halaman publik. Basis data demo dibuat otomatis pada akses pertama dengan delapan cabang, empat jenjang paket, kelompok belajar, akun staf, dan contoh transaksi.
+Buka [http://localhost:3000/login](http://localhost:3000/login) atau pilih **Masuk staf** dari halaman publik. Seeder demo membuat delapan cabang, empat jenjang paket, kelompok belajar, akun staf, dan contoh transaksi.
 
 | Peran | Email demo | Kata sandi demo |
 | --- | --- | --- |
@@ -35,14 +48,14 @@ Pembayaran yang belum mencapai total tagihan dicatat sebagai pembayaran sebagian
 
 ## Penyimpanan dan penggunaan non-demo
 
-Proposal menggunakan Laravel/Sanctum dan MySQL. Implementasi ini tetap memisahkan antarmuka, logika bisnis, dan lapisan data dengan Next.js App Router, REST Route Handlers, serta SQLite bawaan Node.js (`node:sqlite`). Sepuluh entitas ERD dipertahankan: `branches`, `users`, `course_packages`, `study_groups`, `students`, `enrollments`, `tuition_bills`, `payments`, `payment_proofs`, dan `daily_reconciliations`. Tabel tambahan `sessions` menyimpan sesi yang dapat dicabut.
+Next.js dan Tailwind menyajikan antarmuka. REST API Laravel pada `backend/` memvalidasi masukan, membatasi akses per cabang, dan memakai token Laravel Sanctum yang berlaku delapan jam dan dapat dicabut. MySQL menyimpan sepuluh entitas ERD: `branches`, `users`, `course_packages`, `study_groups`, `students`, `enrollments`, `tuition_bills`, `payments`, `payment_proofs`, dan `daily_reconciliations`. Sanctum menyimpan token dalam tabel tambahan `personal_access_tokens`.
 
-Basis data bawaan berada di `.artha/artha.sqlite` dan tidak dilacak oleh Git. Gunakan `ARTHA_DB_PATH` untuk menentukan direktori data persisten; basis data dan bukti transfer harus hanya dapat diakses oleh proses server. Gunakan satu host dengan disk persisten, cadangkan basis data, dan letakkan aplikasi di balik HTTPS untuk penggunaan di jaringan.
+Secara bawaan Next.js meneruskan permintaan `/api/artha/*` ke `ARTHA_API_URL` (standar: `http://127.0.0.1:8000`). Untuk akses browser langsung, tentukan `NEXT_PUBLIC_ARTHA_API_URL` sebelum build dan isi `ARTHA_FRONTEND_ORIGINS` di Laravel dengan daftar origin frontend yang dipisahkan koma. Laravel menyimpan bukti transfer di MySQL dan hanya menyajikannya ke pengguna yang berwenang. Cadangkan basis data dan gunakan HTTPS untuk penggunaan di jaringan.
 
-Untuk penggunaan non-demo dengan basis data kosong, tetapkan `ARTHA_DEMO=0`, `ARTHA_DB_PATH`, `ARTHA_ADMIN_EMAIL`, dan `ARTHA_ADMIN_PASSWORD` (minimal 12 karakter) di lingkungan server, kemudian jalankan `npm run build` dan `npm run start`. Jangan memakai berkas basis data demo untuk data operasional. Untuk menjalankan build produksi secara lokal melalui HTTP, gunakan `ARTHA_INSECURE_COOKIE=1` hanya pada mesin pengembangan.
+Untuk basis data non-demo yang kosong, gunakan `APP_ENV=production`, `APP_DEBUG=false`, `ARTHA_DEMO=false`, `ARTHA_ADMIN_EMAIL`, dan `ARTHA_ADMIN_PASSWORD` (minimal 12 karakter), lalu jalankan `php artisan migrate --seed --force`. Jangan gunakan basis data demo untuk data operasional. Layani Laravel melalui direktori `backend/public` pada server web dengan PHP, lalu jalankan `npm run build` dan `npm run start` untuk frontend.
 
 ## Pemeriksaan
 
-Jalankan `npm test` untuk pengujian alur pendaftaran, isolasi cabang, pembayaran, validasi transfer, penutupan kas dan hasil ekspor. Jalankan `npm run build` untuk build Next.js. Pengujian ini bukan UAT bersama staf maupun pengukuran kinerja delapan cabang; keduanya memerlukan kondisi lapangan dan peserta yang relevan.
+Jalankan `composer test` dari `website-artha/backend` untuk memeriksa autentikasi, isolasi cabang, pendaftaran, pembayaran, validasi transfer, penutupan kas, dan ekspor. PHPUnit menyegarkan skema basis data `artha_test`, jadi gunakan basis data uji yang terpisah dari data operasional. Jalankan `npm run build` dari `website-artha` untuk memeriksa build Next.js. Pengujian ini tidak menggantikan UAT bersama staf atau pengukuran kinerja di delapan cabang.
 
 Pembelajaran daring, bank soal, pelaporan nilai, dan payment gateway tidak termasuk ruang lingkup proposal. Menu mock modul, pengeluaran, dan tentor juga tidak disertakan dalam dashboard operasional.

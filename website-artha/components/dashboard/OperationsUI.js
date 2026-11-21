@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { arthaFetch, homeFor, storeToken, workspaceChanged, writeArtha } from "@/lib/artha-client";
 
 const inputStyle = "block w-full min-h-10 rounded-lg border border-slate-400 bg-white px-3 py-2 text-sm text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary dark:border-slate-500 dark:bg-slate-900 dark:text-white";
 const interactions = "inline-flex items-center justify-center gap-2 rounded-lg border-2 border-[#111118] px-3.5 py-2 font-bold text-sm shadow-[2px_2px_0_#111118] hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed";
@@ -15,7 +15,6 @@ export const billKind = (kind) => kind === "registration" ? "Pendaftaran + SPP p
 export const paymentNumber = (id) => `ARTHA-${String(id).padStart(6,"0")}`;
 
 export function useMutation(action, after) {
-  const router = useRouter();
   const [error,setError] = useState("");
   const [notice,setNotice] = useState("");
   const [busy,setBusy] = useState(false);
@@ -27,21 +26,25 @@ export function useMutation(action, after) {
     setNotice("");
     try {
       const form = event.currentTarget;
-      const response = await fetch(`/api/artha/${action}`,{method:"POST",body:new FormData(form)});
-      const result = await response.json();
-      if (response.status === 401 && action !== "login") {
-        window.location.assign("/login");
+      const result = await writeArtha(action,new FormData(form));
+      if (action === "login") {
+        storeToken(result.token);
+        window.location.assign(homeFor(result.role));
         return;
       }
-      if (!response.ok) throw new Error(result.error || "Permintaan tidak berhasil.");
-      if (result.location) {
-        window.location.assign(result.location);
+      if (action === "logout") {
+        storeToken(null);
+        window.location.assign("/login");
         return;
       }
       setNotice("Data berhasil disimpan.");
       after?.(result,form);
-      router.refresh();
+      window.dispatchEvent(new Event(workspaceChanged));
     } catch (problem) {
+      if (problem.status === 401 && action !== "login") {
+        window.location.assign("/login");
+        return;
+      }
       setError(problem.message);
     } finally {
       setBusy(false);
@@ -111,8 +114,48 @@ export function Status({value,label}) {
   return <span className={`inline-block rounded-full px-2.5 py-1 text-xs font-bold whitespace-nowrap ${style}`}>{label || name}</span>;
 }
 
-export function FileLink({href,children}) {
-  return <a href={href} target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-2 dark:text-indigo-300">{children}</a>;
+const fileLinkClass = "font-semibold text-primary underline underline-offset-2 dark:text-indigo-300";
+
+export function ExternalLink({href,children}) {
+  return <a href={href} target="_blank" rel="noopener noreferrer" className={fileLinkClass}>{children}</a>;
+}
+
+export function FileLink({path,children,download=false,className=fileLinkClass}) {
+  const [busy,setBusy] = useState(false);
+  const [error,setError] = useState("");
+  async function open() {
+    setBusy(true);
+    setError("");
+    const tab = download ? null : window.open("about:blank","_blank");
+    if (tab) tab.opener = null;
+    try {
+      const response = await arthaFetch(path);
+      const href = URL.createObjectURL(await response.blob());
+      if (tab && !tab.closed) {
+        tab.location.href = href;
+      } else {
+        const link = document.createElement("a");
+        link.href = href;
+        link.download = response.headers.get("content-disposition")?.match(/filename="?([^";]+)/i)?.[1] || "artha";
+        document.body.append(link);
+        link.click();
+        link.remove();
+      }
+      window.setTimeout(()=>URL.revokeObjectURL(href),60000);
+    } catch (problem) {
+      tab?.close();
+      if (problem.status === 401) window.location.assign("/login");
+      else setError(problem.message);
+    } finally {
+      setBusy(false);
+    }
+  }
+  return <span>
+    <button type="button" onClick={open} disabled={busy} className={`${className} cursor-pointer disabled:cursor-wait`}>
+      {busy ? "Memuat…" : children}
+    </button>
+    {error && <span role="alert" className="block text-sm text-rose-700 dark:text-rose-300">{error}</span>}
+  </span>;
 }
 
 export function EditDialog({label,title,description,children}) {

@@ -67,7 +67,7 @@ export function Registration({data}) {
       {payment && <div className="flex flex-wrap items-center gap-3 text-sm"><span>{paymentNumber(payment.id)}</span>
         <Status value={payment.status} />
         {payment.status === "confirmed" && payment.bill_paid >= payment.bill_amount &&
-          <FileLink href={`/api/artha/receipt/${payment.id}`}>Buka kuitansi PDF</FileLink>}
+          <FileLink path={`payments/${payment.id}/receipt`}>Buka kuitansi PDF</FileLink>}
         <Link className="font-semibold text-primary underline dark:text-indigo-300" href="/dashboard/frontdesk/spp">Lihat riwayat pembayaran</Link>
       </div>}
       <div><Submit busy={operation.busy || !pack || !groups.length}>Simpan Pendaftaran</Submit></div>
@@ -147,8 +147,8 @@ export function PaymentHistory({rows,center=false}) {
     ["Pembayaran",(row)=><>{money(row.amount)}<div>{row.method === "cash" ? "Tunai" : "Transfer"}</div></>],
     ["Status",(row)=><><Status value={row.status} />{row.rejection_reason && <div className="mt-1 text-rose-700 dark:text-rose-300">{row.rejection_reason}</div>}</>],
     ["Berkas",(row)=><div className="grid gap-1">
-      {row.method === "transfer" && <FileLink href={`/api/artha/proof/${row.id}`}>Bukti transfer</FileLink>}
-      {row.status === "confirmed" && row.bill_paid >= row.bill_amount && <FileLink href={`/api/artha/receipt/${row.id}`}>Kuitansi PDF</FileLink>}
+      {row.method === "transfer" && <FileLink path={`payments/${row.id}/proof`}>Bukti transfer</FileLink>}
+      {row.status === "confirmed" && row.bill_paid >= row.bill_amount && <FileLink path={`payments/${row.id}/receipt`}>Kuitansi PDF</FileLink>}
     </div>],
   ]} />;
 }

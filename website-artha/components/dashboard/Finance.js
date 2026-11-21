@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { billKind, EditDialog, Feedback, Field, FileLink, linkClass, money, Panel, paymentNumber, Status, Submit, Table, useMutation } from "./OperationsUI";
+import { billKind, EditDialog, ExternalLink, Feedback, Field, FileLink, linkClass, money, Panel, paymentNumber, Status, Submit, Table, useMutation } from "./OperationsUI";
 import { levelOptions, PaymentFields, PaymentHistory } from "./Registration";
 
 function PayForm({row,day,finish}) {
@@ -54,7 +54,7 @@ export function Bills({data,center=false,overdueOnly=false}) {
         {row.paid+row.pending<row.amount && <EditDialog label="Bayar" title="Catat pembayaran" description={`${row.student_name} | ${billKind(row.kind)} ${row.period}`}>
           {(finish)=><PayForm row={row} day={data.today} finish={finish} />}
         </EditDialog>}
-        {row.overdue && row.kind==="tuition" && <FileLink href={reminder(row)}>WhatsApp wali</FileLink>}
+        {row.overdue && row.kind==="tuition" && <ExternalLink href={reminder(row)}>WhatsApp wali</ExternalLink>}
       </div>]] : []),
     ]} />
   </Panel>;
@@ -68,7 +68,7 @@ function ReviewForm({row,finish}) {
     <div className="grid gap-2 text-sm">
       <p>Pengirim: <strong>{row.sender}</strong></p><p>Tanggal transfer: <strong>{row.transfer_on}</strong></p>
       <p>Nominal: <strong>{money(row.amount)}</strong></p>
-      <FileLink href={`/api/artha/proof/${row.id}`}>Buka pratinjau bukti transfer</FileLink>
+      <FileLink path={`payments/${row.id}/proof`}>Buka pratinjau bukti transfer</FileLink>
     </div>
     <Field label="Hasil pemeriksaan" name="decision" value={decision} onChange={(event)=>setDecision(event.target.value)}
       options={[["approve","Konfirmasi pembayaran"],["reject","Tolak bukti transfer"]]} />
@@ -136,7 +136,7 @@ export function Reconciliation({data,center=false}) {
       <dl className="grid gap-3 sm:grid-cols-2"><div><dt>Tunai sistem</dt><dd className="text-xl font-extrabold">{money(cash)}</dd></div>
         <div><dt>Transfer terkonfirmasi</dt><dd className="text-xl font-extrabold">{money(transfer)}</dd></div></dl>
       {closed ? <div className="mt-4 flex items-center gap-4"><Status value={closed.status} />
-        <FileLink href={`/api/artha/close/${closed.id}`}>Buka berita acara PDF</FileLink></div> :
+        <FileLink path={`reconciliations/${closed.id}/document`}>Buka berita acara PDF</FileLink></div> :
         <CloseForm cash={cash} />}
     </Panel>}
     <Panel title={center ? "Tutup kas cabang" : "Riwayat tutup kas"} description="Selisih dihitung dari kas fisik dikurangi kas tunai sistem.">
@@ -146,7 +146,7 @@ export function Reconciliation({data,center=false}) {
         ["Selisih",(row)=><span className={row.physical!==row.cash ? "font-bold text-rose-700 dark:text-rose-300" : ""}>{money(row.physical-row.cash)}</span>],
         ["Catatan","note"],["Status",(row)=><Status value={row.status} />],
         ["Aksi",(row)=><div className="grid gap-2 justify-items-start">
-          <FileLink href={`/api/artha/close/${row.id}`}>Berita acara PDF</FileLink>
+          <FileLink path={`reconciliations/${row.id}/document`}>Berita acara PDF</FileLink>
           {center && row.status!=="approved" && <EditDialog label="Tinjau" title="Tinjau rekonsiliasi cabang"
             description={`${row.branch_name} | ${row.day}`}>{(finish)=><ApprovalForm row={row} finish={finish} />}</EditDialog>}
         </div>],
@@ -192,8 +192,8 @@ export function Revenue({data,report,overview=false}) {
         ["Total",(row)=>money(row.cash+row.transfer)],["Transaksi","transactions"],
       ]} />
       {!error && !overview && <div className="mt-4 flex flex-wrap gap-3">
-        <a className={linkClass} href={`/api/artha/report?${query}&format=pdf`} target="_blank" rel="noopener noreferrer">Laporan PDF</a>
-        <a className={linkClass} href={`/api/artha/report?${query}&format=xlsx`}>Unduh Excel</a>
+        <FileLink className={linkClass} path={`reports/revenue?${query}&format=pdf`}>Laporan PDF</FileLink>
+        <FileLink className={linkClass} path={`reports/revenue?${query}&format=xlsx`} download>Unduh Excel</FileLink>
       </div>}
     </Panel>
     {!overview && !error && <Panel title="Rincian transaksi periode ini"><PaymentHistory rows={paymentRows} center /></Panel>}
