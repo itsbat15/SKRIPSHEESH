@@ -1,13 +1,14 @@
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 119]
+[HALAMAN DOKUMEN / PDF: 123]
 ================================================================================
+
  
  
  
 LAMPIRAN 
  
-105 
+109 
 KEMENTERIAN PENDIDIKAN, KEBUDAYAAN, 
 RISET, DAN TEKNOLOGI 
 INSTITUT TEKNOLOGI KALIMANTAN 
@@ -51,24 +52,30 @@ perangkat tablet di frontdesk setiap cabang untuk pencatatan.
 ●​ Ruang lingkup pengembangan sistem informasi difokuskan pada dua modul prioritas 
 paling mendesak, yaitu modul pendaftaran siswa baru dan modul pencatatan transaksi 
 
+
+
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 120]
+[HALAMAN DOKUMEN / PDF: 124]
 ================================================================================
+
  
  
 Dokumentasi Wawancara 
  
 WAWANCARA MITRA
  
-106 
+110 
 serta pengingat tagihan SPP bulanan. 
 ●​ Budaya kerja lembaga yang berlandaskan asas kekeluargaan menuntut perancangan 
 antarmuka sistem yang sederhana, ramah pengguna, dan mudah diadaptasi oleh staf 
 administrasi cabang tanpa resistensi operasional.  
 
+
+
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 121]
+[HALAMAN DOKUMEN / PDF: 125]
 ================================================================================
+
  
  
  
@@ -76,7 +83,7 @@ Dokumentasi Wawancara
  
 WAWANCARA MITRA
  
-107 
+111 
 Wawancara ke 2 
 Tanggal 17 Agustus 2026 
 Tanda Tangan 
@@ -94,7 +101,7 @@ Agenda
 Evaluasi Company Profile yang berjalan, dan 
 Perancangan Sistem Informasi Multicabang 
 Catatan Wawancara 
-●​ Web profil lembaga WordPress yang sebelumnya dikembangkan oleh pihak ketiga asal 
+●​ web profil lembaga WordPress yang sebelumnya dikembangkan oleh pihak ketiga asal 
 Yogyakarta ditinggalkan karena antarmuka yang rumit, kendala keterbatasan memori 
 alokasi server shared hosting, serta ketiadaan modul transaksi keuangan operasional. 
 ●​ Manajemen operasional memutuskan untuk membangun sistem informasi baru secara 
@@ -109,14 +116,17 @@ sebaran pendaftar per jenjang (SD, SMP, SMA) sebagai penentuan strategi promosi.
 rekapan fisik antarcabang selama ini sangat mengandalkan sistem titipan antar tentor, 
 sehingga memiliki risiko keamanan tinggi dan keterlambatan pelaporan. 
 
+
+
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 122]
+[HALAMAN DOKUMEN / PDF: 126]
 ================================================================================
+
  
  
  
 Dokumentasi Wawancara 
-108 
+112 
 Wawancara ke 3 
 Tanggal 7 September 2026 
 Tanda Tangan 
@@ -154,21 +164,27 @@ karena ditumpuk per satu cabang.
 ●​ Pimpinan sangat membutuhkan rekonsiliasi kas digital yang dilengkapi pencatatan  dan 
 dashboard penerimaan harian untuk memvalidasi dana masuk secara akurat. 
 
+
+
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 123]
+[HALAMAN DOKUMEN / PDF: 127]
 ================================================================================
+
  
  
 WAWANCARA MITRA
  
-109 
+113 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 124]
+[HALAMAN DOKUMEN / PDF: 128]
 ================================================================================
+
  
  
-110 
+114 
 Wawancara ke 4 
 Tanggal 20 Oktober 2026 
 Tanda Tangan 
@@ -209,13 +225,16 @@ web karena akan mempermudah pencarian riwayat siswa, pelunasan SPP, dan
 mengontrol kapasitas ruangan kelas tanpa perlu membuka buku besar fisik secara 
 berulang. 
 
+
+
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 125]
+[HALAMAN DOKUMEN / PDF: 129]
 ================================================================================
+
  
  
 Dokumentasi Wawancara 
  
 WAWANCARA MITRA
  
-111 
+115 

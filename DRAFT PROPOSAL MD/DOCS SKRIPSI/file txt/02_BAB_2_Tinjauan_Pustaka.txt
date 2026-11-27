@@ -1,7 +1,8 @@
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 30]
+[HALAMAN DOKUMEN / PDF: 29]
 ================================================================================
+
  
 BAB 2​
 TINJAUAN PUSTAKA 
@@ -28,10 +29,10 @@ manajemen
 beserta 
 siklus 
 hidup 
-pengembangannya dan metodologi Personal Extreme Programming (PxP). Aspek 
+pengembangannya dan metodologi Personal Extreme Programming (PXP). Aspek 
 kedua membahas teknik pemodelan kebutuhan dan perancangan sistem yang 
-meliputi User Stories, Use Case Diagram, Business Process Model and Notation 
-(BPMN), serta Entity Relationship Diagram (ERD). Aspek ketiga membedah 
+meliputi Business Process Model and Notation (BPMN), User Stories, Use Case 
+Diagram serta Entity Relationship Diagram (ERD). Aspek ketiga membedah 
 arsitektur teknologi yang terdiri dari Next.js, Tailwind CSS, Laravel, REST API, 
 dan database MySQL. Aspek keempat menguraikan metodologi pengujian 
 perangkat lunak yang mencakup Black Box Testing dan User Acceptance Testing 
@@ -47,11 +48,14 @@ menyimpan,
 dan 
 mendistribusikan informasi untuk mendukung pengambilan keputusan, 
 koordinasi, analisis masalah, serta visualisasi dalam suatu organisasi 
-16 
+15 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 31]
+[HALAMAN DOKUMEN / PDF: 30]
 ================================================================================
+
  
 (Laudon dan Laudon, 2020). Sistem informasi bekerja melalui siklus 
 pengolahan data yang melibatkan komponen input, process, output, dan 
@@ -72,28 +76,31 @@ keputusan dengan penyajian laporan secara berkala (Laudon dan Laudon,
 2020). SIM bekerja dengan cara mengirimkan data transaksi harian, 
 kemudian mentransformasikannya menjadi laporan manajerial, seperti 
 laporan berkala, laporan ringkasan, serta laporan penyimpangan 
-operasional. Ketersediaan informasi tersebut agar pengelola organisasi 
-dapat memantau efektivitas kinerja yang sedang berjalan, mengendalikan 
-aktivitas rutin, dan mengambil keputusan berlandaskan data yang 
-konsisten dan terintegrasi.  
+operasional. Ketersediaan informasi tersebut agar manajemen pusat 
+organisasi dapat memantau efektivitas kinerja yang sedang berjalan, 
+mengendalikan aktivitas rutin, dan mengambil keputusan berlandaskan 
+data yang konsisten dan terintegrasi.  
 2.1.2.​
 Personal Extreme Programming 
-Personal Extreme Programming (PxP) merupakan metodologi 
+Personal Extreme Programming (PXP) merupakan metodologi 
 rekayasa perangkat lunak yang diadaptasi dari prinsip-prinsip Extreme 
 Programming (XP) untuk diterapkan oleh pengembang tunggal. Konsep 
 XP untuk pengembang tunggal pertama kali diinisiasi oleh Agarwal dan 
 Umphress (2008) melalui praktik Extreme Programming for a Single 
-Person Team, yang kemudian distandarisasi oleh Dzhurov, Krasteva, dan 
-Ilieva (2009) menjadi kerangka kerja PxP.  
-17 
+Person Team, yang kemudian distandarisasi oleh Dzhurov dkk., (2009) 
+menjadi kerangka kerja PXP.  
+16 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 32]
+[HALAMAN DOKUMEN / PDF: 31]
 ================================================================================
+
  
 Gambar 2.1 Tahapan Personal Extreme Programming 
-(Dzhurov, Krasteva, dan Ilieva, 2009) 
-Pelaksanaan metodologi Personal Extreme Programming (PxP) 
+(Dzhurov dkk., 2009) 
+Pelaksanaan metodologi Personal Extreme Programming (PXP) 
 terbagi ke dalam tujuh tahapan proses yang berjalan secara sistematis dan 
 berulang dalam setiap iterasi pengembangan. Rangkaian tahapan tersebut 
 dirinci sebagai berikut: 
@@ -105,22 +112,19 @@ pengembang
 mengidentifikasi 
 kebutuhan 
 fungsional dan nonfungsional sistem melalui diskusi langsung 
-bersama pemangku kepentingan (Dzhurov, Krasteva dan Ilieva, 
-2009). 
-Hasil 
-identifikasi 
-kebutuhan 
-tersebut 
-kemudian 
-didefinisikan ke dalam bentuk dokumen spesifikasi kebutuhan 
-yang memuat kumpulan User Stories sebagai representasi fitur 
-operasional yang akan dibangun (Marthasari, Suharso dan 
-Ardiansyah, 2018; Fikri dan Arthawan, 2020). 
-18 
+bersama pemangku kepentingan (Dzhurov dkk., 2009). Hasil 
+identifikasi kebutuhan tersebut kemudian didefinisikan ke dalam 
+bentuk dokumen spesifikasi kebutuhan yang memuat kumpulan 
+User Stories sebagai representasi fitur operasional yang akan 
+dibangun (Marthasari dkk., 2018; Fikri dan Arthawan, 2020). 
+17 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 33]
+[HALAMAN DOKUMEN / PDF: 32]
 ================================================================================
+
  
 2.​ Perencanaan (Planning) 
 Pada tahap perencanaan, pengembang menyusun daftar User 
@@ -128,73 +132,87 @@ Stories yang telah disepakati untuk memetakan keseluruhan beban
 kerja sistem (Dzhurov dkk., 2009). Setiap User Story dianalisis 
 untuk menetapkan skala prioritas pengembangan serta diberikan 
 bobot Story Points untuk memperkirakan tingkat kompleksitas 
-pengerjaan 
-(Marthasari, 
-Suharso 
-dan 
-Ardiansyah, 
-2018). 
-Rangkaian kebutuhan tersebut dilanjutkan ke dalam beberapa 
-siklus iterasi dengan mempertimbangkan keterkaitan antarfitur dan 
-waktu pengembang tunggal (Agarwal dan Umphress, 2008).  
+pengerjaan (Marthasari dkk., 2018). Rangkaian kebutuhan tersebut 
+dilanjutkan 
+ke 
+dalam 
+beberapa 
+siklus 
+iterasi 
+dengan 
+mempertimbangkan keterkaitan antarfitur dan waktu pengembang 
+tunggal (Agarwal dan Umphress, 2008).  
 3.​ Inisialisasi Iterasi (Iteration Initialization) 
 Tahap ini menandai dimulainya setiap siklus iterasi pengembangan 
-perangkat lunak, setiap siklus diawali dengan pemilihan prioritas 
-dengan durasi pengerjaan yang berlangsung antara satu hingga tiga 
-minggu sesuai lingkup pengerjaan (Dzhurov, Krasteva dan Ilieva, 
-2009; Praseptiawan dkk., 2025).  
+perangkat lunak, pengembang memilih dan menetapkan sejumlah 
+tugas berdasarkan prioritas serta ruang lingkup pekerjaan yang 
+telah 
+direncanakan 
+sebelumnya 
+untuk 
+menjadi 
+fokus 
+pengembangan pada iterasi tersebut. Setiap siklus diawali dengan 
+pemilihan prioritas dengan durasi pengerjaan yang berlangsung 
+antara satu hingga tiga minggu sesuai lingkup pengerjaan (Dzhurov 
+dkk., 2009; Praseptiawan dkk., 2025).  
 4.​ Perancangan (Design)​
 Tahap ini menerapkan prinsip Simple Design untuk menghasilkan 
 struktur perangkat lunak yang ringkas dan hanya berfokus pada 
-kebutuhan iterasi yang sedang berjalan (Dzhurov, Krasteva dan 
-Ilieva, 2009). Pengembang merancang antarmuka sistem dalam 
-bentuk wireframe, menyusun pemodelan alur kerja interaksi 
-pengguna menggunakan Use Case Diagram, serta memetakan 
-struktur data relasional menggunakan Entity Relationship Diagram 
-(ERD) untuk mempermudah penulisan kode program (Fikri dan 
-Arthawan, 2020; Musofa dkk., 2025).    
+kebutuhan iterasi yang sedang berjalan (Dzhurov dkk., 2009). 
+Pengembang 
+merancang 
+antarmuka 
+sistem 
+dalam 
+bentuk 
+wireframe, menyusun pemodelan alur kerja interaksi pengguna 
+menggunakan Use Case Diagram, serta memetakan struktur data 
+relasional menggunakan Entity Relationship Diagram (ERD) untuk 
+mempermudah penulisan kode program (Fikri dan Arthawan, 
+2020; Musofa dkk., 2025).    
+18 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 33]
+================================================================================
+
+ 
 5.​ Implementasi (Implementation)​
 Pada tahap ini berlangsung proses penulisan kode program untuk 
 mengimplementasikan seluruh objek dan fungsi yang telah 
-19 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 34]
-================================================================================
- 
-ditetapkan pada tahap desain (Dzhurov, Krasteva dan Ilieva, 2009). 
-Pengembang menerapkan alur kerja terstruktur yang terdiri atas 
-tiga tahapan berurutan, yaitu pembuatan pengujian unit (Unit 
-Testing), penulisan kode fitur (code generation), dan refactoring 
-(Marthasari, Suharso dan Ardiansyah, 2018). Tahap ini dinyatakan 
-selesai apabila seluruh kode program berjalan dengan benar dan 
-pengujian unit berhasil lolos tanpa error.   
+ditetapkan pada tahap desain (Dzhurov dkk., 2009). Pengembang 
+menerapkan alur kerja terstruktur yang terdiri atas tiga tahapan 
+berurutan, yaitu pembuatan pengujian unit (Unit Testing), 
+penulisan kode fitur (code generation), dan refactoring (Marthasari 
+dkk., 2018). Tahap ini dinyatakan selesai apabila seluruh kode 
+program berjalan dengan benar dan pengujian unit berhasil lolos 
+tanpa error.   
 6.​ Pengujian Sistem (System Testing)​
 Pada tahap ini, seluruh modul yang telah selesai dibangun diuji 
-untuk 
-memverifikasi 
-pemenuhan 
-persyaratan 
-awal 
-sistem 
-(Dzhurov, Krasteva dan Ilieva, 2009). Pengembang melakukan 
-verifikasi fungsi operasional menggunakan teknik Black Box 
-Testing untuk memastikan bahwa seluruh data yang masuk dan 
-antarmuka berjalan valid sesuai skenario bisnis (Musofa dkk., 
-2025).  
+untuk memverifikasi pemenuhan persyaratan awal sistem (Dzhurov 
+dkk., 2009). Pengembang melakukan verifikasi fungsi operasional 
+menggunakan teknik Black Box Testing untuk memastikan bahwa 
+seluruh data yang masuk dan antarmuka berjalan valid sesuai 
+skenario bisnis (Musofa dkk., 2025).  
 7.​ Retrospektif (Retrospective)​
 Tahap ini menjadi fase evaluasi akhir dari setiap siklus iterasi yang 
 telah dijalankan pada tahap ini dilakukan analisis perbandingan 
 antara estimasi waktu pengerjaan tugas dengan durasi kerja 
-(Dzhurov, Krasteva dan Ilieva, 2009), serta memastikan tidak ada 
-kesalahan fungsi yang tersisa sebelum sistem beralih ke iterasi 
-berikutnya (Musofa dkk., 2025).  
+(Dzhurov dkk., 2009), serta memastikan tidak ada kesalahan fungsi 
+yang tersisa sebelum sistem beralih ke iterasi berikutnya (Musofa 
+dkk., 2025).  
  
-20 
+19 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 35]
+[HALAMAN DOKUMEN / PDF: 34]
 ================================================================================
+
  
 2.1.3.​
 Business Process Model and Notation (BPMN) 
@@ -218,7 +236,7 @@ sistem informasi.
 Dalam metodologi rekayasa proses bisnis, pemodelan alur kerja 
 terikat pada siklus hidup perbaikan proses yang menuntut dua pemetaan 
 utama, yaitu analisis proses bisnis As-Is pada tahap penemuan proses 
-Process Discovery dan perancangan proses bisnis To-Be pada tahap 
+process discovery dan perancangan proses bisnis To-Be pada tahap 
 perancangan ulang (Process Redesign). Penyusunan diagram BPMN 
 mengorganisasikan elemen visual ke dalam empat kelompok notasi pokok, 
 yaitu objek aliran (flow objects), objek penghubung (connecting objects), 
@@ -240,15 +258,18 @@ dan
 To-Be 
 diimplementasikan menggunakan perangkat lunak Bizagi Modeler, yang 
 terbukti efektif menghasilkan model alur kerja terstruktur yang adaptif 
-sebagai landasan spesifikasi kebutuhan perangkat lunak (Yusmar, 
-21 
+sebagai landasan spesifikasi kebutuhan perangkat lunak (Yusmar dkk., 
+20 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 36]
+[HALAMAN DOKUMEN / PDF: 35]
 ================================================================================
+
  
-Nurhadryani dan Hermadi, 2023). Rangkuman unsur dan notasi dasar 
-BPMN disajikan pada Tabel 2.1. 
+2023). Rangkuman unsur dan notasi dasar BPMN disajikan pada Tabel 
+2.1. 
 Tabel 2.1 Unsur dan Notasi Business Process Model and Notation 
 Kategori 
 Elemen 
@@ -327,11 +348,14 @@ atau
 menggabungkan 
 kembali 
 alur paralel menjadi satu. 
-22 
+21 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 37]
+[HALAMAN DOKUMEN / PDF: 36]
 ================================================================================
+
  
 Kategori 
 Elemen 
@@ -420,11 +444,14 @@ melampaui masa hidup satu
 instans proses bisnis. 
   
  
-23 
+22 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 38]
+[HALAMAN DOKUMEN / PDF: 37]
 ================================================================================
+
  
 2.1.4.​
 User Stories 
@@ -447,17 +474,20 @@ Kriteria penerimaan (acceptance criteria) berfungsi sebagai
 batasan operasional dan tolok ukur dari suatu user story. Kriteria ini 
 dirumuskan dalam bentuk skenario pengujian yang dapat diverifikasi, 
 misalnya keberhasilan validasi masukan data, perubahan status transaksi, 
-atau label peringatan error (Febrianto, Wulansari dan Latipah, 2020). 
-Dalam metodologi PxP, user stories dan kriteria penerimaan menjadi 
-fondasi utama dalam perancangan kasus uji Black Box Testing dan 
-skenario User Acceptance Testing (UAT). Format penulisan user story 
-beserta kriteria penerimaannya disajikan pada Tabel 2.2.  
+atau label peringatan error (Febrianto dkk., 2020). Dalam metodologi 
+PXP, user stories dan kriteria penerimaan menjadi fondasi utama dalam 
+perancangan kasus uji Black Box Testing dan skenario User Acceptance 
+Testing (UAT). Format penulisan user story beserta kriteria penerimaannya 
+disajikan pada Tabel 2.2.  
  
-24 
+23 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 39]
+[HALAMAN DOKUMEN / PDF: 38]
 ================================================================================
+
  
 Tabel 2.2 Contoh Format Penulisan User Story  
 Kode  
@@ -515,11 +545,14 @@ fungsional yang disediakan perangkat lunak untuk memenuhi tujuan kerja
 pengguna, sehingga perancangannya berfokus pada apa yang dilakukan 
 oleh sistem untuk aktor, bukan bagaimana mekanisme prosedural di dalam 
 kode dijalankan (Sommerville, 2011). 
-25 
+24 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 40]
+[HALAMAN DOKUMEN / PDF: 39]
 ================================================================================
+
  
 Komponen utama dalam use case diagram terdiri dari aktor, use 
 case, dan relasi keterhubungan (Kurniawan, 2018; Hasanah dan Untari, 
@@ -538,11 +571,14 @@ pewarisan (generalization). Format penulisan simbol use case diagram
 disajikan pada Tabel 2.3. 
  
  
-26 
+25 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 41]
+[HALAMAN DOKUMEN / PDF: 40]
 ================================================================================
+
  
 Tabel 2.3 Simbol Use Case Diagram 
 Nama Simbol 
@@ -564,10 +600,10 @@ Use Case
  
 Fungsionalitas 
 atau 
-perilaku yang disediakan 
-sistem sebagai unit yang 
-menghasilkan 
-nilai 
+perilaku 
+sebagai 
+unit 
+yang menghasilkan nilai 
 terukur 
 bagi 
 aktor, 
@@ -606,13 +642,16 @@ Relasi perluasan fungsi
 secara kondisional pada 
 titik perluasan tertentu 
 (extension point) yang 
-27 
+hanya dieksekusi dalam 
+26 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 42]
+[HALAMAN DOKUMEN / PDF: 41]
 ================================================================================
+
  
-hanya dieksekusi dalam 
 alur alternatif jika syarat 
 terpenuhi. 
 Generalization 
@@ -652,11 +691,14 @@ atau horizontal yang merepresentasikan aktor atau entitas penanggung
 jawab dari setiap aksi. Format penulisan simbol activity diagram disajikan 
 pada Tabel 2.4. 
  
-28 
+27 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 43]
+[HALAMAN DOKUMEN / PDF: 42]
 ================================================================================
+
  
 Tabel 2.4 Simbol Activity Diagram  
 Nama Simbol 
@@ -666,8 +708,10 @@ Initial State
  
 Lingkaran 
 hitam 
-pekat 
-yang menandai titik mula 
+yang 
+menandai 
+titik 
+mula 
 dimulainya 
 suatu 
 aliran 
@@ -730,11 +774,14 @@ seluruh
 siklus 
 aktivitas 
 sistem. 
-29 
+28 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 44]
+[HALAMAN DOKUMEN / PDF: 43]
 ================================================================================
+
  
 Swimlane 
  
@@ -784,11 +831,14 @@ yang
 digambarkan dalam bentuk elips dan melekat pada entitas maupun relasi 
 (Hasanah dan Untari, 2020). Tabel 2.5 menyajikan simbol dan notasi 
 pemodelan data. 
-30 
+29 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 45]
+[HALAMAN DOKUMEN / PDF: 44]
 ================================================================================
+
  
 Tabel 2.5 Unsur dan Notasi Entity Relationship Diagram  
 Notasi 
@@ -858,11 +908,14 @@ atribut bergaris bawah
 yang 
 menandakan 
 atribut 
-31 
+30 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 46]
+[HALAMAN DOKUMEN / PDF: 45]
 ================================================================================
+
  
 pengidentifikasi 
 unik 
@@ -904,30 +957,32 @@ relasi, yaitu satu ke satu
 banyak (M:N). 
  
  
-32 
+31 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 47]
+[HALAMAN DOKUMEN / PDF: 46]
 ================================================================================
+
  
 2.1.8.​
 Arsitektur Tiga Lapis (Three-Tier Architecture) 
 Arsitektur tiga lapis (three-tier architecture) merupakan pola 
 perancangan perangkat lunak terdistribusi yang membagi seluruh 
-fungsionalitas sistem ke dalam tiga lapisan terpisah secara logis maupun 
-fisik (Sommerville, 2011). Tiga lapisan utama dalam arsitektur ini 
-mencakup lapisan presentasi antarmuka pengguna (Presentation Tier), 
-lapisan logika pemrosesan bisnis aplikasi (Application Tier), dan lapisan 
-penyimpanan data (Data Storage Tier) (Yusup, Rahardja dan Prasetiyani, 
-2010; Sommerville, 2011). Lapisan presentasi beroperasi pada sisi 
-perangkat pengguna, yang berfungsi menerima input serta menyajikan 
-informasi visual tanpa melakukan manipulasi data secara langsung. 
-Lapisan aplikasi bertindak sebagai pusat pengendali logika yang 
-mengeksekusi aturan bisnis (business rules), memvalidasi hak akses 
-otorisasi pengguna, serta mengelola alur kerja transaksi. Sementara itu, 
-lapisan penyimpanan data bertugas menjamin persistensi, konsistensi, 
-serta keutuhan data relasional melalui sistem manajemen basis data 
-(Database Management System) (Yusup, Rahardja dan Prasetiyani, 2010). 
+fungsionalitas sistem ke dalam tiga lapisan secara terpisah (Sommerville, 
+2011). Tiga lapisan utama dalam arsitektur ini mencakup lapisan 
+presentasi antarmuka pengguna (Presentation Tier), lapisan logika 
+pemrosesan bisnis aplikasi (Application Tier), dan lapisan penyimpanan 
+data (Data Tier) (Yusup dkk., 2010; Sommerville, 2011). Lapisan 
+presentasi beroperasi pada sisi perangkat pengguna, yang berfungsi 
+menerima input serta menyajikan informasi visual. Lapisan aplikasi 
+bertindak sebagai pusat pengendali logika yang mengeksekusi aturan 
+bisnis (business rules), memvalidasi hak akses otorisasi pengguna, serta 
+mengelola alur kerja transaksi. Sementara itu, lapisan penyimpanan data 
+bertugas menjamin persistensi, konsistensi, serta keutuhan data relasional 
+melalui sistem manajemen basis data (Database Management System) 
+(Yusup dkk., 2010). 
 2.1.9.​
 Next.js 
 Next.js merupakan framework berbasis React yang digunakan 
@@ -935,18 +990,20 @@ untuk membangun antarmuka secara terstruktur dan efisien. Framework
 ini memiliki keunggulan utama berupa dukungan Server-Side Rendering 
 (SSR) dan sistem perutean direktori halaman (Widarti dan Akbar, 2026). 
 Melalui konsep SSR, proses pengolahan data dan perenderan antarmuka 
-diselesaikan terlebih dahulu di sisi server sebelum dokumen HTML 
-dikirimkan ke browser pengguna (Widarti dan Akbar, 2026). Pendekatan 
-ini membuat waktu pemuatan halaman awal (initial page load) menjadi 
-jauh lebih cepat, mengurangi beban komputasi pada perangkat, serta 
-menghasilkan tampilan halaman yang lebih responsif saat menyajikan data 
-dinamis. 
+diselesaikan terlebih dahulu di sisi server sebelum dikirimkan ke browser 
+pengguna (Widarti dan Akbar, 2026). Pendekatan ini membuat waktu 
+pemuatan halaman awal (initial page load) menjadi jauh lebih cepat, 
+mengurangi beban komputasi pada perangkat, serta menghasilkan 
+tampilan halaman yang lebih responsif saat menyajikan data dinamis. 
  
-33 
+32 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 48]
+[HALAMAN DOKUMEN / PDF: 47]
 ================================================================================
+
  
 Selain meningkatkan performa kecepatan akses, arsitektur Next.js 
 juga memberikan perlindungan tambahan pada aspek keamanan 
@@ -962,10 +1019,7 @@ handlers.
 Framework ini juga menyediakan fitur middleware di sisi server yang 
 bertindak sebagai penyaring awal untuk memeriksa status autentikasi 
 cookies dan hak akses pengguna sebelum halaman ditampilkan (Widarti 
-dan Akbar, 2026). Melalui mekanisme tersebut, sistem dapat membatasi 
-akses ke berbagai halaman administratif secara terstruktur dan memastikan 
-bahwa fitur sensitif hanya dapat dibuka oleh pengguna yang memiliki 
-kewenangan. 
+dan Akbar, 2026).  
 2.1.10.​
 Tailwind CSS 
 Tailwind CSS merupakan framework CSS dengan pendekatan 
@@ -986,16 +1040,19 @@ tampilan perangkat seluler hingga layar desktop. Penerapan utilitas ini juga
 mempermudah pemeliharaan kode program dalam jangka panjang karena 
 fungsi dari setiap kelas visual terlihat secara jelas pada struktur dokumen 
 antarmuka (Santoso, 2025).  
-34 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 49]
-================================================================================
- 
 2.1.11.​
 Laravel 
 Laravel merupakan framework dengan menggunakan bahasa 
 pemrograman PHP yang dirancang untuk mempercepat perancangan dan 
+33 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 48]
+================================================================================
+
+ 
 implementasi perangkat lunak melalui penerapan pola arsitektur 
 Model-View-Controller (MVC) (Tan, 2025). Menurut Tan (2025), 
 keselarasan antara kerangka kerja Laravel dan desain sistem berbasis 
@@ -1004,17 +1061,22 @@ secara teratur agar proses perancangan perangkat lunak berjalan dengan
 baik. Pemisahan tanggung jawab antarkomponen arsitektur tersebut 
 membuat pemeliharaan kode program menjadi lebih terstruktur dan 
 efisien. 
-Pengelolaan data relasional dan keamanan hak akses pada 
-framework Laravel didukung oleh dua fitur utama, yaitu Object-Relational 
-Mapping (ORM) Eloquent dan lapisan middleware. Tan (2025) 
-menjelaskan bahwa kelas model pada Laravel bertindak sebagai super 
-class bagi seluruh entitas data yang memanfaatkan Eloquent ORM, 
-sehingga interaksi basis data dapat dipetakan secara terstruktur ke dalam 
-objek program. Selain itu, Laravel menyediakan lapisan middleware yang 
-diimplementasikan pada tingkat kelas controller untuk memproses 
-permintaan HTTP (HTTP request), memvalidasi autentikasi token, serta 
-mengatur pembagian hak akses pengguna (multi-user access) berdasarkan 
-relasi tabel peran (role) yang terhubung dalam database (Tan, 2025). 
+Dalam pengelolaan data, Laravel menyediakan Object-Relational 
+Mapping (ORM) melalui Eloquent yang memungkinkan pengembang 
+melakukan 
+interaksi 
+dengan 
+basis data relasional menggunakan 
+pendekatan 
+objek. 
+Selain 
+itu, 
+Laravel menyediakan mekanisme 
+middleware untuk memproses dan memeriksa permintaan HTTP (HTTP 
+request) sebelum diteruskan ke bagian aplikasi berikutnya. Middleware 
+dapat dimanfaatkan untuk menerapkan autentikasi dan pembatasan hak 
+akses pengguna berdasarkan peran (role) yang telah ditentukan dalam 
+sistem (Tan, 2025). 
 2.1.12.​
 REST API 
 Representational 
@@ -1027,29 +1089,30 @@ memfasilitasi pertukaran data antarsistem secara terstruktur melalui
 protokol standar Hypertext Transfer Protocol (HTTP). Arsitektur ini 
 menerapkan prinsip pemisahan tugas (separation of concerns) antara sisi 
 klien dan server, di mana setiap data atau entitas diakses sebagai sumber 
-daya (resource) melalui alamat endpoint yang seragam (Haryono, Rosyani, 
-dan Ardiansyah, 2025). Dalam pola komunikasi ini, interaksi bersifat 
-35 
+daya (resource) melalui alamat endpoint yang seragam (Haryono dkk., 
+2025). Dalam pola komunikasi ini, interaksi bersifat stateless, artinya 
+server tidak menyimpan riwayat sesi antarpermintaan sehingga setiap 
+permintaan dari klien wajib memuat seluruh informasi dan parameter yang 
+dibutuhkan secara lengkap (Tanaem dkk., 2016). Format data yang umum 
+digunakan dalam pengiriman muatan data (payload) adalah JavaScript 
+Object Notation (JSON).  
+34 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 50]
+[HALAMAN DOKUMEN / PDF: 49]
 ================================================================================
+
  
-stateless, artinya server tidak menyimpan riwayat sesi antarpermintaan 
-sehingga setiap permintaan dari klien wajib memuat seluruh informasi dan 
-parameter yang dibutuhkan secara lengkap (Tanaem, Manongga dan Iriani, 
-2016). Format data yang umum digunakan dalam pengiriman muatan data 
-(payload) adalah JavaScript Object Notation (JSON), yang memiliki 
-struktur ringan sehingga mempercepat proses serialisasi serta transmisi 
-data antarkomponen aplikasi. 
 Selain menyederhanakan integrasi antarsistem, REST API 
 memanfaatkan metode standar HTTP untuk mendefinisikan tindakan 
 operasional terhadap sumber daya data. Keempat metode HTTP yang 
-umum digunakan dalam REST API, yaitu GET untuk membaca data, 
-POST untuk membuat data baru, PUT untuk memperbarui data, dan 
-DELETE untuk menghapus data. Tanaem dkk. (2016) menambahkan 
-bahwa aspek keamanan komunikasi data pada REST API diperkuat 
-melalui mekanisme autentikasi token yang disematkan pada bagian header 
+umum digunakan dalam REST API, yaitu GET untuk mengambil atua 
+membaca data, POST untuk membuat data baru, PUT untuk memperbarui 
+data, dan DELETE untuk menghapus data. Tanaem dkk. (2016) 
+menambahkan bahwa aspek keamanan komunikasi data pada REST API 
+diperkuat melalui mekanisme autentikasi token pada bagian header 
 permintaan HTTP untuk memvalidasi hak akses klien sebelum permintaan 
 diproses oleh server.  
 2.1.13.​
@@ -1057,35 +1120,31 @@ MySQL
 MySQL adalah salah satu sistem manajemen basis data relasional 
 Relational Database Management System (RDBMS) yang mengorganisasi 
 data ke dalam bentuk tabel-tabel berelasi. Menurut Ilham dkk. (2026), 
-struktur 
-tabel 
-pada 
-MySQL 
-menghubungkan 
-baris 
-antarentitas 
-menggunakan atribut primary key dan foreign key untuk mencegah 
-anomali serta redundansi data. Dengan menerapkan mekanisme validasi 
-skema saat penulisan (schema-on-write), di mana setiap atribut data yang 
-masuk diverifikasi tipe, panjang, dan batasannya agar selalu mematuhi 
-aturan relasional yang telah ditetapkan (Ilham, Rosyani, dan Ardiansyah, 
-2026).  
+pengelolaan relasi antartabel pada MySQL memanfaatkan atribut Primary 
+Key dan Foreign Key untuk menjaga integritas data serta memastikan 
+hubungan antarentitas tetap konsisten. Dengan menerapkan mekanisme 
+validasi skema saat penulisan (schema-on-write), di mana setiap atribut 
+data yang masuk diverifikasi tipe, panjang, dan batasannya agar selalu 
+mematuhi aturan relasional yang telah ditetapkan (Ilham dkk., 2026).  
 Keunggulan dari MySQL terletak pada kemampuannya menjaga 
 konsistensi data melalui penegakan prinsip ACID (Atomicity, Consistency, 
 Isolation, Durability). Ilham dkk. (2026) menjelaskan bahwa prinsip 
-36 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 51]
-================================================================================
- 
 ACID menjamin setiap rangkaian operasi manipulasi data diselesaikan 
 secara menyeluruh atau dibatalkan sepenuhnya jika terjadi kesalahan 
 sistem, sehingga risiko data tersimpan secara parsial dapat dihindari. 
 Sehingga, MySQL sangat efektif digunakan untuk menangani data 
 transaksional yang bersifat kritikal, seperti pencatatan transaksi keuangan, 
 mutasi pembayaran, dan pemrosesan data antarentitas yang menuntut 
-akurasi tinggi (Ilham, Rosyani, dan Ardiansyah, 2026).  
+akurasi tinggi (Ilham dkk., 2026).  
+35 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 50]
+================================================================================
+
+ 
 2.1.14.​
 Black Box Testing 
 Black Box Testing merupakan metode pengujian perangkat lunak 
@@ -1093,13 +1152,13 @@ untuk evaluasi fungsionalitas sistem berdasarkan spesifikasi kebutuhan
 tanpa memeriksa struktur kode internal maupun logika algoritma di 
 dalamnya. Pengujian ini mengevaluasi kesesuaian antara data masukan 
 dengan luaran yang dihasilkan untuk mendeteksi potensi anomali pada 
-antarmuka, fungsionalitas sistem, dan pemrosesan data (Fadhilasari, Sari, 
-dan Fathurrahman, 2024). Menurut Fadhilasari dkk. (2024), efisiensi black 
-box testing dapat dioptimalkan melalui teknik Equivalence Partitioning 
-yang membagi domain masukan ke dalam data valid dan tidak valid. 
-Melalui pembagian tersebut, penguji cukup memilih sampel representatif 
-dari setiap kelompok nilai untuk memverifikasi perilaku sistem tanpa 
-harus menguji seluruh kemungkinan kombinasi data secara berulang. 
+antarmuka, fungsionalitas sistem, dan pemrosesan data (Fadhilasari dkk., 
+2024). Menurut Fadhilasari dkk. (2024), efisiensi black box testing dapat 
+dioptimalkan melalui teknik Equivalence Partitioning yang membagi 
+domain masukan ke dalam data valid dan tidak valid. Melalui pembagian 
+tersebut, penguji cukup memilih sampel representatif dari setiap kelompok 
+nilai untuk memverifikasi perilaku sistem tanpa harus menguji seluruh 
+kemungkinan kombinasi data secara berulang. 
 Selain membagi kelompok data, black box testing diperkuat 
 dengan penerapan teknik Boundary Value Analysis (BVA) untuk 
 memeriksa area batas masukan. Fadhilasari dkk. (2024) menjelaskan 
@@ -1107,52 +1166,55 @@ bahwa teknik BVA berfokus pada pengujian nilai ekstrem di sekitar batas
 atas dan batas bawah masukan. Penggabungan antara Equivalence 
 Partitioning dan Boundary Value Analysis menghasilkan skenario kasus 
 uji yang lebih terarah dan mampu menemukan cacat validasi data yang 
-berpotensi terlewatkan (Fadhilasari, Sari, dan Fathurrahman, 2024).  
+berpotensi terlewatkan.  
 2.1.15.​
 User Acceptance Testing 
-User Acceptance Testing (UAT) yaitu tahapan pengujian perangkat 
-lunak yang dilakukan langsung oleh pengguna akhir (end-user) untuk 
+User Acceptance Testing (UAT) merupakan tahapan pengujian 
+perangkat lunak yang melibatkan pengguna akhir (end-user) untuk 
+memverifikasi 
+kesesuaian 
+sistem 
+dengan 
+kebutuhan 
+dan proses 
+operasional yang telah ditetapkan. Pengujian ini berfokus pada penerimaan 
+sistem oleh pengguna melalui pelaksanaan skenario pengujian berdasarkan 
+fungsi dan peran masing-masing pengguna. Melalui pengujian tersebut, 
+pengguna dapat mengevaluasi apakah fungsionalitas sistem telah berjalan 
+sesuai dengan kebutuhan operasional (Apriyanti dkk., 2024). 
+36 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 51]
+================================================================================
+
+ 
+Selain menggunakan skenario pengujian, UAT dapat didukung 
+dengan instrumen kuesioner untuk memperoleh penilaian pengguna 
+terhadap sistem secara kuantitatif. Salah satu pendekatan yang dapat 
+diterapkan adalah skala Likert lima poin, yang terdiri atas kategori Sangat 
+Tidak Setuju, Tidak Setuju, Netral, Setuju, dan Sangat Setuju. Hasil 
+penilaian kuesioner selanjutnya dapat diolah menjadi persentase dan 
+diinterpretasikan berdasarkan rentang kategori evaluasi yang telah 
+ditentukan untuk menggambarkan tingkat penerimaan pengguna terhadap 
+sistem (Apriyanti dkk., 2024). 
+ 
 37 
+
+
 
 ================================================================================
 [HALAMAN DOKUMEN / PDF: 52]
 ================================================================================
- 
-memverifikasi apakah sistem yang dikembangkan telah memenuhi 
-kebutuhan operasional. Berbeda dari pengujian yang dilakukan oleh 
-pengembang, UAT berfokus pada pengalaman interaksi pengguna dalam 
-menjalankan tugas fungsional sesuai peran dan alur kerja masing-masing 
-(Apriyanti, Wati dan Najaf, 2024). Menurut Apriyanti dkk. (2024), User 
-Acceptance Testing dilakukan dengan menguji skenario operasional untuk 
-menilai kemudahan penggunaan, kejelasan antarmuka, serta proses bisnis 
-yang sesuai. 
-Selain 
-mengevaluasi alur operasional, UAT menggunakan 
-instrumen kuesioner untuk mengukur persepsi kepuasan dan tingkat 
-penerimaan 
-pengguna 
-secara 
-kuantitatif. 
-Apriyanti 
-dkk. 
-(2024) 
-menjelaskan bahwa pengukuran kepuasan pengguna dapat menerapkan 
-kuesioner berskala Likert lima poin yang memuat kriteria penilaian dari 
-Sangat Tidak Setuju hingga Sangat Setuju. Hasil jawaban kuesioner 
-tersebut kemudian dihitung nilai persentasenya dan dikelompokkan ke 
-dalam rentang bobot evaluasi untuk menentukan kategori kelayakan sistem 
-secara objektif (Apriyanti, Wati dan Najaf, 2024).  
-38 
 
-================================================================================
-[HALAMAN DOKUMEN / PDF: 53]
-================================================================================
  
 2.2.​
 Penelitian Terdahulu 
-Kajian terhadap penelitian terdahulu dilakukan untuk memahami konteks permasalahan serta membangun landasan 
-perancangan bagi sistem yang dikembangkan. Berikut adalah rangkuman hasil penelitian terdahulu yang memiliki keterkaitan dengan 
-penelitian yang dilakukan, sebagaimana disajikan pada Tabel 2.6. 
+Kajian terhadap penelitian terdahulu dilakukan untuk memahami permasalahan serta membangun landasan perancangan bagi 
+sistem yang dikembangkan. Berikut adalah rangkuman hasil penelitian terdahulu yang memiliki keterkaitan dengan penelitian yang 
+dilakukan, sebagaimana disajikan pada Tabel 2.6. 
 Tabel 2.6 Penelitian Terdahulu 
 No 
 Penulis dan Tahun 
@@ -1186,14 +1248,12 @@ masih
 mengandalkan Google 
 Forms, 
 spreadsheet, 
-dan grup pesan instan, 
+dan 
+komunikasi 
+Whatsapp, 
 sehingga 
-memicu 
-jadwal 
-kelas 
-tidak 
-terstruktur, 
-data 
+memicu jadwal kelas 
+tidak terstruktur, data 
 peserta didik tersebar, 
 dan minim proteksi 
 keamanan 
@@ -1236,23 +1296,15 @@ mandiri
 siswa, 
 sedangkan sistem ARTHA 
 mengelola delapan kantor 
-cabang 
-terpadu 
-dengan 
-pembatasan 2 hak akses, 
-pendaftaran siswa di cabang, 
-kendali 
-kuota 
-kelompok 
-belajar, 
-rekonsiliasi 
-kas, 
-serta menggunakan metode 
-39 
+cabang. 
+38 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 54]
+[HALAMAN DOKUMEN / PDF: 53]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1260,9 +1312,6 @@ Permasalahan
 Metode 
 Hasil Penelitian 
 Keterkaitan 
-Personal 
-Extreme 
-Programming (PxP). 
 2 
 Teddy 
 Marcus 
@@ -1342,12 +1391,15 @@ menggunakan
 metode 
 Personal 
 Extreme 
-Programming (PxP). 
-40 
+Programming (PXP). 
+39 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 55]
+[HALAMAN DOKUMEN / PDF: 54]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1409,42 +1461,13 @@ arsitektur sistem informasi
 manajemen 
 multicabang 
 terintegrasi berbasis web. 
-Perbedaan: Sistem rujukan 
-diterapkan 
-pada 
-sektor 
-industri perhotelan dengan 
-metode Waterfall, sedangkan 
-sistem ARTHA diterapkan 
-pada operasional bimbingan 
-belajar 
-delapan 
-cabang 
-dengan 
-validasi 
-kuota 
-kelompok 
-belajar, 
-rekonsiliasi 
-kas, 
-serta 
-menggunakan 
-metode 
-Personal 
-Extreme 
-Programming (PxP). 
-41 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 56]
-================================================================================
- 
-No 
-Penulis dan Tahun 
-Permasalahan 
-Metode 
-Hasil Penelitian 
-Keterkaitan 
+Perbedaan: Diterapkan pada 
+sektor industri perhotelan 
+dengan metode Waterfall, 
+sedangkan sistem ARTHA 
+diterapkan pada operasional 
+bimbingan belajar delapan 
+cabang. 
 4 
 Bagus 
 Sudirman 
@@ -1467,13 +1490,10 @@ risiko
 selisih 
 pencatatan antara buku 
 kas perusahaan dan 
-rekening koran bank. 
-Research and 
-Development 
-(R&D)  
+Prototyping 
 Menghasilkan sistem informasi 
 pengendalian kas bank berbasis 
-web 
+client-server 
 yang 
 menyediakan 
 antarmuka 
@@ -1481,41 +1501,42 @@ pencatatan
 penerimaan 
 kas, 
 formulir 
-pengeluaran, serta pembuatan 
-laporan rekonsiliasi kas bank 
-otomatis dengan pemisahan hak 
-akses antara staf kasir dan 
-pimpinan. 
+pengeluaran, 
+serta 
+pembuatan laporan rekonsiliasi 
+kas 
+bank 
+otomatis 
+dengan 
+pembatasan 
+hak 
+akses 
+pengguna.  
 Persamaan: 
 Penerapan 
 konsep rekonsiliasi mutasi 
-rekening koran perbankan 
-guna 
-mencocokkan 
-pencatatan 
-kas 
+perbankan 
+untuk 
+mencocokkan pencatatan kas 
 internal 
-dengan rekening bank. 
+dengan 
+rekening 
+bank. 
 Perbedaan: Berfokus pada 
 pengendalian 
 kas 
 entitas 
 bisnis perdagangan dengan 
-pendekatan 
-prototyping, 
-sedangkan sistem ARTHA 
-mengintegrasikan verifikasi 
-mutasi ke dalam arsitektur 
-web multicabang bimbingan 
-belajar 
-menggunakan 
-metode Personal Extreme 
-Programming (PxP). 
-42 
+arsitektur 
+client-server 
+40 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 57]
+[HALAMAN DOKUMEN / PDF: 55]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1523,6 +1544,13 @@ Permasalahan
 Metode 
 Hasil Penelitian 
 Keterkaitan 
+rekening koran bank. 
+desktop, sedangkan sistem 
+ARTHA 
+mengintegrasikan 
+verifikasi mutasi ke dalam 
+arsitektur web multicabang 
+bimbingan belajar. 
 5 
 Nur Khafidhoh, Arfia Rahmi 
 Febrianti, 
@@ -1554,8 +1582,8 @@ belajar siswa.
 Waterfall 
 Menghasilkan sistem informasi 
 penjadwalan bimbingan belajar 
-berbasis web yang menerapkan 
-optimasi Algoritma Genetika 
+berbasis 
+web 
 dengan 
 mempertimbangkan 
 ketersediaan jam mengajar guru 
@@ -1571,38 +1599,25 @@ Pengelolaan
 alokasi waktu dan kelompok 
 belajar 
 pada 
-domain 
 bimbingan 
-belajar 
-nonformal. 
+belajar nonformal. 
 Perbedaan: Berfokus pada 
 optimasi 
 penugasan 
-mengajar guru di satu lokasi 
-menggunakan 
-algoritma 
-genetika, sedangkan sistem 
-ARTHA 
-berfokus 
-pada 
-validasi 
-batas 
-kuota 
-kapasitas fisik ruang kelas 
-per kelompok belajar pada 
-delapan 
-kantor 
-cabang 
-menggunakan 
-metode 
-Personal 
-Extreme 
-Programming (PxP). 
-43 
+mengajar guru di satu lokasi, 
+sedangkan sistem ARTHA 
+berfokus pada validasi batas 
+kuota kapasitas fisik ruang 
+kelas per kelompok belajar 
+pada delapan kantor cabang. 
+41 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 58]
+[HALAMAN DOKUMEN / PDF: 56]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1621,20 +1636,25 @@ Teguh Cahyono (2022).
 Penyusunan 
 jadwal 
 perkuliahan 
-tanpa 
-validasi kapasitas fisik 
-ruangan 
-mengakibatkan 
-kelebihan kuota kelas 
-dan 
-ketidakefisienan 
-alokasi ruang, disertai 
-proses kompilasi data 
+untuk 
+lima 
+program 
+studi 
+masih 
+dilakukan 
+secara 
 manual 
-yang 
-memakan 
-waktu 
-berminggu-minggu. 
+dan 
+menghadapi berbagai 
+batasan alokasi ruang 
+serta waktu, sehingga 
+proses 
+penyusunan 
+memakan waktu lama 
+dan memicu jadwal 
+bentrok 
+antarmata 
+kuliah.  
 DevOps 
 Menghasilkan 
 antarmuka 
@@ -1677,34 +1697,15 @@ pada
 pengembangan 
 antarmuka 
 perkuliahan 
-oleh 
-tim 
-pengembang 
 dengan 
 pendekatan 
 DevOps, 
 sedangkan sistem ARTHA 
-membangun sistem penuh 
-secara mandiri untuk delapan 
-cabang bimbingan belajar 
-dengan 
-metode 
-Personal 
-Extreme 
-Programming 
-(PxP). 
-44 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 59]
-================================================================================
- 
-No 
-Penulis dan Tahun 
-Permasalahan 
-Metode 
-Hasil Penelitian 
-Keterkaitan 
+membangun sistem secara 
+mandiri 
+untuk 
+delapan 
+cabang bimbingan belajar. 
 7 
 Aolia Musofa, Sofiansyah 
 Fadli, Wafiah Murniati, dan 
@@ -1716,7 +1717,8 @@ kedinasan
 masih 
 menggunakan 
 buku 
-register fisik, sehingga 
+fisik, 
+sehingga 
 pencarian 
 arsip 
 riwayat 
@@ -1725,45 +1727,55 @@ lambat,
 data rentan 
 tersebar, 
 serta 
-penyusunan 
-laporan 
-berkala 
-belum 
-terintegrasi otomatis. 
 Personal 
 Extreme 
 Programming 
-(PxP) 
+(PXP) 
 Menghasilkan Aplikasi Buku 
 Tamu Digital berbasis web 
-melalui tujuh tahapan PxP oleh 
+melalui tujuh tahapan PXP oleh 
 pengembang tunggal dengan 
 integrasi pemindaian QR Code. 
 Pengujian fungsionalitas Black 
 Box Testing berjalan valid 
 seratus persen pada delapan 
 puluh skenario uji, didukung 
-waktu tanggap sistem sebesar 
-312 ms dan akurasi verifikasi 
-data sebesar 98,7%. 
 Persamaan: 
 Penerapan 
 tujuh tahapan siklus metode 
 Personal 
 Extreme 
-Programming (PxP) secara 
-komprehensif 
-oleh 
+Programming (PXP) oleh 
 pengembang mandiri. 
-Perbedaan: Sistem rujukan 
-diterapkan pada pelayanan 
-buku 
-tamu satu instansi 
-pemerintah 
-daerah, 
+Perbedaan: Diterapkan pada 
+pelayanan buku tamu satu 
+instansi pemerintah daerah, 
 sedangkan sistem ARTHA 
+42 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 57]
+================================================================================
+
+ 
+No 
+Penulis dan Tahun 
+Permasalahan 
+Metode 
+Hasil Penelitian 
+Keterkaitan 
+penyusunan 
+laporan 
+berkala 
+belum 
+terintegrasi otomatis. 
+waktu tanggap sistem sebesar 
+312 ms dan akurasi verifikasi 
+data sebesar 98,7%. 
 menerapkan 
-PxP 
+PXP 
 pada 
 operasional bisnis delapan 
 cabang bimbingan belajar 
@@ -1774,18 +1786,6 @@ validasi
 kuota 
 kelompok 
 belajar. 
-45 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 60]
-================================================================================
- 
-No 
-Penulis dan Tahun 
-Permasalahan 
-Metode 
-Hasil Penelitian 
-Keterkaitan 
 8 
 Narti Apriyanti, Seftin Fitri 
 Ana Wati, dan Abdul Rezha 
@@ -1813,7 +1813,7 @@ data transaksi tercecer.
 Personal 
 Extreme 
 Programming 
-(PxP) 
+(PXP) 
 Menghasilkan 
 situs 
 web 
@@ -1846,35 +1846,38 @@ Acceptance
 Testing 
 (UAT) 
 dengan persentase keberhasilan 
-91% (kategori Sangat Baik). 
+91%. 
 Persamaan: 
 Efektivitas 
-penerapan metode PxP oleh 
+penerapan metode PXP oleh 
 pengembang 
 tunggal 
 dan 
 perancangan modul validasi 
 bukti pembayaran transfer. 
-Perbedaan: Sistem rujukan 
-menangani 
-penjualan 
-properti 
-kavling 
+Perbedaan: 
+Menangani 
+penjualan properti kavling 
 tunggal 
-tanpa modul rekonsiliasi kas, 
-sedangkan sistem ARTHA 
+tanpa 
+modul 
+rekonsiliasi kas, sedangkan 
+sistem 
+ARTHA 
 mengintegrasikan 
 rekonsiliasi mutasi rekening 
-dan kendali kuota kelas pada 
-delapan 
+dan kuota kelas pada delapan 
 kantor 
-cabang 
-bimbingan belajar. 
-46 
+cabang bimbingan 
+belajar. 
+43 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 61]
+[HALAMAN DOKUMEN / PDF: 58]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1890,34 +1893,48 @@ Algifari,
 dan 
 Aidil 
 Afriansyah (2025). 
-Pengelolaan transaksi 
-pembayaran 
-administrasi 
-sekolah 
-kejuruan 
-masih 
-menghadapi 
-antrean 
-panjang di loket dan 
+Sistem perbankan mini 
+di 
+SMK Negeri 7 
+Bandar 
+Lampung 
+belum 
+berjalan 
+optimal 
+akibat 
+pengelolaan 
+data 
+pengguna yang masih 
+manual, 
 pencatatan 
-manual 
-yang berisiko memicu 
-selisih pembukuan kas 
-serta 
-keterlambatan 
-rekonsiliasi keuangan 
-lembaga. 
+riwayat transaksi yang 
+belum terotomatisasi, 
+serta sistem keamanan 
+login 
+yang 
+minim. 
+Selain itu, ketiadaan 
+integrasi pembayaran 
+daring memperlambat 
+pemrosesan 
+pembayaran iuran SPP 
+dan tabungan siswa, 
+sehingga 
+menimbulkan 
+risiko 
+kesalahan pencatatan 
+transaksi keuangan.  
 Personal 
 Extreme 
 Programming 
-(PxP) 
+(PXP) 
 Menghasilkan 
 platform 
 perbankan 
 mini 
 sekolah 
 (m-EduPayment) berbasis web 
-melalui tahapan PxP dengan 
+melalui tahapan PXP dengan 
 integrasi gerbang pembayaran 
 iPaymu 
 untuk memfasilitasi 
@@ -1930,44 +1947,43 @@ evaluasi
 kegunaan 
 System 
 Usability Scale (SUS) dengan 
-skor 
-rata-rata 
-91 (kategori 
-Excellent / Grade A). 
+skor rata-rata 91.. 
 Persamaan: 
-Pembuktian 
-efektivitas 
+Efektivitas 
 metodologi 
 Personal 
 Extreme 
 Programming 
-(PxP) 
+(PXP) 
 oleh 
-pengembang mandiri dalam 
-merancang sistem transaksi 
-pembayaran 
+pengembang 
+mandiri dalam merancang 
+sistem transaksi pembayaran 
+pada sektor pendidikan. 
+Perbedaan: 
+Menggunakan 
+integrasi payment gateway 
+pihak 
+ketiga 
 pada 
-sektor 
-pendidikan. 
-Perbedaan: Sistem rujukan 
-mengandalkan 
-integrasi 
-gerbang pembayaran pihak 
-ketiga pada satu institusi 
-sekolah kejuruan, sedangkan 
-sistem ARTHA menerapkan 
-verifikasi mutasi rekening 
-koran 
+satu 
+institusi sekolah kejuruan, 
+sedangkan sistem ARTHA 
+menerapkan 
+verifikasi 
+mutasi 
 perbankan 
 secara 
-internal oleh Super Admin 
-untuk delapan kantor cabang 
-bimbingan belajar. 
-47 
+internal untuk delapan kantor 
+cabang bimbingan belajar. 
+44 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 62]
+[HALAMAN DOKUMEN / PDF: 59]
 ================================================================================
+
  
 No 
 Penulis dan Tahun 
@@ -1981,109 +1997,102 @@ Indah
 Marthasari, 
 Wildan Suharso, dan Frendy 
 Ardiansyah (2018). 
-Ketidakjelasan 
-pemahaman kebutuhan 
-oleh 
-pengguna 
-berpotensi 
-memunculkan 
-perubahan kebutuhan 
-sistem 
+Layanan perpustakaan 
+menghadapi 
+kendala 
+pencarian buku yang 
+lambat 
+akibat 
+penggunaan 
+katalog 
+kertas 
+fisik 
 yang 
-sangat 
-dinamis selama proses 
-pengembangan 
+rentan 
+rusak 
+atau 
+hilang, 
+ketiadaan 
+media 
+pengingat 
+otomatis batas waktu 
+peminjaman 
+yang 
+memicu keterlambatan 
+pengembalian 
+buku, 
+serta pustakawan yang 
+harus menulis ulang 
+data transaksi secara 
+manual dari awal. Dan 
+pemahaman kebutuhan 
+fungsional 
 perangkat 
-lunak, 
-sehingga menyulitkan 
-pengembang mandiri 
-jika 
-menggunakan 
-metodologi 
-konvensional. 
+lunak oleh pengguna 
+yang belum rinci. 
 Personal 
 Extreme 
 Programming 
-(PxP) 
-Membuktikan 
-penggabungan 
+(PXP) 
+Menghasilkan sistem informasi 
+perpustakaan 
+berbasis 
+web 
+menggunakan 
 metode 
-PxP 
-dengan 
-skala 
-prioritas 
-MoSCoW 
+PXP  
+dengan teknik MoSCoW untuk 
+menetapkan 
+kebutuhan 
+berdasarkan nilai bisnis dan 
+risiko teknis. Penerapan Test 
+Driven Development (TDD) 
+melalui tahapan unit testing, 
+code 
+generation, 
 dan 
-pembobotan deret Fibonacci 
-berhasil 
-menuntaskan 
-enam 
-belas 
-story 
-points 
-cerita 
-pengguna dalam empat siklus 
-iterasi 
-secara 
-terukur. 
-Penerapan 
-Test 
-Driven 
-Development 
-(TDD) 
-menghasilkan kelolosan unit 
-testing 
-seratus 
-persen 
-dan 
-seluruh 
-kriteria 
-penerimaan 
-pengguna 
-terpenuhi 
-secara 
-valid. 
+refactoring menghasilkan unit 
+testing seratus persen serta 
+memenuhi seluruh kriteria User 
+Acceptance Test (UAT) secara 
+valid.  
 Persamaan: 
 Penerapan 
 metodologi 
 Personal 
-Extreme Programming (PxP) 
-oleh pengembang mandiri 
-dengan 
-pemodelan 
-User 
-Stories, pembobotan tingkat 
-kesulitan 
-(story 
-points) 
-menggunakan 
-deret 
-Fibonacci, serta penyelesaian 
-sistem dalam empat siklus 
-iterasi pengembangan. 
+Extreme 
+Programming 
+(PXP) 
+oleh 
+pengembang 
+mandiri dengan pemodelan 
+User Stories, pembobotan 
+story points. 
 Perbedaan: 
-Penelitian 
-rujukan menerapkan skala 
-prioritas 
+Menerapkan 
+teknik prioritas kebutuhan 
 MoSCoW 
-pada 
-otomasi sistem perpustakaan, 
-sedangkan sistem ARTHA 
-berfokus pada manajemen 
+untuk 
+mengelompokkan kebutuhan 
+berdasarkan 
+tingkat 
+kepentingannya. Sementara 
+itu, 
+penelitian 
+ARTHA 
+berfokus pada pembangunan 
+sistem informasi manajemen 
 operasional 
 bimbingan 
-belajar multicabang terpadu 
-yang 
-mengintegrasikan 
-validasi daya tampung ruang 
-kelas per kelompok belajar 
-dan rekonsiliasi mutasi kas 
-perbankan. 
-48 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 63]
-================================================================================
+belajar 
+multicabang 
+dan 
+evaluasi 
+sistem 
+ARTHA 
+dilakukan 
+menggunakan 
+Black Box Testing dan User 
+Acceptance Testing (UAT).  
  
-(Halaman sengaja dikosongkan) 
-49 
+45 

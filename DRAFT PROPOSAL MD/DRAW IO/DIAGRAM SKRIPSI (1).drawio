@@ -1,58 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="17">
   <diagram id="diag_3_5" name="Gambar 3.5 Use Case">
     <mxGraphModel dx="1614" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" background="#ffffff" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
+      <root><mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys_box" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=20;spacingTop=15;fillColor=#FAFAFA;strokeColor=#000000;strokeWidth=2;fontSize=12;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="850" width="700" x="240" y="40" as="geometry" />
+        <mxCell id="sys_box" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=center;spacingTop=15;fillColor=#FAFAFA;strokeColor=#000000;strokeWidth=2;fontSize=12;" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Sistem Informasi Manajemen Bimbel ARTHA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="895" width="760" x="220" y="35" as="geometry" />
         </mxCell>
         <mxCell id="act_staf" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Admin&lt;/b&gt;&lt;br&gt;&lt;font&gt;(Staf Administrasi Cabang)&lt;/font&gt;" vertex="1">
           <mxGeometry height="90" width="45" x="110" y="380" as="geometry" />
         </mxCell>
         <mxCell id="act_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Super Admin&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;(Pemilik Lembaga)&lt;/font&gt;" vertex="1">
-          <mxGeometry height="90" width="45" x="1035" y="460" as="geometry" />
+          <mxGeometry height="90" width="45" x="1050" y="470" as="geometry" />
         </mxCell>
         <mxCell id="uc_01" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Autentikasi Masuk" vertex="1">
-          <mxGeometry height="55" width="180" x="510" y="85" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="92.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_02" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mendaftarkan Siswa Baru" vertex="1">
-          <mxGeometry height="55" width="180" x="290" y="175" as="geometry" />
+          <mxGeometry height="55" width="180" x="295" y="192.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_03" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Kuota Kelas" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="175" as="geometry" />
+          <mxGeometry height="55" width="180" x="725" y="192.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_04" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mencatat Pembayaran&lt;br&gt;Kasir Cabang" vertex="1">
-          <mxGeometry height="60" width="180" x="300" y="280" as="geometry" />
+          <mxGeometry height="60" width="180" x="295" y="305" as="geometry" />
         </mxCell>
         <mxCell id="uc_05" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengunggah Bukti Transfer Bank" vertex="1">
-          <mxGeometry height="55" width="185" x="690" y="285" as="geometry" />
+          <mxGeometry height="55" width="185" x="722.5" y="307.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_06" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mencetak Kuitansi&lt;br&gt;Pembayaran (PDF)" vertex="1">
-          <mxGeometry height="55" width="180" x="460" y="397.5" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Rekonsiliasi&lt;br&gt;Kas Harian" vertex="1">
-          <mxGeometry height="55" width="180" x="290" y="740" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Pengguna&lt;br&gt;dan Cabang" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Data Kuota Kelas&amp;nbsp;" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Pembayaran&lt;br&gt;Transfer Bank" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="650" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="417.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memantau Tunggakan &amp;amp;&lt;br&gt;Jatuh Tempo SPP" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="740" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="522.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Rekonsiliasi&lt;br&gt;Kas Harian" vertex="1">
+          <mxGeometry height="55" width="180" x="295" y="642.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Pengguna&lt;br&gt;dan Cabang" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="612.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengatur Ketentuan&lt;br&gt;Kuota Kelas" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="692.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Pembayaran&lt;br&gt;Transfer Bank" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="772.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melihat Dashboard&lt;br&gt;Konsolidasi Keuangan" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="825" as="geometry" />
+          <mxGeometry height="55" width="180" x="725" y="852.5" as="geometry" />
+        </mxCell>
+        <mxCell id="note_kuitansi" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#555555;" value="Kuitansi hanya dapat dicetak untuk transaksi yang telah berstatus lunas (paid)." vertex="1">
+          <mxGeometry height="30" width="550" x="325" y="935" as="geometry" />
         </mxCell>
         <mxCell id="edge_s1" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_01">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="290" y="112.5" />
+              <mxPoint x="290" y="120" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -62,15 +65,27 @@
         <mxCell id="edge_s4" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_04">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="edge_s6" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s11" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="edge_s7" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_07">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge_a1" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_01">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="890" y="112.5" />
+              <mxPoint x="890" y="120" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_a6" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a11" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge_a8" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_08">
           <mxGeometry relative="1" as="geometry" />
@@ -81,142 +96,131 @@
         <mxCell id="edge_a10" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge_a11" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="edge_a12" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rel_inc1" edge="1" parent="1" source="uc_02" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="uc_03" value="&amp;laquo;include&amp;raquo;">
+        <mxCell id="rel_inc1" edge="1" parent="1" source="uc_02" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;entryDy=0;" target="uc_03" value="&amp;laquo;include&amp;raquo;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rel_ext1" edge="1" parent="1" source="uc_05" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="uc_04" value="&amp;laquo;extend&amp;raquo;">
+        <mxCell id="rel_ext1" edge="1" parent="1" source="uc_05" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;entryDy=0;" target="uc_04" value="&amp;laquo;extend&amp;raquo;">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel_inc2" edge="1" parent="1" source="uc_04" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="uc_06" value="&amp;laquo;include&amp;raquo;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel_inc3" edge="1" parent="1" source="uc_10" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="uc_06" value="&amp;laquo;include&amp;raquo;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
+        </mxCell></root></mxGraphModel>
   </diagram>
   <diagram id="diag_3_6" name="Gambar 3.6 Pendaftaran Kasir">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="1120" background="#ffffff">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Title Box -->
+        
         <mxCell id="title_box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Activity Diagram Pendaftaran Siswa dan Transaksi Kasir Cabang&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.8;" vertex="1" parent="1">
           <mxGeometry x="35" y="25" width="930" height="42" as="geometry" />
         </mxCell>
-        <!-- Swimlane 1: Staf Cabang -->
+        
         <mxCell id="lane1" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Staf Administrasi Cabang&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="35" y="67" width="310" height="990" as="geometry" />
         </mxCell>
-        <!-- Initial Node -->
+        
         <mxCell id="init_node" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane1">
           <mxGeometry x="141" y="65" width="28" height="28" as="geometry" />
         </mxCell>
-        <!-- Action 1 -->
+        
         <mxCell id="act_1" value="Membuka Formulir&lt;br&gt;Pendaftaran Siswa Baru" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="123" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 3 -->
+        
         <mxCell id="act_3" value="Mengisi Biodata Siswa &amp;amp;&lt;br&gt;Memilih Rombel Belajar" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="228" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 5: Alternatif -->
+        
         <mxCell id="act_5" value="Peringatan Kuota Penuh &amp;amp;&lt;br&gt;Pilih Rombel Alternatif" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="331" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 7: Bayar Tunai -->
+        
         <mxCell id="act_7" value="Pilih Kasir Tunai &amp;amp;&lt;br&gt;Input Nominal Uang Diterima" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="513" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 11: Serahkan Kuitansi -->
+        
         <mxCell id="act_11" value="Menyerahkan Kuitansi&lt;br&gt;Fisik ke Orang Tua Siswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="803" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Final State -->
+        
         <mxCell id="final_node" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;strokeWidth=1.8;" vertex="1" parent="lane1">
           <mxGeometry x="140" y="908" width="30" height="30" as="geometry" />
         </mxCell>
-        <!-- Swimlane 2: Antarmuka Web -->
+        
         <mxCell id="lane2" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Antarmuka Web ARTHA&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="345" y="67" width="310" height="990" as="geometry" />
         </mxCell>
-        <!-- Action 2 -->
+        
         <mxCell id="act_2" value="Menampilkan Formulir &amp;amp;&lt;br&gt;Daftar Rombel Aktif" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="123" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Decision: Kuota? -->
+        
         <mxCell id="dec_kuota" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="lane2">
           <mxGeometry x="133" y="333" width="44" height="44" as="geometry" />
         </mxCell>
-        <!-- Action 6 -->
+        
         <mxCell id="act_6" value="Kunci Kursi Rombel &amp;amp;&lt;br&gt;Hitung Rincian Tagihan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="45" y="413" width="220" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 8 -->
+        
         <mxCell id="act_8" value="Menghitung Nominal&lt;br&gt;Uang Kembalian" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="513" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 10 -->
+        
         <mxCell id="act_10" value="Mencetak Kuitansi Resmi&lt;br&gt;Berformat PDF" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="803" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Swimlane 3: Basis Data & Server -->
+        
         <mxCell id="lane3" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Basis Data &amp;amp; Server ARTHA&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="655" y="67" width="310" height="990" as="geometry" />
         </mxCell>
-        <!-- Action 4 -->
+        
         <mxCell id="act_4" value="Memvalidasi Sisa Kuota&lt;br&gt;Rombel Belajar" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="50" y="228" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Fork Bar -->
+        
         <mxCell id="fork_1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="593" width="220" height="6" as="geometry" />
         </mxCell>
-        <!-- Action 9a -->
+        
         <mxCell id="act_9a" value="Simpan Data &amp;amp;&lt;br&gt;Mutasi Kas Masuk" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="633" width="105" height="58" as="geometry" />
         </mxCell>
-        <!-- Action 9b -->
+        
         <mxCell id="act_9b" value="Kunci Tanggal&lt;br&gt;Jatuh Tempo SPP" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="160" y="633" width="105" height="58" as="geometry" />
         </mxCell>
-        <!-- Join Bar -->
+        
         <mxCell id="join_1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="728" width="220" height="6" as="geometry" />
         </mxCell>
-        <!-- Connecting Edges -->
-        <!-- init to act1 -->
+        
+        
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="init_node" target="act_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act1 to act2 -->
+        
         <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_1" target="act_2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act2 to act3 -->
+        
         <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_2" target="act_3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act3 to act4 -->
+        
         <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_3" target="act_4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act4 to dec_kuota -->
+        
         <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_4" target="dec_kuota">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- dec_kuota to act5 [Penuh / Nol] -->
+        
         <mxCell id="e6" value="[Penuh / Nol]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;fontSize=11;fontStyle=1;" edge="1" parent="1" source="dec_kuota" target="act_5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act5 back to act3 -->
+        
         <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_5" target="act_3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -226,45 +230,45 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- dec_kuota to act6 [Tersedia] -->
+        
         <mxCell id="e8" value="[Tersedia]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;fontSize=11;fontStyle=1;" edge="1" parent="1" source="dec_kuota" target="act_6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act6 to act7 -->
+        
         <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_6" target="act_7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act7 to act8 -->
+        
         <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_7" target="act_8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act8 to fork1 -->
+        
         <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_8" target="fork_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- fork1 to 9a and 9b -->
+        
         <mxCell id="e12a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="fork_1" target="act_9a">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e12b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="fork_1" target="act_9b">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 9a and 9b to join1 -->
+        
         <mxCell id="e13a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_9a" target="join_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e13b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_9b" target="join_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- join1 to act10 -->
+        
         <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="join_1" target="act_10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act10 to act11 -->
+        
         <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_10" target="act_11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- act11 to final -->
+        
         <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_11" target="final_node">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -276,99 +280,99 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Title Box -->
+        
         <mxCell id="title_box" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Activity Diagram Validasi Bukti Transfer Bank Kantor Pusat&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.8;" vertex="1" parent="1">
           <mxGeometry x="35" y="25" width="930" height="42" as="geometry" />
         </mxCell>
-        <!-- Swimlane 1: Staf Cabang -->
+        
         <mxCell id="lane1" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Staf Administrasi Cabang&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="35" y="67" width="310" height="1030" as="geometry" />
         </mxCell>
-        <!-- Initial Node -->
+        
         <mxCell id="init_node" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane1">
           <mxGeometry x="141" y="65" width="28" height="28" as="geometry" />
         </mxCell>
-        <!-- Action 1 -->
+        
         <mxCell id="act_1" value="Mengunggah Foto&lt;br&gt;Bukti Transfer Perbankan" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="123" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 6c: Terima Notif Tolak -->
+        
         <mxCell id="act_6c" value="Menerima Notifikasi Penolakan&lt;br&gt;&amp;amp; Hubungi Wali Murid" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="564" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Final State 1 (Tolak) -->
+        
         <mxCell id="final_1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;strokeWidth=1.8;" vertex="1" parent="lane1">
           <mxGeometry x="140" y="650" width="30" height="30" as="geometry" />
         </mxCell>
-        <!-- Action 9: Cetak Kuitansi Lunas -->
+        
         <mxCell id="act_9" value="Mencetak Kuitansi Lunas&lt;br&gt;untuk Orang Tua Siswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane1">
           <mxGeometry x="50" y="873" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Final State 2 (Lunas) -->
+        
         <mxCell id="final_2" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;strokeWidth=1.8;" vertex="1" parent="lane1">
           <mxGeometry x="140" y="960" width="30" height="30" as="geometry" />
         </mxCell>
-        <!-- Swimlane 2: Super Admin -->
+        
         <mxCell id="lane2" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Super Admin (Pemilik Lembaga)&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="345" y="67" width="310" height="1030" as="geometry" />
         </mxCell>
-        <!-- Action 3 -->
+        
         <mxCell id="act_3" value="Membuka Menu Antrean&lt;br&gt;Validasi Pembayaran Pusat" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="228" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 5 -->
+        
         <mxCell id="act_5" value="Mencocokkan Nominal &amp;amp;&lt;br&gt;Nama Pengirim ke Rekening" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="45" y="333" width="220" height="48" as="geometry" />
         </mxCell>
-        <!-- Decision: Valid? -->
+        
         <mxCell id="dec_valid" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="lane2">
           <mxGeometry x="133" y="435" width="44" height="44" as="geometry" />
         </mxCell>
-        <!-- Action 6a: Catatan Tolak (BENAR DI LANE SUPER ADMIN) -->
+        
         <mxCell id="act_6a" value="Memasukkan Catatan&lt;br&gt;Alasan Penolakan Transaksi" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="498" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 7a: Konfirmasi Valid -->
+        
         <mxCell id="act_7a" value="Menekan Tombol Konfirmasi&lt;br&gt;Validasi Pembayaran" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane2">
           <mxGeometry x="50" y="688" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Swimlane 3: Sistem Informasi ARTHA -->
+        
         <mxCell id="lane3" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Sistem Informasi ARTHA&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" vertex="1" parent="1">
           <mxGeometry x="655" y="67" width="310" height="1030" as="geometry" />
         </mxCell>
-        <!-- Action 2 -->
-        <mxCell id="act_2" value="Menyimpan Berkas &amp;amp; Setel&lt;br&gt;Status &#39;Menunggu Validasi&#39;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
+        
+        <mxCell id="act_2" value="Menyimpan Berkas &amp;amp; Setel&lt;br&gt;Status 'Menunggu Validasi'" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="50" y="123" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 4 -->
+        
         <mxCell id="act_4" value="Menampilkan Antrean &amp;amp;&lt;br&gt;Pratinjau Bukti Transfer" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="50" y="228" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Action 6b: Set Ditolak & Notif -->
-        <mxCell id="act_6b" value="Setel Status &#39;Ditolak&#39; &amp;amp;&lt;br&gt;Kirim Notifikasi ke Cabang" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
+        
+        <mxCell id="act_6b" value="Setel Status 'Ditolak' &amp;amp;&lt;br&gt;Kirim Notifikasi ke Cabang" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="50" y="498" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Fork Bar -->
+        
         <mxCell id="fork_2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="710" width="220" height="6" as="geometry" />
         </mxCell>
-        <!-- Action 7b -->
-        <mxCell id="act_7b" value="Ubah Status&lt;br&gt;Menjadi &#39;Lunas&#39;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
+        
+        <mxCell id="act_7b" value="Ubah Status&lt;br&gt;Menjadi 'Lunas'" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="748" width="105" height="55" as="geometry" />
         </mxCell>
-        <!-- Action 7c -->
+        
         <mxCell id="act_7c" value="Tambah Kas Bank&lt;br&gt;&amp;amp; Kunci SPP" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="160" y="748" width="105" height="55" as="geometry" />
         </mxCell>
-        <!-- Join Bar -->
+        
         <mxCell id="join_2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" vertex="1" parent="lane3">
           <mxGeometry x="45" y="838" width="220" height="6" as="geometry" />
         </mxCell>
-        <!-- Action 8 -->
+        
         <mxCell id="act_8" value="Menerbitkan Hak Cetak&lt;br&gt;Kuitansi PDF di Cabang" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" vertex="1" parent="lane3">
           <mxGeometry x="50" y="873" width="210" height="48" as="geometry" />
         </mxCell>
-        <!-- Connecting Edges -->
+        
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="init_node" target="act_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -387,7 +391,7 @@
         <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_5" target="dec_valid">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- dec to 6a [Tidak Valid] -->
+        
         <mxCell id="e7" value="[Tidak Valid]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;fontSize=11;fontStyle=1;" edge="1" parent="1" source="dec_valid" target="act_6a">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -400,7 +404,7 @@
         <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;" edge="1" parent="1" source="act_6c" target="final_1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- dec to 7a [Valid / Cocok] -->
+        
         <mxCell id="e11" value="[Valid / Cocok]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1.5;strokeColor=#000000;endArrow=block;endFill=1;fontSize=11;fontStyle=1;" edge="1" parent="1" source="dec_valid" target="act_7a">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -475,7 +479,7 @@
         <mxCell id="dec_selisih" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
           <mxGeometry height="44" width="44" x="133" y="313" as="geometry" />
         </mxCell>
-        <mxCell id="act_5b" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Tandai Status Laporan&lt;br&gt;&#39;Perlu Peninjauan Pusat&#39;" vertex="1">
+        <mxCell id="act_5b" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Tandai Status Laporan&lt;br&gt;'Perlu Peninjauan Pusat'" vertex="1">
           <mxGeometry height="48" width="220" x="45" y="379" as="geometry" />
         </mxCell>
         <mxCell id="fork_3" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" value="" vertex="1">
@@ -567,16 +571,16 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Title Block -->
-        <mxCell id="title_box" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Entity Relationship Diagram (ERD) - Sistem Informasi ARTHA&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;Pemodelan Basis Data Relasional MySQL (Notasi Crow&#39;s Foot)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+        
+        <mxCell id="title_box" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Entity Relationship Diagram (ERD) - Sistem Informasi ARTHA&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;Pemodelan Basis Data Relasional MySQL (Notasi Crow's Foot)&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="50" y="15" width="600" height="40" as="geometry" />
         </mxCell>
-        <!-- Legend Block -->
+        
         <mxCell id="legend_box" value="&lt;b&gt;Legenda Kelompok Entitas:&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#0288D1&quot;&gt;■&lt;/font&gt; Master Organisasi &amp;amp; Pengguna &amp;nbsp;&amp;nbsp; &lt;font color=&quot;#2E7D32&quot;&gt;■&lt;/font&gt; Akademik &amp;amp; Rombel &amp;nbsp;&amp;nbsp; &lt;font color=&quot;#E65100&quot;&gt;■&lt;/font&gt; Transaksi Keuangan &amp;amp; Rekonsiliasi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#CFD8DC;align=center;fontSize=11;strokeWidth=1;" vertex="1" parent="1">
           <mxGeometry x="780" y="15" width="570" height="38" as="geometry" />
         </mxCell>
-        <!-- ================= ENTITY TABLES ================= -->
-        <!-- 1. branches -->
+        
+        
         <mxCell id="tbl_branches" value="&lt;b&gt;branches&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E1F5FE;strokeColor=#0288D1;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="50" y="80" width="270" height="152" as="geometry" />
         </mxCell>
@@ -595,7 +599,7 @@
         <mxCell id="b_row5" value="   | phone : VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_branches">
           <mxGeometry y="124" width="270" height="24" as="geometry" />
         </mxCell>
-        <!-- 2. users -->
+        
         <mxCell id="tbl_users" value="&lt;b&gt;users&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E1F5FE;strokeColor=#0288D1;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="50" y="290" width="270" height="176" as="geometry" />
         </mxCell>
@@ -614,10 +618,10 @@
         <mxCell id="u_row5" value="   | password : VARCHAR(255)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_users">
           <mxGeometry y="124" width="270" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="u_row6" value="   | role : ENUM(&#39;super&#39;,&#39;branch&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_users">
+        <mxCell id="u_row6" value="   | role : ENUM('super','branch')" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_users">
           <mxGeometry y="148" width="270" height="24" as="geometry" />
         </mxCell>
-        <!-- 3. daily_reconciliations -->
+        
         <mxCell id="tbl_daily_rec" value="&lt;b&gt;daily_reconciliations&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="50" y="525" width="290" height="344" as="geometry" />
         </mxCell>
@@ -660,7 +664,7 @@
         <mxCell id="dr_row13" value="   | report_pdf_path : VARCHAR(255)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_daily_rec">
           <mxGeometry y="316" width="290" height="24" as="geometry" />
         </mxCell>
-        <!-- 4. students -->
+        
         <mxCell id="tbl_students" value="&lt;b&gt;students&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="380" y="80" width="290" height="320" as="geometry" />
         </mxCell>
@@ -682,7 +686,7 @@
         <mxCell id="s_row6" value="   | birth_date : DATE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_students">
           <mxGeometry y="148" width="290" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="s_row7" value="   | gender : ENUM(&#39;L&#39;,&#39;P&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_students">
+        <mxCell id="s_row7" value="   | gender : ENUM('L','P')" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_students">
           <mxGeometry y="172" width="290" height="24" as="geometry" />
         </mxCell>
         <mxCell id="s_row8" value="   | school_origin : VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_students">
@@ -700,7 +704,7 @@
         <mxCell id="s_row12" value="   | parent_phone : VARCHAR(20)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_students">
           <mxGeometry y="292" width="290" height="24" as="geometry" />
         </mxCell>
-        <!-- 5. study_groups -->
+        
         <mxCell id="tbl_study_groups" value="&lt;b&gt;study_groups&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="720" y="80" width="280" height="200" as="geometry" />
         </mxCell>
@@ -725,7 +729,7 @@
         <mxCell id="sg_row7" value="   | current_count : INT(5)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_study_groups">
           <mxGeometry y="172" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- 6. course_packages -->
+        
         <mxCell id="tbl_course_packages" value="&lt;b&gt;course_packages&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E1F5FE;strokeColor=#0288D1;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1060" y="80" width="280" height="176" as="geometry" />
         </mxCell>
@@ -735,7 +739,7 @@
         <mxCell id="cp_row2" value="   | package_name : VARCHAR(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_course_packages">
           <mxGeometry y="52" width="280" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="cp_row3" value="   | grade_level : ENUM(&#39;SD&#39;,&#39;SMP&#39;,&#39;SMA&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_course_packages">
+        <mxCell id="cp_row3" value="   | grade_level : ENUM('SD','SMP','SMA')" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_course_packages">
           <mxGeometry y="76" width="280" height="24" as="geometry" />
         </mxCell>
         <mxCell id="cp_row4" value="   | monthly_fee : DECIMAL(12,2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_course_packages">
@@ -747,7 +751,7 @@
         <mxCell id="cp_row6" value="   | is_active : BOOLEAN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_course_packages">
           <mxGeometry y="148" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- 7. enrollments -->
+        
         <mxCell id="tbl_enrollments" value="&lt;b&gt;enrollments&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="720" y="340" width="280" height="200" as="geometry" />
         </mxCell>
@@ -769,10 +773,10 @@
         <mxCell id="en_row6" value="   | due_day : INT(2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_enrollments">
           <mxGeometry y="148" width="280" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="en_row7" value="   | status : ENUM(&#39;active&#39;,&#39;grad&#39;,&#39;drop&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_enrollments">
+        <mxCell id="en_row7" value="   | status : ENUM('active','grad','drop')" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_enrollments">
           <mxGeometry y="172" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- 8. tuition_bills -->
+        
         <mxCell id="tbl_tuition_bills" value="&lt;b&gt;tuition_bills&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="720" y="595" width="280" height="176" as="geometry" />
         </mxCell>
@@ -794,7 +798,7 @@
         <mxCell id="tb_row6" value="   | payment_status : ENUM" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_tuition_bills">
           <mxGeometry y="148" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- 9. payments -->
+        
         <mxCell id="tbl_payments" value="&lt;b&gt;payments&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1060" y="320" width="280" height="224" as="geometry" />
         </mxCell>
@@ -822,7 +826,7 @@
         <mxCell id="p_row8" value="   | payment_date : TIMESTAMP" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_payments">
           <mxGeometry y="196" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- 10. payment_proofs -->
+        
         <mxCell id="tbl_payment_proofs" value="&lt;b&gt;payment_proofs&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1060" y="605" width="280" height="200" as="geometry" />
         </mxCell>
@@ -847,16 +851,16 @@
         <mxCell id="pp_row7" value="   | rejection_note : TEXT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" vertex="1" parent="tbl_payment_proofs">
           <mxGeometry y="172" width="280" height="24" as="geometry" />
         </mxCell>
-        <!-- ================= RELATIONSHIP CONNECTORS (CROW'S FOOT) ================= -->
-        <!-- 1. branches -> users (1:M) -->
+        
+        
         <mxCell id="rel_br_usr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0.35;exitY=1;exitDx=0;exitDy=0;entryX=0.35;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_branches" target="tbl_users">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 2. branches -> students (1:M) -->
+        
         <mxCell id="rel_br_stu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_branches" target="tbl_students">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 3. branches -> study_groups (1:M) -->
+        
         <mxCell id="rel_br_sg" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_branches" target="tbl_study_groups">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -865,7 +869,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 4. branches -> payments (1:M) -->
+        
         <mxCell id="rel_br_pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0.9;exitY=0;exitDx=0;exitDy=0;entryX=0.65;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_branches" target="tbl_payments">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -874,7 +878,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 5. branches -> daily_reconciliations (1:M) -->
+        
         <mxCell id="rel_br_dr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_branches" target="tbl_daily_rec">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -883,11 +887,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 6. users -> daily_reconciliations (1:M) -->
+        
         <mxCell id="rel_usr_dr" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_users" target="tbl_daily_rec">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 7. users -> payments (1:M) -->
+        
         <mxCell id="rel_usr_pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=1;exitY=0.65;exitDx=0;exitDy=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_users" target="tbl_payments">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -898,7 +902,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 8. users -> payment_proofs (validated_by, 1:M optional) -->
+        
         <mxCell id="rel_usr_pp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_users" target="tbl_payment_proofs">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -910,15 +914,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 9. students -> enrollments (1:M) -->
+        
         <mxCell id="rel_stu_en" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#2E7D32;strokeWidth=1.5;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_students" target="tbl_enrollments">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 10. study_groups -> enrollments (1:M) -->
+        
         <mxCell id="rel_sg_en" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#2E7D32;strokeWidth=1.5;exitX=0.45;exitY=1;exitDx=0;exitDy=0;entryX=0.45;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_study_groups" target="tbl_enrollments">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 11. course_packages -> enrollments (1:M) -->
+        
         <mxCell id="rel_cp_en" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#0288D1;strokeWidth=1.5;exitX=0;exitY=0.65;exitDx=0;exitDy=0;entryX=1;entryY=0.35;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_course_packages" target="tbl_enrollments">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -927,11 +931,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 12. enrollments -> tuition_bills (1:M) -->
+        
         <mxCell id="rel_en_tb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#2E7D32;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_enrollments" target="tbl_tuition_bills">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <!-- 13. tuition_bills -> payments (1:M) -->
+        
         <mxCell id="rel_tb_pay" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmany;strokeColor=#E65100;strokeWidth=1.5;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_tuition_bills" target="tbl_payments">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -940,7 +944,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <!-- 14. payments -> payment_proofs (1:1) -->
+        
         <mxCell id="rel_pay_pp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;endArrow=ERmandOne;strokeColor=#E65100;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tbl_payments" target="tbl_payment_proofs">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -1655,58 +1659,60 @@
   </diagram>
   <diagram name="Gambar 3.5 Use Case" id="mpytHzHECD9scLGurdro">
     <mxGraphModel dx="1614" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" background="#ffffff" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
+      <root><mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys_box" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingLeft=20;spacingTop=15;fillColor=#FAFAFA;strokeColor=#000000;strokeWidth=2;fontSize=12;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="850" width="700" x="240" y="40" as="geometry" />
+        <mxCell id="sys_box" parent="1" style="shape=rect;whiteSpace=wrap;html=1;verticalAlign=top;align=center;spacingTop=15;fillColor=#FAFAFA;strokeColor=#000000;strokeWidth=2;fontSize=12;" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Sistem Informasi Manajemen Bimbel ARTHA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="895" width="760" x="220" y="35" as="geometry" />
         </mxCell>
         <mxCell id="act_staf" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Admin&lt;/b&gt;&lt;br&gt;&lt;font&gt;(Staf Administrasi Cabang)&lt;/font&gt;" vertex="1">
           <mxGeometry height="90" width="45" x="110" y="380" as="geometry" />
         </mxCell>
         <mxCell id="act_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Super Admin&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;(Pemilik Lembaga)&lt;/font&gt;" vertex="1">
-          <mxGeometry height="90" width="45" x="1035" y="460" as="geometry" />
+          <mxGeometry height="90" width="45" x="1050" y="470" as="geometry" />
         </mxCell>
         <mxCell id="uc_01" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Autentikasi Masuk" vertex="1">
-          <mxGeometry height="55" width="180" x="510" y="85" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="92.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_02" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mendaftarkan Siswa Baru" vertex="1">
-          <mxGeometry height="55" width="180" x="290" y="175" as="geometry" />
+          <mxGeometry height="55" width="180" x="295" y="192.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_03" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Kuota Kelas" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="175" as="geometry" />
+          <mxGeometry height="55" width="180" x="725" y="192.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_04" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mencatat Pembayaran&lt;br&gt;Kasir Cabang" vertex="1">
-          <mxGeometry height="60" width="180" x="300" y="280" as="geometry" />
+          <mxGeometry height="60" width="180" x="295" y="305" as="geometry" />
         </mxCell>
         <mxCell id="uc_05" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengunggah Bukti Transfer Bank" vertex="1">
-          <mxGeometry height="55" width="185" x="690" y="285" as="geometry" />
+          <mxGeometry height="55" width="185" x="722.5" y="307.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_06" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mencetak Kuitansi&lt;br&gt;Pembayaran (PDF)" vertex="1">
-          <mxGeometry height="55" width="180" x="460" y="397.5" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Rekonsiliasi&lt;br&gt;Kas Harian" vertex="1">
-          <mxGeometry height="55" width="180" x="290" y="740" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Pengguna&lt;br&gt;dan Cabang" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Data Kuota Kelas&amp;nbsp;" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="uc_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Pembayaran&lt;br&gt;Transfer Bank" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="650" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="417.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memantau Tunggakan &amp;amp;&lt;br&gt;Jatuh Tempo SPP" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="740" as="geometry" />
+          <mxGeometry height="55" width="180" x="510" y="522.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_07" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melakukan Rekonsiliasi&lt;br&gt;Kas Harian" vertex="1">
+          <mxGeometry height="55" width="180" x="295" y="642.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_08" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengelola Pengguna&lt;br&gt;dan Cabang" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="612.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_09" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Mengatur Ketentuan&lt;br&gt;Kuota Kelas" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="692.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_10" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Memvalidasi Pembayaran&lt;br&gt;Transfer Bank" vertex="1">
+          <mxGeometry height="55" width="180" x="725" y="772.5" as="geometry" />
         </mxCell>
         <mxCell id="uc_12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;fontStyle=1;" value="Melihat Dashboard&lt;br&gt;Konsolidasi Keuangan" vertex="1">
-          <mxGeometry height="55" width="180" x="690" y="825" as="geometry" />
+          <mxGeometry height="55" width="180" x="725" y="852.5" as="geometry" />
+        </mxCell>
+        <mxCell id="note_kuitansi" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#555555;" value="Kuitansi hanya dapat dicetak untuk transaksi yang telah berstatus lunas (paid)." vertex="1">
+          <mxGeometry height="30" width="550" x="325" y="935" as="geometry" />
         </mxCell>
         <mxCell id="edge_s1" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_01">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="290" y="112.5" />
+              <mxPoint x="290" y="120" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1716,15 +1722,27 @@
         <mxCell id="edge_s4" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_04">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="edge_s6" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_s11" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="edge_s7" edge="1" parent="1" source="act_staf" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=1;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="uc_07">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge_a1" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_01">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="890" y="112.5" />
+              <mxPoint x="890" y="120" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_a6" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_06">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_a11" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge_a8" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_08">
           <mxGeometry relative="1" as="geometry" />
@@ -1735,26 +1753,15 @@
         <mxCell id="edge_a10" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge_a11" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="edge_a12" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;strokeWidth=1.5;strokeColor=#000000;exitX=0;exitY=0.33;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uc_12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rel_inc1" edge="1" parent="1" source="uc_02" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="uc_03" value="&amp;laquo;include&amp;raquo;">
+        <mxCell id="rel_inc1" edge="1" parent="1" source="uc_02" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;entryDy=0;" target="uc_03" value="&amp;laquo;include&amp;raquo;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rel_ext1" edge="1" parent="1" source="uc_05" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="uc_04" value="&amp;laquo;extend&amp;raquo;">
+        <mxCell id="rel_ext1" edge="1" parent="1" source="uc_05" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;entryDy=0;" target="uc_04" value="&amp;laquo;extend&amp;raquo;">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel_inc2" edge="1" parent="1" source="uc_04" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="uc_06" value="&amp;laquo;include&amp;raquo;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rel_inc3" edge="1" parent="1" source="uc_10" style="endArrow=open;dashed=1;html=1;strokeWidth=1.5;strokeColor=#000000;fontSize=11;fontStyle=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" target="uc_06" value="&amp;laquo;include&amp;raquo;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
+        </mxCell></root></mxGraphModel>
   </diagram>
   <diagram name="Gambar 3.6 Pendaftaran Kasir" id="xsFQ6JuM7bou1Wg6Hvuc">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1050" pageHeight="1120" background="#ffffff" math="0" shadow="0">
@@ -1937,19 +1944,19 @@
         <mxCell id="lane3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=38;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="&lt;b style=&quot;font-size: 13px;&quot;&gt;Sistem Informasi ARTHA&lt;/b&gt;" vertex="1">
           <mxGeometry height="1030" width="310" x="655" y="67" as="geometry" />
         </mxCell>
-        <mxCell id="act_2" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Menyimpan Berkas &amp;amp; Setel&lt;br&gt;Status &#39;Menunggu Validasi&#39;" vertex="1">
+        <mxCell id="act_2" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Menyimpan Berkas &amp;amp; Setel&lt;br&gt;Status 'Menunggu Validasi'" vertex="1">
           <mxGeometry height="48" width="210" x="50" y="123" as="geometry" />
         </mxCell>
         <mxCell id="act_4" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Menampilkan Antrean &amp;amp;&lt;br&gt;Pratinjau Bukti Transfer" vertex="1">
           <mxGeometry height="48" width="210" x="50" y="228" as="geometry" />
         </mxCell>
-        <mxCell id="act_6b" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Setel Status &#39;Ditolak&#39; &amp;amp;&lt;br&gt;Kirim Notifikasi ke Cabang" vertex="1">
+        <mxCell id="act_6b" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Setel Status 'Ditolak' &amp;amp;&lt;br&gt;Kirim Notifikasi ke Cabang" vertex="1">
           <mxGeometry height="48" width="210" x="50" y="498" as="geometry" />
         </mxCell>
         <mxCell id="fork_2" parent="lane3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" value="" vertex="1">
           <mxGeometry height="6" width="220" x="45" y="710" as="geometry" />
         </mxCell>
-        <mxCell id="act_7b" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" value="Ubah Status&lt;br&gt;Menjadi &#39;Lunas&#39;" vertex="1">
+        <mxCell id="act_7b" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" value="Ubah Status&lt;br&gt;Menjadi 'Lunas'" vertex="1">
           <mxGeometry height="55" width="105" x="45" y="748" as="geometry" />
         </mxCell>
         <mxCell id="act_7c" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;arcSize=15;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11;fontStyle=1;" value="Tambah Kas Bank&lt;br&gt;&amp;amp; Kunci SPP" vertex="1">
@@ -2065,7 +2072,7 @@
         <mxCell id="dec_selisih" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;" value="" vertex="1">
           <mxGeometry height="44" width="44" x="133" y="313" as="geometry" />
         </mxCell>
-        <mxCell id="act_5b" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Tandai Status Laporan&lt;br&gt;&#39;Perlu Peninjauan Pusat&#39;" vertex="1">
+        <mxCell id="act_5b" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=11.5;fontStyle=1;" value="Tandai Status Laporan&lt;br&gt;'Perlu Peninjauan Pusat'" vertex="1">
           <mxGeometry height="48" width="220" x="45" y="379" as="geometry" />
         </mxCell>
         <mxCell id="fork_3" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;" value="" vertex="1">
@@ -2157,7 +2164,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title_box" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Entity Relationship Diagram (ERD) - Sistem Informasi ARTHA&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;Pemodelan Basis Data Relasional MySQL (Notasi Crow&#39;s Foot)&lt;/font&gt;" vertex="1">
+        <mxCell id="title_box" parent="1" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Entity Relationship Diagram (ERD) - Sistem Informasi ARTHA&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#555555&quot;&gt;Pemodelan Basis Data Relasional MySQL (Notasi Crow's Foot)&lt;/font&gt;" vertex="1">
           <mxGeometry height="40" width="600" x="50" y="15" as="geometry" />
         </mxCell>
         <mxCell id="legend_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#CFD8DC;align=center;fontSize=11;strokeWidth=1;" value="&lt;b&gt;Legenda Kelompok Entitas:&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#0288D1&quot;&gt;■&lt;/font&gt; Master Organisasi &amp;amp; Pengguna &amp;nbsp;&amp;nbsp; &lt;font color=&quot;#2E7D32&quot;&gt;■&lt;/font&gt; Akademik &amp;amp; Rombel &amp;nbsp;&amp;nbsp; &lt;font color=&quot;#E65100&quot;&gt;■&lt;/font&gt; Transaksi Keuangan &amp;amp; Rekonsiliasi" vertex="1">
@@ -2199,7 +2206,7 @@
         <mxCell id="u_row5" parent="tbl_users" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | password : VARCHAR(255)" vertex="1">
           <mxGeometry height="24" width="270" y="124" as="geometry" />
         </mxCell>
-        <mxCell id="u_row6" parent="tbl_users" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | role : ENUM(&#39;super&#39;,&#39;branch&#39;)" vertex="1">
+        <mxCell id="u_row6" parent="tbl_users" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | role : ENUM('super','branch')" vertex="1">
           <mxGeometry height="24" width="270" y="148" as="geometry" />
         </mxCell>
         <mxCell id="tbl_daily_rec" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;daily_reconciliations&lt;/b&gt;" vertex="1">
@@ -2265,7 +2272,7 @@
         <mxCell id="s_row6" parent="tbl_students" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | birth_date : DATE" vertex="1">
           <mxGeometry height="24" width="290" y="148" as="geometry" />
         </mxCell>
-        <mxCell id="s_row7" parent="tbl_students" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | gender : ENUM(&#39;L&#39;,&#39;P&#39;)" vertex="1">
+        <mxCell id="s_row7" parent="tbl_students" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | gender : ENUM('L','P')" vertex="1">
           <mxGeometry height="24" width="290" y="172" as="geometry" />
         </mxCell>
         <mxCell id="s_row8" parent="tbl_students" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | school_origin : VARCHAR(100)" vertex="1">
@@ -2316,7 +2323,7 @@
         <mxCell id="cp_row2" parent="tbl_course_packages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | package_name : VARCHAR(100)" vertex="1">
           <mxGeometry height="24" width="280" y="52" as="geometry" />
         </mxCell>
-        <mxCell id="cp_row3" parent="tbl_course_packages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | grade_level : ENUM(&#39;SD&#39;,&#39;SMP&#39;,&#39;SMA&#39;)" vertex="1">
+        <mxCell id="cp_row3" parent="tbl_course_packages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | grade_level : ENUM('SD','SMP','SMA')" vertex="1">
           <mxGeometry height="24" width="280" y="76" as="geometry" />
         </mxCell>
         <mxCell id="cp_row4" parent="tbl_course_packages" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | monthly_fee : DECIMAL(12,2)" vertex="1">
@@ -2349,7 +2356,7 @@
         <mxCell id="en_row6" parent="tbl_enrollments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | due_day : INT(2)" vertex="1">
           <mxGeometry height="24" width="280" y="148" as="geometry" />
         </mxCell>
-        <mxCell id="en_row7" parent="tbl_enrollments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | status : ENUM(&#39;active&#39;,&#39;grad&#39;,&#39;drop&#39;)" vertex="1">
+        <mxCell id="en_row7" parent="tbl_enrollments" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;fontSize=11;" value="   | status : ENUM('active','grad','drop')" vertex="1">
           <mxGeometry height="24" width="280" y="172" as="geometry" />
         </mxCell>
         <mxCell id="tbl_tuition_bills" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=1.5;fontSize=12;" value="&lt;b&gt;tuition_bills&lt;/b&gt;" vertex="1">

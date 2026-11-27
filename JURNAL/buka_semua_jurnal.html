@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal 35 Rujukan Tugas Akhir ARTHA ITK</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #38bdf8;
+            margin-bottom: 6px;
+        }
+        p.subtitle {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .control-panel {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 18px 20px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+        .control-panel-title {
+            width: 100%;
+            font-weight: 600;
+            font-size: 13px;
+            color: #cbd5e1;
+            margin-bottom: 4px;
+        }
+        button {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        button:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        button.btn-green {
+            background: #059669;
+        }
+        button.btn-green:hover {
+            background: #047857;
+        }
+        button.btn-purple {
+            background: #7c3aed;
+        }
+        button.btn-purple:hover {
+            background: #6d28d9;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 14px 18px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.2s;
+        }
+        .card:hover {
+            border-color: #38bdf8;
+            background: #243247;
+        }
+        .card-info {
+            max-width: 80%;
+        }
+        .card-num {
+            color: #38bdf8;
+            font-weight: 700;
+            font-size: 13px;
+            margin-right: 6px;
+        }
+        .card-author {
+            font-weight: 600;
+            color: #f1f5f9;
+            font-size: 14px;
+        }
+        .card-title {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+        .card-meta {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 2px;
+        }
+        .card-btn {
+            background: #334155;
+            color: #38bdf8;
+            text-decoration: none;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+            border: 1px solid #475569;
+            transition: 0.2s;
+        }
+        .card-btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portal Verifikasi 35 Rujukan Tugas Akhir ARTHA ITK</h1>
+        <p class="subtitle">
+            Halaman ini memuat seluruh 35 tautan referensi yang digunakan pada naskah Bab 1 sampai Bab 3.
+            Klik tombol di bawah ini untuk membuka tab di peramban Anda, baik sekaligus maupun per kelompok (*batch*).
+        </p>
+        
+        <div class="control-panel">
+            <div class="control-panel-title">TOMBOL BUKA TAB OTOMATIS:</div>
+            <button class="btn-green" onclick="openBatch(0, 35)">🚀 Buka Semua Sekaligus (35 Tab)</button>
+            <button class="btn-purple" onclick="openBatch(0, 12)">📂 Batch 1 (No. 1-12)</button>
+            <button class="btn-purple" onclick="openBatch(12, 24)">📂 Batch 2 (No. 13-24)</button>
+            <button class="btn-purple" onclick="openBatch(24, 35)">📂 Batch 3 (No. 25-35)</button>
+        </div>
+
+        <div class="grid" id="linkGrid"></div>
+    </div>
+
+    <script>
+        const urls = [
+            { name: "Agarwal dan Umphress (2008)", title: "Extreme Programming for a Single Person Team", meta: "ACM SE '08 (hlm. 82-87)", url: "https://doi.org/10.1145/1593105.1593127" },
+            { name: "Ahadi dkk. (2025)", title: "Pengembangan Sistem Informasi Manajemen Hotel Multi-Cabang Berbasis Web dengan Framework Laravel", meta: "Djtechno (hlm. 758-773)", url: "https://doi.org/10.46576/djtechno.v6i2.7139" },
+            { name: "Apriyanti dkk. (2024)", title: "Pemanfaatan Metodologi PXP dan Pengujian User Acceptance Testing (UAT) dalam Pengembangan Website E-Kavling", meta: "JATI (hlm. 3678-3686)", url: "https://doi.org/10.36040/jati.v8i3.9766" },
+            { name: "Barizi dkk. (2023)", title: "Perancangan Aplikasi Sistem Administrasi Sekolah Musik pada Sekolah Musik ABC Berbasis Java", meta: "JRAMI (hlm. 332-338)", url: "https://doi.org/10.30998/jrami.v4i02.2547" },
+            { name: "Beck dan Andres (2004)", title: "Extreme Programming Explained: Embrace Change (2nd Edition)", meta: "Addison-Wesley", url: "https://www.oreilly.com/library/view/extreme-programming-explained/0321278658/" },
+            { name: "Chen (1976)", title: "The Entity-Relationship Model: Toward a Unified View of Data", meta: "ACM TODS (hlm. 9-36)", url: "https://doi.org/10.1145/320434.320440" },
+            { name: "Cohn (2004)", title: "User Stories Applied: For Agile Software Development", meta: "Addison-Wesley", url: "https://www.mountaingoatsoftware.com/books/user-stories-applied" },
+            { name: "Dumas dkk. (2018)", title: "Fundamentals of Business Process Management (2nd Edition)", meta: "Springer", url: "https://doi.org/10.1007/978-3-662-56509-4" },
+            { name: "Dzhurov dkk. (2009)", title: "Personal Extreme Programming - An Agile Process for Autonomous Developers", meta: "S3T Sofia (hlm. 252-259)", url: "http://hdl.handle.net/10506/647" },
+            { name: "Fadhilasari dkk. (2024)", title: "Equivalence Partitioning dan Boundary Value Analysis dalam Black Box Testing pada Platform E-Commerce Berbasis Web", meta: "JATI (hlm. 3362-3367)", url: "https://doi.org/10.36040/jati.v8i3.9673" },
+            { name: "Fajriansyah dkk. (2026)", title: "Pengembangan Sistem Informasi Bimbingan Belajar Berbasis Web untuk Efisiensi Operasional Bee Hive", meta: "JRIS (hlm. 115-126)", url: "https://ejurnal.swadharma.ac.id/index.php/jris/article/view/1346" },
+            { name: "Fikri dan Prabowo (2020)", title: "Rancang Bangun Sistem Informasi Buku Tamu pada Disporapar Balikpapan dengan Metode PXP", meta: "Multitek (hlm. 101-110)", url: "https://doi.org/10.24269/mtkind.v14i2.2568" },
+            { name: "Haryono dkk. (2025)", title: "Pengembangan Layanan RESTful API Sistem Akademik Mahasiswa ITN Malang", meta: "JATI (hlm. 10612-10619)", url: "https://doi.org/10.36040/jati.v9i6.15425" },
+            { name: "Hasanah dan Untari (2020)", title: "Buku Ajar Rekayasa Perangkat Lunak", meta: "Umsida Press", url: "http://press.umsida.ac.id/index.php/umsidapress/article/view/978-623-6833-89-6" },
+            { name: "Ilham dkk. (2026)", title: "Evaluasi Performa MySQL dan MongoDB pada Query Pattern E-Commerce Skala Kecil", meta: "JATI (hlm. 15-21)", url: "https://doi.org/10.36040/jati.v10i1.16584" },
+            { name: "Khafidhoh dkk. (2026)", title: "Sistem Penjadwalan Menggunakan Algoritma Genetika Berbasis Web", meta: "JTI (hlm. 15-20)", url: "https://doi.org/10.47111/jti.v20i2.24540" },
+            { name: "Kurniawan (2018)", title: "Pemodelan Use Case (UML): Evaluasi terhadap Beberapa Kesalahan dalam Praktik", meta: "JTIIK (hlm. 77-86)", url: "https://doi.org/10.25126/jtiik.201851610" },
+            { name: "Laudon dan Laudon (2014)", title: "Management Information Systems: Managing the Digital Firm (13th Edition)", meta: "Pearson Education", url: "https://www.pearson.com/en-us/subject-catalog/p/management-information-systems-managing-the-digital-firm/P200000003253" },
+            { name: "Marthasari dkk. (2018)", title: "Personal Extreme Programming with MoSCoW Prioritization for Developing Library Information System", meta: "EECSI IEEE (hlm. 537-541)", url: "https://doi.org/10.11591/eecsi.v5.1701" },
+            { name: "Musofa dkk. (2025)", title: "Implementasi Metode Personal Extreme Programming (PXP) pada Pengembangan Aplikasi Buku Tamu", meta: "JTIIK (hlm. 985-996)", url: "https://jtiik.ub.ac.id/index.php/jtiik/article/view/9798" },
+            { name: "Praseptiawan dkk. (2025)", title: "The Development and Implementation of M-Edupayment: A Multi-Payment Platform for SMKN 7 Bandar Lampung", meta: "JPKM (hlm. 30-35)", url: "https://doi.org/10.22146/jpkm.100850" },
+            { name: "Republik Indonesia (2003)", title: "Undang-Undang RI Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional", meta: "Lembaran Negara RI No. 78", url: "https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003" },
+            { name: "Safitri dkk. (2026)", title: "Perancangan Sistem Informasi Manajemen Bimbingan Belajar Berbasis Web untuk Efisiensi Administrasi", meta: "JATI (hlm. 2345-2352)", url: "https://doi.org/10.36040/jati.v10i2.17328" },
+            { name: "Santoso (2025)", title: "Perbandingan Efektivitas Bootstrap dan Tailwind CSS dalam Pengembangan UI Web Responsif", meta: "JTEKSIS (hlm. 489-497)", url: "https://doi.org/10.47233/jteksis.v7i4.2260" },
+            { name: "Sommerville (2011)", title: "Software Engineering (9th Edition)", meta: "Addison-Wesley", url: "https://iansommerville.com/software-engineering-book/" },
+            { name: "Sudirman dan Tristianti (2021)", title: "Sistem Informasi Pengendalian Kas Bank dengan Metode Rekonsiliasi pada CV. Lisa Pratama", meta: "MEANS (hlm. 126-129)", url: "https://doi.org/10.54367/means.v6i2.1450" },
+            { name: "Tan (2025)", title: "Implementasi Middleware Laravel untuk Akses Multi-User: Studi Kasus Sistem Berita Acara Perkuliahan", meta: "JuTISI (hlm. 276-286)", url: "https://doi.org/10.28932/jutisi.v11i2.10713" },
+            { name: "Tanaem dkk. (2016)", title: "RESTFul Web Service untuk Sistem Pencatatan Transaksi Studi Kasus PT. XYZ", meta: "JuTISI (hlm. 1-10)", url: "https://journal.maranatha.edu/index.php/jutisi/article/view/603" },
+            { name: "Tiana dan Gunanto (2026)", title: "Perancangan dan Implementasi Sistem Informasi Bimbingan Belajar Berbasis Web Mobile", meta: "JUKTISI (hlm. 1631-1638)", url: "https://doi.org/10.62712/juktisi.v4i3.675" },
+            { name: "Wibagso dan Lia (2020)", title: "Desain Model Database Layanan Panti Werdha dengan Menerapkan Metode Database Life Cycle", meta: "JuTISI (hlm. 573-588)", url: "https://doi.org/10.28932/jutisi.v6i3.3047" },
+            { name: "Widarti dan Akbar (2026)", title: "Peningkatan Performa Aplikasi Web SIAKAD Menggunakan Next.js di Puskordat STIMATA", meta: "JOISM (hlm. 218-226)", url: "https://doi.org/10.24076/joism.2026v7i2.2453" },
+            { name: "Yuanita dkk. (2022)", title: "Frontend Development of Course Scheduling System Integrated SIA at Engineering Faculty UNSOED", meta: "JUTIF (hlm. 305-319)", url: "https://jutif.if.unsoed.ac.id/index.php/jurnal/article/view/227" },
+            { name: "Yusmar dkk. (2023)", title: "Analisis Perbaikan dan Pemodelan Proses Bisnis Menggunakan BPI pada Agrowing", meta: "JTIIK (hlm. 1129-1138)", url: "https://doi.org/10.25126/jtiik.2023107237" },
+            { name: "Yusup dkk. (2010)", title: "Penerapan Arsitektur Three-Tier terhadap Optimalisasi Keamanan Distributed Database", meta: "CCIT Journal (hlm. 345-365)", url: "https://doi.org/10.33050/ccit.v3i3.704" },
+            { name: "Zakaria dkk. (2023)", title: "Rancang Bangun Sistem Pembayaran Kursus Mandarin dengan Metode Waterfall", meta: "JuTISI (hlm. 127-140)", url: "https://doi.org/10.28932/jutisi.v9i1.5979" }
+        ];
+
+        const grid = document.getElementById("linkGrid");
+        urls.forEach((item, idx) => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+                <div class="card-info">
+                    <span class="card-num">#${idx + 1}</span>
+                    <span class="card-author">${item.name}</span>
+                    <div class="card-title">${item.title}</div>
+                    <div class="card-meta">${item.meta} • <span style="color:#38bdf8;">${item.url}</span></div>
+                </div>
+                <a href="${item.url}" target="_blank" class="card-btn">Buka Tautan ↗</a>
+            `;
+            grid.appendChild(card);
+        });
+
+        function openBatch(start, end) {
+            const slice = urls.slice(start, end);
+            slice.forEach((item, i) => {
+                setTimeout(() => {
+                    window.open(item.url, "_blank");
+                }, i * 250);
+            });
+        }
+    </script>
+</body>
+</html>

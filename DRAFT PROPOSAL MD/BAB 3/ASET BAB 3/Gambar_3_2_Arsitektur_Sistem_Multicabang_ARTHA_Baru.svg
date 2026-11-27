@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 780" width="1600" height="780" style="background:#ffffff; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Arrowhead markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#000000" />
+    </marker>
+    <marker id="arrow-start" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M 8 1.5 L 0 5 L 8 8.5 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- ==================== RED DOTTED HORIZONTAL DIVIDERS ==================== -->
+  <!-- Line 1: Top of Tier 1 -->
+  <line x1="30" y1="120" x2="1280" y2="120" stroke="#ef4444" stroke-width="7.5" stroke-linecap="round" stroke-dasharray="1 13" />
+
+  <!-- Line 2: Bottom of Tier 1 -->
+  <line x1="30" y1="275" x2="1280" y2="275" stroke="#ef4444" stroke-width="7.5" stroke-linecap="round" stroke-dasharray="1 13" />
+
+  <!-- Line 3: Bottom of Tier 2 / Top of Tier 3 -->
+  <line x1="30" y1="535" x2="1280" y2="535" stroke="#ef4444" stroke-width="7.5" stroke-linecap="round" stroke-dasharray="1 13" />
+
+  <!-- Line 4: Bottom of Tier 3 -->
+  <line x1="30" y1="710" x2="1280" y2="710" stroke="#ef4444" stroke-width="7.5" stroke-linecap="round" stroke-dasharray="1 13" />
+
+  <!-- ==================== LEFT TIER LABELS ==================== -->
+  <!-- Tier 1 Pill -->
+  <g transform="translate(30, 138)">
+    <rect x="0" y="0" width="220" height="65" rx="4" fill="#d4d4d8" />
+    <text x="110" y="23" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Tier 1</text>
+    <text x="110" y="41" font-size="12" font-weight="600" fill="#18181b" text-anchor="middle">Lapisan Presentasi</text>
+    <text x="110" y="56" font-size="11" fill="#3f3f46" text-anchor="middle">(Presentation Layer)</text>
+    <!-- dotted connector line to Tier 1 -->
+    <line x1="220" y1="32.5" x2="285" y2="32.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6" />
+  </g>
+
+  <!-- Tier 2 Pill -->
+  <g transform="translate(30, 375)">
+    <rect x="0" y="0" width="220" height="65" rx="4" fill="#d4d4d8" />
+    <text x="110" y="23" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Tier 2</text>
+    <text x="110" y="41" font-size="12" font-weight="600" fill="#18181b" text-anchor="middle">Lapisan Logika Aplikasi</text>
+    <text x="110" y="56" font-size="11" fill="#3f3f46" text-anchor="middle">(Application Layer)</text>
+    <!-- dotted connector line to Tier 2 -->
+    <line x1="220" y1="32.5" x2="285" y2="32.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6" />
+  </g>
+
+  <!-- Tier 3 Pill -->
+  <g transform="translate(30, 585)">
+    <rect x="0" y="0" width="220" height="65" rx="4" fill="#d4d4d8" />
+    <text x="110" y="23" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Tier 3</text>
+    <text x="110" y="41" font-size="12" font-weight="600" fill="#18181b" text-anchor="middle">Lapisan Data</text>
+    <text x="110" y="56" font-size="11" fill="#3f3f46" text-anchor="middle">(Data Layer)</text>
+    <!-- dotted connector line to Tier 3 -->
+    <line x1="220" y1="32.5" x2="285" y2="32.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 6" />
+  </g>
+
+  <!-- ==================== TOP RUNTIME & ACTORS (ABOVE TIER 1) ==================== -->
+  <!-- Runtime Alat Pengembangan Box (Dashed box) -->
+  <g transform="translate(620, 20)">
+    <path d="M 0 0 L 250 0 L 250 60 L 0 60 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+    <text x="125" y="25" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Runtime Alat Pengembangan</text>
+    <text x="125" y="46" font-size="12" font-style="italic" fill="#27272a" text-anchor="middle">Node.js &amp; Next.js</text>
+    <!-- Arrow pointing straight DOWN to Tier 1 -->
+    <line x1="125" y1="60" x2="125" y2="120" stroke="#000000" stroke-width="2.5" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Actors: Pemilik (Admin) & Staf Cabang (Pekerja) -->
+  <g transform="translate(930, 16)">
+    <!-- Pemilik (Headset user) -->
+    <g transform="translate(0, 0)">
+      <circle cx="25" cy="18" r="10" fill="none" stroke="#000000" stroke-width="2.5" />
+      <path d="M 12 39 C 12 29 38 29 38 39" fill="none" stroke="#000000" stroke-width="2.5" />
+      <path d="M 12 18 C 12 10 38 10 38 18" fill="none" stroke="#000000" stroke-width="2" />
+      <rect x="9" y="16" width="4" height="7" rx="2" fill="#000000" />
+      <rect x="37" y="16" width="4" height="7" rx="2" fill="#000000" />
+      <text x="25" y="55" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Pemilik</text>
+    </g>
+
+    <!-- Staf Cabang (Worker team) -->
+    <g transform="translate(65, 0)">
+      <circle cx="20" cy="18" r="8" fill="none" stroke="#000000" stroke-width="2" />
+      <path d="M 8 38 C 8 30 32 30 32 38" fill="none" stroke="#000000" stroke-width="2" />
+      <circle cx="36" cy="16" r="7" fill="none" stroke="#000000" stroke-width="1.8" />
+      <path d="M 28 36 C 28 29 48 29 48 36" fill="none" stroke="#000000" stroke-width="1.8" />
+      <text x="28" y="55" font-size="11.5" font-weight="bold" fill="#000000" text-anchor="middle">Staf Cabang</text>
+    </g>
+
+    <!-- Arrow pointing UP to actors from Tier 1 (matching reference image) -->
+    <line x1="55" y1="120" x2="55" y2="65" stroke="#000000" stroke-width="2.5" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- ==================== TIER 1: PRESENTATION LAYER ==================== -->
+  <!-- Left of Tier 1: Deployment Vercel Web -->
+  <g transform="translate(295, 138)">
+    <rect x="15" y="0" width="65" height="55" fill="#000000" rx="3" />
+    <polygon points="47.5,12 26,45 69,45" fill="#ffffff" />
+    <text x="47.5" y="74" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">Deployment</text>
+    <text x="47.5" y="89" font-size="11.5" fill="#333333" text-anchor="middle">Vercel Web</text>
+    <!-- Arrow pointing right to Tier 1 box -->
+    <line x1="85" y1="28" x2="160" y2="28" stroke="#000000" stroke-width="2.5" marker-end="url(#arrow)" />
+    <!-- Bidirectional arrow down to Tier 2 -->
+    <line x1="47.5" y1="98" x2="47.5" y2="212" stroke="#000000" stroke-width="2.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Tier 1 Main Container: Bounded top and bottom by red bands, left and right by black dashed lines -->
+  <line x1="460" y1="120" x2="460" y2="275" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+  <line x1="1040" y1="120" x2="1040" y2="275" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+
+  <!-- 1. System UI -->
+  <g transform="translate(485, 142)">
+    <rect x="8" y="5" width="76" height="52" rx="4" fill="#ffffff" stroke="#e05638" stroke-width="2.5" />
+    <rect x="8" y="5" width="76" height="14" rx="3" fill="#e05638" />
+    <circle cx="16" cy="12" r="2.5" fill="#ffffff" />
+    <circle cx="24" cy="12" r="2.5" fill="#ffffff" />
+    <circle cx="32" cy="12" r="2.5" fill="#ffffff" />
+    <line x1="18" y1="28" x2="48" y2="28" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="18" y1="36" x2="40" y2="36" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="18" y1="44" x2="33" y2="44" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <circle cx="58" cy="38" r="9" fill="none" stroke="#0284c7" stroke-width="3" />
+    <line x1="64" y1="44" x2="74" y2="52" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" />
+    <text x="46" y="80" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">System UI</text>
+  </g>
+
+  <!-- 2. Next.js -->
+  <g transform="translate(635, 142)">
+    <circle cx="45" cy="31" r="26" fill="#000000" />
+    <text x="45" y="41" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">N</text>
+    <text x="45" y="80" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Next.js</text>
+  </g>
+
+  <!-- 3. Tailwind CSS -->
+  <g transform="translate(775, 142)">
+    <g transform="translate(18, 11) scale(0.9)">
+      <path d="M15.5 8C13.2 8 11.7 9.1 10.9 11.4C12.3 9.7 13.9 9.3 15.6 10.2C17.3 11 18.2 12.3 19.3 14C20.9 16.5 23.3 18 27.5 18C29.8 18 31.3 16.9 32.1 14.6C30.7 16.3 29.1 16.7 27.4 15.8C25.7 15 24.8 13.7 23.7 12C22.1 9.5 19.7 8 15.5 8ZM3.5 18C1.2 18 -0.3 19.1 -1.1 21.4C0.3 19.7 1.9 19.3 3.6 20.2C5.3 21 6.2 22.3 7.3 24C8.9 26.5 11.3 28 15.5 28C17.8 28 19.3 26.9 20.1 24.6C18.7 26.3 17.1 26.7 15.4 25.8C13.7 25 12.8 23.7 11.7 22C10.1 19.5 7.7 18 3.5 18Z" fill="#06b6d4" />
+    </g>
+    <text x="45" y="80" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Tailwind CSS</text>
+  </g>
+
+  <!-- 4. Client-Side Logic -->
+  <g transform="translate(915, 142)">
+    <rect x="15" y="7" width="60" height="42" rx="3" fill="#ffffff" stroke="#52525b" stroke-width="2.5" />
+    <line x1="45" y1="49" x2="45" y2="57" stroke="#52525b" stroke-width="3" />
+    <line x1="30" y1="57" x2="60" y2="57" stroke="#52525b" stroke-width="3" stroke-linecap="round" />
+    <circle cx="45" cy="28" r="14" fill="none" stroke="#52525b" stroke-width="1.8" />
+    <ellipse cx="45" cy="28" rx="7" ry="14" fill="none" stroke="#52525b" stroke-width="1.8" />
+    <line x1="31" y1="28" x2="59" y2="28" stroke="#52525b" stroke-width="1.8" />
+    <text x="45" y="80" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Client-Side Logic</text>
+  </g>
+
+  <!-- ==================== BETWEEN TIER 1 AND TIER 2 ==================== -->
+  <!-- Left Bidirectional Arrow: HTTPS & API CALLS -->
+  <g transform="translate(425, 280)">
+    <line x1="0" y1="5" x2="0" y2="65" stroke="#000000" stroke-width="2.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+    <text x="-8" y="36" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="end">HTTPS &amp;</text>
+    <text x="-8" y="48" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="end">API CALLS</text>
+  </g>
+
+  <!-- Center Wi-Fi: Internet (Placed with ample vertical spacing) -->
+  <g transform="translate(720, 285)">
+    <path d="M 6 15 A 32 32 0 0 1 54 15" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <path d="M 14 22 A 20 20 0 0 1 46 22" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <path d="M 22 29 A 9 9 0 0 1 38 29" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <circle cx="30" cy="36" r="2.8" fill="#2563eb" />
+    <text x="30" y="50" font-size="10.5" font-weight="bold" fill="#2563eb" text-anchor="middle">Internet</text>
+  </g>
+
+  <!-- Right Bidirectional Arrow: HTTPS & API CALLS -->
+  <g transform="translate(995, 280)">
+    <line x1="0" y1="5" x2="0" y2="65" stroke="#000000" stroke-width="2.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+    <text x="8" y="36" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="start">HTTPS &amp;</text>
+    <text x="8" y="48" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="start">API CALLS</text>
+  </g>
+
+  <!-- ==================== TIER 2: APPLICATION LAYER ==================== -->
+  <!-- Top border of Tier 2: Black dashed line (starting at y=350) -->
+  <line x1="285" y1="350" x2="1170" y2="350" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+  <!-- Left border of Tier 2 -->
+  <line x1="285" y1="350" x2="285" y2="535" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+  <!-- Right border of Tier 2 -->
+  <line x1="1170" y1="350" x2="1170" y2="535" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+  <!-- Bottom border is Line 3 (red dotted) -->
+
+  <!-- Centered Inner Title: Layanan Inti Backend Laravel (dashed box) -->
+  <g transform="translate(585, 362)">
+    <path d="M 0 0 L 290 0 L 290 32 L 0 32 Z" fill="#ffffff" stroke="#000000" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="1 6" />
+    <text x="145" y="21" font-size="13.5" font-weight="bold" fill="#000000" text-anchor="middle">Layanan Inti Backend Laravel</text>
+  </g>
+
+  <!-- 1. Laravel Sanctum -->
+  <g transform="translate(325, 410)">
+    <path d="M 45 6 L 68 16 C 68 34 57 46 45 54 C 33 46 22 34 22 16 Z" fill="#ef4444" />
+    <circle cx="45" cy="25" r="5" fill="#ffffff" />
+    <polygon points="42,25 48,25 50,40 40,40" fill="#ffffff" />
+    <text x="45" y="76" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Laravel Sanctum</text>
+    <text x="45" y="91" font-size="11" fill="#444444" text-anchor="middle">Autentikasi &amp; RBAC</text>
+  </g>
+
+  <!-- 2. Laravel RESTful API -->
+  <g transform="translate(505, 410)">
+    <rect x="18" y="8" width="54" height="40" rx="6" fill="#ffffff" stroke="#ff2d20" stroke-width="2.5" />
+    <text x="45" y="33" font-size="16" font-weight="bold" fill="#ff2d20" text-anchor="middle">API</text>
+    <circle cx="28" cy="38" r="2.5" fill="#ff2d20" />
+    <circle cx="45" cy="38" r="2.5" fill="#ff2d20" />
+    <circle cx="62" cy="38" r="2.5" fill="#ff2d20" />
+    <text x="45" y="76" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">RESTful API</text>
+    <text x="45" y="91" font-size="11" fill="#444444" text-anchor="middle">Routing &amp; Controller</text>
+  </g>
+
+  <!-- 3. Logika Bisnis -->
+  <g transform="translate(765, 410)">
+    <g transform="translate(18, 6)">
+      <circle cx="20" cy="20" r="14" fill="#f59e0b" />
+      <circle cx="20" cy="20" r="6" fill="#ffffff" />
+      <rect x="17" y="2" width="6" height="36" rx="2" fill="#f59e0b" />
+      <rect x="2" y="17" width="36" height="6" rx="2" fill="#f59e0b" />
+      <circle cx="36" cy="34" r="10" fill="#d97706" />
+      <circle cx="36" cy="34" r="4" fill="#ffffff" />
+    </g>
+    <text x="48" y="76" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Logika Bisnis</text>
+    <text x="48" y="91" font-size="11" fill="#444444" text-anchor="middle">Operasional Cabang</text>
+  </g>
+
+  <!-- 4. Generator Laporan -->
+  <g transform="translate(975, 410)">
+    <path d="M 28 6 L 52 6 L 62 16 L 62 50 L 28 50 Z" fill="#e2e8f0" stroke="#475569" stroke-width="2" />
+    <polygon points="52,6 52,16 62,16" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+    <rect x="22" y="22" width="22" height="13" rx="2" fill="#ef4444" />
+    <text x="33" y="32" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PDF</text>
+    <rect x="42" y="30" width="24" height="13" rx="2" fill="#10b981" />
+    <text x="54" y="40" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle">XLS</text>
+    <text x="50" y="76" font-size="12" font-weight="600" fill="#000000" text-anchor="middle">Generator Laporan</text>
+    <text x="50" y="91" font-size="11" fill="#444444" text-anchor="middle">Kuitansi &amp; Rekapitulasi</text>
+  </g>
+
+  <!-- ==================== TIER 3: DATA LAYER (CURVED ARROWS & BASIS DATA MYSQL) ==================== -->
+  <!-- Arrow from Item 1 (Sanctum, x=370, y=535): straight down, turn right, go to database -->
+  <path d="M 370 535 L 370 620 Q 370 630, 385 630 L 680 630" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Item 2 (REST API, x=550, y=535): curve into horizontal line -->
+  <path d="M 550 535 L 550 610 Q 550 630, 570 630" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Arrow from Item 4 (Generator Laporan, x=1025, y=535): straight down, turn left, go to database -->
+  <path d="M 1025 535 L 1025 620 Q 1025 630, 1010 630 L 785 630" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Item 3 (Logika Bisnis, x=813, y=535): curve into horizontal line -->
+  <path d="M 813 535 L 813 610 Q 813 630, 795 630" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Center of Tier 3: Basis Data Relasional MySQL ONLY -->
+  <g transform="translate(695, 580)">
+    <ellipse cx="36" cy="14" rx="32" ry="10" fill="#00758f" stroke="#005b6e" stroke-width="2" />
+    <path d="M 4 14 L 4 30 A 32 10 0 0 0 68 30 L 68 14" fill="#008fa8" stroke="#005b6e" stroke-width="2" />
+    <ellipse cx="36" cy="30" rx="32" ry="10" fill="#00758f" stroke="#005b6e" stroke-width="2" />
+    <path d="M 4 30 L 4 46 A 32 10 0 0 0 68 46 L 68 30" fill="#008fa8" stroke="#005b6e" stroke-width="2" />
+    <ellipse cx="36" cy="46" rx="32" ry="10" fill="#00758f" stroke="#005b6e" stroke-width="2" />
+    <path d="M 4 46 L 4 62 A 32 10 0 0 0 68 62 L 68 46" fill="#006377" stroke="#005b6e" stroke-width="2" />
+    
+    <text x="36" y="86" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Basis Data MySQL</text>
+    <text x="36" y="101" font-size="11.5" fill="#333333" text-anchor="middle">Data Relasional Terpusat</text>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: API EKSTERNAL ==================== -->
+  <!-- Container Box with dashed border using path -->
+  <path d="M 1340 75 L 1560 75 L 1560 670 L 1340 670 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+
+  <!-- Solid Light Gray Header -->
+  <rect x="1340" y="75" width="220" height="48" fill="#d4d4d8" />
+  <line x1="1340" y1="123" x2="1560" y2="123" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7" />
+  <text x="1450" y="105" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">API Eksternal</text>
+
+  <!-- 1. WhatsApp Click-to-Chat API -->
+  <g transform="translate(1365, 175)">
+    <circle cx="85" cy="32" r="26" fill="#25d366" />
+    <polygon points="67,45 60,54 73,50" fill="#25d366" />
+    <path d="M 77 23 C 76 21 74 21 73 22 C 72 23 70 24 69 26 C 68 28 69 31 72 35 C 75 39 78 42 82 43 C 84 44 87 43 88 41 C 89 40 90 38 89 37 C 88 36 85 34 84 34 C 83 34 82 35 81 36 C 80 37 79 37 78 36 C 76 35 74 33 73 31 C 72 30 73 29 74 28 C 75 27 75 26 75 25 C 74 24 78 24 77 23 Z" fill="#ffffff" />
+    <text x="85" y="82" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">WhatsApp Web API</text>
+    <text x="85" y="98" font-size="11" fill="#444444" text-anchor="middle">Notifikasi Tagihan SPP</text>
+  </g>
+
+  <!-- 2. Mutasi Rekening Bank -->
+  <g transform="translate(1365, 385)">
+    <g transform="translate(53, 6)">
+      <polygon points="32,6 4,22 60,22" fill="#1e3a8a" />
+      <rect x="6" y="22" width="52" height="4" fill="#1e3a8a" />
+      <rect x="10" y="28" width="8" height="22" fill="#1e3a8a" />
+      <rect x="22" y="28" width="8" height="22" fill="#1e3a8a" />
+      <rect x="34" y="28" width="8" height="22" fill="#1e3a8a" />
+      <rect x="46" y="28" width="8" height="22" fill="#1e3a8a" />
+      <rect x="4" y="52" width="56" height="5" fill="#1e3a8a" />
+    </g>
+    <text x="85" y="82" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">Mutasi Rekening Bank</text>
+    <text x="85" y="98" font-size="11" fill="#444444" text-anchor="middle">Validasi Pembayaran</text>
+  </g>
+
+  <!-- ==================== ARROWS TO API EKSTERNAL ==================== -->
+  <!-- Double-headed arrow from Tier 1 (x=1040) to Right Wi-Fi (x=1140) -->
+  <line x1="1040" y1="195" x2="1130" y2="195" stroke="#000000" stroke-width="2.5" marker-start="url(#arrow-start)" marker-end="url(#arrow)" />
+
+  <!-- Arrow from Tier 2 (x=1170, y=410) curving up to Right Wi-Fi (matching reference image) -->
+  <path d="M 1170 410 C 1225 410, 1165 260, 1165 235" fill="none" stroke="#000000" stroke-width="2.5" marker-end="url(#arrow)" />
+  <text x="1235" y="325" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">HTTPS &amp; API CALLS</text>
+
+  <!-- Right Wi-Fi: Internet -->
+  <g transform="translate(1140, 175)">
+    <path d="M 6 15 A 28 28 0 0 1 50 15" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <path d="M 14 22 A 18 18 0 0 1 42 22" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <path d="M 22 29 A 8 8 0 0 1 34 29" fill="none" stroke="#2563eb" stroke-width="3.8" stroke-linecap="round" />
+    <circle cx="28" cy="36" r="2.8" fill="#2563eb" />
+    <text x="28" y="50" font-size="10.5" font-weight="bold" fill="#2563eb" text-anchor="middle">Internet</text>
+  </g>
+
+  <!-- Branching curved thick black arrows from Right Wi-Fi to External APIs -->
+  <!-- Branch 1: to WhatsApp Web API -->
+  <path d="M 1195 195 C 1250 195, 1260 207, 1420 207" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <!-- Branch 2: to Mutasi Rekening Bank -->
+  <path d="M 1195 195 C 1250 195, 1240 417, 1420 417" fill="none" stroke="#000000" stroke-width="3.5" stroke-linecap="round" marker-end="url(#arrow)" />
+
+</svg>

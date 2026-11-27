@@ -1,0 +1,133 @@
+PDF_Sheet_001 | Printed_Page: Balikpapan,  2026 | Header: PROPOSAL
+PDF_Sheet_002 | Printed_Page: 2      | Header: PROPOSAL
+PDF_Sheet_003 | Printed_Page: NIP.  199209182022031009  NIP.  199001082020122003 | Header: LEMBAR  PERSETUJUAN   Proposal  Tugas  Akhir  dengan  judul  :   RANCANG  BANGUN  SISTEM  INFORMASI  MANAJEMEN
+PDF_Sheet_004 | Printed_Page: 4      | Header: KATA  PENGANTAR
+PDF_Sheet_005 | Printed_Page: 5      | Header: menjadi  mitra  penelitian,  member
+PDF_Sheet_006 | Printed_Page: 6      | Header: RANCANG  BANGUN  SISTEM  INFORMASI 
+PDF_Sheet_007 | Printed_Page: 7      | Header: efisiensi  kerja  administrasi  ser
+PDF_Sheet_008 | Printed_Page: 8      | Header: DESIGN  AND  DEVELOPMENT  OF  A  WE
+PDF_Sheet_009 | Printed_Page: 9      | Header: administrative  efficiency  and  de
+PDF_Sheet_010 | Printed_Page: 10     | Header: DAFTAR  ISI
+PDF_Sheet_011 | Printed_Page: 11     | Header: 2.1.7.  Entity  Relationship  Diagr
+PDF_Sheet_012 | Printed_Page: 12     | Header: 3.4.4.  Analisis  Kebutuhan  Fungsi
+PDF_Sheet_013 | Printed_Page: 13     | Header: DAFTAR  GAMBAR
+PDF_Sheet_014 | Printed_Page: 14     | Header: DAFTAR  TABEL
+PDF_Sheet_015 | Printed_Page: 1      | Header: BAB  1
+PDF_Sheet_016 | Printed_Page: 2      | Header: tersebut  melayani  peserta  didik 
+PDF_Sheet_017 | Printed_Page: 3      | Header: Pertama,  hingga  Sekolah  Menengah
+PDF_Sheet_018 | Printed_Page: 4      | Header: keamanan  selama  perjalanan,  teta
+PDF_Sheet_019 | Printed_Page: 5      | Header: Gunanto  (2026)  membangun  sistem 
+PDF_Sheet_020 | Printed_Page: 6      | Header: memantau  kondisi  keuangan  dan  j
+PDF_Sheet_021 | Printed_Page: 7      | Header: diserahkan  kepada  pengguna  setel
+PDF_Sheet_022 | Printed_Page: 8      | Header: kebutuhan  dan  mengevaluasi  hasil
+PDF_Sheet_023 | Printed_Page: 9      | Header: 2.  Bagaimana  hasil  evaluasi  tin
+PDF_Sheet_024 | Printed_Page: 10     | Header: 3.  Prototipe  tidak  mengintegrasi
+PDF_Sheet_025 | Printed_Page: 11     | Header: dan  memperkaya  kajian  transforma
+PDF_Sheet_026 | Printed_Page: 12     | Header: 1.7.  Kerangka  Tugas  Akhir   Beri
+PDF_Sheet_027 | Printed_Page: 13     | Header: Gambar  1.1  menyajikan  keseluruha
+PDF_Sheet_028 | Printed_Page: 14     | Header: Pelaksanaan  setiap  iterasi  kerja
+PDF_Sheet_029 | Printed_Page: 15     | Header: BAB  2
+PDF_Sheet_030 | Printed_Page: 16     | Header: (Laudon  dan  Laudon,  2014).  Sist
+PDF_Sheet_031 | Printed_Page: 17     | Header: Gambar  2.1  Tahapan  Personal  Ext
+PDF_Sheet_032 | Printed_Page: 18     | Header: Pada  tahap  perencanaan,  pengembang  menyusun  daftar  User
+PDF_Sheet_033 | Printed_Page: 19     | Header: 5.  Implementasi  ( Implementation 
+PDF_Sheet_034 | Printed_Page: 20     | Header: 2.1.3.  Business  Process  Model  a
+PDF_Sheet_035 | Printed_Page: 21     | Header: Tabel  2.1  Unsur  dan  Notasi  Bus
+PDF_Sheet_036 | Printed_Page: 22     | Header: Kategori  Elemen
+PDF_Sheet_037 | Printed_Page: 23     | Header: 2.1.4.  User  Stories  User  Storie
+PDF_Sheet_038 | Printed_Page: 24     | Header: Tabel  2.2  Contoh  Format  Penulis
+PDF_Sheet_039 | Printed_Page: 25     | Header: Komponen  utama  dalam  use  case  
+PDF_Sheet_040 | Printed_Page: 26     | Header: Tabel  2.3  Simbol  Use  Case  Diag
+PDF_Sheet_041 | Printed_Page: 27     | Header: alur  alternatif  jika  syarat  ter
+PDF_Sheet_042 | Printed_Page: 28     | Header: Tabel  2.4  Simbol  Activity  Diagr
+PDF_Sheet_043 | Printed_Page: 29     | Header: Swimlane
+PDF_Sheet_044 | Printed_Page: 30     | Header: Tabel  2.5  Unsur  dan  Notasi  Ent
+PDF_Sheet_045 | Printed_Page: 31     | Header: pengidentifikasi  unik  ( primary  
+PDF_Sheet_046 | Printed_Page: 32     | Header: 2.1.8.  Three-Tier  Architecture  A
+PDF_Sheet_047 | Printed_Page: 33     | Header: Selain  meningkatkan  performa  kec
+PDF_Sheet_048 | Printed_Page: 34     | Header: 2.1.11.  Laravel  Laravel  merupaka
+PDF_Sheet_049 | Printed_Page: 35     | Header: dibutuhkan  secara  lengkap  (Tanae
+PDF_Sheet_050 | Printed_Page: 36     | Header: transaksional  yang  bersifat  krit
+PDF_Sheet_051 | Printed_Page: 37     | Header: pengguna  dapat  mengevaluasi  apak
+PDF_Sheet_052 | Printed_Page: 38     | Header: 2.2.  Penelitian  Terdahulu  Kajian
+PDF_Sheet_053 | Printed_Page: 39     | Header: No
+PDF_Sheet_054 | Printed_Page: 40     | Header: No
+PDF_Sheet_055 | Printed_Page: 41     | Header: No
+PDF_Sheet_056 | Printed_Page: 42     | Header: No
+PDF_Sheet_057 | Printed_Page: 43     | Header: No
+PDF_Sheet_058 | Printed_Page: 44     | Header: No
+PDF_Sheet_059 | Printed_Page: 45     | Header: No
+PDF_Sheet_060 | Printed_Page: 46     | Header: BAB  3
+PDF_Sheet_061 | Printed_Page: 47     | Header: terstruktur,  yaitu  Requirements, 
+PDF_Sheet_062 | Printed_Page: 48     | Header: Gambar  3.1  Tahapan  Pembuatan  Pr
+PDF_Sheet_063 | Printed_Page: 49     | Header: Berdasarkan  Gambar  3.1,  proses  
+PDF_Sheet_064 | Printed_Page: 50     | Header: 3.3.2.  Planning  Tahap  perencanaa
+PDF_Sheet_065 | Printed_Page: 51     | Header: dilakukan  perancangan  detail  ars
+PDF_Sheet_066 | Printed_Page: 52     | Header: pengguna  hanya  dapat  mengakses  
+PDF_Sheet_067 | Printed_Page: 53     | Header: plotting  kelas,  serta  monitoring
+PDF_Sheet_068 | Printed_Page: 54     | Header: jawab  fungsionalnya,  yaitu  lapis
+PDF_Sheet_069 | Printed_Page: 55     | Header: membatasi  hak  akses  pengguna.  S
+PDF_Sheet_070 | Printed_Page: 56     | Header: 3.4.2.  Analisis  Proses  Bisnis  A
+PDF_Sheet_071 | Printed_Page: 57     | Header: Gambar  3.3  Proses  As-Is  Operasi
+PDF_Sheet_072 | Printed_Page: 58     | Header: Berdasarkan  Gambar  3.3,  proses  
+PDF_Sheet_073 | Printed_Page: 59     | Header: tanggal  lahir,  asal  sekolah,  al
+PDF_Sheet_074 | Printed_Page: 60     | Header: lembaga  melalui  WhatsApp.  Staf  
+PDF_Sheet_075 | Printed_Page: 61     | Header: Tabel  3.1  Identifikasi  Masalah  
+PDF_Sheet_076 | Printed_Page: 62     | Header: 3.4.3.  Perancangan  Proses  Bisnis
+PDF_Sheet_077 | Printed_Page: 63     | Header: Gambar  3.4  Proses  Bisnis  To-Be 
+PDF_Sheet_078 | Printed_Page: 64     | Header: Diagram  tersebut  memperlihatkan  
+PDF_Sheet_079 | Printed_Page: 65     | Header: format  PDF  yang  dapat  dicetak  
+PDF_Sheet_080 | Printed_Page: 66     | Header: Tabel  3.2  Perbandingan  Proses  B
+PDF_Sheet_081 | Printed_Page: 67     | Header: No.
+PDF_Sheet_082 | Printed_Page: 68     | Header: terintegrasi,  sekaligus  menetapka
+PDF_Sheet_083 | Printed_Page: 69     | Header: Kode
+PDF_Sheet_084 | Printed_Page: 70     | Header: Kode
+PDF_Sheet_085 | Printed_Page: 71     | Header: Kode
+PDF_Sheet_086 | Printed_Page: 72     | Header: kemudahan  penggunaan.  Parameter  
+PDF_Sheet_087 | Printed_Page: 73     | Header: Kode
+PDF_Sheet_088 | Printed_Page: 74     | Header: penyusunan  User  Story  sebagai  d
+PDF_Sheet_089 | Printed_Page: 75     | Header: Tabel  3.5  Role-Based  Access  Con
+PDF_Sheet_090 | Printed_Page: 76     | Header: Seluruh  kebutuhan  operasional  te
+PDF_Sheet_091 | Printed_Page: 77     | Header: Tabel  3.6  User  Stories  Prototip
+PDF_Sheet_092 | Printed_Page: 78     | Header: Kode  Peran  I  Want  To  So  That 
+PDF_Sheet_093 | Printed_Page: 79     | Header: Kode  Peran  I  Want  To  So  That 
+PDF_Sheet_094 | Printed_Page: 80     | Header: Kode  Peran  I  Want  To  So  That 
+PDF_Sheet_095 | Printed_Page: 81     | Header: Kode  Peran  I  Want  To  So  That 
+PDF_Sheet_096 | Printed_Page: 82     | Header: 3.4.6.  Pemodelan  Interaksi  Siste
+PDF_Sheet_097 | Printed_Page: 83     | Header: Gambar  3.5  Use  Case  Diagram  Si
+PDF_Sheet_098 | Printed_Page: 84     | Header: validasi  berkas  transfer  bank,  
+PDF_Sheet_099 | Printed_Page: 85     | Header: Tabel  3.7  Skenario  Use  Case  Pe
+PDF_Sheet_100 | Printed_Page: 86     | Header: Komponen  Skenario  Uraian  Rincian
+PDF_Sheet_101 | Printed_Page: 87     | Header: 1.  Pemilik  lembaga  membuka  menu  Validasi  Pembayaran  pada  dashboard  pusat.  2.  Sistem  menyajikan  daftar  antrian  pembayaran  transfer  dari  seluruh  kantor  cabang.  3.  Pemilik  memilih  satu  baris  transaksi  untuk  melihat  pratinjau  gambar  bukti  transfer  bank.  4.  Pemilik  mencocokkan  nominal  transaksi,  tanggal  transfer,  dan  nama  pengirim  dengan  mutasi  rekening  bank.  5.  Pemilik  menekan  tombol  Validasi  Pembayaran.  6.  Sistem  memperbarui  status  transaksi  menjadi  lunas.  7.  Sistem  secara  otomatis  menetapkan  tanggal  transaksi  untuk  SPP  dan  mengizinkan  cabang  mencetak  kuitansi  resmi.
+PDF_Sheet_102 | Printed_Page: 88     | Header: Tabel  3.9  Skenario  Use  Case  Re
+PDF_Sheet_103 | Printed_Page: 89     | Header: Komponen  Skenario  Uraian  Rincian
+PDF_Sheet_104 | Printed_Page: 90     | Header: Gambar  3.6  Activity  Diagram  Alu
+PDF_Sheet_105 | Printed_Page: 91     | Header: sistem  memberikan  peringatan  kuo
+PDF_Sheet_106 | Printed_Page: 92     | Header: Gambar  3.7  Activity  Diagram  Alu
+PDF_Sheet_107 | Printed_Page: 93     | Header: Menunggu  Validasi.  Selanjutnya,  
+PDF_Sheet_108 | Printed_Page: 94     | Header: Gambar  3.8  Activity  Diagram  Rek
+PDF_Sheet_109 | Printed_Page: 95     | Header: Berdasarkan  Gambar  3.8,  aktivita
+PDF_Sheet_110 | Printed_Page: 96     | Header: terpusat  bagi  manajemen  dalam  m
+PDF_Sheet_111 | Printed_Page: 97     | Header: Gambar  3.9  Entity  Relationship  
+PDF_Sheet_112 | Printed_Page: 98     | Header: Kelompok  pengguna  berpusat  pada 
+PDF_Sheet_113 | Printed_Page: 99     | Header: SPP  setiap  bulan.  Dari  satu  pe
+PDF_Sheet_114 | Printed_Page: 100    | Header: 3.5.  Spesifikasi  Teknis  Spesifik
+PDF_Sheet_115 | Printed_Page: 101    | Header: Kategori
+PDF_Sheet_116 | Printed_Page: 102    | Header: Tabel  3.11  Spesifikasi  Kebutuhan
+PDF_Sheet_117 | Printed_Page: 103    | Header: Kategori
+PDF_Sheet_118 | Printed_Page: 104    | Header: 3.6.  Jadwal  Pembuatan  Prototipe 
+PDF_Sheet_119 | Printed_Page: 105    | Header: DAFTAR  PUSTAKA
+PDF_Sheet_120 | Printed_Page: 106    | Header: (S3T  2009).  Sofia  University,  h
+PDF_Sheet_121 | Printed_Page: 107    | Header: Marthasari,  G.I.,  Suharso,  W.  d
+PDF_Sheet_122 | Printed_Page: 108    | Header: Tan,  R.  (2025)  “Implementasi  Mi
+PDF_Sheet_123 | Printed_Page: 109    | Header: Zakaria,  T.M.  dkk.  (2023)  “Ranc
+PDF_Sheet_124 | Printed_Page: Catatan  Wawancara  ●  Pihak  manajemen  Bimbingan  Belajar  ARTHA  secara  resmi  menyetujui  pelaksanaan  penelitian  tugas  akhir  mahasiswa  untuk  digitalisasi  proses  operasional  lembaga.  ●  Pengelolaan  operasional  pada  delapan  kantor  cabang  di  wilayah  Balikpapan  selama  puluhan  tahun  masih  bertumpu  penuh  pada  buku  besar  kertas  fisik  dan  kuitansi  manual  tanpa  adanya  integrasi  data  terpusat.  ●  Mekanisme  pendaftaran  konvensional  mengharuskan  calon  siswa  atau  orang  tua  datang  langsung  ke  kantor  cabang,  sehingga  sering  menimbulkan  penumpukan  antrean  fisik  dan  risiko  berkas  pendaftaran  terselip  pada  periode  tahun  ajaran  baru.  ●  Delapan  cabang  aktif  Bimbel  Artha  di  Kota  Balikpapan  dinamai  Artha  1  sampai  Artha  8.  Enam  dari  delapan  cabang  tersebut  melayani  jenjang  TK,  SD,  SMP,  sampai  SMA.  Jumlah  siswa  aktif  secara  kumulatif  belum  terdokumentasi  terpusat  karena  pencatatan  masih  terpisah  di  masing-masing  cabang  serta  seringnya  masuk  dan  keluar  dari  siswa  setiap  hari  ●  Secara  keseluruhan,  delapan  cabang  Bimbel  Artha  menampung  sekitar  2.400  siswa. | Header: LAMPIRAN
+PDF_Sheet_125 | Printed_Page: Struktur  setiap  cabang  terdiri  dari  satu  kepala  cabang,  satu  staf  administrasi,  dan  tentor  pengajar.  ●  Pimpinan  dan  staf  administrasi  cabang  memiliki  keterbatasan  waktu  pendampingan  harian.  Keterbatasan  tersebut  disebabkan  padatnya  operasional  di  delapan  cabang.  ●  Pergantian  staf  administrasi  cukup  sering  terjadi  di  cabang.  Pencatatan  manual  yang  tersimpan  terpisah  menyulitkan  pencarian  status  aktif  siswa  ketika  staf  administrasi  berganti.  ●  Manajemen  membutuhkan  web  pendaftaran  untuk  calon  siswa  memilih  kelas,  dan  jadwal  belajar.  ●  Pihak  mitra  berkomitmen  mengalokasikan  anggaran  belanja  modal  untuk  menyediakan  perangkat  tablet  di  frontdesk  setiap  cabang  untuk  pencatatan.  ●  Ruang  lingkup  pengembangan  sistem  informasi  difokuskan  pada  dua  modul  prioritas  paling  mendesak,  yaitu  modul  pendaftaran  siswa  baru  dan  modul  pencatatan  transaksi  serta  pengingat  tagihan  SPP  bulanan.  ●  Budaya  kerja  lembaga  yang  berlandaskan  asas  kekeluargaan  menuntut  perancangan  antarmuka  sistem  yang  sederhana,  ramah  pengguna,  dan  mudah  diadaptasi  oleh  staf  administrasi  cabang  tanpa  resistensi  operasional. | Header: Dokumentasi  Wawancara
+PDF_Sheet_126 | Printed_Page: 112    | Header: 112
+PDF_Sheet_127 | Printed_Page: ●  web  profil  lembaga  WordPress  yang  sebelumnya  dikembangkan  oleh  pihak  ketiga  asal  Yogyakarta  ditinggalkan  karena  antarmuka  yang  rumit,  kendala  keterbatasan  memori  alokasi  server  shared  hosting,  serta  ketiadaan  modul  transaksi  keuangan  operasional.  ●  Manajemen  operasional  memutuskan  untuk  membangun  sistem  informasi  baru  secara  mandiri  dari  awal  untuk  memutus  ketergantungan  terhadap  vendor  luar  kota  dan  menyesuaikan  fitur  dengan  alur  kerja  di  delapan  cabang.  ●  Sistem  informasi  wajib  menerapkan  kontrol  hak  akses  dan  pengamanan  data  cabang  yang  ketat,  di  mana  staf  administrasi  cabang  hanya  dapat  mengakses  data  cabangnya  sendiri  sedangkan  Super  Admin  dapat  memantau  seluruh  cabang  secara  terpusat.  ●  Sistem  dituntut  mampu  mencatat  data  demografi  asal  sekolah  siswa  untuk  memetakan  sebaran  pendaftar  per  jenjang  (SD,  SMP,  SMA)  sebagai  penentuan  strategi  promosi.  ●  Evaluasi  logistik  kas  mengonfirmasi  bahwa  alur  perpindahan  dana  tunai  dan  buku  rekapan  fisik  antarcabang  selama  ini  sangat  mengandalkan  sistem  titipan  antar  tentor,  sehingga  memiliki  risiko  keamanan  tinggi  dan  keterlambatan  pelaporan. | Header: Dokumentasi  Wawancara
+PDF_Sheet_128 | Printed_Page: 114    | Header: 114
+PDF_Sheet_129 | Printed_Page: ●  Bimbingan  Belajar  ARTHA  didirikan  secara  resmi  pada  tanggal  10  Oktober  1997  dan  saat  ini  telah  menaungi  delapan  cabang  di  Balikpapan,  namun  seluruh  pencatatan  transaksi  pendaftaran  dan  kas  harian  masih  bertumpu  pada  lembaran  Buku  Besar  fisik  A4.  ●  Tarif  SPP  bulanan  diklasifikasikan  berdasarkan  jenjang  pendidikan  (TK,  SD,  SMP,  SMA),  frekuensi  pertemuan  tiga  kali  seminggu,  paket  intensif  ujian  kelulusan,  serta  biaya  cetak  buku  modul  pelajaran  tambahan.  ●  Alur  transaksi  pembayaran  terbagi  menjadi  dua  metode,  yaitu  setoran  uang  tunai  di  meja  kasir  cabang  dan  pembayaran  non-tunai  melalui  transfer  rekening   ●  Terjadi  kendala  rekonsiliasi  akibat  bukti  transfer  WhatsApp  dari  orang  tua  siswa  yang  sering  tidak  memuat  nama  lengkap  siswa  dan  asal  cabang  ●  Pada  transaksi  terdapat  penyesuaian  biaya  khusus  berupa  potongan  bagi  keluarga  kurang  mampu.  Penyesuaian  biaya  tersebut  diperhitungkan  secara  manual  oleh  staf  administrasi  cabang.  ●  Pemilik  lembaga  memeriksa  mutasi  rekening  melalui  aplikasi  mobile  banking  pada  malam  hari  setelah  menerima  lembar  rekapan  cabang.  Transaksi  transfer  pada  rekapan  dicocokkan  satu  per  satu  dengan  mutasi  rekening  untuk  memastikan  dana  telah  diterima  rekening  lembaga.  ●  Rekapitulasi  keuangan  di  akhir  bulan  menyita  waktu  kerja  berhari-hari  karena  pimpinan  harus  memeriksa  lembar  demi  lembar  buku  besar  dari  delapan  cabang,  menghitung  manual  dengan  kalkulator,  dan  mencocokkannya  dengan  mutasi  rekening. | Header: 115
+PDF_Sheet_130 | Printed_Page: ●  Media  pencatatan  kertas  fisik  berukuran  A4  sangat  rentan  mengalami  kerusakan  fisik,  karena  ditumpuk  per  satu  cabang.  ●  Pimpinan  sangat  membutuhkan  rekonsiliasi  kas  digital  yang  dilengkapi  pencatatan   dan  dashboard  penerimaan  harian  untuk  memvalidasi  dana  masuk  secara  akurat. | Header: Dokumentasi  Wawancara
+PDF_Sheet_131 | Printed_Page: ●  Staf  menjalankan  2  peran  yang  mencakup  pelayanan  pendaftaran  siswa  baru,  penerimaan  pembayaran  SPP  tunai,  pengarsipan  kuitansi,  pencatatan  absensi  siswa,  komunikasi  dengan  wali  murid,  serta  penataan  jadwal  ruangan  belajar.  ●  Beban  kerja  memuncak  pada  jam-jam  sibuk  di  sore  hari  menjelang  dimulainya  sesi  kelas  bimbingan  ●  Setiap  pendaftaran  siswa  baru  menghasilkan  tiga  berkas  fisik  wajib,  yaitu  lembar  formulir  pendaftaran  di  buku  besar  A4,  kuitansi  bukti  pembayaran  manual  rangkap  dua,  serta  kartu  SPP  fisik  dua  belas  bulan  yang  disimpan  dalam  kotak  arsip  cabang.  ●  Setelah  orang  tua  menunjukkan  bukti  transfer,  staf  administrasi  mengambil  foto  bukti  tersebut  dan  mengirimkannya  kepada  pemilik  lembaga  melalui  WhatsApp.  Staf  tidak  mengarsipkan  bukti  transfer  itu  di  kantor  cabang.  Staf  hanya  mencatat  tanggal  dan  nominal  pembayaran  dalam  Buku  Besar  serta  mencatat  pembayaran  pada  lembar  rekapan  harian.  ●  Jatuh  tempo  SPP  bulanan  mengacu  pada  tanggal  pertama  kali  siswa  mendaftar  dan  membayar  pada  bulan  pertama.  Staf  memeriksa  Kartu  SPP  dan  Buku  Besar  satu  per  satu  secara  untuk  menemukan  siswa  yang  terlambat  membayar.  Setelah  itu  staf  menghubungi  orang  tua  melalui  WhatsApp  atau  mengingatkan  siswa  langsung  di  meja  pendaftaran  saat  hadir  bimbingan  belajar.  ●  Rekap  kas  harian  ditulis  pada  selembar  kertas  setelah  staf  menghitung  total  uang  tunai.  Ringkasannya  hanya  memuat  angka  total  pembayaran  serta  jumlah  siswa  masuk  dan  keluar.  ●  Staf  administrasi  mengalami  kesulitan  memvalidasi  diskon  karena  arsip  data  yang | Header: 117
+PDF_Sheet_132 | Printed_Page: pernah  belajar  pada  tahun  ajaran  sebelumnya  tertumpuk  di  masing  masing  cabang.  ●  Pembagian  ruangan  kelas  di  cabang  menerapkan  batas  kapasitas  maksimal  sepuluh  hingga  lima  belas  siswa  per  sesi  ●  Mekanisme  penyetoran  uang  kas  fisik  dan  buku  besar  A4  bulanan  ke  kantor  pusat  dilakukan  melalui  titipan  kepada  kepala  cabang  ●  Batas  penutupan  pembukuan  harian  ditetapkan  pada  pukul  19.20  WITA.  Transaksi  yang  terjadi  setelah  batas  tersebut  dicatat  ke  dalam  pembukuan  hari  berikutnya.  ●  Pengaturan  jadwal  mengajar  tentor  disusun  secara  manual  bersama  Kepala  Cabang  berdasarkan  jam  luang  pengajar,  dengan  agenda  rapat  koordinasi  guru  setiap  seminggu  sekali  dan  rapat  evaluasi  staf  cabang  sebulan  sekali  bersama  manajemen  pusat.  ●  Staf  menyatakan  dukungan  penuh  terhadap  pengembangan  sistem  informasi  berbasis  web  karena  akan  mempermudah  pencarian  riwayat  siswa,  pelunasan  SPP,  dan  mengontrol  kapasitas  ruangan  kelas  tanpa  perlu  membuka  buku  besar  fisik  secara  berulang. | Header: Dokumentasi  Wawancara
+PDF_Sheet_133 | Printed_Page: 119    | Header: 119

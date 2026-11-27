@@ -1538,19 +1538,33 @@ cabang. Sementara itu, pada sisi manajemen pusat, Super Admin memiliki
 otoritas mengelola konfigurasi akun pengguna, pengaturan data cabang 
 dan kelompok belajar, validasi berkas transfer bank, hingga pemantauan 
 konsolidasi keuangan multicabang. 
-Hubungan ketergantungan antarfungsionalitas pada Gambar 3.5 
-diterapkan melalui dua jenis relasi UML, yaitu include dan relasi extend. 
-Relasi include diterapkan pada use case Mendaftarkan Siswa Baru yang 
-secara wajib menyertakan fungsi Memvalidasi Kuota Kelas, sehingga 
-sistem menjamin bahwa pendaftaran hanya dapat diproses apabila kuota 
-kelas masih tersedia. Relasi include juga diterapkan pada use case 
-Mencatat Pembayaran Kasir Cabang yang secara otomatis menyertakan 
-use case Mencetak Kuitansi Pembayaran (PDF) untuk menerbitkan bukti 
-transaksi resmi bagi wali murid. Di sisi lain, relasi extend digunakan pada 
-use case Mengunggah Bukti Transfer Bank yang memperluas fungsi 
-Mencatat Pembayaran Kasir Cabang secara kondisional, yakni hanya 
-dieksekusi apabila pihak orang tua siswa memilih jalur pembayaran 
-non-tunai melalui rekening bank. 
+Hubungan antarfungsionalitas pada Gambar 3.5 dimodelkan 
+menggunakan relasi asosiasi langsung serta relasi ketergantungan UML 
+berupa include dan extend. Relasi include diterapkan pada use case 
+Mendaftarkan Siswa Baru yang secara wajib menyertakan fungsionalitas 
+Memvalidasi Kuota Kelas, sehingga sistem menjamin bahwa pendaftaran 
+siswa baru hanya dapat diproses apabila kuota rombel masih tersedia. Di 
+sisi lain, relasi extend diterapkan pada use case Mengunggah Bukti Transfer 
+Bank yang memperluas fungsi Mencatat Pembayaran SPP secara 
+kondisional, yakni hanya dieksekusi apabila orang tua siswa memilih opsi 
+pembayaran non-tunai via transfer rekening bank. 
+
+Adapun fungsionalitas bersama yang berasosiasi langsung dengan 
+kedua aktor pengguna meliputi use case Melakukan Autentikasi Login, 
+Mencetak Kuitansi Pembayaran (PDF), serta Memantau Tunggakan dan 
+Jatuh Tempo SPP. Pada use case Mencetak Kuitansi Pembayaran (PDF), 
+Staf Administrasi Cabang menerbitkan dan mencetak lembar fisik 
+kuitansi di kasir cabang, sedangkan Super Admin dapat mengunduh 
+arsip digital kuitansi dari pusat guna audit keuangan. Pada use case 
+Memantau Tunggakan dan Jatuh Tempo SPP, Staf Administrasi Cabang 
+memanfaatkan daftar siswa terlambat untuk melakukan penagihan harian 
+secara langsung melalui tautan WhatsApp, sementara Super Admin 
+menggunakannya untuk mengawasi rekapitulasi piutang delapan cabang 
+secara makro. Di sisi lain, fungsionalitas Mengelola Data Kuota Kelas 
+dirancang secara eksklusif di bawah wewenang Super Admin guna 
+menegakkan prinsip pengendalian internal, sehingga batasan 
+maksimum kapasitas ruangan tidak dapat diubah sepihak oleh cabang 
+demi menjaga kenyamanan proses belajar mengajar. 
 Skenario Use Case dijabarkan untuk mendeskripsikan interaksi 
 antara pengguna dan perangkat lunak pada tiga aktivitas bisnis yang 
 bersifat krusial. Rincian skenario disajikan pada Tabel 3.7, Tabel 3.8, dan 

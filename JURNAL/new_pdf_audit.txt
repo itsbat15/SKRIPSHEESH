@@ -1,0 +1,134 @@
+PDF_Sheet_001 | Header: PROPOSAL | TUGAS  AKHIR  PROTOTIPE | RANCANG  BANGUN  SISTEM  INFORMASI | Last: Balikpapan,  2026
+PDF_Sheet_002 | Header: PROPOSAL | TUGAS  AKHIR  PROTOTIPE | RANCANG  BANGUN  SISTEM  INFORMASI | Last: 2
+PDF_Sheet_003 | Header: LEMBAR  PERSETUJUAN   Proposal  Tugas  Akhir  dengan  judul  :   RANCANG  BANGUN  SISTEM  INFORMASI  | Last: NIP.  199209182022031009  NIP.  199001082020122003
+PDF_Sheet_004 | Header: KATA  PENGANTAR | Puji  dan  syukur  senantiasa  penulis  panjatkan  ke  hadirat  Tuhan  Yang  Maha  | Last: 4
+PDF_Sheet_005 | Header: menjadi  mitra  penelitian,  memberikan  izin  observasi,  serta  membantu | penyediaan | data | Last: 5
+PDF_Sheet_006 | Header: RANCANG  BANGUN  SISTEM  INFORMASI  MANAJEMEN | OPERASIONAL | BIMBINGAN | Last: 6
+PDF_Sheet_007 | Header: efisiensi  kerja  administrasi  serta  menyajikan  rekapitulasi  data  keuangan | multicabang | yang | Last: 7
+PDF_Sheet_008 | Header: DESIGN  AND  DEVELOPMENT  OF  A  WEB -BASED | OPERATIONAL | MANAGEMENT | Last: 8
+PDF_Sheet_009 | Header: administrative  efficiency  and  deliver  transparent,  accurate,  and  centralized | multi-branch | | Last: 9
+PDF_Sheet_010 | Header: DAFTAR  ISI | LEMBAR  PERSETUJUAN .................................................................. | Last: 10
+PDF_Sheet_011 | Header: 2.1.7.  Entity  Relationship  Diagram ............................................................ 2 | Last: 11
+PDF_Sheet_012 | Header: 3.4.4.  Analisis  Kebutuhan  Fungsional  dan  Non-Fungsional ...................... 67 | 3.4.5.  Ide | Last: 12
+PDF_Sheet_013 | Header: DAFTAR  GAMBAR | Gambar  1.1  Diagram  Alir  Kerangka  Pengerjaan  Tugas  Akhir .................... | Last: 13
+PDF_Sheet_014 | Header: DAFTAR  TABEL | Tabel  2.1  Unsur  dan  Notasi  Business  Process  Model  and  Notation ............ | Last: 14
+PDF_Sheet_015 | Header: BAB  1 | PENDAHULUAN | Bab  ini  memaparkan  latar  belakang  permasalahan,  rumusan  masalah,  tuju | Last: 1
+PDF_Sheet_016 | Header: tersebut  melayani  peserta  didik  dari  jenjang  TK,  SD,  SMP,  sampai  SMA  dengan | jumlah | si | Last: 2
+PDF_Sheet_017 | Header: Pertama,  hingga  Sekolah  Menengah  Atas.  Variasi  jenjang  dan  waktu  bimbingan | tersebut | dii | Last: 3
+PDF_Sheet_018 | Header: keamanan  selama  perjalanan,  tetapi  juga  memperlambat  proses  validasi | penerimaan | oleh | Last: 4
+PDF_Sheet_019 | Header: Gunanto  (2026)  membangun  sistem  informasi  bimbingan  belajar  berbasis  web | mobile | yang | Last: 5
+PDF_Sheet_020 | Header: memantau  kondisi  keuangan  dan  jumlah  siswa  aktif  secara  langsung. | Penyimpanan | data | Last: 6
+PDF_Sheet_021 | Header: diserahkan  kepada  pengguna  setelah  seluruh  tahapan  selesai  (Sommerville,  2011), | sedangkan  | Last: 7
+PDF_Sheet_022 | Header: kebutuhan  dan  mengevaluasi  hasil  fungsional  pada  setiap  akhir  iterasi.  Masukan | dari | mit | Last: 8
+PDF_Sheet_023 | Header: 2.  Bagaimana  hasil  evaluasi  tingkat  kesesuaian  fungsional  dan  penerimaan | pengguna | terhad | Last: 9
+PDF_Sheet_024 | Header: 3.  Prototipe  tidak  mengintegrasikan  payment  gateway  pihak  ketiga. | Pembayaran | SPP | Last: 10
+PDF_Sheet_025 | Header: dan  memperkaya  kajian  transformasi  digital  pada  sektor  pendidikan  nonformal  di | Indonesia. | Last: 11
+PDF_Sheet_026 | Header: 1.7.  Kerangka  Tugas  Akhir   Berikut  adalah  Diagram  Alir  Kerangka  Pengerjaan  Tugas  Akhir.   | Last: 12
+PDF_Sheet_027 | Header: Gambar  1.1  menyajikan  keseluruhan  tahapan  rekayasa  perangkat  lunak | dalam | pengembangan | Last: 13
+PDF_Sheet_028 | Header: Pelaksanaan  setiap  iterasi  kerja  PXP  dijalankan  secara  terstruktur  melalui | siklus | yang | Last: 14
+PDF_Sheet_029 | Header: BAB  2 | TINJAUAN | PUSTAKA | Last: 15
+PDF_Sheet_030 | Header: (Laudon  dan  Laudon,  2014).  Sistem  informasi  bekerja  melalui  siklus  pengolahan  data  yang   | Last: 16
+PDF_Sheet_031 | Header: Gambar  2.1  Tahapan  Personal  Extreme  Programming | (Dzhurov  dkk.,  2009) | Pelaksanaan  metodol | Last: 17
+PDF_Sheet_032 | Header: 1.  Kebutuhan  ( Requirements ) | Pada  tahap  ini,  pengembang  mengidentifikasi  kebutuhan | fungs | Last: 18
+PDF_Sheet_033 | Header: 4.  Perancangan  ( Design ) | Tahap | ini | Last: 19
+PDF_Sheet_034 | Header: 7.  Retrospektif  ( Retrospective ) | Tahap | ini | Last: 20
+PDF_Sheet_035 | Header: 2.1.3.  Business  Process  Model  and  Notation  (BPMN)  Business  Process  Model  and  Notatio n  ( | Last: 21
+PDF_Sheet_036 | Header: Tabel  2.1  Unsur  dan  Notasi  Business  Process  Model  and  Notation | Kategori  Elemen | Simbol  | Last: 22
+PDF_Sheet_037 | Header: Kategori  Elemen | Simbol  Notasi | Nama  Notasi  Deskripsi  Operasional | Last: 23
+PDF_Sheet_038 | Header: 2.1.4.  User  Stories  User  Stories  merupakan  kebutuhan  perangkat  lunak  yang  berfokus | pada  | Last: 24
+PDF_Sheet_039 | Header: Tabel  2.2  Contoh  Format  Penulisan  User  Story | Kode   Peran  I  Want  To  So  That | Acceptanc | Last: 25
+PDF_Sheet_040 | Header: Komponen  utama  dalam  use  case  diagram  terdiri  dari  aktor,  use  case ,  dan  relasi  keterhu | Last: 26
+PDF_Sheet_041 | Header: Tabel  2.3  Simbol  Use  Case  Diagram | Nama  Simbol  Simbol  Deskripsi | Actor | Last: 27
+PDF_Sheet_042 | Header: alur  alternatif  jika  syarat  terpenuhi. | Generalization | Hubungan  hierarki  umum  dan  khusus  | Last: 28
+PDF_Sheet_043 | Header: Tabel  2.4  Simbol  Activity  Diagram | Nama  Simbol  Simbol  Deskripsi | Initial  State | Last: 29
+PDF_Sheet_044 | Header: Swimlane | Kolom  pembatas  vertikal  atau  horizontal  yang  mengelompokkan  aktivitas  berdasarkan | Last: 30
+PDF_Sheet_045 | Header: Tabel  2.5  Unsur  dan  Notasi  Entity  Relationship  Diagram | Notasi  Simbol  Deskripsi | Entity | Last: 31
+PDF_Sheet_046 | Header: pengidentifikasi  unik  ( primary  key )  untuk  membedakan  setiap  baris  instansiasi  entitas. |  | Last: 32
+PDF_Sheet_047 | Header: 2.1.8.  Three-Tier  Architecture  Arsitektur  tiga  lapis  ( three-tier  architecture )  merupakan   | Last: 33
+PDF_Sheet_048 | Header: Selain  meningkatkan  performa  kecepatan  akses,  arsitektur  Next.js | juga | memberikan | Last: 34
+PDF_Sheet_049 | Header: 2.1.11.  Laravel  Laravel  merupakan  framework  dengan  menggunakan  bahasa | pemrograman | PHP | Last: 35
+PDF_Sheet_050 | Header: dibutuhkan  secara  lengkap  (Tanaem  dkk.,  2016).  Format  data  yang  umum  digunakan  dalam  pen | Last: 36
+PDF_Sheet_051 | Header: transaksional  yang  bersifat  kritikal,  seperti  pencatatan  transaksi  keuangan, | mutasi | pemba | Last: 37
+PDF_Sheet_052 | Header: pengguna  dapat  mengevaluasi  apakah  fungsionalitas  sistem  telah  berjalan | sesuai | dengan | Last: 38
+PDF_Sheet_053 | Header: 2.2.  Penelitian  Terdahulu  Kajian  terhadap  penelitian  terdahulu  dilakukan  untuk  memahami  pe | Last: 39
+PDF_Sheet_054 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 40
+PDF_Sheet_055 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 41
+PDF_Sheet_056 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 42
+PDF_Sheet_057 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 43
+PDF_Sheet_058 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 44
+PDF_Sheet_059 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 45
+PDF_Sheet_060 | Header: No | Penulis  dan  Tahun | Permasalahan | Last: 46
+PDF_Sheet_061 | Header: BAB  3 | RANCANGAN | PROTOTIPE | Last: 47
+PDF_Sheet_062 | Header: terstruktur,  yaitu  Requirements,  Planning,  Iteration  Initialization,  Design, | Implementation, | Last: 48
+PDF_Sheet_063 | Header: Gambar  3.1  Tahapan  Pembuatan  Prototipe | 49 | Last: 49
+PDF_Sheet_064 | Header: Berdasarkan  Gambar  3.1,  proses  pembuatan  prototipe  diawali  dengan | identifikasi | kebutuhan | Last: 50
+PDF_Sheet_065 | Header: 3.3.2.  Planning  Tahap  perencanaan  bertujuan  untuk  menyusun  rencana  kerja | pengembangan | pe | Last: 51
+PDF_Sheet_066 | Header: dilakukan  perancangan  detail  arsitektur  sistem  berdasarkan  arsitektur | Three-Tier | yang | Last: 52
+PDF_Sheet_067 | Header: pengguna  hanya  dapat  mengakses  data  sesuai  dengan  kewenangannya. | Seluruh | bug | Last: 53
+PDF_Sheet_068 | Header: plotting  kelas,  serta  monitoring  pendapatan  seluruh  cabang.  Selain  itu, | kuesioner | dengan | Last: 54
+PDF_Sheet_069 | Header: jawab  fungsionalnya,  yaitu  lapisan  antarmuka  pengguna  ( Presentation | Tier | ), | Last: 55
+PDF_Sheet_070 | Header: membatasi  hak  akses  pengguna.  Selain  itu,  lapisan  ini  bertanggung  jawab | menjalankan | log | Last: 56
+PDF_Sheet_071 | Header: 3.4.2.  Analisis  Proses  Bisnis  As-Is  Proses  bisnis  berjalan  As-Is  di  Bimbingan  Belajar  AR | Last: 57
+PDF_Sheet_072 | Header: Gambar  3.3  Proses  As-Is  Operasional  Bimbel  ARTHA | 58 | Last: 58
+PDF_Sheet_073 | Header: Berdasarkan  Gambar  3.3,  proses  bisnis  berjalan  melibatkan  tiga | pihak | utama, | Last: 59
+PDF_Sheet_074 | Header: tanggal  lahir,  asal  sekolah,  alamat  tempat  tinggal,  nomor  telepon,  jenis | pembayaran, | se | Last: 60
+PDF_Sheet_075 | Header: lembaga  melalui  WhatsApp.  Staf  Administrasi  Cabang  tidak | mengarsipkan | bukti | Last: 61
+PDF_Sheet_076 | Header: Tabel  3.1  Identifikasi  Masalah  Proses  Bisnis  As-Is | No. | Aktivitas  Operasional | Last: 62
+PDF_Sheet_077 | Header: 3.4.3.  Perancangan  Proses  Bisnis  To-Be  Proses  bisnis  To-Be  disusun  untuk  mengatasi  kendal | Last: 63
+PDF_Sheet_078 | Header: Gambar  3.4  Proses  Bisnis  To-Be  Operasional  Bimbel  ARTHA | 64 | Last: 64
+PDF_Sheet_079 | Header: Diagram  tersebut  memperlihatkan  bahwa  proses  bisnis  To-Be | memangkas | proses | Last: 65
+PDF_Sheet_080 | Header: format  PDF  yang  dapat  dicetak  dan  diserahkan  kepada  orang  tua  oleh  Staf | Administrasi |  | Last: 66
+PDF_Sheet_081 | Header: Tabel  3.2  Perbandingan  Proses  Bisnis  As-Is  dan  Proses  Bisnis  To-Be | No. | Aktivitas  Opera | Last: 67
+PDF_Sheet_082 | Header: No. | Aktivitas  Operasional | Kondisi  Berjalan  ( As-Is ) | Last: 68
+PDF_Sheet_083 | Header: terintegrasi,  sekaligus  menetapkan  kriteria  operasional  perangkat  lunak. | Pemetaan | kebutuha | Last: 69
+PDF_Sheet_084 | Header: Kode | Modul | Deskripsi | Last: 70
+PDF_Sheet_085 | Header: Kode | Modul | Deskripsi | Last: 71
+PDF_Sheet_086 | Header: Kode | Modul | Deskripsi | Last: 72
+PDF_Sheet_087 | Header: kemudahan  penggunaan.  Parameter  ini  memastikan  prototipe  aplikasi  web | dapat | beroperasi | Last: 73
+PDF_Sheet_088 | Header: Kode | Kategori | Deskripsi  Kebutuhan | Last: 74
+PDF_Sheet_089 | Header: penyusunan  User  Story  sebagai  dasar  perencanaan  dan  pelaksanaan  iterasi | pengembangan | per | Last: 75
+PDF_Sheet_090 | Header: Tabel  3.5  Role-Based  Access  Control | Fungsionalitas  Sistem | Manajemen  Pusat  (Super  Admin) | Last: 76
+PDF_Sheet_091 | Header: Seluruh  kebutuhan  operasional  tersebut  kemudian  diterjemahkan | ke | dalam | Last: 77
+PDF_Sheet_092 | Header: Tabel  3.6  User  Stories  Prototipe  Sistem  Informasi  ARTHA | Kode  Peran  I  Want  To  So  That  | Last: 78
+PDF_Sheet_093 | Header: Kode  Peran  I  Want  To  So  That  Acceptance  Criteria | Target  Iterasi | Bobot | Last: 79
+PDF_Sheet_094 | Header: Kode  Peran  I  Want  To  So  That  Acceptance  Criteria | Target  Iterasi | Bobot | Last: 80
+PDF_Sheet_095 | Header: Kode  Peran  I  Want  To  So  That  Acceptance  Criteria | Target  Iterasi | Bobot | Last: 81
+PDF_Sheet_096 | Header: Kode  Peran  I  Want  To  So  That  Acceptance  Criteria | Target  Iterasi | Bobot | Last: 82
+PDF_Sheet_097 | Header: 3.4.6.  Pemodelan  Interaksi  Sistem  Fungsionalitas  sistem  dimodelkan  menggunakan  diagram  Unif | Last: 83
+PDF_Sheet_098 | Header: Gambar  3.5  Use  Case  Diagram  Sistem  Informasi  ARTHA | Berdasarkan  Gambar  3.5,  batasan  sist | Last: 84
+PDF_Sheet_099 | Header: validasi  berkas  transfer  bank,  hingga  pemantauan  konsolidasi | keuangan | multicabang. | Last: 85
+PDF_Sheet_100 | Header: Tabel  3.7  Skenario  Use  Case  Pendaftaran  Siswa  Baru  dan  Pembayaran | Komponen  Skenario  Ura | Last: 86
+PDF_Sheet_101 | Header: Komponen  Skenario  Uraian  Rincian  Skenario | Alternative  Flow | 4a.  Pilihan  kelompok  belajar  | Last: 87
+PDF_Sheet_102 | Header: Komponen  Skenario  Uraian  Rincian  Skenario | Main  Flow | 1.  Pemilik  lembaga  membuka  menu  Va | Last: 88
+PDF_Sheet_103 | Header: Tabel  3.9  Skenario  Use  Case  Rekonsiliasi  Kas  Harian  dan  Pemantauan  SPP | Komponen  Skenari | Last: 89
+PDF_Sheet_104 | Header: Komponen  Skenario  Uraian  Rincian  Skenario | Alternative  Flow | 4a.  Terdapat  selisih  antara   | Last: 90
+PDF_Sheet_105 | Header: Gambar  3.6  Activity  Diagram  Alur  Pendaftaran  Siswa  dan  Transaksi | Pembayaran | Berdasarkan  | Last: 91
+PDF_Sheet_106 | Header: sistem  memberikan  peringatan  kuota  penuh  dan  staf  memilih  kelompok | belajar | alternatif. | Last: 92
+PDF_Sheet_107 | Header: Gambar  3.7  Activity  Diagram  Alur  Validasi  Bukti  Transfer | Berdasarkan  Gambar  3.7,  aktivit | Last: 93
+PDF_Sheet_108 | Header: Menunggu  Validasi.  Selanjutnya,  Super  Admin  membuka  menu  antrean | validasi | pembayaran | Last: 94
+PDF_Sheet_109 | Header: Gambar  3.8  Activity  Diagram  Rekonsiliasi  Kas  Harian  Antarcabang | dan | Pemantauan | Last: 95
+PDF_Sheet_110 | Header: Berdasarkan  Gambar  3.8,  aktivitas  rekonsiliasi  kas  harian  dan | pemantauan | tunggakan | Last: 96
+PDF_Sheet_111 | Header: terpusat  bagi  manajemen  dalam  memantau  kondisi  keuangan  dan | tunggakan | pembayaran | Last: 97
+PDF_Sheet_112 | Header: Gambar  3.9  Entity  Relationship  Diagram  (ERD)  Sistem  Informasi | ARTHA | Berdasarkan  Gambar   | Last: 98
+PDF_Sheet_113 | Header: Kelompok  pengguna  berpusat  pada  entitas  Cabang,  yang  mewakili | delapan | kantor | Last: 99
+PDF_Sheet_114 | Header: SPP  setiap  bulan.  Dari  satu  pendaftaran,  sistem  menerbitkan  banyak | Tagihan | melalui | Last: 100
+PDF_Sheet_115 | Header: 3.5.  Spesifikasi  Teknis  Spesifikasi  teknis  menjelaskan  batasan  arsitektur  perangkat  keras | | Last: 101
+PDF_Sheet_116 | Header: Kategori | Komponen  Perangkat  Keras | Spesifikasi  Minimum  Komponen | Last: 102
+PDF_Sheet_117 | Header: Tabel  3.11  Spesifikasi  Kebutuhan  Perangkat  Lunak  Sistem | Kategori | Nama  Perangkat  Lunak | Last: 103
+PDF_Sheet_118 | Header: Kategori | Nama  Perangkat  Lunak | Fungsi | Last: 104
+PDF_Sheet_119 | Header: 3.6.  Jadwal  Pembuatan  Prototipe  Rencana  jadwal  pembuatan  prototipe  disusun  untuk  memandu   | Last: 105
+PDF_Sheet_120 | Header: DAFTAR  PUSTAKA | Agarwal,  R.  dan  Umphress,  D.  (2008)  “Extreme  Programming  for  a  Single  P | Last: 106
+PDF_Sheet_121 | Header: (S3T  2009).  Sofia  University,  hlm.  252-259.  Tersedia  pada:  http://hdl.handle.net/10506/647.  | Last: 107
+PDF_Sheet_122 | Header: Marthasari,  G.I.,  Suharso,  W.  dan  Ardiansyah,  F.  (2018)  “Personal  Extreme | Programming | w | Last: 108
+PDF_Sheet_123 | Header: Tan,  R.  (2025)  “Implementasi  Middleware  Laravel  untuk  Akses  Multi-User:  Studi | Kasus | Sis | Last: 109
+PDF_Sheet_124 | Header: Zakaria,  T.M.  dkk.  (2023)  “Rancang  Bangun  Sistem  Pembayaran  Kursus | Mandarin | dengan | Last: 110
+PDF_Sheet_125 | Header: LAMPIRAN | 111 | KEMENTERIAN  PENDIDIKAN,  KEBUDAYAAN,  RISET,  DAN  TEKNOLOGI  INSTITUT  TEKNOLOGI  | Last: Catatan  Wawancara  ●  Pihak  manajemen  Bimbingan
+PDF_Sheet_126 | Header: Dokumentasi  Wawancara | 112 | Struktur  setiap  cabang  terdiri  dari  satu  kepala  cabang,  satu  | Last: Struktur  setiap  cabang  terdiri  dari  satu  kep
+PDF_Sheet_127 | Header: 113 | Last: 113
+PDF_Sheet_128 | Header: Dokumentasi  Wawancara | 114 | Wawancara  ke  2  Tanggal | Last: ●  web  profil  lembaga  WordPress  yang  sebelumn
+PDF_Sheet_129 | Header: 115 | Last: 115
+PDF_Sheet_130 | Header: 116 | Wawancara  ke  3  Tanggal | 7  September  2026  Tanda  Tangan | Last: ●  Bimbingan  Belajar  ARTHA  didirikan  secara  r
+PDF_Sheet_131 | Header: Dokumentasi  Wawancara | 117 | ●  Media  pencatatan  kertas  fisik  berukuran  A4  sangat  rentan  m | Last: ●  Media  pencatatan  kertas  fisik  berukuran  A4
+PDF_Sheet_132 | Header: 118 | Wawancara  ke  4  Tanggal | 20  Oktober  2026  Tanda  Tangan | Last: ●  Staf  menjalankan  2  peran  yang  mencakup  pe
+PDF_Sheet_133 | Header: Dokumentasi  Wawancara | 119 | pernah  belajar  pada  tahun  ajaran  sebelumnya  tertumpuk  di  masi | Last: pernah  belajar  pada  tahun  ajaran  sebelumnya  
+PDF_Sheet_134 | Header: 120 | Last: 120

@@ -1,7 +1,8 @@
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 113]
+[HALAMAN DOKUMEN / PDF: 118]
 ================================================================================
+
  
  
 DAFTAR PUSTAKA 
@@ -9,25 +10,24 @@ DAFTAR PUSTAKA
 Agarwal, R. dan Umphress, D. (2008) “Extreme Programming for a Single Person 
 Team,” Proceedings of the 46th Annual Southeast Regional Conference 
 (ACM SE ’08). Association for Computing Machinery (ACM), hlm. 
-82–87. Tersedia pada: https://doi.org/10.1145/1593105.1593127. 
+82-87. Tersedia pada: https://doi.org/10.1145/1593105.1593127.  
 Ahadi, A.H., Pariyadi dan Djauhari, T. (2025) “Pengembangan Sistem Informasi 
 Manajemen Hotel Multi-Cabang Berbasis Web dengan Framework 
-Laravel,” Djtechno: Jurnal Teknologi Informasi, 6(1), hlm. 72–82. 
-Tersedia pada: https://doi.org/10.46576/djtechno.v6i2.7139. 
-Apriyanti, N., Wati, S.F.A. dan Najaf, A.R.E. (2024) “Pengembangan Sistem 
-Informasi Penjualan Properti Berbasis Web dengan Metode Personal 
-Extreme Programming (Studi Kasus PT Mutiara Putri Gemilang),” JATI 
-(Jurnal Mahasiswa Teknik Informatika), 8(3), hlm. 3317–3324. Tersedia 
-pada: https://doi.org/10.36040/jati.v8i3.9766. 
+Laravel,” Djtechno: Jurnal Teknologi Informasi, 6(2), hlm. 758-773. 
+Tersedia pada: https://doi.org/10.46576/djtechno.v6i2.7139.  
+Apriyanti, N., Wati, S.F.A. dan Najaf, A.R.E. (2024) “Pemanfaatan Metodologi 
+PXP dan Pengujian User Acceptance Testing (UAT) dalam Pengembangan 
+Website E-Kavling,” JATI (Jurnal Mahasiswa Teknik Informatika), 8(3), 
+hlm. 3678-3686. Tersedia pada: https://doi.org/10.36040/jati.v8i3.9766.  
 Barizi, A., Anshary, N.B. dan Sumarni, R.A. (2023) “Perancangan Aplikasi 
 Sistem Administrasi Sekolah Musik pada Sekolah Musik ABC Berbasis 
 Java,” Jurnal Riset dan Aplikasi Mahasiswa Informatika (JRAMI), 4(2), 
-hlm. 332–339. Tersedia pada: https://doi.org/10.30998/jrami.v4i02.2547. 
+hlm. 332-339. Tersedia pada: https://doi.org/10.30998/jrami.v4i02.2547.  
 Beck, K. dan Andres, C. (2004) Extreme Programming Explained: Embrace 
-Change. Addison-Wesley. 
+Change. 2 ed. Addison-Wesley. 
 Chen, P.P.-S. (1976) “The Entity-Relationship Model: Toward a Unified View of 
-Data,” ACM Transactions on Database Systems (TODS), 1(1), hlm. 9–36. 
-Tersedia pada: https://doi.org/10.1145/320434.320440. 
+Data,” ACM Transactions on Database Systems (TODS), 1(1), hlm. 9-36. 
+Tersedia pada: https://doi.org/10.1145/320434.320440.  
 Cohn, M. (2004) User Stories Applied: For Agile Software Development. 
 Addison-Wesley. 
 Dumas, M. dkk. (2018) Fundamentals of Business Process Management. 2 ed. 
@@ -36,131 +36,170 @@ Heidelberg:
 Springer. 
 Tersedia 
 pada: 
-https://doi.org/10.1007/978-3-662-56509-4. 
-99 
+https://doi.org/10.1007/978-3-662-56509-4.  
+Dzhurov, Y., Krasteva, I. dan Ilieva, S. (2009) “Personal Extreme Programming - 
+An Agile Process for Autonomous Developers,” Proceedings of the 
+International Conference on Software, Services & Semantic Technologies 
+104 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 114]
+[HALAMAN DOKUMEN / PDF: 119]
 ================================================================================
+
  
-Dzhurov, Y., Krasteva, I. dan Ilieva, S. (2009) “Personal Extreme Programming – 
-An Agile Process for Small-Scale Software Development,” Proceedings of 
-the International Conference on Software, Services & Semantic 
-Technologies (S3T 2009). Sofia University / Springer, hlm. 10–18. 
-Tersedia pada: http://hdl.handle.net/10506/647. 
-Fadhilasari, Sari, M.P., dan Fathurrahman (2024) “Pengujian Black Box pada 
-Aplikasi Sistem Informasi Akademik Berbasis Web Menggunakan Metode 
-Equivalence Partitioning dan Boundary Value Analysis,” JATI (Jurnal 
-Mahasiswa Teknik Informatika), 8(3), hlm. 2894–2901. Tersedia pada: 
-https://doi.org/10.36040/jati.v8i3.9673. 
-Fajriansyah, S.N. dkk. (2026) “Penerapan Sistem Informasi Bimbingan Belajar 
-Berbasis Web Bee Hive Tutoring Tangerang Selatan,” Jurnal Rekayasa 
-Informasi Swadharma (JRIS), 6(2), hlm. 76–83. Tersedia pada: 
-https://ejurnal.swadharma.ac.id/index.php/jris/article/view/1346. 
-Febrianto, A., Wulansari, A. dan Latipah, L. (2020) “Penerapan User Story dalam 
-Pemodelan Kebutuhan Perangkat Lunak Menggunakan Kerangka Kerja 
-Scrum,” Jurnal Teknik Informatika dan Sistem Informasi (JuTISI), 6(2), 
-hlm. 341–352. Tersedia pada:https://doi.org/10.28932/jutisi.v6i2.2592. 
-Fikri, A.M. dan Arthawan, R.D. (2020) “Rancang Bangun Sistem Informasi Buku 
-Tamu Pada Dinas Pemuda, Olahraga dan Pariwisata Kota Balikpapan 
-dengan Metode Personal Extreme Programming,” Multitek Indonesia: 
+(S3T 
+2009). 
+Sofia 
+University, 
+hlm. 
+10-18. 
+Tersedia 
+pada: 
+http://hdl.handle.net/10506/647.  
+Fadhilasari, A., Wahanani, H.E. dan Akbar, F.A. (2024) “Equivalence Partitioning 
+dan Boundary Value Analysis dalam Black Box Testing pada Platform 
+E-Commerce Berbasis Web di Lima Benua,” JATI (Jurnal Mahasiswa 
+Teknik 
+Informatika), 
+8(3), 
+hlm. 
+3362-3367. 
+Tersedia 
+pada: 
+https://doi.org/10.36040/jati.v8i3.9673.  
+Fajriansyah, S.N. dkk. (2026) “Pengembangan Sistem Informasi Bimbingan 
+Belajar Berbasis Web untuk Efisiensi Operasional Bee Hive,” JRIS: Jurnal 
+Rekayasa Informasi Swadharma, 6(2), hlm. 115-126. Tersedia pada: 
+https://ejurnal.swadharma.ac.id/index.php/jris/article/view/1346.   
+Febrianto, A.R., Wulansari, A. dan Latipah, L. (2020) “Pengembangan Sistem 
+Pengelolaan dan Pemantauan Proyek dengan Metode Agile Pola Scrum,” 
+Jurnal Teknik Informatika dan Sistem Informasi (JuTISI), 6(2). Tersedia 
+pada: https://doi.org/10.28932/jutisi.v6i2.2592.  
+Fikri, A.M. dan Prabowo, I.P.D.A.S. (2020) “Rancang Bangun Sistem Informasi 
+Buku Tamu pada Dinas Pemuda, Olahraga dan Pariwisata Kota 
+Balikpapan dengan Metode Personal Extreme Programming,” Multitek 
+Indonesia: 
 Jurnal 
 Ilmiah, 
 14(2), 
-hlm. 
-95–104. 
-Tersedia 
-pada: 
-https://doi.org/10.24269/mtkind.v14i2.2568. 
-Haryono, Rosyani, P., dan Ardiansyah (2025) “Implementasi Arsitektur RESTful 
-API 
-Menggunakan Format Data JSON pada Sistem Informasi 
-Terintegrasi,” JATI (Jurnal Mahasiswa Teknik Informatika), 9(6), hlm. 
-6802–6809. Tersedia pada: https://doi.org/10.36040/jati.v9i6.15425. 
+hlm. 101-110. Tersedia pada: 
+https://doi.org/10.24269/mtkind.v14i2.2568.  
+Haryono, Y., Faisol, A. dan Rudhistiar, D. (2025) “Pengembangan Layanan 
+RESTful API Sistem Akademik Mahasiswa ITN Malang,” JATI (Jurnal 
+Mahasiswa Teknik Informatika), 9(6), hlm. 10612-10619. Tersedia pada: 
+https://doi.org/10.36040/jati.v9i6.15425.  
 Hasanah, F.N. dan Untari, R.S. (2020) Buku Ajar Rekayasa Perangkat Lunak. 
 Umsida Press. 
-Hendri dkk. (2025) “Penerapan Sistem Informasi Akuntansi Penerimaan Kas 
-Dalam Meningkatkan Efektivitas Pengelolaan Keuangan SPP,” Jurnal 
-100 
+Hendri dkk. (2025) “Analisis Sistem Informasi Akuntansi Penerimaan Kas (SPP) 
+pada Yayasan Semesta Khatulistiwa,” Jurnal Sistem Informasi Akuntansi 
+(JUSTIAN), 
+6(2), 
+hlm. 
+124-135. 
+Tersedia 
+pada: 
+https://doi.org/10.31294/justian.v6i2.9114.  
+Ilham, M.N. dkk. (2026) “Evaluasi Performa MySQL dan MongoDB pada Query 
+Pattern E-Commerce Skala Kecil Berbasis Literatur,” JATI (Jurnal 
+Mahasiswa Teknik Informatika), 10(1), hlm. 15-21. Tersedia pada: 
+https://doi.org/10.36040/jati.v10i1.16584.  
+105 
+
+
 
 ================================================================================
-[HALAMAN DOKUMEN / PDF: 115]
+[HALAMAN DOKUMEN / PDF: 120]
 ================================================================================
+
  
-Sistem Informasi dan Informatika (JUSTIAN), 6(1), hlm. 45–54. Tersedia 
-pada: https://doi.org/10.31294/justian.v6i2.9114. 
-Ilham, Rosyani, P., dan Ardiansyah (2026) “Analisis Integritas Data dan 
-Kepatuhan Transaksi ACID pada Relational Database Management 
-System MySQL,” JATI (Jurnal Mahasiswa Teknik Informatika), 10(1), 
-hlm. 1205–1212. Tersedia pada: https://doi.org/10.36040/jati.v10i1.16584. 
-Khafidhoh, N., Febrianti, A.R., dan Sujono (2026) “Sistem Informasi 
-Penjadwalan Bimbingan Belajar AHE Berbasis Web Menggunakan 
-Metode Waterfall,” Jurnal Teknologi Informasi (JTI), 14(1), hlm. 88–97. 
-Tersedia pada: https://doi.org/10.47111/jti.v20i2.24540. 
 Kurniawan, T.A. (2018) “Pemodelan Use Case (UML): Evaluasi terhadap 
 Beberapa Kesalahan dalam Praktik,” Jurnal Teknologi Informasi dan Ilmu 
 Komputer 
 (JTIIK), 
 5(1), 
 hlm. 
-77–86. 
+77-86. 
 Tersedia 
 pada: 
-https://doi.org/10.25126/jtiik.201851610. 
+https://doi.org/10.25126/jtiik.201851610.  
 Laudon, K.C. dan Laudon, J.P. (2020) Management Information Systems: 
-Managing the Digital Firm. Pearson Education. 
+Managing the Digital Firm. Pearson Education.  
 Marthasari, G.I., Suharso, W. dan Ardiansyah, F. (2018) “Personal Extreme 
 Programming with MoSCoW Prioritization for Developing Library 
-Information System,” Proceedings of 2018 5th International Conference 
-on Electrical Engineering, Computer Science and Informatics (EECSI). 
-IEEE, 
-hlm. 
-537–540. 
+Information System,” Proceeding of the Electrical Engineering Computer 
+Science 
+and 
+Informatics 
+(EECSI 
+2018), 
+5(1). 
 Tersedia 
 pada: 
 https://www.researchgate.net/publication/340946370_Personal_Extreme_P
 rogramming_with_MoSCoW_Prioritization_for_Developing_Library_Info
-rmation_System. 
-Musofa, A. dkk. (2025) “Implementasi Metode Personal Extreme Programming 
-(PXP) pada Pengembangan Aplikasi Buku Tamu (Studi Kasus : Dinas 
-Komunikasi Dan Informatika Kabupaten Lombok Tengah),” Jurnal 
-Teknologi Informasi dan Ilmu Komputer (JTIIK), 12(5), hlm. 985–996. 
-Tersedia pada: https://jtiik.ub.ac.id/index.php/jtiik/article/view/9798. 
-Penidas Fiodinggo Tanaem, Danny Manongga, dan Ade Iriani (2016) “RESTFul 
-Web Service Untuk Sistem Pencatatan Transaksi Studi Kasus PT. XYZ,” 
-101 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 116]
-================================================================================
- 
-Jurnal Teknik Informatika dan Sistem Informasi, 2(1). Tersedia pada: 
-https://journal.maranatha.edu/index.php/jutisi/article/view/603. 
+rmation_System.  
+Musofa, A., Fadli, S. dan Murniati, W. (2025) “Implementasi Metode Personal 
+Extreme Programming (PXP) pada Pengembangan Aplikasi Buku Tamu 
+(Studi Kasus: Dinas Komunikasi dan Informatika Kabupaten Lombok 
+Tengah),” Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), 12(5), 
+hlm. 
+985-996. 
+Tersedia 
+pada: 
+https://jtiik.ub.ac.id/index.php/jtiik/article/view/9798.  
 Praseptiawan, M. dkk. (2025) “The Development and Implementation of 
 M-Edupayment: A Multi-Payment Platform for SMK Negeri 7 Bandar 
-Lampung,” Indonesian Journal of Community Engagement (Jurnal 
-Pengabdian kepada Masyarakat), 11(1), hlm. 30–35. Tersedia pada: 
-https://doi.org/10.22146/jpkm.100850. 
-Ramadhan, F. dan Widodo, H. (2026) “Accounting Treatment Of Head Office 
-And Branches Based On SAK EP: A Study on UMKM Rams Dimsum,” 
-Indonesian Journal of Law and Economics Review (IJLER), 21(2), hlm. 
-1–15. Tersedia pada: https://doi.org/10.21070/ijler.v21i2.1706. 
+Lampung,” Jurnal Pengabdian kepada Masyarakat (Indonesian Journal of 
+Community 
+Engagement), 
+11(1), 
+hlm. 
+30-35. 
+Tersedia 
+pada: 
+https://doi.org/10.22146/jpkm.100850.  
+Ramadhan, F. dan Widodo, H. (2026) “Accounting Treatment of Head Office and 
+Branches Based on SAK EP: A Study on UMKM Rams Dimsum,” 
+Indonesian Journal of Law and Economics Review (IJLER), 21(2). 
+Tersedia pada: https://doi.org/10.21070/ijler.v21i2.1706.  
+Republik Indonesia (2003) Undang-Undang Republik Indonesia Nomor 20 Tahun 
+2003 tentang Sistem Pendidikan Nasional. Lembaran Negara RI Tahun 
+2003 
+Nomor 
+78. 
+Jakarta: 
+Sekretariat 
+Negara. 
+Tersedia 
+pada: 
+https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003.  
 Safitri, E.C.A., Listyorini, T. dan Supriyati, E. (2026) “Perancangan Sistem 
 Informasi Manajemen Bimbingan Belajar Berbasis Web untuk Efisiensi 
 Administrasi dan Komunikasi dengan Fitur Notifikasi Otomatis (Studi 
-Kasus : Bimbel Ilman Nafi’),” JATI (Jurnal Mahasiswa Teknik 
+Kasus: Bimbel Ilman Nafi’),” JATI (Jurnal Mahasiswa Teknik 
+106 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 121]
+================================================================================
+
+ 
 Informatika), 
 10(2), 
 hlm. 
-2345–2352. 
+2345-2352. 
 Tersedia 
 pada: 
-https://doi.org/10.36040/jati.v10i2.17328. 
+https://doi.org/10.36040/jati.v10i2.17328.  
 Santoso, M.F. (2025) “Perbandingan Efektivitas Bootstrap dan Tailwind CSS 
-dalam Pengembangan UI Web Responsif,” Jurnal Teknologi Dan Sistem 
-Informasi Bisnis (JTEKSIS), 7(4), hlm. 489–497. Tersedia pada: 
-https://doi.org/10.47233/jteksis.v7i4.2260. 
-Sommerville, I. (2011) Software Engineering. Addison-Wesley / Pearson. 
+dalam Pengembangan UI Web Responsif,” Jurnal Teknologi dan Sistem 
+Informasi Bisnis (JTEKSIS), 7(4), hlm. 489-497. Tersedia pada: 
+https://doi.org/10.47233/jteksis.v7i4.2260.  
+Sommerville, I. (2011) Software Engineering. 9 ed. Addison-Wesley / Pearson. 
 Sudirman, B. dan Tristianti, M. (2021) “Sistem Informasi Pengendalian Kas Bank 
 dengan 
 Metode 
@@ -169,73 +208,65 @@ pada
 CV. 
 Lisa Pratama Berbasis 
 Client-Server,” MEANS (Media Informasi Analisa dan Sistem), 6(2), hlm. 
-126–129. Tersedia pada: https://doi.org/10.54367/means.v6i2.1450. 
+126-129. Tersedia pada: https://doi.org/10.54367/means.v6i2.1450.  
 Tan, R. (2025) “Implementasi Middleware Laravel untuk Akses Multi-User: Studi 
 Kasus Sistem Berita Acara Perkuliahan,” Jurnal Teknik Informatika dan 
-Sistem Informasi (JuTISI), 11(2), hlm. 276–288. Tersedia pada: 
-https://doi.org/10.28932/jutisi.v11i2.10713. 
-102 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 117]
-================================================================================
- 
-Tanaem, P.F., Manongga, D. dan Iriani, A. (2016) “Penerapan RESTful Web 
-Service pada Sistem Informasi Manajemen Terdistribusi,” Jurnal Teknik 
-Informatika dan Sistem Informasi (JuTISI), 2(2), hlm. 129–140. Tersedia 
-pada: https://journal.maranatha.edu/index.php/jutisi/article/view/603. 
-Tiana, I. dan Gunanto, S. (2026) “Sistem Informasi Bimbingan Belajar Berbasis 
-Web Mobile Pada Texas Kotabumi Lampung Utara,” Jurnal Komputer 
-Teknologi Informasi Sistem Komputer (JUKTISI), 4(3), hlm. 1631–1638. 
-Tersedia pada: https://doi.org/10.62712/juktisi.v4i3.675. 
-Wibagso, R.B. dan Lia, N. (2020) “Perancangan Basis Data Relasional Sistem 
-Informasi Akademik Menggunakan Siklus Hidup Basis Data (DBLC),” 
-Jurnal Teknik Informatika dan Sistem Informasi (JuTISI), 6(3), hlm. 
-553–566. Tersedia pada: https://doi.org/10.28932/jutisi.v6i3.3047. 
-Widarti dan Akbar, M. (2026) “Penerapan Next.js pada Sistem Informasi 
-Akademik Menggunakan Server-Side Rendering dan Middleware 
-Autentikasi,” JOISM (Journal of Information System Management), 7(2), 
-hlm. 
-145–153. 
-Tersedia 
-pada: 
-https://doi.org/10.24076/joism.2026v7i2.2453. 
+Sistem Informasi (JuTISI), 11(2), hlm. 276-286. Tersedia pada: 
+https://doi.org/10.28932/jutisi.v11i2.10713.  
+Tanaem, P.F., Manongga, D. dan Iriani, A. (2016) “RESTFul Web Service untuk 
+Sistem Pencatatan Transaksi Studi Kasus PT. XYZ,” Jurnal Teknik 
+Informatika dan Sistem Informasi (JuTISI), 2(1). Tersedia pada: 
+https://journal.maranatha.edu/index.php/jutisi/article/view/603.  
+Tiana, I. dan Gunanto, S. (2025) “Sistem Informasi Bimbingan Belajar Berbasis 
+Web Mobile pada Texas Kotabumi Lampung Utara,” Jurnal Komputer 
+Teknologi Informasi Sistem Informasi (JUKTISI), 4(3), hlm. 1631-1638. 
+Tersedia pada: https://doi.org/10.62712/juktisi.v4i3.675.  
+Wibagso, S.S. dan Lia, E. (2020) “Desain Model Database Layanan Panti Werdha 
+dengan Menerapkan Metode Database Life Cycle,” Jurnal Teknik 
+Informatika dan Sistem Informasi (JuTISI), 6(3). Tersedia pada: 
+https://doi.org/10.28932/jutisi.v6i3.3047.  
+Widarti, D.W. dan Akbar, M.K. (2026) “Peningkatan Performa Aplikasi Web 
+SIAKAD Menggunakan Next.js di Puskordat STIMATA,” Journal of 
+Information System Management (JOISM), 7(2), hlm. 218-226. Tersedia 
+pada: https://doi.org/10.24076/joism.2026v7i2.2453.  
 Yuanita, H.I., Wijayanto, B. dan Cahyono, T. (2022) “Frontend Development of 
 Course Scheduling System Integrated SIA at Engineering Faculty 
 University of Jenderal Soedirman Using DevOps Method,” Jurnal Teknik 
+107 
+
+
+
+================================================================================
+[HALAMAN DOKUMEN / PDF: 122]
+================================================================================
+
+ 
 Informatika 
 (JUTIF), 
 3(2), 
 hlm. 
-305–319. 
+305-319. 
 Tersedia 
 pada: 
-https://jutif.if.unsoed.ac.id/index.php/jurnal/article/view/227. 
+https://jutif.if.unsoed.ac.id/index.php/jurnal/article/view/227.  
 Yusmar, A., Nurhadryani, Y. dan Hermadi, I. (2023) “Analisis Perbaikan dan 
 Pemodelan Proses Bisnis Menggunakan Business Process Improvement 
-Pada Sistem Manajemen Budidaya Buah Agrowing,” Jurnal Teknologi 
-Informasi dan Ilmu Komputer (JTIIK), 10(5), hlm. 1129–1138. Tersedia 
-pada: https://doi.org/10.25126/jtiik.2023107237. 
-Yusup, 
-M., 
-Rahardja, 
-U. dan Prasetiyani, E. (2010) “PENERAPAN 
-ARSITEKTUR 
-THREETIER 
-TERHADAP 
-OPTIMALISASI 
-KEAMANAN DISTRIBUTED DATABASE,” CCIT Journal, 3(3), hlm. 
-345–365. Tersedia pada: https://doi.org/10.33050/ccit.v3i3.704. 
-103 
-
-================================================================================
-[HALAMAN DOKUMEN / PDF: 118]
-================================================================================
- 
+pada Sistem Manajemen Budidaya Buah Agrowing,” Jurnal Teknologi 
+Informasi dan Ilmu Komputer (JTIIK), 10(5), hlm. 1129-1138. Tersedia 
+pada: https://doi.org/10.25126/jtiik.2023107237.  
+Yusup, M., Rahardja, U. dan Prasetiyani, E. (2010) “Penerapan Arsitektur 
+Three-Tier terhadap Optimalisasi Keamanan Distributed Database,” CCIT 
+Journal, 
+3(3), 
+hlm. 
+345-365. 
+Tersedia 
+pada: 
+https://doi.org/10.33050/ccit.v3i3.704.  
 Zakaria, T.M. dkk. (2023) “Rancang Bangun Sistem Pembayaran Kursus 
-Mandarin Dengan Metode Waterfall,” Jurnal Teknik Informatika dan 
-Sistem Informasi (JuTISI), 9(1), hlm. 127–140. Tersedia pada: 
-https://doi.org/10.28932/jutisi.v9i1.5979. 
+Mandarin dengan Metode Waterfall,” Jurnal Teknik Informatika dan 
+Sistem Informasi (JuTISI), 9(1), hlm. 127-140. Tersedia pada: 
+https://doi.org/10.28932/jutisi.v9i1.5979.  
  
  
  
@@ -244,4 +275,9 @@ https://doi.org/10.28932/jutisi.v9i1.5979.
  
  
  
-104 
+ 
+ 
+ 
+ 
+ 
+108 

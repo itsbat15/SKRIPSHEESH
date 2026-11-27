@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net" agent="Antigravity" version="24.0.0">
+  <diagram id="Arsitektur-ARTHA-MySQL-Only" name="Arsitektur Sistem">
+    <mxGraphModel dx="1360" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="670" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TIER 1: PRESENTATION TIER (x=40..400, center=220) -->
+        <mxCell id="t1-outer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="360" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-header" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;PRESENTATION TIER&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-box1" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Pemilik Lembaga &amp;amp;&lt;br&gt;Staf Administrasi Cabang&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px; color: #555555;&quot;&gt;Peran Pengguna Sistem&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=118;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="65" y="132" width="310" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-actor" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#000000;strokeWidth=1.8;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="198" y="150" width="44" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-box2" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Web Next.js&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px; color: #555555;&quot;&gt;App Router &amp;amp; Tailwind CSS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=128;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="65" y="377" width="310" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-group" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="164" y="405" width="112" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-rect" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="t1-browser-group">
+          <mxGeometry width="112" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-line" value="" style="line;strokeWidth=1.5;html=1;strokeColor=#000000;" vertex="1" parent="t1-browser-group">
+          <mxGeometry y="22" width="63" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-dot1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=1.2;fillColor=#FFFFFF;" vertex="1" parent="t1-browser-group">
+          <mxGeometry x="6" y="7" width="9" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-dot2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=1.2;fillColor=#FFFFFF;" vertex="1" parent="t1-browser-group">
+          <mxGeometry x="20" y="7" width="9" height="9" as="geometry" />
+        </mxCell>
+        <mxCell id="t1-browser-dot3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=1.2;fillColor=#FFFFFF;" vertex="1" parent="t1-browser-group">
+          <mxGeometry x="34" y="7" width="9" height="9" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 2: APPLICATION TIER (x=500..860, center=680) -->
+        <mxCell id="t2-outer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="360" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-header" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;APPLICATION TIER&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-box1" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;REST API &amp;amp; Sanctum&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px; color: #555555;&quot;&gt;API &amp;amp; Autentikasi Token&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=128;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="525" y="132" width="310" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-api-group" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="639" y="157" width="82" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-api-c1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="t2-api-group">
+          <mxGeometry x="27" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-api-c2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="t2-api-group">
+          <mxGeometry y="58" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-api-c3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="t2-api-group">
+          <mxGeometry x="54" y="58" width="27" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-api-l1" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;strokeWidth=2;" edge="1" parent="t2-api-group">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="22" y="60" as="sourcePoint" />
+            <mxPoint x="34" y="27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2-api-l2" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;strokeWidth=2;" edge="1" parent="t2-api-group">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="60" as="sourcePoint" />
+            <mxPoint x="48" y="27" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2-box2" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Logika Bisnis ARTHA&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px; color: #555555;&quot;&gt;Pendaftaran, Pembayaran &amp;amp; Rekonsiliasi&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=128;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="525" y="377" width="310" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-group" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="633" y="402" width="94" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-rect" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="t2-grid-group">
+          <mxGeometry width="94" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-v1" value="" style="line;strokeWidth=1.5;direction=south;html=1;strokeColor=#000000;" vertex="1" parent="t2-grid-group">
+          <mxGeometry x="30" width="2" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-v2" value="" style="line;strokeWidth=1.5;direction=south;html=1;strokeColor=#000000;" vertex="1" parent="t2-grid-group">
+          <mxGeometry x="62" width="2" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-h1" value="" style="line;strokeWidth=1.5;html=1;strokeColor=#000000;" vertex="1" parent="t2-grid-group">
+          <mxGeometry y="28" width="94" height="2" as="geometry" />
+        </mxCell>
+        <mxCell id="t2-grid-h2" value="" style="line;strokeWidth=1.5;html=1;strokeColor=#000000;" vertex="1" parent="t2-grid-group">
+          <mxGeometry y="58" width="94" height="2" as="geometry" />
+        </mxCell>
+
+        <!-- TIER 3: DATA STORAGE TIER (x=960..1320, center=1140) - MYSQL ONLY -->
+        <mxCell id="t3-outer" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="960" y="40" width="360" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="t3-header" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;DATA STORAGE TIER&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fillColor=#F2F2F2;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="960" y="40" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="t3-box1" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;Basis Data MySQL&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 12px; color: #555555;&quot;&gt;Data Operasional&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacingTop=288;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontFamily=Times New Roman;" vertex="1" parent="1">
+          <mxGeometry x="985" y="132" width="310" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="t3-mysql-cyl" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="272" width="110" height="124" as="geometry" />
+        </mxCell>
+
+        <!-- ARROWS ANTAR-TIER -->
+        <mxCell id="arr-12" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;HTTPS Request&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;fontFamily=Times New Roman;fontColor=#000000;align=center;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="242" as="sourcePoint" />
+            <mxPoint x="500" y="242" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-21" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;JSON Response&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;fontFamily=Times New Roman;fontColor=#000000;align=center;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="487" as="sourcePoint" />
+            <mxPoint x="400" y="487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-23" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;Query SQL&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;fontFamily=Times New Roman;fontColor=#000000;align=center;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="242" as="sourcePoint" />
+            <mxPoint x="960" y="242" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arr-32" value="&lt;b style=&quot;font-size: 11px;&quot;&gt;Result Sets&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=2;endArrow=classic;endFill=1;fontFamily=Times New Roman;fontColor=#000000;align=center;verticalAlign=bottom;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="487" as="sourcePoint" />
+            <mxPoint x="860" y="487" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
